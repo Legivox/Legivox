@@ -30,6 +30,10 @@ IST = ZoneInfo("Asia/Kolkata")
 RELEVANCE_MIN = 7
 SIGNIFICANCE_MIN = 6
 ORIGINALITY_MIN = 7
+ALLOWED_CATEGORIES = {
+    "AI & software", "Developer tools", "Product strategy", "Digital business",
+    "Cybersecurity & privacy", "Platform policy", "Other technology",
+}
 FEEDS = (
     ("TechCrunch", "https://techcrunch.com/feed/"),
     ("The Verge", "https://www.theverge.com/rss/index.xml"),
@@ -259,44 +263,6 @@ def generate_drafts(candidates: list[dict], max_posts: int = 3) -> tuple[list[di
     if not api_key:
         raise RuntimeError("GROQ_API_KEY is missing from GitHub Actions secrets.")
     ids = [row["article_id"] for row in candidates]
-    schema = {
-        "type": "object",
-        "required": ["posts"],
-        "additionalProperties": False,
-        "properties": {
-            "posts": {
-                "type": "array",
-                "minItems": max_posts,
-                "maxItems": max_posts,
-                "items": {
-                    "type": "object",
-                    "required": [
-                        "article_id", "category", "relevance_score", "significance_score",
-                        "originality_score", "angle", "why_selected", "evidence_quote", "post_text",
-                    ],
-                    "additionalProperties": False,
-                    "properties": {
-                        "article_id": {"type": "string", "enum": ids},
-                        "category": {
-                            "type": "string",
-                            "enum": [
-                                "AI & software", "Developer tools", "Product strategy",
-                                "Digital business", "Cybersecurity & privacy", "Platform policy",
-                                "Other technology",
-                            ],
-                        },
-                        "relevance_score": {"type": "integer", "minimum": 1, "maximum": 10},
-                        "significance_score": {"type": "integer", "minimum": 1, "maximum": 10},
-                        "originality_score": {"type": "integer", "minimum": 1, "maximum": 10},
-                        "angle": {"type": "string", "maxLength": 140},
-                        "why_selected": {"type": "string", "maxLength": 180},
-                        "evidence_quote": {"type": "string"},
-                        "post_text": {"type": "string", "maxLength": 280},
-                    },
-                },
-            }
-        },
-    }
     safe_candidates = [
         {key: row[key] for key in (
             "article_id", "source", "title", "published_at_utc", "summary", "url"
@@ -354,8 +320,12 @@ def generate_drafts(candidates: list[dict], max_posts: int = 3) -> tuple[list[di
         "the premise, select another story. The local validator checks the quote, known model/version "
         "identifiers, selected unsupported specifics, and common overclaim patterns. post_text must be 55-180 characters "
         "and contain no URL; a source link is added "
-        "later. Include a concise reason for selection. Use each article_id at most once. Return only "
-        "the required structured JSON."
+        "later. Include a concise reason for selection. Use each article_id at most once. Include exactly "
+        "these keys per post: article_id, category, relevance_score, significance_score, originality_score, "
+        "angle, why_selected, evidence_quote, post_text. category must be one of AI & software, Developer tools, "
+        "Product strategy, Digital business, Cybersecurity & privacy, Platform policy, or Other technology. "
+        "Scores must be integers from 1 to 10. Return one JSON object with a posts array; return JSON only, "
+        "with no Markdown or commentary."
     )
     client = OpenAI(
         api_key=api_key,
@@ -363,29 +333,25 @@ def generate_drafts(candidates: list[dict], max_posts: int = 3) -> tuple[list[di
         timeout=60.0,
         max_retries=1,
     )
+    request_payload = json.dumps({
+        "max_posts": max_posts,
+        "quality_thresholds": {
+            "relevance_minimum": RELEVANCE_MIN,
+            "significance_minimum": SIGNIFICANCE_MIN,
+            "originality_minimum": ORIGINALITY_MIN,
+        },
+        "brand": "Legivox",
+        "candidates": safe_candidates,
+    }, ensure_ascii=False)
     try:
-        response = client.responses.create(
+        response = client.chat.completions.create(
             model=MODEL,
-            instructions=instructions,
-            input=json.dumps({
-                "max_posts": max_posts,
-                "quality_thresholds": {
-                    "relevance_minimum": RELEVANCE_MIN,
-                    "significance_minimum": SIGNIFICANCE_MIN,
-                    "originality_minimum": ORIGINALITY_MIN,
-                },
-                "brand": "Legivox",
-                "candidates": safe_candidates,
-            }, ensure_ascii=False),
-            max_output_tokens=2400,
-            text={
-                "format": {
-                    "type": "json_schema",
-                    "name": "legivox_editorial_drafts",
-                    "strict": True,
-                    "schema": schema,
-                }
-            },
+            messages=[
+                {"role": "system", "content": instructions},
+                {"role": "user", "content": request_payload},
+            ],
+            response_format={"type": "json_object"},
+            max_tokens=2400,
         )
     except Exception as exc:
         status = getattr(exc, "status_code", None)
@@ -398,20 +364,26 @@ def generate_drafts(candidates: list[dict], max_posts: int = 3) -> tuple[list[di
                 failed_generation = clean(error_body.get("failed_generation"))
                 if failed_generation:
                     detail += " Failed-generation excerpt: " + failed_generation[:300]
-        detail = re.sub(r"(?i)(bearer\s+\S+|gsk_[A-Za-z0-9_-]+)", "[redacted]", detail)[:800]
+        detail = re.sub(r"(?i)(bearer\\s+\\S+|gsk_[A-Za-z0-9_-]+)", "[redacted]", detail)[:800]
         label = f"HTTP {status} " if status else ""
         raise RuntimeError(
             f"Groq request failed ({label}{type(exc).__name__})"
             + (f": {detail}" if detail else ". Check model access, quota, and API secret.")
         ) from None
     try:
-        payload = json.loads(response.output_text)
-    except (TypeError, json.JSONDecodeError):
-        raise RuntimeError("Groq returned output that was not valid structured JSON.") from None
+        output_text = response.choices[0].message.content
+        payload = json.loads(output_text or "")
+    except (AttributeError, IndexError, TypeError, json.JSONDecodeError):
+        raise RuntimeError("Groq returned output that was not valid JSON.") from None
+    if not isinstance(payload, dict) or not isinstance(payload.get("posts"), list):
+        raise RuntimeError("Groq JSON output must be an object containing a posts array.")
 
     by_id = {row["article_id"]: row for row in candidates}
     seen, accepted, rejected = set(), [], []
     for post in payload.get("posts", []):
+        if not isinstance(post, dict):
+            rejected.append({"article_id": "unknown", "reason": "Model selection was not a JSON object."})
+            continue
         article_id = clean(post.get("article_id"))
         if article_id not in by_id or article_id in seen:
             rejected.append({
@@ -432,11 +404,31 @@ def generate_drafts(candidates: list[dict], max_posts: int = 3) -> tuple[list[di
                 "reason": "Evidence quote must be 20–100 characters and an exact excerpt from the supplied title or summary.",
             })
             continue
-        scores = {
-            "relevance_score": int(post.get("relevance_score", 0)),
-            "significance_score": int(post.get("significance_score", 0)),
-            "originality_score": int(post.get("originality_score", 0)),
-        }
+        try:
+            scores = {
+                "relevance_score": int(post.get("relevance_score", 0)),
+                "significance_score": int(post.get("significance_score", 0)),
+                "originality_score": int(post.get("originality_score", 0)),
+            }
+        except (TypeError, ValueError):
+            rejected.append({
+                "article_id": article_id, "source": article["source"], "title": article["title"],
+                "reason": "Editorial scores were not valid integers.",
+            })
+            continue
+        if any(score < 1 or score > 10 for score in scores.values()):
+            rejected.append({
+                "article_id": article_id, "source": article["source"], "title": article["title"],
+                "scores": scores, "reason": "Editorial scores must be between 1 and 10.",
+            })
+            continue
+        category = clean(post.get("category"))
+        if category not in ALLOWED_CATEGORIES:
+            rejected.append({
+                "article_id": article_id, "source": article["source"], "title": article["title"],
+                "scores": scores, "reason": "Category was not one of the allowed labels.",
+            })
+            continue
         reason = clean(post.get("why_selected"))[:180]
         thresholds = []
         if scores["relevance_score"] < RELEVANCE_MIN:
@@ -573,7 +565,7 @@ def generate_drafts(candidates: list[dict], max_posts: int = 3) -> tuple[list[di
             "source_title": article["title"],
             "published_at_utc": article["published_at_utc"],
             "source_url": article["url"],
-            "category": clean(post.get("category")),
+            "category": category,
             "scores": scores,
             "angle": clean(post.get("angle"))[:140],
             "why_selected": reason,
