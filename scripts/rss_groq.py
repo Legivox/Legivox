@@ -326,7 +326,10 @@ def generate_drafts(candidates: list[dict], max_posts: int = 3) -> tuple[list[di
         "from other companies unless the excerpt supports that. Keep causal language proportionate: avoid "
         "claims that an actor will force, mandate, or require an outcome unless the excerpt supports it. "
         "Do not add downstream mechanisms such as DLC, subscriptions, or revenue/pricing changes unless "
-        "the excerpt mentions them. For each post, provide evidence_quote as a verbatim, contiguous excerpt "
+        "the excerpt mentions them. When a story only says that a product changed its default model/provider, "
+        "discuss the default and user choice; do not claim that developers must retrain integrations or that "
+        "cost, latency, or performance changes unless the excerpt states this. For each post, provide "
+        "evidence_quote as a verbatim, contiguous excerpt "
         "between 20 and 100 characters copied from that candidate's title or summary; choose a phrase that "
         "supports the post's central factual premise, not a generic phrase. If the story cannot support "
         "the premise, select another story. The local validator checks the quote, known model/version "
@@ -471,6 +474,11 @@ def generate_drafts(candidates: list[dict], max_posts: int = 3) -> tuple[list[di
             (r"\bsubscriptions?\b", "subscription"),
             (r"\brevenue models?\b", "revenue model"),
             (r"\bpricing plans?\b", "pricing plan"),
+            (r"\b(?:re[- ]?train\w*|fine[- ]?tun\w*)\b", "model-training detail"),
+            (r"\bintegrations?\b", "integration detail"),
+            (r"\blatency\b", "latency implication"),
+            (r"\b(?:costs?|pricing|prices?)\b", "cost/pricing implication"),
+            (r"\b(?:must|will have to|has to|have to)\b", "uncautious necessity claim"),
             (r"\bpermanent rights\b", "permanent rights"),
             (r"\b(?:single[- ]vendor|vendor lock[- ]in|AI stacks?)\b", "single-vendor AI stack"),
             (r"\b(?:industry[- ]wide|trend toward|new standard|new era|raising expectations for other labs|raises expectations for other labs)\b", "industry-wide inference"),
