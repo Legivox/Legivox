@@ -607,6 +607,7 @@ def write_outputs(
         "generated_at_ist": now,
         "model": MODEL,
         "dry_run": prefix == "rss-groq-dry-run",
+        "slot_plan_mode": prefix == "rss-groq-latest",
         "posted_to_x": False,
         "feeds": diagnostics,
         "candidate_count": len(candidates),
@@ -621,6 +622,7 @@ def write_outputs(
         "notes": [
             "Uses RSS metadata and excerpts only; article pages were not scraped.",
             "This script does not publish to X. A separate workflow step is required for posting.",
+            "In single-slot mode, the highest-scoring locally accepted draft is selected from the batch; only a separate publisher step can publish it.",
             "Review source articles before publication; RSS excerpts may omit qualifications.",
             "Every accepted draft includes a source quote validated as an exact substring of its title or excerpt.",
             "The source-quote and model/version checks reduce unsupported details but do not prove every sentence is factually correct.",
@@ -629,7 +631,7 @@ def write_outputs(
     }
     OUT.mkdir(parents=True, exist_ok=True)
     json_path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    mode_label = "DRY RUN ONLY" if prefix == "rss-groq-dry-run" else "ONE-POST PLAN"
+    mode_label = "DRY RUN ONLY" if prefix == "rss-groq-dry-run" else "SINGLE-SLOT CANDIDATE REVIEW"
     lines = [
         "# Legivox RSS + Groq editorial preview", "",
         f"- Generated: {now}", f"- Model: {MODEL}",
@@ -765,19 +767,21 @@ def main(argv: list[str] | None = None) -> int:
 
     try:
         candidates, diagnostics = collect_candidates()
-        max_posts = 1 if args.prepare_single_post else 3
-        drafts, rejected = generate_drafts(candidates, max_posts=max_posts)
+        # Review a small batch even for a single slot. Apply every local check, then use
+        # the highest-scoring accepted draft instead of skipping because one model choice failed.
+        drafts, rejected = generate_drafts(candidates, max_posts=3)
         prefix = "rss-groq-latest" if args.prepare_single_post else "rss-groq-dry-run"
         md_path, json_path = write_outputs(candidates, diagnostics, drafts, rejected, prefix=prefix)
         if args.prepare_single_post:
-            if len(drafts) != 1:
+            if not drafts:
                 invalidate_todays_plan()
                 print(
-                    f"Quality gate produced {len(drafts)} passing posts; exactly one is required for slot {args.slot}. "
+                    f"Quality gate produced no passing posts for slot {args.slot}. "
                     "This slot will be skipped rather than publishing weak content.",
                     file=sys.stderr,
                 )
                 return 2
+            # generate_drafts already sorts passing candidates by combined editorial score.
             write_single_post_plan(drafts[0], args.slot)
     except Exception as exc:
         if args.prepare_single_post:
@@ -790,8 +794,12 @@ def main(argv: list[str] | None = None) -> int:
     print(f"Preview: {md_path.relative_to(ROOT)}")
     print(f"JSON audit: {json_path.relative_to(ROOT)}")
     if args.prepare_single_post:
-        print(f"Prepared one post for slot {args.slot}; the separate publisher must still run.")
-    for index, draft in enumerate(drafts, 1):
+        print(
+            f"Prepared one post for slot {args.slot} from {len(drafts)} passing candidate(s); "
+            "the separate publisher must still run."
+        )
+    printable_drafts = drafts[:1] if args.prepare_single_post else drafts
+    for index, draft in enumerate(printable_drafts, 1):
         print(f'\nDRAFT {index} [{draft["source"]}] {draft["source_title"]}')
         print(draft["text_with_source"])
         print(
