@@ -3,9 +3,8 @@ name: Legivox scheduled X publishing
 on:
   workflow_dispatch:
   schedule:
-    - cron: '30 2 * * *'
+    # Once daily at 14:00 IST. Review quality before increasing cadence.
     - cron: '30 8 * * *'
-    - cron: '30 14 * * *'
 
 permissions:
   contents: write
@@ -46,6 +45,6 @@ jobs:
             exit 0
           fi
           git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git config user.email '41898282+users.noreply.github.com'
           git commit -m 'Update Legivox publishing state'
           git push
