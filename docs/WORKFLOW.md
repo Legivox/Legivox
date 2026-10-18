@@ -1,19 +1,20 @@
-# Workflow notes
+# Legivox publishing workflow
 
-## What runs automatically
-GitHub Actions runs scripts/build_queue.py three times daily. It rotates between manually maintained idea records, writes output/content-queue.md, updates output/queue-state.json, and commits the output. It uses only Python's standard library and does not access X.
+## Scheduled execution
+The GitHub Actions workflow runs one publish attempt at 08:00, 14:00 and 20:00 IST. GitHub Actions uses UTC schedule values and can delay scheduled starts. It can also disable scheduled workflows in public repositories after 60 days without repository activity.
 
-## What it does not do
-- It does not perform live web research or verify market demand.
-- It does not publish, reply, like, repost, follow, or send DMs.
-- It does not store X session cookies or credentials.
-- Scheduled jobs are not guaranteed to start at the exact minute.
+## Required secret
+Set repository Actions secret `X_SESSION_COOKIE` to the raw X cookie value for @Legivox. Include `auth_token`, `ct0`, and `twid`; do not include the literal `Cookie:` header label. The publisher verifies the session user ID against the @Legivox profile ID before posting. Never put the cookie in Git or chat.
 
-## Add researched ideas
-Edit data/ideas.json. Each record needs an ID, niche, problem, evidence, and solution hypothesis. Only enter evidence that has actually been reviewed. Starter ideas are hypotheses, not validated market findings.
+## Exact behaviour
+1. Install pinned `tweetkit-x==0.3.1` in the temporary hosted runner.
+2. Verify the session is for @Legivox.
+3. Read the latest 100 non-reply posts to check for exact duplicates.
+4. Choose the next unused idea/template combination, post once and append an audit record.
+5. Commit `output/` state even when the publishing step fails, where any state changes were produced.
 
-## Credential hygiene
-Keep this repository free of secrets. If an external service is later added, store credentials in repository Actions secrets and never print them to logs.
+## Failure handling
+Unauthenticated sessions, account mismatches, timeline-read failures and confirmed post errors stop the job. Uncertain post requests are not retried automatically. Check the profile before manually rerunning a failed job to avoid duplicate publication.
 
-## Verify the workflow
-Open the repository's Actions tab and run 'Legivox content queue' with Run workflow. Inspect the run and generated output. Scheduled starts may be delayed by GitHub.
+## Risk
+`tweetkit-x` uses internal X website endpoints. X's current automation rules prohibit website scripting and mention possible permanent suspension. This implementation does not use proxies or attempt to evade rate limits, and does not automate social interactions.
