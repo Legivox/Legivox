@@ -23,6 +23,7 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "output"
 MODEL = os.getenv("GROQ_MODEL", "openai/gpt-oss-20b")
 MAX_AGE = timedelta(days=7)
+MAX_CANDIDATES = 12
 USER_AGENT = "LegivoxRSSResearch/1.0 (+https://github.com/Legivox/Legivox)"
 IST = ZoneInfo("Asia/Kolkata")
 RELEVANCE_MIN = 7
@@ -155,7 +156,7 @@ def fetch_feed(source: str, feed_url: str, now: datetime) -> tuple[list[dict], s
         url = normalize_url(child_value(node, {"link"}))
         if not title or not url.startswith(("https://", "http://")):
             continue
-        summary = summary_value(node)[:700]
+        summary = summary_value(node)[:400]
         published = parse_date(child_value(node, {"pubdate", "published", "updated", "date", "issued"}))
         if published and (published > now + timedelta(hours=24) or now - published > MAX_AGE):
             continue
@@ -212,7 +213,7 @@ def collect_candidates() -> tuple[list[dict], list[dict]]:
     rows = sorted(
         unique.values(),
         key=lambda row: row["age_hours"] if row["age_hours"] is not None else 99999,
-    )[:30]
+    )[:MAX_CANDIDATES]
     if len(rows) < 3:
         detail = "; ".join(
             f'{row["source"]}: {row["articles_kept"]} raw items, {row["error"] or "OK"}'
