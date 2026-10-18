@@ -2,6 +2,12 @@ name: Legivox RSS + Groq dry run
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/groq-rss-dry-run.yml"
+      - "scripts/rss_groq.py"
 
 permissions:
   contents: write
@@ -27,11 +33,38 @@ jobs:
         run: python -m pip install --disable-pip-version-check 'openai>=1.66.0,<3'
       - name: Validate script syntax
         run: python -m py_compile scripts/rss_groq.py scripts/rss_groq_dry_run.py
-      - name: Fetch RSS and generate drafts (no X publishing)
+      - name: Exercise single-slot preparation (no X publishing)
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           GROQ_MODEL: openai/gpt-oss-20b
-        run: python scripts/rss_groq_dry_run.py
+        run: |
+          if python scripts/rss_groq.py --prepare-single-post --slot 0; then
+            python - <<'PY'
+          import json
+          from datetime import datetime
+          from pathlib import Path
+          from zoneinfo import ZoneInfo
+
+          plan = json.loads(Path("output/daily-plan.json").read_text(encoding="utf-8"))
+          today = datetime.now(ZoneInfo("Asia/Kolkata")).date().isoformat()
+          assert plan.get("date_ist") == today, "plan date is not today in IST"
+          assert plan.get("research_source") == "RSS feeds + Groq editorial ranking", "unexpected plan source"
+          posts = plan.get("posts") or []
+          assert len(posts) == 1, f"expected exactly one post, got {len(posts)}"
+          assert posts[0].get("slot") == 0, "generated plan does not match slot 0"
+          text = str(posts[0].get("text") or "").strip()
+          assert 1 <= len(text) <= 280, "post text is empty or exceeds 280 characters"
+          assert "https://" in text, "post does not include a source URL"
+          print("Single-slot plan validated: current date, RSS/Groq source, one post, slot 0, URL and length.")
+          PY
+          else
+            status=$?
+            if [ "$status" -eq 2 ]; then
+              echo 'No draft passed the local quality gate. Safe-skip behavior verified; no X publisher was invoked.'
+              exit 0
+            fi
+            exit "$status"
+          fi
       - name: Commit dry-run preview
         if: success()
         run: |
