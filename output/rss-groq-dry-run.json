@@ -1,5 +1,5 @@
 {
-  "generated_at_ist": "2026-10-18T23:44:34+05:30",
+  "generated_at_ist": "2026-10-18T23:45:41+05:30",
   "model": "openai/gpt-oss-20b",
   "dry_run": true,
   "posted_to_x": false,
@@ -76,7 +76,7 @@
       "title": "Lenovo’s fast, comfy SteamOS handheld is hundreds off",
       "summary": "The Legion Go S with SteamOS is a pretty solid alternative to the $789 Steam Deck OLED. It runs identical software, but ships in a design with two-stage triggers, a bigger eight-inch IPS screen (1080p and up to 120Hz versus 800p and 90Hz in the Deck OLED), and it’s got double the RAM and storage (32GB and 1TB, respectively), not to mention a slightly faster processor in the Ryzen Z1 Extreme. At $9",
       "published_at_utc": "2026-10-18T14:53:52+00:00",
-      "age_hours": 3.3,
+      "age_hours": 3.4,
       "url": "https://www.theverge.com/gadgets/1013436/lenovo-legion-go-s-steamos-handheld-deal-sale",
       "feed_url": "https://www.theverge.com/rss/index.xml",
       "article_id": "S05"
@@ -116,7 +116,7 @@
       "title": "Replit makes OpenAI its default over Anthropic, CEO says",
       "summary": "Over the weekend, Masad clarified that OpenAI would replace Anthropic as its default model provider. Claude will still be available to customers on the platform.",
       "published_at_utc": "2026-10-17T18:48:08+00:00",
-      "age_hours": 23.4,
+      "age_hours": 23.5,
       "url": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
       "feed_url": "https://techcrunch.com/feed/",
       "article_id": "S09"
@@ -146,65 +146,44 @@
       "title": "Why BioWare's Neverwinter Nights still has thousands of active players",
       "summary": "Neverwinter Nights was made by the studio that produced seminal RPGs Baldur's Gate , Star Wars: Knights of the Old Republic , Mass Effect , and Dragon Age . It sold well and was critically acclaimed at launch. Yet, somehow, it has not been canonized in most gamers' minds over the decades the same way the games that came before and after it were. Nonetheless, more than two decades later, it still h",
       "published_at_utc": "2026-10-17T11:00:21+00:00",
-      "age_hours": 31.2,
+      "age_hours": 31.3,
       "url": "https://arstechnica.com/gaming/2026/10/why-biowares-neverwinter-nights-still-has-thousands-of-active-players/",
       "feed_url": "https://feeds.arstechnica.com/arstechnica/index",
       "article_id": "S12"
     }
   ],
-  "drafts": [
-    {
-      "article_id": "S03",
-      "source": "Ars Technica",
-      "source_title": "Anthropic gives outside AI watchdog “employee-like” access",
-      "published_at_utc": "2026-10-18T16:25:19+00:00",
-      "source_url": "https://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/",
-      "category": "Platform policy",
-      "scores": {
-        "relevance_score": 8,
-        "significance_score": 8,
-        "originality_score": 8
-      },
-      "angle": "External watchdogs with employee‑like access could redefine AI safety audits and transparency standards.",
-      "why_selected": "Anthropic’s move provides a concrete example of increased oversight that could set industry precedents for model evaluation.",
-      "evidence_quote": "Anthropic has granted external evaluators “employee-like access” to assess the risks of its models",
-      "post_text": "Granting employees‑like access to third‑party auditors could set a new benchmark for model safety checks and transparency in AI labs.",
-      "text_with_source": "Granting employees‑like access to third‑party auditors could set a new benchmark for model safety checks and transparency in AI labs.\n\nhttps://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/",
-      "character_count_with_url": 227
-    },
-    {
-      "article_id": "S09",
-      "source": "TechCrunch",
-      "source_title": "Replit makes OpenAI its default over Anthropic, CEO says",
-      "published_at_utc": "2026-10-17T18:48:08+00:00",
-      "source_url": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
-      "category": "Developer tools",
-      "scores": {
-        "relevance_score": 8,
-        "significance_score": 7,
-        "originality_score": 8
-      },
-      "angle": "Replit’s default shift nudges new users toward OpenAI while keeping Claude available, illustrating how defaults shape experimentation.",
-      "why_selected": "The default provider change directly affects developers’ model choice and experimentation behavior on a popular platform.",
-      "evidence_quote": "OpenAI would replace Anthropic as its default model provider",
-      "post_text": "Replit’s switch to OpenAI as the default model nudges new users toward ChatGPT‑style outputs, yet Claude remains an option for those valuing alternative capabilities.",
-      "text_with_source": "Replit’s switch to OpenAI as the default model nudges new users toward ChatGPT‑style outputs, yet Claude remains an option for those valuing alternative capabilities.\n\nhttps://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
-      "character_count_with_url": 254
-    }
-  ],
+  "drafts": [],
   "rejected_model_selections": [
     {
       "article_id": "S02",
       "source": "The Verge",
       "title": "Video game ownership bill introduced in Congress",
       "scores": {
-        "relevance_score": 9,
-        "significance_score": 9,
+        "relevance_score": 8,
+        "significance_score": 7,
         "originality_score": 8
       },
-      "proposed_post_text": "A new FTC rule would enforce true ownership for in‑game purchases, forcing devs to drop server‑locked licensing or redesign revenue models.",
-      "evidence_quote": "direct the Federal Trade Commission to establish regulations",
-      "reason": "Unsupported specific detail or overclaim (revenue model) is absent from the source excerpt."
+      "proposed_post_text": "If the Power To The Players Act passes, studios may have to shift from subscription/hosted models to full ownership, changing revenue and DRM strategies.",
+      "evidence_quote": "guarantee consumers ownership of a game when they pay for it",
+      "reason": "Unsupported specific detail or overclaim (subscription) is absent from the source excerpt."
+    },
+    {
+      "article_id": "S03",
+      "source": "Ars Technica",
+      "title": "Anthropic gives outside AI watchdog “employee-like” access",
+      "evidence_quote": "employee-like access to assess the risks of its models",
+      "reason": "Evidence quote must be 20–100 characters and an exact excerpt from the supplied title or summary."
+    },
+    {
+      "article_id": "S09",
+      "source": "TechCrunch",
+      "title": "Replit makes OpenAI its default over Anthropic, CEO says",
+      "scores": {
+        "relevance_score": 9,
+        "significance_score": 8,
+        "originality_score": 8
+      },
+      "reason": "Acronym 'GPT' is not present or expanded in the source excerpt."
     }
   ],
   "quality_thresholds": {
