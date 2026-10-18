@@ -1,24 +1,7 @@
-# Legivox content queue
+# Legivox daily content plan
 
-Generated: 2026-10-18 13:51 UTC
+The scheduled planning workflow will generate this file at 06:00 IST using recent public Hacker News discussion signals and the curated post library.
 
-> Automated posting is enabled for this workflow. Starter records are hypotheses, not verified market research.
+The daily plan contains three distinct topics, their selected copy, recent source links and status. The publishing runs are scheduled for 08:05, 09:20 and 10:35 IST.
 
-## Latest draft
-
-A problem to test in independent digital creators: Feedback and feature requests are scattered across channels. Product hypothesis: a lightweight inbox that groups repeated requests into a prioritized backlog What evidence would show people will pay for this?
-
-## Research record
-
-- Niche: independent digital creators
-- Problem: Feedback and feature requests are scattered across channels.
-- Evidence status: Unverified hypothesis. Research complaints and willingness to pay before treating this as demand.
-- Solution hypothesis: a lightweight inbox that groups repeated requests into a prioritized backlog
-- Idea ID: creator-feedback
-- Result: Published successfully
-- Published URL: https://x.com/i/status/2111817327800885611
-
-## Review reminder
-
-This workflow posts a standalone message without replies, likes, follows, reposts, or DMs.
-The source records must be refreshed with researched and verified evidence before claims are made about market demand.
+Research signals indicate discussion activity only. They do not prove market demand. Images are attached only when a relevant CC0/public-domain candidate can be verified; otherwise the post remains text-only.
