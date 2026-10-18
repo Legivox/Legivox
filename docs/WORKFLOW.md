@@ -1,57 +1,62 @@
 # Legivox daily planning and publishing workflow
 
 ## Schedule (India Standard Time)
-- 06:00: fetch recent public Hacker News discussion signals, choose three topics, write today's plan, and prepare a manual-engagement shortlist from X search when the session can be verified.
-- 09:00: publish the morning post.
-- 13:00: publish the lunch-time post.
-- 19:00: publish the evening post.
 
-The publishing slots intentionally cover different dayparts. They are initial testing windows, not a guarantee of traffic. Compare impressions and meaningful engagement by slot after several weeks, then adjust.
+- 06:00: prepare the legacy curated research plan and engagement shortlist.
+- 09:00–10:00: morning RSS/Groq publication window.
+- 13:00–14:00: lunch RSS/Groq publication window.
+- 19:00–20:00: evening RSS/Groq publication window.
 
-GitHub Actions cron times are UTC. GitHub may delay scheduled runs. Manual workflow dispatch prepares a plan but does not publish immediately.
+For each publication window, the workflow chooses a random target no later than 45 minutes after the window opens. It waits until that target if it is still ahead. If the job starts late, it publishes as soon as practical while the window is still open. If the window has expired, the post is skipped instead of sent late. GitHub Actions can delay scheduled jobs, so the times are windows rather than precise guarantees.
 
-## Zero-cost research and content limits
-- Topic selection queries the public Hacker News Algolia Search API. It uses recent story matches, points and comment counts as weak discussion signals. This is not comprehensive market research and does not prove willingness to pay.
-- Post text comes from individually written entries in `data/ideas.json`; the script does not call a paid language-model API or turn research notes into public copy.
-- The library starts with 20 topics and 60 curated text variations. Used text hashes are tracked so copy is not intentionally recycled.
-- The engagement shortlist is for manual review. The workflow does not automate likes, replies, follows, or reposts.
+Manual workflow dispatch prepares the curated plan and does not immediately publish a post.
 
-## RSS + Groq dry run
-A separate manual-only workflow named **Legivox RSS + Groq dry run** tests a news-led draft pipeline without touching the X publisher.
-1. It fetches public RSS feeds from TechCrunch, The Verge, and Ars Technica.
-2. It keeps items published within the last seven days when feeds provide a usable publication date, removes duplicate URLs and sends up to 30 candidate items to Groq.
-3. Groq's OpenAI-compatible Responses API, model `openai/gpt-oss-20b`, selects three distinct stories and drafts original copy from the article title and feed excerpt.
-4. The script validates distinct source IDs, excludes URLs from the generated sentence, appends the source link, and checks the resulting plain character count.
-5. It saves `output/rss-groq-dry-run.md` and `output/rss-groq-dry-run.json`. No X cookie is read; no likes, reposts, replies, or posts are attempted.
+## Scheduled RSS + Groq publishing
 
-The source snippets are untrusted input and may be incomplete. Review each linked article to confirm claims before using a draft. RSS availability is not a popularity metric and the feed list can be expanded after the first preview looks good.
+At each of the three publishing slots:
 
-### Run the dry run
-1. In the GitHub repository, open **Actions**.
+1. The workflow fetches RSS metadata from TechCrunch, The Verge, and Ars Technica. It keeps recent stories, removes duplicate URLs, excludes very short excerpts and stories already used by Legivox recently, then sends up to 12 candidates to Groq.
+2. Groq's OpenAI-compatible JSON mode, using model `openai/gpt-oss-20b`, selects one story and drafts post copy.
+3. Local checks require a source quote matching the provided title/excerpt, supported editorial score ranges and allowed category labels. They also check text length, source-link character limit, headline similarity, proposed-policy wording, specific model/version names, and a set of common unsupported detail/overclaim patterns. These guards reduce common errors but are not a complete fact-check; the linked article should still be reviewed.
+4. Exactly one draft must pass. If zero or multiple drafts pass, the slot is skipped. If the API/feed pipeline errors, no post is attempted for that slot. The generator invalidates a same-day fallback plan on failure so the older curated plan cannot accidentally be published in its place.
+5. A validated one-post plan is passed to `scripts/publish_next.py`. The publisher verifies the session belongs to @Legivox, checks the plan date and slot, checks used hashes and recent timeline duplicates, and attempts one standalone post. RSS/Groq posts default to text-only rather than attaching an unrelated category image.
+6. The publisher records the result to `output/published.jsonl`, updates `output/queue-state.json`, and writes the daily plan/queue report. RSS source URLs are logged so the generator can avoid repeating those source stories for seven days.
+
+The legacy curated planner still exists for manual dispatch and its 06:00 plan. Scheduled 09:00, 13:00, and 19:00 slots no longer publish that curated plan directly; they prepare a fresh RSS/Groq post for the matching slot.
+
+## Dry-run preview
+
+The separate workflow **Legivox RSS + Groq dry run** is manual-only and does not load `X_SESSION_COOKIE` or publish anything to X. To run it:
+
+1. Open **Actions** in the repository.
 2. Select **Legivox RSS + Groq dry run**.
-3. Click **Run workflow**, keep the branch set to `main`, and confirm.
-4. Open the completed run. The generated preview is committed to the `output/` folder; open `output/rss-groq-dry-run.md` to review the drafts.
+3. Click **Run workflow** on the `main` branch.
+4. Inspect `output/rss-groq-dry-run.md` and `output/rss-groq-dry-run.json` in the completed run/repository.
 
-The repository Actions secret must be named `GROQ_API_KEY`. The workflow has no schedule and runs only when manually triggered. The script uses the Groq Responses API beta, so the first actual run is also the integration test.
+It fetches up to 12 candidate stories from RSS and produces up to three drafts for preview. It records which posts passed and which were rejected by local filters. A low or zero draft count is a valid outcome when current stories do not meet the quality gate.
 
-## Images
-The publisher searches Wikimedia Commons for relevant image files marked CC0 or public domain, downloads a bounded-size thumbnail, and attaches it when a match passes the checks. The image description, creator/credit, license and source-page URL are stored in the post audit log and image alt text. If no suitable image is found or the search fails, the post goes out text-only rather than using a random, unclear-license asset.
+## Zero-cost research limits
 
-Commons metadata can be incomplete or inaccurate; check the source page when using any reused image, and do not assume the automated metadata check replaces a rights review.
+- The legacy curated planner uses the public Hacker News Algolia endpoint as a lightweight discussion signal. It is not comprehensive market research and does not prove willingness to pay.
+- The RSS/Groq pipeline uses public RSS metadata and excerpts, not full article-page scraping. Feed excerpts can omit key qualifications.
+- Groq availability and throughput depend on the current account/model quota. The repository does not intentionally configure a paid model API; check the provider's current limits before relying on frequent runs.
+- Editorial scores are model estimates, not objective measurements of story importance or popularity.
+- When the quality gate rejects a story, the workflow skips that slot rather than lowering thresholds to meet the posting quota.
+
+## Exact publishing safeguards
+
+1. The session cookie must be available as repository secret `X_SESSION_COOKIE`, and the publisher verifies it belongs to @Legivox before posting.
+2. The daily plan must match today's date in Asia/Kolkata and its slot must match the scheduled slot.
+3. RSS/Groq plans must contain exactly one post with the same slot number; the old curated plan must contain three posts.
+4. Used text hashes and exact matches among recent posts are skipped.
+5. Posting exceptions are not automatically retried, because an uncertain request may already have reached X. Check the profile before manually rerunning a failed slot.
+6. If no draft passes, the slot is skipped. If a randomized target is outside the publishing window, the slot is skipped.
 
 ## Required secrets
-Set repository Actions secret `X_SESSION_COOKIE` to the raw X cookie value for @Legivox. Include `auth_token`, `ct0`, and `twid`; do not include the literal `Cookie:` header label. The publisher verifies the session against the public @Legivox profile before writing. Never put the cookie in Git or chat.
 
-Set `GROQ_API_KEY` for the separate RSS/Groq dry-run workflow. Do not commit or paste the key into source files.
-
-## Exact publishing behaviour
-1. Verify that the authenticated session belongs to @Legivox.
-2. Read today's prepared plan and the recent 100 non-reply posts.
-3. Skip a reused draft hash or exact recent duplicate.
-4. Try a topic-related CC0/public-domain image, set alt text, and post one standalone message.
-5. Append the text, post URL, research links and any image-source/license data to `output/published.jsonl`, then update state.
-
-Uncertain post requests are not retried automatically. Check the X profile before rerunning a failed slot.
+- `X_SESSION_COOKIE`: the raw cookie value for @Legivox. Treat it like a password and never commit it or paste it into chat.
+- `GROQ_API_KEY`: the Groq key used to generate source-led drafts in both the manual dry run and scheduled publishing workflow.
 
 ## Account risk
-The `tweetkit-x` publisher uses internal X website endpoints rather than the official API. X's current automation policy warns that scripting the website may lead to permanent suspension. This workflow is not represented as policy-compliant. It does not try to evade rate limits or disguise automated likes/reposts.
+
+The publisher uses `tweetkit-x`, which replays X website requests with a session cookie instead of using the official API. X warns that website scripting may lead to permanent suspension. This project does not claim that method is compliant. It does not automate likes, replies, follows, or reposts.
