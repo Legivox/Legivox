@@ -52,6 +52,12 @@ STOP_WORDS = {
     "would", "your", "you", "they", "people", "small", "independent", "digital",
     "product", "products", "tool", "tools", "work", "working", "project", "projects",
     "creator", "creators", "software", "business", "simple", "lightweight", "focused",
+    "for", "one", "use", "uses", "via", "how", "why", "who", "was", "were",
+    "has", "had", "its", "all", "any", "can", "not", "get", "got", "will",
+    "did", "app", "apps", "startup", "startups", "idea", "ideas", "market",
+    "launch", "job", "service", "services", "team", "teams", "user", "users",
+    "way", "ways", "day", "days", "now", "new", "old", "well", "good", "bad",
+    "better", "first", "time", "times", "person", "create", "build", "built", "made",
 }
 SYNONYMS = {
     "feedback": {"review", "reviews", "comment", "comments", "suggestion", "suggestions", "request", "requests"},
@@ -86,7 +92,8 @@ def expand_terms(tokens: set[str]) -> set[str]:
 def search_signal(idea: dict, since_epoch: int) -> dict:
     query = clean(idea.get("research_query") or idea.get("niche"))
     issue_terms = meaningful_tokens(idea.get("problem", "") + " " + idea.get("solution_hypothesis", ""))
-    focus_terms = expand_terms(issue_terms | meaningful_tokens(query))
+    # Query terms retrieve candidates; issue terms decide whether the result is actually relevant.
+    focus_terms = expand_terms(issue_terms)
     params = urllib.parse.urlencode({
         "query": query,
         "tags": "story",
