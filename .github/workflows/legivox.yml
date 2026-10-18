@@ -2,12 +2,6 @@ name: Legivox daily research and X publishing
 
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - '.github/workflows/legivox.yml'
-      - 'scripts/**'
-      - 'data/ideas.json'
   schedule:
     # Plan at 06:00 IST, then publish at 09:00, 13:00 and 19:00 IST.
     - cron: '30 0 * * *'
@@ -42,7 +36,7 @@ jobs:
           python -m pip install --disable-pip-version-check
           'git+https://github.com/nsozturk/tweetkit-x.git@d42503a936f80eb0af2e9856a0fbd392cc4a750c'
       - name: Prepare daily research plan
-        if: github.event_name == 'workflow_dispatch' || github.event_name == 'push' || github.event.schedule == '30 0 * * *'
+        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '30 0 * * *'
         env:
           TWEETKIT_COOKIE: ${{ secrets.X_SESSION_COOKIE }}
         run: python scripts/prepare_daily_plan.py
