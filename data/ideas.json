@@ -1,30 +1,142 @@
 [
   {
-    "id": "idea-001",
-    "niche": "Independent digital creators",
-    "problem": "Creators lose track of product feedback, feature requests, and repeated customer questions across scattered channels.",
-    "evidence": "Hypothesis only; collect public examples and interview or survey evidence before claiming demand.",
-    "solution_hypothesis": "A lightweight feedback inbox that groups repeated requests and exports a prioritized backlog."
+    "id": "creator-feedback",
+    "niche": "independent digital creators",
+    "problem": "Feedback and feature requests are scattered across channels.",
+    "evidence": "Unverified hypothesis. Research complaints and willingness to pay before treating this as demand.",
+    "solution_hypothesis": "a lightweight inbox that groups repeated requests into a prioritized backlog"
   },
   {
-    "id": "idea-002",
-    "niche": "Freelance developers",
-    "problem": "Small projects can become difficult to price when scope changes and assumptions are undocumented.",
-    "evidence": "Hypothesis only; validate against public discussions and competing paid templates before building.",
-    "solution_hypothesis": "A project scoping and change-request workbook with estimate assumptions and a sign-off checklist."
+    "id": "freelancer-scope",
+    "niche": "freelance developers",
+    "problem": "Scope changes and assumptions can quietly erode project margins.",
+    "evidence": "Unverified hypothesis. Validate with public discussions and paid competitor products.",
+    "solution_hypothesis": "a project scoping workbook with explicit assumptions and change approvals"
   },
   {
-    "id": "idea-003",
-    "niche": "Small online sellers",
-    "problem": "Low-volume sellers may manage stock, reorder levels, fees, and margins in disconnected spreadsheets.",
-    "evidence": "Hypothesis only; verify competitor offerings, customer complaints, and willingness to pay.",
-    "solution_hypothesis": "An inventory and reorder workbook with SKU-level margin calculations and low-stock alerts."
+    "id": "seller-stock",
+    "niche": "small online sellers",
+    "problem": "Stock, fees, reorder levels and margins often live in disconnected sheets.",
+    "evidence": "Unverified hypothesis. Check competing templates and seller complaints.",
+    "solution_hypothesis": "an inventory workbook that combines reorder signals with per-item margins"
   },
   {
-    "id": "idea-004",
-    "niche": "Job seekers",
-    "problem": "Applicants can lose track of application stages, follow-ups, interview preparation, and role-specific notes.",
-    "evidence": "Hypothesis only; validate through existing tools, public complaints, and interviews.",
-    "solution_hypothesis": "A job search tracker with interview-preparation checklists and progress summaries."
+    "id": "job-search",
+    "niche": "job seekers",
+    "problem": "Follow-ups, interview notes and application stages get lost across tabs.",
+    "evidence": "Unverified hypothesis. Compare job trackers and user complaints before building.",
+    "solution_hypothesis": "a focused job-search tracker with role-specific notes and follow-up reminders"
+  },
+  {
+    "id": "newsletter",
+    "niche": "small newsletter writers",
+    "problem": "Good reader questions and story ideas disappear between issues.",
+    "evidence": "Unverified hypothesis. Look for repeated creator workflows and existing paid alternatives.",
+    "solution_hypothesis": "an editorial backlog that turns reader feedback into tagged story candidates"
+  },
+  {
+    "id": "local-services",
+    "niche": "independent local service businesses",
+    "problem": "Leads, quotes and follow-ups are easy to forget when the owner does everything.",
+    "evidence": "Unverified hypothesis. Interview operators and inspect existing low-cost tools.",
+    "solution_hypothesis": "a simple quote and follow-up tracker designed for one-person businesses"
+  },
+  {
+    "id": "student-projects",
+    "niche": "university students",
+    "problem": "Group-project decisions and task ownership can vanish in chat histories.",
+    "evidence": "Unverified hypothesis. Validate with students and compare existing group-work apps.",
+    "solution_hypothesis": "a lightweight decision log and responsibility tracker for small teams"
+  },
+  {
+    "id": "event-organizers",
+    "niche": "small event organizers",
+    "problem": "Vendor quotes, deadlines and last-minute changes are spread across documents.",
+    "evidence": "Unverified hypothesis. Research organizer forums and paid planning templates.",
+    "solution_hypothesis": "an event operations workbook that connects budgets, vendors and deadlines"
+  },
+  {
+    "id": "indie-launch",
+    "niche": "indie software builders",
+    "problem": "Launch feedback arrives before makers have a repeatable way to categorize it.",
+    "evidence": "Unverified hypothesis. Review launch discussions and creator tools before claiming demand.",
+    "solution_hypothesis": "a launch feedback triage board with tags for bugs, requests and objections"
+  },
+  {
+    "id": "consultants",
+    "niche": "independent consultants",
+    "problem": "Discovery calls produce notes that rarely become a clear action plan.",
+    "evidence": "Unverified hypothesis. Validate against consulting workflows and paid templates.",
+    "solution_hypothesis": "a discovery-call worksheet that turns client goals into measurable deliverables"
+  },
+  {
+    "id": "content-repurpose",
+    "niche": "solo content creators",
+    "problem": "Useful long-form ideas are difficult to adapt consistently across formats.",
+    "evidence": "Unverified hypothesis. Research creator feedback and the crowded repurposing-tool market.",
+    "solution_hypothesis": "a structured repurposing planner that maps one core idea to several distinct formats"
+  },
+  {
+    "id": "micro-saas-support",
+    "niche": "small SaaS founders",
+    "problem": "Repeated support questions can expose product friction but are hard to summarize.",
+    "evidence": "Unverified hypothesis. Explore founder forums and lightweight support products.",
+    "solution_hypothesis": "a support-theme tracker that groups recurring questions into documentation tasks"
+  },
+  {
+    "id": "digital-assets",
+    "niche": "digital-product sellers",
+    "problem": "Product updates, file versions and customer-facing change notes can drift apart.",
+    "evidence": "Unverified hypothesis. Check how existing marketplaces and sellers handle updates.",
+    "solution_hypothesis": "a version and release-note checklist for downloadable products"
+  },
+  {
+    "id": "home-inventory",
+    "niche": "renters and frequent movers",
+    "problem": "Boxes and household items become difficult to locate after moving.",
+    "evidence": "Unverified hypothesis. Research moving checklists, inventory apps and user complaints.",
+    "solution_hypothesis": "a printable and searchable moving inventory with box labels and room mapping"
+  },
+  {
+    "id": "career-switch",
+    "niche": "career changers",
+    "problem": "Learning plans often track hours spent rather than evidence of practical skill.",
+    "evidence": "Unverified hypothesis. Compare career trackers and portfolio-based learning methods.",
+    "solution_hypothesis": "a project-evidence tracker linking skills to demos, code and interview stories"
+  },
+  {
+    "id": "small-agencies",
+    "niche": "small creative agencies",
+    "problem": "Client approvals and pending assets block delivery without a visible reason.",
+    "evidence": "Unverified hypothesis. Validate through agency workflows and competitor reviews.",
+    "solution_hypothesis": "a client handoff checklist that highlights missing approvals and assets"
+  },
+  {
+    "id": "market-research",
+    "niche": "solo founders",
+    "problem": "Market notes, competitor examples and assumptions become mixed together.",
+    "evidence": "Unverified hypothesis. Inspect founder research workflows before building.",
+    "solution_hypothesis": "a research ledger that separates sourced observations from assumptions and decisions"
+  },
+  {
+    "id": "course-creators",
+    "niche": "independent course creators",
+    "problem": "Learner questions can reveal confusing lessons but rarely make it into the next revision.",
+    "evidence": "Unverified hypothesis. Research educator communities and course feedback tools.",
+    "solution_hypothesis": "a lesson feedback tracker that connects learner confusion to specific course sections"
+  },
+  {
+    "id": "makers-pricing",
+    "niche": "handmade product sellers",
+    "problem": "Pricing can omit packaging, marketplace fees and time spent making each item.",
+    "evidence": "Unverified hypothesis. Compare existing costing calculators and seller discussions.",
+    "solution_hypothesis": "a costing sheet that shows contribution margin after fees, materials and labour"
+  },
+  {
+    "id": "personal-knowledge",
+    "niche": "people managing many side projects",
+    "problem": "Small commitments and next actions get buried across notes and task apps.",
+    "evidence": "Unverified hypothesis. Validate against established task tools and public complaints.",
+    "solution_hypothesis": "a weekly side-project review sheet that limits active work and captures next actions"
   }
 ]
