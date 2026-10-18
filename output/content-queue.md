@@ -1,28 +1,10 @@
 # Legivox daily content plan
 
-Prepared: 2026-10-18 20:38:15 IST
+Prepared: 2026-10-18 20:40:19 IST
 
 > Topics are prioritised using recent public Hacker News discussion signals plus a rotation fallback. These signals are not proof of willingness to pay. Copy is selected from the reviewed draft library, not generated from research labels.
 
-## Post 1 · creator-feedback
-
-**Planned copy**
-
-A creator can get the same feature request in a DM, a comment, an email and a community thread. The hard part isn't collecting feedback. It's noticing what's being asked for repeatedly. How do you track that today?
-
-- Topic: independent digital creators
-- Research query: creator feedback
-- Recent discussion signal score: 49.114
-
-**Recent public discussion signals**
-
-- [Ask HN: Why people keep posting AI-generated projects around the Internet?](https://news.ycombinator.com/item?id=50139584) · 4 points · 14 comments
-- [Show HN: MirrorMD – An AI second opinion from a facial cosmetic surgeon](https://news.ycombinator.com/item?id=50103670) · 10 points · 9 comments
-- [Show HN: Rhyven – A marketplace for agents](https://news.ycombinator.com/item?id=50001374) · 2 points · 1 comments
-
-- Status: planned
-
-## Post 2 · indie-launch
+## Post 1 · indie-launch
 
 **Planned copy**
 
@@ -40,6 +22,22 @@ A launch can produce dozens of comments and still leave a maker unsure what to f
 
 - Status: planned
 
+## Post 2 · job-search
+
+**Planned copy**
+
+Job searching can turn into a spreadsheet graveyard: application status in one tab, follow-ups in another, interview notes in your inbox. What part of staying organised is still painful, even with existing trackers?
+
+- Topic: job seekers
+- Research query: job search hiring
+- Recent discussion signal score: 10.473
+
+**Recent public discussion signals**
+
+- [Ask HN: What job boards are good these days?](https://news.ycombinator.com/item?id=49816567) · 24 points · 21 comments
+
+- Status: planned
+
 ## Post 3 · local-services
 
 **Planned copy**
@@ -48,13 +46,11 @@ For a one-person service business, the job isn't over when the quote is sent. Re
 
 - Topic: independent local service businesses
 - Research query: small business leads
-- Recent discussion signal score: 21.552
+- Recent discussion signal score: 7.282
 
 **Recent public discussion signals**
 
 - [Can an AI learn what you like, rather than just what you've searched for?](https://news.ycombinator.com/item?id=50017172) · 2 points · 3 comments
-- [Fractional Is Just a Racket](https://news.ycombinator.com/item?id=49912418) · 2 points · 1 comments
-- [Launch HN: Coverage Cat (YC S22) – Umbrella insurance via your personal agent](https://news.ycombinator.com/item?id=49804931) · 54 points · 32 comments
 
 - Status: planned
 

@@ -1,67 +1,9 @@
 {
   "date_ist": "2026-10-18",
-  "prepared_at_ist": "2026-10-18 20:38:15 IST",
+  "prepared_at_ist": "2026-10-18 20:40:19 IST",
   "research_window_days": 30,
   "research_source": "Hacker News Algolia Search API",
   "posts": [
-    {
-      "idea_id": "creator-feedback",
-      "niche": "independent digital creators",
-      "problem": "Feedback and feature requests are scattered across channels.",
-      "evidence": "Unverified hypothesis. Research complaints and willingness to pay before treating this as demand.",
-      "solution_hypothesis": "a lightweight inbox that groups repeated requests into a prioritized backlog",
-      "text": "A creator can get the same feature request in a DM, a comment, an email and a community thread. The hard part isn't collecting feedback. It's noticing what's being asked for repeatedly. How do you track that today?",
-      "text_hash": "4aa762dbbf29743b39688dda0d986d5f86c91512bc88a959bb3ee141545ffb08",
-      "image_query": "creative workspace",
-      "research": {
-        "query": "creator feedback",
-        "score": 49.114,
-        "hits": [
-          {
-            "title": "Ask HN: Why people keep posting AI-generated projects around the Internet?",
-            "url": "https://news.ycombinator.com/item?id=50139584",
-            "external_url": "",
-            "points": 4,
-            "comments": 14,
-            "created_at": "2026-10-18T10:00:32Z"
-          },
-          {
-            "title": "Show HN: MirrorMD – An AI second opinion from a facial cosmetic surgeon",
-            "url": "https://news.ycombinator.com/item?id=50103670",
-            "external_url": "https://mymirrormd.com/",
-            "points": 10,
-            "comments": 9,
-            "created_at": "2026-10-15T13:47:27Z"
-          },
-          {
-            "title": "Show HN: Rhyven – A marketplace for agents",
-            "url": "https://news.ycombinator.com/item?id=50001374",
-            "external_url": "https://rhyvenai.com",
-            "points": 2,
-            "comments": 1,
-            "created_at": "2026-10-08T02:44:14Z"
-          },
-          {
-            "title": "Show HN: Agent.reviews – Where AI agents read and write reviews on tools",
-            "url": "https://news.ycombinator.com/item?id=49995539",
-            "external_url": "https://agent.reviews/",
-            "points": 73,
-            "comments": 52,
-            "created_at": "2026-10-07T16:59:11Z"
-          },
-          {
-            "title": "Show HN: Data Observability for Supabase",
-            "url": "https://news.ycombinator.com/item?id=49977298",
-            "external_url": "https://sodabase.io/",
-            "points": 1,
-            "comments": 0,
-            "created_at": "2026-10-06T12:12:05Z"
-          }
-        ],
-        "error": null
-      },
-      "status": "planned"
-    },
     {
       "idea_id": "indie-launch",
       "niche": "indie software builders",
@@ -81,7 +23,10 @@
             "external_url": "https://github.com/cw12574/abralo-workspace",
             "points": 1,
             "comments": 0,
-            "created_at": "2026-10-05T15:33:39Z"
+            "created_at": "2026-10-05T15:33:39Z",
+            "matched_terms": [
+              "for"
+            ]
           },
           {
             "title": "Show HN: Diffusion studio plugin for codex launch",
@@ -89,7 +34,11 @@
             "external_url": "https://github.com/Teseife/diffusion-studio-codex",
             "points": 1,
             "comments": 0,
-            "created_at": "2026-10-02T04:33:41Z"
+            "created_at": "2026-10-02T04:33:41Z",
+            "matched_terms": [
+              "for",
+              "launch"
+            ]
           },
           {
             "title": "Show HN: Caspian – Desktop app to build and launch small vibe-coded projects",
@@ -97,7 +46,10 @@
             "external_url": "https://caspian.md",
             "points": 2,
             "comments": 2,
-            "created_at": "2026-09-28T08:41:28Z"
+            "created_at": "2026-09-28T08:41:28Z",
+            "matched_terms": [
+              "launch"
+            ]
           },
           {
             "title": "Launch HN: Coverage Cat (YC S22) – Umbrella insurance via your personal agent",
@@ -105,7 +57,39 @@
             "external_url": "https://www.coveragecat.com/",
             "points": 54,
             "comments": 32,
-            "created_at": "2026-09-22T17:26:36Z"
+            "created_at": "2026-09-22T17:26:36Z",
+            "matched_terms": [
+              "launch"
+            ]
+          }
+        ],
+        "error": null
+      },
+      "status": "planned"
+    },
+    {
+      "idea_id": "job-search",
+      "niche": "job seekers",
+      "problem": "Follow-ups, interview notes and application stages get lost across tabs.",
+      "evidence": "Unverified hypothesis. Compare job trackers and user complaints before building.",
+      "solution_hypothesis": "a focused job-search tracker with role-specific notes and follow-up reminders",
+      "text": "Job searching can turn into a spreadsheet graveyard: application status in one tab, follow-ups in another, interview notes in your inbox. What part of staying organised is still painful, even with existing trackers?",
+      "text_hash": "f5a73310141996ddd3354e44a271ee8a92d944e8f64d77d67cc65ab919609eba",
+      "image_query": "resume desk",
+      "research": {
+        "query": "job search hiring",
+        "score": 10.473,
+        "hits": [
+          {
+            "title": "Ask HN: What job boards are good these days?",
+            "url": "https://news.ycombinator.com/item?id=49816567",
+            "external_url": "",
+            "points": 24,
+            "comments": 21,
+            "created_at": "2026-09-23T14:17:11Z",
+            "matched_terms": [
+              "job"
+            ]
           }
         ],
         "error": null
@@ -123,7 +107,7 @@
       "image_query": "small business shop",
       "research": {
         "query": "small business leads",
-        "score": 21.552,
+        "score": 7.282,
         "hits": [
           {
             "title": "Can an AI learn what you like, rather than just what you've searched for?",
@@ -131,23 +115,10 @@
             "external_url": "",
             "points": 2,
             "comments": 3,
-            "created_at": "2026-10-09T07:18:41Z"
-          },
-          {
-            "title": "Fractional Is Just a Racket",
-            "url": "https://news.ycombinator.com/item?id=49912418",
-            "external_url": "",
-            "points": 2,
-            "comments": 1,
-            "created_at": "2026-09-30T18:15:17Z"
-          },
-          {
-            "title": "Launch HN: Coverage Cat (YC S22) – Umbrella insurance via your personal agent",
-            "url": "https://news.ycombinator.com/item?id=49804931",
-            "external_url": "https://www.coveragecat.com/",
-            "points": 54,
-            "comments": 32,
-            "created_at": "2026-09-22T17:26:36Z"
+            "created_at": "2026-10-09T07:18:41Z",
+            "matched_terms": [
+              "for"
+            ]
           }
         ],
         "error": null
