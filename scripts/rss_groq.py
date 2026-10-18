@@ -177,10 +177,15 @@ def collect_candidates() -> tuple[list[dict], list[dict]]:
 
     unique = {}
     recently_used_count = 0
+    thin_summary_count = {source: 0 for source, _ in FEEDS}
     for row in all_rows:
         key = row["url"].lower().rstrip("/")
         if key in used_urls:
             recently_used_count += 1
+            continue
+        # Headlines alone are not enough to support the specific implications we ask Groq to write.
+        if len(row.get("summary", "")) < 120:
+            thin_summary_count[row["source"]] = thin_summary_count.get(row["source"], 0) + 1
             continue
         if key not in unique or (
             unique[key].get("age_hours") is None and row.get("age_hours") is not None
@@ -203,6 +208,7 @@ def collect_candidates() -> tuple[list[dict], list[dict]]:
         row["article_id"] = f"S{index:02d}"
     for row in diagnostics:
         row["recently_published_items_skipped"] = recently_used_count
+        row["thin_summary_items_skipped"] = thin_summary_count.get(row["source"], 0)
     return rows, diagnostics
 
 
@@ -457,11 +463,14 @@ def write_outputs(
         f"- Drafts passing the quality gate: {len(drafts)}",
         f"- Rejected model selections: {len(rejected)}", "",
         "## Feed checks", "",
-        "| Source | Recent feed items kept | Result |",
-        "|---|---:|---|",
+        "| Source | Recent feed items kept | Thin excerpts skipped | Result |",
+        "|---|---:|---:|---|",
     ]
     for feed in diagnostics:
-        lines.append(f'| {feed["source"]} | {feed["articles_kept"]} | {feed["error"] or "OK"} |')
+        lines.append(
+            f'| {feed["source"]} | {feed["articles_kept"]} | '
+            f'{feed.get("thin_summary_items_skipped", 0)} | {feed["error"] or "OK"} |'
+        )
     lines += ["", "## Drafts that passed the quality gate", ""]
     if not drafts:
         lines += [
