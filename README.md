@@ -4,7 +4,11 @@ Zero-budget GitHub Actions workflow for daily topic selection, curated copy, opt
 
 ## Schedule
 - 06:00 IST: select the day's topics using recent public Hacker News discussion signals and prepare an engagement shortlist.
-- 08:05, 09:20 and 10:35 IST: publish three standalone posts, spaced 75 minutes apart.
+- 09:00 IST: morning post.
+- 13:00 IST: lunch-time post.
+- 19:00 IST: evening post.
+
+The slots are spaced to reach different parts of the day, rather than clustering every post in the morning. These are starting hypotheses to test against account analytics, not guaranteed peak hours.
 
 GitHub may delay scheduled runs. Manual workflow dispatch prepares a plan but does not publish immediately.
 
