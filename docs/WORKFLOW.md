@@ -7,7 +7,7 @@ The GitHub Actions workflow runs one publish attempt at 08:00, 14:00 and 20:00 I
 Set repository Actions secret `X_SESSION_COOKIE` to the raw X cookie value for @Legivox. Include `auth_token`, `ct0`, and `twid`; do not include the literal `Cookie:` header label. The publisher verifies the session user ID against the @Legivox profile ID before posting. Never put the cookie in Git or chat.
 
 ## Exact behaviour
-1. Install pinned `tweetkit-x==0.3.1` in the temporary hosted runner.
+1. Install the upstream `tweetkit-x` source from commit `d42503a936f80eb0af2e9856a0fbd392cc4a750c` in the temporary hosted runner. This commit declares version 0.3.1, but 0.3.1 was not available from PyPI at the time of the failed workflow.
 2. Verify the session is for @Legivox.
 3. Read the latest 100 non-reply posts to check for exact duplicates.
 4. Choose the next unused idea/template combination, post once and append an audit record.
