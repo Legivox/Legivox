@@ -181,7 +181,19 @@ def generate_drafts(candidates: list[dict]) -> list[dict]:
             text={"format": {"type": "json_schema", "name": "legivox_rss_drafts", "strict": True, "schema": schema}},
         )
     except Exception as exc:
-        raise RuntimeError(f"Groq request failed ({type(exc).__name__}). Check model access, quota, and API secret.") from None
+        status = getattr(exc, "status_code", None)
+        body = getattr(exc, "body", None)
+        detail = ""
+        if isinstance(body, dict):
+            error_body = body.get("error", body)
+            if isinstance(error_body, dict):
+                detail = clean(error_body.get("message") or error_body.get("type") or "")
+        detail = re.sub(r"(?i)(bearer\s+\S+|gsk_[A-Za-z0-9_-]+)", "[redacted]", detail)[:500]
+        label = f"HTTP {status} " if status else ""
+        raise RuntimeError(
+            f"Groq request failed ({label}{type(exc).__name__})"
+            + (f": {detail}" if detail else ". Check model access, quota, and API secret.")
+        ) from None
     try:
         payload = json.loads(response.output_text)
     except (TypeError, json.JSONDecodeError):
