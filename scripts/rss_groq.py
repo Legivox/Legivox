@@ -321,11 +321,16 @@ def generate_drafts(candidates: list[dict], max_posts: int = 3) -> tuple[list[di
         "engagement, hashtags, and unsupported claims. Separate fact from interpretation. Use only facts "
         "supported by the supplied title/excerpt; when evidence is thin, state a modest implication or "
         "reject the story. Do not introduce a named AI model, model version, named product, metric, or "
-        "technical implementation detail unless it appears in the supplied title/excerpt. For each post, "
-        "provide evidence_quote as a verbatim, contiguous excerpt of at least 20 characters copied from "
-        "that candidate's title or summary; choose a phrase that supports the post's central factual premise, "
-        "not a generic phrase. If the story cannot support the premise, select another story. The local "
-        "validator checks the quote and known model/version identifiers. post_text must be 55-180 characters "
+        "technical implementation detail unless it appears in the supplied title/excerpt. Do not turn a "
+        "single company's action into an industry trend, claim it sets a new standard, or predict reactions "
+        "from other companies unless the excerpt supports that. Keep causal language proportionate: avoid "
+        "claims that an actor will force, mandate, or require an outcome unless the excerpt supports it. "
+        "Do not add downstream mechanisms such as DLC, subscriptions, or revenue/pricing changes unless "
+        "the excerpt mentions them. For each post, provide evidence_quote as a verbatim, contiguous excerpt "
+        "of at least 20 characters copied from that candidate's title or summary; choose a phrase that "
+        "supports the post's central factual premise, not a generic phrase. If the story cannot support "
+        "the premise, select another story. The local validator checks the quote, known model/version "
+        "identifiers, selected unsupported specifics, and common overclaim patterns. post_text must be 55-180 characters "
         "and contain no URL; a source link is added "
         "later. Include a concise reason for selection. Use each article_id at most once. Return only "
         "the required structured JSON."
@@ -454,6 +459,62 @@ def generate_drafts(candidates: list[dict], max_posts: int = 3) -> tuple[list[di
                 "reason": f"Specific model/version '{unsupported_model}' is not present in the source excerpt.",
             })
             continue
+        
+        # Reject specific technical/policy consequences and broad generalizations that the RSS
+        # excerpt does not mention. These conservative guardrails are not a full semantic fact-checker.
+        unsupported_detail_patterns = (
+            (r"\bDLC\b", "DLC"),
+            (r"\bdownloadable content\b", "downloadable content"),
+            (r"\bsubscriptions?\b", "subscription"),
+            (r"\brevenue models?\b", "revenue model"),
+            (r"\bpricing plans?\b", "pricing plan"),
+            (r"\bpermanent rights\b", "permanent rights"),
+            (r"\b(?:single[- ]vendor|vendor lock[- ]in|AI stacks?)\b", "single-vendor AI stack"),
+            (r"\b(?:industry[- ]wide|trend toward|new standard|new era|raising expectations for other labs|raises expectations for other labs)\b", "industry-wide inference"),
+            (r"\b(?:forcing|force|forces|forced|mandates?|mandated|requires?|required)\s+(?:studios|labs|developers|companies|platforms)\b", "strong causal claim"),
+        )
+        unsupported_detail = None
+        for pattern, label in unsupported_detail_patterns:
+            match = re.search(pattern, copy, re.I)
+            if not match:
+                continue
+            # Multiword claims must be explicitly present; common inflections may vary.
+            if re.search(pattern, evidence_text, re.I):
+                continue
+            if label == "subscription" and re.search(r"\bsubscription\w*\b", evidence_text, re.I):
+                continue
+            if label == "revenue model" and re.search(r"\brevenue model\w*\b", evidence_text, re.I):
+                continue
+            unsupported_detail = label
+            break
+        if unsupported_detail:
+            rejected.append({
+                "article_id": article_id, "source": article["source"], "title": article["title"],
+                "scores": scores,
+                "reason": f"Unsupported specific detail or overclaim ({unsupported_detail}) is absent from the source excerpt.",
+            })
+            continue
+
+        # Acronyms should be present in the excerpt or supported by an expanded organization name.
+        acronym_expansions = {"FTC": "federal trade commission"}
+        unsupported_acronym = None
+        for match in re.finditer(r"\b[A-Z]{2,6}\b", copy):
+            acronym = match.group(0)
+            if acronym == "AI" or acronym.casefold() in evidence_for_terms:
+                continue
+            expansion = acronym_expansions.get(acronym)
+            if expansion and expansion in evidence_for_terms:
+                continue
+            unsupported_acronym = acronym
+            break
+        if unsupported_acronym:
+            rejected.append({
+                "article_id": article_id, "source": article["source"], "title": article["title"],
+                "scores": scores,
+                "reason": f"Acronym '{unsupported_acronym}' is not present or expanded in the source excerpt.",
+            })
+            continue
+
         if re.search(r"\b(bill|act|law|legislation|regulation|proposal|proposes)\b", article["title"], re.I) and not re.search(
             r"\b(if passed|if enacted|proposed|proposal|could|may|might|would|introduced)\b",
             copy, re.I
