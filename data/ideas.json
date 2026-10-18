@@ -1,0 +1,30 @@
+[
+  {
+    "id": "idea-001",
+    "niche": "Independent digital creators",
+    "problem": "Creators lose track of product feedback, feature requests, and repeated customer questions across scattered channels.",
+    "evidence": "Hypothesis only; collect public examples and interview or survey evidence before claiming demand.",
+    "solution_hypothesis": "A lightweight feedback inbox that groups repeated requests and exports a prioritized backlog."
+  },
+  {
+    "id": "idea-002",
+    "niche": "Freelance developers",
+    "problem": "Small projects can become difficult to price when scope changes and assumptions are undocumented.",
+    "evidence": "Hypothesis only; validate against public discussions and competing paid templates before building.",
+    "solution_hypothesis": "A project scoping and change-request workbook with estimate assumptions and a sign-off checklist."
+  },
+  {
+    "id": "idea-003",
+    "niche": "Small online sellers",
+    "problem": "Low-volume sellers may manage stock, reorder levels, fees, and margins in disconnected spreadsheets.",
+    "evidence": "Hypothesis only; verify competitor offerings, customer complaints, and willingness to pay.",
+    "solution_hypothesis": "An inventory and reorder workbook with SKU-level margin calculations and low-stock alerts."
+  },
+  {
+    "id": "idea-004",
+    "niche": "Job seekers",
+    "problem": "Applicants can lose track of application stages, follow-ups, interview preparation, and role-specific notes.",
+    "evidence": "Hypothesis only; validate through existing tools, public complaints, and interviews.",
+    "solution_hypothesis": "A job search tracker with interview-preparation checklists and progress summaries."
+  }
+]
