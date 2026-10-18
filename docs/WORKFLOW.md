@@ -16,13 +16,33 @@ GitHub Actions cron times are UTC. GitHub may delay scheduled runs. Manual workf
 - The library starts with 20 topics and 60 curated text variations. Used text hashes are tracked so copy is not intentionally recycled.
 - The engagement shortlist is for manual review. The workflow does not automate likes, replies, follows, or reposts.
 
+## RSS + Groq dry run
+A separate manual-only workflow named **Legivox RSS + Groq dry run** tests a news-led draft pipeline without touching the X publisher.
+1. It fetches public RSS feeds from TechCrunch, The Verge, and Ars Technica.
+2. It keeps items published within the last seven days when feeds provide a usable publication date, removes duplicate URLs and sends up to 30 candidate items to Groq.
+3. Groq's OpenAI-compatible Responses API, model `openai/gpt-oss-20b`, selects three distinct stories and drafts original copy from the article title and feed excerpt.
+4. The script validates distinct source IDs, excludes URLs from the generated sentence, appends the source link, and checks the resulting plain character count.
+5. It saves `output/rss-groq-dry-run.md` and `output/rss-groq-dry-run.json`. No X cookie is read; no likes, reposts, replies, or posts are attempted.
+
+The source snippets are untrusted input and may be incomplete. Review each linked article to confirm claims before using a draft. RSS availability is not a popularity metric and the feed list can be expanded after the first preview looks good.
+
+### Run the dry run
+1. In the GitHub repository, open **Actions**.
+2. Select **Legivox RSS + Groq dry run**.
+3. Click **Run workflow**, keep the branch set to `main`, and confirm.
+4. Open the completed run. The generated preview is committed to the `output/` folder; open `output/rss-groq-dry-run.md` to review the drafts.
+
+The repository Actions secret must be named `GROQ_API_KEY`. The workflow has no schedule and runs only when manually triggered. The script uses the Groq Responses API beta, so the first actual run is also the integration test.
+
 ## Images
 The publisher searches Wikimedia Commons for relevant image files marked CC0 or public domain, downloads a bounded-size thumbnail, and attaches it when a match passes the checks. The image description, creator/credit, license and source-page URL are stored in the post audit log and image alt text. If no suitable image is found or the search fails, the post goes out text-only rather than using a random, unclear-license asset.
 
 Commons metadata can be incomplete or inaccurate; check the source page when using any reused image, and do not assume the automated metadata check replaces a rights review.
 
-## Required secret
+## Required secrets
 Set repository Actions secret `X_SESSION_COOKIE` to the raw X cookie value for @Legivox. Include `auth_token`, `ct0`, and `twid`; do not include the literal `Cookie:` header label. The publisher verifies the session against the public @Legivox profile before writing. Never put the cookie in Git or chat.
+
+Set `GROQ_API_KEY` for the separate RSS/Groq dry-run workflow. Do not commit or paste the key into source files.
 
 ## Exact publishing behaviour
 1. Verify that the authenticated session belongs to @Legivox.
