@@ -25,6 +25,10 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Validate script syntax and idea data
+        run: |
+          python -m py_compile scripts/publish_next.py scripts/build_queue.py
+          python -m json.tool data/ideas.json > /dev/null
       - name: Install pinned publisher
         run: python -m pip install --disable-pip-version-check 'tweetkit-x==0.3.1'
       - name: Verify account, avoid duplicates, and publish one post
