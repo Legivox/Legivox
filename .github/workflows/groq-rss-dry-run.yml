@@ -61,6 +61,9 @@ jobs:
             status=$?
             if [ "$status" -eq 2 ]; then
               echo 'No draft passed the local quality gate. Safe-skip behavior verified; no X publisher was invoked.'
+              if [ -f output/rss-groq-latest.md ]; then
+                cat output/rss-groq-latest.md
+              fi
               exit 0
             fi
             exit "$status"
