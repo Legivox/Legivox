@@ -1,5 +1,5 @@
 {
-  "generated_at_ist": "2026-10-18T23:31:31+05:30",
+  "generated_at_ist": "2026-10-18T23:35:43+05:30",
   "model": "openai/gpt-oss-20b",
   "dry_run": true,
   "posted_to_x": false,
@@ -33,81 +33,81 @@
   "candidate_articles": [
     {
       "source": "The Verge",
-      "title": "TikTok bans Musk documentary account",
-      "summary": "Tesla and SpaceX CEO Elon Musk gestures as he speaks during the inaugural parade inside Capitol One Arena, in Washington, DC, on January 20, 2025. (Photo by ANGELA WEISS / AFP) (Photo by ANGELA WEISS/AFP via Getty Images) | AFP via Getty Images Just ahead of the wider release of Alex Gibney's Musk documentary, TikTok has banned the film's social media account from its platform. TikTok did not imme",
-      "published_at_utc": "2026-10-18T17:12:43+00:00",
-      "age_hours": 0.8,
-      "url": "https://www.theverge.com/tech/1013453/tiktok-bans-alex-gibneys-musk-documentary",
-      "feed_url": "https://www.theverge.com/rss/index.xml",
-      "article_id": "S01"
-    },
-    {
-      "source": "The Verge",
       "title": "Video game ownership bill introduced in Congress",
       "summary": "Rep. Ritchie Torres of New York's 15th congressional district in the Bronx introduced the Power To The Players Act this week. If passed, the bill would direct the Federal Trade Commission to establish regulations that guarantee consumers ownership of a game when they pay for it, rather than a licensing agreement. It's increasingly common for games sold to require a connection to a server. Meaning ",
       "published_at_utc": "2026-10-18T16:27:51+00:00",
       "age_hours": 1.6,
       "url": "https://www.theverge.com/policy/1013521/video-game-ownership-bill-congress-power-to-the-players-act",
       "feed_url": "https://www.theverge.com/rss/index.xml",
-      "article_id": "S02"
+      "article_id": "S01"
     },
     {
       "source": "Ars Technica",
       "title": "Anthropic gives outside AI watchdog “employee-like” access",
       "summary": "Anthropic has granted external evaluators “employee-like access” to assess the risks of its models, following through on a commitment to increase safeguards over concerns the technology could run catastrophically out of control. METR, a nonprofit that has worked with leading labs including OpenAI, Anthropic, Google and Meta, now has a team embedded in the Claude maker’s office with access to its h",
       "published_at_utc": "2026-10-18T16:25:19+00:00",
-      "age_hours": 1.6,
+      "age_hours": 1.7,
       "url": "https://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/",
       "feed_url": "https://feeds.arstechnica.com/arstechnica/index",
-      "article_id": "S03"
+      "article_id": "S02"
     },
     {
       "source": "TechCrunch",
       "title": "TechCrunch Mobility: Rivian’s next act",
       "summary": "Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, the role AI is playing in it.",
       "published_at_utc": "2026-10-18T16:05:00+00:00",
-      "age_hours": 1.9,
+      "age_hours": 2.0,
       "url": "https://techcrunch.com/2026/10/18/techcrunch-mobility-rivians-next-act/",
       "feed_url": "https://techcrunch.com/feed/",
-      "article_id": "S04"
+      "article_id": "S03"
     },
     {
       "source": "The Verge",
       "title": "Lenovo’s fast, comfy SteamOS handheld is hundreds off",
       "summary": "The Legion Go S with SteamOS is a pretty solid alternative to the $789 Steam Deck OLED. It runs identical software, but ships in a design with two-stage triggers, a bigger eight-inch IPS screen (1080p and up to 120Hz versus 800p and 90Hz in the Deck OLED), and it’s got double the RAM and storage (32GB and 1TB, respectively), not to mention a slightly faster processor in the Ryzen Z1 Extreme. At $9",
       "published_at_utc": "2026-10-18T14:53:52+00:00",
-      "age_hours": 3.1,
+      "age_hours": 3.2,
       "url": "https://www.theverge.com/gadgets/1013436/lenovo-legion-go-s-steamos-handheld-deal-sale",
       "feed_url": "https://www.theverge.com/rss/index.xml",
-      "article_id": "S05"
+      "article_id": "S04"
     },
     {
       "source": "The Verge",
       "title": "J Mascis has nothing better to do",
       "summary": "J Mascis on stage during Dinosaur Jr.’s Baby’s Alright show in NYC. | Photo: Terrence O’Brien Dinosaur Jr. frontman J Mascis is known as something of a slacker guitar god. He stands stoically onstage, barely moving, as he seemingly effortlessly works through deft guitar solos and lopsided riffs. Unfortunately, Mascis has developed a similar reputation as an interview subject, quietly sitting and o",
       "published_at_utc": "2026-10-18T14:13:04+00:00",
-      "age_hours": 3.8,
+      "age_hours": 3.9,
       "url": "https://www.theverge.com/entertainment/1012442/j-mascis-dinosaur-jr-fender-interview",
       "feed_url": "https://www.theverge.com/rss/index.xml",
-      "article_id": "S06"
+      "article_id": "S05"
     },
     {
       "source": "The Verge",
       "title": "Trump says Google kisses his ass",
       "summary": "During a rally on Saturday, October 17th, in Highland Heights, Kentucky, Donald Trump bragged about how much more powerful and influential he was during his second term. While listing off his accomplishments, he mentioned his decision to rename the Gulf of Mexico and Lake Ontario . \"This is a much more powerful term. I can do stuff that's unbelievable … I called Google, Google Maps. See, Google wo",
       "published_at_utc": "2026-10-18T13:26:28+00:00",
-      "age_hours": 4.6,
+      "age_hours": 4.7,
       "url": "https://www.theverge.com/policy/1013485/trump-google-kiss-my-ass",
       "feed_url": "https://www.theverge.com/rss/index.xml",
-      "article_id": "S07"
+      "article_id": "S06"
     },
     {
       "source": "The Verge",
       "title": "How overhead projectors took over your classroom",
       "summary": "It used to be so easy to get away with things in school. The teacher, after all, was always turned around writing at the chalkboard! But then came a bit of technology, previously mostly used for military purposes, called the overhead projector. It would change far more than just the disciplinary record of students everywhere. In this episode of Version History , we tell the story of the overhead p",
       "published_at_utc": "2026-10-18T12:55:01+00:00",
-      "age_hours": 5.1,
+      "age_hours": 5.2,
       "url": "https://www.theverge.com/podcast/1013473/overhead-projector-version-history",
+      "feed_url": "https://www.theverge.com/rss/index.xml",
+      "article_id": "S07"
+    },
+    {
+      "source": "The Verge",
+      "title": "TikTok bans Musk documentary account",
+      "summary": "Tesla and SpaceX CEO Elon Musk gestures as he speaks during the inaugural parade inside Capitol One Arena, in Washington, DC, on January 20, 2025. (Photo by ANGELA WEISS / AFP) (Photo by ANGELA WEISS/AFP via Getty Images) | AFP via Getty Images Just ahead of the wider release of Alex Gibney's Musk documentary, TikTok has banned the film's social media account from its platform. TikTok did not imme",
+      "published_at_utc": "2026-10-18T12:38:14+00:00",
+      "age_hours": 5.5,
+      "url": "https://www.theverge.com/tech/1013453/tiktok-bans-alex-gibneys-musk-documentary",
       "feed_url": "https://www.theverge.com/rss/index.xml",
       "article_id": "S08"
     },
@@ -116,7 +116,7 @@
       "title": "Replit makes OpenAI its default over Anthropic, CEO says",
       "summary": "Over the weekend, Masad clarified that OpenAI would replace Anthropic as its default model provider. Claude will still be available to customers on the platform.",
       "published_at_utc": "2026-10-17T18:48:08+00:00",
-      "age_hours": 23.2,
+      "age_hours": 23.3,
       "url": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
       "feed_url": "https://techcrunch.com/feed/",
       "article_id": "S09"
@@ -146,7 +146,7 @@
       "title": "Why BioWare's Neverwinter Nights still has thousands of active players",
       "summary": "Neverwinter Nights was made by the studio that produced seminal RPGs Baldur's Gate , Star Wars: Knights of the Old Republic , Mass Effect , and Dragon Age . It sold well and was critically acclaimed at launch. Yet, somehow, it has not been canonized in most gamers' minds over the decades the same way the games that came before and after it were. Nonetheless, more than two decades later, it still h",
       "published_at_utc": "2026-10-17T11:00:21+00:00",
-      "age_hours": 31.0,
+      "age_hours": 31.1,
       "url": "https://arstechnica.com/gaming/2026/10/why-biowares-neverwinter-nights-still-has-thousands-of-active-players/",
       "feed_url": "https://feeds.arstechnica.com/arstechnica/index",
       "article_id": "S12"
@@ -155,25 +155,6 @@
   "drafts": [
     {
       "article_id": "S02",
-      "source": "The Verge",
-      "source_title": "Video game ownership bill introduced in Congress",
-      "published_at_utc": "2026-10-18T16:27:51+00:00",
-      "source_url": "https://www.theverge.com/policy/1013521/video-game-ownership-bill-congress-power-to-the-players-act",
-      "category": "Platform policy",
-      "scores": {
-        "relevance_score": 9,
-        "significance_score": 8,
-        "originality_score": 8
-      },
-      "angle": "New FTC rules could grant gamers true ownership over purchased titles.",
-      "why_selected": "Relevant to digital ownership, significant for developers, original in policy impact.",
-      "evidence_quote": "guarantee consumers ownership of a game when they pay for it",
-      "post_text": "If passed, the FTC would enforce true game ownership, forcing studios to give players permanent rights, reshaping DLC and subscription models.",
-      "text_with_source": "If passed, the FTC would enforce true game ownership, forcing studios to give players permanent rights, reshaping DLC and subscription models.\n\nhttps://www.theverge.com/policy/1013521/video-game-ownership-bill-congress-power-to-the-players-act",
-      "character_count_with_url": 243
-    },
-    {
-      "article_id": "S03",
       "source": "Ars Technica",
       "source_title": "Anthropic gives outside AI watchdog “employee-like” access",
       "published_at_utc": "2026-10-18T16:25:19+00:00",
@@ -181,15 +162,15 @@
       "category": "AI & software",
       "scores": {
         "relevance_score": 9,
-        "significance_score": 7,
-        "originality_score": 8
+        "significance_score": 8,
+        "originality_score": 9
       },
-      "angle": "External watchdogs gaining deep access marks a new era in AI safety.",
-      "why_selected": "High impact on AI safety practices, significant for labs, original transparency move.",
-      "evidence_quote": "employee-like access",
-      "post_text": "Granting 'employee‑like' access to outside reviewers signals a shift toward transparency in AI risk assessment, raising expectations for other labs.",
-      "text_with_source": "Granting 'employee‑like' access to outside reviewers signals a shift toward transparency in AI risk assessment, raising expectations for other labs.\n\nhttps://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/",
-      "character_count_with_url": 242
+      "angle": "AI governance and developer accountability",
+      "why_selected": "New oversight could force tighter AI safety practices across products.",
+      "evidence_quote": "Anthropic has granted external evaluators “employee-like access” to assess the risks of its models",
+      "post_text": "Anthropic’s new ‘employee‑like’ access for external watchdogs could signal a shift toward tighter AI accountability for developers and product teams.",
+      "text_with_source": "Anthropic’s new ‘employee‑like’ access for external watchdogs could signal a shift toward tighter AI accountability for developers and product teams.\n\nhttps://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/",
+      "character_count_with_url": 243
     },
     {
       "article_id": "S09",
@@ -200,18 +181,30 @@
       "category": "Developer tools",
       "scores": {
         "relevance_score": 8,
+        "significance_score": 8,
+        "originality_score": 8
+      },
+      "angle": "Replit's model shift: workflow and cost implications",
+      "why_selected": "Default model change forces developers to adjust pipelines and cost models.",
+      "evidence_quote": "Over the weekend, Masad clarified that OpenAI would replace Anthropic as its default model provider.",
+      "post_text": "Replit’s switch to OpenAI as default model means developers must adapt workflows, re‑train integrations, and reconsider cost and latency trade‑offs.",
+      "text_with_source": "Replit’s switch to OpenAI as default model means developers must adapt workflows, re‑train integrations, and reconsider cost and latency trade‑offs.\n\nhttps://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
+      "character_count_with_url": 236
+    }
+  ],
+  "rejected_model_selections": [
+    {
+      "article_id": "S01",
+      "source": "The Verge",
+      "title": "Video game ownership bill introduced in Congress",
+      "scores": {
+        "relevance_score": 8,
         "significance_score": 7,
         "originality_score": 7
       },
-      "angle": "Replit's switch to OpenAI signals a broader single‑vendor AI trend.",
-      "why_selected": "Shows vendor strategy shift, significant for dev tools, original insight into AI stack decisions.",
-      "evidence_quote": "OpenAI would replace Anthropic as its default model provider",
-      "post_text": "Replit's recent switch to OpenAI as its default model provider highlights a trend toward single‑vendor AI stacks, though Anthropic still stays available.",
-      "text_with_source": "Replit's recent switch to OpenAI as its default model provider highlights a trend toward single‑vendor AI stacks, though Anthropic still stays available.\n\nhttps://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
-      "character_count_with_url": 241
+      "reason": "Unsupported specific detail or overclaim (revenue model) is absent from the source excerpt."
     }
   ],
-  "rejected_model_selections": [],
   "quality_thresholds": {
     "relevance_score_minimum": 7,
     "significance_score_minimum": 6,
