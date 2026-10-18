@@ -212,8 +212,6 @@ def write_engagement_shortlist(plan: dict) -> None:
         query = post.get("research", {}).get("query", "")
         lines += ["## " + post["niche"], "", "Search: `" + query + "`", ""]
         try:
-            candidates = []
-        try:
             candidates = client.search_x(query, product="Top", limit=12)
         except Exception:
             candidates = []
@@ -233,7 +231,7 @@ def write_engagement_shortlist(plan: dict) -> None:
             seen_in_topic += 1
             if seen_in_topic >= 3:
                 break
-        if not added:
+        if seen_in_topic == 0:
             lines.append("- No usable candidates returned for this query.")
         lines.append("")
     ENGAGEMENT_PATH.write_text("\n".join(lines), encoding="utf-8")
