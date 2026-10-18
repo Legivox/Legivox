@@ -68,6 +68,17 @@ def child_value(element: ET.Element, names: set[str]) -> str:
     return ""
 
 
+def summary_value(element: ET.Element) -> str:
+    """Prefer the fullest feed-provided excerpt rather than a short subtitle."""
+    values = []
+    for child in list(element):
+        if local_name(child.tag) in {"description", "summary", "encoded", "content"}:
+            value = strip_html(" ".join(child.itertext()))
+            if value:
+                values.append(value)
+    return max(values, key=len) if values else ""
+
+
 def parse_date(value: str) -> datetime | None:
     value = clean(value)
     if not value:
@@ -144,7 +155,7 @@ def fetch_feed(source: str, feed_url: str, now: datetime) -> tuple[list[dict], s
         url = normalize_url(child_value(node, {"link"}))
         if not title or not url.startswith(("https://", "http://")):
             continue
-        summary = strip_html(child_value(node, {"description", "summary", "encoded", "content"}))[:700]
+        summary = summary_value(node)[:700]
         published = parse_date(child_value(node, {"pubdate", "published", "updated", "date", "issued"}))
         if published and (published > now + timedelta(hours=24) or now - published > MAX_AGE):
             continue
@@ -185,6 +196,13 @@ def collect_candidates() -> tuple[list[dict], list[dict]]:
             continue
         # Headlines alone are not enough to support the specific implications we ask Groq to write.
         if len(row.get("summary", "")) < 120:
+            thin_summary_count[row["source"]] = thin_summary_count.get(row["source"], 0) + 1
+            continue
+        # Personnel-only stories rarely offer actionable product insight for this account.
+        if re.search(r"\\b(hire|hiring|workforce|staff|employees|layoffs)\\b", row["title"], re.I) and not re.search(
+            r"\\b(product|developer tool|API|model release|launch|feature|security fix|pricing)\\b",
+            row["title"] + " " + row["summary"], re.I
+        ):
             thin_summary_count[row["source"]] = thin_summary_count.get(row["source"], 0) + 1
             continue
         if key not in unique or (
@@ -283,7 +301,10 @@ def generate_drafts(candidates: list[dict], max_posts: int = 3) -> tuple[list[di
         "supported software/product/business implication. Platform-policy stories qualify only when they "
         "materially affect software products, digital ownership, developers, or online businesses. "
         "Prioritise a story only when there is an actionable implication, important trade-off, product "
-        "lesson, developer impact, or meaningful change. Score relevance to Legivox 1-10, significance "
+        "lesson, developer impact, or meaningful change. Give priority to concrete changes in AI models, "
+        "developer tools, APIs, security practices, product behavior, or pricing. Do not prioritize stories "
+        "about hiring or talent moves unless the excerpt describes a concrete product, tooling, or technical "
+        "capability change. Score relevance to Legivox 1-10, significance "
         "to its intended readers 1-10, and originality potential for a useful post 1-10. Be conservative: "
         "a score of 7 means genuinely strong, not merely vaguely tech-related. Choose only stories with "
         "relevance >= 7, significance >= 6, and originality >= 7. Use distinct subjects/events. "
