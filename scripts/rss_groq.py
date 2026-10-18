@@ -10,6 +10,7 @@ import os
 import re
 import sys
 import urllib.request
+import unicodedata
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
@@ -38,6 +39,17 @@ FEEDS = (
 
 def clean(value: object) -> str:
     return " ".join(str(value or "").split()).strip()
+
+
+def normalize_evidence(value: str) -> str:
+    """Normalize typography while preserving the source words used by the evidence check."""
+    normalized = unicodedata.normalize("NFKC", clean(value)).casefold()
+    for dash in ("‐", "‑", "‒", "–", "—", "−"):
+        normalized = normalized.replace(dash, "-")
+    return (
+        normalized.replace("’", "'").replace("‘", "'")
+        .replace("“", '"').replace("”", '"')
+    )
 
 
 def strip_html(value: str) -> str:
@@ -328,7 +340,14 @@ def generate_drafts(candidates: list[dict], max_posts: int = 3) -> tuple[list[di
         "Do not add downstream mechanisms such as DLC, subscriptions, or revenue/pricing changes unless "
         "the excerpt mentions them. When a story only says that a product changed its default model/provider, "
         "discuss the default and user choice; do not claim that developers must retrain integrations or that "
-        "cost, latency, or performance changes unless the excerpt states this. For each post, provide "
+        "cost, latency, or performance changes unless the excerpt states this. Avoid phrases such as "
+        "'developers must adapt workflows, re-train integrations, and reconsider cost/latency' when these "
+        "are not in the source. A safer provider-default angle is that defaults shape what users try first, "
+        "while keeping an alternative available preserves choice. For external evaluators/watchdogs, discuss "
+        "the specific oversight described; do not call it a new industry standard or predict other labs' "
+        "reactions unless stated in the excerpt. For proposed bills, use conditional language and describe "
+        "the proposed regulator/action accurately; do not say it will force studios to change or add DLC, "
+        "subscription, or revenue-model effects unless the excerpt says so. For each post, provide "
         "evidence_quote as a verbatim, contiguous excerpt "
         "between 20 and 100 characters copied from that candidate's title or summary; choose a phrase that "
         "supports the post's central factual premise, not a generic phrase. If the story cannot support "
@@ -404,17 +423,12 @@ def generate_drafts(candidates: list[dict], max_posts: int = 3) -> tuple[list[di
         article = by_id[article_id]
         evidence_quote = clean(post.get("evidence_quote"))
         evidence_text = clean(article["title"] + " " + article["summary"])
-        def evidence_normalize(value: str) -> str:
-            return (
-                clean(value).casefold()
-                .replace("’", "'").replace("‘", "'")
-                .replace("“", '"').replace("”", '"')
-            )
-        normalized_quote = evidence_normalize(evidence_quote)
-        normalized_evidence = evidence_normalize(evidence_text)
+        normalized_quote = normalize_evidence(evidence_quote)
+        normalized_evidence = normalize_evidence(evidence_text)
         if len(evidence_quote) < 20 or len(evidence_quote) > 100 or normalized_quote not in normalized_evidence:
             rejected.append({
                 "article_id": article_id, "source": article["source"], "title": article["title"],
+                "evidence_quote": evidence_quote,
                 "reason": "Evidence quote must be 20–100 characters and an exact excerpt from the supplied title or summary.",
             })
             continue
@@ -502,6 +516,8 @@ def generate_drafts(candidates: list[dict], max_posts: int = 3) -> tuple[list[di
             rejected.append({
                 "article_id": article_id, "source": article["source"], "title": article["title"],
                 "scores": scores,
+                "proposed_post_text": copy,
+                "evidence_quote": evidence_quote,
                 "reason": f"Unsupported specific detail or overclaim ({unsupported_detail}) is absent from the source excerpt.",
             })
             continue
