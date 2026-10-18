@@ -43,10 +43,21 @@ def local_name(tag: str) -> str:
 
 
 def child_value(element: ET.Element, names: set[str]) -> str:
-    for child in list(element):
+    children = list(element)
+    if "link" in names:
+        links = [child for child in children if local_name(child.tag) == "link"]
+        # Atom entries may put a self/edit link before the public article URL.
+        for child in links:
+            rel = clean(child.attrib.get("rel", "alternate")).lower()
+            candidate = child.attrib.get("href") or child.text
+            if rel in {"", "alternate"} and clean(candidate):
+                return clean(candidate)
+        for child in links:
+            candidate = child.attrib.get("href") or child.text
+            if clean(candidate):
+                return clean(candidate)
+    for child in children:
         if local_name(child.tag) in names:
-            if local_name(child.tag) == "link":
-                return clean(child.attrib.get("href") or child.text)
             return clean(" ".join(child.itertext()))
     return ""
 
