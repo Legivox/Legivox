@@ -1,38 +1,9 @@
 {
   "date_ist": "2026-10-18",
-  "prepared_at_ist": "2026-10-18 20:41:59 IST",
+  "prepared_at_ist": "2026-10-18 20:42:50 IST",
   "research_window_days": 30,
   "research_source": "Hacker News Algolia Search API",
   "posts": [
-    {
-      "idea_id": "micro-saas-support",
-      "niche": "small SaaS founders",
-      "problem": "Repeated support questions can expose product friction but are hard to summarize.",
-      "evidence": "Unverified hypothesis. Explore founder forums and lightweight support products.",
-      "solution_hypothesis": "a support-theme tracker that groups recurring questions into documentation tasks",
-      "text": "Repeated support questions can be a product signal, not just a support problem. If customers keep asking the same thing, the UI or docs may be failing them. How do small SaaS teams spot those patterns?",
-      "text_hash": "a73be1cdd3656fa48c06caecedb048b7b96683123e436d8ca86237360c6548ea",
-      "image_query": "SaaS support",
-      "research": {
-        "query": "support tickets",
-        "score": 7.079,
-        "hits": [
-          {
-            "title": "WhatsApp Business Paid Support Is a Scam",
-            "url": "https://news.ycombinator.com/item?id=49784840",
-            "external_url": "",
-            "points": 1,
-            "comments": 3,
-            "created_at": "2026-09-21T08:58:24Z",
-            "matched_terms": [
-              "support"
-            ]
-          }
-        ],
-        "error": null
-      },
-      "status": "planned"
-    },
     {
       "idea_id": "creator-feedback",
       "niche": "independent digital creators",
@@ -64,30 +35,35 @@
       "status": "planned"
     },
     {
-      "idea_id": "consultants",
-      "niche": "independent consultants",
-      "problem": "Discovery calls produce notes that rarely become a clear action plan.",
-      "evidence": "Unverified hypothesis. Validate against consulting workflows and paid templates.",
-      "solution_hypothesis": "a discovery-call worksheet that turns client goals into measurable deliverables",
-      "text": "A discovery call can feel productive, then a week later the notes are still just notes. Consultants, what process actually turns client goals into deliverables and next actions you follow through on?",
-      "text_hash": "4cbba753fae476567f5f9c232ee17cefc2693333de8e7e3d3f93f01d0a3c8bc0",
-      "image_query": "business consultant",
+      "idea_id": "freelancer-scope",
+      "niche": "freelance developers",
+      "problem": "Scope changes and assumptions can quietly erode project margins.",
+      "evidence": "Unverified hypothesis. Validate with public discussions and paid competitor products.",
+      "solution_hypothesis": "a project scoping workbook with explicit assumptions and change approvals",
+      "text": "Scope creep rarely arrives as one dramatic request. It's a handful of tiny “while you're in there…” changes. Freelancers, how do you document assumptions and approve extra work without making every project feel bureaucratic?",
+      "text_hash": "2c016ad5c1e84443623ffa74649e68df4a88b33c42ace2973ff278e1a79d077c",
+      "image_query": "freelancer laptop",
       "research": {
-        "query": "client discovery",
-        "score": 6.416,
-        "hits": [
-          {
-            "title": "Show HN: Pippin – macOS High-Performance Screen Sharing Client for Linux",
-            "url": "https://news.ycombinator.com/item?id=50075636",
-            "external_url": "https://github.com/jonesy827/pippin",
-            "points": 2,
-            "comments": 1,
-            "created_at": "2026-10-13T17:41:25Z",
-            "matched_terms": [
-              "client"
-            ]
-          }
-        ],
+        "query": "freelancer scope creep",
+        "score": 0.0,
+        "hits": [],
+        "error": null
+      },
+      "status": "planned"
+    },
+    {
+      "idea_id": "seller-stock",
+      "niche": "small online sellers",
+      "problem": "Stock, fees, reorder levels and margins often live in disconnected sheets.",
+      "evidence": "Unverified hypothesis. Check competing templates and seller complaints.",
+      "solution_hypothesis": "an inventory workbook that combines reorder signals with per-item margins",
+      "text": "A product can look profitable until marketplace fees, packaging, shipping and restocking time are counted. For small sellers, which number is easiest to lose track of: true margin, stock on hand, or reorder timing?",
+      "text_hash": "6d8b8d393e2389d0225a27c181f4602c42710ef7e499154d0ea677d920391c68",
+      "image_query": "inventory boxes",
+      "research": {
+        "query": "inventory margins",
+        "score": 0.0,
+        "hits": [],
         "error": null
       },
       "status": "planned"

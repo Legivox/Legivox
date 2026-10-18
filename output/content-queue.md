@@ -1,26 +1,10 @@
 # Legivox daily content plan
 
-Prepared: 2026-10-18 20:41:59 IST
+Prepared: 2026-10-18 20:42:50 IST
 
 > Topics are prioritised using recent public Hacker News discussion signals plus a rotation fallback. These signals are not proof of willingness to pay. Copy is selected from the reviewed draft library, not generated from research labels.
 
-## Post 1 · micro-saas-support
-
-**Planned copy**
-
-Repeated support questions can be a product signal, not just a support problem. If customers keep asking the same thing, the UI or docs may be failing them. How do small SaaS teams spot those patterns?
-
-- Topic: small SaaS founders
-- Research query: support tickets
-- Recent discussion signal score: 7.079
-
-**Recent public discussion signals**
-
-- [WhatsApp Business Paid Support Is a Scam](https://news.ycombinator.com/item?id=49784840) · 1 points · 3 comments
-
-- Status: planned
-
-## Post 2 · creator-feedback
+## Post 1 · creator-feedback
 
 **Planned copy**
 
@@ -36,19 +20,31 @@ A creator can get the same feature request in a DM, a comment, an email and a co
 
 - Status: planned
 
-## Post 3 · consultants
+## Post 2 · freelancer-scope
 
 **Planned copy**
 
-A discovery call can feel productive, then a week later the notes are still just notes. Consultants, what process actually turns client goals into deliverables and next actions you follow through on?
+Scope creep rarely arrives as one dramatic request. It's a handful of tiny “while you're in there…” changes. Freelancers, how do you document assumptions and approve extra work without making every project feel bureaucratic?
 
-- Topic: independent consultants
-- Research query: client discovery
-- Recent discussion signal score: 6.416
+- Topic: freelance developers
+- Research query: freelancer scope creep
+- Recent discussion signal score: 0.0
 
-**Recent public discussion signals**
+_No recent matching Hacker News signal was found; the topic was chosen by rotation._
 
-- [Show HN: Pippin – macOS High-Performance Screen Sharing Client for Linux](https://news.ycombinator.com/item?id=50075636) · 2 points · 1 comments
+- Status: planned
+
+## Post 3 · seller-stock
+
+**Planned copy**
+
+A product can look profitable until marketplace fees, packaging, shipping and restocking time are counted. For small sellers, which number is easiest to lose track of: true margin, stock on hand, or reorder timing?
+
+- Topic: small online sellers
+- Research query: inventory margins
+- Recent discussion signal score: 0.0
+
+_No recent matching Hacker News signal was found; the topic was chosen by rotation._
 
 - Status: planned
 
