@@ -1,4 +1,4 @@
-name: Legivox research and content queue
+name: Legivox content queue
 
 on:
   workflow_dispatch:
