@@ -278,7 +278,7 @@ def generate_drafts(candidates: list[dict], max_posts: int = 3) -> tuple[list[di
                         "originality_score": {"type": "integer", "minimum": 1, "maximum": 10},
                         "angle": {"type": "string", "maxLength": 140},
                         "why_selected": {"type": "string", "maxLength": 180},
-                        "evidence_quote": {"type": "string", "minLength": 20, "maxLength": 160},
+                        "evidence_quote": {"type": "string", "minLength": 20, "maxLength": 100},
                         "post_text": {"type": "string", "minLength": 55, "maxLength": 180},
                     },
                 },
@@ -327,7 +327,7 @@ def generate_drafts(candidates: list[dict], max_posts: int = 3) -> tuple[list[di
         "claims that an actor will force, mandate, or require an outcome unless the excerpt supports it. "
         "Do not add downstream mechanisms such as DLC, subscriptions, or revenue/pricing changes unless "
         "the excerpt mentions them. For each post, provide evidence_quote as a verbatim, contiguous excerpt "
-        "of at least 20 characters copied from that candidate's title or summary; choose a phrase that "
+        "between 20 and 100 characters copied from that candidate's title or summary; choose a phrase that "
         "supports the post's central factual premise, not a generic phrase. If the story cannot support "
         "the premise, select another story. The local validator checks the quote, known model/version "
         "identifiers, selected unsupported specifics, and common overclaim patterns. post_text must be 55-180 characters "
@@ -373,7 +373,10 @@ def generate_drafts(candidates: list[dict], max_posts: int = 3) -> tuple[list[di
             error_body = body.get("error", body)
             if isinstance(error_body, dict):
                 detail = clean(error_body.get("message") or error_body.get("type") or "")
-        detail = re.sub(r"(?i)(bearer\s+\S+|gsk_[A-Za-z0-9_-]+)", "[redacted]", detail)[:500]
+                failed_generation = clean(error_body.get("failed_generation"))
+                if failed_generation:
+                    detail += " Failed-generation excerpt: " + failed_generation[:300]
+        detail = re.sub(r"(?i)(bearer\s+\S+|gsk_[A-Za-z0-9_-]+)", "[redacted]", detail)[:800]
         label = f"HTTP {status} " if status else ""
         raise RuntimeError(
             f"Groq request failed ({label}{type(exc).__name__})"
@@ -656,6 +659,8 @@ def write_outputs(
         "", "## Review notes", "",
         "- Source titles and excerpts are used as input; full article pages are not scraped.",
         "- No X session cookie, like/repost/reply action, or publishing endpoint is used here.",
+        "- Every accepted draft includes a quote checked against its RSS title or excerpt.",
+        "- Local claim-pattern checks reduce common overreach but are not a complete factuality guarantee.",
         "- Verify each supported claim against the linked article before publishing.",
         "- Story scores express the model's editorial judgment, not verified popularity or market demand.", "",
     ]
