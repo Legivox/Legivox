@@ -2,6 +2,12 @@ name: Legivox daily research and X publishing
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/legivox.yml'
+      - 'scripts/**'
+      - 'data/ideas.json'
   schedule:
     # Plan at 06:00 IST, then publish at 08:05, 09:20 and 10:35 IST.
     - cron: '30 0 * * *'
