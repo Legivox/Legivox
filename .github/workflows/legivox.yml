@@ -9,11 +9,11 @@ on:
       - 'scripts/**'
       - 'data/ideas.json'
   schedule:
-    # Plan at 06:00 IST, then publish at 08:05, 09:20 and 10:35 IST.
+    # Plan at 06:00 IST, then publish at 09:00, 13:00 and 19:00 IST.
     - cron: '30 0 * * *'
-    - cron: '35 2 * * *'
-    - cron: '50 3 * * *'
-    - cron: '5 5 * * *'
+    - cron: '30 3 * * *'
+    - cron: '30 7 * * *'
+    - cron: '30 13 * * *'
 
 permissions:
   contents: write
@@ -46,18 +46,18 @@ jobs:
         env:
           TWEETKIT_COOKIE: ${{ secrets.X_SESSION_COOKIE }}
         run: python scripts/prepare_daily_plan.py
-      - name: Publish morning post 1
-        if: github.event.schedule == '35 2 * * *'
+      - name: Publish morning post
+        if: github.event.schedule == '30 3 * * *'
         env:
           TWEETKIT_COOKIE: ${{ secrets.X_SESSION_COOKIE }}
         run: python scripts/publish_next.py --slot 0
-      - name: Publish morning post 2
-        if: github.event.schedule == '50 3 * * *'
+      - name: Publish lunch-time post
+        if: github.event.schedule == '30 7 * * *'
         env:
           TWEETKIT_COOKIE: ${{ secrets.X_SESSION_COOKIE }}
         run: python scripts/publish_next.py --slot 1
-      - name: Publish morning post 3
-        if: github.event.schedule == '5 5 * * *'
+      - name: Publish evening post
+        if: github.event.schedule == '30 13 * * *'
         env:
           TWEETKIT_COOKIE: ${{ secrets.X_SESSION_COOKIE }}
         run: python scripts/publish_next.py --slot 2
