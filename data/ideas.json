@@ -5,7 +5,13 @@
     "problem": "Feedback and feature requests are scattered across channels.",
     "evidence": "Unverified hypothesis. Research complaints and willingness to pay before treating this as demand.",
     "solution_hypothesis": "a lightweight inbox that groups repeated requests into a prioritized backlog",
-    "publish_text": "A creator can get the same feature request in a DM, a comment, an email and a community thread. The hard part isn't collecting feedback. It's noticing what's being asked for repeatedly. How do you track that today?"
+    "publish_text": "A creator can get the same feature request in a DM, a comment, an email and a community thread. The hard part isn't collecting feedback. It's noticing what's being asked for repeatedly. How do you track that today?",
+    "research_query": "creator feedback feature requests product",
+    "image_query": "creative workspace notebook computer",
+    "alternate_posts": [
+      "A feature request becomes useful data when you can see frequency, context, and who asked. I’d start with a weekly tally before building another tool. What would you want to see in that summary?",
+      "If every small request lives in a different app, prioritisation turns into guesswork. A tiny experiment: log requests for a week and group the repeats. Which kind of feedback gets lost most often?"
+    ]
   },
   {
     "id": "freelancer-scope",
@@ -13,7 +19,13 @@
     "problem": "Scope changes and assumptions can quietly erode project margins.",
     "evidence": "Unverified hypothesis. Validate with public discussions and paid competitor products.",
     "solution_hypothesis": "a project scoping workbook with explicit assumptions and change approvals",
-    "publish_text": "Scope creep rarely arrives as one dramatic request. It's a handful of tiny “while you're in there…” changes. Freelancers, how do you document assumptions and approve extra work without making every project feel bureaucratic?"
+    "publish_text": "Scope creep rarely arrives as one dramatic request. It's a handful of tiny “while you're in there…” changes. Freelancers, how do you document assumptions and approve extra work without making every project feel bureaucratic?",
+    "research_query": "freelancer scope creep client project",
+    "image_query": "freelancer laptop project notebook",
+    "alternate_posts": [
+      "Freelancers: when a client says “this should be a quick change,” how do you decide whether it belongs in the original scope? I’m interested in the actual process, not another template promising to fix everything.",
+      "A project estimate is only useful if its assumptions are visible. What do you document before starting a freelance project, and what tends to come back to bite you later?"
+    ]
   },
   {
     "id": "seller-stock",
@@ -21,7 +33,13 @@
     "problem": "Stock, fees, reorder levels and margins often live in disconnected sheets.",
     "evidence": "Unverified hypothesis. Check competing templates and seller complaints.",
     "solution_hypothesis": "an inventory workbook that combines reorder signals with per-item margins",
-    "publish_text": "A product can look profitable until marketplace fees, packaging, shipping and restocking time are counted. For small sellers, which number is easiest to lose track of: true margin, stock on hand, or reorder timing?"
+    "publish_text": "A product can look profitable until marketplace fees, packaging, shipping and restocking time are counted. For small sellers, which number is easiest to lose track of: true margin, stock on hand, or reorder timing?",
+    "research_query": "inventory small ecommerce seller profit",
+    "image_query": "warehouse inventory boxes small business",
+    "alternate_posts": [
+      "Inventory counts alone don't tell a seller what to reorder. Lead time, fees and margin all change the decision. Which of those numbers do you currently have to calculate by hand?",
+      "If you sell online, what takes more time than it should: reconciling stock, working out real profit, or deciding when to reorder? I'm mapping the unglamorous admin that eats into selling time."
+    ]
   },
   {
     "id": "job-search",
@@ -29,7 +47,13 @@
     "problem": "Follow-ups, interview notes and application stages get lost across tabs.",
     "evidence": "Unverified hypothesis. Compare job trackers and user complaints before building.",
     "solution_hypothesis": "a focused job-search tracker with role-specific notes and follow-up reminders",
-    "publish_text": "Job searching can turn into a spreadsheet graveyard: application status in one tab, follow-ups in another, interview notes in your inbox. What part of staying organised is still painful, even with existing trackers?"
+    "publish_text": "Job searching can turn into a spreadsheet graveyard: application status in one tab, follow-ups in another, interview notes in your inbox. What part of staying organised is still painful, even with existing trackers?",
+    "research_query": "job search resume hiring tracker",
+    "image_query": "resume job application desk",
+    "alternate_posts": [
+      "A job tracker is easy to create and surprisingly easy to abandon. The useful part is making the next action obvious: follow up, prepare, or move on. What makes a tracker worth opening every day?",
+      "Job applications create lots of small deadlines. Which reminder do you most often miss: recruiter follow-ups, interview preparation, assessment dates, or checking back after a final round?"
+    ]
   },
   {
     "id": "newsletter",
@@ -37,7 +61,13 @@
     "problem": "Good reader questions and story ideas disappear between issues.",
     "evidence": "Unverified hypothesis. Look for repeated creator workflows and existing paid alternatives.",
     "solution_hypothesis": "an editorial backlog that turns reader feedback into tagged story candidates",
-    "publish_text": "Reader replies can contain better story ideas than a blank editorial calendar. The problem is remembering them when it's time to write the next issue. Newsletter writers, how do you save reader questions and decide which ones deserve a piece?"
+    "publish_text": "Reader replies can contain better story ideas than a blank editorial calendar. The problem is remembering them when it's time to write the next issue. Newsletter writers, how do you save reader questions and decide which ones deserve a piece?",
+    "research_query": "newsletter creator reader audience",
+    "image_query": "writer notebook desk",
+    "alternate_posts": [
+      "Newsletter writers: do you save reader replies somewhere searchable, or trust yourself to remember them? I'm curious how you turn useful replies into future issues without creating an admin project.",
+      "A reader's question can be a strong content brief. The tricky part is tagging it, finding it later and knowing whether it's worth a full issue. How do you handle that today?"
+    ]
   },
   {
     "id": "local-services",
@@ -45,7 +75,13 @@
     "problem": "Leads, quotes and follow-ups are easy to forget when the owner does everything.",
     "evidence": "Unverified hypothesis. Interview operators and inspect existing low-cost tools.",
     "solution_hypothesis": "a simple quote and follow-up tracker designed for one-person businesses",
-    "publish_text": "For a one-person service business, the job isn't over when the quote is sent. Remembering to follow up is its own admin task. What do you use to track quotes that haven't turned into bookings yet?"
+    "publish_text": "For a one-person service business, the job isn't over when the quote is sent. Remembering to follow up is its own admin task. What do you use to track quotes that haven't turned into bookings yet?",
+    "research_query": "small business leads customer management",
+    "image_query": "small business shop owner workspace",
+    "alternate_posts": [
+      "Small service businesses often have a simple pipeline: enquiry, quote, follow-up, booking. The leak is usually between two steps. Where do you see prospective customers go quiet most often?",
+      "How do you keep track of quotes that need a follow-up when you're also doing the actual service work? A lightweight process that gets used beats a sophisticated CRM nobody opens."
+    ]
   },
   {
     "id": "student-projects",
@@ -53,7 +89,13 @@
     "problem": "Group-project decisions and task ownership can vanish in chat histories.",
     "evidence": "Unverified hypothesis. Validate with students and compare existing group-work apps.",
     "solution_hypothesis": "a lightweight decision log and responsibility tracker for small teams",
-    "publish_text": "Group projects don't usually need another giant task board. They need decisions that don't vanish in chat and a clear owner for the next step. What tools have actually worked for student teams beyond week one?"
+    "publish_text": "Group projects don't usually need another giant task board. They need decisions that don't vanish in chat and a clear owner for the next step. What tools have actually worked for student teams beyond week one?",
+    "research_query": "student group project collaboration",
+    "image_query": "students group study desk",
+    "alternate_posts": [
+      "Every group project seems to have a moment when nobody remembers who agreed to do what. What is the smallest process that has helped your team keep decisions and ownership clear?",
+      "Student teams don't necessarily need more features. They need a reliable record of decisions and next steps. Have you found a tool or habit your group still uses after the first week?"
+    ]
   },
   {
     "id": "event-organizers",
@@ -61,7 +103,13 @@
     "problem": "Vendor quotes, deadlines and last-minute changes are spread across documents.",
     "evidence": "Unverified hypothesis. Research organizer forums and paid planning templates.",
     "solution_hypothesis": "an event operations workbook that connects budgets, vendors and deadlines",
-    "publish_text": "A small event means vendor quotes, payment dates, guest counts and last-minute changes competing for attention. Event organisers, what's the one spreadsheet or checklist you wish you'd set up sooner?"
+    "publish_text": "A small event means vendor quotes, payment dates, guest counts and last-minute changes competing for attention. Event organisers, what's the one spreadsheet or checklist you wish you'd set up sooner?",
+    "research_query": "event planning conference organizer",
+    "image_query": "event planning checklist notebook",
+    "alternate_posts": [
+      "Event planning means lots of dependencies: a delayed vendor can change the schedule, budget and guest experience. How do small organisers keep those dependencies visible without building a monster spreadsheet?",
+      "Which event-planning detail is most likely to slip through the cracks: vendor payments, guest counts, delivery dates, or last-minute changes? I'm curious what real checklists cover poorly."
+    ]
   },
   {
     "id": "indie-launch",
@@ -69,7 +117,13 @@
     "problem": "Launch feedback arrives before makers have a repeatable way to categorize it.",
     "evidence": "Unverified hypothesis. Review launch discussions and creator tools before claiming demand.",
     "solution_hypothesis": "a launch feedback triage board with tags for bugs, requests and objections",
-    "publish_text": "A launch can produce dozens of comments and still leave a maker unsure what to fix first. Bugs, feature requests and “I don't get it” feedback need different treatment. How do indie builders sort launch feedback today?"
+    "publish_text": "A launch can produce dozens of comments and still leave a maker unsure what to fix first. Bugs, feature requests and “I don't get it” feedback need different treatment. How do indie builders sort launch feedback today?",
+    "research_query": "product launch startup feedback",
+    "image_query": "software startup laptop workspace",
+    "alternate_posts": [
+      "After launching a small product, it's tempting to treat every comment as a feature request. Some are bugs, some are confusion, and some are simply not your audience. How do you sort that feedback?",
+      "A launch gives you lots of opinions but not always a clear priority. What signal do you trust most when choosing the next fix: repeated complaints, user behaviour, or someone willing to pay?"
+    ]
   },
   {
     "id": "consultants",
@@ -77,7 +131,13 @@
     "problem": "Discovery calls produce notes that rarely become a clear action plan.",
     "evidence": "Unverified hypothesis. Validate against consulting workflows and paid templates.",
     "solution_hypothesis": "a discovery-call worksheet that turns client goals into measurable deliverables",
-    "publish_text": "A discovery call can feel productive, then a week later the notes are still just notes. Consultants, what process actually turns client goals into deliverables and next actions you follow through on?"
+    "publish_text": "A discovery call can feel productive, then a week later the notes are still just notes. Consultants, what process actually turns client goals into deliverables and next actions you follow through on?",
+    "research_query": "consultant client discovery call",
+    "image_query": "business consultant notebook meeting",
+    "alternate_posts": [
+      "Consultants: what do you send after a discovery call so the conversation becomes a decision and a next step, rather than a tidy document nobody uses?",
+      "The hardest part of discovery may be turning a client's broad goal into a measurable outcome. What question helps you get from “we need growth” to something concrete?"
+    ]
   },
   {
     "id": "content-repurpose",
@@ -85,7 +145,13 @@
     "problem": "Useful long-form ideas are difficult to adapt consistently across formats.",
     "evidence": "Unverified hypothesis. Research creator feedback and the crowded repurposing-tool market.",
     "solution_hypothesis": "a structured repurposing planner that maps one core idea to several distinct formats",
-    "publish_text": "Repurposing content shouldn't mean copy-pasting one idea into five formats. The useful part is finding a different angle for each audience. What helps you reuse an idea without making every post feel recycled?"
+    "publish_text": "Repurposing content shouldn't mean copy-pasting one idea into five formats. The useful part is finding a different angle for each audience. What helps you reuse an idea without making every post feel recycled?",
+    "research_query": "content creator social media workflow",
+    "image_query": "content creator camera laptop desk",
+    "alternate_posts": [
+      "One long-form idea can become several posts, but only if each format adds a different angle. What part of repurposing takes the most effort for you: finding angles, editing, or keeping track of what has already run?",
+      "Repurposing works best when it preserves the idea but changes the job it does for the reader. Do you plan variations up front or pull them out of content when you need them?"
+    ]
   },
   {
     "id": "micro-saas-support",
@@ -93,7 +159,13 @@
     "problem": "Repeated support questions can expose product friction but are hard to summarize.",
     "evidence": "Unverified hypothesis. Explore founder forums and lightweight support products.",
     "solution_hypothesis": "a support-theme tracker that groups recurring questions into documentation tasks",
-    "publish_text": "Repeated support questions can be a product signal, not just a support problem. If customers keep asking the same thing, the UI or docs may be failing them. How do small SaaS teams spot those patterns?"
+    "publish_text": "Repeated support questions can be a product signal, not just a support problem. If customers keep asking the same thing, the UI or docs may be failing them. How do small SaaS teams spot those patterns?",
+    "research_query": "SaaS customer support startup",
+    "image_query": "software support laptop workspace",
+    "alternate_posts": [
+      "If three customers ask the same support question, I’d want to know whether the product, onboarding or docs caused it. How do small teams keep those patterns from disappearing into the ticket queue?",
+      "Support tickets are also product research, but only if the recurring themes get back to the people building the product. What is your current path from support question to product fix?"
+    ]
   },
   {
     "id": "digital-assets",
@@ -101,7 +173,13 @@
     "problem": "Product updates, file versions and customer-facing change notes can drift apart.",
     "evidence": "Unverified hypothesis. Check how existing marketplaces and sellers handle updates.",
     "solution_hypothesis": "a version and release-note checklist for downloadable products",
-    "publish_text": "A downloadable product changes, but the updated file, version notes and customer instructions don't always change together. Digital-product sellers, how do you manage updates without leaving buyers confused?"
+    "publish_text": "A downloadable product changes, but the updated file, version notes and customer instructions don't always change together. Digital-product sellers, how do you manage updates without leaving buyers confused?",
+    "research_query": "digital product creator downloads",
+    "image_query": "digital design tablet laptop workspace",
+    "alternate_posts": [
+      "Downloadable products still need version control. A new file, changed instructions and old customer links can drift out of sync. How do you announce updates without confusing buyers?",
+      "For digital downloads, what's the messiest part of shipping an update: keeping source files organised, documenting what changed, or making sure customers can find the latest version?"
+    ]
   },
   {
     "id": "home-inventory",
@@ -109,7 +187,13 @@
     "problem": "Boxes and household items become difficult to locate after moving.",
     "evidence": "Unverified hypothesis. Research moving checklists, inventory apps and user complaints.",
     "solution_hypothesis": "a printable and searchable moving inventory with box labels and room mapping",
-    "publish_text": "Moving-day mystery: you know the charger is in one of the boxes, but which one? I'm exploring simple home-inventory ideas. Do you label boxes in a way that makes unpacking genuinely easier?"
+    "publish_text": "Moving-day mystery: you know the charger is in one of the boxes, but which one? I'm exploring simple home-inventory ideas. Do you label boxes in a way that makes unpacking genuinely easier?",
+    "research_query": "moving house boxes inventory",
+    "image_query": "moving boxes home organization",
+    "alternate_posts": [
+      "A moving inventory is only useful if it takes seconds to search while surrounded by boxes. Would you prefer room labels, numbered boxes, item lists, or a simple photo-based system?",
+      "People often label moving boxes by room, then forget which box contains the one item they need first. What system have you used that actually made unpacking easier?"
+    ]
   },
   {
     "id": "career-switch",
@@ -117,7 +201,13 @@
     "problem": "Learning plans often track hours spent rather than evidence of practical skill.",
     "evidence": "Unverified hypothesis. Compare career trackers and portfolio-based learning methods.",
     "solution_hypothesis": "a project-evidence tracker linking skills to demos, code and interview stories",
-    "publish_text": "Hours studied are easy to track. Proof that you can do the job is harder. For a career switch, shipped projects, demos and clear explanations seem more useful than a streak counter. How do you track evidence of skill?"
+    "publish_text": "Hours studied are easy to track. Proof that you can do the job is harder. For a career switch, shipped projects, demos and clear explanations seem more useful than a streak counter. How do you track evidence of skill?",
+    "research_query": "career change portfolio skills",
+    "image_query": "career learning books laptop notebook",
+    "alternate_posts": [
+      "A learning plan measures effort; a portfolio should show ability. What evidence would convince you that a career-switch project is worth putting on a CV: a working demo, users, tests, or a clear technical write-up?",
+      "When changing careers, it is easy to collect courses and hard to demonstrate skills. What small project or proof point helped you feel interview-ready?"
+    ]
   },
   {
     "id": "small-agencies",
@@ -125,7 +215,13 @@
     "problem": "Client approvals and pending assets block delivery without a visible reason.",
     "evidence": "Unverified hypothesis. Validate through agency workflows and competitor reviews.",
     "solution_hypothesis": "a client handoff checklist that highlights missing approvals and assets",
-    "publish_text": "A project can be “almost done” for days because one client approval or missing asset is blocking everything. Small agencies, how do you make the next blocker obvious without adding another status meeting?"
+    "publish_text": "A project can be “almost done” for days because one client approval or missing asset is blocking everything. Small agencies, how do you make the next blocker obvious without adding another status meeting?",
+    "research_query": "creative agency project approval",
+    "image_query": "creative studio team desk",
+    "alternate_posts": [
+      "Agency projects stall when someone is waiting for approval but nobody can see exactly what's missing. How do you surface client-side blockers without adding another meeting?",
+      "Creative teams can finish their own work and still be blocked by missing copy, files or sign-off. Which handoff step causes the most avoidable delays in your projects?"
+    ]
   },
   {
     "id": "market-research",
@@ -133,7 +229,13 @@
     "problem": "Market notes, competitor examples and assumptions become mixed together.",
     "evidence": "Unverified hypothesis. Inspect founder research workflows before building.",
     "solution_hypothesis": "a research ledger that separates sourced observations from assumptions and decisions",
-    "publish_text": "Founder research gets messy when a sourced observation, a hunch and a product decision all end up in the same document. What do you use to keep evidence separate from assumptions?"
+    "publish_text": "Founder research gets messy when a sourced observation, a hunch and a product decision all end up in the same document. What do you use to keep evidence separate from assumptions?",
+    "research_query": "market research startup customers",
+    "image_query": "market research charts notebook",
+    "alternate_posts": [
+      "A useful market-research note should separate what someone actually said from what you inferred. How do you keep evidence, assumptions and product decisions from blending into one confident-looking document?",
+      "Before building a product, I want to keep three columns separate: observed problem, evidence, and assumption. What system do you use to keep your own research honest?"
+    ]
   },
   {
     "id": "course-creators",
@@ -141,7 +243,13 @@
     "problem": "Learner questions can reveal confusing lessons but rarely make it into the next revision.",
     "evidence": "Unverified hypothesis. Research educator communities and course feedback tools.",
     "solution_hypothesis": "a lesson feedback tracker that connects learner confusion to specific course sections",
-    "publish_text": "If learners keep asking the same question, it may be a lesson problem, not a learner problem. Course creators, how do you connect repeated confusion to the exact lesson that needs fixing?"
+    "publish_text": "If learners keep asking the same question, it may be a lesson problem, not a learner problem. Course creators, how do you connect repeated confusion to the exact lesson that needs fixing?",
+    "research_query": "online course creator student feedback",
+    "image_query": "online learning laptop notebook",
+    "alternate_posts": [
+      "Repeated learner questions can point to one confusing lesson. Do course creators tag questions by lesson, topic, or learner stage, and does that information make it into the next revision?",
+      "Course feedback gets more actionable when it points to the exact moment a learner gets stuck. What do you use to connect feedback to a lesson or timestamp?"
+    ]
   },
   {
     "id": "makers-pricing",
@@ -149,7 +257,13 @@
     "problem": "Pricing can omit packaging, marketplace fees and time spent making each item.",
     "evidence": "Unverified hypothesis. Compare existing costing calculators and seller discussions.",
     "solution_hypothesis": "a costing sheet that shows contribution margin after fees, materials and labour",
-    "publish_text": "Handmade pricing gets tricky when materials are counted but labour, packaging, marketplace fees and failed attempts aren't. Sellers, what costs do you include before deciding a price?"
+    "publish_text": "Handmade pricing gets tricky when materials are counted but labour, packaging, marketplace fees and failed attempts aren't. Sellers, what costs do you include before deciding a price?",
+    "research_query": "handmade small business pricing craft",
+    "image_query": "handmade crafts workbench",
+    "alternate_posts": [
+      "For handmade products, material cost is only the beginning. Packaging, transaction fees, rejected pieces and labour all matter. Which cost did you underestimate when you first started pricing your work?",
+      "A price can cover materials and still underpay the maker. Do you include your time and marketplace fees in every item's cost, or does that calculation happen only when margins feel tight?"
+    ]
   },
   {
     "id": "personal-knowledge",
@@ -157,6 +271,12 @@
     "problem": "Small commitments and next actions get buried across notes and task apps.",
     "evidence": "Unverified hypothesis. Validate against established task tools and public complaints.",
     "solution_hypothesis": "a weekly side-project review sheet that limits active work and captures next actions",
-    "publish_text": "A side-project list can become a graveyard of good intentions. The hard part is deciding what stays active and what gets parked. Do you use a weekly review, a limit on active projects, or something else?"
+    "publish_text": "A side-project list can become a graveyard of good intentions. The hard part is deciding what stays active and what gets parked. Do you use a weekly review, a limit on active projects, or something else?",
+    "research_query": "side project productivity planning",
+    "image_query": "notebook weekly planner desk",
+    "alternate_posts": [
+      "If you have several side projects, adding a new task manager rarely fixes the real problem: too many active commitments. What rule helps you decide which project gets attention this week?",
+      "A weekly project review should answer three things: what moved, what is blocked, and what can be parked. Which part of that review do you find hardest to stick with?"
+    ]
   }
 ]
