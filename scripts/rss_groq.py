@@ -276,10 +276,10 @@ def generate_drafts(candidates: list[dict], max_posts: int = 3) -> tuple[list[di
                         "relevance_score": {"type": "integer", "minimum": 1, "maximum": 10},
                         "significance_score": {"type": "integer", "minimum": 1, "maximum": 10},
                         "originality_score": {"type": "integer", "minimum": 1, "maximum": 10},
-                        "angle": {"type": "string", "maxLength": 140},
-                        "why_selected": {"type": "string", "maxLength": 180},
+                        "angle": {"type": "string"},
+                        "why_selected": {"type": "string"},
                         "evidence_quote": {"type": "string"},
-                        "post_text": {"type": "string", "minLength": 55, "maxLength": 180},
+                        "post_text": {"type": "string"},
                     },
                 },
             }
@@ -423,7 +423,7 @@ def generate_drafts(candidates: list[dict], max_posts: int = 3) -> tuple[list[di
             "significance_score": int(post.get("significance_score", 0)),
             "originality_score": int(post.get("originality_score", 0)),
         }
-        reason = clean(post.get("why_selected"))
+        reason = clean(post.get("why_selected"))[:180]
         thresholds = []
         if scores["relevance_score"] < RELEVANCE_MIN:
             thresholds.append(f'relevance {scores["relevance_score"]}/{RELEVANCE_MIN}+')
@@ -559,7 +559,7 @@ def generate_drafts(candidates: list[dict], max_posts: int = 3) -> tuple[list[di
             "source_url": article["url"],
             "category": clean(post.get("category")),
             "scores": scores,
-            "angle": clean(post.get("angle")),
+            "angle": clean(post.get("angle"))[:140],
             "why_selected": reason,
             "evidence_quote": evidence_quote,
             "post_text": copy,
