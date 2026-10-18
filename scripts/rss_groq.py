@@ -311,7 +311,12 @@ def generate_drafts(candidates: list[dict], max_posts: int = 3) -> tuple[list[di
         "are not in the source. A safer provider-default angle is that defaults shape what users try first, "
         "while keeping an alternative available preserves choice. For external evaluators/watchdogs, discuss "
         "the specific oversight described; do not call it a new industry standard or predict other labs' "
-        "reactions unless stated in the excerpt. For proposed bills, use conditional language and describe "
+        "reactions unless stated in the excerpt. A grounded angle is that external evaluators can assess model "
+        "risks with deeper access; avoid claiming this sets standards for the industry. For provider-default "
+        "news, prefer: the default changes what users try first, while continued availability of the alternative "
+        "preserves choice; avoid claims about migration, retraining, cost or latency unless sourced. For proposed "
+        "bills, say what the bill would direct a regulator to do if passed, and avoid predicting changes to "
+        "subscriptions or revenue models unless sourced. For proposed bills, use conditional language and describe "
         "the proposed regulator/action accurately; do not say it will force studios to change or add DLC, "
         "subscription, or revenue-model effects unless the excerpt says so. For each post, provide "
         "evidence_quote as a verbatim, contiguous excerpt "
@@ -487,7 +492,7 @@ def generate_drafts(candidates: list[dict], max_posts: int = 3) -> tuple[list[di
             (r"\b(?:must|will have to|has to|have to)\b", "uncautious necessity claim"),
             (r"\bpermanent rights\b", "permanent rights"),
             (r"\b(?:single[- ]vendor|vendor lock[- ]in|AI stacks?)\b", "single-vendor AI stack"),
-            (r"\b(?:industry[- ]wide|trend toward|new standard|new era|raising expectations for other labs|raises expectations for other labs)\b", "industry-wide inference"),
+            (r"\b(?:(?:industry[- ]wide|trend toward|new standard|new era|raising expectations for other labs|raises expectations for other labs)|(?:set(?:s|ting)?|establish(?:es|ing)?|creat(?:e|es|ing))\s+(?:a\s+)?(?:new\s+)?(?:[A-Za-z-]+\s+){0,3}standards?)\b", "industry-wide inference"),
             (r"\b(?:forcing|force|forces|forced|mandates?|mandated|requires?|required)\s+(?:studios|labs|developers|companies|platforms)\b", "strong causal claim"),
         )
         unsupported_detail = None
