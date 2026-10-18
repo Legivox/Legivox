@@ -148,12 +148,23 @@ def draft_options(idea: dict) -> list[str]:
 
 
 def write_queue_report(plan: dict) -> None:
+    is_rss_groq = plan.get("research_source") == "RSS feeds + Groq editorial ranking"
+    if is_rss_groq:
+        description = (
+            "> This scheduled post was generated from a recent RSS story and passed the local quality gate. "
+            "The attached excerpt is not a full fact-check; verify the linked article before treating every implication as confirmed."
+        )
+    else:
+        description = (
+            "> Topics are prioritised using recent public Hacker News discussion signals plus a rotation fallback. "
+            "These signals are not proof of willingness to pay. Copy is selected from the reviewed draft library, not generated from research labels."
+        )
     lines = [
         "# Legivox daily content plan",
         "",
         "Prepared: " + plan["prepared_at_ist"],
         "",
-        "> Topics are prioritised using recent public Hacker News discussion signals plus a rotation fallback. These signals are not proof of willingness to pay. Copy is selected from the reviewed draft library, not generated from research labels.",
+        description,
         "",
     ]
     for index, post in enumerate(plan["posts"], start=1):
@@ -165,15 +176,26 @@ def write_queue_report(plan: dict) -> None:
             post["text"],
             "",
             "- Topic: " + post["niche"],
-            "- Research query: " + post["research"]["query"],
-            "- Recent discussion signal score: " + str(post["research"]["score"]),
         ]
+        if is_rss_groq:
+            lines.append("- Editorial score (model estimate): " + str(post["research"]["score"]))
+        else:
+            lines += [
+                "- Research query: " + post["research"]["query"],
+                "- Recent discussion signal score: " + str(post["research"]["score"]),
+            ]
         signals = post["research"].get("hits", [])
         if signals:
-            lines += ["", "**Recent public discussion signals**", ""]
-            for signal in signals[:3]:
-                title = signal["title"].replace("[", "\\[").replace("]", "\\]")
-                lines.append("- [" + title + "](" + signal["url"] + ") · " + str(signal["points"]) + " points · " + str(signal["comments"]) + " comments")
+            if is_rss_groq:
+                lines += ["", "**Source article**", ""]
+                for signal in signals[:1]:
+                    title = signal["title"].replace("[", "\\[").replace("]", "\\]")
+                    lines.append("- [" + title + "](" + signal["url"] + ")")
+            else:
+                lines += ["", "**Recent public discussion signals**", ""]
+                for signal in signals[:3]:
+                    title = signal["title"].replace("[", "\\[").replace("]", "\\]")
+                    lines.append("- [" + title + "](" + signal["url"] + ") · " + str(signal["points"]) + " points · " + str(signal["comments"]) + " comments")
         else:
             lines += ["", "_No recent matching Hacker News signal was found; the topic was chosen by rotation._"]
         lines += ["", "- Status: " + post.get("status", "planned"), ""]
