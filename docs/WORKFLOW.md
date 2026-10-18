@@ -2,9 +2,11 @@
 
 ## Schedule (India Standard Time)
 - 06:00: fetch recent public Hacker News discussion signals, choose three topics, write today's plan, and prepare a manual-engagement shortlist from X search when the session can be verified.
-- 08:05: publish planned post 1.
-- 09:20: publish planned post 2.
-- 10:35: publish planned post 3.
+- 09:00: publish the morning post.
+- 13:00: publish the lunch-time post.
+- 19:00: publish the evening post.
+
+The publishing slots intentionally cover different dayparts. They are initial testing windows, not a guarantee of traffic. Compare impressions and meaningful engagement by slot after several weeks, then adjust.
 
 GitHub Actions cron times are UTC. GitHub may delay scheduled runs. Manual workflow dispatch prepares a plan but does not publish immediately.
 
