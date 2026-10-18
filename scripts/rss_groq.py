@@ -288,10 +288,10 @@ def generate_drafts(candidates: list[dict], max_posts: int = 3) -> tuple[list[di
                         "relevance_score": {"type": "integer", "minimum": 1, "maximum": 10},
                         "significance_score": {"type": "integer", "minimum": 1, "maximum": 10},
                         "originality_score": {"type": "integer", "minimum": 1, "maximum": 10},
-                        "angle": {"type": "string"},
-                        "why_selected": {"type": "string"},
+                        "angle": {"type": "string", "maxLength": 140},
+                        "why_selected": {"type": "string", "maxLength": 180},
                         "evidence_quote": {"type": "string"},
-                        "post_text": {"type": "string"},
+                        "post_text": {"type": "string", "maxLength": 280},
                     },
                 },
             }
