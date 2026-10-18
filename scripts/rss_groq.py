@@ -260,7 +260,7 @@ def generate_drafts(candidates: list[dict], max_posts: int = 3) -> tuple[list[di
                     "type": "object",
                     "required": [
                         "article_id", "category", "relevance_score", "significance_score",
-                        "originality_score", "angle", "why_selected", "post_text",
+                        "originality_score", "angle", "why_selected", "evidence_quote", "post_text",
                     ],
                     "additionalProperties": False,
                     "properties": {
@@ -278,6 +278,7 @@ def generate_drafts(candidates: list[dict], max_posts: int = 3) -> tuple[list[di
                         "originality_score": {"type": "integer", "minimum": 1, "maximum": 10},
                         "angle": {"type": "string", "maxLength": 140},
                         "why_selected": {"type": "string", "maxLength": 180},
+                        "evidence_quote": {"type": "string", "minLength": 20, "maxLength": 160},
                         "post_text": {"type": "string", "minLength": 55, "maxLength": 180},
                     },
                 },
@@ -319,7 +320,13 @@ def generate_drafts(candidates: list[dict], max_posts: int = 3) -> tuple[list[di
         "hype, empty phrases like 'game changer' or 'the future is here', fake questions, calls for "
         "engagement, hashtags, and unsupported claims. Separate fact from interpretation. Use only facts "
         "supported by the supplied title/excerpt; when evidence is thin, state a modest implication or "
-        "reject the story. post_text must be 55-180 characters and contain no URL; a source link is added "
+        "reject the story. Do not introduce a named AI model, model version, named product, metric, or "
+        "technical implementation detail unless it appears in the supplied title/excerpt. For each post, "
+        "provide evidence_quote as a verbatim, contiguous excerpt of at least 20 characters copied from "
+        "that candidate's title or summary; choose a phrase that supports the post's central factual premise, "
+        "not a generic phrase. If the story cannot support the premise, select another story. The local "
+        "validator checks the quote and known model/version identifiers. post_text must be 55-180 characters "
+        "and contain no URL; a source link is added "
         "later. Include a concise reason for selection. Use each article_id at most once. Return only "
         "the required structured JSON."
     )
@@ -384,6 +391,22 @@ def generate_drafts(candidates: list[dict], max_posts: int = 3) -> tuple[list[di
             continue
         seen.add(article_id)
         article = by_id[article_id]
+        evidence_quote = clean(post.get("evidence_quote"))
+        evidence_text = clean(article["title"] + " " + article["summary"])
+        def evidence_normalize(value: str) -> str:
+            return (
+                clean(value).casefold()
+                .replace("’", "'").replace("‘", "'")
+                .replace("“", '"').replace("”", '"')
+            )
+        normalized_quote = evidence_normalize(evidence_quote)
+        normalized_evidence = evidence_normalize(evidence_text)
+        if len(evidence_quote) < 20 or normalized_quote not in normalized_evidence:
+            rejected.append({
+                "article_id": article_id, "source": article["source"], "title": article["title"],
+                "reason": "Evidence quote is not an exact excerpt from the supplied title or summary.",
+            })
+            continue
         scores = {
             "relevance_score": int(post.get("relevance_score", 0)),
             "significance_score": int(post.get("significance_score", 0)),
@@ -408,6 +431,27 @@ def generate_drafts(candidates: list[dict], max_posts: int = 3) -> tuple[list[di
             rejected.append({
                 "article_id": article_id, "source": article["source"], "title": article["title"],
                 "scores": scores, "reason": "Draft failed length, URL, or hashtag validation.",
+            })
+            continue
+        evidence_for_terms = evidence_normalize(evidence_text)
+        model_name_pattern = re.compile(
+            r"\\b(?:GPT[-\\s]?\\d+(?:[. -]\\d+)*(?:[- ]?(?:turbo|mini|pro|thinking))?"
+            r"|Claude(?:[- ]?\\d+(?:[. -]\\d+)*)?(?:[- ]?(?:Sonnet|Opus|Haiku))?"
+            r"|Gemini(?:[- ]?\\d+(?:[. -]\\d+)*)?(?:[- ]?(?:Flash|Pro|Ultra))?"
+            r"|Llama[- ]?\\d+(?:[. -]\\d+)*|DeepSeek[- ]?[A-Za-z0-9. -]+"
+            r"|Grok[- ]?[0-9A-Za-z.]+|Qwen[- ]?[0-9A-Za-z.]+)\\b",
+            re.I,
+        )
+        unsupported_model = next(
+            (match.group(0) for match in model_name_pattern.finditer(copy)
+             if evidence_normalize(match.group(0)) not in evidence_for_terms),
+            None,
+        )
+        if unsupported_model:
+            rejected.append({
+                "article_id": article_id, "source": article["source"], "title": article["title"],
+                "scores": scores,
+                "reason": f"Specific model/version '{unsupported_model}' is not present in the source excerpt.",
             })
             continue
         if re.search(r"\b(bill|act|law|legislation|regulation|proposal|proposes)\b", article["title"], re.I) and not re.search(
@@ -445,6 +489,7 @@ def generate_drafts(candidates: list[dict], max_posts: int = 3) -> tuple[list[di
             "scores": scores,
             "angle": clean(post.get("angle")),
             "why_selected": reason,
+            "evidence_quote": evidence_quote,
             "post_text": copy,
             "text_with_source": full_text,
             "character_count_with_url": len(full_text),
@@ -485,6 +530,8 @@ def write_outputs(
             "Uses RSS metadata and excerpts only; article pages were not scraped.",
             "This script does not publish to X. A separate workflow step is required for posting.",
             "Review source articles before publication; RSS excerpts may omit qualifications.",
+            "Every accepted draft includes a source quote validated as an exact substring of its title or excerpt.",
+            "The source-quote and model/version checks reduce unsupported details but do not prove every sentence is factually correct.",
             "Scores are editorial model estimates, not objective measurements or popularity data.",
         ],
     }
@@ -523,6 +570,7 @@ def write_outputs(
             f'- Published: {draft["published_at_utc"] or "date not provided"}',
             f'- Editorial angle: {draft["angle"]}',
             f'- Why selected: {draft["why_selected"]}',
+            f'- Source evidence (exact quote): “{draft["evidence_quote"]}”',
             f'- Editorial scores: relevance {score["relevance_score"]}/10, significance {score["significance_score"]}/10, originality {score["originality_score"]}/10',
             f'- Article: {draft["source_url"]}', "",
             "Post copy with source link:", "", "~~~text", draft["text_with_source"], "~~~", "",
