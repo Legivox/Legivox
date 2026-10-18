@@ -4,7 +4,7 @@ Zero-cost GitHub Actions scaffold for rotating through Legivox post ideas and pu
 
 ## Important risk
 
-The publisher uses `tweetkit-x`, which replays X website requests with a session cookie rather than using the official API. X's automation rules explicitly prohibit website scripting and warn of possible permanent account suspension. You chose to proceed despite that risk. This repository makes no guarantee the unofficial integration will continue working.
+The publisher uses `tweetkit-x`, which replays X website requests with a session cookie rather than using the official API. X's automation rules explicitly prohibit website scripting and warn of possible permanent account suspension. This workflow pins the source to a specific upstream commit because version 0.3.1 is present in the upstream repository but is not currently available from PyPI.
 
 ## One-time setup required
 
