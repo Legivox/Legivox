@@ -1,12 +1,12 @@
 # Legivox RSS + Groq editorial preview
 
-- Generated: 2026-10-18T23:38:14+05:30
+- Generated: 2026-10-18T23:42:20+05:30
 - Model: openai/gpt-oss-20b
 - Mode: DRY RUN ONLY
 - X publishing: not performed by this script
 - RSS candidates scored: 12
-- Drafts passing the quality gate: 0
-- Rejected model selections: 3
+- Drafts passing the quality gate: 1
+- Rejected model selections: 2
 
 ## Feed checks
 
@@ -18,14 +18,31 @@
 
 ## Drafts that passed the quality gate
 
-**No stories passed every quality check. No publication-ready draft was produced.**
-Skipping weak news is intentional; do not lower the threshold just to fill a slot.
+### Draft 1: Anthropic gives outside AI watchdog “employee-like” access
+
+- Category: AI & software
+- Source: Ars Technica
+- Published: 2026-10-18T16:25:19+00:00
+- Editorial angle: AI Oversight Practices
+- Why selected: Shows a concrete shift toward deeper AI model transparency
+- Source evidence (exact quote): “Anthropic has granted external evaluators “employee-like access””
+- Editorial scores: relevance 8/10, significance 7/10, originality 7/10
+- Article: https://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/
+
+Post copy with source link:
+
+~~~text
+Granting external evaluators ‘employee‑like’ access to Claude shows Anthropic’s push for deeper transparency and could set new AI oversight standards.
+
+https://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/
+~~~
+
+- Plain character count including URL: 244/280
 
 ## Rejected selections
 
-- S02 · Video game ownership bill introduced in Congress: Unsupported specific detail or overclaim (strong causal claim) is absent from the source excerpt. (relevance 8, significance 7, originality 8)
-- S03 · Anthropic gives outside AI watchdog “employee-like” access: Evidence quote must be 20–100 characters and an exact excerpt from the supplied title or summary.
-- S09 · Replit makes OpenAI its default over Anthropic, CEO says: Unsupported specific detail or overclaim (integration detail) is absent from the source excerpt. (relevance 9, significance 8, originality 8)
+- S02 · Video game ownership bill introduced in Congress: Unsupported specific detail or overclaim (subscription) is absent from the source excerpt. (relevance 8, significance 7, originality 7)
+- S09 · Replit makes OpenAI its default over Anthropic, CEO says: Acronym 'GPT' is not present or expanded in the source excerpt. (relevance 8, significance 7, originality 7)
 
 ## Candidate story list
 
