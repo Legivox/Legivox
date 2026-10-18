@@ -497,10 +497,11 @@ def generate_drafts(candidates: list[dict], max_posts: int = 3) -> tuple[list[di
             (r"\bproprietary\b", "proprietary status"),
             (r"\b(?:costs?|pricing|prices?)\b", "cost/pricing implication"),
             (r"\b(?:must|will have to|has to|have to)\b", "uncautious necessity claim"),
+            (r"\bdistribution contracts?\b|\bdistribution agreements?\b", "distribution contracts"),
             (r"\bpermanent rights\b", "permanent rights"),
             (r"\b(?:single[- ]vendor|vendor lock[- ]in|AI stacks?)\b", "single-vendor AI stack"),
             (r"\b(?:(?:industry[- ]wide|trend toward|new standard|new era|raising expectations for other labs|raises expectations for other labs|pressure(?:s|d|ing)? other (?:AI )?labs)|(?:set(?:s|ting)?|establish(?:es|ing)?|creat(?:e|es|ing))\s+(?:a\s+)?(?:new\s+)?(?:[A-Za-z-]+\s+){0,3}(?:standards?|benchmarks?))\b", "industry-wide inference"),
-            (r"\b(?:forcing|force|forces|forced|mandates?|mandated|requires?|required)\s+(?:studios|labs|developers|companies|platforms)\b", "strong causal claim"),
+            (r"\b(?:forcing|force|forces|forced|mandates?|mandated|requires?|required)\s+(?:studios|publishers|labs|developers|companies|platforms)\b", "strong causal claim"),
         )
         unsupported_detail = None
         for pattern, label in unsupported_detail_patterns:
