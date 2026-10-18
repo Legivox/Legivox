@@ -1,10 +1,13 @@
-name: Legivox scheduled X publishing
+name: Legivox daily research and X publishing
 
 on:
   workflow_dispatch:
   schedule:
-    # Once daily at 14:00 IST. Review quality before increasing cadence.
-    - cron: '30 8 * * *'
+    # Plan at 06:00 IST, then publish at 08:05, 09:20 and 10:35 IST.
+    - cron: '30 0 * * *'
+    - cron: '35 2 * * *'
+    - cron: '50 3 * * *'
+    - cron: '5 5 * * *'
 
 permissions:
   contents: write
@@ -14,9 +17,9 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  publish-one-post:
+  legivox:
     runs-on: ubuntu-latest
-    timeout-minutes: 8
+    timeout-minutes: 10
     steps:
       - name: Checkout repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -24,19 +27,35 @@ jobs:
         uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
           python-version: '3.12'
-      - name: Validate script syntax and idea data
+      - name: Validate scripts and idea library
         run: |
-          python -m py_compile scripts/publish_next.py scripts/build_queue.py
+          python -m py_compile scripts/publish_next.py scripts/prepare_daily_plan.py scripts/build_queue.py
           python -m json.tool data/ideas.json > /dev/null
       - name: Install publisher from the reviewed source commit
         run: >-
           python -m pip install --disable-pip-version-check
           'git+https://github.com/nsozturk/tweetkit-x.git@d42503a936f80eb0af2e9856a0fbd392cc4a750c'
-      - name: Verify account, avoid duplicates, and publish one post
+      - name: Prepare daily research plan
+        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '30 0 * * *'
         env:
           TWEETKIT_COOKIE: ${{ secrets.X_SESSION_COOKIE }}
-        run: python scripts/publish_next.py
-      - name: Commit publishing state and audit log
+        run: python scripts/prepare_daily_plan.py
+      - name: Publish morning post 1
+        if: github.event.schedule == '35 2 * * *'
+        env:
+          TWEETKIT_COOKIE: ${{ secrets.X_SESSION_COOKIE }}
+        run: python scripts/publish_next.py --slot 0
+      - name: Publish morning post 2
+        if: github.event.schedule == '50 3 * * *'
+        env:
+          TWEETKIT_COOKIE: ${{ secrets.X_SESSION_COOKIE }}
+        run: python scripts/publish_next.py --slot 1
+      - name: Publish morning post 3
+        if: github.event.schedule == '5 5 * * *'
+        env:
+          TWEETKIT_COOKIE: ${{ secrets.X_SESSION_COOKIE }}
+        run: python scripts/publish_next.py --slot 2
+      - name: Commit plan, publish state and audit logs
         if: always()
         run: |
           git add output/
@@ -46,5 +65,5 @@ jobs:
           fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git commit -m 'Update Legivox publishing state'
+          git commit -m 'Update Legivox daily plan and publishing state'
           git push
