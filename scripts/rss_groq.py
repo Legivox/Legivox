@@ -435,11 +435,11 @@ def generate_drafts(candidates: list[dict], max_posts: int = 3) -> tuple[list[di
             continue
         evidence_for_terms = evidence_normalize(evidence_text)
         model_name_pattern = re.compile(
-            r"\\b(?:GPT[-\\s]?\\d+(?:[. -]\\d+)*(?:[- ]?(?:turbo|mini|pro|thinking))?"
-            r"|Claude(?:[- ]?\\d+(?:[. -]\\d+)*)?(?:[- ]?(?:Sonnet|Opus|Haiku))?"
-            r"|Gemini(?:[- ]?\\d+(?:[. -]\\d+)*)?(?:[- ]?(?:Flash|Pro|Ultra))?"
-            r"|Llama[- ]?\\d+(?:[. -]\\d+)*|DeepSeek[- ]?[A-Za-z0-9. -]+"
-            r"|Grok[- ]?[0-9A-Za-z.]+|Qwen[- ]?[0-9A-Za-z.]+)\\b",
+            r"\b(?:GPT[-\s]?\d+(?:[. -]\d+)*(?:[- ]?(?:turbo|mini|pro|thinking))?"
+            r"|Claude(?:[- ]?\d+(?:[. -]\d+)*)?(?:[- ]?(?:Sonnet|Opus|Haiku))?"
+            r"|Gemini(?:[- ]?\d+(?:[. -]\d+)*)?(?:[- ]?(?:Flash|Pro|Ultra))?"
+            r"|Llama[- ]?\d+(?:[. -]\d+)*|DeepSeek[- ]?[A-Za-z0-9. -]+"
+            r"|Grok[- ]?[0-9A-Za-z.]+|Qwen[- ]?[0-9A-Za-z.]+)\b",
             re.I,
         )
         unsupported_model = next(
