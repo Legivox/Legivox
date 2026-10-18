@@ -1,5 +1,5 @@
 {
-  "generated_at_ist": "2026-10-18T23:43:26+05:30",
+  "generated_at_ist": "2026-10-18T23:44:34+05:30",
   "model": "openai/gpt-oss-20b",
   "dry_run": true,
   "posted_to_x": false,
@@ -66,7 +66,7 @@
       "title": "TechCrunch Mobility: Rivian’s next act",
       "summary": "Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, the role AI is playing in it.",
       "published_at_utc": "2026-10-18T16:05:00+00:00",
-      "age_hours": 2.1,
+      "age_hours": 2.2,
       "url": "https://techcrunch.com/2026/10/18/techcrunch-mobility-rivians-next-act/",
       "feed_url": "https://techcrunch.com/feed/",
       "article_id": "S04"
@@ -163,14 +163,14 @@
       "scores": {
         "relevance_score": 8,
         "significance_score": 8,
-        "originality_score": 7
+        "originality_score": 8
       },
-      "angle": "Anthropic’s employee‑level access for evaluators may prompt other AI labs to open data more closely, but core models stay proprietary",
-      "why_selected": "First concrete example of external evaluation access",
+      "angle": "External watchdogs with employee‑like access could redefine AI safety audits and transparency standards.",
+      "why_selected": "Anthropic’s move provides a concrete example of increased oversight that could set industry precedents for model evaluation.",
       "evidence_quote": "Anthropic has granted external evaluators “employee-like access” to assess the risks of its models",
-      "post_text": "Anthropic’s new employee‑level access for evaluators may pressure other AI labs to open up more closely, but core data remains proprietary.",
-      "text_with_source": "Anthropic’s new employee‑level access for evaluators may pressure other AI labs to open up more closely, but core data remains proprietary.\n\nhttps://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/",
-      "character_count_with_url": 233
+      "post_text": "Granting employees‑like access to third‑party auditors could set a new benchmark for model safety checks and transparency in AI labs.",
+      "text_with_source": "Granting employees‑like access to third‑party auditors could set a new benchmark for model safety checks and transparency in AI labs.\n\nhttps://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/",
+      "character_count_with_url": 227
     },
     {
       "article_id": "S09",
@@ -181,15 +181,15 @@
       "category": "Developer tools",
       "scores": {
         "relevance_score": 8,
-        "significance_score": 8,
-        "originality_score": 7
+        "significance_score": 7,
+        "originality_score": 8
       },
-      "angle": "Replit’s switch to OpenAI as default streamlines workflow for many, yet Anthropic users retain choice and competition remains",
-      "why_selected": "Direct impact on dev workflow and tool choice",
-      "evidence_quote": "Over the weekend, Masad clarified that OpenAI would replace Anthropic as its default model provider",
-      "post_text": "Replit moving OpenAI to default may streamline workflows for many, yet Anthropic users still have a choice.",
-      "text_with_source": "Replit moving OpenAI to default may streamline workflows for many, yet Anthropic users still have a choice.\n\nhttps://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
-      "character_count_with_url": 195
+      "angle": "Replit’s default shift nudges new users toward OpenAI while keeping Claude available, illustrating how defaults shape experimentation.",
+      "why_selected": "The default provider change directly affects developers’ model choice and experimentation behavior on a popular platform.",
+      "evidence_quote": "OpenAI would replace Anthropic as its default model provider",
+      "post_text": "Replit’s switch to OpenAI as the default model nudges new users toward ChatGPT‑style outputs, yet Claude remains an option for those valuing alternative capabilities.",
+      "text_with_source": "Replit’s switch to OpenAI as the default model nudges new users toward ChatGPT‑style outputs, yet Claude remains an option for those valuing alternative capabilities.\n\nhttps://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
+      "character_count_with_url": 254
     }
   ],
   "rejected_model_selections": [
@@ -198,13 +198,13 @@
       "source": "The Verge",
       "title": "Video game ownership bill introduced in Congress",
       "scores": {
-        "relevance_score": 8,
-        "significance_score": 8,
-        "originality_score": 7
+        "relevance_score": 9,
+        "significance_score": 9,
+        "originality_score": 8
       },
-      "proposed_post_text": "If the FTC rule passes, game studios may need to shift from subscription/online‑only models to true ownership, changing revenue streams and player trust.",
-      "evidence_quote": "guarantee consumers ownership of a game when they pay for it",
-      "reason": "Unsupported specific detail or overclaim (subscription) is absent from the source excerpt."
+      "proposed_post_text": "A new FTC rule would enforce true ownership for in‑game purchases, forcing devs to drop server‑locked licensing or redesign revenue models.",
+      "evidence_quote": "direct the Federal Trade Commission to establish regulations",
+      "reason": "Unsupported specific detail or overclaim (revenue model) is absent from the source excerpt."
     }
   ],
   "quality_thresholds": {
