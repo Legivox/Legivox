@@ -27,7 +27,7 @@ jobs:
         run: python -m py_compile scripts/rss_groq_dry_run.py
       - name: Fetch RSS and generate drafts (no X publishing)
         env:
-          GROQ_API_KEY: \${{ secrets.GROQ_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           GROQ_MODEL: openai/gpt-oss-20b
         run: python scripts/rss_groq_dry_run.py
       - name: Commit dry-run preview
