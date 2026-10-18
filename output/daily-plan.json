@@ -1,0 +1,158 @@
+{
+  "date_ist": "2026-10-18",
+  "prepared_at_ist": "2026-10-18 20:38:15 IST",
+  "research_window_days": 30,
+  "research_source": "Hacker News Algolia Search API",
+  "posts": [
+    {
+      "idea_id": "creator-feedback",
+      "niche": "independent digital creators",
+      "problem": "Feedback and feature requests are scattered across channels.",
+      "evidence": "Unverified hypothesis. Research complaints and willingness to pay before treating this as demand.",
+      "solution_hypothesis": "a lightweight inbox that groups repeated requests into a prioritized backlog",
+      "text": "A creator can get the same feature request in a DM, a comment, an email and a community thread. The hard part isn't collecting feedback. It's noticing what's being asked for repeatedly. How do you track that today?",
+      "text_hash": "4aa762dbbf29743b39688dda0d986d5f86c91512bc88a959bb3ee141545ffb08",
+      "image_query": "creative workspace",
+      "research": {
+        "query": "creator feedback",
+        "score": 49.114,
+        "hits": [
+          {
+            "title": "Ask HN: Why people keep posting AI-generated projects around the Internet?",
+            "url": "https://news.ycombinator.com/item?id=50139584",
+            "external_url": "",
+            "points": 4,
+            "comments": 14,
+            "created_at": "2026-10-18T10:00:32Z"
+          },
+          {
+            "title": "Show HN: MirrorMD – An AI second opinion from a facial cosmetic surgeon",
+            "url": "https://news.ycombinator.com/item?id=50103670",
+            "external_url": "https://mymirrormd.com/",
+            "points": 10,
+            "comments": 9,
+            "created_at": "2026-10-15T13:47:27Z"
+          },
+          {
+            "title": "Show HN: Rhyven – A marketplace for agents",
+            "url": "https://news.ycombinator.com/item?id=50001374",
+            "external_url": "https://rhyvenai.com",
+            "points": 2,
+            "comments": 1,
+            "created_at": "2026-10-08T02:44:14Z"
+          },
+          {
+            "title": "Show HN: Agent.reviews – Where AI agents read and write reviews on tools",
+            "url": "https://news.ycombinator.com/item?id=49995539",
+            "external_url": "https://agent.reviews/",
+            "points": 73,
+            "comments": 52,
+            "created_at": "2026-10-07T16:59:11Z"
+          },
+          {
+            "title": "Show HN: Data Observability for Supabase",
+            "url": "https://news.ycombinator.com/item?id=49977298",
+            "external_url": "https://sodabase.io/",
+            "points": 1,
+            "comments": 0,
+            "created_at": "2026-10-06T12:12:05Z"
+          }
+        ],
+        "error": null
+      },
+      "status": "planned"
+    },
+    {
+      "idea_id": "indie-launch",
+      "niche": "indie software builders",
+      "problem": "Launch feedback arrives before makers have a repeatable way to categorize it.",
+      "evidence": "Unverified hypothesis. Review launch discussions and creator tools before claiming demand.",
+      "solution_hypothesis": "a launch feedback triage board with tags for bugs, requests and objections",
+      "text": "A launch can produce dozens of comments and still leave a maker unsure what to fix first. Bugs, feature requests and “I don't get it” feedback need different treatment. How do indie builders sort launch feedback today?",
+      "text_hash": "b67b6966ee8357b6a6fcd9d0490d604442930d3c18f7b65d2ccf915130bc208b",
+      "image_query": "software startup",
+      "research": {
+        "query": "product launch feedback",
+        "score": 26.483,
+        "hits": [
+          {
+            "title": "Show HN: Abralo - Open source Slack for agents and people",
+            "url": "https://news.ycombinator.com/item?id=49966215",
+            "external_url": "https://github.com/cw12574/abralo-workspace",
+            "points": 1,
+            "comments": 0,
+            "created_at": "2026-10-05T15:33:39Z"
+          },
+          {
+            "title": "Show HN: Diffusion studio plugin for codex launch",
+            "url": "https://news.ycombinator.com/item?id=49929872",
+            "external_url": "https://github.com/Teseife/diffusion-studio-codex",
+            "points": 1,
+            "comments": 0,
+            "created_at": "2026-10-02T04:33:41Z"
+          },
+          {
+            "title": "Show HN: Caspian – Desktop app to build and launch small vibe-coded projects",
+            "url": "https://news.ycombinator.com/item?id=49875198",
+            "external_url": "https://caspian.md",
+            "points": 2,
+            "comments": 2,
+            "created_at": "2026-09-28T08:41:28Z"
+          },
+          {
+            "title": "Launch HN: Coverage Cat (YC S22) – Umbrella insurance via your personal agent",
+            "url": "https://news.ycombinator.com/item?id=49804931",
+            "external_url": "https://www.coveragecat.com/",
+            "points": 54,
+            "comments": 32,
+            "created_at": "2026-09-22T17:26:36Z"
+          }
+        ],
+        "error": null
+      },
+      "status": "planned"
+    },
+    {
+      "idea_id": "local-services",
+      "niche": "independent local service businesses",
+      "problem": "Leads, quotes and follow-ups are easy to forget when the owner does everything.",
+      "evidence": "Unverified hypothesis. Interview operators and inspect existing low-cost tools.",
+      "solution_hypothesis": "a simple quote and follow-up tracker designed for one-person businesses",
+      "text": "For a one-person service business, the job isn't over when the quote is sent. Remembering to follow up is its own admin task. What do you use to track quotes that haven't turned into bookings yet?",
+      "text_hash": "44de5a8eff49533d89430665a1f0a58569f59ef88469e7a6fee96f4d2fa1b2cd",
+      "image_query": "small business shop",
+      "research": {
+        "query": "small business leads",
+        "score": 21.552,
+        "hits": [
+          {
+            "title": "Can an AI learn what you like, rather than just what you've searched for?",
+            "url": "https://news.ycombinator.com/item?id=50017172",
+            "external_url": "",
+            "points": 2,
+            "comments": 3,
+            "created_at": "2026-10-09T07:18:41Z"
+          },
+          {
+            "title": "Fractional Is Just a Racket",
+            "url": "https://news.ycombinator.com/item?id=49912418",
+            "external_url": "",
+            "points": 2,
+            "comments": 1,
+            "created_at": "2026-09-30T18:15:17Z"
+          },
+          {
+            "title": "Launch HN: Coverage Cat (YC S22) – Umbrella insurance via your personal agent",
+            "url": "https://news.ycombinator.com/item?id=49804931",
+            "external_url": "https://www.coveragecat.com/",
+            "points": 54,
+            "comments": 32,
+            "created_at": "2026-09-22T17:26:36Z"
+          }
+        ],
+        "error": null
+      },
+      "status": "planned"
+    }
+  ]
+}
