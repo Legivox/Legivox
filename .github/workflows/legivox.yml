@@ -2,16 +2,6 @@ name: Legivox daily research and X publishing
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
-    paths:
-      - ".github/workflows/legivox.yml"
-      - "scripts/publish_next.py"
-      - "scripts/randomized_slot.py"
-      - "scripts/prepare_daily_plan.py"
-      - "scripts/rss_groq.py"
-      - "tests/test_rss_publisher_integration.py"
   schedule:
     # Plan at 06:00 IST; the publishing jobs use randomized times within the next hour.
     - cron: '30 0 * * *'
