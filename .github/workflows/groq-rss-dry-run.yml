@@ -2,6 +2,13 @@ name: Legivox RSS + Groq dry run
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/groq-rss-dry-run.yml"
+      - "scripts/rss_groq.py"
+      - "scripts/rss_groq_dry_run.py"
 
 permissions:
   contents: write
@@ -17,6 +24,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
       - name: Set up Python
         uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
@@ -41,4 +50,5 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+users.noreply.github.com'
           git commit -m 'Save RSS and Groq dry-run preview'
+          git pull --rebase origin main
           git push
