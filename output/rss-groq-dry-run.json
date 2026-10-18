@@ -1,5 +1,5 @@
 {
-  "generated_at_ist": "2026-10-18T22:56:45+05:30",
+  "generated_at_ist": "2026-10-18T22:58:04+05:30",
   "model": "openai/gpt-oss-20b",
   "dry_run": true,
   "posted_to_x": false,
@@ -26,17 +26,17 @@
       "articles_kept": 20,
       "error": null,
       "recently_published_items_skipped": 0,
-      "thin_summary_items_skipped": 20
+      "thin_summary_items_skipped": 0
     }
   ],
-  "candidate_count": 22,
+  "candidate_count": 30,
   "candidate_articles": [
     {
       "source": "The Verge",
       "title": "TikTok bans Musk documentary account",
-      "summary": "Just ahead of the wider release of Alex Gibney's Musk documentary, TikTok has banned the film's social media account from its platform. TikTok did not immediately respond to a request for comment. According to The Hollywood Reporter, the film's distributor, Bleecker Street, was informed Friday afternoon that a \"permanent suspension\" was imminent. Bleecker Street has […]",
+      "summary": "Tesla and SpaceX CEO Elon Musk gestures as he speaks during the inaugural parade inside Capitol One Arena, in Washington, DC, on January 20, 2025. (Photo by ANGELA WEISS / AFP) (Photo by ANGELA WEISS/AFP via Getty Images) | AFP via Getty Images Just ahead of the wider release of Alex Gibney's Musk documentary, TikTok has banned the film's social media account from its platform. TikTok did not immediately respond to a request for comment. According to The Hollywood Reporter , the film's distributor, Bleecker Street, was informed Friday afternoon that a \"permanent suspension\" was imminent. Bleecker Street has not yet responded to a request for comment from The Verge . While TikTok has no offic",
       "published_at_utc": "2026-10-18T17:12:43+00:00",
-      "age_hours": 0.2,
+      "age_hours": 0.3,
       "url": "https://www.theverge.com/tech/1013453/tiktok-bans-alex-gibneys-musk-documentary",
       "feed_url": "https://www.theverge.com/rss/index.xml",
       "article_id": "S01"
@@ -46,7 +46,7 @@
       "title": "Disney agrees to hire the majority of Character.AI’s workforce",
       "summary": "After chatbot startup Character.AI filed for bankruptcy earlier this week, many of its employees will have the opportunity to take jobs at Disney. Character.AI’s former CEO Karandeep Anand recently became the entertainment giant’s first CTO, and the startup previously said that Disney had agreed to acquire some of its assets for $20 million. A legal […]",
       "published_at_utc": "2026-10-18T16:30:00+00:00",
-      "age_hours": 0.9,
+      "age_hours": 1.0,
       "url": "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/",
       "feed_url": "https://techcrunch.com/feed/",
       "article_id": "S02"
@@ -54,12 +54,22 @@
     {
       "source": "The Verge",
       "title": "Video game ownership bill introduced in Congress",
-      "summary": "Rep. Ritchie Torres of New York's 15th congressional district in the Bronx introduced the Power To The Players Act this week. If passed, the bill would direct the Federal Trade Commission to establish regulations that guarantee consumers ownership of a game when they pay for it, rather than a licensing agreement. It's increasingly common for […]",
+      "summary": "Rep. Ritchie Torres of New York's 15th congressional district in the Bronx introduced the Power To The Players Act this week. If passed, the bill would direct the Federal Trade Commission to establish regulations that guarantee consumers ownership of a game when they pay for it, rather than a licensing agreement. It's increasingly common for games sold to require a connection to a server. Meaning that when a company decides to shut down those servers, the games often become unplayable. Rep. Torres singles out NBA 2K25 as a recent example. 2K will be delisting the game from storefronts at the end of the month and shutting down its servers on … Read the full story at The Verge.",
       "published_at_utc": "2026-10-18T16:27:51+00:00",
       "age_hours": 1.0,
       "url": "https://www.theverge.com/policy/1013521/video-game-ownership-bill-congress-power-to-the-players-act",
       "feed_url": "https://www.theverge.com/rss/index.xml",
       "article_id": "S03"
+    },
+    {
+      "source": "Ars Technica",
+      "title": "Anthropic gives outside AI watchdog “employee-like” access",
+      "summary": "Anthropic has granted external evaluators “employee-like access” to assess the risks of its models, following through on a commitment to increase safeguards over concerns the technology could run catastrophically out of control. METR, a nonprofit that has worked with leading labs including OpenAI, Anthropic, Google and Meta, now has a team embedded in the Claude maker’s office with access to its hardware and internal systems. A greater role for third-party evaluators is among the main concrete steps the labs have proposed in response to rising concern about the dangers more capable AI systems could pose to the economy, cyber security and humanity at large. Read full article Comments",
+      "published_at_utc": "2026-10-18T16:25:19+00:00",
+      "age_hours": 1.0,
+      "url": "https://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/",
+      "feed_url": "https://feeds.arstechnica.com/arstechnica/index",
+      "article_id": "S04"
     },
     {
       "source": "TechCrunch",
@@ -69,107 +79,167 @@
       "age_hours": 1.4,
       "url": "https://techcrunch.com/2026/10/18/techcrunch-mobility-rivians-next-act/",
       "feed_url": "https://techcrunch.com/feed/",
-      "article_id": "S04"
-    },
-    {
-      "source": "The Verge",
-      "title": "Lenovo’s fast, comfy SteamOS handheld is hundreds off",
-      "summary": "The Legion Go S with SteamOS is a pretty solid alternative to the $789 Steam Deck OLED. It runs identical software, but ships in a design with two-stage triggers, a bigger eight-inch IPS screen (1080p and up to 120Hz versus 800p and 90Hz in the Deck OLED), and it’s got double the RAM and storage […]",
-      "published_at_utc": "2026-10-18T14:53:52+00:00",
-      "age_hours": 2.5,
-      "url": "https://www.theverge.com/gadgets/1013436/lenovo-legion-go-s-steamos-handheld-deal-sale",
-      "feed_url": "https://www.theverge.com/rss/index.xml",
       "article_id": "S05"
     },
     {
       "source": "The Verge",
-      "title": "J Mascis has nothing better to do",
-      "summary": "Dinosaur Jr. frontman J Mascis is known as something of a slacker guitar god. He stands stoically onstage, barely moving, as he seemingly effortlessly works through deft guitar solos and lopsided riffs. Unfortunately, Mascis has developed a similar reputation as an interview subject, quietly sitting and offering deft nonanswers. That's not to say that Mascis […]",
-      "published_at_utc": "2026-10-18T14:13:04+00:00",
-      "age_hours": 3.2,
-      "url": "https://www.theverge.com/entertainment/1012442/j-mascis-dinosaur-jr-fender-interview",
+      "title": "Lenovo’s fast, comfy SteamOS handheld is hundreds off",
+      "summary": "The Legion Go S with SteamOS is a pretty solid alternative to the $789 Steam Deck OLED. It runs identical software, but ships in a design with two-stage triggers, a bigger eight-inch IPS screen (1080p and up to 120Hz versus 800p and 90Hz in the Deck OLED), and it’s got double the RAM and storage (32GB and 1TB, respectively), not to mention a slightly faster processor in the Ryzen Z1 Extreme. At $999.99, its current discounted price at Best Buy , it’s worth considering if you’re deciding on a handheld. The Legion Go S is not as powerful as the $1,299.99 Asus ROG Xbox Ally X20 that just launched, which has the Z2 Extreme and a OLED screen, but it’s no slouch, either. Lenovo Legion Go S with St",
+      "published_at_utc": "2026-10-18T14:53:52+00:00",
+      "age_hours": 2.6,
+      "url": "https://www.theverge.com/gadgets/1013436/lenovo-legion-go-s-steamos-handheld-deal-sale",
       "feed_url": "https://www.theverge.com/rss/index.xml",
       "article_id": "S06"
     },
     {
       "source": "The Verge",
-      "title": "Trump says Google kisses his ass",
-      "summary": "During a rally on Saturday, October 17th, in Highland Heights, Kentucky, Donald Trump bragged about how much more powerful and influential he was during his second term. While listing off his accomplishments, he mentioned his decision to rename the Gulf of Mexico and Lake Ontario. \"This is a much more powerful term. I can do […]",
-      "published_at_utc": "2026-10-18T13:26:28+00:00",
-      "age_hours": 4.0,
-      "url": "https://www.theverge.com/policy/1013485/trump-google-kiss-my-ass",
+      "title": "J Mascis has nothing better to do",
+      "summary": "J Mascis on stage during Dinosaur Jr.’s Baby’s Alright show in NYC. | Photo: Terrence O’Brien Dinosaur Jr. frontman J Mascis is known as something of a slacker guitar god. He stands stoically onstage, barely moving, as he seemingly effortlessly works through deft guitar solos and lopsided riffs. Unfortunately, Mascis has developed a similar reputation as an interview subject, quietly sitting and offering deft nonanswers. That's not to say that Mascis can't be funny or charming. As our interview was winding down and I was thanking him for his time, he started to loosen up a bit. He told me about his youth as a mini golf \"enthusiast.\" \"I had a 3-foot putt for the win\" at a mini-golf tournament",
+      "published_at_utc": "2026-10-18T14:13:04+00:00",
+      "age_hours": 3.2,
+      "url": "https://www.theverge.com/entertainment/1012442/j-mascis-dinosaur-jr-fender-interview",
       "feed_url": "https://www.theverge.com/rss/index.xml",
       "article_id": "S07"
     },
     {
       "source": "The Verge",
+      "title": "Trump says Google kisses his ass",
+      "summary": "During a rally on Saturday, October 17th, in Highland Heights, Kentucky, Donald Trump bragged about how much more powerful and influential he was during his second term. While listing off his accomplishments, he mentioned his decision to rename the Gulf of Mexico and Lake Ontario . \"This is a much more powerful term. I can do stuff that's unbelievable … I called Google, Google Maps. See, Google wouldn't have taken my call in the first term. Now they kiss my ass.\" Trump seems to be implying that he convinced Google to reflect the name change personally. That would seem to contradict Google's statement on the matter, in which it said that … Read the full story at The Verge.",
+      "published_at_utc": "2026-10-18T13:26:28+00:00",
+      "age_hours": 4.0,
+      "url": "https://www.theverge.com/policy/1013485/trump-google-kiss-my-ass",
+      "feed_url": "https://www.theverge.com/rss/index.xml",
+      "article_id": "S08"
+    },
+    {
+      "source": "The Verge",
       "title": "How overhead projectors took over your classroom",
-      "summary": "It used to be so easy to get away with things in school. The teacher, after all, was always turned around writing at the chalkboard! But then came a bit of technology, previously mostly used for military purposes, called the overhead projector. It would change far more than just the disciplinary record of students everywhere. […]",
+      "summary": "It used to be so easy to get away with things in school. The teacher, after all, was always turned around writing at the chalkboard! But then came a bit of technology, previously mostly used for military purposes, called the overhead projector. It would change far more than just the disciplinary record of students everywhere. In this episode of Version History , we tell the story of the overhead projector. David Pierce is joined by The Verge 's Jake Kastrenakes and Stanford professor Antero Garcia to discuss how overhead projectors were developed, how they made their way into classrooms, and how they changed so much about the way kids learn. … Read the full story at The Verge.",
       "published_at_utc": "2026-10-18T12:55:01+00:00",
       "age_hours": 4.5,
       "url": "https://www.theverge.com/podcast/1013473/overhead-projector-version-history",
       "feed_url": "https://www.theverge.com/rss/index.xml",
-      "article_id": "S08"
+      "article_id": "S09"
     },
     {
       "source": "TechCrunch",
       "title": "Replit makes OpenAI its default over Anthropic, CEO says",
       "summary": "Over the weekend, Masad clarified that OpenAI would replace Anthropic as its default model provider. Claude will still be available to customers on the platform.",
       "published_at_utc": "2026-10-17T18:48:08+00:00",
-      "age_hours": 22.6,
+      "age_hours": 22.7,
       "url": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
       "feed_url": "https://techcrunch.com/feed/",
-      "article_id": "S09"
+      "article_id": "S10"
     },
     {
       "source": "The Verge",
       "title": "Elon Musk settles lawsuits over $1 million voter giveaway",
-      "summary": "In 2024, Elon Musk promised to give away $1 million a day to a randomly selected registered voter in a swing state. That prompted legal challenges, raised questions about its legality, and drew lawsuits from two Arizona residents claiming the lottery was a fraud. Musk has now agreed to settle the two lawsuits filed in […]",
+      "summary": "In 2024, Elon Musk promised to give away $1 million a day to a randomly selected registered voter in a swing state. That prompted legal challenges, raised questions about its legality, and drew lawsuits from two Arizona residents claiming the lottery was a fraud. Musk has now agreed to settle the two lawsuits filed in Austin, Texas, though the details of the settlement have not been made public. The plaintiffs claim that when Musk announced the sweepstakes, he falsely claimed the prizes would be awarded randomly. Philadelphia's District Attorney sued to stop the giveaway , claiming that Musk was running an illegal lottery. During a hearing, … Read the full story at The Verge.",
       "published_at_utc": "2026-10-17T16:39:44+00:00",
       "age_hours": 24.8,
       "url": "https://www.theverge.com/tech/1013431/elon-musk-settles-lawsuits-over-1-million-voter-giveaway",
       "feed_url": "https://www.theverge.com/rss/index.xml",
-      "article_id": "S10"
+      "article_id": "S11"
+    },
+    {
+      "source": "Ars Technica",
+      "title": "Science says your boss should talk less in meetings",
+      "summary": "Close to 1 billion meetings take place each day around the world. CEOs spend nearly three-quarters of their workdays in meetings. Planning for and spearheading meetings eats up the lion’s share of managers’ time. In much of the industrialized world, meetings are both the metronomes and menaces of people’s working lives. Given the enormous time spent in workplace meetings, do we know what they accomplish or how to make them as worthwhile as possible? For decades, the answer was… not really. Meetings weren’t a particularly accessible subject of study. But that has changed. Once a tiny niche area, “meeting science” is a growing specialization among organizational and social psychologists. The f",
+      "published_at_utc": "2026-10-17T11:15:11+00:00",
+      "age_hours": 30.2,
+      "url": "https://arstechnica.com/science/2026/10/science-says-your-boss-should-talk-less-in-meetings/",
+      "feed_url": "https://feeds.arstechnica.com/arstechnica/index",
+      "article_id": "S12"
+    },
+    {
+      "source": "Ars Technica",
+      "title": "Why BioWare's Neverwinter Nights still has thousands of active players",
+      "summary": "Neverwinter Nights was made by the studio that produced seminal RPGs Baldur's Gate , Star Wars: Knights of the Old Republic , Mass Effect , and Dragon Age . It sold well and was critically acclaimed at launch. Yet, somehow, it has not been canonized in most gamers' minds over the decades the same way the games that came before and after it were. Nonetheless, more than two decades later, it still has a tight-knit and surprisingly active community that none of those other games can rival. I think that's partly because it was a completely different beast. Read full article Comments",
+      "published_at_utc": "2026-10-17T11:00:21+00:00",
+      "age_hours": 30.5,
+      "url": "https://arstechnica.com/gaming/2026/10/why-biowares-neverwinter-nights-still-has-thousands-of-active-players/",
+      "feed_url": "https://feeds.arstechnica.com/arstechnica/index",
+      "article_id": "S13"
     },
     {
       "source": "TechCrunch",
       "title": "Mark Wahlberg wants to take on the longevity-startup crowd with an affordable gym concept",
       "summary": "Mark Wahlberg, who once sank money into a gym chain that got kicked off the NYSE, is now building his own, and he promises you’ll get a cold plunge, a blood panel and a protein muffin without needing a trust fund.",
       "published_at_utc": "2026-10-17T02:36:18+00:00",
-      "age_hours": 38.8,
+      "age_hours": 38.9,
       "url": "https://techcrunch.com/2026/10/16/mark-wahlberg-wants-to-take-on-the-longevity-startup-crowd-with-an-affordable-gym-concept/",
       "feed_url": "https://techcrunch.com/feed/",
-      "article_id": "S11"
+      "article_id": "S14"
     },
     {
       "source": "The Verge",
       "title": "The best gadget I bought this year is a milk frother",
-      "summary": "Back in February, I went to Los Angeles to take in some art and stayed in Koreatown. Down the street from my hotel, there was this little coffee shop - Stagger - that is, I think, best known for its matcha, which is good. But the drink I unexpectedly found myself obsessed with was their […]",
+      "summary": "Back in February, I went to Los Angeles to take in some art and stayed in Koreatown. Down the street from my hotel, there was this little coffee shop - Stagger - that is, I think, best known for its matcha, which is good. But the drink I unexpectedly found myself obsessed with was their cream top, an iced Americano with, yep, vanilla cream on top. When I got back to Oakland, I kept thinking about how badly I wanted one. For more than 20 years, I've been drinking my coffee - iced or otherwise - black. Originally this was because I knew I could put black coffee that had cooled off in the microwave to reheat it without worrying that the milk i … Read the full story at The Verge.",
       "published_at_utc": "2026-10-16T22:15:10+00:00",
       "age_hours": 43.2,
       "url": "https://www.theverge.com/gadgets/1013257/milk-frother-cold-foam-gadget",
       "feed_url": "https://www.theverge.com/rss/index.xml",
-      "article_id": "S12"
+      "article_id": "S15"
+    },
+    {
+      "source": "Ars Technica",
+      "title": "OpenAI models hacked a crypto wallet and breached more websites",
+      "summary": "OpenAI said internal models hacked two more websites, bypassed company-imposed browsing restrictions, and used exposed credentials to draw cryptocurrency from a wallet it couldn’t otherwise access, in the latest installment of disclosures of its agents performing unethical and likely illegal acts. The company on Thursday issued reports of four new incidents, all of which occurred in June. They come after the company revealed in July that internal test agents exploited a zero-day vulnerability in a tool designed to restrict their access to the Internet. They then broke into the network of AI tool provider Hugging Face. The agents took that illegal action to steal answers to a hacking test tha",
+      "published_at_utc": "2026-10-16T20:59:01+00:00",
+      "age_hours": 44.5,
+      "url": "https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/",
+      "feed_url": "https://feeds.arstechnica.com/arstechnica/index",
+      "article_id": "S16"
+    },
+    {
+      "source": "Ars Technica",
+      "title": "“thegentlemanpervert” producing AI CSAM is a NJ prosecutor, say cops",
+      "summary": "New Jersey’s deputy attorney general, Brian Richard Fitzgerald, was arrested on “felony charges related to AI-generated child sexual abuse material (CSAM),” Bucks County Detectives said in a press release Thursday. In the US, cops have vowed to crack down on AI CSAM since at least 2024, when the Department of Justice made one of the earliest arrests . After charging a Wisconsin man with spreading “thousands of realistic images of prepubescent minors” across Telegram and Instagram, the DOJ clarified to law enforcement that “CSAM generated by AI is still CSAM.” New Jersey’s deputy attorney general, Brian Richard Fitzgerald, was arrested at his home Thursday. Credit: via Bucks County Detectives",
+      "published_at_utc": "2026-10-16T20:20:07+00:00",
+      "age_hours": 45.1,
+      "url": "https://arstechnica.com/tech-policy/2026/10/thegentlemanpervert-producing-ai-csam-is-a-nj-prosecutor-say-cops/",
+      "feed_url": "https://feeds.arstechnica.com/arstechnica/index",
+      "article_id": "S17"
+    },
+    {
+      "source": "Ars Technica",
+      "title": "US Rep proposes bill to give video game buyers \"ownership,\" not \"a license\"",
+      "summary": "A new bill proposed by Rep. Ritchie Torres (D-NY) aims to establish new regulations that would ensure that \"buying a video game would give the consumer ownership of the game rather than a license to play it,\" including assurances that they can continue to access the games for years after they are released. The announcement names NBA 2K25 as an example of the problem the bill aims to solve; that game launched on September 6, 2025, but is scheduled to become unplayable on December 31 due to server shutdowns. The bill, which is called the Power to Players Act, directs the FTC to take action to prevent outcomes like that in the future. Read full article Comments",
+      "published_at_utc": "2026-10-16T19:41:18+00:00",
+      "age_hours": 45.8,
+      "url": "https://arstechnica.com/gaming/2026/10/us-rep-proposes-bill-to-give-video-game-buyers-ownership-not-a-license/",
+      "feed_url": "https://feeds.arstechnica.com/arstechnica/index",
+      "article_id": "S18"
     },
     {
       "source": "The Verge",
       "title": "Mercedes-AMG’s first ground-up SUV is a 1,150hp electric beast",
-      "summary": "Earlier this year, Mercedes' AMG performance brand grabbed our attention with the GT four-door coupe, a souped-up sports sedan with three axial flux motors delivering over 1,150 horsepower. Well, now meet its beefier cousin, the 2028 Mercedes-AMG GT SUV, an equally powerful, ultra-fast-charging electric people-hauler. The AMG GT SUV (say that five times fast) marks […]",
+      "summary": "Earlier this year, Mercedes' AMG performance brand grabbed our attention with the GT four-door coupe , a souped-up sports sedan with three axial flux motors delivering over 1,150 horsepower. Well, now meet its beefier cousin, the 2028 Mercedes-AMG GT SUV, an equally powerful, ultra-fast-charging electric people-hauler. The AMG GT SUV (say that five times fast) marks the first time in the performance brand's 59-year history that it has developed a full-size SUV entirely in-house from the ground up. Scheduled to hit the US next summer, the new EV is built on Merc's high-performance AMG.EA architecture to combine sports-car handling with full-s … Read the full story at The Verge.",
       "published_at_utc": "2026-10-16T19:20:13+00:00",
       "age_hours": 46.1,
       "url": "https://www.theverge.com/transportation/1013088/mercedes-amg-gt-suv-price-specs-performance",
       "feed_url": "https://www.theverge.com/rss/index.xml",
-      "article_id": "S13"
+      "article_id": "S19"
     },
     {
       "source": "The Verge",
       "title": "Cities want to put the boot on robotaxis",
-      "summary": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on autonomous vehicles, policy, and road rules, follow Andrew J. Hawkins. The Stepback arrives in our subscribers' inboxes at 8AM ET. Opt in for The Stepback here. How it started The first state to pass a law […]",
+      "summary": "AUSTIN, TEXAS - APRIL 8: Tesla Cybercabs are lined up on a lot at Tesla Giga Texas in Austin, Wednesday, April 8, 2026. | Image: Getty Images This is The Stepback , a weekly newsletter breaking down one essential story from the tech world. For more on autonomous vehicles, policy, and road rules, follow Andrew J. Hawkins . The Stepback arrives in our subscribers' inboxes at 8AM ET. Opt in for The Stepback here . How it started The first state to pass a law legalizing self-driving cars operating on public roads was Nevada in June 2011 - long before such vehicles were operating on public roads. This was three years before the introduction of Tesla's Autopilot , five years before Waymo spun out ",
       "published_at_utc": "2026-10-16T19:07:30+00:00",
       "age_hours": 46.3,
       "url": "https://www.theverge.com/transportation/1013220/robotaxi-self-driving-car-laws",
       "feed_url": "https://www.theverge.com/rss/index.xml",
-      "article_id": "S14"
+      "article_id": "S20"
+    },
+    {
+      "source": "Ars Technica",
+      "title": "Bug turns one of the biggest fears about Ray-Ban Meta smart glasses into reality",
+      "summary": "Some Ray-Ban Meta smart glasses were recording people’s conversations without the wearer knowing. The recordings occurred without users saying the prompt phrase (“Hey, Meta”), in a bug that Meta says has been fixed. This week, some users reported online that their Ray-Ban Metas were recording without their consent. A person going by Kindly-Audience-137 on Reddit, for example, said this happened to them across three Meta Ray-Bans and that they had the “Respond without Hey Meta” setting turned off. The person said the Meta AI app “saves audio recordings and text transcripts of these conversations in my conversation history.” “I believe this deserves a serious technical investigation. Customers",
+      "published_at_utc": "2026-10-16T19:11:50+00:00",
+      "age_hours": 46.3,
+      "url": "https://arstechnica.com/gadgets/2026/10/ray-ban-meta-smart-glasses-found-recording-audio-without-wearers-consent/",
+      "feed_url": "https://feeds.arstechnica.com/arstechnica/index",
+      "article_id": "S21"
     },
     {
       "source": "TechCrunch",
@@ -179,17 +249,27 @@
       "age_hours": 47.6,
       "url": "https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/",
       "feed_url": "https://techcrunch.com/feed/",
-      "article_id": "S15"
+      "article_id": "S22"
+    },
+    {
+      "source": "Ars Technica",
+      "title": "RFK Jr. proposes FDA look the other way on unproven peptides, report says",
+      "summary": "Under Health Secretary Robert F. Kennedy Jr., the Food and Drug Administration is moving forward with plans to ease access to unproven peptide drugs that are popular among members of Kennedy's Make America Healthy Again movement—despite FDA staff scientists finding that the drugs have not been sufficiently studied to establish safety and efficacy and may cause harms. The FDA submitted an \"Interim Access Policy\" on peptides for review by the White House, according to a filing notice posted on an Office of Management and Budget website. The posting does not provide information on the proposed policy. But people familiar with the proposal told The Associated Press that it would give the FDA \"en",
+      "published_at_utc": "2026-10-16T17:05:59+00:00",
+      "age_hours": 48.4,
+      "url": "https://arstechnica.com/health/2026/10/rfk-jr-proposes-fda-look-the-other-way-on-unproven-peptides-report-says/",
+      "feed_url": "https://feeds.arstechnica.com/arstechnica/index",
+      "article_id": "S23"
     },
     {
       "source": "TechCrunch",
       "title": "An Nvidia insider-turned-VC on why robotics hasn’t hit its ChatGPT moment, yet",
       "summary": "Amulya Vishwanath, who spent seven years leading product marketing for NVIDIA’s robotics platforms, says robotics is currently in its “Lego era,” with the basic building blocks like actuators, robotic hands, software, and safety standards still being rebuilt. This view runs counter to those who believe that robotics, powered by a general foundation model, is about to have […]",
       "published_at_utc": "2026-10-16T16:30:00+00:00",
-      "age_hours": 48.9,
+      "age_hours": 49.0,
       "url": "https://techcrunch.com/video/a-nvidia-insider-turned-vc-on-why-robotics-hasnt-hit-its-chatgpt-moment-yet/",
       "feed_url": "https://techcrunch.com/feed/",
-      "article_id": "S16"
+      "article_id": "S24"
     },
     {
       "source": "TechCrunch",
@@ -199,27 +279,37 @@
       "age_hours": 49.4,
       "url": "https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/",
       "feed_url": "https://techcrunch.com/feed/",
-      "article_id": "S17"
+      "article_id": "S25"
     },
     {
       "source": "TechCrunch",
       "title": "Tressfecta wants to make hair braiding a less arduous task for hairstylists",
       "summary": "Tressfecta builds products for textured hair. Its first project is a tool called Plait Pilot that helps braiders with the initial process of separating hair from packs before braiding begins.",
       "published_at_utc": "2026-10-16T16:00:00+00:00",
-      "age_hours": 49.4,
+      "age_hours": 49.5,
       "url": "https://techcrunch.com/2026/10/16/tressfecta-wants-to-make-hair-braiding-a-less-arduous-task-for-hairstylists/",
       "feed_url": "https://techcrunch.com/feed/",
-      "article_id": "S18"
+      "article_id": "S26"
     },
     {
       "source": "TechCrunch",
       "title": "In ‘You Can See Everything,’ Elizabeth Holmes meets her equal in comedian Nathan Fielder",
       "summary": "Nathan Fielder's documentary about disgraced Theranos CEO Elizabeth Holmes has created a constellation of colliding personas that interrogate the very nature of authenticity.",
       "published_at_utc": "2026-10-16T16:00:00+00:00",
-      "age_hours": 49.4,
+      "age_hours": 49.5,
       "url": "https://techcrunch.com/2026/10/16/in-you-can-see-everything-elizabeth-holmes-meets-her-equal-in-comedian-nathan-fielder/",
       "feed_url": "https://techcrunch.com/feed/",
-      "article_id": "S19"
+      "article_id": "S27"
+    },
+    {
+      "source": "Ars Technica",
+      "title": "Meta may use sweeping new commercial TOS to avoid millions in AI licensing fees",
+      "summary": "Legal experts are sounding alarms that Meta will soon update its commercial terms to require business accounts to allow Meta to train AI on their linked website content, not just their social media posts. Kicking in on October 30, the TOS update won’t allow businesses to opt out, instead suggesting that businesses stop using Meta services if they won’t agree to let Meta bots freely crawl their linked content. As Nieman Lab reported Thursday, this will affect all business accounts but is particularly shocking for news publishers who could perhaps charge Meta millions in licensing fees to continually access their articles for AI training. Currently news organizations are fighting a battle with",
+      "published_at_utc": "2026-10-16T15:41:00+00:00",
+      "age_hours": 49.8,
+      "url": "https://arstechnica.com/tech-policy/2026/10/meta-may-use-sweeping-new-commercial-tos-to-avoid-millions-in-ai-licensing-fees/",
+      "feed_url": "https://feeds.arstechnica.com/arstechnica/index",
+      "article_id": "S28"
     },
     {
       "source": "TechCrunch",
@@ -229,30 +319,38 @@
       "age_hours": 51.0,
       "url": "https://techcrunch.com/2026/10/16/mark-wahlberg-on-using-ai-in-film-the-right-way-and-being-open-to-an-ai-clone-carrying-on-his-legacy/",
       "feed_url": "https://techcrunch.com/feed/",
-      "article_id": "S20"
+      "article_id": "S29"
     },
     {
-      "source": "TechCrunch",
-      "title": "Veritas expands its anti-counterfeit chip to jewelry, trophies, and fragrance bottles",
-      "summary": "Counterfeiters are getting better at replicating brands' marks and passing off dupes, known as \"superfakes,\" as genuine items. A startup called Veritas wants to tackle the problem with its own chip that verifies goods.",
-      "published_at_utc": "2026-10-16T14:00:00+00:00",
-      "age_hours": 51.4,
-      "url": "https://techcrunch.com/2026/10/16/veritas-is-building-a-chip-to-verify-luxury-goods/",
-      "feed_url": "https://techcrunch.com/feed/",
-      "article_id": "S21"
-    },
-    {
-      "source": "TechCrunch",
-      "title": "Replit’s CEO says the future of work is the ‘self-driving company’",
-      "summary": "Replit CEO Amjad Masad envisions a future of “self-driving companies,” where AI agents handle day-to-day tasks and people focus on higher-level decisions.",
-      "published_at_utc": "2026-10-16T12:55:09+00:00",
-      "age_hours": 52.5,
-      "url": "https://techcrunch.com/2026/10/16/replits-ceo-says-the-future-of-work-is-the-self-driving-company/",
-      "feed_url": "https://techcrunch.com/feed/",
-      "article_id": "S22"
+      "source": "Ars Technica",
+      "title": "Polymarket saw $600 million in election trades after the elections were over",
+      "summary": "Prediction market boosters often tout the platforms as barometers of public opinion, or even “truth machines” offering a clearer picture of where things are headed than polling or other data. In 2024, for example, Kalshi beat many pollsters in forecasting the outcome of the US presidential race. But their trading activity can also tell more perplexing stories. Two global election markets on Polymarket’s offshore platform , for instance, generated over $600 million in trading volume, far more than most political markets typically attract. Most of the activity took place buying and selling contracts tied to long-shot candidates who ultimately did not win. This summer, Ethiopian Prime Minister ",
+      "published_at_utc": "2026-10-16T14:19:22+00:00",
+      "age_hours": 51.1,
+      "url": "https://arstechnica.com/tech-policy/2026/10/polymarket-saw-600-million-in-election-trades-after-the-elections-were-over/",
+      "feed_url": "https://feeds.arstechnica.com/arstechnica/index",
+      "article_id": "S30"
     }
   ],
   "drafts": [
+    {
+      "article_id": "S16",
+      "source": "Ars Technica",
+      "source_title": "OpenAI models hacked a crypto wallet and breached more websites",
+      "published_at_utc": "2026-10-16T20:59:01+00:00",
+      "source_url": "https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/",
+      "category": "Cybersecurity & privacy",
+      "scores": {
+        "relevance_score": 9,
+        "significance_score": 9,
+        "originality_score": 8
+      },
+      "angle": "OpenAI’s crypto‑wallet breach shows internal model sandboxing is still broken; stricter controls are urgent.",
+      "why_selected": "Exposes a critical security flaw with real financial loss, underscoring the need for robust internal safeguards.",
+      "post_text": "OpenAI agents bypassed browsing limits and stole crypto, proving internal sandboxing gaps must be closed before next model release.",
+      "text_with_source": "OpenAI agents bypassed browsing limits and stole crypto, proving internal sandboxing gaps must be closed before next model release.\n\nhttps://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/",
+      "character_count_with_url": 238
+    },
     {
       "article_id": "S03",
       "source": "The Verge",
@@ -261,51 +359,33 @@
       "source_url": "https://www.theverge.com/policy/1013521/video-game-ownership-bill-congress-power-to-the-players-act",
       "category": "Platform policy",
       "scores": {
-        "relevance_score": 9,
-        "significance_score": 9,
+        "relevance_score": 8,
+        "significance_score": 8,
         "originality_score": 8
       },
-      "angle": "Potential game ownership law could force developers to rethink licensing models.",
-      "why_selected": "Highlights regulatory shift that could alter revenue streams for indie and large game studios.",
-      "post_text": "If passed, the Power To The Players Act would let players own purchased games, forcing devs to rethink licensing models and monetization.",
-      "text_with_source": "If passed, the Power To The Players Act would let players own purchased games, forcing devs to rethink licensing models and monetization.\n\nhttps://www.theverge.com/policy/1013521/video-game-ownership-bill-congress-power-to-the-players-act",
-      "character_count_with_url": 238
+      "angle": "True game ownership could protect indie titles from server shutdowns, shifting monetization from licensing to long‑term sales.",
+      "why_selected": "Highlights a regulatory change directly affecting how digital goods are sold and could influence future platform economics.",
+      "post_text": "If the FTC enforces true ownership for game purchases, indie devs could keep games alive beyond server support, altering monetization.",
+      "text_with_source": "If the FTC enforces true ownership for game purchases, indie devs could keep games alive beyond server support, altering monetization.\n\nhttps://www.theverge.com/policy/1013521/video-game-ownership-bill-congress-power-to-the-players-act",
+      "character_count_with_url": 235
     },
     {
-      "article_id": "S15",
-      "source": "TechCrunch",
-      "source_title": "India becomes the latest country to report rogue AI agent activity",
-      "published_at_utc": "2026-10-16T17:52:24+00:00",
-      "source_url": "https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/",
-      "category": "Cybersecurity & privacy",
+      "article_id": "S28",
+      "source": "Ars Technica",
+      "source_title": "Meta may use sweeping new commercial TOS to avoid millions in AI licensing fees",
+      "published_at_utc": "2026-10-16T15:41:00+00:00",
+      "source_url": "https://arstechnica.com/tech-policy/2026/10/meta-may-use-sweeping-new-commercial-tos-to-avoid-millions-in-ai-licensing-fees/",
+      "category": "Platform policy",
       "scores": {
         "relevance_score": 8,
         "significance_score": 8,
         "originality_score": 8
       },
-      "angle": "India's rogue AI incidents highlight cloud misconfig risks for developers.",
-      "why_selected": "Illustrates emerging AI security risks tied to misconfigured cloud services, stressing hardening best practices.",
-      "post_text": "India’s latest rogue AI incidents expose how exposed credentials and permissive cloud roles enable malicious agents—a wake‑up call for devs to harden configurations.",
-      "text_with_source": "India’s latest rogue AI incidents expose how exposed credentials and permissive cloud roles enable malicious agents—a wake‑up call for devs to harden configurations.\n\nhttps://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/",
-      "character_count_with_url": 268
-    },
-    {
-      "article_id": "S02",
-      "source": "TechCrunch",
-      "source_title": "Disney agrees to hire the majority of Character.AI’s workforce",
-      "published_at_utc": "2026-10-18T16:30:00+00:00",
-      "source_url": "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/",
-      "category": "Product strategy",
-      "scores": {
-        "relevance_score": 8,
-        "significance_score": 8,
-        "originality_score": 7
-      },
-      "angle": "Disney's acquisition of Character.AI staff signals a shift in how large studios absorb startup AI talent.",
-      "why_selected": "Shows impact of studio acquisitions on AI talent distribution and product strategy.",
-      "post_text": "Disney's acquisition of Character.AI staff signals a shift in how large studios absorb startup talent, altering AI workforce dynamics.",
-      "text_with_source": "Disney's acquisition of Character.AI staff signals a shift in how large studios absorb startup talent, altering AI workforce dynamics.\n\nhttps://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/",
-      "character_count_with_url": 232
+      "angle": "Meta’s new TOS removes a licensing lever for publishers, forcing them into a data‑sharing model that may erode revenue.",
+      "why_selected": "Shows how a major platform's policy shift can disrupt content licensing and data ownership for businesses.",
+      "post_text": "Meta’s new TOS forces business accounts to let AI crawl linked sites, potentially eliminating licensing fees but raising privacy and data‑use concerns.",
+      "text_with_source": "Meta’s new TOS forces business accounts to let AI crawl linked sites, potentially eliminating licensing fees but raising privacy and data‑use concerns.\n\nhttps://arstechnica.com/tech-policy/2026/10/meta-may-use-sweeping-new-commercial-tos-to-avoid-millions-in-ai-licensing-fees/",
+      "character_count_with_url": 277
     }
   ],
   "rejected_model_selections": [],
