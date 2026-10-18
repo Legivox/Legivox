@@ -311,7 +311,11 @@ def generate_drafts(candidates: list[dict], max_posts: int = 3) -> tuple[list[di
         "relevance >= 7, significance >= 6, and originality >= 7. Use distinct subjects/events. "
         "For each, write post copy that adds a point of view, implication, or useful tension; do not "
         "rewrite the headline or simply report what happened. Prefer a concrete statement such as what "
-        "the change means for builders, product teams, or small software businesses. Avoid generic AI "
+        "the change means for builders, product teams, or small software businesses. Use cautious "
+        "language for predictions; one company's move does not prove what the entire industry will do. "
+        "For proposed laws, bills, or regulations, clearly distinguish a proposal from an enacted law and "
+        "phrase implications conditionally ('if passed', 'could', or 'may'). Do not claim that a policy "
+        "will force a specific outcome unless the supplied excerpt clearly supports it. Avoid generic AI "
         "hype, empty phrases like 'game changer' or 'the future is here', fake questions, calls for "
         "engagement, hashtags, and unsupported claims. Separate fact from interpretation. Use only facts "
         "supported by the supplied title/excerpt; when evidence is thin, state a modest implication or "
@@ -404,6 +408,16 @@ def generate_drafts(candidates: list[dict], max_posts: int = 3) -> tuple[list[di
             rejected.append({
                 "article_id": article_id, "source": article["source"], "title": article["title"],
                 "scores": scores, "reason": "Draft failed length, URL, or hashtag validation.",
+            })
+            continue
+        if re.search(r"\b(bill|act|law|legislation|regulation|proposal|proposes)\b", article["title"], re.I) and not re.search(
+            r"\b(if passed|if enacted|proposed|proposal|could|may|might|would|introduced)\b",
+            copy, re.I
+        ):
+            rejected.append({
+                "article_id": article_id, "source": article["source"], "title": article["title"],
+                "scores": scores,
+                "reason": "Policy story needs conditional wording because the source title describes a proposal.",
             })
             continue
         title_terms, copy_terms = token_set(article["title"]), token_set(copy)
