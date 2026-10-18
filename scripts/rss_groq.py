@@ -199,8 +199,8 @@ def collect_candidates() -> tuple[list[dict], list[dict]]:
             thin_summary_count[row["source"]] = thin_summary_count.get(row["source"], 0) + 1
             continue
         # Personnel-only stories rarely offer actionable product insight for this account.
-        if re.search(r"\\b(hire|hiring|workforce|staff|employees|layoffs)\\b", row["title"], re.I) and not re.search(
-            r"\\b(product|developer tool|API|model release|launch|feature|security fix|pricing)\\b",
+        if re.search(r"\b(hire|hiring|workforce|staff|employees|layoffs)\b", row["title"], re.I) and not re.search(
+            r"\b(product|developer tool|API|model release|launch|feature|security fix|pricing)\b",
             row["title"] + " " + row["summary"], re.I
         ):
             thin_summary_count[row["source"]] = thin_summary_count.get(row["source"], 0) + 1
