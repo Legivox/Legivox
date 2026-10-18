@@ -1,6 +1,6 @@
 # Legivox RSS + Groq editorial preview
 
-- Generated: 2026-10-18T23:24:06+05:30
+- Generated: 2026-10-18T23:31:31+05:30
 - Model: openai/gpt-oss-20b
 - Mode: DRY RUN ONLY
 - X publishing: not performed by this script
@@ -18,65 +18,68 @@
 
 ## Drafts that passed the quality gate
 
-### Draft 1: Anthropic gives outside AI watchdog “employee-like” access
-
-- Category: AI & software
-- Source: Ars Technica
-- Published: 2026-10-18T16:25:19+00:00
-- Editorial angle: Anthropic's enhanced oversight may influence industry safety practices
-- Why selected: Directly impacts AI safety, significant shift in oversight, original approach
-- Editorial scores: relevance 9/10, significance 8/10, originality 8/10
-- Article: https://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/
-
-Post copy with source link:
-
-~~~text
-Anthropic’s new 'employee-like' watchdog access may set a new standard for AI safety oversight, demanding deeper transparency.
-
-https://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/
-~~~
-
-- Plain character count including URL: 220/280
-
-### Draft 2: Video game ownership bill introduced in Congress
+### Draft 1: Video game ownership bill introduced in Congress
 
 - Category: Platform policy
 - Source: The Verge
 - Published: 2026-10-18T16:27:51+00:00
-- Editorial angle: New ownership bill could reshape game business models
-- Why selected: High relevance to platform policy, significant impact on game licensing, original policy proposal
-- Editorial scores: relevance 8/10, significance 9/10, originality 7/10
+- Editorial angle: New FTC rules could grant gamers true ownership over purchased titles.
+- Why selected: Relevant to digital ownership, significant for developers, original in policy impact.
+- Source evidence (exact quote): “guarantee consumers ownership of a game when they pay for it”
+- Editorial scores: relevance 9/10, significance 8/10, originality 8/10
 - Article: https://www.theverge.com/policy/1013521/video-game-ownership-bill-congress-power-to-the-players-act
 
 Post copy with source link:
 
 ~~~text
-If passed, the Power To The Players Act would let gamers own games outright, forcing studios to rethink licensing.
+If passed, the FTC would enforce true game ownership, forcing studios to give players permanent rights, reshaping DLC and subscription models.
 
 https://www.theverge.com/policy/1013521/video-game-ownership-bill-congress-power-to-the-players-act
 ~~~
 
-- Plain character count including URL: 215/280
+- Plain character count including URL: 243/280
+
+### Draft 2: Anthropic gives outside AI watchdog “employee-like” access
+
+- Category: AI & software
+- Source: Ars Technica
+- Published: 2026-10-18T16:25:19+00:00
+- Editorial angle: External watchdogs gaining deep access marks a new era in AI safety.
+- Why selected: High impact on AI safety practices, significant for labs, original transparency move.
+- Source evidence (exact quote): “employee-like access”
+- Editorial scores: relevance 9/10, significance 7/10, originality 8/10
+- Article: https://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/
+
+Post copy with source link:
+
+~~~text
+Granting 'employee‑like' access to outside reviewers signals a shift toward transparency in AI risk assessment, raising expectations for other labs.
+
+https://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/
+~~~
+
+- Plain character count including URL: 242/280
 
 ### Draft 3: Replit makes OpenAI its default over Anthropic, CEO says
 
 - Category: Developer tools
 - Source: TechCrunch
 - Published: 2026-10-17T18:48:08+00:00
-- Editorial angle: Replit's API shift nudges devs toward OpenAI models
-- Why selected: Relevance to developer workflow, significant influence on tooling, original change in default provider
-- Editorial scores: relevance 9/10, significance 7/10, originality 7/10
+- Editorial angle: Replit's switch to OpenAI signals a broader single‑vendor AI trend.
+- Why selected: Shows vendor strategy shift, significant for dev tools, original insight into AI stack decisions.
+- Source evidence (exact quote): “OpenAI would replace Anthropic as its default model provider”
+- Editorial scores: relevance 8/10, significance 7/10, originality 7/10
 - Article: https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/
 
 Post copy with source link:
 
 ~~~text
-Replit’s move to OpenAI as the default model could push developers toward GPT‑4 APIs, leaving Anthropic as a secondary option.
+Replit's recent switch to OpenAI as its default model provider highlights a trend toward single‑vendor AI stacks, though Anthropic still stays available.
 
 https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/
 ~~~
 
-- Plain character count including URL: 214/280
+- Plain character count including URL: 241/280
 
 ## Rejected selections
 
