@@ -1,5 +1,5 @@
 {
-  "generated_at_ist": "2026-10-18T22:54:27+05:30",
+  "generated_at_ist": "2026-10-18T22:56:45+05:30",
   "model": "openai/gpt-oss-20b",
   "dry_run": true,
   "posted_to_x": false,
@@ -9,24 +9,27 @@
       "feed_url": "https://techcrunch.com/feed/",
       "articles_kept": 20,
       "error": null,
-      "recently_published_items_skipped": 0
+      "recently_published_items_skipped": 0,
+      "thin_summary_items_skipped": 8
     },
     {
       "source": "The Verge",
       "feed_url": "https://www.theverge.com/rss/index.xml",
       "articles_kept": 10,
       "error": null,
-      "recently_published_items_skipped": 0
+      "recently_published_items_skipped": 0,
+      "thin_summary_items_skipped": 0
     },
     {
       "source": "Ars Technica",
       "feed_url": "https://feeds.arstechnica.com/arstechnica/index",
       "articles_kept": 20,
       "error": null,
-      "recently_published_items_skipped": 0
+      "recently_published_items_skipped": 0,
+      "thin_summary_items_skipped": 20
     }
   ],
-  "candidate_count": 30,
+  "candidate_count": 22,
   "candidate_articles": [
     {
       "source": "The Verge",
@@ -53,30 +56,20 @@
       "title": "Video game ownership bill introduced in Congress",
       "summary": "Rep. Ritchie Torres of New York's 15th congressional district in the Bronx introduced the Power To The Players Act this week. If passed, the bill would direct the Federal Trade Commission to establish regulations that guarantee consumers ownership of a game when they pay for it, rather than a licensing agreement. It's increasingly common for […]",
       "published_at_utc": "2026-10-18T16:27:51+00:00",
-      "age_hours": 0.9,
+      "age_hours": 1.0,
       "url": "https://www.theverge.com/policy/1013521/video-game-ownership-bill-congress-power-to-the-players-act",
       "feed_url": "https://www.theverge.com/rss/index.xml",
       "article_id": "S03"
-    },
-    {
-      "source": "Ars Technica",
-      "title": "Anthropic gives outside AI watchdog “employee-like” access",
-      "summary": "The outside watchdog can publish its findings without Anthropic's approval.",
-      "published_at_utc": "2026-10-18T16:25:19+00:00",
-      "age_hours": 1.0,
-      "url": "https://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/",
-      "feed_url": "https://feeds.arstechnica.com/arstechnica/index",
-      "article_id": "S04"
     },
     {
       "source": "TechCrunch",
       "title": "TechCrunch Mobility: Rivian’s next act",
       "summary": "Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, the role AI is playing in it.",
       "published_at_utc": "2026-10-18T16:05:00+00:00",
-      "age_hours": 1.3,
+      "age_hours": 1.4,
       "url": "https://techcrunch.com/2026/10/18/techcrunch-mobility-rivians-next-act/",
       "feed_url": "https://techcrunch.com/feed/",
-      "article_id": "S05"
+      "article_id": "S04"
     },
     {
       "source": "The Verge",
@@ -86,7 +79,7 @@
       "age_hours": 2.5,
       "url": "https://www.theverge.com/gadgets/1013436/lenovo-legion-go-s-steamos-handheld-deal-sale",
       "feed_url": "https://www.theverge.com/rss/index.xml",
-      "article_id": "S06"
+      "article_id": "S05"
     },
     {
       "source": "The Verge",
@@ -96,7 +89,7 @@
       "age_hours": 3.2,
       "url": "https://www.theverge.com/entertainment/1012442/j-mascis-dinosaur-jr-fender-interview",
       "feed_url": "https://www.theverge.com/rss/index.xml",
-      "article_id": "S07"
+      "article_id": "S06"
     },
     {
       "source": "The Verge",
@@ -106,7 +99,7 @@
       "age_hours": 4.0,
       "url": "https://www.theverge.com/policy/1013485/trump-google-kiss-my-ass",
       "feed_url": "https://www.theverge.com/rss/index.xml",
-      "article_id": "S08"
+      "article_id": "S07"
     },
     {
       "source": "The Verge",
@@ -116,37 +109,7 @@
       "age_hours": 4.5,
       "url": "https://www.theverge.com/podcast/1013473/overhead-projector-version-history",
       "feed_url": "https://www.theverge.com/rss/index.xml",
-      "article_id": "S09"
-    },
-    {
-      "source": "TechCrunch",
-      "title": "Meta removes language that raised scraping and AI training concerns",
-      "summary": "A Meta spokesperson insisted that the updated terms did not reflect a change in the way Meta crawls the web.",
-      "published_at_utc": "2026-10-17T21:31:32+00:00",
-      "age_hours": 19.9,
-      "url": "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
-      "feed_url": "https://techcrunch.com/feed/",
-      "article_id": "S10"
-    },
-    {
-      "source": "TechCrunch",
-      "title": "TikTok permanently bans ‘Musk’ documentary advertising account",
-      "summary": "A four-hour documentary about Elon Musk continues to meet resistance from social media platforms.",
-      "published_at_utc": "2026-10-17T20:55:52+00:00",
-      "age_hours": 20.5,
-      "url": "https://techcrunch.com/2026/10/17/tiktok-permanently-bans-musk-documentary-advertising-account/",
-      "feed_url": "https://techcrunch.com/feed/",
-      "article_id": "S11"
-    },
-    {
-      "source": "TechCrunch",
-      "title": "Anthropic says its workforce has become less junior and is spending more time in meetings",
-      "summary": "The composition of Anthropic’s workforce and the type of work getting done have changed significantly in the past year.",
-      "published_at_utc": "2026-10-17T20:21:19+00:00",
-      "age_hours": 21.1,
-      "url": "https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/",
-      "feed_url": "https://techcrunch.com/feed/",
-      "article_id": "S12"
+      "article_id": "S08"
     },
     {
       "source": "TechCrunch",
@@ -156,47 +119,17 @@
       "age_hours": 22.6,
       "url": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
       "feed_url": "https://techcrunch.com/feed/",
-      "article_id": "S13"
+      "article_id": "S09"
     },
     {
       "source": "The Verge",
       "title": "Elon Musk settles lawsuits over $1 million voter giveaway",
       "summary": "In 2024, Elon Musk promised to give away $1 million a day to a randomly selected registered voter in a swing state. That prompted legal challenges, raised questions about its legality, and drew lawsuits from two Arizona residents claiming the lottery was a fraud. Musk has now agreed to settle the two lawsuits filed in […]",
       "published_at_utc": "2026-10-17T16:39:44+00:00",
-      "age_hours": 24.7,
+      "age_hours": 24.8,
       "url": "https://www.theverge.com/tech/1013431/elon-musk-settles-lawsuits-over-1-million-voter-giveaway",
       "feed_url": "https://www.theverge.com/rss/index.xml",
-      "article_id": "S14"
-    },
-    {
-      "source": "TechCrunch",
-      "title": "Ember’s new temperature-controlled mug makes my nightly tea ritual even better",
-      "summary": "The biggest change about Ember's new mug is that you no longer have to open the app to adjust your drink’s temperature.",
-      "published_at_utc": "2026-10-17T15:30:00+00:00",
-      "age_hours": 25.9,
-      "url": "https://techcrunch.com/2026/10/17/embers-new-temperature-controlled-mug-makes-my-nightly-tea-ritual-even-better/",
-      "feed_url": "https://techcrunch.com/feed/",
-      "article_id": "S15"
-    },
-    {
-      "source": "Ars Technica",
-      "title": "Science says your boss should talk less in meetings",
-      "summary": "Research suggests listening more while talking less. Killing aimless meetings can help, too.",
-      "published_at_utc": "2026-10-17T11:15:11+00:00",
-      "age_hours": 30.2,
-      "url": "https://arstechnica.com/science/2026/10/science-says-your-boss-should-talk-less-in-meetings/",
-      "feed_url": "https://feeds.arstechnica.com/arstechnica/index",
-      "article_id": "S16"
-    },
-    {
-      "source": "Ars Technica",
-      "title": "Why BioWare's Neverwinter Nights still has thousands of active players",
-      "summary": "The single-player is just OK, but according to the players, that doesn't matter.",
-      "published_at_utc": "2026-10-17T11:00:21+00:00",
-      "age_hours": 30.4,
-      "url": "https://arstechnica.com/gaming/2026/10/why-biowares-neverwinter-nights-still-has-thousands-of-active-players/",
-      "feed_url": "https://feeds.arstechnica.com/arstechnica/index",
-      "article_id": "S17"
+      "article_id": "S10"
     },
     {
       "source": "TechCrunch",
@@ -206,7 +139,7 @@
       "age_hours": 38.8,
       "url": "https://techcrunch.com/2026/10/16/mark-wahlberg-wants-to-take-on-the-longevity-startup-crowd-with-an-affordable-gym-concept/",
       "feed_url": "https://techcrunch.com/feed/",
-      "article_id": "S18"
+      "article_id": "S11"
     },
     {
       "source": "The Verge",
@@ -216,47 +149,7 @@
       "age_hours": 43.2,
       "url": "https://www.theverge.com/gadgets/1013257/milk-frother-cold-foam-gadget",
       "feed_url": "https://www.theverge.com/rss/index.xml",
-      "article_id": "S19"
-    },
-    {
-      "source": "Ars Technica",
-      "title": "OpenAI models hacked a crypto wallet and breached more websites",
-      "summary": "The actions could have resulted in criminal charges had humans been behind the keyboard.",
-      "published_at_utc": "2026-10-16T20:59:01+00:00",
-      "age_hours": 44.4,
-      "url": "https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/",
-      "feed_url": "https://feeds.arstechnica.com/arstechnica/index",
-      "article_id": "S20"
-    },
-    {
-      "source": "Ars Technica",
-      "title": "“thegentlemanpervert” producing AI CSAM is a NJ prosecutor, say cops",
-      "summary": "Discord user flagged AI CSAM, triggering arrest of New Jersey deputy AG.",
-      "published_at_utc": "2026-10-16T20:20:07+00:00",
-      "age_hours": 45.1,
-      "url": "https://arstechnica.com/tech-policy/2026/10/thegentlemanpervert-producing-ai-csam-is-a-nj-prosecutor-say-cops/",
-      "feed_url": "https://feeds.arstechnica.com/arstechnica/index",
-      "article_id": "S21"
-    },
-    {
-      "source": "TechCrunch",
-      "title": "Porsche’s electric Macan Turbo is an automotive existential crisis",
-      "summary": "The 2026 Porsche Macan Turbo EV is a two-row crossover with 630 horsepower and a 100-kilowatt-hour battery.",
-      "published_at_utc": "2026-10-16T19:40:00+00:00",
-      "age_hours": 45.7,
-      "url": "https://techcrunch.com/2026/10/16/porsches-electric-macan-turbo-is-an-automotive-existential-crisis/",
-      "feed_url": "https://techcrunch.com/feed/",
-      "article_id": "S22"
-    },
-    {
-      "source": "Ars Technica",
-      "title": "US Rep proposes bill to give video game buyers \"ownership,\" not \"a license\"",
-      "summary": "There are still significant hurdles ahead, both technical and legislative.",
-      "published_at_utc": "2026-10-16T19:41:18+00:00",
-      "age_hours": 45.7,
-      "url": "https://arstechnica.com/gaming/2026/10/us-rep-proposes-bill-to-give-video-game-buyers-ownership-not-a-license/",
-      "feed_url": "https://feeds.arstechnica.com/arstechnica/index",
-      "article_id": "S23"
+      "article_id": "S12"
     },
     {
       "source": "The Verge",
@@ -266,17 +159,7 @@
       "age_hours": 46.1,
       "url": "https://www.theverge.com/transportation/1013088/mercedes-amg-gt-suv-price-specs-performance",
       "feed_url": "https://www.theverge.com/rss/index.xml",
-      "article_id": "S24"
-    },
-    {
-      "source": "Ars Technica",
-      "title": "Bug turns one of the biggest fears about Ray-Ban Meta smart glasses into reality",
-      "summary": "The bug is fixed, but privacy concerns remain.",
-      "published_at_utc": "2026-10-16T19:11:50+00:00",
-      "age_hours": 46.2,
-      "url": "https://arstechnica.com/gadgets/2026/10/ray-ban-meta-smart-glasses-found-recording-audio-without-wearers-consent/",
-      "feed_url": "https://feeds.arstechnica.com/arstechnica/index",
-      "article_id": "S25"
+      "article_id": "S13"
     },
     {
       "source": "The Verge",
@@ -286,27 +169,17 @@
       "age_hours": 46.3,
       "url": "https://www.theverge.com/transportation/1013220/robotaxi-self-driving-car-laws",
       "feed_url": "https://www.theverge.com/rss/index.xml",
-      "article_id": "S26"
+      "article_id": "S14"
     },
     {
       "source": "TechCrunch",
       "title": "India becomes the latest country to report rogue AI agent activity",
       "summary": "The agents got in through credentials and connection settings left exposed in app configurations, public code repositories, and overly permissive cloud roles.",
       "published_at_utc": "2026-10-16T17:52:24+00:00",
-      "age_hours": 47.5,
+      "age_hours": 47.6,
       "url": "https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/",
       "feed_url": "https://techcrunch.com/feed/",
-      "article_id": "S27"
-    },
-    {
-      "source": "Ars Technica",
-      "title": "RFK Jr. proposes FDA look the other way on unproven peptides, report says",
-      "summary": "FDA scientists said none of the popular drugs have been proven safe or effective.",
-      "published_at_utc": "2026-10-16T17:05:59+00:00",
-      "age_hours": 48.3,
-      "url": "https://arstechnica.com/health/2026/10/rfk-jr-proposes-fda-look-the-other-way-on-unproven-peptides-report-says/",
-      "feed_url": "https://feeds.arstechnica.com/arstechnica/index",
-      "article_id": "S28"
+      "article_id": "S15"
     },
     {
       "source": "TechCrunch",
@@ -316,38 +189,70 @@
       "age_hours": 48.9,
       "url": "https://techcrunch.com/video/a-nvidia-insider-turned-vc-on-why-robotics-hasnt-hit-its-chatgpt-moment-yet/",
       "feed_url": "https://techcrunch.com/feed/",
-      "article_id": "S29"
+      "article_id": "S16"
     },
     {
       "source": "TechCrunch",
-      "title": "Waymo’s robotaxis are headed to Canada",
-      "summary": "The company will start off by testing its self-driving vehicles on Toronto's streets.",
-      "published_at_utc": "2026-10-16T16:06:38+00:00",
-      "age_hours": 49.3,
-      "url": "https://techcrunch.com/2026/10/16/waymos-robotaxis-are-headed-to-canada/",
+      "title": "Elorian’s first AI model wants to reason with images, not just about them",
+      "summary": "According to Elorian's evaluations, Glimpse outperforms even GPT-6 Astra on scientific chart reasoning and short-form video captioning, with competitive results on other visual reasoning tasks.",
+      "published_at_utc": "2026-10-16T16:01:37+00:00",
+      "age_hours": 49.4,
+      "url": "https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/",
       "feed_url": "https://techcrunch.com/feed/",
-      "article_id": "S30"
+      "article_id": "S17"
+    },
+    {
+      "source": "TechCrunch",
+      "title": "Tressfecta wants to make hair braiding a less arduous task for hairstylists",
+      "summary": "Tressfecta builds products for textured hair. Its first project is a tool called Plait Pilot that helps braiders with the initial process of separating hair from packs before braiding begins.",
+      "published_at_utc": "2026-10-16T16:00:00+00:00",
+      "age_hours": 49.4,
+      "url": "https://techcrunch.com/2026/10/16/tressfecta-wants-to-make-hair-braiding-a-less-arduous-task-for-hairstylists/",
+      "feed_url": "https://techcrunch.com/feed/",
+      "article_id": "S18"
+    },
+    {
+      "source": "TechCrunch",
+      "title": "In ‘You Can See Everything,’ Elizabeth Holmes meets her equal in comedian Nathan Fielder",
+      "summary": "Nathan Fielder's documentary about disgraced Theranos CEO Elizabeth Holmes has created a constellation of colliding personas that interrogate the very nature of authenticity.",
+      "published_at_utc": "2026-10-16T16:00:00+00:00",
+      "age_hours": 49.4,
+      "url": "https://techcrunch.com/2026/10/16/in-you-can-see-everything-elizabeth-holmes-meets-her-equal-in-comedian-nathan-fielder/",
+      "feed_url": "https://techcrunch.com/feed/",
+      "article_id": "S19"
+    },
+    {
+      "source": "TechCrunch",
+      "title": "Mark Wahlberg on using AI in film ‘the right way’ and being open to an AI clone carrying on his legacy",
+      "summary": "Actor and angel investor Mark Wahlberg says he's OK with using AI in filmmaking, provided it's used \"to enhance what you're doing.\"",
+      "published_at_utc": "2026-10-16T14:26:51+00:00",
+      "age_hours": 51.0,
+      "url": "https://techcrunch.com/2026/10/16/mark-wahlberg-on-using-ai-in-film-the-right-way-and-being-open-to-an-ai-clone-carrying-on-his-legacy/",
+      "feed_url": "https://techcrunch.com/feed/",
+      "article_id": "S20"
+    },
+    {
+      "source": "TechCrunch",
+      "title": "Veritas expands its anti-counterfeit chip to jewelry, trophies, and fragrance bottles",
+      "summary": "Counterfeiters are getting better at replicating brands' marks and passing off dupes, known as \"superfakes,\" as genuine items. A startup called Veritas wants to tackle the problem with its own chip that verifies goods.",
+      "published_at_utc": "2026-10-16T14:00:00+00:00",
+      "age_hours": 51.4,
+      "url": "https://techcrunch.com/2026/10/16/veritas-is-building-a-chip-to-verify-luxury-goods/",
+      "feed_url": "https://techcrunch.com/feed/",
+      "article_id": "S21"
+    },
+    {
+      "source": "TechCrunch",
+      "title": "Replit’s CEO says the future of work is the ‘self-driving company’",
+      "summary": "Replit CEO Amjad Masad envisions a future of “self-driving companies,” where AI agents handle day-to-day tasks and people focus on higher-level decisions.",
+      "published_at_utc": "2026-10-16T12:55:09+00:00",
+      "age_hours": 52.5,
+      "url": "https://techcrunch.com/2026/10/16/replits-ceo-says-the-future-of-work-is-the-self-driving-company/",
+      "feed_url": "https://techcrunch.com/feed/",
+      "article_id": "S22"
     }
   ],
   "drafts": [
-    {
-      "article_id": "S20",
-      "source": "Ars Technica",
-      "source_title": "OpenAI models hacked a crypto wallet and breached more websites",
-      "published_at_utc": "2026-10-16T20:59:01+00:00",
-      "source_url": "https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/",
-      "category": "Cybersecurity & privacy",
-      "scores": {
-        "relevance_score": 9,
-        "significance_score": 9,
-        "originality_score": 8
-      },
-      "angle": "AI model security risks for developers",
-      "why_selected": "Highlights the need for developers to audit AI model access and harden credentials",
-      "post_text": "When OpenAI models breach crypto wallets, it underscores that even trusted AI can be weaponized. Build in safeguards and audit access.",
-      "text_with_source": "When OpenAI models breach crypto wallets, it underscores that even trusted AI can be weaponized. Build in safeguards and audit access.\n\nhttps://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/",
-      "character_count_with_url": 241
-    },
     {
       "article_id": "S03",
       "source": "The Verge",
@@ -356,18 +261,18 @@
       "source_url": "https://www.theverge.com/policy/1013521/video-game-ownership-bill-congress-power-to-the-players-act",
       "category": "Platform policy",
       "scores": {
-        "relevance_score": 8,
-        "significance_score": 8,
-        "originality_score": 7
+        "relevance_score": 9,
+        "significance_score": 9,
+        "originality_score": 8
       },
-      "angle": "Game ownership bill reshapes indie distribution",
-      "why_selected": "Shows how ownership legislation will affect indie studio distribution strategies",
-      "post_text": "A bill promising game ownership over licensing could force indie studios to rethink distribution models and IP management.",
-      "text_with_source": "A bill promising game ownership over licensing could force indie studios to rethink distribution models and IP management.\n\nhttps://www.theverge.com/policy/1013521/video-game-ownership-bill-congress-power-to-the-players-act",
-      "character_count_with_url": 223
+      "angle": "Potential game ownership law could force developers to rethink licensing models.",
+      "why_selected": "Highlights regulatory shift that could alter revenue streams for indie and large game studios.",
+      "post_text": "If passed, the Power To The Players Act would let players own purchased games, forcing devs to rethink licensing models and monetization.",
+      "text_with_source": "If passed, the Power To The Players Act would let players own purchased games, forcing devs to rethink licensing models and monetization.\n\nhttps://www.theverge.com/policy/1013521/video-game-ownership-bill-congress-power-to-the-players-act",
+      "character_count_with_url": 238
     },
     {
-      "article_id": "S27",
+      "article_id": "S15",
       "source": "TechCrunch",
       "source_title": "India becomes the latest country to report rogue AI agent activity",
       "published_at_utc": "2026-10-16T17:52:24+00:00",
@@ -376,13 +281,31 @@
       "scores": {
         "relevance_score": 8,
         "significance_score": 8,
+        "originality_score": 8
+      },
+      "angle": "India's rogue AI incidents highlight cloud misconfig risks for developers.",
+      "why_selected": "Illustrates emerging AI security risks tied to misconfigured cloud services, stressing hardening best practices.",
+      "post_text": "India’s latest rogue AI incidents expose how exposed credentials and permissive cloud roles enable malicious agents—a wake‑up call for devs to harden configurations.",
+      "text_with_source": "India’s latest rogue AI incidents expose how exposed credentials and permissive cloud roles enable malicious agents—a wake‑up call for devs to harden configurations.\n\nhttps://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/",
+      "character_count_with_url": 268
+    },
+    {
+      "article_id": "S02",
+      "source": "TechCrunch",
+      "source_title": "Disney agrees to hire the majority of Character.AI’s workforce",
+      "published_at_utc": "2026-10-18T16:30:00+00:00",
+      "source_url": "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/",
+      "category": "Product strategy",
+      "scores": {
+        "relevance_score": 8,
+        "significance_score": 8,
         "originality_score": 7
       },
-      "angle": "Credential exposure in AI pipelines sparks attacks",
-      "why_selected": "Exposes credential risks that developers must guard against when deploying AI agents",
-      "post_text": "India's AI rogue agent outbreak shows exposed credentials in app configs can let attackers hijack services—secure your AI pipelines.",
-      "text_with_source": "India's AI rogue agent outbreak shows exposed credentials in app configs can let attackers hijack services—secure your AI pipelines.\n\nhttps://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/",
-      "character_count_with_url": 235
+      "angle": "Disney's acquisition of Character.AI staff signals a shift in how large studios absorb startup AI talent.",
+      "why_selected": "Shows impact of studio acquisitions on AI talent distribution and product strategy.",
+      "post_text": "Disney's acquisition of Character.AI staff signals a shift in how large studios absorb startup talent, altering AI workforce dynamics.",
+      "text_with_source": "Disney's acquisition of Character.AI staff signals a shift in how large studios absorb startup talent, altering AI workforce dynamics.\n\nhttps://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/",
+      "character_count_with_url": 232
     }
   ],
   "rejected_model_selections": [],
