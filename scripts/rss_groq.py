@@ -52,7 +52,7 @@ def normalize_evidence(value: str) -> str:
         normalized = normalized.replace(dash, "-")
     return (
         normalized.replace("’", "'").replace("‘", "'")
-        .replace("“", '"').replace("”", '"')
+        .replace("“", "").replace("”", "").replace('"', "")
     )
 
 
