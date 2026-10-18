@@ -458,7 +458,7 @@ def generate_drafts(candidates: list[dict], max_posts: int = 3) -> tuple[list[di
                 "scores": scores, "reason": "Draft failed length, URL, or hashtag validation.",
             })
             continue
-        evidence_for_terms = evidence_normalize(evidence_text)
+        evidence_for_terms = normalize_evidence(evidence_text)
         model_name_pattern = re.compile(
             r"\b(?:GPT[-\s]?\d+(?:[. -]\d+)*(?:[- ]?(?:turbo|mini|pro|thinking))?"
             r"|Claude(?:[- ]?\d+(?:[. -]\d+)*)?(?:[- ]?(?:Sonnet|Opus|Haiku))?"
@@ -469,7 +469,7 @@ def generate_drafts(candidates: list[dict], max_posts: int = 3) -> tuple[list[di
         )
         unsupported_model = next(
             (match.group(0) for match in model_name_pattern.finditer(copy)
-             if evidence_normalize(match.group(0)) not in evidence_for_terms),
+             if normalize_evidence(match.group(0)) not in evidence_for_terms),
             None,
         )
         if unsupported_model:
