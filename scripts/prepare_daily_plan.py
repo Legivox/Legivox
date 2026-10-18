@@ -43,12 +43,54 @@ def clean(value: object) -> str:
     return " ".join(str(value or "").split()).strip()
 
 
+STOP_WORDS = {
+    "about", "after", "also", "among", "and", "are", "been", "before", "being",
+    "between", "could", "does", "each", "from", "have", "into", "just", "more",
+    "most", "much", "other", "over", "same", "some", "such", "than", "that",
+    "their", "them", "then", "there", "these", "they", "this", "those", "through",
+    "under", "using", "very", "what", "when", "where", "which", "while", "with",
+    "would", "your", "you", "they", "people", "small", "independent", "digital",
+    "product", "products", "tool", "tools", "work", "working", "project", "projects",
+    "creator", "creators", "software", "business", "simple", "lightweight", "focused",
+}
+SYNONYMS = {
+    "feedback": {"review", "reviews", "comment", "comments", "suggestion", "suggestions", "request", "requests"},
+    "requests": {"request", "requests", "feedback", "suggestions", "comments"},
+    "request": {"requests", "feedback", "suggestions", "comments"},
+    "inventory": {"stock", "reorder", "warehouse"},
+    "stock": {"inventory", "reorder", "warehouse"},
+    "leads": {"lead", "pipeline", "prospects", "quotes"},
+    "lead": {"leads", "pipeline", "prospects", "quotes"},
+    "launch": {"launched", "launching", "release", "released"},
+    "newsletter": {"readers", "subscribers", "email"},
+    "pricing": {"price", "margin", "cost", "costing"},
+    "support": {"tickets", "customers", "questions", "documentation"},
+    "scope": {"estimate", "change", "changes", "client"},
+}
+
+
+def meaningful_tokens(value: object) -> set[str]:
+    return {
+        token.lower() for token in re.findall(r"[a-zA-Z]{3,}", str(value or ""))
+        if token.lower() not in STOP_WORDS
+    }
+
+
+def expand_terms(tokens: set[str]) -> set[str]:
+    expanded = set(tokens)
+    for token in list(tokens):
+        expanded.update(SYNONYMS.get(token, set()))
+    return expanded
+
+
 def search_signal(idea: dict, since_epoch: int) -> dict:
     query = clean(idea.get("research_query") or idea.get("niche"))
+    issue_terms = meaningful_tokens(idea.get("problem", "") + " " + idea.get("solution_hypothesis", ""))
+    focus_terms = expand_terms(issue_terms | meaningful_tokens(query))
     params = urllib.parse.urlencode({
         "query": query,
         "tags": "story",
-        "hitsPerPage": "8",
+        "hitsPerPage": "12",
         "numericFilters": "created_at_i>" + str(since_epoch),
     })
     url = "https://hn.algolia.com/api/v1/search_by_date?" + params
@@ -59,6 +101,12 @@ def search_signal(idea: dict, since_epoch: int) -> dict:
             title = clean(row.get("story_title") or row.get("title"))
             if not title:
                 continue
+            # HN search can match comment text even when the story itself is unrelated.
+            # Keep only titles that mention the problem, solution or a close synonym.
+            title_terms = meaningful_tokens(title)
+            matched = sorted(title_terms & focus_terms)
+            if not matched:
+                continue
             object_id = clean(row.get("objectID"))
             hits.append({
                 "title": title[:240],
@@ -67,6 +115,7 @@ def search_signal(idea: dict, since_epoch: int) -> dict:
                 "points": int(row.get("points") or 0),
                 "comments": int(row.get("num_comments") or 0),
                 "created_at": clean(row.get("created_at")),
+                "matched_terms": matched,
             })
         points = sum(min(100, row["points"]) for row in hits)
         comments = sum(min(100, row["comments"]) for row in hits)
@@ -163,20 +212,26 @@ def write_engagement_shortlist(plan: dict) -> None:
         query = post.get("research", {}).get("query", "")
         lines += ["## " + post["niche"], "", "Search: `" + query + "`", ""]
         try:
-            candidates = client.search_x(query, product="Top", limit=8)
+            candidates = []
+        try:
+            candidates = client.search_x(query, product="Top", limit=12)
         except Exception:
             candidates = []
-        added = 0
+        issue_terms = expand_terms(meaningful_tokens(post.get("problem", "") + " " + post.get("solution_hypothesis", "")))
+        seen_in_topic = 0
         for candidate in candidates or []:
             url = clean(candidate.get("url"))
             text = clean(candidate.get("text"))
             author = clean(candidate.get("author") or candidate.get("username") or "X user")
             if not url or not text or url in seen or "/Legivox/status/" in url:
                 continue
+            # Exclude results that match the broad search but not this specific problem.
+            if not (meaningful_tokens(text) & issue_terms):
+                continue
             seen.add(url)
             lines.append("- [" + author.replace("[", "(").replace("]", ")") + "](" + url + "): " + text[:220])
-            added += 1
-            if added >= 3:
+            seen_in_topic += 1
+            if seen_in_topic >= 3:
                 break
         if not added:
             lines.append("- No usable candidates returned for this query.")
