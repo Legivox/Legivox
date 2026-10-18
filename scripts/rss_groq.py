@@ -314,7 +314,11 @@ def generate_drafts(candidates: list[dict], max_posts: int = 3) -> tuple[list[di
         "reactions unless stated in the excerpt. A grounded angle is that external evaluators can assess model "
         "risks with deeper access; avoid claiming this sets standards for the industry. For provider-default "
         "news, prefer: the default changes what users try first, while continued availability of the alternative "
-        "preserves choice; avoid claims about migration, retraining, cost or latency unless sourced. For proposed "
+        "preserves choice; do not claim the change streamlines or improves workflows unless sourced. A safe "
+        "default-change framing is that the product now defaults to OpenAI while Claude remains available, "
+        "and defaults influence what new users try first. Do not infer that an organization keeps data proprietary "
+        "or predict another organization's reaction unless the excerpt says so. Avoid claims about migration, "
+        "retraining, cost or latency unless sourced. For proposed "
         "bills, say what the bill would direct a regulator to do if passed, and avoid predicting changes to "
         "subscriptions or revenue models unless sourced. For proposed bills, use conditional language and describe "
         "the proposed regulator/action accurately; do not say it will force studios to change or add DLC, "
@@ -488,11 +492,13 @@ def generate_drafts(candidates: list[dict], max_posts: int = 3) -> tuple[list[di
             (r"\b(?:re[- ]?train\w*|fine[- ]?tun\w*)\b", "model-training detail"),
             (r"\bintegrations?\b", "integration detail"),
             (r"\blatency\b", "latency implication"),
+            (r"\b(?:streamline|streamlines|streamlined|improve|improves|improved|boost|boosts|boosted|faster|cheaper|more efficient)\b", "unsupported performance benefit"),
+            (r"\bproprietary\b", "proprietary status"),
             (r"\b(?:costs?|pricing|prices?)\b", "cost/pricing implication"),
             (r"\b(?:must|will have to|has to|have to)\b", "uncautious necessity claim"),
             (r"\bpermanent rights\b", "permanent rights"),
             (r"\b(?:single[- ]vendor|vendor lock[- ]in|AI stacks?)\b", "single-vendor AI stack"),
-            (r"\b(?:(?:industry[- ]wide|trend toward|new standard|new era|raising expectations for other labs|raises expectations for other labs)|(?:set(?:s|ting)?|establish(?:es|ing)?|creat(?:e|es|ing))\s+(?:a\s+)?(?:new\s+)?(?:[A-Za-z-]+\s+){0,3}standards?)\b", "industry-wide inference"),
+            (r"\b(?:(?:industry[- ]wide|trend toward|new standard|new era|raising expectations for other labs|raises expectations for other labs|pressure(?:s|d|ing)? other (?:AI )?labs)|(?:set(?:s|ting)?|establish(?:es|ing)?|creat(?:e|es|ing))\s+(?:a\s+)?(?:new\s+)?(?:[A-Za-z-]+\s+){0,3}standards?)\b", "industry-wide inference"),
             (r"\b(?:forcing|force|forces|forced|mandates?|mandated|requires?|required)\s+(?:studios|labs|developers|companies|platforms)\b", "strong causal claim"),
         )
         unsupported_detail = None
