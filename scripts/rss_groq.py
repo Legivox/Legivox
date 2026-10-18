@@ -311,7 +311,8 @@ def generate_drafts(candidates: list[dict], max_posts: int = 3) -> tuple[list[di
         "are not in the source. A safer provider-default angle is that defaults shape what users try first, "
         "while keeping an alternative available preserves choice. For external evaluators/watchdogs, discuss "
         "the specific oversight described; do not call it a new industry standard or predict other labs' "
-        "reactions unless stated in the excerpt. A grounded angle is that external evaluators can assess model "
+        "reactions unless stated in the excerpt. Avoid unsupported words like benchmark, precedent, or standard "
+        "for the wider industry. A grounded angle is that external evaluators can assess model "
         "risks with deeper access; avoid claiming this sets standards for the industry. For provider-default "
         "news, prefer: the default changes what users try first, while continued availability of the alternative "
         "preserves choice; do not claim the change streamlines or improves workflows unless sourced. A safe "
@@ -461,7 +462,7 @@ def generate_drafts(candidates: list[dict], max_posts: int = 3) -> tuple[list[di
             continue
         evidence_for_terms = normalize_evidence(evidence_text)
         model_name_pattern = re.compile(
-            r"\b(?:GPT[-\s]?\d+(?:[. -]\d+)*(?:[- ]?(?:turbo|mini|pro|thinking))?"
+            r"\b(?:ChatGPT(?:[- ][A-Za-z0-9.-]+)?|GPT[-\s]?\d+(?:[. -]\d+)*(?:[- ]?(?:turbo|mini|pro|thinking))?"
             r"|Claude(?:[- ]?\d+(?:[. -]\d+)*)?(?:[- ]?(?:Sonnet|Opus|Haiku))?"
             r"|Gemini(?:[- ]?\d+(?:[. -]\d+)*)?(?:[- ]?(?:Flash|Pro|Ultra))?"
             r"|Llama[- ]?\d+(?:[. -]\d+)*|DeepSeek[- ]?[A-Za-z0-9. -]+"
@@ -498,7 +499,7 @@ def generate_drafts(candidates: list[dict], max_posts: int = 3) -> tuple[list[di
             (r"\b(?:must|will have to|has to|have to)\b", "uncautious necessity claim"),
             (r"\bpermanent rights\b", "permanent rights"),
             (r"\b(?:single[- ]vendor|vendor lock[- ]in|AI stacks?)\b", "single-vendor AI stack"),
-            (r"\b(?:(?:industry[- ]wide|trend toward|new standard|new era|raising expectations for other labs|raises expectations for other labs|pressure(?:s|d|ing)? other (?:AI )?labs)|(?:set(?:s|ting)?|establish(?:es|ing)?|creat(?:e|es|ing))\s+(?:a\s+)?(?:new\s+)?(?:[A-Za-z-]+\s+){0,3}standards?)\b", "industry-wide inference"),
+            (r"\b(?:(?:industry[- ]wide|trend toward|new standard|new era|raising expectations for other labs|raises expectations for other labs|pressure(?:s|d|ing)? other (?:AI )?labs)|(?:set(?:s|ting)?|establish(?:es|ing)?|creat(?:e|es|ing))\s+(?:a\s+)?(?:new\s+)?(?:[A-Za-z-]+\s+){0,3}(?:standards?|benchmarks?))\b", "industry-wide inference"),
             (r"\b(?:forcing|force|forces|forced|mandates?|mandated|requires?|required)\s+(?:studios|labs|developers|companies|platforms)\b", "strong causal claim"),
         )
         unsupported_detail = None
