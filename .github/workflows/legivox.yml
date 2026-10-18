@@ -3,7 +3,7 @@ name: Legivox daily research and X publishing
 on:
   workflow_dispatch:
   schedule:
-    # Plan at 06:00 IST, then publish at 09:00, 13:00 and 19:00 IST.
+    # Plan at 06:00 IST; the publishing jobs use randomized times within the next hour.
     - cron: '30 0 * * *'
     - cron: '30 3 * * *'
     - cron: '30 7 * * *'
@@ -19,42 +19,89 @@ concurrency:
 jobs:
   legivox:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 60
     steps:
       - name: Checkout repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+
       - name: Set up Python
         uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
           python-version: '3.12'
+
       - name: Validate scripts and idea library
         run: |
-          python -m py_compile scripts/publish_next.py scripts/prepare_daily_plan.py scripts/build_queue.py
+          python -m py_compile scripts/publish_next.py scripts/prepare_daily_plan.py scripts/build_queue.py scripts/rss_groq.py scripts/randomized_slot.py
           python -m json.tool data/ideas.json > /dev/null
+
       - name: Install publisher from the reviewed source commit
         run: >-
           python -m pip install --disable-pip-version-check
           'git+https://github.com/nsozturk/tweetkit-x.git@d42503a936f80eb0af2e9856a0fbd392cc4a750c'
+
+      - name: Test RSS publisher plan selection and randomized windows
+        run: python -m unittest discover -s tests -v
+
       - name: Prepare daily research plan
         if: github.event_name == 'workflow_dispatch' || github.event.schedule == '30 0 * * *'
         env:
           TWEETKIT_COOKIE: ${{ secrets.X_SESSION_COOKIE }}
         run: python scripts/prepare_daily_plan.py
-      - name: Publish morning post
-        if: github.event.schedule == '30 3 * * *'
+
+      - name: Prepare fresh RSS + Groq post for scheduled slot
+        id: prepare_rss
+        if: github.event.schedule == '30 3 * * *' || github.event.schedule == '30 7 * * *' || github.event.schedule == '30 13 * * *'
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GROQ_MODEL: openai/gpt-oss-20b
+          SCHEDULE: ${{ github.event.schedule }}
+        run: |
+          case "$SCHEDULE" in
+            '30 3 * * *') slot=0 ;;
+            '30 7 * * *') slot=1 ;;
+            '30 13 * * *') slot=2 ;;
+            *) echo 'Unexpected schedule; refusing to prepare a post.' >&2; exit 1 ;;
+          esac
+          echo "slot=$slot" >> "$GITHUB_OUTPUT"
+          if python scripts/rss_groq.py --prepare-single-post --slot "$slot"; then
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          else
+            status=$?
+            if [ "$status" -eq 2 ]; then
+              echo "skip=true" >> "$GITHUB_OUTPUT"
+              echo 'No draft passed the quality gate. This slot will be skipped.'
+              exit 0
+            fi
+            exit "$status"
+          fi
+
+      - name: Wait for randomized time inside the publishing window
+        id: random_window
+        if: success() && steps.prepare_rss.outputs.skip != 'true' && steps.prepare_rss.outputs.slot != ''
+        env:
+          SLOT: ${{ steps.prepare_rss.outputs.slot }}
+        run: |
+          if python scripts/randomized_slot.py --slot "$SLOT"; then
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          else
+            status=$?
+            if [ "$status" -eq 2 ]; then
+              echo "skip=true" >> "$GITHUB_OUTPUT"
+              echo 'The slot window expired; this post will not be sent late.'
+              exit 0
+            fi
+            exit "$status"
+          fi
+
+      - name: Publish quality-gated RSS + Groq post
+        if: success() && steps.prepare_rss.outputs.skip != 'true' && steps.random_window.outputs.skip != 'true' && steps.prepare_rss.outputs.slot != ''
         env:
           TWEETKIT_COOKIE: ${{ secrets.X_SESSION_COOKIE }}
-        run: python scripts/publish_next.py --slot 0
-      - name: Publish lunch-time post
-        if: github.event.schedule == '30 7 * * *'
-        env:
-          TWEETKIT_COOKIE: ${{ secrets.X_SESSION_COOKIE }}
-        run: python scripts/publish_next.py --slot 1
-      - name: Publish evening post
-        if: github.event.schedule == '30 13 * * *'
-        env:
-          TWEETKIT_COOKIE: ${{ secrets.X_SESSION_COOKIE }}
-        run: python scripts/publish_next.py --slot 2
+          SLOT: ${{ steps.prepare_rss.outputs.slot }}
+        run: python scripts/publish_next.py --slot "$SLOT"
+
       - name: Commit plan, publish state and audit logs
         if: always()
         run: |
@@ -64,6 +111,7 @@ jobs:
             exit 0
           fi
           git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git config user.email '41898282+users.noreply.github.com'
           git commit -m 'Update Legivox daily plan and publishing state'
+          git pull --rebase origin main
           git push
