@@ -28,6 +28,24 @@ EXPECTED_USERNAME = "Legivox"
 IST = ZoneInfo("Asia/Kolkata")
 USER_AGENT = "LegivoxPublisher/1.0 (https://github.com/Legivox/Legivox)"
 MAX_IMAGE_BYTES = 8 * 1024 * 1024
+RSS_GROQ_PLAN_SOURCE = "RSS feeds + Groq editorial ranking"
+
+
+def select_post_for_slot(plan: dict, slot: int) -> dict:
+    """Select today's post while preserving the legacy three-post curated plan format."""
+    posts = plan.get("posts") or []
+    if plan.get("research_source") == RSS_GROQ_PLAN_SOURCE:
+        if len(posts) != 1:
+            raise ValueError("RSS/Groq plan must contain exactly one quality-gated post.")
+        item = posts[0]
+        if item.get("slot") != slot:
+            raise ValueError("RSS/Groq plan slot does not match the scheduled publishing slot.")
+        if clean(item.get("text")) == "":
+            raise ValueError("RSS/Groq plan has an empty post.")
+        return item
+    if len(posts) != 3 or slot >= len(posts):
+        raise ValueError("Today's curated plan does not contain three posts.")
+    return posts[slot]
 
 
 def fail(message: str) -> None:
@@ -179,10 +197,10 @@ def main() -> int:
     today = datetime.now(IST).date().isoformat()
     if plan.get("date_ist") != today:
         fail("No current daily plan exists. The 06:00 IST planning run must complete before posts can be published.")
-    posts = plan.get("posts") or []
-    if len(posts) != 3 or args.slot >= len(posts):
-        fail("Today's plan does not contain three posts. No post was attempted.")
-    item = posts[args.slot]
+    try:
+        item = select_post_for_slot(plan, args.slot)
+    except ValueError as exc:
+        fail(str(exc) + " No post was attempted.")
     draft = clean(item.get("text"))
     if not draft or len(draft) > 280:
         fail("The selected draft is empty or exceeds 280 characters.")
@@ -212,7 +230,11 @@ def main() -> int:
 
     image_path = None
     image_credit = None
-    image_query = clean(item.get("image_query") or item.get("niche"))
+    # News posts default to text-only unless a story-specific image is explicitly supplied.
+    if plan.get("research_source") == RSS_GROQ_PLAN_SOURCE:
+        image_query = clean(item.get("image_query"))
+    else:
+        image_query = clean(item.get("image_query") or item.get("niche"))
     if image_query:
         image_path, image_credit = find_free_image(image_query, clean(item.get("idea_id") or ("slot-" + str(args.slot))))
 
