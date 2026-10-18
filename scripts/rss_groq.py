@@ -278,7 +278,7 @@ def generate_drafts(candidates: list[dict], max_posts: int = 3) -> tuple[list[di
                         "originality_score": {"type": "integer", "minimum": 1, "maximum": 10},
                         "angle": {"type": "string", "maxLength": 140},
                         "why_selected": {"type": "string", "maxLength": 180},
-                        "evidence_quote": {"type": "string", "minLength": 20, "maxLength": 100},
+                        "evidence_quote": {"type": "string"},
                         "post_text": {"type": "string", "minLength": 55, "maxLength": 180},
                     },
                 },
@@ -409,10 +409,10 @@ def generate_drafts(candidates: list[dict], max_posts: int = 3) -> tuple[list[di
             )
         normalized_quote = evidence_normalize(evidence_quote)
         normalized_evidence = evidence_normalize(evidence_text)
-        if len(evidence_quote) < 20 or normalized_quote not in normalized_evidence:
+        if len(evidence_quote) < 20 or len(evidence_quote) > 100 or normalized_quote not in normalized_evidence:
             rejected.append({
                 "article_id": article_id, "source": article["source"], "title": article["title"],
-                "reason": "Evidence quote is not an exact excerpt from the supplied title or summary.",
+                "reason": "Evidence quote must be 20–100 characters and an exact excerpt from the supplied title or summary.",
             })
             continue
         scores = {
