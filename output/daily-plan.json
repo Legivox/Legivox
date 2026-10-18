@@ -1,123 +1,90 @@
 {
   "date_ist": "2026-10-18",
-  "prepared_at_ist": "2026-10-18 20:40:19 IST",
+  "prepared_at_ist": "2026-10-18 20:41:59 IST",
   "research_window_days": 30,
   "research_source": "Hacker News Algolia Search API",
   "posts": [
     {
-      "idea_id": "indie-launch",
-      "niche": "indie software builders",
-      "problem": "Launch feedback arrives before makers have a repeatable way to categorize it.",
-      "evidence": "Unverified hypothesis. Review launch discussions and creator tools before claiming demand.",
-      "solution_hypothesis": "a launch feedback triage board with tags for bugs, requests and objections",
-      "text": "A launch can produce dozens of comments and still leave a maker unsure what to fix first. Bugs, feature requests and “I don't get it” feedback need different treatment. How do indie builders sort launch feedback today?",
-      "text_hash": "b67b6966ee8357b6a6fcd9d0490d604442930d3c18f7b65d2ccf915130bc208b",
-      "image_query": "software startup",
+      "idea_id": "micro-saas-support",
+      "niche": "small SaaS founders",
+      "problem": "Repeated support questions can expose product friction but are hard to summarize.",
+      "evidence": "Unverified hypothesis. Explore founder forums and lightweight support products.",
+      "solution_hypothesis": "a support-theme tracker that groups recurring questions into documentation tasks",
+      "text": "Repeated support questions can be a product signal, not just a support problem. If customers keep asking the same thing, the UI or docs may be failing them. How do small SaaS teams spot those patterns?",
+      "text_hash": "a73be1cdd3656fa48c06caecedb048b7b96683123e436d8ca86237360c6548ea",
+      "image_query": "SaaS support",
       "research": {
-        "query": "product launch feedback",
-        "score": 26.483,
+        "query": "support tickets",
+        "score": 7.079,
         "hits": [
           {
-            "title": "Show HN: Abralo - Open source Slack for agents and people",
-            "url": "https://news.ycombinator.com/item?id=49966215",
-            "external_url": "https://github.com/cw12574/abralo-workspace",
-            "points": 1,
-            "comments": 0,
-            "created_at": "2026-10-05T15:33:39Z",
-            "matched_terms": [
-              "for"
-            ]
-          },
-          {
-            "title": "Show HN: Diffusion studio plugin for codex launch",
-            "url": "https://news.ycombinator.com/item?id=49929872",
-            "external_url": "https://github.com/Teseife/diffusion-studio-codex",
-            "points": 1,
-            "comments": 0,
-            "created_at": "2026-10-02T04:33:41Z",
-            "matched_terms": [
-              "for",
-              "launch"
-            ]
-          },
-          {
-            "title": "Show HN: Caspian – Desktop app to build and launch small vibe-coded projects",
-            "url": "https://news.ycombinator.com/item?id=49875198",
-            "external_url": "https://caspian.md",
-            "points": 2,
-            "comments": 2,
-            "created_at": "2026-09-28T08:41:28Z",
-            "matched_terms": [
-              "launch"
-            ]
-          },
-          {
-            "title": "Launch HN: Coverage Cat (YC S22) – Umbrella insurance via your personal agent",
-            "url": "https://news.ycombinator.com/item?id=49804931",
-            "external_url": "https://www.coveragecat.com/",
-            "points": 54,
-            "comments": 32,
-            "created_at": "2026-09-22T17:26:36Z",
-            "matched_terms": [
-              "launch"
-            ]
-          }
-        ],
-        "error": null
-      },
-      "status": "planned"
-    },
-    {
-      "idea_id": "job-search",
-      "niche": "job seekers",
-      "problem": "Follow-ups, interview notes and application stages get lost across tabs.",
-      "evidence": "Unverified hypothesis. Compare job trackers and user complaints before building.",
-      "solution_hypothesis": "a focused job-search tracker with role-specific notes and follow-up reminders",
-      "text": "Job searching can turn into a spreadsheet graveyard: application status in one tab, follow-ups in another, interview notes in your inbox. What part of staying organised is still painful, even with existing trackers?",
-      "text_hash": "f5a73310141996ddd3354e44a271ee8a92d944e8f64d77d67cc65ab919609eba",
-      "image_query": "resume desk",
-      "research": {
-        "query": "job search hiring",
-        "score": 10.473,
-        "hits": [
-          {
-            "title": "Ask HN: What job boards are good these days?",
-            "url": "https://news.ycombinator.com/item?id=49816567",
+            "title": "WhatsApp Business Paid Support Is a Scam",
+            "url": "https://news.ycombinator.com/item?id=49784840",
             "external_url": "",
-            "points": 24,
-            "comments": 21,
-            "created_at": "2026-09-23T14:17:11Z",
-            "matched_terms": [
-              "job"
-            ]
-          }
-        ],
-        "error": null
-      },
-      "status": "planned"
-    },
-    {
-      "idea_id": "local-services",
-      "niche": "independent local service businesses",
-      "problem": "Leads, quotes and follow-ups are easy to forget when the owner does everything.",
-      "evidence": "Unverified hypothesis. Interview operators and inspect existing low-cost tools.",
-      "solution_hypothesis": "a simple quote and follow-up tracker designed for one-person businesses",
-      "text": "For a one-person service business, the job isn't over when the quote is sent. Remembering to follow up is its own admin task. What do you use to track quotes that haven't turned into bookings yet?",
-      "text_hash": "44de5a8eff49533d89430665a1f0a58569f59ef88469e7a6fee96f4d2fa1b2cd",
-      "image_query": "small business shop",
-      "research": {
-        "query": "small business leads",
-        "score": 7.282,
-        "hits": [
-          {
-            "title": "Can an AI learn what you like, rather than just what you've searched for?",
-            "url": "https://news.ycombinator.com/item?id=50017172",
-            "external_url": "",
-            "points": 2,
+            "points": 1,
             "comments": 3,
-            "created_at": "2026-10-09T07:18:41Z",
+            "created_at": "2026-09-21T08:58:24Z",
             "matched_terms": [
-              "for"
+              "support"
+            ]
+          }
+        ],
+        "error": null
+      },
+      "status": "planned"
+    },
+    {
+      "idea_id": "creator-feedback",
+      "niche": "independent digital creators",
+      "problem": "Feedback and feature requests are scattered across channels.",
+      "evidence": "Unverified hypothesis. Research complaints and willingness to pay before treating this as demand.",
+      "solution_hypothesis": "a lightweight inbox that groups repeated requests into a prioritized backlog",
+      "text": "A creator can get the same feature request in a DM, a comment, an email and a community thread. The hard part isn't collecting feedback. It's noticing what's being asked for repeatedly. How do you track that today?",
+      "text_hash": "4aa762dbbf29743b39688dda0d986d5f86c91512bc88a959bb3ee141545ffb08",
+      "image_query": "creative workspace",
+      "research": {
+        "query": "feature requests",
+        "score": 6.72,
+        "hits": [
+          {
+            "title": "HN Feature Request: Option to hide repetitive AI complaints",
+            "url": "https://news.ycombinator.com/item?id=50061936",
+            "external_url": "",
+            "points": 1,
+            "comments": 2,
+            "created_at": "2026-10-12T19:45:23Z",
+            "matched_terms": [
+              "feature",
+              "request"
+            ]
+          }
+        ],
+        "error": null
+      },
+      "status": "planned"
+    },
+    {
+      "idea_id": "consultants",
+      "niche": "independent consultants",
+      "problem": "Discovery calls produce notes that rarely become a clear action plan.",
+      "evidence": "Unverified hypothesis. Validate against consulting workflows and paid templates.",
+      "solution_hypothesis": "a discovery-call worksheet that turns client goals into measurable deliverables",
+      "text": "A discovery call can feel productive, then a week later the notes are still just notes. Consultants, what process actually turns client goals into deliverables and next actions you follow through on?",
+      "text_hash": "4cbba753fae476567f5f9c232ee17cefc2693333de8e7e3d3f93f01d0a3c8bc0",
+      "image_query": "business consultant",
+      "research": {
+        "query": "client discovery",
+        "score": 6.416,
+        "hits": [
+          {
+            "title": "Show HN: Pippin – macOS High-Performance Screen Sharing Client for Linux",
+            "url": "https://news.ycombinator.com/item?id=50075636",
+            "external_url": "https://github.com/jonesy827/pippin",
+            "points": 2,
+            "comments": 1,
+            "created_at": "2026-10-13T17:41:25Z",
+            "matched_terms": [
+              "client"
             ]
           }
         ],

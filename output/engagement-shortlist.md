@@ -1,29 +1,29 @@
 # Legivox engagement shortlist
 
-Generated: 2026-10-18 20:40:19 IST
+Generated: 2026-10-18 20:41:59 IST
 
 These are candidates to review manually. No likes, replies, reposts, or follows are automated by this workflow.
 
-## indie software builders
+## small SaaS founders
 
-Search: `product launch feedback`
+Search: `support tickets`
 
-- [Shiva__pandit_](https://x.com/Shiva__pandit_/status/2111836976643289330): Big announcement coming soon! I'm working hard on PropRank, and I'm excited to open the public beta for testing soon. I want your honest feedback to help me make this product better. Your suggestions, reviews, and ideas 
-- [LaunchCraftLab](https://x.com/LaunchCraftLab/status/2111834872599769575): When to launch: MVP or final product? 🚀 Start with your MVP to validate ideas quickly. The goal isnt perfection—its feedback! Remember, the market will teach you more than your plans ever could. Ready to turn your idea i
-- [210codelabs](https://x.com/210codelabs/status/2111822211984068976): A launch announcement is one moment. The harder job is staying visible after it. AI-Promoter is built to coordinate the follow-up: fresh angles, education, publishing and feedback from the same product context. https://t
+- [pingder](https://x.com/pingder/status/2111836903490339315): @Dzola17 @termix_ai bots cant file support tickets anyway
+- [CatAfraidDark](https://x.com/CatAfraidDark/status/2111833339057316170): ai runs my support queue now. 71 tickets overnight, triaged by claude haiku. 4 needed a human. the other 67 were password resets and refund asks.
+- [ashxyel](https://x.com/ashxyel/status/2111830342818762971): @discord my account was hacked, I cannot get back in it, I have been submitting support tickets for 4 months. I can't get any clear answer from anyone. I sent in a new ticket, it was immediately closed by the Nelly bot p
 
-## job seekers
+## independent digital creators
 
-Search: `job search hiring`
+Search: `feature requests`
 
-- [OrlandoJobs](https://x.com/OrlandoJobs/status/2111836979599994986): Tired of the ups and downs at work? Explore local opportunities and take the next step at https://t.co/Lr2EYHqCKU. #OrlandoJobs #CareerGrowth #JobSearch #CentralFloridaJobs #NewOpportunities #CareerChange #FloridaJobs ht
-- [codinzhubcom](https://x.com/codinzhubcom/status/2111835476239978750): Park+ is hiring 🎉 Role: AI Product Intern Batch; 2027, 2026 https://t.co/zNOU4CIry5 #hiring #hirings #jobs #job #hireme #jobssearch #Hiring #Hirings #Jobs #Job
-- [codinzhubcom](https://x.com/codinzhubcom/status/2111832813658161453): HPE is Hiring 🎉 Role: Intern: Batch: 2028, 2027 Stipend: 35k https://t.co/4p0QSjh8nR #hiring #hirings #jobs #job #Hiring #Hirings #hireme #jobssearch
+- [MixRoute_ai](https://x.com/MixRoute_ai/status/2111820735379620349): @theo How do you even keep an overview over all the feature requests?
+- [Mr_Swiftly](https://x.com/Mr_Swiftly/status/2111697643843846306): @getfeedbackkit is a side project I've been building next to my consulting work. The thing that bugged me most as a user: asking for a feature and never hearing back, or the other way around, getting constant updates on 
+- [getfeedbackkit](https://x.com/getfeedbackkit/status/2111693837496131975): Users ask for a feature, then hear nothing. That silence is why they stop asking. With FeedbackKit, the board sits inside your app: users vote, and every request shows its status. When "Offline trail maps" moves to In Pr
 
-## independent local service businesses
+## independent consultants
 
-Search: `small business leads`
+Search: `client discovery`
 
-- [DanielPriestley](https://x.com/DanielPriestley/status/2111830380214985060): I did my first million of revenue with no CRM. We had 3500+ leads that turned into 278 sales - $1.3M revenue. We tracked 4 things on an excel spreadsheet: 1. Leads 2. Appointments 3. Presentations 4. Sales When a lead ca
-- [Jamesh0xq](https://x.com/Jamesh0xq/status/2111828300284952748): One-person operators: run your business like a small warehouse. Inbound (leads), storage (pipeline), outbound (delivery). Measure each weekly. The bottleneck is almost never where you think.
-- [AlekVectis](https://x.com/AlekVectis/status/2111817512920981960): @UnlockSmallBiz the quoted shop went from 9 missed first hour leads to 1 in a week and nobody learned a new app, the alerts just land in the slack they already use. that's the cheapest kind of change a small business get
+- [marcosrgqu](https://x.com/marcosrgqu/status/2111833922237780182): @RealMatthewBall oh no if only developers had considered that client software is unreliable and can be instrumented and made an entire discipline on top of those assumptions. if only openai and anthropic had considered h
+- [DipoThompson](https://x.com/DipoThompson/status/2111832616110362867): @willchen500 The $2m month is the line GCs should notice. Metered pricing hands the forecasting problem to the client. In discovery, buyers keep asking two things: do the documents leave our environment, and what will th
+- [andrea_desantis](https://x.com/andrea_desantis/status/2111556051208405288): Do you need another hire? Or do you need the work done? Meet QASM, your AI colleague. Share your goals and strategy. Delegate client discovery and preparation work. Designed by me, developed by QualiValue. 1/3 https://t.
