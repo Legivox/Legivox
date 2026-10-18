@@ -199,12 +199,20 @@ def write_queue_report(plan: dict) -> None:
         else:
             lines += ["", "_No recent matching Hacker News signal was found; the topic was chosen by rotation._"]
         lines += ["", "- Status: " + post.get("status", "planned"), ""]
-    lines += [
-        "## Image policy",
-        "",
-        "The publisher searches Wikimedia Commons for matching CC0 or public-domain images. It records the file page and license metadata. If a suitable image cannot be verified, the post is published without one rather than using a random or unclear-license image.",
-        "",
-    ]
+    if is_rss_groq:
+        lines += [
+            "## Media policy",
+            "",
+            "RSS/Groq news posts are text-only by default. No generic category image is attached because it could be unrelated to the source story.",
+            "",
+        ]
+    else:
+        lines += [
+            "## Image policy",
+            "",
+            "The publisher searches Wikimedia Commons for matching CC0 or public-domain images. It records the file page and license metadata. If a suitable image cannot be verified, the post is published without one rather than using a random or unclear-license image.",
+            "",
+        ]
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     REPORT_PATH.write_text("\n".join(lines), encoding="utf-8")
 
