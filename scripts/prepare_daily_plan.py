@@ -112,7 +112,7 @@ def search_signal(idea: dict, since_epoch: int) -> dict:
             # Keep only titles that mention the problem, solution or a close synonym.
             title_terms = meaningful_tokens(title)
             matched = sorted(title_terms & focus_terms)
-            if not matched:
+            if len(matched) < 2:
                 continue
             object_id = clean(row.get("objectID"))
             hits.append({
@@ -231,7 +231,7 @@ def write_engagement_shortlist(plan: dict) -> None:
             if not url or not text or url in seen or "/Legivox/status/" in url:
                 continue
             # Exclude results that match the broad search but not this specific problem.
-            if not (meaningful_tokens(text) & issue_terms):
+            if len(meaningful_tokens(text) & issue_terms) < 2:
                 continue
             seen.add(url)
             lines.append("- [" + author.replace("[", "(").replace("]", ")") + "](" + url + "): " + text[:220])
