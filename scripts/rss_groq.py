@@ -353,17 +353,12 @@ def generate_drafts(candidates: list[dict], max_posts: int = 3) -> tuple[list[di
         "brand": "Legivox",
         "candidates": safe_candidates,
     }, ensure_ascii=False)
-    try:
-        response = client.chat.completions.create(
-            model=MODEL,
-            messages=[
-                {"role": "system", "content": instructions},
-                {"role": "user", "content": request_payload},
-            ],
-            response_format={"type": "json_object"},
-            max_tokens=2400,
-        )
-    except Exception as exc:
+    request_messages = [
+        {"role": "system", "content": instructions},
+        {"role": "user", "content": request_payload},
+    ]
+
+    def request_error(exc: Exception) -> tuple[int | None, str, str]:
         status = getattr(exc, "status_code", None)
         body = getattr(exc, "body", None)
         detail = ""
@@ -376,10 +371,44 @@ def generate_drafts(candidates: list[dict], max_posts: int = 3) -> tuple[list[di
                     detail += " Failed-generation excerpt: " + failed_generation[:300]
         detail = re.sub(r"(?i)(bearer\\s+\\S+|gsk_[A-Za-z0-9_-]+)", "[redacted]", detail)[:800]
         label = f"HTTP {status} " if status else ""
-        raise RuntimeError(
+        message = (
             f"Groq request failed ({label}{type(exc).__name__})"
             + (f": {detail}" if detail else ". Check model access, quota, and API secret.")
-        ) from None
+        )
+        return status, detail, message
+
+    # GPT-OSS can spend part of its completion budget on reasoning before emitting JSON.
+    # Use low reasoning effort and a generous JSON budget, then retry once with a larger
+    # budget only when Groq explicitly reports output truncation.
+    request_options = {
+        "model": MODEL,
+        "messages": request_messages,
+        "response_format": {"type": "json_object"},
+        "reasoning_effort": "low",
+    }
+    try:
+        response = client.chat.completions.create(
+            **request_options,
+            max_completion_tokens=8192,
+        )
+    except Exception as exc:
+        status, detail, message = request_error(exc)
+        truncation = "max completion tokens reached" in detail.lower()
+        if status == 400 and truncation:
+            print(
+                "Groq hit the 8,192-token completion cap; retrying once with 16,384 tokens.",
+                file=sys.stderr,
+            )
+            try:
+                response = client.chat.completions.create(
+                    **request_options,
+                    max_completion_tokens=16384,
+                )
+            except Exception as retry_exc:
+                _, _, retry_message = request_error(retry_exc)
+                raise RuntimeError(retry_message) from None
+        else:
+            raise RuntimeError(message) from None
     try:
         output_text = response.choices[0].message.content
         payload = json.loads(output_text or "")
