@@ -1,25 +1,25 @@
 # Legivox daily content plan
 
-Prepared: 2026-10-19 13:42:14 IST
+Prepared: 2026-10-19 19:44:51 IST
 
 > This scheduled post was generated from a recent RSS story and passed the local quality gate. The attached excerpt is not a full fact-check; verify the linked article before treating every implication as confirmed.
 
-## Post 1 · rss-fcf73aabe3e3
+## Post 1 · rss-c161d6bab526
 
 **Planned copy**
 
-Replit’s switch to OpenAI as default model nudges developers toward the default, while Claude remains an option for those preferring different behavior.
+AI agents can now scan and exploit web apps autonomously, forcing devs to rethink automated testing and patching.
 
-https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/
+https://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins
 
 - Topic: AI & software
-- Editorial score (model estimate): 7.67
+- Editorial score (model estimate): 8.33
 
 **Source article**
 
-- [Replit makes OpenAI its default over Anthropic, CEO says](https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/)
+- [A hacker broke into John Deere and SharkNinja with an army of AI agents](https://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins)
 
-- Status: published: https://x.com/i/status/2112094569055539424
+- Status: published: https://x.com/i/status/2112185726834258164
 
 ## Media policy
 

@@ -1,6 +1,6 @@
 # Legivox RSS + Groq editorial preview
 
-- Generated: 2026-10-19T13:42:14+05:30
+- Generated: 2026-10-19T19:44:51+05:30
 - Model: openai/gpt-oss-20b
 - Mode: SINGLE-SLOT CANDIDATE REVIEW
 - X publishing: not performed by this script
@@ -12,52 +12,52 @@
 
 | Source | Recent feed items kept | Thin excerpts skipped | Result |
 |---|---:|---:|---|
-| TechCrunch | 20 | 10 | OK |
+| TechCrunch | 20 | 11 | OK |
 | The Verge | 10 | 0 | OK |
 | Ars Technica | 20 | 0 | OK |
 
 ## Drafts that passed the quality gate
 
-### Draft 1: Replit makes OpenAI its default over Anthropic, CEO says
+### Draft 1: A hacker broke into John Deere and SharkNinja with an army of AI agents
 
 - Category: AI & software
-- Source: TechCrunch
-- Published: 2026-10-17T18:48:08+00:00
-- Editorial angle: Default model shift in developer tools
-- Why selected: Shows Replit’s new default AI provider, affecting developer workflow choice
-- Source evidence (exact quote): “OpenAI would replace Anthropic as its default model provider”
-- Editorial scores: relevance 8/10, significance 7/10, originality 8/10
-- Article: https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/
+- Source: The Verge
+- Published: 2026-10-19T13:58:41+00:00
+- Editorial angle: AI agents can autonomously target sites, exposing gaps in web‑app security
+- Why selected: Shows concrete AI‑driven attack that impacts developers’ security posture
+- Source evidence (exact quote): “army of AI agents that mostly operated on their own”
+- Editorial scores: relevance 9/10, significance 8/10, originality 8/10
+- Article: https://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins
 
 Post copy with source link:
 
 ~~~text
-Replit’s switch to OpenAI as default model nudges developers toward the default, while Claude remains an option for those preferring different behavior.
+AI agents can now scan and exploit web apps autonomously, forcing devs to rethink automated testing and patching.
 
-https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/
+https://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins
 ~~~
 
-- Plain character count including URL: 240/280
+- Plain character count including URL: 220/280
 
 ## Rejected selections
 
-- S06 · Video game ownership bill introduced in Congress: Evidence quote must be 20–100 characters and an exact excerpt from the supplied title or summary.
-- S05 · A woman was arrested in Philly for blocking a delivery robot: Evidence quote must be 20–100 characters and an exact excerpt from the supplied title or summary.
+- S04 · Democrats think cracking down on AI could give them an edge: Evidence quote must be 20–100 characters and an exact excerpt from the supplied title or summary.
+- S07 · Vibe coding is turning the music gear world upside down: Acronym 'IP' is not present or expanded in the source excerpt. (relevance 8, significance 7, originality 8)
 
 ## Candidate story list
 
-- S01 · TechCrunch: Khosla Ventures doubles down on Even Healthcare to challenge India’s hospital economics ([source](https://techcrunch.com/2026/10/19/khosla-ventures-doubles-down-on-even-healthcare-to-challenge-indias-hospital-economics/))
-- S02 · The Verge: A Savannah police officer gave her Flock login to her ICE agent husband ([source](https://www.theverge.com/policy/1013573/spd-officer-fired-flock-ice-husband))
-- S03 · TechCrunch: No agenda, no rush, no leaving San Francisco: Benchmark’s partners on investing in a frenzied market ([source](https://techcrunch.com/2026/10/18/no-agenda-no-rush-no-leaving-san-francisco-benchmarks-partners-on-investing-in-a-frenzied-market/))
-- S04 · The Verge: Mister Organ is one of the most unsettling documentaries I’ve ever seen ([source](https://www.theverge.com/entertainment/1013545/mister-organ-horror-documentary-review))
-- S05 · The Verge: A woman was arrested in Philly for blocking a delivery robot ([source](https://www.theverge.com/ai-artificial-intelligence/1013541/a-woman-was-arrested-in-philly-for-blocking-a-delivery-robot))
-- S06 · The Verge: Video game ownership bill introduced in Congress ([source](https://www.theverge.com/policy/1013521/video-game-ownership-bill-congress-power-to-the-players-act))
-- S07 · TechCrunch: TechCrunch Mobility: Rivian’s next act ([source](https://techcrunch.com/2026/10/18/techcrunch-mobility-rivians-next-act/))
-- S08 · The Verge: Lenovo’s fast, comfy SteamOS handheld is hundreds off ([source](https://www.theverge.com/gadgets/1013436/lenovo-legion-go-s-steamos-handheld-deal-sale))
-- S09 · The Verge: J Mascis has nothing better to do ([source](https://www.theverge.com/entertainment/1012442/j-mascis-dinosaur-jr-fender-interview))
-- S10 · The Verge: Trump says Google kisses his ass ([source](https://www.theverge.com/policy/1013485/trump-google-kiss-my-ass))
-- S11 · The Verge: How overhead projectors took over your classroom ([source](https://www.theverge.com/podcast/1013473/overhead-projector-version-history))
-- S12 · TechCrunch: Replit makes OpenAI its default over Anthropic, CEO says ([source](https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/))
+- S01 · The Verge: It’s hard to imagine wireless headphones ever getting lighter than these ([source](https://www.theverge.com/tech/1013635/its-hard-to-imagine-wireless-headphones-ever-getting-lighter-than-these))
+- S02 · The Verge: A hacker broke into John Deere and SharkNinja with an army of AI agents ([source](https://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins))
+- S03 · Ars Technica: Review: Lanterns is a truly unique twist on the superhero genre ([source](https://arstechnica.com/culture/2026/10/review-lanterns-is-a-truly-unique-twist-on-the-superhero-genre/))
+- S04 · The Verge: Democrats think cracking down on AI could give them an edge ([source](https://www.theverge.com/policy/1013113/democrats-ai-midterms))
+- S05 · Ars Technica: DIY VR: How to build your own headset, and why you probably won't want to ([source](https://arstechnica.com/gadgets/2026/10/diy-vr-how-to-build-your-own-headset-and-why-you-probably-wont-want-to/))
+- S06 · The Verge: Wyze moved the screen on its new smart scale to the handle so it’s easier to read at eye level ([source](https://www.theverge.com/tech/1013081/wyze-smart-scale-ultra-bodyscan-plus-handle-display))
+- S07 · The Verge: Vibe coding is turning the music gear world upside down ([source](https://www.theverge.com/gadgets/1013493/vibe-coding-ai-music-gear-hacking-custom-firmware))
+- S08 · Ars Technica: Stratospheric airship flew from US to Japan to test sky cell tower concept ([source](https://arstechnica.com/gadgets/2026/10/trans-pacific-journey-tested-stratospheric-cell-tower-concept-in-japan/))
+- S09 · TechCrunch: Khosla Ventures doubles down on Even Healthcare to challenge India’s hospital economics ([source](https://techcrunch.com/2026/10/19/khosla-ventures-doubles-down-on-even-healthcare-to-challenge-indias-hospital-economics/))
+- S10 · The Verge: A Savannah police officer gave her Flock login to her ICE agent husband ([source](https://www.theverge.com/policy/1013573/spd-officer-fired-flock-ice-husband))
+- S11 · TechCrunch: No agenda, no rush, no leaving San Francisco: Benchmark’s partners on investing in a frenzied market ([source](https://techcrunch.com/2026/10/18/no-agenda-no-rush-no-leaving-san-francisco-benchmarks-partners-on-investing-in-a-frenzied-market/))
+- S12 · The Verge: Mister Organ is one of the most unsettling documentaries I’ve ever seen ([source](https://www.theverge.com/entertainment/1013545/mister-organ-horror-documentary-review))
 
 ## Review notes
 

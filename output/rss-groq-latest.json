@@ -1,5 +1,5 @@
 {
-  "generated_at_ist": "2026-10-19T13:42:14+05:30",
+  "generated_at_ist": "2026-10-19T19:44:51+05:30",
   "model": "openai/gpt-oss-20b",
   "dry_run": false,
   "slot_plan_mode": true,
@@ -10,15 +10,15 @@
       "feed_url": "https://techcrunch.com/feed/",
       "articles_kept": 20,
       "error": null,
-      "recently_published_items_skipped": 1,
-      "thin_summary_items_skipped": 10
+      "recently_published_items_skipped": 2,
+      "thin_summary_items_skipped": 11
     },
     {
       "source": "The Verge",
       "feed_url": "https://www.theverge.com/rss/index.xml",
       "articles_kept": 10,
       "error": null,
-      "recently_published_items_skipped": 1,
+      "recently_published_items_skipped": 2,
       "thin_summary_items_skipped": 0
     },
     {
@@ -26,168 +26,172 @@
       "feed_url": "https://feeds.arstechnica.com/arstechnica/index",
       "articles_kept": 20,
       "error": null,
-      "recently_published_items_skipped": 1,
+      "recently_published_items_skipped": 2,
       "thin_summary_items_skipped": 0
     }
   ],
   "candidate_count": 12,
   "candidate_articles": [
     {
+      "source": "The Verge",
+      "title": "It’s hard to imagine wireless headphones ever getting lighter than these",
+      "summary": "If you're on the hunt for lightweight wireless headphones but wearing earbuds or clip-ons never feels comfortable or secure, a relatively obscure Japanese headphone maker could have the solution. Final's new Porta headphones feature an on-ear design supported by a headband but with a structure made from a single piece of wire so they weigh just 40 grams. For comparison, Marshall's recently-launche",
+      "published_at_utc": "2026-10-19T14:03:28+00:00",
+      "age_hours": 0.2,
+      "url": "https://www.theverge.com/tech/1013635/its-hard-to-imagine-wireless-headphones-ever-getting-lighter-than-these",
+      "feed_url": "https://www.theverge.com/rss/index.xml",
+      "article_id": "S01"
+    },
+    {
+      "source": "The Verge",
+      "title": "A hacker broke into John Deere and SharkNinja with an army of AI agents",
+      "summary": "A hacker broke into more than 100 websites using an army of AI agents that mostly operated on their own, according to findings from the AI security firm Norforge . Though Norforge doesn't name the targets, Reuters reports that the victims included companies like John Deere, SharkNinja, and Cummins. Concerns over AI-powered cybersecurity breaches have grown as the technology grows more advanced, wi",
+      "published_at_utc": "2026-10-19T13:58:41+00:00",
+      "age_hours": 0.3,
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins",
+      "feed_url": "https://www.theverge.com/rss/index.xml",
+      "article_id": "S02"
+    },
+    {
+      "source": "Ars Technica",
+      "title": "Review: Lanterns is a truly unique twist on the superhero genre",
+      "summary": "The trailers for HBO's DC Universe series Lanterns teased a show that eschewed the usual superhero hijinks in favor of a gritty realism more in the vein of True Detectives or Slow Horses . Personally, I liked the change. My verdict: Ignore the review bombing ; it's wonderful. The season wrapped with an emotionally charged, almost elegaic finale that fully delivered on that initial promise. I've fo",
+      "published_at_utc": "2026-10-19T13:31:08+00:00",
+      "age_hours": 0.7,
+      "url": "https://arstechnica.com/culture/2026/10/review-lanterns-is-a-truly-unique-twist-on-the-superhero-genre/",
+      "feed_url": "https://feeds.arstechnica.com/arstechnica/index",
+      "article_id": "S03"
+    },
+    {
+      "source": "The Verge",
+      "title": "Democrats think cracking down on AI could give them an edge",
+      "summary": "Democrats could win back control of Congress this November, and if they do, they'll need to decide how to approach one of the country's newest and thorniest political issues: AI. Polls predict Democrats will flip at least one chamber of Congress in the midterm elections, which would put committee leadership back in their hands. That could usher in a wave of newfound scrutiny for AI companies. Top ",
+      "published_at_utc": "2026-10-19T12:37:05+00:00",
+      "age_hours": 1.6,
+      "url": "https://www.theverge.com/policy/1013113/democrats-ai-midterms",
+      "feed_url": "https://www.theverge.com/rss/index.xml",
+      "article_id": "S04"
+    },
+    {
+      "source": "Ars Technica",
+      "title": "DIY VR: How to build your own headset, and why you probably won't want to",
+      "summary": "Virtual reality is in a bit of a weird place right now. After a lot of unfulfilled promise in the 1990s, it came back strong with the 2016 release of the Oculus Rift . For a while, it looked like VR, AR, XR, the metaverse, or whatever you wanted to call it, was going to be huge. Mark Zuckerberg was certainly convinced , and even Apple got in on the hype with its Vision Pro . But by then momentum f",
+      "published_at_utc": "2026-10-19T12:33:34+00:00",
+      "age_hours": 1.7,
+      "url": "https://arstechnica.com/gadgets/2026/10/diy-vr-how-to-build-your-own-headset-and-why-you-probably-wont-want-to/",
+      "feed_url": "https://feeds.arstechnica.com/arstechnica/index",
+      "article_id": "S05"
+    },
+    {
+      "source": "The Verge",
+      "title": "Wyze moved the screen on its new smart scale to the handle so it’s easier to read at eye level",
+      "summary": "The scale features a conductive indium tin oxide (ITO) coated glass surface so it can take BIA measurements no matter where your feet are positioned. | Image: Wyze Wyze announced a new version of its Ultra BodyScan smart scale that debuted nearly a year ago with additional electrodes on a retractable handle, allowing it to provide a breakdown of various health metrics across your arms, legs, and t",
+      "published_at_utc": "2026-10-19T12:29:09+00:00",
+      "age_hours": 1.8,
+      "url": "https://www.theverge.com/tech/1013081/wyze-smart-scale-ultra-bodyscan-plus-handle-display",
+      "feed_url": "https://www.theverge.com/rss/index.xml",
+      "article_id": "S06"
+    },
+    {
+      "source": "The Verge",
+      "title": "Vibe coding is turning the music gear world upside down",
+      "summary": "They’re far more powerful and fun than their bargain price suggests. | Photo: Terrence O’Brien / The Verge If you spend any time on r/synthesizers or watch a lot of synth videos on YouTube, you've probably noticed the explosion of custom firmware for hardware synthesizers, samplers, and grooveboxes . What unites almost all of them is that they were made possible by increasingly sophisticated vibe ",
+      "published_at_utc": "2026-10-19T11:03:53+00:00",
+      "age_hours": 3.2,
+      "url": "https://www.theverge.com/gadgets/1013493/vibe-coding-ai-music-gear-hacking-custom-firmware",
+      "feed_url": "https://www.theverge.com/rss/index.xml",
+      "article_id": "S07"
+    },
+    {
+      "source": "Ars Technica",
+      "title": "Stratospheric airship flew from US to Japan to test sky cell tower concept",
+      "summary": "Nearly 100 years after the dirigible Graf Zeppelin made the first nonstop airship journey across the Pacific Ocean, another airship has successfully completed a round-trip flight from New Mexico to Japan and back. But the significance of this modern feat was less about the journey's length and more about its purpose: demonstrating how a lighter-than-air platform can act as a cell phone tower in th",
+      "published_at_utc": "2026-10-19T11:05:49+00:00",
+      "age_hours": 3.2,
+      "url": "https://arstechnica.com/gadgets/2026/10/trans-pacific-journey-tested-stratospheric-cell-tower-concept-in-japan/",
+      "feed_url": "https://feeds.arstechnica.com/arstechnica/index",
+      "article_id": "S08"
+    },
+    {
       "source": "TechCrunch",
       "title": "Khosla Ventures doubles down on Even Healthcare to challenge India’s hospital economics",
       "summary": "Even Healthcare reaches a $300 million valuation in a Khosla Ventures-led round as it plans to expand its hospital network in India.",
       "published_at_utc": "2026-10-19T07:30:00+00:00",
-      "age_hours": 0.7,
+      "age_hours": 6.7,
       "url": "https://techcrunch.com/2026/10/19/khosla-ventures-doubles-down-on-even-healthcare-to-challenge-indias-hospital-economics/",
       "feed_url": "https://techcrunch.com/feed/",
-      "article_id": "S01"
+      "article_id": "S09"
     },
     {
       "source": "The Verge",
       "title": "A Savannah police officer gave her Flock login to her ICE agent husband",
       "summary": "Now, former Savannah police officer Amber Harpe was fired in August following a department investigation that found she had shared her Flock login information with her husband, Tyler Harpe, an ICE agent. SPD does not share its Flock data with ICE and said sharing access to the system violated the department's security protocols. While he had unauthorized access to the system, Tyler Harpe conducted",
       "published_at_utc": "2026-10-18T22:20:53+00:00",
-      "age_hours": 9.9,
+      "age_hours": 15.9,
       "url": "https://www.theverge.com/policy/1013573/spd-officer-fired-flock-ice-husband",
       "feed_url": "https://www.theverge.com/rss/index.xml",
-      "article_id": "S02"
+      "article_id": "S10"
     },
     {
       "source": "TechCrunch",
       "title": "No agenda, no rush, no leaving San Francisco: Benchmark’s partners on investing in a frenzied market",
       "summary": "Benchmark may have grown its funds and swapped out some partners, but onstage the five who are left sounded like friends who just happen to be running one of the Valley’s most storied firms",
       "published_at_utc": "2026-10-18T21:00:00+00:00",
-      "age_hours": 11.2,
+      "age_hours": 17.2,
       "url": "https://techcrunch.com/2026/10/18/no-agenda-no-rush-no-leaving-san-francisco-benchmarks-partners-on-investing-in-a-frenzied-market/",
       "feed_url": "https://techcrunch.com/feed/",
-      "article_id": "S03"
+      "article_id": "S11"
     },
     {
       "source": "The Verge",
       "title": "Mister Organ is one of the most unsettling documentaries I’ve ever seen",
       "summary": "Mister Organ doesn't reach the level of societal horror of The Act of Killing or the creepypasta-meets-true-crime gruesomeness of Beware the Slenderman , but there's something deeply unsettling about Michael Organ and his intimate campaign of terror against everyone who enters his life. Mister Organ is a documentary by David Farrier, an Auckland, New Zealand journalist. The movie starts with Farri",
       "published_at_utc": "2026-10-18T19:21:56+00:00",
-      "age_hours": 12.8,
+      "age_hours": 18.9,
       "url": "https://www.theverge.com/entertainment/1013545/mister-organ-horror-documentary-review",
       "feed_url": "https://www.theverge.com/rss/index.xml",
-      "article_id": "S04"
-    },
-    {
-      "source": "The Verge",
-      "title": "A woman was arrested in Philly for blocking a delivery robot",
-      "summary": "Carolyn Marvin was arrested and charged with disorderly conduct after blocking the path of an Uber delivery robot and refusing to get out of the way. Marvin told Philadelphia's ABC13 \"I know they're taking the jobs of human delivery workers and so, I have been protesting them whenever I saw them by standing in front of them and preventing them from going forward.\" Police responded to the scene and",
-      "published_at_utc": "2026-10-18T18:28:10+00:00",
-      "age_hours": 13.7,
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1013541/a-woman-was-arrested-in-philly-for-blocking-a-delivery-robot",
-      "feed_url": "https://www.theverge.com/rss/index.xml",
-      "article_id": "S05"
-    },
-    {
-      "source": "The Verge",
-      "title": "Video game ownership bill introduced in Congress",
-      "summary": "Rep. Ritchie Torres of New York's 15th congressional district in the Bronx introduced the Power To The Players Act this week. If passed, the bill would direct the Federal Trade Commission to establish regulations that guarantee consumers ownership of a game when they pay for it, rather than a licensing agreement. It's increasingly common for games sold to require a connection to a server. Meaning ",
-      "published_at_utc": "2026-10-18T16:27:51+00:00",
-      "age_hours": 15.7,
-      "url": "https://www.theverge.com/policy/1013521/video-game-ownership-bill-congress-power-to-the-players-act",
-      "feed_url": "https://www.theverge.com/rss/index.xml",
-      "article_id": "S06"
-    },
-    {
-      "source": "TechCrunch",
-      "title": "TechCrunch Mobility: Rivian’s next act",
-      "summary": "Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, the role AI is playing in it.",
-      "published_at_utc": "2026-10-18T16:05:00+00:00",
-      "age_hours": 16.1,
-      "url": "https://techcrunch.com/2026/10/18/techcrunch-mobility-rivians-next-act/",
-      "feed_url": "https://techcrunch.com/feed/",
-      "article_id": "S07"
-    },
-    {
-      "source": "The Verge",
-      "title": "Lenovo’s fast, comfy SteamOS handheld is hundreds off",
-      "summary": "The Legion Go S with SteamOS is a pretty solid alternative to the $789 Steam Deck OLED. It runs identical software, but ships in a design with two-stage triggers, a bigger eight-inch IPS screen (1080p and up to 120Hz versus 800p and 90Hz in the Deck OLED), and it’s got double the RAM and storage (32GB and 1TB, respectively), not to mention a slightly faster processor in the Ryzen Z1 Extreme. At $9",
-      "published_at_utc": "2026-10-18T14:53:52+00:00",
-      "age_hours": 17.3,
-      "url": "https://www.theverge.com/gadgets/1013436/lenovo-legion-go-s-steamos-handheld-deal-sale",
-      "feed_url": "https://www.theverge.com/rss/index.xml",
-      "article_id": "S08"
-    },
-    {
-      "source": "The Verge",
-      "title": "J Mascis has nothing better to do",
-      "summary": "J Mascis on stage during Dinosaur Jr.’s Baby’s Alright show in NYC. | Photo: Terrence O’Brien Dinosaur Jr. frontman J Mascis is known as something of a slacker guitar god. He stands stoically onstage, barely moving, as he seemingly effortlessly works through deft guitar solos and lopsided riffs. Unfortunately, Mascis has developed a similar reputation as an interview subject, quietly sitting and o",
-      "published_at_utc": "2026-10-18T14:13:04+00:00",
-      "age_hours": 18.0,
-      "url": "https://www.theverge.com/entertainment/1012442/j-mascis-dinosaur-jr-fender-interview",
-      "feed_url": "https://www.theverge.com/rss/index.xml",
-      "article_id": "S09"
-    },
-    {
-      "source": "The Verge",
-      "title": "Trump says Google kisses his ass",
-      "summary": "During a rally on Saturday, October 17th, in Highland Heights, Kentucky, Donald Trump bragged about how much more powerful and influential he was during his second term. While listing off his accomplishments, he mentioned his decision to rename the Gulf of Mexico and Lake Ontario . \"This is a much more powerful term. I can do stuff that's unbelievable … I called Google, Google Maps. See, Google wo",
-      "published_at_utc": "2026-10-18T13:26:28+00:00",
-      "age_hours": 18.8,
-      "url": "https://www.theverge.com/policy/1013485/trump-google-kiss-my-ass",
-      "feed_url": "https://www.theverge.com/rss/index.xml",
-      "article_id": "S10"
-    },
-    {
-      "source": "The Verge",
-      "title": "How overhead projectors took over your classroom",
-      "summary": "It used to be so easy to get away with things in school. The teacher, after all, was always turned around writing at the chalkboard! But then came a bit of technology, previously mostly used for military purposes, called the overhead projector. It would change far more than just the disciplinary record of students everywhere. In this episode of Version History , we tell the story of the overhead p",
-      "published_at_utc": "2026-10-18T12:55:01+00:00",
-      "age_hours": 19.3,
-      "url": "https://www.theverge.com/podcast/1013473/overhead-projector-version-history",
-      "feed_url": "https://www.theverge.com/rss/index.xml",
-      "article_id": "S11"
-    },
-    {
-      "source": "TechCrunch",
-      "title": "Replit makes OpenAI its default over Anthropic, CEO says",
-      "summary": "Over the weekend, Masad clarified that OpenAI would replace Anthropic as its default model provider. Claude will still be available to customers on the platform.",
-      "published_at_utc": "2026-10-17T18:48:08+00:00",
-      "age_hours": 37.4,
-      "url": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
-      "feed_url": "https://techcrunch.com/feed/",
       "article_id": "S12"
     }
   ],
   "drafts": [
     {
-      "article_id": "S12",
-      "source": "TechCrunch",
-      "source_title": "Replit makes OpenAI its default over Anthropic, CEO says",
-      "published_at_utc": "2026-10-17T18:48:08+00:00",
-      "source_url": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
+      "article_id": "S02",
+      "source": "The Verge",
+      "source_title": "A hacker broke into John Deere and SharkNinja with an army of AI agents",
+      "published_at_utc": "2026-10-19T13:58:41+00:00",
+      "source_url": "https://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins",
       "category": "AI & software",
+      "scores": {
+        "relevance_score": 9,
+        "significance_score": 8,
+        "originality_score": 8
+      },
+      "angle": "AI agents can autonomously target sites, exposing gaps in web‑app security",
+      "why_selected": "Shows concrete AI‑driven attack that impacts developers’ security posture",
+      "evidence_quote": "army of AI agents that mostly operated on their own",
+      "post_text": "AI agents can now scan and exploit web apps autonomously, forcing devs to rethink automated testing and patching.",
+      "text_with_source": "AI agents can now scan and exploit web apps autonomously, forcing devs to rethink automated testing and patching.\n\nhttps://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins",
+      "character_count_with_url": 220
+    }
+  ],
+  "rejected_model_selections": [
+    {
+      "article_id": "S04",
+      "source": "The Verge",
+      "title": "Democrats think cracking down on AI could give them an edge",
+      "evidence_quote": "Democrats could win back control of Congress ... usher in a wave of newfound scrutiny",
+      "reason": "Evidence quote must be 20–100 characters and an exact excerpt from the supplied title or summary."
+    },
+    {
+      "article_id": "S07",
+      "source": "The Verge",
+      "title": "Vibe coding is turning the music gear world upside down",
       "scores": {
         "relevance_score": 8,
         "significance_score": 7,
         "originality_score": 8
       },
-      "angle": "Default model shift in developer tools",
-      "why_selected": "Shows Replit’s new default AI provider, affecting developer workflow choice",
-      "evidence_quote": "OpenAI would replace Anthropic as its default model provider",
-      "post_text": "Replit’s switch to OpenAI as default model nudges developers toward the default, while Claude remains an option for those preferring different behavior.",
-      "text_with_source": "Replit’s switch to OpenAI as default model nudges developers toward the default, while Claude remains an option for those preferring different behavior.\n\nhttps://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
-      "character_count_with_url": 240
-    }
-  ],
-  "rejected_model_selections": [
-    {
-      "article_id": "S06",
-      "source": "The Verge",
-      "title": "Video game ownership bill introduced in Congress",
-      "evidence_quote": "direct the Federal Trade Commission to establish regulations that guarantee consumers ownership of a game",
-      "reason": "Evidence quote must be 20–100 characters and an exact excerpt from the supplied title or summary."
-    },
-    {
-      "article_id": "S05",
-      "source": "The Verge",
-      "title": "A woman was arrested in Philly for blocking a delivery robot",
-      "evidence_quote": "blocked the path of an Uber delivery robot",
-      "reason": "Evidence quote must be 20–100 characters and an exact excerpt from the supplied title or summary."
+      "reason": "Acronym 'IP' is not present or expanded in the source excerpt."
     }
   ],
   "quality_thresholds": {

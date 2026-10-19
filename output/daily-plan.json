@@ -1,43 +1,43 @@
 {
   "date_ist": "2026-10-19",
-  "prepared_at_ist": "2026-10-19 13:42:14 IST",
+  "prepared_at_ist": "2026-10-19 19:44:51 IST",
   "research_window_days": 7,
   "research_source": "RSS feeds + Groq editorial ranking",
   "posts": [
     {
-      "idea_id": "rss-fcf73aabe3e3",
+      "idea_id": "rss-c161d6bab526",
       "niche": "AI & software",
-      "problem": "Replit makes OpenAI its default over Anthropic, CEO says",
-      "evidence": "RSS item from TechCrunch; published at 2026-10-17T18:48:08+00:00. Verify against the source.",
-      "solution_hypothesis": "Default model shift in developer tools",
-      "text": "Replit’s switch to OpenAI as default model nudges developers toward the default, while Claude remains an option for those preferring different behavior.\n\nhttps://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
-      "text_hash": "003210fa97df16e0583aae4e2a6862bb57acdd2f1d00d6d2b54e2f204b905847",
+      "problem": "A hacker broke into John Deere and SharkNinja with an army of AI agents",
+      "evidence": "RSS item from The Verge; published at 2026-10-19T13:58:41+00:00. Verify against the source.",
+      "solution_hypothesis": "AI agents can autonomously target sites, exposing gaps in web‑app security",
+      "text": "AI agents can now scan and exploit web apps autonomously, forcing devs to rethink automated testing and patching.\n\nhttps://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins",
+      "text_hash": "22f4e806b015a3ac259537783d50599e5f35ce0a1f4487e929c9047442ff201c",
       "image_query": "",
       "research": {
         "query": "RSS technology news",
-        "score": 7.67,
+        "score": 8.33,
         "hits": [
           {
-            "title": "Replit makes OpenAI its default over Anthropic, CEO says",
-            "url": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
-            "external_url": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
+            "title": "A hacker broke into John Deere and SharkNinja with an army of AI agents",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins",
+            "external_url": "https://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins",
             "points": 0,
             "comments": 0,
-            "created_at": "2026-10-17T18:48:08+00:00",
+            "created_at": "2026-10-19T13:58:41+00:00",
             "matched_terms": []
           }
         ],
         "error": null
       },
-      "status": "published: https://x.com/i/status/2112094569055539424",
-      "slot": 1,
+      "status": "published: https://x.com/i/status/2112185726834258164",
+      "slot": 2,
       "editorial_scores": {
-        "relevance_score": 8,
-        "significance_score": 7,
+        "relevance_score": 9,
+        "significance_score": 8,
         "originality_score": 8
       },
-      "published_at_ist": "2026-10-19T13:42:40+05:30",
-      "published_url": "https://x.com/i/status/2112094569055539424",
+      "published_at_ist": "2026-10-19T19:44:54+05:30",
+      "published_url": "https://x.com/i/status/2112185726834258164",
       "image": null
     }
   ]
