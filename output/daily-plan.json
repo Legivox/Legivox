@@ -1,43 +1,43 @@
 {
   "date_ist": "2026-10-19",
-  "prepared_at_ist": "2026-10-19 10:38:30 IST",
+  "prepared_at_ist": "2026-10-19 13:42:14 IST",
   "research_window_days": 7,
   "research_source": "RSS feeds + Groq editorial ranking",
   "posts": [
     {
-      "idea_id": "rss-796bbd796e41",
-      "niche": "Cybersecurity & privacy",
-      "problem": "Anthropic gives outside AI watchdog “employee-like” access",
-      "evidence": "RSS item from Ars Technica; published at 2026-10-18T16:25:19+00:00. Verify against the source.",
-      "solution_hypothesis": "External watchdogs now have employee‑like access to Anthropic’s internal environment, allowing deeper risk assessment of Claude models.",
-      "text": "Anthropic’s new employee‑like access for external evaluators could let watchdogs uncover risks that earlier testing missed.\n\nhttps://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/",
-      "text_hash": "5d4bb640618ccf4ab2d9f566f192b33968b4205045c8754b8aa5c2126655cf5b",
+      "idea_id": "rss-fcf73aabe3e3",
+      "niche": "AI & software",
+      "problem": "Replit makes OpenAI its default over Anthropic, CEO says",
+      "evidence": "RSS item from TechCrunch; published at 2026-10-17T18:48:08+00:00. Verify against the source.",
+      "solution_hypothesis": "Default model shift in developer tools",
+      "text": "Replit’s switch to OpenAI as default model nudges developers toward the default, while Claude remains an option for those preferring different behavior.\n\nhttps://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
+      "text_hash": "003210fa97df16e0583aae4e2a6862bb57acdd2f1d00d6d2b54e2f204b905847",
       "image_query": "",
       "research": {
         "query": "RSS technology news",
-        "score": 8.33,
+        "score": 7.67,
         "hits": [
           {
-            "title": "Anthropic gives outside AI watchdog “employee-like” access",
-            "url": "https://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/",
-            "external_url": "https://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/",
+            "title": "Replit makes OpenAI its default over Anthropic, CEO says",
+            "url": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
+            "external_url": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
             "points": 0,
             "comments": 0,
-            "created_at": "2026-10-18T16:25:19+00:00",
+            "created_at": "2026-10-17T18:48:08+00:00",
             "matched_terms": []
           }
         ],
         "error": null
       },
-      "status": "published: https://x.com/i/status/2112048226018947175",
-      "slot": 0,
+      "status": "published: https://x.com/i/status/2112094569055539424",
+      "slot": 1,
       "editorial_scores": {
-        "relevance_score": 9,
-        "significance_score": 8,
+        "relevance_score": 8,
+        "significance_score": 7,
         "originality_score": 8
       },
-      "published_at_ist": "2026-10-19T10:38:31+05:30",
-      "published_url": "https://x.com/i/status/2112048226018947175",
+      "published_at_ist": "2026-10-19T13:42:40+05:30",
+      "published_url": "https://x.com/i/status/2112094569055539424",
       "image": null
     }
   ]

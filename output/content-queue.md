@@ -1,25 +1,25 @@
 # Legivox daily content plan
 
-Prepared: 2026-10-19 10:38:30 IST
+Prepared: 2026-10-19 13:42:14 IST
 
 > This scheduled post was generated from a recent RSS story and passed the local quality gate. The attached excerpt is not a full fact-check; verify the linked article before treating every implication as confirmed.
 
-## Post 1 · rss-796bbd796e41
+## Post 1 · rss-fcf73aabe3e3
 
 **Planned copy**
 
-Anthropic’s new employee‑like access for external evaluators could let watchdogs uncover risks that earlier testing missed.
+Replit’s switch to OpenAI as default model nudges developers toward the default, while Claude remains an option for those preferring different behavior.
 
-https://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/
+https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/
 
-- Topic: Cybersecurity & privacy
-- Editorial score (model estimate): 8.33
+- Topic: AI & software
+- Editorial score (model estimate): 7.67
 
 **Source article**
 
-- [Anthropic gives outside AI watchdog “employee-like” access](https://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/)
+- [Replit makes OpenAI its default over Anthropic, CEO says](https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/)
 
-- Status: published: https://x.com/i/status/2112048226018947175
+- Status: published: https://x.com/i/status/2112094569055539424
 
 ## Media policy
 

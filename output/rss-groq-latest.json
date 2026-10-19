@@ -1,5 +1,5 @@
 {
-  "generated_at_ist": "2026-10-19T10:38:30+05:30",
+  "generated_at_ist": "2026-10-19T13:42:14+05:30",
   "model": "openai/gpt-oss-20b",
   "dry_run": false,
   "slot_plan_mode": true,
@@ -10,7 +10,7 @@
       "feed_url": "https://techcrunch.com/feed/",
       "articles_kept": 20,
       "error": null,
-      "recently_published_items_skipped": 0,
+      "recently_published_items_skipped": 1,
       "thin_summary_items_skipped": 10
     },
     {
@@ -18,7 +18,7 @@
       "feed_url": "https://www.theverge.com/rss/index.xml",
       "articles_kept": 10,
       "error": null,
-      "recently_published_items_skipped": 0,
+      "recently_published_items_skipped": 1,
       "thin_summary_items_skipped": 0
     },
     {
@@ -26,70 +26,70 @@
       "feed_url": "https://feeds.arstechnica.com/arstechnica/index",
       "articles_kept": 20,
       "error": null,
-      "recently_published_items_skipped": 0,
+      "recently_published_items_skipped": 1,
       "thin_summary_items_skipped": 0
     }
   ],
   "candidate_count": 12,
   "candidate_articles": [
     {
+      "source": "TechCrunch",
+      "title": "Khosla Ventures doubles down on Even Healthcare to challenge India’s hospital economics",
+      "summary": "Even Healthcare reaches a $300 million valuation in a Khosla Ventures-led round as it plans to expand its hospital network in India.",
+      "published_at_utc": "2026-10-19T07:30:00+00:00",
+      "age_hours": 0.7,
+      "url": "https://techcrunch.com/2026/10/19/khosla-ventures-doubles-down-on-even-healthcare-to-challenge-indias-hospital-economics/",
+      "feed_url": "https://techcrunch.com/feed/",
+      "article_id": "S01"
+    },
+    {
       "source": "The Verge",
       "title": "A Savannah police officer gave her Flock login to her ICE agent husband",
       "summary": "Now, former Savannah police officer Amber Harpe was fired in August following a department investigation that found she had shared her Flock login information with her husband, Tyler Harpe, an ICE agent. SPD does not share its Flock data with ICE and said sharing access to the system violated the department's security protocols. While he had unauthorized access to the system, Tyler Harpe conducted",
       "published_at_utc": "2026-10-18T22:20:53+00:00",
-      "age_hours": 6.8,
+      "age_hours": 9.9,
       "url": "https://www.theverge.com/policy/1013573/spd-officer-fired-flock-ice-husband",
       "feed_url": "https://www.theverge.com/rss/index.xml",
-      "article_id": "S01"
+      "article_id": "S02"
     },
     {
       "source": "TechCrunch",
       "title": "No agenda, no rush, no leaving San Francisco: Benchmark’s partners on investing in a frenzied market",
       "summary": "Benchmark may have grown its funds and swapped out some partners, but onstage the five who are left sounded like friends who just happen to be running one of the Valley’s most storied firms",
       "published_at_utc": "2026-10-18T21:00:00+00:00",
-      "age_hours": 8.1,
+      "age_hours": 11.2,
       "url": "https://techcrunch.com/2026/10/18/no-agenda-no-rush-no-leaving-san-francisco-benchmarks-partners-on-investing-in-a-frenzied-market/",
       "feed_url": "https://techcrunch.com/feed/",
-      "article_id": "S02"
+      "article_id": "S03"
     },
     {
       "source": "The Verge",
       "title": "Mister Organ is one of the most unsettling documentaries I’ve ever seen",
       "summary": "Mister Organ doesn't reach the level of societal horror of The Act of Killing or the creepypasta-meets-true-crime gruesomeness of Beware the Slenderman , but there's something deeply unsettling about Michael Organ and his intimate campaign of terror against everyone who enters his life. Mister Organ is a documentary by David Farrier, an Auckland, New Zealand journalist. The movie starts with Farri",
       "published_at_utc": "2026-10-18T19:21:56+00:00",
-      "age_hours": 9.8,
+      "age_hours": 12.8,
       "url": "https://www.theverge.com/entertainment/1013545/mister-organ-horror-documentary-review",
       "feed_url": "https://www.theverge.com/rss/index.xml",
-      "article_id": "S03"
+      "article_id": "S04"
     },
     {
       "source": "The Verge",
       "title": "A woman was arrested in Philly for blocking a delivery robot",
       "summary": "Carolyn Marvin was arrested and charged with disorderly conduct after blocking the path of an Uber delivery robot and refusing to get out of the way. Marvin told Philadelphia's ABC13 \"I know they're taking the jobs of human delivery workers and so, I have been protesting them whenever I saw them by standing in front of them and preventing them from going forward.\" Police responded to the scene and",
       "published_at_utc": "2026-10-18T18:28:10+00:00",
-      "age_hours": 10.7,
+      "age_hours": 13.7,
       "url": "https://www.theverge.com/ai-artificial-intelligence/1013541/a-woman-was-arrested-in-philly-for-blocking-a-delivery-robot",
       "feed_url": "https://www.theverge.com/rss/index.xml",
-      "article_id": "S04"
+      "article_id": "S05"
     },
     {
       "source": "The Verge",
       "title": "Video game ownership bill introduced in Congress",
       "summary": "Rep. Ritchie Torres of New York's 15th congressional district in the Bronx introduced the Power To The Players Act this week. If passed, the bill would direct the Federal Trade Commission to establish regulations that guarantee consumers ownership of a game when they pay for it, rather than a licensing agreement. It's increasingly common for games sold to require a connection to a server. Meaning ",
       "published_at_utc": "2026-10-18T16:27:51+00:00",
-      "age_hours": 12.7,
+      "age_hours": 15.7,
       "url": "https://www.theverge.com/policy/1013521/video-game-ownership-bill-congress-power-to-the-players-act",
       "feed_url": "https://www.theverge.com/rss/index.xml",
-      "article_id": "S05"
-    },
-    {
-      "source": "Ars Technica",
-      "title": "Anthropic gives outside AI watchdog “employee-like” access",
-      "summary": "Anthropic has granted external evaluators “employee-like access” to assess the risks of its models, following through on a commitment to increase safeguards over concerns the technology could run catastrophically out of control. METR, a nonprofit that has worked with leading labs including OpenAI, Anthropic, Google and Meta, now has a team embedded in the Claude maker’s office with access to its h",
-      "published_at_utc": "2026-10-18T16:25:19+00:00",
-      "age_hours": 12.7,
-      "url": "https://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/",
-      "feed_url": "https://feeds.arstechnica.com/arstechnica/index",
       "article_id": "S06"
     },
     {
@@ -97,7 +97,7 @@
       "title": "TechCrunch Mobility: Rivian’s next act",
       "summary": "Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, the role AI is playing in it.",
       "published_at_utc": "2026-10-18T16:05:00+00:00",
-      "age_hours": 13.1,
+      "age_hours": 16.1,
       "url": "https://techcrunch.com/2026/10/18/techcrunch-mobility-rivians-next-act/",
       "feed_url": "https://techcrunch.com/feed/",
       "article_id": "S07"
@@ -107,7 +107,7 @@
       "title": "Lenovo’s fast, comfy SteamOS handheld is hundreds off",
       "summary": "The Legion Go S with SteamOS is a pretty solid alternative to the $789 Steam Deck OLED. It runs identical software, but ships in a design with two-stage triggers, a bigger eight-inch IPS screen (1080p and up to 120Hz versus 800p and 90Hz in the Deck OLED), and it’s got double the RAM and storage (32GB and 1TB, respectively), not to mention a slightly faster processor in the Ryzen Z1 Extreme. At $9",
       "published_at_utc": "2026-10-18T14:53:52+00:00",
-      "age_hours": 14.2,
+      "age_hours": 17.3,
       "url": "https://www.theverge.com/gadgets/1013436/lenovo-legion-go-s-steamos-handheld-deal-sale",
       "feed_url": "https://www.theverge.com/rss/index.xml",
       "article_id": "S08"
@@ -117,7 +117,7 @@
       "title": "J Mascis has nothing better to do",
       "summary": "J Mascis on stage during Dinosaur Jr.’s Baby’s Alright show in NYC. | Photo: Terrence O’Brien Dinosaur Jr. frontman J Mascis is known as something of a slacker guitar god. He stands stoically onstage, barely moving, as he seemingly effortlessly works through deft guitar solos and lopsided riffs. Unfortunately, Mascis has developed a similar reputation as an interview subject, quietly sitting and o",
       "published_at_utc": "2026-10-18T14:13:04+00:00",
-      "age_hours": 14.9,
+      "age_hours": 18.0,
       "url": "https://www.theverge.com/entertainment/1012442/j-mascis-dinosaur-jr-fender-interview",
       "feed_url": "https://www.theverge.com/rss/index.xml",
       "article_id": "S09"
@@ -127,7 +127,7 @@
       "title": "Trump says Google kisses his ass",
       "summary": "During a rally on Saturday, October 17th, in Highland Heights, Kentucky, Donald Trump bragged about how much more powerful and influential he was during his second term. While listing off his accomplishments, he mentioned his decision to rename the Gulf of Mexico and Lake Ontario . \"This is a much more powerful term. I can do stuff that's unbelievable … I called Google, Google Maps. See, Google wo",
       "published_at_utc": "2026-10-18T13:26:28+00:00",
-      "age_hours": 15.7,
+      "age_hours": 18.8,
       "url": "https://www.theverge.com/policy/1013485/trump-google-kiss-my-ass",
       "feed_url": "https://www.theverge.com/rss/index.xml",
       "article_id": "S10"
@@ -137,7 +137,7 @@
       "title": "How overhead projectors took over your classroom",
       "summary": "It used to be so easy to get away with things in school. The teacher, after all, was always turned around writing at the chalkboard! But then came a bit of technology, previously mostly used for military purposes, called the overhead projector. It would change far more than just the disciplinary record of students everywhere. In this episode of Version History , we tell the story of the overhead p",
       "published_at_utc": "2026-10-18T12:55:01+00:00",
-      "age_hours": 16.2,
+      "age_hours": 19.3,
       "url": "https://www.theverge.com/podcast/1013473/overhead-projector-version-history",
       "feed_url": "https://www.theverge.com/rss/index.xml",
       "article_id": "S11"
@@ -147,7 +147,7 @@
       "title": "Replit makes OpenAI its default over Anthropic, CEO says",
       "summary": "Over the weekend, Masad clarified that OpenAI would replace Anthropic as its default model provider. Claude will still be available to customers on the platform.",
       "published_at_utc": "2026-10-17T18:48:08+00:00",
-      "age_hours": 34.3,
+      "age_hours": 37.4,
       "url": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
       "feed_url": "https://techcrunch.com/feed/",
       "article_id": "S12"
@@ -155,50 +155,38 @@
   ],
   "drafts": [
     {
-      "article_id": "S06",
-      "source": "Ars Technica",
-      "source_title": "Anthropic gives outside AI watchdog “employee-like” access",
-      "published_at_utc": "2026-10-18T16:25:19+00:00",
-      "source_url": "https://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/",
-      "category": "Cybersecurity & privacy",
-      "scores": {
-        "relevance_score": 9,
-        "significance_score": 8,
-        "originality_score": 8
-      },
-      "angle": "External watchdogs now have employee‑like access to Anthropic’s internal environment, allowing deeper risk assessment of Claude models.",
-      "why_selected": "Shows concrete change in model safety oversight that matters to developers and businesses.",
-      "evidence_quote": "Anthropic has granted external evaluators “employee-like access”",
-      "post_text": "Anthropic’s new employee‑like access for external evaluators could let watchdogs uncover risks that earlier testing missed.",
-      "text_with_source": "Anthropic’s new employee‑like access for external evaluators could let watchdogs uncover risks that earlier testing missed.\n\nhttps://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/",
-      "character_count_with_url": 217
-    },
-    {
       "article_id": "S12",
       "source": "TechCrunch",
       "source_title": "Replit makes OpenAI its default over Anthropic, CEO says",
       "published_at_utc": "2026-10-17T18:48:08+00:00",
       "source_url": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
-      "category": "Developer tools",
+      "category": "AI & software",
       "scores": {
         "relevance_score": 8,
         "significance_score": 7,
-        "originality_score": 7
+        "originality_score": 8
       },
-      "angle": "Replit’s shift to OpenAI as default model provider means developers will first interact with OpenAI, while Anthropic remains an option.",
-      "why_selected": "Highlights a concrete change in default AI tooling that affects workflow and choice for small software teams.",
-      "evidence_quote": "OpenAI would replace Anthropic as its default model provider.",
-      "post_text": "Replit’s default shift to OpenAI changes first‑touch model choice for developers, but Anthropic stays available as an alternative.",
-      "text_with_source": "Replit’s default shift to OpenAI changes first‑touch model choice for developers, but Anthropic stays available as an alternative.\n\nhttps://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
-      "character_count_with_url": 218
+      "angle": "Default model shift in developer tools",
+      "why_selected": "Shows Replit’s new default AI provider, affecting developer workflow choice",
+      "evidence_quote": "OpenAI would replace Anthropic as its default model provider",
+      "post_text": "Replit’s switch to OpenAI as default model nudges developers toward the default, while Claude remains an option for those preferring different behavior.",
+      "text_with_source": "Replit’s switch to OpenAI as default model nudges developers toward the default, while Claude remains an option for those preferring different behavior.\n\nhttps://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
+      "character_count_with_url": 240
     }
   ],
   "rejected_model_selections": [
     {
-      "article_id": "S05",
+      "article_id": "S06",
       "source": "The Verge",
       "title": "Video game ownership bill introduced in Congress",
-      "evidence_quote": "If passed, the bill would direct the Federal Trade Commission to establish regulations that guarantee consumers ownership of a game",
+      "evidence_quote": "direct the Federal Trade Commission to establish regulations that guarantee consumers ownership of a game",
+      "reason": "Evidence quote must be 20–100 characters and an exact excerpt from the supplied title or summary."
+    },
+    {
+      "article_id": "S05",
+      "source": "The Verge",
+      "title": "A woman was arrested in Philly for blocking a delivery robot",
+      "evidence_quote": "blocked the path of an Uber delivery robot",
       "reason": "Evidence quote must be 20–100 characters and an exact excerpt from the supplied title or summary."
     }
   ],
