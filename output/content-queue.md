@@ -1,6 +1,6 @@
 # Legivox daily content plan
 
-Prepared: 2026-10-18 20:42:50 IST
+Prepared: 2026-10-19 06:40:46 IST
 
 > Topics are prioritised using recent public Hacker News discussion signals plus a rotation fallback. These signals are not proof of willingness to pay. Copy is selected from the reviewed draft library, not generated from research labels.
 

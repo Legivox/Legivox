@@ -1,6 +1,6 @@
 # Legivox engagement shortlist
 
-Generated: 2026-10-18 20:42:50 IST
+Generated: 2026-10-19 06:40:46 IST
 
 These are candidates to review manually. No likes, replies, reposts, or follows are automated by this workflow.
 
@@ -8,22 +8,22 @@ These are candidates to review manually. No likes, replies, reposts, or follows 
 
 Search: `feature requests`
 
-- [WRN_XRP](https://x.com/WRN_XRP/status/2111837167366402493): Wallet feature spotlight 🔎 Xaman’s June 5, 2025 release introduced payment-request links for issued assets such as RLUSD, with pathfinding when opened. A useful distinction: what the receiver requests can differ from wha
-- [MixRoute_ai](https://x.com/MixRoute_ai/status/2111820735379620349): @theo How do you even keep an overview over all the feature requests?
-- [10_X_eng](https://x.com/10_X_eng/status/2111813726244323459): @0x45o @bot Do you have an AI write the software and deploy to fill the feature requests and bug reports?
+- [NelsonXLee](https://x.com/NelsonXLee/status/2111954931812843709): @hubeiqiao Send any feedback/feature requests to nelson@trysolarium.com or have your AI send it via MCP!
+- [AlexanderJoh10](https://x.com/AlexanderJoh10/status/2111942861734232171): @10_X_eng Do all feature requests/work go to everyone? Or is it just that person's user profile that gets it?
+- [styskin](https://x.com/styskin/status/2111942164704035156): I asked what @KeenableAI can do better. And? No complains, no feature requests, no asks for discounts. How to work with such customers? 🤷‍♂️😃
 
 ## freelance developers
 
 Search: `freelancer scope creep`
 
-- [TSovirath](https://x.com/TSovirath/status/2103909553087864998): Just launched: Freelancer Client Workflow Kit 🚀 An end-to-end client system to stop scope creep &amp; messy contracts: • 11 core templates (SOW, Agreement, Invoices) • SOP workflow guide • Notion &amp; Sheet trackers • A
-- [hardorff](https://x.com/hardorff/status/2095617829147943348): Every freelancer I know has lost money to scope creep at least once. The client says "simple." Three weeks later the invoice is 4x the original quote. Scope creep is a contract problem. If your contract doesn't define wh
-- [Angelo1119908](https://x.com/Angelo1119908/status/2094666059236495564): "just one more small change" is how scope creep starts. every single time feedback now lives right next to the agreed scope and invoice, not buried in a separate thread #freelancer #scopecreep
+- [HankJohnsonJr](https://x.com/HankJohnsonJr/status/2111962866341351852): @SSage38676 @heykhattab Leading with the scoping moment makes sense. Most freelancers don't go looking for contract software until a vague client chat turns into unpaid revisions. Show that exact mess first and the rest 
+- [codeswithroh](https://x.com/codeswithroh/status/2111856889021800639): @mo_arfaj01 With a scope checker, the first users will likely be freelancers who already got burned by scope creep. Their old messy client threads make good test cases for tuning how the AI judges what counts as extra.
+- [mo_arfaj01](https://x.com/mo_arfaj01/status/2111846980041445566): Day 0: Built a SaaS in 15 days, solo. Day 1: 0 users. Creepless stops agencies doing free work for clients. A client asks for "one small thing", AI checks it against their scope, and extras become a quote they approve fi
 
 ## small online sellers
 
 Search: `inventory margins`
 
+- [NatukundaB1321](https://x.com/NatukundaB1321/status/2111944612311150622): Patience pays. Every design, every upload sits quietly until the right buyer finds it. No inventory, no rush. Just steady work and letting the margins build over time.
+- [Mickey1Mfcav01](https://x.com/Mickey1Mfcav01/status/2111776006264561796): @StragglerLiu Dell does not "refuse" to inventory memory. Margins prohibit this risk.
 - [MrStealth27](https://x.com/MrStealth27/status/2111518607842877880): @MapleLeafWealth Agreed. One more clean quarter on inventory and margins and $NKE stops being a turnaround story and starts being an earnings story.
-- [MrStealth27](https://x.com/MrStealth27/status/2111504173384769939): @MapleLeafWealth Bull case is margins, not sales. $NKE already earned $6B on this same $46B revenue base. Fix inventory and pricing and that's the path back.
-- [Xorosoft](https://x.com/Xorosoft/status/2111242032660324557): Obsolete stock doesn't become a loss overnight. • Overbuying ties up cash. • Slow SKUs invite markdowns. • Margins take the hit. Spot risk before the write-down. https://t.co/C8mfujQzh8 #Ecommerce #Inventory https://t.co
