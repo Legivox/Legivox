@@ -2,6 +2,12 @@ name: Legivox daily research and X publishing
 
 on:
   workflow_dispatch:
+    inputs:
+      publish_now:
+        description: 'Publish one quality-gated RSS/Groq post to X immediately (live production)'
+        required: true
+        type: boolean
+        default: false
   schedule:
     # Plan at 06:00 IST; the publishing jobs use randomized times within the next hour.
     - cron: '30 0 * * *'
@@ -48,23 +54,24 @@ jobs:
         run: python -m unittest discover -s tests -v
 
       - name: Prepare daily research plan
-        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '30 0 * * *'
+        if: (github.event_name == 'workflow_dispatch' && inputs.publish_now != true) || github.event.schedule == '30 0 * * *'
         env:
           TWEETKIT_COOKIE: ${{ secrets.X_SESSION_COOKIE }}
         run: python scripts/prepare_daily_plan.py
 
       - name: Prepare fresh RSS + Groq post for scheduled slot
         id: prepare_rss
-        if: github.event.schedule == '30 3 * * *' || github.event.schedule == '30 7 * * *' || github.event.schedule == '30 13 * * *'
+        if: github.event.schedule == '30 3 * * *' || github.event.schedule == '30 7 * * *' || github.event.schedule == '30 13 * * *' || (github.event_name == 'workflow_dispatch' && inputs.publish_now == true)
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           GROQ_MODEL: openai/gpt-oss-20b
-          SCHEDULE: ${{ github.event.schedule }}
+          SCHEDULE: ${{ github.event.schedule || (inputs.publish_now == true && 'live-test') }}
         run: |
           case "$SCHEDULE" in
             '30 3 * * *') slot=0 ;;
             '30 7 * * *') slot=1 ;;
             '30 13 * * *') slot=2 ;;
+            'live-test') slot=0 ;;
             *) echo 'Unexpected schedule; refusing to prepare a post.' >&2; exit 1 ;;
           esac
           echo "slot=$slot" >> "$GITHUB_OUTPUT"
@@ -82,7 +89,7 @@ jobs:
 
       - name: Wait for randomized time inside the publishing window
         id: random_window
-        if: success() && steps.prepare_rss.outputs.skip != 'true' && steps.prepare_rss.outputs.slot != ''
+        if: success() && steps.prepare_rss.outputs.skip != 'true' && steps.prepare_rss.outputs.slot != '' && (github.event_name != 'workflow_dispatch' || inputs.publish_now != true)
         env:
           SLOT: ${{ steps.prepare_rss.outputs.slot }}
         run: |
