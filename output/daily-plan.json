@@ -1,0 +1,44 @@
+{
+  "date_ist": "2026-10-19",
+  "prepared_at_ist": "2026-10-19 10:38:30 IST",
+  "research_window_days": 7,
+  "research_source": "RSS feeds + Groq editorial ranking",
+  "posts": [
+    {
+      "idea_id": "rss-796bbd796e41",
+      "niche": "Cybersecurity & privacy",
+      "problem": "Anthropic gives outside AI watchdog “employee-like” access",
+      "evidence": "RSS item from Ars Technica; published at 2026-10-18T16:25:19+00:00. Verify against the source.",
+      "solution_hypothesis": "External watchdogs now have employee‑like access to Anthropic’s internal environment, allowing deeper risk assessment of Claude models.",
+      "text": "Anthropic’s new employee‑like access for external evaluators could let watchdogs uncover risks that earlier testing missed.\n\nhttps://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/",
+      "text_hash": "5d4bb640618ccf4ab2d9f566f192b33968b4205045c8754b8aa5c2126655cf5b",
+      "image_query": "",
+      "research": {
+        "query": "RSS technology news",
+        "score": 8.33,
+        "hits": [
+          {
+            "title": "Anthropic gives outside AI watchdog “employee-like” access",
+            "url": "https://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/",
+            "external_url": "https://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/",
+            "points": 0,
+            "comments": 0,
+            "created_at": "2026-10-18T16:25:19+00:00",
+            "matched_terms": []
+          }
+        ],
+        "error": null
+      },
+      "status": "published: https://x.com/i/status/2112048226018947175",
+      "slot": 0,
+      "editorial_scores": {
+        "relevance_score": 9,
+        "significance_score": 8,
+        "originality_score": 8
+      },
+      "published_at_ist": "2026-10-19T10:38:31+05:30",
+      "published_url": "https://x.com/i/status/2112048226018947175",
+      "image": null
+    }
+  ]
+}
