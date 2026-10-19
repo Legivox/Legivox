@@ -41,6 +41,9 @@ jobs:
           python -m pip install --disable-pip-version-check
           'git+https://github.com/nsozturk/tweetkit-x.git@d42503a936f80eb0af2e9856a0fbd392cc4a750c'
 
+      - name: Install Groq-compatible OpenAI client
+        run: python -m pip install --disable-pip-version-check 'openai>=1.66.0,<3'
+
       - name: Test RSS publisher plan selection and randomized windows
         run: python -m unittest discover -s tests -v
 
