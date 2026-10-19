@@ -369,7 +369,7 @@ def generate_drafts(candidates: list[dict], max_posts: int = 3) -> tuple[list[di
                 failed_generation = clean(error_body.get("failed_generation"))
                 if failed_generation:
                     detail += " Failed-generation excerpt: " + failed_generation[:300]
-        detail = re.sub(r"(?i)(bearer\\s+\\S+|gsk_[A-Za-z0-9_-]+)", "[redacted]", detail)[:800]
+        detail = re.sub(r"(?i)(bearer\s+\S+|gsk_[A-Za-z0-9_-]+)", "[redacted]", detail)[:800]
         label = f"HTTP {status} " if status else ""
         message = (
             f"Groq request failed ({label}{type(exc).__name__})"
