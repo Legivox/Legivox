@@ -1,44 +1,72 @@
 {
-  "date_ist": "2026-10-19",
-  "prepared_at_ist": "2026-10-19 19:44:51 IST",
-  "research_window_days": 7,
-  "research_source": "RSS feeds + Groq editorial ranking",
+  "date_ist": "2026-10-20",
+  "prepared_at_ist": "2026-10-20 06:42:43 IST",
+  "research_window_days": 30,
+  "research_source": "Hacker News Algolia Search API",
   "posts": [
     {
-      "idea_id": "rss-c161d6bab526",
-      "niche": "AI & software",
-      "problem": "A hacker broke into John Deere and SharkNinja with an army of AI agents",
-      "evidence": "RSS item from The Verge; published at 2026-10-19T13:58:41+00:00. Verify against the source.",
-      "solution_hypothesis": "AI agents can autonomously target sites, exposing gaps in web‑app security",
-      "text": "AI agents can now scan and exploit web apps autonomously, forcing devs to rethink automated testing and patching.\n\nhttps://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins",
-      "text_hash": "22f4e806b015a3ac259537783d50599e5f35ce0a1f4487e929c9047442ff201c",
-      "image_query": "",
+      "idea_id": "creator-feedback",
+      "niche": "independent digital creators",
+      "problem": "Feedback and feature requests are scattered across channels.",
+      "evidence": "Unverified hypothesis. Research complaints and willingness to pay before treating this as demand.",
+      "solution_hypothesis": "a lightweight inbox that groups repeated requests into a prioritized backlog",
+      "text": "A creator can get the same feature request in a DM, a comment, an email and a community thread. The hard part isn't collecting feedback. It's noticing what's being asked for repeatedly. How do you track that today?",
+      "text_hash": "4aa762dbbf29743b39688dda0d986d5f86c91512bc88a959bb3ee141545ffb08",
+      "image_query": "creative workspace",
       "research": {
-        "query": "RSS technology news",
-        "score": 8.33,
+        "query": "feature requests",
+        "score": 6.72,
         "hits": [
           {
-            "title": "A hacker broke into John Deere and SharkNinja with an army of AI agents",
-            "url": "https://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins",
-            "external_url": "https://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins",
-            "points": 0,
-            "comments": 0,
-            "created_at": "2026-10-19T13:58:41+00:00",
-            "matched_terms": []
+            "title": "HN Feature Request: Option to hide repetitive AI complaints",
+            "url": "https://news.ycombinator.com/item?id=50061936",
+            "external_url": "",
+            "points": 1,
+            "comments": 2,
+            "created_at": "2026-10-12T19:45:23Z",
+            "matched_terms": [
+              "feature",
+              "request"
+            ]
           }
         ],
         "error": null
       },
-      "status": "published: https://x.com/i/status/2112185726834258164",
-      "slot": 2,
-      "editorial_scores": {
-        "relevance_score": 9,
-        "significance_score": 8,
-        "originality_score": 8
+      "status": "planned"
+    },
+    {
+      "idea_id": "freelancer-scope",
+      "niche": "freelance developers",
+      "problem": "Scope changes and assumptions can quietly erode project margins.",
+      "evidence": "Unverified hypothesis. Validate with public discussions and paid competitor products.",
+      "solution_hypothesis": "a project scoping workbook with explicit assumptions and change approvals",
+      "text": "Scope creep rarely arrives as one dramatic request. It's a handful of tiny “while you're in there…” changes. Freelancers, how do you document assumptions and approve extra work without making every project feel bureaucratic?",
+      "text_hash": "2c016ad5c1e84443623ffa74649e68df4a88b33c42ace2973ff278e1a79d077c",
+      "image_query": "freelancer laptop",
+      "research": {
+        "query": "freelancer scope creep",
+        "score": 0.0,
+        "hits": [],
+        "error": null
       },
-      "published_at_ist": "2026-10-19T19:44:54+05:30",
-      "published_url": "https://x.com/i/status/2112185726834258164",
-      "image": null
+      "status": "planned"
+    },
+    {
+      "idea_id": "seller-stock",
+      "niche": "small online sellers",
+      "problem": "Stock, fees, reorder levels and margins often live in disconnected sheets.",
+      "evidence": "Unverified hypothesis. Check competing templates and seller complaints.",
+      "solution_hypothesis": "an inventory workbook that combines reorder signals with per-item margins",
+      "text": "A product can look profitable until marketplace fees, packaging, shipping and restocking time are counted. For small sellers, which number is easiest to lose track of: true margin, stock on hand, or reorder timing?",
+      "text_hash": "6d8b8d393e2389d0225a27c181f4602c42710ef7e499154d0ea677d920391c68",
+      "image_query": "inventory boxes",
+      "research": {
+        "query": "inventory margins",
+        "score": 0.0,
+        "hits": [],
+        "error": null
+      },
+      "status": "planned"
     }
   ]
 }
