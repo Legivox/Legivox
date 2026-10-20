@@ -1,25 +1,25 @@
 # Legivox daily content plan
 
-Prepared: 2026-10-20 13:36:33 IST
+Prepared: 2026-10-20 19:41:54 IST
 
 > This scheduled post was generated from a recent RSS story and passed the local quality gate. The attached excerpt is not a full fact-check; verify the linked article before treating every implication as confirmed.
 
-## Post 1 · rss-76faeee63fa2
+## Post 1 · rss-fce282284b9e
 
 **Planned copy**
 
-A $2.2B valuation for a bot‑filtering startup signals urgent need for robust traffic‑sanitization solutions.
+Podcasters can now sell ad‑free, early‑access perks via Spotify’s tiered memberships.
 
-https://techcrunch.com/2026/10/20/blackwall-quadruples-valuation-to-2-2b-as-websites-wrangle-an-increasingly-crowded-internet/
+https://techcrunch.com/2026/10/20/spotify-launches-paid-podcast-memberships-with-perks-beyond-bonus-content/
 
-- Topic: Cybersecurity & privacy
+- Topic: Product strategy
 - Editorial score (model estimate): 6.67
 
 **Source article**
 
-- [Blackwall quadruples valuation to $2.2B as websites wrangle an increasingly crowded internet](https://techcrunch.com/2026/10/20/blackwall-quadruples-valuation-to-2-2b-as-websites-wrangle-an-increasingly-crowded-internet/)
+- [Spotify launches paid podcast memberships with perks beyond bonus content](https://techcrunch.com/2026/10/20/spotify-launches-paid-podcast-memberships-with-perks-beyond-bonus-content/)
 
-- Status: published: https://x.com/i/status/2112456505559826763
+- Status: published: https://x.com/i/status/2112547530609418316
 
 ## Media policy
 

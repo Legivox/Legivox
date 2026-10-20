@@ -1,43 +1,43 @@
 {
   "date_ist": "2026-10-20",
-  "prepared_at_ist": "2026-10-20 13:36:33 IST",
+  "prepared_at_ist": "2026-10-20 19:41:54 IST",
   "research_window_days": 7,
   "research_source": "RSS feeds + Groq editorial ranking",
   "posts": [
     {
-      "idea_id": "rss-76faeee63fa2",
-      "niche": "Cybersecurity & privacy",
-      "problem": "Blackwall quadruples valuation to $2.2B as websites wrangle an increasingly crowded internet",
-      "evidence": "RSS item from TechCrunch; published at 2026-10-20T07:01:00+00:00. Verify against the source.",
-      "solution_hypothesis": "Higher valuation reflects growing demand for bot and AI traffic filtering",
-      "text": "A $2.2B valuation for a bot‑filtering startup signals urgent need for robust traffic‑sanitization solutions.\n\nhttps://techcrunch.com/2026/10/20/blackwall-quadruples-valuation-to-2-2b-as-websites-wrangle-an-increasingly-crowded-internet/",
-      "text_hash": "009dedac107f0ac73be8086844ec9f3824d07483649125d4ca2756da33330367",
+      "idea_id": "rss-fce282284b9e",
+      "niche": "Product strategy",
+      "problem": "Spotify launches paid podcast memberships with perks beyond bonus content",
+      "evidence": "RSS item from TechCrunch; published at 2026-10-20T12:00:00+00:00. Verify against the source.",
+      "solution_hypothesis": "Spotify’s paid podcast tiers offer podcasters a new revenue model",
+      "text": "Podcasters can now sell ad‑free, early‑access perks via Spotify’s tiered memberships.\n\nhttps://techcrunch.com/2026/10/20/spotify-launches-paid-podcast-memberships-with-perks-beyond-bonus-content/",
+      "text_hash": "ab375d6e21fcdcb57332a3841c79ac7e38f22b6bbb614d6e1cc498b0773aeb93",
       "image_query": "",
       "research": {
         "query": "RSS technology news",
         "score": 6.67,
         "hits": [
           {
-            "title": "Blackwall quadruples valuation to $2.2B as websites wrangle an increasingly crowded internet",
-            "url": "https://techcrunch.com/2026/10/20/blackwall-quadruples-valuation-to-2-2b-as-websites-wrangle-an-increasingly-crowded-internet/",
-            "external_url": "https://techcrunch.com/2026/10/20/blackwall-quadruples-valuation-to-2-2b-as-websites-wrangle-an-increasingly-crowded-internet/",
+            "title": "Spotify launches paid podcast memberships with perks beyond bonus content",
+            "url": "https://techcrunch.com/2026/10/20/spotify-launches-paid-podcast-memberships-with-perks-beyond-bonus-content/",
+            "external_url": "https://techcrunch.com/2026/10/20/spotify-launches-paid-podcast-memberships-with-perks-beyond-bonus-content/",
             "points": 0,
             "comments": 0,
-            "created_at": "2026-10-20T07:01:00+00:00",
+            "created_at": "2026-10-20T12:00:00+00:00",
             "matched_terms": []
           }
         ],
         "error": null
       },
-      "status": "published: https://x.com/i/status/2112456505559826763",
-      "slot": 1,
+      "status": "published: https://x.com/i/status/2112547530609418316",
+      "slot": 2,
       "editorial_scores": {
         "relevance_score": 7,
         "significance_score": 6,
         "originality_score": 7
       },
-      "published_at_ist": "2026-10-20T13:40:53+05:30",
-      "published_url": "https://x.com/i/status/2112456505559826763",
+      "published_at_ist": "2026-10-20T19:42:35+05:30",
+      "published_url": "https://x.com/i/status/2112547530609418316",
       "image": null
     }
   ]

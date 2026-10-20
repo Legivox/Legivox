@@ -1,6 +1,6 @@
 # Legivox RSS + Groq editorial preview
 
-- Generated: 2026-10-20T13:36:33+05:30
+- Generated: 2026-10-20T19:41:54+05:30
 - Model: openai/gpt-oss-20b
 - Mode: SINGLE-SLOT CANDIDATE REVIEW
 - X publishing: not performed by this script
@@ -12,52 +12,52 @@
 
 | Source | Recent feed items kept | Thin excerpts skipped | Result |
 |---|---:|---:|---|
-| TechCrunch | 20 | 3 | OK |
-| The Verge | 10 | 0 | OK |
+| TechCrunch | 20 | 5 | OK |
+| The Verge | 10 | 1 | OK |
 | Ars Technica | 20 | 0 | OK |
 
 ## Drafts that passed the quality gate
 
-### Draft 1: Blackwall quadruples valuation to $2.2B as websites wrangle an increasingly crowded internet
+### Draft 1: Spotify launches paid podcast memberships with perks beyond bonus content
 
-- Category: Cybersecurity & privacy
+- Category: Product strategy
 - Source: TechCrunch
-- Published: 2026-10-20T07:01:00+00:00
-- Editorial angle: Higher valuation reflects growing demand for bot and AI traffic filtering
-- Why selected: Shows market growth for security tools amid rising automated web traffic
-- Source evidence (exact quote): “"Blackwall has raised $100M at a $2.2B valuation to continue building security and filtering tools"”
+- Published: 2026-10-20T12:00:00+00:00
+- Editorial angle: Spotify’s paid podcast tiers offer podcasters a new revenue model
+- Why selected: Highlights a concrete shift in monetization that other creators can learn from
+- Source evidence (exact quote): “Spotify's new paid memberships let podcasters offer fans exclusive perks”
 - Editorial scores: relevance 7/10, significance 6/10, originality 7/10
-- Article: https://techcrunch.com/2026/10/20/blackwall-quadruples-valuation-to-2-2b-as-websites-wrangle-an-increasingly-crowded-internet/
+- Article: https://techcrunch.com/2026/10/20/spotify-launches-paid-podcast-memberships-with-perks-beyond-bonus-content/
 
 Post copy with source link:
 
 ~~~text
-A $2.2B valuation for a bot‑filtering startup signals urgent need for robust traffic‑sanitization solutions.
+Podcasters can now sell ad‑free, early‑access perks via Spotify’s tiered memberships.
 
-https://techcrunch.com/2026/10/20/blackwall-quadruples-valuation-to-2-2b-as-websites-wrangle-an-increasingly-crowded-internet/
+https://techcrunch.com/2026/10/20/spotify-launches-paid-podcast-memberships-with-perks-beyond-bonus-content/
 ~~~
 
-- Plain character count including URL: 236/280
+- Plain character count including URL: 195/280
 
 ## Rejected selections
 
-- S06 · Embedded AI evaluators won’t be an easy solution, Hugging Face’s policy chief says: Evidence quote must be 20–100 characters and an exact excerpt from the supplied title or summary.
-- S09 · Microsoft says AI agents are like insider threats as ‘frontier models can’t be trusted’: Evidence quote must be 20–100 characters and an exact excerpt from the supplied title or summary.
+- S04 · Meta Muse exposes users' personal and business secrets when they share conversations: Evidence quote must be 20–100 characters and an exact excerpt from the supplied title or summary.
+- S07 · Yelp can now call on your behalf to check wait times at a restaurant: Acronym 'UX' is not present or expanded in the source excerpt. (relevance 8, significance 7, originality 7)
 
 ## Candidate story list
 
-- S01 · TechCrunch: Blackwall quadruples valuation to $2.2B as websites wrangle an increasingly crowded internet ([source](https://techcrunch.com/2026/10/20/blackwall-quadruples-valuation-to-2-2b-as-websites-wrangle-an-increasingly-crowded-internet/))
-- S02 · Ars Technica: Japan launches mission to bring home a piece of the Martian moon Phobos ([source](https://arstechnica.com/space/2026/10/japan-launches-mission-to-bring-home-a-piece-of-the-martian-moon-phobos/))
-- S03 · TechCrunch: Mamdani says feds have abdicated on AI, urges New Yorkers to push back ([source](https://techcrunch.com/2026/10/19/mamdani-says-feds-have-abdicated-on-ai-urges-new-yorkers-to-push-back/))
-- S04 · TechCrunch: Nscale and Anthropic are reportedly in talks for yet another $45B compute deal ([source](https://techcrunch.com/2026/10/19/nscale-and-anthropic-are-reportedly-in-talks-for-yet-another-45-billion-compute-deal/))
-- S05 · The Verge: I tried a $99 plug that promises to track your car and send help when needed — without selling your data ([source](https://www.theverge.com/tech/1013918/miles-plug-vehicle-tracking-data-privacy-specs-price-launch-date))
-- S06 · TechCrunch: Embedded AI evaluators won’t be an easy solution, Hugging Face’s policy chief says ([source](https://techcrunch.com/2026/10/19/embedded-ai-evaluators-wont-be-an-easy-solution-hugging-faces-policy-chief-says/))
-- S07 · Ars Technica: Pennsylvania issues alert on congenital measles—something US hasn't seen for decades ([source](https://arstechnica.com/health/2026/10/pennsylvania-issues-alert-on-congenital-measles-something-us-hasnt-seen-for-decades/))
-- S08 · The Verge: Elon Musk’s proposed SpaceX stock giveaway would go into ‘Trump Accounts’ ([source](https://www.theverge.com/tech/1014115/elon-musk-spacex-trump-account))
-- S09 · TechCrunch: Microsoft says AI agents are like insider threats as ‘frontier models can’t be trusted’ ([source](https://techcrunch.com/2026/10/19/microsoft-says-ai-agents-are-like-insider-threats-as-frontier-models-cant-be-trusted/))
-- S10 · The Verge: The fossil fuel comeback is here ([source](https://www.theverge.com/science/1013954/fossil-fuel-power-infrastructure-data-centers-report))
-- S11 · The Verge: CoreWeave’s debt is becoming the whole AI industry’s problem ([source](https://www.theverge.com/ai-artificial-intelligence/1014045/coreweave-stock-debt-sector-ai))
-- S12 · Ars Technica: Russian spacecraft maneuvers in "extreme proximity" to satellite used by Ukraine ([source](https://arstechnica.com/space/2026/10/russian-spacecraft-maneuvers-in-extreme-proximity-to-satellite-used-by-ukraine/))
+- S01 · The Verge: Adobe Lightroom mobile can now open closed eyes in photos with a simple tap ([source](https://www.theverge.com/tech/1014246/adobe-lightroom-mobile-ai-quick-action-open-eyes-closed-blink-repair))
+- S02 · TechCrunch: US orders federal agencies to remove China’s DeepSeek AI from their systems ([source](https://techcrunch.com/2026/10/20/us-orders-federal-agencies-to-remove-chinas-deepseek-ai-from-their-systems/))
+- S03 · TechCrunch: Eka is worth $1.45B thanks to a physical AI model that has experts raving ([source](https://techcrunch.com/2026/10/20/eka-is-worth-1-45-billion-thanks-to-a-physical-ai-model-that-has-experts-raving/))
+- S04 · Ars Technica: Meta Muse exposes users' personal and business secrets when they share conversations ([source](https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/))
+- S05 · TechCrunch: Spotify launches paid podcast memberships with perks beyond bonus content ([source](https://techcrunch.com/2026/10/20/spotify-launches-paid-podcast-memberships-with-perks-beyond-bonus-content/))
+- S06 · TechCrunch: Oura adds new fitness metrics to show how workouts impact your body ([source](https://techcrunch.com/2026/10/20/oura-is-launching-two-new-ways-to-track-and-understand-activity/))
+- S07 · TechCrunch: Yelp can now call on your behalf to check wait times at a restaurant ([source](https://techcrunch.com/2026/10/20/yelp-can-now-call-on-your-behalf-to-check-wait-times-at-a-restaurant/))
+- S08 · TechCrunch: Otter.ai raises $320 million from General Catalyst’s growth fund for its meeting tool ([source](https://techcrunch.com/2026/10/20/otter-ai-raises-320-million-from-general-catalysts-growth-fund-for-its-meeting-tool/))
+- S09 · Ars Technica: Visiting Slate’s first showroom as its $25,000 electric truck nears production ([source](https://arstechnica.com/cars/2026/10/visiting-slates-first-showroom-as-its-25000-electric-truck-nears-production/))
+- S10 · The Verge: Some Google Home Speakers caught downloading hundreds of gigs of data ([source](https://www.theverge.com/tech/1014209/google-home-speaker-bug-continuous-download))
+- S11 · The Verge: Antigravity just halved the price of its drone — by swapping its headset for wristwatch control ([source](https://www.theverge.com/tech/1014063/antigravity-a1-drone-follow-me-watch-ring-control))
+- S12 · Ars Technica: Japan launches mission to bring home a piece of the Martian moon Phobos ([source](https://arstechnica.com/space/2026/10/japan-launches-mission-to-bring-home-a-piece-of-the-martian-moon-phobos/))
 
 ## Review notes
 
