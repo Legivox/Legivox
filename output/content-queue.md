@@ -1,53 +1,26 @@
 # Legivox daily content plan
 
-Prepared: 2026-10-20 06:42:43 IST
+Prepared: 2026-10-20 09:30:07 IST
 
-> Topics are prioritised using recent public Hacker News discussion signals plus a rotation fallback. These signals are not proof of willingness to pay. Copy is selected from the reviewed draft library, not generated from research labels.
+> This scheduled post was generated from a recent RSS story and passed the local quality gate. The attached excerpt is not a full fact-check; verify the linked article before treating every implication as confirmed.
 
-## Post 1 · creator-feedback
-
-**Planned copy**
-
-A creator can get the same feature request in a DM, a comment, an email and a community thread. The hard part isn't collecting feedback. It's noticing what's being asked for repeatedly. How do you track that today?
-
-- Topic: independent digital creators
-- Research query: feature requests
-- Recent discussion signal score: 6.72
-
-**Recent public discussion signals**
-
-- [HN Feature Request: Option to hide repetitive AI complaints](https://news.ycombinator.com/item?id=50061936) · 1 points · 2 comments
-
-- Status: planned
-
-## Post 2 · freelancer-scope
+## Post 1 · rss-c1dfee28d50b
 
 **Planned copy**
 
-Scope creep rarely arrives as one dramatic request. It's a handful of tiny “while you're in there…” changes. Freelancers, how do you document assumptions and approve extra work without making every project feel bureaucratic?
+Amazon’s TorchNeuron could let AI teams run models on non‑Nvidia hardware, widening hardware choices for startups.
 
-- Topic: freelance developers
-- Research query: freelancer scope creep
-- Recent discussion signal score: 0.0
+https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/
 
-_No recent matching Hacker News signal was found; the topic was chosen by rotation._
+- Topic: Product strategy
+- Editorial score (model estimate): 8.67
 
-- Status: planned
+**Source article**
 
-## Post 3 · seller-stock
+- [Amazon is taking its biggest shot at Nvidia yet with new TorchNeuron dev tool](https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/)
 
-**Planned copy**
+- Status: published: https://x.com/i/status/2112396037210128706
 
-A product can look profitable until marketplace fees, packaging, shipping and restocking time are counted. For small sellers, which number is easiest to lose track of: true margin, stock on hand, or reorder timing?
+## Media policy
 
-- Topic: small online sellers
-- Research query: inventory margins
-- Recent discussion signal score: 0.0
-
-_No recent matching Hacker News signal was found; the topic was chosen by rotation._
-
-- Status: planned
-
-## Image policy
-
-The publisher searches Wikimedia Commons for matching CC0 or public-domain images. It records the file page and license metadata. If a suitable image cannot be verified, the post is published without one rather than using a random or unclear-license image.
+RSS/Groq news posts are text-only by default. No generic category image is attached because it could be unrelated to the source story.
