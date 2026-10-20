@@ -1,25 +1,25 @@
 # Legivox daily content plan
 
-Prepared: 2026-10-20 09:30:07 IST
+Prepared: 2026-10-20 13:36:33 IST
 
 > This scheduled post was generated from a recent RSS story and passed the local quality gate. The attached excerpt is not a full fact-check; verify the linked article before treating every implication as confirmed.
 
-## Post 1 · rss-c1dfee28d50b
+## Post 1 · rss-76faeee63fa2
 
 **Planned copy**
 
-Amazon’s TorchNeuron could let AI teams run models on non‑Nvidia hardware, widening hardware choices for startups.
+A $2.2B valuation for a bot‑filtering startup signals urgent need for robust traffic‑sanitization solutions.
 
-https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/
+https://techcrunch.com/2026/10/20/blackwall-quadruples-valuation-to-2-2b-as-websites-wrangle-an-increasingly-crowded-internet/
 
-- Topic: Product strategy
-- Editorial score (model estimate): 8.67
+- Topic: Cybersecurity & privacy
+- Editorial score (model estimate): 6.67
 
 **Source article**
 
-- [Amazon is taking its biggest shot at Nvidia yet with new TorchNeuron dev tool](https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/)
+- [Blackwall quadruples valuation to $2.2B as websites wrangle an increasingly crowded internet](https://techcrunch.com/2026/10/20/blackwall-quadruples-valuation-to-2-2b-as-websites-wrangle-an-increasingly-crowded-internet/)
 
-- Status: published: https://x.com/i/status/2112396037210128706
+- Status: published: https://x.com/i/status/2112456505559826763
 
 ## Media policy
 
