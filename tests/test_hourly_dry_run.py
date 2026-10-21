@@ -48,7 +48,7 @@ class HourlyDryRunTests(unittest.TestCase):
             "format": "tool_discovery",
             "audience": "developers building integrations",
             "angle": "safer webhook setup",
-            "editorial_takeaway": "For webhook receivers, add tests for invalid signatures and duplicate events before shipping.",
+            "editorial_takeaway": "For webhook receivers, test signatures and duplicate events before shipping.",
             "evidence_quote": "signature verification, and event handling",
             "claim_evidence": [
                 {
@@ -78,7 +78,7 @@ class HourlyDryRunTests(unittest.TestCase):
                 "signature verification and event handling for coding agents."
             ),
             "editorial_takeaway": (
-                "For webhook receivers, add tests for invalid signatures and duplicate events before shipping."
+                "For webhook receivers, test signatures and duplicate events before shipping."
             ),
         }
         composed = hourly.compose_post_from_fields(draft, self.candidate)
