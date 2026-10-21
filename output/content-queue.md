@@ -1,25 +1,25 @@
 # Legivox daily content plan
 
-Prepared: 2026-10-21 13:39:20 IST
+Prepared: 2026-10-21 19:42:17 IST
 
 > This scheduled post was generated from a recent RSS story and passed the local quality gate. The attached excerpt is not a full fact-check; verify the linked article before treating every implication as confirmed.
 
-## Post 1 · rss-2d2caae98728
+## Post 1 · rss-9d139281b4ec
 
 **Planned copy**
 
-If passed, Anthropic’s bill would mandate a judge’s consent before a federal agency could stop a model’s release.
+Nvidia driver 621.01 unlocks Microsoft’s cloud‑based shader delivery, cutting launch times and stutter for DX12 games.
 
-https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/
+https://www.theverge.com/news/1015299/nvidia-driver-microsoft-advanced-shader-delivery-support
 
-- Topic: Platform policy
-- Editorial score (model estimate): 9.0
+- Topic: Developer tools
+- Editorial score (model estimate): 7.0
 
 **Source article**
 
-- [Anthropic pitches AI safety bill that may block a model if 50+ people could be killed](https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/)
+- [Nvidia’s latest GPU driver brings a new way to speed up PC games](https://www.theverge.com/news/1015299/nvidia-driver-microsoft-advanced-shader-delivery-support)
 
-- Status: published: https://x.com/i/status/2112819862363844917
+- Status: published: https://x.com/i/status/2112909933431906563
 
 ## Media policy
 

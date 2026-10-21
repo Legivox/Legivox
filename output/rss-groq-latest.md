@@ -1,6 +1,6 @@
 # Legivox RSS + Groq editorial preview
 
-- Generated: 2026-10-21T13:39:20+05:30
+- Generated: 2026-10-21T19:42:17+05:30
 - Model: openai/gpt-oss-20b
 - Mode: SINGLE-SLOT CANDIDATE REVIEW
 - X publishing: not performed by this script
@@ -12,52 +12,52 @@
 
 | Source | Recent feed items kept | Thin excerpts skipped | Result |
 |---|---:|---:|---|
-| TechCrunch | 20 | 7 | OK |
+| TechCrunch | 20 | 6 | OK |
 | The Verge | 10 | 0 | OK |
 | Ars Technica | 20 | 1 | OK |
 
 ## Drafts that passed the quality gate
 
-### Draft 1: Anthropic pitches AI safety bill that may block a model if 50+ people could be killed
+### Draft 1: Nvidia’s latest GPU driver brings a new way to speed up PC games
 
-- Category: Platform policy
-- Source: TechCrunch
-- Published: 2026-10-20T23:01:23+00:00
-- Editorial angle: Anthropic’s safety bill could restrict model release without a judge’s approval
-- Why selected: The bill’s requirement to involve a judge before blocking a model adds a legal gate that affects AI deployment strategies
-- Source evidence (exact quote): “forbids federal agencies from blocking a model's release without the permission of a judge”
-- Editorial scores: relevance 9/10, significance 8/10, originality 10/10
-- Article: https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/
+- Category: Developer tools
+- Source: The Verge
+- Published: 2026-10-21T13:09:26+00:00
+- Editorial angle: GPU driver enabling cloud shader compilation
+- Why selected: Nvidia driver 621.01 unlocks Microsoft’s cloud‑based shader delivery, a tangible change that can improve DX12 game performance for developers.
+- Source evidence (exact quote): “enables Microsoft’s new Advanced Shader Delivery technology to speed up game launches”
+- Editorial scores: relevance 8/10, significance 6/10, originality 7/10
+- Article: https://www.theverge.com/news/1015299/nvidia-driver-microsoft-advanced-shader-delivery-support
 
 Post copy with source link:
 
 ~~~text
-If passed, Anthropic’s bill would mandate a judge’s consent before a federal agency could stop a model’s release.
+Nvidia driver 621.01 unlocks Microsoft’s cloud‑based shader delivery, cutting launch times and stutter for DX12 games.
 
-https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/
+https://www.theverge.com/news/1015299/nvidia-driver-microsoft-advanced-shader-delivery-support
 ~~~
 
-- Plain character count including URL: 234/280
+- Plain character count including URL: 214/280
 
 ## Rejected selections
 
-- S01 · PHP warns it plans to release 2 emergency patches imminently: Evidence quote must be 20–100 characters and an exact excerpt from the supplied title or summary.
-- S05 · Google’s more personalized Gemini AI is heading to your car: Evidence quote must be 20–100 characters and an exact excerpt from the supplied title or summary.
+- S04 · OpenAI says an AI agent lied about disabling its safety monitoring system: Evidence quote must be 20–100 characters and an exact excerpt from the supplied title or summary.
+- S10 · A critical PHP vulnerability may take websites down today: Evidence quote must be 20–100 characters and an exact excerpt from the supplied title or summary.
 
 ## Candidate story list
 
-- S01 · Ars Technica: PHP warns it plans to release 2 emergency patches imminently ([source](https://arstechnica.com/security/2026/10/php-maintainers-tell-web-devs-to-prepare-themselves-for-critical-security-patches/))
-- S02 · The Verge: YouTube might be testing hiding the dislike button ([source](https://www.theverge.com/streaming/1015099/youtube-dislike-button-hide-menu))
-- S03 · The Verge: Judge dismisses Sam Altman’s sister’s sexual abuse lawsuit ([source](https://www.theverge.com/ai-artificial-intelligence/1014976/sam-altman-ann-altman-lawsuit-dismissed))
-- S04 · TechCrunch: Anthropic pitches AI safety bill that may block a model if 50+ people could be killed ([source](https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/))
-- S05 · The Verge: Google’s more personalized Gemini AI is heading to your car ([source](https://www.theverge.com/tech/1014999/google-gemini-ai-cars-android-auto))
-- S06 · TechCrunch: Hugging Face CEO warns that Netflix’s OpenAI hack documentary isn’t accurate ([source](https://techcrunch.com/2026/10/20/hugging-face-ceo-warns-that-netflixs-openai-hack-documentary-isnt-accurate/))
-- S07 · The Verge: Trump is giving Nick Shirley $10,000 and launching a $25 million fraud bounty program ([source](https://www.theverge.com/news/1014989/trump-fraud-tips-program-nick-shirley-influencers))
-- S08 · The Verge: Snap is paying Robert Downey Jr. to do the Iron Man thing ([source](https://www.theverge.com/tech/1014869/snap-specs-robert-downey-jr))
-- S09 · The Verge: Tesla and SpaceX are discussing a possible merger, Musk says ([source](https://www.theverge.com/science/1014984/spacex-tesla-merger-elon-musk-special-committees))
-- S10 · The Verge: SpaceX says big AI growth fueled revenue jump ([source](https://www.theverge.com/science/1014150/spacex-q3-2026-earnings))
-- S11 · Ars Technica: Merging SpaceX and Tesla would be a "good idea," Musk says ([source](https://arstechnica.com/space/2026/10/spacex-and-tesla-into-a-single-company-has-a-lot-of-merit-musk-says/))
-- S12 · Ars Technica: Cops raid office of RFK Jr. allies planning “unethical” vaccine trial on babies ([source](https://arstechnica.com/health/2026/10/cops-raid-office-of-rfk-jr-allies-planning-unethical-vaccine-trial-on-babies/))
+- S01 · The Verge: Now Serato DJ works on your iPhone ([source](https://www.theverge.com/tech/1015319/serato-dj-for-ios))
+- S02 · TechCrunch: Foursquare co-founder says equity holders saw no returns from the company’s acquisition ([source](https://techcrunch.com/2026/10/21/foursquare-co-founder-says-equity-holders-saw-no-returns-from-the-companys-acquisition/))
+- S03 · TechCrunch: AI promises productivity, but for managers, it’s mostly a headache for now ([source](https://techcrunch.com/2026/10/21/ai-promises-productivity-but-for-managers-its-mostly-a-headache-for-now-says-new-survey/))
+- S04 · The Verge: OpenAI says an AI agent lied about disabling its safety monitoring system ([source](https://www.theverge.com/ai-artificial-intelligence/1015316/openai-ai-agent-disabling-monitoring-systems))
+- S05 · TechCrunch: Heat pump tech is 170 years old. Pascal thinks it’s time for an update. ([source](https://techcrunch.com/2026/10/21/heat-pump-tech-is-170-years-old-pascal-thinks-its-time-for-an-update/))
+- S06 · The Verge: Nvidia’s latest GPU driver brings a new way to speed up PC games ([source](https://www.theverge.com/news/1015299/nvidia-driver-microsoft-advanced-shader-delivery-support))
+- S07 · The Verge: The iPhone Duo is a messy, expensive, good time ([source](https://www.theverge.com/tech/1015028/iphone-duo-review))
+- S08 · The Verge: I reviewed the iPhone Duo, ask me anything ([source](https://www.theverge.com/tech/1014316/iphone-duo-review-ama))
+- S09 · The Verge: Blink brings 4K to its low-cost security camera lineup ([source](https://www.theverge.com/tech/1015238/amazon-blink-4k-trail-security-camera-launch))
+- S10 · The Verge: A critical PHP vulnerability may take websites down today ([source](https://www.theverge.com/tech/1015257/php-vulnerability-patch-website-security-wordpress))
+- S11 · The Verge: I can’t get enough of the iPhone Duo’s matte inner display ([source](https://www.theverge.com/tech/1014709/iphone-duo-inner-screen-nano-texture-matte))
+- S12 · Ars Technica: PHP warns it plans to release 2 emergency patches imminently ([source](https://arstechnica.com/security/2026/10/php-maintainers-tell-web-devs-to-prepare-themselves-for-critical-security-patches/))
 
 ## Review notes
 
