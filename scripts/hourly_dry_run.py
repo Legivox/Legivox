@@ -549,6 +549,8 @@ def validate_draft(draft: dict, candidates_by_id: dict) -> tuple[dict | None, li
         overlap = len(takeaway_tokens & candidate_tokens) / max(1, len(takeaway_tokens))
         if takeaway_normalized not in body_normalized:
             reasons.append("The declared editorial_takeaway is not present as written in the post.")
+        elif len(sentences) >= 2 and normalize_for_match(sentences[1]) != takeaway_normalized:
+            reasons.append("The editorial takeaway must be the distinct second sentence, not a generic afterthought.")
         if len(takeaway_tokens) < 6:
             reasons.append("Editorial takeaway is too generic or short; it must add a concrete point.")
         if not any(term in takeaway_tokens for term in action_terms):
@@ -617,8 +619,9 @@ def validate_draft(draft: dict, candidates_by_id: dict) -> tuple[dict | None, li
     if unsupported_numbers:
         reasons.append("Unsupported numeric claim(s): " + ", ".join(unsupported_numbers[:3]))
 
-    if title_overlap(str(candidate.get("title") or ""), post) > 0.80:
-        reasons.append("Draft is too close to the source title")
+    first_sentence = sentences[0] if sentences else ""
+    if title_overlap(str(candidate.get("title") or ""), first_sentence) > 0.72:
+        reasons.append("Opening sentence is too close to the source headline; add a distinct editorial framing.")
 
     for url in URL_RE.findall(post):
         cleaned_url = url.rstrip(".,!?;:")
