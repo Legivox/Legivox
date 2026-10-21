@@ -289,8 +289,11 @@ def draft_candidates(candidates: list[dict]) -> tuple[list[dict], str | None]:
         "prices, licence terms, performance claims or adoption. Never claim an item is trending solely "
         "because it appeared in search results. Do not quote or imitate the source headline too closely. "
         "Write plain text suitable for X, with the source URL included exactly once. Maximum 280 characters "
-        "including that URL. Prefer a concrete use, implication or limitation over hype. If the supplied "
-        "evidence is too thin, return an empty post and low evidence score rather than guessing. "
+        "including that URL. Prefer a concrete use, implication or limitation over hype. Return a claim_evidence "
+        "array with one entry for every material factual claim in the post. Each entry must contain claim and quote; "
+        "quote must be an exact substring of the supplied title or summary and must directly support the stated claim. "
+        "Do not use an adjacent quote to justify a different claim. If a useful claim cannot be supported by an exact "
+        "quote, omit that claim; if the remaining post is not useful, return an empty post and a low evidence score. "
         "Return valid JSON only."
     )
     user = {
@@ -418,6 +421,7 @@ def validate_draft(draft: dict, candidates_by_id: dict) -> tuple[dict | None, li
         "angle": clean(draft.get("angle"))[:220],
         "rationale": clean(draft.get("rationale"))[:400],
         "evidence_quote": quote,
+        "claim_evidence": draft.get("claim_evidence", []),
         "scores": {key: int(scores[key]) for key in ("timeliness", "usefulness", "novelty", "evidence")},
         "editorial_score": round(score_total, 2),
         "character_count": len(post),
