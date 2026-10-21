@@ -72,6 +72,30 @@ class HourlyDryRunTests(unittest.TestCase):
         self.assertFalse(accepted["published_to_x"])
         self.assertEqual(accepted["status"], "draft_passed_needs_human_review")
 
+    def test_feature_list_without_separate_use_case_is_rejected(self):
+        draft = {
+            "candidate_id": "candidate-1",
+            "post_text": (
+                "Hookdeck's webhook integration skills guide coding agents through receiver setup, signature verification "
+                "and event handling. https://github.com/hookdeck/webhook-skills"
+            ),
+            "evidence_quote": "signature verification, and event handling",
+            "claim_evidence": [
+                {
+                    "claim": "Hookdeck webhook integration skills guide coding agents",
+                    "quote": "Hookdeck webhook integration skills for coding agents",
+                },
+                {
+                    "claim": "Guidance covers webhook receivers, signature verification and event handling",
+                    "quote": "webhook receivers, signature verification, and event handling",
+                },
+            ],
+            "scores": {"timeliness": 7, "usefulness": 8, "novelty": 7, "evidence": 8},
+        }
+        accepted, reasons = hourly.validate_draft(draft, {"candidate-1": self.candidate})
+        self.assertIsNone(accepted)
+        self.assertTrue(any("separate conditional/use-case sentence" in reason for reason in reasons))
+
     def test_draft_without_source_url_is_rejected(self):
         draft = {
             "candidate_id": "candidate-1",
