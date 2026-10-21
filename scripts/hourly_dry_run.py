@@ -407,6 +407,7 @@ def draft_candidates(candidates: list[dict]) -> tuple[list[dict], str | None]:
             "source": candidate["source"],
             "source_kind": candidate.get("source_kind"),
             "url": candidate["url"],
+            "copy_character_budget": max(0, MAX_POST_CHARS - len(str(candidate.get("url") or "")) - 2),
             "summary": str(candidate.get("summary") or "")[:900],
             "published_at": candidate.get("published_at"),
             "days_old": candidate.get("days_old"),
@@ -426,19 +427,21 @@ def draft_candidates(candidates: list[dict]) -> tuple[list[dict], str | None]:
         "adoption, performance, security outcomes or market demand. Repository push time is activity, not launch time. "
         "Lifetime stars do not establish trending velocity. Avoid hype, generic praise, clickbait and title rewrites. "
         "Never claim you personally used or tested a product. "
-        "Return fact_sentence and editorial_takeaway as separate fields. fact_sentence must be the first sentence of the post: "
-        "a clear, accurate description of one specific fact supported by the source summary/title. Do not start by repeating "
-        "the source headline; frame the fact with useful specificity. editorial_takeaway must be the second sentence: add a "
-        "candidate-specific practical test, trade-off, failure mode, implementation step or decision criterion. A generic "
-        "ending like 'Useful if you build apps' is not insight. If you cannot add specific value, assign insight below 7. "
-        "Do not smuggle a new product claim into the advice sentence. "
-        "Do not include any URLs in fact_sentence or editorial_takeaway; the code will append the exact source URL. "
-        "Keep both sentences together with the URL at 280 characters or fewer. No hashtags by default. "
-        "Every material factual claim in fact_sentence needs a claim_evidence entry. Each entry must have exactly these keys: "
-        "claim and quote. quote must be a non-empty, verbatim contiguous substring of the candidate title or summary that "
-        "directly supports the claim. Use the key quote, never an alternative key. Never return an empty quote. "
-        "If the supplied evidence does not support a fact, rewrite the fact more narrowly or give the draft low scores. "
-        "Return valid JSON only."
+        "Return fact_sentence and editorial_takeaway as separate fields. fact_sentence is the first sentence and must "
+        "describe exactly ONE fact/capability, not a feature list. Avoid conjunctions that combine separate claims and avoid "
+        "lists after phrases like 'including', 'such as', 'while', 'plus' or 'as well as'. Prefer a precise short fact over a "
+        "catalogue of features. Keep fact_sentence to 110 characters maximum. Do not start by repeating the source headline. "
+        "editorial_takeaway is the second sentence and must add a candidate-specific practical test, trade-off, failure mode, "
+        "implementation step or decision criterion. Keep it to 90 characters maximum. A generic ending like 'Useful if you "
+        "build apps' is not insight. If you cannot add specific value, assign insight below 7. Do not smuggle a new product "
+        "claim into the advice sentence. "
+        "Each candidate includes copy_character_budget, the maximum combined characters for fact_sentence plus "
+        "editorial_takeaway. Respect that exact budget. The code adds two spaces and the exact URL, so the complete post stays "
+        "at or below 280 characters. Do not include any URLs in the two sentences; the code appends the source URL. "
+        "No hashtags by default. Every factual claim in fact_sentence needs a claim_evidence entry. Each entry must have "
+        "exactly these keys: claim and quote. quote must be a non-empty, verbatim contiguous substring of the candidate "
+        "title or summary that directly supports the claim. Use the key quote, never an alternative key. Never return an "
+        "empty quote. If the evidence does not support the fact, rewrite it more narrowly. Return valid JSON only."
     )
     user = {
         "task": (
@@ -447,20 +450,23 @@ def draft_candidates(candidates: list[dict]) -> tuple[list[dict], str | None]:
             "evidence_quote, claim_evidence, rationale, and scores. scores must contain integers 1-10 for "
             "timeliness, usefulness, novelty, evidence, and insight. usefulness and insight must both be >= 7 "
             "only when the draft gives a concrete reader benefit and a specific take-away. "
-            "The code will assemble fact_sentence + editorial_takeaway + the source URL. Do not include the URL in either sentence. "
+            "The code will assemble fact_sentence + editorial_takeaway + the exact candidate URL. Do not include a URL in either sentence. "
+            "Each candidate includes copy_character_budget; fact_sentence and editorial_takeaway together must not exceed it. "
+            "Target fact_sentence 65-105 characters and editorial_takeaway 45-85 characters, while staying within the per-candidate budget. "
             "Use this exact evidence schema and do not leave quote empty: "
             "{\"claim_evidence\":[{\"claim\":\"The source says capability X\",\"quote\":\"exact source substring describing X\"}]}. "
-            "Every quote must be copied exactly from the candidate title/summary. For each factual claim in fact_sentence, "
-            "quote the exact wording that supports it. Do not quote the candidate title alone if the claim adds details from the summary. "
-            "The editorial_takeaway must be a complete second sentence and a specific recommendation, test or trade-off. "
-            "Examples of shape only, not text to copy: 'Test how retries handle duplicate events before putting it into production.'; "
-            "'The trade-off is easier setup versus another service to monitor.'; 'Compare session validation across your JS and Go APIs.' "
+            "Every quote must be copied exactly from the candidate title/summary. For every fact, the quote must directly support it. "
+            "Use one short quote for one narrow fact, not a long list of features. Do not quote the headline alone if the fact uses the summary. "
+            "The editorial_takeaway must be a complete second sentence, candidate-specific, and actionable. Examples of shape only, "
+            "not text to copy: 'Pair it with route-auth tests; one scan is not proof of security.'; "
+            "'Test duplicate-event handling before relying on webhook retries.'; "
+            "'Check session verification across your frontend and API languages.' "
             "Do not use generic closers such as 'Useful if you build apps' or 'Worth a look'. "
-            "Do not repeat the candidate headline in fact_sentence. If the candidate is a feature release, explain the exact behavior "
-            "that changed; if it's a tool, state its distinctive function; if it's an engineering article, explain the core lesson. "
+            "Do not repeat the candidate headline in fact_sentence. If a feature changed, name the behavior; if it's a tool, state "
+            "one distinctive function; if it's an engineering article, state one core lesson. "
             "Choose format from release, tool_discovery, practical_workflow, comparison, engineering_lesson. "
-            "If useful commentary can't be grounded in the candidate without inventing claims, return a low insight score. "
-            "If evidence is missing, use an empty drafts array rather than fabricating quote fields."
+            "If useful commentary cannot be grounded without inventing facts, score insight below 7. If evidence is missing, use "
+            "an empty drafts array rather than fabricating quotes."
         ),
         "candidates": condensed,
     }
@@ -509,6 +515,7 @@ def compose_post_from_fields(draft: dict, candidate: dict) -> dict:
         takeaway += "."
     prepared["fact_sentence"] = fact
     prepared["editorial_takeaway"] = takeaway
+    prepared["copy_character_budget"] = max(0, MAX_POST_CHARS - len(source_url) - 2)
     prepared["post_text"] = fact + " " + takeaway + " " + source_url
     return prepared
 
@@ -591,6 +598,12 @@ def validate_draft(draft: dict, candidates_by_id: dict) -> tuple[dict | None, li
             reasons.append("The editorial takeaway must be the distinct second sentence, not a generic afterthought.")
         if len(takeaway_tokens) < 6:
             reasons.append("Editorial takeaway is too generic or short; it must add a concrete point.")
+        if len(fact_sentence) > 110:
+            reasons.append("Fact sentence is too long; narrow it to one source-backed capability.")
+        if len(editorial_takeaway) > 90:
+            reasons.append("Editorial takeaway is too long; keep the analysis concrete and concise.")
+        if len(fact_sentence) + len(editorial_takeaway) > max(0, MAX_POST_CHARS - len(source_url) - 2):
+            reasons.append("Fact plus takeaway exceeds the per-link character budget.")
         if not any(term in takeaway_tokens for term in action_terms):
             reasons.append("Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.")
         if overlap < 0.12:
