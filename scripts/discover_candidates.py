@@ -178,15 +178,18 @@ def normalize_candidate(
     points = max(0, int(signal_values.get("points") or 0))
     comments = max(0, int(signal_values.get("comments") or 0))
     forks = max(0, int(signal_values.get("forks") or 0))
+    # Cumulative GitHub stars are deliberately a weak signal. They reward old,
+    # famous repositories and do not establish that something is trending now.
+    # Actual hourly star velocity is added later from persisted snapshots.
     traction_points = 0
     if stars:
-        traction_points += min(15, round(4.0 * math.log1p(stars)))
-        traction_points += min(3, round(math.log1p(forks)))
+        traction_points += min(4, round(1.0 * math.log1p(stars)))
+        traction_points += min(1, round(0.25 * math.log1p(forks)))
     if points:
-        traction_points += min(12, round(3.2 * math.log1p(points)))
+        traction_points += min(10, round(2.5 * math.log1p(points)))
     if comments:
         traction_points += min(4, round(1.2 * math.log1p(comments)))
-    traction_points = min(20, traction_points)
+    traction_points = min(12, traction_points)
 
     technical_markers = (
         "api", "sdk", "integration", "extension", "plugin", "automation", "workflow",
