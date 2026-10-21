@@ -401,10 +401,10 @@ EDITORIAL_CONTEXT = {
 
 
 def ensure_editorial_context(draft: dict, candidate: dict) -> dict:
-    """Add a conditional use-case sentence if missing and move the source URL to the end.
+    """Keep one source-grounded factual sentence and add deterministic editorial context.
 
-    The suffix is editorial context, not a new claim about the product. Factual details
-    still must pass the evidence validator below.
+    Model-written follow-up sentences are discarded because they can hide new factual
+    claims inside conditional wording. The fallback is a use-case lens, not a product fact.
     """
     updated = dict(draft)
     post = clean(updated.get("post_text"))
@@ -412,27 +412,35 @@ def ensure_editorial_context(draft: dict, candidate: dict) -> dict:
     if not post or not source_url or source_url not in post:
         return updated
 
-    # Normalize the order even when a model inserts the URL before its final sentence.
+    # Move the exact source URL to the end and split the model's copy into sentences.
     body = clean(post.replace(source_url, " "))
     sentences = [
         clean(sentence) for sentence in re.split(r"(?<=[.!?])\s+", body)
         if clean(sentence)
     ]
-    has_editorial_context = any(
-        any(sentence.casefold().startswith(marker) for marker in EDITORIAL_STARTERS)
-        for sentence in sentences
-    )
+    factual_sentences = [
+        sentence for sentence in sentences
+        if not any(sentence.casefold().startswith(marker) for marker in EDITORIAL_STARTERS)
+    ]
 
-    if not has_editorial_context:
+    # Use only the first factual sentence. Further feature sentences are dropped rather
+    # than passed through without their own source quotes.
+    fact = factual_sentences[0] if factual_sentences else body
+    fact = clean(fact)
+    if fact and fact[-1] not in ".!?":
+        fact += "."
+
+    source_name = str(candidate.get("source") or "")
+    category = str(candidate.get("primary_category") or "")
+    if source_name == "Shopify Developer Changelog":
+        context = "Useful if you're building or reviewing a Shopify app."
+    else:
         context = EDITORIAL_CONTEXT.get(
-            str(candidate.get("primary_category") or ""),
+            category,
             "Worth testing if it solves a recurring problem.",
         )
-        if body and body[-1] not in ".!?":
-            body += "."
-        body = clean(body + " " + context)
 
-    updated["post_text"] = clean(body + " " + source_url)
+    updated["post_text"] = clean(fact + " " + context + " " + source_url)
     return updated
 
 
