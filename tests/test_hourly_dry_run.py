@@ -39,10 +39,10 @@ class HourlyDryRunTests(unittest.TestCase):
     def test_valid_draft_passes_and_is_marked_for_human_review(self):
         draft = {
             "candidate_id": "candidate-1",
-            "fact_sentence": "Hookdeck's webhook integration skills: step-by-step guidance for receivers, signature verification and event handling for coding agents.",
+            "fact_sentence": "Hookdeck's webhook skills give step-by-step guidance for receivers, signature verification and event handling.",
             "post_text": (
-                "Hookdeck's webhook integration skills: step-by-step guidance for receivers, signature "
-                "verification and event handling for coding agents. For webhook receivers, add tests for invalid "
+                "Hookdeck's webhook skills give step-by-step guidance for receivers, signature verification and event "
+                "handling. For webhook receivers, add tests for invalid "
                 "signatures and duplicate events before shipping. https://github.com/hookdeck/webhook-skills"
             ),
             "format": "tool_discovery",
@@ -86,6 +86,14 @@ class HourlyDryRunTests(unittest.TestCase):
                          draft["fact_sentence"] + " " + draft["editorial_takeaway"])
         self.assertTrue(composed["post_text"].endswith(self.candidate["url"]))
         self.assertEqual(composed["post_text"].count(self.candidate["url"]), 1)
+        self.assertEqual(
+            composed["copy_character_budget"],
+            hourly.MAX_POST_CHARS - len(self.candidate["url"]) - 2,
+        )
+        self.assertLessEqual(
+            len(draft["fact_sentence"]) + len(draft["editorial_takeaway"]),
+            composed["copy_character_budget"],
+        )
         self.assertNotIn("generation_format_error", composed)
 
     def test_helper_preserves_copy_and_only_moves_source_url_to_end(self):
