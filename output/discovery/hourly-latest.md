@@ -1,12 +1,12 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-21T23:14:04+05:30
+- Run time (IST): 2026-10-21T23:16:23+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 124
-- Drafts passing local checks: 5
-- Outcome: **draft_ready_for_human_review**
-- Decision reason: At least one draft passed evidence, novelty, claim, URL and length checks. The best eligible option is shown first; nothing was published.
+- Candidate pool after freshness/diversity filters: 119
+- Drafts passing local checks: 0
+- Outcome: **skip**
+- Decision reason: All generated drafts failed the local evidence/quality checks; slot skipped.
 
 ## Source health
 
@@ -35,107 +35,43 @@
 
 ## Selected draft candidates
 
-### Draft option 1: IHUI-INF-AI/IHUI-AI
-
-- Category: security_and_self_hosting
-- Source: GitHub Search
-- Format: tool_discovery
-- Editorial score: 9.3/10
-- Model scores: timeliness 10/10, usefulness 9/10, novelty 8/10, evidence 10/10
-- Exact source evidence: “unifies 176 LLMs via LangGraph + MCP + A2A”
-- Why this angle: Highlights breadth of LLM integration and multi‑tenant data control
-- Source: https://github.com/IHUI-INF-AI/IHUI-AI
-
-Proposed post (not published):
-
-> IHUI-AI unifies 176 LLMs via LangGraph + MCP + A2A, offering a multi‑tenant RLS over 340 tables and a RAG knowledge base. It runs on Web, API, CLI, Desktop, Extension, Mobile, Miniapp. https://github.com/IHUI-INF-AI/IHUI-AI
-
-- Length: 223/280 raw characters
-- Required next step: human review of original source, licence/pricing where relevant, and all factual claims.
-
-### Draft option 2: Set product categories on custom line items in draft orders and order edits
-
-- Category: commerce_and_digital_products
-- Source: Shopify Developer Changelog
-- Format: engineering_lesson
-- Editorial score: 9.3/10
-- Model scores: timeliness 10/10, usefulness 9/10, novelty 8/10, evidence 10/10
-- Exact source evidence: “Starting with GraphQL Admin API version 2027-01 , you can assign a category”
-- Why this angle: Shows new API capability
-- Source: https://shopify.dev/changelog/set-product-categories-on-custom-line-items-in-draft-orders-and-order-edits
-
-Proposed post (not published):
-
-> GraphQL Admin API v2027-01 lets you set product categories on custom line items in draft orders and order edits, controlling tax treatment. https://shopify.dev/changelog/set-product-categories-on-custom-line-items-in-draft-orders-and-order-edits
-
-- Length: 245/280 raw characters
-- Required next step: human review of original source, licence/pricing where relevant, and all factual claims.
-
-### Draft option 3: PostHog/posthog
-
-- Category: data_and_growth
-- Source: GitHub Search
-- Format: tool_discovery
-- Editorial score: 9.1/10
-- Model scores: timeliness 10/10, usefulness 9/10, novelty 7/10, evidence 10/10
-- Exact source evidence: “AI observability, analytics, session replay, flags, experiments, error tracking, logs”
-- Why this angle: Shows breadth of monitoring features
-- Source: https://github.com/PostHog/posthog
-
-Proposed post (not published):
-
-> PostHog offers AI observability, analytics, session replay, flags, experiments, error tracking, logs, all controllable from Slack, web, desktop, or MCP. https://github.com/PostHog/posthog
-
-- Length: 187/280 raw characters
-- Required next step: human review of original source, licence/pricing where relevant, and all factual claims.
-
-### Draft option 4: Securing your app, together
-
-- Category: commerce_and_digital_products
-- Source: Shopify Developer Changelog
-- Format: practical_workflow
-- Editorial score: 8.9/10
-- Model scores: timeliness 10/10, usefulness 9/10, novelty 6/10, evidence 10/10
-- Exact source evidence: “Scan your app with our new security check”
-- Why this angle: Direct call to action for security
-- Source: https://shopify.dev/changelog/securing-your-app-together
-
-Proposed post (not published):
-
-> Shopify urges app devs to scan with AI Toolkit for Shopify‑specific vulnerabilities and migrate to expiring access tokens. Start now: https://shopify.dev/changelog/securing-your-app-together
-
-- Length: 190/280 raw characters
-- Required next step: human review of original source, licence/pricing where relevant, and all factual claims.
-
-### Draft option 5: Show HN: Gauge CLI – Open-Source Hillclimbing for Agent Experience
-
-- Category: ai_and_automation
-- Source: Hacker News
-- Format: tool_discovery
-- Editorial score: 8.8/10
-- Model scores: timeliness 10/10, usefulness 8/10, novelty 7/10, evidence 10/10
-- Exact source evidence: “open-source CLI for hillclimbing Agent Experience”
-- Why this angle: Highlights agent‑centric optimization
-- Source: https://github.com/gauge-sh/gauge-cli
-
-Proposed post (not published):
-
-> Gauge CLI optimizes agent experience by hillclimbing skills, SDKs, and docs. Point your agent at the repo to start. https://github.com/gauge-sh/gauge-cli
-
-- Length: 153/280 raw characters
-- Required next step: human review of original source, licence/pricing where relevant, and all factual claims.
+No candidate produced a draft that passed every local check. Skipping is intentional.
 
 ## Rejected draft options
 
-No model-generated drafts were rejected by the local validator.
+- ZaxbyHub/opencode-swarm: Claim quotes cover only 36% of substantive draft terms; cite more of the actual facts
+  - Rejected text: Architect‑centric agentic swarm plugin for OpenCode. Hub‑and‑spoke orchestration with SME consultation, code generation, and QA review. https://github.com/ZaxbyHub/opencode-swarm
+  - Model evidence quote: “Architect-centric agentic swarm plugin for OpenCode. Hub-and-spoke orchestration with SME consultation, code generation, and QA review.”
+  - Claim support: It is an agentic swarm plugin for OpenCode ← “Architect-centric agentic swarm plugin for OpenCode”
+  - Claim support: It uses hub‑and‑spoke orchestration ← “Hub-and-spoke orchestration”
+- Unknown candidate: Draft refers to an unknown candidate ID
+- langfuse/langfuse: Claim quotes cover only 33% of substantive draft terms; cite more of the actual facts
+  - Rejected text: Open source agent evals & observability: Trace, evaluate, and improve LLM applications with one open platform. https://github.com/langfuse/langfuse
+  - Model evidence quote: “Open source agent evals & observability: Trace, evaluate, and improve LLM applications with one open platform.”
+  - Claim support: It provides agent evals and observability ← “Open source agent evals & observability”
+- : Duplicate model response for candidate
+- Show HN: Worklicant – Lightweight ATS. Pay per Vacancy. AI Enabled: Claim quotes cover only 0% of substantive draft terms; cite more of the actual facts
+  - Rejected text: Worklicant: lightweight ATS, pay per vacancy, AI resume extraction, no registration needed. https://worklicant.com/
+  - Model evidence quote: “lightweight ATS for tech hiring. Pay per vacancy.”
+  - Claim support: It is a lightweight ATS ← “lightweight ATS”
+- : Duplicate model response for candidate
+- Exclusive > timestamp filters exclude the full second: novelty score is below the minimum 6/10; Claim quotes cover only 10% of substantive draft terms; cite more of the actual facts
+  - Rejected text: Shopify API v2026‑10: exclusive > timestamp filter excludes full second. Example: created_at:>'2026‑09‑15T12:00:02Z' no longer returns 12:00:02.500. https://shopify.dev/changelog/exclusive-timestamp-filters
+  - Model evidence quote: “As of API version 2026-10 , an exclusive lower bound ( > ) on a timestamp filter in the GraphQL Admin API search syntax excludes the full second.”
+  - Claim support: The > filter now excludes the full second ← “excludes the full second”
+- : Duplicate model response for candidate
+- Launch HN: Laminar (YC S24) – RL-trained model that finds errors in agent traces: Too many substantive terms are absent from the source title/summary: flow, gpt, needed, sol; Claim quotes cover only 0% of substantive draft terms; cite more of the actual facts
+  - Rejected text: Laminar flow‑1: RL‑trained model finds errors in agent traces, 23x cheaper than GPT‑6‑sol, no sampling needed. https://news.ycombinator.com/item?id=50154029
+  - Model evidence quote: “it matches GPT-6-sol in detection quality while being 23x cheaper.”
+  - Claim support: It matches GPT‑6‑sol in detection quality ← “matches GPT-6-sol in detection quality”
 
 ## Top discovery candidates considered
 
-- IHUI-INF-AI/IHUI-AI | GitHub Search | security_and_self_hosting | raw 88, adjusted 82 | https://github.com/IHUI-INF-AI/IHUI-AI
-- PostHog/posthog | GitHub Search | data_and_growth | raw 84, adjusted 78 | https://github.com/PostHog/posthog
-- Securing your app, together | Shopify Developer Changelog | commerce_and_digital_products | raw 78, adjusted 78 | https://shopify.dev/changelog/securing-your-app-together
-- xiaofang142/hivemtk | GitHub Search | security_and_self_hosting | raw 82, adjusted 76 | https://github.com/xiaofang142/hivemtk
-- FJRG2007/polaris | GitHub Search | data_and_growth | raw 83, adjusted 75 | https://github.com/FJRG2007/polaris
+- ZaxbyHub/opencode-swarm | GitHub Search | developer_tools | raw 89, adjusted 71 | https://github.com/ZaxbyHub/opencode-swarm
+- langfuse/langfuse | GitHub Search | data_and_growth | raw 85, adjusted 69 | https://github.com/langfuse/langfuse
+- Show HN: Worklicant – Lightweight ATS. Pay per Vacancy. AI Enabled | Hacker News | data_and_growth | raw 67, adjusted 69 | https://worklicant.com/
+- Exclusive > timestamp filters exclude the full second | Shopify Developer Changelog | commerce_and_digital_products | raw 68, adjusted 68 | https://shopify.dev/changelog/exclusive-timestamp-filters
+- Launch HN: Laminar (YC S24) – RL-trained model that finds errors in agent traces | Hacker News | ai_and_automation | raw 75, adjusted 67 | https://news.ycombinator.com/item?id=50154029
 
 ## Safety and interpretation
 

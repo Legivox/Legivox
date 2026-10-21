@@ -1,10 +1,10 @@
 {
-  "generated_at_ist": "2026-10-21T23:14:04+05:30",
-  "run_at_ist": "2026-10-21T23:14:04+05:30",
+  "generated_at_ist": "2026-10-21T23:16:23+05:30",
+  "run_at_ist": "2026-10-21T23:16:23+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 151,
-  "eligible_candidate_count": 124,
+  "candidate_count_raw": 148,
+  "eligible_candidate_count": 119,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
@@ -53,7 +53,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2257
+      "total_count": 2256
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
@@ -145,264 +145,181 @@
     }
   ],
   "daily_draft_cap": 10,
-  "daily_drafts_already_passed": 1,
-  "outcome": "draft_ready_for_human_review",
-  "decision_reason": "At least one draft passed evidence, novelty, claim, URL and length checks. The best eligible option is shown first; nothing was published.",
-  "passing_drafts": [
+  "daily_drafts_already_passed": 2,
+  "outcome": "skip",
+  "decision_reason": "All generated drafts failed the local evidence/quality checks; slot skipped.",
+  "passing_drafts": [],
+  "rejected_drafts": [
     {
-      "candidate_id": "769635c4c0589719",
-      "title": "IHUI-INF-AI/IHUI-AI",
-      "source": "GitHub Search",
-      "source_kind": "github_repository",
-      "url": "https://github.com/IHUI-INF-AI/IHUI-AI",
-      "category": "security_and_self_hosting",
-      "priority_score": 88,
-      "hourly_adjusted_score": 82,
-      "post_text": "IHUI-AI unifies 176 LLMs via LangGraph + MCP + A2A, offering a multi‑tenant RLS over 340 tables and a RAG knowledge base. It runs on Web, API, CLI, Desktop, Extension, Mobile, Miniapp. https://github.com/IHUI-INF-AI/IHUI-AI",
-      "format": "tool_discovery",
-      "audience": "software architects",
-      "angle": "full‑stack AI OS",
-      "rationale": "Highlights breadth of LLM integration and multi‑tenant data control",
-      "evidence_quote": "unifies 176 LLMs via LangGraph + MCP + A2A",
+      "candidate_id": "1de9d2b7f0cac8df",
+      "title": "ZaxbyHub/opencode-swarm",
+      "reasons": [
+        "Claim quotes cover only 36% of substantive draft terms; cite more of the actual facts"
+      ],
+      "proposed_text": "Architect‑centric agentic swarm plugin for OpenCode. Hub‑and‑spoke orchestration with SME consultation, code generation, and QA review. https://github.com/ZaxbyHub/opencode-swarm",
+      "evidence_quote": "Architect-centric agentic swarm plugin for OpenCode. Hub-and-spoke orchestration with SME consultation, code generation, and QA review.",
       "claim_evidence": [
         {
-          "claim": "unifies 176 LLMs via LangGraph + MCP + A2A",
-          "quote": "unifies 176 LLMs via LangGraph + MCP + A2A"
+          "claim": "It is an agentic swarm plugin for OpenCode",
+          "quote": "Architect-centric agentic swarm plugin for OpenCode"
+        },
+        {
+          "claim": "It uses hub‑and‑spoke orchestration",
+          "quote": "Hub-and-spoke orchestration"
         }
-      ],
-      "scores": {
-        "timeliness": 10,
-        "usefulness": 9,
-        "novelty": 8,
-        "evidence": 10
-      },
-      "editorial_score": 9.3,
-      "character_count": 223,
-      "status": "draft_passed_needs_human_review",
-      "published_to_x": false
+      ]
     },
     {
-      "candidate_id": "6e2781195adee0ca",
-      "title": "Set product categories on custom line items in draft orders and order edits",
-      "source": "Shopify Developer Changelog",
-      "source_kind": "official_changelog",
-      "url": "https://shopify.dev/changelog/set-product-categories-on-custom-line-items-in-draft-orders-and-order-edits",
-      "category": "commerce_and_digital_products",
-      "priority_score": 75,
-      "hourly_adjusted_score": 75,
-      "post_text": "GraphQL Admin API v2027-01 lets you set product categories on custom line items in draft orders and order edits, controlling tax treatment. https://shopify.dev/changelog/set-product-categories-on-custom-line-items-in-draft-orders-and-order-edits",
-      "format": "engineering_lesson",
-      "audience": "Shopify API developers",
-      "angle": "new tax feature",
-      "rationale": "Shows new API capability",
-      "evidence_quote": "Starting with GraphQL Admin API version 2027-01 , you can assign a category",
-      "claim_evidence": [
-        {
-          "claim": "GraphQL Admin API v2027-01 supports setting product categories on custom line items",
-          "quote": "Starting with GraphQL Admin API version 2027-01 , you can assign a category"
-        }
+      "candidate_id": "",
+      "title": "Unknown candidate",
+      "reasons": [
+        "Draft refers to an unknown candidate ID"
       ],
-      "scores": {
-        "timeliness": 10,
-        "usefulness": 9,
-        "novelty": 8,
-        "evidence": 10
-      },
-      "editorial_score": 9.3,
-      "character_count": 245,
-      "status": "draft_passed_needs_human_review",
-      "published_to_x": false
+      "proposed_text": "",
+      "evidence_quote": "",
+      "claim_evidence": []
     },
     {
-      "candidate_id": "fbfdec28cfffc04c",
-      "title": "PostHog/posthog",
-      "source": "GitHub Search",
-      "source_kind": "github_repository",
-      "url": "https://github.com/PostHog/posthog",
-      "category": "data_and_growth",
-      "priority_score": 84,
-      "hourly_adjusted_score": 78,
-      "post_text": "PostHog offers AI observability, analytics, session replay, flags, experiments, error tracking, logs, all controllable from Slack, web, desktop, or MCP. https://github.com/PostHog/posthog",
-      "format": "tool_discovery",
-      "audience": "product managers",
-      "angle": "all‑in‑one observability",
-      "rationale": "Shows breadth of monitoring features",
-      "evidence_quote": "AI observability, analytics, session replay, flags, experiments, error tracking, logs",
+      "candidate_id": "a5d406dab37933d6",
+      "title": "langfuse/langfuse",
+      "reasons": [
+        "Claim quotes cover only 33% of substantive draft terms; cite more of the actual facts"
+      ],
+      "proposed_text": "Open source agent evals & observability: Trace, evaluate, and improve LLM applications with one open platform. https://github.com/langfuse/langfuse",
+      "evidence_quote": "Open source agent evals & observability: Trace, evaluate, and improve LLM applications with one open platform.",
       "claim_evidence": [
         {
-          "claim": "provides AI observability, analytics, session replay, flags, experiments, error tracking, logs",
-          "quote": "AI observability, analytics, session replay, flags, experiments, error tracking, logs"
+          "claim": "It provides agent evals and observability",
+          "quote": "Open source agent evals & observability"
         }
-      ],
-      "scores": {
-        "timeliness": 10,
-        "usefulness": 9,
-        "novelty": 7,
-        "evidence": 10
-      },
-      "editorial_score": 9.1,
-      "character_count": 187,
-      "status": "draft_passed_needs_human_review",
-      "published_to_x": false
+      ]
     },
     {
-      "candidate_id": "55c557b3bc0267ca",
-      "title": "Securing your app, together",
-      "source": "Shopify Developer Changelog",
-      "source_kind": "official_changelog",
-      "url": "https://shopify.dev/changelog/securing-your-app-together",
-      "category": "commerce_and_digital_products",
-      "priority_score": 78,
-      "hourly_adjusted_score": 78,
-      "post_text": "Shopify urges app devs to scan with AI Toolkit for Shopify‑specific vulnerabilities and migrate to expiring access tokens. Start now: https://shopify.dev/changelog/securing-your-app-together",
-      "format": "practical_workflow",
-      "audience": "Shopify app developers",
-      "angle": "security checklist",
-      "rationale": "Direct call to action for security",
-      "evidence_quote": "Scan your app with our new security check",
-      "claim_evidence": [
-        {
-          "claim": "scan your app with new security check",
-          "quote": "Scan your app with our new security check"
-        }
-      ],
-      "scores": {
-        "timeliness": 10,
-        "usefulness": 9,
-        "novelty": 6,
-        "evidence": 10
-      },
-      "editorial_score": 8.9,
-      "character_count": 190,
-      "status": "draft_passed_needs_human_review",
-      "published_to_x": false
+      "candidate_id": "",
+      "reasons": [
+        "Duplicate model response for candidate"
+      ]
     },
     {
-      "candidate_id": "6669707f3d1e3930",
-      "title": "Show HN: Gauge CLI – Open-Source Hillclimbing for Agent Experience",
-      "source": "Hacker News",
-      "source_kind": "hacker_news",
-      "url": "https://github.com/gauge-sh/gauge-cli",
-      "category": "ai_and_automation",
-      "priority_score": 78,
-      "hourly_adjusted_score": 72,
-      "post_text": "Gauge CLI optimizes agent experience by hillclimbing skills, SDKs, and docs. Point your agent at the repo to start. https://github.com/gauge-sh/gauge-cli",
-      "format": "tool_discovery",
-      "audience": "AI developers",
-      "angle": "agent‑friendly CLI",
-      "rationale": "Highlights agent‑centric optimization",
-      "evidence_quote": "open-source CLI for hillclimbing Agent Experience",
+      "candidate_id": "3ea5bda9b71839af",
+      "title": "Show HN: Worklicant – Lightweight ATS. Pay per Vacancy. AI Enabled",
+      "reasons": [
+        "Claim quotes cover only 0% of substantive draft terms; cite more of the actual facts"
+      ],
+      "proposed_text": "Worklicant: lightweight ATS, pay per vacancy, AI resume extraction, no registration needed. https://worklicant.com/",
+      "evidence_quote": "lightweight ATS for tech hiring. Pay per vacancy.",
       "claim_evidence": [
         {
-          "claim": "open-source CLI for hillclimbing Agent Experience",
-          "quote": "open-source CLI for hillclimbing Agent Experience"
+          "claim": "It is a lightweight ATS",
+          "quote": "lightweight ATS"
         }
+      ]
+    },
+    {
+      "candidate_id": "",
+      "reasons": [
+        "Duplicate model response for candidate"
+      ]
+    },
+    {
+      "candidate_id": "4ef43ce31f0c5ea0",
+      "title": "Exclusive > timestamp filters exclude the full second",
+      "reasons": [
+        "novelty score is below the minimum 6/10",
+        "Claim quotes cover only 10% of substantive draft terms; cite more of the actual facts"
       ],
-      "scores": {
-        "timeliness": 10,
-        "usefulness": 8,
-        "novelty": 7,
-        "evidence": 10
-      },
-      "editorial_score": 8.8,
-      "character_count": 153,
-      "status": "draft_passed_needs_human_review",
-      "published_to_x": false
+      "proposed_text": "Shopify API v2026‑10: exclusive > timestamp filter excludes full second. Example: created_at:>'2026‑09‑15T12:00:02Z' no longer returns 12:00:02.500. https://shopify.dev/changelog/exclusive-timestamp-filters",
+      "evidence_quote": "As of API version 2026-10 , an exclusive lower bound ( > ) on a timestamp filter in the GraphQL Admin API search syntax excludes the full second.",
+      "claim_evidence": [
+        {
+          "claim": "The > filter now excludes the full second",
+          "quote": "excludes the full second"
+        }
+      ]
+    },
+    {
+      "candidate_id": "",
+      "reasons": [
+        "Duplicate model response for candidate"
+      ]
+    },
+    {
+      "candidate_id": "6a23445afa1896da",
+      "title": "Launch HN: Laminar (YC S24) – RL-trained model that finds errors in agent traces",
+      "reasons": [
+        "Too many substantive terms are absent from the source title/summary: flow, gpt, needed, sol",
+        "Claim quotes cover only 0% of substantive draft terms; cite more of the actual facts"
+      ],
+      "proposed_text": "Laminar flow‑1: RL‑trained model finds errors in agent traces, 23x cheaper than GPT‑6‑sol, no sampling needed. https://news.ycombinator.com/item?id=50154029",
+      "evidence_quote": "it matches GPT-6-sol in detection quality while being 23x cheaper.",
+      "claim_evidence": [
+        {
+          "claim": "It matches GPT‑6‑sol in detection quality",
+          "quote": "matches GPT-6-sol in detection quality"
+        }
+      ]
     }
   ],
-  "rejected_drafts": [],
   "candidate_shortlist": [
     {
-      "id": "769635c4c0589719",
-      "title": "IHUI-INF-AI/IHUI-AI",
-      "url": "https://github.com/IHUI-INF-AI/IHUI-AI",
+      "id": "1de9d2b7f0cac8df",
+      "title": "ZaxbyHub/opencode-swarm",
+      "url": "https://github.com/ZaxbyHub/opencode-swarm",
       "source": "GitHub Search",
-      "primary_category": "security_and_self_hosting",
-      "priority_score": 88,
-      "hourly_adjusted_score": 82,
-      "published_at": "2026-10-21T17:43:40+00:00",
+      "primary_category": "developer_tools",
+      "priority_score": 89,
+      "hourly_adjusted_score": 71,
+      "published_at": "2026-10-21T17:44:46+00:00",
       "days_old": 0.0
     },
     {
-      "id": "fbfdec28cfffc04c",
-      "title": "PostHog/posthog",
-      "url": "https://github.com/PostHog/posthog",
+      "id": "a5d406dab37933d6",
+      "title": "langfuse/langfuse",
+      "url": "https://github.com/langfuse/langfuse",
       "source": "GitHub Search",
       "primary_category": "data_and_growth",
-      "priority_score": 84,
-      "hourly_adjusted_score": 78,
-      "published_at": "2026-10-21T17:44:02+00:00",
+      "priority_score": 85,
+      "hourly_adjusted_score": 69,
+      "published_at": "2026-10-21T17:45:59+00:00",
       "days_old": 0.0
     },
     {
-      "id": "55c557b3bc0267ca",
-      "title": "Securing your app, together",
-      "url": "https://shopify.dev/changelog/securing-your-app-together",
+      "id": "3ea5bda9b71839af",
+      "title": "Show HN: Worklicant – Lightweight ATS. Pay per Vacancy. AI Enabled",
+      "url": "https://worklicant.com/",
+      "source": "Hacker News",
+      "primary_category": "data_and_growth",
+      "priority_score": 67,
+      "hourly_adjusted_score": 69,
+      "published_at": "2026-10-20T16:07:06+00:00",
+      "days_old": 1.07
+    },
+    {
+      "id": "4ef43ce31f0c5ea0",
+      "title": "Exclusive > timestamp filters exclude the full second",
+      "url": "https://shopify.dev/changelog/exclusive-timestamp-filters",
       "source": "Shopify Developer Changelog",
       "primary_category": "commerce_and_digital_products",
-      "priority_score": 78,
-      "hourly_adjusted_score": 78,
-      "published_at": "2026-10-20T19:00:00+00:00",
-      "days_old": 0.95
+      "priority_score": 68,
+      "hourly_adjusted_score": 68,
+      "published_at": "2026-10-19T18:00:00+00:00",
+      "days_old": 1.99
     },
     {
-      "id": "2a2ccd4444c2cf2c",
-      "title": "xiaofang142/hivemtk",
-      "url": "https://github.com/xiaofang142/hivemtk",
-      "source": "GitHub Search",
-      "primary_category": "security_and_self_hosting",
-      "priority_score": 82,
-      "hourly_adjusted_score": 76,
-      "published_at": "2026-10-21T17:43:23+00:00",
-      "days_old": 0.0
-    },
-    {
-      "id": "b9e8a6ba2cb082a7",
-      "title": "FJRG2007/polaris",
-      "url": "https://github.com/FJRG2007/polaris",
-      "source": "GitHub Search",
-      "primary_category": "data_and_growth",
-      "priority_score": 83,
-      "hourly_adjusted_score": 75,
-      "published_at": "2026-10-21T17:38:18+00:00",
-      "days_old": 0.0
+      "id": "6a23445afa1896da",
+      "title": "Launch HN: Laminar (YC S24) – RL-trained model that finds errors in agent traces",
+      "url": "https://news.ycombinator.com/item?id=50154029",
+      "source": "Hacker News",
+      "primary_category": "ai_and_automation",
+      "priority_score": 75,
+      "hourly_adjusted_score": 67,
+      "published_at": "2026-10-19T16:00:18+00:00",
+      "days_old": 2.07
     }
   ],
-  "recommended_draft": {
-    "candidate_id": "769635c4c0589719",
-    "title": "IHUI-INF-AI/IHUI-AI",
-    "source": "GitHub Search",
-    "source_kind": "github_repository",
-    "url": "https://github.com/IHUI-INF-AI/IHUI-AI",
-    "category": "security_and_self_hosting",
-    "priority_score": 88,
-    "hourly_adjusted_score": 82,
-    "post_text": "IHUI-AI unifies 176 LLMs via LangGraph + MCP + A2A, offering a multi‑tenant RLS over 340 tables and a RAG knowledge base. It runs on Web, API, CLI, Desktop, Extension, Mobile, Miniapp. https://github.com/IHUI-INF-AI/IHUI-AI",
-    "format": "tool_discovery",
-    "audience": "software architects",
-    "angle": "full‑stack AI OS",
-    "rationale": "Highlights breadth of LLM integration and multi‑tenant data control",
-    "evidence_quote": "unifies 176 LLMs via LangGraph + MCP + A2A",
-    "claim_evidence": [
-      {
-        "claim": "unifies 176 LLMs via LangGraph + MCP + A2A",
-        "quote": "unifies 176 LLMs via LangGraph + MCP + A2A"
-      }
-    ],
-    "scores": {
-      "timeliness": 10,
-      "usefulness": 9,
-      "novelty": 8,
-      "evidence": 10
-    },
-    "editorial_score": 9.3,
-    "character_count": 223,
-    "status": "draft_passed_needs_human_review",
-    "published_to_x": false
-  },
   "state_summary": {
     "used_candidates_in_cooldown": 2,
-    "recently_attempted_candidates": 15,
+    "recently_attempted_candidates": 20,
     "recent_draft_passes_today": 2
   }
 }
