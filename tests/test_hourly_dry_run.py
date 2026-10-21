@@ -249,6 +249,36 @@ class HourlyDryRunTests(unittest.TestCase):
         self.assertTrue(hourly.is_fresh(weekly, 14))
         self.assertTrue(hourly.is_fresh(weekly, 7))
 
+    def test_github_star_velocity_requires_persisted_20_to_36_hour_baseline(self):
+        state = hourly.empty_state()
+        candidate = dict(self.candidate)
+        candidate["source_kind"] = "github_repository"
+        candidate["signals"] = {"stars": 100}
+        hourly.update_github_star_velocity([candidate], state, self.now)
+        self.assertIsNone(candidate.get("stars_delta_24h"))
+        self.assertEqual(len(state["repo_star_snapshots"]["candidate-1"]), 1)
+
+        candidate["signals"]["stars"] = 120
+        later = self.now + timedelta(hours=24)
+        hourly.update_github_star_velocity([candidate], state, later)
+        self.assertEqual(candidate["stars_delta_24h"], 20)
+        self.assertEqual(candidate["stars_delta_baseline_hours"], 24.0)
+        self.assertEqual(candidate["stars_growth_percent_24h"], 20.0)
+        self.assertEqual(len(state["repo_star_snapshots"]["candidate-1"]), 2)
+
+    def test_star_velocity_uses_recent_baseline_and_does_not_claim_negative_growth(self):
+        state = hourly.empty_state()
+        candidate = dict(self.candidate)
+        candidate["source_kind"] = "github_repository"
+        candidate["signals"] = {"stars": 100}
+        hourly.update_github_star_velocity([candidate], state, self.now)
+
+        candidate["signals"]["stars"] = 98
+        later = self.now + timedelta(hours=23)
+        hourly.update_github_star_velocity([candidate], state, later)
+        self.assertEqual(candidate["stars_delta_24h"], 0)
+        self.assertEqual(candidate["stars_growth_percent_24h"], 0.0)
+
     def test_daily_caps_use_india_calendar_day_not_rolling_24_hours(self):
         state = hourly.empty_state()
         state["events"] = [
