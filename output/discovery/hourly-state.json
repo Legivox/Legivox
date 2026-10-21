@@ -54,6 +54,19 @@
         "6a23445afa1896da"
       ],
       "published_to_x": false
+    },
+    {
+      "timestamp_utc": "2026-10-21T17:46:38+00:00",
+      "run_at_ist": "2026-10-21T23:16:38+05:30",
+      "status": "draft_passed",
+      "candidate_id": "05f748dbdda77060",
+      "title": "callstack/agent-device",
+      "source": "GitHub Search",
+      "source_group": "GitHub Search",
+      "category": "ai_and_automation",
+      "editorial_score": 8.6,
+      "post_text": "callstack/agent-device – CLI, MCP server, and typed Node.js API for automating iOS, Android, HarmonyOS, TV, web, macOS, and Linux. https://github.com/callstack/agent-device",
+      "published_to_x": false
     }
   ],
   "attempted_candidates": {
@@ -76,10 +89,16 @@
     "a5d406dab37933d6": "2026-10-21T17:46:23+00:00",
     "3ea5bda9b71839af": "2026-10-21T17:46:23+00:00",
     "4ef43ce31f0c5ea0": "2026-10-21T17:46:23+00:00",
-    "6a23445afa1896da": "2026-10-21T17:46:23+00:00"
+    "6a23445afa1896da": "2026-10-21T17:46:23+00:00",
+    "58ef1f1fda005daf": "2026-10-21T17:46:38+00:00",
+    "1071cf4e7981de82": "2026-10-21T17:46:38+00:00",
+    "05f748dbdda77060": "2026-10-21T17:46:38+00:00",
+    "9a082b67929ac272": "2026-10-21T17:46:38+00:00",
+    "464b242e08c88b0c": "2026-10-21T17:46:38+00:00"
   },
   "used_candidates": {
     "067f046a6a82cf3a": "2026-10-21T17:40:24+00:00",
-    "769635c4c0589719": "2026-10-21T17:44:04+00:00"
+    "769635c4c0589719": "2026-10-21T17:44:04+00:00",
+    "05f748dbdda77060": "2026-10-21T17:46:38+00:00"
   }
 }

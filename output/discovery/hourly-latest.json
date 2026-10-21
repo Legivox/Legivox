@@ -1,10 +1,10 @@
 {
-  "generated_at_ist": "2026-10-21T23:16:23+05:30",
-  "run_at_ist": "2026-10-21T23:16:23+05:30",
+  "generated_at_ist": "2026-10-21T23:16:38+05:30",
+  "run_at_ist": "2026-10-21T23:16:38+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 148,
-  "eligible_candidate_count": 119,
+  "candidate_count_raw": 90,
+  "eligible_candidate_count": 66,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
@@ -16,16 +16,16 @@
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
-      "items_kept": 10,
-      "status": "ok",
-      "total_count": 703
+      "items_kept": 0,
+      "status": "error",
+      "error": "HTTPError"
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
       "kind": "github_repository",
-      "items_kept": 10,
-      "status": "ok",
-      "total_count": 230
+      "items_kept": 0,
+      "status": "error",
+      "error": "HTTPError"
     },
     {
       "source": "GitHub Search · github-developer-tools",
@@ -37,9 +37,9 @@
     {
       "source": "GitHub Search · github-ecommerce-digital-products",
       "kind": "github_repository",
-      "items_kept": 10,
-      "status": "ok",
-      "total_count": 256
+      "items_kept": 0,
+      "status": "error",
+      "error": "HTTPError"
     },
     {
       "source": "GitHub Search · github-mcp-servers",
@@ -51,23 +51,23 @@
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
-      "items_kept": 10,
-      "status": "ok",
-      "total_count": 2256
+      "items_kept": 0,
+      "status": "error",
+      "error": "HTTPError"
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
       "kind": "github_repository",
-      "items_kept": 10,
-      "status": "ok",
-      "total_count": 76
+      "items_kept": 0,
+      "status": "error",
+      "error": "HTTPError"
     },
     {
       "source": "GitHub Search · github-workflow-automation",
       "kind": "github_repository",
-      "items_kept": 10,
-      "status": "ok",
-      "total_count": 182
+      "items_kept": 0,
+      "status": "error",
+      "error": "HTTPError"
     },
     {
       "source": "Hacker News · hn-analytics-growth",
@@ -146,180 +146,196 @@
   ],
   "daily_draft_cap": 10,
   "daily_drafts_already_passed": 2,
-  "outcome": "skip",
-  "decision_reason": "All generated drafts failed the local evidence/quality checks; slot skipped.",
-  "passing_drafts": [],
+  "outcome": "draft_ready_for_human_review",
+  "decision_reason": "At least one draft passed evidence, novelty, claim, URL and length checks. The best eligible option is shown first; nothing was published.",
+  "passing_drafts": [
+    {
+      "candidate_id": "05f748dbdda77060",
+      "title": "callstack/agent-device",
+      "source": "GitHub Search",
+      "source_kind": "github_repository",
+      "url": "https://github.com/callstack/agent-device",
+      "category": "ai_and_automation",
+      "priority_score": 86,
+      "hourly_adjusted_score": 62,
+      "post_text": "callstack/agent-device – CLI, MCP server, and typed Node.js API for automating iOS, Android, HarmonyOS, TV, web, macOS, and Linux. https://github.com/callstack/agent-device",
+      "format": "engineering_lesson",
+      "audience": "automation engineers",
+      "angle": "cross‑platform agent tooling",
+      "rationale": "Shows breadth of supported platforms",
+      "evidence_quote": "CLI, MCP server, and typed Node.js API for iOS, Android, HarmonyOS, TV, web, macOS, and Linux",
+      "claim_evidence": [
+        {
+          "claim": "Agent‑device offers CLI, MCP server, and Node.js API for multiple OS",
+          "quote": "CLI, MCP server, and typed Node.js API for iOS, Android, HarmonyOS, TV, web, macOS, and Linux"
+        }
+      ],
+      "scores": {
+        "timeliness": 9,
+        "usefulness": 9,
+        "novelty": 7,
+        "evidence": 9
+      },
+      "editorial_score": 8.6,
+      "character_count": 172,
+      "status": "draft_passed_needs_human_review",
+      "published_to_x": false
+    }
+  ],
   "rejected_drafts": [
     {
-      "candidate_id": "1de9d2b7f0cac8df",
-      "title": "ZaxbyHub/opencode-swarm",
+      "candidate_id": "58ef1f1fda005daf",
+      "title": "Show HN: Slap Alert",
       "reasons": [
-        "Claim quotes cover only 36% of substantive draft terms; cite more of the actual facts"
+        "Claim quotes cover only 12% of substantive draft terms; cite more of the actual facts"
       ],
-      "proposed_text": "Architect‑centric agentic swarm plugin for OpenCode. Hub‑and‑spoke orchestration with SME consultation, code generation, and QA review. https://github.com/ZaxbyHub/opencode-swarm",
-      "evidence_quote": "Architect-centric agentic swarm plugin for OpenCode. Hub-and-spoke orchestration with SME consultation, code generation, and QA review.",
+      "proposed_text": "Show HN: Slap Alert – a native Mac menu‑bar app that slaps a sticky note on your screen for every sale. Works with Stripe, Paddle, RevenueCat, Shopify, App Store, Polar, Dodo, win cards, and shows weekly sales wall. https://slapalert.com/",
+      "evidence_quote": "It's a native Mac menu-bar app for macOS 14 and up",
       "claim_evidence": [
         {
-          "claim": "It is an agentic swarm plugin for OpenCode",
-          "quote": "Architect-centric agentic swarm plugin for OpenCode"
-        },
-        {
-          "claim": "It uses hub‑and‑spoke orchestration",
-          "quote": "Hub-and-spoke orchestration"
+          "claim": "Slap Alert is a native Mac menu‑bar app",
+          "quote": "It's a native Mac menu-bar app for macOS 14 and up"
         }
       ]
     },
     {
-      "candidate_id": "",
-      "title": "Unknown candidate",
+      "candidate_id": "1071cf4e7981de82",
+      "title": "Show HN: IDE for a general-purpose visual programming language \"Pipe\"",
       "reasons": [
-        "Draft refers to an unknown candidate ID"
+        "Too many substantive terms are absent from the source title/summary: needed, stores, web"
       ],
-      "proposed_text": "",
-      "evidence_quote": "",
-      "claim_evidence": []
-    },
-    {
-      "candidate_id": "a5d406dab37933d6",
-      "title": "langfuse/langfuse",
-      "reasons": [
-        "Claim quotes cover only 33% of substantive draft terms; cite more of the actual facts"
-      ],
-      "proposed_text": "Open source agent evals & observability: Trace, evaluate, and improve LLM applications with one open platform. https://github.com/langfuse/langfuse",
-      "evidence_quote": "Open source agent evals & observability: Trace, evaluate, and improve LLM applications with one open platform.",
+      "proposed_text": "Show HN: Pipe IDE – a web‑based visual programming IDE that stores all data locally, no account needed. Try it on https://www.pipelang.com/",
+      "evidence_quote": "Pipe IDE requires no account - all data is stored locally in your browser's database",
       "claim_evidence": [
         {
-          "claim": "It provides agent evals and observability",
-          "quote": "Open source agent evals & observability"
+          "claim": "Pipe IDE stores data locally",
+          "quote": "Pipe IDE requires no account - all data is stored locally in your browser's database"
         }
       ]
     },
     {
-      "candidate_id": "",
+      "candidate_id": "9a082b67929ac272",
+      "title": "xerj-org/xerj",
       "reasons": [
-        "Duplicate model response for candidate"
-      ]
-    },
-    {
-      "candidate_id": "3ea5bda9b71839af",
-      "title": "Show HN: Worklicant – Lightweight ATS. Pay per Vacancy. AI Enabled",
-      "reasons": [
-        "Claim quotes cover only 0% of substantive draft terms; cite more of the actual facts"
+        "Claim quotes cover only 6% of substantive draft terms; cite more of the actual facts"
       ],
-      "proposed_text": "Worklicant: lightweight ATS, pay per vacancy, AI resume extraction, no registration needed. https://worklicant.com/",
-      "evidence_quote": "lightweight ATS for tech hiring. Pay per vacancy.",
+      "proposed_text": "xerj – a Rust binary that indexes code, docs, logs, JSONL/CSV, PDFs for BM25 full‑text, vector, hybrid search, code search without grep, and RAG. https://github.com/xerj-org/xerj",
+      "evidence_quote": "Local-first search engine and MCP server for AI agents",
       "claim_evidence": [
         {
-          "claim": "It is a lightweight ATS",
-          "quote": "lightweight ATS"
+          "claim": "xerj is a local‑first search engine for AI agents",
+          "quote": "Local-first search engine and MCP server for AI agents"
         }
       ]
     },
     {
-      "candidate_id": "",
+      "candidate_id": "464b242e08c88b0c",
+      "title": "hibi",
       "reasons": [
-        "Duplicate model response for candidate"
-      ]
-    },
-    {
-      "candidate_id": "4ef43ce31f0c5ea0",
-      "title": "Exclusive > timestamp filters exclude the full second",
-      "reasons": [
-        "novelty score is below the minimum 6/10",
-        "Claim quotes cover only 10% of substantive draft terms; cite more of the actual facts"
+        "novelty score is below the minimum 6/10"
       ],
-      "proposed_text": "Shopify API v2026‑10: exclusive > timestamp filter excludes full second. Example: created_at:>'2026‑09‑15T12:00:02Z' no longer returns 12:00:02.500. https://shopify.dev/changelog/exclusive-timestamp-filters",
-      "evidence_quote": "As of API version 2026-10 , an exclusive lower bound ( > ) on a timestamp filter in the GraphQL Admin API search syntax excludes the full second.",
+      "proposed_text": "hibi – an open‑source Obsidian alternative. https://www.producthunt.com/products/hibi",
+      "evidence_quote": "an open-source obsidian alternative",
       "claim_evidence": [
         {
-          "claim": "The > filter now excludes the full second",
-          "quote": "excludes the full second"
-        }
-      ]
-    },
-    {
-      "candidate_id": "",
-      "reasons": [
-        "Duplicate model response for candidate"
-      ]
-    },
-    {
-      "candidate_id": "6a23445afa1896da",
-      "title": "Launch HN: Laminar (YC S24) – RL-trained model that finds errors in agent traces",
-      "reasons": [
-        "Too many substantive terms are absent from the source title/summary: flow, gpt, needed, sol",
-        "Claim quotes cover only 0% of substantive draft terms; cite more of the actual facts"
-      ],
-      "proposed_text": "Laminar flow‑1: RL‑trained model finds errors in agent traces, 23x cheaper than GPT‑6‑sol, no sampling needed. https://news.ycombinator.com/item?id=50154029",
-      "evidence_quote": "it matches GPT-6-sol in detection quality while being 23x cheaper.",
-      "claim_evidence": [
-        {
-          "claim": "It matches GPT‑6‑sol in detection quality",
-          "quote": "matches GPT-6-sol in detection quality"
+          "claim": "hibi is an open‑source Obsidian alternative",
+          "quote": "an open-source obsidian alternative"
         }
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "1de9d2b7f0cac8df",
-      "title": "ZaxbyHub/opencode-swarm",
-      "url": "https://github.com/ZaxbyHub/opencode-swarm",
-      "source": "GitHub Search",
-      "primary_category": "developer_tools",
-      "priority_score": 89,
-      "hourly_adjusted_score": 71,
-      "published_at": "2026-10-21T17:44:46+00:00",
-      "days_old": 0.0
-    },
-    {
-      "id": "a5d406dab37933d6",
-      "title": "langfuse/langfuse",
-      "url": "https://github.com/langfuse/langfuse",
-      "source": "GitHub Search",
-      "primary_category": "data_and_growth",
-      "priority_score": 85,
-      "hourly_adjusted_score": 69,
-      "published_at": "2026-10-21T17:45:59+00:00",
-      "days_old": 0.0
-    },
-    {
-      "id": "3ea5bda9b71839af",
-      "title": "Show HN: Worklicant – Lightweight ATS. Pay per Vacancy. AI Enabled",
-      "url": "https://worklicant.com/",
+      "id": "58ef1f1fda005daf",
+      "title": "Show HN: Slap Alert",
+      "url": "https://slapalert.com/",
       "source": "Hacker News",
-      "primary_category": "data_and_growth",
-      "priority_score": 67,
-      "hourly_adjusted_score": 69,
-      "published_at": "2026-10-20T16:07:06+00:00",
-      "days_old": 1.07
-    },
-    {
-      "id": "4ef43ce31f0c5ea0",
-      "title": "Exclusive > timestamp filters exclude the full second",
-      "url": "https://shopify.dev/changelog/exclusive-timestamp-filters",
-      "source": "Shopify Developer Changelog",
       "primary_category": "commerce_and_digital_products",
-      "priority_score": 68,
-      "hourly_adjusted_score": 68,
-      "published_at": "2026-10-19T18:00:00+00:00",
-      "days_old": 1.99
+      "priority_score": 65,
+      "hourly_adjusted_score": 67,
+      "published_at": "2026-10-20T18:23:27+00:00",
+      "days_old": 0.97
     },
     {
-      "id": "6a23445afa1896da",
-      "title": "Launch HN: Laminar (YC S24) – RL-trained model that finds errors in agent traces",
-      "url": "https://news.ycombinator.com/item?id=50154029",
+      "id": "1071cf4e7981de82",
+      "title": "Show HN: IDE for a general-purpose visual programming language \"Pipe\"",
+      "url": "https://www.pipelang.com/",
       "source": "Hacker News",
-      "primary_category": "ai_and_automation",
-      "priority_score": 75,
-      "hourly_adjusted_score": 67,
-      "published_at": "2026-10-19T16:00:18+00:00",
-      "days_old": 2.07
+      "primary_category": "product_and_workflow_tools",
+      "priority_score": 64,
+      "hourly_adjusted_score": 66,
+      "published_at": "2026-10-21T16:46:23+00:00",
+      "days_old": 0.04
+    },
+    {
+      "id": "ec39b84f1d0ff862",
+      "title": "Show HN: PatchWave - Add static analysis and automerge to Dependabot",
+      "url": "https://patchwave.ai/",
+      "source": "Hacker News",
+      "primary_category": "product_and_workflow_tools",
+      "priority_score": 64,
+      "hourly_adjusted_score": 66,
+      "published_at": "2026-10-20T14:08:09+00:00",
+      "days_old": 1.15
+    },
+    {
+      "id": "60cbdadf4f18ce64",
+      "title": "Show HN: Riff – An iPhone calendar you zoom instead of switching views",
+      "url": "https://riffcalendar.com",
+      "source": "Hacker News",
+      "primary_category": "product_and_workflow_tools",
+      "priority_score": 64,
+      "hourly_adjusted_score": 66,
+      "published_at": "2026-10-21T16:25:02+00:00",
+      "days_old": 0.06
+    },
+    {
+      "id": "421cc8c7608466e6",
+      "title": "Addressing EU Cyber Resilience Act",
+      "url": "https://news.ycombinator.com/item?id=50157847",
+      "source": "Hacker News",
+      "primary_category": "product_and_workflow_tools",
+      "priority_score": 65,
+      "hourly_adjusted_score": 65,
+      "published_at": "2026-10-19T20:48:00+00:00",
+      "days_old": 1.87
     }
   ],
+  "recommended_draft": {
+    "candidate_id": "05f748dbdda77060",
+    "title": "callstack/agent-device",
+    "source": "GitHub Search",
+    "source_kind": "github_repository",
+    "url": "https://github.com/callstack/agent-device",
+    "category": "ai_and_automation",
+    "priority_score": 86,
+    "hourly_adjusted_score": 62,
+    "post_text": "callstack/agent-device – CLI, MCP server, and typed Node.js API for automating iOS, Android, HarmonyOS, TV, web, macOS, and Linux. https://github.com/callstack/agent-device",
+    "format": "engineering_lesson",
+    "audience": "automation engineers",
+    "angle": "cross‑platform agent tooling",
+    "rationale": "Shows breadth of supported platforms",
+    "evidence_quote": "CLI, MCP server, and typed Node.js API for iOS, Android, HarmonyOS, TV, web, macOS, and Linux",
+    "claim_evidence": [
+      {
+        "claim": "Agent‑device offers CLI, MCP server, and Node.js API for multiple OS",
+        "quote": "CLI, MCP server, and typed Node.js API for iOS, Android, HarmonyOS, TV, web, macOS, and Linux"
+      }
+    ],
+    "scores": {
+      "timeliness": 9,
+      "usefulness": 9,
+      "novelty": 7,
+      "evidence": 9
+    },
+    "editorial_score": 8.6,
+    "character_count": 172,
+    "status": "draft_passed_needs_human_review",
+    "published_to_x": false
+  },
   "state_summary": {
-    "used_candidates_in_cooldown": 2,
-    "recently_attempted_candidates": 20,
-    "recent_draft_passes_today": 2
+    "used_candidates_in_cooldown": 3,
+    "recently_attempted_candidates": 25,
+    "recent_draft_passes_today": 3
   }
 }
