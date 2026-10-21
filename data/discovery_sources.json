@@ -1,0 +1,157 @@
+{
+  "version": 1,
+  "feeds": [
+    {
+      "id": "console-dev",
+      "name": "Console.dev",
+      "url": "https://console.dev/rss.xml",
+      "category_hint": "developer_tools"
+    },
+    {
+      "id": "product-hunt",
+      "name": "Product Hunt",
+      "url": "https://www.producthunt.com/feed",
+      "category_hint": "product_and_workflow_tools"
+    },
+    {
+      "id": "shopify-dev-changelog",
+      "name": "Shopify Developer Changelog",
+      "url": "https://shopify.dev/changelog/feed.xml",
+      "category_hint": "commerce_and_digital_products"
+    }
+  ],
+  "github_searches": [
+    {
+      "id": "github-developer-tools",
+      "category": "developer_tools",
+      "query": "stars:>=10 pushed:>={active_since} topic:developer-tools"
+    },
+    {
+      "id": "github-ai-agent-tools",
+      "category": "ai_and_automation",
+      "query": "stars:>=10 pushed:>={active_since} topic:ai-agents"
+    },
+    {
+      "id": "github-mcp-servers",
+      "category": "ai_and_automation",
+      "query": "stars:>=10 pushed:>={active_since} topic:mcp-server"
+    },
+    {
+      "id": "github-shopify-commerce",
+      "category": "commerce_and_digital_products",
+      "query": "stars:>=5 pushed:>={active_since} shopify"
+    },
+    {
+      "id": "github-ecommerce-digital-products",
+      "category": "commerce_and_digital_products",
+      "query": "stars:>=5 pushed:>={active_since} ecommerce"
+    },
+    {
+      "id": "github-creator-infrastructure",
+      "category": "creator_and_indie_business",
+      "query": "stars:>=5 pushed:>={active_since} (creator OR newsletter OR digital-products)"
+    },
+    {
+      "id": "github-workflow-automation",
+      "category": "ai_and_automation",
+      "query": "stars:>=10 pushed:>={active_since} topic:workflow-automation"
+    },
+    {
+      "id": "github-analytics-seo",
+      "category": "data_and_growth",
+      "query": "stars:>=10 pushed:>={active_since} (analytics OR SEO)"
+    },
+    {
+      "id": "github-self-hosted",
+      "category": "security_and_self_hosting",
+      "query": "stars:>=10 pushed:>={active_since} topic:self-hosted"
+    }
+  ],
+  "hn_searches": [
+    {
+      "id": "hn-show-hn",
+      "category": "product_and_workflow_tools",
+      "query": "",
+      "tags": "show_hn"
+    },
+    {
+      "id": "hn-shopify",
+      "category": "commerce_and_digital_products",
+      "query": "Shopify",
+      "tags": "story"
+    },
+    {
+      "id": "hn-digital-products",
+      "category": "commerce_and_digital_products",
+      "query": "digital products",
+      "tags": "story"
+    },
+    {
+      "id": "hn-ecommerce-payments",
+      "category": "commerce_and_digital_products",
+      "query": "ecommerce payments checkout",
+      "tags": "story"
+    },
+    {
+      "id": "hn-creator-business",
+      "category": "creator_and_indie_business",
+      "query": "creator tools newsletter",
+      "tags": "story"
+    },
+    {
+      "id": "hn-automation-api",
+      "category": "ai_and_automation",
+      "query": "automation API workflow",
+      "tags": "story"
+    },
+    {
+      "id": "hn-analytics-growth",
+      "category": "data_and_growth",
+      "query": "analytics SEO",
+      "tags": "story"
+    },
+    {
+      "id": "hn-security-selfhost",
+      "category": "security_and_self_hosting",
+      "query": "self-hosted privacy security",
+      "tags": "story"
+    }
+  ],
+  "categories": {
+    "developer_tools": {
+      "label": "Developer tools and infrastructure",
+      "keywords": ["developer tool", "devtools", "debugger", "sdk", "cli", "api", "database", "observability", "code editor", "testing", "framework", "deployment", "ci/cd", "terminal"]
+    },
+    "ai_and_automation": {
+      "label": "AI, agents and automation",
+      "keywords": ["ai agent", "agentic", "llm", "mcp", "automation", "workflow", "orchestration", "no-code", "low-code", "zapier", "n8n", "make.com", "integration", "trigger", "webhook"]
+    },
+    "commerce_and_digital_products": {
+      "label": "Commerce, Shopify and digital products",
+      "keywords": ["shopify", "ecommerce", "e-commerce", "woocommerce", "digital product", "digital download", "checkout", "storefront", "merchant", "cart", "payment", "billing", "subscription", "tax", "vat", "product feed", "shop pay", "marketplace", "fulfillment", "fulfilment", "shop app", "conversion"]
+    },
+    "creator_and_indie_business": {
+      "label": "Creator tools and indie business",
+      "keywords": ["creator", "newsletter", "membership", "audience", "indie hacker", "solo founder", "landing page", "email marketing", "crm", "lead generation", "pricing", "revenue", "digital sales", "course", "template", "gumroad", "lemonsqueezy", "lemon squeezy", "affiliate"]
+    },
+    "product_and_workflow_tools": {
+      "label": "Useful products and practical workflows",
+      "keywords": ["productivity", "workflow", "tool", "app", "launch", "product hunt", "show hn", "open source", "integration", "extension", "plugin", "alternative"]
+    },
+    "data_and_growth": {
+      "label": "Analytics, data and growth",
+      "keywords": ["analytics", "seo", "search engine", "dashboard", "metrics", "attribution", "conversion rate", "experimentation", "ab testing", "data pipeline", "business intelligence", "tracking", "retention", "funnel"]
+    },
+    "security_and_self_hosting": {
+      "label": "Security, privacy and self-hosting",
+      "keywords": ["security", "privacy", "self-hosted", "self hosted", "open source", "docker", "backup", "encryption", "authentication", "authorization", "vulnerability", "compliance", "secrets management"]
+    }
+  },
+  "source_weights": {
+    "Shopify Developer Changelog": 24,
+    "Console.dev": 21,
+    "GitHub Search": 18,
+    "Product Hunt": 13,
+    "Hacker News": 12
+  }
+}
