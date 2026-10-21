@@ -407,6 +407,39 @@ def validate_draft(draft: dict, candidates_by_id: dict) -> tuple[dict | None, li
             reasons.append("Draft contains a URL not present in the evidence links")
             break
 
+    # Every nontrivial term in the copy should be present in the supplied primary-source title/summary.
+    # This is a lexical safety net, not semantic proof; human source review is still required.
+    editorial_filler = {
+        "offers", "offering", "provides", "supports", "support", "includes", "including",
+        "designed", "helps", "help", "using", "via", "make", "makes", "work", "workflow",
+        "tool", "tools", "project", "product", "products", "one", "more", "less", "use",
+        "start", "try", "point", "here", "now", "your", "team", "teams", "see", "shows",
+        "show", "can", "could", "would", "should", "lets", "let", "allows", "allow",
+        "based", "built", "build", "builds", "feature", "features", "interesting",
+        "useful", "simple", "easy", "new", "actual", "real", "practical",
+    }
+    content_tokens = tokens(URL_RE.sub(" ", post))
+    content_tokens -= tokens(str(candidate.get("title") or ""))
+    content_tokens -= editorial_filler
+    evidence_tokens = tokens(evidence)
+    unsupported_terms = sorted(content_tokens - evidence_tokens)
+    if content_tokens and len(content_tokens & evidence_tokens) / len(content_tokens) < 0.70:
+        reasons.append(
+            "Too many substantive terms are absent from the source title/summary: "
+            + ", ".join(unsupported_terms[:8])
+        )
+
+    quoted_tokens = set()
+    if isinstance(claim_evidence, list):
+        for entry in claim_evidence:
+            if isinstance(entry, dict):
+                quoted_tokens.update(tokens(entry.get("quote")))
+    quote_coverage = len(content_tokens & quoted_tokens) / max(1, len(content_tokens))
+    if content_tokens and quote_coverage < 0.45:
+        reasons.append(
+            f"Claim quotes cover only {quote_coverage:.0%} of substantive draft terms; cite more of the actual facts"
+        )
+
     if reasons:
         return None, reasons
 
@@ -490,6 +523,13 @@ def write_outputs(report: dict) -> None:
             "- Exact source evidence: “" + row["evidence_quote"] + "”",
             "- Why this angle: " + row["rationale"],
             "- Source: " + row["url"],
+            "",
+            "**Claim-by-claim source quotes:**",
+            "",
+            *[
+                "- " + clean(support.get("claim")) + " ← “" + clean(support.get("quote")) + "”"
+                for support in row.get("claim_evidence", []) if isinstance(support, dict)
+            ],
             "",
             "Proposed post (not published):",
             "",
