@@ -1,5 +1,5 @@
 {
-  "generated_at_ist": "2026-10-21T09:30:59+05:30",
+  "generated_at_ist": "2026-10-21T13:39:20+05:30",
   "model": "openai/gpt-oss-20b",
   "dry_run": false,
   "slot_plan_mode": true,
@@ -37,7 +37,7 @@
       "title": "PHP warns it plans to release 2 emergency patches imminently",
       "summary": "Website admins, brace yourselves. Fixes for what are believed to be uncommonly severe vulnerabilities are scheduled to drop in a little more than 12 hours for PHP, a programming language that powers websites and Web applications everywhere. PHP maintainers said Monday that they planned to release patches for two vulnerabilities, both with severity ratings of 9.2 out of a possible 10. Waiting for P",
       "published_at_utc": "2026-10-21T02:12:18+00:00",
-      "age_hours": 1.8,
+      "age_hours": 6.0,
       "url": "https://arstechnica.com/security/2026/10/php-maintainers-tell-web-devs-to-prepare-themselves-for-critical-security-patches/",
       "feed_url": "https://feeds.arstechnica.com/arstechnica/index",
       "article_id": "S01"
@@ -47,7 +47,7 @@
       "title": "YouTube might be testing hiding the dislike button",
       "summary": "YouTube appears to be testing hiding the dislike button on videos, as reported by 9to5Google . At least two users on X have recently shared screenshots of the dislike button now being placed in the three-dots submenu, and a user on Reddit also shared an image of the dislike button being absent for them. Right now, for me, the dislike button sits right next to the like button under a video. Moving ",
       "published_at_utc": "2026-10-21T00:00:56+00:00",
-      "age_hours": 4.0,
+      "age_hours": 8.1,
       "url": "https://www.theverge.com/streaming/1015099/youtube-dislike-button-hide-menu",
       "feed_url": "https://www.theverge.com/rss/index.xml",
       "article_id": "S02"
@@ -57,7 +57,7 @@
       "title": "Judge dismisses Sam Altman’s sister’s sexual abuse lawsuit",
       "summary": "On Tuesday, US District Judge Zachary Bluestone dismissed the lawsuit Ann Altman filed last year alleging that her brother, OpenAI CEO Sam Altman, had sexually abused her throughout her childhood. As reported earlier by The Guardian , the judge wrote that over the past year, Ann had failed to appear for an independent medical examination or meet other deadlines despite warnings that it would resul",
       "published_at_utc": "2026-10-20T23:37:55+00:00",
-      "age_hours": 4.4,
+      "age_hours": 8.5,
       "url": "https://www.theverge.com/ai-artificial-intelligence/1014976/sam-altman-ann-altman-lawsuit-dismissed",
       "feed_url": "https://www.theverge.com/rss/index.xml",
       "article_id": "S03"
@@ -65,9 +65,9 @@
     {
       "source": "TechCrunch",
       "title": "Anthropic pitches AI safety bill that may block a model if 50+ people could be killed",
-      "summary": "The proposed policy seems to offer protections against AI run amok but actually forbids federal agencies from blocking a model's release without the permission of a judge.",
+      "summary": "The proposed policy seems to offer protections against AI running amok but actually forbids federal agencies from blocking a model's release without the permission of a judge.",
       "published_at_utc": "2026-10-20T23:01:23+00:00",
-      "age_hours": 5.0,
+      "age_hours": 9.1,
       "url": "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/",
       "feed_url": "https://techcrunch.com/feed/",
       "article_id": "S04"
@@ -77,7 +77,7 @@
       "title": "Google’s more personalized Gemini AI is heading to your car",
       "summary": "Google is bringing Personal Intelligence to Gemini AI in your car. With this update, Gemini in Android Auto and cars with Google built-in can tap into your information across Google apps, including Gmail, Calendar, Maps, Photos, YouTube, and Search. As an example, Google says you can ask Gemini about your flight status if you're driving to the airport. The AI assistant can pull your flight details",
       "published_at_utc": "2026-10-20T22:42:47+00:00",
-      "age_hours": 5.3,
+      "age_hours": 9.4,
       "url": "https://www.theverge.com/tech/1014999/google-gemini-ai-cars-android-auto",
       "feed_url": "https://www.theverge.com/rss/index.xml",
       "article_id": "S05"
@@ -85,9 +85,9 @@
     {
       "source": "TechCrunch",
       "title": "Hugging Face CEO warns that Netflix’s OpenAI hack documentary isn’t accurate",
-      "summary": "Before you share the Netflix documentary \"AI Gone Rogue\" take note. Clem Delangue, Hugging Face's co-founder who is featured in the film, says it went \"full doomer mode\" and isn't accurate.",
+      "summary": "Before you share the Netflix documentary \"AI Gone Rogue,\" take note. Clem Delangue, Hugging Face's co-founder who is featured in the film, says it went \"full doomer mode\" and isn't accurate.",
       "published_at_utc": "2026-10-20T22:24:02+00:00",
-      "age_hours": 5.6,
+      "age_hours": 9.8,
       "url": "https://techcrunch.com/2026/10/20/hugging-face-ceo-warns-that-netflixs-openai-hack-documentary-isnt-accurate/",
       "feed_url": "https://techcrunch.com/feed/",
       "article_id": "S06"
@@ -97,7 +97,7 @@
       "title": "Trump is giving Nick Shirley $10,000 and launching a $25 million fraud bounty program",
       "summary": "Influencer Nick Shirley listens as US President Donald Trump makes an announcement on fraud in the Oval Office of the White House in Washington, DC, on October 20, 2026. (Photo by Jim WATSON / AFP via Getty Images) | AFP via Getty Images Donald Trump and Vice President JD Vance said on Tuesday that the Trump administration was giving right-wing YouTuber Nick Shirley $10,000 and launching a $25 mil",
       "published_at_utc": "2026-10-20T22:20:11+00:00",
-      "age_hours": 5.7,
+      "age_hours": 9.8,
       "url": "https://www.theverge.com/news/1014989/trump-fraud-tips-program-nick-shirley-influencers",
       "feed_url": "https://www.theverge.com/rss/index.xml",
       "article_id": "S07"
@@ -107,39 +107,39 @@
       "title": "Snap is paying Robert Downey Jr. to do the Iron Man thing",
       "summary": "Snap has a new brand ambassador for its Specs AR glasses: Iron Man actor Robert Downey Jr. The company has brought on Downey as Specs' \"Chief Customer Experience Officer\" and has published several videos featuring Downey showcasing the capabilities of the new glasses, including as a tool to get help with a putt , practice art , and watch a private video of an MMA match in bed. In one video , he al",
       "published_at_utc": "2026-10-20T22:11:30+00:00",
-      "age_hours": 5.8,
+      "age_hours": 10.0,
       "url": "https://www.theverge.com/tech/1014869/snap-specs-robert-downey-jr",
       "feed_url": "https://www.theverge.com/rss/index.xml",
       "article_id": "S08"
     },
     {
       "source": "The Verge",
+      "title": "Tesla and SpaceX are discussing a possible merger, Musk says",
+      "summary": "Tesla and SpaceX have formed special committees to discuss a possible merger, Elon Musk said during the latter's third quarter earnings call Tuesday . Musk, who serves as CEO of both companies, said the special committees were formed at the request of shareholders and consist of independent directors (though he did not name them). He also noted that he is not a member of either committee, nor invo",
+      "published_at_utc": "2026-10-20T22:01:50+00:00",
+      "age_hours": 10.1,
+      "url": "https://www.theverge.com/science/1014984/spacex-tesla-merger-elon-musk-special-committees",
+      "feed_url": "https://www.theverge.com/rss/index.xml",
+      "article_id": "S09"
+    },
+    {
+      "source": "The Verge",
       "title": "SpaceX says big AI growth fueled revenue jump",
       "summary": "SpaceX announced revenues of $14.6 billion in its Q3 earnings on Tuesday , which it says was a growth of 161 percent year-over-year \"fueled by our Super Intelligence (SI) segment and accelerated growth in Connectivity.\" While its Space division posted a $7 million loss in income from operations, its Connectivity group posted income from operations $2.4 billion and its SI group posted $431 million.",
       "published_at_utc": "2026-10-20T22:04:10+00:00",
-      "age_hours": 5.9,
+      "age_hours": 10.1,
       "url": "https://www.theverge.com/science/1014150/spacex-q3-2026-earnings",
       "feed_url": "https://www.theverge.com/rss/index.xml",
-      "article_id": "S09"
+      "article_id": "S10"
     },
     {
       "source": "Ars Technica",
       "title": "Merging SpaceX and Tesla would be a \"good idea,\" Musk says",
       "summary": "Elon Musk said Tuesday that he would like to see the consolidation of his business empire by formally merging his two largest companies, SpaceX and Tesla. \"Do I think it would be a good idea? Yes,\" Musk said of a potential merger. He was speaking during a question-and-answer period as part of SpaceX's third-quarter earnings call. Musk said, ultimately, it not his decision. \"But at the end of the d",
       "published_at_utc": "2026-10-20T22:04:54+00:00",
-      "age_hours": 5.9,
+      "age_hours": 10.1,
       "url": "https://arstechnica.com/space/2026/10/spacex-and-tesla-into-a-single-company-has-a-lot-of-merit-musk-says/",
       "feed_url": "https://feeds.arstechnica.com/arstechnica/index",
-      "article_id": "S10"
-    },
-    {
-      "source": "The Verge",
-      "title": "Tesla and SpaceX are discussing a possible merger, Musk says",
-      "summary": "Tesla and SpaceX have formed special committees to discuss a possible merger, Elon Musk said during the latter's third quarter earnings call Tuesday . Musk, who serves as CEO of both companies, said the special committees were formed at the request of shareholders and consist of independent directors (though he did not name them). He also noted that he is not a member of either committee, nor invo",
-      "published_at_utc": "2026-10-20T22:01:50+00:00",
-      "age_hours": 6.0,
-      "url": "https://www.theverge.com/science/1014984/spacex-tesla-merger-elon-musk-special-committees",
-      "feed_url": "https://www.theverge.com/rss/index.xml",
       "article_id": "S11"
     },
     {
@@ -147,52 +147,47 @@
       "title": "Cops raid office of RFK Jr. allies planning “unethical” vaccine trial on babies",
       "summary": "Police in Guinea-Bissau raided the offices of Danish researchers on Monday, seizing doses of hepatitis B vaccine intended for a vaccine trial for newborns. International health experts have called the trial \" unethical ,\" but anti-vaccine Health Secretary Robert F. Kennedy Jr. has attempted to fund it with US taxpayer dollars. Under Kennedy, the US Centers for Disease Control and Prevention announ",
       "published_at_utc": "2026-10-20T21:44:34+00:00",
-      "age_hours": 6.3,
+      "age_hours": 10.4,
       "url": "https://arstechnica.com/health/2026/10/cops-raid-office-of-rfk-jr-allies-planning-unethical-vaccine-trial-on-babies/",
       "feed_url": "https://feeds.arstechnica.com/arstechnica/index",
       "article_id": "S12"
     }
   ],
-  "drafts": [],
+  "drafts": [
+    {
+      "article_id": "S04",
+      "source": "TechCrunch",
+      "source_title": "Anthropic pitches AI safety bill that may block a model if 50+ people could be killed",
+      "published_at_utc": "2026-10-20T23:01:23+00:00",
+      "source_url": "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/",
+      "category": "Platform policy",
+      "scores": {
+        "relevance_score": 9,
+        "significance_score": 8,
+        "originality_score": 10
+      },
+      "angle": "Anthropic’s safety bill could restrict model release without a judge’s approval",
+      "why_selected": "The bill’s requirement to involve a judge before blocking a model adds a legal gate that affects AI deployment strategies",
+      "evidence_quote": "forbids federal agencies from blocking a model's release without the permission of a judge",
+      "post_text": "If passed, Anthropic’s bill would mandate a judge’s consent before a federal agency could stop a model’s release.",
+      "text_with_source": "If passed, Anthropic’s bill would mandate a judge’s consent before a federal agency could stop a model’s release.\n\nhttps://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/",
+      "character_count_with_url": 234
+    }
+  ],
   "rejected_model_selections": [
     {
       "article_id": "S01",
       "source": "Ars Technica",
       "title": "PHP warns it plans to release 2 emergency patches imminently",
-      "scores": {
-        "relevance_score": 10,
-        "significance_score": 9,
-        "originality_score": 8
-      },
-      "proposed_post_text": "PHP’s 9.2‑severity patches drop in 12 h. Site owners must deploy, audit code, and review any downstream libraries that might import the affected core.",
-      "evidence_quote": "\"two vulnerabilities, both with severity ratings of 9.2\"",
-      "reason": "Unsupported specific detail or overclaim (uncautious necessity claim) is absent from the source excerpt."
-    },
-    {
-      "article_id": "S04",
-      "source": "TechCrunch",
-      "title": "Anthropic pitches AI safety bill that may block a model if 50+ people could be killed",
-      "scores": {
-        "relevance_score": 9,
-        "significance_score": 7,
-        "originality_score": 8
-      },
-      "proposed_post_text": "Anthropic’s bill would require judges before federal agencies can block a model deemed 50‑person‑risk. Companies must weigh compliance costs and legal risk.",
-      "evidence_quote": "\"forbids federal agencies from blocking a model's release\"",
-      "reason": "Unsupported specific detail or overclaim (cost/pricing implication) is absent from the source excerpt."
+      "evidence_quote": "PHP maintainers said Monday that they planned to release patches for two vulnerabilities, both with severity ratings of 9.2",
+      "reason": "Evidence quote must be 20–100 characters and an exact excerpt from the supplied title or summary."
     },
     {
       "article_id": "S05",
       "source": "The Verge",
       "title": "Google’s more personalized Gemini AI is heading to your car",
-      "scores": {
-        "relevance_score": 8,
-        "significance_score": 6,
-        "originality_score": 7
-      },
-      "proposed_post_text": "Gemini’s car integration lets drivers query Gmail, Calendar, Maps, etc. Developers should audit permission flows and ensure data stays on‑device when possible.",
-      "evidence_quote": "\"Personal Intelligence to Gemini AI in your car\"",
-      "reason": "Unsupported specific detail or overclaim (integration detail) is absent from the source excerpt."
+      "evidence_quote": "Gemini in Android Auto and cars with Google built‑in can tap into your information across Google apps",
+      "reason": "Evidence quote must be 20–100 characters and an exact excerpt from the supplied title or summary."
     }
   ],
   "quality_thresholds": {
