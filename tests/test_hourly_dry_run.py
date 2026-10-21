@@ -39,6 +39,7 @@ class HourlyDryRunTests(unittest.TestCase):
     def test_valid_draft_passes_and_is_marked_for_human_review(self):
         draft = {
             "candidate_id": "candidate-1",
+            "fact_sentence": "Hookdeck's webhook integration skills: step-by-step guidance for receivers, signature verification and event handling for coding agents.",
             "post_text": (
                 "Hookdeck's webhook integration skills: step-by-step guidance for receivers, signature "
                 "verification and event handling for coding agents. For webhook receivers, add tests for invalid "
@@ -68,6 +69,24 @@ class HourlyDryRunTests(unittest.TestCase):
         self.assertLessEqual(accepted["character_count"], 280)
         self.assertFalse(accepted["published_to_x"])
         self.assertEqual(accepted["status"], "draft_passed_needs_human_review")
+
+    def test_composer_assembles_separate_fact_takeaway_and_primary_url(self):
+        draft = {
+            "candidate_id": "candidate-1",
+            "fact_sentence": (
+                "Hookdeck's webhook integration skills: step-by-step guidance for receivers, "
+                "signature verification and event handling for coding agents."
+            ),
+            "editorial_takeaway": (
+                "For webhook receivers, add tests for invalid signatures and duplicate events before shipping."
+            ),
+        }
+        composed = hourly.compose_post_from_fields(draft, self.candidate)
+        self.assertEqual(composed["post_text"].split(" https://", 1)[0],
+                         draft["fact_sentence"] + " " + draft["editorial_takeaway"])
+        self.assertTrue(composed["post_text"].endswith(self.candidate["url"]))
+        self.assertEqual(composed["post_text"].count(self.candidate["url"]), 1)
+        self.assertNotIn("generation_format_error", composed)
 
     def test_helper_preserves_copy_and_only_moves_source_url_to_end(self):
         draft = {
@@ -100,6 +119,7 @@ class HourlyDryRunTests(unittest.TestCase):
     def test_feature_list_without_separate_use_case_is_rejected(self):
         draft = {
             "candidate_id": "candidate-1",
+            "fact_sentence": "Hookdeck's webhook integration skills guide coding agents through receiver setup, signature verification and event handling.",
             "post_text": (
                 "Hookdeck's webhook integration skills guide coding agents through receiver setup, signature verification "
                 "and event handling. https://github.com/hookdeck/webhook-skills"
@@ -124,6 +144,7 @@ class HourlyDryRunTests(unittest.TestCase):
     def test_generic_audience_suffix_is_not_accepted_as_editorial_insight(self):
         draft = {
             "candidate_id": "candidate-1",
+            "fact_sentence": "Hookdeck's webhook integration skills support receiver setup and signature verification.",
             "post_text": (
                 "Hookdeck's webhook integration skills support receiver setup and signature verification. "
                 "Useful if you're building apps. https://github.com/hookdeck/webhook-skills"
@@ -145,6 +166,7 @@ class HourlyDryRunTests(unittest.TestCase):
     def test_headline_rewrite_is_rejected_even_when_it_has_a_generic_second_sentence(self):
         draft = {
             "candidate_id": "candidate-1",
+            "fact_sentence": "Hookdeck webhook integration skills for coding agents.",
             "post_text": (
                 "Hookdeck webhook integration skills for coding agents. "
                 "For webhook receivers, add tests for invalid signatures before shipping. "
