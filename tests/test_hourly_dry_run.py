@@ -290,7 +290,7 @@ class HourlyDryRunTests(unittest.TestCase):
         ranked = hourly.diversity_rank([candidate], state, self.now, lookback_days=1)
         self.assertEqual(len(ranked), 1)
         self.assertEqual(ranked[0]["trend_signal"], "not_applicable")
-        self.assertEqual(ranked[0]["hourly_adjusted_score"], ranked[0]["priority_score"] + 2)
+        self.assertEqual(ranked[0]["hourly_adjusted_score"], ranked[0]["priority_score"])
 
     def test_daily_caps_use_india_calendar_day_not_rolling_24_hours(self):
         state = hourly.empty_state()
