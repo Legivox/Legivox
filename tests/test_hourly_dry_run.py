@@ -40,30 +40,27 @@ class HourlyDryRunTests(unittest.TestCase):
         draft = {
             "candidate_id": "candidate-1",
             "post_text": (
-                "Hookdeck's webhook integration skills are for AI coding agents. Guidance: webhook receivers, "
-                "signature verification and event handling for Stripe and Shopify. Useful if you're building "
-                "provider integrations. https://github.com/hookdeck/webhook-skills"
+                "Hookdeck's webhook integration skills: step-by-step guidance for receivers, signature "
+                "verification and event handling for coding agents. For webhook receivers, add tests for invalid "
+                "signatures and duplicate events before shipping. https://github.com/hookdeck/webhook-skills"
             ),
             "format": "tool_discovery",
             "audience": "developers building integrations",
             "angle": "safer webhook setup",
+            "editorial_takeaway": "For webhook receivers, add tests for invalid signatures and duplicate events before shipping.",
             "evidence_quote": "signature verification, and event handling",
             "claim_evidence": [
                 {
-                    "claim": "The Hookdeck project provides webhook integration skills for coding agents",
+                    "claim": "The project has webhook integration skills for coding agents",
                     "quote": "Hookdeck webhook integration skills for coding agents",
                 },
                 {
-                    "claim": "The summary describes guidance for setting up webhook receivers, signature verification and event handling",
-                    "quote": "Webhook integration skills for AI coding agents. Step-by-step guidance for setting up webhook receivers, signature verification, and event handling",
-                },
-                {
-                    "claim": "Stripe and Shopify are examples",
-                    "quote": "for Stripe, Shopify, GitHub",
+                    "claim": "The skills provide step-by-step guidance for webhook receivers, signature verification and event handling",
+                    "quote": "Step-by-step guidance for setting up webhook receivers, signature verification, and event handling",
                 },
             ],
-            "rationale": "It turns a common integration failure point into an actionable coding workflow.",
-            "scores": {"timeliness": 7, "usefulness": 8, "novelty": 7, "evidence": 8},
+            "rationale": "The post turns the source into a concrete validation step rather than a product announcement.",
+            "scores": {"timeliness": 7, "usefulness": 8, "novelty": 7, "evidence": 8, "insight": 8},
         }
         accepted, reasons = hourly.validate_draft(draft, {"candidate-1": self.candidate})
         self.assertEqual(reasons, [])
@@ -72,30 +69,33 @@ class HourlyDryRunTests(unittest.TestCase):
         self.assertFalse(accepted["published_to_x"])
         self.assertEqual(accepted["status"], "draft_passed_needs_human_review")
 
-    def test_missing_editorial_context_is_added_and_source_url_moved_to_end(self):
+    def test_helper_preserves_copy_and_only_moves_source_url_to_end(self):
         draft = {
             "candidate_id": "candidate-1",
             "post_text": (
-                "Hookdeck's webhook skills guide receiver setup, signature verification and event handling. "
+                "Hookdeck's webhook skills guide receiver setup. "
+                "For webhook receivers, add tests for invalid signatures before shipping. "
+                "https://github.com/hookdeck/webhook-skills"
+            ),
+            "editorial_takeaway": "For webhook receivers, add tests for invalid signatures before shipping.",
+        }
+        updated = hourly.ensure_editorial_context(draft, self.candidate)
+        self.assertTrue(updated["post_text"].endswith(self.candidate["url"]))
+        self.assertIn(draft["editorial_takeaway"], updated["post_text"])
+        self.assertEqual(updated["editorial_takeaway"], draft["editorial_takeaway"])
+
+    def test_helper_does_not_invent_generic_audience_context(self):
+        draft = {
+            "candidate_id": "candidate-1",
+            "post_text": (
+                "Hookdeck's webhook skills guide receiver setup. "
+                "For webhook receivers, add tests for invalid signatures before shipping. "
                 "https://github.com/hookdeck/webhook-skills"
             ),
         }
         updated = hourly.ensure_editorial_context(draft, self.candidate)
-        self.assertIn("Useful if you build for online merchants.", updated["post_text"])
-        self.assertTrue(updated["post_text"].endswith(self.candidate["url"]))
-
-    def test_model_context_is_replaced_with_safe_use_case_and_link_moved(self):
-        draft = {
-            "candidate_id": "candidate-1",
-            "post_text": (
-                "Hookdeck's webhook skills guide receiver setup, signature verification and event handling. "
-                "https://github.com/hookdeck/webhook-skills Useful if you're building provider integrations."
-            ),
-        }
-        updated = hourly.ensure_editorial_context(draft, self.candidate)
-        self.assertTrue(updated["post_text"].endswith(self.candidate["url"]))
-        self.assertIn("Useful if you build for online merchants.", updated["post_text"])
-        self.assertNotIn("building provider integrations", updated["post_text"])
+        self.assertNotIn("Useful if you build for online merchants.", updated["post_text"])
+        self.assertIn("add tests for invalid signatures", updated["post_text"])
 
     def test_feature_list_without_separate_use_case_is_rejected(self):
         draft = {
@@ -119,7 +119,7 @@ class HourlyDryRunTests(unittest.TestCase):
         }
         accepted, reasons = hourly.validate_draft(draft, {"candidate-1": self.candidate})
         self.assertIsNone(accepted)
-        self.assertTrue(any("separate conditional/use-case sentence" in reason for reason in reasons))
+        self.assertTrue(any("headline" in reason or "editorial_takeaway" in reason for reason in reasons))
 
     def test_draft_without_source_url_is_rejected(self):
         draft = {
