@@ -1,0 +1,118 @@
+name: Legivox hourly discovery and draft preview
+
+on:
+  push:
+    branches:
+      - "feature/multidomain-discovery-v1"
+    paths:
+      - "scripts/hourly_dry_run.py"
+      - "tests/test_hourly_dry_run.py"
+      - ".github/workflows/hourly-discovery-dry-run.yml"
+  workflow_dispatch:
+    inputs:
+      lookback_days:
+        description: "Candidate freshness window"
+        required: true
+        type: choice
+        options:
+          - "1"
+          - "2"
+          - "3"
+          - "7"
+        default: "3"
+      daily_draft_cap:
+        description: "Maximum draft proposals to consider per day"
+        required: true
+        type: choice
+        options:
+          - "5"
+          - "8"
+          - "10"
+        default: "10"
+  schedule:
+    # 08:47 through 23:47 IST. Cron is in UTC: 02:47 through 17:47 UTC.
+    - cron: "47 2-17 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: legivox-hourly-discovery-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  dry-run:
+    name: Discover, draft, validate and audit
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.12"
+
+      - name: Validate source registry and compile scripts
+        run: |
+          python -m json.tool data/discovery_sources.json > /dev/null
+          python -m py_compile \
+            scripts/discover_candidates.py \
+            scripts/hourly_dry_run.py \
+            tests/test_discover_candidates.py \
+            tests/test_hourly_dry_run.py
+
+      - name: Run discovery and draft-quality unit tests
+        run: |
+          python -m unittest discover -s tests -p 'test_discover_candidates.py' -v
+          python -m unittest discover -s tests -p 'test_hourly_dry_run.py' -v
+
+      - name: Run one hourly research-only draft decision
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GROQ_MODEL: openai/gpt-oss-20b
+          MAX_DAILY_DRAFTS: ${{ inputs.daily_draft_cap || '10' }}
+          LOOKBACK_DAYS: ${{ inputs.lookback_days || '3' }}
+        run: |
+          python scripts/hourly_dry_run.py \
+            --dry-run \
+            --lookback-days "$LOOKBACK_DAYS" \
+            --pool-size 5
+
+      - name: Upload hourly decision and draft report
+        if: always() && hashFiles('output/discovery/hourly-latest.md') != ''
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: legivox-hourly-dry-run
+          path: |
+            output/discovery/hourly-latest.md
+            output/discovery/hourly-latest.json
+          if-no-files-found: warn
+          retention-days: 14
+
+      - name: Add report to Actions summary
+        if: always() && hashFiles('output/discovery/hourly-latest.md') != ''
+        run: cat output/discovery/hourly-latest.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit hourly state and audit log
+        if: success() && hashFiles('output/discovery/hourly-state.json') != ''
+        env:
+          BRANCH_NAME: ${{ github.ref_name }}
+        run: |
+          git add output/discovery/hourly-state.json \
+            output/discovery/hourly-runs.jsonl \
+            output/discovery/hourly-latest.json \
+            output/discovery/hourly-latest.md
+          if git diff --cached --quiet; then
+            echo "No hourly state changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+users.noreply.github.com"
+          git commit -m "chore: update hourly discovery dry-run state [skip ci]"
+          git pull --rebase origin "$BRANCH_NAME"
+          git push origin "HEAD:$BRANCH_NAME"
