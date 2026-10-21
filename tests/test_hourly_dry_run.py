@@ -121,6 +121,49 @@ class HourlyDryRunTests(unittest.TestCase):
         self.assertIsNone(accepted)
         self.assertTrue(any("headline" in reason or "editorial_takeaway" in reason for reason in reasons))
 
+    def test_generic_audience_suffix_is_not_accepted_as_editorial_insight(self):
+        draft = {
+            "candidate_id": "candidate-1",
+            "post_text": (
+                "Hookdeck's webhook integration skills support receiver setup and signature verification. "
+                "Useful if you're building apps. https://github.com/hookdeck/webhook-skills"
+            ),
+            "editorial_takeaway": "Useful if you're building apps.",
+            "evidence_quote": "signature verification, and event handling",
+            "claim_evidence": [
+                {
+                    "claim": "The project has webhook integration skills for coding agents",
+                    "quote": "Hookdeck webhook integration skills for coding agents",
+                }
+            ],
+            "scores": {"timeliness": 8, "usefulness": 8, "novelty": 8, "evidence": 8, "insight": 8},
+        }
+        accepted, reasons = hourly.validate_draft(draft, {"candidate-1": self.candidate})
+        self.assertIsNone(accepted)
+        self.assertTrue(any("Generic audience-only advice" in reason or "actionable" in reason or "too generic" in reason for reason in reasons))
+
+    def test_headline_rewrite_is_rejected_even_when_it_has_a_generic_second_sentence(self):
+        draft = {
+            "candidate_id": "candidate-1",
+            "post_text": (
+                "Hookdeck webhook integration skills for coding agents. "
+                "For webhook receivers, add tests for invalid signatures before shipping. "
+                "https://github.com/hookdeck/webhook-skills"
+            ),
+            "editorial_takeaway": "For webhook receivers, add tests for invalid signatures before shipping.",
+            "evidence_quote": "signature verification, and event handling",
+            "claim_evidence": [
+                {
+                    "claim": "The project has webhook integration skills for coding agents",
+                    "quote": "Hookdeck webhook integration skills for coding agents",
+                }
+            ],
+            "scores": {"timeliness": 8, "usefulness": 8, "novelty": 8, "evidence": 8, "insight": 8},
+        }
+        accepted, reasons = hourly.validate_draft(draft, {"candidate-1": self.candidate})
+        self.assertIsNone(accepted)
+        self.assertTrue(any("source headline" in reason for reason in reasons))
+
     def test_draft_without_source_url_is_rejected(self):
         draft = {
             "candidate_id": "candidate-1",
