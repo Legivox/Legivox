@@ -14,6 +14,7 @@ import math
 import os
 import re
 import sys
+import urllib.error
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -381,6 +382,14 @@ def discover_github_search(
             "items_kept": len(candidates),
             "status": "ok",
             "total_count": int(payload.get("total_count") or 0),
+        }
+    except urllib.error.HTTPError as exc:
+        return [], {
+            "source": "GitHub Search · " + search["id"],
+            "kind": "github_repository",
+            "items_kept": 0,
+            "status": "error",
+            "error": "HTTP " + str(exc.code),
         }
     except Exception as exc:
         return [], {
