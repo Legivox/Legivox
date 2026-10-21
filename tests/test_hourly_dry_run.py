@@ -50,11 +50,15 @@ class HourlyDryRunTests(unittest.TestCase):
             "evidence_quote": "signature verification, and event handling",
             "claim_evidence": [
                 {
-                    "claim": "Webhook receivers can be set up with signature verification and event handling",
-                    "quote": "webhook receivers, signature verification, and event handling",
+                    "claim": "The Hookdeck project provides webhook integration skills for coding agents",
+                    "quote": "Hookdeck webhook integration skills for coding agents",
                 },
                 {
-                    "claim": "The guidance covers Stripe and Shopify",
+                    "claim": "The summary describes guidance for setting up webhook receivers, signature verification and event handling",
+                    "quote": "Webhook integration skills for AI coding agents. Step-by-step guidance for setting up webhook receivers, signature verification, and event handling",
+                },
+                {
+                    "claim": "Stripe and Shopify are examples",
                     "quote": "for Stripe, Shopify, GitHub",
                 },
             ],
