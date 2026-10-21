@@ -17,7 +17,7 @@ class HourlyDryRunTests(unittest.TestCase):
         self.now = datetime(2026, 10, 21, 12, 0, tzinfo=timezone.utc)
         self.candidate = {
             "id": "candidate-1",
-            "title": "Webhook integration skills for coding agents",
+            "title": "Hookdeck webhook integration skills for coding agents",
             "source": "GitHub Search",
             "source_kind": "github_repository",
             "url": "https://github.com/hookdeck/webhook-skills",
