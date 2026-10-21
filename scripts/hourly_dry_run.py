@@ -29,7 +29,7 @@ LATEST_MD_PATH = OUT / "hourly-latest.md"
 IST = ZoneInfo("Asia/Kolkata")
 MODEL = os.environ.get("GROQ_MODEL", "openai/gpt-oss-20b")
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
-DEFAULT_LOOKBACK_DAYS = 3
+DEFAULT_LOOKBACK_DAYS = 1
 CANDIDATE_POOL_SIZE = 5
 DAILY_DRAFT_CAP = int(os.environ.get("MAX_DAILY_DRAFTS", "10"))
 MAX_PER_SOURCE_PER_DAY = 4
@@ -796,10 +796,18 @@ def write_outputs(report: dict) -> None:
         "",
     ]
     for row in report.get("candidate_shortlist", []):
+        trend_detail = ""
+        if row.get("stars_delta_24h") is not None:
+            trend_detail = (
+                " | GitHub stars +" + str(row.get("stars_delta_24h"))
+                + " over about " + str(row.get("stars_delta_baseline_hours")) + "h"
+            )
+        elif row.get("trend_signal") == "insufficient_history":
+            trend_detail = " | GitHub star trend: building baseline"
         lines.append(
             "- " + str(row.get("title")) + " | " + str(row.get("source")) + " | "
             + str(row.get("primary_category")) + " | raw " + str(row.get("priority_score"))
-            + ", adjusted " + str(row.get("hourly_adjusted_score")) + " | " + str(row.get("url"))
+            + ", adjusted " + str(row.get("hourly_adjusted_score")) + trend_detail + " | " + str(row.get("url"))
         )
     lines += [
         "",
@@ -892,6 +900,9 @@ def main(argv: list[str] | None = None) -> int:
                 "primary_category": item["primary_category"],
                 "priority_score": item.get("priority_score"),
                 "hourly_adjusted_score": item.get("hourly_adjusted_score"),
+                "stars_delta_24h": item.get("stars_delta_24h"),
+                "stars_delta_baseline_hours": item.get("stars_delta_baseline_hours"),
+                "trend_signal": item.get("trend_signal"),
                 "published_at": item.get("published_at"),
                 "days_old": item.get("days_old"),
             }
