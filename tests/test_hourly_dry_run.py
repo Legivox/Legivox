@@ -84,7 +84,7 @@ class HourlyDryRunTests(unittest.TestCase):
         self.assertIn("Useful if you build for online merchants.", updated["post_text"])
         self.assertTrue(updated["post_text"].endswith(self.candidate["url"]))
 
-    def test_editorial_context_after_url_is_preserved_and_link_moved_to_end(self):
+    def test_model_context_is_replaced_with_safe_use_case_and_link_moved(self):
         draft = {
             "candidate_id": "candidate-1",
             "post_text": (
@@ -94,7 +94,8 @@ class HourlyDryRunTests(unittest.TestCase):
         }
         updated = hourly.ensure_editorial_context(draft, self.candidate)
         self.assertTrue(updated["post_text"].endswith(self.candidate["url"]))
-        self.assertEqual(updated["post_text"].count("Useful if you're building provider integrations."), 1)
+        self.assertIn("Useful if you build for online merchants.", updated["post_text"])
+        self.assertNotIn("building provider integrations", updated["post_text"])
 
     def test_feature_list_without_separate_use_case_is_rejected(self):
         draft = {
