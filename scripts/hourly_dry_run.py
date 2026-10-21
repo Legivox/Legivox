@@ -387,6 +387,8 @@ def append_jsonl(path: Path, row: dict) -> None:
 
 
 def write_outputs(report: dict) -> None:
+    report.setdefault("posted_to_x", False)
+    report.setdefault("mode", "hourly_dry_run_only")
     OUT.mkdir(parents=True, exist_ok=True)
     LATEST_JSON_PATH.write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     lines = [
