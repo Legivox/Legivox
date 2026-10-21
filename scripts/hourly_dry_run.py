@@ -98,10 +98,54 @@ def normalize_for_match(value: object) -> str:
 
 
 def tokens(value: object) -> set[str]:
-    return {
-        token.casefold() for token in re.findall(r"[a-zA-Z][a-zA-Z0-9+-]{2,}", str(value or ""))
-        if token.casefold() not in STOPWORDS
+    """Create evidence-comparison tokens tolerant of plurals, common verb forms and hyphens."""
+    irregular = {
+        "handling": "handle", "handled": "handle",
+        "using": "use", "used": "use",
+        "making": "make", "made": "make",
+        "taking": "take", "taken": "take",
+        "writing": "write", "written": "write",
+        "verifying": "verify", "verified": "verify",
+        "configuring": "configure", "configured": "configure",
+        "measuring": "measure", "measured": "measure",
+        "evaluating": "evaluate", "evaluated": "evaluate",
+        "relying": "rely", "relied": "rely",
+        "trying": "try", "tried": "try",
+        "checking": "check", "checked": "check",
+        "testing": "test", "tested": "test",
+        "shipping": "ship", "shipped": "ship",
+        "scanning": "scan", "scanned": "scan",
+        "processing": "process", "processed": "process",
+        "building": "build", "built": "build",
+        "adding": "add", "added": "add",
+        "including": "include", "included": "include",
+        "changing": "change", "changed": "change",
+        "reviewing": "review", "reviewed": "review",
+        "comparing": "compare", "compared": "compare",
+        "uploading": "upload", "uploaded": "upload",
+        "gated": "gate", "gating": "gate",
+        "signatures": "signature", "receivers": "receiver",
+        "events": "event", "images": "image", "vulnerabilities": "vulnerability",
+        "limits": "limit", "settings": "setting", "fields": "field",
+        "scans": "scan", "checks": "check", "tests": "test",
     }
+    result = set()
+    raw_tokens = re.findall(r"[a-zA-Z][a-zA-Z0-9+-]{2,}", str(value or ""))
+    for raw in raw_tokens:
+        token = raw.casefold()
+        pieces = token.split("-") if "-" in token else [token]
+        for piece in pieces:
+            if len(piece) < 3:
+                continue
+            canonical = irregular.get(piece, piece)
+            if canonical == piece:
+                if piece.endswith("ies") and len(piece) > 5:
+                    canonical = piece[:-3] + "y"
+                elif piece.endswith("s") and len(piece) > 4 and not piece.endswith("ss"):
+                    canonical = piece[:-1]
+            if canonical not in STOPWORDS and len(canonical) >= 3:
+                result.add(canonical)
+    return result
 
 
 def title_overlap(title: str, post: str) -> float:
@@ -442,7 +486,10 @@ def draft_candidates(candidates: list[dict]) -> tuple[list[dict], str | None]:
         "No hashtags by default. Every factual claim in fact_sentence needs a claim_evidence entry. Each entry must have "
         "exactly these keys: claim and quote. quote must be a non-empty, verbatim contiguous substring of the candidate "
         "title or summary that directly supports the claim. Use the key quote, never an alternative key. Never return an "
-        "empty quote. If the evidence does not support the fact, rewrite it more narrowly. Return valid JSON only."
+        "empty quote. Use the source's own action verb when possible: if it says 'controls', do not paraphrase as 'affects'; "
+        "if it says 'checks', do not write 'scans' unless the source does. The fact must be worded so the quoted text directly "
+        "covers the sentence, not merely the general idea. If the evidence does not support the fact, rewrite it more narrowly. "
+        "Return valid JSON only."
     )
     user = {
         "task": (
@@ -725,7 +772,9 @@ def validate_draft(draft: dict, candidates_by_id: dict) -> tuple[dict | None, li
             factual_sentences.append((sentence, sentence_tokens))
 
     evidence_tokens = tokens(evidence)
-    quoted_tokens = set()
+    # evidence_quote has already been checked as a verbatim source substring.
+    # Count it as supporting wording too, while still requiring separate claim_evidence entries.
+    quoted_tokens = set(tokens(quote))
     if isinstance(claim_evidence, list):
         for entry in claim_evidence:
             if isinstance(entry, dict):
