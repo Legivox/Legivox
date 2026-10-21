@@ -51,6 +51,14 @@ STRONG_CLAIMS = (
 )
 NUMBER_RE = re.compile(r"\b\d[\d,.]*(?:%|x|k\+|\+)?\b", re.I)
 URL_RE = re.compile(r"https?://[^\s<>()]+", re.I)
+EDITORIAL_STARTERS = (
+    "useful if", "useful when", "helpful if", "helpful when",
+    "worth testing if", "worth testing when", "worth considering if", "worth considering when",
+    "for developers who", "for merchants who", "for teams who", "for creators who",
+    "if you're", "if you are", "if your", "when you're", "when you are", "when your",
+    "consider this if", "good fit if", "a fit if", "use it if", "watch for",
+    "before you adopt", "the trade-off", "one trade-off", "the tradeoff",
+)
 
 
 def clean(value: object) -> str:
@@ -385,15 +393,19 @@ def validate_draft(draft: dict, candidates_by_id: dict) -> tuple[dict | None, li
 
     if not post:
         reasons.append("Draft text is empty")
-    practical_markers = (
-        "useful for", "useful when", "worth a look", "worth testing", "helps", "helpful for",
-        "for teams", "for developers", "for merchants", "for anyone", "for workflows",
-        "when you", "when a", "before you", "trade-off", "tradeoff", "means", "so you",
-        "lets you", "makes it easier", "reduces", "avoids", "check whether", "watch for",
-        "use it to", "built for", "designed for", "if your", "if you're", "if you are",
-    )
-    if post and not any(marker in URL_RE.sub(" ", post).casefold() for marker in practical_markers):
-        reasons.append("Post lacks a practical audience, implication or trade-off")
+    body_without_urls = clean(URL_RE.sub(" ", post))
+    sentences = [
+        clean(sentence) for sentence in re.split(r"(?<=[.!?])\s+", body_without_urls)
+        if clean(sentence)
+    ]
+    editorial_sentences = [
+        sentence for sentence in sentences
+        if any(sentence.casefold().startswith(marker) for marker in EDITORIAL_STARTERS)
+    ]
+    if not editorial_sentences:
+        reasons.append(
+            "Post needs a separate conditional/use-case sentence, not just a feature description"
+        )
     if source_url not in post:
         reasons.append("The exact primary candidate URL is missing")
     if len(post) > 280:
