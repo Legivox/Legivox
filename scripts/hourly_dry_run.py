@@ -330,7 +330,9 @@ def draft_candidates(candidates: list[dict]) -> tuple[list[dict], str | None]:
         "including that URL. Use one concise source-grounded factual sentence, then a separate conditional/use-case sentence "
         "such as 'Useful if...', 'Worth testing when...', or 'For developers who...'. The second sentence must be framed as "
         "an implication, not a new asserted product fact. A bare feature list or headline rewrite is not enough. Avoid "
-        "cramming unrelated features into one sentence. Return a claim_evidence "
+        "cramming unrelated features into one sentence. Each quote should cover the full factual detail of its claim, "
+        "not merely repeat the product name. Split distinct capabilities, numeric facts or release timing into separate claim_evidence "
+        "entries and quote each one directly. Return a claim_evidence "
         "array with one entry for every material factual claim in the post. Each entry must contain claim and quote; "
         "quote must be an exact substring of the supplied title or summary and must directly support the stated claim. "
         "Do not use an adjacent quote to justify a different claim. If a useful claim cannot be supported by an exact "
@@ -415,7 +417,7 @@ def validate_draft(draft: dict, candidates_by_id: dict) -> tuple[dict | None, li
             claim_tokens = tokens(claim)
             quote_tokens = tokens(supporting_quote)
             overlap = len(claim_tokens & quote_tokens) / max(1, len(claim_tokens))
-            if overlap < 0.20:
+            if overlap < 0.45:
                 reasons.append("A supporting quote does not share enough wording with its stated claim")
                 break
     for score_name, minimum in (("timeliness", 6), ("usefulness", 7), ("novelty", 6), ("evidence", 7)):
@@ -503,7 +505,7 @@ def validate_draft(draft: dict, candidates_by_id: dict) -> tuple[dict | None, li
                 + ", ".join(missing[:6])
             )
             break
-        if quote_coverage < 0.42:
+        if quote_coverage < 0.65:
             reasons.append(
                 f"Supporting quotes cover only {quote_coverage:.0%} of a factual sentence; cite the concrete claims"
             )
