@@ -119,6 +119,33 @@ def load_state() -> dict:
         raise RuntimeError("hourly-state.json is unreadable; inspect or restore it before continuing")
 
 
+def parse_ist(value: object) -> datetime | None:
+    raw = str(value or "").strip()
+    if not raw:
+        return None
+    try:
+        parsed = datetime.fromisoformat(raw.replace("Z", "+00:00"))
+        if parsed.tzinfo is None:
+            parsed = parsed.replace(tzinfo=IST)
+        return parsed.astimezone(IST)
+    except (TypeError, ValueError):
+        return None
+
+
+def events_today(state: dict, now: datetime) -> list[dict]:
+    """Use India calendar dates for daily caps, not a rolling 24-hour window."""
+    target_date = now.astimezone(IST).date()
+    result = []
+    for event in state.get("events", []):
+        stamp = parse_ist(event.get("run_at_ist"))
+        if stamp is None:
+            utc_stamp = parse_utc(event.get("timestamp_utc"))
+            stamp = utc_stamp.astimezone(IST) if utc_stamp else None
+        if stamp and stamp.date() == target_date:
+            result.append(event)
+    return result
+
+
 def recent_events(state: dict, now: datetime, days: int = 14) -> list[dict]:
     cutoff = now.astimezone(timezone.utc) - timedelta(days=days)
     result = []
@@ -136,9 +163,9 @@ def is_fresh(candidate: dict, lookback_days: int) -> bool:
         return candidate.get("source") == "Console.dev"
     source = str(candidate.get("source") or "")
     if source == "Console.dev":
-        allowed_days = min(lookback_days, 10)
+        allowed_days = 10
     elif source == "Shopify Developer Changelog":
-        allowed_days = min(lookback_days, 7)
+        allowed_days = 7
     else:
         allowed_days = min(lookback_days, 3)
     return float(days_old) <= allowed_days
@@ -148,10 +175,11 @@ def diversity_rank(candidates: list[dict], state: dict, now: datetime, lookback_
     """Rank current candidates while penalising overused sources, topics and near-duplicates."""
 
     history = recent_events(state, now, days=3)
-    published_like = [row for row in history if row.get("status") == "draft_passed"]
-    source_counts = Counter(row.get("source_group", "unknown") for row in published_like)
-    category_counts = Counter(row.get("category", "unknown") for row in published_like)
-    recent_titles = [str(row.get("title") or "") for row in published_like]
+    recent_passes = [row for row in history if row.get("status") == "draft_passed"]
+    published_today = [row for row in events_today(state, now) if row.get("status") == "draft_passed"]
+    source_counts = Counter(row.get("source_group", "unknown") for row in published_today)
+    category_counts = Counter(row.get("category", "unknown") for row in published_today)
+    recent_titles = [str(row.get("title") or "") for row in recent_passes]
     attempted = state.get("attempted_candidates", {})
     used = state.get("used_candidates", {})
     now_utc = now.astimezone(timezone.utc)
@@ -299,7 +327,9 @@ def draft_candidates(candidates: list[dict]) -> tuple[list[dict], str | None]:
         "prices, licence terms, performance claims or adoption. Never claim an item is trending solely "
         "because it appeared in search results. Do not quote or imitate the source headline too closely. "
         "Write plain text suitable for X, with the source URL included exactly once. Maximum 280 characters "
-        "including that URL. Prefer a concrete use, implication or limitation over hype. Return a claim_evidence "
+        "including that URL. Add an editorial layer: who should care, when it is useful, an implementation implication, "
+        "or a trade-off. A bare feature list or headline rewrite is not enough. Prefer a concrete use, implication or "
+        "limitation over hype. Return a claim_evidence "
         "array with one entry for every material factual claim in the post. Each entry must contain claim and quote; "
         "quote must be an exact substring of the supplied title or summary and must directly support the stated claim. "
         "Do not use an adjacent quote to justify a different claim. If a useful claim cannot be supported by an exact "
@@ -351,6 +381,15 @@ def validate_draft(draft: dict, candidates_by_id: dict) -> tuple[dict | None, li
 
     if not post:
         reasons.append("Draft text is empty")
+    practical_markers = (
+        "useful for", "useful when", "worth a look", "worth testing", "helps", "helpful for",
+        "for teams", "for developers", "for merchants", "for anyone", "for workflows",
+        "when you", "when a", "before you", "trade-off", "tradeoff", "means", "so you",
+        "lets you", "makes it easier", "reduces", "avoids", "check whether", "watch for",
+        "use it to", "built for", "designed for", "if your", "if you're", "if you are",
+    )
+    if post and not any(marker in URL_RE.sub(" ", post).casefold() for marker in practical_markers):
+        reasons.append("Post lacks a practical audience, implication or trade-off")
     if source_url not in post:
         reasons.append("The exact primary candidate URL is missing")
     if len(post) > 280:
@@ -598,14 +637,14 @@ def main(argv: list[str] | None = None) -> int:
     try:
         import discover_candidates as discovery
         config = discovery.load_config()
-        candidates, diagnostics = discovery.discover(config, args.lookback_days, per_source=10)
+        candidates, diagnostics = discovery.discover(config, max(args.lookback_days, 10), per_source=10)
         state = load_state()
     except Exception as exc:
         print("Hourly discovery failed before candidate selection: " + type(exc).__name__, file=sys.stderr)
         return 1
 
     eligible = diversity_rank(candidates, state, now, args.lookback_days)
-    events = recent_events(state, now, days=1)
+    events = events_today(state, now)
     passed_today = [row for row in events if row.get("status") == "draft_passed"]
     report = {
         "generated_at_ist": now.isoformat(timespec="seconds"),
@@ -643,6 +682,20 @@ def main(argv: list[str] | None = None) -> int:
         report["decision_reason"] = "No candidate met freshness, source/category diversity, cooldown and metadata checks."
     else:
         shortlist = diversified_shortlist(eligible, args.pool_size)
+        report["candidate_shortlist"] = [
+            {
+                "id": item["id"],
+                "title": item["title"],
+                "url": item["url"],
+                "source": item["source"],
+                "primary_category": item["primary_category"],
+                "priority_score": item.get("priority_score"),
+                "hourly_adjusted_score": item.get("hourly_adjusted_score"),
+                "published_at": item.get("published_at"),
+                "days_old": item.get("days_old"),
+            }
+            for item in shortlist
+        ]
         generated, model_error = draft_candidates(shortlist)
         if model_error:
             report["decision_reason"] = "Draft generation unavailable or invalid: " + model_error
