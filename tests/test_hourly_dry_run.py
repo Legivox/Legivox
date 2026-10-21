@@ -1,0 +1,155 @@
+import json
+import sys
+import tempfile
+import unittest
+from datetime import datetime, timedelta, timezone
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
+
+import discover_candidates as discovery
+import hourly_dry_run as hourly
+
+
+class HourlyDryRunTests(unittest.TestCase):
+    def setUp(self):
+        self.now = datetime(2026, 10, 21, 12, 0, tzinfo=timezone.utc)
+        self.candidate = {
+            "id": "candidate-1",
+            "title": "Webhook integration skills for coding agents",
+            "source": "GitHub Search",
+            "source_kind": "github_repository",
+            "url": "https://github.com/hookdeck/webhook-skills",
+            "canonical_url": "https://github.com/hookdeck/webhook-skills",
+            "summary": (
+                "Webhook integration skills for AI coding agents. Step-by-step guidance for setting up "
+                "webhook receivers, signature verification, and event handling for Stripe, Shopify, GitHub, and more."
+            ),
+            "primary_category": "commerce_and_digital_products",
+            "categories": ["commerce_and_digital_products"],
+            "priority_score": 88,
+            "days_old": 0.1,
+            "published_at": "2026-10-21T11:00:00+00:00",
+            "verification_status": "needs_primary_source_review",
+            "evidence_urls": ["https://github.com/hookdeck/webhook-skills"],
+            "signals": {"license_spdx": "MIT", "stars": 92},
+        }
+
+    def test_valid_draft_passes_and_is_marked_for_human_review(self):
+        draft = {
+            "candidate_id": "candidate-1",
+            "post_text": (
+                "Need webhook receivers that verify signatures and handle provider events? Hookdeck's skills "
+                "guide coding agents through these steps for Shopify and Stripe. "
+                "https://github.com/hookdeck/webhook-skills"
+            ),
+            "format": "tool_discovery",
+            "audience": "developers building integrations",
+            "angle": "safer webhook setup",
+            "evidence_quote": "signature verification, and event handling",
+            "rationale": "It turns a common integration failure point into an actionable coding workflow.",
+            "scores": {"timeliness": 7, "usefulness": 8, "novelty": 7, "evidence": 8},
+        }
+        accepted, reasons = hourly.validate_draft(draft, {"candidate-1": self.candidate})
+        self.assertEqual(reasons, [])
+        self.assertIsNotNone(accepted)
+        self.assertLessEqual(accepted["character_count"], 280)
+        self.assertFalse(accepted["published_to_x"])
+        self.assertEqual(accepted["status"], "draft_passed_needs_human_review")
+
+    def test_draft_without_source_url_is_rejected(self):
+        draft = {
+            "candidate_id": "candidate-1",
+            "post_text": "A useful workflow for webhook integration.",
+            "evidence_quote": "signature verification, and event handling",
+            "scores": {"timeliness": 7, "usefulness": 8, "novelty": 7, "evidence": 8},
+        }
+        accepted, reasons = hourly.validate_draft(draft, {"candidate-1": self.candidate})
+        self.assertIsNone(accepted)
+        self.assertTrue(any("primary candidate URL" in reason for reason in reasons))
+
+    def test_draft_with_unsupported_numeric_claim_is_rejected(self):
+        draft = {
+            "candidate_id": "candidate-1",
+            "post_text": (
+                "This makes webhook integration 10x faster for every team. "
+                "https://github.com/hookdeck/webhook-skills"
+            ),
+            "evidence_quote": "signature verification, and event handling",
+            "scores": {"timeliness": 7, "usefulness": 8, "novelty": 7, "evidence": 8},
+        }
+        accepted, reasons = hourly.validate_draft(draft, {"candidate-1": self.candidate})
+        self.assertIsNone(accepted)
+        self.assertTrue(any("Unsupported numeric claim" in reason for reason in reasons))
+
+    def test_diversity_rank_excludes_recently_used_candidate(self):
+        state = hourly.empty_state()
+        state["used_candidates"]["candidate-1"] = self.now.isoformat()
+        result = hourly.diversity_rank([self.candidate], state, self.now)
+        self.assertEqual(result, [])
+
+    def test_diversity_rank_respects_per_category_cap(self):
+        state = hourly.empty_state()
+        for index in range(hourly.MAX_PER_CATEGORY_PER_DAY):
+            state["events"].append({
+                "timestamp_utc": (self.now - timedelta(hours=index + 1)).isoformat(),
+                "status": "draft_passed",
+                "source_group": "Some other source",
+                "category": "commerce_and_digital_products",
+                "title": "Different previous title " + str(index),
+            })
+        result = hourly.diversity_rank([self.candidate], state, self.now)
+        self.assertEqual(result, [])
+
+    def test_freshness_window_uses_source_specific_rules(self):
+        current = dict(self.candidate, source="GitHub Search", days_old=2.5)
+        stale_repo = dict(self.candidate, source="GitHub Search", days_old=4.0)
+        weekly = dict(self.candidate, source="Console.dev", days_old=8.0)
+        self.assertTrue(hourly.is_fresh(current, 3))
+        self.assertFalse(hourly.is_fresh(stale_repo, 3))
+        self.assertTrue(hourly.is_fresh(weekly, 14))
+        self.assertFalse(hourly.is_fresh(weekly, 7))
+
+    def test_state_loader_fails_closed_on_corrupt_state(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "hourly-state.json"
+            path.write_text("{broken", encoding="utf-8")
+            original = hourly.STATE_PATH
+            hourly.STATE_PATH = path
+            try:
+                with self.assertRaises(RuntimeError):
+                    hourly.load_state()
+            finally:
+                hourly.STATE_PATH = original
+
+    def test_hourly_report_is_explicitly_dry_run(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            original = (hourly.OUT, hourly.LATEST_JSON_PATH, hourly.LATEST_MD_PATH)
+            hourly.OUT = Path(tmp)
+            hourly.LATEST_JSON_PATH = Path(tmp) / "hourly-latest.json"
+            hourly.LATEST_MD_PATH = Path(tmp) / "hourly-latest.md"
+            try:
+                report = {
+                    "run_at_ist": "2026-10-21T17:30:00+05:30",
+                    "mode": "hourly_dry_run_only",
+                    "eligible_candidate_count": 0,
+                    "source_diagnostics": [],
+                    "outcome": "skip",
+                    "decision_reason": "No candidate passed.",
+                    "passing_drafts": [],
+                    "rejected_drafts": [],
+                    "candidate_shortlist": [],
+                }
+                hourly.write_outputs(report)
+                payload = json.loads(hourly.LATEST_JSON_PATH.read_text(encoding="utf-8"))
+                md = hourly.LATEST_MD_PATH.read_text(encoding="utf-8")
+                self.assertFalse(payload["posted_to_x"])
+                self.assertIn("not performed", md)
+                self.assertIn("skip", md)
+            finally:
+                hourly.OUT, hourly.LATEST_JSON_PATH, hourly.LATEST_MD_PATH = original
+
+
+if __name__ == "__main__":
+    unittest.main()
