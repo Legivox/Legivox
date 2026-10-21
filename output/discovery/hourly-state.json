@@ -13,6 +13,20 @@
       "editorial_score": 9.3,
       "post_text": "ToolJet lets you build internal dashboards and AI agents visually or from code. It supports Claude, Codex, Cursor and MCP. https://github.com/ToolJet/ToolJet",
       "published_to_x": false
+    },
+    {
+      "timestamp_utc": "2026-10-21T17:42:48+00:00",
+      "run_at_ist": "2026-10-21T23:12:48+05:30",
+      "status": "skip",
+      "reason": "All generated drafts failed the local evidence/quality checks; slot skipped.",
+      "candidate_ids": [
+        "ef6cf38cba9da828",
+        "f3fa50bd7c2402c5",
+        "fbfdec28cfffc04c",
+        "325f6a102c1c611d",
+        "55c557b3bc0267ca"
+      ],
+      "published_to_x": false
     }
   ],
   "attempted_candidates": {
@@ -20,7 +34,12 @@
     "71d4fa150d1a6d81": "2026-10-21T17:40:24+00:00",
     "638846f7379e6538": "2026-10-21T17:40:24+00:00",
     "c37165a31cd3fc39": "2026-10-21T17:40:24+00:00",
-    "a5e43b1572bfaf36": "2026-10-21T17:40:24+00:00"
+    "a5e43b1572bfaf36": "2026-10-21T17:40:24+00:00",
+    "ef6cf38cba9da828": "2026-10-21T17:42:48+00:00",
+    "325f6a102c1c611d": "2026-10-21T17:42:48+00:00",
+    "996527c10b7cb2b0": "2026-10-21T17:42:48+00:00",
+    "f3fa50bd7c2402c5": "2026-10-21T17:42:48+00:00",
+    "dd89fbbb59577fc8": "2026-10-21T17:42:48+00:00"
   },
   "used_candidates": {
     "067f046a6a82cf3a": "2026-10-21T17:40:24+00:00"

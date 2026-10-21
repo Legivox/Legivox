@@ -1,17 +1,17 @@
 {
-  "generated_at_ist": "2026-10-21T23:10:24+05:30",
-  "run_at_ist": "2026-10-21T23:10:24+05:30",
+  "generated_at_ist": "2026-10-21T23:12:48+05:30",
+  "run_at_ist": "2026-10-21T23:12:48+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 146,
-  "eligible_candidate_count": 127,
+  "candidate_count_raw": 145,
+  "eligible_candidate_count": 124,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3265
+      "total_count": 3267
     },
     {
       "source": "GitHub Search · github-analytics-seo",
@@ -145,228 +145,114 @@
     }
   ],
   "daily_draft_cap": 10,
-  "daily_drafts_already_passed": 0,
-  "outcome": "draft_ready_for_human_review",
-  "decision_reason": "At least one draft passed evidence, novelty, claim, URL and length checks. The best eligible option is shown first; nothing was published.",
-  "passing_drafts": [
+  "daily_drafts_already_passed": 1,
+  "outcome": "skip",
+  "decision_reason": "All generated drafts failed the local evidence/quality checks; slot skipped.",
+  "passing_drafts": [],
+  "rejected_drafts": [
     {
-      "candidate_id": "067f046a6a82cf3a",
-      "title": "ToolJet/ToolJet",
-      "source": "GitHub Search",
-      "source_kind": "github_repository",
-      "url": "https://github.com/ToolJet/ToolJet",
-      "category": "ai_and_automation",
-      "priority_score": 91,
-      "hourly_adjusted_score": 95,
-      "post_text": "ToolJet lets you build internal dashboards and AI agents visually or from code. It supports Claude, Codex, Cursor and MCP. https://github.com/ToolJet/ToolJet",
-      "format": "tool_discovery",
-      "audience": "developers",
-      "angle": "visual+code+AI",
-      "rationale": "Shows core feature set",
-      "evidence_quote": "ToolJet AI",
-      "scores": {
-        "timeliness": 10,
-        "usefulness": 9,
-        "novelty": 8,
-        "evidence": 10
-      },
-      "editorial_score": 9.3,
-      "character_count": 157,
-      "status": "draft_passed_needs_human_review",
-      "published_to_x": false
+      "candidate_id": "ef6cf38cba9da828",
+      "title": "hookdeck/webhook-skills",
+      "reasons": [
+        "Evidence quote is not an exact substring of the candidate title/summary",
+        "A factual claim lacks an exact source quote"
+      ],
+      "proposed_text": "Webhook integration skills for AI coding agents (Claude Code, Cursor, Copilot). Step‑by‑step guidance for setting up webhook receivers, signature verification, and event handling for Stripe, Shopify, GitHub, and more. https://github.com/hookdeck/webhook-skills"
     },
     {
-      "candidate_id": "638846f7379e6538",
-      "title": "HKUDS/nanobot",
-      "source": "GitHub Search",
-      "source_kind": "github_repository",
-      "url": "https://github.com/HKUDS/nanobot",
-      "category": "ai_and_automation",
-      "priority_score": 89,
-      "hourly_adjusted_score": 93,
-      "post_text": "Nanobot is a lightweight, self‑hosted Python AI agent framework with WebUI, memory, and multi‑agent workflows. https://github.com/HKUDS/nanobot",
-      "format": "tool_discovery",
-      "audience": "AI engineers",
-      "angle": "self-hosted+Python",
-      "rationale": "Shows self-hosting and Python",
-      "evidence_quote": "self-hosted personal AI agent framework",
-      "scores": {
-        "timeliness": 10,
-        "usefulness": 9,
-        "novelty": 8,
-        "evidence": 10
-      },
-      "editorial_score": 9.3,
-      "character_count": 143,
-      "status": "draft_passed_needs_human_review",
-      "published_to_x": false
+      "candidate_id": "",
+      "title": "Unknown candidate",
+      "reasons": [
+        "Draft refers to an unknown candidate ID"
+      ],
+      "proposed_text": ""
     },
     {
-      "candidate_id": "c37165a31cd3fc39",
-      "title": "n8n-io/n8n",
-      "source": "GitHub Search",
-      "source_kind": "github_repository",
-      "url": "https://github.com/n8n-io/n8n",
-      "category": "ai_and_automation",
-      "priority_score": 89,
-      "hourly_adjusted_score": 93,
-      "post_text": "n8n is a fair‑code workflow platform with native AI, 400+ integrations, and visual building. Self‑host or cloud. https://github.com/n8n-io/n8n",
-      "format": "tool_discovery",
-      "audience": "automation engineers",
-      "angle": "AI+integration",
-      "rationale": "Emphasizes AI and integrations",
-      "evidence_quote": "Fair-code workflow automation platform",
-      "scores": {
-        "timeliness": 10,
-        "usefulness": 9,
-        "novelty": 7,
-        "evidence": 9
-      },
-      "editorial_score": 8.8,
-      "character_count": 142,
-      "status": "draft_passed_needs_human_review",
-      "published_to_x": false
+      "candidate_id": "325f6a102c1c611d",
+      "title": "Checkout footer visibility now applies to merchant-configurable content",
+      "reasons": [
+        "Draft is 288 raw characters; limit is 280",
+        "Evidence quote is not an exact substring of the candidate title/summary",
+        "A factual claim lacks an exact source quote"
+      ],
+      "proposed_text": "Shopify: Checkout footer visibility now applies only to merchant‑configurable content. Shopify‑provided transaction info still shows regardless of setting. Existing apps need no changes. https://shopify.dev/changelog/checkout-footer-visibility-now-applies-to-merchant-configurable-content"
     },
     {
-      "candidate_id": "71d4fa150d1a6d81",
-      "title": "amplifthq/openmeld",
-      "source": "GitHub Search",
-      "source_kind": "github_repository",
-      "url": "https://github.com/amplifthq/openmeld",
-      "category": "ai_and_automation",
-      "priority_score": 90,
-      "hourly_adjusted_score": 94,
-      "post_text": "OpenMeld is an open‑source collaboration layer for people and AI agents, letting teams share context and coordinate tasks. https://github.com/amplifthq/openmeld",
-      "format": "tool_discovery",
-      "audience": "product teams",
-      "angle": "collaboration+AI",
-      "rationale": "Highlights collaboration focus",
-      "evidence_quote": "open-source collaboration system",
-      "scores": {
-        "timeliness": 10,
-        "usefulness": 8,
-        "novelty": 7,
-        "evidence": 9
-      },
-      "editorial_score": 8.5,
-      "character_count": 160,
-      "status": "draft_passed_needs_human_review",
-      "published_to_x": false
+      "candidate_id": "",
+      "reasons": [
+        "Duplicate model response for candidate"
+      ]
     },
     {
-      "candidate_id": "a5e43b1572bfaf36",
-      "title": "paperclipai/paperclip",
-      "source": "GitHub Search",
-      "source_kind": "github_repository",
-      "url": "https://github.com/paperclipai/paperclip",
-      "category": "ai_and_automation",
-      "priority_score": 87,
-      "hourly_adjusted_score": 91,
-      "post_text": "Paperclip is the open‑source app for managing agents at work, built in TypeScript. https://github.com/paperclipai/paperclip",
-      "format": "tool_discovery",
-      "audience": "product managers",
-      "angle": "agent management",
-      "rationale": "Shows agent management focus",
-      "evidence_quote": "open-source app everyone uses",
-      "scores": {
-        "timeliness": 10,
-        "usefulness": 8,
-        "novelty": 7,
-        "evidence": 9
-      },
-      "editorial_score": 8.5,
-      "character_count": 123,
-      "status": "draft_passed_needs_human_review",
-      "published_to_x": false
+      "candidate_id": "996527c10b7cb2b0",
+      "title": "Show HN: Proxium – Self-hosted HTTP/SOCKS5 proxy with a web admin UI",
+      "reasons": [
+        "Evidence quote is not an exact substring of the candidate title/summary",
+        "A factual claim lacks an exact source quote"
+      ],
+      "proposed_text": "Proxium: self‑hosted HTTP/SOCKS5 proxy with web admin UI. One‑click Docker run, external authentication, ACLs, limits, quotas. https://github.com/koldakov/proxium"
     }
   ],
-  "rejected_drafts": [],
   "candidate_shortlist": [
     {
-      "id": "067f046a6a82cf3a",
-      "title": "ToolJet/ToolJet",
-      "url": "https://github.com/ToolJet/ToolJet",
+      "id": "ef6cf38cba9da828",
+      "title": "hookdeck/webhook-skills",
+      "url": "https://github.com/hookdeck/webhook-skills",
       "source": "GitHub Search",
-      "primary_category": "ai_and_automation",
-      "priority_score": 91,
-      "hourly_adjusted_score": 95,
-      "published_at": "2026-10-21T17:33:05+00:00",
-      "days_old": 0.01
+      "primary_category": "commerce_and_digital_products",
+      "priority_score": 88,
+      "hourly_adjusted_score": 80,
+      "published_at": "2026-10-21T16:25:39+00:00",
+      "days_old": 0.05
     },
     {
-      "id": "71d4fa150d1a6d81",
-      "title": "amplifthq/openmeld",
-      "url": "https://github.com/amplifthq/openmeld",
+      "id": "f3fa50bd7c2402c5",
+      "title": "guillermoscript/lms-front",
+      "url": "https://github.com/guillermoscript/lms-front",
       "source": "GitHub Search",
-      "primary_category": "ai_and_automation",
-      "priority_score": 90,
-      "hourly_adjusted_score": 94,
-      "published_at": "2026-10-21T17:38:35+00:00",
+      "primary_category": "creator_and_indie_business",
+      "priority_score": 85,
+      "hourly_adjusted_score": 79,
+      "published_at": "2026-10-21T17:36:49+00:00",
       "days_old": 0.0
     },
     {
-      "id": "638846f7379e6538",
-      "title": "HKUDS/nanobot",
-      "url": "https://github.com/HKUDS/nanobot",
+      "id": "fbfdec28cfffc04c",
+      "title": "PostHog/posthog",
+      "url": "https://github.com/PostHog/posthog",
       "source": "GitHub Search",
-      "primary_category": "ai_and_automation",
-      "priority_score": 89,
-      "hourly_adjusted_score": 93,
-      "published_at": "2026-10-21T17:34:19+00:00",
+      "primary_category": "data_and_growth",
+      "priority_score": 84,
+      "hourly_adjusted_score": 78,
+      "published_at": "2026-10-21T17:42:33+00:00",
       "days_old": 0.0
     },
     {
-      "id": "c37165a31cd3fc39",
-      "title": "n8n-io/n8n",
-      "url": "https://github.com/n8n-io/n8n",
-      "source": "GitHub Search",
-      "primary_category": "ai_and_automation",
-      "priority_score": 89,
-      "hourly_adjusted_score": 93,
-      "published_at": "2026-10-21T17:39:37+00:00",
-      "days_old": 0.0
+      "id": "325f6a102c1c611d",
+      "title": "Checkout footer visibility now applies to merchant-configurable content",
+      "url": "https://shopify.dev/changelog/checkout-footer-visibility-now-applies-to-merchant-configurable-content",
+      "source": "Shopify Developer Changelog",
+      "primary_category": "commerce_and_digital_products",
+      "priority_score": 78,
+      "hourly_adjusted_score": 78,
+      "published_at": "2026-10-21T13:00:00+00:00",
+      "days_old": 0.2
     },
     {
-      "id": "a5e43b1572bfaf36",
-      "title": "paperclipai/paperclip",
-      "url": "https://github.com/paperclipai/paperclip",
-      "source": "GitHub Search",
-      "primary_category": "ai_and_automation",
-      "priority_score": 87,
-      "hourly_adjusted_score": 91,
-      "published_at": "2026-10-21T17:38:22+00:00",
-      "days_old": 0.0
+      "id": "55c557b3bc0267ca",
+      "title": "Securing your app, together",
+      "url": "https://shopify.dev/changelog/securing-your-app-together",
+      "source": "Shopify Developer Changelog",
+      "primary_category": "commerce_and_digital_products",
+      "priority_score": 78,
+      "hourly_adjusted_score": 78,
+      "published_at": "2026-10-20T19:00:00+00:00",
+      "days_old": 0.95
     }
   ],
-  "recommended_draft": {
-    "candidate_id": "067f046a6a82cf3a",
-    "title": "ToolJet/ToolJet",
-    "source": "GitHub Search",
-    "source_kind": "github_repository",
-    "url": "https://github.com/ToolJet/ToolJet",
-    "category": "ai_and_automation",
-    "priority_score": 91,
-    "hourly_adjusted_score": 95,
-    "post_text": "ToolJet lets you build internal dashboards and AI agents visually or from code. It supports Claude, Codex, Cursor and MCP. https://github.com/ToolJet/ToolJet",
-    "format": "tool_discovery",
-    "audience": "developers",
-    "angle": "visual+code+AI",
-    "rationale": "Shows core feature set",
-    "evidence_quote": "ToolJet AI",
-    "scores": {
-      "timeliness": 10,
-      "usefulness": 9,
-      "novelty": 8,
-      "evidence": 10
-    },
-    "editorial_score": 9.3,
-    "character_count": 157,
-    "status": "draft_passed_needs_human_review",
-    "published_to_x": false
-  },
   "state_summary": {
     "used_candidates_in_cooldown": 1,
-    "recently_attempted_candidates": 5,
+    "recently_attempted_candidates": 10,
     "recent_draft_passes_today": 1
   }
 }
