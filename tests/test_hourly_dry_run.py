@@ -42,8 +42,8 @@ class HourlyDryRunTests(unittest.TestCase):
             "fact_sentence": "Hookdeck's webhook skills give step-by-step guidance for receivers, signature verification and event handling.",
             "post_text": (
                 "Hookdeck's webhook skills give step-by-step guidance for receivers, signature verification and event "
-                "handling. For webhook receivers, add tests for invalid "
-                "signatures and duplicate events before shipping. https://github.com/hookdeck/webhook-skills"
+                "handling. For webhook receivers, test signatures and duplicate events before shipping. "
+                "https://github.com/hookdeck/webhook-skills"
             ),
             "format": "tool_discovery",
             "audience": "developers building integrations",
