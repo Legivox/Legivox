@@ -40,8 +40,9 @@ class HourlyDryRunTests(unittest.TestCase):
         draft = {
             "candidate_id": "candidate-1",
             "post_text": (
-                "Useful for coding agents: Hookdeck's webhook skills guide setup of receivers, signature verification "
-                "and event handling for Stripe and Shopify. https://github.com/hookdeck/webhook-skills"
+                "Hookdeck's webhook skills guide coding agents through receiver setup, signature verification and "
+                "event handling for Stripe and Shopify. Useful if you're building provider integrations. "
+                "https://github.com/hookdeck/webhook-skills"
             ),
             "format": "tool_discovery",
             "audience": "developers building integrations",
@@ -96,8 +97,8 @@ class HourlyDryRunTests(unittest.TestCase):
         draft = {
             "candidate_id": "candidate-1",
             "post_text": (
-                "Hookdeck's webhook integration skills guide coding agents through setting up receivers, "
-                "signature verification and a real-time custom analytics dashboard for Shopify and Stripe. "
+                "Hookdeck's webhook skills add a real-time custom analytics dashboard and guaranteed fraud prevention "
+                "for Shopify and Stripe. Useful if you're auditing a store. "
                 "https://github.com/hookdeck/webhook-skills"
             ),
             "evidence_quote": "signature verification, and event handling",
