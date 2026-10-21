@@ -305,11 +305,19 @@ def diversity_rank(candidates: list[dict], state: dict, now: datetime, lookback_
                     repeat_penalty = max(repeat_penalty, 18)
 
         raw = int(candidate.get("priority_score") or 0)
-        star_delta = int(candidate.get("stars_delta_24h") or 0)
+        signals = candidate.get("signals") or {}
+        url = str(candidate.get("url") or "")
+        is_github_repo = str(candidate.get("source_kind") or "") == "github_repository" or (
+            "stars" in signals and "github.com/" in url
+        )
+        star_delta = int(candidate.get("stars_delta_24h") or 0) if is_github_repo else 0
         # Reward measured 20-36h star growth, not cumulative lifetime stars.
         adjusted = raw - 10 * source_counts[source_group] - 8 * category_counts[category] - repeat_penalty
         adjusted += min(15, star_delta)
-        candidate["trend_signal"] = "measured_star_growth" if candidate.get("stars_delta_baseline_hours") is not None else "insufficient_history"
+        if is_github_repo:
+            candidate["trend_signal"] = "measured_star_growth" if candidate.get("stars_delta_baseline_hours") is not None else "insufficient_history"
+        else:
+            candidate["trend_signal"] = "not_applicable"
         # Small adjustment for evidence completeness and declared licence metadata.
         signals = candidate.get("signals") or {}
         if signals.get("license_spdx"):
