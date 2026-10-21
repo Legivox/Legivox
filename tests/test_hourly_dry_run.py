@@ -171,6 +171,41 @@ class HourlyDryRunTests(unittest.TestCase):
         self.assertIsNone(accepted)
         self.assertTrue(any("Generic audience-only advice" in reason or "actionable" in reason or "too generic" in reason for reason in reasons))
 
+    def test_concrete_scan_remediation_is_recognized_as_actionable(self):
+        candidate = dict(self.candidate)
+        candidate.update({
+            "title": "Securing your app, together",
+            "source": "Shopify Developer Changelog",
+            "source_kind": "official_changelog",
+            "url": "https://shopify.dev/changelog/securing-your-app-together",
+            "canonical_url": "https://shopify.dev/changelog/securing-your-app-together",
+            "summary": (
+                "AI Toolkit checks for Shopify-specific vulnerabilities, such as unauthenticated routes, "
+                "cross-shop data access and unverified webhooks. Move to expiring access tokens."
+            ),
+            "evidence_urls": ["https://shopify.dev/changelog/securing-your-app-together"],
+        })
+        draft = {
+            "candidate_id": "candidate-1",
+            "fact_sentence": "AI Toolkit checks for Shopify-specific vulnerabilities.",
+            "post_text": (
+                "AI Toolkit checks for Shopify-specific vulnerabilities. "
+                "Run the scan before release and fix any flagged routes. "
+                "https://shopify.dev/changelog/securing-your-app-together"
+            ),
+            "editorial_takeaway": "Run the scan before release and fix any flagged routes.",
+            "evidence_quote": "AI Toolkit checks for Shopify-specific vulnerabilities",
+            "claim_evidence": [
+                {
+                    "claim": "AI Toolkit checks for Shopify-specific vulnerabilities",
+                    "quote": "AI Toolkit checks for Shopify-specific vulnerabilities",
+                }
+            ],
+            "scores": {"timeliness": 9, "usefulness": 8, "novelty": 7, "evidence": 9, "insight": 8},
+        }
+        _accepted, reasons = hourly.validate_draft(draft, {"candidate-1": candidate})
+        self.assertFalse(any("needs a concrete test" in reason for reason in reasons))
+
     def test_takeaway_that_repeats_source_details_is_rejected(self):
         draft = {
             "candidate_id": "candidate-1",
