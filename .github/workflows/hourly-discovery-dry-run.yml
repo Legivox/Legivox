@@ -30,8 +30,8 @@ on:
           - "10"
         default: "10"
   schedule:
-    # 08:47 through 23:47 IST. Cron is in UTC: 02:47 through 17:47 UTC.
-    - cron: "47 2-17 * * *"
+    # Hourly checks from 08:17 through 22:17 IST. Cron is in UTC: 02:47 through 16:47 UTC.
+    - cron: "47 2-16 * * *"
 
 permissions:
   contents: write
@@ -99,7 +99,7 @@ jobs:
         run: cat output/discovery/hourly-latest.md >> "$GITHUB_STEP_SUMMARY"
 
       - name: Commit hourly state and audit log
-        if: success() && hashFiles('output/discovery/hourly-state.json') != ''
+        if: success() && (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch') && hashFiles('output/discovery/hourly-state.json') != ''
         env:
           BRANCH_NAME: ${{ github.ref_name }}
         run: |
