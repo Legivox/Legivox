@@ -33,6 +33,29 @@ The research script is scripts/discover_candidates.py. Run the command *python s
 
 The separate GitHub Actions workflow **Legivox multidomain discovery preview** runs tests and a read-only discovery preview on matching pull requests. Once the workflow is available on the default branch, it can also be run manually with a 7-, 14- or 30-day lookback. The report appears in the Actions run summary. It does not load the X session cookie or Groq API key, write to the production plan, or publish/interact on X.
 
+## Editorial quality standard: explain, don't announce
+
+The source and creator list provided for Legivox is an editorial benchmark, not a request to imitate anyone's exact voice.
+
+- **TLDR Dev:** concise, scannable summaries with a link to the original story.
+- **Console.dev:** explain what a tool does, what is useful, and its limitations; consider documentation, self-service access, maintenance, and security/privacy.
+- **ByteByteGo and engineering blogs:** explain how something works, which architectural choice matters, or what failure mode/trade-off readers should understand.
+- **Dreams of Code, ThePrimeagen, Fireship and NetworkChuck:** prefer concrete workflows, demos and implementation details over launch announcements.
+- **The Changelog and GitHub Release Radar:** use release context, maintainer/engineering perspective and what changed, without confusing repository activity with a new launch.
+- **GitHub Trending, Show HN and OpenAlternative:** treat these as discovery signals. Stars, votes or a directory listing alone do not prove quality or market demand.
+
+### Required post structure
+
+1. **A specific supported fact:** the exact feature, tool behaviour, API change or engineering lesson described by the source.
+2. **A candidate-specific editorial takeaway:** a concrete test, trade-off, limitation, implementation step, decision rule or failure mode. A generic audience tag such as "useful if you build apps" does not count.
+3. **The primary source link:** placed at the end, with no unsupported claims about price, performance, adoption, release timing or security.
+
+The draft validator now requires an explicit editorial_takeaway as the second sentence and an insight score of at least 7/10. It checks that the takeaway is present, actionable and tied to the candidate's technical/product details. It rejects generic endings and opening lines that merely repeat the source headline. The post body is preserved during URL cleanup; the code must not delete the model's analysis and replace it with a boilerplate category sentence.
+
+Preferred formats are release context, tool review, practical workflow, comparison/trade-off, and engineering lesson. A candidate that cannot support a useful angle should be skipped.
+
+The current automated source adapters are still limited to GitHub search, Hacker News/Show HN, Console.dev RSS, Product Hunt RSS, and Shopify Developer Changelog. The remaining creators/blogs/directories are editorial benchmarks and future integration candidates, not currently connected feeds.
+
 The priority score is a queue-sorting heuristic, not a quality rating, validation of claims, proof of market demand, or popularity measurement. GitHub star counts are sampled hourly and the pipeline estimates growth from a stored sample roughly 20–36 hours old. New repositories begin with no measured velocity until enough history exists; lifetime stars alone should not be described as trending. Every candidate needs primary-source review of functionality, dates, price, licence, free-tier limits, integrations and privacy/security trade-offs.
 
 The separate **Legivox hourly discovery and draft preview** workflow is configured for hourly checks at :17 IST from 08:17 through 23:17. It uses the same source registry, selects a diverse slate, asks Groq for candidate-specific copy, applies claim/evidence/URL/length and use-case checks, and records either a draft for human review or an explicit skip. Its daily cap is 10 passing draft proposals. The run summary and artifact contain the candidate list, proposed copy and rejection reasons; the audit state tracks cooldowns, recent proposals and GitHub star snapshots. This workflow does not load the X cookie or publish to X.
