@@ -173,7 +173,25 @@ class HourlyDryRunTests(unittest.TestCase):
         self.assertTrue(hourly.is_fresh(current, 3))
         self.assertFalse(hourly.is_fresh(stale_repo, 3))
         self.assertTrue(hourly.is_fresh(weekly, 14))
-        self.assertFalse(hourly.is_fresh(weekly, 7))
+        self.assertTrue(hourly.is_fresh(weekly, 7))
+
+    def test_daily_caps_use_india_calendar_day_not_rolling_24_hours(self):
+        state = hourly.empty_state()
+        state["events"] = [
+            {
+                "run_at_ist": "2026-10-20T23:55:00+05:30",
+                "timestamp_utc": "2026-10-20T18:25:00+00:00",
+                "status": "draft_passed",
+            },
+            {
+                "run_at_ist": "2026-10-21T08:05:00+05:30",
+                "timestamp_utc": "2026-10-21T02:35:00+00:00",
+                "status": "draft_passed",
+            },
+        ]
+        today = hourly.events_today(state, self.now)
+        self.assertEqual(len(today), 1)
+        self.assertEqual(today[0]["run_at_ist"], "2026-10-21T08:05:00+05:30")
 
     def test_state_loader_fails_closed_on_corrupt_state(self):
         with tempfile.TemporaryDirectory() as tmp:
