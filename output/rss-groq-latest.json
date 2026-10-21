@@ -1,5 +1,5 @@
 {
-  "generated_at_ist": "2026-10-20T19:41:54+05:30",
+  "generated_at_ist": "2026-10-21T09:30:59+05:30",
   "model": "openai/gpt-oss-20b",
   "dry_run": false,
   "slot_plan_mode": true,
@@ -10,188 +10,189 @@
       "feed_url": "https://techcrunch.com/feed/",
       "articles_kept": 20,
       "error": null,
-      "recently_published_items_skipped": 3,
-      "thin_summary_items_skipped": 5
+      "recently_published_items_skipped": 0,
+      "thin_summary_items_skipped": 7
     },
     {
       "source": "The Verge",
       "feed_url": "https://www.theverge.com/rss/index.xml",
       "articles_kept": 10,
       "error": null,
-      "recently_published_items_skipped": 3,
-      "thin_summary_items_skipped": 1
+      "recently_published_items_skipped": 0,
+      "thin_summary_items_skipped": 0
     },
     {
       "source": "Ars Technica",
       "feed_url": "https://feeds.arstechnica.com/arstechnica/index",
       "articles_kept": 20,
       "error": null,
-      "recently_published_items_skipped": 3,
-      "thin_summary_items_skipped": 0
+      "recently_published_items_skipped": 0,
+      "thin_summary_items_skipped": 1
     }
   ],
   "candidate_count": 12,
   "candidate_articles": [
     {
-      "source": "The Verge",
-      "title": "Adobe Lightroom mobile can now open closed eyes in photos with a simple tap",
-      "summary": "Adobe announced yesterday that the mobile version of Lightroom , available for iOS, iPadOS, and Android, can now open closed eyes in photos using generative AI with just a single tap. When the app detects a person, or a group of people, have their eyes closed in a photo it will automatically present users with a new Open Eyes Quick Action that appears as an icon over the image providing easy acces",
-      "published_at_utc": "2026-10-20T13:12:02+00:00",
-      "age_hours": 1.0,
-      "url": "https://www.theverge.com/tech/1014246/adobe-lightroom-mobile-ai-quick-action-open-eyes-closed-blink-repair",
-      "feed_url": "https://www.theverge.com/rss/index.xml",
+      "source": "Ars Technica",
+      "title": "PHP warns it plans to release 2 emergency patches imminently",
+      "summary": "Website admins, brace yourselves. Fixes for what are believed to be uncommonly severe vulnerabilities are scheduled to drop in a little more than 12 hours for PHP, a programming language that powers websites and Web applications everywhere. PHP maintainers said Monday that they planned to release patches for two vulnerabilities, both with severity ratings of 9.2 out of a possible 10. Waiting for P",
+      "published_at_utc": "2026-10-21T02:12:18+00:00",
+      "age_hours": 1.8,
+      "url": "https://arstechnica.com/security/2026/10/php-maintainers-tell-web-devs-to-prepare-themselves-for-critical-security-patches/",
+      "feed_url": "https://feeds.arstechnica.com/arstechnica/index",
       "article_id": "S01"
     },
     {
-      "source": "TechCrunch",
-      "title": "US orders federal agencies to remove China’s DeepSeek AI from their systems",
-      "summary": "The US has ordered federal civilian agencies to remove DeepSeek products and third-party services built using its technology, citing national security concerns.",
-      "published_at_utc": "2026-10-20T13:07:24+00:00",
-      "age_hours": 1.1,
-      "url": "https://techcrunch.com/2026/10/20/us-orders-federal-agencies-to-remove-chinas-deepseek-ai-from-their-systems/",
-      "feed_url": "https://techcrunch.com/feed/",
+      "source": "The Verge",
+      "title": "YouTube might be testing hiding the dislike button",
+      "summary": "YouTube appears to be testing hiding the dislike button on videos, as reported by 9to5Google . At least two users on X have recently shared screenshots of the dislike button now being placed in the three-dots submenu, and a user on Reddit also shared an image of the dislike button being absent for them. Right now, for me, the dislike button sits right next to the like button under a video. Moving ",
+      "published_at_utc": "2026-10-21T00:00:56+00:00",
+      "age_hours": 4.0,
+      "url": "https://www.theverge.com/streaming/1015099/youtube-dislike-button-hide-menu",
+      "feed_url": "https://www.theverge.com/rss/index.xml",
       "article_id": "S02"
     },
     {
-      "source": "TechCrunch",
-      "title": "Eka is worth $1.45B thanks to a physical AI model that has experts raving",
-      "summary": "Eka Robotics may be the first robotic arm that is actually good at picking a wide range of objects up, and it is so smooth and human-like, it is wowing the industry.",
-      "published_at_utc": "2026-10-20T13:00:00+00:00",
-      "age_hours": 1.2,
-      "url": "https://techcrunch.com/2026/10/20/eka-is-worth-1-45-billion-thanks-to-a-physical-ai-model-that-has-experts-raving/",
-      "feed_url": "https://techcrunch.com/feed/",
+      "source": "The Verge",
+      "title": "Judge dismisses Sam Altman’s sister’s sexual abuse lawsuit",
+      "summary": "On Tuesday, US District Judge Zachary Bluestone dismissed the lawsuit Ann Altman filed last year alleging that her brother, OpenAI CEO Sam Altman, had sexually abused her throughout her childhood. As reported earlier by The Guardian , the judge wrote that over the past year, Ann had failed to appear for an independent medical examination or meet other deadlines despite warnings that it would resul",
+      "published_at_utc": "2026-10-20T23:37:55+00:00",
+      "age_hours": 4.4,
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1014976/sam-altman-ann-altman-lawsuit-dismissed",
+      "feed_url": "https://www.theverge.com/rss/index.xml",
       "article_id": "S03"
     },
     {
-      "source": "Ars Technica",
-      "title": "Meta Muse exposes users' personal and business secrets when they share conversations",
-      "summary": "Muse, the new general-purpose AI agent from Meta, can expose sensitive information when users share conversations through Web links, researchers reported Monday. Like many online services, Muse allows users to share searches, conversations, images, and similar content with other people. Such share features usually involve clicking an option to create a unique URL that anyone can use to load a page",
-      "published_at_utc": "2026-10-20T12:33:13+00:00",
-      "age_hours": 1.6,
-      "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/",
-      "feed_url": "https://feeds.arstechnica.com/arstechnica/index",
+      "source": "TechCrunch",
+      "title": "Anthropic pitches AI safety bill that may block a model if 50+ people could be killed",
+      "summary": "The proposed policy seems to offer protections against AI run amok but actually forbids federal agencies from blocking a model's release without the permission of a judge.",
+      "published_at_utc": "2026-10-20T23:01:23+00:00",
+      "age_hours": 5.0,
+      "url": "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/",
+      "feed_url": "https://techcrunch.com/feed/",
       "article_id": "S04"
     },
     {
-      "source": "TechCrunch",
-      "title": "Spotify launches paid podcast memberships with perks beyond bonus content",
-      "summary": "Spotify's new paid memberships let podcasters offer fans exclusive perks, including ad-free listening, early access, and bonus content, while keeping 90% of the revenue.",
-      "published_at_utc": "2026-10-20T12:00:00+00:00",
-      "age_hours": 2.2,
-      "url": "https://techcrunch.com/2026/10/20/spotify-launches-paid-podcast-memberships-with-perks-beyond-bonus-content/",
-      "feed_url": "https://techcrunch.com/feed/",
+      "source": "The Verge",
+      "title": "Google’s more personalized Gemini AI is heading to your car",
+      "summary": "Google is bringing Personal Intelligence to Gemini AI in your car. With this update, Gemini in Android Auto and cars with Google built-in can tap into your information across Google apps, including Gmail, Calendar, Maps, Photos, YouTube, and Search. As an example, Google says you can ask Gemini about your flight status if you're driving to the airport. The AI assistant can pull your flight details",
+      "published_at_utc": "2026-10-20T22:42:47+00:00",
+      "age_hours": 5.3,
+      "url": "https://www.theverge.com/tech/1014999/google-gemini-ai-cars-android-auto",
+      "feed_url": "https://www.theverge.com/rss/index.xml",
       "article_id": "S05"
     },
     {
       "source": "TechCrunch",
-      "title": "Oura adds new fitness metrics to show how workouts impact your body",
-      "summary": "While Oura has largely dominated the smart ring market for years, rivals like RingConn and Ultrahuman are emerging to dethrone it, putting pressure on the company to keep innovating. By launching more advanced workout metrics, Oura is looking to differentiate itself from competitors as the smart ring market gets more crowded.",
-      "published_at_utc": "2026-10-20T12:00:00+00:00",
-      "age_hours": 2.2,
-      "url": "https://techcrunch.com/2026/10/20/oura-is-launching-two-new-ways-to-track-and-understand-activity/",
+      "title": "Hugging Face CEO warns that Netflix’s OpenAI hack documentary isn’t accurate",
+      "summary": "Before you share the Netflix documentary \"AI Gone Rogue\" take note. Clem Delangue, Hugging Face's co-founder who is featured in the film, says it went \"full doomer mode\" and isn't accurate.",
+      "published_at_utc": "2026-10-20T22:24:02+00:00",
+      "age_hours": 5.6,
+      "url": "https://techcrunch.com/2026/10/20/hugging-face-ceo-warns-that-netflixs-openai-hack-documentary-isnt-accurate/",
       "feed_url": "https://techcrunch.com/feed/",
       "article_id": "S06"
     },
     {
-      "source": "TechCrunch",
-      "title": "Yelp can now call on your behalf to check wait times at a restaurant",
-      "summary": "Yelp is embedding numerous new AI features into its app that can do everything from call to check on restaurant wait times to create personalized recommendations that remember your preferences.",
-      "published_at_utc": "2026-10-20T11:00:00+00:00",
-      "age_hours": 3.2,
-      "url": "https://techcrunch.com/2026/10/20/yelp-can-now-call-on-your-behalf-to-check-wait-times-at-a-restaurant/",
-      "feed_url": "https://techcrunch.com/feed/",
+      "source": "The Verge",
+      "title": "Trump is giving Nick Shirley $10,000 and launching a $25 million fraud bounty program",
+      "summary": "Influencer Nick Shirley listens as US President Donald Trump makes an announcement on fraud in the Oval Office of the White House in Washington, DC, on October 20, 2026. (Photo by Jim WATSON / AFP via Getty Images) | AFP via Getty Images Donald Trump and Vice President JD Vance said on Tuesday that the Trump administration was giving right-wing YouTuber Nick Shirley $10,000 and launching a $25 mil",
+      "published_at_utc": "2026-10-20T22:20:11+00:00",
+      "age_hours": 5.7,
+      "url": "https://www.theverge.com/news/1014989/trump-fraud-tips-program-nick-shirley-influencers",
+      "feed_url": "https://www.theverge.com/rss/index.xml",
       "article_id": "S07"
     },
     {
-      "source": "TechCrunch",
-      "title": "Otter.ai raises $320 million from General Catalyst’s growth fund for its meeting tool",
-      "summary": "Meeting note-taking tool Otter.ai announced on Tuesday that it has raised $320 million from General Catalyst’s Customer Value Fund (CVF), which provides capital to startups without diluting equity and gets returns on the results of marketing spend. Otter.ai said that it will use these funds for enterprise growth, go-to-market strategy, international expansion, and product innovation. […]",
-      "published_at_utc": "2026-10-20T11:00:00+00:00",
-      "age_hours": 3.2,
-      "url": "https://techcrunch.com/2026/10/20/otter-ai-raises-320-million-from-general-catalysts-growth-fund-for-its-meeting-tool/",
-      "feed_url": "https://techcrunch.com/feed/",
+      "source": "The Verge",
+      "title": "Snap is paying Robert Downey Jr. to do the Iron Man thing",
+      "summary": "Snap has a new brand ambassador for its Specs AR glasses: Iron Man actor Robert Downey Jr. The company has brought on Downey as Specs' \"Chief Customer Experience Officer\" and has published several videos featuring Downey showcasing the capabilities of the new glasses, including as a tool to get help with a putt , practice art , and watch a private video of an MMA match in bed. In one video , he al",
+      "published_at_utc": "2026-10-20T22:11:30+00:00",
+      "age_hours": 5.8,
+      "url": "https://www.theverge.com/tech/1014869/snap-specs-robert-downey-jr",
+      "feed_url": "https://www.theverge.com/rss/index.xml",
       "article_id": "S08"
     },
     {
-      "source": "Ars Technica",
-      "title": "Visiting Slate’s first showroom as its $25,000 electric truck nears production",
-      "summary": "As I sat in the cab of the pickup truck and manually rolled down the windows, I closed my eyes and, for the briefest moment, flashed back to opening the windows on a cold, winter day in my dad’s 1975 Ford Ranger to let more cigarette smoke escape. I opened my eyes and looked through the windshield at a wall in the Slate Customer Experience Center studded with bright color chips. Last week, in a fo",
-      "published_at_utc": "2026-10-20T11:00:16+00:00",
-      "age_hours": 3.2,
-      "url": "https://arstechnica.com/cars/2026/10/visiting-slates-first-showroom-as-its-25000-electric-truck-nears-production/",
-      "feed_url": "https://feeds.arstechnica.com/arstechnica/index",
+      "source": "The Verge",
+      "title": "SpaceX says big AI growth fueled revenue jump",
+      "summary": "SpaceX announced revenues of $14.6 billion in its Q3 earnings on Tuesday , which it says was a growth of 161 percent year-over-year \"fueled by our Super Intelligence (SI) segment and accelerated growth in Connectivity.\" While its Space division posted a $7 million loss in income from operations, its Connectivity group posted income from operations $2.4 billion and its SI group posted $431 million.",
+      "published_at_utc": "2026-10-20T22:04:10+00:00",
+      "age_hours": 5.9,
+      "url": "https://www.theverge.com/science/1014150/spacex-q3-2026-earnings",
+      "feed_url": "https://www.theverge.com/rss/index.xml",
       "article_id": "S09"
     },
     {
-      "source": "The Verge",
-      "title": "Some Google Home Speakers caught downloading hundreds of gigs of data",
-      "summary": "Google says a fix is rolling out that should solve the issue. | Photo: Jennifer Patison Tuohy / The Verge Some Google Home Speaker owners are currently experiencing an issue in which hundreds of gigabytes of data are being continuously downloaded to their device in the background. The bug, reported by 9to5Google and several Reddit users over the last week , may be caused by the speakers failing to",
-      "published_at_utc": "2026-10-20T10:16:47+00:00",
-      "age_hours": 3.9,
-      "url": "https://www.theverge.com/tech/1014209/google-home-speaker-bug-continuous-download",
-      "feed_url": "https://www.theverge.com/rss/index.xml",
+      "source": "Ars Technica",
+      "title": "Merging SpaceX and Tesla would be a \"good idea,\" Musk says",
+      "summary": "Elon Musk said Tuesday that he would like to see the consolidation of his business empire by formally merging his two largest companies, SpaceX and Tesla. \"Do I think it would be a good idea? Yes,\" Musk said of a potential merger. He was speaking during a question-and-answer period as part of SpaceX's third-quarter earnings call. Musk said, ultimately, it not his decision. \"But at the end of the d",
+      "published_at_utc": "2026-10-20T22:04:54+00:00",
+      "age_hours": 5.9,
+      "url": "https://arstechnica.com/space/2026/10/spacex-and-tesla-into-a-single-company-has-a-lot-of-merit-musk-says/",
+      "feed_url": "https://feeds.arstechnica.com/arstechnica/index",
       "article_id": "S10"
     },
     {
       "source": "The Verge",
-      "title": "Antigravity just halved the price of its drone — by swapping its headset for wristwatch control",
-      "summary": "The Antigravity A1, with the new Follow Me Kit. | Photo by Sean Hollister / The Verge Last year's Antigravity A1 is the best beginner drone I've ever tried. I put a friend who'd never flown into its virtual cockpit and didn't worry one bit. The A1's also nice for people who'd prefer to think about flying rather than filming , because you can reframe its 360-degree footage after. But until today, t",
-      "published_at_utc": "2026-10-20T07:59:18+00:00",
-      "age_hours": 6.2,
-      "url": "https://www.theverge.com/tech/1014063/antigravity-a1-drone-follow-me-watch-ring-control",
+      "title": "Tesla and SpaceX are discussing a possible merger, Musk says",
+      "summary": "Tesla and SpaceX have formed special committees to discuss a possible merger, Elon Musk said during the latter's third quarter earnings call Tuesday . Musk, who serves as CEO of both companies, said the special committees were formed at the request of shareholders and consist of independent directors (though he did not name them). He also noted that he is not a member of either committee, nor invo",
+      "published_at_utc": "2026-10-20T22:01:50+00:00",
+      "age_hours": 6.0,
+      "url": "https://www.theverge.com/science/1014984/spacex-tesla-merger-elon-musk-special-committees",
       "feed_url": "https://www.theverge.com/rss/index.xml",
       "article_id": "S11"
     },
     {
       "source": "Ars Technica",
-      "title": "Japan launches mission to bring home a piece of the Martian moon Phobos",
-      "summary": "Japan launched a $578 million mission Monday on a five-year expedition to land on the largest moon of Mars and retrieve samples for return to Earth, a daring international project that could yield new insights into the formation of the Solar System. The robotic Martian Moons eXploration mission, known as MMX, lifted off at 3:41 pm EDT Monday (4:41 am Japan Standard Time Tuesday) from Tanegashima S",
-      "published_at_utc": "2026-10-20T05:59:56+00:00",
-      "age_hours": 8.2,
-      "url": "https://arstechnica.com/space/2026/10/japan-launches-mission-to-bring-home-a-piece-of-the-martian-moon-phobos/",
+      "title": "Cops raid office of RFK Jr. allies planning “unethical” vaccine trial on babies",
+      "summary": "Police in Guinea-Bissau raided the offices of Danish researchers on Monday, seizing doses of hepatitis B vaccine intended for a vaccine trial for newborns. International health experts have called the trial \" unethical ,\" but anti-vaccine Health Secretary Robert F. Kennedy Jr. has attempted to fund it with US taxpayer dollars. Under Kennedy, the US Centers for Disease Control and Prevention announ",
+      "published_at_utc": "2026-10-20T21:44:34+00:00",
+      "age_hours": 6.3,
+      "url": "https://arstechnica.com/health/2026/10/cops-raid-office-of-rfk-jr-allies-planning-unethical-vaccine-trial-on-babies/",
       "feed_url": "https://feeds.arstechnica.com/arstechnica/index",
       "article_id": "S12"
     }
   ],
-  "drafts": [
+  "drafts": [],
+  "rejected_model_selections": [
+    {
+      "article_id": "S01",
+      "source": "Ars Technica",
+      "title": "PHP warns it plans to release 2 emergency patches imminently",
+      "scores": {
+        "relevance_score": 10,
+        "significance_score": 9,
+        "originality_score": 8
+      },
+      "proposed_post_text": "PHP’s 9.2‑severity patches drop in 12 h. Site owners must deploy, audit code, and review any downstream libraries that might import the affected core.",
+      "evidence_quote": "\"two vulnerabilities, both with severity ratings of 9.2\"",
+      "reason": "Unsupported specific detail or overclaim (uncautious necessity claim) is absent from the source excerpt."
+    },
+    {
+      "article_id": "S04",
+      "source": "TechCrunch",
+      "title": "Anthropic pitches AI safety bill that may block a model if 50+ people could be killed",
+      "scores": {
+        "relevance_score": 9,
+        "significance_score": 7,
+        "originality_score": 8
+      },
+      "proposed_post_text": "Anthropic’s bill would require judges before federal agencies can block a model deemed 50‑person‑risk. Companies must weigh compliance costs and legal risk.",
+      "evidence_quote": "\"forbids federal agencies from blocking a model's release\"",
+      "reason": "Unsupported specific detail or overclaim (cost/pricing implication) is absent from the source excerpt."
+    },
     {
       "article_id": "S05",
-      "source": "TechCrunch",
-      "source_title": "Spotify launches paid podcast memberships with perks beyond bonus content",
-      "published_at_utc": "2026-10-20T12:00:00+00:00",
-      "source_url": "https://techcrunch.com/2026/10/20/spotify-launches-paid-podcast-memberships-with-perks-beyond-bonus-content/",
-      "category": "Product strategy",
+      "source": "The Verge",
+      "title": "Google’s more personalized Gemini AI is heading to your car",
       "scores": {
-        "relevance_score": 7,
+        "relevance_score": 8,
         "significance_score": 6,
         "originality_score": 7
       },
-      "angle": "Spotify’s paid podcast tiers offer podcasters a new revenue model",
-      "why_selected": "Highlights a concrete shift in monetization that other creators can learn from",
-      "evidence_quote": "Spotify's new paid memberships let podcasters offer fans exclusive perks",
-      "post_text": "Podcasters can now sell ad‑free, early‑access perks via Spotify’s tiered memberships.",
-      "text_with_source": "Podcasters can now sell ad‑free, early‑access perks via Spotify’s tiered memberships.\n\nhttps://techcrunch.com/2026/10/20/spotify-launches-paid-podcast-memberships-with-perks-beyond-bonus-content/",
-      "character_count_with_url": 195
-    }
-  ],
-  "rejected_model_selections": [
-    {
-      "article_id": "S04",
-      "source": "Ars Technica",
-      "title": "Meta Muse exposes users' personal and business secrets when they share conversations",
-      "evidence_quote": "Muse exposes sensitive information when users share conversations",
-      "reason": "Evidence quote must be 20–100 characters and an exact excerpt from the supplied title or summary."
-    },
-    {
-      "article_id": "S07",
-      "source": "TechCrunch",
-      "title": "Yelp can now call on your behalf to check wait times at a restaurant",
-      "scores": {
-        "relevance_score": 8,
-        "significance_score": 7,
-        "originality_score": 7
-      },
-      "reason": "Acronym 'UX' is not present or expanded in the source excerpt."
+      "proposed_post_text": "Gemini’s car integration lets drivers query Gmail, Calendar, Maps, etc. Developers should audit permission flows and ensure data stays on‑device when possible.",
+      "evidence_quote": "\"Personal Intelligence to Gemini AI in your car\"",
+      "reason": "Unsupported specific detail or overclaim (integration detail) is absent from the source excerpt."
     }
   ],
   "quality_thresholds": {

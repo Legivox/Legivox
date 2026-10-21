@@ -1,63 +1,46 @@
 # Legivox RSS + Groq editorial preview
 
-- Generated: 2026-10-20T19:41:54+05:30
+- Generated: 2026-10-21T09:30:59+05:30
 - Model: openai/gpt-oss-20b
 - Mode: SINGLE-SLOT CANDIDATE REVIEW
 - X publishing: not performed by this script
 - RSS candidates scored: 12
-- Drafts passing the quality gate: 1
-- Rejected model selections: 2
+- Drafts passing the quality gate: 0
+- Rejected model selections: 3
 
 ## Feed checks
 
 | Source | Recent feed items kept | Thin excerpts skipped | Result |
 |---|---:|---:|---|
-| TechCrunch | 20 | 5 | OK |
-| The Verge | 10 | 1 | OK |
-| Ars Technica | 20 | 0 | OK |
+| TechCrunch | 20 | 7 | OK |
+| The Verge | 10 | 0 | OK |
+| Ars Technica | 20 | 1 | OK |
 
 ## Drafts that passed the quality gate
 
-### Draft 1: Spotify launches paid podcast memberships with perks beyond bonus content
-
-- Category: Product strategy
-- Source: TechCrunch
-- Published: 2026-10-20T12:00:00+00:00
-- Editorial angle: Spotify’s paid podcast tiers offer podcasters a new revenue model
-- Why selected: Highlights a concrete shift in monetization that other creators can learn from
-- Source evidence (exact quote): “Spotify's new paid memberships let podcasters offer fans exclusive perks”
-- Editorial scores: relevance 7/10, significance 6/10, originality 7/10
-- Article: https://techcrunch.com/2026/10/20/spotify-launches-paid-podcast-memberships-with-perks-beyond-bonus-content/
-
-Post copy with source link:
-
-~~~text
-Podcasters can now sell ad‑free, early‑access perks via Spotify’s tiered memberships.
-
-https://techcrunch.com/2026/10/20/spotify-launches-paid-podcast-memberships-with-perks-beyond-bonus-content/
-~~~
-
-- Plain character count including URL: 195/280
+**No stories passed every quality check. No publication-ready draft was produced.**
+Skipping weak news is intentional; do not lower the threshold just to fill a slot.
 
 ## Rejected selections
 
-- S04 · Meta Muse exposes users' personal and business secrets when they share conversations: Evidence quote must be 20–100 characters and an exact excerpt from the supplied title or summary.
-- S07 · Yelp can now call on your behalf to check wait times at a restaurant: Acronym 'UX' is not present or expanded in the source excerpt. (relevance 8, significance 7, originality 7)
+- S01 · PHP warns it plans to release 2 emergency patches imminently: Unsupported specific detail or overclaim (uncautious necessity claim) is absent from the source excerpt. (relevance 10, significance 9, originality 8)
+- S04 · Anthropic pitches AI safety bill that may block a model if 50+ people could be killed: Unsupported specific detail or overclaim (cost/pricing implication) is absent from the source excerpt. (relevance 9, significance 7, originality 8)
+- S05 · Google’s more personalized Gemini AI is heading to your car: Unsupported specific detail or overclaim (integration detail) is absent from the source excerpt. (relevance 8, significance 6, originality 7)
 
 ## Candidate story list
 
-- S01 · The Verge: Adobe Lightroom mobile can now open closed eyes in photos with a simple tap ([source](https://www.theverge.com/tech/1014246/adobe-lightroom-mobile-ai-quick-action-open-eyes-closed-blink-repair))
-- S02 · TechCrunch: US orders federal agencies to remove China’s DeepSeek AI from their systems ([source](https://techcrunch.com/2026/10/20/us-orders-federal-agencies-to-remove-chinas-deepseek-ai-from-their-systems/))
-- S03 · TechCrunch: Eka is worth $1.45B thanks to a physical AI model that has experts raving ([source](https://techcrunch.com/2026/10/20/eka-is-worth-1-45-billion-thanks-to-a-physical-ai-model-that-has-experts-raving/))
-- S04 · Ars Technica: Meta Muse exposes users' personal and business secrets when they share conversations ([source](https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/))
-- S05 · TechCrunch: Spotify launches paid podcast memberships with perks beyond bonus content ([source](https://techcrunch.com/2026/10/20/spotify-launches-paid-podcast-memberships-with-perks-beyond-bonus-content/))
-- S06 · TechCrunch: Oura adds new fitness metrics to show how workouts impact your body ([source](https://techcrunch.com/2026/10/20/oura-is-launching-two-new-ways-to-track-and-understand-activity/))
-- S07 · TechCrunch: Yelp can now call on your behalf to check wait times at a restaurant ([source](https://techcrunch.com/2026/10/20/yelp-can-now-call-on-your-behalf-to-check-wait-times-at-a-restaurant/))
-- S08 · TechCrunch: Otter.ai raises $320 million from General Catalyst’s growth fund for its meeting tool ([source](https://techcrunch.com/2026/10/20/otter-ai-raises-320-million-from-general-catalysts-growth-fund-for-its-meeting-tool/))
-- S09 · Ars Technica: Visiting Slate’s first showroom as its $25,000 electric truck nears production ([source](https://arstechnica.com/cars/2026/10/visiting-slates-first-showroom-as-its-25000-electric-truck-nears-production/))
-- S10 · The Verge: Some Google Home Speakers caught downloading hundreds of gigs of data ([source](https://www.theverge.com/tech/1014209/google-home-speaker-bug-continuous-download))
-- S11 · The Verge: Antigravity just halved the price of its drone — by swapping its headset for wristwatch control ([source](https://www.theverge.com/tech/1014063/antigravity-a1-drone-follow-me-watch-ring-control))
-- S12 · Ars Technica: Japan launches mission to bring home a piece of the Martian moon Phobos ([source](https://arstechnica.com/space/2026/10/japan-launches-mission-to-bring-home-a-piece-of-the-martian-moon-phobos/))
+- S01 · Ars Technica: PHP warns it plans to release 2 emergency patches imminently ([source](https://arstechnica.com/security/2026/10/php-maintainers-tell-web-devs-to-prepare-themselves-for-critical-security-patches/))
+- S02 · The Verge: YouTube might be testing hiding the dislike button ([source](https://www.theverge.com/streaming/1015099/youtube-dislike-button-hide-menu))
+- S03 · The Verge: Judge dismisses Sam Altman’s sister’s sexual abuse lawsuit ([source](https://www.theverge.com/ai-artificial-intelligence/1014976/sam-altman-ann-altman-lawsuit-dismissed))
+- S04 · TechCrunch: Anthropic pitches AI safety bill that may block a model if 50+ people could be killed ([source](https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/))
+- S05 · The Verge: Google’s more personalized Gemini AI is heading to your car ([source](https://www.theverge.com/tech/1014999/google-gemini-ai-cars-android-auto))
+- S06 · TechCrunch: Hugging Face CEO warns that Netflix’s OpenAI hack documentary isn’t accurate ([source](https://techcrunch.com/2026/10/20/hugging-face-ceo-warns-that-netflixs-openai-hack-documentary-isnt-accurate/))
+- S07 · The Verge: Trump is giving Nick Shirley $10,000 and launching a $25 million fraud bounty program ([source](https://www.theverge.com/news/1014989/trump-fraud-tips-program-nick-shirley-influencers))
+- S08 · The Verge: Snap is paying Robert Downey Jr. to do the Iron Man thing ([source](https://www.theverge.com/tech/1014869/snap-specs-robert-downey-jr))
+- S09 · The Verge: SpaceX says big AI growth fueled revenue jump ([source](https://www.theverge.com/science/1014150/spacex-q3-2026-earnings))
+- S10 · Ars Technica: Merging SpaceX and Tesla would be a "good idea," Musk says ([source](https://arstechnica.com/space/2026/10/spacex-and-tesla-into-a-single-company-has-a-lot-of-merit-musk-says/))
+- S11 · The Verge: Tesla and SpaceX are discussing a possible merger, Musk says ([source](https://www.theverge.com/science/1014984/spacex-tesla-merger-elon-musk-special-committees))
+- S12 · Ars Technica: Cops raid office of RFK Jr. allies planning “unethical” vaccine trial on babies ([source](https://arstechnica.com/health/2026/10/cops-raid-office-of-rfk-jr-allies-planning-unethical-vaccine-trial-on-babies/))
 
 ## Review notes
 
