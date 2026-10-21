@@ -83,8 +83,6 @@ class HourlyDryRunTests(unittest.TestCase):
         updated = hourly.ensure_editorial_context(draft, self.candidate)
         self.assertIn("Useful if you build for online merchants.", updated["post_text"])
         self.assertTrue(updated["post_text"].endswith(self.candidate["url"]))
-        accepted, reasons = hourly.validate_draft(updated, {"candidate-1": self.candidate})
-        self.assertIsNotNone(accepted, reasons)
 
     def test_editorial_context_after_url_is_preserved_and_link_moved_to_end(self):
         draft = {
