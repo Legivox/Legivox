@@ -31,6 +31,7 @@ MODEL = os.environ.get("GROQ_MODEL", "openai/gpt-oss-20b")
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
 DEFAULT_LOOKBACK_DAYS = 1
 CANDIDATE_POOL_SIZE = 5
+MAX_POST_CHARS = 280
 DAILY_DRAFT_CAP = int(os.environ.get("MAX_DAILY_DRAFTS", "10"))
 MAX_PER_SOURCE_PER_DAY = 4
 MAX_PER_CATEGORY_PER_DAY = 3
