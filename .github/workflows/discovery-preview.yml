@@ -1,6 +1,14 @@
 name: Legivox multidomain discovery preview
 
 on:
+  push:
+    branches:
+      - "feature/multidomain-discovery-v1"
+    paths:
+      - "scripts/discover_candidates.py"
+      - "data/discovery_sources.json"
+      - "tests/test_discover_candidates.py"
+      - ".github/workflows/discovery-preview.yml"
   workflow_dispatch:
     inputs:
       lookback_days:
