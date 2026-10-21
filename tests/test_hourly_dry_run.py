@@ -40,9 +40,9 @@ class HourlyDryRunTests(unittest.TestCase):
         draft = {
             "candidate_id": "candidate-1",
             "post_text": (
-                "Hookdeck's webhook skills guide coding agents through receiver setup, signature verification and "
-                "event handling for Stripe and Shopify. Useful if you're building provider integrations. "
-                "https://github.com/hookdeck/webhook-skills"
+                "Hookdeck's webhook integration skills are for AI coding agents. Guidance: webhook receivers, "
+                "signature verification and event handling for Stripe and Shopify. Useful if you're building "
+                "provider integrations. https://github.com/hookdeck/webhook-skills"
             ),
             "format": "tool_discovery",
             "audience": "developers building integrations",
@@ -130,6 +130,26 @@ class HourlyDryRunTests(unittest.TestCase):
         accepted, reasons = hourly.validate_draft(draft, {"candidate-1": self.candidate})
         self.assertIsNone(accepted)
         self.assertTrue(any("primary candidate URL" in reason for reason in reasons))
+
+    def test_unverifiable_marketing_superlative_is_rejected(self):
+        draft = {
+            "candidate_id": "candidate-1",
+            "post_text": (
+                "The tool everyone uses for webhook delivery. Useful if you're building provider integrations. "
+                "https://github.com/hookdeck/webhook-skills"
+            ),
+            "evidence_quote": "signature verification, and event handling",
+            "claim_evidence": [
+                {
+                    "claim": "Webhook integration skills provide signature verification and event handling",
+                    "quote": "webhook receivers, signature verification, and event handling",
+                }
+            ],
+            "scores": {"timeliness": 7, "usefulness": 8, "novelty": 7, "evidence": 8},
+        }
+        accepted, reasons = hourly.validate_draft(draft, {"candidate-1": self.candidate})
+        self.assertIsNone(accepted)
+        self.assertTrue(any("Unverifiable marketing language" in reason for reason in reasons))
 
     def test_draft_with_unsupported_numeric_claim_is_rejected(self):
         draft = {
