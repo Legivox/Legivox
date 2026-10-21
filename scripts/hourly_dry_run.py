@@ -477,9 +477,11 @@ def draft_candidates(candidates: list[dict]) -> tuple[list[dict], str | None]:
         "lists after phrases like 'including', 'such as', 'while', 'plus' or 'as well as'. Prefer a precise short fact over a "
         "catalogue of features. Keep fact_sentence to 110 characters maximum. Do not start by repeating the source headline. "
         "editorial_takeaway is the second sentence and must add a candidate-specific practical test, trade-off, failure mode, "
-        "implementation step or decision criterion. Keep it to 90 characters maximum. A generic ending like 'Useful if you "
-        "build apps' is not insight. If you cannot add specific value, assign insight below 7. Do not smuggle a new product "
-        "claim into the advice sentence. "
+        "implementation step or decision criterion. It must not simply reword a second bullet or recommendation from the source. "
+        "Synthesize the evidence into a regression test, blind spot, implementation question or decision rule. A source recommendation "
+        "can be stated in fact_sentence; the takeaway should explain how to act on it or what to verify. Keep it to 90 characters maximum. "
+        "A generic ending like 'Useful if you build apps' is not insight. If it repeats most of the source wording, assign insight below 7. "
+        "Do not smuggle a new product claim into the advice sentence. "
         "Each candidate includes copy_character_budget, the maximum combined characters for fact_sentence plus "
         "editorial_takeaway. Respect that exact budget. The code adds two spaces and the exact URL, so the complete post stays "
         "at or below 280 characters. Do not include any URLs in the two sentences; the code appends the source URL. "
@@ -505,8 +507,9 @@ def draft_candidates(candidates: list[dict]) -> tuple[list[dict], str | None]:
             "{\"claim_evidence\":[{\"claim\":\"The source says capability X\",\"quote\":\"exact source substring describing X\"}]}. "
             "Every quote must be copied exactly from the candidate title/summary. For every fact, the quote must directly support it. "
             "Use one short quote for one narrow fact, not a long list of features. Do not quote the headline alone if the fact uses the summary. "
-            "The editorial_takeaway must be a complete second sentence, candidate-specific, and actionable. Examples of shape only, "
-            "not text to copy: 'Pair it with route-auth tests; one scan is not proof of security.'; "
+            "The editorial_takeaway must be a complete second sentence, candidate-specific, and actionable. It must not simply "
+            "rewrite another source recommendation. Add a test, trade-off, blind spot or decision rule. Examples of shape only, not text "
+            "to copy: 'Pair it with route-auth tests; one scan is not proof of security.'; "
             "'Test duplicate-event handling before relying on webhook retries.'; "
             "'Check session verification across your frontend and API languages.' "
             "Do not use generic closers such as 'Useful if you build apps' or 'Worth a look'. "
@@ -656,6 +659,8 @@ def validate_draft(draft: dict, candidates_by_id: dict) -> tuple[dict | None, li
             reasons.append("Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.")
         if overlap < 0.12:
             reasons.append("Editorial takeaway is not specific enough to this candidate's technical/product details.")
+        if overlap > 0.78:
+            reasons.append("Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.")
         if any(phrase in takeaway_normalized for phrase in (
             "useful if you build", "useful if you're building", "worth a look",
             "worth testing if you", "useful for developers", "useful for merchants",
