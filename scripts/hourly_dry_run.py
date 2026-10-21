@@ -661,6 +661,8 @@ def validate_draft(draft: dict, candidates_by_id: dict) -> tuple[dict | None, li
         if not sentence:
             continue
         lowered = sentence.casefold()
+        if editorial_takeaway and normalize_for_match(sentence) == normalize_for_match(editorial_takeaway):
+            continue
         if any(marker in lowered for marker in interpretive_markers):
             continue
         sentence_tokens = tokens(sentence) - editorial_filler
@@ -772,9 +774,10 @@ def write_outputs(report: dict) -> None:
             "- Source: " + str(row["source"]),
             "- Format: " + str(row["format"]),
             "- Editorial score: " + str(row["editorial_score"]) + "/10",
-            "- Model scores: timeliness " + str(scores["timeliness"]) + "/10, usefulness " + str(scores["usefulness"]) + "/10, novelty " + str(scores["novelty"]) + "/10, evidence " + str(scores["evidence"]) + "/10",
+            "- Model scores: timeliness " + str(scores["timeliness"]) + "/10, usefulness " + str(scores["usefulness"]) + "/10, novelty " + str(scores["novelty"]) + "/10, evidence " + str(scores["evidence"]) + "/10, insight " + str(scores["insight"]) + "/10",
             "- Exact source evidence: “" + row["evidence_quote"] + "”",
             "- Why this angle: " + row["rationale"],
+            "- Editorial takeaway: " + row["editorial_takeaway"],
             "- Source: " + row["url"],
             "",
             "**Claim-by-claim source quotes:**",
