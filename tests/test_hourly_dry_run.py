@@ -40,9 +40,8 @@ class HourlyDryRunTests(unittest.TestCase):
         draft = {
             "candidate_id": "candidate-1",
             "post_text": (
-                "Hookdeck's webhook integration skills guide coding agents through setting up webhook receivers, "
-                "signature verification and event handling for Stripe and Shopify. "
-                "https://github.com/hookdeck/webhook-skills"
+                "Useful for coding agents: Hookdeck's webhook skills guide setup of receivers, signature verification "
+                "and event handling for Stripe and Shopify. https://github.com/hookdeck/webhook-skills"
             ),
             "format": "tool_discovery",
             "audience": "developers building integrations",
