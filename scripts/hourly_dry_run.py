@@ -379,6 +379,53 @@ def draft_candidates(candidates: list[dict]) -> tuple[list[dict], str | None]:
         return [], clean(str(exc)) or type(exc).__name__
 
 
+EDITORIAL_CONTEXT = {
+    "developer_tools": "Worth testing if it fits your dev stack.",
+    "ai_and_automation": "Useful if you're testing agent workflows.",
+    "commerce_and_digital_products": "Useful if you build for online merchants.",
+    "creator_and_indie_business": "Useful if you're building a lean online business.",
+    "product_and_workflow_tools": "Worth trying if it removes a recurring task.",
+    "data_and_growth": "Useful if clearer metrics would change a decision.",
+    "security_and_self_hosting": "Worth testing if you manage your own infrastructure.",
+}
+
+
+def ensure_editorial_context(draft: dict, candidate: dict) -> dict:
+    """Add a conditional use-case sentence if missing and move the source URL to the end.
+
+    The suffix is editorial context, not a new claim about the product. Factual details
+    still must pass the evidence validator below.
+    """
+    updated = dict(draft)
+    post = clean(updated.get("post_text"))
+    source_url = str(candidate.get("url") or "")
+    if not post or not source_url or source_url not in post:
+        return updated
+
+    # Normalize the order even when a model inserts the URL before its final sentence.
+    body = clean(post.replace(source_url, " "))
+    sentences = [
+        clean(sentence) for sentence in re.split(r"(?<=[.!?])\s+", body)
+        if clean(sentence)
+    ]
+    has_editorial_context = any(
+        any(sentence.casefold().startswith(marker) for marker in EDITORIAL_STARTERS)
+        for sentence in sentences
+    )
+
+    if not has_editorial_context:
+        context = EDITORIAL_CONTEXT.get(
+            str(candidate.get("primary_category") or ""),
+            "Worth testing if it solves a recurring problem.",
+        )
+        if body and body[-1] not in ".!?":
+            body += "."
+        body = clean(body + " " + context)
+
+    updated["post_text"] = clean(body + " " + source_url)
+    return updated
+
+
 def validate_draft(draft: dict, candidates_by_id: dict) -> tuple[dict | None, list[str]]:
     reasons = []
     candidate_id = str(draft.get("candidate_id") or "")
@@ -762,7 +809,11 @@ def main(argv: list[str] | None = None) -> int:
                     rejected.append({"candidate_id": candidate_id, "reasons": ["Duplicate model response for candidate"]})
                     continue
                 seen_draft_ids.add(candidate_id)
-                accepted, reasons = validate_draft(draft if isinstance(draft, dict) else {}, by_id)
+                candidate_for_draft = by_id.get(candidate_id, {})
+                draft_with_context = ensure_editorial_context(
+                    draft if isinstance(draft, dict) else {}, candidate_for_draft
+                )
+                accepted, reasons = validate_draft(draft_with_context, by_id)
                 if accepted:
                     passing.append(accepted)
                 else:
