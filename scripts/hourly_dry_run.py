@@ -327,9 +327,10 @@ def draft_candidates(candidates: list[dict]) -> tuple[list[dict], str | None]:
         "prices, licence terms, performance claims or adoption. Never claim an item is trending solely "
         "because it appeared in search results. Do not quote or imitate the source headline too closely. "
         "Write plain text suitable for X, with the source URL included exactly once. Maximum 280 characters "
-        "including that URL. Add an editorial layer: who should care, when it is useful, an implementation implication, "
-        "or a trade-off. A bare feature list or headline rewrite is not enough. Prefer a concrete use, implication or "
-        "limitation over hype. Return a claim_evidence "
+        "including that URL. Use one concise source-grounded factual sentence, then a separate conditional/use-case sentence "
+        "such as 'Useful if...', 'Worth testing when...', or 'For developers who...'. The second sentence must be framed as "
+        "an implication, not a new asserted product fact. A bare feature list or headline rewrite is not enough. Avoid "
+        "cramming unrelated features into one sentence. Return a claim_evidence "
         "array with one entry for every material factual claim in the post. Each entry must contain claim and quote; "
         "quote must be an exact substring of the supplied title or summary and must directly support the stated claim. "
         "Do not use an adjacent quote to justify a different claim. If a useful claim cannot be supported by an exact "
@@ -347,7 +348,8 @@ def draft_candidates(candidates: list[dict]) -> tuple[list[dict], str | None]:
             "format must be one of release, tool_discovery, practical_workflow, comparison, engineering_lesson. "
             "If the item is a directory listing or an old evergreen repository rather than a fresh development, "
             "do not frame it as breaking news. Include the exact candidate URL in post_text. Do not return "
-            "more text than 280 characters. Write no hashtags unless they add specific meaning."
+            "more text than 280 characters. Prefer one factual sentence plus one distinct conditional/use-case sentence. "
+            "Keep every factual sentence limited to claims directly supported by source text. Write no hashtags unless they add specific meaning."
         ),
         "candidates": condensed,
     }
@@ -446,8 +448,16 @@ def validate_draft(draft: dict, candidates_by_id: dict) -> tuple[dict | None, li
             reasons.append("Draft contains a URL not present in the evidence links")
             break
 
-    # Every nontrivial term in the copy should be present in the supplied primary-source title/summary.
-    # This is a lexical safety net, not semantic proof; human source review is still required.
+    # Validate factual sentences independently. Clear conditional/use-case sentences are
+    # editorial context, while asserted product behaviour must be grounded in source text.
+    interpretive_markers = (
+        "useful if", "useful when", "useful for", "worth a look", "worth testing",
+        "worth considering", "if you're", "if you are", "if your", "when you're",
+        "when you are", "when your", "the trade-off", "trade-off to consider",
+        "tradeoff to consider", "consider this if", "use it if", "good fit if",
+        "for developers who", "for merchants who", "for teams who", "helpful if",
+        "helpful when", "could help if", "may help if", "a fit if",
+    )
     editorial_filler = {
         "offers", "offering", "provides", "supports", "support", "includes", "including",
         "designed", "helps", "help", "using", "via", "make", "makes", "work", "workflow",
@@ -455,29 +465,49 @@ def validate_draft(draft: dict, candidates_by_id: dict) -> tuple[dict | None, li
         "start", "try", "point", "here", "now", "your", "team", "teams", "see", "shows",
         "show", "can", "could", "would", "should", "lets", "let", "allows", "allow",
         "based", "built", "build", "builds", "feature", "features", "interesting",
-        "useful", "simple", "easy", "new", "actual", "real", "practical",
+        "useful", "simple", "easy", "new", "actual", "real", "practical", "this", "that",
+        "they", "them", "their", "its", "what", "when", "where", "why", "who", "which",
+        "than", "then", "there", "while", "because", "about", "into", "onto", "from",
+        "with", "without", "through", "across", "for", "and", "but", "not", "more",
+        "less", "before", "after", "between", "only", "also", "rather", "should",
     }
-    content_tokens = tokens(URL_RE.sub(" ", post))
-    content_tokens -= tokens(str(candidate.get("title") or ""))
-    content_tokens -= editorial_filler
-    evidence_tokens = tokens(evidence)
-    unsupported_terms = sorted(content_tokens - evidence_tokens)
-    if content_tokens and len(content_tokens & evidence_tokens) / len(content_tokens) < 0.70:
-        reasons.append(
-            "Too many substantive terms are absent from the source title/summary: "
-            + ", ".join(unsupported_terms[:8])
-        )
+    body_without_urls = clean(URL_RE.sub(" ", post))
+    factual_sentences = []
+    for sentence in re.split(r"(?<=[.!?])\s+", body_without_urls):
+        sentence = clean(sentence)
+        if not sentence:
+            continue
+        lowered = sentence.casefold()
+        if any(marker in lowered for marker in interpretive_markers):
+            continue
+        sentence_tokens = tokens(sentence) - editorial_filler
+        if sentence_tokens:
+            factual_sentences.append((sentence, sentence_tokens))
 
+    evidence_tokens = tokens(evidence)
     quoted_tokens = set()
     if isinstance(claim_evidence, list):
         for entry in claim_evidence:
             if isinstance(entry, dict):
                 quoted_tokens.update(tokens(entry.get("quote")))
-    quote_coverage = len(content_tokens & quoted_tokens) / max(1, len(content_tokens))
-    if content_tokens and quote_coverage < 0.45:
-        reasons.append(
-            f"Claim quotes cover only {quote_coverage:.0%} of substantive draft terms; cite more of the actual facts"
-        )
+
+    if not factual_sentences:
+        reasons.append("No source-grounded factual sentence was found")
+    for sentence, sentence_tokens in factual_sentences:
+        source_coverage = len(sentence_tokens & evidence_tokens) / max(1, len(sentence_tokens))
+        quote_coverage = len(sentence_tokens & quoted_tokens) / max(1, len(sentence_tokens))
+        if source_coverage < 0.62:
+            missing = sorted(sentence_tokens - evidence_tokens)
+            reasons.append(
+                "Factual sentence includes terms absent from the source title/summary: "
+                + ", ".join(missing[:6])
+            )
+            break
+        if quote_coverage < 0.42:
+            reasons.append(
+                f"Supporting quotes cover only {quote_coverage:.0%} of a factual sentence; cite the concrete claims"
+            )
+            break
 
     if reasons:
         return None, reasons
