@@ -382,6 +382,7 @@ def validate_draft(draft: dict, candidates_by_id: dict) -> tuple[dict | None, li
 
 
 def append_jsonl(path: Path, row: dict) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("a", encoding="utf-8") as handle:
         handle.write(json.dumps(row, ensure_ascii=False, separators=(",", ":")) + "\n")
 
