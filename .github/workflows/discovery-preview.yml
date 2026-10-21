@@ -1,0 +1,73 @@
+name: Legivox multidomain discovery preview
+
+on:
+  workflow_dispatch:
+    inputs:
+      lookback_days:
+        description: "How recent candidate items should be"
+        required: true
+        type: choice
+        options:
+          - "7"
+          - "14"
+          - "30"
+        default: "14"
+      limit:
+        description: "Maximum candidates to show in the report"
+        required: true
+        type: choice
+        options:
+          - "20"
+          - "30"
+          - "50"
+        default: "30"
+  pull_request:
+    paths:
+      - "scripts/discover_candidates.py"
+      - "data/discovery_sources.json"
+      - "tests/test_discover_candidates.py"
+      - ".github/workflows/discovery-preview.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: legivox-discovery-preview-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  preview:
+    name: Test and preview discovery
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out this branch or pull request
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.12"
+
+      - name: Validate discovery sources and syntax
+        run: |
+          python -m json.tool data/discovery_sources.json > /dev/null
+          python -m py_compile scripts/discover_candidates.py tests/test_discover_candidates.py
+
+      - name: Run unit tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Run read-only live discovery
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          LOOKBACK_DAYS: ${{ inputs.lookback_days || '14' }}
+          CANDIDATE_LIMIT: ${{ inputs.limit || '30' }}
+        run: |
+          python scripts/discover_candidates.py \
+            --lookback-days "$LOOKBACK_DAYS" \
+            --limit "$CANDIDATE_LIMIT" \
+            --per-source 10
+
+      - name: Publish research report to the workflow summary
+        if: always() && hashFiles('output/discovery/discovery-report.md') != ''
+        run: cat output/discovery/discovery-report.md >> "$GITHUB_STEP_SUMMARY"
