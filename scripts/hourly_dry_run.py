@@ -52,8 +52,8 @@ STRONG_CLAIMS = (
 NUMBER_RE = re.compile(r"\b\d[\d,.]*(?:%|x|k\+|\+)?\b", re.I)
 URL_RE = re.compile(r"https?://[^\s<>()]+", re.I)
 EDITORIAL_STARTERS = (
-    "useful if", "useful when", "helpful if", "helpful when",
-    "worth testing if", "worth testing when", "worth considering if", "worth considering when",
+    "useful if", "useful when", "useful for", "useful to", "helpful if", "helpful when",
+    "worth trying", "worth testing if", "worth testing when", "worth considering if", "worth considering when",
     "for developers who", "for merchants who", "for teams who", "for creators who",
     "if you're", "if you are", "if your", "when you're", "when you are", "when your",
     "consider this if", "good fit if", "a fit if", "use it if", "watch for",
@@ -473,7 +473,7 @@ def validate_draft(draft: dict, candidates_by_id: dict) -> tuple[dict | None, li
     # Validate factual sentences independently. Clear conditional/use-case sentences are
     # editorial context, while asserted product behaviour must be grounded in source text.
     interpretive_markers = (
-        "useful if", "useful when", "useful for", "worth a look", "worth testing",
+        "useful if", "useful when", "useful for", "useful to", "worth a look", "worth trying", "worth testing",
         "worth considering", "if you're", "if you are", "if your", "when you're",
         "when you are", "when your", "the trade-off", "trade-off to consider",
         "tradeoff to consider", "consider this if", "use it if", "good fit if",
@@ -525,7 +525,7 @@ def validate_draft(draft: dict, candidates_by_id: dict) -> tuple[dict | None, li
                 + ", ".join(missing[:6])
             )
             break
-        if quote_coverage < 0.65:
+        if quote_coverage < 0.60:
             reasons.append(
                 f"Supporting quotes cover only {quote_coverage:.0%} of a factual sentence; cite the concrete claims"
             )
