@@ -14,6 +14,7 @@ import re
 import sys
 import urllib.error
 import urllib.request
+import unicodedata
 from collections import Counter
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -71,6 +72,15 @@ def parse_utc(value: object) -> datetime | None:
         return parsed.astimezone(timezone.utc)
     except (TypeError, ValueError):
         return None
+
+
+def normalize_for_match(value: object) -> str:
+    """Normalise typographic variants while requiring the quoted words to exist in the source."""
+    text = unicodedata.normalize("NFKC", str(value or ""))
+    for character in ("\u2010", "\u2011", "\u2012", "\u2013", "\u2014", "\u2212"):
+        text = text.replace(character, "-")
+    text = text.replace("\u00a0", " ")
+    return " ".join(text.casefold().split())
 
 
 def tokens(value: object) -> set[str]:
@@ -345,8 +355,8 @@ def validate_draft(draft: dict, candidates_by_id: dict) -> tuple[dict | None, li
         reasons.append("The exact primary candidate URL is missing")
     if len(post) > 280:
         reasons.append(f"Draft is {len(post)} raw characters; limit is 280")
-    if not quote or quote not in evidence:
-        reasons.append("Evidence quote is not an exact substring of the candidate title/summary")
+    if not quote or normalize_for_match(quote) not in normalize_for_match(evidence):
+        reasons.append("Evidence quote is not present in the candidate title/summary (after Unicode normalisation)")
 
     claim_evidence = draft.get("claim_evidence")
     if not isinstance(claim_evidence, list) or not claim_evidence:
@@ -358,8 +368,8 @@ def validate_draft(draft: dict, candidates_by_id: dict) -> tuple[dict | None, li
                 break
             claim = clean(entry.get("claim"))
             supporting_quote = clean(entry.get("quote"))
-            if not claim or not supporting_quote or supporting_quote not in evidence:
-                reasons.append("A factual claim lacks an exact source quote")
+            if not claim or not supporting_quote or normalize_for_match(supporting_quote) not in normalize_for_match(evidence):
+                reasons.append("A factual claim lacks a source quote present in the title/summary")
                 break
             claim_tokens = tokens(claim)
             quote_tokens = tokens(supporting_quote)
@@ -496,6 +506,13 @@ def write_outputs(report: dict) -> None:
         lines.append("No model-generated drafts were rejected by the local validator.")
     for row in rejected:
         lines.append("- " + str(row.get("title") or row.get("candidate_id")) + ": " + "; ".join(row.get("reasons", [])))
+        if row.get("proposed_text"):
+            lines.append("  - Rejected text: " + str(row["proposed_text"]))
+        if row.get("evidence_quote"):
+            lines.append("  - Model evidence quote: “" + str(row["evidence_quote"]) + "”")
+        for support in row.get("claim_evidence", [])[:4]:
+            if isinstance(support, dict):
+                lines.append("  - Claim support: " + clean(support.get("claim")) + " ← “" + clean(support.get("quote")) + "”")
     lines += [
         "",
         "## Top discovery candidates considered",
@@ -609,6 +626,8 @@ def main(argv: list[str] | None = None) -> int:
                         "title": by_id.get(candidate_id, {}).get("title", "Unknown candidate"),
                         "reasons": reasons,
                         "proposed_text": clean(draft.get("post_text"))[:500] if isinstance(draft, dict) else "",
+                        "evidence_quote": clean(draft.get("evidence_quote"))[:300] if isinstance(draft, dict) else "",
+                        "claim_evidence": draft.get("claim_evidence", []) if isinstance(draft, dict) else [],
                     })
             passing.sort(key=lambda item: (-item["editorial_score"], -int(item["hourly_adjusted_score"] or 0)))
             report["passing_drafts"] = passing
