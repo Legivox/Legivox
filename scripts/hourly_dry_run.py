@@ -336,7 +336,8 @@ def draft_candidates(candidates: list[dict]) -> tuple[list[dict], str | None]:
         "because it appeared in search results. Do not quote or imitate the source headline too closely. "
         "Write plain text suitable for X, with the source URL included exactly once. Maximum 280 characters "
         "including that URL. Use one concise source-grounded factual sentence, then a separate conditional/use-case sentence "
-        "such as 'Useful if...', 'Worth testing when...', or 'For developers who...'. The second sentence must be framed as "
+        "such as 'Useful if...', 'Worth testing when...', or 'For developers who...'. Put full punctuation before the source URL, "
+        "which must appear last. The second sentence must be framed as "
         "an implication, not a new asserted product fact. A bare feature list or headline rewrite is not enough. Avoid "
         "cramming unrelated features into one sentence. Each quote should cover the full factual detail of its claim, "
         "not merely repeat the product name. Split distinct capabilities, numeric facts or release timing into separate claim_evidence "
@@ -387,6 +388,13 @@ def validate_draft(draft: dict, candidates_by_id: dict) -> tuple[dict | None, li
 
     post = clean(draft.get("post_text"))
     source_url = str(candidate.get("url") or "")
+    # Models sometimes omit punctuation immediately before the trailing source URL.
+    # Restore the sentence boundary so the editorial sentence is validated separately.
+    if source_url and source_url in post:
+        prefix, suffix = post.rsplit(source_url, 1)
+        prefix = prefix.rstrip()
+        if prefix and prefix[-1] not in ".!?":
+            post = prefix + ". " + source_url + suffix
     evidence = clean(candidate.get("title")) + "\n" + clean(candidate.get("summary"))
     quote = clean(draft.get("evidence_quote"))
     scores = draft.get("scores") if isinstance(draft.get("scores"), dict) else {}
