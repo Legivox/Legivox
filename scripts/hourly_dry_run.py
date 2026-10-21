@@ -136,6 +136,7 @@ def is_fresh(candidate: dict, lookback_days: int) -> bool:
 
 def diversity_rank(candidates: list[dict], state: dict, now: datetime, lookback_days: int = 3) -> list[dict]:
     """Rank current candidates while penalising overused sources, topics and near-duplicates."""
+
     history = recent_events(state, now, days=3)
     published_like = [row for row in history if row.get("status") == "draft_passed"]
     source_counts = Counter(row.get("source_group", "unknown") for row in published_like)
@@ -196,6 +197,29 @@ def diversity_rank(candidates: list[dict], state: dict, now: datetime, lookback_
         {**candidate, "hourly_adjusted_score": adjusted}
         for adjusted, _raw, candidate in ranked
     ]
+
+
+def diversified_shortlist(candidates: list[dict], limit: int) -> list[dict]:
+    """Choose a varied source/category slate rather than five nearly identical winners."""
+    selected = []
+    source_counts: Counter[str] = Counter()
+    category_counts: Counter[str] = Counter()
+    max_source_in_pool = 2
+    max_category_in_pool = 2
+    for candidate in candidates:
+        source = str(candidate.get("source") or "unknown")
+        source_group = "GitHub Search" if source.startswith("GitHub Search") else source
+        category = str(candidate.get("primary_category") or "unknown")
+        if source_counts[source_group] >= max_source_in_pool:
+            continue
+        if category_counts[category] >= max_category_in_pool:
+            continue
+        selected.append(candidate)
+        source_counts[source_group] += 1
+        category_counts[category] += 1
+        if len(selected) >= limit:
+            break
+    return selected
 
 
 def request_groq(messages: list[dict], max_tokens: int = 8192) -> dict:
@@ -273,9 +297,10 @@ def draft_candidates(candidates: list[dict]) -> tuple[list[dict], str | None]:
         "task": (
             "Create one candidate-specific draft for each supplied candidate. Return JSON object "
             "with a drafts array. Each element must have candidate_id, post_text, format, audience, "
-            "angle, evidence_quote, rationale, and scores. scores must contain integer values 1-10 for "
-            "timeliness, usefulness, novelty, evidence. evidence_quote must be an exact substring of "
-            "the candidate title or summary; choose the shortest quote that supports the central factual claim. "
+            "angle, evidence_quote, claim_evidence, rationale, and scores. scores must contain integer values 1-10 for "
+            "timeliness, usefulness, novelty, evidence. evidence_quote must be an exact substring of the candidate title "
+            "or summary. claim_evidence must be a list of {claim, quote} objects covering each material factual claim; "
+            "every quote must be an exact substring of the supplied title or summary and directly support its claim. "
             "format must be one of release, tool_discovery, practical_workflow, comparison, engineering_lesson. "
             "If the item is a directory listing or an old evergreen repository rather than a fresh development, "
             "do not frame it as breaking news. Include the exact candidate URL in post_text. Do not return "
@@ -319,6 +344,26 @@ def validate_draft(draft: dict, candidates_by_id: dict) -> tuple[dict | None, li
         reasons.append(f"Draft is {len(post)} raw characters; limit is 280")
     if not quote or quote not in evidence:
         reasons.append("Evidence quote is not an exact substring of the candidate title/summary")
+
+    claim_evidence = draft.get("claim_evidence")
+    if not isinstance(claim_evidence, list) or not claim_evidence:
+        reasons.append("No claim-by-claim supporting evidence was provided")
+    else:
+        for entry in claim_evidence:
+            if not isinstance(entry, dict):
+                reasons.append("Claim evidence entry is not an object")
+                break
+            claim = clean(entry.get("claim"))
+            supporting_quote = clean(entry.get("quote"))
+            if not claim or not supporting_quote or supporting_quote not in evidence:
+                reasons.append("A factual claim lacks an exact source quote")
+                break
+            claim_tokens = tokens(claim)
+            quote_tokens = tokens(supporting_quote)
+            overlap = len(claim_tokens & quote_tokens) / max(1, len(claim_tokens))
+            if overlap < 0.20:
+                reasons.append("A supporting quote does not share enough wording with its stated claim")
+                break
     for score_name, minimum in (("timeliness", 6), ("usefulness", 7), ("novelty", 6), ("evidence", 7)):
         try:
             score = int(scores.get(score_name, 0))
@@ -536,7 +581,7 @@ def main(argv: list[str] | None = None) -> int:
     elif not eligible:
         report["decision_reason"] = "No candidate met freshness, source/category diversity, cooldown and metadata checks."
     else:
-        shortlist = eligible[:args.pool_size]
+        shortlist = diversified_shortlist(eligible, args.pool_size)
         generated, model_error = draft_candidates(shortlist)
         if model_error:
             report["decision_reason"] = "Draft generation unavailable or invalid: " + model_error
