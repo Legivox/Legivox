@@ -112,7 +112,7 @@ class HourlyDryRunTests(unittest.TestCase):
         }
         accepted, reasons = hourly.validate_draft(draft, {"candidate-1": self.candidate})
         self.assertIsNone(accepted)
-        self.assertTrue(any("substantive terms are absent" in reason for reason in reasons))
+        self.assertTrue(any("Factual sentence includes terms absent" in reason for reason in reasons))
 
     def test_diversity_rank_excludes_recently_used_candidate(self):
         state = hourly.empty_state()
