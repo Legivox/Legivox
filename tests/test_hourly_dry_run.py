@@ -171,6 +171,29 @@ class HourlyDryRunTests(unittest.TestCase):
         self.assertIsNone(accepted)
         self.assertTrue(any("Generic audience-only advice" in reason or "actionable" in reason or "too generic" in reason for reason in reasons))
 
+    def test_takeaway_that_repeats_source_details_is_rejected(self):
+        draft = {
+            "candidate_id": "candidate-1",
+            "fact_sentence": "Webhook skills guide coding agents through receiver setup.",
+            "post_text": (
+                "Webhook skills guide coding agents through receiver setup. "
+                "Check webhook receivers, signature verification and event handling. "
+                "https://github.com/hookdeck/webhook-skills"
+            ),
+            "editorial_takeaway": "Check webhook receivers, signature verification and event handling.",
+            "evidence_quote": "webhook receivers, signature verification, and event handling",
+            "claim_evidence": [
+                {
+                    "claim": "The source describes webhook guidance for coding agents",
+                    "quote": "Webhook integration skills for AI coding agents. Step-by-step guidance for setting up webhook receivers",
+                }
+            ],
+            "scores": {"timeliness": 8, "usefulness": 8, "novelty": 8, "evidence": 8, "insight": 8},
+        }
+        accepted, reasons = hourly.validate_draft(draft, {"candidate-1": self.candidate})
+        self.assertIsNone(accepted)
+        self.assertTrue(any("mostly repeats source wording" in reason for reason in reasons))
+
     def test_headline_rewrite_is_rejected_even_when_it_has_a_generic_second_sentence(self):
         draft = {
             "candidate_id": "candidate-1",
