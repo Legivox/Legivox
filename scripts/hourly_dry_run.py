@@ -102,6 +102,10 @@ def tokens(value: object) -> set[str]:
     irregular = {
         "handling": "handle", "handled": "handle",
         "using": "use", "used": "use",
+        "running": "run", "releasing": "release", "released": "release",
+        "fixing": "fix", "fixed": "fix", "flagged": "flag",
+        "patching": "patch", "patched": "patch", "deploying": "deploy",
+        "deployed": "deploy", "shipping": "ship", "shipped": "ship",
         "making": "make", "made": "make",
         "taking": "take", "taken": "take",
         "writing": "write", "written": "write",
@@ -510,6 +514,7 @@ def draft_candidates(candidates: list[dict]) -> tuple[list[dict], str | None]:
             "The editorial_takeaway must be a complete second sentence, candidate-specific, and actionable. It must not simply "
             "rewrite another source recommendation. Add a test, trade-off, blind spot or decision rule. Examples of shape only, not text "
             "to copy: 'Pair it with route-auth tests; one scan is not proof of security.'; "
+            "'Run it before release, then review auth boundaries manually; a clean scan is not full coverage.'; "
             "'Test duplicate-event handling before relying on webhook retries.'; "
             "'Check session verification across your frontend and API languages.' "
             "Do not use generic closers such as 'Useful if you build apps' or 'Worth a look'. "
@@ -634,6 +639,9 @@ def validate_draft(draft: dict, candidates_by_id: dict) -> tuple[dict | None, li
         "failure", "failures", "retry", "retries", "rollback", "privacy", "latency", "cost",
         "maintenance", "decision", "decide", "avoid", "watch", "separate", "instrument",
         "validate", "map", "consider", "plan", "configure", "handle", "handling",
+        "run", "fix", "patch", "remediate", "resolve", "deploy", "release", "ship",
+        "add", "write", "implement", "simulate", "reproduce", "monitor", "log",
+        "instrument", "triage", "prioritize", "prioritise",
     }
     if len(sentences) < 2:
         reasons.append("Post reads like a headline: it needs a distinct editorial takeaway, not just a source summary.")
