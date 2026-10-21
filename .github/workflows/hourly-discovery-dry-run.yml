@@ -21,7 +21,7 @@ on:
           - "2"
           - "3"
           - "7"
-        default: "3"
+        default: "1"
       daily_draft_cap:
         description: "Maximum draft proposals to consider per day"
         required: true
@@ -78,7 +78,7 @@ jobs:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           GROQ_MODEL: openai/gpt-oss-20b
           MAX_DAILY_DRAFTS: ${{ inputs.daily_draft_cap || '10' }}
-          LOOKBACK_DAYS: ${{ inputs.lookback_days || '3' }}
+          LOOKBACK_DAYS: ${{ inputs.lookback_days || '1' }}
         run: |
           python scripts/hourly_dry_run.py \
             --dry-run \
