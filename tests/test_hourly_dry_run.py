@@ -81,7 +81,7 @@ class HourlyDryRunTests(unittest.TestCase):
             ),
         }
         updated = hourly.ensure_editorial_context(draft, self.candidate)
-        self.assertIn("Useful if you're testing agent workflows.", updated["post_text"])
+        self.assertIn("Useful if you build for online merchants.", updated["post_text"])
         self.assertTrue(updated["post_text"].endswith(self.candidate["url"]))
         accepted, reasons = hourly.validate_draft(updated, {"candidate-1": self.candidate})
         self.assertIsNotNone(accepted, reasons)
