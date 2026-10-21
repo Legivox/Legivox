@@ -72,6 +72,32 @@ class HourlyDryRunTests(unittest.TestCase):
         self.assertFalse(accepted["published_to_x"])
         self.assertEqual(accepted["status"], "draft_passed_needs_human_review")
 
+    def test_missing_editorial_context_is_added_and_source_url_moved_to_end(self):
+        draft = {
+            "candidate_id": "candidate-1",
+            "post_text": (
+                "Hookdeck's webhook skills guide receiver setup, signature verification and event handling. "
+                "https://github.com/hookdeck/webhook-skills"
+            ),
+        }
+        updated = hourly.ensure_editorial_context(draft, self.candidate)
+        self.assertIn("Useful if you're testing agent workflows.", updated["post_text"])
+        self.assertTrue(updated["post_text"].endswith(self.candidate["url"]))
+        accepted, reasons = hourly.validate_draft(updated, {"candidate-1": self.candidate})
+        self.assertIsNotNone(accepted, reasons)
+
+    def test_editorial_context_after_url_is_preserved_and_link_moved_to_end(self):
+        draft = {
+            "candidate_id": "candidate-1",
+            "post_text": (
+                "Hookdeck's webhook skills guide receiver setup, signature verification and event handling. "
+                "https://github.com/hookdeck/webhook-skills Useful if you're building provider integrations."
+            ),
+        }
+        updated = hourly.ensure_editorial_context(draft, self.candidate)
+        self.assertTrue(updated["post_text"].endswith(self.candidate["url"]))
+        self.assertEqual(updated["post_text"].count("Useful if you're building provider integrations."), 1)
+
     def test_feature_list_without_separate_use_case_is_rejected(self):
         draft = {
             "candidate_id": "candidate-1",
