@@ -49,7 +49,7 @@
     {
       "id": "github-creator-infrastructure",
       "category": "creator_and_indie_business",
-      "query": "stars:>=5 pushed:>={active_since} (creator OR newsletter OR digital-products)"
+      "query": "stars:>=5 pushed:>={active_since} creator"
     },
     {
       "id": "github-workflow-automation",
@@ -59,7 +59,7 @@
     {
       "id": "github-analytics-seo",
       "category": "data_and_growth",
-      "query": "stars:>=10 pushed:>={active_since} (analytics OR SEO)"
+      "query": "stars:>=10 pushed:>={active_since} analytics"
     },
     {
       "id": "github-self-hosted",
@@ -120,31 +120,147 @@
   "categories": {
     "developer_tools": {
       "label": "Developer tools and infrastructure",
-      "keywords": ["developer tool", "devtools", "debugger", "sdk", "cli", "api", "database", "observability", "code editor", "testing", "framework", "deployment", "ci/cd", "terminal"]
+      "keywords": [
+        "developer tool",
+        "devtools",
+        "debugger",
+        "sdk",
+        "cli",
+        "api",
+        "database",
+        "observability",
+        "code editor",
+        "testing",
+        "framework",
+        "deployment",
+        "ci/cd",
+        "terminal"
+      ]
     },
     "ai_and_automation": {
       "label": "AI, agents and automation",
-      "keywords": ["ai agent", "agentic", "llm", "mcp", "automation", "workflow", "orchestration", "no-code", "low-code", "zapier", "n8n", "make.com", "integration", "trigger", "webhook"]
+      "keywords": [
+        "ai agent",
+        "agentic",
+        "llm",
+        "mcp",
+        "automation",
+        "workflow",
+        "orchestration",
+        "no-code",
+        "low-code",
+        "zapier",
+        "n8n",
+        "make.com",
+        "integration",
+        "trigger",
+        "webhook"
+      ]
     },
     "commerce_and_digital_products": {
       "label": "Commerce, Shopify and digital products",
-      "keywords": ["shopify", "ecommerce", "e-commerce", "woocommerce", "digital product", "digital download", "checkout", "storefront", "merchant", "cart", "payment", "billing", "subscription", "tax", "vat", "product feed", "shop pay", "marketplace", "fulfillment", "fulfilment", "shop app", "conversion"]
+      "keywords": [
+        "shopify",
+        "ecommerce",
+        "e-commerce",
+        "woocommerce",
+        "digital product",
+        "digital download",
+        "checkout",
+        "storefront",
+        "merchant",
+        "cart",
+        "payment",
+        "billing",
+        "subscription",
+        "tax",
+        "vat",
+        "product feed",
+        "shop pay",
+        "marketplace",
+        "fulfillment",
+        "fulfilment",
+        "shop app",
+        "conversion"
+      ]
     },
     "creator_and_indie_business": {
       "label": "Creator tools and indie business",
-      "keywords": ["creator", "newsletter", "membership", "audience", "indie hacker", "solo founder", "landing page", "email marketing", "crm", "lead generation", "pricing", "revenue", "digital sales", "course", "template", "gumroad", "lemonsqueezy", "lemon squeezy", "affiliate"]
+      "keywords": [
+        "creator",
+        "newsletter",
+        "membership",
+        "audience",
+        "indie hacker",
+        "solo founder",
+        "landing page",
+        "email marketing",
+        "crm",
+        "lead generation",
+        "pricing",
+        "revenue",
+        "digital sales",
+        "course",
+        "template",
+        "gumroad",
+        "lemonsqueezy",
+        "lemon squeezy",
+        "affiliate"
+      ]
     },
     "product_and_workflow_tools": {
       "label": "Useful products and practical workflows",
-      "keywords": ["productivity", "workflow", "tool", "app", "launch", "product hunt", "show hn", "open source", "integration", "extension", "plugin", "alternative"]
+      "keywords": [
+        "productivity",
+        "workflow",
+        "tool",
+        "app",
+        "launch",
+        "product hunt",
+        "show hn",
+        "open source",
+        "integration",
+        "extension",
+        "plugin",
+        "alternative"
+      ]
     },
     "data_and_growth": {
       "label": "Analytics, data and growth",
-      "keywords": ["analytics", "seo", "search engine", "dashboard", "metrics", "attribution", "conversion rate", "experimentation", "ab testing", "data pipeline", "business intelligence", "tracking", "retention", "funnel"]
+      "keywords": [
+        "analytics",
+        "seo",
+        "search engine",
+        "dashboard",
+        "metrics",
+        "attribution",
+        "conversion rate",
+        "experimentation",
+        "ab testing",
+        "data pipeline",
+        "business intelligence",
+        "tracking",
+        "retention",
+        "funnel"
+      ]
     },
     "security_and_self_hosting": {
       "label": "Security, privacy and self-hosting",
-      "keywords": ["security", "privacy", "self-hosted", "self hosted", "open source", "docker", "backup", "encryption", "authentication", "authorization", "vulnerability", "compliance", "secrets management"]
+      "keywords": [
+        "security",
+        "privacy",
+        "self-hosted",
+        "self hosted",
+        "open source",
+        "docker",
+        "backup",
+        "encryption",
+        "authentication",
+        "authorization",
+        "vulnerability",
+        "compliance",
+        "secrets management"
+      ]
     }
   },
   "source_weights": {
