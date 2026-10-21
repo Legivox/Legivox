@@ -134,7 +134,7 @@ def is_fresh(candidate: dict, lookback_days: int) -> bool:
     return float(days_old) <= allowed_days
 
 
-def diversity_rank(candidates: list[dict], state: dict, now: datetime) -> list[dict]:
+def diversity_rank(candidates: list[dict], state: dict, now: datetime, lookback_days: int = 3) -> list[dict]:
     """Rank current candidates while penalising overused sources, topics and near-duplicates."""
     history = recent_events(state, now, days=3)
     published_like = [row for row in history if row.get("status") == "draft_passed"]
@@ -148,7 +148,7 @@ def diversity_rank(candidates: list[dict], state: dict, now: datetime) -> list[d
     ranked = []
     for candidate in candidates:
         cid = candidate.get("id")
-        if not cid or not is_fresh(candidate, 3):
+        if not cid or not is_fresh(candidate, lookback_days):
             continue
         used_at = parse_utc(used.get(cid))
         if used_at and now_utc - used_at < timedelta(days=USED_CANDIDATE_COOLDOWN_DAYS):
@@ -495,7 +495,7 @@ def main(argv: list[str] | None = None) -> int:
         print("Hourly discovery failed before candidate selection: " + type(exc).__name__, file=sys.stderr)
         return 1
 
-    eligible = diversity_rank(candidates, state, now)
+    eligible = diversity_rank(candidates, state, now, args.lookback_days)
     events = recent_events(state, now, days=1)
     passed_today = [row for row in events if row.get("status") == "draft_passed"]
     report = {
@@ -573,32 +573,40 @@ def main(argv: list[str] | None = None) -> int:
                 )
                 report["recommended_draft"] = chosen
                 state["used_candidates"][chosen["candidate_id"]] = now.astimezone(timezone.utc).isoformat(timespec="seconds")
-                source_group = "GitHub Search" if str(chosen["source"]).startswith("GitHub Search") else chosen["source"]
-                append_jsonl(RUN_LOG_PATH, {
-                    "timestamp_utc": now.astimezone(timezone.utc).isoformat(timespec="seconds"),
-                    "run_at_ist": now.isoformat(timespec="seconds"),
-                    "status": "draft_passed",
-                    "candidate_id": chosen["candidate_id"],
-                    "title": chosen["title"],
-                    "source": chosen["source"],
-                    "source_group": source_group,
-                    "category": chosen["category"],
-                    "editorial_score": chosen["editorial_score"],
-                    "post_text": chosen["post_text"],
-                    "published_to_x": False,
-                })
             else:
                 report["decision_reason"] = "All generated drafts failed the local evidence/quality checks; slot skipped."
                 for candidate in shortlist:
                     state["attempted_candidates"][candidate["id"]] = now.astimezone(timezone.utc).isoformat(timespec="seconds")
-                append_jsonl(RUN_LOG_PATH, {
-                    "timestamp_utc": now.astimezone(timezone.utc).isoformat(timespec="seconds"),
-                    "run_at_ist": now.isoformat(timespec="seconds"),
-                    "status": "skip",
-                    "reason": report["decision_reason"],
-                    "candidate_ids": [item["id"] for item in shortlist],
-                    "published_to_x": False,
-                })
+
+    # Persist every hourly decision in both the structured state and append-only audit log.
+    stamp = now.astimezone(timezone.utc).isoformat(timespec="seconds")
+    if report.get("outcome") == "draft_ready_for_human_review":
+        chosen = report["recommended_draft"]
+        source_group = "GitHub Search" if str(chosen["source"]).startswith("GitHub Search") else chosen["source"]
+        event = {
+            "timestamp_utc": stamp,
+            "run_at_ist": now.isoformat(timespec="seconds"),
+            "status": "draft_passed",
+            "candidate_id": chosen["candidate_id"],
+            "title": chosen["title"],
+            "source": chosen["source"],
+            "source_group": source_group,
+            "category": chosen["category"],
+            "editorial_score": chosen["editorial_score"],
+            "post_text": chosen["post_text"],
+            "published_to_x": False,
+        }
+    else:
+        event = {
+            "timestamp_utc": stamp,
+            "run_at_ist": now.isoformat(timespec="seconds"),
+            "status": "skip",
+            "reason": report["decision_reason"],
+            "candidate_ids": [item["id"] for item in report.get("candidate_shortlist", [])],
+            "published_to_x": False,
+        }
+    state.setdefault("events", []).append(event)
+    append_jsonl(RUN_LOG_PATH, event)
 
     # Prune expired cooldowns and keep the state bounded.
     cutoff_used = now.astimezone(timezone.utc) - timedelta(days=USED_CANDIDATE_COOLDOWN_DAYS)
