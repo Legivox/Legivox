@@ -27,6 +27,19 @@
         "55c557b3bc0267ca"
       ],
       "published_to_x": false
+    },
+    {
+      "timestamp_utc": "2026-10-21T17:44:04+00:00",
+      "run_at_ist": "2026-10-21T23:14:04+05:30",
+      "status": "draft_passed",
+      "candidate_id": "769635c4c0589719",
+      "title": "IHUI-INF-AI/IHUI-AI",
+      "source": "GitHub Search",
+      "source_group": "GitHub Search",
+      "category": "security_and_self_hosting",
+      "editorial_score": 9.3,
+      "post_text": "IHUI-AI unifies 176 LLMs via LangGraph + MCP + A2A, offering a multi‑tenant RLS over 340 tables and a RAG knowledge base. It runs on Web, API, CLI, Desktop, Extension, Mobile, Miniapp. https://github.com/IHUI-INF-AI/IHUI-AI",
+      "published_to_x": false
     }
   ],
   "attempted_candidates": {
@@ -39,9 +52,15 @@
     "325f6a102c1c611d": "2026-10-21T17:42:48+00:00",
     "996527c10b7cb2b0": "2026-10-21T17:42:48+00:00",
     "f3fa50bd7c2402c5": "2026-10-21T17:42:48+00:00",
-    "dd89fbbb59577fc8": "2026-10-21T17:42:48+00:00"
+    "dd89fbbb59577fc8": "2026-10-21T17:42:48+00:00",
+    "769635c4c0589719": "2026-10-21T17:44:04+00:00",
+    "fbfdec28cfffc04c": "2026-10-21T17:44:04+00:00",
+    "55c557b3bc0267ca": "2026-10-21T17:44:04+00:00",
+    "6e2781195adee0ca": "2026-10-21T17:44:04+00:00",
+    "6669707f3d1e3930": "2026-10-21T17:44:04+00:00"
   },
   "used_candidates": {
-    "067f046a6a82cf3a": "2026-10-21T17:40:24+00:00"
+    "067f046a6a82cf3a": "2026-10-21T17:40:24+00:00",
+    "769635c4c0589719": "2026-10-21T17:44:04+00:00"
   }
 }
