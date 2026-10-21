@@ -40,8 +40,8 @@ class HourlyDryRunTests(unittest.TestCase):
         draft = {
             "candidate_id": "candidate-1",
             "post_text": (
-                "Need webhook receivers that verify signatures and handle provider events? Hookdeck's skills "
-                "guide coding agents through these steps for Shopify and Stripe. "
+                "Hookdeck's webhook integration skills guide coding agents through setting up webhook receivers, "
+                "signature verification and event handling for Stripe and Shopify. "
                 "https://github.com/hookdeck/webhook-skills"
             ),
             "format": "tool_discovery",
@@ -92,6 +92,27 @@ class HourlyDryRunTests(unittest.TestCase):
         accepted, reasons = hourly.validate_draft(draft, {"candidate-1": self.candidate})
         self.assertIsNone(accepted)
         self.assertTrue(any("Unsupported numeric claim" in reason for reason in reasons))
+
+    def test_draft_with_unsupported_feature_terms_is_rejected(self):
+        draft = {
+            "candidate_id": "candidate-1",
+            "post_text": (
+                "Hookdeck's webhook integration skills guide coding agents through setting up receivers, "
+                "signature verification and a real-time custom analytics dashboard for Shopify and Stripe. "
+                "https://github.com/hookdeck/webhook-skills"
+            ),
+            "evidence_quote": "signature verification, and event handling",
+            "claim_evidence": [
+                {
+                    "claim": "The guidance covers signature verification",
+                    "quote": "signature verification, and event handling",
+                }
+            ],
+            "scores": {"timeliness": 7, "usefulness": 8, "novelty": 7, "evidence": 8},
+        }
+        accepted, reasons = hourly.validate_draft(draft, {"candidate-1": self.candidate})
+        self.assertIsNone(accepted)
+        self.assertTrue(any("substantive terms are absent" in reason for reason in reasons))
 
     def test_diversity_rank_excludes_recently_used_candidate(self):
         state = hourly.empty_state()
