@@ -48,6 +48,16 @@ class HourlyDryRunTests(unittest.TestCase):
             "audience": "developers building integrations",
             "angle": "safer webhook setup",
             "evidence_quote": "signature verification, and event handling",
+            "claim_evidence": [
+                {
+                    "claim": "Webhook receivers can be set up with signature verification and event handling",
+                    "quote": "webhook receivers, signature verification, and event handling",
+                },
+                {
+                    "claim": "The guidance covers Stripe and Shopify",
+                    "quote": "for Stripe, Shopify, GitHub",
+                },
+            ],
             "rationale": "It turns a common integration failure point into an actionable coding workflow.",
             "scores": {"timeliness": 7, "usefulness": 8, "novelty": 7, "evidence": 8},
         }
@@ -101,6 +111,40 @@ class HourlyDryRunTests(unittest.TestCase):
             })
         result = hourly.diversity_rank([self.candidate], state, self.now)
         self.assertEqual(result, [])
+
+    def test_diversified_shortlist_limits_single_source_and_category(self):
+        candidates = []
+        specs = [
+            ("g1", "GitHub Search", "ai_and_automation"),
+            ("g2", "GitHub Search", "ai_and_automation"),
+            ("g3", "GitHub Search", "ai_and_automation"),
+            ("g4", "GitHub Search", "commerce_and_digital_products"),
+            ("hn1", "Hacker News", "commerce_and_digital_products"),
+            ("ph1", "Product Hunt", "data_and_growth"),
+            ("shop1", "Shopify Developer Changelog", "security_and_self_hosting"),
+            ("console1", "Console.dev", "developer_tools"),
+        ]
+        for index, (cid, source, category) in enumerate(specs):
+            candidates.append({
+                "id": cid,
+                "title": "Distinct useful technical project " + cid,
+                "source": source,
+                "primary_category": category,
+                "priority_score": 100 - index,
+                "hourly_adjusted_score": 100 - index,
+            })
+        selected = hourly.diversified_shortlist(candidates, 5)
+        self.assertEqual(len(selected), 5)
+        source_groups = [
+            "GitHub Search" if item["source"].startswith("GitHub Search") else item["source"]
+            for item in selected
+        ]
+        self.assertLessEqual(source_groups.count("GitHub Search"), 2)
+        self.assertLessEqual(
+            max(__import__("collections").Counter(item["primary_category"] for item in selected).values()),
+            2,
+        )
+        self.assertGreaterEqual(len(set(item["primary_category"] for item in selected)), 3)
 
     def test_freshness_window_uses_source_specific_rules(self):
         current = dict(self.candidate, source="GitHub Search", days_old=2.5)
