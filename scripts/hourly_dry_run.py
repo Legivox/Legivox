@@ -113,7 +113,7 @@ def title_overlap(title: str, post: str) -> float:
 
 
 def empty_state() -> dict:
-    return {"version": 1, "events": [], "attempted_candidates": {}, "used_candidates": {}}
+    return {"version": 1, "events": [], "attempted_candidates": {}, "used_candidates": {}, "repo_star_snapshots": {}}
 
 
 def load_state() -> dict:
@@ -126,6 +126,7 @@ def load_state() -> dict:
         state.setdefault("events", [])
         state.setdefault("attempted_candidates", {})
         state.setdefault("used_candidates", {})
+        state.setdefault("repo_star_snapshots", {})
         return state
     except (OSError, json.JSONDecodeError):
         # Fail closed on corrupted state: preserve it and do not overwrite it silently.
@@ -184,6 +185,75 @@ def is_fresh(candidate: dict, lookback_days: int) -> bool:
     return float(days_old) <= allowed_days
 
 
+def update_github_star_velocity(candidates: list[dict], state: dict, now: datetime) -> None:
+    """Persist star snapshots and estimate growth from a 20-36-hour-old baseline.
+
+    First observations deliberately have no velocity score. This avoids falsely
+    calling a repository "trending" based on its lifetime star count.
+    """
+    snapshots = state.setdefault("repo_star_snapshots", {})
+    now_utc = now.astimezone(timezone.utc)
+    cutoff = now_utc - timedelta(days=8)
+
+    for candidate in candidates:
+        signals = candidate.get("signals") or {}
+        url = str(candidate.get("url") or "")
+        is_github_repo = str(candidate.get("source_kind") or "") == "github_repository" or (
+            "stars" in signals and "github.com/" in url
+        )
+        if not is_github_repo or not candidate.get("id"):
+            continue
+
+        try:
+            current_stars = max(0, int(signals.get("stars") or 0))
+        except (TypeError, ValueError):
+            continue
+
+        repo_id = str(candidate["id"])
+        history = snapshots.setdefault(repo_id, [])
+        clean_history = []
+        for sample in history:
+            stamped = parse_utc(sample.get("at"))
+            if stamped and stamped >= cutoff:
+                clean_history.append({"at": stamped.isoformat(timespec="seconds"), "stars": max(0, int(sample.get("stars") or 0))})
+
+        baselines = []
+        for sample in clean_history:
+            stamped = parse_utc(sample.get("at"))
+            if not stamped:
+                continue
+            hours_ago = (now_utc - stamped).total_seconds() / 3600.0
+            if 20 <= hours_ago <= 36:
+                baselines.append((abs(hours_ago - 24), int(sample["stars"]), hours_ago))
+
+        if baselines:
+            _, baseline_stars, baseline_hours = min(baselines, key=lambda item: item[0])
+            candidate["stars_delta_24h"] = max(0, current_stars - baseline_stars)
+            candidate["stars_delta_baseline_hours"] = round(baseline_hours, 1)
+            candidate["stars_growth_percent_24h"] = (
+                round(100 * max(0, current_stars - baseline_stars) / baseline_stars, 2)
+                if baseline_stars > 0 else None
+            )
+        else:
+            candidate["stars_delta_24h"] = None
+            candidate["stars_delta_baseline_hours"] = None
+            candidate["stars_growth_percent_24h"] = None
+
+        last_sample_time = parse_utc(clean_history[-1]["at"]) if clean_history else None
+        if not last_sample_time or now_utc - last_sample_time >= timedelta(minutes=45):
+            clean_history.append({"at": now_utc.isoformat(timespec="seconds"), "stars": current_stars})
+        snapshots[repo_id] = clean_history[-150:]
+
+    # Bound state size so the hourly job does not grow its git history without limit.
+    if len(snapshots) > 3000:
+        ordered = sorted(
+            snapshots.items(),
+            key=lambda pair: max((parse_utc(row.get("at")) or cutoff for row in pair[1]), default=cutoff),
+            reverse=True,
+        )
+        state["repo_star_snapshots"] = dict(ordered[:3000])
+
+
 def diversity_rank(candidates: list[dict], state: dict, now: datetime, lookback_days: int = 3) -> list[dict]:
     """Rank current candidates while penalising overused sources, topics and near-duplicates."""
 
@@ -196,6 +266,7 @@ def diversity_rank(candidates: list[dict], state: dict, now: datetime, lookback_
     attempted = state.get("attempted_candidates", {})
     used = state.get("used_candidates", {})
     now_utc = now.astimezone(timezone.utc)
+    update_github_star_velocity(candidates, state, now)
 
     ranked = []
     for candidate in candidates:
@@ -234,7 +305,11 @@ def diversity_rank(candidates: list[dict], state: dict, now: datetime, lookback_
                     repeat_penalty = max(repeat_penalty, 18)
 
         raw = int(candidate.get("priority_score") or 0)
+        star_delta = int(candidate.get("stars_delta_24h") or 0)
+        # Reward measured 20-36h star growth, not cumulative lifetime stars.
         adjusted = raw - 10 * source_counts[source_group] - 8 * category_counts[category] - repeat_penalty
+        adjusted += min(15, star_delta)
+        candidate["trend_signal"] = "measured_star_growth" if candidate.get("stars_delta_baseline_hours") is not None else "insufficient_history"
         # Small adjustment for evidence completeness and declared licence metadata.
         signals = candidate.get("signals") or {}
         if signals.get("license_spdx"):
@@ -792,6 +867,9 @@ def main(argv: list[str] | None = None) -> int:
                 "primary_category": item["primary_category"],
                 "priority_score": item.get("priority_score"),
                 "hourly_adjusted_score": item.get("hourly_adjusted_score"),
+                "stars_delta_24h": item.get("stars_delta_24h"),
+                "stars_delta_baseline_hours": item.get("stars_delta_baseline_hours"),
+                "trend_signal": item.get("trend_signal"),
                 "published_at": item.get("published_at"),
                 "days_old": item.get("days_old"),
             }
