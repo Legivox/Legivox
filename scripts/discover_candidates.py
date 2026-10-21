@@ -14,6 +14,8 @@ import math
 import os
 import re
 import sys
+import threading
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -30,6 +32,45 @@ DEFAULT_OUTPUT_DIR = ROOT / "output" / "discovery"
 IST = ZoneInfo("Asia/Kolkata")
 USER_AGENT = "LegivoxDiscovery/1.0 (+https://github.com/Legivox/Legivox)"
 MAX_DESCRIPTION = 1200
+GITHUB_SEARCH_MIN_INTERVAL_SECONDS = 6.5
+_GITHUB_SEARCH_LOCK = threading.Lock()
+_GITHUB_SEARCH_NEXT_AT = 0.0
+
+
+def github_search_json(url: str, headers: dict, timeout: int = 15) -> dict:
+    """Rate-limit concurrent repository queries and retry once on likely throttling."""
+    global _GITHUB_SEARCH_NEXT_AT
+
+    for attempt in range(2):
+        with _GITHUB_SEARCH_LOCK:
+            wait_seconds = max(0.0, _GITHUB_SEARCH_NEXT_AT - time.monotonic())
+            if wait_seconds:
+                time.sleep(wait_seconds)
+            _GITHUB_SEARCH_NEXT_AT = time.monotonic() + GITHUB_SEARCH_MIN_INTERVAL_SECONDS
+
+        try:
+            return json.loads(fetch_bytes(url, headers=headers, timeout=timeout).decode("utf-8"))
+        except urllib.error.HTTPError as exc:
+            if attempt > 0 or exc.code not in (403, 429):
+                raise
+            retry_after = exc.headers.get("Retry-After") if exc.headers else None
+            remaining = exc.headers.get("X-RateLimit-Remaining") if exc.headers else None
+            reset_at = exc.headers.get("X-RateLimit-Reset") if exc.headers else None
+            delay = 8.0
+            if retry_after:
+                try:
+                    delay = max(delay, float(retry_after))
+                except ValueError:
+                    pass
+            elif remaining == "0" and reset_at:
+                try:
+                    delay = max(delay, float(reset_at) - time.time() + 1.0)
+                except ValueError:
+                    pass
+            # Do not burn an entire workflow job waiting on a long rate-limit reset.
+            time.sleep(min(30.0, max(1.0, delay)))
+
+    raise RuntimeError("GitHub Search failed after one throttling retry")
 
 
 def clean_text(value: object) -> str:
@@ -344,7 +385,7 @@ def discover_github_search(
     if token:
         headers["Authorization"] = "Bearer " + token
     try:
-        payload = json.loads(fetch_bytes(url, headers=headers).decode("utf-8"))
+        payload = github_search_json(url, headers=headers)
         candidates = []
         for repo in payload.get("items", []):
             if repo.get("archived") or repo.get("disabled"):
