@@ -1,4 +1,5 @@
 import json
+import os
 import urllib.error
 from unittest.mock import patch
 import sys
@@ -439,8 +440,9 @@ class HourlyDryRunTests(unittest.TestCase):
             "updated_at": "",
             "pushed_at": "",
         }
-        with patch.object(hourly, "fetch_github_repo_metadata", return_value=refreshed_metadata):
-            metrics = hourly.update_github_star_velocity([current], state, self.now + timedelta(hours=24), refresh_missing=True)
+        with patch.dict(os.environ, {"GITHUB_TOKEN": "test-token"}):
+            with patch.object(hourly, "fetch_github_repo_metadata", return_value=refreshed_metadata):
+                metrics = hourly.update_github_star_velocity([current], state, self.now + timedelta(hours=24), refresh_missing=True)
         self.assertEqual(metrics["previously_tracked_repositories_refreshed"], 1)
         self.assertEqual(state["repo_star_snapshots"][old_key][-1]["stars"], 140)
         self.assertEqual(metrics["repositories_with_20_to_36_hour_baseline"], 1)
