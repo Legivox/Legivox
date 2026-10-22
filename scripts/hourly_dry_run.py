@@ -1692,6 +1692,18 @@ def write_outputs(report: dict) -> None:
             "",
         ]
 
+    repair = report.get("automatic_repair", {})
+    lines += [
+        "## Automatic repair attempt",
+        "",
+        "- Attempted: " + ("yes" if repair.get("attempted") else "no"),
+        "- Repaired drafts submitted: " + str(repair.get("drafts_submitted", 0)),
+        "- Repaired drafts that passed local validation: " + str(repair.get("repaired_local_passes", 0)),
+        "- Repaired drafts rejected: " + str(repair.get("repair_rejections", 0)),
+        "- Repair error: " + str(repair.get("repair_error") or "none"),
+        "- Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.",
+        "",
+    ]
     lines += ["## Rejected draft options", ""]
     rejected = report.get("rejected_drafts", [])
     if not rejected:
@@ -1905,6 +1917,53 @@ def main(argv: list[str] | None = None) -> int:
                             "evidence_quote": clean(draft.get("evidence_quote"))[:300] if isinstance(draft, dict) else "",
                             "claim_evidence": draft.get("claim_evidence", []) if isinstance(draft, dict) else [],
                         })
+                repair_stats = {
+                    "attempted": False,
+                    "drafts_submitted": 0,
+                    "repaired_local_passes": 0,
+                    "repair_rejections": 0,
+                    "repair_error": None,
+                }
+                # One bounded repair pass only when the first generation yielded no
+                # local pass. Repair cannot relax thresholds or bypass final review.
+                if not passing and rejected:
+                    repair_stats["attempted"] = True
+                    repaired, repair_error = repair_rejected_drafts(rejected, by_id, limit=3)
+                    repair_stats["drafts_submitted"] = len(repaired)
+                    repair_stats["repair_error"] = repair_error
+                    for repaired_draft in repaired:
+                        repaired_id = clean(repaired_draft.get("candidate_id"))
+                        repaired_candidate = by_id.get(repaired_id)
+                        if not repaired_candidate:
+                            rejected.append({
+                                "candidate_id": repaired_id or None,
+                                "reasons": ["Automatic repair could not be mapped to a verified candidate."],
+                                "proposed_text": clean(repaired_draft.get("post_text"))[:500],
+                                "automatic_repair_attempt": True,
+                            })
+                            repair_stats["repair_rejections"] += 1
+                            continue
+                        accepted_repair, repair_reasons = validate_draft(repaired_draft, by_id)
+                        if accepted_repair:
+                            accepted_repair["automatic_repair_attempt"] = True
+                            accepted_repair["repair_note"] = (
+                                "A single automatic rewrite cleared the same local validator; the independent editorial review is still required."
+                            )
+                            passing.append(accepted_repair)
+                            repair_stats["repaired_local_passes"] += 1
+                        else:
+                            rejected.append({
+                                "candidate_id": repaired_id,
+                                "title": repaired_candidate.get("title"),
+                                "reasons": repair_reasons,
+                                "proposed_text": clean(repaired_draft.get("post_text"))[:500],
+                                "evidence_quote": clean(repaired_draft.get("evidence_quote"))[:300],
+                                "automatic_repair_attempt": True,
+                                "original_rejection_reasons": repaired_draft.get("repaired_after_reasons", []),
+                            })
+                            repair_stats["repair_rejections"] += 1
+                report["automatic_repair"] = repair_stats
+
                 locally_valid_count = len(passing)
                 passing.sort(key=lambda item: (-item["editorial_score"], -int(item["hourly_adjusted_score"] or 0)))
                 review_candidates = passing[:1]
