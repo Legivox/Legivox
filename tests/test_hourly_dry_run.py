@@ -628,6 +628,61 @@ class HourlyDryRunTests(unittest.TestCase):
         self.assertIsNone(accepted)
         self.assertTrue(any("undocumented product capability" in reason for reason in reasons))
 
+    def test_token_savings_advice_needs_a_baseline_or_direct_usage_metric(self):
+        candidate = dict(self.candidate)
+        page_text = (
+            "Command-aware filters shrink shell output before the model reads it. "
+            "You can switch between filtered and raw views. "
+            "/usage shows what the session spent and scores the cache hit rate."
+        )
+        candidate.update({
+            "title": "Show HN: Caudra - An open-source terminal coding agent in one native binary",
+            "source": "Hacker News",
+            "source_kind": "hacker_news",
+            "url": "https://github.com/caudra/caudra",
+            "canonical_url": "https://github.com/caudra/caudra",
+            "primary_source_title": "GitHub - caudra/caudra: The complete coding agent for your terminal",
+            "primary_source_description": (
+                "Caudra arrives complete. Steerable subagents, built-in token savings, a workbench, "
+                "and a history you can revert were designed together."
+            ),
+            "primary_source_text": page_text,
+            "primary_source_evidence": (
+                "GitHub - caudra/caudra: The complete coding agent for your terminal. "
+                "Caudra arrives complete. Steerable subagents, built-in token savings, a workbench, "
+                "and a history you can revert were designed together. " + page_text
+            ),
+            "primary_source_verified": True,
+            "primary_source_http_status": 200,
+            "primary_source_final_url": "https://github.com/caudra/caudra",
+            "evidence_urls": ["https://github.com/caudra/caudra"],
+        })
+        fact = "Caudra filters shell output before the model reads it."
+        quote = "Command-aware filters shrink shell output before the model reads it."
+        scores = {"timeliness": 8, "usefulness": 8, "novelty": 7, "evidence": 8, "insight": 8}
+        bad_takeaway = "Run the same prompt twice to confirm token savings; test history revert."
+        draft = {
+            "candidate_id": "candidate-1",
+            "fact_sentence": fact,
+            "post_text": fact + " " + bad_takeaway + " " + candidate["url"],
+            "editorial_takeaway": bad_takeaway,
+            "evidence_quote": quote,
+            "claim_evidence": [{"claim": fact, "quote": quote}],
+            "scores": scores,
+        }
+        _accepted, reasons = hourly.validate_draft(draft, {"candidate-1": candidate})
+        self.assertTrue(any(
+            "lacks a baseline or direct metric" in reason for reason in reasons
+        ))
+
+        good_takeaway = "Compare filtered vs raw shell output, then inspect /usage for token impact."
+        draft["editorial_takeaway"] = good_takeaway
+        draft["post_text"] = fact + " " + good_takeaway + " " + candidate["url"]
+        _accepted_good, good_reasons = hourly.validate_draft(draft, {"candidate-1": candidate})
+        self.assertFalse(any(
+            "lacks a baseline or direct metric" in reason for reason in good_reasons
+        ))
+
     def test_unverified_relationship_between_shopify_webhooks_and_handoff_is_rejected(self):
         candidate = dict(self.candidate)
         page_text = (
