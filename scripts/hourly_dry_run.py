@@ -1982,13 +1982,76 @@ def main(argv: list[str] | None = None) -> int:
                 passing, editorial_rejections, editorial_review_error = editorial_review_drafts(review_candidates, by_id)
                 rejected.extend(editorial_rejections)
                 rejected.extend(not_reviewed)
+                extra_editorial_rejections = 0
+                extra_review_submissions = 0
+
+                # If deterministic validation passed but the independent editor rejected
+                # the chosen draft, permit one source-grounded repair based on the editor's
+                # exact reason, then rerun both gates. This avoids an unnecessary skip
+                # without relaxing the release criteria.
+                if (
+                    not passing
+                    and editorial_rejections
+                    and not editorial_review_error
+                    and not repair_stats["attempted"]
+                ):
+                    repair_stats["attempted"] = True
+                    repaired, repair_error = repair_rejected_drafts(editorial_rejections[:1], by_id, limit=1)
+                    repair_stats["drafts_submitted"] = len(repaired)
+                    repair_stats["repair_error"] = repair_error
+                    repair_local_passes = []
+                    for repaired_draft in repaired:
+                        repaired_id = clean(repaired_draft.get("candidate_id"))
+                        repaired_candidate = by_id.get(repaired_id)
+                        if not repaired_candidate:
+                            rejected.append({
+                                "candidate_id": repaired_id or None,
+                                "reasons": ["Automatic repair could not be mapped to a verified candidate."],
+                                "proposed_text": clean(repaired_draft.get("post_text"))[:500],
+                                "automatic_repair_attempt": True,
+                            })
+                            repair_stats["repair_rejections"] += 1
+                            continue
+                        accepted_repair, repair_reasons = validate_draft(repaired_draft, by_id)
+                        if accepted_repair:
+                            accepted_repair["automatic_repair_attempt"] = True
+                            accepted_repair["repair_note"] = (
+                                "Repaired from the independent editor's rejection reason; all quality gates run again."
+                            )
+                            repair_local_passes.append(accepted_repair)
+                            repair_stats["repaired_local_passes"] += 1
+                        else:
+                            rejected.append({
+                                "candidate_id": repaired_id,
+                                "title": repaired_candidate.get("title"),
+                                "reasons": repair_reasons,
+                                "proposed_text": clean(repaired_draft.get("post_text"))[:500],
+                                "evidence_quote": clean(repaired_draft.get("evidence_quote"))[:300],
+                                "automatic_repair_attempt": True,
+                                "original_rejection_reasons": repaired_draft.get("repaired_after_reasons", []),
+                            })
+                            repair_stats["repair_rejections"] += 1
+                    if repair_local_passes:
+                        extra_review_submissions = len(repair_local_passes[:1])
+                        reapproved, repair_editor_rejections, repair_editor_error = editorial_review_drafts(
+                            repair_local_passes[:1], by_id
+                        )
+                        rejected.extend(repair_editor_rejections)
+                        extra_editorial_rejections = len(repair_editor_rejections)
+                        if repair_editor_error:
+                            repair_stats["repair_error"] = repair_editor_error
+                        passing = reapproved
+                        if not passing:
+                            repair_stats["repair_rejections"] += max(1, len(repair_editor_rejections))
+
+                report["automatic_repair"] = repair_stats
                 report["editorial_review"] = {
-                    "locally_valid_drafts": locally_valid_count,
-                    "submitted_for_independent_review": len(review_candidates),
+                    "locally_valid_drafts": locally_valid_count + repair_stats["repaired_local_passes"],
+                    "submitted_for_independent_review": len(review_candidates) + extra_review_submissions,
                     "passed_independent_review": len(passing),
-                    "rejected_by_independent_review": len(editorial_rejections),
+                    "rejected_by_independent_review": len(editorial_rejections) + extra_editorial_rejections,
                     "lower_ranked_not_reviewed": len(not_reviewed),
-                    "review_error": editorial_review_error,
+                    "review_error": editorial_review_error or (repair_stats.get("repair_error") if extra_review_submissions else None),
                     "automatic_gate": "fail_closed",
                 }
                 report["passing_drafts"] = passing
