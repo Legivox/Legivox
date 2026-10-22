@@ -43,6 +43,32 @@ class HourlyDryRunTests(unittest.TestCase):
             "signals": {"license_spdx": "MIT", "stars": 92},
         }
 
+    def test_editorial_review_queue_reviews_top_three_and_defers_only_lower_ranked(self):
+        drafts = [
+            {"candidate_id": "low", "editorial_score": 7.2, "hourly_adjusted_score": 95},
+            {"candidate_id": "top", "editorial_score": 9.0, "hourly_adjusted_score": 60},
+            {"candidate_id": "tie-low", "editorial_score": 8.0, "hourly_adjusted_score": 75},
+            {"candidate_id": "tie-high", "editorial_score": 8.0, "hourly_adjusted_score": 80},
+            {"candidate_id": "mid", "editorial_score": 7.7, "hourly_adjusted_score": 70},
+        ]
+        review_queue, deferred = hourly.split_editorial_review_queue(drafts, limit=3)
+        self.assertEqual(
+            [row["candidate_id"] for row in review_queue],
+            ["top", "tie-high", "tie-low"],
+        )
+        self.assertEqual(
+            [row["candidate_id"] for row in deferred],
+            ["mid", "low"],
+        )
+        self.assertEqual(
+            sorted(row["candidate_id"] for row in review_queue + deferred),
+            ["low", "mid", "tie-high", "tie-low", "top"],
+        )
+
+        no_review, all_deferred = hourly.split_editorial_review_queue(drafts, limit=0)
+        self.assertEqual(no_review, [])
+        self.assertEqual(len(all_deferred), len(drafts))
+
     def test_valid_draft_passes_and_is_marked_dry_run_only(self):
         draft = {
             "candidate_id": "candidate-1",

@@ -1876,7 +1876,14 @@ def write_outputs(report: dict) -> None:
     lines += ["", "## Selected draft candidates", ""]
     selected = report.get("passing_drafts", [])
     if not selected:
-        lines += ["No candidate produced a draft that passed every local check. Skipping is intentional.", ""]
+        editorial = report.get("editorial_review") or {}
+        if int(editorial.get("locally_valid_drafts", 0) or 0) > 0:
+            lines += [
+                "No draft cleared the complete local and independent-editor gate. See the decision reason and rejected-draft section for locally valid drafts that were rejected, not reviewed, or blocked by a review error.",
+                "",
+            ]
+        else:
+            lines += ["No candidate produced a draft that passed every local check. Skipping is intentional.", ""]
     for index, row in enumerate(selected, 1):
         scores = row["scores"]
         lines += [
@@ -1970,6 +1977,28 @@ def write_outputs(report: dict) -> None:
         "",
     ]
     LATEST_MD_PATH.write_text("\n".join(lines), encoding="utf-8")
+
+
+def split_editorial_review_queue(
+    drafts: list[dict],
+    limit: int = 3,
+) -> tuple[list[dict], list[dict]]:
+    """Return the highest-ranked drafts for independent review and defer the rest.
+
+    One post may be selected per hour, but reviewing only the top draft means a
+    single false-negative from the independent editor can suppress every other
+    locally valid candidate. Review up to three ranked alternatives, while keeping
+    the actual publishing decision capped at one draft.
+    """
+    ranked = sorted(
+        drafts,
+        key=lambda item: (
+            -float(item.get("editorial_score") or 0),
+            -int(item.get("hourly_adjusted_score") or 0),
+        ),
+    )
+    review_limit = max(0, int(limit))
+    return ranked[:review_limit], ranked[review_limit:]
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -2186,16 +2215,15 @@ def main(argv: list[str] | None = None) -> int:
                 report["automatic_repair"] = repair_stats
 
                 locally_valid_count = len(passing)
-                passing.sort(key=lambda item: (-item["editorial_score"], -int(item["hourly_adjusted_score"] or 0)))
-                review_candidates = passing[:1]
+                review_candidates, deferred_candidates = split_editorial_review_queue(passing, limit=3)
                 not_reviewed = [
                     {
                         "candidate_id": item["candidate_id"],
                         "title": item["title"],
                         "proposed_text": item["post_text"],
-                        "reasons": ["Lower-ranked local pass not independently reviewed because this hourly slot can select only one post."],
+                        "reasons": ["Locally valid draft was not independently reviewed because it ranked outside this hourly slot's top-three review budget."],
                     }
-                    for item in passing[1:]
+                    for item in deferred_candidates
                 ]
                 passing, editorial_rejections, editorial_review_error = editorial_review_drafts(review_candidates, by_id)
                 rejected.extend(editorial_rejections)
@@ -2252,6 +2280,7 @@ def main(argv: list[str] | None = None) -> int:
                             })
                             repair_stats["repair_rejections"] += 1
                     if repair_local_passes:
+                        locally_valid_count += len(repair_local_passes)
                         extra_review_submissions = len(repair_local_passes[:1])
                         reapproved, repair_editor_rejections, repair_editor_error = editorial_review_drafts(
                             repair_local_passes[:1], by_id
@@ -2266,7 +2295,7 @@ def main(argv: list[str] | None = None) -> int:
 
                 report["automatic_repair"] = repair_stats
                 report["editorial_review"] = {
-                    "locally_valid_drafts": locally_valid_count + repair_stats["repaired_local_passes"],
+                    "locally_valid_drafts": locally_valid_count,
                     "submitted_for_independent_review": len(review_candidates) + extra_review_submissions,
                     "passed_independent_review": len(passing),
                     "rejected_by_independent_review": len(editorial_rejections) + extra_editorial_rejections,
@@ -2296,7 +2325,12 @@ def main(argv: list[str] | None = None) -> int:
                         )
                     elif editorial_rejections:
                         report["decision_reason"] = (
-                            "All drafts that passed source/evidence checks were rejected by the independent editorial review; the hour was skipped."
+                            "Every draft submitted for independent editorial review was rejected; "
+                            + (
+                                "one or more lower-ranked locally valid drafts were not reviewed within this hour's review limit. "
+                                if not_reviewed else ""
+                            )
+                            + "The hour was skipped."
                         )
                     else:
                         report["decision_reason"] = "All generated drafts failed the local evidence/editorial checks; the hour was skipped."
