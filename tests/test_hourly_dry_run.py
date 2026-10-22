@@ -288,6 +288,62 @@ class HourlyDryRunTests(unittest.TestCase):
         self.assertTrue(any("Primary-source evidence quote is missing" in reason for reason in reasons))
         self.assertTrue(any("factual claim lacks a quote present in the live primary-source page" in reason for reason in reasons))
 
+    def test_automatic_repair_uses_rejection_reasons_and_keeps_exact_primary_url(self):
+        candidate = dict(self.candidate)
+        candidate["primary_source_text"] = (
+            "Webhook integration skills for AI coding agents. Step-by-step guidance for setting up webhook receivers, "
+            "signature verification, and event handling for Stripe, Shopify, GitHub, and more."
+        )
+        candidate["primary_source_description"] = "Webhook integration skills for AI coding agents."
+        candidate["primary_source_evidence"] = candidate["primary_source_text"]
+        rejected = [{
+            "candidate_id": "candidate-1",
+            "title": candidate["title"],
+            "proposed_text": "An overly long feature list that failed validation.",
+            "evidence_quote": "",
+            "claim_evidence": [],
+            "reasons": [
+                "Fact sentence is too long; narrow it to one source-backed capability.",
+                "Editorial takeaway is too long; keep the analysis concrete and concise.",
+            ],
+        }]
+        repaired_response = {
+            "drafts": [{
+                "candidate_id": "candidate-1",
+                "fact_sentence": "Hookdeck's webhook skills guide coding agents through receiver setup.",
+                "editorial_takeaway": "Test invalid signatures and duplicate deliveries before shipping.",
+                "evidence_quote": "Step-by-step guidance for setting up webhook receivers",
+                "claim_evidence": [{
+                    "claim": "Hookdeck's webhook skills guide coding agents through receiver setup",
+                    "quote": "Step-by-step guidance for setting up webhook receivers",
+                }],
+                "format": "tool_discovery",
+                "audience": "developers",
+                "angle": "webhook testing",
+                "rationale": "Narrowed the claim and shortened the test advice after specific validator failures.",
+                "scores": {"timeliness": 8, "usefulness": 8, "novelty": 7, "evidence": 9, "insight": 8},
+            }]
+        }
+        response = {"choices": [{"message": {"content": json.dumps(repaired_response)}}]}
+        with patch.object(hourly, "request_groq", return_value=response):
+            drafts, error = hourly.repair_rejected_drafts(rejected, {"candidate-1": candidate})
+        self.assertIsNone(error)
+        self.assertEqual(len(drafts), 1)
+        self.assertTrue(drafts[0]["automatic_repair_attempt"])
+        self.assertTrue(drafts[0]["post_text"].endswith(candidate["url"]))
+        self.assertIn("Fact sentence is too long", drafts[0]["repaired_after_reasons"][0])
+
+    def test_automatic_repair_does_not_guess_candidate_for_unknown_id(self):
+        rejected = [{
+            "candidate_id": "candidate-unknown",
+            "title": "Unknown",
+            "proposed_text": "Some text",
+            "reasons": ["Missing source evidence"],
+        }]
+        drafts, error = hourly.repair_rejected_drafts(rejected, {"candidate-1": self.candidate})
+        self.assertEqual(drafts, [])
+        self.assertIsNone(error)
+
     def test_groq_413_retries_with_smaller_candidate_pool(self):
         candidates = []
         for index in range(3):
