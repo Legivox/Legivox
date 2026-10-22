@@ -922,6 +922,50 @@ def model_evidence_excerpt(candidate: dict, max_chars: int = 1750) -> str:
     return clean(" ".join([title, description, *selected]))[:max_chars]
 
 
+REPAIR_EDGE_CASE_RE = re.compile(
+    r"missing_consent_data|\b(missing|warning|error|unknown|default|unless|only if|until|must|cannot|can't|"
+    r"not affected|earlier version|before|required|requires|otherwise|failure|retry|fallback|opt-out|opt out|"
+    r"invalid|limit|limits|denied|conflict|unsupported|rate limit|signature|authentication|authorization|"
+    r"idempotent|tenant isolation|rollback)\b",
+    re.I,
+)
+
+
+def repair_evidence_excerpt(candidate: dict, max_chars: int = 1400) -> str:
+    """Prioritise source-documented edge cases for repairs, not just broad feature overlap."""
+    title = clean(candidate.get("primary_source_title") or "")
+    description = clean(candidate.get("primary_source_description") or "")
+    source_text = clean(candidate.get("primary_source_text") or candidate.get("primary_source_evidence") or "")
+    query_tokens = tokens(
+        str(candidate.get("title") or "") + " " + str(candidate.get("summary") or "")
+    )
+    chunks = [
+        clean(part)
+        for part in re.split(r"(?<=[.!?])\s+|(?<=;)\s+|\n+", source_text)
+        if len(clean(part)) >= 18
+    ]
+    scored = []
+    for index, chunk in enumerate(chunks):
+        edge_case = 1 if REPAIR_EDGE_CASE_RE.search(chunk) else 0
+        overlap = len(query_tokens & tokens(chunk)) / max(1, len(query_tokens))
+        # Prefer explicitly documented conditions/warnings over generic introductions;
+        # retain relevance and source order as tie-breakers.
+        scored.append((edge_case, overlap, -index, chunk))
+    budget = max(0, max_chars - len(title) - len(description) - 2)
+    selected = []
+    used = 0
+    for _edge, _overlap, _order, chunk in sorted(scored, reverse=True):
+        remaining = budget - used
+        if remaining <= 0:
+            break
+        if len(chunk) > remaining:
+            chunk = chunk[:remaining].rsplit(" ", 1)[0]
+        if chunk and chunk not in selected:
+            selected.append(chunk)
+            used += len(chunk) + 1
+    return clean(" ".join([title, description, *selected]))[:max_chars]
+
+
 def draft_candidates(candidates: list[dict]) -> tuple[list[dict], str | None]:
     if not candidates:
         return [], "No candidate met the freshness, diversity and metadata minimums."
@@ -1120,10 +1164,10 @@ def repair_rejected_drafts(
             "candidate_id": candidate_id,
             "candidate_title": candidate.get("primary_source_title") or candidate.get("title"),
             "primary_source_url": candidate.get("url"),
-            "verified_evidence": model_evidence_excerpt(candidate, max_chars=900),
+            "verified_evidence": repair_evidence_excerpt(candidate, max_chars=1400),
             "rejected_copy": str(rejected.get("proposed_text") or "")[:280],
             "previous_claim_evidence": (rejected.get("claim_evidence") or [])[:2],
-            "local_rejection_reasons": (rejected.get("reasons") or [])[:8],
+            "rejection_feedback": (rejected.get("reasons") or [])[:8],
         })
 
     system = (
@@ -1133,9 +1177,15 @@ def repair_rejected_drafts(
         "Use one narrow factual sentence naming the product/platform/capability (55-85 characters), then one distinct, useful takeaway "
         "(40-70 characters) that is a logically relevant test, trade-off, decision rule or implementation step. It may be original advice "
         "based on the documented use case, but must not imply an undocumented feature. Avoid orphaned fragments, feature lists and unsupported numbers. "
-        "Do not reword the source headline with a swapped noun: start from a concrete behavior, condition, limitation or implementation consequence. "
+        "Do not reword the source headline with a swapped noun: start from a concrete documented behavior, condition, limitation, warning or implementation consequence. "
+        "Treat rejection_feedback as a hard checklist, especially any reason saying the takeaway is generic, unsupported or adds no value. "
+        "Do not respond to a generic-takeaway rejection by substituting another generic test such as 'measure latency', 'test idempotency' or 'validate fields' "
+        "unless the source documents the corresponding behavior or the takeaway states a specific, logically necessary decision from the source. "
+        "Prefer an explicit source-backed edge case: missing required data, warning/error response, a documented default, a version/eligibility condition, "
+        "a failure path or a required next action. For example, if the primary page says checkout returns a missing-data warning and cannot complete until "
+        "a contact detail is supplied, explain that exact recovery path rather than recommending generic webhook validation. "
         "For a changelog, do not write 'Product X now supports Feature Y'; identify a documented version/negotiation condition, eligibility check, missing-data case, "
-        "error code, migration requirement or other source-backed edge case. The takeaway should turn that documented detail into a specific regression test or decision. "
+        "error code, migration requirement or other source-backed edge case. The takeaway should convert that documented detail into a concrete implementation decision. "
         "Never claim that an unmeasured test validates a benchmark or performance outcome. "
         "Respect the per-candidate URL character budget. "
         "For every factual claim, supply claim_evidence with a non-empty quote copied verbatim from the supplied verified evidence excerpt. "
@@ -1143,8 +1193,9 @@ def repair_rejected_drafts(
     )
     user = {
         "task": (
-            "Repair only the listed drafts. Use the rejection reasons as a checklist. Do not merely change wording if the underlying claim "
-            "is unsupported: narrow the claim to the primary evidence or omit it. Return a drafts array with candidate_id, fact_sentence, "
+            "Repair only the listed drafts. Use rejection_feedback as a checklist and directly resolve each cited weakness. Do not merely change wording if the underlying claim "
+            "is unsupported: narrow the claim to the primary evidence or omit it. If the prior takeaway was rejected as generic or unsupported, derive a different takeaway from "
+            "a concrete edge case or required action in verified_evidence; if no such insight is supported, omit the candidate. Return a drafts array with candidate_id, fact_sentence, "
             "editorial_takeaway, evidence_quote, claim_evidence, format, audience, angle, rationale and scores. "
             "Scores are integers 1-10 for timeliness, usefulness, novelty, evidence and insight. "
             "Scores are diagnostics only: do not lower novelty because a fact is precise, but make the copy itself distinct and useful. "
@@ -2032,6 +2083,15 @@ def write_outputs(report: dict) -> None:
     LATEST_MD_PATH.write_text("\n".join(lines), encoding="utf-8")
 
 
+def should_attempt_editorial_repair(
+    passing: list[dict],
+    editorial_rejections: list[dict],
+    editorial_review_error: str | None,
+) -> bool:
+    """Run one editor-feedback repair after rejection, even if local repair already ran."""
+    return not passing and bool(editorial_rejections) and not editorial_review_error
+
+
 def split_editorial_review_queue(
     drafts: list[dict],
     limit: int = 3,
@@ -2224,6 +2284,9 @@ def main(argv: list[str] | None = None) -> int:
                     "repaired_local_passes": 0,
                     "repair_rejections": 0,
                     "repair_error": None,
+                    "editorial_repair_attempted": False,
+                    "editorial_repair_drafts_submitted": 0,
+                    "editorial_repair_error": None,
                 }
                 # One bounded repair pass only when the first generation yielded no
                 # local pass. Repair cannot relax thresholds or bypass final review.
@@ -2288,16 +2351,17 @@ def main(argv: list[str] | None = None) -> int:
                 # the chosen draft, permit one source-grounded repair based on the editor's
                 # exact reason, then rerun both gates. This avoids an unnecessary skip
                 # without relaxing the release criteria.
-                if (
-                    not passing
-                    and editorial_rejections
-                    and not editorial_review_error
-                    and not repair_stats["attempted"]
+                if should_attempt_editorial_repair(
+                    passing, editorial_rejections, editorial_review_error
                 ):
                     repair_stats["attempted"] = True
+                    repair_stats["editorial_repair_attempted"] = True
                     repaired, repair_error = repair_rejected_drafts(editorial_rejections[:1], by_id, limit=1)
-                    repair_stats["drafts_submitted"] = len(repaired)
-                    repair_stats["repair_error"] = repair_error
+                    repair_stats["drafts_submitted"] += len(repaired)
+                    repair_stats["editorial_repair_drafts_submitted"] = len(repaired)
+                    if repair_error:
+                        repair_stats["repair_error"] = repair_error
+                        repair_stats["editorial_repair_error"] = repair_error
                     repair_local_passes = []
                     for repaired_draft in repaired:
                         repaired_id = clean(repaired_draft.get("candidate_id"))

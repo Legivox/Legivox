@@ -43,6 +43,48 @@ class HourlyDryRunTests(unittest.TestCase):
             "signals": {"license_spdx": "MIT", "stars": 92},
         }
 
+    def test_editorial_repair_is_allowed_after_a_local_repair_was_attempted(self):
+        # The local-repair attempt is tracked separately. It must not disable the
+        # independent editor-feedback repair when every reviewed draft is rejected.
+        self.assertTrue(hourly.should_attempt_editorial_repair(
+            passing=[],
+            editorial_rejections=[{
+                "candidate_id": "candidate-1",
+                "proposed_text": "A rejected post.",
+                "reasons": ["Takeaway is generic and adds no value."],
+            }],
+            editorial_review_error=None,
+        ))
+        self.assertFalse(hourly.should_attempt_editorial_repair(
+            passing=[{"candidate_id": "candidate-1"}],
+            editorial_rejections=[{"candidate_id": "candidate-2"}],
+            editorial_review_error=None,
+        ))
+        self.assertFalse(hourly.should_attempt_editorial_repair(
+            passing=[],
+            editorial_rejections=[{"candidate_id": "candidate-1"}],
+            editorial_review_error="Review API unavailable",
+        ))
+
+    def test_repair_evidence_excerpt_prioritizes_documented_missing_data_edge_case(self):
+        candidate = dict(self.candidate)
+        candidate.update({
+            "title": "Checkout MCP and Cart MCP now support UCP buyer consent",
+            "summary": "Checkout MCP and Cart MCP support buyer consent.",
+            "primary_source_title": "Checkout MCP and Cart MCP now support UCP buyer consent",
+            "primary_source_description": "Agents can send buyer consent choices during checkout.",
+            "primary_source_text": (
+                "Checkout MCP supports buyer consent. "
+                "This paragraph describes the general extension and broad support for carts and checkouts. "
+                "A missing_consent_data warning is returned when an SMS opt-in lacks a phone number, "
+                "and checkout cannot complete until the missing contact detail is provided. "
+                "The agent should collect the required contact detail and retry checkout."
+            ),
+        })
+        excerpt = hourly.repair_evidence_excerpt(candidate, max_chars=1000)
+        self.assertIn("missing_consent_data", excerpt)
+        self.assertIn("cannot complete until the missing contact detail is provided", excerpt)
+
     def test_editorial_review_queue_reviews_top_three_and_defers_only_lower_ranked(self):
         drafts = [
             {"candidate_id": "low", "editorial_score": 7.2, "hourly_adjusted_score": 95},
