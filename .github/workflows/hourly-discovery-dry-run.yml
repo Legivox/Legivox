@@ -39,8 +39,10 @@ permissions:
   contents: write
 
 concurrency:
-  group: legivox-hourly-discovery-${{ github.ref }}
-  cancel-in-progress: true
+  # State is shared across feature-branch previews and default-branch scheduled runs.
+  # Serialize all writers so two runs cannot overwrite the star-history baseline.
+  group: legivox-hourly-discovery-state
+  cancel-in-progress: false
 
 jobs:
   dry-run:
@@ -52,6 +54,19 @@ jobs:
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           fetch-depth: 0
+
+      - name: Restore persistent hourly state
+        env:
+          STATE_BRANCH: legivox-hourly-state
+        run: |
+          git fetch --no-tags origin "$STATE_BRANCH"
+          mkdir -p output/discovery
+          git show "origin/$STATE_BRANCH:output/discovery/hourly-state.json" > output/discovery/hourly-state.json
+          if git cat-file -e "origin/$STATE_BRANCH:output/discovery/hourly-runs.jsonl" 2>/dev/null; then
+            git show "origin/$STATE_BRANCH:output/discovery/hourly-runs.jsonl" > output/discovery/hourly-runs.jsonl
+          else
+            touch output/discovery/hourly-runs.jsonl
+          fi
 
       - name: Set up Python
         uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
@@ -100,23 +115,30 @@ jobs:
         if: always() && hashFiles('output/discovery/hourly-latest.md') != ''
         run: cat output/discovery/hourly-latest.md >> "$GITHUB_STEP_SUMMARY"
 
-      # Push-triggered feature runs produce disposable reports. Persist state only on
-      # scheduled/manual runs to avoid racing source-code commits with state-file commits.
-      - name: Commit hourly state and audit log
-        if: success() && (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch') && hashFiles('output/discovery/hourly-state.json') != ''
+      # Keep generated state on a dedicated branch: feature code changes never race
+      # with state commits, and feature previews can establish the star baseline pre-merge.
+      - name: Persist hourly state and audit log
+        if: success() && hashFiles('output/discovery/hourly-state.json') != '' && hashFiles('output/discovery/hourly-latest.json') != ''
         env:
-          BRANCH_NAME: ${{ github.ref_name }}
+          STATE_BRANCH: legivox-hourly-state
         run: |
-          git add output/discovery/hourly-state.json \
+          git fetch --no-tags origin "$STATE_BRANCH"
+          git worktree add "$RUNNER_TEMP/legivox-state-sync" "origin/$STATE_BRANCH"
+          mkdir -p "$RUNNER_TEMP/legivox-state-sync/output/discovery"
+          cp output/discovery/hourly-state.json "$RUNNER_TEMP/legivox-state-sync/output/discovery/hourly-state.json"
+          cp output/discovery/hourly-runs.jsonl "$RUNNER_TEMP/legivox-state-sync/output/discovery/hourly-runs.jsonl"
+          cp output/discovery/hourly-latest.json "$RUNNER_TEMP/legivox-state-sync/output/discovery/hourly-latest.json"
+          cp output/discovery/hourly-latest.md "$RUNNER_TEMP/legivox-state-sync/output/discovery/hourly-latest.md"
+          git -C "$RUNNER_TEMP/legivox-state-sync" add \
+            output/discovery/hourly-state.json \
             output/discovery/hourly-runs.jsonl \
             output/discovery/hourly-latest.json \
             output/discovery/hourly-latest.md
-          if git diff --cached --quiet; then
+          if git -C "$RUNNER_TEMP/legivox-state-sync" diff --cached --quiet; then
             echo "No hourly state changes to commit."
             exit 0
           fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+users.noreply.github.com"
-          git commit -m "chore: update hourly discovery dry-run state [skip ci]"
-          git pull --rebase origin "$BRANCH_NAME"
-          git push origin "HEAD:$BRANCH_NAME"
+          git -C "$RUNNER_TEMP/legivox-state-sync" config user.name "github-actions[bot]"
+          git -C "$RUNNER_TEMP/legivox-state-sync" config user.email "41898282+users.noreply.github.com"
+          git -C "$RUNNER_TEMP/legivox-state-sync" commit -m "chore: refresh hourly research state [skip ci]"
+          git -C "$RUNNER_TEMP/legivox-state-sync" push origin "HEAD:refs/heads/$STATE_BRANCH"
