@@ -1123,7 +1123,8 @@ def editorial_review_drafts(
             "candidate_title": candidate.get("title"),
             "primary_page_title": candidate.get("primary_source_title"),
             "primary_page_url": candidate.get("primary_source_final_url") or candidate.get("url"),
-            "verified_evidence_excerpt": model_evidence_excerpt(candidate, max_chars=900),
+            "verified_evidence_excerpt": model_evidence_excerpt(candidate, max_chars=1600),
+            "primary_page_context": clean(candidate.get("primary_source_text") or "")[:2600],
             "fact_sentence": draft.get("fact_sentence"),
             "editorial_takeaway": draft.get("editorial_takeaway"),
             "post_text": draft.get("post_text"),
@@ -1140,8 +1141,11 @@ def editorial_review_drafts(
         "Check technical logic in the second sentence. A test must measure the thing it claims to measure; page-load timing does not "
         "prove bundle/script size, and a size claim does not prove performance. Reject mixed-up metrics, false causal links, arbitrary "
         "thresholds, generic advice, feature-list headlines and advice that merely repeats the source. "
-        "Also reject takeaways that assume an undocumented capability: mentioning 'Skills' and shared context does not prove 'skill sync'; "
-        "mentioning webhooks does not prove automatic retries. Require the cited primary page to support any product capability asserted. "
+        "Also reject takeaways that assume an undocumented capability or a relationship between independently listed features. Mentioning Shopify, "
+        "webhooks and human handoff on the same README does not prove that a Shopify webhook fires after handoff; require the page to document that relationship. "
+        "If it is merely a proposed integration test, frame it explicitly as a conditional check of the reader's own wiring, not as a built-in product behavior. "
+        "Mentioning 'Skills' and shared context does not prove 'skill sync'; mentioning webhooks does not prove automatic retries. "
+        "Require the cited primary page to support each asserted product capability and causal/trigger relationship. "
         "However, an original conditional evaluation step need not be stated verbatim in the source if it is logically tied to the documented use case "
         "and does not imply an unverified feature exists. For example, a low-code platform may be evaluated with one representative workflow, "
         "but don't claim it has a prompt-generated visual builder unless the fetched page says that. "
@@ -1482,6 +1486,29 @@ def validate_draft(draft: dict, candidates_by_id: dict) -> tuple[dict | None, li
             reasons.append(
                 "Takeaway implies an undocumented product capability: " + ", ".join(unverified_terms)
                 + ". Reframe as a check of documented behavior."
+            )
+        # A page can list two features independently without documenting that they
+        # interact. Reject unqualified trigger/sync/cause statements unless the source
+        # describes that relation or the sentence clearly asks the reader to test their
+        # own integration rather than asserting built-in behavior.
+        relation_terms = {
+            "trigger", "fire", "sync", "synchronize", "synchronise", "invoke", "call",
+            "cause", "launch", "start", "automate", "execute",
+        }
+        ungrounded_relation_terms = sorted(
+            term for term in (takeaway_tokens & relation_terms)
+            if term not in evidence_terms
+        )
+        conditional_integration_test = any(phrase in takeaway_normalized for phrase in (
+            "test whether", "check whether", "verify whether", "if you connect",
+            "if you combine", "if you use both", "your own integration", "your own workflow",
+            "if you wire", "in your integration",
+        ))
+        source_topic_overlap = len(takeaway_tokens & evidence_terms)
+        if ungrounded_relation_terms and source_topic_overlap >= 3 and not conditional_integration_test:
+            reasons.append(
+                "Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. "
+                "Reframe it as an explicit conditional test of the reader's own integration."
             )
         if len(fact_sentence) > 110:
             reasons.append("Fact sentence is too long; narrow it to one source-backed capability.")
