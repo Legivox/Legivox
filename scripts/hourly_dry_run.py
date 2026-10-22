@@ -168,7 +168,7 @@ def title_overlap(title: str, post: str) -> float:
 
 
 def empty_state() -> dict:
-    return {"version": 1, "events": [], "attempted_candidates": {}, "used_candidates": {}, "repo_star_snapshots": {}}
+    return {"version": 1, "events": [], "attempted_candidates": {}, "used_candidates": {}, "repo_star_snapshots": {}, "repo_star_watchlist": {}}
 
 
 def load_state() -> dict:
@@ -182,6 +182,7 @@ def load_state() -> dict:
         state.setdefault("attempted_candidates", {})
         state.setdefault("used_candidates", {})
         state.setdefault("repo_star_snapshots", {})
+        state.setdefault("repo_star_watchlist", {})
         return state
     except (OSError, json.JSONDecodeError):
         # Fail closed on corrupted state: preserve it and do not overwrite it silently.
