@@ -389,6 +389,52 @@ class HourlyDryRunTests(unittest.TestCase):
         self.assertTrue(drafts[0]["post_text"].endswith(candidate["url"]))
         self.assertIn("Fact sentence is too long", drafts[0]["repaired_after_reasons"][0])
 
+    def test_repair_selection_prioritizes_savings_measurement_failure_over_earlier_drafts(self):
+        candidates = {}
+        rejected = []
+        fixtures = [
+            ("taskuary", 77, ["The factual opening bundles multiple features; narrow it to one capability."]),
+            ("chattermate", 76, ["Takeaway implies an interaction/causal relationship between source-listed features."]),
+            ("shopify-consent", 75, ["Supporting quotes cover only 50% of factual wording."]),
+            ("caudra", 73, [
+                "Efficiency/savings takeaway lacks a baseline or direct metric; repeating the same prompt twice does not isolate savings."
+            ]),
+        ]
+        for name, score, reasons in fixtures:
+            candidate = dict(self.candidate)
+            candidate.update({
+                "id": name,
+                "title": name,
+                "url": f"https://github.com/example/{name}",
+                "canonical_url": f"https://github.com/example/{name}",
+                "primary_source_title": f"{name} primary page",
+                "primary_source_description": f"Primary description for {name}.",
+                "primary_source_text": f"Primary evidence for {name}, with enough text to support a useful verified summary.",
+                "primary_source_evidence": f"{name} primary page. Primary evidence for {name}, with enough text to support a useful verified summary.",
+                "primary_source_verified": True,
+                "primary_source_http_status": 200,
+                "hourly_adjusted_score": score,
+                "priority_score": score,
+            })
+            candidates[name] = candidate
+            rejected.append({
+                "candidate_id": name,
+                "title": name,
+                "proposed_text": f"{name} first-pass text failed validation. {candidate['url']}",
+                "reasons": reasons,
+                "claim_evidence": [],
+            })
+        response = {"choices": [{"message": {"content": json.dumps({"drafts": []})}}]}
+        with patch.object(hourly, "request_groq", return_value=response) as mocked:
+            repaired, error = hourly.repair_rejected_drafts(rejected, candidates, limit=1)
+        self.assertEqual(repaired, [])
+        self.assertIsNone(error)
+        payload = json.loads(mocked.call_args.args[0][1]["content"])
+        self.assertEqual(
+            [item["candidate_id"] for item in payload["rejected_candidates"]],
+            ["caudra"],
+        )
+
     def test_automatic_repair_does_not_guess_candidate_for_unknown_id(self):
         rejected = [{
             "candidate_id": "candidate-unknown",
