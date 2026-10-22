@@ -288,6 +288,31 @@ class HourlyDryRunTests(unittest.TestCase):
         self.assertTrue(any("Evidence quote is not present" in reason for reason in reasons))
         self.assertTrue(any("factual claim lacks a source quote" in reason for reason in reasons))
 
+    def test_groq_413_retries_with_smaller_candidate_pool(self):
+        candidates = []
+        for index in range(3):
+            item = dict(self.candidate)
+            item["id"] = f"candidate-{index}"
+            item["title"] = f"Distinct project {index}"
+            item["url"] = f"https://github.com/example/project-{index}"
+            item["canonical_url"] = item["url"]
+            item["primary_source_title"] = item["title"]
+            item["primary_source_description"] = "Source description for the project."
+            item["primary_source_evidence"] = (
+                item["title"] + " provides a useful workflow for developers."
+            )
+            candidates.append(item)
+
+        empty_drafts = {"choices": [{"message": {"content": json.dumps({"drafts": []})}}]}
+        with patch.dict(os.environ, {"GROQ_API_KEY": "test-key"}):
+            with patch.object(hourly, "request_groq", side_effect=[RuntimeError("Groq returned HTTP 413"), empty_drafts]) as mocked:
+                drafts, error = hourly.draft_candidates(candidates)
+        self.assertEqual(drafts, [])
+        self.assertIsNone(error)
+        self.assertEqual(mocked.call_count, 2)
+        retried_payload = json.loads(mocked.call_args_list[1].args[0][1]["content"])
+        self.assertEqual(len(retried_payload["candidates"]), 1)
+
     def test_draft_without_source_url_is_rejected(self):
         draft = {
             "candidate_id": "candidate-1",
