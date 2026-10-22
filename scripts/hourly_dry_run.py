@@ -982,6 +982,26 @@ def draft_candidates(candidates: list[dict]) -> tuple[list[dict], str | None]:
         return [], clean(str(exc)) or type(exc).__name__
 
 
+def resolve_candidate_id(draft: dict, candidates_by_id: dict[str, dict]) -> tuple[str | None, str | None]:
+    """Resolve a draft by its ID or one exact verified candidate URL, never by order."""
+    raw_id = clean(draft.get("candidate_id"))
+    if raw_id in candidates_by_id:
+        return raw_id, None
+    draft_urls = {
+        url.rstrip(".,!?;:)")
+        for url in URL_RE.findall(clean(draft.get("post_text")))
+    }
+    matches = [
+        candidate_id for candidate_id, candidate in candidates_by_id.items()
+        if clean(candidate.get("url")) in draft_urls
+    ]
+    if len(matches) == 1:
+        return matches[0], "Recovered missing/invalid candidate ID from its exact verified source URL."
+    if len(matches) > 1:
+        return None, "Draft contains multiple verified source URLs; refusing ambiguous candidate attribution."
+    return None, "Model omitted a valid candidate ID and no exact verified source URL matched."
+
+
 def editorial_review_drafts(
     drafts: list[dict],
     candidates_by_id: dict[str, dict],
@@ -1005,7 +1025,7 @@ def editorial_review_drafts(
             "candidate_title": candidate.get("title"),
             "primary_page_title": candidate.get("primary_source_title"),
             "primary_page_url": candidate.get("primary_source_final_url") or candidate.get("url"),
-            "verified_evidence_excerpt": model_evidence_excerpt(candidate, max_chars=430),
+            "verified_evidence_excerpt": model_evidence_excerpt(candidate, max_chars=900),
             "fact_sentence": draft.get("fact_sentence"),
             "editorial_takeaway": draft.get("editorial_takeaway"),
             "post_text": draft.get("post_text"),
@@ -1021,9 +1041,12 @@ def editorial_review_drafts(
         "prove bundle/script size, and a size claim does not prove performance. Reject mixed-up metrics, false causal links, arbitrary "
         "thresholds, generic advice, feature-list headlines and advice that merely repeats the source. "
         "Also reject takeaways that assume an undocumented capability: mentioning 'Skills' and shared context does not prove 'skill sync'; "
-        "mentioning webhooks does not prove automatic retries. Require the cited primary page to support the capability being tested. "
-        "Reject any statement that goes beyond the provided primary-page evidence. A valid quote alone is not enough if the conclusion "
-        "does not follow. Pass only if the reader learns a concrete, candidate-specific fact and gets a logically relevant, useful next step. "
+        "mentioning webhooks does not prove automatic retries. Require the cited primary page to support any product capability asserted. "
+        "However, an original conditional evaluation step need not be stated verbatim in the source if it is logically tied to the documented use case "
+        "and does not imply an unverified feature exists. For example, a low-code platform may be evaluated with one representative workflow, "
+        "but don't claim it has a prompt-generated visual builder unless the fetched page says that. "
+        "A valid quote alone is not enough if the conclusion does not follow. Pass only if the reader learns a concrete, candidate-specific fact "
+        "and gets a logically relevant, useful next step. "
         "Return JSON only with a reviews array, one entry for every supplied candidate. Each entry must have candidate_id, pass (boolean), "
         "clarity_score, technical_coherence_score, takeaway_value_score, source_faithfulness_score and reason. Scores must be integers 1-10. "
         "pass must be true only when every score is at least 7. Keep the reason specific and under 220 characters."
@@ -1760,16 +1783,30 @@ def main(argv: list[str] | None = None) -> int:
                 rejected = []
                 seen_draft_ids = set()
                 for draft in generated:
-                    candidate_id = str(draft.get("candidate_id") or "") if isinstance(draft, dict) else ""
+                    draft = draft if isinstance(draft, dict) else {}
+                    candidate_id, id_resolution_note = resolve_candidate_id(draft, by_id)
+                    if not candidate_id:
+                        rejected.append({
+                            "candidate_id": None,
+                            "title": clean(draft.get("title") or "Unmapped model draft"),
+                            "proposed_text": clean(draft.get("post_text"))[:500],
+                            "reasons": [id_resolution_note or "Could not resolve candidate identity safely."],
+                        })
+                        continue
+                    draft["candidate_id"] = candidate_id
                     if candidate_id in seen_draft_ids:
-                        rejected.append({"candidate_id": candidate_id, "reasons": ["Duplicate model response for candidate"]})
+                        rejected.append({
+                            "candidate_id": candidate_id,
+                            "title": by_id[candidate_id].get("title"),
+                            "reasons": ["Duplicate model response for the same verified candidate"],
+                        })
                         continue
                     seen_draft_ids.add(candidate_id)
-                    candidate_for_draft = by_id.get(candidate_id, {})
-                    draft_with_context = ensure_editorial_context(
-                        draft if isinstance(draft, dict) else {}, candidate_for_draft
-                    )
+                    candidate_for_draft = by_id[candidate_id]
+                    draft_with_context = ensure_editorial_context(draft, candidate_for_draft)
                     accepted, reasons = validate_draft(draft_with_context, by_id)
+                    if id_resolution_note and accepted:
+                        accepted["candidate_id_resolution_note"] = id_resolution_note
                     if accepted:
                         passing.append(accepted)
                     else:
