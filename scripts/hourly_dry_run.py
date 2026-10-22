@@ -1254,6 +1254,36 @@ def write_outputs(report: dict) -> None:
             status += " (" + row["error"] + ")"
         lines.append(f'| {row.get("source", "unknown")} | {row.get("items_kept", 0)} | {status} |')
 
+    star = report.get("star_tracking", {})
+    lines += [
+        "",
+        "## GitHub star tracking",
+        "",
+        "- Tracked repositories in watchlist: " + str(star.get("tracked_repositories", 0)),
+        "- Repositories seen in this discovery run: " + str(star.get("repositories_seen_in_discovery", 0)),
+        "- Previously tracked repositories refreshed outside search results: " + str(star.get("previously_tracked_repositories_refreshed", 0)),
+        "- Refresh failures: " + str(star.get("refresh_failures", 0)),
+        "- Star snapshots recorded this run: " + str(star.get("snapshots_added_this_run", 0)),
+        "- Repositories with a 20–36 hour comparison baseline: " + str(star.get("repositories_with_20_to_36_hour_baseline", 0)),
+        "- First observations are baseline samples, not evidence of trending. Star velocity is reported only when a historical comparison exists.",
+        "",
+        "## Primary-source verification",
+        "",
+        "| Candidate | Verified | HTTP | Result |",
+        "|---|---|---:|---|",
+    ]
+    checks = report.get("primary_source_checks", [])
+    if not checks:
+        lines.append("| No shortlist checked | — | — | No candidate shortlist reached this stage |")
+    for row in checks:
+        lines.append(
+            "| " + str(row.get("title", "Unknown")).replace("|", "\\|")
+            + " | " + ("yes" if row.get("verified") else "no")
+            + " | " + str(row.get("http_status") or "—")
+            + " | " + str(row.get("reason") or row.get("final_url") or "Live page content fetched and title match checked").replace("|", "\\|")
+            + " |"
+        )
+
     lines += ["", "## Selected draft candidates", ""]
     selected = report.get("passing_drafts", [])
     if not selected:
@@ -1268,6 +1298,7 @@ def write_outputs(report: dict) -> None:
             "- Format: " + str(row["format"]),
             "- Editorial score: " + str(row["editorial_score"]) + "/10",
             "- Model scores: timeliness " + str(scores["timeliness"]) + "/10, usefulness " + str(scores["usefulness"]) + "/10, novelty " + str(scores["novelty"]) + "/10, evidence " + str(scores["evidence"]) + "/10, insight " + str(scores["insight"]) + "/10",
+            "- Live primary page: " + str(row.get("primary_source_final_url") or row["url"]) + " (HTTP " + str(row.get("primary_source_http_status") or "verified") + ")",
             "- Exact source evidence: “" + row["evidence_quote"] + "”",
             "- Why this angle: " + row["rationale"],
             "- Editorial takeaway: " + row["editorial_takeaway"],
@@ -1310,16 +1341,20 @@ def write_outputs(report: dict) -> None:
     for row in report.get("candidate_shortlist", []):
         trend_detail = ""
         if row.get("stars_delta_24h") is not None:
+            delta = int(row.get("stars_delta_24h"))
+            sign = "+" if delta > 0 else ""
             trend_detail = (
-                " | GitHub stars +" + str(row.get("stars_delta_24h"))
+                " | GitHub stars " + sign + str(delta)
                 + " over about " + str(row.get("stars_delta_baseline_hours")) + "h"
             )
         elif row.get("trend_signal") == "insufficient_history":
             trend_detail = " | GitHub star trend: building baseline"
+        current_stars = row.get("stars_current")
+        stars_detail = (" | current stars " + str(current_stars)) if current_stars is not None else ""
         lines.append(
             "- " + str(row.get("title")) + " | " + str(row.get("source")) + " | "
             + str(row.get("primary_category")) + " | raw " + str(row.get("priority_score"))
-            + ", adjusted " + str(row.get("hourly_adjusted_score")) + trend_detail + " | " + str(row.get("url"))
+            + ", adjusted " + str(row.get("hourly_adjusted_score")) + stars_detail + trend_detail + " | " + str(row.get("url"))
         )
     lines += [
         "",
