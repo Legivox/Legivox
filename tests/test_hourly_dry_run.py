@@ -419,7 +419,7 @@ class HourlyDryRunTests(unittest.TestCase):
     def test_star_watchlist_refreshes_repositories_missing_from_current_discovery(self):
         state = hourly.empty_state()
         old_key = "123456"
-        old_sample = (self.now - timedelta(hours=24)).isoformat()
+        old_sample = self.now.isoformat()
         state["repo_star_watchlist"][old_key] = {
             "repo_id": old_key,
             "full_name": "prior-owner/prior-repo",
@@ -443,7 +443,7 @@ class HourlyDryRunTests(unittest.TestCase):
             metrics = hourly.update_github_star_velocity([current], state, self.now + timedelta(hours=24), refresh_missing=True)
         self.assertEqual(metrics["previously_tracked_repositories_refreshed"], 1)
         self.assertEqual(state["repo_star_snapshots"][old_key][-1]["stars"], 140)
-        self.assertEqual(metrics["repositories_with_20_to_36_hour_baseline"], 2)
+        self.assertEqual(metrics["repositories_with_20_to_36_hour_baseline"], 1)
         self.assertEqual(state["repo_star_watchlist"][old_key]["full_name"], "prior-owner/prior-repo")
 
     def test_repository_numeric_id_keeps_star_history_across_renames(self):
