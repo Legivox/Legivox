@@ -413,6 +413,36 @@ class HourlyDryRunTests(unittest.TestCase):
         self.assertIsNone(accepted)
         self.assertTrue(any("omits the product/platform/capability name" in reason for reason in reasons))
 
+    def test_unsupported_skill_sync_capability_is_rejected_locally(self):
+        candidate = dict(self.candidate)
+        candidate["primary_source_text"] = (
+            "Hookdeck webhook integration skills for coding agents. "
+            "Step-by-step guidance for receivers, signature verification and event handling."
+        )
+        candidate["primary_source_description"] = "Webhook integration skills for AI coding agents."
+        candidate["primary_source_evidence"] = candidate["primary_source_text"]
+        draft = {
+            "candidate_id": "candidate-1",
+            "fact_sentence": "Hookdeck provides webhook integration skills for coding agents.",
+            "post_text": (
+                "Hookdeck provides webhook integration skills for coding agents. "
+                "Test that agent skill syncs before launching parallel workflows. "
+                "https://github.com/hookdeck/webhook-skills"
+            ),
+            "editorial_takeaway": "Test that agent skill syncs before launching parallel workflows.",
+            "evidence_quote": "Hookdeck webhook integration skills for coding agents",
+            "claim_evidence": [
+                {
+                    "claim": "Hookdeck provides webhook integration skills for coding agents",
+                    "quote": "Hookdeck webhook integration skills for coding agents",
+                }
+            ],
+            "scores": {"timeliness": 8, "usefulness": 8, "novelty": 8, "evidence": 8, "insight": 8},
+        }
+        accepted, reasons = hourly.validate_draft(draft, {"candidate-1": candidate})
+        self.assertIsNone(accepted)
+        self.assertTrue(any("undocumented product capability" in reason for reason in reasons))
+
     def test_independent_editor_rejects_metric_mismatch(self):
         draft = {
             "candidate_id": "candidate-1",
