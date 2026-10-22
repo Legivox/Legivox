@@ -288,6 +288,53 @@ class HourlyDryRunTests(unittest.TestCase):
         self.assertTrue(any("Primary-source evidence quote is missing" in reason for reason in reasons))
         self.assertTrue(any("factual claim lacks a quote present in the live primary-source page" in reason for reason in reasons))
 
+    def test_primary_quote_attachment_uses_only_verbatim_page_text_and_meets_coverage(self):
+        candidate = dict(self.candidate)
+        candidate["primary_source_title"] = "Hookdeck webhook integration skills for coding agents"
+        candidate["primary_source_description"] = "Webhook integration skills for AI coding agents."
+        candidate["primary_source_text"] = (
+            "Step-by-step guidance for setting up webhook receivers, signature verification, "
+            "and event handling for Stripe, Shopify, GitHub, and more."
+        )
+        candidate["primary_source_evidence"] = candidate["primary_source_text"]
+        draft = {
+            "candidate_id": "candidate-1",
+            "fact_sentence": "Hookdeck webhook integration skills guide coding agents through receiver setup.",
+            "post_text": (
+                "Hookdeck webhook integration skills guide coding agents through receiver setup. "
+                "Test signature failures and duplicate event delivery before shipping. "
+                + candidate["url"]
+            ),
+            "editorial_takeaway": "Test signature failures and duplicate event delivery before shipping.",
+            "evidence_quote": "webhook integration",
+            "claim_evidence": [],
+        }
+        grounded = hourly.attach_primary_claim_evidence(draft, candidate)
+        self.assertTrue(grounded.get("evidence_quote_repaired_from_primary_page"))
+        quote = grounded["claim_evidence"][0]["quote"]
+        self.assertIn(hourly.normalize_for_match(quote), hourly.normalize_for_match(hourly.primary_evidence_text(candidate)))
+        fact_tokens = hourly.tokens(draft["fact_sentence"]) - {
+            "allow", "also", "and", "are", "can", "could", "does", "for", "from", "get",
+            "has", "have", "into", "its", "may", "more", "not", "now", "only", "our",
+            "provides", "support", "supports", "the", "their", "this", "through", "use",
+            "using", "with", "within", "your",
+        }
+        quote_coverage = len(fact_tokens & hourly.tokens(quote)) / max(1, len(fact_tokens))
+        self.assertGreaterEqual(quote_coverage, 0.65)
+        self.assertEqual(grounded["claim_evidence"][0]["claim"], draft["fact_sentence"])
+
+    def test_primary_quote_attachment_refuses_weak_lexical_overlap(self):
+        candidate = dict(self.candidate)
+        candidate["primary_source_title"] = "A cooking recipe collection"
+        candidate["primary_source_description"] = "Seasonal recipes for home cooks."
+        candidate["primary_source_text"] = "Learn to cook simple meals with seasonal vegetables."
+        candidate["primary_source_evidence"] = candidate["primary_source_text"]
+        quote = hourly.best_primary_quote_for_claim(
+            "Hookdeck webhook integration skills guide coding agents through receiver setup.",
+            candidate,
+        )
+        self.assertIsNone(quote)
+
     def test_automatic_repair_uses_rejection_reasons_and_keeps_exact_primary_url(self):
         candidate = dict(self.candidate)
         candidate["primary_source_text"] = (
