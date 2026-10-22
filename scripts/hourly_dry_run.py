@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import urllib.parse
 import os
 import re
 import sys
@@ -16,6 +17,7 @@ import urllib.error
 import urllib.request
 import unicodedata
 from collections import Counter
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -32,6 +34,9 @@ GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
 DEFAULT_LOOKBACK_DAYS = 1
 CANDIDATE_POOL_SIZE = 5
 MAX_POST_CHARS = 280
+MAX_STAR_WATCHLIST = 200
+STAR_HISTORY_DAYS = 8
+STAR_SAMPLE_INTERVAL_MINUTES = 45
 DAILY_DRAFT_CAP = int(os.environ.get("MAX_DAILY_DRAFTS", "10"))
 MAX_PER_SOURCE_PER_DAY = 4
 MAX_PER_CATEGORY_PER_DAY = 3
@@ -234,73 +239,256 @@ def is_fresh(candidate: dict, lookback_days: int) -> bool:
     return float(days_old) <= allowed_days
 
 
-def update_github_star_velocity(candidates: list[dict], state: dict, now: datetime) -> None:
-    """Persist star snapshots and estimate growth from a 20-36-hour-old baseline.
+def _github_repo_identity(candidate: dict) -> tuple[str, str, str] | None:
+    signals = candidate.get("signals") or {}
+    if str(candidate.get("source_kind") or "") != "github_repository":
+        return None
+    url = str(candidate.get("url") or "")
+    parsed = urllib.parse.urlsplit(url)
+    path_parts = [part for part in parsed.path.strip("/").split("/") if part]
+    full_name = clean(signals.get("full_name") or candidate.get("title") or "")
+    if (not full_name or "/" not in full_name) and parsed.netloc.casefold().endswith("github.com") and len(path_parts) >= 2:
+        full_name = path_parts[0] + "/" + path_parts[1].removesuffix(".git")
+    full_name = full_name.strip("/")
+    if "/" not in full_name:
+        return None
+    repo_id = str(signals.get("github_repo_id") or "").strip()
+    key = repo_id if repo_id else "url:" + str(candidate.get("id") or full_name.casefold())
+    return key, repo_id, full_name
 
-    First observations deliberately have no velocity score. This avoids falsely
-    calling a repository "trending" based on its lifetime star count.
+
+def _star_metrics(history: list[dict], now_utc: datetime, current_stars: int) -> tuple[int | None, float | None, float | None]:
+    baselines = []
+    for sample in history:
+        stamped = parse_utc(sample.get("at"))
+        if not stamped:
+            continue
+        hours_ago = (now_utc - stamped).total_seconds() / 3600.0
+        if 20 <= hours_ago <= 36:
+            baselines.append((abs(hours_ago - 24), int(sample.get("stars") or 0), hours_ago))
+    if not baselines:
+        return None, None, None
+    _, baseline_stars, baseline_hours = min(baselines, key=lambda row: row[0])
+    delta = current_stars - baseline_stars
+    growth = round(100 * delta / baseline_stars, 2) if baseline_stars > 0 else None
+    return delta, round(baseline_hours, 1), growth
+
+
+def _append_star_sample(history: list[dict], now_utc: datetime, stars: int) -> tuple[list[dict], bool]:
+    cutoff = now_utc - timedelta(days=STAR_HISTORY_DAYS)
+    clean_history = []
+    for sample in history:
+        stamped = parse_utc(sample.get("at"))
+        if stamped and stamped >= cutoff:
+            clean_history.append({
+                "at": stamped.isoformat(timespec="seconds"),
+                "stars": max(0, int(sample.get("stars") or 0)),
+            })
+    last_sample_time = parse_utc(clean_history[-1]["at"]) if clean_history else None
+    sampled = not last_sample_time or now_utc - last_sample_time >= timedelta(minutes=STAR_SAMPLE_INTERVAL_MINUTES)
+    if sampled:
+        clean_history.append({"at": now_utc.isoformat(timespec="seconds"), "stars": max(0, int(stars))})
+    return clean_history[-150:], sampled
+
+
+def fetch_github_repo_metadata(full_name: str, token: str | None = None) -> dict:
+    """Fetch current repository metadata from GitHub's REST API for already-tracked repos."""
+    escaped_name = urllib.parse.quote(full_name, safe="/")
+    request = urllib.request.Request(
+        "https://api.github.com/repos/" + escaped_name,
+        headers={
+            "Accept": "application/vnd.github+json",
+            "X-GitHub-Api-Version": "2022-11-28",
+            "User-Agent": USER_AGENT,
+            **({"Authorization": "Bearer " + token} if token else {}),
+        },
+    )
+    try:
+        with urllib.request.urlopen(request, timeout=12) as response:
+            payload = json.loads(response.read().decode("utf-8"))
+    except urllib.error.HTTPError as exc:
+        raise RuntimeError("GitHub repository lookup returned HTTP " + str(exc.code)) from None
+    except (urllib.error.URLError, TimeoutError, json.JSONDecodeError) as exc:
+        raise RuntimeError("GitHub repository lookup failed: " + type(exc).__name__) from None
+    return {
+        "repo_id": str(payload.get("id") or ""),
+        "full_name": str(payload.get("full_name") or full_name),
+        "stars": max(0, int(payload.get("stargazers_count") or 0)),
+        "archived": bool(payload.get("archived")),
+        "html_url": str(payload.get("html_url") or ""),
+        "updated_at": str(payload.get("updated_at") or ""),
+        "pushed_at": str(payload.get("pushed_at") or ""),
+    }
+
+
+def update_github_star_velocity(
+    candidates: list[dict],
+    state: dict,
+    now: datetime,
+    *,
+    refresh_missing: bool = False,
+) -> dict:
+    """Sample stars for discovered repositories and keep sampling a bounded watchlist hourly.
+
+    Current discovery results provide star counts for repos found this hour. Previously
+    tracked repos which no longer appear in those search results are refreshed through the
+    GitHub REST API, so their velocity history does not stop when rankings change.
     """
     snapshots = state.setdefault("repo_star_snapshots", {})
+    watchlist = state.setdefault("repo_star_watchlist", {})
     now_utc = now.astimezone(timezone.utc)
-    cutoff = now_utc - timedelta(days=8)
+    cutoff = now_utc - timedelta(days=STAR_HISTORY_DAYS)
+    observed_keys: set[str] = set()
+    samples_added = 0
+    discovery_repo_count = 0
 
     for candidate in candidates:
-        signals = candidate.get("signals") or {}
-        url = str(candidate.get("url") or "")
-        is_github_repo = str(candidate.get("source_kind") or "") == "github_repository" or (
-            "stars" in signals and "github.com/" in url
+        identity = _github_repo_identity(candidate)
+        if not identity:
+            continue
+        key, repo_id, full_name = identity
+        signals = candidate.setdefault("signals", {})
+        stars = max(0, int(signals.get("stars") or 0))
+        observed_keys.add(key)
+        discovery_repo_count += 1
+
+        entry = watchlist.setdefault(key, {
+            "repo_id": repo_id,
+            "full_name": full_name,
+            "first_seen_at": now_utc.isoformat(timespec="seconds"),
+            "last_seen_at": now_utc.isoformat(timespec="seconds"),
+            "consecutive_refresh_failures": 0,
+        })
+        entry["repo_id"] = repo_id or entry.get("repo_id") or ""
+        entry["full_name"] = full_name
+        entry["last_seen_at"] = now_utc.isoformat(timespec="seconds")
+        entry["consecutive_refresh_failures"] = 0
+
+        history = snapshots.setdefault(key, [])
+        history, sampled = _append_star_sample(history, now_utc, stars)
+        snapshots[key] = history
+        samples_added += int(sampled)
+        delta, baseline_hours, growth = _star_metrics(history, now_utc, stars)
+        candidate["stars_current"] = stars
+        candidate["stars_observed_at_utc"] = now_utc.isoformat(timespec="seconds")
+        candidate["stars_delta_24h"] = delta
+        candidate["stars_delta_baseline_hours"] = baseline_hours
+        candidate["stars_growth_percent_24h"] = growth
+        candidate["trend_signal"] = (
+            "measured_star_growth" if baseline_hours is not None and delta is not None
+            else "insufficient_history"
         )
-        if not is_github_repo or not candidate.get("id"):
-            continue
 
-        try:
-            current_stars = max(0, int(signals.get("stars") or 0))
-        except (TypeError, ValueError):
-            continue
+    # Drop repositories not discovered for over eight days, then enforce a bounded watchlist.
+    stale_keys = []
+    for key, entry in watchlist.items():
+        last_seen = parse_utc(entry.get("last_seen_at"))
+        if last_seen and last_seen < cutoff:
+            stale_keys.append(key)
+    for key in stale_keys:
+        watchlist.pop(key, None)
+        snapshots.pop(key, None)
 
-        repo_id = str(candidate["id"])
-        history = snapshots.setdefault(repo_id, [])
-        clean_history = []
-        for sample in history:
-            stamped = parse_utc(sample.get("at"))
-            if stamped and stamped >= cutoff:
-                clean_history.append({"at": stamped.isoformat(timespec="seconds"), "stars": max(0, int(sample.get("stars") or 0))})
-
-        baselines = []
-        for sample in clean_history:
-            stamped = parse_utc(sample.get("at"))
-            if not stamped:
-                continue
-            hours_ago = (now_utc - stamped).total_seconds() / 3600.0
-            if 20 <= hours_ago <= 36:
-                baselines.append((abs(hours_ago - 24), int(sample["stars"]), hours_ago))
-
-        if baselines:
-            _, baseline_stars, baseline_hours = min(baselines, key=lambda item: item[0])
-            candidate["stars_delta_24h"] = max(0, current_stars - baseline_stars)
-            candidate["stars_delta_baseline_hours"] = round(baseline_hours, 1)
-            candidate["stars_growth_percent_24h"] = (
-                round(100 * max(0, current_stars - baseline_stars) / baseline_stars, 2)
-                if baseline_stars > 0 else None
-            )
-        else:
-            candidate["stars_delta_24h"] = None
-            candidate["stars_delta_baseline_hours"] = None
-            candidate["stars_growth_percent_24h"] = None
-
-        last_sample_time = parse_utc(clean_history[-1]["at"]) if clean_history else None
-        if not last_sample_time or now_utc - last_sample_time >= timedelta(minutes=45):
-            clean_history.append({"at": now_utc.isoformat(timespec="seconds"), "stars": current_stars})
-        snapshots[repo_id] = clean_history[-150:]
-
-    # Bound state size so the hourly job does not grow its git history without limit.
-    if len(snapshots) > 3000:
+    if len(watchlist) > MAX_STAR_WATCHLIST:
         ordered = sorted(
-            snapshots.items(),
-            key=lambda pair: max((parse_utc(row.get("at")) or cutoff for row in pair[1]), default=cutoff),
+            watchlist.items(),
+            key=lambda pair: parse_utc(pair[1].get("last_seen_at")) or datetime.min.replace(tzinfo=timezone.utc),
             reverse=True,
         )
-        state["repo_star_snapshots"] = dict(ordered[:3000])
+        watchlist.clear()
+        watchlist.update(dict(ordered[:MAX_STAR_WATCHLIST]))
+    for key in list(snapshots):
+        if key not in watchlist:
+            snapshots.pop(key, None)
+
+    refreshed = 0
+    failed = 0
+    missing_token = False
+    if refresh_missing:
+        to_refresh = [
+            (key, entry) for key, entry in watchlist.items()
+            if key not in observed_keys and entry.get("full_name")
+        ]
+        token = os.environ.get("GITHUB_TOKEN", "").strip()
+        if to_refresh and not token:
+            # Avoid spending the low anonymous core API quota on a large watchlist.
+            missing_token = True
+            failed = len(to_refresh)
+        elif to_refresh:
+            def _fetch_one(pair: tuple[str, dict]) -> tuple[str, dict | None, str | None]:
+                key, entry = pair
+                try:
+                    metadata = fetch_github_repo_metadata(str(entry["full_name"]), token)
+                    expected_id = str(entry.get("repo_id") or "")
+                    actual_id = str(metadata.get("repo_id") or "")
+                    if expected_id and actual_id and expected_id != actual_id:
+                        return key, None, "repository ID changed for stored name"
+                    return key, metadata, None
+                except Exception as exc:
+                    return key, None, clean(str(exc))[:100] or type(exc).__name__
+
+            with ThreadPoolExecutor(max_workers=8) as pool:
+                futures = [pool.submit(_fetch_one, pair) for pair in to_refresh]
+                for future in as_completed(futures):
+                    key, metadata, error = future.result()
+                    entry = watchlist.get(key)
+                    if entry is None:
+                        continue
+                    if metadata is None:
+                        failed += 1
+                        entry["last_refresh_error"] = error or "unknown"
+                        entry["consecutive_refresh_failures"] = int(entry.get("consecutive_refresh_failures") or 0) + 1
+                        if str(error or "").endswith("404") or "HTTP 404" in str(error or ""):
+                            if entry["consecutive_refresh_failures"] >= 3:
+                                watchlist.pop(key, None)
+                                snapshots.pop(key, None)
+                        continue
+
+                    refreshed += 1
+                    entry["last_refresh_at"] = now_utc.isoformat(timespec="seconds")
+                    entry["last_refresh_error"] = ""
+                    entry["consecutive_refresh_failures"] = 0
+                    entry["full_name"] = metadata.get("full_name") or entry.get("full_name")
+                    history = snapshots.setdefault(key, [])
+                    history, sampled = _append_star_sample(history, now_utc, int(metadata["stars"]))
+                    snapshots[key] = history
+                    samples_added += int(sampled)
+                    entry["last_known_stars"] = int(metadata["stars"])
+                    entry["last_sample_at"] = now_utc.isoformat(timespec="seconds")
+
+    # Bound state size after removed/repeated names and avoid stale orphaned history.
+    if len(watchlist) > MAX_STAR_WATCHLIST:
+        ordered = sorted(
+            watchlist.items(),
+            key=lambda pair: parse_utc(pair[1].get("last_seen_at")) or datetime.min.replace(tzinfo=timezone.utc),
+            reverse=True,
+        )
+        state["repo_star_watchlist"] = dict(ordered[:MAX_STAR_WATCHLIST])
+        watchlist = state["repo_star_watchlist"]
+
+    eligible_baselines = 0
+    for key, history in snapshots.items():
+        if history:
+            current = int(history[-1].get("stars") or 0)
+            delta, baseline_hours, _growth = _star_metrics(history, now_utc, current)
+            if delta is not None and baseline_hours is not None:
+                eligible_baselines += 1
+
+    metrics = {
+        "observed_at_utc": now_utc.isoformat(timespec="seconds"),
+        "tracked_repositories": len(watchlist),
+        "repositories_seen_in_discovery": discovery_repo_count,
+        "previously_tracked_repositories_refreshed": refreshed,
+        "refresh_failures": failed,
+        "missing_github_token_for_watchlist_refresh": missing_token,
+        "snapshots_added_this_run": samples_added,
+        "repositories_with_20_to_36_hour_baseline": eligible_baselines,
+        "history_window_days": STAR_HISTORY_DAYS,
+        "watchlist_limit": MAX_STAR_WATCHLIST,
+    }
+    state["last_star_tracking_run"] = metrics
+    return metrics
+
 
 
 def diversity_rank(candidates: list[dict], state: dict, now: datetime, lookback_days: int = 3) -> list[dict]:
