@@ -706,10 +706,17 @@ def request_groq(messages: list[dict], max_tokens: int = 4096, retry_429: bool =
                 retry_after = int(exc.headers.get("Retry-After", "60"))
             except (TypeError, ValueError, AttributeError):
                 retry_after = 60
-            # TPM limits usually reset within a minute. One bounded retry is safer than
-            # silently treating a transient quota window as a content-quality failure.
-            time.sleep(min(60, max(1, retry_after)))
-            return request_groq(messages, max_tokens=max_tokens, retry_429=False)
+            body_lower = body.casefold()
+            daily_token_limit = any(
+                marker in body_lower
+                for marker in ("tokens per day", "token per day", "(tpd)", "tokens_per_day")
+            )
+            # Do not burn another request on a daily quota limit or when the provider
+            # asks us to wait longer than this run's bounded one-minute retry budget.
+            # Only retry likely transient limits that can clear within the wait budget.
+            if not daily_token_limit and retry_after <= 60:
+                time.sleep(min(60, max(1, retry_after)))
+                return request_groq(messages, max_tokens=max_tokens, retry_429=False)
         # Surface only the provider's error message, never request headers or credentials.
         detail = ""
         try:

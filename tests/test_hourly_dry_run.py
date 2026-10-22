@@ -4,6 +4,7 @@ import urllib.error
 from unittest.mock import patch
 import sys
 import tempfile
+from io import BytesIO
 import unittest
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -619,6 +620,54 @@ class HourlyDryRunTests(unittest.TestCase):
         drafts, error = hourly.repair_rejected_drafts(rejected, {"candidate-1": self.candidate})
         self.assertEqual(drafts, [])
         self.assertIsNone(error)
+
+    def test_groq_daily_token_limit_fails_fast_without_retry(self):
+        body = json.dumps({
+            "error": {
+                "message": "Rate limit reached on tokens per day (TPD). Please try again in 10 minutes."
+            }
+        }).encode("utf-8")
+        error = urllib.error.HTTPError(
+            hourly.GROQ_URL, 429, "Too Many Requests", {"Retry-After": "600"}, BytesIO(body)
+        )
+        with patch.dict(os.environ, {"GROQ_API_KEY": "test-key"}):
+            with patch.object(hourly.urllib.request, "urlopen", side_effect=error) as mocked_urlopen:
+                with patch.object(hourly.time, "sleep") as mocked_sleep:
+                    with self.assertRaisesRegex(RuntimeError, "tokens per day"):
+                        hourly.request_groq([{"role": "user", "content": "test"}])
+        mocked_urlopen.assert_called_once()
+        mocked_sleep.assert_not_called()
+
+    def test_groq_long_retry_after_fails_fast_without_retry(self):
+        body = json.dumps({
+            "error": {"message": "Request rate limit reached. Please retry later."}
+        }).encode("utf-8")
+        error = urllib.error.HTTPError(
+            hourly.GROQ_URL, 429, "Too Many Requests", {"Retry-After": "300"}, BytesIO(body)
+        )
+        with patch.dict(os.environ, {"GROQ_API_KEY": "test-key"}):
+            with patch.object(hourly.urllib.request, "urlopen", side_effect=error) as mocked_urlopen:
+                with patch.object(hourly.time, "sleep") as mocked_sleep:
+                    with self.assertRaisesRegex(RuntimeError, "HTTP 429"):
+                        hourly.request_groq([{"role": "user", "content": "test"}])
+        mocked_urlopen.assert_called_once()
+        mocked_sleep.assert_not_called()
+
+    def test_groq_short_transient_429_retries_once(self):
+        body = json.dumps({
+            "error": {"message": "Temporary request rate limit reached."}
+        }).encode("utf-8")
+        error = urllib.error.HTTPError(
+            hourly.GROQ_URL, 429, "Too Many Requests", {"Retry-After": "5"}, BytesIO(body)
+        )
+        success = BytesIO(json.dumps({"choices": [{"message": {"content": "{}"}}]}).encode("utf-8"))
+        with patch.dict(os.environ, {"GROQ_API_KEY": "test-key"}):
+            with patch.object(hourly.urllib.request, "urlopen", side_effect=[error, success]) as mocked_urlopen:
+                with patch.object(hourly.time, "sleep") as mocked_sleep:
+                    result = hourly.request_groq([{"role": "user", "content": "test"}])
+        self.assertEqual(result["choices"][0]["message"]["content"], "{}")
+        self.assertEqual(mocked_urlopen.call_count, 2)
+        mocked_sleep.assert_called_once_with(5)
 
     def test_groq_413_retries_with_smaller_candidate_pool(self):
         candidates = []
