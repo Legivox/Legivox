@@ -1,4 +1,6 @@
 import json
+import urllib.error
+from unittest.mock import patch
 import sys
 import tempfile
 import unittest
@@ -32,6 +34,10 @@ class HourlyDryRunTests(unittest.TestCase):
             "days_old": 0.1,
             "published_at": "2026-10-21T11:00:00+00:00",
             "verification_status": "needs_primary_source_review",
+            "primary_source_verified": True,
+            "primary_source_http_status": 200,
+            "primary_source_title": "Hookdeck webhook integration skills for coding agents",
+            "primary_source_evidence": "Webhook integration skills for AI coding agents. Step-by-step guidance for setting up webhook receivers, signature verification, and event handling for Stripe, Shopify, GitHub, and more.",
             "evidence_urls": ["https://github.com/hookdeck/webhook-skills"],
             "signals": {"license_spdx": "MIT", "stars": 92},
         }
@@ -68,7 +74,7 @@ class HourlyDryRunTests(unittest.TestCase):
         self.assertIsNotNone(accepted)
         self.assertLessEqual(accepted["character_count"], 280)
         self.assertFalse(accepted["published_to_x"])
-        self.assertEqual(accepted["status"], "draft_passed_needs_human_review")
+        self.assertEqual(accepted["status"], "dry_run_passed_not_published")
 
     def test_composer_assembles_separate_fact_takeaway_and_primary_url(self):
         draft = {
@@ -407,8 +413,96 @@ class HourlyDryRunTests(unittest.TestCase):
         candidate["signals"]["stars"] = 98
         later = self.now + timedelta(hours=23)
         hourly.update_github_star_velocity([candidate], state, later)
-        self.assertEqual(candidate["stars_delta_24h"], 0)
-        self.assertEqual(candidate["stars_growth_percent_24h"], 0.0)
+        self.assertEqual(candidate["stars_delta_24h"], -2)
+        self.assertEqual(candidate["stars_growth_percent_24h"], -2.0)
+
+    def test_star_watchlist_refreshes_repositories_missing_from_current_discovery(self):
+        state = hourly.empty_state()
+        old_key = "123456"
+        old_sample = (self.now - timedelta(hours=24)).isoformat()
+        state["repo_star_watchlist"][old_key] = {
+            "repo_id": old_key,
+            "full_name": "prior-owner/prior-repo",
+            "first_seen_at": old_sample,
+            "last_seen_at": (self.now - timedelta(hours=2)).isoformat(),
+            "consecutive_refresh_failures": 0,
+        }
+        state["repo_star_snapshots"][old_key] = [{"at": old_sample, "stars": 100}]
+        current = dict(self.candidate)
+        current["signals"] = {"stars": 50, "github_repo_id": "999999", "full_name": "current-owner/current-repo"}
+        refreshed_metadata = {
+            "repo_id": old_key,
+            "full_name": "prior-owner/prior-repo",
+            "stars": 140,
+            "archived": False,
+            "html_url": "https://github.com/prior-owner/prior-repo",
+            "updated_at": "",
+            "pushed_at": "",
+        }
+        with patch.object(hourly, "fetch_github_repo_metadata", return_value=refreshed_metadata):
+            metrics = hourly.update_github_star_velocity([current], state, self.now + timedelta(hours=24), refresh_missing=True)
+        self.assertEqual(metrics["previously_tracked_repositories_refreshed"], 1)
+        self.assertEqual(state["repo_star_snapshots"][old_key][-1]["stars"], 140)
+        self.assertEqual(metrics["repositories_with_20_to_36_hour_baseline"], 2)
+        self.assertEqual(state["repo_star_watchlist"][old_key]["full_name"], "prior-owner/prior-repo")
+
+    def test_repository_numeric_id_keeps_star_history_across_renames(self):
+        state = hourly.empty_state()
+        candidate = dict(self.candidate)
+        candidate["signals"] = {"stars": 100, "github_repo_id": "123456", "full_name": "owner/old-name"}
+        hourly.update_github_star_velocity([candidate], state, self.now)
+        renamed = dict(candidate)
+        renamed["title"] = "owner/new-name"
+        renamed["url"] = "https://github.com/owner/new-name"
+        renamed["canonical_url"] = renamed["url"]
+        renamed["id"] = "a-different-url-derived-id"
+        renamed["signals"] = {"stars": 120, "github_repo_id": "123456", "full_name": "owner/new-name"}
+        hourly.update_github_star_velocity([renamed], state, self.now + timedelta(hours=24))
+        self.assertEqual(renamed["stars_delta_24h"], 20)
+        self.assertIn("123456", state["repo_star_snapshots"])
+        self.assertEqual(len(state["repo_star_snapshots"]), 1)
+        self.assertEqual(state["repo_star_watchlist"]["123456"]["full_name"], "owner/new-name")
+
+    def test_primary_source_verifier_rejects_http_404(self):
+        error = urllib.error.HTTPError(
+            self.candidate["url"], 404, "Not Found", {}, None
+        )
+        with patch.object(hourly.urllib.request, "urlopen", side_effect=error):
+            verified, reason = hourly.verify_primary_source(self.candidate)
+        self.assertIsNone(verified)
+        self.assertIn("HTTP 404", reason)
+
+    def test_primary_source_verifier_keeps_live_page_evidence_and_redirect_target(self):
+        html = (
+            "<html><head><title>Hookdeck webhook integration skills for coding agents</title>"
+            '<meta name="description" content="Webhook integration skills for AI coding agents."></head>'
+            "<body><article><p>Step-by-step guidance for setting up webhook receivers, signature verification, "
+            "and event handling for Stripe, Shopify, and GitHub.</p></article></body></html>"
+        ).encode("utf-8")
+
+        class FakeResponse:
+            status = 200
+            headers = {"Content-Type": "text/html; charset=utf-8"}
+
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *_args):
+                return False
+
+            def geturl(self):
+                return "https://github.com/hookdeck/webhook-skills"
+
+            def read(self, _size=-1):
+                return html
+
+        with patch.object(hourly.urllib.request, "urlopen", return_value=FakeResponse()):
+            verified, reason = hourly.verify_primary_source(self.candidate)
+        self.assertIsNone(reason)
+        self.assertTrue(verified["primary_source_verified"])
+        self.assertEqual(verified["primary_source_http_status"], 200)
+        self.assertIn("signature verification", verified["primary_source_evidence"])
+        self.assertEqual(verified["url"], "https://github.com/hookdeck/webhook-skills")
 
     def test_non_github_candidates_are_not_labelled_with_star_trend(self):
         candidate = dict(self.candidate)
