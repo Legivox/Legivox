@@ -1194,7 +1194,8 @@ def editorial_review_drafts(
         "Reject an opening that is an orphaned verb fragment (for example, 'Adds only a 3.2KB script') or omits the product/platform "
         "being discussed. The post must make sense when read alone, without an attached card. "
         "Check technical logic in the second sentence. A test must measure the thing it claims to measure; page-load timing does not "
-        "prove bundle/script size, and a size claim does not prove performance. Reject mixed-up metrics, false causal links, arbitrary "
+        "prove bundle/script size, and a size claim does not prove performance. A savings/efficiency test needs a baseline, control/raw comparison, "
+        "or direct usage metric: running the same prompt twice does not by itself confirm token savings. Reject mixed-up metrics, false causal links, arbitrary "
         "thresholds, generic advice, feature-list headlines and advice that merely repeats the source. "
         "Also reject takeaways that assume an undocumented capability or a relationship between independently listed features. Mentioning Shopify, "
         "webhooks and human handoff on the same README does not prove that a Shopify webhook fires after handoff; require the page to document that relationship. "
@@ -1555,6 +1556,28 @@ def validate_draft(draft: dict, candidates_by_id: dict) -> tuple[dict | None, li
             reasons.append(
                 "Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. "
                 "Reframe it as an explicit conditional test of the reader's own integration."
+            )
+
+        # Efficiency/savings advice needs a measurement design, not a repeated prompt
+        # presented as proof. Require a comparison, raw/control path, baseline or direct
+        # usage metric when the copy claims to confirm token/performance/cost savings.
+        savings_claim = any(phrase in takeaway_normalized for phrase in (
+            "token savings", "tokens saved", "save tokens", "saves tokens", "saving tokens",
+            "token reduction", "reduce token", "lower token", "cost savings", "save cost",
+            "performance gain", "speed improvement",
+        ))
+        savings_verification = any(phrase in takeaway_normalized for phrase in (
+            "confirm", "prove", "verify", "validate", "ensure", "demonstrate", "measure",
+        )) or "same prompt twice" in takeaway_normalized
+        has_measurement_design = any(phrase in takeaway_normalized for phrase in (
+            "compare", "compared with", "against raw", "versus raw", "vs raw", "baseline",
+            "control run", "before and after", "token count", "usage metric", "usage report",
+            "/usage", "raw output", "filtered output",
+        ))
+        if savings_claim and savings_verification and not has_measurement_design:
+            reasons.append(
+                "Efficiency/savings takeaway lacks a baseline or direct metric; repeating the same prompt twice does not isolate savings. "
+                "Compare against a control/raw path or inspect a direct usage metric."
             )
         if len(fact_sentence) > 110:
             reasons.append("Fact sentence is too long; narrow it to one source-backed capability.")
