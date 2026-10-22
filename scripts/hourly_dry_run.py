@@ -898,7 +898,9 @@ def draft_candidates(candidates: list[dict]) -> tuple[list[dict], str | None]:
         "summary is only a discovery hint when it conflicts with the live page. Never invent features, dates, prices, licences, "
         "benchmarks, adoption, performance, security outcomes or market demand. Repository push time is activity, not launch time. "
         "Lifetime stars do not establish trending velocity. Avoid hype, generic praise, clickbait and title rewrites. "
-        "Never claim you personally used or tested a product. "
+        "Never claim you personally used or tested a product. Do not assume a capability merely because related nouns appear on the page: "
+        "a mention of Skills and shared context does not prove that skill synchronization exists. Recommendations must test documented behavior "
+        "or state a general validation goal without implying an undocumented product feature. "
         "Return fact_sentence and editorial_takeaway as separate fields. fact_sentence is the first sentence and must "
         "describe exactly ONE fact/capability, not a feature list. Avoid conjunctions that combine separate claims and avoid "
         "lists after phrases like 'including', 'such as', 'while', 'plus' or 'as well as'. Prefer a precise short fact over a "
@@ -941,6 +943,8 @@ def draft_candidates(candidates: list[dict]) -> tuple[list[dict], str | None]:
             "'Test duplicate-event handling before relying on webhook retries.'; "
             "'Check session verification across your frontend and API languages.' "
             "Do not use generic closers such as 'Useful if you build apps' or 'Worth a look'. "
+            "Do not infer a feature such as skill sync, automatic retries, SSO, encryption or integrations unless the fetched page states it. "
+            "A proposed test must not assume that capability exists; phrase it as a check of a documented behavior or a general workflow risk. "
             "Do not repeat the candidate headline in fact_sentence. If a feature changed, name the behavior; if it's a tool, state "
             "one distinctive function; if it's an engineering article, state one core lesson. "
             "Choose format from release, tool_discovery, practical_workflow, comparison, engineering_lesson. "
@@ -1016,6 +1020,8 @@ def editorial_review_drafts(
         "Check technical logic in the second sentence. A test must measure the thing it claims to measure; page-load timing does not "
         "prove bundle/script size, and a size claim does not prove performance. Reject mixed-up metrics, false causal links, arbitrary "
         "thresholds, generic advice, feature-list headlines and advice that merely repeats the source. "
+        "Also reject takeaways that assume an undocumented capability: mentioning 'Skills' and shared context does not prove 'skill sync'; "
+        "mentioning webhooks does not prove automatic retries. Require the cited primary page to support the capability being tested. "
         "Reject any statement that goes beyond the provided primary-page evidence. A valid quote alone is not enough if the conclusion "
         "does not follow. Pass only if the reader learns a concrete, candidate-specific fact and gets a logically relevant, useful next step. "
         "Return JSON only with a reviews array, one entry for every supplied candidate. Each entry must have candidate_id, pass (boolean), "
@@ -1256,6 +1262,20 @@ def validate_draft(draft: dict, candidates_by_id: dict) -> tuple[dict | None, li
             reasons.append("The editorial takeaway must be the distinct second sentence, not a generic afterthought.")
         if len(takeaway_tokens) < 4:
             reasons.append("Editorial takeaway is too generic or short; it must add a concrete point.")
+        undocumented_capabilities = {
+            "sync", "syncs", "syncing", "synchronize", "synchronizes", "synchronizing",
+            "synchronise", "synchronises", "synchronising", "synchronization", "synchronisation",
+        }
+        evidence_terms = tokens(evidence)
+        unverified_terms = sorted(
+            term for term in takeaway_tokens
+            if term in undocumented_capabilities and term not in evidence_terms
+        )
+        if unverified_terms:
+            reasons.append(
+                "Takeaway implies an undocumented product capability: " + ", ".join(unverified_terms)
+                + ". Reframe as a check of documented behavior."
+            )
         if len(fact_sentence) > 110:
             reasons.append("Fact sentence is too long; narrow it to one source-backed capability.")
         if len(editorial_takeaway) > 90:
