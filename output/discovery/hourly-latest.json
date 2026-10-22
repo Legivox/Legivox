@@ -1,73 +1,73 @@
 {
-  "generated_at_ist": "2026-10-22T10:55:10+05:30",
-  "run_at_ist": "2026-10-22T10:55:10+05:30",
+  "generated_at_ist": "2026-10-22T21:21:37+05:30",
+  "run_at_ist": "2026-10-22T21:21:37+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 171,
-  "eligible_candidate_count": 91,
+  "candidate_count_raw": 162,
+  "eligible_candidate_count": 100,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4571
+      "total_count": 4660
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
-      "items_kept": 10,
+      "items_kept": 0,
       "status": "ok",
-      "total_count": 1019
+      "total_count": 0
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 374
+      "total_count": 380
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2825
+      "total_count": 2881
     },
     {
       "source": "GitHub Search · github-ecommerce-digital-products",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 411
+      "total_count": 426
     },
     {
       "source": "GitHub Search · github-mcp-servers",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1986
+      "total_count": 2033
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3086
+      "total_count": 3160
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
       "kind": "github_repository",
-      "items_kept": 10,
+      "items_kept": 9,
       "status": "ok",
-      "total_count": 133
+      "total_count": 140
     },
     {
       "source": "GitHub Search · github-workflow-automation",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 254
+      "total_count": 260
     },
     {
       "source": "Hacker News · hn-analytics-growth",
@@ -79,7 +79,7 @@
     {
       "source": "Hacker News · hn-automation-api",
       "kind": "hacker_news",
-      "items_kept": 3,
+      "items_kept": 1,
       "status": "ok",
       "total_count": 10
     },
@@ -114,7 +114,7 @@
     {
       "source": "Hacker News · hn-shopify",
       "kind": "hacker_news",
-      "items_kept": 10,
+      "items_kept": 6,
       "status": "ok",
       "total_count": 10
     },
@@ -128,50 +128,59 @@
     {
       "source": "Console.dev",
       "kind": "rss",
-      "items_kept": 7,
+      "items_kept": 12,
       "status": "ok"
     },
     {
       "source": "Product Hunt",
       "kind": "rss",
-      "items_kept": 41,
+      "items_kept": 40,
       "status": "ok"
     },
     {
       "source": "Shopify Developer Changelog",
       "kind": "rss",
-      "items_kept": 10,
+      "items_kept": 11,
       "status": "ok"
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-22T05:25:10+00:00",
-    "tracked_repositories": 79,
-    "repositories_seen_in_discovery": 79,
-    "previously_tracked_repositories_refreshed": 0,
+    "observed_at_utc": "2026-10-22T15:51:37+00:00",
+    "tracked_repositories": 144,
+    "repositories_seen_in_discovery": 74,
+    "previously_tracked_repositories_refreshed": 70,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
-    "snapshots_added_this_run": 79,
+    "snapshots_added_this_run": 144,
     "repositories_with_20_to_36_hour_baseline": 0,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "71d4fa150d1a6d81",
-      "title": "amplifthq/openmeld",
-      "source_url": "https://github.com/amplifthq/openmeld",
+      "candidate_id": "2f83a1b91c2ce96e",
+      "title": "marcusquinn/aidevops",
+      "source_url": "https://github.com/marcusquinn/aidevops",
       "verified": true,
-      "final_url": "https://github.com/amplifthq/openmeld",
+      "final_url": "https://github.com/marcusquinn/aidevops",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "5113f4600cf59250",
-      "title": "chattermate/chattermate.chat",
-      "source_url": "https://github.com/chattermate/chattermate.chat",
+      "candidate_id": "b2650545f0aa4129",
+      "title": "Show HN: PDT – Open-source deployment of scheduled jobs on your own cloud",
+      "source_url": "https://github.com/AutoIDM/pdt",
       "verified": true,
-      "final_url": "https://github.com/chattermate/chattermate.chat",
+      "final_url": "https://github.com/AutoIDM/pdt",
+      "http_status": 200,
+      "reason": ""
+    },
+    {
+      "candidate_id": "809a5e9573333bc9",
+      "title": "melgarafael/DeskcommCRM",
+      "source_url": "https://github.com/melgarafael/DeskcommCRM",
+      "verified": true,
+      "final_url": "https://github.com/melgarafael/DeskcommCRM",
       "http_status": 200,
       "reason": ""
     },
@@ -192,59 +201,168 @@
       "final_url": "https://bloffy.co/en",
       "http_status": 200,
       "reason": ""
-    },
-    {
-      "candidate_id": "dd89fbbb59577fc8",
-      "title": "Metaobject analytics queryable capability available in the Admin API",
-      "source_url": "https://shopify.dev/changelog/metaobject-analytics-queryable-capability-available-in-the-admin-api",
-      "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/metaobject-analytics-queryable-capability-available-in-the-admin-api",
-      "http_status": 200,
-      "reason": ""
     }
   ],
   "rejected_primary_sources": [],
   "daily_draft_cap": 10,
   "daily_drafts_already_passed": 0,
   "outcome": "skip",
-  "decision_reason": "Draft generation unavailable or invalid: Groq returned HTTP 413",
+  "decision_reason": "All generated drafts failed the local evidence/editorial checks; the hour was skipped.",
   "passing_drafts": [],
-  "rejected_drafts": [],
+  "rejected_drafts": [
+    {
+      "candidate_id": "2f83a1b91c2ce96e",
+      "title": "marcusquinn/aidevops",
+      "reasons": [
+        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.",
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration."
+      ],
+      "proposed_text": "OpenCode & Git token-efficient AI agent automation. Run the CLI with a small token budget to confirm it limits API calls. https://github.com/marcusquinn/aidevops",
+      "evidence_quote": "OpenCode & Git token-efficient AI agent automation",
+      "claim_evidence": [
+        {
+          "claim": "OpenCode & Git token-efficient AI agent automation",
+          "quote": "OpenCode & Git token-efficient AI agent automation"
+        }
+      ]
+    },
+    {
+      "candidate_id": "b2650545f0aa4129",
+      "title": "Show HN: PDT – Open-source deployment of scheduled jobs on your own cloud",
+      "reasons": [
+        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.",
+        "The factual opening bundles multiple features; narrow it to one capability."
+      ],
+      "proposed_text": "No daemon, no external dependencies, no subscription. Deploy on a serverless function to verify no daemon is required. https://github.com/AutoIDM/pdt",
+      "evidence_quote": "No daemon, no external dependencies, no subscription",
+      "claim_evidence": [
+        {
+          "claim": "No daemon, no external dependencies, no subscription",
+          "quote": "No daemon, no external dependencies, no subscription"
+        }
+      ]
+    },
+    {
+      "candidate_id": "809a5e9573333bc9",
+      "title": "melgarafael/DeskcommCRM",
+      "reasons": [
+        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about."
+      ],
+      "proposed_text": "Open-source AI sales OS with native AI agents + WhatsApp. Test WhatsApp integration by sending a test message after setup. https://github.com/melgarafael/DeskcommCRM",
+      "evidence_quote": "Open-source AI sales OS — self-hosted CRM with native AI agents + WhatsApp",
+      "claim_evidence": [
+        {
+          "claim": "Open-source AI sales OS with native AI agents + WhatsApp",
+          "quote": "Open-source AI sales OS — self-hosted CRM with native AI agents + WhatsApp"
+        }
+      ]
+    },
+    {
+      "candidate_id": "80cffe4a15016672",
+      "title": "Checkout MCP and Cart MCP now support UCP buyer consent",
+      "reasons": [
+        "Opening sentence is too close to the source headline; add a distinct editorial framing."
+      ],
+      "proposed_text": "Checkout MCP and Cart MCP now support UCP buyer consent. Add dev.ucp.shopping.buyer_consent to cart creation to capture consent. https://shopify.dev/changelog/posts/checkout-mcp-and-cart-mcp-now-support-ucp-buyer-consent",
+      "evidence_quote": "Checkout MCP and Cart MCP now support UCP buyer consent",
+      "claim_evidence": [
+        {
+          "claim": "Checkout MCP and Cart MCP now support UCP buyer consent",
+          "quote": "Checkout MCP and Cart MCP now support UCP buyer consent"
+        }
+      ]
+    },
+    {
+      "candidate_id": "f3cc35f9475b86c1",
+      "title": "Show HN: I built a Markdown and raw HTML blog platform scoring 99 on PageSpeed",
+      "reasons": [
+        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about."
+      ],
+      "proposed_text": "All Bloffy adds to a reader's page is one small 3.2KB script. Measure page weight after adding Bloffy to confirm 3.2KB load. https://bloffy.co/en",
+      "evidence_quote": "All Bloffy adds to a reader's page is one small 3.2KB script",
+      "claim_evidence": [
+        {
+          "claim": "All Bloffy adds to a reader's page is one small 3.2KB script",
+          "quote": "All Bloffy adds to a reader's page is one small 3.2KB script"
+        }
+      ]
+    },
+    {
+      "candidate_id": "2f83a1b91c2ce96e",
+      "title": "marcusquinn/aidevops",
+      "reasons": [
+        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.",
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "Editorial takeaway is not specific enough to this candidate's technical/product details.",
+        "Primary-source evidence quote is missing or absent from the live page (after presentation normalisation)",
+        "No claim-by-claim supporting evidence was provided",
+        "Factual sentence includes terms absent from the source title/summary: buyer, cart, checkout, consent, data, require"
+      ],
+      "proposed_text": "Shopify’s Checkout MCP and Cart MCP now require buyer consent data. If a missing _consent_data warning appears, collect the buyer’s contact detail and retry the checkout to complete the transaction. https://github.com/marcusquinn/aidevops",
+      "evidence_quote": "If you receive a missing _consent _data warning, collect the required contact detail from the buyer and retry so the checkout can complete.",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.",
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration."
+      ]
+    }
+  ],
   "candidate_shortlist": [
     {
-      "id": "71d4fa150d1a6d81",
-      "title": "amplifthq/openmeld",
-      "url": "https://github.com/amplifthq/openmeld",
+      "id": "2f83a1b91c2ce96e",
+      "title": "marcusquinn/aidevops",
+      "url": "https://github.com/marcusquinn/aidevops",
       "source": "GitHub Search",
       "primary_category": "ai_and_automation",
-      "priority_score": 72,
-      "hourly_adjusted_score": 76,
-      "stars_current": 1390,
+      "priority_score": 74,
+      "hourly_adjusted_score": 78,
+      "stars_current": 420,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "insufficient_history",
-      "published_at": "2026-10-22T05:16:45+00:00",
-      "days_old": 0.01,
+      "published_at": "2026-10-22T15:51:11+00:00",
+      "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "5113f4600cf59250",
-      "title": "chattermate/chattermate.chat",
-      "url": "https://github.com/chattermate/chattermate.chat",
+      "id": "b2650545f0aa4129",
+      "title": "Show HN: PDT – Open-source deployment of scheduled jobs on your own cloud",
+      "url": "https://github.com/AutoIDM/pdt",
+      "source": "Hacker News",
+      "primary_category": "product_and_workflow_tools",
+      "priority_score": 75,
+      "hourly_adjusted_score": 77,
+      "stars_current": null,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-22T15:27:52+00:00",
+      "days_old": 0.02,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "809a5e9573333bc9",
+      "title": "melgarafael/DeskcommCRM",
+      "url": "https://github.com/melgarafael/DeskcommCRM",
       "source": "GitHub Search",
       "primary_category": "commerce_and_digital_products",
       "priority_score": 72,
       "hourly_adjusted_score": 76,
-      "stars_current": 147,
+      "stars_current": 4794,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "insufficient_history",
-      "published_at": "2026-10-22T04:21:21+00:00",
-      "days_old": 0.04,
+      "published_at": "2026-10-22T15:29:57+00:00",
+      "days_old": 0.02,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
@@ -263,7 +381,7 @@
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
       "published_at": "2026-10-16T14:00:00+00:00",
-      "days_old": 5.64,
+      "days_old": 6.08,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
@@ -274,42 +392,42 @@
       "url": "https://bloffy.co/en",
       "source": "Hacker News",
       "primary_category": "data_and_growth",
-      "priority_score": 70,
-      "hourly_adjusted_score": 72,
+      "priority_score": 72,
+      "hourly_adjusted_score": 74,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
       "published_at": "2026-10-21T23:41:35+00:00",
-      "days_old": 0.24,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "dd89fbbb59577fc8",
-      "title": "Metaobject analytics queryable capability available in the Admin API",
-      "url": "https://shopify.dev/changelog/posts/metaobject-analytics-queryable-capability-available-in-the-admin-api",
-      "source": "Shopify Developer Changelog",
-      "primary_category": "data_and_growth",
-      "priority_score": 71,
-      "hourly_adjusted_score": 71,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-20T20:40:00+00:00",
-      "days_old": 1.36,
+      "days_old": 0.67,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     }
   ],
+  "automatic_repair": {
+    "attempted": true,
+    "drafts_submitted": 1,
+    "repaired_local_passes": 0,
+    "repair_rejections": 1,
+    "repair_error": null,
+    "editorial_repair_attempted": false,
+    "editorial_repair_drafts_submitted": 0,
+    "editorial_repair_error": null
+  },
+  "editorial_review": {
+    "locally_valid_drafts": 0,
+    "submitted_for_independent_review": 0,
+    "passed_independent_review": 0,
+    "rejected_by_independent_review": 0,
+    "lower_ranked_not_reviewed": 0,
+    "review_error": null,
+    "automatic_gate": "fail_closed"
+  },
   "state_summary": {
     "used_candidates_in_cooldown": 0,
-    "recently_attempted_candidates": 0,
+    "recently_attempted_candidates": 5,
     "recent_draft_passes_today": 0
   }
 }
