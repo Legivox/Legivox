@@ -512,6 +512,56 @@ class HourlyDryRunTests(unittest.TestCase):
         self.assertIsNone(missing)
         self.assertIn("no exact verified source URL matched", reason)
 
+    def test_github_feature_word_cannot_substitute_for_named_repository_identity(self):
+        candidate = dict(self.candidate)
+        page_text = (
+            "ChatterMate provides human handoff and Shopify support for customer-service chats. "
+            "Webhooks are outbound ticket webhooks to drive your own automations."
+        )
+        candidate.update({
+            "title": "chattermate/chattermate.chat",
+            "source": "GitHub Search",
+            "source_kind": "github_repository",
+            "url": "https://github.com/chattermate/chattermate.chat",
+            "canonical_url": "https://github.com/chattermate/chattermate.chat",
+            "primary_source_title": "ChatterMate - Open Source AI Customer Support Chatbot Platform",
+            "primary_source_description": "AI chatbot with Shopify and e-commerce support.",
+            "primary_source_text": page_text,
+            "primary_source_evidence": (
+                "ChatterMate - Open Source AI Customer Support Chatbot Platform. "
+                "AI chatbot with Shopify and e-commerce support. " + page_text
+            ),
+            "primary_source_verified": True,
+            "primary_source_http_status": 200,
+            "primary_source_final_url": "https://github.com/chattermate/chattermate.chat",
+            "evidence_urls": ["https://github.com/chattermate/chattermate.chat"],
+        })
+        fact = "Supports Shopify integration for AI chat."
+        takeaway = "Test whether your own workflow triggers a ticket webhook after handoff."
+        quote = "AI chatbot with Shopify and e-commerce support."
+        draft = {
+            "candidate_id": "candidate-1",
+            "fact_sentence": fact,
+            "post_text": fact + " " + takeaway + " " + candidate["url"],
+            "editorial_takeaway": takeaway,
+            "evidence_quote": quote,
+            "claim_evidence": [{"claim": fact, "quote": quote}],
+            "scores": {"timeliness": 8, "usefulness": 8, "novelty": 7, "evidence": 8, "insight": 8},
+        }
+        _accepted, reasons = hourly.validate_draft(draft, {"candidate-1": candidate})
+        self.assertTrue(any(
+            "named product/repository/feature subject" in reason for reason in reasons
+        ))
+
+        named_fact = "ChatterMate supports Shopify integration for AI chat."
+        draft["fact_sentence"] = named_fact
+        draft["post_text"] = named_fact + " " + takeaway + " " + candidate["url"]
+        draft["claim_evidence"] = [{"claim": named_fact, "quote": quote}]
+        _accepted_named, named_reasons = hourly.validate_draft(draft, {"candidate-1": candidate})
+        self.assertFalse(any(
+            "named product/repository/feature subject" in reason for reason in named_reasons
+        ))
+
     def test_opening_must_name_the_product_not_start_with_an_orphaned_verb(self):
         candidate = dict(self.candidate)
         candidate.update({
