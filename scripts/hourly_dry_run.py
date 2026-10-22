@@ -36,6 +36,7 @@ GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
 DEFAULT_LOOKBACK_DAYS = 1
 CANDIDATE_POOL_SIZE = 5
 MAX_POST_CHARS = 280
+MAX_EVIDENCE_QUOTE_CHARS = 240
 MAX_STAR_WATCHLIST = 200
 STAR_HISTORY_DAYS = 8
 STAR_SAMPLE_INTERVAL_MINUTES = 45
@@ -1429,30 +1430,30 @@ def conflicting_source_metric_counts(post: str, evidence: str) -> list[str]:
     return conflicts
 
 
-def best_primary_quote_for_claim(claim: str, candidate: dict, minimum_coverage: float = 0.65) -> str | None:
-    """Select an exact contiguous primary-page excerpt with strong lexical claim coverage.
+NAVIGATION_NOISE_RE = re.compile(
+    r"\b(topics|resources|watchers|forks|branches|latest commit|folders and files|"
+    r"go to file|report repository|custom properties|activity|history|readme)\b",
+    re.I,
+)
 
-    This selects literal text only. It does not summarize or manufacture evidence;
-    semantic entailment is still checked by the independent editorial reviewer.
+
+def is_navigation_dump(value: object) -> bool:
+    """Detect excerpts dominated by GitHub page chrome rather than source prose."""
+    lowered = clean(value).casefold()
+    markers = NAVIGATION_NOISE_RE.findall(lowered)
+    return len(markers) >= 3 or ("topics" in lowered and "resources" in lowered)
+
+
+def best_primary_quote_for_claim(claim: str, candidate: dict, minimum_coverage: float = 0.65) -> str | None:
+    """Select a concise exact source excerpt, preferring titles/descriptions over page chrome.
+
+    Evidence is scored within each source field separately. It never glues together the
+    title, metadata tags and navigation into a synthetic quote.
     """
     claim = clean(claim)
     claim_tokens = tokens(claim)
     if len(claim_tokens) < 3:
         return None
-    source = primary_evidence_text(candidate)
-    if not source:
-        return None
-    chunks = [
-        clean(part)
-        for part in re.split(r"(?<=[.!?])\s+|(?<=;)\s+|\n+", source)
-        if len(clean(part)) >= 18
-    ]
-    # Also inspect bounded windows from exact page text when the page has long paragraphs.
-    for start in range(0, len(source), 250):
-        window = clean(source[start:start + 280])
-        if len(window) >= 35:
-            chunks.append(window)
-    unique_chunks = list(dict.fromkeys(chunks))
     filler = {
         "allow", "also", "and", "are", "can", "could", "does", "for", "from", "get",
         "has", "have", "into", "its", "may", "more", "not", "now", "only", "our",
@@ -1462,13 +1463,50 @@ def best_primary_quote_for_claim(claim: str, candidate: dict, minimum_coverage: 
     specific_claim_tokens = claim_tokens - filler
     if len(specific_claim_tokens) < 3:
         specific_claim_tokens = claim_tokens
+
+    source_fields = (
+        candidate.get("primary_source_title") or "",
+        candidate.get("primary_source_description") or "",
+        candidate.get("primary_source_text") or "",
+        candidate.get("primary_source_evidence") or "",
+    )
     scored = []
-    for index, quote in enumerate(unique_chunks):
-        quote_tokens = tokens(quote)
-        matched = len(specific_claim_tokens & quote_tokens)
-        coverage = matched / max(1, len(specific_claim_tokens))
-        if coverage >= minimum_coverage and matched >= 3:
-            scored.append((coverage, matched, -len(quote), -index, quote))
+    seen_quotes = set()
+    index = 0
+    for field_priority, raw in enumerate(source_fields):
+        source = clean(raw)
+        if not source:
+            continue
+        chunks = [
+            clean(part)
+            for part in re.split(r"(?<=[.!?])\s+|(?<=;)\s+|\n+", source)
+            if len(clean(part)) >= 18
+        ]
+        # Long extracted paragraphs occasionally contain a whole README/navigation dump.
+        # Examine bounded exact windows, but never accept a quote longer than the cap.
+        for part in chunks:
+            if len(part) <= MAX_EVIDENCE_QUOTE_CHARS:
+                chunks_for_scoring = [part]
+            else:
+                chunks_for_scoring = []
+                stride = 60
+                for start in range(0, len(part), stride):
+                    window = clean(part[start:start + MAX_EVIDENCE_QUOTE_CHARS])
+                    if len(window) > MAX_EVIDENCE_QUOTE_CHARS:
+                        window = window[:MAX_EVIDENCE_QUOTE_CHARS].rsplit(" ", 1)[0]
+                    if len(window) >= 35:
+                        chunks_for_scoring.append(window)
+            for quote in chunks_for_scoring:
+                if quote in seen_quotes or len(quote) > MAX_EVIDENCE_QUOTE_CHARS or is_navigation_dump(quote):
+                    continue
+                seen_quotes.add(quote)
+                quote_tokens = tokens(quote)
+                matched = len(specific_claim_tokens & quote_tokens)
+                coverage = matched / max(1, len(specific_claim_tokens))
+                if coverage >= minimum_coverage and matched >= 3:
+                    # Coverage first, then concise excerpts, then authoritative source fields.
+                    scored.append((coverage, -len(quote), -field_priority, matched, -index, quote))
+                index += 1
     return max(scored)[-1] if scored else None
 
 
@@ -1495,7 +1533,14 @@ def attach_primary_claim_evidence(draft: dict, candidate: dict) -> dict:
             claim = clean(entry.get("claim"))
             claim_tokens = tokens(claim)
             overlap = len(claim_tokens & tokens(quote)) / max(1, len(claim_tokens))
-            if quote and claim and normalize_for_match(quote) in page_norm and overlap >= 0.45:
+            if (
+                quote
+                and len(quote) <= MAX_EVIDENCE_QUOTE_CHARS
+                and not is_navigation_dump(quote)
+                and claim
+                and normalize_for_match(quote) in page_norm
+                and overlap >= 0.45
+            ):
                 valid_existing = True
                 break
     if not valid_existing:
@@ -1504,6 +1549,8 @@ def attach_primary_claim_evidence(draft: dict, candidate: dict) -> dict:
         prepared["evidence_quote_repaired_from_primary_page"] = True
     elif (
         not clean(prepared.get("evidence_quote"))
+        or len(clean(prepared.get("evidence_quote"))) > MAX_EVIDENCE_QUOTE_CHARS
+        or is_navigation_dump(prepared.get("evidence_quote"))
         or normalize_for_match(clean(prepared.get("evidence_quote"))) not in normalize_for_match(primary_evidence_text(candidate))
     ):
         prepared["evidence_quote"] = best_quote
@@ -1733,6 +1780,8 @@ def validate_draft(draft: dict, candidates_by_id: dict) -> tuple[dict | None, li
         reasons.append(f"Draft is {len(post)} raw characters; limit is 280")
     if not quote or normalize_for_match(quote) not in normalize_for_match(evidence):
         reasons.append("Primary-source evidence quote is missing or absent from the live page (after presentation normalisation)")
+    elif len(quote) > MAX_EVIDENCE_QUOTE_CHARS or is_navigation_dump(quote):
+        reasons.append("Primary-source evidence quote is oversized or dominated by page navigation; use a concise source-backed excerpt.")
 
     claim_evidence = draft.get("claim_evidence")
     if not isinstance(claim_evidence, list) or not claim_evidence:
@@ -1746,6 +1795,9 @@ def validate_draft(draft: dict, candidates_by_id: dict) -> tuple[dict | None, li
             supporting_quote = clean(entry.get("quote"))
             if not claim or not supporting_quote or normalize_for_match(supporting_quote) not in normalize_for_match(evidence):
                 reasons.append("A factual claim lacks a quote present in the live primary-source page")
+                break
+            if len(supporting_quote) > MAX_EVIDENCE_QUOTE_CHARS or is_navigation_dump(supporting_quote):
+                reasons.append("Claim evidence quote is oversized or dominated by page navigation; use a concise source-backed excerpt.")
                 break
             if (
                 len(tokens(claim)) < 4

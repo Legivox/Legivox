@@ -66,6 +66,59 @@ class HourlyDryRunTests(unittest.TestCase):
             editorial_review_error="Review API unavailable",
         ))
 
+    def test_primary_claim_quote_is_concise_and_avoids_repository_navigation_dump(self):
+        candidate = dict(self.candidate)
+        candidate.update({
+            "title": "ToolJet/ToolJet",
+            "source": "GitHub Search",
+            "source_kind": "github_repository",
+            "url": "https://github.com/ToolJet/ToolJet",
+            "canonical_url": "https://github.com/ToolJet/ToolJet",
+            "primary_source_title": (
+                "GitHub - ToolJet/ToolJet: Open-source foundation of ToolJet AI, "
+                "the app generation platform for internal tools, dashboards and workflows."
+            ),
+            "primary_source_description": (
+                "Open-source app generation platform for internal tools and workflows."
+            ),
+            "primary_source_text": (
+                "Topics ai-app-builder docker internal-applications internal-project internal-tool "
+                "internal-tools javascript kubernetes low-code-development-platform no-code nodejs "
+                "reactjs self-hosted typescript workflow-automation Resources Readme AGPL-3.0 license "
+                "Security policy Activity Custom properties Stars 41.1k stars Watchers 208 watching Forks 5.5k forks."
+            ),
+            "primary_source_evidence": (
+                "Open-source app generation platform for internal tools and workflows. "
+                "Topics ai-app-builder docker internal-applications internal-project internal-tool "
+                "internal-tools javascript kubernetes low-code-development-platform no-code nodejs "
+                "reactjs self-hosted typescript workflow-automation Resources Readme AGPL-3.0 license "
+                "Security policy Activity Custom properties Stars 41.1k stars Watchers 208 watching Forks 5.5k forks."
+            ),
+        })
+        claim = "ToolJet is an open-source platform for internal tools and workflows."
+        quote = hourly.best_primary_quote_for_claim(claim, candidate)
+        self.assertIsNotNone(quote)
+        self.assertLessEqual(len(quote), hourly.MAX_EVIDENCE_QUOTE_CHARS)
+        self.assertNotIn("Topics", quote)
+        self.assertTrue(
+            "ToolJet" in quote or "internal tools and workflows" in quote
+        )
+
+        # A previously accepted giant page-text quote must be replaced by the concise one.
+        draft = {
+            "candidate_id": "candidate-1",
+            "fact_sentence": claim,
+            "evidence_quote": candidate["primary_source_text"],
+            "claim_evidence": [{"claim": claim, "quote": candidate["primary_source_text"]}],
+        }
+        repaired = hourly.attach_primary_claim_evidence(draft, candidate)
+        self.assertLessEqual(len(repaired["evidence_quote"]), hourly.MAX_EVIDENCE_QUOTE_CHARS)
+        self.assertNotIn("Topics", repaired["evidence_quote"])
+        self.assertLessEqual(
+            len(repaired["claim_evidence"][0]["quote"]),
+            hourly.MAX_EVIDENCE_QUOTE_CHARS,
+        )
+
     def test_repair_evidence_excerpt_prioritizes_documented_missing_data_edge_case(self):
         candidate = dict(self.candidate)
         candidate.update({
