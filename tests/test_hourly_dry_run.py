@@ -578,6 +578,60 @@ class HourlyDryRunTests(unittest.TestCase):
         self.assertIsNone(accepted)
         self.assertTrue(any("undocumented product capability" in reason for reason in reasons))
 
+    def test_unverified_relationship_between_shopify_webhooks_and_handoff_is_rejected(self):
+        candidate = dict(self.candidate)
+        page_text = (
+            "ChatterMate provides human handoff and Shopify support for customer-service chats. "
+            "Webhooks are outbound ticket webhooks to drive your own automations."
+        )
+        candidate.update({
+            "title": "chattermate/chattermate.chat",
+            "source": "GitHub Search",
+            "source_kind": "github_repository",
+            "url": "https://github.com/chattermate/chattermate.chat",
+            "canonical_url": "https://github.com/chattermate/chattermate.chat",
+            "primary_source_title": "ChatterMate - Open Source AI Customer Support Chatbot Platform",
+            "primary_source_description": (
+                "Open-source AI customer support platform with human handoff. "
+                "AI chatbot with Shopify and e-commerce support."
+            ),
+            "primary_source_text": page_text,
+            "primary_source_evidence": (
+                "ChatterMate - Open Source AI Customer Support Chatbot Platform. "
+                "Open-source AI customer support platform with human handoff. "
+                "AI chatbot with Shopify and e-commerce support. " + page_text
+            ),
+            "evidence_urls": ["https://github.com/chattermate/chattermate.chat"],
+        })
+        fact = "ChatterMate offers Shopify support in its AI customer-service chatbot."
+        quote = "AI chatbot with Shopify and e-commerce support."
+        bad_takeaway = "Verify Shopify webhook triggers after handoff."
+        draft = {
+            "candidate_id": "candidate-1",
+            "fact_sentence": fact,
+            "post_text": fact + " " + bad_takeaway + " " + candidate["url"],
+            "editorial_takeaway": bad_takeaway,
+            "evidence_quote": quote,
+            "claim_evidence": [{"claim": fact, "quote": quote}],
+            "scores": {"timeliness": 8, "usefulness": 8, "novelty": 7, "evidence": 8, "insight": 8},
+        }
+        _accepted, reasons = hourly.validate_draft(draft, {"candidate-1": candidate})
+        self.assertTrue(any(
+            "interaction/causal relationship between source-listed features" in reason
+            for reason in reasons
+        ))
+
+        # Conditional advice about the reader's own integration is allowed; it does
+        # not claim ChatterMate ships a Shopify-specific webhook trigger.
+        conditional = "Test whether your own workflow triggers a ticket webhook after handoff."
+        draft["editorial_takeaway"] = conditional
+        draft["post_text"] = fact + " " + conditional + " " + candidate["url"]
+        _accepted_conditional, conditional_reasons = hourly.validate_draft(draft, {"candidate-1": candidate})
+        self.assertFalse(any(
+            "interaction/causal relationship between source-listed features" in reason
+            for reason in conditional_reasons
+        ))
+
     def test_independent_editor_rejects_metric_mismatch(self):
         draft = {
             "candidate_id": "candidate-1",
