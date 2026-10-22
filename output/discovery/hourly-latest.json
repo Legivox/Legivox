@@ -1,24 +1,24 @@
 {
-  "generated_at_ist": "2026-10-22T21:24:27+05:30",
-  "run_at_ist": "2026-10-22T21:24:27+05:30",
+  "generated_at_ist": "2026-10-22T21:30:32+05:30",
+  "run_at_ist": "2026-10-22T21:30:32+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 119,
-  "eligible_candidate_count": 54,
+  "candidate_count_raw": 162,
+  "eligible_candidate_count": 95,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
-      "items_kept": 0,
+      "items_kept": 10,
       "status": "ok",
-      "total_count": 0
+      "total_count": 4660
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
-      "items_kept": 0,
+      "items_kept": 10,
       "status": "ok",
-      "total_count": 0
+      "total_count": 1050
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
@@ -30,16 +30,16 @@
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
-      "items_kept": 0,
+      "items_kept": 10,
       "status": "ok",
-      "total_count": 0
+      "total_count": 2882
     },
     {
       "source": "GitHub Search · github-ecommerce-digital-products",
       "kind": "github_repository",
-      "items_kept": 0,
+      "items_kept": 10,
       "status": "ok",
-      "total_count": 0
+      "total_count": 426
     },
     {
       "source": "GitHub Search · github-mcp-servers",
@@ -51,9 +51,9 @@
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
-      "items_kept": 0,
+      "items_kept": 10,
       "status": "ok",
-      "total_count": 0
+      "total_count": 3160
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
@@ -114,7 +114,7 @@
     {
       "source": "Hacker News · hn-shopify",
       "kind": "hacker_news",
-      "items_kept": 8,
+      "items_kept": 10,
       "status": "ok",
       "total_count": 10
     },
@@ -145,24 +145,33 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-22T15:54:27+00:00",
-    "tracked_repositories": 146,
-    "repositories_seen_in_discovery": 29,
-    "previously_tracked_repositories_refreshed": 117,
+    "observed_at_utc": "2026-10-22T16:00:32+00:00",
+    "tracked_repositories": 189,
+    "repositories_seen_in_discovery": 70,
+    "previously_tracked_repositories_refreshed": 119,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
-    "snapshots_added_this_run": 2,
+    "snapshots_added_this_run": 43,
     "repositories_with_20_to_36_hour_baseline": 0,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "c37165a31cd3fc39",
-      "title": "n8n-io/n8n",
-      "source_url": "https://github.com/n8n-io/n8n",
+      "candidate_id": "ce1e4138806521c0",
+      "title": "Observal/Observal",
+      "source_url": "https://github.com/Observal/Observal",
       "verified": true,
-      "final_url": "https://github.com/n8n-io/n8n",
+      "final_url": "https://github.com/Observal/Observal",
+      "http_status": 200,
+      "reason": ""
+    },
+    {
+      "candidate_id": "ccc70a1b047b8c33",
+      "title": "sarrazola/openlivery",
+      "source_url": "https://github.com/sarrazola/openlivery",
+      "verified": true,
+      "final_url": "https://github.com/sarrazola/openlivery",
       "http_status": 200,
       "reason": ""
     },
@@ -172,15 +181,6 @@
       "source_url": "https://shopify.dev/changelog/securing-your-app-together",
       "verified": true,
       "final_url": "https://shopify.dev/changelog/blog/securing-your-app-together",
-      "http_status": 200,
-      "reason": ""
-    },
-    {
-      "candidate_id": "8fab7f8f1f4a7571",
-      "title": "bytechefhq/bytechef",
-      "source_url": "https://github.com/bytechefhq/bytechef",
-      "verified": true,
-      "final_url": "https://github.com/bytechefhq/bytechef",
       "http_status": 200,
       "reason": ""
     },
@@ -207,24 +207,43 @@
   "daily_draft_cap": 10,
   "daily_drafts_already_passed": 0,
   "outcome": "skip",
-  "decision_reason": "Draft generation unavailable or invalid: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 196701, Requested 4788. Please try again in 10m43.248s. Need more tokens",
+  "decision_reason": "Draft generation unavailable or invalid: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 195853, Requested 4861. Please try again in 5m8.448s. Need more tokens?",
   "passing_drafts": [],
   "rejected_drafts": [],
   "candidate_shortlist": [
     {
-      "id": "c37165a31cd3fc39",
-      "title": "n8n-io/n8n",
-      "url": "https://github.com/n8n-io/n8n",
+      "id": "ce1e4138806521c0",
+      "title": "Observal/Observal",
+      "url": "https://github.com/Observal/Observal",
       "source": "GitHub Search",
-      "primary_category": "ai_and_automation",
-      "priority_score": 71,
-      "hourly_adjusted_score": 75,
-      "stars_current": 208331,
+      "primary_category": "data_and_growth",
+      "priority_score": 72,
+      "hourly_adjusted_score": 76,
+      "stars_current": 4548,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "insufficient_history",
-      "published_at": "2026-10-22T15:50:53+00:00",
+      "published_at": "2026-10-22T15:59:09+00:00",
+      "days_old": 0.0,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "ccc70a1b047b8c33",
+      "title": "sarrazola/openlivery",
+      "url": "https://github.com/sarrazola/openlivery",
+      "source": "GitHub Search",
+      "primary_category": "security_and_self_hosting",
+      "priority_score": 72,
+      "hourly_adjusted_score": 76,
+      "stars_current": 71,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "insufficient_history",
+      "published_at": "2026-10-22T16:00:32+00:00",
       "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
@@ -244,26 +263,7 @@
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
       "published_at": "2026-10-20T19:00:00+00:00",
-      "days_old": 1.87,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "8fab7f8f1f4a7571",
-      "title": "bytechefhq/bytechef",
-      "url": "https://github.com/bytechefhq/bytechef",
-      "source": "GitHub Search",
-      "primary_category": "ai_and_automation",
-      "priority_score": 70,
-      "hourly_adjusted_score": 74,
-      "stars_current": 1043,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "insufficient_history",
-      "published_at": "2026-10-22T15:52:36+00:00",
-      "days_old": 0.0,
+      "days_old": 1.88,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
