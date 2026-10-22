@@ -1,43 +1,43 @@
 {
   "date_ist": "2026-10-22",
-  "prepared_at_ist": "2026-10-22 09:32:54 IST",
+  "prepared_at_ist": "2026-10-22 13:40:18 IST",
   "research_window_days": 7,
   "research_source": "RSS feeds + Groq editorial ranking",
   "posts": [
     {
-      "idea_id": "rss-5fda1e1adb27",
-      "niche": "Cybersecurity & privacy",
-      "problem": "Data centers could erase decades of air quality gains",
-      "evidence": "RSS item from The Verge; published at 2026-10-21T22:33:44+00:00. Verify against the source.",
-      "solution_hypothesis": "Data center electrification must be paired with green sourcing to protect air quality",
-      "text": "If AI‑driven data centers keep burning coal, developers may need to vet power sources before scaling new workloads.\n\nhttps://www.theverge.com/ai-artificial-intelligence/1015958/data-center-pollution-rising-report",
-      "text_hash": "dfe6072250fc2263fd0fa56dbd86816ac186d665eb798c6f06ae27075915ee49",
+      "idea_id": "rss-050546a5bfa2",
+      "niche": "Platform policy",
+      "problem": "Xbox wants you to pay 24 to 40 cents per hour to stream games you already bought",
+      "evidence": "RSS item from Ars Technica; published at 2026-10-21T22:06:07+00:00. Verify against the source.",
+      "solution_hypothesis": "Pay‑per‑hour game streaming introduces a new monetisation layer that could shift how indie studios price cloud‑play offerings",
+      "text": "Microsoft’s a‑la‑carte Cloud Playtime pricing lets players pay 24–40¢/hr for cloud‑play, adding a new revenue path but also a cost layer for indie studios.\n\nhttps://arstechnica.com/gaming/2026/10/xbox-wants-you-to-pay-24-to-40-cents-per-hour-to-stream-games-you-already-bought/",
+      "text_hash": "6bf94484eedafaface8ac6774c8f9585bff7fa7d68716ebc755fd4d30ccc3bc4",
       "image_query": "",
       "research": {
         "query": "RSS technology news",
-        "score": 8.67,
+        "score": 7.33,
         "hits": [
           {
-            "title": "Data centers could erase decades of air quality gains",
-            "url": "https://www.theverge.com/ai-artificial-intelligence/1015958/data-center-pollution-rising-report",
-            "external_url": "https://www.theverge.com/ai-artificial-intelligence/1015958/data-center-pollution-rising-report",
+            "title": "Xbox wants you to pay 24 to 40 cents per hour to stream games you already bought",
+            "url": "https://arstechnica.com/gaming/2026/10/xbox-wants-you-to-pay-24-to-40-cents-per-hour-to-stream-games-you-already-bought/",
+            "external_url": "https://arstechnica.com/gaming/2026/10/xbox-wants-you-to-pay-24-to-40-cents-per-hour-to-stream-games-you-already-bought/",
             "points": 0,
             "comments": 0,
-            "created_at": "2026-10-21T22:33:44+00:00",
+            "created_at": "2026-10-21T22:06:07+00:00",
             "matched_terms": []
           }
         ],
         "error": null
       },
-      "status": "published: https://x.com/i/status/2113120087603560781",
-      "slot": 0,
+      "status": "published: https://x.com/i/status/2113181668920172810",
+      "slot": 1,
       "editorial_scores": {
-        "relevance_score": 9,
-        "significance_score": 8,
-        "originality_score": 9
+        "relevance_score": 8,
+        "significance_score": 7,
+        "originality_score": 7
       },
-      "published_at_ist": "2026-10-22T09:37:43+05:30",
-      "published_url": "https://x.com/i/status/2113120087603560781",
+      "published_at_ist": "2026-10-22T13:42:25+05:30",
+      "published_url": "https://x.com/i/status/2113181668920172810",
       "image": null
     }
   ]

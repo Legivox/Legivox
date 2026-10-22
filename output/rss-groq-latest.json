@@ -1,5 +1,5 @@
 {
-  "generated_at_ist": "2026-10-22T09:32:54+05:30",
+  "generated_at_ist": "2026-10-22T13:40:18+05:30",
   "model": "openai/gpt-oss-20b",
   "dry_run": false,
   "slot_plan_mode": true,
@@ -10,7 +10,7 @@
       "feed_url": "https://techcrunch.com/feed/",
       "articles_kept": 20,
       "error": null,
-      "recently_published_items_skipped": 0,
+      "recently_published_items_skipped": 1,
       "thin_summary_items_skipped": 6
     },
     {
@@ -18,7 +18,7 @@
       "feed_url": "https://www.theverge.com/rss/index.xml",
       "articles_kept": 10,
       "error": null,
-      "recently_published_items_skipped": 0,
+      "recently_published_items_skipped": 1,
       "thin_summary_items_skipped": 0
     },
     {
@@ -26,7 +26,7 @@
       "feed_url": "https://feeds.arstechnica.com/arstechnica/index",
       "articles_kept": 20,
       "error": null,
-      "recently_published_items_skipped": 0,
+      "recently_published_items_skipped": 1,
       "thin_summary_items_skipped": 0
     }
   ],
@@ -37,7 +37,7 @@
       "title": "Tesla says customers can add their own vehicles to the robotaxi fleet next year — will it happen?",
       "summary": "For years, Elon Musk has been making big promises to Tesla owners about unsupervised autonomous driving and the ability to add their own vehicles to the company's robotaxi fleet . During today's third-quarter earnings call, the company finally gave itself a deadline. According to Tesla VP for Autonomous Driving Ashok Elluswamy, Tesla owners will be able to add their own vehicles to the company's r",
       "published_at_utc": "2026-10-22T02:15:39+00:00",
-      "age_hours": 1.8,
+      "age_hours": 5.9,
       "url": "https://www.theverge.com/transportation/1016118/tesla-robotaxi-customer-owned-vehicle-fleet-network-q3-2026-earnings",
       "feed_url": "https://www.theverge.com/rss/index.xml",
       "article_id": "S01"
@@ -47,7 +47,7 @@
       "title": "YouTube says it isn’t testing hiding the dislike button",
       "summary": "On Tuesday, I published a story about how YouTube appeared to be testing hiding the dislike button on videos, with at least two users on X sharing screenshots of the dislike button moved into the three-dot menu. But a YouTube spokesperson, in a Wednesday statement to The Verge , confirmed that YouTube is \"not testing hiding the dislike button on YouTube for users.\" However, YouTube is introducing ",
       "published_at_utc": "2026-10-22T00:59:54+00:00",
-      "age_hours": 3.0,
+      "age_hours": 7.2,
       "url": "https://www.theverge.com/streaming/1016206/youtube-dislike-button-videos",
       "feed_url": "https://www.theverge.com/rss/index.xml",
       "article_id": "S02"
@@ -57,7 +57,7 @@
       "title": "Tesla says it will start selling Cybercabs by end of year",
       "summary": "Tesla said Wednesday it will start selling its Cybercab to customers by the end of the year, even as federal regulators investigate whether the vehicle meets vehicle safety standards. The gold-hued, autonomous two-seater lacks a steering wheel and other traditional controls. During the company’s third-quarter earnings call, Lars Moravy, vice president of engineering at Tesla, […]",
       "published_at_utc": "2026-10-22T00:17:54+00:00",
-      "age_hours": 3.7,
+      "age_hours": 7.9,
       "url": "https://techcrunch.com/2026/10/21/tesla-says-it-will-start-selling-cybercabs-by-end-of-year/",
       "feed_url": "https://techcrunch.com/feed/",
       "article_id": "S03"
@@ -67,58 +67,58 @@
       "title": "Flying Roadsters can’t lift Tesla’s flat Q3 revenues",
       "summary": "As the smoke clears from its outrageous Roadster demo , Tesla reported Q3 earnings on Wednesday - and the cold reality is that revenue has flatlined. Tesla said it earned $1.7 billion in net income on $28.0 billion in revenue in the quarter that ended in September 2026. Revenues were flat, while profits dropped 4 percent compared to the third quarter of 2025 , when the company earned $1.4 billion ",
       "published_at_utc": "2026-10-21T23:20:33+00:00",
-      "age_hours": 4.7,
+      "age_hours": 8.8,
       "url": "https://www.theverge.com/transportation/1015790/tesla-q3-2026-earnings-revenue-profit-roadster-spacex-merger",
       "feed_url": "https://www.theverge.com/rss/index.xml",
       "article_id": "S04"
-    },
-    {
-      "source": "The Verge",
-      "title": "Data centers could erase decades of air quality gains",
-      "summary": "A rush of new data centers could bring air pollution roaring back to levels not seen since the 2000s in Texas, which has become ground zero for the physical infrastructure behind generative AI. New and proposed data centers are demanding a tremendous amount of electricity. How developers and utilities meet that demand - with gas turbines or renewable energy - will determine just how dirty things w",
-      "published_at_utc": "2026-10-21T22:33:44+00:00",
-      "age_hours": 5.5,
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1015958/data-center-pollution-rising-report",
-      "feed_url": "https://www.theverge.com/rss/index.xml",
-      "article_id": "S05"
     },
     {
       "source": "TechCrunch",
       "title": "Airbnb limits chores for guests, sparking backlash from hosts",
       "summary": "Hosts are threatening to leave the platform after Airbnb says that they can no longer require guests to strip beds or do other time-consuming cleaning chores.",
       "published_at_utc": "2026-10-21T22:16:05+00:00",
-      "age_hours": 5.8,
+      "age_hours": 9.9,
       "url": "https://techcrunch.com/2026/10/21/airbnb-limits-chores-for-guests-sparking-backlash-from-hosts/",
       "feed_url": "https://techcrunch.com/feed/",
-      "article_id": "S06"
+      "article_id": "S05"
     },
     {
       "source": "Ars Technica",
       "title": "FCC chair warns media not to run the \"fake polls\" Trump keeps complaining about",
       "summary": "Federal Communications Commission Chairman Brendan Carr today warned broadcasters about airing \"fake polls,\" amplifying one of the many complaints that President Trump has regularly made about the news media. Carr's post on X said, \"Many journalists and broadcasters have been amplifying or airing these Polls without regard to basic journalistic ethics and without informing the public that those Po",
       "published_at_utc": "2026-10-21T22:17:50+00:00",
-      "age_hours": 5.8,
+      "age_hours": 9.9,
       "url": "https://arstechnica.com/tech-policy/2026/10/fcc-chair-warns-media-not-to-run-the-fake-polls-trump-keeps-complaining-about/",
       "feed_url": "https://feeds.arstechnica.com/arstechnica/index",
-      "article_id": "S07"
+      "article_id": "S06"
     },
     {
       "source": "Ars Technica",
       "title": "Xbox wants you to pay 24 to 40 cents per hour to stream games you already bought",
       "summary": "In September, when Microsoft severely limited the game-streaming buffet available to Game Pass subscribers , the company said non-subscribers would soon be able to \"purchase cloud playtime hours through the Xbox Store and stream eligible games they own on supported devices.\" Today, Microsoft rolled out those a la carte Cloud Playtime purchases to Xbox Insiders, with prices that might be a bit gall",
       "published_at_utc": "2026-10-21T22:06:07+00:00",
-      "age_hours": 5.9,
+      "age_hours": 10.1,
       "url": "https://arstechnica.com/gaming/2026/10/xbox-wants-you-to-pay-24-to-40-cents-per-hour-to-stream-games-you-already-bought/",
       "feed_url": "https://feeds.arstechnica.com/arstechnica/index",
-      "article_id": "S08"
+      "article_id": "S07"
     },
     {
       "source": "Ars Technica",
       "title": "Enterprises keep buying software upgrades that IT thinks will make things worse",
       "summary": "Enterprise-sized businesses spend, on average, 28 percent of their software budgets on unwanted upgrades, migrations, and licensing changes. Often, those firms' IT heads think those changes are detrimental. Those results are according to a survey of 2,018 chief information officers and senior IT decision-makers at companies with at least 10,000 employees that Origina commissioned for its report, “",
       "published_at_utc": "2026-10-21T21:48:52+00:00",
-      "age_hours": 6.2,
+      "age_hours": 10.4,
       "url": "https://arstechnica.com/information-technology/2026/10/survey-enterprises-waste-28-percent-of-software-budgets-on-unwanted-upgrades/",
+      "feed_url": "https://feeds.arstechnica.com/arstechnica/index",
+      "article_id": "S08"
+    },
+    {
+      "source": "Ars Technica",
+      "title": "Tesla profits drop 43% in Q3",
+      "summary": "Tesla published its third-quarter 2026 financial results this afternoon. Earlier in October, it reported its sales and deliveries for the three-month period, selling fewer cars than in the same quarter in 2025 , yet it still beat analyst projections. Now we can see how those sales translate to the bottom line. Tesla brought in $28 billion in revenue in Q3, almost the same as in 2025. Automotive re",
+      "published_at_utc": "2026-10-21T21:35:07+00:00",
+      "age_hours": 10.6,
+      "url": "https://arstechnica.com/cars/2026/10/tesla-profits-drop-43-in-q3/",
       "feed_url": "https://feeds.arstechnica.com/arstechnica/index",
       "article_id": "S09"
     },
@@ -127,54 +127,35 @@
       "title": "Meta to create a new class of shares to fund AI push",
       "summary": "Meta says it's issuing a new class of shares to fund its AI initiatives. As part of its third-quarter earnings report released on Wednesday , the company says the non-voting stock will also go toward potential acquisitions and employee compensation, with trading beginning in 2027. \"The scale of investment required to compete, sustain growth, expand infrastructure, and pursue new strategic initiati",
       "published_at_utc": "2026-10-21T21:30:02+00:00",
-      "age_hours": 6.5,
+      "age_hours": 10.7,
       "url": "https://www.theverge.com/tech/1015799/meta-shares-class-ai-q3-2026-earnings",
       "feed_url": "https://www.theverge.com/rss/index.xml",
       "article_id": "S10"
-    },
-    {
-      "source": "Ars Technica",
-      "title": "Tesla profits drop 43% in Q3",
-      "summary": "Tesla published its third-quarter 2026 financial results this afternoon. Earlier in October, it reported its sales and deliveries for the three-month period, selling fewer cars than in the same quarter in 2025 , yet it still beat analyst projections. Now we can see how those sales translate to the bottom line. Tesla brought in $28 billion in revenue in Q3, almost the same as in 2025. Automotive re",
-      "published_at_utc": "2026-10-21T21:35:07+00:00",
-      "age_hours": 6.5,
-      "url": "https://arstechnica.com/cars/2026/10/tesla-profits-drop-43-in-q3/",
-      "feed_url": "https://feeds.arstechnica.com/arstechnica/index",
-      "article_id": "S11"
     },
     {
       "source": "TechCrunch",
       "title": "TechCrunch Founder Summit 2026: Everything you need to know",
       "summary": "TechCrunch Founder Summit is a full-day gathering in Boston on November 4 where founders across all stages connect with top VCs and experienced entrepreneurs to gain tactical insights on building and scaling their companies.",
       "published_at_utc": "2026-10-21T21:16:20+00:00",
-      "age_hours": 6.8,
+      "age_hours": 10.9,
       "url": "https://techcrunch.com/2026/10/21/techcrunch-founder-summit-2026-everything-you-need-to-know/",
+      "feed_url": "https://techcrunch.com/feed/",
+      "article_id": "S11"
+    },
+    {
+      "source": "TechCrunch",
+      "title": "Meta says Muse has over 10M users, with shopping a top activity",
+      "summary": "Meta Muse users are adopting the app for shopping and personal productivity, the company said during its Q3 earnings call. The AI app now has over 10M users.",
+      "published_at_utc": "2026-10-21T21:14:19+00:00",
+      "age_hours": 10.9,
+      "url": "https://techcrunch.com/2026/10/21/meta-says-muse-has-over-10m-users-with-shopping-a-top-activity/",
       "feed_url": "https://techcrunch.com/feed/",
       "article_id": "S12"
     }
   ],
   "drafts": [
     {
-      "article_id": "S05",
-      "source": "The Verge",
-      "source_title": "Data centers could erase decades of air quality gains",
-      "published_at_utc": "2026-10-21T22:33:44+00:00",
-      "source_url": "https://www.theverge.com/ai-artificial-intelligence/1015958/data-center-pollution-rising-report",
-      "category": "Cybersecurity & privacy",
-      "scores": {
-        "relevance_score": 9,
-        "significance_score": 8,
-        "originality_score": 9
-      },
-      "angle": "Data center electrification must be paired with green sourcing to protect air quality",
-      "why_selected": "The article links AI infrastructure growth with potential environmental harm, a concrete developer concern",
-      "evidence_quote": "A rush of new data centers could bring air pollution roaring back to levels not seen since the 2000s",
-      "post_text": "If AI‑driven data centers keep burning coal, developers may need to vet power sources before scaling new workloads.",
-      "text_with_source": "If AI‑driven data centers keep burning coal, developers may need to vet power sources before scaling new workloads.\n\nhttps://www.theverge.com/ai-artificial-intelligence/1015958/data-center-pollution-rising-report",
-      "character_count_with_url": 212
-    },
-    {
-      "article_id": "S08",
+      "article_id": "S07",
       "source": "Ars Technica",
       "source_title": "Xbox wants you to pay 24 to 40 cents per hour to stream games you already bought",
       "published_at_utc": "2026-10-21T22:06:07+00:00",
@@ -182,37 +163,39 @@
       "category": "Platform policy",
       "scores": {
         "relevance_score": 8,
-        "significance_score": 9,
-        "originality_score": 8
-      },
-      "angle": "Xbox’s a‑la‑carté cloud playtime turns owned games into a pay‑per‑hour service",
-      "why_selected": "Shows a direct pricing shift affecting user experience and business models for game owners",
-      "evidence_quote": "purchase cloud playtime hours through the Xbox Store",
-      "post_text": "Now, even owners of their own games may pay 24‑40¢ per hour to stream—shifting the cost of cloud gaming.",
-      "text_with_source": "Now, even owners of their own games may pay 24‑40¢ per hour to stream—shifting the cost of cloud gaming.\n\nhttps://arstechnica.com/gaming/2026/10/xbox-wants-you-to-pay-24-to-40-cents-per-hour-to-stream-games-you-already-bought/",
-      "character_count_with_url": 226
-    },
-    {
-      "article_id": "S03",
-      "source": "TechCrunch",
-      "source_title": "Tesla says it will start selling Cybercabs by end of year",
-      "published_at_utc": "2026-10-22T00:17:54+00:00",
-      "source_url": "https://techcrunch.com/2026/10/21/tesla-says-it-will-start-selling-cybercabs-by-end-of-year/",
-      "category": "Product strategy",
-      "scores": {
-        "relevance_score": 9,
         "significance_score": 7,
-        "originality_score": 8
+        "originality_score": 7
       },
-      "angle": "Tesla’s Cybercab launch signals a new vehicle‑as‑a‑service model for autonomous fleets",
-      "why_selected": "Highlights a strategic product shift with implications for fleet operators and regulatory scrutiny",
-      "evidence_quote": "Tesla said Wednesday it will start selling its Cybercab to customers by the end of the year",
-      "post_text": "Tesla’s Cybercab sale marks a step toward autonomous fleet rentals, potentially reshaping city mobility.",
-      "text_with_source": "Tesla’s Cybercab sale marks a step toward autonomous fleet rentals, potentially reshaping city mobility.\n\nhttps://techcrunch.com/2026/10/21/tesla-says-it-will-start-selling-cybercabs-by-end-of-year/",
-      "character_count_with_url": 198
+      "angle": "Pay‑per‑hour game streaming introduces a new monetisation layer that could shift how indie studios price cloud‑play offerings",
+      "why_selected": "The a‑la‑carte Cloud Playtime pricing is a concrete policy change affecting developers, product teams, and digital‑business owners",
+      "evidence_quote": "purchase cloud playtime hours",
+      "post_text": "Microsoft’s a‑la‑carte Cloud Playtime pricing lets players pay 24–40¢/hr for cloud‑play, adding a new revenue path but also a cost layer for indie studios.",
+      "text_with_source": "Microsoft’s a‑la‑carte Cloud Playtime pricing lets players pay 24–40¢/hr for cloud‑play, adding a new revenue path but also a cost layer for indie studios.\n\nhttps://arstechnica.com/gaming/2026/10/xbox-wants-you-to-pay-24-to-40-cents-per-hour-to-stream-games-you-already-bought/",
+      "character_count_with_url": 277
     }
   ],
-  "rejected_model_selections": [],
+  "rejected_model_selections": [
+    {
+      "article_id": "S01",
+      "source": "The Verge",
+      "title": "Tesla says customers can add their own vehicles to the robotaxi fleet next year — will it happen?",
+      "scores": {
+        "relevance_score": 9,
+        "significance_score": 8,
+        "originality_score": 8
+      },
+      "proposed_post_text": "Tesla’s move to let owners add their cars to its robotaxi fleet redefines vehicle ownership and could create a new subscription‑style revenue stream for OEMs.",
+      "evidence_quote": "customers can add their own vehicles to the robotaxi fleet",
+      "reason": "Unsupported specific detail or overclaim (subscription) is absent from the source excerpt."
+    },
+    {
+      "article_id": "S08",
+      "source": "Ars Technica",
+      "title": "Enterprises keep buying software upgrades that IT thinks will make things worse",
+      "evidence_quote": "waste 28 percent of software budgets",
+      "reason": "Evidence quote must be 20–100 characters and an exact excerpt from the supplied title or summary."
+    }
+  ],
   "quality_thresholds": {
     "relevance_score_minimum": 7,
     "significance_score_minimum": 6,

@@ -1,25 +1,25 @@
 # Legivox daily content plan
 
-Prepared: 2026-10-22 09:32:54 IST
+Prepared: 2026-10-22 13:40:18 IST
 
 > This scheduled post was generated from a recent RSS story and passed the local quality gate. The attached excerpt is not a full fact-check; verify the linked article before treating every implication as confirmed.
 
-## Post 1 · rss-5fda1e1adb27
+## Post 1 · rss-050546a5bfa2
 
 **Planned copy**
 
-If AI‑driven data centers keep burning coal, developers may need to vet power sources before scaling new workloads.
+Microsoft’s a‑la‑carte Cloud Playtime pricing lets players pay 24–40¢/hr for cloud‑play, adding a new revenue path but also a cost layer for indie studios.
 
-https://www.theverge.com/ai-artificial-intelligence/1015958/data-center-pollution-rising-report
+https://arstechnica.com/gaming/2026/10/xbox-wants-you-to-pay-24-to-40-cents-per-hour-to-stream-games-you-already-bought/
 
-- Topic: Cybersecurity & privacy
-- Editorial score (model estimate): 8.67
+- Topic: Platform policy
+- Editorial score (model estimate): 7.33
 
 **Source article**
 
-- [Data centers could erase decades of air quality gains](https://www.theverge.com/ai-artificial-intelligence/1015958/data-center-pollution-rising-report)
+- [Xbox wants you to pay 24 to 40 cents per hour to stream games you already bought](https://arstechnica.com/gaming/2026/10/xbox-wants-you-to-pay-24-to-40-cents-per-hour-to-stream-games-you-already-bought/)
 
-- Status: published: https://x.com/i/status/2113120087603560781
+- Status: published: https://x.com/i/status/2113181668920172810
 
 ## Media policy
 
