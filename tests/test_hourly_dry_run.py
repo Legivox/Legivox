@@ -590,6 +590,7 @@ class HourlyDryRunTests(unittest.TestCase):
                 "technical_coherence_score": 3,
                 "takeaway_value_score": 5,
                 "source_faithfulness_score": 7,
+                "originality_score": 7,
                 "reason": "Page-load timing does not measure script byte size; inspect the transferred resource size instead.",
             }]
         }
@@ -620,6 +621,7 @@ class HourlyDryRunTests(unittest.TestCase):
                 "technical_coherence_score": 8,
                 "takeaway_value_score": 8,
                 "source_faithfulness_score": 8,
+                "originality_score": 8,
                 "reason": "The subject is named and the test logically follows from the integration use case.",
             }]
         }
