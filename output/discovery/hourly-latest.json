@@ -1,17 +1,17 @@
 {
-  "generated_at_ist": "2026-10-22T21:21:37+05:30",
-  "run_at_ist": "2026-10-22T21:21:37+05:30",
+  "generated_at_ist": "2026-10-22T21:24:27+05:30",
+  "run_at_ist": "2026-10-22T21:24:27+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 162,
-  "eligible_candidate_count": 100,
+  "candidate_count_raw": 119,
+  "eligible_candidate_count": 54,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
-      "items_kept": 10,
+      "items_kept": 0,
       "status": "ok",
-      "total_count": 4660
+      "total_count": 0
     },
     {
       "source": "GitHub Search · github-analytics-seo",
@@ -30,16 +30,16 @@
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
-      "items_kept": 10,
+      "items_kept": 0,
       "status": "ok",
-      "total_count": 2881
+      "total_count": 0
     },
     {
       "source": "GitHub Search · github-ecommerce-digital-products",
       "kind": "github_repository",
-      "items_kept": 10,
+      "items_kept": 0,
       "status": "ok",
-      "total_count": 426
+      "total_count": 0
     },
     {
       "source": "GitHub Search · github-mcp-servers",
@@ -51,16 +51,16 @@
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
-      "items_kept": 10,
+      "items_kept": 0,
       "status": "ok",
-      "total_count": 3160
+      "total_count": 0
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
       "kind": "github_repository",
-      "items_kept": 9,
+      "items_kept": 0,
       "status": "ok",
-      "total_count": 140
+      "total_count": 0
     },
     {
       "source": "GitHub Search · github-workflow-automation",
@@ -114,7 +114,7 @@
     {
       "source": "Hacker News · hn-shopify",
       "kind": "hacker_news",
-      "items_kept": 6,
+      "items_kept": 8,
       "status": "ok",
       "total_count": 10
     },
@@ -145,60 +145,60 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-22T15:51:37+00:00",
-    "tracked_repositories": 144,
-    "repositories_seen_in_discovery": 74,
-    "previously_tracked_repositories_refreshed": 70,
+    "observed_at_utc": "2026-10-22T15:54:27+00:00",
+    "tracked_repositories": 146,
+    "repositories_seen_in_discovery": 29,
+    "previously_tracked_repositories_refreshed": 117,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
-    "snapshots_added_this_run": 144,
+    "snapshots_added_this_run": 2,
     "repositories_with_20_to_36_hour_baseline": 0,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "2f83a1b91c2ce96e",
-      "title": "marcusquinn/aidevops",
-      "source_url": "https://github.com/marcusquinn/aidevops",
+      "candidate_id": "c37165a31cd3fc39",
+      "title": "n8n-io/n8n",
+      "source_url": "https://github.com/n8n-io/n8n",
       "verified": true,
-      "final_url": "https://github.com/marcusquinn/aidevops",
+      "final_url": "https://github.com/n8n-io/n8n",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "b2650545f0aa4129",
-      "title": "Show HN: PDT – Open-source deployment of scheduled jobs on your own cloud",
-      "source_url": "https://github.com/AutoIDM/pdt",
+      "candidate_id": "55c557b3bc0267ca",
+      "title": "Securing your app, together",
+      "source_url": "https://shopify.dev/changelog/securing-your-app-together",
       "verified": true,
-      "final_url": "https://github.com/AutoIDM/pdt",
+      "final_url": "https://shopify.dev/changelog/blog/securing-your-app-together",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "809a5e9573333bc9",
-      "title": "melgarafael/DeskcommCRM",
-      "source_url": "https://github.com/melgarafael/DeskcommCRM",
+      "candidate_id": "8fab7f8f1f4a7571",
+      "title": "bytechefhq/bytechef",
+      "source_url": "https://github.com/bytechefhq/bytechef",
       "verified": true,
-      "final_url": "https://github.com/melgarafael/DeskcommCRM",
+      "final_url": "https://github.com/bytechefhq/bytechef",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "80cffe4a15016672",
-      "title": "Checkout MCP and Cart MCP now support UCP buyer consent",
-      "source_url": "https://shopify.dev/changelog/checkout-mcp-and-cart-mcp-now-support-ucp-buyer-consent",
+      "candidate_id": "1376885ee190dc1c",
+      "title": "Polaris 2.0 is now stable",
+      "source_url": "https://shopify.dev/changelog/polaris-cdn-2-0-is-now-stable",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/checkout-mcp-and-cart-mcp-now-support-ucp-buyer-consent",
+      "final_url": "https://shopify.dev/changelog/posts/polaris-cdn-2-0-is-now-stable",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "f3cc35f9475b86c1",
-      "title": "Show HN: I built a Markdown and raw HTML blog platform scoring 99 on PageSpeed",
-      "source_url": "https://bloffy.co/en",
+      "candidate_id": "7502ffe393ce17ad",
+      "title": "Show HN: OnKey – I'm a bad singer, so I built an app to show where I'm off-key",
+      "source_url": "https://github.com/dsmurrell/onkey",
       "verified": true,
-      "final_url": "https://bloffy.co/en",
+      "final_url": "https://github.com/dsmurrell/onkey",
       "http_status": 200,
       "reason": ""
     }
@@ -207,224 +207,106 @@
   "daily_draft_cap": 10,
   "daily_drafts_already_passed": 0,
   "outcome": "skip",
-  "decision_reason": "All generated drafts failed the local evidence/editorial checks; the hour was skipped.",
+  "decision_reason": "Draft generation unavailable or invalid: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 196701, Requested 4788. Please try again in 10m43.248s. Need more tokens",
   "passing_drafts": [],
-  "rejected_drafts": [
-    {
-      "candidate_id": "2f83a1b91c2ce96e",
-      "title": "marcusquinn/aidevops",
-      "reasons": [
-        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.",
-        "The factual opening bundles multiple features; narrow it to one capability.",
-        "Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration."
-      ],
-      "proposed_text": "OpenCode & Git token-efficient AI agent automation. Run the CLI with a small token budget to confirm it limits API calls. https://github.com/marcusquinn/aidevops",
-      "evidence_quote": "OpenCode & Git token-efficient AI agent automation",
-      "claim_evidence": [
-        {
-          "claim": "OpenCode & Git token-efficient AI agent automation",
-          "quote": "OpenCode & Git token-efficient AI agent automation"
-        }
-      ]
-    },
-    {
-      "candidate_id": "b2650545f0aa4129",
-      "title": "Show HN: PDT – Open-source deployment of scheduled jobs on your own cloud",
-      "reasons": [
-        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.",
-        "The factual opening bundles multiple features; narrow it to one capability."
-      ],
-      "proposed_text": "No daemon, no external dependencies, no subscription. Deploy on a serverless function to verify no daemon is required. https://github.com/AutoIDM/pdt",
-      "evidence_quote": "No daemon, no external dependencies, no subscription",
-      "claim_evidence": [
-        {
-          "claim": "No daemon, no external dependencies, no subscription",
-          "quote": "No daemon, no external dependencies, no subscription"
-        }
-      ]
-    },
-    {
-      "candidate_id": "809a5e9573333bc9",
-      "title": "melgarafael/DeskcommCRM",
-      "reasons": [
-        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about."
-      ],
-      "proposed_text": "Open-source AI sales OS with native AI agents + WhatsApp. Test WhatsApp integration by sending a test message after setup. https://github.com/melgarafael/DeskcommCRM",
-      "evidence_quote": "Open-source AI sales OS — self-hosted CRM with native AI agents + WhatsApp",
-      "claim_evidence": [
-        {
-          "claim": "Open-source AI sales OS with native AI agents + WhatsApp",
-          "quote": "Open-source AI sales OS — self-hosted CRM with native AI agents + WhatsApp"
-        }
-      ]
-    },
-    {
-      "candidate_id": "80cffe4a15016672",
-      "title": "Checkout MCP and Cart MCP now support UCP buyer consent",
-      "reasons": [
-        "Opening sentence is too close to the source headline; add a distinct editorial framing."
-      ],
-      "proposed_text": "Checkout MCP and Cart MCP now support UCP buyer consent. Add dev.ucp.shopping.buyer_consent to cart creation to capture consent. https://shopify.dev/changelog/posts/checkout-mcp-and-cart-mcp-now-support-ucp-buyer-consent",
-      "evidence_quote": "Checkout MCP and Cart MCP now support UCP buyer consent",
-      "claim_evidence": [
-        {
-          "claim": "Checkout MCP and Cart MCP now support UCP buyer consent",
-          "quote": "Checkout MCP and Cart MCP now support UCP buyer consent"
-        }
-      ]
-    },
-    {
-      "candidate_id": "f3cc35f9475b86c1",
-      "title": "Show HN: I built a Markdown and raw HTML blog platform scoring 99 on PageSpeed",
-      "reasons": [
-        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about."
-      ],
-      "proposed_text": "All Bloffy adds to a reader's page is one small 3.2KB script. Measure page weight after adding Bloffy to confirm 3.2KB load. https://bloffy.co/en",
-      "evidence_quote": "All Bloffy adds to a reader's page is one small 3.2KB script",
-      "claim_evidence": [
-        {
-          "claim": "All Bloffy adds to a reader's page is one small 3.2KB script",
-          "quote": "All Bloffy adds to a reader's page is one small 3.2KB script"
-        }
-      ]
-    },
-    {
-      "candidate_id": "2f83a1b91c2ce96e",
-      "title": "marcusquinn/aidevops",
-      "reasons": [
-        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.",
-        "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "Editorial takeaway is not specific enough to this candidate's technical/product details.",
-        "Primary-source evidence quote is missing or absent from the live page (after presentation normalisation)",
-        "No claim-by-claim supporting evidence was provided",
-        "Factual sentence includes terms absent from the source title/summary: buyer, cart, checkout, consent, data, require"
-      ],
-      "proposed_text": "Shopify’s Checkout MCP and Cart MCP now require buyer consent data. If a missing _consent_data warning appears, collect the buyer’s contact detail and retry the checkout to complete the transaction. https://github.com/marcusquinn/aidevops",
-      "evidence_quote": "If you receive a missing _consent _data warning, collect the required contact detail from the buyer and retry so the checkout can complete.",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.",
-        "The factual opening bundles multiple features; narrow it to one capability.",
-        "Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration."
-      ]
-    }
-  ],
+  "rejected_drafts": [],
   "candidate_shortlist": [
     {
-      "id": "2f83a1b91c2ce96e",
-      "title": "marcusquinn/aidevops",
-      "url": "https://github.com/marcusquinn/aidevops",
+      "id": "c37165a31cd3fc39",
+      "title": "n8n-io/n8n",
+      "url": "https://github.com/n8n-io/n8n",
       "source": "GitHub Search",
       "primary_category": "ai_and_automation",
-      "priority_score": 74,
-      "hourly_adjusted_score": 78,
-      "stars_current": 420,
+      "priority_score": 71,
+      "hourly_adjusted_score": 75,
+      "stars_current": 208331,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "insufficient_history",
-      "published_at": "2026-10-22T15:51:11+00:00",
+      "published_at": "2026-10-22T15:50:53+00:00",
       "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "b2650545f0aa4129",
-      "title": "Show HN: PDT – Open-source deployment of scheduled jobs on your own cloud",
-      "url": "https://github.com/AutoIDM/pdt",
-      "source": "Hacker News",
-      "primary_category": "product_and_workflow_tools",
-      "priority_score": 75,
-      "hourly_adjusted_score": 77,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-22T15:27:52+00:00",
-      "days_old": 0.02,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "809a5e9573333bc9",
-      "title": "melgarafael/DeskcommCRM",
-      "url": "https://github.com/melgarafael/DeskcommCRM",
-      "source": "GitHub Search",
-      "primary_category": "commerce_and_digital_products",
-      "priority_score": 72,
-      "hourly_adjusted_score": 76,
-      "stars_current": 4794,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "insufficient_history",
-      "published_at": "2026-10-22T15:29:57+00:00",
-      "days_old": 0.02,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "80cffe4a15016672",
-      "title": "Checkout MCP and Cart MCP now support UCP buyer consent",
-      "url": "https://shopify.dev/changelog/posts/checkout-mcp-and-cart-mcp-now-support-ucp-buyer-consent",
+      "id": "55c557b3bc0267ca",
+      "title": "Securing your app, together",
+      "url": "https://shopify.dev/changelog/blog/securing-your-app-together",
       "source": "Shopify Developer Changelog",
       "primary_category": "commerce_and_digital_products",
-      "priority_score": 75,
-      "hourly_adjusted_score": 75,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-16T14:00:00+00:00",
-      "days_old": 6.08,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "f3cc35f9475b86c1",
-      "title": "Show HN: I built a Markdown and raw HTML blog platform scoring 99 on PageSpeed",
-      "url": "https://bloffy.co/en",
-      "source": "Hacker News",
-      "primary_category": "data_and_growth",
-      "priority_score": 72,
+      "priority_score": 74,
       "hourly_adjusted_score": 74,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-21T23:41:35+00:00",
-      "days_old": 0.67,
+      "published_at": "2026-10-20T19:00:00+00:00",
+      "days_old": 1.87,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "8fab7f8f1f4a7571",
+      "title": "bytechefhq/bytechef",
+      "url": "https://github.com/bytechefhq/bytechef",
+      "source": "GitHub Search",
+      "primary_category": "ai_and_automation",
+      "priority_score": 70,
+      "hourly_adjusted_score": 74,
+      "stars_current": 1043,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "insufficient_history",
+      "published_at": "2026-10-22T15:52:36+00:00",
+      "days_old": 0.0,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "1376885ee190dc1c",
+      "title": "Polaris 2.0 is now stable",
+      "url": "https://shopify.dev/changelog/posts/polaris-cdn-2-0-is-now-stable",
+      "source": "Shopify Developer Changelog",
+      "primary_category": "commerce_and_digital_products",
+      "priority_score": 72,
+      "hourly_adjusted_score": 72,
+      "stars_current": null,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-22T14:00:00+00:00",
+      "days_old": 0.08,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "7502ffe393ce17ad",
+      "title": "Show HN: OnKey – I'm a bad singer, so I built an app to show where I'm off-key",
+      "url": "https://github.com/dsmurrell/onkey",
+      "source": "Hacker News",
+      "primary_category": "product_and_workflow_tools",
+      "priority_score": 68,
+      "hourly_adjusted_score": 70,
+      "stars_current": null,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-22T14:04:44+00:00",
+      "days_old": 0.08,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     }
   ],
-  "automatic_repair": {
-    "attempted": true,
-    "drafts_submitted": 1,
-    "repaired_local_passes": 0,
-    "repair_rejections": 1,
-    "repair_error": null,
-    "editorial_repair_attempted": false,
-    "editorial_repair_drafts_submitted": 0,
-    "editorial_repair_error": null
-  },
-  "editorial_review": {
-    "locally_valid_drafts": 0,
-    "submitted_for_independent_review": 0,
-    "passed_independent_review": 0,
-    "rejected_by_independent_review": 0,
-    "lower_ranked_not_reviewed": 0,
-    "review_error": null,
-    "automatic_gate": "fail_closed"
-  },
   "state_summary": {
     "used_candidates_in_cooldown": 0,
     "recently_attempted_candidates": 5,
