@@ -19,6 +19,7 @@ import unicodedata
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta, timezone
+from html.parser import HTMLParser
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -491,7 +492,9 @@ def update_github_star_velocity(
 
 
 
-def diversity_rank(candidates: list[dict], state: dict, now: datetime, lookback_days: int = 3) -> list[dict]:
+def diversity_rank(
+    candidates: list[dict], state: dict, now: datetime, lookback_days: int = 3, *, refresh_star_watchlist: bool = False
+) -> list[dict]:
     """Rank current candidates while penalising overused sources, topics and near-duplicates."""
 
     history = recent_events(state, now, days=3)
@@ -503,7 +506,7 @@ def diversity_rank(candidates: list[dict], state: dict, now: datetime, lookback_
     attempted = state.get("attempted_candidates", {})
     used = state.get("used_candidates", {})
     now_utc = now.astimezone(timezone.utc)
-    update_github_star_velocity(candidates, state, now)
+    update_github_star_velocity(candidates, state, now, refresh_missing=refresh_star_watchlist)
 
     ranked = []
     for candidate in candidates:
@@ -550,7 +553,7 @@ def diversity_rank(candidates: list[dict], state: dict, now: datetime, lookback_
         star_delta = int(candidate.get("stars_delta_24h") or 0) if is_github_repo else 0
         # Reward measured 20-36h star growth, not cumulative lifetime stars.
         adjusted = raw - 10 * source_counts[source_group] - 8 * category_counts[category] - repeat_penalty
-        adjusted += min(15, star_delta)
+        adjusted += min(15, max(0, star_delta))
         if is_github_repo:
             candidate["trend_signal"] = "measured_star_growth" if candidate.get("stars_delta_baseline_hours") is not None else "insufficient_history"
         else:
