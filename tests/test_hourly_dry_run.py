@@ -43,7 +43,7 @@ class HourlyDryRunTests(unittest.TestCase):
             "signals": {"license_spdx": "MIT", "stars": 92},
         }
 
-    def test_valid_draft_passes_and_is_marked_for_human_review(self):
+    def test_valid_draft_passes_and_is_marked_dry_run_only(self):
         draft = {
             "candidate_id": "candidate-1",
             "fact_sentence": "Hookdeck's webhook skills give step-by-step guidance for receivers, signature verification and event handling.",
@@ -76,6 +76,15 @@ class HourlyDryRunTests(unittest.TestCase):
         self.assertLessEqual(accepted["character_count"], 280)
         self.assertFalse(accepted["published_to_x"])
         self.assertEqual(accepted["status"], "dry_run_passed_not_published")
+
+        # The writer's own novelty score is diagnostic only. The separate editor
+        # makes the independent originality decision later in the pipeline.
+        low_self_score = dict(draft)
+        low_self_score["scores"] = dict(draft["scores"])
+        low_self_score["scores"]["novelty"] = 1
+        accepted_low, reasons_low = hourly.validate_draft(low_self_score, {"candidate-1": self.candidate})
+        self.assertEqual(reasons_low, [])
+        self.assertIsNotNone(accepted_low)
 
     def test_composer_assembles_separate_fact_takeaway_and_primary_url(self):
         draft = {
@@ -602,6 +611,37 @@ class HourlyDryRunTests(unittest.TestCase):
         self.assertEqual(len(rejected), 1)
         self.assertIn("does not measure script byte size", rejected[0]["reasons"][0])
         self.assertEqual(rejected[0]["editorial_review"]["technical_coherence_score"], 3)
+
+    def test_independent_editor_rejects_low_originality_even_if_other_scores_pass(self):
+        draft = {
+            "candidate_id": "candidate-1",
+            "title": "Hookdeck webhook skills",
+            "post_text": "Hookdeck provides webhook integration guidance. Test duplicate delivery before shipping.",
+            "fact_sentence": "Hookdeck provides webhook integration guidance.",
+            "editorial_takeaway": "Test duplicate delivery before shipping.",
+            "url": "https://github.com/hookdeck/webhook-skills",
+            "claim_evidence": [],
+        }
+        review_payload = {
+            "reviews": [{
+                "candidate_id": "candidate-1",
+                "pass": False,
+                "clarity_score": 8,
+                "technical_coherence_score": 8,
+                "takeaway_value_score": 8,
+                "source_faithfulness_score": 8,
+                "originality_score": 4,
+                "reason": "The opening mostly paraphrases the project description and adds little perspective.",
+            }]
+        }
+        response = {"choices": [{"message": {"content": json.dumps(review_payload)}}]}
+        with patch.object(hourly, "request_groq", return_value=response):
+            approved, rejected, error = hourly.editorial_review_drafts([draft], {"candidate-1": self.candidate})
+        self.assertIsNone(error)
+        self.assertEqual(approved, [])
+        self.assertEqual(len(rejected), 1)
+        self.assertEqual(rejected[0]["editorial_review"]["originality_score"], 4)
+        self.assertIn("paraphrases", rejected[0]["reasons"][0])
 
     def test_independent_editor_pass_is_required_even_after_local_validation(self):
         draft = {
