@@ -254,7 +254,7 @@ def _github_repo_identity(candidate: dict) -> tuple[str, str, str] | None:
     if "/" not in full_name:
         return None
     repo_id = str(signals.get("github_repo_id") or "").strip()
-    key = repo_id if repo_id else "url:" + str(candidate.get("id") or full_name.casefold())
+    key = repo_id if repo_id else str(candidate.get("id") or "url:" + full_name.casefold())
     return key, repo_id, full_name
 
 
@@ -1216,7 +1216,7 @@ def validate_draft(draft: dict, candidates_by_id: dict) -> tuple[dict | None, li
         "scores": {key: int(scores[key]) for key in ("timeliness", "usefulness", "novelty", "evidence", "insight")},
         "editorial_score": round(score_total, 2),
         "character_count": len(post),
-        "status": "draft_passed_needs_human_review",
+        "status": "dry_run_passed_not_published",
         "published_to_x": False,
     }, []
 
@@ -1285,7 +1285,7 @@ def write_outputs(report: dict) -> None:
             "> " + row["post_text"].replace("\n", "\n> "),
             "",
             "- Length: " + str(row["character_count"]) + "/280 raw characters",
-            "- Required next step: human review of original source, licence/pricing where relevant, and all factual claims.",
+            "- Automated gate: passed live source, evidence, originality, URL and length checks; live publishing is disabled in dry-run mode.",
             "",
         ]
 
@@ -1325,9 +1325,9 @@ def write_outputs(report: dict) -> None:
         "",
         "## Safety and interpretation",
         "",
-        "- A passing draft is a proposal for human review, not an automatic permission to publish.",
+        "- The passing result means the automated quality gates succeeded; this dry-run workflow itself never publishes to X.",
         "- Model scores are editorial estimates; they are not verified popularity or market demand.",
-        "- Candidate content and metadata are untrusted input. Primary-source review remains mandatory.",
+        "- Candidate content and metadata are untrusted input. Factual copy must be supported by the fetched primary page.",
         "- A skip can mean no fresh candidates, a daily diversity/cap limit, a model/API problem or weak drafts. Check the reason above.",
         "- This script never uses the X session cookie and never interacts with X.",
         "",
