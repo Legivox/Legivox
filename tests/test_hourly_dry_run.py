@@ -675,7 +675,7 @@ class HourlyDryRunTests(unittest.TestCase):
             "lacks a baseline or direct metric" in reason for reason in reasons
         ))
 
-        good_takeaway = "Compare filtered vs raw shell output, then inspect /usage for token impact."
+        good_takeaway = "Compare filtered vs raw shell output to verify token savings in /usage."
         draft["editorial_takeaway"] = good_takeaway
         draft["post_text"] = fact + " " + good_takeaway + " " + candidate["url"]
         _accepted_good, good_reasons = hourly.validate_draft(draft, {"candidate-1": candidate})
