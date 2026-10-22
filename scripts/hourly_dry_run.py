@@ -636,6 +636,166 @@ def request_groq(messages: list[dict], max_tokens: int = 8192) -> dict:
         raise RuntimeError("Groq request failed: " + type(exc).__name__) from None
 
 
+class _PrimaryPageParser(HTMLParser):
+    """Extract human-readable title, descriptions and a bounded body-text sample."""
+    def __init__(self) -> None:
+        super().__init__(convert_charrefs=True)
+        self.title_parts: list[str] = []
+        self.description = ""
+        self.og_title = ""
+        self.og_description = ""
+        self.text_parts: list[str] = []
+        self.in_title = False
+        self.skip_depth = 0
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        tag = tag.casefold()
+        attr = {str(k).casefold(): str(v or "") for k, v in attrs}
+        if tag in {"script", "style", "noscript", "svg"}:
+            self.skip_depth += 1
+            return
+        if self.skip_depth:
+            return
+        if tag == "title":
+            self.in_title = True
+        if tag == "meta":
+            name = attr.get("name", "").casefold()
+            prop = attr.get("property", "").casefold()
+            value = clean(attr.get("content", ""))
+            if name == "description" and value:
+                self.description = value
+            elif prop == "og:title" and value:
+                self.og_title = value
+            elif prop == "og:description" and value:
+                self.og_description = value
+
+    def handle_endtag(self, tag: str) -> None:
+        tag = tag.casefold()
+        if tag in {"script", "style", "noscript", "svg"}:
+            self.skip_depth = max(0, self.skip_depth - 1)
+            return
+        if tag == "title":
+            self.in_title = False
+
+    def handle_data(self, data: str) -> None:
+        if self.skip_depth:
+            return
+        value = clean(data)
+        if not value:
+            return
+        if self.in_title:
+            self.title_parts.append(value)
+        else:
+            self.text_parts.append(value)
+
+
+def verify_primary_source(candidate: dict) -> tuple[dict | None, str | None]:
+    """Fetch the primary page, reject dead/mismatched links and retain source-page evidence."""
+    url = str(candidate.get("url") or "").strip()
+    parsed_url = urllib.parse.urlsplit(url)
+    if parsed_url.scheme not in {"http", "https"} or not parsed_url.netloc:
+        return None, "Source URL is missing or is not HTTP(S)."
+    request = urllib.request.Request(
+        url,
+        headers={
+            "Accept": "text/html,application/xhtml+xml,application/json,text/plain;q=0.9,*/*;q=0.5",
+            "User-Agent": USER_AGENT,
+        },
+    )
+    try:
+        with urllib.request.urlopen(request, timeout=12) as response:
+            status_code = int(getattr(response, "status", 200))
+            final_url = str(response.geturl() or url)
+            content_type = str(response.headers.get("Content-Type", "") or "")
+            raw = response.read(1_200_000)
+    except urllib.error.HTTPError as exc:
+        return None, "Primary source returned HTTP " + str(exc.code) + "."
+    except (urllib.error.URLError, TimeoutError, OSError) as exc:
+        return None, "Primary source could not be fetched: " + type(exc).__name__ + "."
+    if status_code < 200 or status_code >= 300:
+        return None, "Primary source returned HTTP " + str(status_code) + "."
+    if not final_url.startswith(("https://", "http://")):
+        return None, "Primary source redirected to a non-HTTP URL."
+
+    decoded = raw.decode("utf-8", errors="replace")
+    parser = _PrimaryPageParser()
+    page_title = ""
+    page_description = ""
+    page_text = ""
+    if "html" in content_type.casefold() or "<html" in decoded[:1000].casefold():
+        try:
+            parser.feed(decoded)
+            parser.close()
+        except Exception:
+            pass
+        page_title = clean(parser.og_title or " ".join(parser.title_parts))
+        page_description = clean(parser.og_description or parser.description)
+        page_text = clean(" ".join(parser.text_parts))[:5000]
+    else:
+        page_title = clean(str(candidate.get("title") or ""))
+        page_description = ""
+        page_text = clean(decoded)[:5000]
+
+    source_evidence = clean(" ".join([page_title, page_description, page_text]))
+    if len(source_evidence) < 40:
+        return None, "Primary page returned too little readable content to verify the candidate."
+    title_tokens = tokens(str(candidate.get("title") or ""))
+    page_tokens = tokens(" ".join([page_title, page_description, page_text[:2500]]))
+    overlap = len(title_tokens & page_tokens) / max(1, len(title_tokens))
+    if title_tokens and overlap < 0.12:
+        return None, "Primary page content does not appear to match the candidate headline."
+
+    verified = dict(candidate)
+    verified["original_source_url"] = url
+    verified["url"] = final_url
+    verified["canonical_url"] = final_url
+    verified["primary_source_verified"] = True
+    verified["primary_source_http_status"] = status_code
+    verified["primary_source_checked_at_utc"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    verified["primary_source_final_url"] = final_url
+    verified["primary_source_title"] = page_title[:300]
+    verified["primary_source_description"] = page_description[:700]
+    verified["primary_source_text"] = page_text[:4000]
+    verified["primary_source_evidence"] = source_evidence[:6000]
+    verified["primary_source_title_overlap"] = round(overlap, 3)
+    evidence_urls = list(verified.get("evidence_urls") or [])
+    if final_url not in evidence_urls:
+        evidence_urls.insert(0, final_url)
+    verified["evidence_urls"] = evidence_urls[:5]
+    return verified, None
+
+
+def verify_primary_sources(candidates: list[dict]) -> tuple[list[dict], list[dict]]:
+    """Validate a small diverse shortlist in parallel before asking the model to draft."""
+    verified: list[dict] = []
+    rejected: list[dict] = []
+    with ThreadPoolExecutor(max_workers=4) as pool:
+        tasks = {
+            pool.submit(verify_primary_source, candidate): candidate
+            for candidate in candidates
+        }
+        for future in as_completed(tasks):
+            candidate = tasks[future]
+            try:
+                checked, reason = future.result()
+            except Exception as exc:
+                checked, reason = None, "Primary source verification failed: " + type(exc).__name__ + "."
+            if checked is not None:
+                verified.append(checked)
+            else:
+                rejected.append({
+                    "candidate_id": candidate.get("id"),
+                    "title": candidate.get("title"),
+                    "source": candidate.get("source"),
+                    "url": candidate.get("url"),
+                    "reasons": [reason or "Primary source did not pass validation."],
+                })
+    order = {str(item.get("id")): index for index, item in enumerate(candidates)}
+    verified.sort(key=lambda item: order.get(str(item.get("id")), 999))
+    rejected.sort(key=lambda item: order.get(str(item.get("candidate_id")), 999))
+    return verified, rejected
+
+
 def draft_candidates(candidates: list[dict]) -> tuple[list[dict], str | None]:
     if not candidates:
         return [], "No candidate met the freshness, diversity and metadata minimums."
