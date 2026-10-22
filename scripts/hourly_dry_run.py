@@ -856,11 +856,11 @@ def draft_candidates(candidates: list[dict]) -> tuple[list[dict], str | None]:
             "source_kind": candidate.get("source_kind"),
             "url": candidate["url"],
             "copy_character_budget": max(0, MAX_POST_CHARS - len(str(candidate.get("url") or "")) - 2),
-            "summary": str(candidate.get("summary") or "")[:420],
+            "summary": str(candidate.get("summary") or "")[:350],
             "primary_source_verified": bool(candidate.get("primary_source_verified")),
             "primary_source_title": str(candidate.get("primary_source_title") or "")[:180],
-            "primary_source_description": str(candidate.get("primary_source_description") or "")[:320],
-            "primary_source_evidence": model_evidence_excerpt(candidate, max_chars=1750),
+            "primary_source_description": str(candidate.get("primary_source_description") or "")[:250],
+            "primary_source_evidence": model_evidence_excerpt(candidate, max_chars=1050),
             "stars_current": candidate.get("stars_current"),
             "stars_delta_24h": candidate.get("stars_delta_24h"),
             "stars_delta_baseline_hours": candidate.get("stars_delta_baseline_hours"),
@@ -955,6 +955,12 @@ def draft_candidates(candidates: list[dict]) -> tuple[list[dict], str | None]:
             prepared.append(compose_post_from_fields(draft, candidate) if candidate else draft)
         return prepared, None
     except (RuntimeError, KeyError, IndexError, TypeError, json.JSONDecodeError) as exc:
+        if isinstance(exc, RuntimeError) and "HTTP 413" in str(exc) and len(candidates) > 1:
+            # Some provider/model gateways impose a stricter request-size limit than
+            # their advertised context window. Retry with a smaller diverse prefix.
+            # This is an adaptive request-size fallback, not a relaxation of quality checks.
+            smaller_pool = candidates[:max(1, len(candidates) // 2)]
+            return draft_candidates(smaller_pool)
         return [], clean(str(exc)) or type(exc).__name__
 
 
