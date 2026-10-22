@@ -1,0 +1,1064 @@
+{
+  "version": 1,
+  "events": [
+    {
+      "timestamp_utc": "2026-10-22T05:25:10+00:00",
+      "run_at_ist": "2026-10-22T10:55:10+05:30",
+      "status": "skip",
+      "reason": "Draft generation unavailable or invalid: Groq returned HTTP 413",
+      "candidate_ids": [
+        "71d4fa150d1a6d81",
+        "5113f4600cf59250",
+        "80cffe4a15016672",
+        "f3cc35f9475b86c1",
+        "dd89fbbb59577fc8"
+      ],
+      "published_to_x": false
+    }
+  ],
+  "attempted_candidates": {},
+  "used_candidates": {},
+  "repo_star_snapshots": {
+    "1278926400": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 1390
+      }
+    ],
+    "925617132": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 147
+      }
+    ],
+    "1247987146": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 127
+      }
+    ],
+    "900760746": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 116
+      }
+    ],
+    "1403332662": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 59
+      }
+    ],
+    "1247078110": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 119
+      }
+    ],
+    "1254698689": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 16
+      }
+    ],
+    "1170821064": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 105774
+      }
+    ],
+    "1000945946": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 427
+      }
+    ],
+    "1164477708": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 31699
+      }
+    ],
+    "1194947244": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 382
+      }
+    ],
+    "1151604957": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 59
+      }
+    ],
+    "1294960594": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 122
+      }
+    ],
+    "1075906855": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 15
+      }
+    ],
+    "320094356": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 6
+      }
+    ],
+    "1288325627": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 10617
+      }
+    ],
+    "645381450": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 5920
+      }
+    ],
+    "1300886884": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 92
+      }
+    ],
+    "1271491651": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 83
+      }
+    ],
+    "1342202970": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 88
+      }
+    ],
+    "1369663769": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 125
+      }
+    ],
+    "1226710383": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 22
+      }
+    ],
+    "60246359": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 50532
+      }
+    ],
+    "1145420469": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 2906
+      }
+    ],
+    "1209966933": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 359493
+      }
+    ],
+    "1008713177": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 28638
+      }
+    ],
+    "1275001555": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 13
+      }
+    ],
+    "1122923227": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 5
+      }
+    ],
+    "402945349": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 12195
+      }
+    ],
+    "1266212515": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 10974
+      }
+    ],
+    "1204318746": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 19
+      }
+    ],
+    "1178044780": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 17
+      }
+    ],
+    "1322671404": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 1338
+      }
+    ],
+    "793379298": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 5312
+      }
+    ],
+    "1246432220": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 28
+      }
+    ],
+    "1169025841": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 132
+      }
+    ],
+    "1288895330": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 25
+      }
+    ],
+    "1185588330": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 19
+      }
+    ],
+    "53548867": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 14059
+      }
+    ],
+    "1377463767": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 39
+      }
+    ],
+    "1415506468": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 12
+      }
+    ],
+    "688579575": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 129
+      }
+    ],
+    "215654064": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 23898
+      }
+    ],
+    "894774948": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 18
+      }
+    ],
+    "1204488303": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 1339
+      }
+    ],
+    "1303258850": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 4536
+      }
+    ],
+    "1201869706": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 17
+      }
+    ],
+    "262400823": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 610
+      }
+    ],
+    "2179920": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 10561
+      }
+    ],
+    "751335779": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 313
+      }
+    ],
+    "99919302": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 16124
+      }
+    ],
+    "1306217133": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 26
+      }
+    ],
+    "1079713761": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 288
+      }
+    ],
+    "608711730": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 228
+      }
+    ],
+    "211381955": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 10574
+      }
+    ],
+    "1367417840": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 23
+      }
+    ],
+    "1286815260": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 28
+      }
+    ],
+    "1334001399": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 31
+      }
+    ],
+    "1259607151": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 9
+      }
+    ],
+    "804879334": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 48
+      }
+    ],
+    "340547520": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 92017
+      }
+    ],
+    "1164206183": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 134
+      }
+    ],
+    "1200987038": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 23
+      }
+    ],
+    "1145719389": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 17
+      }
+    ],
+    "640488910": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 6
+      }
+    ],
+    "487447990": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 6
+      }
+    ],
+    "487433586": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 6
+      }
+    ],
+    "487427153": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 6
+      }
+    ],
+    "487418786": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 6
+      }
+    ],
+    "480115653": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 6
+      }
+    ],
+    "638216557": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 7
+      }
+    ],
+    "662615723": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 19
+      }
+    ],
+    "1170088054": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 110
+      }
+    ],
+    "1333994175": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 7
+      }
+    ],
+    "1345988143": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 55
+      }
+    ],
+    "890026480": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 95
+      }
+    ],
+    "662614944": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 8
+      }
+    ],
+    "1428968185": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 6
+      }
+    ],
+    "1380848794": [
+      {
+        "at": "2026-10-22T05:25:10+00:00",
+        "stars": 11
+      }
+    ]
+  },
+  "repo_star_watchlist": {
+    "1278926400": {
+      "repo_id": "1278926400",
+      "full_name": "amplifthq/openmeld",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "925617132": {
+      "repo_id": "925617132",
+      "full_name": "chattermate/chattermate.chat",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1247987146": {
+      "repo_id": "1247987146",
+      "full_name": "JasonColapietro/suede-creator-skills",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "900760746": {
+      "repo_id": "900760746",
+      "full_name": "rapiddweller/datamimic",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1403332662": {
+      "repo_id": "1403332662",
+      "full_name": "Nexilume-AI/nexus-cloud",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1247078110": {
+      "repo_id": "1247078110",
+      "full_name": "sixb-ai/sixb",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1254698689": {
+      "repo_id": "1254698689",
+      "full_name": "digitaldrywood/detent",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1170821064": {
+      "repo_id": "1170821064",
+      "full_name": "paperclipai/paperclip",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1000945946": {
+      "repo_id": "1000945946",
+      "full_name": "caipe-io/ai-platform-engineering",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1164477708": {
+      "repo_id": "1164477708",
+      "full_name": "mksglu/context-mode",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1194947244": {
+      "repo_id": "1194947244",
+      "full_name": "receptron/mulmoclaude",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1151604957": {
+      "repo_id": "1151604957",
+      "full_name": "RohanMuppa/brightspace-mcp-server",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1294960594": {
+      "repo_id": "1294960594",
+      "full_name": "bailinghub/bailinghub",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1075906855": {
+      "repo_id": "1075906855",
+      "full_name": "manishiitg/agentworks",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "320094356": {
+      "repo_id": "320094356",
+      "full_name": "aglyn/aglyn",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1288325627": {
+      "repo_id": "1288325627",
+      "full_name": "trailhq/Trail-Code",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "645381450": {
+      "repo_id": "645381450",
+      "full_name": "Anil-matcha/open-duet",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1300886884": {
+      "repo_id": "1300886884",
+      "full_name": "bvdr/familywell",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1271491651": {
+      "repo_id": "1271491651",
+      "full_name": "hproxy-com/free-proxy-list",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1342202970": {
+      "repo_id": "1342202970",
+      "full_name": "mrpulor-gh/nuphus",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1369663769": {
+      "repo_id": "1369663769",
+      "full_name": "nexscope-ai/ecommerce-ai-tools",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1226710383": {
+      "repo_id": "1226710383",
+      "full_name": "pioneerdotai/pioneer",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "60246359": {
+      "repo_id": "60246359",
+      "full_name": "ClickHouse/ClickHouse",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1145420469": {
+      "repo_id": "1145420469",
+      "full_name": "moltis-org/moltis",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1209966933": {
+      "repo_id": "1209966933",
+      "full_name": "morluto/rea",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1008713177": {
+      "repo_id": "1008713177",
+      "full_name": "QwenLM/qwen-code",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1275001555": {
+      "repo_id": "1275001555",
+      "full_name": "moretea-labs/forge",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1122923227": {
+      "repo_id": "1122923227",
+      "full_name": "Nsomnia/chadvis-projectm-qt",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "402945349": {
+      "repo_id": "402945349",
+      "full_name": "StarRocks/starrocks",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1266212515": {
+      "repo_id": "1266212515",
+      "full_name": "omnigent-ai/omnigent",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1204318746": {
+      "repo_id": "1204318746",
+      "full_name": "Silbercue/public-browser",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1178044780": {
+      "repo_id": "1178044780",
+      "full_name": "AndreasHeine/i3x2ua",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1322671404": {
+      "repo_id": "1322671404",
+      "full_name": "autonomous-ai/openharness",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "793379298": {
+      "repo_id": "793379298",
+      "full_name": "beclab/Olares",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1246432220": {
+      "repo_id": "1246432220",
+      "full_name": "constructorfabric/insight",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1169025841": {
+      "repo_id": "1169025841",
+      "full_name": "kangraemin/claude-inspector",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1288895330": {
+      "repo_id": "1288895330",
+      "full_name": "margince/margince",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1185588330": {
+      "repo_id": "1185588330",
+      "full_name": "VeriWorkly/veriworkly",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "53548867": {
+      "repo_id": "53548867",
+      "full_name": "dbt-labs/dbt",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1377463767": {
+      "repo_id": "1377463767",
+      "full_name": "Ekwo-ai/ekwo-os",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1415506468": {
+      "repo_id": "1415506468",
+      "full_name": "struklabs/harness-studio",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "688579575": {
+      "repo_id": "688579575",
+      "full_name": "superdurable/dex",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "215654064": {
+      "repo_id": "215654064",
+      "full_name": "temporalio/temporal",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "894774948": {
+      "repo_id": "894774948",
+      "full_name": "zestysoft/sensus_analytics_integration",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1204488303": {
+      "repo_id": "1204488303",
+      "full_name": "zhitongblog/solomd",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1303258850": {
+      "repo_id": "1303258850",
+      "full_name": "kirodotdev/KiroCrew",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1201869706": {
+      "repo_id": "1201869706",
+      "full_name": "mikeprasad/aria-knowledge",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "262400823": {
+      "repo_id": "262400823",
+      "full_name": "w3bdesign/nextjs-woocommerce",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "2179920": {
+      "repo_id": "2179920",
+      "full_name": "woocommerce/woocommerce",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "751335779": {
+      "repo_id": "751335779",
+      "full_name": "zeasin/qihang-erp-open",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "99919302": {
+      "repo_id": "99919302",
+      "full_name": "apache/doris",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1306217133": {
+      "repo_id": "1306217133",
+      "full_name": "Dicklesworthstone/franken_manim",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1079713761": {
+      "repo_id": "1079713761",
+      "full_name": "gosuda/portal-tunnel",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "608711730": {
+      "repo_id": "608711730",
+      "full_name": "joryirving/home-ops",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "211381955": {
+      "repo_id": "211381955",
+      "full_name": "leeoniya/uPlot",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1367417840": {
+      "repo_id": "1367417840",
+      "full_name": "VanoPeradze/cutroom",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1286815260": {
+      "repo_id": "1286815260",
+      "full_name": "AyeJK/phase-runner",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1334001399": {
+      "repo_id": "1334001399",
+      "full_name": "HERRY423/BioNexus",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1259607151": {
+      "repo_id": "1259607151",
+      "full_name": "mackatwentytsuru/cc5-mcp-server",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "804879334": {
+      "repo_id": "804879334",
+      "full_name": "mclucy/lucy",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "340547520": {
+      "repo_id": "340547520",
+      "full_name": "zed-industries/zed",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1164206183": {
+      "repo_id": "1164206183",
+      "full_name": "Kangentic/kangentic",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1200987038": {
+      "repo_id": "1200987038",
+      "full_name": "kangraemin/claude-status-bar",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1145719389": {
+      "repo_id": "1145719389",
+      "full_name": "mwakidenis/fullstack-ecommerce-nextjs-shopify",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "640488910": {
+      "repo_id": "640488910",
+      "full_name": "rubocop-lts/rubocop-ruby1_8",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "487447990": {
+      "repo_id": "487447990",
+      "full_name": "rubocop-lts/rubocop-ruby2_2",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "487433586": {
+      "repo_id": "487433586",
+      "full_name": "rubocop-lts/rubocop-ruby2_3",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "487427153": {
+      "repo_id": "487427153",
+      "full_name": "rubocop-lts/rubocop-ruby2_4",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "487418786": {
+      "repo_id": "487418786",
+      "full_name": "rubocop-lts/rubocop-ruby2_7",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "480115653": {
+      "repo_id": "480115653",
+      "full_name": "rubocop-lts/rubocop-ruby3_1",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "638216557": {
+      "repo_id": "638216557",
+      "full_name": "rubocop-lts/rubocop-ruby3_2",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "662615723": {
+      "repo_id": "662615723",
+      "full_name": "vasilistotskas/grooveshop-storefront-ui-node-nuxt",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1170088054": {
+      "repo_id": "1170088054",
+      "full_name": "PackingProof/PackingProof-Desktop",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1333994175": {
+      "repo_id": "1333994175",
+      "full_name": "PraveenKumar7545/minnal-mart-ecommerce",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1345988143": {
+      "repo_id": "1345988143",
+      "full_name": "R0650N/spirit-flux-refiner",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "890026480": {
+      "repo_id": "890026480",
+      "full_name": "SunkenInTime/icarus",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "662614944": {
+      "repo_id": "662614944",
+      "full_name": "vasilistotskas/grooveshop-django-api",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1428968185": {
+      "repo_id": "1428968185",
+      "full_name": "thuutien/rufix",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1380848794": {
+      "repo_id": "1380848794",
+      "full_name": "juju-w/card-creator-skill",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0
+    }
+  },
+  "last_star_tracking_run": {
+    "observed_at_utc": "2026-10-22T05:25:10+00:00",
+    "tracked_repositories": 79,
+    "repositories_seen_in_discovery": 79,
+    "previously_tracked_repositories_refreshed": 0,
+    "refresh_failures": 0,
+    "missing_github_token_for_watchlist_refresh": false,
+    "snapshots_added_this_run": 79,
+    "repositories_with_20_to_36_hour_baseline": 0,
+    "history_window_days": 8,
+    "watchlist_limit": 200
+  }
+}

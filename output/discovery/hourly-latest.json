@@ -1,0 +1,315 @@
+{
+  "generated_at_ist": "2026-10-22T10:55:10+05:30",
+  "run_at_ist": "2026-10-22T10:55:10+05:30",
+  "mode": "hourly_dry_run_only",
+  "posted_to_x": false,
+  "candidate_count_raw": 171,
+  "eligible_candidate_count": 91,
+  "source_diagnostics": [
+    {
+      "source": "GitHub Search · github-ai-agent-tools",
+      "kind": "github_repository",
+      "items_kept": 10,
+      "status": "ok",
+      "total_count": 4571
+    },
+    {
+      "source": "GitHub Search · github-analytics-seo",
+      "kind": "github_repository",
+      "items_kept": 10,
+      "status": "ok",
+      "total_count": 1019
+    },
+    {
+      "source": "GitHub Search · github-creator-infrastructure",
+      "kind": "github_repository",
+      "items_kept": 10,
+      "status": "ok",
+      "total_count": 374
+    },
+    {
+      "source": "GitHub Search · github-developer-tools",
+      "kind": "github_repository",
+      "items_kept": 10,
+      "status": "ok",
+      "total_count": 2825
+    },
+    {
+      "source": "GitHub Search · github-ecommerce-digital-products",
+      "kind": "github_repository",
+      "items_kept": 10,
+      "status": "ok",
+      "total_count": 411
+    },
+    {
+      "source": "GitHub Search · github-mcp-servers",
+      "kind": "github_repository",
+      "items_kept": 10,
+      "status": "ok",
+      "total_count": 1986
+    },
+    {
+      "source": "GitHub Search · github-self-hosted",
+      "kind": "github_repository",
+      "items_kept": 10,
+      "status": "ok",
+      "total_count": 3086
+    },
+    {
+      "source": "GitHub Search · github-shopify-commerce",
+      "kind": "github_repository",
+      "items_kept": 10,
+      "status": "ok",
+      "total_count": 133
+    },
+    {
+      "source": "GitHub Search · github-workflow-automation",
+      "kind": "github_repository",
+      "items_kept": 10,
+      "status": "ok",
+      "total_count": 254
+    },
+    {
+      "source": "Hacker News · hn-analytics-growth",
+      "kind": "hacker_news",
+      "items_kept": 10,
+      "status": "ok",
+      "total_count": 10
+    },
+    {
+      "source": "Hacker News · hn-automation-api",
+      "kind": "hacker_news",
+      "items_kept": 3,
+      "status": "ok",
+      "total_count": 10
+    },
+    {
+      "source": "Hacker News · hn-creator-business",
+      "kind": "hacker_news",
+      "items_kept": 0,
+      "status": "ok",
+      "total_count": 10
+    },
+    {
+      "source": "Hacker News · hn-digital-products",
+      "kind": "hacker_news",
+      "items_kept": 1,
+      "status": "ok",
+      "total_count": 10
+    },
+    {
+      "source": "Hacker News · hn-ecommerce-payments",
+      "kind": "hacker_news",
+      "items_kept": 0,
+      "status": "ok",
+      "total_count": 10
+    },
+    {
+      "source": "Hacker News · hn-security-selfhost",
+      "kind": "hacker_news",
+      "items_kept": 0,
+      "status": "ok",
+      "total_count": 10
+    },
+    {
+      "source": "Hacker News · hn-shopify",
+      "kind": "hacker_news",
+      "items_kept": 10,
+      "status": "ok",
+      "total_count": 10
+    },
+    {
+      "source": "Hacker News · hn-show-hn",
+      "kind": "hacker_news",
+      "items_kept": 10,
+      "status": "ok",
+      "total_count": 10
+    },
+    {
+      "source": "Console.dev",
+      "kind": "rss",
+      "items_kept": 7,
+      "status": "ok"
+    },
+    {
+      "source": "Product Hunt",
+      "kind": "rss",
+      "items_kept": 41,
+      "status": "ok"
+    },
+    {
+      "source": "Shopify Developer Changelog",
+      "kind": "rss",
+      "items_kept": 10,
+      "status": "ok"
+    }
+  ],
+  "star_tracking": {
+    "observed_at_utc": "2026-10-22T05:25:10+00:00",
+    "tracked_repositories": 79,
+    "repositories_seen_in_discovery": 79,
+    "previously_tracked_repositories_refreshed": 0,
+    "refresh_failures": 0,
+    "missing_github_token_for_watchlist_refresh": false,
+    "snapshots_added_this_run": 79,
+    "repositories_with_20_to_36_hour_baseline": 0,
+    "history_window_days": 8,
+    "watchlist_limit": 200
+  },
+  "primary_source_checks": [
+    {
+      "candidate_id": "71d4fa150d1a6d81",
+      "title": "amplifthq/openmeld",
+      "source_url": "https://github.com/amplifthq/openmeld",
+      "verified": true,
+      "final_url": "https://github.com/amplifthq/openmeld",
+      "http_status": 200,
+      "reason": ""
+    },
+    {
+      "candidate_id": "5113f4600cf59250",
+      "title": "chattermate/chattermate.chat",
+      "source_url": "https://github.com/chattermate/chattermate.chat",
+      "verified": true,
+      "final_url": "https://github.com/chattermate/chattermate.chat",
+      "http_status": 200,
+      "reason": ""
+    },
+    {
+      "candidate_id": "80cffe4a15016672",
+      "title": "Checkout MCP and Cart MCP now support UCP buyer consent",
+      "source_url": "https://shopify.dev/changelog/checkout-mcp-and-cart-mcp-now-support-ucp-buyer-consent",
+      "verified": true,
+      "final_url": "https://shopify.dev/changelog/posts/checkout-mcp-and-cart-mcp-now-support-ucp-buyer-consent",
+      "http_status": 200,
+      "reason": ""
+    },
+    {
+      "candidate_id": "f3cc35f9475b86c1",
+      "title": "Show HN: I built a Markdown and raw HTML blog platform scoring 99 on PageSpeed",
+      "source_url": "https://bloffy.co/en",
+      "verified": true,
+      "final_url": "https://bloffy.co/en",
+      "http_status": 200,
+      "reason": ""
+    },
+    {
+      "candidate_id": "dd89fbbb59577fc8",
+      "title": "Metaobject analytics queryable capability available in the Admin API",
+      "source_url": "https://shopify.dev/changelog/metaobject-analytics-queryable-capability-available-in-the-admin-api",
+      "verified": true,
+      "final_url": "https://shopify.dev/changelog/posts/metaobject-analytics-queryable-capability-available-in-the-admin-api",
+      "http_status": 200,
+      "reason": ""
+    }
+  ],
+  "rejected_primary_sources": [],
+  "daily_draft_cap": 10,
+  "daily_drafts_already_passed": 0,
+  "outcome": "skip",
+  "decision_reason": "Draft generation unavailable or invalid: Groq returned HTTP 413",
+  "passing_drafts": [],
+  "rejected_drafts": [],
+  "candidate_shortlist": [
+    {
+      "id": "71d4fa150d1a6d81",
+      "title": "amplifthq/openmeld",
+      "url": "https://github.com/amplifthq/openmeld",
+      "source": "GitHub Search",
+      "primary_category": "ai_and_automation",
+      "priority_score": 72,
+      "hourly_adjusted_score": 76,
+      "stars_current": 1390,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "insufficient_history",
+      "published_at": "2026-10-22T05:16:45+00:00",
+      "days_old": 0.01,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "5113f4600cf59250",
+      "title": "chattermate/chattermate.chat",
+      "url": "https://github.com/chattermate/chattermate.chat",
+      "source": "GitHub Search",
+      "primary_category": "commerce_and_digital_products",
+      "priority_score": 72,
+      "hourly_adjusted_score": 76,
+      "stars_current": 147,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "insufficient_history",
+      "published_at": "2026-10-22T04:21:21+00:00",
+      "days_old": 0.04,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "80cffe4a15016672",
+      "title": "Checkout MCP and Cart MCP now support UCP buyer consent",
+      "url": "https://shopify.dev/changelog/posts/checkout-mcp-and-cart-mcp-now-support-ucp-buyer-consent",
+      "source": "Shopify Developer Changelog",
+      "primary_category": "commerce_and_digital_products",
+      "priority_score": 75,
+      "hourly_adjusted_score": 75,
+      "stars_current": null,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-16T14:00:00+00:00",
+      "days_old": 5.64,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "f3cc35f9475b86c1",
+      "title": "Show HN: I built a Markdown and raw HTML blog platform scoring 99 on PageSpeed",
+      "url": "https://bloffy.co/en",
+      "source": "Hacker News",
+      "primary_category": "data_and_growth",
+      "priority_score": 70,
+      "hourly_adjusted_score": 72,
+      "stars_current": null,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-21T23:41:35+00:00",
+      "days_old": 0.24,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "dd89fbbb59577fc8",
+      "title": "Metaobject analytics queryable capability available in the Admin API",
+      "url": "https://shopify.dev/changelog/posts/metaobject-analytics-queryable-capability-available-in-the-admin-api",
+      "source": "Shopify Developer Changelog",
+      "primary_category": "data_and_growth",
+      "priority_score": 71,
+      "hourly_adjusted_score": 71,
+      "stars_current": null,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-20T20:40:00+00:00",
+      "days_old": 1.36,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    }
+  ],
+  "state_summary": {
+    "used_candidates_in_cooldown": 0,
+    "recently_attempted_candidates": 0,
+    "recent_draft_passes_today": 0
+  }
+}
