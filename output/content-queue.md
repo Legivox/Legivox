@@ -1,26 +1,53 @@
 # Legivox daily content plan
 
-Prepared: 2026-10-21 19:42:17 IST
+Prepared: 2026-10-22 06:40:15 IST
 
-> This scheduled post was generated from a recent RSS story and passed the local quality gate. The attached excerpt is not a full fact-check; verify the linked article before treating every implication as confirmed.
+> Topics are prioritised using recent public Hacker News discussion signals plus a rotation fallback. These signals are not proof of willingness to pay. Copy is selected from the reviewed draft library, not generated from research labels.
 
-## Post 1 · rss-9d139281b4ec
+## Post 1 · creator-feedback
 
 **Planned copy**
 
-Nvidia driver 621.01 unlocks Microsoft’s cloud‑based shader delivery, cutting launch times and stutter for DX12 games.
+A creator can get the same feature request in a DM, a comment, an email and a community thread. The hard part isn't collecting feedback. It's noticing what's being asked for repeatedly. How do you track that today?
 
-https://www.theverge.com/news/1015299/nvidia-driver-microsoft-advanced-shader-delivery-support
+- Topic: independent digital creators
+- Research query: feature requests
+- Recent discussion signal score: 6.72
 
-- Topic: Developer tools
-- Editorial score (model estimate): 7.0
+**Recent public discussion signals**
 
-**Source article**
+- [HN Feature Request: Option to hide repetitive AI complaints](https://news.ycombinator.com/item?id=50061936) · 1 points · 2 comments
 
-- [Nvidia’s latest GPU driver brings a new way to speed up PC games](https://www.theverge.com/news/1015299/nvidia-driver-microsoft-advanced-shader-delivery-support)
+- Status: planned
 
-- Status: published: https://x.com/i/status/2112909933431906563
+## Post 2 · freelancer-scope
 
-## Media policy
+**Planned copy**
 
-RSS/Groq news posts are text-only by default. No generic category image is attached because it could be unrelated to the source story.
+Scope creep rarely arrives as one dramatic request. It's a handful of tiny “while you're in there…” changes. Freelancers, how do you document assumptions and approve extra work without making every project feel bureaucratic?
+
+- Topic: freelance developers
+- Research query: freelancer scope creep
+- Recent discussion signal score: 0.0
+
+_No recent matching Hacker News signal was found; the topic was chosen by rotation._
+
+- Status: planned
+
+## Post 3 · seller-stock
+
+**Planned copy**
+
+A product can look profitable until marketplace fees, packaging, shipping and restocking time are counted. For small sellers, which number is easiest to lose track of: true margin, stock on hand, or reorder timing?
+
+- Topic: small online sellers
+- Research query: inventory margins
+- Recent discussion signal score: 0.0
+
+_No recent matching Hacker News signal was found; the topic was chosen by rotation._
+
+- Status: planned
+
+## Image policy
+
+The publisher searches Wikimedia Commons for matching CC0 or public-domain images. It records the file page and license metadata. If a suitable image cannot be verified, the post is published without one rather than using a random or unclear-license image.

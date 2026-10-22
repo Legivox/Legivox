@@ -1,6 +1,6 @@
 # Legivox engagement shortlist
 
-Generated: 2026-10-21 06:42:14 IST
+Generated: 2026-10-22 06:40:15 IST
 
 These are candidates to review manually. No likes, replies, reposts, or follows are automated by this workflow.
 
@@ -8,22 +8,22 @@ These are candidates to review manually. No likes, replies, reposts, or follows 
 
 Search: `feature requests`
 
-- [tiedtiger](https://x.com/tiedtiger/status/2112272459953270819): Hey @browsercompany your AI support bot won't submit ANY tickets or feature requests. It keeps ending chat sessions with this message https://t.co/aVJykmZVSl
-- [Kedeodev](https://x.com/Kedeodev/status/2112166886804988312): Your biggest SaaS customer requests a feature. But nobody else needs it. Are you building it?
-- [getfeedbackkit](https://x.com/getfeedbackkit/status/2111693837496131975): Users ask for a feature, then hear nothing. That silence is why they stop asking. With FeedbackKit, the board sits inside your app: users vote, and every request shows its status. When "Offline trail maps" moves to In Pr
+- [rincidium](https://x.com/rincidium/status/2113048611827442052): One of most delightfully useful things we added recently: api/mcp for agents to submit feedback. Agents have submitted: &gt; feature requests &gt; bug reports &gt; reviews on generations So nice! Inspired by @mynameisyah
+- [getfeedbackkit](https://x.com/getfeedbackkit/status/2113010435335340055): Where do your feature requests live? For most indie iOS developers the honest answer is everywhere: support inbox, App Store reviews, TestFlight feedback, social replies, and your head. Each is easy to remember. Together
+- [Secureintent_ai](https://x.com/Secureintent_ai/status/2112901284173160770): @Saas_addy B. Listen to what users ask for, but solve the problem behind the request. Great SaaS products don't just fulfill feature requests; they eliminate pain points.
 
 ## freelance developers
 
 Search: `freelancer scope creep`
 
+- [FatimaBuildsAI](https://x.com/FatimaBuildsAI/status/2112913673283142116): AI made scope creep cheaper for the client and more expensive for the freelancer. The fix isn’t better prompts. It’s making the original scope, the change request, and the new price visible before anyone starts working.
 - [SamVale29](https://x.com/SamVale29/status/2112242379000582436): Scope creep isn't a client problem. It's a missing sentence in the contract.
-- [MadebyIsaac](https://x.com/MadebyIsaac/status/2112209155423637653): scope creep fix from 6 years of client work: stick to the revisions in your contract. if a deliverable runs over, give one final round, then bill. disagree with a change? say so and explain why. you're the expert. client
-- [codeswithroh](https://x.com/codeswithroh/status/2111856889021800639): @mo_arfaj01 With a scope checker, the first users will likely be freelancers who already got burned by scope creep. Their old messy client threads make good test cases for tuning how the AI judges what counts as extra.
+- [jtkeepsmore](https://x.com/jtkeepsmore/status/2106883446526341337): @dkshbuilds Scope creep is the thing that quietly eats freelancer profit. Solid problem to build around. 400 in 15 days by just showing up is legit, consistency beats clever on here.
 
 ## small online sellers
 
 Search: `inventory margins`
 
-- [RealNickMugalli](https://x.com/RealNickMugalli/status/2112635113477415012): WTS: $NFLX doesn't need to be the growth story it was five years ago to be a great investment from here. It needs to keep growing revenue at double digits, keep expanding margins, turn ads into a real business and keep b
-- [newonpolsia](https://x.com/newonpolsia/status/2112616961440088261): Small shops shouldn’t have to babysit ads, inventory, and checkout just to protect their margins. I built MarginKite to monitor store operations around the clock, make owner-approved budget and merchandising changes, and
-- [MohS9983](https://x.com/MohS9983/status/2112616104199946741): AI EBOOKS on Amazon is honestly one of the BEST businesses you can start in 2026. - AI writes the books for you - Create multiple 100–200 page books in a few hours - Sell with near 100% margins -Instant delivery, zero in
+- [GarrettJones125](https://x.com/GarrettJones125/status/2113042514588356753): Don't just look at installation revenue. Consider your margins on HVAC installations, which can be razor-thin due to supply costs. Fixing units might offer huge margins. Always factor in inventory costs for a true financ
+- [Lioranpi](https://x.com/Lioranpi/status/2112973321318891962): Amazon isn't a growth strategy. It's a margin test. And a lot of brands are failing it. Before you list on Amazon, ask yourself three questions: 1. Can your margins survive it? At $15 per unit, FBA fees can eat ~30% of y
+- [newonpolsia](https://x.com/newonpolsia/status/2112966354433405048): Supplier changes shouldn't turn into empty shelves or eroding margins. I built Tallymoth to monitor supplier emails and price lists, update inventory, draft reorders, and flag margin impacts around the clock. Live soon.
