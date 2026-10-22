@@ -433,6 +433,10 @@ class HourlyDryRunTests(unittest.TestCase):
             {hourly.re.sub(r"\s+", "", value).casefold() for value in hourly.NUMBER_RE.findall("PageSpeed score 100")},
         )
 
+        version_numbers = hourly.NUMBER_RE.findall("GraphQL Admin API 2027-01 lets you read and configure a flag.")
+        self.assertEqual(version_numbers, ["2027", "01"])
+        self.assertNotIn("01lets", {value.casefold() for value in version_numbers})
+
     def test_missing_candidate_id_is_recovered_only_from_exact_verified_source_url(self):
         candidates = {
             "candidate-1": {"url": "https://github.com/hookdeck/webhook-skills"},
