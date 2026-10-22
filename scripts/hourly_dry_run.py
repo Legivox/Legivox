@@ -62,7 +62,10 @@ UNVERIFIABLE_MARKETING = (
     "game-changing", "game changing", "game changer", "most popular", "industry-leading",
     "industry leading", "the ultimate",
 )
-NUMBER_RE = re.compile(r"\b\d[\d,.]*(?:\s*(?:%|[a-zA-Z]{1,4}|x|k\+|\+))?\b", re.I)
+NUMBER_RE = re.compile(
+    r"\b\d[\d,.]*(?:\s*(?:%|kb|mb|gb|tb|bytes?|ms|milliseconds?|s|sec|seconds?|min|minutes?|hr|hours?|days?|x|k\+|\+))?\b",
+    re.I,
+)
 URL_RE = re.compile(r"https?://[^\s<>()]+", re.I)
 EDITORIAL_STARTERS = (
     "useful if", "useful when", "useful for", "useful to", "helpful if", "helpful when",
