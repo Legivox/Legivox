@@ -56,6 +56,20 @@
         "7502ffe393ce17ad"
       ],
       "published_to_x": false
+    },
+    {
+      "timestamp_utc": "2026-10-22T16:04:33+00:00",
+      "run_at_ist": "2026-10-22T21:34:33+05:30",
+      "status": "skip",
+      "reason": "Draft generation unavailable or invalid: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 195441, Requested 4930. Please try again in 2m40.272s. Need more tokens?",
+      "candidate_ids": [
+        "55c557b3bc0267ca",
+        "4427895d53914eac",
+        "1376885ee190dc1c",
+        "a66144096ab34333",
+        "7502ffe393ce17ad"
+      ],
+      "published_to_x": false
     }
   ],
   "attempted_candidates": {
@@ -647,26 +661,6 @@
         "stars": 31
       }
     ],
-    "1259607151": [
-      {
-        "at": "2026-10-22T05:25:10+00:00",
-        "stars": 9
-      },
-      {
-        "at": "2026-10-22T15:51:37+00:00",
-        "stars": 9
-      }
-    ],
-    "804879334": [
-      {
-        "at": "2026-10-22T05:25:10+00:00",
-        "stars": 48
-      },
-      {
-        "at": "2026-10-22T15:51:37+00:00",
-        "stars": 48
-      }
-    ],
     "340547520": [
       {
         "at": "2026-10-22T05:25:10+00:00",
@@ -675,26 +669,6 @@
       {
         "at": "2026-10-22T15:51:37+00:00",
         "stars": 92048
-      }
-    ],
-    "1164206183": [
-      {
-        "at": "2026-10-22T05:25:10+00:00",
-        "stars": 134
-      },
-      {
-        "at": "2026-10-22T15:51:37+00:00",
-        "stars": 134
-      }
-    ],
-    "1200987038": [
-      {
-        "at": "2026-10-22T05:25:10+00:00",
-        "stars": 23
-      },
-      {
-        "at": "2026-10-22T15:51:37+00:00",
-        "stars": 23
       }
     ],
     "1145719389": [
@@ -707,106 +681,6 @@
         "stars": 17
       }
     ],
-    "640488910": [
-      {
-        "at": "2026-10-22T05:25:10+00:00",
-        "stars": 6
-      },
-      {
-        "at": "2026-10-22T15:51:37+00:00",
-        "stars": 6
-      }
-    ],
-    "487447990": [
-      {
-        "at": "2026-10-22T05:25:10+00:00",
-        "stars": 6
-      },
-      {
-        "at": "2026-10-22T15:51:37+00:00",
-        "stars": 6
-      }
-    ],
-    "487433586": [
-      {
-        "at": "2026-10-22T05:25:10+00:00",
-        "stars": 6
-      },
-      {
-        "at": "2026-10-22T15:51:37+00:00",
-        "stars": 6
-      }
-    ],
-    "487427153": [
-      {
-        "at": "2026-10-22T05:25:10+00:00",
-        "stars": 6
-      },
-      {
-        "at": "2026-10-22T15:51:37+00:00",
-        "stars": 6
-      }
-    ],
-    "487418786": [
-      {
-        "at": "2026-10-22T05:25:10+00:00",
-        "stars": 6
-      },
-      {
-        "at": "2026-10-22T15:51:37+00:00",
-        "stars": 6
-      }
-    ],
-    "480115653": [
-      {
-        "at": "2026-10-22T05:25:10+00:00",
-        "stars": 6
-      },
-      {
-        "at": "2026-10-22T15:51:37+00:00",
-        "stars": 6
-      }
-    ],
-    "638216557": [
-      {
-        "at": "2026-10-22T05:25:10+00:00",
-        "stars": 7
-      },
-      {
-        "at": "2026-10-22T15:51:37+00:00",
-        "stars": 7
-      }
-    ],
-    "662615723": [
-      {
-        "at": "2026-10-22T05:25:10+00:00",
-        "stars": 19
-      },
-      {
-        "at": "2026-10-22T15:51:37+00:00",
-        "stars": 19
-      }
-    ],
-    "1170088054": [
-      {
-        "at": "2026-10-22T05:25:10+00:00",
-        "stars": 110
-      },
-      {
-        "at": "2026-10-22T15:51:37+00:00",
-        "stars": 110
-      }
-    ],
-    "1333994175": [
-      {
-        "at": "2026-10-22T05:25:10+00:00",
-        "stars": 7
-      },
-      {
-        "at": "2026-10-22T15:51:37+00:00",
-        "stars": 7
-      }
-    ],
     "1345988143": [
       {
         "at": "2026-10-22T05:25:10+00:00",
@@ -815,46 +689,6 @@
       {
         "at": "2026-10-22T15:51:37+00:00",
         "stars": 55
-      }
-    ],
-    "890026480": [
-      {
-        "at": "2026-10-22T05:25:10+00:00",
-        "stars": 95
-      },
-      {
-        "at": "2026-10-22T15:51:37+00:00",
-        "stars": 95
-      }
-    ],
-    "662614944": [
-      {
-        "at": "2026-10-22T05:25:10+00:00",
-        "stars": 8
-      },
-      {
-        "at": "2026-10-22T15:51:37+00:00",
-        "stars": 8
-      }
-    ],
-    "1428968185": [
-      {
-        "at": "2026-10-22T05:25:10+00:00",
-        "stars": 6
-      },
-      {
-        "at": "2026-10-22T15:51:37+00:00",
-        "stars": 11
-      }
-    ],
-    "1380848794": [
-      {
-        "at": "2026-10-22T05:25:10+00:00",
-        "stars": 11
-      },
-      {
-        "at": "2026-10-22T15:51:37+00:00",
-        "stars": 11
       }
     ],
     "1092687660": [
@@ -1516,859 +1350,220 @@
         "at": "2026-10-22T16:00:32+00:00",
         "stars": 14
       }
+    ],
+    "1292778431": [
+      {
+        "at": "2026-10-22T16:04:33+00:00",
+        "stars": 83
+      }
+    ],
+    "1131388506": [
+      {
+        "at": "2026-10-22T16:04:33+00:00",
+        "stars": 988
+      }
+    ],
+    "1241709623": [
+      {
+        "at": "2026-10-22T16:04:33+00:00",
+        "stars": 203
+      }
+    ],
+    "1346289291": [
+      {
+        "at": "2026-10-22T16:04:33+00:00",
+        "stars": 12
+      }
+    ],
+    "1300173275": [
+      {
+        "at": "2026-10-22T16:04:33+00:00",
+        "stars": 1285
+      }
+    ],
+    "1192708627": [
+      {
+        "at": "2026-10-22T16:04:33+00:00",
+        "stars": 195
+      }
+    ],
+    "1023873166": [
+      {
+        "at": "2026-10-22T16:04:33+00:00",
+        "stars": 84
+      }
+    ],
+    "1331261687": [
+      {
+        "at": "2026-10-22T16:04:33+00:00",
+        "stars": 5420
+      }
+    ],
+    "1353179361": [
+      {
+        "at": "2026-10-22T16:04:33+00:00",
+        "stars": 19
+      }
+    ],
+    "1380643020": [
+      {
+        "at": "2026-10-22T16:04:33+00:00",
+        "stars": 51
+      }
+    ],
+    "1224734286": [
+      {
+        "at": "2026-10-22T16:04:33+00:00",
+        "stars": 543
+      }
+    ],
+    "1136194462": [
+      {
+        "at": "2026-10-22T16:04:33+00:00",
+        "stars": 82
+      }
+    ],
+    "1028596386": [
+      {
+        "at": "2026-10-22T16:04:33+00:00",
+        "stars": 379
+      }
+    ],
+    "1144718857": [
+      {
+        "at": "2026-10-22T16:04:33+00:00",
+        "stars": 24
+      }
+    ],
+    "994983023": [
+      {
+        "at": "2026-10-22T16:04:33+00:00",
+        "stars": 1202
+      }
+    ],
+    "1278450589": [
+      {
+        "at": "2026-10-22T16:04:33+00:00",
+        "stars": 18
+      }
+    ],
+    "1362855385": [
+      {
+        "at": "2026-10-22T16:04:33+00:00",
+        "stars": 23
+      }
+    ],
+    "123909654": [
+      {
+        "at": "2026-10-22T16:04:33+00:00",
+        "stars": 4054
+      }
+    ],
+    "1317293607": [
+      {
+        "at": "2026-10-22T16:04:33+00:00",
+        "stars": 11
+      }
+    ],
+    "725205304": [
+      {
+        "at": "2026-10-22T16:04:33+00:00",
+        "stars": 78421
+      }
+    ],
+    "366434296": [
+      {
+        "at": "2026-10-22T16:04:33+00:00",
+        "stars": 234
+      }
+    ],
+    "138754790": [
+      {
+        "at": "2026-10-22T16:04:33+00:00",
+        "stars": 42388
+      }
+    ],
+    "1266023730": [
+      {
+        "at": "2026-10-22T16:04:33+00:00",
+        "stars": 12
+      }
+    ],
+    "1402780619": [
+      {
+        "at": "2026-10-22T16:04:33+00:00",
+        "stars": 62
+      }
+    ],
+    "1230070449": [
+      {
+        "at": "2026-10-22T16:04:33+00:00",
+        "stars": 26
+      }
+    ],
+    "1224077477": [
+      {
+        "at": "2026-10-22T16:04:33+00:00",
+        "stars": 104
+      }
+    ],
+    "4883113": [
+      {
+        "at": "2026-10-22T16:04:33+00:00",
+        "stars": 427
+      }
+    ],
+    "1419411728": [
+      {
+        "at": "2026-10-22T16:04:33+00:00",
+        "stars": 16
+      }
+    ],
+    "1150543784": [
+      {
+        "at": "2026-10-22T16:04:33+00:00",
+        "stars": 101
+      }
     ]
   },
   "repo_star_watchlist": {
-    "1278926400": {
-      "repo_id": "1278926400",
-      "full_name": "amplifthq/openmeld",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 1390,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "925617132": {
-      "repo_id": "925617132",
-      "full_name": "chattermate/chattermate.chat",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 148,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1247987146": {
-      "repo_id": "1247987146",
-      "full_name": "JasonColapietro/suede-creator-skills",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 125,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "900760746": {
-      "repo_id": "900760746",
-      "full_name": "rapiddweller/datamimic",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 116,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1403332662": {
-      "repo_id": "1403332662",
-      "full_name": "Nexilume-AI/nexus-cloud",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 59,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1247078110": {
-      "repo_id": "1247078110",
-      "full_name": "sixb-ai/sixb",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 120,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1254698689": {
-      "repo_id": "1254698689",
-      "full_name": "digitaldrywood/detent",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
-    },
-    "1170821064": {
-      "repo_id": "1170821064",
-      "full_name": "paperclipai/paperclip",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T15:51:37+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 106033,
-      "last_sample_at": "2026-10-22T15:51:37+00:00"
-    },
-    "1000945946": {
-      "repo_id": "1000945946",
-      "full_name": "caipe-io/ai-platform-engineering",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T15:51:37+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 428,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1164477708": {
-      "repo_id": "1164477708",
-      "full_name": "mksglu/context-mode",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 31791,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1194947244": {
-      "repo_id": "1194947244",
-      "full_name": "receptron/mulmoclaude",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 382,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1151604957": {
-      "repo_id": "1151604957",
-      "full_name": "RohanMuppa/brightspace-mcp-server",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 59,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1294960594": {
-      "repo_id": "1294960594",
-      "full_name": "bailinghub/bailinghub",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 122,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1075906855": {
-      "repo_id": "1075906855",
-      "full_name": "manishiitg/agentworks",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
-    },
-    "320094356": {
-      "repo_id": "320094356",
-      "full_name": "aglyn/aglyn",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 6,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1288325627": {
-      "repo_id": "1288325627",
-      "full_name": "trailhq/Trail-Code",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 10649,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "645381450": {
-      "repo_id": "645381450",
-      "full_name": "Anil-matcha/open-duet",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 5997,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1300886884": {
-      "repo_id": "1300886884",
-      "full_name": "bvdr/familywell",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 92,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
     "1271491651": {
       "repo_id": "1271491651",
       "full_name": "hproxy-com/free-proxy-list",
       "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
       "consecutive_refresh_failures": 0
-    },
-    "1342202970": {
-      "repo_id": "1342202970",
-      "full_name": "mrpulor-gh/nuphus",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 88,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1369663769": {
-      "repo_id": "1369663769",
-      "full_name": "nexscope-ai/ecommerce-ai-tools",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 127,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1226710383": {
-      "repo_id": "1226710383",
-      "full_name": "pioneerdotai/pioneer",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
-    },
-    "60246359": {
-      "repo_id": "60246359",
-      "full_name": "ClickHouse/ClickHouse",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T15:54:27+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 50540,
-      "last_sample_at": "2026-10-22T15:54:27+00:00"
-    },
-    "1145420469": {
-      "repo_id": "1145420469",
-      "full_name": "moltis-org/moltis",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 2908,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1209966933": {
-      "repo_id": "1209966933",
-      "full_name": "morluto/rea",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 363882,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1008713177": {
-      "repo_id": "1008713177",
-      "full_name": "QwenLM/qwen-code",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 28651,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1275001555": {
-      "repo_id": "1275001555",
-      "full_name": "moretea-labs/forge",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 13,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1122923227": {
-      "repo_id": "1122923227",
-      "full_name": "Nsomnia/chadvis-projectm-qt",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 5,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "402945349": {
-      "repo_id": "402945349",
-      "full_name": "StarRocks/starrocks",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 12198,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1266212515": {
-      "repo_id": "1266212515",
-      "full_name": "omnigent-ai/omnigent",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 10989,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1204318746": {
-      "repo_id": "1204318746",
-      "full_name": "Silbercue/public-browser",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 19,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1178044780": {
-      "repo_id": "1178044780",
-      "full_name": "AndreasHeine/i3x2ua",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 17,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1322671404": {
-      "repo_id": "1322671404",
-      "full_name": "autonomous-ai/openharness",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 1340,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "793379298": {
-      "repo_id": "793379298",
-      "full_name": "beclab/Olares",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 5313,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1246432220": {
-      "repo_id": "1246432220",
-      "full_name": "constructorfabric/insight",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 28,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1169025841": {
-      "repo_id": "1169025841",
-      "full_name": "kangraemin/claude-inspector",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 132,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1288895330": {
-      "repo_id": "1288895330",
-      "full_name": "margince/margince",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 25,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1185588330": {
-      "repo_id": "1185588330",
-      "full_name": "VeriWorkly/veriworkly",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 19,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "53548867": {
-      "repo_id": "53548867",
-      "full_name": "dbt-labs/dbt",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 14062,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1377463767": {
-      "repo_id": "1377463767",
-      "full_name": "Ekwo-ai/ekwo-os",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 39,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1415506468": {
-      "repo_id": "1415506468",
-      "full_name": "struklabs/harness-studio",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 12,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "688579575": {
-      "repo_id": "688579575",
-      "full_name": "superdurable/dex",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 129,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "215654064": {
-      "repo_id": "215654064",
-      "full_name": "temporalio/temporal",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 23918,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "894774948": {
-      "repo_id": "894774948",
-      "full_name": "zestysoft/sensus_analytics_integration",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 18,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1204488303": {
-      "repo_id": "1204488303",
-      "full_name": "zhitongblog/solomd",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 1345,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1303258850": {
-      "repo_id": "1303258850",
-      "full_name": "kirodotdev/KiroCrew",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 4545,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1201869706": {
-      "repo_id": "1201869706",
-      "full_name": "mikeprasad/aria-knowledge",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 17,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "262400823": {
-      "repo_id": "262400823",
-      "full_name": "w3bdesign/nextjs-woocommerce",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 610,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
     },
     "2179920": {
       "repo_id": "2179920",
       "full_name": "woocommerce/woocommerce",
       "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
       "consecutive_refresh_failures": 0,
       "last_refresh_at": "2026-10-22T15:54:27+00:00",
       "last_refresh_error": "",
       "last_known_stars": 10562,
       "last_sample_at": "2026-10-22T15:54:27+00:00"
     },
-    "751335779": {
-      "repo_id": "751335779",
-      "full_name": "zeasin/qihang-erp-open",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 313,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "99919302": {
-      "repo_id": "99919302",
-      "full_name": "apache/doris",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 16129,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1306217133": {
-      "repo_id": "1306217133",
-      "full_name": "Dicklesworthstone/franken_manim",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 26,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1079713761": {
-      "repo_id": "1079713761",
-      "full_name": "gosuda/portal-tunnel",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 288,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "608711730": {
-      "repo_id": "608711730",
-      "full_name": "joryirving/home-ops",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 228,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "211381955": {
-      "repo_id": "211381955",
-      "full_name": "leeoniya/uPlot",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 10574,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1367417840": {
-      "repo_id": "1367417840",
-      "full_name": "VanoPeradze/cutroom",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 24,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1286815260": {
-      "repo_id": "1286815260",
-      "full_name": "AyeJK/phase-runner",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 28,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1334001399": {
-      "repo_id": "1334001399",
-      "full_name": "HERRY423/BioNexus",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 31,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1259607151": {
-      "repo_id": "1259607151",
-      "full_name": "mackatwentytsuru/cc5-mcp-server",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 9,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "804879334": {
-      "repo_id": "804879334",
-      "full_name": "mclucy/lucy",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 48,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
     "340547520": {
       "repo_id": "340547520",
       "full_name": "zed-industries/zed",
       "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
       "consecutive_refresh_failures": 0
-    },
-    "1164206183": {
-      "repo_id": "1164206183",
-      "full_name": "Kangentic/kangentic",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 134,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1200987038": {
-      "repo_id": "1200987038",
-      "full_name": "kangraemin/claude-status-bar",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 23,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1145719389": {
-      "repo_id": "1145719389",
-      "full_name": "mwakidenis/fullstack-ecommerce-nextjs-shopify",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T15:51:37+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 17,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "640488910": {
-      "repo_id": "640488910",
-      "full_name": "rubocop-lts/rubocop-ruby1_8",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 6,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "487447990": {
-      "repo_id": "487447990",
-      "full_name": "rubocop-lts/rubocop-ruby2_2",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 6,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "487433586": {
-      "repo_id": "487433586",
-      "full_name": "rubocop-lts/rubocop-ruby2_3",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 6,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "487427153": {
-      "repo_id": "487427153",
-      "full_name": "rubocop-lts/rubocop-ruby2_4",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 6,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "487418786": {
-      "repo_id": "487418786",
-      "full_name": "rubocop-lts/rubocop-ruby2_7",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 6,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "480115653": {
-      "repo_id": "480115653",
-      "full_name": "rubocop-lts/rubocop-ruby3_1",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 6,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "638216557": {
-      "repo_id": "638216557",
-      "full_name": "rubocop-lts/rubocop-ruby3_2",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 7,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "662615723": {
-      "repo_id": "662615723",
-      "full_name": "vasilistotskas/grooveshop-storefront-ui-node-nuxt",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 19,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1170088054": {
-      "repo_id": "1170088054",
-      "full_name": "PackingProof/PackingProof-Desktop",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 110,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1333994175": {
-      "repo_id": "1333994175",
-      "full_name": "PraveenKumar7545/minnal-mart-ecommerce",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 7,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
     },
     "1345988143": {
       "repo_id": "1345988143",
       "full_name": "R0650N/spirit-flux-refiner",
       "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
       "consecutive_refresh_failures": 0
-    },
-    "890026480": {
-      "repo_id": "890026480",
-      "full_name": "SunkenInTime/icarus",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 95,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "662614944": {
-      "repo_id": "662614944",
-      "full_name": "vasilistotskas/grooveshop-django-api",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 8,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1428968185": {
-      "repo_id": "1428968185",
-      "full_name": "thuutien/rufix",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 11,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1380848794": {
-      "repo_id": "1380848794",
-      "full_name": "juju-w/card-creator-skill",
-      "first_seen_at": "2026-10-22T05:25:10+00:00",
-      "last_seen_at": "2026-10-22T05:25:10+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 11,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
     },
     "1092687660": {
       "repo_id": "1092687660",
       "full_name": "marcusquinn/aidevops",
       "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
       "consecutive_refresh_failures": 0,
       "last_refresh_at": "2026-10-22T16:00:32+00:00",
       "last_refresh_error": "",
@@ -2379,370 +1574,499 @@
       "repo_id": "1223939135",
       "full_name": "melgarafael/DeskcommCRM",
       "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
       "consecutive_refresh_failures": 0,
       "last_refresh_at": "2026-10-22T15:54:27+00:00",
       "last_refresh_error": "",
       "last_known_stars": 4794,
       "last_sample_at": "2026-10-22T15:54:27+00:00"
     },
-    "193215554": {
-      "repo_id": "193215554",
-      "full_name": "n8n-io/n8n",
-      "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
-    },
-    "1108746140": {
-      "repo_id": "1108746140",
-      "full_name": "shogo-labs/shogo-ai",
-      "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
-    },
-    "1374928133": {
-      "repo_id": "1374928133",
-      "full_name": "devswha/ovis",
-      "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T15:51:37+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 1350,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
     "1319826567": {
       "repo_id": "1319826567",
       "full_name": "HorizunGroup/horizun-revit-mcp",
       "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
       "consecutive_refresh_failures": 0,
       "last_refresh_at": "2026-10-22T16:00:32+00:00",
       "last_refresh_error": "",
       "last_known_stars": 56,
       "last_sample_at": "2026-10-22T16:00:32+00:00"
     },
-    "1240554500": {
-      "repo_id": "1240554500",
-      "full_name": "KCNyu/clawock",
-      "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T15:51:37+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 21,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
     "1150677698": {
       "repo_id": "1150677698",
       "full_name": "joshuaswarren/remnic",
       "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T15:54:27+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
       "consecutive_refresh_failures": 0,
       "last_refresh_at": "2026-10-22T16:00:32+00:00",
       "last_refresh_error": "",
       "last_known_stars": 228,
       "last_sample_at": "2026-10-22T16:00:32+00:00"
     },
-    "1288302351": {
-      "repo_id": "1288302351",
-      "full_name": "Latand/delegatus",
-      "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T15:51:37+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 33,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "979560403": {
-      "repo_id": "979560403",
-      "full_name": "superplanehq/superplane",
-      "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
-    },
     "1170490388": {
       "repo_id": "1170490388",
       "full_name": "kirill-markin/flashcards-open-source-app",
       "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
       "consecutive_refresh_failures": 0,
       "last_refresh_at": "2026-10-22T16:00:32+00:00",
       "last_refresh_error": "",
       "last_known_stars": 99,
       "last_sample_at": "2026-10-22T16:00:32+00:00"
     },
-    "1242818307": {
-      "repo_id": "1242818307",
-      "full_name": "narmod/pokerth-web-client",
-      "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T15:51:37+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 15,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1190598050": {
-      "repo_id": "1190598050",
-      "full_name": "ulsklyc/yuvomi",
-      "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T15:51:37+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 1732,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "572570113": {
-      "repo_id": "572570113",
-      "full_name": "triggerdotdev/trigger.dev",
-      "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T15:54:27+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 16600,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1217295818": {
-      "repo_id": "1217295818",
-      "full_name": "Weavestream/Weavestream",
-      "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T15:51:37+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 28,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "672419907": {
-      "repo_id": "672419907",
-      "full_name": "flowexec/flow",
-      "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T15:51:37+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 138,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "957245447": {
-      "repo_id": "957245447",
-      "full_name": "getsentry/toolkit",
-      "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T15:54:27+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 938,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1247800163": {
-      "repo_id": "1247800163",
-      "full_name": "lidless-labs/proxmox-mcp",
-      "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T15:51:37+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 11,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1188102078": {
-      "repo_id": "1188102078",
-      "full_name": "OpenDrone-hw/OpenDrone-Web",
-      "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T15:51:37+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 17,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1004056914": {
-      "repo_id": "1004056914",
-      "full_name": "smart-mcp-proxy/mcpproxy-go",
-      "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T15:54:27+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 398,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "951643407": {
-      "repo_id": "951643407",
-      "full_name": "safedep/pmg",
-      "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T15:51:37+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 553,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "225463": {
-      "repo_id": "225463",
-      "full_name": "Shopify/shopify-api-ruby",
-      "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T15:51:37+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 1110,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1181171430": {
-      "repo_id": "1181171430",
-      "full_name": "Vigil-SOC/vigil",
-      "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T15:51:37+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 396,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "997890921": {
-      "repo_id": "997890921",
-      "full_name": "czlonkowski/n8n-mcp",
-      "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T15:54:27+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 23119,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
     "2884111": {
       "repo_id": "2884111",
       "full_name": "magento/magento2",
       "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
       "consecutive_refresh_failures": 0,
       "last_refresh_at": "2026-10-22T15:54:27+00:00",
       "last_refresh_error": "",
       "last_known_stars": 12210,
       "last_sample_at": "2026-10-22T15:54:27+00:00"
     },
-    "649886864": {
-      "repo_id": "649886864",
-      "full_name": "openedx/openedx-wordpress-ecommerce",
-      "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T15:51:37+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 24,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "948525101": {
-      "repo_id": "948525101",
-      "full_name": "shopnex-ai/shopnex",
-      "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T15:51:37+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 360,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "2717549": {
-      "repo_id": "2717549",
-      "full_name": "Sylius/Sylius",
-      "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T15:51:37+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 8560,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1324236828": {
-      "repo_id": "1324236828",
-      "full_name": "Agent-Field/CodeAF",
-      "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T15:51:37+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 511,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1231334462": {
-      "repo_id": "1231334462",
-      "full_name": "akhayam99/goodboy",
-      "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
-    },
-    "1283350591": {
-      "repo_id": "1283350591",
-      "full_name": "bakiraa/qyvaria-hardlogic-kernel-engine",
-      "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T15:51:37+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 124,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1145216439": {
-      "repo_id": "1145216439",
-      "full_name": "cloudflare/mcp",
-      "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T15:54:27+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 979,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1256708592": {
-      "repo_id": "1256708592",
-      "full_name": "Cotal-AI/Cotal",
-      "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T15:51:37+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 336,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1143182323": {
-      "repo_id": "1143182323",
-      "full_name": "leadita/tech-stack-datasets",
-      "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T15:51:37+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 83,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
     "257411775": {
       "repo_id": "257411775",
       "full_name": "ltoinel/amw",
       "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
       "consecutive_refresh_failures": 0,
       "last_refresh_at": "2026-10-22T15:54:27+00:00",
       "last_refresh_error": "",
       "last_known_stars": 29,
       "last_sample_at": "2026-10-22T15:54:27+00:00"
     },
-    "1323173054": {
-      "repo_id": "1323173054",
-      "full_name": "dbos-inc/dbos-transact-rust",
+    "494830737": {
+      "repo_id": "494830737",
+      "full_name": "stufro/chordly",
       "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1200776523": {
+      "repo_id": "1200776523",
+      "full_name": "jrlasak/awesome-databricks",
+      "first_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1281427291": {
+      "repo_id": "1281427291",
+      "full_name": "Qomicex-Public/Qomicex.Tauri",
+      "first_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1106113358": {
+      "repo_id": "1106113358",
+      "full_name": "ConcordDev/concord-cognitive-engine",
+      "first_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "234739976": {
+      "repo_id": "234739976",
+      "full_name": "medusajs/medusa",
+      "first_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
       "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
+      "last_refresh_at": "2026-10-22T15:54:27+00:00",
       "last_refresh_error": "",
-      "last_known_stars": 42,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
+      "last_known_stars": 36854,
+      "last_sample_at": "2026-10-22T15:54:27+00:00"
+    },
+    "508879226": {
+      "repo_id": "508879226",
+      "full_name": "t1stm/ThirtyDollarTools",
+      "first_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "50306239": {
+      "repo_id": "50306239",
+      "full_name": "domino14/word_db_server",
+      "first_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1259968442": {
+      "repo_id": "1259968442",
+      "full_name": "GT-610/AviQtl-Plus",
+      "first_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "235901813": {
+      "repo_id": "235901813",
+      "full_name": "PostHog/posthog",
+      "first_seen_at": "2026-10-22T16:00:32+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "790821454": {
+      "repo_id": "790821454",
+      "full_name": "mercurjs/mercur",
+      "first_seen_at": "2026-10-22T16:00:32+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "131995661": {
+      "repo_id": "131995661",
+      "full_name": "shopware/shopware",
+      "first_seen_at": "2026-10-22T16:00:32+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "749075394": {
+      "repo_id": "749075394",
+      "full_name": "madesroches/micromegas",
+      "first_seen_at": "2026-10-22T16:00:32+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "24542427": {
+      "repo_id": "24542427",
+      "full_name": "aimeos/aimeos-typo3",
+      "first_seen_at": "2026-10-22T16:00:32+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "15111821": {
+      "repo_id": "15111821",
+      "full_name": "grafana/grafana",
+      "first_seen_at": "2026-10-22T16:00:32+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1118652326": {
+      "repo_id": "1118652326",
+      "full_name": "stateset/stateset-icommerce",
+      "first_seen_at": "2026-10-22T16:00:32+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "707764474": {
+      "repo_id": "707764474",
+      "full_name": "tphakala/birdnet-go",
+      "first_seen_at": "2026-10-22T16:00:32+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1152413600": {
+      "repo_id": "1152413600",
+      "full_name": "ai-sdlc-framework/ai-sdlc",
+      "first_seen_at": "2026-10-22T16:00:32+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1037580209": {
+      "repo_id": "1037580209",
+      "full_name": "zapplyjobs/New-Grad-Data-Science-Jobs-2027",
+      "first_seen_at": "2026-10-22T16:00:32+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1292778431": {
+      "repo_id": "1292778431",
+      "full_name": "trahloff/Aldine",
+      "first_seen_at": "2026-10-22T16:04:33+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1131388506": {
+      "repo_id": "1131388506",
+      "full_name": "kdlbs/kandev",
+      "first_seen_at": "2026-10-22T16:04:33+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1241709623": {
+      "repo_id": "1241709623",
+      "full_name": "modimihir07/agentic-os",
+      "first_seen_at": "2026-10-22T16:04:33+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1346289291": {
+      "repo_id": "1346289291",
+      "full_name": "noclickapp/noclick",
+      "first_seen_at": "2026-10-22T16:04:33+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1300173275": {
+      "repo_id": "1300173275",
+      "full_name": "vshulcz/deja-vu",
+      "first_seen_at": "2026-10-22T16:04:33+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1192708627": {
+      "repo_id": "1192708627",
+      "full_name": "PerpetualSoftware/pad",
+      "first_seen_at": "2026-10-22T16:04:33+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1023873166": {
+      "repo_id": "1023873166",
+      "full_name": "HasteHealth/HasteHealth",
+      "first_seen_at": "2026-10-22T16:04:33+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1331261687": {
+      "repo_id": "1331261687",
+      "full_name": "milind-soni/OpenMausBot",
+      "first_seen_at": "2026-10-22T16:04:33+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1353179361": {
+      "repo_id": "1353179361",
+      "full_name": "flop-labs/tclk",
+      "first_seen_at": "2026-10-22T16:04:33+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1380643020": {
+      "repo_id": "1380643020",
+      "full_name": "BartolomeoRusso9/altkeeper",
+      "first_seen_at": "2026-10-22T16:04:33+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1224734286": {
+      "repo_id": "1224734286",
+      "full_name": "Ikalus1988/MisakaNet",
+      "first_seen_at": "2026-10-22T16:04:33+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1136194462": {
+      "repo_id": "1136194462",
+      "full_name": "embedded-society/altium-designer-mcp",
+      "first_seen_at": "2026-10-22T16:04:33+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1028596386": {
+      "repo_id": "1028596386",
+      "full_name": "openflocon/Flocon",
+      "first_seen_at": "2026-10-22T16:04:33+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1144718857": {
+      "repo_id": "1144718857",
+      "full_name": "TokenBrice/pharos-watch",
+      "first_seen_at": "2026-10-22T16:04:33+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "994983023": {
+      "repo_id": "994983023",
+      "full_name": "0xfurai/peekaping",
+      "first_seen_at": "2026-10-22T16:04:33+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1278450589": {
+      "repo_id": "1278450589",
+      "full_name": "agentic-hil/agentic-hil",
+      "first_seen_at": "2026-10-22T16:04:33+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1362855385": {
+      "repo_id": "1362855385",
+      "full_name": "doeixd/foldkit-plus",
+      "first_seen_at": "2026-10-22T16:04:33+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "123909654": {
+      "repo_id": "123909654",
+      "full_name": "rotki/rotki",
+      "first_seen_at": "2026-10-22T16:04:33+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1317293607": {
+      "repo_id": "1317293607",
+      "full_name": "shadok-ai/shadok-ai",
+      "first_seen_at": "2026-10-22T16:04:33+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "725205304": {
+      "repo_id": "725205304",
+      "full_name": "unslothai/unsloth",
+      "first_seen_at": "2026-10-22T16:04:33+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "366434296": {
+      "repo_id": "366434296",
+      "full_name": "bjlittle/geovista",
+      "first_seen_at": "2026-10-22T16:04:33+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "138754790": {
+      "repo_id": "138754790",
+      "full_name": "duckdb/duckdb",
+      "first_seen_at": "2026-10-22T16:04:33+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1266023730": {
+      "repo_id": "1266023730",
+      "full_name": "qiu-yuxiao/clash-mini",
+      "first_seen_at": "2026-10-22T16:04:33+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1402780619": {
+      "repo_id": "1402780619",
+      "full_name": "Renaissance-Mind/ShowAI",
+      "first_seen_at": "2026-10-22T16:04:33+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1230070449": {
+      "repo_id": "1230070449",
+      "full_name": "threadnote/threadnote",
+      "first_seen_at": "2026-10-22T16:04:33+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1224077477": {
+      "repo_id": "1224077477",
+      "full_name": "coval-ai/benchmarks",
+      "first_seen_at": "2026-10-22T16:04:33+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "4883113": {
+      "repo_id": "4883113",
+      "full_name": "zencart/zencart",
+      "first_seen_at": "2026-10-22T16:04:33+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1419411728": {
+      "repo_id": "1419411728",
+      "full_name": "OriEra-engine/engine",
+      "first_seen_at": "2026-10-22T16:04:33+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1150543784": {
+      "repo_id": "1150543784",
+      "full_name": "PaulRBerg/agent-skills",
+      "first_seen_at": "2026-10-22T16:04:33+00:00",
+      "last_seen_at": "2026-10-22T16:04:33+00:00",
+      "consecutive_refresh_failures": 0
+    },
+    "1254698689": {
+      "repo_id": "1254698689",
+      "full_name": "digitaldrywood/detent",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T16:00:32+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 16,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1170821064": {
+      "repo_id": "1170821064",
+      "full_name": "paperclipai/paperclip",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T16:00:32+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 106033,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1075906855": {
+      "repo_id": "1075906855",
+      "full_name": "manishiitg/agentworks",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T16:00:32+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 16,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1226710383": {
+      "repo_id": "1226710383",
+      "full_name": "pioneerdotai/pioneer",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T16:00:32+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 22,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "60246359": {
+      "repo_id": "60246359",
+      "full_name": "ClickHouse/ClickHouse",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T16:00:32+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 50540,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "193215554": {
+      "repo_id": "193215554",
+      "full_name": "n8n-io/n8n",
+      "first_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T16:00:32+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 208332,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1108746140": {
+      "repo_id": "1108746140",
+      "full_name": "shogo-labs/shogo-ai",
+      "first_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T16:00:32+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 17,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "979560403": {
+      "repo_id": "979560403",
+      "full_name": "superplanehq/superplane",
+      "first_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T16:00:32+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 8147,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1231334462": {
+      "repo_id": "1231334462",
+      "full_name": "akhayam99/goodboy",
+      "first_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T16:00:32+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 117,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
     },
     "31054058": {
       "repo_id": "31054058",
@@ -2750,83 +2074,10 @@
       "first_seen_at": "2026-10-22T15:51:37+00:00",
       "last_seen_at": "2026-10-22T16:00:32+00:00",
       "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T15:54:27+00:00",
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
       "last_refresh_error": "",
       "last_known_stars": 366,
-      "last_sample_at": "2026-10-22T15:54:27+00:00"
-    },
-    "856623001": {
-      "repo_id": "856623001",
-      "full_name": "pipulate/pipulate",
-      "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T15:54:27+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 14,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1286516597": {
-      "repo_id": "1286516597",
-      "full_name": "plhery/peek-delivery-tracker",
-      "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T15:51:37+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 13,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1411890737": {
-      "repo_id": "1411890737",
-      "full_name": "abacusai/simless",
-      "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T15:51:37+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 26,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1418472569": {
-      "repo_id": "1418472569",
-      "full_name": "getumbrel/murmur",
-      "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T15:51:37+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 39,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1038282631": {
-      "repo_id": "1038282631",
-      "full_name": "Shopify/checkout-kit",
-      "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T15:51:37+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 7,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "538665344": {
-      "repo_id": "538665344",
-      "full_name": "Shopify/hydrogen",
-      "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T15:51:37+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 2154,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "494830737": {
-      "repo_id": "494830737",
-      "full_name": "stufro/chordly",
-      "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
     },
     "1382945960": {
       "repo_id": "1382945960",
@@ -2834,10 +2085,450 @@
       "first_seen_at": "2026-10-22T15:51:37+00:00",
       "last_seen_at": "2026-10-22T16:00:32+00:00",
       "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T15:54:27+00:00",
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
       "last_refresh_error": "",
       "last_known_stars": 10,
-      "last_sample_at": "2026-10-22T15:54:27+00:00"
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "411912097": {
+      "repo_id": "411912097",
+      "full_name": "bytechefhq/bytechef",
+      "first_seen_at": "2026-10-22T15:54:27+00:00",
+      "last_seen_at": "2026-10-22T16:00:32+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 1043,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1196352488": {
+      "repo_id": "1196352488",
+      "full_name": "Observal/Observal",
+      "first_seen_at": "2026-10-22T16:00:32+00:00",
+      "last_seen_at": "2026-10-22T16:00:32+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 4548,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1334641482": {
+      "repo_id": "1334641482",
+      "full_name": "sarrazola/openlivery",
+      "first_seen_at": "2026-10-22T16:00:32+00:00",
+      "last_seen_at": "2026-10-22T16:00:32+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 71,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "985595150": {
+      "repo_id": "985595150",
+      "full_name": "MDalamin5/End-to-End-Agentic-Ai-Automation-Lab",
+      "first_seen_at": "2026-10-22T16:00:32+00:00",
+      "last_seen_at": "2026-10-22T16:00:32+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 103,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1118438465": {
+      "repo_id": "1118438465",
+      "full_name": "travisjneuman/.claude",
+      "first_seen_at": "2026-10-22T16:00:32+00:00",
+      "last_seen_at": "2026-10-22T16:00:32+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 105,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1195367387": {
+      "repo_id": "1195367387",
+      "full_name": "snapotter-hq/SnapOtter",
+      "first_seen_at": "2026-10-22T16:00:32+00:00",
+      "last_seen_at": "2026-10-22T16:00:32+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 2834,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "642497346": {
+      "repo_id": "642497346",
+      "full_name": "langfuse/langfuse",
+      "first_seen_at": "2026-10-22T16:00:32+00:00",
+      "last_seen_at": "2026-10-22T16:00:32+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 36194,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1336521207": {
+      "repo_id": "1336521207",
+      "full_name": "PerryLink/dsh-test-drive",
+      "first_seen_at": "2026-10-22T16:00:32+00:00",
+      "last_seen_at": "2026-10-22T16:00:32+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 13,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "932825524": {
+      "repo_id": "932825524",
+      "full_name": "rcourtman/Pulse",
+      "first_seen_at": "2026-10-22T16:00:32+00:00",
+      "last_seen_at": "2026-10-22T16:00:32+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 6915,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1420261569": {
+      "repo_id": "1420261569",
+      "full_name": "ShadowSwaps/REA-Reconstruction-Companion",
+      "first_seen_at": "2026-10-22T16:00:32+00:00",
+      "last_seen_at": "2026-10-22T16:00:32+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 107,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1125663750": {
+      "repo_id": "1125663750",
+      "full_name": "yonatangross/orchestkit",
+      "first_seen_at": "2026-10-22T16:00:32+00:00",
+      "last_seen_at": "2026-10-22T16:00:32+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 298,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1326507166": {
+      "repo_id": "1326507166",
+      "full_name": "powerfooI/roamgate",
+      "first_seen_at": "2026-10-22T16:00:32+00:00",
+      "last_seen_at": "2026-10-22T16:00:32+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 315,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "365373172": {
+      "repo_id": "365373172",
+      "full_name": "growthbook/growthbook",
+      "first_seen_at": "2026-10-22T16:00:32+00:00",
+      "last_seen_at": "2026-10-22T16:00:32+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 8525,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1153178500": {
+      "repo_id": "1153178500",
+      "full_name": "jgravelle/jcodemunch-mcp",
+      "first_seen_at": "2026-10-22T16:00:32+00:00",
+      "last_seen_at": "2026-10-22T16:00:32+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 2796,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "862578138": {
+      "repo_id": "862578138",
+      "full_name": "modelcontextprotocol/typescript-sdk",
+      "first_seen_at": "2026-10-22T16:00:32+00:00",
+      "last_seen_at": "2026-10-22T16:00:32+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 13640,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "391740664": {
+      "repo_id": "391740664",
+      "full_name": "open-metadata/OpenMetadata",
+      "first_seen_at": "2026-10-22T16:00:32+00:00",
+      "last_seen_at": "2026-10-22T16:00:32+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 15548,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1238165856": {
+      "repo_id": "1238165856",
+      "full_name": "escoffier-labs/brigade",
+      "first_seen_at": "2026-10-22T16:00:32+00:00",
+      "last_seen_at": "2026-10-22T16:00:32+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 80,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1247431380": {
+      "repo_id": "1247431380",
+      "full_name": "linny006/trending-claude-skills",
+      "first_seen_at": "2026-10-22T16:00:32+00:00",
+      "last_seen_at": "2026-10-22T16:00:32+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 132,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1298830469": {
+      "repo_id": "1298830469",
+      "full_name": "LoveMaker-art/noras-tavern",
+      "first_seen_at": "2026-10-22T16:00:32+00:00",
+      "last_seen_at": "2026-10-22T16:00:32+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 43,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "973695856": {
+      "repo_id": "973695856",
+      "full_name": "Sriram-PR/doc-scraper",
+      "first_seen_at": "2026-10-22T16:00:32+00:00",
+      "last_seen_at": "2026-10-22T16:00:32+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 107,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1277822711": {
+      "repo_id": "1277822711",
+      "full_name": "getsotto/sotto",
+      "first_seen_at": "2026-10-22T16:00:32+00:00",
+      "last_seen_at": "2026-10-22T16:00:32+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 24,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1247931386": {
+      "repo_id": "1247931386",
+      "full_name": "linny006/awesome-agent-skills",
+      "first_seen_at": "2026-10-22T16:00:32+00:00",
+      "last_seen_at": "2026-10-22T16:00:32+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 42,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1261757553": {
+      "repo_id": "1261757553",
+      "full_name": "artabramov/hidden",
+      "first_seen_at": "2026-10-22T16:00:32+00:00",
+      "last_seen_at": "2026-10-22T16:00:32+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 28,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1162021647": {
+      "repo_id": "1162021647",
+      "full_name": "kenn-io/agentsview",
+      "first_seen_at": "2026-10-22T16:00:32+00:00",
+      "last_seen_at": "2026-10-22T16:00:32+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 6232,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1232012824": {
+      "repo_id": "1232012824",
+      "full_name": "narumiruna/pi-extensions",
+      "first_seen_at": "2026-10-22T16:00:32+00:00",
+      "last_seen_at": "2026-10-22T16:00:32+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 727,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "787076358": {
+      "repo_id": "787076358",
+      "full_name": "firecrawl/firecrawl",
+      "first_seen_at": "2026-10-22T16:00:32+00:00",
+      "last_seen_at": "2026-10-22T16:00:32+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 194170,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "351106737": {
+      "repo_id": "351106737",
+      "full_name": "l2beat/l2beat",
+      "first_seen_at": "2026-10-22T16:00:32+00:00",
+      "last_seen_at": "2026-10-22T16:00:32+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 658,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1247447904": {
+      "repo_id": "1247447904",
+      "full_name": "linny006/mcp-servers-live",
+      "first_seen_at": "2026-10-22T16:00:32+00:00",
+      "last_seen_at": "2026-10-22T16:00:32+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 13,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1182227663": {
+      "repo_id": "1182227663",
+      "full_name": "Siddhant-K-code/agent-trace",
+      "first_seen_at": "2026-10-22T16:00:32+00:00",
+      "last_seen_at": "2026-10-22T16:00:32+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 96,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1080619286": {
+      "repo_id": "1080619286",
+      "full_name": "oriolrius/pki-manager-web",
+      "first_seen_at": "2026-10-22T16:00:32+00:00",
+      "last_seen_at": "2026-10-22T16:00:32+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 23,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1365236132": {
+      "repo_id": "1365236132",
+      "full_name": "nateships/rolle",
+      "first_seen_at": "2026-10-22T16:00:32+00:00",
+      "last_seen_at": "2026-10-22T16:00:32+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 26,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1178627789": {
+      "repo_id": "1178627789",
+      "full_name": "prosperity-solutions/veld",
+      "first_seen_at": "2026-10-22T16:00:32+00:00",
+      "last_seen_at": "2026-10-22T16:00:32+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 12,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1105733075": {
+      "repo_id": "1105733075",
+      "full_name": "daintreehq/daintree",
+      "first_seen_at": "2026-10-22T16:00:32+00:00",
+      "last_seen_at": "2026-10-22T16:00:32+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 77,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1247459679": {
+      "repo_id": "1247459679",
+      "full_name": "linny006/llm-agents-radar",
+      "first_seen_at": "2026-10-22T16:00:32+00:00",
+      "last_seen_at": "2026-10-22T16:00:32+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 14,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "572570113": {
+      "repo_id": "572570113",
+      "full_name": "triggerdotdev/trigger.dev",
+      "first_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T15:54:27+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 16600,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "957245447": {
+      "repo_id": "957245447",
+      "full_name": "getsentry/toolkit",
+      "first_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T15:54:27+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 938,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1004056914": {
+      "repo_id": "1004056914",
+      "full_name": "smart-mcp-proxy/mcpproxy-go",
+      "first_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T15:54:27+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 398,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "997890921": {
+      "repo_id": "997890921",
+      "full_name": "czlonkowski/n8n-mcp",
+      "first_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T15:54:27+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 23119,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1145216439": {
+      "repo_id": "1145216439",
+      "full_name": "cloudflare/mcp",
+      "first_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T15:54:27+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 979,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "856623001": {
+      "repo_id": "856623001",
+      "full_name": "pipulate/pipulate",
+      "first_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T15:54:27+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 14,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
     },
     "1235299366": {
       "repo_id": "1235299366",
@@ -2845,54 +2536,10 @@
       "first_seen_at": "2026-10-22T15:51:37+00:00",
       "last_seen_at": "2026-10-22T15:54:27+00:00",
       "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
       "last_refresh_error": "",
       "last_known_stars": 13,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "252225686": {
-      "repo_id": "252225686",
-      "full_name": "gp247net/s-cart",
-      "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T15:51:37+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 737,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "771302083": {
-      "repo_id": "771302083",
-      "full_name": "OpenHands/OpenHands",
-      "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T15:51:37+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 91571,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "750014418": {
-      "repo_id": "750014418",
-      "full_name": "Shopify/product-taxonomy",
-      "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T15:51:37+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 374,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1213948861": {
-      "repo_id": "1213948861",
-      "full_name": "atoma-run/atoma",
-      "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T15:51:37+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 20,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
     },
     "143224978": {
       "repo_id": "143224978",
@@ -2900,147 +2547,10 @@
       "first_seen_at": "2026-10-22T15:51:37+00:00",
       "last_seen_at": "2026-10-22T15:54:27+00:00",
       "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
       "last_refresh_error": "",
       "last_known_stars": 507,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1403579184": {
-      "repo_id": "1403579184",
-      "full_name": "djordje-st/play-polaris",
-      "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T15:51:37+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 6,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1200776523": {
-      "repo_id": "1200776523",
-      "full_name": "jrlasak/awesome-databricks",
-      "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
-    },
-    "1281427291": {
-      "repo_id": "1281427291",
-      "full_name": "Qomicex-Public/Qomicex.Tauri",
-      "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
-    },
-    "1106113358": {
-      "repo_id": "1106113358",
-      "full_name": "ConcordDev/concord-cognitive-engine",
-      "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
-    },
-    "1292893151": {
-      "repo_id": "1292893151",
-      "full_name": "lichdotdev/lich",
-      "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T15:51:37+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 44,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "234739976": {
-      "repo_id": "234739976",
-      "full_name": "medusajs/medusa",
-      "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T15:54:27+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 36854,
-      "last_sample_at": "2026-10-22T15:54:27+00:00"
-    },
-    "124910572": {
-      "repo_id": "124910572",
-      "full_name": "mozilla/bugbug",
-      "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T15:51:37+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 576,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "488641606": {
-      "repo_id": "488641606",
-      "full_name": "agno-agi/agno",
-      "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T15:51:37+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 42864,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1314720416": {
-      "repo_id": "1314720416",
-      "full_name": "gnibu/tokens-on-track",
-      "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T15:51:37+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 19,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "508879226": {
-      "repo_id": "508879226",
-      "full_name": "t1stm/ThirtyDollarTools",
-      "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
-    },
-    "1170975222": {
-      "repo_id": "1170975222",
-      "full_name": "AgentEnsemble/agentensemble",
-      "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T15:51:37+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 11,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "1170990956": {
-      "repo_id": "1170990956",
-      "full_name": "mwakidenis/gmart-supermarket",
-      "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T15:51:37+00:00",
-      "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
-      "last_refresh_error": "",
-      "last_known_stars": 61,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
-    },
-    "50306239": {
-      "repo_id": "50306239",
-      "full_name": "domino14/word_db_server",
-      "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
-    },
-    "1259968442": {
-      "repo_id": "1259968442",
-      "full_name": "GT-610/AviQtl-Plus",
-      "first_seen_at": "2026-10-22T15:51:37+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
-    },
-    "411912097": {
-      "repo_id": "411912097",
-      "full_name": "bytechefhq/bytechef",
-      "first_seen_at": "2026-10-22T15:54:27+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
     },
     "1309285224": {
       "repo_id": "1309285224",
@@ -3048,321 +2558,988 @@
       "first_seen_at": "2026-10-22T15:54:27+00:00",
       "last_seen_at": "2026-10-22T15:54:27+00:00",
       "consecutive_refresh_failures": 0,
-      "last_refresh_at": "2026-10-22T16:00:32+00:00",
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
       "last_refresh_error": "",
       "last_known_stars": 15,
-      "last_sample_at": "2026-10-22T16:00:32+00:00"
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
     },
-    "1196352488": {
-      "repo_id": "1196352488",
-      "full_name": "Observal/Observal",
-      "first_seen_at": "2026-10-22T16:00:32+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
+    "1000945946": {
+      "repo_id": "1000945946",
+      "full_name": "caipe-io/ai-platform-engineering",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T15:51:37+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 428,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
     },
-    "1334641482": {
-      "repo_id": "1334641482",
-      "full_name": "sarrazola/openlivery",
-      "first_seen_at": "2026-10-22T16:00:32+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
+    "1145719389": {
+      "repo_id": "1145719389",
+      "full_name": "mwakidenis/fullstack-ecommerce-nextjs-shopify",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T15:51:37+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 17,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
     },
-    "985595150": {
-      "repo_id": "985595150",
-      "full_name": "MDalamin5/End-to-End-Agentic-Ai-Automation-Lab",
-      "first_seen_at": "2026-10-22T16:00:32+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
+    "1374928133": {
+      "repo_id": "1374928133",
+      "full_name": "devswha/ovis",
+      "first_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T15:51:37+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 1350,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
     },
-    "1118438465": {
-      "repo_id": "1118438465",
-      "full_name": "travisjneuman/.claude",
-      "first_seen_at": "2026-10-22T16:00:32+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
+    "1240554500": {
+      "repo_id": "1240554500",
+      "full_name": "KCNyu/clawock",
+      "first_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T15:51:37+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 21,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
     },
-    "1195367387": {
-      "repo_id": "1195367387",
-      "full_name": "snapotter-hq/SnapOtter",
-      "first_seen_at": "2026-10-22T16:00:32+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
+    "1288302351": {
+      "repo_id": "1288302351",
+      "full_name": "Latand/delegatus",
+      "first_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T15:51:37+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 33,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
     },
-    "642497346": {
-      "repo_id": "642497346",
-      "full_name": "langfuse/langfuse",
-      "first_seen_at": "2026-10-22T16:00:32+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
+    "1242818307": {
+      "repo_id": "1242818307",
+      "full_name": "narmod/pokerth-web-client",
+      "first_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T15:51:37+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 15,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
     },
-    "1336521207": {
-      "repo_id": "1336521207",
-      "full_name": "PerryLink/dsh-test-drive",
-      "first_seen_at": "2026-10-22T16:00:32+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
+    "1190598050": {
+      "repo_id": "1190598050",
+      "full_name": "ulsklyc/yuvomi",
+      "first_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T15:51:37+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 1732,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
     },
-    "235901813": {
-      "repo_id": "235901813",
-      "full_name": "PostHog/posthog",
-      "first_seen_at": "2026-10-22T16:00:32+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
+    "1217295818": {
+      "repo_id": "1217295818",
+      "full_name": "Weavestream/Weavestream",
+      "first_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T15:51:37+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 28,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
     },
-    "932825524": {
-      "repo_id": "932825524",
-      "full_name": "rcourtman/Pulse",
-      "first_seen_at": "2026-10-22T16:00:32+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
+    "672419907": {
+      "repo_id": "672419907",
+      "full_name": "flowexec/flow",
+      "first_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T15:51:37+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 138,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
     },
-    "790821454": {
-      "repo_id": "790821454",
-      "full_name": "mercurjs/mercur",
-      "first_seen_at": "2026-10-22T16:00:32+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
+    "1247800163": {
+      "repo_id": "1247800163",
+      "full_name": "lidless-labs/proxmox-mcp",
+      "first_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T15:51:37+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 11,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
     },
-    "1420261569": {
-      "repo_id": "1420261569",
-      "full_name": "ShadowSwaps/REA-Reconstruction-Companion",
-      "first_seen_at": "2026-10-22T16:00:32+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
+    "1188102078": {
+      "repo_id": "1188102078",
+      "full_name": "OpenDrone-hw/OpenDrone-Web",
+      "first_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T15:51:37+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 17,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
     },
-    "131995661": {
-      "repo_id": "131995661",
-      "full_name": "shopware/shopware",
-      "first_seen_at": "2026-10-22T16:00:32+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
+    "951643407": {
+      "repo_id": "951643407",
+      "full_name": "safedep/pmg",
+      "first_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T15:51:37+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 553,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
     },
-    "1125663750": {
-      "repo_id": "1125663750",
-      "full_name": "yonatangross/orchestkit",
-      "first_seen_at": "2026-10-22T16:00:32+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
+    "225463": {
+      "repo_id": "225463",
+      "full_name": "Shopify/shopify-api-ruby",
+      "first_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T15:51:37+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 1110,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
     },
-    "749075394": {
-      "repo_id": "749075394",
-      "full_name": "madesroches/micromegas",
-      "first_seen_at": "2026-10-22T16:00:32+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
+    "1181171430": {
+      "repo_id": "1181171430",
+      "full_name": "Vigil-SOC/vigil",
+      "first_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T15:51:37+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 396,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
     },
-    "1326507166": {
-      "repo_id": "1326507166",
-      "full_name": "powerfooI/roamgate",
-      "first_seen_at": "2026-10-22T16:00:32+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
+    "649886864": {
+      "repo_id": "649886864",
+      "full_name": "openedx/openedx-wordpress-ecommerce",
+      "first_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T15:51:37+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 24,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
     },
-    "365373172": {
-      "repo_id": "365373172",
-      "full_name": "growthbook/growthbook",
-      "first_seen_at": "2026-10-22T16:00:32+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
+    "948525101": {
+      "repo_id": "948525101",
+      "full_name": "shopnex-ai/shopnex",
+      "first_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T15:51:37+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 360,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
     },
-    "1153178500": {
-      "repo_id": "1153178500",
-      "full_name": "jgravelle/jcodemunch-mcp",
-      "first_seen_at": "2026-10-22T16:00:32+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
+    "2717549": {
+      "repo_id": "2717549",
+      "full_name": "Sylius/Sylius",
+      "first_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T15:51:37+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 8560,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
     },
-    "862578138": {
-      "repo_id": "862578138",
-      "full_name": "modelcontextprotocol/typescript-sdk",
-      "first_seen_at": "2026-10-22T16:00:32+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
+    "1324236828": {
+      "repo_id": "1324236828",
+      "full_name": "Agent-Field/CodeAF",
+      "first_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T15:51:37+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 511,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
     },
-    "391740664": {
-      "repo_id": "391740664",
-      "full_name": "open-metadata/OpenMetadata",
-      "first_seen_at": "2026-10-22T16:00:32+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
+    "1283350591": {
+      "repo_id": "1283350591",
+      "full_name": "bakiraa/qyvaria-hardlogic-kernel-engine",
+      "first_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T15:51:37+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 124,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
     },
-    "24542427": {
-      "repo_id": "24542427",
-      "full_name": "aimeos/aimeos-typo3",
-      "first_seen_at": "2026-10-22T16:00:32+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
+    "1256708592": {
+      "repo_id": "1256708592",
+      "full_name": "Cotal-AI/Cotal",
+      "first_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T15:51:37+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 336,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
     },
-    "1238165856": {
-      "repo_id": "1238165856",
-      "full_name": "escoffier-labs/brigade",
-      "first_seen_at": "2026-10-22T16:00:32+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
+    "1143182323": {
+      "repo_id": "1143182323",
+      "full_name": "leadita/tech-stack-datasets",
+      "first_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T15:51:37+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 83,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
     },
-    "1247431380": {
-      "repo_id": "1247431380",
-      "full_name": "linny006/trending-claude-skills",
-      "first_seen_at": "2026-10-22T16:00:32+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
+    "1323173054": {
+      "repo_id": "1323173054",
+      "full_name": "dbos-inc/dbos-transact-rust",
+      "first_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T15:51:37+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 42,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
     },
-    "1298830469": {
-      "repo_id": "1298830469",
-      "full_name": "LoveMaker-art/noras-tavern",
-      "first_seen_at": "2026-10-22T16:00:32+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
+    "1286516597": {
+      "repo_id": "1286516597",
+      "full_name": "plhery/peek-delivery-tracker",
+      "first_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T15:51:37+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 13,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
     },
-    "973695856": {
-      "repo_id": "973695856",
-      "full_name": "Sriram-PR/doc-scraper",
-      "first_seen_at": "2026-10-22T16:00:32+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
+    "1411890737": {
+      "repo_id": "1411890737",
+      "full_name": "abacusai/simless",
+      "first_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T15:51:37+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 26,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
     },
-    "1277822711": {
-      "repo_id": "1277822711",
-      "full_name": "getsotto/sotto",
-      "first_seen_at": "2026-10-22T16:00:32+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
+    "1418472569": {
+      "repo_id": "1418472569",
+      "full_name": "getumbrel/murmur",
+      "first_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T15:51:37+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 39,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
     },
-    "15111821": {
-      "repo_id": "15111821",
-      "full_name": "grafana/grafana",
-      "first_seen_at": "2026-10-22T16:00:32+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
+    "1038282631": {
+      "repo_id": "1038282631",
+      "full_name": "Shopify/checkout-kit",
+      "first_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T15:51:37+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 7,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
     },
-    "1247931386": {
-      "repo_id": "1247931386",
-      "full_name": "linny006/awesome-agent-skills",
-      "first_seen_at": "2026-10-22T16:00:32+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
+    "538665344": {
+      "repo_id": "538665344",
+      "full_name": "Shopify/hydrogen",
+      "first_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T15:51:37+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 2154,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
     },
-    "1261757553": {
-      "repo_id": "1261757553",
-      "full_name": "artabramov/hidden",
-      "first_seen_at": "2026-10-22T16:00:32+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
+    "252225686": {
+      "repo_id": "252225686",
+      "full_name": "gp247net/s-cart",
+      "first_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T15:51:37+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 737,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
     },
-    "1162021647": {
-      "repo_id": "1162021647",
-      "full_name": "kenn-io/agentsview",
-      "first_seen_at": "2026-10-22T16:00:32+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
+    "771302083": {
+      "repo_id": "771302083",
+      "full_name": "OpenHands/OpenHands",
+      "first_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T15:51:37+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 91571,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
     },
-    "1232012824": {
-      "repo_id": "1232012824",
-      "full_name": "narumiruna/pi-extensions",
-      "first_seen_at": "2026-10-22T16:00:32+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
+    "750014418": {
+      "repo_id": "750014418",
+      "full_name": "Shopify/product-taxonomy",
+      "first_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T15:51:37+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 374,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
     },
-    "1118652326": {
-      "repo_id": "1118652326",
-      "full_name": "stateset/stateset-icommerce",
-      "first_seen_at": "2026-10-22T16:00:32+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
+    "1213948861": {
+      "repo_id": "1213948861",
+      "full_name": "atoma-run/atoma",
+      "first_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T15:51:37+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 20,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
     },
-    "707764474": {
-      "repo_id": "707764474",
-      "full_name": "tphakala/birdnet-go",
-      "first_seen_at": "2026-10-22T16:00:32+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
+    "1403579184": {
+      "repo_id": "1403579184",
+      "full_name": "djordje-st/play-polaris",
+      "first_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T15:51:37+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 6,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
     },
-    "787076358": {
-      "repo_id": "787076358",
-      "full_name": "firecrawl/firecrawl",
-      "first_seen_at": "2026-10-22T16:00:32+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
+    "1292893151": {
+      "repo_id": "1292893151",
+      "full_name": "lichdotdev/lich",
+      "first_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T15:51:37+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 44,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
     },
-    "351106737": {
-      "repo_id": "351106737",
-      "full_name": "l2beat/l2beat",
-      "first_seen_at": "2026-10-22T16:00:32+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
+    "124910572": {
+      "repo_id": "124910572",
+      "full_name": "mozilla/bugbug",
+      "first_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T15:51:37+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 576,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
     },
-    "1247447904": {
-      "repo_id": "1247447904",
-      "full_name": "linny006/mcp-servers-live",
-      "first_seen_at": "2026-10-22T16:00:32+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
+    "488641606": {
+      "repo_id": "488641606",
+      "full_name": "agno-agi/agno",
+      "first_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T15:51:37+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 42864,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
     },
-    "1182227663": {
-      "repo_id": "1182227663",
-      "full_name": "Siddhant-K-code/agent-trace",
-      "first_seen_at": "2026-10-22T16:00:32+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
+    "1314720416": {
+      "repo_id": "1314720416",
+      "full_name": "gnibu/tokens-on-track",
+      "first_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T15:51:37+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 19,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
     },
-    "1152413600": {
-      "repo_id": "1152413600",
-      "full_name": "ai-sdlc-framework/ai-sdlc",
-      "first_seen_at": "2026-10-22T16:00:32+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
+    "1170975222": {
+      "repo_id": "1170975222",
+      "full_name": "AgentEnsemble/agentensemble",
+      "first_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T15:51:37+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 11,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
     },
-    "1080619286": {
-      "repo_id": "1080619286",
-      "full_name": "oriolrius/pki-manager-web",
-      "first_seen_at": "2026-10-22T16:00:32+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
+    "1170990956": {
+      "repo_id": "1170990956",
+      "full_name": "mwakidenis/gmart-supermarket",
+      "first_seen_at": "2026-10-22T15:51:37+00:00",
+      "last_seen_at": "2026-10-22T15:51:37+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 61,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
     },
-    "1037580209": {
-      "repo_id": "1037580209",
-      "full_name": "zapplyjobs/New-Grad-Data-Science-Jobs-2027",
-      "first_seen_at": "2026-10-22T16:00:32+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
+    "1278926400": {
+      "repo_id": "1278926400",
+      "full_name": "amplifthq/openmeld",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 1390,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
     },
-    "1365236132": {
-      "repo_id": "1365236132",
-      "full_name": "nateships/rolle",
-      "first_seen_at": "2026-10-22T16:00:32+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
+    "925617132": {
+      "repo_id": "925617132",
+      "full_name": "chattermate/chattermate.chat",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 148,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
     },
-    "1178627789": {
-      "repo_id": "1178627789",
-      "full_name": "prosperity-solutions/veld",
-      "first_seen_at": "2026-10-22T16:00:32+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
+    "1247987146": {
+      "repo_id": "1247987146",
+      "full_name": "JasonColapietro/suede-creator-skills",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 125,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
     },
-    "1105733075": {
-      "repo_id": "1105733075",
-      "full_name": "daintreehq/daintree",
-      "first_seen_at": "2026-10-22T16:00:32+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
+    "900760746": {
+      "repo_id": "900760746",
+      "full_name": "rapiddweller/datamimic",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 116,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
     },
-    "1247459679": {
-      "repo_id": "1247459679",
-      "full_name": "linny006/llm-agents-radar",
-      "first_seen_at": "2026-10-22T16:00:32+00:00",
-      "last_seen_at": "2026-10-22T16:00:32+00:00",
-      "consecutive_refresh_failures": 0
+    "1403332662": {
+      "repo_id": "1403332662",
+      "full_name": "Nexilume-AI/nexus-cloud",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 59,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1247078110": {
+      "repo_id": "1247078110",
+      "full_name": "sixb-ai/sixb",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 120,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1164477708": {
+      "repo_id": "1164477708",
+      "full_name": "mksglu/context-mode",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 31791,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1194947244": {
+      "repo_id": "1194947244",
+      "full_name": "receptron/mulmoclaude",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 382,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1151604957": {
+      "repo_id": "1151604957",
+      "full_name": "RohanMuppa/brightspace-mcp-server",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 59,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1294960594": {
+      "repo_id": "1294960594",
+      "full_name": "bailinghub/bailinghub",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 122,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "320094356": {
+      "repo_id": "320094356",
+      "full_name": "aglyn/aglyn",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 6,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1288325627": {
+      "repo_id": "1288325627",
+      "full_name": "trailhq/Trail-Code",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 10649,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "645381450": {
+      "repo_id": "645381450",
+      "full_name": "Anil-matcha/open-duet",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 5998,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1300886884": {
+      "repo_id": "1300886884",
+      "full_name": "bvdr/familywell",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 92,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1342202970": {
+      "repo_id": "1342202970",
+      "full_name": "mrpulor-gh/nuphus",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 88,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1369663769": {
+      "repo_id": "1369663769",
+      "full_name": "nexscope-ai/ecommerce-ai-tools",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 127,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1145420469": {
+      "repo_id": "1145420469",
+      "full_name": "moltis-org/moltis",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 2908,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1209966933": {
+      "repo_id": "1209966933",
+      "full_name": "morluto/rea",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 363895,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1008713177": {
+      "repo_id": "1008713177",
+      "full_name": "QwenLM/qwen-code",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 28651,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1275001555": {
+      "repo_id": "1275001555",
+      "full_name": "moretea-labs/forge",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 13,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1122923227": {
+      "repo_id": "1122923227",
+      "full_name": "Nsomnia/chadvis-projectm-qt",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 5,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "402945349": {
+      "repo_id": "402945349",
+      "full_name": "StarRocks/starrocks",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 12198,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1266212515": {
+      "repo_id": "1266212515",
+      "full_name": "omnigent-ai/omnigent",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 10989,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1204318746": {
+      "repo_id": "1204318746",
+      "full_name": "Silbercue/public-browser",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 19,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1178044780": {
+      "repo_id": "1178044780",
+      "full_name": "AndreasHeine/i3x2ua",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 17,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1322671404": {
+      "repo_id": "1322671404",
+      "full_name": "autonomous-ai/openharness",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 1340,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "793379298": {
+      "repo_id": "793379298",
+      "full_name": "beclab/Olares",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 5313,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1246432220": {
+      "repo_id": "1246432220",
+      "full_name": "constructorfabric/insight",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 28,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1169025841": {
+      "repo_id": "1169025841",
+      "full_name": "kangraemin/claude-inspector",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 132,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1288895330": {
+      "repo_id": "1288895330",
+      "full_name": "margince/margince",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 25,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1185588330": {
+      "repo_id": "1185588330",
+      "full_name": "VeriWorkly/veriworkly",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 19,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "53548867": {
+      "repo_id": "53548867",
+      "full_name": "dbt-labs/dbt",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 14062,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1377463767": {
+      "repo_id": "1377463767",
+      "full_name": "Ekwo-ai/ekwo-os",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 39,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1415506468": {
+      "repo_id": "1415506468",
+      "full_name": "struklabs/harness-studio",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 12,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "688579575": {
+      "repo_id": "688579575",
+      "full_name": "superdurable/dex",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 129,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "215654064": {
+      "repo_id": "215654064",
+      "full_name": "temporalio/temporal",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 23919,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "894774948": {
+      "repo_id": "894774948",
+      "full_name": "zestysoft/sensus_analytics_integration",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 18,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1204488303": {
+      "repo_id": "1204488303",
+      "full_name": "zhitongblog/solomd",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 1345,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1303258850": {
+      "repo_id": "1303258850",
+      "full_name": "kirodotdev/KiroCrew",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 4545,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1201869706": {
+      "repo_id": "1201869706",
+      "full_name": "mikeprasad/aria-knowledge",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 17,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "262400823": {
+      "repo_id": "262400823",
+      "full_name": "w3bdesign/nextjs-woocommerce",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 610,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "751335779": {
+      "repo_id": "751335779",
+      "full_name": "zeasin/qihang-erp-open",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 313,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "99919302": {
+      "repo_id": "99919302",
+      "full_name": "apache/doris",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 16129,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1306217133": {
+      "repo_id": "1306217133",
+      "full_name": "Dicklesworthstone/franken_manim",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 26,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1079713761": {
+      "repo_id": "1079713761",
+      "full_name": "gosuda/portal-tunnel",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 288,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "608711730": {
+      "repo_id": "608711730",
+      "full_name": "joryirving/home-ops",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 228,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "211381955": {
+      "repo_id": "211381955",
+      "full_name": "leeoniya/uPlot",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 10574,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1367417840": {
+      "repo_id": "1367417840",
+      "full_name": "VanoPeradze/cutroom",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 24,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1286815260": {
+      "repo_id": "1286815260",
+      "full_name": "AyeJK/phase-runner",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 28,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
+    },
+    "1334001399": {
+      "repo_id": "1334001399",
+      "full_name": "HERRY423/BioNexus",
+      "first_seen_at": "2026-10-22T05:25:10+00:00",
+      "last_seen_at": "2026-10-22T05:25:10+00:00",
+      "consecutive_refresh_failures": 0,
+      "last_refresh_at": "2026-10-22T16:04:33+00:00",
+      "last_refresh_error": "",
+      "last_known_stars": 31,
+      "last_sample_at": "2026-10-22T16:04:33+00:00"
     }
   },
   "last_star_tracking_run": {
-    "observed_at_utc": "2026-10-22T16:00:32+00:00",
-    "tracked_repositories": 189,
-    "repositories_seen_in_discovery": 70,
-    "previously_tracked_repositories_refreshed": 119,
+    "observed_at_utc": "2026-10-22T16:04:33+00:00",
+    "tracked_repositories": 200,
+    "repositories_seen_in_discovery": 58,
+    "previously_tracked_repositories_refreshed": 142,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
-    "snapshots_added_this_run": 43,
+    "snapshots_added_this_run": 29,
     "repositories_with_20_to_36_hour_baseline": 0,
     "history_window_days": 8,
     "watchlist_limit": 200
