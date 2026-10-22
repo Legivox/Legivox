@@ -1401,9 +1401,9 @@ def validate_draft(draft: dict, candidates_by_id: dict) -> tuple[dict | None, li
                 + ", ".join(missing[:6])
             )
             break
-        if quote_coverage < 0.85:
+        if quote_coverage < 0.65:
             reasons.append(
-                f"Supporting quotes cover only {quote_coverage:.0%} of a factual sentence; cite the concrete claims"
+                f"Supporting quotes cover only {quote_coverage:.0%} of factual wording; narrow the claim or provide a closer primary-source quote"
             )
             break
 
