@@ -801,6 +801,38 @@ def verify_primary_sources(candidates: list[dict]) -> tuple[list[dict], list[dic
     return verified, rejected
 
 
+def model_evidence_excerpt(candidate: dict, max_chars: int = 1750) -> str:
+    """Choose a compact, source-relevant excerpt for the model to avoid oversized requests."""
+    title = clean(candidate.get("primary_source_title") or "")
+    description = clean(candidate.get("primary_source_description") or "")
+    source_text = clean(candidate.get("primary_source_text") or candidate.get("primary_source_evidence") or "")
+    query_tokens = tokens(
+        str(candidate.get("title") or "") + " " + str(candidate.get("summary") or "")
+    )
+    chunks = [clean(piece) for piece in re.split(r"(?<=[.!?])\s+|(?<=;)\s+", source_text) if clean(piece)]
+    scored = []
+    for index, chunk in enumerate(chunks):
+        chunk_tokens = tokens(chunk)
+        score = len(query_tokens & chunk_tokens) / max(1, len(query_tokens))
+        if chunk_tokens:
+            scored.append((score, -index, chunk))
+    selected = []
+    budget = max_chars - len(title) - len(description) - 2
+    used = 0
+    for _score, _order, chunk in sorted(scored, reverse=True):
+        remaining = budget - used
+        if remaining <= 0:
+            break
+        if len(chunk) > remaining:
+            chunk = chunk[:remaining].rsplit(" ", 1)[0]
+        if chunk and chunk not in selected:
+            selected.append(chunk)
+            used += len(chunk) + 1
+    # Keep top-relevance snippets first so the model has the actual claim-bearing text,
+    # not a long navigation dump. Title and description are still provided separately.
+    return clean(" ".join([title, description, *selected]))[:max_chars]
+
+
 def draft_candidates(candidates: list[dict]) -> tuple[list[dict], str | None]:
     if not candidates:
         return [], "No candidate met the freshness, diversity and metadata minimums."
@@ -813,11 +845,11 @@ def draft_candidates(candidates: list[dict]) -> tuple[list[dict], str | None]:
             "source_kind": candidate.get("source_kind"),
             "url": candidate["url"],
             "copy_character_budget": max(0, MAX_POST_CHARS - len(str(candidate.get("url") or "")) - 2),
-            "summary": str(candidate.get("summary") or "")[:900],
+            "summary": str(candidate.get("summary") or "")[:420],
             "primary_source_verified": bool(candidate.get("primary_source_verified")),
-            "primary_source_title": str(candidate.get("primary_source_title") or "")[:300],
-            "primary_source_description": str(candidate.get("primary_source_description") or "")[:700],
-            "primary_source_evidence": str(candidate.get("primary_source_evidence") or "")[:5000],
+            "primary_source_title": str(candidate.get("primary_source_title") or "")[:180],
+            "primary_source_description": str(candidate.get("primary_source_description") or "")[:320],
+            "primary_source_evidence": model_evidence_excerpt(candidate, max_chars=1750),
             "stars_current": candidate.get("stars_current"),
             "stars_delta_24h": candidate.get("stars_delta_24h"),
             "stars_delta_baseline_hours": candidate.get("stars_delta_baseline_hours"),
