@@ -743,8 +743,12 @@ def verify_primary_source(candidate: dict) -> tuple[dict | None, str | None]:
     title_tokens = tokens(str(candidate.get("title") or ""))
     page_tokens = tokens(" ".join([page_title, page_description, page_text[:2500]]))
     overlap = len(title_tokens & page_tokens) / max(1, len(title_tokens))
-    if title_tokens and overlap < 0.12:
-        return None, "Primary page content does not appear to match the candidate headline."
+    shared_title_tokens = title_tokens & page_tokens
+    if title_tokens and (
+        (len(title_tokens) >= 4 and (overlap < 0.20 or len(shared_title_tokens) < 2))
+        or (len(title_tokens) < 4 and overlap < 0.34)
+    ):
+        return None, "Primary page title/content does not sufficiently match the candidate headline."
 
     verified = dict(candidate)
     verified["original_source_url"] = url
@@ -852,8 +856,8 @@ def draft_candidates(candidates: list[dict]) -> tuple[list[dict], str | None]:
         "editorial_takeaway. Respect that exact budget. The code adds two spaces and the exact URL, so the complete post stays "
         "at or below 280 characters. Do not include any URLs in the two sentences; the code appends the source URL. "
         "No hashtags by default. Every factual claim in fact_sentence needs a claim_evidence entry. Each entry must have "
-        "exactly these keys: claim and quote. quote must be a non-empty, verbatim contiguous substring of the candidate title, summary or fetched primary-source evidence "
-        "title or summary that directly supports the claim. Use the key quote, never an alternative key. Never return an "
+        "exactly these keys: claim and quote. quote must be a non-empty, verbatim contiguous substring of the fetched primary-source page title, description or body "
+        "fetched primary-source page text that directly supports the claim. Use the key quote, never an alternative key. Never return an "
         "empty quote. Use the source's own action verb when possible: if it says 'controls', do not paraphrase as 'affects'; "
         "if it says 'checks', do not write 'scans' unless the source does. The fact must be worded so the quoted text directly "
         "covers the sentence, not merely the general idea. If the evidence does not support the fact, rewrite it more narrowly. "
@@ -871,7 +875,7 @@ def draft_candidates(candidates: list[dict]) -> tuple[list[dict], str | None]:
             "Target fact_sentence 65-105 characters and editorial_takeaway 45-85 characters, while staying within the per-candidate budget. "
             "Use this exact evidence schema and do not leave quote empty: "
             "{\"claim_evidence\":[{\"claim\":\"The source says capability X\",\"quote\":\"exact source substring describing X\"}]}. "
-            "Every quote must be copied exactly from the candidate title/summary or fetched primary-source evidence. For every fact, the quote must directly support it. "
+            "Every quote must be copied exactly from the fetched primary-source page title, description or body text. Search/feed summaries are discovery hints only; they cannot substantiate claims. For every fact, the quote must directly support it. "
             "Use one short quote for one narrow fact, not a long list of features. Do not quote the headline alone if the fact uses the summary. "
             "The editorial_takeaway must be a complete second sentence, candidate-specific, and actionable. It must not simply "
             "rewrite another source recommendation. Add a test, trade-off, blind spot or decision rule. Examples of shape only, not text "
@@ -971,9 +975,10 @@ def validate_draft(draft: dict, candidates_by_id: dict) -> tuple[dict | None, li
         prefix = prefix.rstrip()
         if prefix and prefix[-1] not in ".!?":
             post = prefix + ". " + source_url + suffix
+    # Only live primary-page content can substantiate facts. Search/feed summaries
+    # select what to inspect, but they cannot rescue an unsupported claim when the
+    # actual page disagrees or has changed.
     evidence = clean("\n".join([
-        str(candidate.get("title") or ""),
-        str(candidate.get("summary") or ""),
         str(candidate.get("primary_source_title") or ""),
         str(candidate.get("primary_source_description") or ""),
         str(candidate.get("primary_source_text") or ""),
