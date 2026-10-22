@@ -66,6 +66,12 @@ NUMBER_RE = re.compile(
     r"\b\d[\d,.]*(?:\s*(?:%|kb|mb|gb|tb|bytes?|ms|milliseconds?|s|sec|seconds?|min|minutes?|hr|hours?|days?|x|k\+|\+))?\b",
     re.I,
 )
+COUNT_METRIC_RE = re.compile(
+    r"\b(?P<amount>\d[\d,]*(?:\.\d+)?\s*(?:[kKmM])?\+?)\s+"
+    r"(?P<metric>integrations?|templates?|stars?|forks?|downloads?|users?|customers?|"
+    r"connectors?|plugins?|providers?|nodes?|apps?|workflows?)\b",
+    re.I,
+)
 URL_RE = re.compile(r"https?://[^\s<>()]+", re.I)
 EDITORIAL_STARTERS = (
     "useful if", "useful when", "useful for", "useful to", "helpful if", "helpful when",
@@ -1326,6 +1332,52 @@ def primary_evidence_text(candidate: dict) -> str:
     ]))
 
 
+def _normalise_count_value(raw: str) -> str:
+    """Convert numeric counts such as 1,500+, 1.5k and 1500 to one stable value."""
+    value = clean(raw).casefold().replace(",", "").replace("+", "").replace(" ", "")
+    multiplier = 1
+    if value.endswith("k"):
+        multiplier, value = 1000, value[:-1]
+    elif value.endswith("m"):
+        multiplier, value = 1_000_000, value[:-1]
+    try:
+        number = float(value) * multiplier
+    except ValueError:
+        return value
+    return str(int(number)) if number.is_integer() else str(number)
+
+
+def conflicting_source_metric_counts(post: str, evidence: str) -> list[str]:
+    """Reject numeric metric claims when the primary page itself gives conflicting counts.
+
+    Repository descriptions and README bodies can disagree after one section goes stale.
+    A number appearing somewhere on the page is therefore not enough to make it reliable.
+    """
+    source_values: dict[str, dict[str, str]] = {}
+    for match in COUNT_METRIC_RE.finditer(evidence):
+        metric = match.group("metric").casefold()
+        metric = metric[:-1] if metric.endswith("s") else metric
+        amount = clean(match.group("amount"))
+        source_values.setdefault(metric, {}).setdefault(_normalise_count_value(amount), amount)
+
+    claimed_values: dict[str, set[str]] = {}
+    for match in COUNT_METRIC_RE.finditer(URL_RE.sub(" ", post)):
+        metric = match.group("metric").casefold()
+        metric = metric[:-1] if metric.endswith("s") else metric
+        claimed_values.setdefault(metric, set()).add(_normalise_count_value(match.group("amount")))
+
+    conflicts = []
+    for metric, claimed in claimed_values.items():
+        available = source_values.get(metric, {})
+        if len(available) > 1 and claimed.intersection(available):
+            labels = sorted(available.values(), key=lambda value: _normalise_count_value(value))
+            conflicts.append(
+                f"Primary source has conflicting counts for {metric}s ({', '.join(labels)}); "
+                "omit this number unless a single current value can be verified."
+            )
+    return conflicts
+
+
 def best_primary_quote_for_claim(claim: str, candidate: dict, minimum_coverage: float = 0.65) -> str | None:
     """Select an exact contiguous primary-page excerpt with strong lexical claim coverage.
 
@@ -1488,6 +1540,7 @@ def validate_draft(draft: dict, candidates_by_id: dict) -> tuple[dict | None, li
         reasons.append("Draft text is empty")
     if not candidate.get("primary_source_verified"):
         reasons.append("Primary source was not fetched and verified successfully.")
+    reasons.extend(conflicting_source_metric_counts(post, evidence))
     body_without_urls = clean(URL_RE.sub(" ", post))
     sentences = [
         clean(sentence) for sentence in re.split(r"(?<=[.!?])\s+", body_without_urls)

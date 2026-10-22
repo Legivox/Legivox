@@ -69,6 +69,59 @@ class HourlyDryRunTests(unittest.TestCase):
         self.assertEqual(no_review, [])
         self.assertEqual(len(all_deferred), len(drafts))
 
+    def test_conflicting_primary_source_counts_reject_numeric_metric_claim(self):
+        candidate = dict(self.candidate)
+        candidate.update({
+            "title": "n8n-io/n8n",
+            "source": "GitHub Search",
+            "source_kind": "github_repository",
+            "url": "https://github.com/n8n-io/n8n",
+            "canonical_url": "https://github.com/n8n-io/n8n",
+            "primary_source_verified": True,
+            "primary_source_title": "GitHub - n8n-io/n8n: Fair-code workflow automation platform with 400+ integrations",
+            "primary_source_description": (
+                "Fair-code workflow automation platform with native AI capabilities. "
+                "With 400+ integrations, teams can build powerful automations."
+            ),
+            "primary_source_text": (
+                "The current README headline says the platform connects to 1500+ integrations. "
+                "The About section still says 400+ integrations."
+            ),
+            "primary_source_evidence": (
+                "Fair-code workflow automation platform with native AI capabilities. "
+                "With 400+ integrations, teams can build powerful automations. "
+                "The current README headline says the platform connects to 1500+ integrations. "
+                "The About section still says 400+ integrations."
+            ),
+            "primary_source_final_url": "https://github.com/n8n-io/n8n",
+            "evidence_urls": ["https://github.com/n8n-io/n8n"],
+        })
+        fact = "n8n is a fair-code workflow platform with 400+ integrations and native AI."
+        takeaway = "Run a representative workflow to measure latency against your own SLA."
+        quote = "Fair-code workflow automation platform with native AI capabilities. With 400+ integrations"
+        draft = {
+            "candidate_id": "candidate-1",
+            "fact_sentence": fact,
+            "post_text": fact + " " + takeaway + " " + candidate["url"],
+            "editorial_takeaway": takeaway,
+            "evidence_quote": quote,
+            "claim_evidence": [{"claim": fact, "quote": quote}],
+            "scores": {"timeliness": 8, "usefulness": 8, "novelty": 7, "evidence": 8, "insight": 8},
+        }
+        _accepted, reasons = hourly.validate_draft(draft, {"candidate-1": candidate})
+        self.assertTrue(any(
+            "conflicting counts for integration" in reason for reason in reasons
+        ))
+
+        stable_evidence = "n8n's current README consistently says 1500+ integrations and native AI."
+        self.assertEqual(
+            hourly.conflicting_source_metric_counts(
+                "n8n connects workflows with 1500+ integrations.",
+                stable_evidence,
+            ),
+            [],
+        )
+
     def test_valid_draft_passes_and_is_marked_dry_run_only(self):
         draft = {
             "candidate_id": "candidate-1",
