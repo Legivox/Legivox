@@ -394,6 +394,8 @@ def discover_github_search(
             description = clean_text(repo.get("description") or "")
             signals = {
                 "stars": int(repo.get("stargazers_count") or 0),
+                "github_repo_id": str(repo.get("id") or ""),
+                "full_name": str(repo.get("full_name") or repo.get("name") or ""),
                 "forks": int(repo.get("forks_count") or 0),
                 "open_issues": int(repo.get("open_issues_count") or 0),
                 "language": repo.get("language") or "",
