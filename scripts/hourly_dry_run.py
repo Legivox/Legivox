@@ -1361,7 +1361,7 @@ def main(argv: list[str] | None = None) -> int:
         print("Hourly discovery failed before candidate selection: " + type(exc).__name__, file=sys.stderr)
         return 1
 
-    eligible = diversity_rank(candidates, state, now, args.lookback_days)
+    eligible = diversity_rank(candidates, state, now, args.lookback_days, refresh_star_watchlist=True)
     events = events_today(state, now)
     passed_today = [row for row in events if row.get("status") == "draft_passed"]
     report = {
@@ -1372,6 +1372,9 @@ def main(argv: list[str] | None = None) -> int:
         "candidate_count_raw": len(candidates),
         "eligible_candidate_count": len(eligible),
         "source_diagnostics": diagnostics,
+        "star_tracking": state.get("last_star_tracking_run", {}),
+        "primary_source_checks": [],
+        "rejected_primary_sources": [],
         "daily_draft_cap": DAILY_DRAFT_CAP,
         "daily_drafts_already_passed": len(passed_today),
         "outcome": "skip",
@@ -1387,8 +1390,10 @@ def main(argv: list[str] | None = None) -> int:
                 "primary_category": item["primary_category"],
                 "priority_score": item.get("priority_score"),
                 "hourly_adjusted_score": item.get("hourly_adjusted_score"),
+                "stars_current": item.get("stars_current", (item.get("signals") or {}).get("stars")),
                 "stars_delta_24h": item.get("stars_delta_24h"),
                 "stars_delta_baseline_hours": item.get("stars_delta_baseline_hours"),
+                "stars_growth_percent_24h": item.get("stars_growth_percent_24h"),
                 "trend_signal": item.get("trend_signal"),
                 "published_at": item.get("published_at"),
                 "days_old": item.get("days_old"),
@@ -1402,77 +1407,106 @@ def main(argv: list[str] | None = None) -> int:
     elif not eligible:
         report["decision_reason"] = "No candidate met freshness, source/category diversity, cooldown and metadata checks."
     else:
-        shortlist = diversified_shortlist(eligible, args.pool_size)
+        initial_shortlist = diversified_shortlist(eligible, args.pool_size)
+        verified_shortlist, source_rejections = verify_primary_sources(initial_shortlist)
+        verified_by_id = {item["id"]: item for item in verified_shortlist}
+        rejected_source_by_id = {str(item.get("candidate_id")): item for item in source_rejections}
+        report["primary_source_checks"] = [
+            {
+                "candidate_id": item["id"],
+                "title": item["title"],
+                "source_url": item["url"],
+                "verified": item["id"] in verified_by_id,
+                "final_url": verified_by_id.get(item["id"], {}).get("primary_source_final_url"),
+                "http_status": verified_by_id.get(item["id"], {}).get("primary_source_http_status"),
+                "reason": "; ".join(rejected_source_by_id.get(str(item["id"]), {}).get("reasons", [])),
+            }
+            for item in initial_shortlist
+        ]
+        report["rejected_primary_sources"] = source_rejections
         report["candidate_shortlist"] = [
             {
                 "id": item["id"],
                 "title": item["title"],
-                "url": item["url"],
+                "url": verified_by_id.get(item["id"], {}).get("url", item["url"]),
                 "source": item["source"],
                 "primary_category": item["primary_category"],
                 "priority_score": item.get("priority_score"),
                 "hourly_adjusted_score": item.get("hourly_adjusted_score"),
+                "stars_current": item.get("stars_current", (item.get("signals") or {}).get("stars")),
                 "stars_delta_24h": item.get("stars_delta_24h"),
                 "stars_delta_baseline_hours": item.get("stars_delta_baseline_hours"),
+                "stars_growth_percent_24h": item.get("stars_growth_percent_24h"),
                 "trend_signal": item.get("trend_signal"),
                 "published_at": item.get("published_at"),
                 "days_old": item.get("days_old"),
+                "primary_source_verified": item["id"] in verified_by_id,
+                "primary_source_http_status": verified_by_id.get(item["id"], {}).get("primary_source_http_status"),
+                "primary_source_reason": "; ".join(rejected_source_by_id.get(str(item["id"]), {}).get("reasons", [])),
             }
-            for item in shortlist
+            for item in initial_shortlist
         ]
-        generated, model_error = draft_candidates(shortlist)
-        if model_error:
-            report["decision_reason"] = "Draft generation unavailable or invalid: " + model_error
+
+        if not verified_shortlist:
+            report["rejected_drafts"] = source_rejections
+            report["decision_reason"] = (
+                "Every shortlisted primary-source page failed live-link or relevance validation; the hour was skipped."
+            )
         else:
-            by_id = {item["id"]: item for item in shortlist}
-            passing = []
-            rejected = []
-            seen_draft_ids = set()
-            for draft in generated:
-                candidate_id = str(draft.get("candidate_id") or "") if isinstance(draft, dict) else ""
-                if candidate_id in seen_draft_ids:
-                    rejected.append({"candidate_id": candidate_id, "reasons": ["Duplicate model response for candidate"]})
-                    continue
-                seen_draft_ids.add(candidate_id)
-                candidate_for_draft = by_id.get(candidate_id, {})
-                draft_with_context = ensure_editorial_context(
-                    draft if isinstance(draft, dict) else {}, candidate_for_draft
-                )
-                accepted, reasons = validate_draft(draft_with_context, by_id)
-                if accepted:
-                    passing.append(accepted)
-                else:
-                    rejected.append({
-                        "candidate_id": candidate_id,
-                        "title": by_id.get(candidate_id, {}).get("title", "Unknown candidate"),
-                        "reasons": reasons,
-                        "proposed_text": clean(draft.get("post_text"))[:500] if isinstance(draft, dict) else "",
-                        "evidence_quote": clean(draft.get("evidence_quote"))[:300] if isinstance(draft, dict) else "",
-                        "claim_evidence": draft.get("claim_evidence", []) if isinstance(draft, dict) else [],
-                    })
-            passing.sort(key=lambda item: (-item["editorial_score"], -int(item["hourly_adjusted_score"] or 0)))
-            report["passing_drafts"] = passing
-            report["rejected_drafts"] = rejected
-            for draft in generated:
-                if isinstance(draft, dict) and draft.get("candidate_id") in by_id:
-                    state["attempted_candidates"][str(draft["candidate_id"])] = now.astimezone(timezone.utc).isoformat(timespec="seconds")
-            if passing:
-                chosen = passing[0]
-                report["outcome"] = "draft_ready_for_human_review"
-                report["decision_reason"] = (
-                    "At least one draft passed evidence, novelty, claim, URL and length checks. "
-                    "The best eligible option is shown first; nothing was published."
-                )
-                report["recommended_draft"] = chosen
-                state["used_candidates"][chosen["candidate_id"]] = now.astimezone(timezone.utc).isoformat(timespec="seconds")
+            generated, model_error = draft_candidates(verified_shortlist)
+            if model_error:
+                report["rejected_drafts"] = source_rejections
+                report["decision_reason"] = "Draft generation unavailable or invalid: " + model_error
             else:
-                report["decision_reason"] = "All generated drafts failed the local evidence/quality checks; slot skipped."
-                for candidate in shortlist:
-                    state["attempted_candidates"][candidate["id"]] = now.astimezone(timezone.utc).isoformat(timespec="seconds")
+                by_id = {item["id"]: item for item in verified_shortlist}
+                passing = []
+                rejected = []
+                seen_draft_ids = set()
+                for draft in generated:
+                    candidate_id = str(draft.get("candidate_id") or "") if isinstance(draft, dict) else ""
+                    if candidate_id in seen_draft_ids:
+                        rejected.append({"candidate_id": candidate_id, "reasons": ["Duplicate model response for candidate"]})
+                        continue
+                    seen_draft_ids.add(candidate_id)
+                    candidate_for_draft = by_id.get(candidate_id, {})
+                    draft_with_context = ensure_editorial_context(
+                        draft if isinstance(draft, dict) else {}, candidate_for_draft
+                    )
+                    accepted, reasons = validate_draft(draft_with_context, by_id)
+                    if accepted:
+                        passing.append(accepted)
+                    else:
+                        rejected.append({
+                            "candidate_id": candidate_id,
+                            "title": by_id.get(candidate_id, {}).get("title", "Unknown candidate"),
+                            "reasons": reasons,
+                            "proposed_text": clean(draft.get("post_text"))[:500] if isinstance(draft, dict) else "",
+                            "evidence_quote": clean(draft.get("evidence_quote"))[:300] if isinstance(draft, dict) else "",
+                            "claim_evidence": draft.get("claim_evidence", []) if isinstance(draft, dict) else [],
+                        })
+                passing.sort(key=lambda item: (-item["editorial_score"], -int(item["hourly_adjusted_score"] or 0)))
+                report["passing_drafts"] = passing
+                report["rejected_drafts"] = source_rejections + rejected
+                for draft in generated:
+                    if isinstance(draft, dict) and draft.get("candidate_id") in by_id:
+                        state["attempted_candidates"][str(draft["candidate_id"])] = now.astimezone(timezone.utc).isoformat(timespec="seconds")
+                if passing:
+                    chosen = passing[0]
+                    report["outcome"] = "dry_run_passed"
+                    report["decision_reason"] = (
+                        "At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. "
+                        "The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it."
+                    )
+                    report["recommended_draft"] = chosen
+                    state["used_candidates"][chosen["candidate_id"]] = now.astimezone(timezone.utc).isoformat(timespec="seconds")
+                else:
+                    report["decision_reason"] = "All generated drafts failed the local evidence/editorial checks; the hour was skipped."
+                    for candidate in verified_shortlist:
+                        state["attempted_candidates"][candidate["id"]] = now.astimezone(timezone.utc).isoformat(timespec="seconds")
 
     # Persist every hourly decision in both the structured state and append-only audit log.
     stamp = now.astimezone(timezone.utc).isoformat(timespec="seconds")
-    if report.get("outcome") == "draft_ready_for_human_review":
+    if report.get("outcome") == "dry_run_passed":
         chosen = report["recommended_draft"]
         source_group = "GitHub Search" if str(chosen["source"]).startswith("GitHub Search") else chosen["source"]
         event = {
@@ -1517,7 +1551,7 @@ def main(argv: list[str] | None = None) -> int:
     report["state_summary"] = {
         "used_candidates_in_cooldown": len(state["used_candidates"]),
         "recently_attempted_candidates": len(state["attempted_candidates"]),
-        "recent_draft_passes_today": len(passed_today) + (1 if report.get("outcome") == "draft_ready_for_human_review" else 0),
+        "recent_draft_passes_today": len(passed_today) + (1 if report.get("outcome") == "dry_run_passed" else 0),
     }
     write_outputs(report)
     print("Hourly Legivox dry run finished. No X publishing was attempted.")
