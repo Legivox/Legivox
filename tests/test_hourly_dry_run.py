@@ -645,6 +645,35 @@ class HourlyDryRunTests(unittest.TestCase):
         retried_payload = json.loads(mocked.call_args_list[1].args[0][1]["content"])
         self.assertEqual(len(retried_payload["candidates"]), 1)
 
+    def test_draft_prompt_requires_named_product_in_opening_sentence(self):
+        empty_drafts = {"choices": [{"message": {"content": json.dumps({"drafts": []})}}]}
+        with patch.object(hourly, "request_groq", return_value=empty_drafts) as mocked:
+            drafts, error = hourly.draft_candidates([self.candidate])
+        self.assertEqual(drafts, [])
+        self.assertIsNone(error)
+        messages = mocked.call_args.args[0]
+        self.assertIn("explicitly name the exact product", messages[0]["content"])
+        self.assertIn("detached feature/property fragment", messages[0]["content"])
+        payload = json.loads(messages[1]["content"])
+        self.assertEqual([item["id"] for item in payload["candidates"]], ["candidate-1"])
+
+    def test_repair_prompt_forbids_cross_candidate_evidence_mixing(self):
+        rejected = [{
+            "candidate_id": "candidate-1",
+            "title": self.candidate["title"],
+            "proposed_text": "No daemon, no external dependencies.",
+            "reasons": ["Opening sentence omits the product name."],
+        }]
+        empty_drafts = {"choices": [{"message": {"content": json.dumps({"drafts": []})}}]}
+        with patch.object(hourly, "request_groq", return_value=empty_drafts) as mocked:
+            repaired, error = hourly.repair_rejected_drafts(rejected, {"candidate-1": self.candidate})
+        self.assertEqual(repaired, [])
+        self.assertIsNone(error)
+        messages = mocked.call_args.args[0]
+        self.assertIn("Never borrow facts, terminology, or product context from another candidate", messages[0]["content"])
+        payload = json.loads(messages[1]["content"])
+        self.assertEqual([item["candidate_id"] for item in payload["rejected_candidates"]], ["candidate-1"])
+
     def test_missing_evidence_quote_is_derived_only_from_a_quote_found_on_the_live_page(self):
         draft = {
             "candidate_id": "candidate-1",
