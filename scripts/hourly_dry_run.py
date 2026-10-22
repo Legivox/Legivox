@@ -13,6 +13,7 @@ import urllib.parse
 import os
 import re
 import sys
+import time
 import urllib.error
 import urllib.request
 import unicodedata
@@ -600,7 +601,7 @@ def diversified_shortlist(candidates: list[dict], limit: int) -> list[dict]:
     return selected
 
 
-def request_groq(messages: list[dict], max_tokens: int = 8192) -> dict:
+def request_groq(messages: list[dict], max_tokens: int = 4096, retry_429: bool = True) -> dict:
     api_key = os.environ.get("GROQ_API_KEY", "").strip()
     if not api_key:
         raise RuntimeError("GROQ_API_KEY is not configured")
@@ -632,8 +633,18 @@ def request_groq(messages: list[dict], max_tokens: int = 8192) -> dict:
             body = exc.read().decode("utf-8", errors="replace")[:2000]
         except Exception:
             pass
-        if exc.code == 400 and "max completion tokens" in body.lower() and max_tokens < 16384:
-            return request_groq(messages, max_tokens=16384)
+        if exc.code == 400 and "max completion tokens" in body.lower() and max_tokens < 8192:
+            return request_groq(messages, max_tokens=8192, retry_429=retry_429)
+        if exc.code == 429 and retry_429:
+            retry_after = 60
+            try:
+                retry_after = int(exc.headers.get("Retry-After", "60"))
+            except (TypeError, ValueError, AttributeError):
+                retry_after = 60
+            # TPM limits usually reset within a minute. One bounded retry is safer than
+            # silently treating a transient quota window as a content-quality failure.
+            time.sleep(min(60, max(1, retry_after)))
+            return request_groq(messages, max_tokens=max_tokens, retry_429=False)
         # Surface only the provider's error message, never request headers or credentials.
         detail = ""
         try:
@@ -942,7 +953,7 @@ def draft_candidates(candidates: list[dict]) -> tuple[list[dict], str | None]:
         response = request_groq([
             {"role": "system", "content": system},
             {"role": "user", "content": json.dumps(user, ensure_ascii=False)},
-        ])
+        ], max_tokens=4096)
         content = response["choices"][0]["message"]["content"]
         parsed = json.loads(content)
         drafts = parsed.get("drafts", [])
@@ -1025,7 +1036,7 @@ def editorial_review_drafts(
         response = request_groq([
             {"role": "system", "content": system},
             {"role": "user", "content": json.dumps(user, ensure_ascii=False)},
-        ], max_tokens=2048)
+        ], max_tokens=1024)
         decoded = json.loads(response["choices"][0]["message"]["content"])
         reviews = decoded.get("reviews")
         if not isinstance(reviews, list):
@@ -1748,16 +1759,29 @@ def main(argv: list[str] | None = None) -> int:
                             "claim_evidence": draft.get("claim_evidence", []) if isinstance(draft, dict) else [],
                         })
                 locally_valid_count = len(passing)
-                passing, editorial_rejections, editorial_review_error = editorial_review_drafts(passing, by_id)
+                passing.sort(key=lambda item: (-item["editorial_score"], -int(item["hourly_adjusted_score"] or 0)))
+                review_candidates = passing[:1]
+                not_reviewed = [
+                    {
+                        "candidate_id": item["candidate_id"],
+                        "title": item["title"],
+                        "proposed_text": item["post_text"],
+                        "reasons": ["Lower-ranked local pass not independently reviewed because this hourly slot can select only one post."],
+                    }
+                    for item in passing[1:]
+                ]
+                passing, editorial_rejections, editorial_review_error = editorial_review_drafts(review_candidates, by_id)
                 rejected.extend(editorial_rejections)
+                rejected.extend(not_reviewed)
                 report["editorial_review"] = {
                     "locally_valid_drafts": locally_valid_count,
+                    "submitted_for_independent_review": len(review_candidates),
                     "passed_independent_review": len(passing),
                     "rejected_by_independent_review": len(editorial_rejections),
+                    "lower_ranked_not_reviewed": len(not_reviewed),
                     "review_error": editorial_review_error,
                     "automatic_gate": "fail_closed",
                 }
-                passing.sort(key=lambda item: (-item["editorial_score"], -int(item["hourly_adjusted_score"] or 0)))
                 report["passing_drafts"] = passing
                 report["rejected_drafts"] = source_rejections + rejected
                 for draft in generated:
