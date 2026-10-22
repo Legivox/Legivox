@@ -1074,12 +1074,35 @@ def repair_rejected_drafts(
     independent editorial review before it can be recommended.
     """
     eligible_rejections = []
-    for rejected in rejected_drafts:
+    for index, rejected in enumerate(rejected_drafts):
         candidate_id = clean(rejected.get("candidate_id"))
         if candidate_id in candidates_by_id and rejected.get("proposed_text"):
-            eligible_rejections.append(rejected)
-        if len(eligible_rejections) >= limit:
-            break
+            candidate = candidates_by_id[candidate_id]
+            reasons_text = " ".join(str(reason) for reason in (rejected.get("reasons") or [])).casefold()
+            repair_priority = 0
+            priority_rules = (
+                (120, ("lacks a baseline or direct metric", "same prompt twice")),
+                (110, ("unsupported numeric claim", "unsupported performance claim", "metric mismatch")),
+                (105, ("interaction/causal relationship", "undocumented product capability")),
+                (100, ("supporting quotes cover only", "supporting quote does not share enough wording")),
+                (95, ("primary-source evidence quote is missing", "factual claim lacks a quote")),
+                (90, ("omits the product/platform/capability name", "orphaned")),
+                (85, ("bundles multiple features", "fact sentence is too long", "takeaway is too long")),
+                (75, ("source headline", "headline rewrite", "generic audience-only")),
+            )
+            for priority, needles in priority_rules:
+                if any(needle in reasons_text for needle in needles):
+                    repair_priority = max(repair_priority, priority)
+            try:
+                rank_score = int(candidate.get("hourly_adjusted_score") or candidate.get("priority_score") or 0)
+            except (TypeError, ValueError):
+                rank_score = 0
+            eligible_rejections.append((repair_priority, rank_score, -index, rejected))
+    # Repair the most consequential and realistically fixable failures first. Preserve
+    # source priority as the tie-breaker so a key issue such as false savings advice
+    # is not missed simply because the model returned it last.
+    eligible_rejections.sort(key=lambda row: (row[0], row[1], row[2]), reverse=True)
+    eligible_rejections = [row[3] for row in eligible_rejections[:max(0, limit)]]
     if not eligible_rejections:
         return [], None
 
