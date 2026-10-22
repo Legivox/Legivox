@@ -362,6 +362,105 @@ class HourlyDryRunTests(unittest.TestCase):
         self.assertIsNone(accepted)
         self.assertTrue(any("bundles multiple features" in reason for reason in reasons))
 
+    def test_opening_must_name_the_product_not_start_with_an_orphaned_verb(self):
+        candidate = dict(self.candidate)
+        candidate.update({
+            "title": "Show HN: Bloffy, a blog you write freely and own completely",
+            "source": "Hacker News",
+            "source_kind": "hacker_news",
+            "url": "https://bloffy.co/en",
+            "canonical_url": "https://bloffy.co/en",
+            "primary_source_title": "A blog you write freely and own completely | Bloffy",
+            "primary_source_description": "All Bloffy adds to a reader's page is one small 3.2KB script.",
+            "primary_source_text": "All Bloffy adds to a reader's page is one small 3.2KB script.",
+            "primary_source_evidence": "A blog you write freely and own completely. All Bloffy adds to a reader's page is one small 3.2KB script.",
+            "evidence_urls": ["https://bloffy.co/en"],
+        })
+        draft = {
+            "candidate_id": "candidate-1",
+            "fact_sentence": "Adds only a 3.2KB script to pages.",
+            "post_text": (
+                "Adds only a 3.2KB script to pages. "
+                "Measure page load to confirm script size stays under 4KB. "
+                "https://bloffy.co/en"
+            ),
+            "editorial_takeaway": "Measure page load to confirm script size stays under 4KB.",
+            "evidence_quote": "All Bloffy adds to a reader's page is one small 3.2KB script.",
+            "claim_evidence": [
+                {
+                    "claim": "Bloffy adds a small script to a reader's page",
+                    "quote": "All Bloffy adds to a reader's page is one small 3.2KB script",
+                }
+            ],
+            "scores": {"timeliness": 8, "usefulness": 8, "novelty": 8, "evidence": 8, "insight": 8},
+        }
+        accepted, reasons = hourly.validate_draft(draft, {"candidate-1": candidate})
+        self.assertIsNone(accepted)
+        self.assertTrue(any("omits the product/platform/capability name" in reason for reason in reasons))
+
+    def test_independent_editor_rejects_metric_mismatch(self):
+        draft = {
+            "candidate_id": "candidate-1",
+            "title": "Bloffy",
+            "post_text": (
+                "Bloffy adds a 3.2KB script to reader pages. "
+                "Measure page load to confirm script size stays under 4KB. https://bloffy.co/en"
+            ),
+            "fact_sentence": "Bloffy adds a 3.2KB script to reader pages.",
+            "editorial_takeaway": "Measure page load to confirm script size stays under 4KB.",
+            "url": "https://bloffy.co/en",
+            "claim_evidence": [],
+        }
+        review_payload = {
+            "reviews": [{
+                "candidate_id": "candidate-1",
+                "pass": False,
+                "clarity_score": 8,
+                "technical_coherence_score": 3,
+                "takeaway_value_score": 5,
+                "source_faithfulness_score": 7,
+                "reason": "Page-load timing does not measure script byte size; inspect the transferred resource size instead.",
+            }]
+        }
+        response = {"choices": [{"message": {"content": json.dumps(review_payload)}}]}
+        with patch.object(hourly, "request_groq", return_value=response):
+            approved, rejected, error = hourly.editorial_review_drafts([draft], {"candidate-1": self.candidate})
+        self.assertIsNone(error)
+        self.assertEqual(approved, [])
+        self.assertEqual(len(rejected), 1)
+        self.assertIn("does not measure script byte size", rejected[0]["reasons"][0])
+        self.assertEqual(rejected[0]["editorial_review"]["technical_coherence_score"], 3)
+
+    def test_independent_editor_pass_is_required_even_after_local_validation(self):
+        draft = {
+            "candidate_id": "candidate-1",
+            "title": "Hookdeck webhook skills",
+            "post_text": "Hookdeck provides webhook integration guidance. Test duplicate delivery before shipping.",
+            "fact_sentence": "Hookdeck provides webhook integration guidance.",
+            "editorial_takeaway": "Test duplicate delivery before shipping.",
+            "url": "https://github.com/hookdeck/webhook-skills",
+            "claim_evidence": [],
+        }
+        review_payload = {
+            "reviews": [{
+                "candidate_id": "candidate-1",
+                "pass": True,
+                "clarity_score": 8,
+                "technical_coherence_score": 8,
+                "takeaway_value_score": 8,
+                "source_faithfulness_score": 8,
+                "reason": "The subject is named and the test logically follows from the integration use case.",
+            }]
+        }
+        response = {"choices": [{"message": {"content": json.dumps(review_payload)}}]}
+        with patch.object(hourly, "request_groq", return_value=response):
+            approved, rejected, error = hourly.editorial_review_drafts([draft], {"candidate-1": self.candidate})
+        self.assertIsNone(error)
+        self.assertEqual(rejected, [])
+        self.assertEqual(len(approved), 1)
+        self.assertTrue(approved[0]["editorial_review"]["passed"])
+        self.assertEqual(approved[0]["editorial_review"]["technical_coherence_score"], 8)
+
     def test_draft_without_source_url_is_rejected(self):
         draft = {
             "candidate_id": "candidate-1",
