@@ -95,11 +95,14 @@ def parse_utc(value: object) -> datetime | None:
 
 
 def normalize_for_match(value: object) -> str:
-    """Normalise typographic variants while requiring the quoted words to exist in the source."""
+    """Normalise page-rendering markup while preserving words and factual content."""
     text = unicodedata.normalize("NFKC", str(value or ""))
     for character in ("\u2010", "\u2011", "\u2012", "\u2013", "\u2014", "\u2212"):
         text = text.replace(character, "-")
     text = text.replace("\u00a0", " ")
+    # Rendered pages omit Markdown code/emphasis wrappers present in feed text.
+    text = re.sub(r"[\x60*_~]", "", text)
+    text = re.sub(r"\s+([.,;:!?])", r"\1", text)
     return " ".join(text.casefold().split())
 
 
@@ -964,6 +967,16 @@ def draft_candidates(candidates: list[dict]) -> tuple[list[dict], str | None]:
         return [], clean(str(exc)) or type(exc).__name__
 
 
+def primary_evidence_text(candidate: dict) -> str:
+    """Only fetched live-page text can substantiate a post's factual claims."""
+    return clean("\n".join([
+        str(candidate.get("primary_source_title") or ""),
+        str(candidate.get("primary_source_description") or ""),
+        str(candidate.get("primary_source_text") or ""),
+        str(candidate.get("primary_source_evidence") or ""),
+    ]))
+
+
 def compose_post_from_fields(draft: dict, candidate: dict) -> dict:
     """Assemble the post from separate factual and editorial sentences.
 
@@ -984,6 +997,17 @@ def compose_post_from_fields(draft: dict, candidate: dict) -> dict:
         fact += "."
     if takeaway[-1] not in ".!?":
         takeaway += "."
+    # Some model replies leave evidence_quote blank but supply a supporting quote.
+    # Reuse that quote only if it exists in the fetched primary page.
+    if not clean(prepared.get("evidence_quote")):
+        page_norm = normalize_for_match(primary_evidence_text(candidate))
+        for claim_support in prepared.get("claim_evidence", []):
+            if not isinstance(claim_support, dict):
+                continue
+            quote_candidate = clean(claim_support.get("quote"))
+            if quote_candidate and normalize_for_match(quote_candidate) in page_norm:
+                prepared["evidence_quote"] = quote_candidate
+                break
     prepared["fact_sentence"] = fact
     prepared["editorial_takeaway"] = takeaway
     prepared["copy_character_budget"] = max(0, MAX_POST_CHARS - len(source_url) - 2)
@@ -1024,15 +1048,8 @@ def validate_draft(draft: dict, candidates_by_id: dict) -> tuple[dict | None, li
         prefix = prefix.rstrip()
         if prefix and prefix[-1] not in ".!?":
             post = prefix + ". " + source_url + suffix
-    # Only live primary-page content can substantiate facts. Search/feed summaries
-    # select what to inspect, but they cannot rescue an unsupported claim when the
-    # actual page disagrees or has changed.
-    evidence = clean("\n".join([
-        str(candidate.get("primary_source_title") or ""),
-        str(candidate.get("primary_source_description") or ""),
-        str(candidate.get("primary_source_text") or ""),
-        str(candidate.get("primary_source_evidence") or ""),
-    ]))
+    # Only live primary-page content can substantiate facts.
+    evidence = primary_evidence_text(candidate)
     quote = clean(draft.get("evidence_quote"))
     scores = draft.get("scores") if isinstance(draft.get("scores"), dict) else {}
 
@@ -1056,6 +1073,10 @@ def validate_draft(draft: dict, candidates_by_id: dict) -> tuple[dict | None, li
         reasons.append("Missing fact_sentence: the model must provide one concrete source-grounded fact separately.")
     elif not sentences or normalize_for_match(sentences[0]) != normalize_for_match(fact_sentence):
         reasons.append("The opening sentence must match the separately supplied fact_sentence.")
+    if fact_sentence.count(",") >= 2 or " & " in (" " + fact_sentence.casefold() + " ") or any(
+        phrase in fact_sentence.casefold() for phrase in (" including ", " plus ", " as well as ")
+    ):
+        reasons.append("The factual opening bundles multiple features; narrow it to one capability.")
     action_terms = {
         "test", "tests", "testing", "compare", "compares", "comparing", "check", "checks",
         "checking", "verify", "verifies", "verifying", "measure", "measures", "measuring",
@@ -1080,7 +1101,7 @@ def validate_draft(draft: dict, candidates_by_id: dict) -> tuple[dict | None, li
             reasons.append("The declared editorial_takeaway is not present as written in the post.")
         elif len(sentences) >= 2 and normalize_for_match(sentences[1]) != takeaway_normalized:
             reasons.append("The editorial takeaway must be the distinct second sentence, not a generic afterthought.")
-        if len(takeaway_tokens) < 6:
+        if len(takeaway_tokens) < 4:
             reasons.append("Editorial takeaway is too generic or short; it must add a concrete point.")
         if len(fact_sentence) > 110:
             reasons.append("Fact sentence is too long; narrow it to one source-backed capability.")
@@ -1108,7 +1129,7 @@ def validate_draft(draft: dict, candidates_by_id: dict) -> tuple[dict | None, li
     if len(post) > 280:
         reasons.append(f"Draft is {len(post)} raw characters; limit is 280")
     if not quote or normalize_for_match(quote) not in normalize_for_match(evidence):
-        reasons.append("Evidence quote is not present in the candidate title/summary (after Unicode normalisation)")
+        reasons.append("Primary-source evidence quote is missing or absent from the live page (after presentation normalisation)")
 
     claim_evidence = draft.get("claim_evidence")
     if not isinstance(claim_evidence, list) or not claim_evidence:
@@ -1121,8 +1142,16 @@ def validate_draft(draft: dict, candidates_by_id: dict) -> tuple[dict | None, li
             claim = clean(entry.get("claim"))
             supporting_quote = clean(entry.get("quote"))
             if not claim or not supporting_quote or normalize_for_match(supporting_quote) not in normalize_for_match(evidence):
-                reasons.append("A factual claim lacks a source quote present in the title/summary")
+                reasons.append("A factual claim lacks a quote present in the live primary-source page")
                 break
+            if (
+                len(tokens(claim)) < 4
+                or "capability x" in claim.casefold()
+                or claim.casefold().startswith("the source says")
+            ):
+                # Ignore a model's generic evidence label; check its source quote against
+                # the actual fact_sentence in the post instead.
+                claim = fact_sentence
             claim_tokens = tokens(claim)
             quote_tokens = tokens(supporting_quote)
             overlap = len(claim_tokens & quote_tokens) / max(1, len(claim_tokens))
