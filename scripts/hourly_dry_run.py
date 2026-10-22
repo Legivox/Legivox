@@ -1034,7 +1034,7 @@ def repair_rejected_drafts(
             "candidate_id": candidate_id,
             "candidate_title": candidate.get("primary_source_title") or candidate.get("title"),
             "primary_source_url": candidate.get("url"),
-            "verified_evidence": model_evidence_excerpt(candidate, max_chars=600),
+            "verified_evidence": model_evidence_excerpt(candidate, max_chars=900),
             "rejected_copy": str(rejected.get("proposed_text") or "")[:280],
             "previous_claim_evidence": (rejected.get("claim_evidence") or [])[:2],
             "local_rejection_reasons": (rejected.get("reasons") or [])[:8],
@@ -1046,8 +1046,10 @@ def repair_rejected_drafts(
         "licences, dates, benchmarks, platform behavior, integrations or product capabilities. If a capability is not in the page, remove it. "
         "Use one narrow factual sentence naming the product/platform/capability (55-85 characters), then one distinct, useful takeaway "
         "(40-70 characters) that is a logically relevant test, trade-off, decision rule or implementation step. It may be original advice "
-        "based on the documented use case, but must not imply an undocumented feature. Avoid orphaned sentence fragments, feature lists, "
-        "unsupported numbers and headline rewrites. Respect the per-candidate URL character budget. "
+        "based on the documented use case, but must not imply an undocumented feature. Avoid orphaned fragments, feature lists and unsupported numbers. "
+        "Do not reword the source headline with a swapped noun: start from a concrete behavior, condition, limitation or implementation consequence. "
+        "For a changelog, do not write 'Product X now supports Feature Y'; identify the condition under which the feature works or a failure path engineers must handle. "
+        "Respect the per-candidate URL character budget. "
         "For every factual claim, supply claim_evidence with a non-empty quote copied verbatim from the supplied verified evidence excerpt. "
         "If no useful accurate draft is possible, omit that candidate rather than guessing. Return JSON only."
     )
@@ -1057,6 +1059,8 @@ def repair_rejected_drafts(
             "is unsupported: narrow the claim to the primary evidence or omit it. Return a drafts array with candidate_id, fact_sentence, "
             "editorial_takeaway, evidence_quote, claim_evidence, format, audience, angle, rationale and scores. "
             "Scores are integers 1-10 for timeliness, usefulness, novelty, evidence and insight. "
+            "Scores are diagnostics only: do not lower novelty because a fact is precise, but make the copy itself distinct and useful. "
+            "The independent review, not the writer's self-rating, makes the final originality decision. "
             "The final post is assembled by code with the exact primary-source URL. Do not include URLs inside either sentence."
         ),
         "rejected_candidates": payload_drafts,
@@ -1138,8 +1142,9 @@ def editorial_review_drafts(
         "A valid quote alone is not enough if the conclusion does not follow. Pass only if the reader learns a concrete, candidate-specific fact "
         "and gets a logically relevant, useful next step. "
         "Return JSON only with a reviews array, one entry for every supplied candidate. Each entry must have candidate_id, pass (boolean), "
-        "clarity_score, technical_coherence_score, takeaway_value_score, source_faithfulness_score and reason. Scores must be integers 1-10. "
-        "pass must be true only when every score is at least 7. Keep the reason specific and under 220 characters."
+        "clarity_score, technical_coherence_score, takeaway_value_score, source_faithfulness_score, originality_score and reason. "
+        "originality_score rates whether the post adds a useful perspective rather than paraphrasing the headline. Scores must be integers 1-10. "
+        "pass must be true only when all five scores are at least 7. Keep the reason specific and under 220 characters."
     )
     user = {
         "task": "Act as the independent release gate. Reject weak copy; do not soften the score to avoid skipping.",
@@ -1148,6 +1153,7 @@ def editorial_review_drafts(
             "technical_coherence_score": 7,
             "takeaway_value_score": 7,
             "source_faithfulness_score": 7,
+            "originality_score": 7,
         },
         "drafts": review_items,
     }
@@ -1195,7 +1201,7 @@ def editorial_review_drafts(
             continue
         score_names = (
             "clarity_score", "technical_coherence_score",
-            "takeaway_value_score", "source_faithfulness_score",
+            "takeaway_value_score", "source_faithfulness_score", "originality_score",
         )
         try:
             scores = {name: int(review.get(name, 0)) for name in score_names}
@@ -1526,7 +1532,9 @@ def validate_draft(draft: dict, candidates_by_id: dict) -> tuple[dict | None, li
             if overlap < 0.45:
                 reasons.append("A supporting quote does not share enough wording with its stated claim")
                 break
-    for score_name, minimum in (("timeliness", 6), ("usefulness", 7), ("novelty", 6), ("evidence", 7), ("insight", 7)):
+    # The author model's novelty score is diagnostic, not a quality gate. Originality is
+    # independently scored by the second editor; a self-rating must not veto the post.
+    for score_name, minimum in (("timeliness", 6), ("usefulness", 7), ("evidence", 7), ("insight", 7)):
         try:
             score = int(scores.get(score_name, 0))
         except (TypeError, ValueError):
