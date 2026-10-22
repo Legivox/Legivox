@@ -62,7 +62,7 @@ UNVERIFIABLE_MARKETING = (
     "game-changing", "game changing", "game changer", "most popular", "industry-leading",
     "industry leading", "the ultimate",
 )
-NUMBER_RE = re.compile(r"\b\d[\d,.]*(?:%|x|k\+|\+)?\b", re.I)
+NUMBER_RE = re.compile(r"\b\d[\d,.]*(?:\s*(?:%|[a-zA-Z]{1,4}|x|k\+|\+))?\b", re.I)
 URL_RE = re.compile(r"https?://[^\s<>()]+", re.I)
 EDITORIAL_STARTERS = (
     "useful if", "useful when", "useful for", "useful to", "helpful if", "helpful when",
@@ -1332,8 +1332,11 @@ def validate_draft(draft: dict, candidates_by_id: dict) -> tuple[dict | None, li
             reasons.append("Unsupported strong claim: " + claim)
             break
 
-    source_numbers = set(NUMBER_RE.findall(evidence))
-    post_numbers = set(NUMBER_RE.findall(post_without_url))
+    def normalise_number(value: str) -> str:
+        return re.sub(r"\s+", "", value).casefold()
+
+    source_numbers = {normalise_number(value) for value in NUMBER_RE.findall(evidence)}
+    post_numbers = {normalise_number(value) for value in NUMBER_RE.findall(post_without_url)}
     unsupported_numbers = sorted(value for value in post_numbers if value not in source_numbers)
     if unsupported_numbers:
         reasons.append("Unsupported numeric claim(s): " + ", ".join(unsupported_numbers[:3]))
