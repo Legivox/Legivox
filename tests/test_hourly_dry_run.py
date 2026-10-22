@@ -285,8 +285,8 @@ class HourlyDryRunTests(unittest.TestCase):
         }
         accepted, reasons = hourly.validate_draft(draft, {"candidate-1": candidate})
         self.assertIsNone(accepted)
-        self.assertTrue(any("Evidence quote is not present" in reason for reason in reasons))
-        self.assertTrue(any("factual claim lacks a source quote" in reason for reason in reasons))
+        self.assertTrue(any("Primary-source evidence quote is missing" in reason for reason in reasons))
+        self.assertTrue(any("factual claim lacks a quote present in the live primary-source page" in reason for reason in reasons))
 
     def test_groq_413_retries_with_smaller_candidate_pool(self):
         candidates = []
@@ -312,6 +312,55 @@ class HourlyDryRunTests(unittest.TestCase):
         self.assertEqual(mocked.call_count, 2)
         retried_payload = json.loads(mocked.call_args_list[1].args[0][1]["content"])
         self.assertEqual(len(retried_payload["candidates"]), 1)
+
+    def test_missing_evidence_quote_is_derived_only_from_a_quote_found_on_the_live_page(self):
+        draft = {
+            "candidate_id": "candidate-1",
+            "fact_sentence": "Webhook skills guide AI coding agents through signature verification.",
+            "editorial_takeaway": "Test invalid signatures and duplicate deliveries before shipping.",
+            "claim_evidence": [
+                {
+                    "claim": "The source says capability X",
+                    "quote": "Webhook integration skills for AI coding agents. Step-by-step guidance for setting up webhook receivers, signature verification, and event handling",
+                }
+            ],
+        }
+        composed = hourly.compose_post_from_fields(draft, self.candidate)
+        self.assertEqual(composed.get("evidence_quote"), draft["claim_evidence"][0]["quote"])
+        self.assertTrue(composed["post_text"].endswith(self.candidate["url"]))
+
+    def test_markdown_code_wrappers_do_not_break_a_live_page_quote(self):
+        page_text = "Checkout MCP and Cart MCP responses include a buyer.consent object."
+        quoted_text = "Checkout MCP and Cart MCP responses include a " + chr(96) + "buyer.consent" + chr(96) + " object."
+        self.assertIn(
+            hourly.normalize_for_match(quoted_text),
+            hourly.normalize_for_match(page_text),
+        )
+
+    def test_multi_feature_fact_sentence_is_rejected(self):
+        candidate = dict(self.candidate)
+        draft = {
+            "candidate_id": "candidate-1",
+            "fact_sentence": (
+                "The tool supports webhook receiver setup, signature verification, and event handling for Shopify."
+            ),
+            "post_text": (
+                "The tool supports webhook receiver setup, signature verification, and event handling for Shopify. "
+                "Test failed signature handling before shipping. https://github.com/hookdeck/webhook-skills"
+            ),
+            "editorial_takeaway": "Test failed signature handling before shipping.",
+            "evidence_quote": "webhook receivers, signature verification, and event handling for Stripe, Shopify, GitHub, and more.",
+            "claim_evidence": [
+                {
+                    "claim": "The source describes setup, verification and event handling",
+                    "quote": "webhook receivers, signature verification, and event handling for Stripe, Shopify, GitHub, and more.",
+                }
+            ],
+            "scores": {"timeliness": 8, "usefulness": 8, "novelty": 8, "evidence": 8, "insight": 8},
+        }
+        accepted, reasons = hourly.validate_draft(draft, {"candidate-1": candidate})
+        self.assertIsNone(accepted)
+        self.assertTrue(any("bundles multiple features" in reason for reason in reasons))
 
     def test_draft_without_source_url_is_rejected(self):
         draft = {
