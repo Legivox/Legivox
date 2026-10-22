@@ -259,6 +259,35 @@ class HourlyDryRunTests(unittest.TestCase):
         self.assertIsNone(accepted)
         self.assertTrue(any("source headline" in reason for reason in reasons))
 
+    def test_feed_summary_cannot_support_a_claim_absent_from_live_primary_page(self):
+        candidate = dict(self.candidate)
+        candidate["primary_source_title"] = "Hookdeck webhook integration skills for coding agents"
+        candidate["primary_source_description"] = "Webhook integration skills for AI coding agents."
+        candidate["primary_source_text"] = "Webhook integration skills for AI coding agents."
+        candidate["primary_source_evidence"] = "Webhook integration skills for AI coding agents."
+        draft = {
+            "candidate_id": "candidate-1",
+            "fact_sentence": "The skills provide signature verification and event handling for Stripe and Shopify.",
+            "post_text": (
+                "The skills provide signature verification and event handling for Stripe and Shopify. "
+                "For webhook receivers, test signature failures before shipping. "
+                "https://github.com/hookdeck/webhook-skills"
+            ),
+            "editorial_takeaway": "For webhook receivers, test signature failures before shipping.",
+            "evidence_quote": "signature verification, and event handling",
+            "claim_evidence": [
+                {
+                    "claim": "The skills provide signature verification and event handling for Stripe and Shopify",
+                    "quote": "webhook receivers, signature verification, and event handling for Stripe, Shopify, GitHub",
+                }
+            ],
+            "scores": {"timeliness": 8, "usefulness": 8, "novelty": 8, "evidence": 8, "insight": 8},
+        }
+        accepted, reasons = hourly.validate_draft(draft, {"candidate-1": candidate})
+        self.assertIsNone(accepted)
+        self.assertTrue(any("Evidence quote is not present" in reason for reason in reasons))
+        self.assertTrue(any("factual claim lacks a source quote" in reason for reason in reasons))
+
     def test_draft_without_source_url_is_rejected(self):
         draft = {
             "candidate_id": "candidate-1",
