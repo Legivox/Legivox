@@ -631,8 +631,19 @@ def request_groq(messages: list[dict], max_tokens: int = 8192) -> dict:
             pass
         if exc.code == 400 and "max completion tokens" in body.lower() and max_tokens < 16384:
             return request_groq(messages, max_tokens=16384)
-        # Do not expose request headers or the API key in diagnostics.
-        raise RuntimeError(f"Groq returned HTTP {exc.code}") from None
+        # Surface only the provider's error message, never request headers or credentials.
+        detail = ""
+        try:
+            error_payload = json.loads(body)
+            error_object = error_payload.get("error") if isinstance(error_payload, dict) else {}
+            if isinstance(error_object, dict):
+                detail = clean(error_object.get("message") or "")[:240]
+            elif isinstance(error_object, str):
+                detail = clean(error_object)[:240]
+        except (json.JSONDecodeError, TypeError):
+            detail = ""
+        suffix = ": " + detail if detail else ""
+        raise RuntimeError(f"Groq returned HTTP {exc.code}{suffix}") from None
     except (urllib.error.URLError, TimeoutError, json.JSONDecodeError) as exc:
         raise RuntimeError("Groq request failed: " + type(exc).__name__) from None
 
@@ -733,7 +744,7 @@ def verify_primary_source(candidate: dict) -> tuple[dict | None, str | None]:
         page_description = clean(parser.og_description or parser.description)
         page_text = clean(" ".join(parser.text_parts))[:5000]
     else:
-        page_title = clean(str(candidate.get("title") or ""))
+        page_title = ""
         page_description = ""
         page_text = clean(decoded)[:5000]
 
