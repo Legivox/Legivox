@@ -362,6 +362,21 @@ class HourlyDryRunTests(unittest.TestCase):
         self.assertIsNone(accepted)
         self.assertTrue(any("bundles multiple features" in reason for reason in reasons))
 
+    def test_numeric_unit_spacing_is_normalized_without_hiding_different_values(self):
+        source_numbers = {
+            hourly.re.sub(r"\s+", "", value).casefold()
+            for value in hourly.NUMBER_RE.findall("The page adds one 3.2KB script.")
+        }
+        post_numbers = {
+            hourly.re.sub(r"\s+", "", value).casefold()
+            for value in hourly.NUMBER_RE.findall("The page adds one 3.2 KB script.")
+        }
+        self.assertEqual(source_numbers, post_numbers)
+        self.assertNotEqual(
+            {hourly.re.sub(r"\s+", "", value).casefold() for value in hourly.NUMBER_RE.findall("PageSpeed score 99")},
+            {hourly.re.sub(r"\s+", "", value).casefold() for value in hourly.NUMBER_RE.findall("PageSpeed score 100")},
+        )
+
     def test_opening_must_name_the_product_not_start_with_an_orphaned_verb(self):
         candidate = dict(self.candidate)
         candidate.update({
