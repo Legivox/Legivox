@@ -596,7 +596,7 @@ class HourlyDryRunTests(unittest.TestCase):
         }
         accepted, reasons = hourly.validate_draft(draft, {"candidate-1": candidate})
         self.assertIsNone(accepted)
-        self.assertTrue(any("omits the product/platform/capability name" in reason for reason in reasons))
+        self.assertTrue(any("omits the named product/repository/feature subject" in reason for reason in reasons))
 
     def test_unsupported_skill_sync_capability_is_rejected_locally(self):
         candidate = dict(self.candidate)
