@@ -1465,6 +1465,7 @@ def write_outputs(report: dict) -> None:
         "- Mode: " + report["mode"],
         "- X publishing: **not performed**",
         "- Candidate pool after freshness/diversity filters: " + str(report["eligible_candidate_count"]),
+        "- Independent editorial review: " + str((report.get("editorial_review") or {}).get("passed_independent_review", 0)) + " draft(s) passed / " + str((report.get("editorial_review") or {}).get("rejected_by_independent_review", 0)) + " rejected",
         "- Drafts passing local checks: " + str(len(report["passing_drafts"])),
         "- Outcome: **" + report["outcome"] + "**",
         "- Decision reason: " + report["decision_reason"],
@@ -1524,6 +1525,7 @@ def write_outputs(report: dict) -> None:
             "- Format: " + str(row["format"]),
             "- Editorial score: " + str(row["editorial_score"]) + "/10",
             "- Model scores: timeliness " + str(scores["timeliness"]) + "/10, usefulness " + str(scores["usefulness"]) + "/10, novelty " + str(scores["novelty"]) + "/10, evidence " + str(scores["evidence"]) + "/10, insight " + str(scores["insight"]) + "/10",
+            "- Independent editor scores: " + json.dumps(row.get("editorial_review") or {}, ensure_ascii=False),
             "- Live primary page: " + str(row.get("primary_source_final_url") or row["url"]) + " (HTTP " + str(row.get("primary_source_http_status") or "verified") + ")",
             "- Exact source evidence: “" + row["evidence_quote"] + "”",
             "- Why this angle: " + row["rationale"],
@@ -1745,6 +1747,16 @@ def main(argv: list[str] | None = None) -> int:
                             "evidence_quote": clean(draft.get("evidence_quote"))[:300] if isinstance(draft, dict) else "",
                             "claim_evidence": draft.get("claim_evidence", []) if isinstance(draft, dict) else [],
                         })
+                locally_valid_count = len(passing)
+                passing, editorial_rejections, editorial_review_error = editorial_review_drafts(passing, by_id)
+                rejected.extend(editorial_rejections)
+                report["editorial_review"] = {
+                    "locally_valid_drafts": locally_valid_count,
+                    "passed_independent_review": len(passing),
+                    "rejected_by_independent_review": len(editorial_rejections),
+                    "review_error": editorial_review_error,
+                    "automatic_gate": "fail_closed",
+                }
                 passing.sort(key=lambda item: (-item["editorial_score"], -int(item["hourly_adjusted_score"] or 0)))
                 report["passing_drafts"] = passing
                 report["rejected_drafts"] = source_rejections + rejected
@@ -1761,7 +1773,17 @@ def main(argv: list[str] | None = None) -> int:
                     report["recommended_draft"] = chosen
                     state["used_candidates"][chosen["candidate_id"]] = now.astimezone(timezone.utc).isoformat(timespec="seconds")
                 else:
-                    report["decision_reason"] = "All generated drafts failed the local evidence/editorial checks; the hour was skipped."
+                    if editorial_review_error:
+                        report["decision_reason"] = (
+                            "No draft cleared the complete automatic quality gate; independent editorial review failed closed. "
+                            + editorial_review_error
+                        )
+                    elif editorial_rejections:
+                        report["decision_reason"] = (
+                            "All drafts that passed source/evidence checks were rejected by the independent editorial review; the hour was skipped."
+                        )
+                    else:
+                        report["decision_reason"] = "All generated drafts failed the local evidence/editorial checks; the hour was skipped."
                     for candidate in verified_shortlist:
                         state["attempted_candidates"][candidate["id"]] = now.astimezone(timezone.utc).isoformat(timespec="seconds")
 
