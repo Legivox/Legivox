@@ -101,7 +101,7 @@ jobs:
         run: cat output/discovery/hourly-latest.md >> "$GITHUB_STEP_SUMMARY"
 
       - name: Commit hourly state and audit log
-        if: success() && (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch') && hashFiles('output/discovery/hourly-state.json') != ''
+        if: success() && (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || github.event_name == 'push') && hashFiles('output/discovery/hourly-state.json') != ''
         env:
           BRANCH_NAME: ${{ github.ref_name }}
         run: |
