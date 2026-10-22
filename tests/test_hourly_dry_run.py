@@ -377,6 +377,25 @@ class HourlyDryRunTests(unittest.TestCase):
             {hourly.re.sub(r"\s+", "", value).casefold() for value in hourly.NUMBER_RE.findall("PageSpeed score 100")},
         )
 
+    def test_missing_candidate_id_is_recovered_only_from_exact_verified_source_url(self):
+        candidates = {
+            "candidate-1": {"url": "https://github.com/hookdeck/webhook-skills"},
+            "candidate-2": {"url": "https://github.com/example/other-tool"},
+        }
+        recovered, note = hourly.resolve_candidate_id({
+            "candidate_id": "",
+            "post_text": "Hookdeck guides webhook setup. https://github.com/hookdeck/webhook-skills",
+        }, candidates)
+        self.assertEqual(recovered, "candidate-1")
+        self.assertIn("exact verified source URL", note)
+
+        missing, reason = hourly.resolve_candidate_id({
+            "candidate_id": "",
+            "post_text": "A generic paragraph without an original source link.",
+        }, candidates)
+        self.assertIsNone(missing)
+        self.assertIn("no exact verified source URL matched", reason)
+
     def test_opening_must_name_the_product_not_start_with_an_orphaned_verb(self):
         candidate = dict(self.candidate)
         candidate.update({
