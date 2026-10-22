@@ -1231,6 +1231,88 @@ def primary_evidence_text(candidate: dict) -> str:
     ]))
 
 
+def best_primary_quote_for_claim(claim: str, candidate: dict, minimum_coverage: float = 0.65) -> str | None:
+    """Select an exact contiguous primary-page excerpt with strong lexical claim coverage.
+
+    This selects literal text only. It does not summarize or manufacture evidence;
+    semantic entailment is still checked by the independent editorial reviewer.
+    """
+    claim = clean(claim)
+    claim_tokens = tokens(claim)
+    if len(claim_tokens) < 3:
+        return None
+    source = primary_evidence_text(candidate)
+    if not source:
+        return None
+    chunks = [
+        clean(part)
+        for part in re.split(r"(?<=[.!?])\s+|(?<=;)\s+|\n+", source)
+        if len(clean(part)) >= 18
+    ]
+    # Also inspect bounded windows from exact page text when the page has long paragraphs.
+    for start in range(0, len(source), 250):
+        window = clean(source[start:start + 280])
+        if len(window) >= 35:
+            chunks.append(window)
+    unique_chunks = list(dict.fromkeys(chunks))
+    filler = {
+        "allow", "also", "and", "are", "can", "could", "does", "for", "from", "get",
+        "has", "have", "into", "its", "may", "more", "not", "now", "only", "our",
+        "provides", "support", "supports", "the", "their", "this", "through", "use",
+        "using", "with", "within", "your",
+    }
+    specific_claim_tokens = claim_tokens - filler
+    if len(specific_claim_tokens) < 3:
+        specific_claim_tokens = claim_tokens
+    scored = []
+    for index, quote in enumerate(unique_chunks):
+        quote_tokens = tokens(quote)
+        matched = len(specific_claim_tokens & quote_tokens)
+        coverage = matched / max(1, len(specific_claim_tokens))
+        if coverage >= minimum_coverage and matched >= 3:
+            scored.append((coverage, matched, -len(quote), -index, quote))
+    return max(scored)[-1] if scored else None
+
+
+def attach_primary_claim_evidence(draft: dict, candidate: dict) -> dict:
+    """Repair missing/weak quote metadata only from literal verified-page excerpts."""
+    prepared = dict(draft)
+    fact = clean(prepared.get("fact_sentence"))
+    if not fact:
+        post_without_url = clean(URL_RE.sub(" ", str(prepared.get("post_text") or "")))
+        sentences = re.split(r"(?<=[.!?])\s+", post_without_url)
+        fact = clean(sentences[0]) if sentences else ""
+    best_quote = best_primary_quote_for_claim(fact, candidate) if fact else None
+    if not best_quote:
+        return prepared
+
+    existing_entries = prepared.get("claim_evidence")
+    valid_existing = False
+    if isinstance(existing_entries, list):
+        page_norm = normalize_for_match(primary_evidence_text(candidate))
+        for entry in existing_entries:
+            if not isinstance(entry, dict):
+                continue
+            quote = clean(entry.get("quote"))
+            claim = clean(entry.get("claim"))
+            claim_tokens = tokens(claim)
+            overlap = len(claim_tokens & tokens(quote)) / max(1, len(claim_tokens))
+            if quote and claim and normalize_for_match(quote) in page_norm and overlap >= 0.45:
+                valid_existing = True
+                break
+    if not valid_existing:
+        prepared["claim_evidence"] = [{"claim": fact, "quote": best_quote}]
+        prepared["evidence_quote"] = best_quote
+        prepared["evidence_quote_repaired_from_primary_page"] = True
+    elif (
+        not clean(prepared.get("evidence_quote"))
+        or normalize_for_match(clean(prepared.get("evidence_quote"))) not in normalize_for_match(primary_evidence_text(candidate))
+    ):
+        prepared["evidence_quote"] = best_quote
+        prepared["evidence_quote_repaired_from_primary_page"] = True
+    return prepared
+
+
 def compose_post_from_fields(draft: dict, candidate: dict) -> dict:
     """Assemble the post from separate factual and editorial sentences.
 
@@ -1905,7 +1987,8 @@ def main(argv: list[str] | None = None) -> int:
                         continue
                     seen_draft_ids.add(candidate_id)
                     candidate_for_draft = by_id[candidate_id]
-                    draft_with_context = ensure_editorial_context(draft, candidate_for_draft)
+                    grounded_draft = attach_primary_claim_evidence(draft, candidate_for_draft)
+                    draft_with_context = ensure_editorial_context(grounded_draft, candidate_for_draft)
                     accepted, reasons = validate_draft(draft_with_context, by_id)
                     if id_resolution_note and accepted:
                         accepted["candidate_id_resolution_note"] = id_resolution_note
@@ -1946,7 +2029,9 @@ def main(argv: list[str] | None = None) -> int:
                             })
                             repair_stats["repair_rejections"] += 1
                             continue
-                        accepted_repair, repair_reasons = validate_draft(repaired_draft, by_id)
+                        grounded_repair = attach_primary_claim_evidence(repaired_draft, repaired_candidate)
+                        grounded_repair = ensure_editorial_context(grounded_repair, repaired_candidate)
+                        accepted_repair, repair_reasons = validate_draft(grounded_repair, by_id)
                         if accepted_repair:
                             accepted_repair["automatic_repair_attempt"] = True
                             accepted_repair["repair_note"] = (
@@ -2012,7 +2097,9 @@ def main(argv: list[str] | None = None) -> int:
                             })
                             repair_stats["repair_rejections"] += 1
                             continue
-                        accepted_repair, repair_reasons = validate_draft(repaired_draft, by_id)
+                        grounded_repair = attach_primary_claim_evidence(repaired_draft, repaired_candidate)
+                        grounded_repair = ensure_editorial_context(grounded_repair, repaired_candidate)
+                        accepted_repair, repair_reasons = validate_draft(grounded_repair, by_id)
                         if accepted_repair:
                             accepted_repair["automatic_repair_attempt"] = True
                             accepted_repair["repair_note"] = (
