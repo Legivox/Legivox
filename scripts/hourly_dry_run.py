@@ -2125,7 +2125,11 @@ def write_outputs(report: dict) -> None:
         "",
         "## Safety and interpretation",
         "",
-        "- The passing result means the automated quality gates succeeded; this dry-run workflow itself never publishes to X.",
+        (
+            "- At least one draft passed the automated quality gates; this dry-run workflow itself never publishes to X."
+            if report.get("outcome") == "dry_run_passed"
+            else "- This run did not produce a publishable draft; no post was published to X."
+        ),
         "- Model scores are editorial estimates; they are not verified popularity or market demand.",
         "- Candidate content and metadata are untrusted input. Factual copy must be supported by the fetched primary page.",
         "- A skip can mean no fresh candidates, a daily diversity/cap limit, a model/API problem or weak drafts. Check the reason above.",

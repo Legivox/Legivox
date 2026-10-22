@@ -1367,6 +1367,8 @@ class HourlyDryRunTests(unittest.TestCase):
                 self.assertFalse(payload["posted_to_x"])
                 self.assertIn("not performed", md)
                 self.assertIn("skip", md)
+                self.assertIn("This run did not produce a publishable draft", md)
+                self.assertNotIn("The passing result means", md)
             finally:
                 hourly.OUT, hourly.LATEST_JSON_PATH, hourly.LATEST_MD_PATH = original
 
