@@ -174,6 +174,61 @@ def title_overlap(title: str, post: str) -> float:
     return len(title_tokens & post_tokens) / max(1, len(post_tokens))
 
 
+PRODUCT_IDENTITY_GENERIC = {
+    "app", "apps", "api", "apis", "bot", "bots", "chat", "chats", "chatbot",
+    "cli", "client", "clients", "cloud", "code", "dev", "developer", "developers",
+    "framework", "frameworks", "integration", "integrations", "library", "libraries",
+    "mcp", "open", "opensource", "plugin", "plugins", "project", "repo", "repository",
+    "sdk", "server", "servers", "source", "stack", "support", "tool", "tools",
+    "ui", "web", "website", "workflow", "workflows", "awesome", "selfhosted",
+    "show", "hn", "built", "build", "make", "made", "new", "release", "update",
+    "launch", "introducing", "introduces", "announcing", "announces", "now",
+}
+
+
+def product_identity_anchor_tokens(candidate: dict) -> set[str]:
+    """Return the strongest stable subject identifier available for this candidate.
+
+    For GitHub discoveries, use the repository name, not words from the README that
+    happen to name an integration. For Show HN posts, prefer the named product. For
+    changelog entries without a separate brand, use the actual changelog headline.
+    """
+    url = str(candidate.get("canonical_url") or candidate.get("url") or "")
+    parsed = urllib.parse.urlsplit(url)
+    host = (parsed.hostname or "").casefold()
+    path_parts = [part for part in parsed.path.strip("/").split("/") if part]
+
+    if host == "github.com" and len(path_parts) >= 2:
+        repo_name = path_parts[-1].removesuffix(".git")
+        repo_anchors = tokens(repo_name) - PRODUCT_IDENTITY_GENERIC
+        if repo_anchors:
+            return repo_anchors
+
+    title = str(candidate.get("title") or "").strip()
+    title_folded = title.casefold()
+    if "show hn:" in title_folded:
+        named_part = re.split(r"(?i)\bshow hn:\s*", title, maxsplit=1)[-1]
+        named_part = re.split(r"\s+[–—]\s+|\s+-\s+|,", named_part, maxsplit=1)[0]
+        named_anchors = tokens(named_part) - PRODUCT_IDENTITY_GENERIC
+        if named_anchors:
+            return named_anchors
+
+    # If a source does not include a product brand, the candidate's own headline is
+    # the subject. Deliberately do not union the whole primary-page body/description:
+    # a random feature token there should not count as naming the product.
+    title_anchors = tokens(title) - PRODUCT_IDENTITY_GENERIC
+    if title_anchors:
+        return title_anchors
+
+    # As a last resort, use the hostname label for a nameless external product page.
+    if host and host not in {"github.com", "www.hackernews.com", "news.ycombinator.com"}:
+        host_label = host.removeprefix("www.").split(".")[0]
+        host_anchors = tokens(host_label) - PRODUCT_IDENTITY_GENERIC
+        if host_anchors:
+            return host_anchors
+    return set()
+
+
 def empty_state() -> dict:
     return {"version": 1, "events": [], "attempted_candidates": {}, "used_candidates": {}, "repo_star_snapshots": {}, "repo_star_watchlist": {}}
 
@@ -1428,21 +1483,12 @@ def validate_draft(draft: dict, candidates_by_id: dict) -> tuple[dict | None, li
     # Keep the subject/product identifiable when the post is seen without its source card.
     # Exclude generic title words and source-type boilerplate; require an actual product,
     # repository, platform or capability term drawn from the candidate/primary-page titles.
-    generic_anchor_words = {
-        "app", "apps", "tool", "tools", "project", "product", "new", "update", "release",
-        "blog", "page", "pages", "developer", "developers", "changelog", "launch", "now",
-        "support", "supports", "available", "introducing", "introduces", "announcing",
-        "announces", "securing", "together", "improve", "improves", "improving",
-    }
-    identity_text = " ".join([
-        str(candidate.get("title") or ""),
-        str(candidate.get("primary_source_title") or ""),
-        str(candidate.get("source") or ""),
-    ])
-    identity_tokens = tokens(identity_text) - generic_anchor_words
+    identity_tokens = product_identity_anchor_tokens(candidate)
     fact_tokens = tokens(fact_sentence)
     if identity_tokens and not (identity_tokens & fact_tokens):
-        reasons.append("Opening sentence omits the product/platform/capability name; a standalone reader cannot tell what the post is about.")
+        reasons.append(
+            "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about."
+        )
     if fact_sentence.count(",") >= 2 or " & " in (" " + fact_sentence.casefold() + " ") or any(
         phrase in fact_sentence.casefold() for phrase in (" including ", " plus ", " as well as ")
     ):
