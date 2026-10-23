@@ -166,6 +166,16 @@ class MultidomainPlanValidationTests(unittest.TestCase):
         with self.assertRaisesRegex(ReportRejected, "below 7"):
             validate_report(report, 0, now=self.now)
 
+    def test_non_finite_quality_scores_are_rejected(self):
+        report = copy.deepcopy(self.report)
+        report["recommended_draft"]["scores"]["evidence"] = "nan"
+        with self.assertRaisesRegex(ReportRejected, "non-finite"):
+            validate_report(report, 0, now=self.now)
+        report = copy.deepcopy(self.report)
+        report["recommended_draft"]["editorial_review"]["originality_score"] = "inf"
+        with self.assertRaisesRegex(ReportRejected, "non-finite"):
+            validate_report(report, 0, now=self.now)
+
     def test_today_plan_is_invalidated_after_rejection(self):
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / "daily-plan.json"
