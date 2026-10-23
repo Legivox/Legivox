@@ -89,7 +89,7 @@ jobs:
           python -m unittest discover -s tests -p 'test_discover_candidates.py' -v
           python -m unittest discover -s tests -p 'test_hourly_dry_run.py' -v
 
-      # This job always remains dry-run-only, including on main; production posting is a separate workflow.
+      # Fail closed on source/editor failures; this workflow is research-only even on main and never publishes.
       - name: Run one hourly research-only draft decision
         env:
           GITHUB_TOKEN: ${{ github.token }}
