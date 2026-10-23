@@ -1,59 +1,59 @@
 {
-  "generated_at_ist": "2026-10-23T18:55:16+05:30",
-  "run_at_ist": "2026-10-23T18:55:16+05:30",
+  "generated_at_ist": "2026-10-23T19:52:18+05:30",
+  "run_at_ist": "2026-10-23T19:52:18+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 179,
-  "eligible_candidate_count": 104,
+  "candidate_count_raw": 177,
+  "eligible_candidate_count": 102,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4693
+      "total_count": 4695
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1047
+      "total_count": 1048
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 373
+      "total_count": 375
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2891
+      "total_count": 2894
     },
     {
       "source": "GitHub Search · github-ecommerce-digital-products",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 431
+      "total_count": 433
     },
     {
       "source": "GitHub Search · github-mcp-servers",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2032
+      "total_count": 2034
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3182
+      "total_count": 3189
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
@@ -79,7 +79,7 @@
     {
       "source": "Hacker News · hn-automation-api",
       "kind": "hacker_news",
-      "items_kept": 1,
+      "items_kept": 2,
       "status": "ok",
       "total_count": 10
     },
@@ -145,18 +145,27 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-23T13:25:16+00:00",
+    "observed_at_utc": "2026-10-23T14:22:18+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 82,
-    "previously_tracked_repositories_refreshed": 118,
-    "refresh_failures": 0,
+    "repositories_seen_in_discovery": 80,
+    "previously_tracked_repositories_refreshed": 119,
+    "refresh_failures": 1,
     "missing_github_token_for_watchlist_refresh": false,
-    "snapshots_added_this_run": 200,
-    "repositories_with_20_to_36_hour_baseline": 23,
+    "snapshots_added_this_run": 199,
+    "repositories_with_20_to_36_hour_baseline": 20,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
+    {
+      "candidate_id": "f49d2e656c0ade72",
+      "title": "Show HN: Kavela – AI Automations that do not fail silently",
+      "source_url": "https://kavela.ai",
+      "verified": true,
+      "final_url": "https://kavela.ai",
+      "http_status": 200,
+      "reason": ""
+    },
     {
       "candidate_id": "6410d7b0c2142954",
       "title": "Show HN: Ternlux – Free, local-first, bring-your-own-key AI pipeline builder",
@@ -167,20 +176,11 @@
       "reason": "Primary page title/content does not sufficiently match the candidate headline."
     },
     {
-      "candidate_id": "2188ed970a600391",
-      "title": "Show HN: Used REA to make a free, open-source clone of Arc Browser",
-      "source_url": "https://github.com/amsultan2010/radian-browser",
-      "verified": false,
-      "final_url": null,
-      "http_status": null,
-      "reason": "Primary page title/content does not sufficiently match the candidate headline."
-    },
-    {
-      "candidate_id": "b6bd2783a916c52e",
-      "title": "zed-industries/zed",
-      "source_url": "https://github.com/zed-industries/zed",
+      "candidate_id": "99cc8cc2964bda66",
+      "title": "rome-os/rome",
+      "source_url": "https://github.com/rome-os/rome",
       "verified": true,
-      "final_url": "https://github.com/zed-industries/zed",
+      "final_url": "https://github.com/rome-os/rome",
       "http_status": 200,
       "reason": ""
     }
@@ -194,21 +194,12 @@
       "reasons": [
         "Primary page title/content does not sufficiently match the candidate headline."
       ]
-    },
-    {
-      "candidate_id": "2188ed970a600391",
-      "title": "Show HN: Used REA to make a free, open-source clone of Arc Browser",
-      "source": "Hacker News",
-      "url": "https://github.com/amsultan2010/radian-browser",
-      "reasons": [
-        "Primary page title/content does not sufficiently match the candidate headline."
-      ]
     }
   ],
   "daily_draft_cap": 16,
   "daily_drafts_already_passed": 2,
   "outcome": "skip",
-  "decision_reason": "All generated drafts failed the local evidence/editorial checks; the hour was skipped.",
+  "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
   "passing_drafts": [],
   "rejected_drafts": [
     {
@@ -221,32 +212,105 @@
       ]
     },
     {
-      "candidate_id": "2188ed970a600391",
-      "title": "Show HN: Used REA to make a free, open-source clone of Arc Browser",
-      "source": "Hacker News",
-      "url": "https://github.com/amsultan2010/radian-browser",
+      "candidate_id": "f49d2e656c0ade72",
+      "title": "Show HN: Kavela – AI Automations that do not fail silently",
       "reasons": [
-        "Primary page title/content does not sufficiently match the candidate headline."
+        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
+        "A supporting quote does not share enough wording with its stated claim",
+        "Supporting quotes cover only 44% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ],
+      "proposed_text": "Kavela runs AI automations in plain‑word workflows and checks each run before delivery. Run a failing step and verify Kavela reports the error before the tool completes. https://kavela.ai",
+      "evidence_quote": "Kavela runs it in your tools and checks every run before it reaches you",
+      "claim_evidence": [
+        {
+          "claim": "Kavela runs AI automations in plain‑word workflows and checks each run before delivery",
+          "quote": "Kavela runs it in your tools and checks every run before it reaches you"
+        }
       ]
     },
     {
-      "candidate_id": "b6bd2783a916c52e",
-      "title": "zed-industries/zed",
+      "candidate_id": "99cc8cc2964bda66",
+      "title": "rome-os/rome",
       "reasons": [
-        "Takeaway implies an undocumented product capability: sync. Reframe as a check of documented behavior.",
-        "Editorial takeaway is not specific enough to this candidate's technical/product details."
+        "Editorial takeaway is too long; keep the analysis concrete and concise."
       ],
-      "proposed_text": "Zed is a high‑performance, multiplayer code editor built by Atom and Tree‑sitter creators. Run latency tests on shared editing sessions to validate real‑time sync. https://github.com/zed-industries/zed",
-      "evidence_quote": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
+      "proposed_text": "Rome is a compounding agent OS that supports recursive agents and is an open‑source alternative to Grok Bot. Deploy Rome locally and compare its recursion depth limits to Grok Bot to gauge scalability. https://github.com/rome-os/rome",
+      "evidence_quote": "A compounding agent OS for recursive agents. Also an open source alternative to Grok Bot",
       "claim_evidence": [
         {
-          "claim": "Zed is a high‑performance, multiplayer code editor built by Atom and Tree‑sitter creators.",
-          "quote": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter."
+          "claim": "Rome is a compounding agent OS that supports recursive agents and is an open‑source alternative to Grok Bot",
+          "quote": "A compounding agent OS for recursive agents. Also an open source alternative to Grok Bot"
         }
+      ]
+    },
+    {
+      "candidate_id": "f49d2e656c0ade72",
+      "title": "Show HN: Kavela – AI Automations that do not fail silently",
+      "reasons": [
+        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
+        "No claim-by-claim supporting evidence was provided",
+        "Supporting quotes cover only 44% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ],
+      "proposed_text": "Kavela runs AI automations in plain‑word workflows and checks each run before delivery. If a step fails, Kavela reports the error and retries until the task passes. https://kavela.ai",
+      "evidence_quote": "Kavela runs it in your tools and checks every run before it reaches you",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
+        "A supporting quote does not share enough wording with its stated claim",
+        "Supporting quotes cover only 44% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ]
+    },
+    {
+      "candidate_id": "99cc8cc2964bda66",
+      "title": "rome-os/rome",
+      "proposed_text": "Rome is a compounding agent OS that supports recursive agents and is an open‑source alternative to Grok Bot. The repository has 124 open issues, indicating active maintenance. https://github.com/rome-os/rome",
+      "reasons": [
+        "Post restates headline facts without adding new insight; originality below threshold."
+      ],
+      "editorial_review": {
+        "clarity_score": 8,
+        "technical_coherence_score": 8,
+        "takeaway_value_score": 7,
+        "source_faithfulness_score": 8,
+        "originality_score": 3
+      }
+    },
+    {
+      "candidate_id": "99cc8cc2964bda66",
+      "title": "rome-os/rome",
+      "reasons": [
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
+        "No claim-by-claim supporting evidence was provided",
+        "Supporting quotes cover only 43% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ],
+      "proposed_text": "Rome’s GitHub repo lists 124 open issues and 53 pull requests. Track the issue backlog to gauge how quickly new features or fixes are merged. https://github.com/rome-os/rome",
+      "evidence_quote": "Issues 124 ( 124 ) Pull requests 53 ( 53 )",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "Post restates headline facts without adding new insight; originality below threshold."
       ]
     }
   ],
   "candidate_shortlist": [
+    {
+      "id": "f49d2e656c0ade72",
+      "title": "Show HN: Kavela – AI Automations that do not fail silently",
+      "url": "https://kavela.ai",
+      "source": "Hacker News",
+      "primary_category": "product_and_workflow_tools",
+      "priority_score": 74,
+      "hourly_adjusted_score": 76,
+      "stars_current": null,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-23T14:18:31+00:00",
+      "days_old": 0.0,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
     {
       "id": "6410d7b0c2142954",
       "title": "Show HN: Ternlux – Free, local-first, bring-your-own-key AI pipeline builder",
@@ -261,45 +325,26 @@
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
       "published_at": "2026-10-22T16:33:58+00:00",
-      "days_old": 0.87,
+      "days_old": 0.91,
       "primary_source_verified": false,
       "primary_source_http_status": null,
       "primary_source_reason": "Primary page title/content does not sufficiently match the candidate headline."
     },
     {
-      "id": "2188ed970a600391",
-      "title": "Show HN: Used REA to make a free, open-source clone of Arc Browser",
-      "url": "https://github.com/amsultan2010/radian-browser",
-      "source": "Hacker News",
-      "primary_category": "product_and_workflow_tools",
-      "priority_score": 62,
+      "id": "99cc8cc2964bda66",
+      "title": "rome-os/rome",
+      "url": "https://github.com/rome-os/rome",
+      "source": "GitHub Search",
+      "primary_category": "ai_and_automation",
+      "priority_score": 70,
       "hourly_adjusted_score": 64,
-      "stars_current": null,
+      "stars_current": 841,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-23T13:20:35+00:00",
-      "days_old": 0.0,
-      "primary_source_verified": false,
-      "primary_source_http_status": null,
-      "primary_source_reason": "Primary page title/content does not sufficiently match the candidate headline."
-    },
-    {
-      "id": "b6bd2783a916c52e",
-      "title": "zed-industries/zed",
-      "url": "https://github.com/zed-industries/zed",
-      "source": "GitHub Search",
-      "primary_category": "creator_and_indie_business",
-      "priority_score": 55,
-      "hourly_adjusted_score": 64,
-      "stars_current": 92087,
-      "stars_delta_24h": 39,
-      "stars_delta_baseline_hours": 21.6,
-      "stars_growth_percent_24h": 0.04,
-      "trend_signal": "measured_star_growth",
-      "published_at": "2026-10-23T13:24:57+00:00",
-      "days_old": 0.0,
+      "trend_signal": "insufficient_history",
+      "published_at": "2026-10-23T14:06:49+00:00",
+      "days_old": 0.01,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
@@ -307,26 +352,26 @@
   ],
   "automatic_repair": {
     "attempted": true,
-    "drafts_submitted": 0,
-    "repaired_local_passes": 0,
-    "repair_rejections": 0,
+    "drafts_submitted": 3,
+    "repaired_local_passes": 1,
+    "repair_rejections": 2,
     "repair_error": null,
-    "editorial_repair_attempted": false,
-    "editorial_repair_drafts_submitted": 0,
+    "editorial_repair_attempted": true,
+    "editorial_repair_drafts_submitted": 1,
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 0,
-    "submitted_for_independent_review": 0,
+    "locally_valid_drafts": 1,
+    "submitted_for_independent_review": 1,
     "passed_independent_review": 0,
-    "rejected_by_independent_review": 0,
+    "rejected_by_independent_review": 1,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
   "state_summary": {
     "used_candidates_in_cooldown": 2,
-    "recently_attempted_candidates": 20,
+    "recently_attempted_candidates": 22,
     "recent_draft_passes_today": 2
   }
 }
