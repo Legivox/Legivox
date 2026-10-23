@@ -1,73 +1,73 @@
 {
-  "generated_at_ist": "2026-10-23T11:36:23+05:30",
-  "run_at_ist": "2026-10-23T11:36:23+05:30",
+  "generated_at_ist": "2026-10-23T16:15:31+05:30",
+  "run_at_ist": "2026-10-23T16:15:31+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 169,
-  "eligible_candidate_count": 100,
+  "candidate_count_raw": 176,
+  "eligible_candidate_count": 106,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4619
+      "total_count": 4673
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1036
+      "total_count": 1045
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 369
+      "total_count": 373
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2862
+      "total_count": 2880
     },
     {
       "source": "GitHub Search · github-ecommerce-digital-products",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 427
+      "total_count": 429
     },
     {
       "source": "GitHub Search · github-mcp-servers",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1989
+      "total_count": 2019
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3137
+      "total_count": 3168
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 137
+      "total_count": 138
     },
     {
       "source": "GitHub Search · github-workflow-automation",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 259
+      "total_count": 262
     },
     {
       "source": "Hacker News · hn-analytics-growth",
@@ -114,7 +114,7 @@
     {
       "source": "Hacker News · hn-shopify",
       "kind": "hacker_news",
-      "items_kept": 7,
+      "items_kept": 10,
       "status": "ok",
       "total_count": 10
     },
@@ -134,7 +134,7 @@
     {
       "source": "Product Hunt",
       "kind": "rss",
-      "items_kept": 38,
+      "items_kept": 41,
       "status": "ok"
     },
     {
@@ -145,262 +145,180 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-23T06:06:23+00:00",
+    "observed_at_utc": "2026-10-23T10:45:31+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 80,
-    "previously_tracked_repositories_refreshed": 120,
+    "repositories_seen_in_discovery": 81,
+    "previously_tracked_repositories_refreshed": 119,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
-    "repositories_with_20_to_36_hour_baseline": 19,
+    "repositories_with_20_to_36_hour_baseline": 18,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "a5e43b1572bfaf36",
-      "title": "paperclipai/paperclip",
-      "source_url": "https://github.com/paperclipai/paperclip",
+      "candidate_id": "458c04cd04ca960b",
+      "title": "morluto/rea",
+      "source_url": "https://github.com/morluto/rea",
       "verified": true,
-      "final_url": "https://github.com/paperclipai/paperclip",
+      "final_url": "https://github.com/morluto/rea",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "d5895c45c8f25e3a",
-      "title": "ClickHouse/ClickHouse",
-      "source_url": "https://github.com/ClickHouse/ClickHouse",
+      "candidate_id": "7502ffe393ce17ad",
+      "title": "Show HN: OnKey – I'm a bad singer, so I built an app to show where I'm off-key",
+      "source_url": "https://github.com/dsmurrell/onkey",
       "verified": true,
-      "final_url": "https://github.com/ClickHouse/ClickHouse",
+      "final_url": "https://github.com/dsmurrell/onkey",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "2402761e6cda9161",
-      "title": "Discover a merchant's retail stores with UCP location search and lookup",
-      "source_url": "https://shopify.dev/changelog/discover-a-merchant-s-retail-stores-with-ucp-location-search-and-lookup",
+      "candidate_id": "96a3a2f086cf91ca",
+      "title": "leeguooooo/iphone-use",
+      "source_url": "https://github.com/leeguooooo/iphone-use",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/discover-a-merchant-s-retail-stores-with-ucp-location-search-and-lookup",
+      "final_url": "https://github.com/leeguooooo/iphone-use",
       "http_status": 200,
       "reason": ""
     }
   ],
   "rejected_primary_sources": [],
-  "daily_draft_cap": 10,
-  "daily_drafts_already_passed": 0,
-  "outcome": "dry_run_passed",
-  "decision_reason": "At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.",
-  "passing_drafts": [
-    {
-      "candidate_id": "2402761e6cda9161",
-      "title": "Discover a merchant's retail stores with UCP location search and lookup",
-      "source": "Shopify Developer Changelog",
-      "source_kind": "official_changelog",
-      "url": "https://shopify.dev/changelog/posts/discover-a-merchant-s-retail-stores-with-ucp-location-search-and-lookup",
-      "primary_source_verified": true,
-      "primary_source_title": "",
-      "primary_source_final_url": "https://shopify.dev/changelog/posts/discover-a-merchant-s-retail-stores-with-ucp-location-search-and-lookup",
-      "primary_source_http_status": 200,
-      "category": "commerce_and_digital_products",
-      "priority_score": 81,
-      "hourly_adjusted_score": 81,
-      "post_text": "Shopify storefronts expose search_locations and lookup tools via the MCP endpoint. Validate distance filtering by comparing returned store coordinates to known GPS points. https://shopify.dev/changelog/posts/discover-a-merchant-s-retail-stores-with-ucp-location-search-and-lookup",
-      "fact_sentence": "Shopify storefronts expose search_locations and lookup tools via the MCP endpoint.",
-      "format": "practical_workflow",
-      "audience": "ecommerce developers",
-      "angle": "location services",
-      "rationale": "The changelog states the tools exist; testing coordinate accuracy ensures the new capability works as advertised.",
-      "evidence_quote": "If your agent profile negotiates these capabilities, the storefront MCP endpoint at `https://{storedomain}/api/ucp/mcp` exposes two tools: * `search_locations` lists the shop's retail locations.",
-      "editorial_takeaway": "Validate distance filtering by comparing returned store coordinates to known GPS points.",
-      "claim_evidence": [
-        {
-          "claim": "Shopify storefronts expose search_locations and lookup tools via the MCP endpoint.",
-          "quote": "If your agent profile negotiates these capabilities, the storefront MCP endpoint at `https://{storedomain}/api/ucp/mcp` exposes two tools: * `search_locations` lists the shop's retail locations."
-        }
-      ],
-      "scores": {
-        "timeliness": 8,
-        "usefulness": 8,
-        "novelty": 7,
-        "evidence": 9,
-        "insight": 8
-      },
-      "editorial_score": 8.1,
-      "character_count": 279,
-      "status": "dry_run_passed_not_published",
-      "published_to_x": false,
-      "editorial_review": {
-        "clarity_score": 8,
-        "technical_coherence_score": 8,
-        "takeaway_value_score": 8,
-        "source_faithfulness_score": 8,
-        "originality_score": 8,
-        "reason": "Clear, technically coherent, source-backed claim, and original practical suggestion.",
-        "passed": true
-      }
-    }
-  ],
+  "daily_draft_cap": 16,
+  "daily_drafts_already_passed": 1,
+  "outcome": "skip",
+  "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
+  "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "a5e43b1572bfaf36",
-      "title": "paperclipai/paperclip",
+      "candidate_id": "458c04cd04ca960b",
+      "title": "morluto/rea",
+      "proposed_text": "rea lets AI agents reverse‑engineer binaries from app behavior down to native code. Validate agent skill accuracy on a known binary before scaling. https://github.com/morluto/rea",
       "reasons": [
-        "Editorial takeaway is too long; keep the analysis concrete and concise."
+        "Post repeats headline, lacks concrete evidence of agent skill validation, and offers no actionable test."
       ],
-      "proposed_text": "paperclip is an open‑source app for managing agents at work. Test agent orchestration by deploying a simple workflow and monitoring the dashboard for state changes. https://github.com/paperclipai/paperclip",
-      "evidence_quote": "GitHub - paperclipai/paperclip: The open‑source app everyone uses to manage agents at work",
-      "claim_evidence": [
-        {
-          "claim": "paperclip is an open‑source app for managing agents at work",
-          "quote": "GitHub - paperclipai/paperclip: The open‑source app everyone uses to manage agents at work"
-        }
-      ]
+      "editorial_review": {
+        "clarity_score": 5,
+        "technical_coherence_score": 4,
+        "takeaway_value_score": 4,
+        "source_faithfulness_score": 6,
+        "originality_score": 3
+      }
     },
     {
-      "candidate_id": "d5895c45c8f25e3a",
-      "title": "ClickHouse/ClickHouse",
+      "candidate_id": "7502ffe393ce17ad",
+      "title": "Show HN: OnKey – I'm a bad singer, so I built an app to show where I'm off-key",
+      "proposed_text": "onkey is a free, open‑source Mac singing trainer that listens to music for pitch feedback. Run pitch‑detection tests on a sample track to confirm accuracy. https://github.com/dsmurrell/onkey",
       "reasons": [
-        "Unsupported numeric claim(s): 1tb, 200ms"
+        "Claim is accurate but takeaway is generic; no specific test or metric provided."
       ],
-      "proposed_text": "ClickHouse is a real‑time analytics database management system. Run a benchmark query on a 1TB dataset to verify latency stays under 200 ms. https://github.com/ClickHouse/ClickHouse",
-      "evidence_quote": "ClickHouse® is a real‑time analytics database management system",
-      "claim_evidence": [
-        {
-          "claim": "ClickHouse is a real‑time analytics database management system",
-          "quote": "ClickHouse® is a real‑time analytics database management system"
-        }
-      ]
+      "editorial_review": {
+        "clarity_score": 6,
+        "technical_coherence_score": 5,
+        "takeaway_value_score": 5,
+        "source_faithfulness_score": 6,
+        "originality_score": 4
+      }
+    },
+    {
+      "candidate_id": "96a3a2f086cf91ca",
+      "title": "leeguooooo/iphone-use",
+      "proposed_text": "iphone‑use lets AI agents drive a real iPhone via USB or Wi‑Fi with a custom XCTest runner. Check token usage per action to ensure cost‑efficiency. https://github.com/leeguooooo/iphone-use",
+      "reasons": [
+        "Post states feature but does not explain token usage measurement or provide concrete guidance."
+      ],
+      "editorial_review": {
+        "clarity_score": 5,
+        "technical_coherence_score": 4,
+        "takeaway_value_score": 4,
+        "source_faithfulness_score": 5,
+        "originality_score": 3
+      }
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "a5e43b1572bfaf36",
-      "title": "paperclipai/paperclip",
-      "url": "https://github.com/paperclipai/paperclip",
+      "id": "458c04cd04ca960b",
+      "title": "morluto/rea",
+      "url": "https://github.com/morluto/rea",
       "source": "GitHub Search",
-      "primary_category": "ai_and_automation",
-      "priority_score": 69,
-      "hourly_adjusted_score": 88,
-      "stars_current": 106265,
-      "stars_delta_24h": 491,
-      "stars_delta_baseline_hours": 24.7,
-      "stars_growth_percent_24h": 0.46,
-      "trend_signal": "measured_star_growth",
-      "published_at": "2026-10-23T06:04:12+00:00",
-      "days_old": 0.0,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "d5895c45c8f25e3a",
-      "title": "ClickHouse/ClickHouse",
-      "url": "https://github.com/ClickHouse/ClickHouse",
-      "source": "GitHub Search",
-      "primary_category": "data_and_growth",
+      "primary_category": "developer_tools",
       "priority_score": 63,
       "hourly_adjusted_score": 82,
-      "stars_current": 50551,
-      "stars_delta_24h": 19,
-      "stars_delta_baseline_hours": 24.7,
-      "stars_growth_percent_24h": 0.04,
+      "stars_current": 369736,
+      "stars_delta_24h": 10243,
+      "stars_delta_baseline_hours": 29.3,
+      "stars_growth_percent_24h": 2.85,
       "trend_signal": "measured_star_growth",
-      "published_at": "2026-10-23T06:01:37+00:00",
+      "published_at": "2026-10-23T10:44:16+00:00",
       "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "2402761e6cda9161",
-      "title": "Discover a merchant's retail stores with UCP location search and lookup",
-      "url": "https://shopify.dev/changelog/posts/discover-a-merchant-s-retail-stores-with-ucp-location-search-and-lookup",
-      "source": "Shopify Developer Changelog",
-      "primary_category": "commerce_and_digital_products",
-      "priority_score": 81,
-      "hourly_adjusted_score": 81,
+      "id": "7502ffe393ce17ad",
+      "title": "Show HN: OnKey – I'm a bad singer, so I built an app to show where I'm off-key",
+      "url": "https://github.com/dsmurrell/onkey",
+      "source": "Hacker News",
+      "primary_category": "product_and_workflow_tools",
+      "priority_score": 75,
+      "hourly_adjusted_score": 77,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-22T18:00:00+00:00",
-      "days_old": 0.5,
+      "published_at": "2026-10-22T14:04:44+00:00",
+      "days_old": 0.86,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "96a3a2f086cf91ca",
+      "title": "leeguooooo/iphone-use",
+      "url": "https://github.com/leeguooooo/iphone-use",
+      "source": "GitHub Search",
+      "primary_category": "ai_and_automation",
+      "priority_score": 72,
+      "hourly_adjusted_score": 76,
+      "stars_current": 334,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "insufficient_history",
+      "published_at": "2026-10-23T10:44:15+00:00",
+      "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     }
   ],
   "automatic_repair": {
-    "attempted": false,
+    "attempted": true,
     "drafts_submitted": 0,
     "repaired_local_passes": 0,
     "repair_rejections": 0,
     "repair_error": null,
-    "editorial_repair_attempted": false,
+    "editorial_repair_attempted": true,
     "editorial_repair_drafts_submitted": 0,
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 1,
-    "submitted_for_independent_review": 1,
-    "passed_independent_review": 1,
-    "rejected_by_independent_review": 0,
+    "locally_valid_drafts": 3,
+    "submitted_for_independent_review": 3,
+    "passed_independent_review": 0,
+    "rejected_by_independent_review": 3,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
-  "recommended_draft": {
-    "candidate_id": "2402761e6cda9161",
-    "title": "Discover a merchant's retail stores with UCP location search and lookup",
-    "source": "Shopify Developer Changelog",
-    "source_kind": "official_changelog",
-    "url": "https://shopify.dev/changelog/posts/discover-a-merchant-s-retail-stores-with-ucp-location-search-and-lookup",
-    "primary_source_verified": true,
-    "primary_source_title": "",
-    "primary_source_final_url": "https://shopify.dev/changelog/posts/discover-a-merchant-s-retail-stores-with-ucp-location-search-and-lookup",
-    "primary_source_http_status": 200,
-    "category": "commerce_and_digital_products",
-    "priority_score": 81,
-    "hourly_adjusted_score": 81,
-    "post_text": "Shopify storefronts expose search_locations and lookup tools via the MCP endpoint. Validate distance filtering by comparing returned store coordinates to known GPS points. https://shopify.dev/changelog/posts/discover-a-merchant-s-retail-stores-with-ucp-location-search-and-lookup",
-    "fact_sentence": "Shopify storefronts expose search_locations and lookup tools via the MCP endpoint.",
-    "format": "practical_workflow",
-    "audience": "ecommerce developers",
-    "angle": "location services",
-    "rationale": "The changelog states the tools exist; testing coordinate accuracy ensures the new capability works as advertised.",
-    "evidence_quote": "If your agent profile negotiates these capabilities, the storefront MCP endpoint at `https://{storedomain}/api/ucp/mcp` exposes two tools: * `search_locations` lists the shop's retail locations.",
-    "editorial_takeaway": "Validate distance filtering by comparing returned store coordinates to known GPS points.",
-    "claim_evidence": [
-      {
-        "claim": "Shopify storefronts expose search_locations and lookup tools via the MCP endpoint.",
-        "quote": "If your agent profile negotiates these capabilities, the storefront MCP endpoint at `https://{storedomain}/api/ucp/mcp` exposes two tools: * `search_locations` lists the shop's retail locations."
-      }
-    ],
-    "scores": {
-      "timeliness": 8,
-      "usefulness": 8,
-      "novelty": 7,
-      "evidence": 9,
-      "insight": 8
-    },
-    "editorial_score": 8.1,
-    "character_count": 279,
-    "status": "dry_run_passed_not_published",
-    "published_to_x": false,
-    "editorial_review": {
-      "clarity_score": 8,
-      "technical_coherence_score": 8,
-      "takeaway_value_score": 8,
-      "source_faithfulness_score": 8,
-      "originality_score": 8,
-      "reason": "Clear, technically coherent, source-backed claim, and original practical suggestion.",
-      "passed": true
-    }
-  },
   "state_summary": {
     "used_candidates_in_cooldown": 1,
-    "recently_attempted_candidates": 3,
+    "recently_attempted_candidates": 6,
     "recent_draft_passes_today": 1
   }
 }
