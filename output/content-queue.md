@@ -1,26 +1,24 @@
 # Legivox daily content plan
 
-Prepared: 2026-10-23 09:31:16 IST
+Prepared: 2026-10-23 18:40:24 IST
 
-> This scheduled post was generated from a recent RSS story and passed the local quality gate. The attached excerpt is not a full fact-check; verify the linked article before treating every implication as confirmed.
+> This scheduled post came from a fresh multidomain discovery report, passed primary-source and deterministic evidence checks, and passed an independent editorial review. The star-history baseline is a trend signal, not proof of market demand.
 
-## Post 1 · rss-5eee804247a4
+## Post 1 · multidomain-7366786c561f97cd
 
 **Planned copy**
 
-Canva’s new model lets designers outline image layout first, turning AI art from guesswork into a planned design process.
+OpenMausBot is an open‑source Grok Bot alternative that runs bots inside a virtual machine. Deploy OpenMausBot with Docker to isolate bot execution. https://github.com/milind-soni/OpenMausBot
 
-https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model
-
-- Topic: AI & software
-- Editorial score (model estimate): 8.33
+- Topic: security_and_self_hosting
+- Editorial score (model estimate): 8.6
 
 **Source article**
 
-- [Canva’s first AI image model plans designs before generating them](https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model)
+- [milind-soni/OpenMausBot](https://github.com/milind-soni/OpenMausBot)
 
-- Status: published: https://x.com/i/status/2113483039250780613
+- Status: published: https://x.com/i/status/2113619525451313637
 
 ## Media policy
 
-RSS/Groq news posts are text-only by default. No generic category image is attached because it could be unrelated to the source story.
+Multidomain discovery posts are text-only by default. No generic category image is attached because it could be unrelated to the source story.

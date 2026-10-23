@@ -1,5 +1,6 @@
 {
   "used_draft_hashes": [
+    "109515f48b7a6febe1c21a847ec697698b7e18de4f79cbcd893de3d6c76366a2",
     "14972c38ee390719a66a5a390506fb5756695a36b327595753e7d64ad7f1e484",
     "2e7db1db7c637f3625ba07e5b6265398a5b8ebfd3409f53840784df09b13ee4e",
     "3ca610d8fdf9ab8bfdd186af5773a76c05d93735df069471925c6c67eb83bc29",
@@ -14,13 +15,12 @@
     "dfcd244d1a364897ebce2cac0d1f39ffc8570e1a8586dbcb31203c160f8006b9",
     "ec33a87dcda44080c144fa6aa6fe7e14a52f36d29df9168bef604957b7ff0d3a"
   ],
-  "published_count": 13,
-  "last_idea_id": "rss-5eee804247a4",
+  "published_count": 14,
+  "last_idea_id": "multidomain-7366786c561f97cd",
   "last_template_index": 0,
-  "last_published_at": "2026-10-23T09:39:57+05:30",
-  "last_published_url": "https://x.com/i/status/2113483039250780613",
+  "last_published_at": "2026-10-23T18:42:18+05:30",
+  "last_published_url": "https://x.com/i/status/2113619525451313637",
   "recent_idea_ids": [
-    "rss-c1dfee28d50b",
     "rss-76faeee63fa2",
     "rss-fce282284b9e",
     "rss-2d2caae98728",
@@ -28,6 +28,7 @@
     "rss-5fda1e1adb27",
     "rss-050546a5bfa2",
     "rss-cb5d986544d6",
-    "rss-5eee804247a4"
+    "rss-5eee804247a4",
+    "multidomain-7366786c561f97cd"
   ]
 }
