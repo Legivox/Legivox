@@ -1,38 +1,38 @@
 {
-  "generated_at_ist": "2026-10-23T21:50:42+05:30",
-  "run_at_ist": "2026-10-23T21:50:42+05:30",
+  "generated_at_ist": "2026-10-23T22:46:42+05:30",
+  "run_at_ist": "2026-10-23T22:46:42+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 174,
-  "eligible_candidate_count": 96,
+  "candidate_count_raw": 179,
+  "eligible_candidate_count": 99,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4712
+      "total_count": 4716
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1056
+      "total_count": 1058
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 376
+      "total_count": 378
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2911
+      "total_count": 2914
     },
     {
       "source": "GitHub Search · github-ecommerce-digital-products",
@@ -46,14 +46,14 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2042
+      "total_count": 2043
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3199
+      "total_count": 3200
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
@@ -114,7 +114,7 @@
     {
       "source": "Hacker News · hn-shopify",
       "kind": "hacker_news",
-      "items_kept": 8,
+      "items_kept": 10,
       "status": "ok",
       "total_count": 10
     },
@@ -145,52 +145,52 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-23T16:20:42+00:00",
+    "observed_at_utc": "2026-10-23T17:16:42+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 78,
-    "previously_tracked_repositories_refreshed": 122,
+    "repositories_seen_in_discovery": 81,
+    "previously_tracked_repositories_refreshed": 119,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
-    "repositories_with_20_to_36_hour_baseline": 15,
+    "repositories_with_20_to_36_hour_baseline": 14,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "6410d7b0c2142954",
-      "title": "Show HN: Ternlux – Free, local-first, bring-your-own-key AI pipeline builder",
-      "source_url": "https://www.ternlux.com/online-demo/",
+      "candidate_id": "1a7522246a5dab49",
+      "title": "Tell HN: Don't use Fathom Analytics (founder is blocking criticism)",
+      "source_url": "https://news.ycombinator.com/item?id=50210534",
+      "verified": true,
+      "final_url": "https://news.ycombinator.com/item?id=50210534",
+      "http_status": 200,
+      "reason": ""
+    },
+    {
+      "candidate_id": "f347929b32ce1fc9",
+      "title": "Show HN: Anyone else frustrated with mermaid diagrams?",
+      "source_url": "https://github.com/uberblick-ai/ablauf",
       "verified": false,
       "final_url": null,
       "http_status": null,
       "reason": "Primary page title/content does not sufficiently match the candidate headline."
     },
     {
-      "candidate_id": "5658d459c70fab1f",
-      "title": "Show HN: Ts-polyglot – Call C/C++ or Rust functions directly from TypeScript",
-      "source_url": "https://ts-polyglot.dev",
+      "candidate_id": "21ab66a2c5fd516c",
+      "title": "heymrun/heym",
+      "source_url": "https://github.com/heymrun/heym",
       "verified": true,
-      "final_url": "https://ts-polyglot.dev",
-      "http_status": 200,
-      "reason": ""
-    },
-    {
-      "candidate_id": "5a6e6bc8ead64f48",
-      "title": "Bees-bot/bees-desktop",
-      "source_url": "https://github.com/Bees-bot/bees-desktop",
-      "verified": true,
-      "final_url": "https://github.com/Bees-bot/bees-desktop",
+      "final_url": "https://github.com/heymrun/heym",
       "http_status": 200,
       "reason": ""
     }
   ],
   "rejected_primary_sources": [
     {
-      "candidate_id": "6410d7b0c2142954",
-      "title": "Show HN: Ternlux – Free, local-first, bring-your-own-key AI pipeline builder",
+      "candidate_id": "f347929b32ce1fc9",
+      "title": "Show HN: Anyone else frustrated with mermaid diagrams?",
       "source": "Hacker News",
-      "url": "https://www.ternlux.com/online-demo/",
+      "url": "https://github.com/uberblick-ai/ablauf",
       "reasons": [
         "Primary page title/content does not sufficiently match the candidate headline."
       ]
@@ -199,104 +199,118 @@
   "daily_draft_cap": 16,
   "daily_drafts_already_passed": 2,
   "outcome": "skip",
-  "decision_reason": "All generated drafts failed the local evidence/editorial checks; the hour was skipped.",
+  "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
   "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "6410d7b0c2142954",
-      "title": "Show HN: Ternlux – Free, local-first, bring-your-own-key AI pipeline builder",
+      "candidate_id": "f347929b32ce1fc9",
+      "title": "Show HN: Anyone else frustrated with mermaid diagrams?",
       "source": "Hacker News",
-      "url": "https://www.ternlux.com/online-demo/",
+      "url": "https://github.com/uberblick-ai/ablauf",
       "reasons": [
         "Primary page title/content does not sufficiently match the candidate headline."
       ]
     },
     {
-      "candidate_id": "5658d459c70fab1f",
-      "title": "Show HN: Ts-polyglot – Call C/C++ or Rust functions directly from TypeScript",
+      "candidate_id": "21ab66a2c5fd516c",
+      "title": "heymrun/heym",
       "reasons": [
-        "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "Editorial takeaway is not specific enough to this candidate's technical/product details."
+        "A supporting quote does not share enough wording with its stated claim",
+        "Supporting quotes cover only 36% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "ts-polyglot imports C/C++/Rust functions directly into TypeScript with real types. Compile the generated bindings and run a type‑check to confirm signatures match the native code. https://ts-polyglot.dev",
-      "evidence_quote": "Import functions from C, C++ and Rust source files straight into TypeScript, with real types.",
+      "proposed_text": "Heym offers a self‑hosted agentic‑AI framework for orchestrating agents and automating business processes. Deploy Heym locally and verify agent execution logs for confidence. https://github.com/heymrun/heym",
+      "evidence_quote": "Build agentic systems. Run them with confidence. Orchestrate agents, automate business processes, inspect every execution, and keep humans in control.",
       "claim_evidence": [
         {
-          "claim": "ts-polyglot imports C/C++/Rust functions directly into TypeScript with real types.",
-          "quote": "Import functions from C, C++ and Rust source files straight into TypeScript, with real types."
+          "claim": "Heym offers a self‑hosted agentic‑AI framework for orchestrating agents and automating business processes",
+          "quote": "Build agentic systems. Run them with confidence. Orchestrate agents, automate business processes, inspect every execution, and keep humans in control."
         }
       ]
     },
     {
-      "candidate_id": "5a6e6bc8ead64f48",
-      "title": "Bees-bot/bees-desktop",
+      "candidate_id": "1a7522246a5dab49",
+      "title": "Tell HN: Don't use Fathom Analytics (founder is blocking criticism)",
+      "proposed_text": "Fathom Analytics founder blocks AI‑generated criticism on Hacker News. Check comment moderation logs for AI‑reply flags before posting. https://news.ycombinator.com/item?id=50210534",
       "reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability.",
-        "Supporting quotes cover only 55% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Post repeats headline without adding new insight; originality below threshold."
       ],
-      "proposed_text": "bees-desktop runs a team of AI agents locally, keeping files, browser sessions and passwords local. Run a sample agent workflow and inspect network traffic to ensure no external data leaks. https://github.com/Bees-bot/bees-desktop",
-      "evidence_quote": "Run a team of AI agents on your own computer. Your files, browser sessions and passwords stay local.",
-      "claim_evidence": [
-        {
-          "claim": "bees-desktop runs a team of AI agents locally, keeping files, browser sessions and passwords local.",
-          "quote": "Run a team of AI agents on your own computer. Your files, browser sessions and passwords stay local."
-        }
+      "editorial_review": {
+        "clarity_score": 8,
+        "technical_coherence_score": 7,
+        "takeaway_value_score": 7,
+        "source_faithfulness_score": 8,
+        "originality_score": 6
+      }
+    },
+    {
+      "candidate_id": "1a7522246a5dab49",
+      "title": "Tell HN: Don't use Fathom Analytics (founder is blocking criticism)",
+      "reasons": [
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "No claim-by-claim supporting evidence was provided",
+        "Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ],
+      "proposed_text": "Fathom Analytics founder blocks AI‑generated replies on Hacker News. If a founder blocks AI replies, verify moderation settings before posting to avoid being blocked. https://news.ycombinator.com/item?id=50210534",
+      "evidence_quote": "When I wanted to leave a critical reply with a founder of Fathom Analytics, I got blocked for \"AI reply\"",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "Post repeats headline without adding new insight; originality below threshold."
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "6410d7b0c2142954",
-      "title": "Show HN: Ternlux – Free, local-first, bring-your-own-key AI pipeline builder",
-      "url": "https://www.ternlux.com/online-demo/",
+      "id": "1a7522246a5dab49",
+      "title": "Tell HN: Don't use Fathom Analytics (founder is blocking criticism)",
+      "url": "https://news.ycombinator.com/item?id=50210534",
       "source": "Hacker News",
-      "primary_category": "ai_and_automation",
+      "primary_category": "data_and_growth",
       "priority_score": 66,
-      "hourly_adjusted_score": 68,
+      "hourly_adjusted_score": 66,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-22T16:33:58+00:00",
-      "days_old": 0.99,
-      "primary_source_verified": false,
-      "primary_source_http_status": null,
-      "primary_source_reason": "Primary page title/content does not sufficiently match the candidate headline."
-    },
-    {
-      "id": "5658d459c70fab1f",
-      "title": "Show HN: Ts-polyglot – Call C/C++ or Rust functions directly from TypeScript",
-      "url": "https://ts-polyglot.dev",
-      "source": "Hacker News",
-      "primary_category": "product_and_workflow_tools",
-      "priority_score": 65,
-      "hourly_adjusted_score": 67,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-23T16:00:19+00:00",
-      "days_old": 0.01,
+      "published_at": "2026-10-23T15:19:29+00:00",
+      "days_old": 0.08,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "5a6e6bc8ead64f48",
-      "title": "Bees-bot/bees-desktop",
-      "url": "https://github.com/Bees-bot/bees-desktop",
+      "id": "f347929b32ce1fc9",
+      "title": "Show HN: Anyone else frustrated with mermaid diagrams?",
+      "url": "https://github.com/uberblick-ai/ablauf",
+      "source": "Hacker News",
+      "primary_category": "product_and_workflow_tools",
+      "priority_score": 64,
+      "hourly_adjusted_score": 66,
+      "stars_current": null,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-23T15:52:27+00:00",
+      "days_old": 0.06,
+      "primary_source_verified": false,
+      "primary_source_http_status": null,
+      "primary_source_reason": "Primary page title/content does not sufficiently match the candidate headline."
+    },
+    {
+      "id": "21ab66a2c5fd516c",
+      "title": "heymrun/heym",
+      "url": "https://github.com/heymrun/heym",
       "source": "GitHub Search",
       "primary_category": "ai_and_automation",
       "priority_score": 69,
       "hourly_adjusted_score": 63,
-      "stars_current": 17,
+      "stars_current": 1296,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "insufficient_history",
-      "published_at": "2026-10-23T16:20:01+00:00",
+      "published_at": "2026-10-23T17:14:39+00:00",
       "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
@@ -305,26 +319,26 @@
   ],
   "automatic_repair": {
     "attempted": true,
-    "drafts_submitted": 0,
+    "drafts_submitted": 1,
     "repaired_local_passes": 0,
-    "repair_rejections": 0,
+    "repair_rejections": 1,
     "repair_error": null,
-    "editorial_repair_attempted": false,
-    "editorial_repair_drafts_submitted": 0,
+    "editorial_repair_attempted": true,
+    "editorial_repair_drafts_submitted": 1,
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 0,
-    "submitted_for_independent_review": 0,
+    "locally_valid_drafts": 1,
+    "submitted_for_independent_review": 1,
     "passed_independent_review": 0,
-    "rejected_by_independent_review": 0,
+    "rejected_by_independent_review": 1,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
   "state_summary": {
     "used_candidates_in_cooldown": 2,
-    "recently_attempted_candidates": 27,
+    "recently_attempted_candidates": 29,
     "recent_draft_passes_today": 2
   }
 }
