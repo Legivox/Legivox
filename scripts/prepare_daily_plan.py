@@ -20,6 +20,8 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
+from plan_sources import MULTIDOMAIN_PLAN_SOURCE, RSS_GROQ_PLAN_SOURCE, SOURCE_GROUNDED_SINGLE_POST_SOURCES
+
 ROOT = Path(__file__).resolve().parents[1]
 IDEAS_PATH = ROOT / "data" / "ideas.json"
 OUTPUT_DIR = ROOT / "output"
@@ -148,8 +150,16 @@ def draft_options(idea: dict) -> list[str]:
 
 
 def write_queue_report(plan: dict) -> None:
-    is_rss_groq = plan.get("research_source") == "RSS feeds + Groq editorial ranking"
-    if is_rss_groq:
+    research_source = plan.get("research_source")
+    is_rss_groq = research_source == RSS_GROQ_PLAN_SOURCE
+    is_multidomain = research_source == MULTIDOMAIN_PLAN_SOURCE
+    is_source_grounded_post = research_source in SOURCE_GROUNDED_SINGLE_POST_SOURCES
+    if is_multidomain:
+        description = (
+            "> This scheduled post came from a fresh multidomain discovery report, passed primary-source and deterministic evidence checks, "
+            "and passed an independent editorial review. The star-history baseline is a trend signal, not proof of market demand."
+        )
+    elif is_rss_groq:
         description = (
             "> This scheduled post was generated from a recent RSS story and passed the local quality gate. "
             "The attached excerpt is not a full fact-check; verify the linked article before treating every implication as confirmed."
@@ -177,7 +187,7 @@ def write_queue_report(plan: dict) -> None:
             "",
             "- Topic: " + post["niche"],
         ]
-        if is_rss_groq:
+        if is_source_grounded_post:
             lines.append("- Editorial score (model estimate): " + str(post["research"]["score"]))
         else:
             lines += [
@@ -186,7 +196,7 @@ def write_queue_report(plan: dict) -> None:
             ]
         signals = post["research"].get("hits", [])
         if signals:
-            if is_rss_groq:
+            if is_source_grounded_post:
                 lines += ["", "**Source article**", ""]
                 for signal in signals[:1]:
                     title = signal["title"].replace("[", "\\[").replace("]", "\\]")
@@ -199,11 +209,12 @@ def write_queue_report(plan: dict) -> None:
         else:
             lines += ["", "_No recent matching Hacker News signal was found; the topic was chosen by rotation._"]
         lines += ["", "- Status: " + post.get("status", "planned"), ""]
-    if is_rss_groq:
+    if is_source_grounded_post:
+        policy_label = "Multidomain discovery" if is_multidomain else "RSS/Groq news"
         lines += [
             "## Media policy",
             "",
-            "RSS/Groq news posts are text-only by default. No generic category image is attached because it could be unrelated to the source story.",
+            policy_label + " posts are text-only by default. No generic category image is attached because it could be unrelated to the source story.",
             "",
         ]
     else:
