@@ -18,14 +18,24 @@ WINDOWS = {
 LATEST_TARGET_MINUTES_AFTER_START = 45  # Keep a 15-minute buffer before each window ends.
 
 
-def window_bounds(now: datetime, slot: int) -> tuple[datetime, datetime]:
-    """Return this slot's start/end for the local date containing now."""
+def window_bounds(
+    now: datetime,
+    slot: int,
+    hour: int | None = None,
+) -> tuple[datetime, datetime]:
+    """Return a one-hour IST window, optionally selecting a specific hourly window."""
     if slot not in WINDOWS:
         raise ValueError(f"Unsupported slot: {slot}")
     local_now = now.astimezone(IST)
-    start_hour, end_hour = WINDOWS[slot]
-    start = datetime.combine(local_now.date(), clock_time(start_hour), tzinfo=IST)
-    end = datetime.combine(local_now.date(), clock_time(end_hour), tzinfo=IST)
+    if hour is None:
+        start_hour, end_hour = WINDOWS[slot]
+        start = datetime.combine(local_now.date(), clock_time(start_hour), tzinfo=IST)
+        end = datetime.combine(local_now.date(), clock_time(end_hour), tzinfo=IST)
+    else:
+        if not 8 <= hour <= 23:
+            raise ValueError("hour must be between 8 and 23 IST")
+        start = datetime.combine(local_now.date(), clock_time(hour), tzinfo=IST)
+        end = start + timedelta(hours=1)
     return start, end
 
 
@@ -33,13 +43,14 @@ def choose_target(
     now: datetime,
     slot: int,
     target_offset_seconds: int | None = None,
+    hour: int | None = None,
 ) -> datetime | None:
     """Pick a target time uniformly in the remaining slot window, capped at start+45m.
 
     target_offset_seconds is injectable for deterministic tests. Returns None once the
     hour-long publishing window has expired.
     """
-    start, end = window_bounds(now, slot)
+    start, end = window_bounds(now, slot, hour=hour)
     local_now = now.astimezone(IST)
     if local_now >= end:
         return None
@@ -64,12 +75,19 @@ def choose_target(
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--slot", type=int, choices=(0, 1, 2), required=True)
+    parser.add_argument(
+        "--hour",
+        type=int,
+        choices=range(8, 24),
+        default=None,
+        help="Hourly IST window start (08–23); omit to use a legacy named slot.",
+    )
     parser.add_argument("--dry-run", action="store_true", help="Choose and print a target without sleeping.")
     args = parser.parse_args(argv)
 
     now = datetime.now(IST)
-    start, end = window_bounds(now, args.slot)
-    target = choose_target(now, args.slot)
+    start, end = window_bounds(now, args.slot, hour=args.hour)
+    target = choose_target(now, args.slot, hour=args.hour)
     if target is None:
         print(
             f"Slot {args.slot} window expired ({start:%H:%M}–{end:%H:%M} IST). "
