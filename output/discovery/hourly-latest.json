@@ -1,24 +1,24 @@
 {
-  "generated_at_ist": "2026-10-23T16:26:11+05:30",
-  "run_at_ist": "2026-10-23T16:26:11+05:30",
+  "generated_at_ist": "2026-10-23T17:40:58+05:30",
+  "run_at_ist": "2026-10-23T17:40:58+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
   "candidate_count_raw": 174,
-  "eligible_candidate_count": 97,
+  "eligible_candidate_count": 100,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4675
+      "total_count": 4684
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1045
+      "total_count": 1046
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
@@ -32,7 +32,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2881
+      "total_count": 2886
     },
     {
       "source": "GitHub Search · github-ecommerce-digital-products",
@@ -46,14 +46,14 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2020
+      "total_count": 2027
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3169
+      "total_count": 3175
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
@@ -145,186 +145,198 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-23T10:56:11+00:00",
+    "observed_at_utc": "2026-10-23T12:10:58+00:00",
     "tracked_repositories": 200,
     "repositories_seen_in_discovery": 79,
     "previously_tracked_repositories_refreshed": 121,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
-    "snapshots_added_this_run": 21,
-    "repositories_with_20_to_36_hour_baseline": 11,
+    "snapshots_added_this_run": 200,
+    "repositories_with_20_to_36_hour_baseline": 26,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "c8939df8f47b6405",
-      "title": "afjcjsbx/picoclaw",
-      "source_url": "https://github.com/afjcjsbx/picoclaw",
+      "candidate_id": "7366786c561f97cd",
+      "title": "milind-soni/OpenMausBot",
+      "source_url": "https://github.com/milind-soni/OpenMausBot",
       "verified": true,
-      "final_url": "https://github.com/afjcjsbx/picoclaw",
+      "final_url": "https://github.com/milind-soni/OpenMausBot",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "e8a7d399fdede511",
-      "title": "sickn33/agentic-awesome-skills",
-      "source_url": "https://github.com/sickn33/agentic-awesome-skills",
+      "candidate_id": "5ae1e4c764cd4d27",
+      "title": "corezoid/corezoid-ai-plugin",
+      "source_url": "https://github.com/corezoid/corezoid-ai-plugin",
       "verified": true,
-      "final_url": "https://github.com/sickn33/agentic-awesome-skills",
+      "final_url": "https://github.com/corezoid/corezoid-ai-plugin",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "6410d7b0c2142954",
-      "title": "Show HN: Ternlux – Free, local-first, bring-your-own-key AI pipeline builder",
-      "source_url": "https://www.ternlux.com/online-demo/",
-      "verified": false,
-      "final_url": null,
-      "http_status": null,
-      "reason": "Primary page title/content does not sufficiently match the candidate headline."
+      "candidate_id": "27d656e853d4d729",
+      "title": "Show HN: MegaKey (standardization and extension of the Hyper and Meh keys)",
+      "source_url": "https://leftium.github.io/megakey/",
+      "verified": true,
+      "final_url": "https://leftium.github.io/megakey/",
+      "http_status": 200,
+      "reason": ""
     }
   ],
-  "rejected_primary_sources": [
-    {
-      "candidate_id": "6410d7b0c2142954",
-      "title": "Show HN: Ternlux – Free, local-first, bring-your-own-key AI pipeline builder",
-      "source": "Hacker News",
-      "url": "https://www.ternlux.com/online-demo/",
-      "reasons": [
-        "Primary page title/content does not sufficiently match the candidate headline."
-      ]
-    }
-  ],
+  "rejected_primary_sources": [],
   "daily_draft_cap": 16,
   "daily_drafts_already_passed": 1,
-  "outcome": "skip",
-  "decision_reason": "All generated drafts failed the local evidence/editorial checks; the hour was skipped.",
-  "passing_drafts": [],
+  "outcome": "dry_run_passed",
+  "decision_reason": "At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.",
+  "passing_drafts": [
+    {
+      "candidate_id": "7366786c561f97cd",
+      "title": "milind-soni/OpenMausBot",
+      "source": "GitHub Search",
+      "source_kind": "github_repository",
+      "url": "https://github.com/milind-soni/OpenMausBot",
+      "primary_source_verified": true,
+      "primary_source_title": "GitHub - milind-soni/OpenMausBot: Open-source Grok Bot alternative with a virtual machine that bots can use",
+      "primary_source_final_url": "https://github.com/milind-soni/OpenMausBot",
+      "primary_source_http_status": 200,
+      "category": "security_and_self_hosting",
+      "priority_score": 63,
+      "hourly_adjusted_score": 82,
+      "post_text": "OpenMausBot is an open‑source Grok Bot alternative that runs bots inside a virtual machine. Deploy OpenMausBot with Docker to isolate bot execution. https://github.com/milind-soni/OpenMausBot",
+      "fact_sentence": "OpenMausBot is an open‑source Grok Bot alternative that runs bots inside a virtual machine.",
+      "format": "short",
+      "audience": "developers",
+      "angle": "implementation",
+      "rationale": "The primary source explicitly states the product runs bots inside a virtual machine, and the repository topics include docker, indicating Docker deployment is supported.",
+      "evidence_quote": "Open-source Grok Bot alternative with a virtual machine that bots can use - milind-soni/OpenMausBot",
+      "editorial_takeaway": "Deploy OpenMausBot with Docker to isolate bot execution.",
+      "claim_evidence": [
+        {
+          "claim": "OpenMausBot is an open‑source Grok Bot alternative that runs bots inside a virtual machine.",
+          "quote": "Open-source Grok Bot alternative with a virtual machine that bots can use - milind-soni/OpenMausBot"
+        }
+      ],
+      "scores": {
+        "timeliness": 8,
+        "usefulness": 9,
+        "novelty": 7,
+        "evidence": 10,
+        "insight": 8
+      },
+      "editorial_score": 8.6,
+      "character_count": 191,
+      "status": "dry_run_passed_not_published",
+      "published_to_x": false,
+      "automatic_repair_attempt": true,
+      "repair_note": "Repaired from the independent editor's rejection reason; all quality gates run again.",
+      "editorial_review": {
+        "clarity_score": 8,
+        "technical_coherence_score": 8,
+        "takeaway_value_score": 8,
+        "source_faithfulness_score": 8,
+        "originality_score": 8,
+        "reason": "Clear, accurate, and adds a useful deployment tip.",
+        "passed": true
+      }
+    }
+  ],
   "rejected_drafts": [
     {
-      "candidate_id": "6410d7b0c2142954",
-      "title": "Show HN: Ternlux – Free, local-first, bring-your-own-key AI pipeline builder",
-      "source": "Hacker News",
-      "url": "https://www.ternlux.com/online-demo/",
+      "candidate_id": "27d656e853d4d729",
+      "title": "Show HN: MegaKey (standardization and extension of the Hyper and Meh keys)",
       "reasons": [
-        "Primary page title/content does not sufficiently match the candidate headline."
-      ]
-    },
-    {
-      "candidate_id": "c8939df8f47b6405",
-      "title": "afjcjsbx/picoclaw",
-      "reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability.",
-        "Fact sentence is too long; narrow it to one source-backed capability.",
-        "Unsupported numeric claim(s): 512"
+        "Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.",
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
+        "A supporting quote does not share enough wording with its stated claim",
+        "Supporting quotes cover only 25% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "Picoclaw is an ultra‑lightweight, open‑source, self‑hosted personal AI assistant written in Go for RISC‑V and SBCs. Run a 512‑MB memory test to confirm it stays below the target before deployment. https://github.com/afjcjsbx/picoclaw",
-      "evidence_quote": "Ultra-lightweight, open-source, self-hosted personal AI assistant in Go for RISC-V, SBCs",
+      "proposed_text": "MegaKey defines five pseudo‑modifier keys that map complex shortcuts to single‑key symbols. Create a Karabiner rule and confirm the new key triggers the intended shortcut. https://leftium.github.io/megakey/",
+      "evidence_quote": "A system of 5 pseudo-modifier keys that works on standard keyboards",
       "claim_evidence": [
         {
-          "claim": "Picoclaw is an ultra‑lightweight, open‑source, self‑hosted personal AI assistant written in Go for RISC‑V and SBCs.",
-          "quote": "Ultra-lightweight, open-source, self-hosted personal AI assistant in Go for RISC-V, SBCs"
+          "claim": "MegaKey defines five pseudo‑modifier keys that map complex shortcuts to single‑key symbols.",
+          "quote": "A system of 5 pseudo-modifier keys that works on standard keyboards"
         }
       ]
     },
     {
-      "candidate_id": "e8a7d399fdede511",
-      "title": "sickn33/agentic-awesome-skills",
+      "candidate_id": "7366786c561f97cd",
+      "title": "milind-soni/OpenMausBot",
+      "proposed_text": "OpenMausBot is an open‑source Grok Bot alternative that runs bots inside a virtual machine. Run a sandboxed script in the VM and verify it cannot escape the container. https://github.com/milind-soni/OpenMausBot",
       "reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability.",
-        "Fact sentence is too long; narrow it to one source-backed capability.",
-        "Editorial takeaway is too long; keep the analysis concrete and concise."
+        "Technical coherence and source faithfulness below threshold due to unsupported sandbox claim."
       ],
-      "proposed_text": "AAS Core is a local, agent‑first control plane for catalog discovery, selection, stack validation, and planning with 2,600+ skills. Validate stack‑validation CLI output against a known good stack before pushing to production. https://github.com/sickn33/agentic-awesome-skills",
-      "evidence_quote": "AAS Core is the local, agent‑first control plane for complete catalog discovery, agent‑owned selection, stack validation, and planning, backed by 2,600+ agentic skills.",
-      "claim_evidence": [
-        {
-          "claim": "AAS Core is a local, agent‑first control plane for catalog discovery, selection, stack validation, and planning with 2,600+ skills.",
-          "quote": "AAS Core is the local, agent‑first control plane for complete catalog discovery, agent‑owned selection, stack validation, and planning, backed by 2,600+ agentic skills"
-        }
-      ]
+      "editorial_review": {
+        "clarity_score": 8,
+        "technical_coherence_score": 6,
+        "takeaway_value_score": 7,
+        "source_faithfulness_score": 6,
+        "originality_score": 7
+      }
     },
     {
-      "candidate_id": "c8939df8f47b6405",
-      "title": "afjcjsbx/picoclaw",
+      "candidate_id": "5ae1e4c764cd4d27",
+      "title": "corezoid/corezoid-ai-plugin",
+      "proposed_text": "corezoid-ai-plugin hosts a marketplace of AI plugins for Claude Code and Codex. Import a sample playbook and run type checks to confirm plugin schemas are valid. https://github.com/corezoid/corezoid-ai-plugin",
       "reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability.",
-        "Fact sentence is too long; narrow it to one source-backed capability.",
-        "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "Unsupported numeric claim(s): 512mb"
+        "Takeaway suggests type checks not documented; source faithfulness insufficient."
       ],
-      "proposed_text": "Picoclaw is an ultra‑lightweight, open‑source, self‑hosted personal AI assistant written in Go for RISC‑V and SBCs. Use the CLI to verify Picoclaw’s memory footprint stays within the typical 512 MB limit of SBCs before deployment. https://github.com/afjcjsbx/picoclaw",
-      "evidence_quote": "Ultra-lightweight, open-source, self-hosted personal AI assistant in Go for RISC‑V, SBCs",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability.",
-        "Fact sentence is too long; narrow it to one source-backed capability.",
-        "Unsupported numeric claim(s): 512"
-      ]
-    },
-    {
-      "candidate_id": "e8a7d399fdede511",
-      "title": "sickn33/agentic-awesome-skills",
-      "reasons": [
-        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.",
-        "Editorial takeaway is too long; keep the analysis concrete and concise."
-      ],
-      "proposed_text": "AAS Core is a local, agent‑first control plane for catalog discovery. Run the CLI’s catalog list command to confirm available skills before selecting for a stack. https://github.com/sickn33/agentic-awesome-skills",
-      "evidence_quote": "AAS Core is the local, agent‑first control plane for complete catalog discovery, agent‑owned selection, stack validation, and planning, backed by 2,600+ agentic skills",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability.",
-        "Fact sentence is too long; narrow it to one source-backed capability.",
-        "Editorial takeaway is too long; keep the analysis concrete and concise."
-      ]
+      "editorial_review": {
+        "clarity_score": 8,
+        "technical_coherence_score": 6,
+        "takeaway_value_score": 7,
+        "source_faithfulness_score": 6,
+        "originality_score": 7
+      }
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "c8939df8f47b6405",
-      "title": "afjcjsbx/picoclaw",
-      "url": "https://github.com/afjcjsbx/picoclaw",
+      "id": "7366786c561f97cd",
+      "title": "milind-soni/OpenMausBot",
+      "url": "https://github.com/milind-soni/OpenMausBot",
+      "source": "GitHub Search",
+      "primary_category": "security_and_self_hosting",
+      "priority_score": 63,
+      "hourly_adjusted_score": 82,
+      "stars_current": 5475,
+      "stars_delta_24h": 55,
+      "stars_delta_baseline_hours": 20.1,
+      "stars_growth_percent_24h": 1.01,
+      "trend_signal": "measured_star_growth",
+      "published_at": "2026-10-23T12:11:22+00:00",
+      "days_old": 0.0,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "5ae1e4c764cd4d27",
+      "title": "corezoid/corezoid-ai-plugin",
+      "url": "https://github.com/corezoid/corezoid-ai-plugin",
       "source": "GitHub Search",
       "primary_category": "ai_and_automation",
       "priority_score": 72,
       "hourly_adjusted_score": 76,
-      "stars_current": 38,
+      "stars_current": 74,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "insufficient_history",
-      "published_at": "2026-10-23T10:56:09+00:00",
+      "published_at": "2026-10-23T12:08:47+00:00",
       "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "e8a7d399fdede511",
-      "title": "sickn33/agentic-awesome-skills",
-      "url": "https://github.com/sickn33/agentic-awesome-skills",
-      "source": "GitHub Search",
-      "primary_category": "developer_tools",
-      "priority_score": 70,
-      "hourly_adjusted_score": 74,
-      "stars_current": 48365,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "insufficient_history",
-      "published_at": "2026-10-23T10:54:52+00:00",
-      "days_old": 0.0,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "6410d7b0c2142954",
-      "title": "Show HN: Ternlux – Free, local-first, bring-your-own-key AI pipeline builder",
-      "url": "https://www.ternlux.com/online-demo/",
+      "id": "27d656e853d4d729",
+      "title": "Show HN: MegaKey (standardization and extension of the Hyper and Meh keys)",
+      "url": "https://leftium.github.io/megakey/",
       "source": "Hacker News",
-      "primary_category": "ai_and_automation",
+      "primary_category": "product_and_workflow_tools",
       "priority_score": 66,
       "hourly_adjusted_score": 68,
       "stars_current": null,
@@ -332,35 +344,85 @@
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-22T16:33:58+00:00",
-      "days_old": 0.77,
-      "primary_source_verified": false,
-      "primary_source_http_status": null,
-      "primary_source_reason": "Primary page title/content does not sufficiently match the candidate headline."
+      "published_at": "2026-10-23T11:49:27+00:00",
+      "days_old": 0.01,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
     }
   ],
   "automatic_repair": {
     "attempted": true,
-    "drafts_submitted": 2,
-    "repaired_local_passes": 0,
-    "repair_rejections": 2,
+    "drafts_submitted": 1,
+    "repaired_local_passes": 1,
+    "repair_rejections": 0,
     "repair_error": null,
-    "editorial_repair_attempted": false,
-    "editorial_repair_drafts_submitted": 0,
+    "editorial_repair_attempted": true,
+    "editorial_repair_drafts_submitted": 1,
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 0,
-    "submitted_for_independent_review": 0,
-    "passed_independent_review": 0,
-    "rejected_by_independent_review": 0,
+    "locally_valid_drafts": 3,
+    "submitted_for_independent_review": 3,
+    "passed_independent_review": 1,
+    "rejected_by_independent_review": 2,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
+  "recommended_draft": {
+    "candidate_id": "7366786c561f97cd",
+    "title": "milind-soni/OpenMausBot",
+    "source": "GitHub Search",
+    "source_kind": "github_repository",
+    "url": "https://github.com/milind-soni/OpenMausBot",
+    "primary_source_verified": true,
+    "primary_source_title": "GitHub - milind-soni/OpenMausBot: Open-source Grok Bot alternative with a virtual machine that bots can use",
+    "primary_source_final_url": "https://github.com/milind-soni/OpenMausBot",
+    "primary_source_http_status": 200,
+    "category": "security_and_self_hosting",
+    "priority_score": 63,
+    "hourly_adjusted_score": 82,
+    "post_text": "OpenMausBot is an open‑source Grok Bot alternative that runs bots inside a virtual machine. Deploy OpenMausBot with Docker to isolate bot execution. https://github.com/milind-soni/OpenMausBot",
+    "fact_sentence": "OpenMausBot is an open‑source Grok Bot alternative that runs bots inside a virtual machine.",
+    "format": "short",
+    "audience": "developers",
+    "angle": "implementation",
+    "rationale": "The primary source explicitly states the product runs bots inside a virtual machine, and the repository topics include docker, indicating Docker deployment is supported.",
+    "evidence_quote": "Open-source Grok Bot alternative with a virtual machine that bots can use - milind-soni/OpenMausBot",
+    "editorial_takeaway": "Deploy OpenMausBot with Docker to isolate bot execution.",
+    "claim_evidence": [
+      {
+        "claim": "OpenMausBot is an open‑source Grok Bot alternative that runs bots inside a virtual machine.",
+        "quote": "Open-source Grok Bot alternative with a virtual machine that bots can use - milind-soni/OpenMausBot"
+      }
+    ],
+    "scores": {
+      "timeliness": 8,
+      "usefulness": 9,
+      "novelty": 7,
+      "evidence": 10,
+      "insight": 8
+    },
+    "editorial_score": 8.6,
+    "character_count": 191,
+    "status": "dry_run_passed_not_published",
+    "published_to_x": false,
+    "automatic_repair_attempt": true,
+    "repair_note": "Repaired from the independent editor's rejection reason; all quality gates run again.",
+    "editorial_review": {
+      "clarity_score": 8,
+      "technical_coherence_score": 8,
+      "takeaway_value_score": 8,
+      "source_faithfulness_score": 8,
+      "originality_score": 8,
+      "reason": "Clear, accurate, and adds a useful deployment tip.",
+      "passed": true
+    }
+  },
   "state_summary": {
-    "used_candidates_in_cooldown": 1,
-    "recently_attempted_candidates": 16,
-    "recent_draft_passes_today": 1
+    "used_candidates_in_cooldown": 2,
+    "recently_attempted_candidates": 19,
+    "recent_draft_passes_today": 2
   }
 }

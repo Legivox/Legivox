@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-23T16:26:11+05:30
+- Run time (IST): 2026-10-23T17:40:58+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 97
-- Independent editorial review: 0 draft(s) passed / 0 rejected
-- Drafts passing local checks: 0
-- Outcome: **skip**
-- Decision reason: All generated drafts failed the local evidence/editorial checks; the hour was skipped.
+- Candidate pool after freshness/diversity filters: 100
+- Independent editorial review: 1 draft(s) passed / 2 rejected
+- Drafts passing local checks: 1
+- Outcome: **dry_run_passed**
+- Decision reason: At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.
 
 ## Source health
 
@@ -40,58 +40,74 @@
 - Repositories seen in this discovery run: 79
 - Previously tracked repositories refreshed outside search results: 121
 - Refresh failures: 0
-- Star snapshots recorded this run: 21
-- Repositories with a 20–36 hour comparison baseline: 11
+- Star snapshots recorded this run: 200
+- Repositories with a 20–36 hour comparison baseline: 26
 - First observations are baseline samples, not evidence of trending. Star velocity is reported only when a historical comparison exists.
 
 ## Primary-source verification
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| afjcjsbx/picoclaw | yes | 200 | https://github.com/afjcjsbx/picoclaw |
-| sickn33/agentic-awesome-skills | yes | 200 | https://github.com/sickn33/agentic-awesome-skills |
-| Show HN: Ternlux – Free, local-first, bring-your-own-key AI pipeline builder | no | — | Primary page title/content does not sufficiently match the candidate headline. |
+| milind-soni/OpenMausBot | yes | 200 | https://github.com/milind-soni/OpenMausBot |
+| corezoid/corezoid-ai-plugin | yes | 200 | https://github.com/corezoid/corezoid-ai-plugin |
+| Show HN: MegaKey (standardization and extension of the Hyper and Meh keys) | yes | 200 | https://leftium.github.io/megakey/ |
 
 ## Selected draft candidates
 
-No candidate produced a draft that passed every local check. Skipping is intentional.
+### Draft option 1: milind-soni/OpenMausBot
+
+- Category: security_and_self_hosting
+- Source: GitHub Search
+- Format: short
+- Editorial score: 8.6/10
+- Model scores: timeliness 8/10, usefulness 9/10, novelty 7/10, evidence 10/10, insight 8/10
+- Independent editor scores: {"clarity_score": 8, "technical_coherence_score": 8, "takeaway_value_score": 8, "source_faithfulness_score": 8, "originality_score": 8, "reason": "Clear, accurate, and adds a useful deployment tip.", "passed": true}
+- Live primary page: https://github.com/milind-soni/OpenMausBot (HTTP 200)
+- Exact source evidence: “Open-source Grok Bot alternative with a virtual machine that bots can use - milind-soni/OpenMausBot”
+- Why this angle: The primary source explicitly states the product runs bots inside a virtual machine, and the repository topics include docker, indicating Docker deployment is supported.
+- Editorial takeaway: Deploy OpenMausBot with Docker to isolate bot execution.
+- Source: https://github.com/milind-soni/OpenMausBot
+
+**Claim-by-claim source quotes:**
+
+- OpenMausBot is an open‑source Grok Bot alternative that runs bots inside a virtual machine. ← “Open-source Grok Bot alternative with a virtual machine that bots can use - milind-soni/OpenMausBot”
+
+Proposed post (not published):
+
+> OpenMausBot is an open‑source Grok Bot alternative that runs bots inside a virtual machine. Deploy OpenMausBot with Docker to isolate bot execution. https://github.com/milind-soni/OpenMausBot
+
+- Length: 191/280 raw characters
+- Automated gate: passed live source, evidence, originality, URL and length checks; live publishing is disabled in dry-run mode.
 
 ## Automatic repair attempt
 
 - Attempted: yes
-- Repaired drafts submitted: 2
-- Repaired drafts that passed local validation: 0
-- Repaired drafts rejected: 2
+- Repaired drafts submitted: 1
+- Repaired drafts that passed local validation: 1
+- Repaired drafts rejected: 0
 - Repair error: none
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
-- Show HN: Ternlux – Free, local-first, bring-your-own-key AI pipeline builder: Primary page title/content does not sufficiently match the candidate headline.
-- afjcjsbx/picoclaw: The factual opening bundles multiple features; narrow it to one capability.; Fact sentence is too long; narrow it to one source-backed capability.; Unsupported numeric claim(s): 512
-  - Rejected text: Picoclaw is an ultra‑lightweight, open‑source, self‑hosted personal AI assistant written in Go for RISC‑V and SBCs. Run a 512‑MB memory test to confirm it stays below the target before deployment. https://github.com/afjcjsbx/picoclaw
-  - Model evidence quote: “Ultra-lightweight, open-source, self-hosted personal AI assistant in Go for RISC-V, SBCs”
-  - Claim support: Picoclaw is an ultra‑lightweight, open‑source, self‑hosted personal AI assistant written in Go for RISC‑V and SBCs. ← “Ultra-lightweight, open-source, self-hosted personal AI assistant in Go for RISC-V, SBCs”
-- sickn33/agentic-awesome-skills: The factual opening bundles multiple features; narrow it to one capability.; Fact sentence is too long; narrow it to one source-backed capability.; Editorial takeaway is too long; keep the analysis concrete and concise.
-  - Rejected text: AAS Core is a local, agent‑first control plane for catalog discovery, selection, stack validation, and planning with 2,600+ skills. Validate stack‑validation CLI output against a known good stack before pushing to production. https://github.com/sickn33/agentic-awesome-skills
-  - Model evidence quote: “AAS Core is the local, agent‑first control plane for complete catalog discovery, agent‑owned selection, stack validation, and planning, backed by 2,600+ agentic skills.”
-  - Claim support: AAS Core is a local, agent‑first control plane for catalog discovery, selection, stack validation, and planning with 2,600+ skills. ← “AAS Core is the local, agent‑first control plane for complete catalog discovery, agent‑owned selection, stack validation, and planning, backed by 2,600+ agentic skills”
-- afjcjsbx/picoclaw: The factual opening bundles multiple features; narrow it to one capability.; Fact sentence is too long; narrow it to one source-backed capability.; Editorial takeaway is too long; keep the analysis concrete and concise.; Unsupported numeric claim(s): 512mb
-  - Rejected text: Picoclaw is an ultra‑lightweight, open‑source, self‑hosted personal AI assistant written in Go for RISC‑V and SBCs. Use the CLI to verify Picoclaw’s memory footprint stays within the typical 512 MB limit of SBCs before deployment. https://github.com/afjcjsbx/picoclaw
-  - Model evidence quote: “Ultra-lightweight, open-source, self-hosted personal AI assistant in Go for RISC‑V, SBCs”
-- sickn33/agentic-awesome-skills: Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.; Editorial takeaway is too long; keep the analysis concrete and concise.
-  - Rejected text: AAS Core is a local, agent‑first control plane for catalog discovery. Run the CLI’s catalog list command to confirm available skills before selecting for a stack. https://github.com/sickn33/agentic-awesome-skills
-  - Model evidence quote: “AAS Core is the local, agent‑first control plane for complete catalog discovery, agent‑owned selection, stack validation, and planning, backed by 2,600+ agentic skills”
+- Show HN: MegaKey (standardization and extension of the Hyper and Meh keys): Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; A supporting quote does not share enough wording with its stated claim; Supporting quotes cover only 25% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: MegaKey defines five pseudo‑modifier keys that map complex shortcuts to single‑key symbols. Create a Karabiner rule and confirm the new key triggers the intended shortcut. https://leftium.github.io/megakey/
+  - Model evidence quote: “A system of 5 pseudo-modifier keys that works on standard keyboards”
+  - Claim support: MegaKey defines five pseudo‑modifier keys that map complex shortcuts to single‑key symbols. ← “A system of 5 pseudo-modifier keys that works on standard keyboards”
+- milind-soni/OpenMausBot: Technical coherence and source faithfulness below threshold due to unsupported sandbox claim.
+  - Rejected text: OpenMausBot is an open‑source Grok Bot alternative that runs bots inside a virtual machine. Run a sandboxed script in the VM and verify it cannot escape the container. https://github.com/milind-soni/OpenMausBot
+- corezoid/corezoid-ai-plugin: Takeaway suggests type checks not documented; source faithfulness insufficient.
+  - Rejected text: corezoid-ai-plugin hosts a marketplace of AI plugins for Claude Code and Codex. Import a sample playbook and run type checks to confirm plugin schemas are valid. https://github.com/corezoid/corezoid-ai-plugin
 
 ## Top discovery candidates considered
 
-- afjcjsbx/picoclaw | GitHub Search | ai_and_automation | raw 72, adjusted 76 | current stars 38 | GitHub star trend: building baseline | https://github.com/afjcjsbx/picoclaw
-- sickn33/agentic-awesome-skills | GitHub Search | developer_tools | raw 70, adjusted 74 | current stars 48365 | GitHub star trend: building baseline | https://github.com/sickn33/agentic-awesome-skills
-- Show HN: Ternlux – Free, local-first, bring-your-own-key AI pipeline builder | Hacker News | ai_and_automation | raw 66, adjusted 68 | https://www.ternlux.com/online-demo/
+- milind-soni/OpenMausBot | GitHub Search | security_and_self_hosting | raw 63, adjusted 82 | current stars 5475 | GitHub stars +55 over about 20.1h | https://github.com/milind-soni/OpenMausBot
+- corezoid/corezoid-ai-plugin | GitHub Search | ai_and_automation | raw 72, adjusted 76 | current stars 74 | GitHub star trend: building baseline | https://github.com/corezoid/corezoid-ai-plugin
+- Show HN: MegaKey (standardization and extension of the Hyper and Meh keys) | Hacker News | product_and_workflow_tools | raw 66, adjusted 68 | https://leftium.github.io/megakey/
 
 ## Safety and interpretation
 
-- This run did not produce a publishable draft; no post was published to X.
+- At least one draft passed the automated quality gates; this dry-run workflow itself never publishes to X.
 - Model scores are editorial estimates; they are not verified popularity or market demand.
 - Candidate content and metadata are untrusted input. Factual copy must be supported by the fetched primary page.
 - A skip can mean no fresh candidates, a daily diversity/cap limit, a model/API problem or weak drafts. Check the reason above.
