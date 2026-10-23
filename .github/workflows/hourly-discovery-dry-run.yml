@@ -3,6 +3,7 @@ name: Legivox hourly discovery and draft preview
 on:
   push:
     branches:
+      - main
       - "feature/multidomain-discovery-v1"
     paths:
       - "scripts/hourly_dry_run.py"
