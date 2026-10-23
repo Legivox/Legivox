@@ -1,59 +1,44 @@
 {
   "date_ist": "2026-10-23",
-  "prepared_at_ist": "2026-10-23 06:45:16 IST",
-  "research_window_days": 30,
-  "research_source": "Hacker News Algolia Search API",
+  "prepared_at_ist": "2026-10-23 09:31:16 IST",
+  "research_window_days": 7,
+  "research_source": "RSS feeds + Groq editorial ranking",
   "posts": [
     {
-      "idea_id": "creator-feedback",
-      "niche": "independent digital creators",
-      "problem": "Feedback and feature requests are scattered across channels.",
-      "evidence": "Unverified hypothesis. Research complaints and willingness to pay before treating this as demand.",
-      "solution_hypothesis": "a lightweight inbox that groups repeated requests into a prioritized backlog",
-      "text": "A creator can get the same feature request in a DM, a comment, an email and a community thread. The hard part isn't collecting feedback. It's noticing what's being asked for repeatedly. How do you track that today?",
-      "text_hash": "4aa762dbbf29743b39688dda0d986d5f86c91512bc88a959bb3ee141545ffb08",
-      "image_query": "creative workspace",
+      "idea_id": "rss-5eee804247a4",
+      "niche": "AI & software",
+      "problem": "Canva’s first AI image model plans designs before generating them",
+      "evidence": "RSS item from The Verge; published at 2026-10-22T21:53:22+00:00. Verify against the source.",
+      "solution_hypothesis": "Canva Craft’s pre‑design planning lets creators prototype image layouts before generation, shifting workflow from reactive to intentional de",
+      "text": "Canva’s new model lets designers outline image layout first, turning AI art from guesswork into a planned design process.\n\nhttps://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model",
+      "text_hash": "2ac27e5617e9e198671f19abe8917ab101a05353521e0b8a6668df6fa285b58c",
+      "image_query": "",
       "research": {
-        "query": "feature requests",
-        "score": 0.0,
-        "hits": [],
+        "query": "RSS technology news",
+        "score": 8.33,
+        "hits": [
+          {
+            "title": "Canva’s first AI image model plans designs before generating them",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model",
+            "external_url": "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model",
+            "points": 0,
+            "comments": 0,
+            "created_at": "2026-10-22T21:53:22+00:00",
+            "matched_terms": []
+          }
+        ],
         "error": null
       },
-      "status": "planned"
-    },
-    {
-      "idea_id": "freelancer-scope",
-      "niche": "freelance developers",
-      "problem": "Scope changes and assumptions can quietly erode project margins.",
-      "evidence": "Unverified hypothesis. Validate with public discussions and paid competitor products.",
-      "solution_hypothesis": "a project scoping workbook with explicit assumptions and change approvals",
-      "text": "Scope creep rarely arrives as one dramatic request. It's a handful of tiny “while you're in there…” changes. Freelancers, how do you document assumptions and approve extra work without making every project feel bureaucratic?",
-      "text_hash": "2c016ad5c1e84443623ffa74649e68df4a88b33c42ace2973ff278e1a79d077c",
-      "image_query": "freelancer laptop",
-      "research": {
-        "query": "freelancer scope creep",
-        "score": 0.0,
-        "hits": [],
-        "error": null
+      "status": "published: https://x.com/i/status/2113483039250780613",
+      "slot": 0,
+      "editorial_scores": {
+        "relevance_score": 9,
+        "significance_score": 8,
+        "originality_score": 8
       },
-      "status": "planned"
-    },
-    {
-      "idea_id": "seller-stock",
-      "niche": "small online sellers",
-      "problem": "Stock, fees, reorder levels and margins often live in disconnected sheets.",
-      "evidence": "Unverified hypothesis. Check competing templates and seller complaints.",
-      "solution_hypothesis": "an inventory workbook that combines reorder signals with per-item margins",
-      "text": "A product can look profitable until marketplace fees, packaging, shipping and restocking time are counted. For small sellers, which number is easiest to lose track of: true margin, stock on hand, or reorder timing?",
-      "text_hash": "6d8b8d393e2389d0225a27c181f4602c42710ef7e499154d0ea677d920391c68",
-      "image_query": "inventory boxes",
-      "research": {
-        "query": "inventory margins",
-        "score": 0.0,
-        "hits": [],
-        "error": null
-      },
-      "status": "planned"
+      "published_at_ist": "2026-10-23T09:39:57+05:30",
+      "published_url": "https://x.com/i/status/2113483039250780613",
+      "image": null
     }
   ]
 }
