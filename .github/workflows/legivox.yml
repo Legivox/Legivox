@@ -14,9 +14,24 @@ on:
     paths:
       - .github/workflows/legivox.yml
   schedule:
-    # Plan at 06:00 IST; publish hourly from 08:00 through 23:00 IST (cron is UTC).
+    # Plan at 06:00 IST; individual cron entries let us detect delayed hourly runs.
     - cron: '30 0 * * *'
-    - cron: '30 2-17 * * *'
+    - cron: '30 2 * * *'   # 08:00 IST
+    - cron: '30 3 * * *'   # 09:00 IST
+    - cron: '30 4 * * *'   # 10:00 IST
+    - cron: '30 5 * * *'   # 11:00 IST
+    - cron: '30 6 * * *'   # 12:00 IST
+    - cron: '30 7 * * *'   # 13:00 IST
+    - cron: '30 8 * * *'   # 14:00 IST
+    - cron: '30 9 * * *'   # 15:00 IST
+    - cron: '30 10 * * *'  # 16:00 IST
+    - cron: '30 11 * * *'  # 17:00 IST
+    - cron: '30 12 * * *'  # 18:00 IST
+    - cron: '30 13 * * *'  # 19:00 IST
+    - cron: '30 14 * * *'  # 20:00 IST
+    - cron: '30 15 * * *'  # 21:00 IST
+    - cron: '30 16 * * *'  # 22:00 IST
+    - cron: '30 17 * * *'  # 23:00 IST
 
 permissions:
   contents: write
@@ -72,18 +87,41 @@ jobs:
           USE_MULTIDOMAIN_PUBLISHING: ${{ vars.LEGIVOX_MULTIDOMAIN_PUBLISHING_ENABLED || 'true' }}
           SCHEDULE: ${{ github.event.schedule || (inputs.publish_now == true && 'live-test') || (github.event_name == 'push' && contains(github.event.head_commit.message, '[publish-test]') && 'live-test') }}
         run: |
+          # The explicit cron expression identifies the intended IST hour. If GitHub
+          # starts a scheduled run in a different hour, fail closed instead of posting late.
           case "$SCHEDULE" in
-            '30 2-17 * * *'|'live-test') ;;
+            'live-test') hour=$(TZ=Asia/Kolkata date +%H) ;;
+            '30 2 * * *') hour=8 ;;
+            '30 3 * * *') hour=9 ;;
+            '30 4 * * *') hour=10 ;;
+            '30 5 * * *') hour=11 ;;
+            '30 6 * * *') hour=12 ;;
+            '30 7 * * *') hour=13 ;;
+            '30 8 * * *') hour=14 ;;
+            '30 9 * * *') hour=15 ;;
+            '30 10 * * *') hour=16 ;;
+            '30 11 * * *') hour=17 ;;
+            '30 12 * * *') hour=18 ;;
+            '30 13 * * *') hour=19 ;;
+            '30 14 * * *') hour=20 ;;
+            '30 15 * * *') hour=21 ;;
+            '30 16 * * *') hour=22 ;;
+            '30 17 * * *') hour=23 ;;
             *) echo 'Unexpected schedule; refusing to prepare a post.' >&2; exit 1 ;;
           esac
-          # Scheduled jobs run at :00 IST. Use the current local hour as the window,
-          # and cycle legacy slot IDs 0–2 because the shared publisher schema uses them.
-          hour=$(TZ=Asia/Kolkata date +%H)
           hour=$((10#$hour))
+          current_hour=$(TZ=Asia/Kolkata date +%H)
+          current_hour=$((10#$current_hour))
+          if [ "$SCHEDULE" != 'live-test' ] && [ "$hour" -ne "$current_hour" ]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            echo "Scheduled slot was $hour:00 IST but GitHub started this run in a different local hour; skipping rather than posting late."
+            exit 0
+          fi
           if [ "$hour" -lt 8 ] || [ "$hour" -gt 23 ]; then
             echo "Refusing to post outside the 08:00–23:00 IST schedule (local hour=$hour)." >&2
             exit 1
           fi
+          # Cycle legacy slot IDs 0–2; the plan/publisher schema uses three named slots.
           slot=$(((hour - 8) % 3))
           echo "slot=$slot" >> "$GITHUB_OUTPUT"
           echo "hour=$hour" >> "$GITHUB_OUTPUT"
