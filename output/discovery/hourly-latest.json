@@ -1,66 +1,66 @@
 {
-  "generated_at_ist": "2026-10-23T19:52:18+05:30",
-  "run_at_ist": "2026-10-23T19:52:18+05:30",
+  "generated_at_ist": "2026-10-23T20:49:53+05:30",
+  "run_at_ist": "2026-10-23T20:49:53+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 177,
-  "eligible_candidate_count": 102,
+  "candidate_count_raw": 179,
+  "eligible_candidate_count": 103,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4695
+      "total_count": 4701
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1048
+      "total_count": 1053
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 375
+      "total_count": 376
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2894
+      "total_count": 2901
     },
     {
       "source": "GitHub Search · github-ecommerce-digital-products",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 433
+      "total_count": 434
     },
     {
       "source": "GitHub Search · github-mcp-servers",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2034
+      "total_count": 2039
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3189
+      "total_count": 3193
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 138
+      "total_count": 140
     },
     {
       "source": "GitHub Search · github-workflow-automation",
@@ -114,7 +114,7 @@
     {
       "source": "Hacker News · hn-shopify",
       "kind": "hacker_news",
-      "items_kept": 10,
+      "items_kept": 8,
       "status": "ok",
       "total_count": 10
     },
@@ -134,7 +134,7 @@
     {
       "source": "Product Hunt",
       "kind": "rss",
-      "items_kept": 41,
+      "items_kept": 42,
       "status": "ok"
     },
     {
@@ -145,178 +145,170 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-23T14:22:18+00:00",
+    "observed_at_utc": "2026-10-23T15:19:53+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 80,
-    "previously_tracked_repositories_refreshed": 119,
+    "repositories_seen_in_discovery": 83,
+    "previously_tracked_repositories_refreshed": 116,
     "refresh_failures": 1,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 199,
-    "repositories_with_20_to_36_hour_baseline": 20,
+    "repositories_with_20_to_36_hour_baseline": 15,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "f49d2e656c0ade72",
-      "title": "Show HN: Kavela – AI Automations that do not fail silently",
-      "source_url": "https://kavela.ai",
+      "candidate_id": "e26812b046a1a119",
+      "title": "ollaya-dev/ollaya",
+      "source_url": "https://github.com/ollaya-dev/ollaya",
       "verified": true,
-      "final_url": "https://kavela.ai",
+      "final_url": "https://github.com/ollaya-dev/ollaya",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "6410d7b0c2142954",
-      "title": "Show HN: Ternlux – Free, local-first, bring-your-own-key AI pipeline builder",
-      "source_url": "https://www.ternlux.com/online-demo/",
-      "verified": false,
-      "final_url": null,
-      "http_status": null,
-      "reason": "Primary page title/content does not sufficiently match the candidate headline."
+      "candidate_id": "7496cff6eddca128",
+      "title": "vstorm-co/agenticos",
+      "source_url": "https://github.com/vstorm-co/agenticos",
+      "verified": true,
+      "final_url": "https://github.com/vstorm-co/agenticos",
+      "http_status": 200,
+      "reason": ""
     },
     {
-      "candidate_id": "99cc8cc2964bda66",
-      "title": "rome-os/rome",
-      "source_url": "https://github.com/rome-os/rome",
+      "candidate_id": "1e67bcd35274fb8d",
+      "title": "Show HN: ParaGraFX – An iOS app for reading and illustrating ePub books",
+      "source_url": "https://apps.apple.com/us/app/paragrafx-illustrate-books/id6795768929",
       "verified": true,
-      "final_url": "https://github.com/rome-os/rome",
+      "final_url": "https://apps.apple.com/us/app/paragrafx-illustrate-books/id6795768929",
       "http_status": 200,
       "reason": ""
     }
   ],
-  "rejected_primary_sources": [
-    {
-      "candidate_id": "6410d7b0c2142954",
-      "title": "Show HN: Ternlux – Free, local-first, bring-your-own-key AI pipeline builder",
-      "source": "Hacker News",
-      "url": "https://www.ternlux.com/online-demo/",
-      "reasons": [
-        "Primary page title/content does not sufficiently match the candidate headline."
-      ]
-    }
-  ],
+  "rejected_primary_sources": [],
   "daily_draft_cap": 16,
   "daily_drafts_already_passed": 2,
   "outcome": "skip",
-  "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
+  "decision_reason": "No draft cleared the complete automatic quality gate; independent editorial review failed closed. Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi",
   "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "6410d7b0c2142954",
-      "title": "Show HN: Ternlux – Free, local-first, bring-your-own-key AI pipeline builder",
-      "source": "Hacker News",
-      "url": "https://www.ternlux.com/online-demo/",
-      "reasons": [
-        "Primary page title/content does not sufficiently match the candidate headline."
-      ]
-    },
-    {
-      "candidate_id": "f49d2e656c0ade72",
-      "title": "Show HN: Kavela – AI Automations that do not fail silently",
-      "reasons": [
-        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
-        "A supporting quote does not share enough wording with its stated claim",
-        "Supporting quotes cover only 44% of factual wording; narrow the claim or provide a closer primary-source quote"
-      ],
-      "proposed_text": "Kavela runs AI automations in plain‑word workflows and checks each run before delivery. Run a failing step and verify Kavela reports the error before the tool completes. https://kavela.ai",
-      "evidence_quote": "Kavela runs it in your tools and checks every run before it reaches you",
-      "claim_evidence": [
-        {
-          "claim": "Kavela runs AI automations in plain‑word workflows and checks each run before delivery",
-          "quote": "Kavela runs it in your tools and checks every run before it reaches you"
-        }
-      ]
-    },
-    {
-      "candidate_id": "99cc8cc2964bda66",
-      "title": "rome-os/rome",
+      "candidate_id": "e26812b046a1a119",
+      "title": "ollaya-dev/ollaya",
       "reasons": [
         "Editorial takeaway is too long; keep the analysis concrete and concise."
       ],
-      "proposed_text": "Rome is a compounding agent OS that supports recursive agents and is an open‑source alternative to Grok Bot. Deploy Rome locally and compare its recursion depth limits to Grok Bot to gauge scalability. https://github.com/rome-os/rome",
-      "evidence_quote": "A compounding agent OS for recursive agents. Also an open source alternative to Grok Bot",
+      "proposed_text": "ollaya provides a Jev-compatible API server that pulls and serves 24 model families. Run a /v1/systemone health check to confirm local model availability before production use. https://github.com/ollaya-dev/ollaya",
+      "evidence_quote": "Jev-compatible API server for open decision models. Ollama for decision models: pull and serve 24 model families",
       "claim_evidence": [
         {
-          "claim": "Rome is a compounding agent OS that supports recursive agents and is an open‑source alternative to Grok Bot",
-          "quote": "A compounding agent OS for recursive agents. Also an open source alternative to Grok Bot"
+          "claim": "ollaya provides a Jev-compatible API server that pulls and serves 24 model families",
+          "quote": "Jev-compatible API server for open decision models. Ollama for decision models: pull and serve 24 model families"
         }
       ]
     },
     {
-      "candidate_id": "f49d2e656c0ade72",
-      "title": "Show HN: Kavela – AI Automations that do not fail silently",
+      "candidate_id": "7496cff6eddca128",
+      "title": "vstorm-co/agenticos",
       "reasons": [
-        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
-        "No claim-by-claim supporting evidence was provided",
-        "Supporting quotes cover only 44% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "Supporting quotes cover only 62% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "Kavela runs AI automations in plain‑word workflows and checks each run before delivery. If a step fails, Kavela reports the error and retries until the task passes. https://kavela.ai",
-      "evidence_quote": "Kavela runs it in your tools and checks every run before it reaches you",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
-        "A supporting quote does not share enough wording with its stated claim",
-        "Supporting quotes cover only 44% of factual wording; narrow the claim or provide a closer primary-source quote"
+      "proposed_text": "agenticos offers a self-hosted agent layer with an API for governing AI agents. Check that agent budgets are enforced by sending a high‑cost request and verifying the response is throttled. https://github.com/vstorm-co/agenticos",
+      "evidence_quote": "Open-source AI teammates for your company. The self-hosted agent layer: build, run and govern AI agents on your own servers, models and rules. RAG, skills, a real browser, 4,700+ MCP servers and an API",
+      "claim_evidence": [
+        {
+          "claim": "agenticos offers a self-hosted agent layer with an API for governing AI agents",
+          "quote": "Open-source AI teammates for your company. The self-hosted agent layer: build, run and govern AI agents on your own servers, models and rules. RAG, skills, a real browser, 4,700+ MCP servers and an API"
+        }
       ]
     },
     {
-      "candidate_id": "99cc8cc2964bda66",
-      "title": "rome-os/rome",
-      "proposed_text": "Rome is a compounding agent OS that supports recursive agents and is an open‑source alternative to Grok Bot. The repository has 124 open issues, indicating active maintenance. https://github.com/rome-os/rome",
+      "candidate_id": "1e67bcd35274fb8d",
+      "title": "Show HN: ParaGraFX – An iOS app for reading and illustrating ePub books",
       "reasons": [
-        "Post restates headline facts without adding new insight; originality below threshold."
-      ],
-      "editorial_review": {
-        "clarity_score": 8,
-        "technical_coherence_score": 8,
-        "takeaway_value_score": 7,
-        "source_faithfulness_score": 8,
-        "originality_score": 3
-      }
-    },
-    {
-      "candidate_id": "99cc8cc2964bda66",
-      "title": "rome-os/rome",
-      "reasons": [
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
-        "No claim-by-claim supporting evidence was provided",
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "A supporting quote does not share enough wording with its stated claim",
         "Supporting quotes cover only 43% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "Rome’s GitHub repo lists 124 open issues and 53 pull requests. Track the issue backlog to gauge how quickly new features or fixes are merged. https://github.com/rome-os/rome",
-      "evidence_quote": "Issues 124 ( 124 ) Pull requests 53 ( 53 )",
+      "proposed_text": "ParaGraFX is an iOS app that generates illustrations for ePub books. Verify queued chapter generation completes before app closure by monitoring background task status. https://apps.apple.com/us/app/paragrafx-illustrate-books/id6795768929",
+      "evidence_quote": "ParaGraFX: Illustrate Books App - App Store",
+      "claim_evidence": [
+        {
+          "claim": "ParaGraFX is an iOS app that generates illustrations for ePub books",
+          "quote": "ParaGraFX: Illustrate Books App - App Store"
+        }
+      ]
+    },
+    {
+      "candidate_id": "7496cff6eddca128",
+      "title": "vstorm-co/agenticos",
+      "reasons": [
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "No claim-by-claim supporting evidence was provided"
+      ],
+      "proposed_text": "agenticos is a self‑hosted AI agent platform with an API. Verify budget enforcement by sending a high‑cost request and checking the response is throttled. https://github.com/vstorm-co/agenticos",
+      "evidence_quote": "Open‑source AI teammates for your company. The self‑hosted agent layer: build, run and govern AI agents on your own servers, models and rules. RAG, skills, a real browser, 4,700+ MCP servers and an API",
       "automatic_repair_attempt": true,
       "original_rejection_reasons": [
-        "Post restates headline facts without adding new insight; originality below threshold."
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "Supporting quotes cover only 62% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ]
+    },
+    {
+      "candidate_id": "e26812b046a1a119",
+      "title": "ollaya-dev/ollaya",
+      "proposed_text": "ollaya is a Jev‑compatible API server for decision models. Run /v1/systemone health check to confirm local model availability before production use. https://github.com/ollaya-dev/ollaya",
+      "reasons": [
+        "Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi"
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "f49d2e656c0ade72",
-      "title": "Show HN: Kavela – AI Automations that do not fail silently",
-      "url": "https://kavela.ai",
-      "source": "Hacker News",
-      "primary_category": "product_and_workflow_tools",
+      "id": "e26812b046a1a119",
+      "title": "ollaya-dev/ollaya",
+      "url": "https://github.com/ollaya-dev/ollaya",
+      "source": "GitHub Search",
+      "primary_category": "ai_and_automation",
       "priority_score": 74,
-      "hourly_adjusted_score": 76,
-      "stars_current": null,
+      "hourly_adjusted_score": 68,
+      "stars_current": 1384,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-23T14:18:31+00:00",
+      "trend_signal": "insufficient_history",
+      "published_at": "2026-10-23T15:19:52+00:00",
       "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "6410d7b0c2142954",
-      "title": "Show HN: Ternlux – Free, local-first, bring-your-own-key AI pipeline builder",
-      "url": "https://www.ternlux.com/online-demo/",
-      "source": "Hacker News",
+      "id": "7496cff6eddca128",
+      "title": "vstorm-co/agenticos",
+      "url": "https://github.com/vstorm-co/agenticos",
+      "source": "GitHub Search",
       "primary_category": "ai_and_automation",
+      "priority_score": 74,
+      "hourly_adjusted_score": 68,
+      "stars_current": 116,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "insufficient_history",
+      "published_at": "2026-10-23T15:20:05+00:00",
+      "days_old": 0.0,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "1e67bcd35274fb8d",
+      "title": "Show HN: ParaGraFX – An iOS app for reading and illustrating ePub books",
+      "url": "https://apps.apple.com/us/app/paragrafx-illustrate-books/id6795768929",
+      "source": "Hacker News",
+      "primary_category": "product_and_workflow_tools",
       "priority_score": 66,
       "hourly_adjusted_score": 68,
       "stars_current": null,
@@ -324,27 +316,8 @@
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-22T16:33:58+00:00",
-      "days_old": 0.91,
-      "primary_source_verified": false,
-      "primary_source_http_status": null,
-      "primary_source_reason": "Primary page title/content does not sufficiently match the candidate headline."
-    },
-    {
-      "id": "99cc8cc2964bda66",
-      "title": "rome-os/rome",
-      "url": "https://github.com/rome-os/rome",
-      "source": "GitHub Search",
-      "primary_category": "ai_and_automation",
-      "priority_score": 70,
-      "hourly_adjusted_score": 64,
-      "stars_current": 841,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "insufficient_history",
-      "published_at": "2026-10-23T14:06:49+00:00",
-      "days_old": 0.01,
+      "published_at": "2026-10-23T14:27:01+00:00",
+      "days_old": 0.04,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
@@ -352,12 +325,12 @@
   ],
   "automatic_repair": {
     "attempted": true,
-    "drafts_submitted": 3,
+    "drafts_submitted": 2,
     "repaired_local_passes": 1,
-    "repair_rejections": 2,
+    "repair_rejections": 1,
     "repair_error": null,
-    "editorial_repair_attempted": true,
-    "editorial_repair_drafts_submitted": 1,
+    "editorial_repair_attempted": false,
+    "editorial_repair_drafts_submitted": 0,
     "editorial_repair_error": null
   },
   "editorial_review": {
@@ -366,12 +339,12 @@
     "passed_independent_review": 0,
     "rejected_by_independent_review": 1,
     "lower_ranked_not_reviewed": 0,
-    "review_error": null,
+    "review_error": "Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi",
     "automatic_gate": "fail_closed"
   },
   "state_summary": {
     "used_candidates_in_cooldown": 2,
-    "recently_attempted_candidates": 22,
+    "recently_attempted_candidates": 25,
     "recent_draft_passes_today": 2
   }
 }

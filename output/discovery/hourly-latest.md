@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-23T19:52:18+05:30
+- Run time (IST): 2026-10-23T20:49:53+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 102
+- Candidate pool after freshness/diversity filters: 103
 - Independent editorial review: 0 draft(s) passed / 1 rejected
 - Drafts passing local checks: 0
 - Outcome: **skip**
-- Decision reason: Every draft submitted for independent editorial review was rejected; The hour was skipped.
+- Decision reason: No draft cleared the complete automatic quality gate; independent editorial review failed closed. Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi
 
 ## Source health
 
@@ -28,29 +28,29 @@
 | Hacker News · hn-digital-products | 1 | ok |
 | Hacker News · hn-ecommerce-payments | 0 | ok |
 | Hacker News · hn-security-selfhost | 0 | ok |
-| Hacker News · hn-shopify | 10 | ok |
+| Hacker News · hn-shopify | 8 | ok |
 | Hacker News · hn-show-hn | 10 | ok |
 | Console.dev | 12 | ok |
-| Product Hunt | 41 | ok |
+| Product Hunt | 42 | ok |
 | Shopify Developer Changelog | 12 | ok |
 
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 80
-- Previously tracked repositories refreshed outside search results: 119
+- Repositories seen in this discovery run: 83
+- Previously tracked repositories refreshed outside search results: 116
 - Refresh failures: 1
 - Star snapshots recorded this run: 199
-- Repositories with a 20–36 hour comparison baseline: 20
+- Repositories with a 20–36 hour comparison baseline: 15
 - First observations are baseline samples, not evidence of trending. Star velocity is reported only when a historical comparison exists.
 
 ## Primary-source verification
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| Show HN: Kavela – AI Automations that do not fail silently | yes | 200 | https://kavela.ai |
-| Show HN: Ternlux – Free, local-first, bring-your-own-key AI pipeline builder | no | — | Primary page title/content does not sufficiently match the candidate headline. |
-| rome-os/rome | yes | 200 | https://github.com/rome-os/rome |
+| ollaya-dev/ollaya | yes | 200 | https://github.com/ollaya-dev/ollaya |
+| vstorm-co/agenticos | yes | 200 | https://github.com/vstorm-co/agenticos |
+| Show HN: ParaGraFX – An iOS app for reading and illustrating ePub books | yes | 200 | https://apps.apple.com/us/app/paragrafx-illustrate-books/id6795768929 |
 
 ## Selected draft candidates
 
@@ -59,37 +59,37 @@ No draft cleared the complete local and independent-editor gate. See the decisio
 ## Automatic repair attempt
 
 - Attempted: yes
-- Repaired drafts submitted: 3
+- Repaired drafts submitted: 2
 - Repaired drafts that passed local validation: 1
-- Repaired drafts rejected: 2
+- Repaired drafts rejected: 1
 - Repair error: none
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
-- Show HN: Ternlux – Free, local-first, bring-your-own-key AI pipeline builder: Primary page title/content does not sufficiently match the candidate headline.
-- Show HN: Kavela – AI Automations that do not fail silently: Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.; A supporting quote does not share enough wording with its stated claim; Supporting quotes cover only 44% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: Kavela runs AI automations in plain‑word workflows and checks each run before delivery. Run a failing step and verify Kavela reports the error before the tool completes. https://kavela.ai
-  - Model evidence quote: “Kavela runs it in your tools and checks every run before it reaches you”
-  - Claim support: Kavela runs AI automations in plain‑word workflows and checks each run before delivery ← “Kavela runs it in your tools and checks every run before it reaches you”
-- rome-os/rome: Editorial takeaway is too long; keep the analysis concrete and concise.
-  - Rejected text: Rome is a compounding agent OS that supports recursive agents and is an open‑source alternative to Grok Bot. Deploy Rome locally and compare its recursion depth limits to Grok Bot to gauge scalability. https://github.com/rome-os/rome
-  - Model evidence quote: “A compounding agent OS for recursive agents. Also an open source alternative to Grok Bot”
-  - Claim support: Rome is a compounding agent OS that supports recursive agents and is an open‑source alternative to Grok Bot ← “A compounding agent OS for recursive agents. Also an open source alternative to Grok Bot”
-- Show HN: Kavela – AI Automations that do not fail silently: Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.; No claim-by-claim supporting evidence was provided; Supporting quotes cover only 44% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: Kavela runs AI automations in plain‑word workflows and checks each run before delivery. If a step fails, Kavela reports the error and retries until the task passes. https://kavela.ai
-  - Model evidence quote: “Kavela runs it in your tools and checks every run before it reaches you”
-- rome-os/rome: Post restates headline facts without adding new insight; originality below threshold.
-  - Rejected text: Rome is a compounding agent OS that supports recursive agents and is an open‑source alternative to Grok Bot. The repository has 124 open issues, indicating active maintenance. https://github.com/rome-os/rome
-- rome-os/rome: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; No claim-by-claim supporting evidence was provided; Supporting quotes cover only 43% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: Rome’s GitHub repo lists 124 open issues and 53 pull requests. Track the issue backlog to gauge how quickly new features or fixes are merged. https://github.com/rome-os/rome
-  - Model evidence quote: “Issues 124 ( 124 ) Pull requests 53 ( 53 )”
+- ollaya-dev/ollaya: Editorial takeaway is too long; keep the analysis concrete and concise.
+  - Rejected text: ollaya provides a Jev-compatible API server that pulls and serves 24 model families. Run a /v1/systemone health check to confirm local model availability before production use. https://github.com/ollaya-dev/ollaya
+  - Model evidence quote: “Jev-compatible API server for open decision models. Ollama for decision models: pull and serve 24 model families”
+  - Claim support: ollaya provides a Jev-compatible API server that pulls and serves 24 model families ← “Jev-compatible API server for open decision models. Ollama for decision models: pull and serve 24 model families”
+- vstorm-co/agenticos: Editorial takeaway is too long; keep the analysis concrete and concise.; Supporting quotes cover only 62% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: agenticos offers a self-hosted agent layer with an API for governing AI agents. Check that agent budgets are enforced by sending a high‑cost request and verifying the response is throttled. https://github.com/vstorm-co/agenticos
+  - Model evidence quote: “Open-source AI teammates for your company. The self-hosted agent layer: build, run and govern AI agents on your own servers, models and rules. RAG, skills, a real browser, 4,700+ MCP servers and an API”
+  - Claim support: agenticos offers a self-hosted agent layer with an API for governing AI agents ← “Open-source AI teammates for your company. The self-hosted agent layer: build, run and govern AI agents on your own servers, models and rules. RAG, skills, a real browser, 4,700+ MCP servers and an API”
+- Show HN: ParaGraFX – An iOS app for reading and illustrating ePub books: Editorial takeaway is too long; keep the analysis concrete and concise.; A supporting quote does not share enough wording with its stated claim; Supporting quotes cover only 43% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: ParaGraFX is an iOS app that generates illustrations for ePub books. Verify queued chapter generation completes before app closure by monitoring background task status. https://apps.apple.com/us/app/paragrafx-illustrate-books/id6795768929
+  - Model evidence quote: “ParaGraFX: Illustrate Books App - App Store”
+  - Claim support: ParaGraFX is an iOS app that generates illustrations for ePub books ← “ParaGraFX: Illustrate Books App - App Store”
+- vstorm-co/agenticos: Editorial takeaway is too long; keep the analysis concrete and concise.; No claim-by-claim supporting evidence was provided
+  - Rejected text: agenticos is a self‑hosted AI agent platform with an API. Verify budget enforcement by sending a high‑cost request and checking the response is throttled. https://github.com/vstorm-co/agenticos
+  - Model evidence quote: “Open‑source AI teammates for your company. The self‑hosted agent layer: build, run and govern AI agents on your own servers, models and rules. RAG, skills, a real browser, 4,700+ MCP servers and an API”
+- ollaya-dev/ollaya: Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi
+  - Rejected text: ollaya is a Jev‑compatible API server for decision models. Run /v1/systemone health check to confirm local model availability before production use. https://github.com/ollaya-dev/ollaya
 
 ## Top discovery candidates considered
 
-- Show HN: Kavela – AI Automations that do not fail silently | Hacker News | product_and_workflow_tools | raw 74, adjusted 76 | https://kavela.ai
-- Show HN: Ternlux – Free, local-first, bring-your-own-key AI pipeline builder | Hacker News | ai_and_automation | raw 66, adjusted 68 | https://www.ternlux.com/online-demo/
-- rome-os/rome | GitHub Search | ai_and_automation | raw 70, adjusted 64 | current stars 841 | GitHub star trend: building baseline | https://github.com/rome-os/rome
+- ollaya-dev/ollaya | GitHub Search | ai_and_automation | raw 74, adjusted 68 | current stars 1384 | GitHub star trend: building baseline | https://github.com/ollaya-dev/ollaya
+- vstorm-co/agenticos | GitHub Search | ai_and_automation | raw 74, adjusted 68 | current stars 116 | GitHub star trend: building baseline | https://github.com/vstorm-co/agenticos
+- Show HN: ParaGraFX – An iOS app for reading and illustrating ePub books | Hacker News | product_and_workflow_tools | raw 66, adjusted 68 | https://apps.apple.com/us/app/paragrafx-illustrate-books/id6795768929
 
 ## Safety and interpretation
 
