@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-23T16:18:13+05:30
+- Run time (IST): 2026-10-23T16:22:35+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 107
-- Independent editorial review: 0 draft(s) passed / 0 rejected
+- Candidate pool after freshness/diversity filters: 102
+- Independent editorial review: 0 draft(s) passed / 1 rejected
 - Drafts passing local checks: 0
 - Outcome: **skip**
-- Decision reason: All generated drafts failed the local evidence/editorial checks; the hour was skipped.
+- Decision reason: No draft cleared the complete automatic quality gate; independent editorial review failed closed. Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi
 
 ## Source health
 
@@ -28,7 +28,7 @@
 | Hacker News · hn-digital-products | 1 | ok |
 | Hacker News · hn-ecommerce-payments | 0 | ok |
 | Hacker News · hn-security-selfhost | 0 | ok |
-| Hacker News · hn-shopify | 10 | ok |
+| Hacker News · hn-shopify | 8 | ok |
 | Hacker News · hn-show-hn | 10 | ok |
 | Console.dev | 12 | ok |
 | Product Hunt | 41 | ok |
@@ -37,10 +37,10 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 85
-- Previously tracked repositories refreshed outside search results: 115
+- Repositories seen in this discovery run: 82
+- Previously tracked repositories refreshed outside search results: 118
 - Refresh failures: 0
-- Star snapshots recorded this run: 37
+- Star snapshots recorded this run: 34
 - Repositories with a 20–36 hour comparison baseline: 16
 - First observations are baseline samples, not evidence of trending. Star velocity is reported only when a historical comparison exists.
 
@@ -48,49 +48,45 @@
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| melgarafael/DeskcommCRM | yes | 200 | https://github.com/melgarafael/DeskcommCRM |
-| lemma-work/lemma-platform | yes | 200 | https://github.com/lemma-work/lemma-platform |
-| Show HN: Orbit – A local macOS workspace for side projects | yes | 200 | https://orbitdesktop.com/ |
+| omnigent-ai/omnigent | yes | 200 | https://github.com/omnigent-ai/omnigent |
+| HKUDS/nanobot | yes | 200 | https://github.com/HKUDS/nanobot |
+| Show HN: Ternlux – Free, local-first, bring-your-own-key AI pipeline builder | no | — | Primary page title/content does not sufficiently match the candidate headline. |
 
 ## Selected draft candidates
 
-No candidate produced a draft that passed every local check. Skipping is intentional.
+No draft cleared the complete local and independent-editor gate. See the decision reason and rejected-draft section for locally valid drafts that were rejected, not reviewed, or blocked by a review error.
 
 ## Automatic repair attempt
 
 - Attempted: yes
 - Repaired drafts submitted: 2
-- Repaired drafts that passed local validation: 0
-- Repaired drafts rejected: 2
+- Repaired drafts that passed local validation: 1
+- Repaired drafts rejected: 1
 - Repair error: none
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
-- melgarafael/DeskcommCRM: Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: DeskcommCRM offers native AI agents and WhatsApp integration. Validate that AI agent responses match your sales scripts before deployment. https://github.com/melgarafael/DeskcommCRM
-  - Model evidence quote: “Open-source AI sales OS — self-hosted CRM with native AI agents + WhatsApp (WAHA).”
-  - Claim support: DeskcommCRM offers native AI agents and WhatsApp integration. ← “Open-source AI sales OS — self-hosted CRM with native AI agents + WhatsApp (WAHA).”
-- lemma-work/lemma-platform: The factual opening bundles multiple features; narrow it to one capability.; Fact sentence is too long; narrow it to one source-backed capability.
-  - Rejected text: Lemma-platform is a multiplayer harness for shared agents and workflows across Slack, Telegram, WhatsApp, Teams, Email. Test cross‑platform message routing to ensure consistency across channels. https://github.com/lemma-work/lemma-platform
-  - Model evidence quote: “Multiplayer harness that shapes around your work. Agents, apps and workflows your team shares, used from Slack, Telegram, WhatsApp, Teams, Email”
-  - Claim support: Lemma-platform is a multiplayer harness for shared agents and workflows across Slack, Telegram, WhatsApp, Teams, Email. ← “Multiplayer harness that shapes around your work. Agents, apps and workflows your team shares, used from Slack, Telegram, WhatsApp, Teams, Email”
-- Show HN: Orbit – A local macOS workspace for side projects: The factual opening bundles multiple features; narrow it to one capability.; Takeaway implies an undocumented product capability: sync. Reframe as a check of documented behavior.; Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
-  - Rejected text: Orbit bundles repositories, tasks, notes, and files into a single macOS workspace. Sync Orbit with your AI client via MCP to auto‑populate project context. https://orbitdesktop.com/
-  - Model evidence quote: “Pick up where you left off. Orbit keeps your repositories, tasks, notes, and files together in one local workspace for developers on macOS.”
-  - Claim support: Orbit bundles repositories, tasks, notes, and files into a single macOS workspace. ← “Pick up where you left off. Orbit keeps your repositories, tasks, notes, and files together in one local workspace for developers on macOS.”
-- Show HN: Orbit – A local macOS workspace for side projects: The factual opening bundles multiple features; narrow it to one capability.
-  - Rejected text: Orbit keeps repositories, tasks, notes, and files together in one macOS workspace. Verify that a project’s local workspace persists after a system reboot. https://orbitdesktop.com/
-  - Model evidence quote: “Orbit keeps your repositories, tasks, notes, and files together in one local workspace for developers on macOS.”
-- lemma-work/lemma-platform: No claim-by-claim supporting evidence was provided; Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: Lemma‑platform is a multiplayer harness for shared agents and workflows. Test that a workflow triggered in Slack also appears in Teams. https://github.com/lemma-work/lemma-platform
-  - Model evidence quote: “Multiplayer harness that shapes around your work. Agents, apps and workflows your team shares, used from Slack, Telegram, WhatsApp, Teams, Email”
+- Show HN: Ternlux – Free, local-first, bring-your-own-key AI pipeline builder: Primary page title/content does not sufficiently match the candidate headline.
+- omnigent-ai/omnigent: The factual opening bundles multiple features; narrow it to one capability.; Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.
+  - Rejected text: Omnigent orchestrates Claude, Codex, Cursor, Pi, and custom agents without rewriting harnesses. Test policy enforcement by running a sandboxed agent and verifying no external calls. https://github.com/omnigent-ai/omnigent
+  - Model evidence quote: “orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting”
+  - Claim support: Omnigent orchestrates Claude, Codex, Cursor, Pi, and custom agents without rewriting harnesses. ← “orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting”
+- HKUDS/nanobot: The factual opening bundles multiple features; narrow it to one capability.; Fact sentence is too long; narrow it to one source-backed capability.
+  - Rejected text: Nanobot is a lightweight, self-hosted Python AI agent framework with a WebUI, tools, and multi‑agent workflows. Validate memory persistence by restarting the server and checking conversation continuity. https://github.com/HKUDS/nanobot
+  - Model evidence quote: “Ultra-lightweight, open-source, self-hosted personal AI agent framework in Python with WebUI, tools, memory, MCP, multi‑agent workflows, automation, and chat apps”
+  - Claim support: Nanobot is a lightweight, self-hosted Python AI agent framework with a WebUI, tools, and multi‑agent workflows. ← “Ultra-lightweight, open-source, self-hosted personal AI agent framework in Python with WebUI, tools, memory, MCP, multi‑agent workflows, automation, and chat apps”
+- omnigent-ai/omnigent: The factual opening bundles multiple features; narrow it to one capability.; Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.
+  - Rejected text: Omnigent swaps Claude, Codex, Cursor, Pi, and custom agents without rewriting harnesses. Run a sandboxed agent to confirm policy enforcement blocks external calls. https://github.com/omnigent-ai/omnigent
+  - Model evidence quote: “orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting”
+- HKUDS/nanobot: Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi
+  - Rejected text: Nanobot is a lightweight, self-hosted Python AI agent framework with a WebUI. Restart Nanobot and verify conversation continuity to test memory persistence. https://github.com/HKUDS/nanobot
 
 ## Top discovery candidates considered
 
-- melgarafael/DeskcommCRM | GitHub Search | ai_and_automation | raw 72, adjusted 76 | current stars 4814 | GitHub star trend: building baseline | https://github.com/melgarafael/DeskcommCRM
-- lemma-work/lemma-platform | GitHub Search | ai_and_automation | raw 71, adjusted 75 | current stars 629 | GitHub star trend: building baseline | https://github.com/lemma-work/lemma-platform
-- Show HN: Orbit – A local macOS workspace for side projects | Hacker News | product_and_workflow_tools | raw 68, adjusted 70 | https://orbitdesktop.com/
+- omnigent-ai/omnigent | GitHub Search | developer_tools | raw 61, adjusted 80 | current stars 11000 | GitHub stars +26 over about 29.5h | https://github.com/omnigent-ai/omnigent
+- HKUDS/nanobot | GitHub Search | ai_and_automation | raw 71, adjusted 75 | current stars 49300 | GitHub star trend: building baseline | https://github.com/HKUDS/nanobot
+- Show HN: Ternlux – Free, local-first, bring-your-own-key AI pipeline builder | Hacker News | ai_and_automation | raw 66, adjusted 68 | https://www.ternlux.com/online-demo/
 
 ## Safety and interpretation
 

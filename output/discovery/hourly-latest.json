@@ -1,17 +1,17 @@
 {
-  "generated_at_ist": "2026-10-23T16:18:13+05:30",
-  "run_at_ist": "2026-10-23T16:18:13+05:30",
+  "generated_at_ist": "2026-10-23T16:22:35+05:30",
+  "run_at_ist": "2026-10-23T16:22:35+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 180,
-  "eligible_candidate_count": 107,
+  "candidate_count_raw": 175,
+  "eligible_candidate_count": 102,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4673
+      "total_count": 4674
     },
     {
       "source": "GitHub Search · github-analytics-seo",
@@ -53,7 +53,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3168
+      "total_count": 3169
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
@@ -114,7 +114,7 @@
     {
       "source": "Hacker News · hn-shopify",
       "kind": "hacker_news",
-      "items_kept": 10,
+      "items_kept": 8,
       "status": "ok",
       "total_count": 10
     },
@@ -145,215 +145,209 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-23T10:48:13+00:00",
+    "observed_at_utc": "2026-10-23T10:52:35+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 85,
-    "previously_tracked_repositories_refreshed": 115,
+    "repositories_seen_in_discovery": 82,
+    "previously_tracked_repositories_refreshed": 118,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
-    "snapshots_added_this_run": 37,
+    "snapshots_added_this_run": 34,
     "repositories_with_20_to_36_hour_baseline": 16,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "809a5e9573333bc9",
-      "title": "melgarafael/DeskcommCRM",
-      "source_url": "https://github.com/melgarafael/DeskcommCRM",
+      "candidate_id": "c53347638b893177",
+      "title": "omnigent-ai/omnigent",
+      "source_url": "https://github.com/omnigent-ai/omnigent",
       "verified": true,
-      "final_url": "https://github.com/melgarafael/DeskcommCRM",
+      "final_url": "https://github.com/omnigent-ai/omnigent",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "176426a27e3a6963",
-      "title": "lemma-work/lemma-platform",
-      "source_url": "https://github.com/lemma-work/lemma-platform",
+      "candidate_id": "638846f7379e6538",
+      "title": "HKUDS/nanobot",
+      "source_url": "https://github.com/HKUDS/nanobot",
       "verified": true,
-      "final_url": "https://github.com/lemma-work/lemma-platform",
+      "final_url": "https://github.com/HKUDS/nanobot",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "03679cee66a09680",
-      "title": "Show HN: Orbit – A local macOS workspace for side projects",
-      "source_url": "https://orbitdesktop.com/",
-      "verified": true,
-      "final_url": "https://orbitdesktop.com/",
-      "http_status": 200,
-      "reason": ""
+      "candidate_id": "6410d7b0c2142954",
+      "title": "Show HN: Ternlux – Free, local-first, bring-your-own-key AI pipeline builder",
+      "source_url": "https://www.ternlux.com/online-demo/",
+      "verified": false,
+      "final_url": null,
+      "http_status": null,
+      "reason": "Primary page title/content does not sufficiently match the candidate headline."
     }
   ],
-  "rejected_primary_sources": [],
+  "rejected_primary_sources": [
+    {
+      "candidate_id": "6410d7b0c2142954",
+      "title": "Show HN: Ternlux – Free, local-first, bring-your-own-key AI pipeline builder",
+      "source": "Hacker News",
+      "url": "https://www.ternlux.com/online-demo/",
+      "reasons": [
+        "Primary page title/content does not sufficiently match the candidate headline."
+      ]
+    }
+  ],
   "daily_draft_cap": 16,
   "daily_drafts_already_passed": 1,
   "outcome": "skip",
-  "decision_reason": "All generated drafts failed the local evidence/editorial checks; the hour was skipped.",
+  "decision_reason": "No draft cleared the complete automatic quality gate; independent editorial review failed closed. Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi",
   "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "809a5e9573333bc9",
-      "title": "melgarafael/DeskcommCRM",
+      "candidate_id": "6410d7b0c2142954",
+      "title": "Show HN: Ternlux – Free, local-first, bring-your-own-key AI pipeline builder",
+      "source": "Hacker News",
+      "url": "https://www.ternlux.com/online-demo/",
       "reasons": [
-        "Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Primary page title/content does not sufficiently match the candidate headline."
+      ]
+    },
+    {
+      "candidate_id": "c53347638b893177",
+      "title": "omnigent-ai/omnigent",
+      "reasons": [
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration."
       ],
-      "proposed_text": "DeskcommCRM offers native AI agents and WhatsApp integration. Validate that AI agent responses match your sales scripts before deployment. https://github.com/melgarafael/DeskcommCRM",
-      "evidence_quote": "Open-source AI sales OS — self-hosted CRM with native AI agents + WhatsApp (WAHA).",
+      "proposed_text": "Omnigent orchestrates Claude, Codex, Cursor, Pi, and custom agents without rewriting harnesses. Test policy enforcement by running a sandboxed agent and verifying no external calls. https://github.com/omnigent-ai/omnigent",
+      "evidence_quote": "orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting",
       "claim_evidence": [
         {
-          "claim": "DeskcommCRM offers native AI agents and WhatsApp integration.",
-          "quote": "Open-source AI sales OS — self-hosted CRM with native AI agents + WhatsApp (WAHA)."
+          "claim": "Omnigent orchestrates Claude, Codex, Cursor, Pi, and custom agents without rewriting harnesses.",
+          "quote": "orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting"
         }
       ]
     },
     {
-      "candidate_id": "176426a27e3a6963",
-      "title": "lemma-work/lemma-platform",
+      "candidate_id": "638846f7379e6538",
+      "title": "HKUDS/nanobot",
       "reasons": [
         "The factual opening bundles multiple features; narrow it to one capability.",
         "Fact sentence is too long; narrow it to one source-backed capability."
       ],
-      "proposed_text": "Lemma-platform is a multiplayer harness for shared agents and workflows across Slack, Telegram, WhatsApp, Teams, Email. Test cross‑platform message routing to ensure consistency across channels. https://github.com/lemma-work/lemma-platform",
-      "evidence_quote": "Multiplayer harness that shapes around your work. Agents, apps and workflows your team shares, used from Slack, Telegram, WhatsApp, Teams, Email",
+      "proposed_text": "Nanobot is a lightweight, self-hosted Python AI agent framework with a WebUI, tools, and multi‑agent workflows. Validate memory persistence by restarting the server and checking conversation continuity. https://github.com/HKUDS/nanobot",
+      "evidence_quote": "Ultra-lightweight, open-source, self-hosted personal AI agent framework in Python with WebUI, tools, memory, MCP, multi‑agent workflows, automation, and chat apps",
       "claim_evidence": [
         {
-          "claim": "Lemma-platform is a multiplayer harness for shared agents and workflows across Slack, Telegram, WhatsApp, Teams, Email.",
-          "quote": "Multiplayer harness that shapes around your work. Agents, apps and workflows your team shares, used from Slack, Telegram, WhatsApp, Teams, Email"
+          "claim": "Nanobot is a lightweight, self-hosted Python AI agent framework with a WebUI, tools, and multi‑agent workflows.",
+          "quote": "Ultra-lightweight, open-source, self-hosted personal AI agent framework in Python with WebUI, tools, memory, MCP, multi‑agent workflows, automation, and chat apps"
         }
       ]
     },
     {
-      "candidate_id": "03679cee66a09680",
-      "title": "Show HN: Orbit – A local macOS workspace for side projects",
+      "candidate_id": "c53347638b893177",
+      "title": "omnigent-ai/omnigent",
       "reasons": [
         "The factual opening bundles multiple features; narrow it to one capability.",
-        "Takeaway implies an undocumented product capability: sync. Reframe as a check of documented behavior.",
-        "Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.",
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
+        "Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration."
       ],
-      "proposed_text": "Orbit bundles repositories, tasks, notes, and files into a single macOS workspace. Sync Orbit with your AI client via MCP to auto‑populate project context. https://orbitdesktop.com/",
-      "evidence_quote": "Pick up where you left off. Orbit keeps your repositories, tasks, notes, and files together in one local workspace for developers on macOS.",
-      "claim_evidence": [
-        {
-          "claim": "Orbit bundles repositories, tasks, notes, and files into a single macOS workspace.",
-          "quote": "Pick up where you left off. Orbit keeps your repositories, tasks, notes, and files together in one local workspace for developers on macOS."
-        }
-      ]
-    },
-    {
-      "candidate_id": "03679cee66a09680",
-      "title": "Show HN: Orbit – A local macOS workspace for side projects",
-      "reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability."
-      ],
-      "proposed_text": "Orbit keeps repositories, tasks, notes, and files together in one macOS workspace. Verify that a project’s local workspace persists after a system reboot. https://orbitdesktop.com/",
-      "evidence_quote": "Orbit keeps your repositories, tasks, notes, and files together in one local workspace for developers on macOS.",
+      "proposed_text": "Omnigent swaps Claude, Codex, Cursor, Pi, and custom agents without rewriting harnesses. Run a sandboxed agent to confirm policy enforcement blocks external calls. https://github.com/omnigent-ai/omnigent",
+      "evidence_quote": "orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting",
       "automatic_repair_attempt": true,
       "original_rejection_reasons": [
         "The factual opening bundles multiple features; narrow it to one capability.",
-        "Takeaway implies an undocumented product capability: sync. Reframe as a check of documented behavior.",
-        "Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.",
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
+        "Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration."
       ]
     },
     {
-      "candidate_id": "176426a27e3a6963",
-      "title": "lemma-work/lemma-platform",
+      "candidate_id": "638846f7379e6538",
+      "title": "HKUDS/nanobot",
+      "proposed_text": "Nanobot is a lightweight, self-hosted Python AI agent framework with a WebUI. Restart Nanobot and verify conversation continuity to test memory persistence. https://github.com/HKUDS/nanobot",
       "reasons": [
-        "No claim-by-claim supporting evidence was provided",
-        "Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote"
-      ],
-      "proposed_text": "Lemma‑platform is a multiplayer harness for shared agents and workflows. Test that a workflow triggered in Slack also appears in Teams. https://github.com/lemma-work/lemma-platform",
-      "evidence_quote": "Multiplayer harness that shapes around your work. Agents, apps and workflows your team shares, used from Slack, Telegram, WhatsApp, Teams, Email",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability.",
-        "Fact sentence is too long; narrow it to one source-backed capability."
+        "Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi"
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "809a5e9573333bc9",
-      "title": "melgarafael/DeskcommCRM",
-      "url": "https://github.com/melgarafael/DeskcommCRM",
+      "id": "c53347638b893177",
+      "title": "omnigent-ai/omnigent",
+      "url": "https://github.com/omnigent-ai/omnigent",
       "source": "GitHub Search",
-      "primary_category": "ai_and_automation",
-      "priority_score": 72,
-      "hourly_adjusted_score": 76,
-      "stars_current": 4814,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "insufficient_history",
-      "published_at": "2026-10-23T10:47:39+00:00",
+      "primary_category": "developer_tools",
+      "priority_score": 61,
+      "hourly_adjusted_score": 80,
+      "stars_current": 11000,
+      "stars_delta_24h": 26,
+      "stars_delta_baseline_hours": 29.5,
+      "stars_growth_percent_24h": 0.24,
+      "trend_signal": "measured_star_growth",
+      "published_at": "2026-10-23T10:50:43+00:00",
       "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "176426a27e3a6963",
-      "title": "lemma-work/lemma-platform",
-      "url": "https://github.com/lemma-work/lemma-platform",
+      "id": "638846f7379e6538",
+      "title": "HKUDS/nanobot",
+      "url": "https://github.com/HKUDS/nanobot",
       "source": "GitHub Search",
       "primary_category": "ai_and_automation",
       "priority_score": 71,
       "hourly_adjusted_score": 75,
-      "stars_current": 629,
+      "stars_current": 49300,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "insufficient_history",
-      "published_at": "2026-10-23T10:31:01+00:00",
-      "days_old": 0.01,
+      "published_at": "2026-10-23T10:45:45+00:00",
+      "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "03679cee66a09680",
-      "title": "Show HN: Orbit – A local macOS workspace for side projects",
-      "url": "https://orbitdesktop.com/",
+      "id": "6410d7b0c2142954",
+      "title": "Show HN: Ternlux – Free, local-first, bring-your-own-key AI pipeline builder",
+      "url": "https://www.ternlux.com/online-demo/",
       "source": "Hacker News",
-      "primary_category": "product_and_workflow_tools",
-      "priority_score": 68,
-      "hourly_adjusted_score": 70,
+      "primary_category": "ai_and_automation",
+      "priority_score": 66,
+      "hourly_adjusted_score": 68,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-23T10:43:33+00:00",
-      "days_old": 0.0,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
+      "published_at": "2026-10-22T16:33:58+00:00",
+      "days_old": 0.76,
+      "primary_source_verified": false,
+      "primary_source_http_status": null,
+      "primary_source_reason": "Primary page title/content does not sufficiently match the candidate headline."
     }
   ],
   "automatic_repair": {
     "attempted": true,
     "drafts_submitted": 2,
-    "repaired_local_passes": 0,
-    "repair_rejections": 2,
+    "repaired_local_passes": 1,
+    "repair_rejections": 1,
     "repair_error": null,
     "editorial_repair_attempted": false,
     "editorial_repair_drafts_submitted": 0,
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 0,
-    "submitted_for_independent_review": 0,
+    "locally_valid_drafts": 1,
+    "submitted_for_independent_review": 1,
     "passed_independent_review": 0,
-    "rejected_by_independent_review": 0,
+    "rejected_by_independent_review": 1,
     "lower_ranked_not_reviewed": 0,
-    "review_error": null,
+    "review_error": "Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi",
     "automatic_gate": "fail_closed"
   },
   "state_summary": {
     "used_candidates_in_cooldown": 1,
-    "recently_attempted_candidates": 9,
+    "recently_attempted_candidates": 11,
     "recent_draft_passes_today": 1
   }
 }
