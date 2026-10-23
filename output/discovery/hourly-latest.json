@@ -1,17 +1,17 @@
 {
-  "generated_at_ist": "2026-10-23T16:22:35+05:30",
-  "run_at_ist": "2026-10-23T16:22:35+05:30",
+  "generated_at_ist": "2026-10-23T16:24:24+05:30",
+  "run_at_ist": "2026-10-23T16:24:24+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 175,
-  "eligible_candidate_count": 102,
+  "candidate_count_raw": 171,
+  "eligible_candidate_count": 96,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4674
+      "total_count": 4675
     },
     {
       "source": "GitHub Search · github-analytics-seo",
@@ -145,209 +145,180 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-23T10:52:35+00:00",
+    "observed_at_utc": "2026-10-23T10:54:24+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 82,
-    "previously_tracked_repositories_refreshed": 118,
+    "repositories_seen_in_discovery": 78,
+    "previously_tracked_repositories_refreshed": 122,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
-    "snapshots_added_this_run": 34,
+    "snapshots_added_this_run": 21,
     "repositories_with_20_to_36_hour_baseline": 16,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "c53347638b893177",
-      "title": "omnigent-ai/omnigent",
-      "source_url": "https://github.com/omnigent-ai/omnigent",
+      "candidate_id": "c37165a31cd3fc39",
+      "title": "n8n-io/n8n",
+      "source_url": "https://github.com/n8n-io/n8n",
       "verified": true,
-      "final_url": "https://github.com/omnigent-ai/omnigent",
+      "final_url": "https://github.com/n8n-io/n8n",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "638846f7379e6538",
-      "title": "HKUDS/nanobot",
-      "source_url": "https://github.com/HKUDS/nanobot",
+      "candidate_id": "85c1bbf09d8dd773",
+      "title": "shogo-labs/shogo-ai",
+      "source_url": "https://github.com/shogo-labs/shogo-ai",
       "verified": true,
-      "final_url": "https://github.com/HKUDS/nanobot",
+      "final_url": "https://github.com/shogo-labs/shogo-ai",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "6410d7b0c2142954",
-      "title": "Show HN: Ternlux – Free, local-first, bring-your-own-key AI pipeline builder",
-      "source_url": "https://www.ternlux.com/online-demo/",
-      "verified": false,
-      "final_url": null,
-      "http_status": null,
-      "reason": "Primary page title/content does not sufficiently match the candidate headline."
+      "candidate_id": "ed01f8159f168dd6",
+      "title": "Show HN: Airlock, which sandboxes AI agents, is available on the Mac App Store",
+      "source_url": "https://airlock.sorrel.systems",
+      "verified": true,
+      "final_url": "https://airlock.sorrel.systems",
+      "http_status": 200,
+      "reason": ""
     }
   ],
-  "rejected_primary_sources": [
-    {
-      "candidate_id": "6410d7b0c2142954",
-      "title": "Show HN: Ternlux – Free, local-first, bring-your-own-key AI pipeline builder",
-      "source": "Hacker News",
-      "url": "https://www.ternlux.com/online-demo/",
-      "reasons": [
-        "Primary page title/content does not sufficiently match the candidate headline."
-      ]
-    }
-  ],
+  "rejected_primary_sources": [],
   "daily_draft_cap": 16,
   "daily_drafts_already_passed": 1,
   "outcome": "skip",
-  "decision_reason": "No draft cleared the complete automatic quality gate; independent editorial review failed closed. Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi",
+  "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
   "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "6410d7b0c2142954",
-      "title": "Show HN: Ternlux – Free, local-first, bring-your-own-key AI pipeline builder",
-      "source": "Hacker News",
-      "url": "https://www.ternlux.com/online-demo/",
+      "candidate_id": "ed01f8159f168dd6",
+      "title": "Show HN: Airlock, which sandboxes AI agents, is available on the Mac App Store",
       "reasons": [
-        "Primary page title/content does not sufficiently match the candidate headline."
-      ]
-    },
-    {
-      "candidate_id": "c53347638b893177",
-      "title": "omnigent-ai/omnigent",
-      "reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability.",
-        "Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration."
+        "Supporting quotes cover only 57% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "Omnigent orchestrates Claude, Codex, Cursor, Pi, and custom agents without rewriting harnesses. Test policy enforcement by running a sandboxed agent and verifying no external calls. https://github.com/omnigent-ai/omnigent",
-      "evidence_quote": "orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting",
+      "proposed_text": "Airlock runs Claude or Codex in a VM on macOS and logs all changes. After running, inspect the diff to ensure only intended files were modified. https://airlock.sorrel.systems",
+      "evidence_quote": "Airlock runs Claude Code or Codex in a virtual machine on your Mac.",
       "claim_evidence": [
         {
-          "claim": "Omnigent orchestrates Claude, Codex, Cursor, Pi, and custom agents without rewriting harnesses.",
-          "quote": "orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting"
+          "claim": "Airlock runs Claude or Codex in a VM on macOS and logs all changes.",
+          "quote": "Airlock runs Claude Code or Codex in a virtual machine on your Mac."
         }
       ]
     },
     {
-      "candidate_id": "638846f7379e6538",
-      "title": "HKUDS/nanobot",
+      "candidate_id": "c37165a31cd3fc39",
+      "title": "n8n-io/n8n",
+      "proposed_text": "n8n is a fair‑code workflow automation platform with native AI capabilities. Run a simple AI node and verify it triggers on schedule. https://github.com/n8n-io/n8n",
       "reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability.",
-        "Fact sentence is too long; narrow it to one source-backed capability."
+        "Takeaway assumes schedule trigger behavior not explicitly documented; no concrete test guidance."
       ],
-      "proposed_text": "Nanobot is a lightweight, self-hosted Python AI agent framework with a WebUI, tools, and multi‑agent workflows. Validate memory persistence by restarting the server and checking conversation continuity. https://github.com/HKUDS/nanobot",
-      "evidence_quote": "Ultra-lightweight, open-source, self-hosted personal AI agent framework in Python with WebUI, tools, memory, MCP, multi‑agent workflows, automation, and chat apps",
-      "claim_evidence": [
-        {
-          "claim": "Nanobot is a lightweight, self-hosted Python AI agent framework with a WebUI, tools, and multi‑agent workflows.",
-          "quote": "Ultra-lightweight, open-source, self-hosted personal AI agent framework in Python with WebUI, tools, memory, MCP, multi‑agent workflows, automation, and chat apps"
-        }
-      ]
+      "editorial_review": {
+        "clarity_score": 6,
+        "technical_coherence_score": 5,
+        "takeaway_value_score": 4,
+        "source_faithfulness_score": 7,
+        "originality_score": 5
+      }
     },
     {
-      "candidate_id": "c53347638b893177",
-      "title": "omnigent-ai/omnigent",
+      "candidate_id": "85c1bbf09d8dd773",
+      "title": "shogo-labs/shogo-ai",
+      "proposed_text": "shogo-ai is an open‑source platform for building and running AI agents. Check that the SDK can instantiate an agent and connect to an LLM endpoint. https://github.com/shogo-labs/shogo-ai",
       "reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability.",
-        "Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration."
+        "Takeaway presumes SDK can connect to an LLM endpoint, not mentioned in source; lacks concrete verification steps."
       ],
-      "proposed_text": "Omnigent swaps Claude, Codex, Cursor, Pi, and custom agents without rewriting harnesses. Run a sandboxed agent to confirm policy enforcement blocks external calls. https://github.com/omnigent-ai/omnigent",
-      "evidence_quote": "orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability.",
-        "Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration."
-      ]
-    },
-    {
-      "candidate_id": "638846f7379e6538",
-      "title": "HKUDS/nanobot",
-      "proposed_text": "Nanobot is a lightweight, self-hosted Python AI agent framework with a WebUI. Restart Nanobot and verify conversation continuity to test memory persistence. https://github.com/HKUDS/nanobot",
-      "reasons": [
-        "Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi"
-      ]
+      "editorial_review": {
+        "clarity_score": 6,
+        "technical_coherence_score": 5,
+        "takeaway_value_score": 4,
+        "source_faithfulness_score": 7,
+        "originality_score": 5
+      }
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "c53347638b893177",
-      "title": "omnigent-ai/omnigent",
-      "url": "https://github.com/omnigent-ai/omnigent",
-      "source": "GitHub Search",
-      "primary_category": "developer_tools",
-      "priority_score": 61,
-      "hourly_adjusted_score": 80,
-      "stars_current": 11000,
-      "stars_delta_24h": 26,
-      "stars_delta_baseline_hours": 29.5,
-      "stars_growth_percent_24h": 0.24,
-      "trend_signal": "measured_star_growth",
-      "published_at": "2026-10-23T10:50:43+00:00",
-      "days_old": 0.0,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "638846f7379e6538",
-      "title": "HKUDS/nanobot",
-      "url": "https://github.com/HKUDS/nanobot",
+      "id": "c37165a31cd3fc39",
+      "title": "n8n-io/n8n",
+      "url": "https://github.com/n8n-io/n8n",
       "source": "GitHub Search",
       "primary_category": "ai_and_automation",
       "priority_score": 71,
       "hourly_adjusted_score": 75,
-      "stars_current": 49300,
+      "stars_current": 208374,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "insufficient_history",
-      "published_at": "2026-10-23T10:45:45+00:00",
+      "published_at": "2026-10-23T10:53:50+00:00",
       "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "6410d7b0c2142954",
-      "title": "Show HN: Ternlux – Free, local-first, bring-your-own-key AI pipeline builder",
-      "url": "https://www.ternlux.com/online-demo/",
-      "source": "Hacker News",
+      "id": "85c1bbf09d8dd773",
+      "title": "shogo-labs/shogo-ai",
+      "url": "https://github.com/shogo-labs/shogo-ai",
+      "source": "GitHub Search",
       "primary_category": "ai_and_automation",
-      "priority_score": 66,
-      "hourly_adjusted_score": 68,
+      "priority_score": 70,
+      "hourly_adjusted_score": 74,
+      "stars_current": 17,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "insufficient_history",
+      "published_at": "2026-10-23T10:37:55+00:00",
+      "days_old": 0.01,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "ed01f8159f168dd6",
+      "title": "Show HN: Airlock, which sandboxes AI agents, is available on the Mac App Store",
+      "url": "https://airlock.sorrel.systems",
+      "source": "Hacker News",
+      "primary_category": "data_and_growth",
+      "priority_score": 64,
+      "hourly_adjusted_score": 66,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-22T16:33:58+00:00",
-      "days_old": 0.76,
-      "primary_source_verified": false,
-      "primary_source_http_status": null,
-      "primary_source_reason": "Primary page title/content does not sufficiently match the candidate headline."
+      "published_at": "2026-10-22T15:28:26+00:00",
+      "days_old": 0.81,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
     }
   ],
   "automatic_repair": {
     "attempted": true,
-    "drafts_submitted": 2,
-    "repaired_local_passes": 1,
-    "repair_rejections": 1,
+    "drafts_submitted": 0,
+    "repaired_local_passes": 0,
+    "repair_rejections": 0,
     "repair_error": null,
-    "editorial_repair_attempted": false,
+    "editorial_repair_attempted": true,
     "editorial_repair_drafts_submitted": 0,
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 1,
-    "submitted_for_independent_review": 1,
+    "locally_valid_drafts": 2,
+    "submitted_for_independent_review": 2,
     "passed_independent_review": 0,
-    "rejected_by_independent_review": 1,
+    "rejected_by_independent_review": 2,
     "lower_ranked_not_reviewed": 0,
-    "review_error": "Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi",
+    "review_error": null,
     "automatic_gate": "fail_closed"
   },
   "state_summary": {
     "used_candidates_in_cooldown": 1,
-    "recently_attempted_candidates": 11,
+    "recently_attempted_candidates": 14,
     "recent_draft_passes_today": 1
   }
 }

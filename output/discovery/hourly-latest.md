@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-23T16:22:35+05:30
+- Run time (IST): 2026-10-23T16:24:24+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 102
-- Independent editorial review: 0 draft(s) passed / 1 rejected
+- Candidate pool after freshness/diversity filters: 96
+- Independent editorial review: 0 draft(s) passed / 2 rejected
 - Drafts passing local checks: 0
 - Outcome: **skip**
-- Decision reason: No draft cleared the complete automatic quality gate; independent editorial review failed closed. Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi
+- Decision reason: Every draft submitted for independent editorial review was rejected; The hour was skipped.
 
 ## Source health
 
@@ -37,10 +37,10 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 82
-- Previously tracked repositories refreshed outside search results: 118
+- Repositories seen in this discovery run: 78
+- Previously tracked repositories refreshed outside search results: 122
 - Refresh failures: 0
-- Star snapshots recorded this run: 34
+- Star snapshots recorded this run: 21
 - Repositories with a 20–36 hour comparison baseline: 16
 - First observations are baseline samples, not evidence of trending. Star velocity is reported only when a historical comparison exists.
 
@@ -48,9 +48,9 @@
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| omnigent-ai/omnigent | yes | 200 | https://github.com/omnigent-ai/omnigent |
-| HKUDS/nanobot | yes | 200 | https://github.com/HKUDS/nanobot |
-| Show HN: Ternlux – Free, local-first, bring-your-own-key AI pipeline builder | no | — | Primary page title/content does not sufficiently match the candidate headline. |
+| n8n-io/n8n | yes | 200 | https://github.com/n8n-io/n8n |
+| shogo-labs/shogo-ai | yes | 200 | https://github.com/shogo-labs/shogo-ai |
+| Show HN: Airlock, which sandboxes AI agents, is available on the Mac App Store | yes | 200 | https://airlock.sorrel.systems |
 
 ## Selected draft candidates
 
@@ -59,34 +59,28 @@ No draft cleared the complete local and independent-editor gate. See the decisio
 ## Automatic repair attempt
 
 - Attempted: yes
-- Repaired drafts submitted: 2
-- Repaired drafts that passed local validation: 1
-- Repaired drafts rejected: 1
+- Repaired drafts submitted: 0
+- Repaired drafts that passed local validation: 0
+- Repaired drafts rejected: 0
 - Repair error: none
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
-- Show HN: Ternlux – Free, local-first, bring-your-own-key AI pipeline builder: Primary page title/content does not sufficiently match the candidate headline.
-- omnigent-ai/omnigent: The factual opening bundles multiple features; narrow it to one capability.; Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.
-  - Rejected text: Omnigent orchestrates Claude, Codex, Cursor, Pi, and custom agents without rewriting harnesses. Test policy enforcement by running a sandboxed agent and verifying no external calls. https://github.com/omnigent-ai/omnigent
-  - Model evidence quote: “orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting”
-  - Claim support: Omnigent orchestrates Claude, Codex, Cursor, Pi, and custom agents without rewriting harnesses. ← “orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting”
-- HKUDS/nanobot: The factual opening bundles multiple features; narrow it to one capability.; Fact sentence is too long; narrow it to one source-backed capability.
-  - Rejected text: Nanobot is a lightweight, self-hosted Python AI agent framework with a WebUI, tools, and multi‑agent workflows. Validate memory persistence by restarting the server and checking conversation continuity. https://github.com/HKUDS/nanobot
-  - Model evidence quote: “Ultra-lightweight, open-source, self-hosted personal AI agent framework in Python with WebUI, tools, memory, MCP, multi‑agent workflows, automation, and chat apps”
-  - Claim support: Nanobot is a lightweight, self-hosted Python AI agent framework with a WebUI, tools, and multi‑agent workflows. ← “Ultra-lightweight, open-source, self-hosted personal AI agent framework in Python with WebUI, tools, memory, MCP, multi‑agent workflows, automation, and chat apps”
-- omnigent-ai/omnigent: The factual opening bundles multiple features; narrow it to one capability.; Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.
-  - Rejected text: Omnigent swaps Claude, Codex, Cursor, Pi, and custom agents without rewriting harnesses. Run a sandboxed agent to confirm policy enforcement blocks external calls. https://github.com/omnigent-ai/omnigent
-  - Model evidence quote: “orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting”
-- HKUDS/nanobot: Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi
-  - Rejected text: Nanobot is a lightweight, self-hosted Python AI agent framework with a WebUI. Restart Nanobot and verify conversation continuity to test memory persistence. https://github.com/HKUDS/nanobot
+- Show HN: Airlock, which sandboxes AI agents, is available on the Mac App Store: Supporting quotes cover only 57% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: Airlock runs Claude or Codex in a VM on macOS and logs all changes. After running, inspect the diff to ensure only intended files were modified. https://airlock.sorrel.systems
+  - Model evidence quote: “Airlock runs Claude Code or Codex in a virtual machine on your Mac.”
+  - Claim support: Airlock runs Claude or Codex in a VM on macOS and logs all changes. ← “Airlock runs Claude Code or Codex in a virtual machine on your Mac.”
+- n8n-io/n8n: Takeaway assumes schedule trigger behavior not explicitly documented; no concrete test guidance.
+  - Rejected text: n8n is a fair‑code workflow automation platform with native AI capabilities. Run a simple AI node and verify it triggers on schedule. https://github.com/n8n-io/n8n
+- shogo-labs/shogo-ai: Takeaway presumes SDK can connect to an LLM endpoint, not mentioned in source; lacks concrete verification steps.
+  - Rejected text: shogo-ai is an open‑source platform for building and running AI agents. Check that the SDK can instantiate an agent and connect to an LLM endpoint. https://github.com/shogo-labs/shogo-ai
 
 ## Top discovery candidates considered
 
-- omnigent-ai/omnigent | GitHub Search | developer_tools | raw 61, adjusted 80 | current stars 11000 | GitHub stars +26 over about 29.5h | https://github.com/omnigent-ai/omnigent
-- HKUDS/nanobot | GitHub Search | ai_and_automation | raw 71, adjusted 75 | current stars 49300 | GitHub star trend: building baseline | https://github.com/HKUDS/nanobot
-- Show HN: Ternlux – Free, local-first, bring-your-own-key AI pipeline builder | Hacker News | ai_and_automation | raw 66, adjusted 68 | https://www.ternlux.com/online-demo/
+- n8n-io/n8n | GitHub Search | ai_and_automation | raw 71, adjusted 75 | current stars 208374 | GitHub star trend: building baseline | https://github.com/n8n-io/n8n
+- shogo-labs/shogo-ai | GitHub Search | ai_and_automation | raw 70, adjusted 74 | current stars 17 | GitHub star trend: building baseline | https://github.com/shogo-labs/shogo-ai
+- Show HN: Airlock, which sandboxes AI agents, is available on the Mac App Store | Hacker News | data_and_growth | raw 64, adjusted 66 | https://airlock.sorrel.systems
 
 ## Safety and interpretation
 
