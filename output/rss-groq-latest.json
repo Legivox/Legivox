@@ -1,5 +1,5 @@
 {
-  "generated_at_ist": "2026-10-23T09:31:16+05:30",
+  "generated_at_ist": "2026-10-23T13:37:41+05:30",
   "model": "openai/gpt-oss-20b",
   "dry_run": false,
   "slot_plan_mode": true,
@@ -10,15 +10,15 @@
       "feed_url": "https://techcrunch.com/feed/",
       "articles_kept": 20,
       "error": null,
-      "recently_published_items_skipped": 0,
-      "thin_summary_items_skipped": 6
+      "recently_published_items_skipped": 1,
+      "thin_summary_items_skipped": 7
     },
     {
       "source": "The Verge",
       "feed_url": "https://www.theverge.com/rss/index.xml",
       "articles_kept": 10,
       "error": null,
-      "recently_published_items_skipped": 0,
+      "recently_published_items_skipped": 1,
       "thin_summary_items_skipped": 0
     },
     {
@@ -26,7 +26,7 @@
       "feed_url": "https://feeds.arstechnica.com/arstechnica/index",
       "articles_kept": 20,
       "error": null,
-      "recently_published_items_skipped": 0,
+      "recently_published_items_skipped": 1,
       "thin_summary_items_skipped": 0
     }
   ],
@@ -37,7 +37,7 @@
       "title": "Left alone with nothing to do, AI agents started playing",
       "summary": "MIT researchers marooned 13 AIs on a virtual island, and they responded by inventing games, mourning a lost ring and, eventually, getting better at their jobs.",
       "published_at_utc": "2026-10-23T00:45:37+00:00",
-      "age_hours": 3.3,
+      "age_hours": 7.4,
       "url": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/",
       "feed_url": "https://techcrunch.com/feed/",
       "article_id": "S01"
@@ -47,7 +47,7 @@
       "title": "Etsy is cracking down on AI slop listings",
       "summary": "An actual example from Etsy. \" data-has-syndication-rights=\"1\" src=\"https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/Screenshot-2026-10-22-at-5.03.44-PM.png?quality=90&strip=all&crop=0,0,100,82.725656291205\" /> Etsy is announcing stricter rules about how AI can be used in listings to reduce the volume of AI slop on the platform. In a post, the company says that \"many active buyers ",
       "published_at_utc": "2026-10-23T00:09:58+00:00",
-      "age_hours": 3.9,
+      "age_hours": 8.0,
       "url": "https://www.theverge.com/tech/1017261/etsy-ai-rules-policies-restrictions-listing",
       "feed_url": "https://www.theverge.com/rss/index.xml",
       "article_id": "S02"
@@ -57,7 +57,7 @@
       "title": "Mark Zuckerberg’s creative plan to pay California’s proposed billionaire tax without losing control of Meta",
       "summary": "A newly launched stock class being offered was partially engineered to help Meta founder and CEO Mark Zuckerberg pay the \"billionaire's tax,\" should the measure be voted into law.",
       "published_at_utc": "2026-10-22T23:50:41+00:00",
-      "age_hours": 4.2,
+      "age_hours": 8.3,
       "url": "https://techcrunch.com/2026/10/22/mark-zuckerbergs-creative-plan-to-pay-californias-proposed-billionaire-tax-without-losing-control-of-meta/",
       "feed_url": "https://techcrunch.com/feed/",
       "article_id": "S03"
@@ -67,7 +67,7 @@
       "title": "Warhound raises $200M to engineer war dogs and arm them with Anduril gear",
       "summary": "Warhound, the brainchild of Ben Lamm and Palmer Luckey, emerges from stealth to genetically engineer dogs for military and law enforcement.",
       "published_at_utc": "2026-10-22T23:15:00+00:00",
-      "age_hours": 4.8,
+      "age_hours": 8.9,
       "url": "https://techcrunch.com/2026/10/22/ben-lamm-raises-200m-for-warhound-to-engineer-war-dogs-and-arm-them-with-anduril-gear/",
       "feed_url": "https://techcrunch.com/feed/",
       "article_id": "S04"
@@ -77,7 +77,7 @@
       "title": "The next-gen Xbox won’t cost you $1,800. It can’t. Can it?",
       "summary": "An Xbox Elite controller. | Photo by Antonio G. Di Benedetto / The Verge Fortune dropped a bombshell report on the future of gaming this week. According to the publication's Microsoft insiders, the next Xbox is projected to cost between $1,200 and $1,800 when it arrives in 2028. My first reaction: The next Xbox is dead on arrival. It's DOA. My second thought: Microsoft knows people won't pay that ",
       "published_at_utc": "2026-10-22T23:10:21+00:00",
-      "age_hours": 4.8,
+      "age_hours": 9.0,
       "url": "https://www.theverge.com/games/1016134/xbox-helix-price-1800-isnt-affordable-editorial",
       "feed_url": "https://www.theverge.com/rss/index.xml",
       "article_id": "S05"
@@ -87,7 +87,7 @@
       "title": "Spotify says yes, it is busting people for using Family Plan sharing too widely",
       "summary": "Spotify co-CEO Alex Norström confirmed on this week's earnings call that the company is trying to catch Spotify Family plan users who don't actually live together with a new QR code verification method that requires scanning the plan manager's phone. TechCrunch reports that in response to a question about the \"crackdown,\" he called it a \"routine improvement\" instead: This is not as much a crackdow",
       "published_at_utc": "2026-10-22T23:02:43+00:00",
-      "age_hours": 5.0,
+      "age_hours": 9.1,
       "url": "https://www.theverge.com/entertainment/1017214/spotify-family-plan-sharing-qr-codes",
       "feed_url": "https://www.theverge.com/rss/index.xml",
       "article_id": "S06"
@@ -97,7 +97,7 @@
       "title": "Switch 2 security takes a hit as hackers unlock homebrew access",
       "summary": "A security researcher has demonstrated a software-only partial jailbreak of the Switch 2, gaining \"userland\" access that he says \"lets us run homebrew, reverse engineer and mod Switch 2 games, back up save files off the Switch, and access most of the Switch 2’s peripherals through MMIO.\" The hack relies on the original Switch version of SmileBasic 4 , the latest in a long-running series of program",
       "published_at_utc": "2026-10-22T22:25:33+00:00",
-      "age_hours": 5.6,
+      "age_hours": 9.7,
       "url": "https://arstechnica.com/gaming/2026/10/switch-2-jailbreak-gives-hackers-new-ways-to-run-homebrew-and-mod-games/",
       "feed_url": "https://feeds.arstechnica.com/arstechnica/index",
       "article_id": "S07"
@@ -107,7 +107,7 @@
       "title": "Moderna and Merck say their mRNA cancer vaccine cut death, recurrence by 42%",
       "summary": "Personalized mRNA vaccines against melanoma—the deadliest form of skin cancer—reduced the risk of death or recurrence by 42 percent compared to standard treatment in a late-stage trial, pharmaceutical partners Merck and Moderna announced Thursday . The results are a significant advance in melanoma treatment; Merck and Moderna are already engaging with regulatory authorities to get the vaccine appr",
       "published_at_utc": "2026-10-22T22:12:19+00:00",
-      "age_hours": 5.8,
+      "age_hours": 9.9,
       "url": "https://arstechnica.com/health/2026/10/personalized-mrna-cancer-vaccine-cut-melanoma-death-recurrence-by-42/",
       "feed_url": "https://feeds.arstechnica.com/arstechnica/index",
       "article_id": "S08"
@@ -117,102 +117,66 @@
       "title": "OpenAI working on new $30B raise at $1.25T valuation ahead of IPO",
       "summary": "Should OpenAI command an over $1 trillion valuation with this round, it would break records as the most highly valued private company ever.",
       "published_at_utc": "2026-10-22T22:08:24+00:00",
-      "age_hours": 5.9,
+      "age_hours": 10.0,
       "url": "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/",
       "feed_url": "https://techcrunch.com/feed/",
       "article_id": "S09"
-    },
-    {
-      "source": "The Verge",
-      "title": "Canva’s first AI image model plans designs before generating them",
-      "summary": "Canva is diving even deeper into AI with the launch of an image generation model that competes directly with those from OpenAI, Microsoft, and Google. The model, called Canva Craft , uses a two-stage architecture that allows it to plan a design before generating an image, allowing for \"greater precision, consistency and control,\" according to an announcement on Thursday . Canva Craft can generate ",
-      "published_at_utc": "2026-10-22T21:53:22+00:00",
-      "age_hours": 6.1,
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model",
-      "feed_url": "https://www.theverge.com/rss/index.xml",
-      "article_id": "S10"
     },
     {
       "source": "Ars Technica",
       "title": "Latest estimate for Starship launches required to support a Moon landing? 22.",
       "summary": "NASA does not have, nor want, nuclear weapons. But when it comes to a particular metric that is part of the Artemis Program to land people on the Moon, NASA guards a particular number like they are trying to prevent outsiders from cracking nuclear codes. I am speaking of the number of Starship launches required to fuel a Starship-based lunar lander in low-Earth orbit such that it can fly out to th",
       "published_at_utc": "2026-10-22T21:52:31+00:00",
-      "age_hours": 6.1,
+      "age_hours": 10.3,
       "url": "https://arstechnica.com/space/2026/10/latest-estimate-for-starship-launches-required-to-support-a-moon-landing-22/",
       "feed_url": "https://feeds.arstechnica.com/arstechnica/index",
-      "article_id": "S11"
+      "article_id": "S10"
     },
     {
       "source": "The Verge",
       "title": "PC shipments dropped over 20 percent in Q3 due to RAM price hikes",
       "summary": "Demand for new PCs took a hit after months of price hikes, with Counterpoint Research reporting global PC shipments fell 21 percent year-over-year in Q3 2026. That's in line with earlier reports from IDC and Omdia. It's not just PCs, either - that same quarter, smartphone shipments also hit a 14-year low . Counterpoint linked the decline in PC shipments to higher component prices. Up until Q2 2026",
       "published_at_utc": "2026-10-22T21:30:39+00:00",
-      "age_hours": 6.5,
+      "age_hours": 10.6,
       "url": "https://www.theverge.com/gadgets/1017144/global-pc-shipments-dropped-q3-2026-ram",
+      "feed_url": "https://www.theverge.com/rss/index.xml",
+      "article_id": "S11"
+    },
+    {
+      "source": "The Verge",
+      "title": "Fall 2026 earnings watch",
+      "summary": "Every company is suddenly an AI company. Compute is an asset. Cars are flying. We’ve been promised robots — again. It’s time again to dig through earnings reports, listen to investor calls, and call out the latest wins and losses from around the tech sector and what it means for where the companies go next. Sure, let’s smoosh SpaceX and Tesla together, who cares Just because Tesla’s Optimus is in ",
+      "published_at_utc": "2026-10-22T21:15:16+00:00",
+      "age_hours": 10.9,
+      "url": "https://www.theverge.com/tech/1016506/fall-2026-earnings-watch",
       "feed_url": "https://www.theverge.com/rss/index.xml",
       "article_id": "S12"
     }
   ],
-  "drafts": [
-    {
-      "article_id": "S10",
-      "source": "The Verge",
-      "source_title": "Canva’s first AI image model plans designs before generating them",
-      "published_at_utc": "2026-10-22T21:53:22+00:00",
-      "source_url": "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model",
-      "category": "AI & software",
-      "scores": {
-        "relevance_score": 9,
-        "significance_score": 8,
-        "originality_score": 8
-      },
-      "angle": "Canva Craft’s pre‑design planning lets creators prototype image layouts before generation, shifting workflow from reactive to intentional de",
-      "why_selected": "Shows concrete change in AI workflow that could inform product teams.",
-      "evidence_quote": "Canva Craft can generate",
-      "post_text": "Canva’s new model lets designers outline image layout first, turning AI art from guesswork into a planned design process.",
-      "text_with_source": "Canva’s new model lets designers outline image layout first, turning AI art from guesswork into a planned design process.\n\nhttps://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model",
-      "character_count_with_url": 212
-    },
+  "drafts": [],
+  "rejected_model_selections": [
     {
       "article_id": "S02",
       "source": "The Verge",
-      "source_title": "Etsy is cracking down on AI slop listings",
-      "published_at_utc": "2026-10-23T00:09:58+00:00",
-      "source_url": "https://www.theverge.com/tech/1017261/etsy-ai-rules-policies-restrictions-listing",
-      "category": "Platform policy",
-      "scores": {
-        "relevance_score": 8,
-        "significance_score": 7,
-        "originality_score": 7
-      },
-      "angle": "Etsy’s tighter AI‑listing rules mean sellers must vet AI‑generated content before upload, adding a compliance step that can slow time‑to‑mar",
-      "why_selected": "Direct impact on digital marketplace operators and AI‑content creators.",
-      "evidence_quote": "Etsy is announcing stricter rules about how AI can be used in listings",
-      "post_text": "Sellers will need to add a vetting step for AI‑generated listings, slowing launch times but tightening quality control.",
-      "text_with_source": "Sellers will need to add a vetting step for AI‑generated listings, slowing launch times but tightening quality control.\n\nhttps://www.theverge.com/tech/1017261/etsy-ai-rules-policies-restrictions-listing",
-      "character_count_with_url": 202
+      "title": "Etsy is cracking down on AI slop listings",
+      "evidence_quote": "Etsy is announcing stricter rules about how AI can be used in listings to reduce the volume of AI slop on the platform.",
+      "reason": "Evidence quote must be 20–100 characters and an exact excerpt from the supplied title or summary."
+    },
+    {
+      "article_id": "S07",
+      "source": "Ars Technica",
+      "title": "Switch 2 security takes a hit as hackers unlock homebrew access",
+      "evidence_quote": "A software‑only partial jailbreak of the Switch 2, gaining \"userland\" access that he says \"lets us run homebrew,\"",
+      "reason": "Evidence quote must be 20–100 characters and an exact excerpt from the supplied title or summary."
     },
     {
       "article_id": "S06",
       "source": "The Verge",
-      "source_title": "Spotify says yes, it is busting people for using Family Plan sharing too widely",
-      "published_at_utc": "2026-10-22T23:02:43+00:00",
-      "source_url": "https://www.theverge.com/entertainment/1017214/spotify-family-plan-sharing-qr-codes",
-      "category": "Cybersecurity & privacy",
-      "scores": {
-        "relevance_score": 7,
-        "significance_score": 6,
-        "originality_score": 7
-      },
-      "angle": "Spotify’s QR‑code verification forces Family plan users to prove co‑habitation, raising privacy questions about shared device data and user ",
-      "why_selected": "Highlights a privacy‑centric policy change affecting user data handling.",
-      "evidence_quote": "new QR code verification method",
-      "post_text": "Spotify now requires a QR scan to confirm Family plan users live together, adding a privacy‑focused verification step.",
-      "text_with_source": "Spotify now requires a QR scan to confirm Family plan users live together, adding a privacy‑focused verification step.\n\nhttps://www.theverge.com/entertainment/1017214/spotify-family-plan-sharing-qr-codes",
-      "character_count_with_url": 203
+      "title": "Spotify says yes, it is busting people for using Family Plan sharing too widely",
+      "evidence_quote": "Spotify co‑CEO Alex Norström confirmed... the company is trying to catch Spotify Family plan users who don't actually live together with a new QR code verification method",
+      "reason": "Evidence quote must be 20–100 characters and an exact excerpt from the supplied title or summary."
     }
   ],
-  "rejected_model_selections": [],
   "quality_thresholds": {
     "relevance_score_minimum": 7,
     "significance_score_minimum": 6,
