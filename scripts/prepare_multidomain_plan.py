@@ -10,6 +10,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import math
 import re
 import sys
 from datetime import datetime, timedelta
@@ -169,10 +170,10 @@ def validate_report(
         overall_score = float(draft.get("editorial_score", 0))
     except (TypeError, ValueError) as exc:
         raise ReportRejected("Recommended draft contains invalid model quality scores.") from exc
-    if any(score < 7 for score in model_scores):
-        raise ReportRejected("At least one model quality score is below 7/10.")
-    if overall_score < 7:
-        raise ReportRejected("Overall editorial score is below 7/10.")
+    if any(not math.isfinite(score) or score < 7 for score in model_scores):
+        raise ReportRejected("At least one model quality score is below 7/10 or non-finite.")
+    if not math.isfinite(overall_score) or overall_score < 7:
+        raise ReportRejected("Overall editorial score is below 7/10 or non-finite.")
 
     editor = draft.get("editorial_review")
     if not isinstance(editor, dict) or editor.get("passed") is not True:
@@ -181,8 +182,8 @@ def validate_report(
         editor_scores = [float(editor.get(name, 0)) for name in REQUIRED_EDITOR_SCORES]
     except (TypeError, ValueError) as exc:
         raise ReportRejected("Recommended draft contains invalid independent editor scores.") from exc
-    if any(score < 7 for score in editor_scores):
-        raise ReportRejected("At least one independent editor score is below 7/10.")
+    if any(not math.isfinite(score) or score < 7 for score in editor_scores):
+        raise ReportRejected("At least one independent editor score is below 7/10 or non-finite.")
 
     idea_id = "multidomain-" + candidate_id
     research_score = round(float(draft["editorial_score"]), 2)
