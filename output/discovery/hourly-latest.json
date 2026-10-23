@@ -1,73 +1,73 @@
 {
-  "generated_at_ist": "2026-10-22T21:34:33+05:30",
-  "run_at_ist": "2026-10-22T21:34:33+05:30",
+  "generated_at_ist": "2026-10-23T11:36:23+05:30",
+  "run_at_ist": "2026-10-23T11:36:23+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 146,
-  "eligible_candidate_count": 83,
+  "candidate_count_raw": 169,
+  "eligible_candidate_count": 100,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4661
+      "total_count": 4619
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1050
+      "total_count": 1036
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 380
+      "total_count": 369
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
-      "items_kept": 0,
+      "items_kept": 10,
       "status": "ok",
-      "total_count": 0
+      "total_count": 2862
     },
     {
       "source": "GitHub Search · github-ecommerce-digital-products",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 426
+      "total_count": 427
     },
     {
       "source": "GitHub Search · github-mcp-servers",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2033
+      "total_count": 1989
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3160
+      "total_count": 3137
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
       "kind": "github_repository",
-      "items_kept": 0,
+      "items_kept": 10,
       "status": "ok",
-      "total_count": 0
+      "total_count": 137
     },
     {
       "source": "GitHub Search · github-workflow-automation",
       "kind": "github_repository",
-      "items_kept": 0,
+      "items_kept": 10,
       "status": "ok",
-      "total_count": 0
+      "total_count": 259
     },
     {
       "source": "Hacker News · hn-analytics-growth",
@@ -114,7 +114,7 @@
     {
       "source": "Hacker News · hn-shopify",
       "kind": "hacker_news",
-      "items_kept": 6,
+      "items_kept": 7,
       "status": "ok",
       "total_count": 10
     },
@@ -134,7 +134,7 @@
     {
       "source": "Product Hunt",
       "kind": "rss",
-      "items_kept": 40,
+      "items_kept": 38,
       "status": "ok"
     },
     {
@@ -145,60 +145,42 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-22T16:04:33+00:00",
+    "observed_at_utc": "2026-10-23T06:06:23+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 58,
-    "previously_tracked_repositories_refreshed": 142,
+    "repositories_seen_in_discovery": 80,
+    "previously_tracked_repositories_refreshed": 120,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
-    "snapshots_added_this_run": 29,
-    "repositories_with_20_to_36_hour_baseline": 0,
+    "snapshots_added_this_run": 200,
+    "repositories_with_20_to_36_hour_baseline": 19,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "55c557b3bc0267ca",
-      "title": "Securing your app, together",
-      "source_url": "https://shopify.dev/changelog/securing-your-app-together",
+      "candidate_id": "a5e43b1572bfaf36",
+      "title": "paperclipai/paperclip",
+      "source_url": "https://github.com/paperclipai/paperclip",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/blog/securing-your-app-together",
+      "final_url": "https://github.com/paperclipai/paperclip",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "4427895d53914eac",
-      "title": "trahloff/Aldine",
-      "source_url": "https://github.com/trahloff/Aldine",
+      "candidate_id": "d5895c45c8f25e3a",
+      "title": "ClickHouse/ClickHouse",
+      "source_url": "https://github.com/ClickHouse/ClickHouse",
       "verified": true,
-      "final_url": "https://github.com/trahloff/Aldine",
+      "final_url": "https://github.com/ClickHouse/ClickHouse",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "1376885ee190dc1c",
-      "title": "Polaris 2.0 is now stable",
-      "source_url": "https://shopify.dev/changelog/polaris-cdn-2-0-is-now-stable",
+      "candidate_id": "2402761e6cda9161",
+      "title": "Discover a merchant's retail stores with UCP location search and lookup",
+      "source_url": "https://shopify.dev/changelog/discover-a-merchant-s-retail-stores-with-ucp-location-search-and-lookup",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/polaris-cdn-2-0-is-now-stable",
-      "http_status": 200,
-      "reason": ""
-    },
-    {
-      "candidate_id": "a66144096ab34333",
-      "title": "HorizunGroup/horizun-revit-mcp",
-      "source_url": "https://github.com/HorizunGroup/horizun-revit-mcp",
-      "verified": true,
-      "final_url": "https://github.com/HorizunGroup/horizun-revit-mcp",
-      "http_status": 200,
-      "reason": ""
-    },
-    {
-      "candidate_id": "7502ffe393ce17ad",
-      "title": "Show HN: OnKey – I'm a bad singer, so I built an app to show where I'm off-key",
-      "source_url": "https://github.com/dsmurrell/onkey",
-      "verified": true,
-      "final_url": "https://github.com/dsmurrell/onkey",
+      "final_url": "https://shopify.dev/changelog/posts/discover-a-merchant-s-retail-stores-with-ucp-location-search-and-lookup",
       "http_status": 200,
       "reason": ""
     }
@@ -206,110 +188,219 @@
   "rejected_primary_sources": [],
   "daily_draft_cap": 10,
   "daily_drafts_already_passed": 0,
-  "outcome": "skip",
-  "decision_reason": "Draft generation unavailable or invalid: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 195441, Requested 4930. Please try again in 2m40.272s. Need more tokens?",
-  "passing_drafts": [],
-  "rejected_drafts": [],
+  "outcome": "dry_run_passed",
+  "decision_reason": "At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.",
+  "passing_drafts": [
+    {
+      "candidate_id": "2402761e6cda9161",
+      "title": "Discover a merchant's retail stores with UCP location search and lookup",
+      "source": "Shopify Developer Changelog",
+      "source_kind": "official_changelog",
+      "url": "https://shopify.dev/changelog/posts/discover-a-merchant-s-retail-stores-with-ucp-location-search-and-lookup",
+      "primary_source_verified": true,
+      "primary_source_title": "",
+      "primary_source_final_url": "https://shopify.dev/changelog/posts/discover-a-merchant-s-retail-stores-with-ucp-location-search-and-lookup",
+      "primary_source_http_status": 200,
+      "category": "commerce_and_digital_products",
+      "priority_score": 81,
+      "hourly_adjusted_score": 81,
+      "post_text": "Shopify storefronts expose search_locations and lookup tools via the MCP endpoint. Validate distance filtering by comparing returned store coordinates to known GPS points. https://shopify.dev/changelog/posts/discover-a-merchant-s-retail-stores-with-ucp-location-search-and-lookup",
+      "fact_sentence": "Shopify storefronts expose search_locations and lookup tools via the MCP endpoint.",
+      "format": "practical_workflow",
+      "audience": "ecommerce developers",
+      "angle": "location services",
+      "rationale": "The changelog states the tools exist; testing coordinate accuracy ensures the new capability works as advertised.",
+      "evidence_quote": "If your agent profile negotiates these capabilities, the storefront MCP endpoint at `https://{storedomain}/api/ucp/mcp` exposes two tools: * `search_locations` lists the shop's retail locations.",
+      "editorial_takeaway": "Validate distance filtering by comparing returned store coordinates to known GPS points.",
+      "claim_evidence": [
+        {
+          "claim": "Shopify storefronts expose search_locations and lookup tools via the MCP endpoint.",
+          "quote": "If your agent profile negotiates these capabilities, the storefront MCP endpoint at `https://{storedomain}/api/ucp/mcp` exposes two tools: * `search_locations` lists the shop's retail locations."
+        }
+      ],
+      "scores": {
+        "timeliness": 8,
+        "usefulness": 8,
+        "novelty": 7,
+        "evidence": 9,
+        "insight": 8
+      },
+      "editorial_score": 8.1,
+      "character_count": 279,
+      "status": "dry_run_passed_not_published",
+      "published_to_x": false,
+      "editorial_review": {
+        "clarity_score": 8,
+        "technical_coherence_score": 8,
+        "takeaway_value_score": 8,
+        "source_faithfulness_score": 8,
+        "originality_score": 8,
+        "reason": "Clear, technically coherent, source-backed claim, and original practical suggestion.",
+        "passed": true
+      }
+    }
+  ],
+  "rejected_drafts": [
+    {
+      "candidate_id": "a5e43b1572bfaf36",
+      "title": "paperclipai/paperclip",
+      "reasons": [
+        "Editorial takeaway is too long; keep the analysis concrete and concise."
+      ],
+      "proposed_text": "paperclip is an open‑source app for managing agents at work. Test agent orchestration by deploying a simple workflow and monitoring the dashboard for state changes. https://github.com/paperclipai/paperclip",
+      "evidence_quote": "GitHub - paperclipai/paperclip: The open‑source app everyone uses to manage agents at work",
+      "claim_evidence": [
+        {
+          "claim": "paperclip is an open‑source app for managing agents at work",
+          "quote": "GitHub - paperclipai/paperclip: The open‑source app everyone uses to manage agents at work"
+        }
+      ]
+    },
+    {
+      "candidate_id": "d5895c45c8f25e3a",
+      "title": "ClickHouse/ClickHouse",
+      "reasons": [
+        "Unsupported numeric claim(s): 1tb, 200ms"
+      ],
+      "proposed_text": "ClickHouse is a real‑time analytics database management system. Run a benchmark query on a 1TB dataset to verify latency stays under 200 ms. https://github.com/ClickHouse/ClickHouse",
+      "evidence_quote": "ClickHouse® is a real‑time analytics database management system",
+      "claim_evidence": [
+        {
+          "claim": "ClickHouse is a real‑time analytics database management system",
+          "quote": "ClickHouse® is a real‑time analytics database management system"
+        }
+      ]
+    }
+  ],
   "candidate_shortlist": [
     {
-      "id": "55c557b3bc0267ca",
-      "title": "Securing your app, together",
-      "url": "https://shopify.dev/changelog/blog/securing-your-app-together",
-      "source": "Shopify Developer Changelog",
-      "primary_category": "commerce_and_digital_products",
-      "priority_score": 74,
-      "hourly_adjusted_score": 74,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-20T19:00:00+00:00",
-      "days_old": 1.88,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "4427895d53914eac",
-      "title": "trahloff/Aldine",
-      "url": "https://github.com/trahloff/Aldine",
-      "source": "GitHub Search",
-      "primary_category": "security_and_self_hosting",
-      "priority_score": 69,
-      "hourly_adjusted_score": 73,
-      "stars_current": 83,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "insufficient_history",
-      "published_at": "2026-10-22T16:05:13+00:00",
-      "days_old": 0.0,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "1376885ee190dc1c",
-      "title": "Polaris 2.0 is now stable",
-      "url": "https://shopify.dev/changelog/posts/polaris-cdn-2-0-is-now-stable",
-      "source": "Shopify Developer Changelog",
-      "primary_category": "commerce_and_digital_products",
-      "priority_score": 72,
-      "hourly_adjusted_score": 72,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-22T14:00:00+00:00",
-      "days_old": 0.09,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "a66144096ab34333",
-      "title": "HorizunGroup/horizun-revit-mcp",
-      "url": "https://github.com/HorizunGroup/horizun-revit-mcp",
+      "id": "a5e43b1572bfaf36",
+      "title": "paperclipai/paperclip",
+      "url": "https://github.com/paperclipai/paperclip",
       "source": "GitHub Search",
       "primary_category": "ai_and_automation",
-      "priority_score": 68,
-      "hourly_adjusted_score": 72,
-      "stars_current": 56,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "insufficient_history",
-      "published_at": "2026-10-22T16:03:55+00:00",
+      "priority_score": 69,
+      "hourly_adjusted_score": 88,
+      "stars_current": 106265,
+      "stars_delta_24h": 491,
+      "stars_delta_baseline_hours": 24.7,
+      "stars_growth_percent_24h": 0.46,
+      "trend_signal": "measured_star_growth",
+      "published_at": "2026-10-23T06:04:12+00:00",
       "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "7502ffe393ce17ad",
-      "title": "Show HN: OnKey – I'm a bad singer, so I built an app to show where I'm off-key",
-      "url": "https://github.com/dsmurrell/onkey",
-      "source": "Hacker News",
-      "primary_category": "product_and_workflow_tools",
-      "priority_score": 68,
-      "hourly_adjusted_score": 70,
+      "id": "d5895c45c8f25e3a",
+      "title": "ClickHouse/ClickHouse",
+      "url": "https://github.com/ClickHouse/ClickHouse",
+      "source": "GitHub Search",
+      "primary_category": "data_and_growth",
+      "priority_score": 63,
+      "hourly_adjusted_score": 82,
+      "stars_current": 50551,
+      "stars_delta_24h": 19,
+      "stars_delta_baseline_hours": 24.7,
+      "stars_growth_percent_24h": 0.04,
+      "trend_signal": "measured_star_growth",
+      "published_at": "2026-10-23T06:01:37+00:00",
+      "days_old": 0.0,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "2402761e6cda9161",
+      "title": "Discover a merchant's retail stores with UCP location search and lookup",
+      "url": "https://shopify.dev/changelog/posts/discover-a-merchant-s-retail-stores-with-ucp-location-search-and-lookup",
+      "source": "Shopify Developer Changelog",
+      "primary_category": "commerce_and_digital_products",
+      "priority_score": 81,
+      "hourly_adjusted_score": 81,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-22T14:04:44+00:00",
-      "days_old": 0.08,
+      "published_at": "2026-10-22T18:00:00+00:00",
+      "days_old": 0.5,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     }
   ],
+  "automatic_repair": {
+    "attempted": false,
+    "drafts_submitted": 0,
+    "repaired_local_passes": 0,
+    "repair_rejections": 0,
+    "repair_error": null,
+    "editorial_repair_attempted": false,
+    "editorial_repair_drafts_submitted": 0,
+    "editorial_repair_error": null
+  },
+  "editorial_review": {
+    "locally_valid_drafts": 1,
+    "submitted_for_independent_review": 1,
+    "passed_independent_review": 1,
+    "rejected_by_independent_review": 0,
+    "lower_ranked_not_reviewed": 0,
+    "review_error": null,
+    "automatic_gate": "fail_closed"
+  },
+  "recommended_draft": {
+    "candidate_id": "2402761e6cda9161",
+    "title": "Discover a merchant's retail stores with UCP location search and lookup",
+    "source": "Shopify Developer Changelog",
+    "source_kind": "official_changelog",
+    "url": "https://shopify.dev/changelog/posts/discover-a-merchant-s-retail-stores-with-ucp-location-search-and-lookup",
+    "primary_source_verified": true,
+    "primary_source_title": "",
+    "primary_source_final_url": "https://shopify.dev/changelog/posts/discover-a-merchant-s-retail-stores-with-ucp-location-search-and-lookup",
+    "primary_source_http_status": 200,
+    "category": "commerce_and_digital_products",
+    "priority_score": 81,
+    "hourly_adjusted_score": 81,
+    "post_text": "Shopify storefronts expose search_locations and lookup tools via the MCP endpoint. Validate distance filtering by comparing returned store coordinates to known GPS points. https://shopify.dev/changelog/posts/discover-a-merchant-s-retail-stores-with-ucp-location-search-and-lookup",
+    "fact_sentence": "Shopify storefronts expose search_locations and lookup tools via the MCP endpoint.",
+    "format": "practical_workflow",
+    "audience": "ecommerce developers",
+    "angle": "location services",
+    "rationale": "The changelog states the tools exist; testing coordinate accuracy ensures the new capability works as advertised.",
+    "evidence_quote": "If your agent profile negotiates these capabilities, the storefront MCP endpoint at `https://{storedomain}/api/ucp/mcp` exposes two tools: * `search_locations` lists the shop's retail locations.",
+    "editorial_takeaway": "Validate distance filtering by comparing returned store coordinates to known GPS points.",
+    "claim_evidence": [
+      {
+        "claim": "Shopify storefronts expose search_locations and lookup tools via the MCP endpoint.",
+        "quote": "If your agent profile negotiates these capabilities, the storefront MCP endpoint at `https://{storedomain}/api/ucp/mcp` exposes two tools: * `search_locations` lists the shop's retail locations."
+      }
+    ],
+    "scores": {
+      "timeliness": 8,
+      "usefulness": 8,
+      "novelty": 7,
+      "evidence": 9,
+      "insight": 8
+    },
+    "editorial_score": 8.1,
+    "character_count": 279,
+    "status": "dry_run_passed_not_published",
+    "published_to_x": false,
+    "editorial_review": {
+      "clarity_score": 8,
+      "technical_coherence_score": 8,
+      "takeaway_value_score": 8,
+      "source_faithfulness_score": 8,
+      "originality_score": 8,
+      "reason": "Clear, technically coherent, source-backed claim, and original practical suggestion.",
+      "passed": true
+    }
+  },
   "state_summary": {
-    "used_candidates_in_cooldown": 0,
-    "recently_attempted_candidates": 5,
-    "recent_draft_passes_today": 0
+    "used_candidates_in_cooldown": 1,
+    "recently_attempted_candidates": 3,
+    "recent_draft_passes_today": 1
   }
 }
