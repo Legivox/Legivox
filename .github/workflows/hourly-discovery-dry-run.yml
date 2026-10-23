@@ -96,6 +96,7 @@ jobs:
           MAX_DAILY_DRAFTS: ${{ inputs.daily_draft_cap || '16' }}
           LOOKBACK_DAYS: ${{ inputs.lookback_days || '1' }}
         run: |
+          # Keep this pool modest for quota safety; rejected candidates cool down in persisted state.
           python scripts/hourly_dry_run.py \
             --dry-run \
             --lookback-days "$LOOKBACK_DAYS" \
