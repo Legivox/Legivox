@@ -1,0 +1,136 @@
+name: Legivox multidomain discovery preview
+
+on:
+  push:
+    branches:
+      - "feature/multidomain-discovery-v1"
+    paths:
+      - "scripts/discover_candidates.py"
+      - "scripts/hourly_dry_run.py"
+      - "scripts/prepare_multidomain_plan.py"
+      - "scripts/plan_sources.py"
+      - "scripts/publish_next.py"
+      - "scripts/prepare_daily_plan.py"
+      - "data/discovery_sources.json"
+      - "tests/test_discover_candidates.py"
+      - "tests/test_hourly_dry_run.py"
+      - "tests/test_multidomain_plan.py"
+      - "tests/test_rss_publisher_integration.py"
+      - ".github/workflows/legivox.yml"
+      - ".github/workflows/discovery-preview.yml"
+  workflow_dispatch:
+    inputs:
+      lookback_days:
+        description: "How recent candidate items should be"
+        required: true
+        type: choice
+        options:
+          - "7"
+          - "14"
+          - "30"
+        default: "14"
+      limit:
+        description: "Maximum candidates to show in the report"
+        required: true
+        type: choice
+        options:
+          - "20"
+          - "30"
+          - "50"
+        default: "30"
+  pull_request:
+    paths:
+      - "scripts/discover_candidates.py"
+      - "scripts/hourly_dry_run.py"
+      - "scripts/prepare_multidomain_plan.py"
+      - "scripts/plan_sources.py"
+      - "scripts/publish_next.py"
+      - "scripts/prepare_daily_plan.py"
+      - "data/discovery_sources.json"
+      - "tests/test_discover_candidates.py"
+      - "tests/test_hourly_dry_run.py"
+      - "tests/test_multidomain_plan.py"
+      - "tests/test_rss_publisher_integration.py"
+      - ".github/workflows/legivox.yml"
+      - ".github/workflows/discovery-preview.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: legivox-discovery-preview-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  preview:
+    name: Test and preview discovery
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out this branch or pull request
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.12"
+
+      - name: Validate discovery sources and syntax
+        run: |
+          python -m json.tool data/discovery_sources.json > /dev/null
+          python -m py_compile scripts/discover_candidates.py scripts/hourly_dry_run.py scripts/prepare_multidomain_plan.py scripts/plan_sources.py scripts/publish_next.py scripts/prepare_daily_plan.py tests/test_discover_candidates.py tests/test_hourly_dry_run.py tests/test_multidomain_plan.py tests/test_rss_publisher_integration.py
+
+      - name: Install the existing publisher dependency for integration tests
+        run: >-
+          python -m pip install --disable-pip-version-check
+          'git+https://github.com/nsozturk/tweetkit-x.git@d42503a936f80eb0af2e9856a0fbd392cc4a750c'
+
+      - name: Run full unit and publisher integration test suite
+        run: python -m unittest discover -s tests -v
+
+      - name: Exercise non-publishing plan conversion against saved report
+        run: |
+          report_path="$RUNNER_TEMP/hourly-latest.json"
+          plan_path="$RUNNER_TEMP/daily-plan.json"
+          rm -f "$report_path" "$plan_path"
+          if git fetch --no-tags origin legivox-hourly-state && git show origin/legivox-hourly-state:output/discovery/hourly-latest.json > "$report_path"; then
+            if python scripts/prepare_multidomain_plan.py --input "$report_path" --output "$plan_path" --slot 0 --max-age-minutes 90; then
+              python -c 'import json,sys; p=json.load(open(sys.argv[1], encoding="utf-8")); assert p["research_source"] == "Multidomain discovery + independent editorial review"; assert len(p["posts"]) == 1 and p["posts"][0]["slot"] == 0; assert len(p["posts"][0]["text"]) <= 280; assert p["posts"][0]["image_query"] == ""; print("Saved-report handoff passed; plan prepared only in RUNNER_TEMP.")' "$plan_path"
+            else
+              status=$?
+              if [ "$status" -eq 2 ]; then
+                echo "Saved report is stale or rejected; converter safely declined to prepare a plan."
+              else
+                exit "$status"
+              fi
+            fi
+          else
+            echo "No saved hourly report could be fetched; converter's missing-report path is covered by unit tests."
+          fi
+
+      - name: Run read-only live discovery
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          LOOKBACK_DAYS: ${{ inputs.lookback_days || '14' }}
+          CANDIDATE_LIMIT: ${{ inputs.limit || '30' }}
+        run: |
+          python scripts/discover_candidates.py \
+            --lookback-days "$LOOKBACK_DAYS" \
+            --limit "$CANDIDATE_LIMIT" \
+            --per-source 10
+
+
+      - name: Upload complete candidate report
+        if: always() && hashFiles('output/discovery/discovery-report.md') != ''
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: legivox-discovery-preview
+          path: |
+            output/discovery/discovery-report.md
+            output/discovery/discovery-candidates.json
+          if-no-files-found: warn
+          retention-days: 7
+
+      - name: Publish research report to the workflow summary
+        if: always() && hashFiles('output/discovery/discovery-report.md') != ''
+        run: cat output/discovery/discovery-report.md >> "$GITHUB_STEP_SUMMARY"

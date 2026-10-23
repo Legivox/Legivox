@@ -1,0 +1,146 @@
+name: Legivox hourly discovery and draft preview
+
+on:
+  push:
+    branches:
+      - "feature/multidomain-discovery-v1"
+    paths:
+      - "scripts/hourly_dry_run.py"
+      - "scripts/discover_candidates.py"
+      - "data/discovery_sources.json"
+      - "tests/test_hourly_dry_run.py"
+      - ".github/workflows/hourly-discovery-dry-run.yml"
+  workflow_dispatch:
+    inputs:
+      lookback_days:
+        description: "Candidate freshness window"
+        required: true
+        type: choice
+        options:
+          - "1"
+          - "2"
+          - "3"
+          - "7"
+        default: "1"
+      daily_draft_cap:
+        description: "Maximum passing draft proposals to consider per IST date"
+        required: true
+        type: choice
+        options:
+          - "5"
+          - "8"
+          - "10"
+          - "16"
+        default: "16"
+  schedule:
+    # Hourly checks from 07:17 through 22:17 IST, feeding the next 08:00–23:00 publishing slots.
+    - cron: "47 1-16 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  # State is shared across feature-branch previews and default-branch scheduled runs.
+  # Serialize all writers so two runs cannot overwrite the star-history baseline.
+  group: legivox-hourly-discovery-state
+  cancel-in-progress: false
+
+jobs:
+  dry-run:
+    name: Discover, draft, validate and audit
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+
+      - name: Restore persistent hourly state
+        env:
+          STATE_BRANCH: legivox-hourly-state
+        run: |
+          git fetch --no-tags origin "$STATE_BRANCH"
+          mkdir -p output/discovery
+          git show "origin/$STATE_BRANCH:output/discovery/hourly-state.json" > output/discovery/hourly-state.json
+          if git cat-file -e "origin/$STATE_BRANCH:output/discovery/hourly-runs.jsonl" 2>/dev/null; then
+            git show "origin/$STATE_BRANCH:output/discovery/hourly-runs.jsonl" > output/discovery/hourly-runs.jsonl
+          else
+            touch output/discovery/hourly-runs.jsonl
+          fi
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.12"
+
+      - name: Validate source registry and compile scripts
+        run: |
+          python -m json.tool data/discovery_sources.json > /dev/null
+          python -m py_compile \
+            scripts/discover_candidates.py \
+            scripts/hourly_dry_run.py \
+            tests/test_discover_candidates.py \
+            tests/test_hourly_dry_run.py
+
+      - name: Run discovery and draft-quality unit tests
+        run: |
+          python -m unittest discover -s tests -p 'test_discover_candidates.py' -v
+          python -m unittest discover -s tests -p 'test_hourly_dry_run.py' -v
+
+      - name: Run one hourly research-only draft decision
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GROQ_MODEL: openai/gpt-oss-20b
+          MAX_DAILY_DRAFTS: ${{ inputs.daily_draft_cap || '16' }}
+          LOOKBACK_DAYS: ${{ inputs.lookback_days || '1' }}
+        run: |
+          # Keep this pool modest for quota safety; rejected candidates cool down in persisted state.
+          python scripts/hourly_dry_run.py \
+            --dry-run \
+            --lookback-days "$LOOKBACK_DAYS" \
+            --pool-size 3
+
+      - name: Upload hourly decision and draft report
+        if: always() && hashFiles('output/discovery/hourly-latest.md') != ''
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: legivox-hourly-dry-run
+          path: |
+            output/discovery/hourly-latest.md
+            output/discovery/hourly-latest.json
+          if-no-files-found: warn
+          retention-days: 14
+
+      - name: Add report to Actions summary
+        if: always() && hashFiles('output/discovery/hourly-latest.md') != ''
+        run: cat output/discovery/hourly-latest.md >> "$GITHUB_STEP_SUMMARY"
+
+      # Keep generated state on a dedicated branch: feature code changes never race
+      # with state commits, and feature previews can establish the star baseline pre-merge.
+      - name: Persist hourly state and audit log
+        if: success() && hashFiles('output/discovery/hourly-state.json') != '' && hashFiles('output/discovery/hourly-latest.json') != ''
+        env:
+          STATE_BRANCH: legivox-hourly-state
+        run: |
+          git fetch --no-tags origin "$STATE_BRANCH"
+          git worktree add "$RUNNER_TEMP/legivox-state-sync" "origin/$STATE_BRANCH"
+          mkdir -p "$RUNNER_TEMP/legivox-state-sync/output/discovery"
+          cp output/discovery/hourly-state.json "$RUNNER_TEMP/legivox-state-sync/output/discovery/hourly-state.json"
+          cp output/discovery/hourly-runs.jsonl "$RUNNER_TEMP/legivox-state-sync/output/discovery/hourly-runs.jsonl"
+          cp output/discovery/hourly-latest.json "$RUNNER_TEMP/legivox-state-sync/output/discovery/hourly-latest.json"
+          cp output/discovery/hourly-latest.md "$RUNNER_TEMP/legivox-state-sync/output/discovery/hourly-latest.md"
+          git -C "$RUNNER_TEMP/legivox-state-sync" add \
+            output/discovery/hourly-state.json \
+            output/discovery/hourly-runs.jsonl \
+            output/discovery/hourly-latest.json \
+            output/discovery/hourly-latest.md
+          if git -C "$RUNNER_TEMP/legivox-state-sync" diff --cached --quiet; then
+            echo "No hourly state changes to commit."
+            exit 0
+          fi
+          git -C "$RUNNER_TEMP/legivox-state-sync" config user.name "github-actions[bot]"
+          git -C "$RUNNER_TEMP/legivox-state-sync" config user.email "41898282+users.noreply.github.com"
+          git -C "$RUNNER_TEMP/legivox-state-sync" commit -m "chore: refresh hourly research state [skip ci]"
+          git -C "$RUNNER_TEMP/legivox-state-sync" push origin "HEAD:refs/heads/$STATE_BRANCH"

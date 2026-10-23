@@ -4,16 +4,34 @@ on:
   workflow_dispatch:
     inputs:
       publish_now:
-        description: 'Publish one quality-gated RSS/Groq post to X immediately (live production)'
+        description: 'Publish one quality-gated post to X immediately (live production; uses multidomain discovery when enabled)'
         required: true
         type: boolean
         default: false
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/legivox.yml
   schedule:
-    # Plan at 06:00 IST; the publishing jobs use randomized times within the next hour.
+    # Plan at 06:00 IST; individual cron entries let us detect delayed hourly runs.
     - cron: '30 0 * * *'
-    - cron: '30 3 * * *'
-    - cron: '30 7 * * *'
-    - cron: '30 13 * * *'
+    - cron: '30 2 * * *'   # 08:00 IST
+    - cron: '30 3 * * *'   # 09:00 IST
+    - cron: '30 4 * * *'   # 10:00 IST
+    - cron: '30 5 * * *'   # 11:00 IST
+    - cron: '30 6 * * *'   # 12:00 IST
+    - cron: '30 7 * * *'   # 13:00 IST
+    - cron: '30 8 * * *'   # 14:00 IST
+    - cron: '30 9 * * *'   # 15:00 IST
+    - cron: '30 10 * * *'  # 16:00 IST
+    - cron: '30 11 * * *'  # 17:00 IST
+    - cron: '30 12 * * *'  # 18:00 IST
+    - cron: '30 13 * * *'  # 19:00 IST
+    - cron: '30 14 * * *'  # 20:00 IST
+    - cron: '30 15 * * *'  # 21:00 IST
+    - cron: '30 16 * * *'  # 22:00 IST
+    - cron: '30 17 * * *'  # 23:00 IST
 
 permissions:
   contents: write
@@ -24,6 +42,7 @@ concurrency:
 
 jobs:
   legivox:
+    if: ${{ github.event_name != 'push' || contains(github.event.head_commit.message, '[publish-test]') }}
     runs-on: ubuntu-latest
     timeout-minutes: 60
     steps:
@@ -39,7 +58,7 @@ jobs:
 
       - name: Validate scripts and idea library
         run: |
-          python -m py_compile scripts/publish_next.py scripts/prepare_daily_plan.py scripts/build_queue.py scripts/rss_groq.py scripts/randomized_slot.py
+          python -m py_compile scripts/publish_next.py scripts/prepare_daily_plan.py scripts/prepare_multidomain_plan.py scripts/plan_sources.py scripts/build_queue.py scripts/rss_groq.py scripts/randomized_slot.py
           python -m json.tool data/ideas.json > /dev/null
 
       - name: Install publisher from the reviewed source commit
@@ -59,41 +78,99 @@ jobs:
           TWEETKIT_COOKIE: ${{ secrets.X_SESSION_COOKIE }}
         run: python scripts/prepare_daily_plan.py
 
-      - name: Prepare fresh RSS + Groq post for scheduled slot
+      - name: Prepare quality-gated post for hourly slot
         id: prepare_rss
-        if: github.event.schedule == '30 3 * * *' || github.event.schedule == '30 7 * * *' || github.event.schedule == '30 13 * * *' || (github.event_name == 'workflow_dispatch' && inputs.publish_now == true)
+        if: (github.event_name == 'schedule' && github.event.schedule != '30 0 * * *') || (github.event_name == 'workflow_dispatch' && inputs.publish_now == true) || (github.event_name == 'push' && contains(github.event.head_commit.message, '[publish-test]'))
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           GROQ_MODEL: openai/gpt-oss-20b
-          SCHEDULE: ${{ github.event.schedule || (inputs.publish_now == true && 'live-test') }}
+          USE_MULTIDOMAIN_PUBLISHING: ${{ vars.LEGIVOX_MULTIDOMAIN_PUBLISHING_ENABLED || 'true' }}
+          SCHEDULE: ${{ github.event.schedule || (inputs.publish_now == true && 'live-test') || (github.event_name == 'push' && contains(github.event.head_commit.message, '[publish-test]') && 'live-test') }}
         run: |
+          # The explicit cron expression identifies the intended IST hour. If GitHub
+          # starts a scheduled run in a different hour, fail closed instead of posting late.
           case "$SCHEDULE" in
-            '30 3 * * *') slot=0 ;;
-            '30 7 * * *') slot=1 ;;
-            '30 13 * * *') slot=2 ;;
-            'live-test') slot=0 ;;
+            'live-test') hour=$(TZ=Asia/Kolkata date +%H) ;;
+            '30 2 * * *') hour=8 ;;
+            '30 3 * * *') hour=9 ;;
+            '30 4 * * *') hour=10 ;;
+            '30 5 * * *') hour=11 ;;
+            '30 6 * * *') hour=12 ;;
+            '30 7 * * *') hour=13 ;;
+            '30 8 * * *') hour=14 ;;
+            '30 9 * * *') hour=15 ;;
+            '30 10 * * *') hour=16 ;;
+            '30 11 * * *') hour=17 ;;
+            '30 12 * * *') hour=18 ;;
+            '30 13 * * *') hour=19 ;;
+            '30 14 * * *') hour=20 ;;
+            '30 15 * * *') hour=21 ;;
+            '30 16 * * *') hour=22 ;;
+            '30 17 * * *') hour=23 ;;
             *) echo 'Unexpected schedule; refusing to prepare a post.' >&2; exit 1 ;;
           esac
+          hour=$((10#$hour))
+          current_hour=$(TZ=Asia/Kolkata date +%H)
+          current_hour=$((10#$current_hour))
+          if [ "$SCHEDULE" != 'live-test' ] && [ "$hour" -ne "$current_hour" ]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            echo "Scheduled slot was $hour:00 IST but GitHub started this run in a different local hour; skipping rather than posting late."
+            exit 0
+          fi
+          if [ "$hour" -lt 8 ] || [ "$hour" -gt 23 ]; then
+            echo "Refusing to post outside the 08:00–23:00 IST schedule (local hour=$hour)." >&2
+            exit 1
+          fi
+          # Cycle legacy slot IDs 0–2; the plan/publisher schema uses three named slots.
+          slot=$(((hour - 8) % 3))
           echo "slot=$slot" >> "$GITHUB_OUTPUT"
-          if python scripts/rss_groq.py --prepare-single-post --slot "$slot"; then
-            echo "skip=false" >> "$GITHUB_OUTPUT"
-          else
-            status=$?
-            if [ "$status" -eq 2 ]; then
-              echo "skip=true" >> "$GITHUB_OUTPUT"
-              echo 'No draft passed the quality gate. This slot will be skipped.'
-              exit 0
+          echo "hour=$hour" >> "$GITHUB_OUTPUT"
+
+          # Multidomain discovery is enabled by default after rollout. An explicit
+          # repository Actions variable value of "false" keeps the legacy path available.
+          if [ "${USE_MULTIDOMAIN_PUBLISHING,,}" = "true" ]; then
+            unset GROQ_API_KEY
+            echo "Multidomain source-grounded publishing is enabled for this slot."
+            report_path="$RUNNER_TEMP/hourly-latest.json"
+            rm -f "$report_path"
+            if git fetch --no-tags origin legivox-hourly-state; then
+              git show origin/legivox-hourly-state:output/discovery/hourly-latest.json > "$report_path" || rm -f "$report_path"
             fi
-            exit "$status"
+
+            if python scripts/prepare_multidomain_plan.py --input "$report_path" --slot "$slot" --max-age-minutes 90; then
+              echo "skip=false" >> "$GITHUB_OUTPUT"
+            else
+              status=$?
+              if [ "$status" -eq 2 ]; then
+                echo "skip=true" >> "$GITHUB_OUTPUT"
+                echo 'No fresh discovery report passed every gate. This slot will be skipped; legacy RSS fallback is disabled while the feature flag is on.'
+                exit 0
+              fi
+              exit "$status"
+            fi
+          else
+            echo "Using the existing RSS/Groq publisher path (multidomain feature flag is false)."
+            if python scripts/rss_groq.py --prepare-single-post --slot "$slot"; then
+              echo "skip=false" >> "$GITHUB_OUTPUT"
+            else
+              status=$?
+              if [ "$status" -eq 2 ]; then
+                echo "skip=true" >> "$GITHUB_OUTPUT"
+                echo 'No draft passed the quality gate. This slot will be skipped.'
+                exit 0
+              fi
+              exit "$status"
+            fi
           fi
 
       - name: Wait for randomized time inside the publishing window
         id: random_window
-        if: success() && steps.prepare_rss.outputs.skip != 'true' && steps.prepare_rss.outputs.slot != '' && (github.event_name != 'workflow_dispatch' || inputs.publish_now != true)
+        if: success() && steps.prepare_rss.outputs.skip != 'true' && steps.prepare_rss.outputs.slot != '' && github.event_name == 'schedule'
         env:
           SLOT: ${{ steps.prepare_rss.outputs.slot }}
+          WINDOW_HOUR: ${{ steps.prepare_rss.outputs.hour }}
         run: |
-          if python scripts/randomized_slot.py --slot "$SLOT"; then
+          if python scripts/randomized_slot.py --slot "$SLOT" --hour "$WINDOW_HOUR"; then
             echo "skip=false" >> "$GITHUB_OUTPUT"
           else
             status=$?
@@ -105,7 +182,7 @@ jobs:
             exit "$status"
           fi
 
-      - name: Publish quality-gated RSS + Groq post
+      - name: Publish quality-gated post to X
         if: success() && steps.prepare_rss.outputs.skip != 'true' && steps.random_window.outputs.skip != 'true' && steps.prepare_rss.outputs.slot != ''
         env:
           TWEETKIT_COOKIE: ${{ secrets.X_SESSION_COOKIE }}

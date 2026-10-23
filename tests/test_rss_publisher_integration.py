@@ -9,6 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
 from publish_next import RSS_GROQ_PLAN_SOURCE, select_post_for_slot
+from plan_sources import MULTIDOMAIN_PLAN_SOURCE
 from randomized_slot import IST, choose_target, window_bounds
 
 
@@ -34,6 +35,35 @@ class PublisherPlanSelectionTests(unittest.TestCase):
     def test_rss_plan_must_have_exactly_one_post(self) -> None:
         plan = {
             "research_source": RSS_GROQ_PLAN_SOURCE,
+            "posts": [
+                {"slot": 0, "text": "Post one"},
+                {"slot": 0, "text": "Post two"},
+            ],
+        }
+        with self.assertRaisesRegex(ValueError, "exactly one"):
+            select_post_for_slot(plan, 0)
+
+    def test_selects_single_multidomain_post_only_for_its_matching_slot(self) -> None:
+        plan = {
+            "research_source": MULTIDOMAIN_PLAN_SOURCE,
+            "posts": [{"slot": 2, "text": "Verified multidomain post with source link"}],
+        }
+        self.assertEqual(
+            select_post_for_slot(plan, 2)["text"],
+            "Verified multidomain post with source link",
+        )
+
+    def test_multidomain_post_cannot_be_published_in_a_different_slot(self) -> None:
+        plan = {
+            "research_source": MULTIDOMAIN_PLAN_SOURCE,
+            "posts": [{"slot": 1, "text": "Verified multidomain post"}],
+        }
+        with self.assertRaisesRegex(ValueError, "slot does not match"):
+            select_post_for_slot(plan, 2)
+
+    def test_multidomain_plan_must_have_exactly_one_post(self) -> None:
+        plan = {
+            "research_source": MULTIDOMAIN_PLAN_SOURCE,
             "posts": [
                 {"slot": 0, "text": "Post one"},
                 {"slot": 0, "text": "Post two"},
@@ -87,6 +117,23 @@ class RandomizedWindowTests(unittest.TestCase):
         self.assertGreaterEqual(target, now)
         self.assertLessEqual(target, start + timedelta(minutes=45))
         self.assertLess(target, end)
+
+    def test_hourly_window_supports_last_slot_through_midnight(self) -> None:
+        now = datetime(2026, 10, 18, 22, 30, tzinfo=IST)
+        start, end = window_bounds(now, 0, hour=23)
+        self.assertEqual(start, datetime(2026, 10, 18, 23, 0, tzinfo=IST))
+        self.assertEqual(end, datetime(2026, 10, 19, 0, 0, tzinfo=IST))
+        self.assertEqual(end - start, timedelta(hours=1))
+
+    def test_hourly_target_uses_requested_ist_window(self) -> None:
+        now = datetime(2026, 10, 18, 16, 5, tzinfo=IST)
+        target = choose_target(now, 2, target_offset_seconds=10 * 60, hour=16)
+        self.assertEqual(target, datetime(2026, 10, 18, 16, 10, tzinfo=IST))
+
+    def test_hourly_window_rejects_hours_outside_production_schedule(self) -> None:
+        now = datetime(2026, 10, 18, 8, 30, tzinfo=IST)
+        with self.assertRaisesRegex(ValueError, "between 8 and 23"):
+            window_bounds(now, 0, hour=7)
 
 
 if __name__ == "__main__":

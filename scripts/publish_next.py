@@ -28,20 +28,22 @@ EXPECTED_USERNAME = "Legivox"
 IST = ZoneInfo("Asia/Kolkata")
 USER_AGENT = "LegivoxPublisher/1.0 (https://github.com/Legivox/Legivox)"
 MAX_IMAGE_BYTES = 8 * 1024 * 1024
-RSS_GROQ_PLAN_SOURCE = "RSS feeds + Groq editorial ranking"
+from plan_sources import MULTIDOMAIN_PLAN_SOURCE, RSS_GROQ_PLAN_SOURCE, SOURCE_GROUNDED_SINGLE_POST_SOURCES
 
 
 def select_post_for_slot(plan: dict, slot: int) -> dict:
     """Select today's post while preserving the legacy three-post curated plan format."""
     posts = plan.get("posts") or []
-    if plan.get("research_source") == RSS_GROQ_PLAN_SOURCE:
+    research_source = plan.get("research_source")
+    if research_source in SOURCE_GROUNDED_SINGLE_POST_SOURCES:
+        label = "Multidomain" if research_source == MULTIDOMAIN_PLAN_SOURCE else "RSS/Groq"
         if len(posts) != 1:
-            raise ValueError("RSS/Groq plan must contain exactly one quality-gated post.")
+            raise ValueError(label + " plan must contain exactly one quality-gated post.")
         item = posts[0]
         if item.get("slot") != slot:
-            raise ValueError("RSS/Groq plan slot does not match the scheduled publishing slot.")
+            raise ValueError(label + " plan slot does not match the scheduled publishing slot.")
         if clean(item.get("text")) == "":
-            raise ValueError("RSS/Groq plan has an empty post.")
+            raise ValueError(label + " plan has an empty post.")
         return item
     if len(posts) != 3 or slot >= len(posts):
         raise ValueError("Today's curated plan does not contain three posts.")
@@ -231,7 +233,7 @@ def main() -> int:
     image_path = None
     image_credit = None
     # News posts default to text-only unless a story-specific image is explicitly supplied.
-    if plan.get("research_source") == RSS_GROQ_PLAN_SOURCE:
+    if plan.get("research_source") in SOURCE_GROUNDED_SINGLE_POST_SOURCES:
         image_query = clean(item.get("image_query"))
     else:
         image_query = clean(item.get("image_query") or item.get("niche"))
