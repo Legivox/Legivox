@@ -1,24 +1,24 @@
 {
-  "generated_at_ist": "2026-10-23T17:40:58+05:30",
-  "run_at_ist": "2026-10-23T17:40:58+05:30",
+  "generated_at_ist": "2026-10-23T18:55:16+05:30",
+  "run_at_ist": "2026-10-23T18:55:16+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 174,
-  "eligible_candidate_count": 100,
+  "candidate_count_raw": 179,
+  "eligible_candidate_count": 104,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4684
+      "total_count": 4693
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1046
+      "total_count": 1047
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
@@ -32,28 +32,28 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2886
+      "total_count": 2891
     },
     {
       "source": "GitHub Search · github-ecommerce-digital-products",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 429
+      "total_count": 431
     },
     {
       "source": "GitHub Search · github-mcp-servers",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2027
+      "total_count": 2032
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3175
+      "total_count": 3182
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
@@ -67,7 +67,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 262
+      "total_count": 263
     },
     {
       "source": "Hacker News · hn-analytics-growth",
@@ -140,203 +140,119 @@
     {
       "source": "Shopify Developer Changelog",
       "kind": "rss",
-      "items_kept": 11,
+      "items_kept": 12,
       "status": "ok"
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-23T12:10:58+00:00",
+    "observed_at_utc": "2026-10-23T13:25:16+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 79,
-    "previously_tracked_repositories_refreshed": 121,
+    "repositories_seen_in_discovery": 82,
+    "previously_tracked_repositories_refreshed": 118,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
-    "repositories_with_20_to_36_hour_baseline": 26,
+    "repositories_with_20_to_36_hour_baseline": 23,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "7366786c561f97cd",
-      "title": "milind-soni/OpenMausBot",
-      "source_url": "https://github.com/milind-soni/OpenMausBot",
-      "verified": true,
-      "final_url": "https://github.com/milind-soni/OpenMausBot",
-      "http_status": 200,
-      "reason": ""
+      "candidate_id": "6410d7b0c2142954",
+      "title": "Show HN: Ternlux – Free, local-first, bring-your-own-key AI pipeline builder",
+      "source_url": "https://www.ternlux.com/online-demo/",
+      "verified": false,
+      "final_url": null,
+      "http_status": null,
+      "reason": "Primary page title/content does not sufficiently match the candidate headline."
     },
     {
-      "candidate_id": "5ae1e4c764cd4d27",
-      "title": "corezoid/corezoid-ai-plugin",
-      "source_url": "https://github.com/corezoid/corezoid-ai-plugin",
-      "verified": true,
-      "final_url": "https://github.com/corezoid/corezoid-ai-plugin",
-      "http_status": 200,
-      "reason": ""
+      "candidate_id": "2188ed970a600391",
+      "title": "Show HN: Used REA to make a free, open-source clone of Arc Browser",
+      "source_url": "https://github.com/amsultan2010/radian-browser",
+      "verified": false,
+      "final_url": null,
+      "http_status": null,
+      "reason": "Primary page title/content does not sufficiently match the candidate headline."
     },
     {
-      "candidate_id": "27d656e853d4d729",
-      "title": "Show HN: MegaKey (standardization and extension of the Hyper and Meh keys)",
-      "source_url": "https://leftium.github.io/megakey/",
+      "candidate_id": "b6bd2783a916c52e",
+      "title": "zed-industries/zed",
+      "source_url": "https://github.com/zed-industries/zed",
       "verified": true,
-      "final_url": "https://leftium.github.io/megakey/",
+      "final_url": "https://github.com/zed-industries/zed",
       "http_status": 200,
       "reason": ""
     }
   ],
-  "rejected_primary_sources": [],
-  "daily_draft_cap": 16,
-  "daily_drafts_already_passed": 1,
-  "outcome": "dry_run_passed",
-  "decision_reason": "At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.",
-  "passing_drafts": [
+  "rejected_primary_sources": [
     {
-      "candidate_id": "7366786c561f97cd",
-      "title": "milind-soni/OpenMausBot",
-      "source": "GitHub Search",
-      "source_kind": "github_repository",
-      "url": "https://github.com/milind-soni/OpenMausBot",
-      "primary_source_verified": true,
-      "primary_source_title": "GitHub - milind-soni/OpenMausBot: Open-source Grok Bot alternative with a virtual machine that bots can use",
-      "primary_source_final_url": "https://github.com/milind-soni/OpenMausBot",
-      "primary_source_http_status": 200,
-      "category": "security_and_self_hosting",
-      "priority_score": 63,
-      "hourly_adjusted_score": 82,
-      "post_text": "OpenMausBot is an open‑source Grok Bot alternative that runs bots inside a virtual machine. Deploy OpenMausBot with Docker to isolate bot execution. https://github.com/milind-soni/OpenMausBot",
-      "fact_sentence": "OpenMausBot is an open‑source Grok Bot alternative that runs bots inside a virtual machine.",
-      "format": "short",
-      "audience": "developers",
-      "angle": "implementation",
-      "rationale": "The primary source explicitly states the product runs bots inside a virtual machine, and the repository topics include docker, indicating Docker deployment is supported.",
-      "evidence_quote": "Open-source Grok Bot alternative with a virtual machine that bots can use - milind-soni/OpenMausBot",
-      "editorial_takeaway": "Deploy OpenMausBot with Docker to isolate bot execution.",
-      "claim_evidence": [
-        {
-          "claim": "OpenMausBot is an open‑source Grok Bot alternative that runs bots inside a virtual machine.",
-          "quote": "Open-source Grok Bot alternative with a virtual machine that bots can use - milind-soni/OpenMausBot"
-        }
-      ],
-      "scores": {
-        "timeliness": 8,
-        "usefulness": 9,
-        "novelty": 7,
-        "evidence": 10,
-        "insight": 8
-      },
-      "editorial_score": 8.6,
-      "character_count": 191,
-      "status": "dry_run_passed_not_published",
-      "published_to_x": false,
-      "automatic_repair_attempt": true,
-      "repair_note": "Repaired from the independent editor's rejection reason; all quality gates run again.",
-      "editorial_review": {
-        "clarity_score": 8,
-        "technical_coherence_score": 8,
-        "takeaway_value_score": 8,
-        "source_faithfulness_score": 8,
-        "originality_score": 8,
-        "reason": "Clear, accurate, and adds a useful deployment tip.",
-        "passed": true
-      }
-    }
-  ],
-  "rejected_drafts": [
-    {
-      "candidate_id": "27d656e853d4d729",
-      "title": "Show HN: MegaKey (standardization and extension of the Hyper and Meh keys)",
+      "candidate_id": "6410d7b0c2142954",
+      "title": "Show HN: Ternlux – Free, local-first, bring-your-own-key AI pipeline builder",
+      "source": "Hacker News",
+      "url": "https://www.ternlux.com/online-demo/",
       "reasons": [
-        "Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.",
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
-        "A supporting quote does not share enough wording with its stated claim",
-        "Supporting quotes cover only 25% of factual wording; narrow the claim or provide a closer primary-source quote"
-      ],
-      "proposed_text": "MegaKey defines five pseudo‑modifier keys that map complex shortcuts to single‑key symbols. Create a Karabiner rule and confirm the new key triggers the intended shortcut. https://leftium.github.io/megakey/",
-      "evidence_quote": "A system of 5 pseudo-modifier keys that works on standard keyboards",
-      "claim_evidence": [
-        {
-          "claim": "MegaKey defines five pseudo‑modifier keys that map complex shortcuts to single‑key symbols.",
-          "quote": "A system of 5 pseudo-modifier keys that works on standard keyboards"
-        }
+        "Primary page title/content does not sufficiently match the candidate headline."
       ]
     },
     {
-      "candidate_id": "7366786c561f97cd",
-      "title": "milind-soni/OpenMausBot",
-      "proposed_text": "OpenMausBot is an open‑source Grok Bot alternative that runs bots inside a virtual machine. Run a sandboxed script in the VM and verify it cannot escape the container. https://github.com/milind-soni/OpenMausBot",
+      "candidate_id": "2188ed970a600391",
+      "title": "Show HN: Used REA to make a free, open-source clone of Arc Browser",
+      "source": "Hacker News",
+      "url": "https://github.com/amsultan2010/radian-browser",
       "reasons": [
-        "Technical coherence and source faithfulness below threshold due to unsupported sandbox claim."
-      ],
-      "editorial_review": {
-        "clarity_score": 8,
-        "technical_coherence_score": 6,
-        "takeaway_value_score": 7,
-        "source_faithfulness_score": 6,
-        "originality_score": 7
-      }
+        "Primary page title/content does not sufficiently match the candidate headline."
+      ]
+    }
+  ],
+  "daily_draft_cap": 16,
+  "daily_drafts_already_passed": 2,
+  "outcome": "skip",
+  "decision_reason": "All generated drafts failed the local evidence/editorial checks; the hour was skipped.",
+  "passing_drafts": [],
+  "rejected_drafts": [
+    {
+      "candidate_id": "6410d7b0c2142954",
+      "title": "Show HN: Ternlux – Free, local-first, bring-your-own-key AI pipeline builder",
+      "source": "Hacker News",
+      "url": "https://www.ternlux.com/online-demo/",
+      "reasons": [
+        "Primary page title/content does not sufficiently match the candidate headline."
+      ]
     },
     {
-      "candidate_id": "5ae1e4c764cd4d27",
-      "title": "corezoid/corezoid-ai-plugin",
-      "proposed_text": "corezoid-ai-plugin hosts a marketplace of AI plugins for Claude Code and Codex. Import a sample playbook and run type checks to confirm plugin schemas are valid. https://github.com/corezoid/corezoid-ai-plugin",
+      "candidate_id": "2188ed970a600391",
+      "title": "Show HN: Used REA to make a free, open-source clone of Arc Browser",
+      "source": "Hacker News",
+      "url": "https://github.com/amsultan2010/radian-browser",
       "reasons": [
-        "Takeaway suggests type checks not documented; source faithfulness insufficient."
+        "Primary page title/content does not sufficiently match the candidate headline."
+      ]
+    },
+    {
+      "candidate_id": "b6bd2783a916c52e",
+      "title": "zed-industries/zed",
+      "reasons": [
+        "Takeaway implies an undocumented product capability: sync. Reframe as a check of documented behavior.",
+        "Editorial takeaway is not specific enough to this candidate's technical/product details."
       ],
-      "editorial_review": {
-        "clarity_score": 8,
-        "technical_coherence_score": 6,
-        "takeaway_value_score": 7,
-        "source_faithfulness_score": 6,
-        "originality_score": 7
-      }
+      "proposed_text": "Zed is a high‑performance, multiplayer code editor built by Atom and Tree‑sitter creators. Run latency tests on shared editing sessions to validate real‑time sync. https://github.com/zed-industries/zed",
+      "evidence_quote": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
+      "claim_evidence": [
+        {
+          "claim": "Zed is a high‑performance, multiplayer code editor built by Atom and Tree‑sitter creators.",
+          "quote": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter."
+        }
+      ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "7366786c561f97cd",
-      "title": "milind-soni/OpenMausBot",
-      "url": "https://github.com/milind-soni/OpenMausBot",
-      "source": "GitHub Search",
-      "primary_category": "security_and_self_hosting",
-      "priority_score": 63,
-      "hourly_adjusted_score": 82,
-      "stars_current": 5475,
-      "stars_delta_24h": 55,
-      "stars_delta_baseline_hours": 20.1,
-      "stars_growth_percent_24h": 1.01,
-      "trend_signal": "measured_star_growth",
-      "published_at": "2026-10-23T12:11:22+00:00",
-      "days_old": 0.0,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "5ae1e4c764cd4d27",
-      "title": "corezoid/corezoid-ai-plugin",
-      "url": "https://github.com/corezoid/corezoid-ai-plugin",
-      "source": "GitHub Search",
-      "primary_category": "ai_and_automation",
-      "priority_score": 72,
-      "hourly_adjusted_score": 76,
-      "stars_current": 74,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "insufficient_history",
-      "published_at": "2026-10-23T12:08:47+00:00",
-      "days_old": 0.0,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "27d656e853d4d729",
-      "title": "Show HN: MegaKey (standardization and extension of the Hyper and Meh keys)",
-      "url": "https://leftium.github.io/megakey/",
+      "id": "6410d7b0c2142954",
+      "title": "Show HN: Ternlux – Free, local-first, bring-your-own-key AI pipeline builder",
+      "url": "https://www.ternlux.com/online-demo/",
       "source": "Hacker News",
-      "primary_category": "product_and_workflow_tools",
+      "primary_category": "ai_and_automation",
       "priority_score": 66,
       "hourly_adjusted_score": 68,
       "stars_current": null,
@@ -344,8 +260,46 @@
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-23T11:49:27+00:00",
-      "days_old": 0.01,
+      "published_at": "2026-10-22T16:33:58+00:00",
+      "days_old": 0.87,
+      "primary_source_verified": false,
+      "primary_source_http_status": null,
+      "primary_source_reason": "Primary page title/content does not sufficiently match the candidate headline."
+    },
+    {
+      "id": "2188ed970a600391",
+      "title": "Show HN: Used REA to make a free, open-source clone of Arc Browser",
+      "url": "https://github.com/amsultan2010/radian-browser",
+      "source": "Hacker News",
+      "primary_category": "product_and_workflow_tools",
+      "priority_score": 62,
+      "hourly_adjusted_score": 64,
+      "stars_current": null,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-23T13:20:35+00:00",
+      "days_old": 0.0,
+      "primary_source_verified": false,
+      "primary_source_http_status": null,
+      "primary_source_reason": "Primary page title/content does not sufficiently match the candidate headline."
+    },
+    {
+      "id": "b6bd2783a916c52e",
+      "title": "zed-industries/zed",
+      "url": "https://github.com/zed-industries/zed",
+      "source": "GitHub Search",
+      "primary_category": "creator_and_indie_business",
+      "priority_score": 55,
+      "hourly_adjusted_score": 64,
+      "stars_current": 92087,
+      "stars_delta_24h": 39,
+      "stars_delta_baseline_hours": 21.6,
+      "stars_growth_percent_24h": 0.04,
+      "trend_signal": "measured_star_growth",
+      "published_at": "2026-10-23T13:24:57+00:00",
+      "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
@@ -353,76 +307,26 @@
   ],
   "automatic_repair": {
     "attempted": true,
-    "drafts_submitted": 1,
-    "repaired_local_passes": 1,
+    "drafts_submitted": 0,
+    "repaired_local_passes": 0,
     "repair_rejections": 0,
     "repair_error": null,
-    "editorial_repair_attempted": true,
-    "editorial_repair_drafts_submitted": 1,
+    "editorial_repair_attempted": false,
+    "editorial_repair_drafts_submitted": 0,
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 3,
-    "submitted_for_independent_review": 3,
-    "passed_independent_review": 1,
-    "rejected_by_independent_review": 2,
+    "locally_valid_drafts": 0,
+    "submitted_for_independent_review": 0,
+    "passed_independent_review": 0,
+    "rejected_by_independent_review": 0,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
-  "recommended_draft": {
-    "candidate_id": "7366786c561f97cd",
-    "title": "milind-soni/OpenMausBot",
-    "source": "GitHub Search",
-    "source_kind": "github_repository",
-    "url": "https://github.com/milind-soni/OpenMausBot",
-    "primary_source_verified": true,
-    "primary_source_title": "GitHub - milind-soni/OpenMausBot: Open-source Grok Bot alternative with a virtual machine that bots can use",
-    "primary_source_final_url": "https://github.com/milind-soni/OpenMausBot",
-    "primary_source_http_status": 200,
-    "category": "security_and_self_hosting",
-    "priority_score": 63,
-    "hourly_adjusted_score": 82,
-    "post_text": "OpenMausBot is an open‑source Grok Bot alternative that runs bots inside a virtual machine. Deploy OpenMausBot with Docker to isolate bot execution. https://github.com/milind-soni/OpenMausBot",
-    "fact_sentence": "OpenMausBot is an open‑source Grok Bot alternative that runs bots inside a virtual machine.",
-    "format": "short",
-    "audience": "developers",
-    "angle": "implementation",
-    "rationale": "The primary source explicitly states the product runs bots inside a virtual machine, and the repository topics include docker, indicating Docker deployment is supported.",
-    "evidence_quote": "Open-source Grok Bot alternative with a virtual machine that bots can use - milind-soni/OpenMausBot",
-    "editorial_takeaway": "Deploy OpenMausBot with Docker to isolate bot execution.",
-    "claim_evidence": [
-      {
-        "claim": "OpenMausBot is an open‑source Grok Bot alternative that runs bots inside a virtual machine.",
-        "quote": "Open-source Grok Bot alternative with a virtual machine that bots can use - milind-soni/OpenMausBot"
-      }
-    ],
-    "scores": {
-      "timeliness": 8,
-      "usefulness": 9,
-      "novelty": 7,
-      "evidence": 10,
-      "insight": 8
-    },
-    "editorial_score": 8.6,
-    "character_count": 191,
-    "status": "dry_run_passed_not_published",
-    "published_to_x": false,
-    "automatic_repair_attempt": true,
-    "repair_note": "Repaired from the independent editor's rejection reason; all quality gates run again.",
-    "editorial_review": {
-      "clarity_score": 8,
-      "technical_coherence_score": 8,
-      "takeaway_value_score": 8,
-      "source_faithfulness_score": 8,
-      "originality_score": 8,
-      "reason": "Clear, accurate, and adds a useful deployment tip.",
-      "passed": true
-    }
-  },
   "state_summary": {
     "used_candidates_in_cooldown": 2,
-    "recently_attempted_candidates": 19,
+    "recently_attempted_candidates": 20,
     "recent_draft_passes_today": 2
   }
 }
