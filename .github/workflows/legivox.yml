@@ -80,6 +80,7 @@ jobs:
           # The feature flag defaults to false. Until deliberately enabled after review,
           # the existing RSS/Groq publisher path remains unchanged.
           if [ "${USE_MULTIDOMAIN_PUBLISHING,,}" = "true" ]; then
+            unset GROQ_API_KEY
             echo "Multidomain source-grounded publishing is enabled for this slot."
             report_path="$RUNNER_TEMP/hourly-latest.json"
             rm -f "$report_path"
