@@ -8,12 +8,15 @@ on:
         required: true
         type: boolean
         default: false
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/legivox.yml
   schedule:
-    # Plan at 06:00 IST; the publishing jobs use randomized times within the next hour.
+    # Plan at 06:00 IST; publish hourly from 08:00 through 23:00 IST (cron is UTC).
     - cron: '30 0 * * *'
-    - cron: '30 3 * * *'
-    - cron: '30 7 * * *'
-    - cron: '30 13 * * *'
+    - cron: '30 2-17 * * *'
 
 permissions:
   contents: write
@@ -24,6 +27,7 @@ concurrency:
 
 jobs:
   legivox:
+    if: ${{ github.event_name != 'push' || contains(github.event.head_commit.message, '[publish-test]') }}
     runs-on: ubuntu-latest
     timeout-minutes: 60
     steps:
@@ -59,26 +63,33 @@ jobs:
           TWEETKIT_COOKIE: ${{ secrets.X_SESSION_COOKIE }}
         run: python scripts/prepare_daily_plan.py
 
-      - name: Prepare quality-gated post for scheduled slot
+      - name: Prepare quality-gated post for hourly slot
         id: prepare_rss
-        if: github.event.schedule == '30 3 * * *' || github.event.schedule == '30 7 * * *' || github.event.schedule == '30 13 * * *' || (github.event_name == 'workflow_dispatch' && inputs.publish_now == true)
+        if: (github.event_name == 'schedule' && github.event.schedule != '30 0 * * *') || (github.event_name == 'workflow_dispatch' && inputs.publish_now == true) || (github.event_name == 'push' && contains(github.event.head_commit.message, '[publish-test]'))
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           GROQ_MODEL: openai/gpt-oss-20b
-          USE_MULTIDOMAIN_PUBLISHING: ${{ vars.LEGIVOX_MULTIDOMAIN_PUBLISHING_ENABLED || 'false' }}
-          SCHEDULE: ${{ github.event.schedule || (inputs.publish_now == true && 'live-test') }}
+          USE_MULTIDOMAIN_PUBLISHING: ${{ vars.LEGIVOX_MULTIDOMAIN_PUBLISHING_ENABLED || 'true' }}
+          SCHEDULE: ${{ github.event.schedule || (inputs.publish_now == true && 'live-test') || (github.event_name == 'push' && contains(github.event.head_commit.message, '[publish-test]') && 'live-test') }}
         run: |
           case "$SCHEDULE" in
-            '30 3 * * *') slot=0 ;;
-            '30 7 * * *') slot=1 ;;
-            '30 13 * * *') slot=2 ;;
-            'live-test') slot=0 ;;
+            '30 2-17 * * *'|'live-test') ;;
             *) echo 'Unexpected schedule; refusing to prepare a post.' >&2; exit 1 ;;
           esac
+          # Scheduled jobs run at :00 IST. Use the current local hour as the window,
+          # and cycle legacy slot IDs 0–2 because the shared publisher schema uses them.
+          hour=$(TZ=Asia/Kolkata date +%H)
+          hour=$((10#$hour))
+          if [ "$hour" -lt 8 ] || [ "$hour" -gt 23 ]; then
+            echo "Refusing to post outside the 08:00–23:00 IST schedule (local hour=$hour)." >&2
+            exit 1
+          fi
+          slot=$(((hour - 8) % 3))
           echo "slot=$slot" >> "$GITHUB_OUTPUT"
+          echo "hour=$hour" >> "$GITHUB_OUTPUT"
 
-          # The feature flag defaults to false. Until deliberately enabled after review,
-          # the existing RSS/Groq publisher path remains unchanged.
+          # Multidomain discovery is enabled by default after rollout. An explicit
+          # repository Actions variable value of "false" keeps the legacy path available.
           if [ "${USE_MULTIDOMAIN_PUBLISHING,,}" = "true" ]; then
             unset GROQ_API_KEY
             echo "Multidomain source-grounded publishing is enabled for this slot."
@@ -116,11 +127,12 @@ jobs:
 
       - name: Wait for randomized time inside the publishing window
         id: random_window
-        if: success() && steps.prepare_rss.outputs.skip != 'true' && steps.prepare_rss.outputs.slot != '' && (github.event_name != 'workflow_dispatch' || inputs.publish_now != true)
+        if: success() && steps.prepare_rss.outputs.skip != 'true' && steps.prepare_rss.outputs.slot != '' && github.event_name == 'schedule'
         env:
           SLOT: ${{ steps.prepare_rss.outputs.slot }}
+          WINDOW_HOUR: ${{ steps.prepare_rss.outputs.hour }}
         run: |
-          if python scripts/randomized_slot.py --slot "$SLOT"; then
+          if python scripts/randomized_slot.py --slot "$SLOT" --hour "$WINDOW_HOUR"; then
             echo "skip=false" >> "$GITHUB_OUTPUT"
           else
             status=$?
@@ -132,7 +144,7 @@ jobs:
             exit "$status"
           fi
 
-      - name: Publish quality-gated RSS + Groq post
+      - name: Publish quality-gated post to X
         if: success() && steps.prepare_rss.outputs.skip != 'true' && steps.random_window.outputs.skip != 'true' && steps.prepare_rss.outputs.slot != ''
         env:
           TWEETKIT_COOKIE: ${{ secrets.X_SESSION_COOKIE }}
