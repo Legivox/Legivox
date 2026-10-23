@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       publish_now:
-        description: 'Publish one quality-gated RSS/Groq post to X immediately (live production)'
+        description: 'Publish one quality-gated post to X immediately (live production; uses multidomain discovery when enabled)'
         required: true
         type: boolean
         default: false
@@ -39,7 +39,7 @@ jobs:
 
       - name: Validate scripts and idea library
         run: |
-          python -m py_compile scripts/publish_next.py scripts/prepare_daily_plan.py scripts/build_queue.py scripts/rss_groq.py scripts/randomized_slot.py
+          python -m py_compile scripts/publish_next.py scripts/prepare_daily_plan.py scripts/prepare_multidomain_plan.py scripts/plan_sources.py scripts/build_queue.py scripts/rss_groq.py scripts/randomized_slot.py
           python -m json.tool data/ideas.json > /dev/null
 
       - name: Install publisher from the reviewed source commit
@@ -59,12 +59,13 @@ jobs:
           TWEETKIT_COOKIE: ${{ secrets.X_SESSION_COOKIE }}
         run: python scripts/prepare_daily_plan.py
 
-      - name: Prepare fresh RSS + Groq post for scheduled slot
+      - name: Prepare quality-gated post for scheduled slot
         id: prepare_rss
         if: github.event.schedule == '30 3 * * *' || github.event.schedule == '30 7 * * *' || github.event.schedule == '30 13 * * *' || (github.event_name == 'workflow_dispatch' && inputs.publish_now == true)
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           GROQ_MODEL: openai/gpt-oss-20b
+          USE_MULTIDOMAIN_PUBLISHING: ${{ vars.LEGIVOX_MULTIDOMAIN_PUBLISHING_ENABLED || 'false' }}
           SCHEDULE: ${{ github.event.schedule || (inputs.publish_now == true && 'live-test') }}
         run: |
           case "$SCHEDULE" in
@@ -75,16 +76,41 @@ jobs:
             *) echo 'Unexpected schedule; refusing to prepare a post.' >&2; exit 1 ;;
           esac
           echo "slot=$slot" >> "$GITHUB_OUTPUT"
-          if python scripts/rss_groq.py --prepare-single-post --slot "$slot"; then
-            echo "skip=false" >> "$GITHUB_OUTPUT"
-          else
-            status=$?
-            if [ "$status" -eq 2 ]; then
-              echo "skip=true" >> "$GITHUB_OUTPUT"
-              echo 'No draft passed the quality gate. This slot will be skipped.'
-              exit 0
+
+          # The feature flag defaults to false. Until deliberately enabled after review,
+          # the existing RSS/Groq publisher path remains unchanged.
+          if [ "${USE_MULTIDOMAIN_PUBLISHING,,}" = "true" ]; then
+            echo "Multidomain source-grounded publishing is enabled for this slot."
+            report_path="$RUNNER_TEMP/hourly-latest.json"
+            rm -f "$report_path"
+            if git fetch --no-tags origin legivox-hourly-state; then
+              git show origin/legivox-hourly-state:output/discovery/hourly-latest.json > "$report_path" || rm -f "$report_path"
             fi
-            exit "$status"
+
+            if python scripts/prepare_multidomain_plan.py --input "$report_path" --slot "$slot" --max-age-minutes 90; then
+              echo "skip=false" >> "$GITHUB_OUTPUT"
+            else
+              status=$?
+              if [ "$status" -eq 2 ]; then
+                echo "skip=true" >> "$GITHUB_OUTPUT"
+                echo 'No fresh discovery report passed every gate. This slot will be skipped; legacy RSS fallback is disabled while the feature flag is on.'
+                exit 0
+              fi
+              exit "$status"
+            fi
+          else
+            echo "Using the existing RSS/Groq publisher path (multidomain feature flag is false)."
+            if python scripts/rss_groq.py --prepare-single-post --slot "$slot"; then
+              echo "skip=false" >> "$GITHUB_OUTPUT"
+            else
+              status=$?
+              if [ "$status" -eq 2 ]; then
+                echo "skip=true" >> "$GITHUB_OUTPUT"
+                echo 'No draft passed the quality gate. This slot will be skipped.'
+                exit 0
+              fi
+              exit "$status"
+            fi
           fi
 
       - name: Wait for randomized time inside the publishing window
