@@ -118,6 +118,23 @@ class RandomizedWindowTests(unittest.TestCase):
         self.assertLessEqual(target, start + timedelta(minutes=45))
         self.assertLess(target, end)
 
+    def test_hourly_window_supports_last_slot_through_midnight(self) -> None:
+        now = datetime(2026, 10, 18, 22, 30, tzinfo=IST)
+        start, end = window_bounds(now, 0, hour=23)
+        self.assertEqual(start, datetime(2026, 10, 18, 23, 0, tzinfo=IST))
+        self.assertEqual(end, datetime(2026, 10, 19, 0, 0, tzinfo=IST))
+        self.assertEqual(end - start, timedelta(hours=1))
+
+    def test_hourly_target_uses_requested_ist_window(self) -> None:
+        now = datetime(2026, 10, 18, 16, 5, tzinfo=IST)
+        target = choose_target(now, 2, target_offset_seconds=10 * 60, hour=16)
+        self.assertEqual(target, datetime(2026, 10, 18, 16, 10, tzinfo=IST))
+
+    def test_hourly_window_rejects_hours_outside_production_schedule(self) -> None:
+        now = datetime(2026, 10, 18, 8, 30, tzinfo=IST)
+        with self.assertRaisesRegex(ValueError, "between 8 and 23"):
+            window_bounds(now, 0, hour=7)
+
 
 if __name__ == "__main__":
     unittest.main()
