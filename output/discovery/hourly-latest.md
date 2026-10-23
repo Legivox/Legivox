@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-23T16:15:31+05:30
+- Run time (IST): 2026-10-23T16:18:13+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 106
-- Independent editorial review: 0 draft(s) passed / 3 rejected
+- Candidate pool after freshness/diversity filters: 107
+- Independent editorial review: 0 draft(s) passed / 0 rejected
 - Drafts passing local checks: 0
 - Outcome: **skip**
-- Decision reason: Every draft submitted for independent editorial review was rejected; The hour was skipped.
+- Decision reason: All generated drafts failed the local evidence/editorial checks; the hour was skipped.
 
 ## Source health
 
@@ -37,48 +37,60 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 81
-- Previously tracked repositories refreshed outside search results: 119
+- Repositories seen in this discovery run: 85
+- Previously tracked repositories refreshed outside search results: 115
 - Refresh failures: 0
-- Star snapshots recorded this run: 200
-- Repositories with a 20–36 hour comparison baseline: 18
+- Star snapshots recorded this run: 37
+- Repositories with a 20–36 hour comparison baseline: 16
 - First observations are baseline samples, not evidence of trending. Star velocity is reported only when a historical comparison exists.
 
 ## Primary-source verification
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| morluto/rea | yes | 200 | https://github.com/morluto/rea |
-| Show HN: OnKey – I'm a bad singer, so I built an app to show where I'm off-key | yes | 200 | https://github.com/dsmurrell/onkey |
-| leeguooooo/iphone-use | yes | 200 | https://github.com/leeguooooo/iphone-use |
+| melgarafael/DeskcommCRM | yes | 200 | https://github.com/melgarafael/DeskcommCRM |
+| lemma-work/lemma-platform | yes | 200 | https://github.com/lemma-work/lemma-platform |
+| Show HN: Orbit – A local macOS workspace for side projects | yes | 200 | https://orbitdesktop.com/ |
 
 ## Selected draft candidates
 
-No draft cleared the complete local and independent-editor gate. See the decision reason and rejected-draft section for locally valid drafts that were rejected, not reviewed, or blocked by a review error.
+No candidate produced a draft that passed every local check. Skipping is intentional.
 
 ## Automatic repair attempt
 
 - Attempted: yes
-- Repaired drafts submitted: 0
+- Repaired drafts submitted: 2
 - Repaired drafts that passed local validation: 0
-- Repaired drafts rejected: 0
+- Repaired drafts rejected: 2
 - Repair error: none
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
-- morluto/rea: Post repeats headline, lacks concrete evidence of agent skill validation, and offers no actionable test.
-  - Rejected text: rea lets AI agents reverse‑engineer binaries from app behavior down to native code. Validate agent skill accuracy on a known binary before scaling. https://github.com/morluto/rea
-- Show HN: OnKey – I'm a bad singer, so I built an app to show where I'm off-key: Claim is accurate but takeaway is generic; no specific test or metric provided.
-  - Rejected text: onkey is a free, open‑source Mac singing trainer that listens to music for pitch feedback. Run pitch‑detection tests on a sample track to confirm accuracy. https://github.com/dsmurrell/onkey
-- leeguooooo/iphone-use: Post states feature but does not explain token usage measurement or provide concrete guidance.
-  - Rejected text: iphone‑use lets AI agents drive a real iPhone via USB or Wi‑Fi with a custom XCTest runner. Check token usage per action to ensure cost‑efficiency. https://github.com/leeguooooo/iphone-use
+- melgarafael/DeskcommCRM: Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: DeskcommCRM offers native AI agents and WhatsApp integration. Validate that AI agent responses match your sales scripts before deployment. https://github.com/melgarafael/DeskcommCRM
+  - Model evidence quote: “Open-source AI sales OS — self-hosted CRM with native AI agents + WhatsApp (WAHA).”
+  - Claim support: DeskcommCRM offers native AI agents and WhatsApp integration. ← “Open-source AI sales OS — self-hosted CRM with native AI agents + WhatsApp (WAHA).”
+- lemma-work/lemma-platform: The factual opening bundles multiple features; narrow it to one capability.; Fact sentence is too long; narrow it to one source-backed capability.
+  - Rejected text: Lemma-platform is a multiplayer harness for shared agents and workflows across Slack, Telegram, WhatsApp, Teams, Email. Test cross‑platform message routing to ensure consistency across channels. https://github.com/lemma-work/lemma-platform
+  - Model evidence quote: “Multiplayer harness that shapes around your work. Agents, apps and workflows your team shares, used from Slack, Telegram, WhatsApp, Teams, Email”
+  - Claim support: Lemma-platform is a multiplayer harness for shared agents and workflows across Slack, Telegram, WhatsApp, Teams, Email. ← “Multiplayer harness that shapes around your work. Agents, apps and workflows your team shares, used from Slack, Telegram, WhatsApp, Teams, Email”
+- Show HN: Orbit – A local macOS workspace for side projects: The factual opening bundles multiple features; narrow it to one capability.; Takeaway implies an undocumented product capability: sync. Reframe as a check of documented behavior.; Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
+  - Rejected text: Orbit bundles repositories, tasks, notes, and files into a single macOS workspace. Sync Orbit with your AI client via MCP to auto‑populate project context. https://orbitdesktop.com/
+  - Model evidence quote: “Pick up where you left off. Orbit keeps your repositories, tasks, notes, and files together in one local workspace for developers on macOS.”
+  - Claim support: Orbit bundles repositories, tasks, notes, and files into a single macOS workspace. ← “Pick up where you left off. Orbit keeps your repositories, tasks, notes, and files together in one local workspace for developers on macOS.”
+- Show HN: Orbit – A local macOS workspace for side projects: The factual opening bundles multiple features; narrow it to one capability.
+  - Rejected text: Orbit keeps repositories, tasks, notes, and files together in one macOS workspace. Verify that a project’s local workspace persists after a system reboot. https://orbitdesktop.com/
+  - Model evidence quote: “Orbit keeps your repositories, tasks, notes, and files together in one local workspace for developers on macOS.”
+- lemma-work/lemma-platform: No claim-by-claim supporting evidence was provided; Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: Lemma‑platform is a multiplayer harness for shared agents and workflows. Test that a workflow triggered in Slack also appears in Teams. https://github.com/lemma-work/lemma-platform
+  - Model evidence quote: “Multiplayer harness that shapes around your work. Agents, apps and workflows your team shares, used from Slack, Telegram, WhatsApp, Teams, Email”
 
 ## Top discovery candidates considered
 
-- morluto/rea | GitHub Search | developer_tools | raw 63, adjusted 82 | current stars 369736 | GitHub stars +10243 over about 29.3h | https://github.com/morluto/rea
-- Show HN: OnKey – I'm a bad singer, so I built an app to show where I'm off-key | Hacker News | product_and_workflow_tools | raw 75, adjusted 77 | https://github.com/dsmurrell/onkey
-- leeguooooo/iphone-use | GitHub Search | ai_and_automation | raw 72, adjusted 76 | current stars 334 | GitHub star trend: building baseline | https://github.com/leeguooooo/iphone-use
+- melgarafael/DeskcommCRM | GitHub Search | ai_and_automation | raw 72, adjusted 76 | current stars 4814 | GitHub star trend: building baseline | https://github.com/melgarafael/DeskcommCRM
+- lemma-work/lemma-platform | GitHub Search | ai_and_automation | raw 71, adjusted 75 | current stars 629 | GitHub star trend: building baseline | https://github.com/lemma-work/lemma-platform
+- Show HN: Orbit – A local macOS workspace for side projects | Hacker News | product_and_workflow_tools | raw 68, adjusted 70 | https://orbitdesktop.com/
 
 ## Safety and interpretation
 
