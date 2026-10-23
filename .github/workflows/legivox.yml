@@ -13,6 +13,7 @@ on:
       - main
     paths:
       - .github/workflows/legivox.yml
+    # A commit message tagged [publish-test] opts into one guarded live smoke attempt.
   schedule:
     # Plan at 06:00 IST; individual cron entries let us detect delayed hourly runs.
     - cron: '30 0 * * *'
