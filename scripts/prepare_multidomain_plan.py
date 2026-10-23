@@ -30,7 +30,7 @@ REQUIRED_EDITOR_SCORES = (
     "source_faithfulness_score",
     "originality_score",
 )
-URL_RE = re.compile(r"https://[^\\s]+")
+URL_RE = re.compile(r"https://[^\s]+")
 
 
 class ReportRejected(ValueError):
