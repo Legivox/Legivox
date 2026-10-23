@@ -88,6 +88,26 @@ jobs:
       - name: Run full unit and publisher integration test suite
         run: python -m unittest discover -s tests -v
 
+      - name: Exercise non-publishing plan conversion against saved report
+        run: |
+          report_path="$RUNNER_TEMP/hourly-latest.json"
+          plan_path="$RUNNER_TEMP/daily-plan.json"
+          rm -f "$report_path" "$plan_path"
+          if git fetch --no-tags origin legivox-hourly-state && git show origin/legivox-hourly-state:output/discovery/hourly-latest.json > "$report_path"; then
+            if python scripts/prepare_multidomain_plan.py --input "$report_path" --output "$plan_path" --slot 0 --max-age-minutes 90; then
+              python -c 'import json,sys; p=json.load(open(sys.argv[1], encoding="utf-8")); assert p["research_source"] == "Multidomain discovery + independent editorial review"; assert len(p["posts"]) == 1 and p["posts"][0]["slot"] == 0; assert len(p["posts"][0]["text"]) <= 280; assert p["posts"][0]["image_query"] == ""; print("Saved-report handoff passed; plan prepared only in RUNNER_TEMP.")' "$plan_path"
+            else
+              status=$?
+              if [ "$status" -eq 2 ]; then
+                echo "Saved report is stale or rejected; converter safely declined to prepare a plan."
+              else
+                exit "$status"
+              fi
+            fi
+          else
+            echo "No saved hourly report could be fetched; converter's missing-report path is covered by unit tests."
+          fi
+
       - name: Run read-only live discovery
         env:
           GITHUB_TOKEN: ${{ github.token }}
