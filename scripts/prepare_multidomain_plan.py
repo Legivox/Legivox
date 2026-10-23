@@ -145,11 +145,11 @@ def validate_report(
     if source_url != final_url:
         raise ReportRejected("Draft URL differs from the URL verified by the primary-source check.")
 
+    if len(post_text) > 280:
+        raise ReportRejected(f"Post copy is too long ({len(post_text)} characters).")
     found_urls = URL_RE.findall(post_text)
     if found_urls != [source_url]:
         raise ReportRejected("Post copy must contain exactly its own verified primary-source URL.")
-    if len(post_text) > 280:
-        raise ReportRejected(f"Post copy is too long ({len(post_text)} characters).")
     if int(draft.get("character_count", -1)) != len(post_text):
         raise ReportRejected("Recorded character count does not match the proposed post text.")
     if not isinstance(claim_evidence, list) or not any(
@@ -162,21 +162,27 @@ def validate_report(
     if not isinstance(scores, dict):
         raise ReportRejected("Recommended draft is missing model quality scores.")
     try:
-        if any(float(scores.get(name, 0)) < 7 for name in ("timeliness", "usefulness", "novelty", "evidence", "insight")):
-            raise ReportRejected("At least one model quality score is below 7/10.")
-        if float(draft.get("editorial_score", 0)) < 7:
-            raise ReportRejected("Overall editorial score is below 7/10.")
+        model_scores = [
+            float(scores.get(name, 0))
+            for name in ("timeliness", "usefulness", "novelty", "evidence", "insight")
+        ]
+        overall_score = float(draft.get("editorial_score", 0))
     except (TypeError, ValueError) as exc:
         raise ReportRejected("Recommended draft contains invalid model quality scores.") from exc
+    if any(score < 7 for score in model_scores):
+        raise ReportRejected("At least one model quality score is below 7/10.")
+    if overall_score < 7:
+        raise ReportRejected("Overall editorial score is below 7/10.")
 
     editor = draft.get("editorial_review")
     if not isinstance(editor, dict) or editor.get("passed") is not True:
         raise ReportRejected("Recommended draft did not pass the independent editorial review.")
     try:
-        if any(float(editor.get(name, 0)) < 7 for name in REQUIRED_EDITOR_SCORES):
-            raise ReportRejected("At least one independent editor score is below 7/10.")
+        editor_scores = [float(editor.get(name, 0)) for name in REQUIRED_EDITOR_SCORES]
     except (TypeError, ValueError) as exc:
         raise ReportRejected("Recommended draft contains invalid independent editor scores.") from exc
+    if any(score < 7 for score in editor_scores):
+        raise ReportRejected("At least one independent editor score is below 7/10.")
 
     idea_id = "multidomain-" + candidate_id
     research_score = round(float(draft["editorial_score"]), 2)
