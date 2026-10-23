@@ -1,10 +1,10 @@
 {
-  "generated_at_ist": "2026-10-23T16:24:24+05:30",
-  "run_at_ist": "2026-10-23T16:24:24+05:30",
+  "generated_at_ist": "2026-10-23T16:26:11+05:30",
+  "run_at_ist": "2026-10-23T16:26:11+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 171,
-  "eligible_candidate_count": 96,
+  "candidate_count_raw": 174,
+  "eligible_candidate_count": 97,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
@@ -46,7 +46,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2019
+      "total_count": 2020
     },
     {
       "source": "GitHub Search · github-self-hosted",
@@ -114,7 +114,7 @@
     {
       "source": "Hacker News · hn-shopify",
       "kind": "hacker_news",
-      "items_kept": 8,
+      "items_kept": 10,
       "status": "ok",
       "total_count": 10
     },
@@ -145,180 +145,222 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-23T10:54:24+00:00",
+    "observed_at_utc": "2026-10-23T10:56:11+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 78,
-    "previously_tracked_repositories_refreshed": 122,
+    "repositories_seen_in_discovery": 79,
+    "previously_tracked_repositories_refreshed": 121,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 21,
-    "repositories_with_20_to_36_hour_baseline": 16,
+    "repositories_with_20_to_36_hour_baseline": 11,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "c37165a31cd3fc39",
-      "title": "n8n-io/n8n",
-      "source_url": "https://github.com/n8n-io/n8n",
+      "candidate_id": "c8939df8f47b6405",
+      "title": "afjcjsbx/picoclaw",
+      "source_url": "https://github.com/afjcjsbx/picoclaw",
       "verified": true,
-      "final_url": "https://github.com/n8n-io/n8n",
+      "final_url": "https://github.com/afjcjsbx/picoclaw",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "85c1bbf09d8dd773",
-      "title": "shogo-labs/shogo-ai",
-      "source_url": "https://github.com/shogo-labs/shogo-ai",
+      "candidate_id": "e8a7d399fdede511",
+      "title": "sickn33/agentic-awesome-skills",
+      "source_url": "https://github.com/sickn33/agentic-awesome-skills",
       "verified": true,
-      "final_url": "https://github.com/shogo-labs/shogo-ai",
+      "final_url": "https://github.com/sickn33/agentic-awesome-skills",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "ed01f8159f168dd6",
-      "title": "Show HN: Airlock, which sandboxes AI agents, is available on the Mac App Store",
-      "source_url": "https://airlock.sorrel.systems",
-      "verified": true,
-      "final_url": "https://airlock.sorrel.systems",
-      "http_status": 200,
-      "reason": ""
+      "candidate_id": "6410d7b0c2142954",
+      "title": "Show HN: Ternlux – Free, local-first, bring-your-own-key AI pipeline builder",
+      "source_url": "https://www.ternlux.com/online-demo/",
+      "verified": false,
+      "final_url": null,
+      "http_status": null,
+      "reason": "Primary page title/content does not sufficiently match the candidate headline."
     }
   ],
-  "rejected_primary_sources": [],
+  "rejected_primary_sources": [
+    {
+      "candidate_id": "6410d7b0c2142954",
+      "title": "Show HN: Ternlux – Free, local-first, bring-your-own-key AI pipeline builder",
+      "source": "Hacker News",
+      "url": "https://www.ternlux.com/online-demo/",
+      "reasons": [
+        "Primary page title/content does not sufficiently match the candidate headline."
+      ]
+    }
+  ],
   "daily_draft_cap": 16,
   "daily_drafts_already_passed": 1,
   "outcome": "skip",
-  "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
+  "decision_reason": "All generated drafts failed the local evidence/editorial checks; the hour was skipped.",
   "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "ed01f8159f168dd6",
-      "title": "Show HN: Airlock, which sandboxes AI agents, is available on the Mac App Store",
+      "candidate_id": "6410d7b0c2142954",
+      "title": "Show HN: Ternlux – Free, local-first, bring-your-own-key AI pipeline builder",
+      "source": "Hacker News",
+      "url": "https://www.ternlux.com/online-demo/",
       "reasons": [
-        "Supporting quotes cover only 57% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Primary page title/content does not sufficiently match the candidate headline."
+      ]
+    },
+    {
+      "candidate_id": "c8939df8f47b6405",
+      "title": "afjcjsbx/picoclaw",
+      "reasons": [
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Fact sentence is too long; narrow it to one source-backed capability.",
+        "Unsupported numeric claim(s): 512"
       ],
-      "proposed_text": "Airlock runs Claude or Codex in a VM on macOS and logs all changes. After running, inspect the diff to ensure only intended files were modified. https://airlock.sorrel.systems",
-      "evidence_quote": "Airlock runs Claude Code or Codex in a virtual machine on your Mac.",
+      "proposed_text": "Picoclaw is an ultra‑lightweight, open‑source, self‑hosted personal AI assistant written in Go for RISC‑V and SBCs. Run a 512‑MB memory test to confirm it stays below the target before deployment. https://github.com/afjcjsbx/picoclaw",
+      "evidence_quote": "Ultra-lightweight, open-source, self-hosted personal AI assistant in Go for RISC-V, SBCs",
       "claim_evidence": [
         {
-          "claim": "Airlock runs Claude or Codex in a VM on macOS and logs all changes.",
-          "quote": "Airlock runs Claude Code or Codex in a virtual machine on your Mac."
+          "claim": "Picoclaw is an ultra‑lightweight, open‑source, self‑hosted personal AI assistant written in Go for RISC‑V and SBCs.",
+          "quote": "Ultra-lightweight, open-source, self-hosted personal AI assistant in Go for RISC-V, SBCs"
         }
       ]
     },
     {
-      "candidate_id": "c37165a31cd3fc39",
-      "title": "n8n-io/n8n",
-      "proposed_text": "n8n is a fair‑code workflow automation platform with native AI capabilities. Run a simple AI node and verify it triggers on schedule. https://github.com/n8n-io/n8n",
+      "candidate_id": "e8a7d399fdede511",
+      "title": "sickn33/agentic-awesome-skills",
       "reasons": [
-        "Takeaway assumes schedule trigger behavior not explicitly documented; no concrete test guidance."
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Fact sentence is too long; narrow it to one source-backed capability.",
+        "Editorial takeaway is too long; keep the analysis concrete and concise."
       ],
-      "editorial_review": {
-        "clarity_score": 6,
-        "technical_coherence_score": 5,
-        "takeaway_value_score": 4,
-        "source_faithfulness_score": 7,
-        "originality_score": 5
-      }
+      "proposed_text": "AAS Core is a local, agent‑first control plane for catalog discovery, selection, stack validation, and planning with 2,600+ skills. Validate stack‑validation CLI output against a known good stack before pushing to production. https://github.com/sickn33/agentic-awesome-skills",
+      "evidence_quote": "AAS Core is the local, agent‑first control plane for complete catalog discovery, agent‑owned selection, stack validation, and planning, backed by 2,600+ agentic skills.",
+      "claim_evidence": [
+        {
+          "claim": "AAS Core is a local, agent‑first control plane for catalog discovery, selection, stack validation, and planning with 2,600+ skills.",
+          "quote": "AAS Core is the local, agent‑first control plane for complete catalog discovery, agent‑owned selection, stack validation, and planning, backed by 2,600+ agentic skills"
+        }
+      ]
     },
     {
-      "candidate_id": "85c1bbf09d8dd773",
-      "title": "shogo-labs/shogo-ai",
-      "proposed_text": "shogo-ai is an open‑source platform for building and running AI agents. Check that the SDK can instantiate an agent and connect to an LLM endpoint. https://github.com/shogo-labs/shogo-ai",
+      "candidate_id": "c8939df8f47b6405",
+      "title": "afjcjsbx/picoclaw",
       "reasons": [
-        "Takeaway presumes SDK can connect to an LLM endpoint, not mentioned in source; lacks concrete verification steps."
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Fact sentence is too long; narrow it to one source-backed capability.",
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "Unsupported numeric claim(s): 512mb"
       ],
-      "editorial_review": {
-        "clarity_score": 6,
-        "technical_coherence_score": 5,
-        "takeaway_value_score": 4,
-        "source_faithfulness_score": 7,
-        "originality_score": 5
-      }
+      "proposed_text": "Picoclaw is an ultra‑lightweight, open‑source, self‑hosted personal AI assistant written in Go for RISC‑V and SBCs. Use the CLI to verify Picoclaw’s memory footprint stays within the typical 512 MB limit of SBCs before deployment. https://github.com/afjcjsbx/picoclaw",
+      "evidence_quote": "Ultra-lightweight, open-source, self-hosted personal AI assistant in Go for RISC‑V, SBCs",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Fact sentence is too long; narrow it to one source-backed capability.",
+        "Unsupported numeric claim(s): 512"
+      ]
+    },
+    {
+      "candidate_id": "e8a7d399fdede511",
+      "title": "sickn33/agentic-awesome-skills",
+      "reasons": [
+        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.",
+        "Editorial takeaway is too long; keep the analysis concrete and concise."
+      ],
+      "proposed_text": "AAS Core is a local, agent‑first control plane for catalog discovery. Run the CLI’s catalog list command to confirm available skills before selecting for a stack. https://github.com/sickn33/agentic-awesome-skills",
+      "evidence_quote": "AAS Core is the local, agent‑first control plane for complete catalog discovery, agent‑owned selection, stack validation, and planning, backed by 2,600+ agentic skills",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Fact sentence is too long; narrow it to one source-backed capability.",
+        "Editorial takeaway is too long; keep the analysis concrete and concise."
+      ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "c37165a31cd3fc39",
-      "title": "n8n-io/n8n",
-      "url": "https://github.com/n8n-io/n8n",
+      "id": "c8939df8f47b6405",
+      "title": "afjcjsbx/picoclaw",
+      "url": "https://github.com/afjcjsbx/picoclaw",
       "source": "GitHub Search",
       "primary_category": "ai_and_automation",
-      "priority_score": 71,
-      "hourly_adjusted_score": 75,
-      "stars_current": 208374,
+      "priority_score": 72,
+      "hourly_adjusted_score": 76,
+      "stars_current": 38,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "insufficient_history",
-      "published_at": "2026-10-23T10:53:50+00:00",
+      "published_at": "2026-10-23T10:56:09+00:00",
       "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "85c1bbf09d8dd773",
-      "title": "shogo-labs/shogo-ai",
-      "url": "https://github.com/shogo-labs/shogo-ai",
+      "id": "e8a7d399fdede511",
+      "title": "sickn33/agentic-awesome-skills",
+      "url": "https://github.com/sickn33/agentic-awesome-skills",
       "source": "GitHub Search",
-      "primary_category": "ai_and_automation",
+      "primary_category": "developer_tools",
       "priority_score": 70,
       "hourly_adjusted_score": 74,
-      "stars_current": 17,
+      "stars_current": 48365,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "insufficient_history",
-      "published_at": "2026-10-23T10:37:55+00:00",
-      "days_old": 0.01,
+      "published_at": "2026-10-23T10:54:52+00:00",
+      "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "ed01f8159f168dd6",
-      "title": "Show HN: Airlock, which sandboxes AI agents, is available on the Mac App Store",
-      "url": "https://airlock.sorrel.systems",
+      "id": "6410d7b0c2142954",
+      "title": "Show HN: Ternlux – Free, local-first, bring-your-own-key AI pipeline builder",
+      "url": "https://www.ternlux.com/online-demo/",
       "source": "Hacker News",
-      "primary_category": "data_and_growth",
-      "priority_score": 64,
-      "hourly_adjusted_score": 66,
+      "primary_category": "ai_and_automation",
+      "priority_score": 66,
+      "hourly_adjusted_score": 68,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-22T15:28:26+00:00",
-      "days_old": 0.81,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
+      "published_at": "2026-10-22T16:33:58+00:00",
+      "days_old": 0.77,
+      "primary_source_verified": false,
+      "primary_source_http_status": null,
+      "primary_source_reason": "Primary page title/content does not sufficiently match the candidate headline."
     }
   ],
   "automatic_repair": {
     "attempted": true,
-    "drafts_submitted": 0,
+    "drafts_submitted": 2,
     "repaired_local_passes": 0,
-    "repair_rejections": 0,
+    "repair_rejections": 2,
     "repair_error": null,
-    "editorial_repair_attempted": true,
+    "editorial_repair_attempted": false,
     "editorial_repair_drafts_submitted": 0,
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 2,
-    "submitted_for_independent_review": 2,
+    "locally_valid_drafts": 0,
+    "submitted_for_independent_review": 0,
     "passed_independent_review": 0,
-    "rejected_by_independent_review": 2,
+    "rejected_by_independent_review": 0,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
   "state_summary": {
     "used_candidates_in_cooldown": 1,
-    "recently_attempted_candidates": 14,
+    "recently_attempted_candidates": 16,
     "recent_draft_passes_today": 1
   }
 }

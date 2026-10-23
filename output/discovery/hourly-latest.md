@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-23T16:24:24+05:30
+- Run time (IST): 2026-10-23T16:26:11+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 96
-- Independent editorial review: 0 draft(s) passed / 2 rejected
+- Candidate pool after freshness/diversity filters: 97
+- Independent editorial review: 0 draft(s) passed / 0 rejected
 - Drafts passing local checks: 0
 - Outcome: **skip**
-- Decision reason: Every draft submitted for independent editorial review was rejected; The hour was skipped.
+- Decision reason: All generated drafts failed the local evidence/editorial checks; the hour was skipped.
 
 ## Source health
 
@@ -28,7 +28,7 @@
 | Hacker News · hn-digital-products | 1 | ok |
 | Hacker News · hn-ecommerce-payments | 0 | ok |
 | Hacker News · hn-security-selfhost | 0 | ok |
-| Hacker News · hn-shopify | 8 | ok |
+| Hacker News · hn-shopify | 10 | ok |
 | Hacker News · hn-show-hn | 10 | ok |
 | Console.dev | 12 | ok |
 | Product Hunt | 41 | ok |
@@ -37,50 +37,57 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 78
-- Previously tracked repositories refreshed outside search results: 122
+- Repositories seen in this discovery run: 79
+- Previously tracked repositories refreshed outside search results: 121
 - Refresh failures: 0
 - Star snapshots recorded this run: 21
-- Repositories with a 20–36 hour comparison baseline: 16
+- Repositories with a 20–36 hour comparison baseline: 11
 - First observations are baseline samples, not evidence of trending. Star velocity is reported only when a historical comparison exists.
 
 ## Primary-source verification
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| n8n-io/n8n | yes | 200 | https://github.com/n8n-io/n8n |
-| shogo-labs/shogo-ai | yes | 200 | https://github.com/shogo-labs/shogo-ai |
-| Show HN: Airlock, which sandboxes AI agents, is available on the Mac App Store | yes | 200 | https://airlock.sorrel.systems |
+| afjcjsbx/picoclaw | yes | 200 | https://github.com/afjcjsbx/picoclaw |
+| sickn33/agentic-awesome-skills | yes | 200 | https://github.com/sickn33/agentic-awesome-skills |
+| Show HN: Ternlux – Free, local-first, bring-your-own-key AI pipeline builder | no | — | Primary page title/content does not sufficiently match the candidate headline. |
 
 ## Selected draft candidates
 
-No draft cleared the complete local and independent-editor gate. See the decision reason and rejected-draft section for locally valid drafts that were rejected, not reviewed, or blocked by a review error.
+No candidate produced a draft that passed every local check. Skipping is intentional.
 
 ## Automatic repair attempt
 
 - Attempted: yes
-- Repaired drafts submitted: 0
+- Repaired drafts submitted: 2
 - Repaired drafts that passed local validation: 0
-- Repaired drafts rejected: 0
+- Repaired drafts rejected: 2
 - Repair error: none
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
-- Show HN: Airlock, which sandboxes AI agents, is available on the Mac App Store: Supporting quotes cover only 57% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: Airlock runs Claude or Codex in a VM on macOS and logs all changes. After running, inspect the diff to ensure only intended files were modified. https://airlock.sorrel.systems
-  - Model evidence quote: “Airlock runs Claude Code or Codex in a virtual machine on your Mac.”
-  - Claim support: Airlock runs Claude or Codex in a VM on macOS and logs all changes. ← “Airlock runs Claude Code or Codex in a virtual machine on your Mac.”
-- n8n-io/n8n: Takeaway assumes schedule trigger behavior not explicitly documented; no concrete test guidance.
-  - Rejected text: n8n is a fair‑code workflow automation platform with native AI capabilities. Run a simple AI node and verify it triggers on schedule. https://github.com/n8n-io/n8n
-- shogo-labs/shogo-ai: Takeaway presumes SDK can connect to an LLM endpoint, not mentioned in source; lacks concrete verification steps.
-  - Rejected text: shogo-ai is an open‑source platform for building and running AI agents. Check that the SDK can instantiate an agent and connect to an LLM endpoint. https://github.com/shogo-labs/shogo-ai
+- Show HN: Ternlux – Free, local-first, bring-your-own-key AI pipeline builder: Primary page title/content does not sufficiently match the candidate headline.
+- afjcjsbx/picoclaw: The factual opening bundles multiple features; narrow it to one capability.; Fact sentence is too long; narrow it to one source-backed capability.; Unsupported numeric claim(s): 512
+  - Rejected text: Picoclaw is an ultra‑lightweight, open‑source, self‑hosted personal AI assistant written in Go for RISC‑V and SBCs. Run a 512‑MB memory test to confirm it stays below the target before deployment. https://github.com/afjcjsbx/picoclaw
+  - Model evidence quote: “Ultra-lightweight, open-source, self-hosted personal AI assistant in Go for RISC-V, SBCs”
+  - Claim support: Picoclaw is an ultra‑lightweight, open‑source, self‑hosted personal AI assistant written in Go for RISC‑V and SBCs. ← “Ultra-lightweight, open-source, self-hosted personal AI assistant in Go for RISC-V, SBCs”
+- sickn33/agentic-awesome-skills: The factual opening bundles multiple features; narrow it to one capability.; Fact sentence is too long; narrow it to one source-backed capability.; Editorial takeaway is too long; keep the analysis concrete and concise.
+  - Rejected text: AAS Core is a local, agent‑first control plane for catalog discovery, selection, stack validation, and planning with 2,600+ skills. Validate stack‑validation CLI output against a known good stack before pushing to production. https://github.com/sickn33/agentic-awesome-skills
+  - Model evidence quote: “AAS Core is the local, agent‑first control plane for complete catalog discovery, agent‑owned selection, stack validation, and planning, backed by 2,600+ agentic skills.”
+  - Claim support: AAS Core is a local, agent‑first control plane for catalog discovery, selection, stack validation, and planning with 2,600+ skills. ← “AAS Core is the local, agent‑first control plane for complete catalog discovery, agent‑owned selection, stack validation, and planning, backed by 2,600+ agentic skills”
+- afjcjsbx/picoclaw: The factual opening bundles multiple features; narrow it to one capability.; Fact sentence is too long; narrow it to one source-backed capability.; Editorial takeaway is too long; keep the analysis concrete and concise.; Unsupported numeric claim(s): 512mb
+  - Rejected text: Picoclaw is an ultra‑lightweight, open‑source, self‑hosted personal AI assistant written in Go for RISC‑V and SBCs. Use the CLI to verify Picoclaw’s memory footprint stays within the typical 512 MB limit of SBCs before deployment. https://github.com/afjcjsbx/picoclaw
+  - Model evidence quote: “Ultra-lightweight, open-source, self-hosted personal AI assistant in Go for RISC‑V, SBCs”
+- sickn33/agentic-awesome-skills: Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.; Editorial takeaway is too long; keep the analysis concrete and concise.
+  - Rejected text: AAS Core is a local, agent‑first control plane for catalog discovery. Run the CLI’s catalog list command to confirm available skills before selecting for a stack. https://github.com/sickn33/agentic-awesome-skills
+  - Model evidence quote: “AAS Core is the local, agent‑first control plane for complete catalog discovery, agent‑owned selection, stack validation, and planning, backed by 2,600+ agentic skills”
 
 ## Top discovery candidates considered
 
-- n8n-io/n8n | GitHub Search | ai_and_automation | raw 71, adjusted 75 | current stars 208374 | GitHub star trend: building baseline | https://github.com/n8n-io/n8n
-- shogo-labs/shogo-ai | GitHub Search | ai_and_automation | raw 70, adjusted 74 | current stars 17 | GitHub star trend: building baseline | https://github.com/shogo-labs/shogo-ai
-- Show HN: Airlock, which sandboxes AI agents, is available on the Mac App Store | Hacker News | data_and_growth | raw 64, adjusted 66 | https://airlock.sorrel.systems
+- afjcjsbx/picoclaw | GitHub Search | ai_and_automation | raw 72, adjusted 76 | current stars 38 | GitHub star trend: building baseline | https://github.com/afjcjsbx/picoclaw
+- sickn33/agentic-awesome-skills | GitHub Search | developer_tools | raw 70, adjusted 74 | current stars 48365 | GitHub star trend: building baseline | https://github.com/sickn33/agentic-awesome-skills
+- Show HN: Ternlux – Free, local-first, bring-your-own-key AI pipeline builder | Hacker News | ai_and_automation | raw 66, adjusted 68 | https://www.ternlux.com/online-demo/
 
 ## Safety and interpretation
 
