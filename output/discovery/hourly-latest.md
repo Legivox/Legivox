@@ -1,9 +1,9 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-24T09:44:09+05:30
+- Run time (IST): 2026-10-24T10:42:19+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 99
+- Candidate pool after freshness/diversity filters: 96
 - Independent editorial review: 0 draft(s) passed / 1 rejected
 - Drafts passing local checks: 0
 - Outcome: **skip**
@@ -28,7 +28,7 @@
 | Hacker News · hn-digital-products | 1 | ok |
 | Hacker News · hn-ecommerce-payments | 0 | ok |
 | Hacker News · hn-security-selfhost | 0 | ok |
-| Hacker News · hn-shopify | 7 | ok |
+| Hacker News · hn-shopify | 10 | ok |
 | Hacker News · hn-show-hn | 10 | ok |
 | Console.dev | 12 | ok |
 | Product Hunt | 40 | ok |
@@ -37,20 +37,20 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 80
-- Previously tracked repositories refreshed outside search results: 120
+- Repositories seen in this discovery run: 82
+- Previously tracked repositories refreshed outside search results: 118
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
-- Repositories with a 20–36 hour comparison baseline: 11
+- Repositories with a 20–36 hour comparison baseline: 9
 - First observations are baseline samples, not evidence of trending. Star velocity is reported only when a historical comparison exists.
 
 ## Primary-source verification
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| Show HN: The cost of slop. Subscription-adjusted | yes | 200 | https://slopsidy.com/ |
-| Show HN: Web Bot Auth SDK and SSH Utilty | yes | 200 | https://messh.io |
-| POS UI extensions now support reactive storage access | yes | 200 | https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access |
+| agentrq/agentrq | yes | 200 | https://github.com/agentrq/agentrq |
+| curie-eng/curie | yes | 200 | https://github.com/curie-eng/curie |
+| Metaobject analytics queryable capability available in the Admin API | yes | 200 | https://shopify.dev/changelog/posts/metaobject-analytics-queryable-capability-available-in-the-admin-api |
 
 ## Selected draft candidates
 
@@ -67,27 +67,25 @@ No draft cleared the complete local and independent-editor gate. See the decisio
 
 ## Rejected draft options
 
-- Unmapped model draft: Model omitted a valid candidate ID and no exact verified source URL matched.
-- Show HN: Web Bot Auth SDK and SSH Utilty: A supporting quote does not share enough wording with its stated claim; Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: messh publishes SSH keys by username so anyone can add them with one command. Verify the key stays local by checking your .ssh folder after publish. https://messh.io
-  - Model evidence quote: “Your name. Your keys. Publish your SSH keys once; anyone grants access with one command.”
-  - Claim support: messh publishes SSH keys by username so anyone can add them with one command. ← “Your name. Your keys. Publish your SSH keys once; anyone grants access with one command.”
-- Unmapped model draft: Model omitted a valid candidate ID and no exact verified source URL matched.
-- POS UI extensions now support reactive storage access: Takeaway implies an undocumented product capability: sync. Reframe as a check of documented behavior.; Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.
-  - Rejected text: shopify.storage.current lets POS extensions react to cross‑target storage changes. Subscribe to the signal in each target to keep UI in sync. https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access
-  - Model evidence quote: “The new shopify.storage.current API lets POS UI extension developers respond automatically when stored values change across extension targets on the same POS device.”
-  - Claim support: shopify.storage.current lets POS extensions react to cross‑target storage changes. ← “The new shopify.storage.current API lets POS UI extension developers respond automatically when stored values change across extension targets on the same POS device.”
-- Show HN: The cost of slop. Subscription-adjusted: Post restates headline and basic claim without adding new insight or unique angle.
-  - Rejected text: slopsidy compares AI subscription costs per task with allowance factored. Run a sample task on each plan to confirm the estimate. https://slopsidy.com/
-- Show HN: The cost of slop. Subscription-adjusted: Editorial takeaway is too long; keep the analysis concrete and concise.; Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.
-  - Rejected text: slopsidy compares AI subscription costs per task with allowance factored. When estimating cost per task, remember slopsidy assumes full allowance usage for Claude Code and Codex. https://slopsidy.com/
-  - Model evidence quote: “Subscription estimates cover Claude Code and Codex and assume full use of the allowance.”
+- agentrq/agentrq: Takeaway implies an undocumented product capability: sync. Reframe as a check of documented behavior.; Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.
+  - Rejected text: AgentRQ is a self‑hosted, real‑time task manager for AI agents. Verify agent state syncs between mobile and web after deployment. https://github.com/agentrq/agentrq
+  - Model evidence quote: “AgentRQ: Human-in-loop realtime conversational task manager for AI Agents. Self-hosted! Control your own agents from wherever you want Mobile, Web, Desktop.”
+  - Claim support: AgentRQ is a self‑hosted, real‑time task manager for AI agents. ← “AgentRQ: Human-in-loop realtime conversational task manager for AI Agents. Self-hosted! Control your own agents from wherever you want Mobile, Web, Desktop.”
+- Metaobject analytics queryable capability available in the Admin API: Fact plus takeaway exceeds the per-link character budget.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; Draft is 284 raw characters; limit is 280
+  - Rejected text: Shopify added analyticsQueryable capability to metaobject definitions in GraphQL Admin API 2027‑01. Set analyticsQueryable to true when creating metaobjects you want in analytics. https://shopify.dev/changelog/posts/metaobject-analytics-queryable-capability-available-in-the-admin-api
+  - Model evidence quote: “Starting with GraphQL Admin API version 2027-01 , you can read and configure the analyticsQueryable capability on metaobject definitions.”
+  - Claim support: Shopify added analyticsQueryable capability to metaobject definitions in GraphQL Admin API 2027‑01. ← “Starting with GraphQL Admin API version 2027-01 , you can read and configure the analyticsQueryable capability on metaobject definitions.”
+- curie-eng/curie: The post adds an unsupported claim about GitHub issue delegation respecting model approval limits, which the source does not document. The takeaway is therefore misleading and lacks technical coherence.
+  - Rejected text: Curie is an open‑source, self‑hostable platform turning agents into co‑workers. Check that GitHub issue delegation respects model approval limits. https://github.com/curie-eng/curie
+- curie-eng/curie: The factual opening bundles multiple features; narrow it to one capability.; Fact sentence is too long; narrow it to one source-backed capability.; Editorial takeaway is too long; keep the analysis concrete and concise.; Fact plus takeaway exceeds the per-link character budget.; Draft is 284 raw characters; limit is 280; No claim-by-claim supporting evidence was provided
+  - Rejected text: Curie is an open‑source, self‑hostable platform that lets you delegate GitHub issues and pull requests with model, approval, and cost controls. Before delegating issues, configure the platform’s approval limits to enforce model‑based access control. https://github.com/curie-eng/curie
+  - Model evidence quote: “Start with Software Factory: delegate GitHub issues and review pull requests, with model, approval, and cost controls in your infrastructure.”
 
 ## Top discovery candidates considered
 
-- Show HN: The cost of slop. Subscription-adjusted | Hacker News | data_and_growth | raw 65, adjusted 67 | https://slopsidy.com/
-- Show HN: Web Bot Auth SDK and SSH Utilty | Hacker News | product_and_workflow_tools | raw 65, adjusted 67 | https://messh.io
-- POS UI extensions now support reactive storage access | Shopify Developer Changelog | commerce_and_digital_products | raw 74, adjusted 66 | https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access
+- agentrq/agentrq | GitHub Search | ai_and_automation | raw 73, adjusted 67 | current stars 1166 | GitHub star trend: building baseline | https://github.com/agentrq/agentrq
+- curie-eng/curie | GitHub Search | ai_and_automation | raw 72, adjusted 66 | current stars 37 | GitHub star trend: building baseline | https://github.com/curie-eng/curie
+- Metaobject analytics queryable capability available in the Admin API | Shopify Developer Changelog | data_and_growth | raw 66, adjusted 66 | https://shopify.dev/changelog/posts/metaobject-analytics-queryable-capability-available-in-the-admin-api
 
 ## Safety and interpretation
 
