@@ -1,24 +1,24 @@
 {
-  "generated_at_ist": "2026-10-24T11:40:49+05:30",
-  "run_at_ist": "2026-10-24T11:40:49+05:30",
+  "generated_at_ist": "2026-10-24T12:53:41+05:30",
+  "run_at_ist": "2026-10-24T12:53:41+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
   "candidate_count_raw": 170,
-  "eligible_candidate_count": 88,
+  "eligible_candidate_count": 91,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4647
+      "total_count": 4657
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1020
+      "total_count": 1024
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
@@ -32,28 +32,28 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2865
+      "total_count": 2870
     },
     {
       "source": "GitHub Search · github-ecommerce-digital-products",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 422
+      "total_count": 423
     },
     {
       "source": "GitHub Search · github-mcp-servers",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2006
+      "total_count": 2010
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3175
+      "total_count": 3179
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
@@ -67,19 +67,19 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 258
+      "total_count": 259
     },
     {
       "source": "Hacker News · hn-analytics-growth",
       "kind": "hacker_news",
-      "items_kept": 10,
+      "items_kept": 9,
       "status": "ok",
       "total_count": 10
     },
     {
       "source": "Hacker News · hn-automation-api",
       "kind": "hacker_news",
-      "items_kept": 2,
+      "items_kept": 0,
       "status": "ok",
       "total_count": 10
     },
@@ -114,7 +114,7 @@
     {
       "source": "Hacker News · hn-shopify",
       "kind": "hacker_news",
-      "items_kept": 8,
+      "items_kept": 6,
       "status": "ok",
       "total_count": 10
     },
@@ -134,7 +134,7 @@
     {
       "source": "Product Hunt",
       "kind": "rss",
-      "items_kept": 40,
+      "items_kept": 43,
       "status": "ok"
     },
     {
@@ -145,237 +145,190 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-24T06:10:49+00:00",
+    "observed_at_utc": "2026-10-24T07:23:41+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 77,
-    "previously_tracked_repositories_refreshed": 123,
+    "repositories_seen_in_discovery": 78,
+    "previously_tracked_repositories_refreshed": 122,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
-    "repositories_with_20_to_36_hour_baseline": 9,
+    "repositories_with_20_to_36_hour_baseline": 7,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "1a7522246a5dab49",
-      "title": "Tell HN: Don't use Fathom Analytics (founder is blocking criticism)",
-      "source_url": "https://news.ycombinator.com/item?id=50210534",
-      "verified": false,
-      "final_url": null,
-      "http_status": null,
-      "reason": "Primary source returned HTTP 429."
-    },
-    {
-      "candidate_id": "176426a27e3a6963",
-      "title": "lemma-work/lemma-platform",
-      "source_url": "https://github.com/lemma-work/lemma-platform",
+      "candidate_id": "89161699eb1c8824",
+      "title": "Show HN: A map of outdoor gyms and pull-up bars",
+      "source_url": "https://openairworkout.com/",
       "verified": true,
-      "final_url": "https://github.com/lemma-work/lemma-platform",
+      "final_url": "https://openairworkout.com/",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "ed7796989fb07d55",
-      "title": "pipeshub-ai/pipeshub-ai",
-      "source_url": "https://github.com/pipeshub-ai/pipeshub-ai",
+      "candidate_id": "4f189644b99609e6",
+      "title": "Show HN: Encarta 95 Web",
+      "source_url": "https://benwinding.github.io/encarta_95_web/#/article/Art",
+      "verified": false,
+      "final_url": null,
+      "http_status": null,
+      "reason": "Primary page title/content does not sufficiently match the candidate headline."
+    },
+    {
+      "candidate_id": "55c557b3bc0267ca",
+      "title": "Securing your app, together",
+      "source_url": "https://shopify.dev/changelog/securing-your-app-together",
       "verified": true,
-      "final_url": "https://github.com/pipeshub-ai/pipeshub-ai",
+      "final_url": "https://shopify.dev/changelog/blog/securing-your-app-together",
       "http_status": 200,
       "reason": ""
     }
   ],
   "rejected_primary_sources": [
     {
-      "candidate_id": "1a7522246a5dab49",
-      "title": "Tell HN: Don't use Fathom Analytics (founder is blocking criticism)",
+      "candidate_id": "4f189644b99609e6",
+      "title": "Show HN: Encarta 95 Web",
       "source": "Hacker News",
-      "url": "https://news.ycombinator.com/item?id=50210534",
+      "url": "https://benwinding.github.io/encarta_95_web/#/article/Art",
       "reasons": [
-        "Primary source returned HTTP 429."
+        "Primary page title/content does not sufficiently match the candidate headline."
       ]
     }
   ],
   "daily_draft_cap": 16,
-  "daily_drafts_already_passed": 1,
-  "outcome": "dry_run_passed",
-  "decision_reason": "At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.",
-  "passing_drafts": [
-    {
-      "candidate_id": "ed7796989fb07d55",
-      "title": "pipeshub-ai/pipeshub-ai",
-      "source": "GitHub Search",
-      "source_kind": "github_repository",
-      "url": "https://github.com/pipeshub-ai/pipeshub-ai",
-      "primary_source_verified": true,
-      "primary_source_title": "GitHub - pipeshub-ai/pipeshub-ai: The open-source context layer for AI agents. PipesHub turns your company's knowledge (Slack, Drive, Jira, GitHub, Microsoft 365 and 40+ connectors) into a permission-aware workspace that agents can search, grep, navigate and cite. MCP, SDKs and built-in agents. Self",
-      "primary_source_final_url": "https://github.com/pipeshub-ai/pipeshub-ai",
-      "primary_source_http_status": 200,
-      "category": "ai_and_automation",
-      "priority_score": 71,
-      "hourly_adjusted_score": 65,
-      "post_text": "pipeshub‑ai turns Jira knowledge into a permission‑aware workspace for agents. Test permission handling by querying a protected Jira issue and checking access logs. https://github.com/pipeshub-ai/pipeshub-ai",
-      "fact_sentence": "pipeshub‑ai turns Jira knowledge into a permission‑aware workspace for agents.",
-      "format": "tweet",
-      "audience": "developers",
-      "angle": "security",
-      "rationale": "Focused on a single documented feature and added a concrete permission‑testing step.",
-      "evidence_quote": "PipesHub turns your company&#39;s knowledge (Slack, Drive, Jira, GitHub, Microsoft 365 and 40+ connectors) into a permission-aware workspace that agents...",
-      "editorial_takeaway": "Test permission handling by querying a protected Jira issue and checking access logs.",
-      "claim_evidence": [
-        {
-          "claim": "pipeshub‑ai turns Jira knowledge into a permission‑aware workspace for agents.",
-          "quote": "PipesHub turns your company&#39;s knowledge (Slack, Drive, Jira, GitHub, Microsoft 365 and 40+ connectors) into a permission-aware workspace that agents..."
-        }
-      ],
-      "scores": {
-        "timeliness": 8,
-        "usefulness": 9,
-        "novelty": 7,
-        "evidence": 10,
-        "insight": 9
-      },
-      "editorial_score": 8.8,
-      "character_count": 207,
-      "status": "dry_run_passed_not_published",
-      "published_to_x": false,
-      "automatic_repair_attempt": true,
-      "repair_note": "A single automatic rewrite cleared the same local validator; the independent editorial review is still required.",
-      "editorial_review": {
-        "clarity_score": 8,
-        "technical_coherence_score": 8,
-        "takeaway_value_score": 8,
-        "source_faithfulness_score": 8,
-        "originality_score": 8,
-        "reason": "Clear, accurate, and adds a concrete test idea.",
-        "passed": true
-      }
-    }
-  ],
+  "daily_drafts_already_passed": 2,
+  "outcome": "skip",
+  "decision_reason": "All generated drafts failed the local evidence/editorial checks; the hour was skipped.",
+  "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "1a7522246a5dab49",
-      "title": "Tell HN: Don't use Fathom Analytics (founder is blocking criticism)",
+      "candidate_id": "4f189644b99609e6",
+      "title": "Show HN: Encarta 95 Web",
       "source": "Hacker News",
-      "url": "https://news.ycombinator.com/item?id=50210534",
+      "url": "https://benwinding.github.io/encarta_95_web/#/article/Art",
       "reasons": [
-        "Primary source returned HTTP 429."
+        "Primary page title/content does not sufficiently match the candidate headline."
       ]
     },
     {
-      "candidate_id": "176426a27e3a6963",
-      "title": "lemma-work/lemma-platform",
+      "candidate_id": "89161699eb1c8824",
+      "title": "Show HN: A map of outdoor gyms and pull-up bars",
       "reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability.",
-        "Fact sentence is too long; narrow it to one source-backed capability."
+        "The factual opening bundles multiple features; narrow it to one capability."
       ],
-      "proposed_text": "lemma-platform is a multiplayer harness for sharing agents, apps and workflows across Slack, Telegram, WhatsApp, Teams, Email. Verify a workflow runs identically when triggered from Slack and Teams. https://github.com/lemma-work/lemma-platform",
-      "evidence_quote": "Multiplayer harness that shapes around your work. Agents, apps and workflows your team shares, used from Slack, Telegram, WhatsApp, Teams, Email, Web or your own AI agent.",
+      "proposed_text": "Open Air Workout maps 25k+ outdoor gyms, pull‑up bars, and fitness trails worldwide. Use the location filter to verify coverage gaps before launching a local fitness app. https://openairworkout.com/",
+      "evidence_quote": "Open Air Workout Find outdoor gyms, calisthenics parks, pull‑up bars, and fitness trails near you and around the world.",
       "claim_evidence": [
         {
-          "claim": "lemma-platform is a multiplayer harness for sharing agents, apps and workflows across Slack, Telegram, WhatsApp, Teams, Email.",
-          "quote": "Multiplayer harness that shapes around your work. Agents, apps and workflows your team shares, used from Slack, Telegram, WhatsApp, Teams, Email, Web or your own AI agent."
+          "claim": "Open Air Workout maps 25k+ outdoor gyms, pull‑up bars, and fitness trails worldwide.",
+          "quote": "Open Air Workout Find outdoor gyms, calisthenics parks, pull‑up bars, and fitness trails near you and around the world."
         }
       ]
     },
     {
-      "candidate_id": null,
-      "title": "Unmapped model draft",
-      "proposed_text": "",
+      "candidate_id": "55c557b3bc0267ca",
+      "title": "Securing your app, together",
       "reasons": [
-        "Model omitted a valid candidate ID and no exact verified source URL matched."
-      ]
-    },
-    {
-      "candidate_id": "ed7796989fb07d55",
-      "title": "pipeshub-ai/pipeshub-ai",
-      "reasons": [
+        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.",
         "The factual opening bundles multiple features; narrow it to one capability.",
         "Fact sentence is too long; narrow it to one source-backed capability.",
-        "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "Fact plus takeaway exceeds the per-link character budget.",
-        "Draft is 357 raw characters; limit is 280"
+        "Editorial takeaway is not specific enough to this candidate's technical/product details."
       ],
-      "proposed_text": "pipeshub-ai is an open‑source context layer that turns company knowledge from Slack, Drive, Jira, GitHub, Microsoft 365 and 40+ connectors into a permission‑aware workspace for agents to search, grep, navigate and cite. Run a permission test by querying a protected Jira issue and ensuring the agent respects ACLs. https://github.com/pipeshub-ai/pipeshub-ai",
-      "evidence_quote": "PipesHub turns your company's knowledge (Slack, Drive, Jira, GitHub, Microsoft 365 and 40+ connectors) into a permission‑aware workspace that agents can search, grep, navigate and cite.",
+      "proposed_text": "Shopify’s AI Toolkit security check scans for unauthenticated routes, cross‑shop data access, and unverified webhooks. Run the check before publishing; a clean result does not guarantee absence of logic flaws. https://shopify.dev/changelog/blog/securing-your-app-together",
+      "evidence_quote": "[A single prompt with AI Toolkit] checks for Shopify‑specific vulnerabilities, such as unauthenticated routes, cross‑shop data access and unverified webhooks.",
       "claim_evidence": [
         {
-          "claim": "pipeshub-ai is an open‑source context layer that turns company knowledge from Slack, Drive, Jira, GitHub, Microsoft 365 and 40+ connectors into a permission‑aware workspace for agents to search, grep, navigate and cite.",
-          "quote": "PipesHub turns your company's knowledge (Slack, Drive, Jira, GitHub, Microsoft 365 and 40+ connectors) into a permission‑aware workspace that agents can search, grep, navigate and cite."
+          "claim": "Shopify’s AI Toolkit security check scans for unauthenticated routes, cross‑shop data access, and unverified webhooks.",
+          "quote": "[A single prompt with AI Toolkit] checks for Shopify‑specific vulnerabilities, such as unauthenticated routes, cross‑shop data access and unverified webhooks."
         }
       ]
     },
     {
-      "candidate_id": "176426a27e3a6963",
-      "title": "lemma-work/lemma-platform",
+      "candidate_id": "89161699eb1c8824",
+      "title": "Show HN: A map of outdoor gyms and pull-up bars",
       "reasons": [
-        "Editorial takeaway is not specific enough to this candidate's technical/product details.",
-        "No claim-by-claim supporting evidence was provided",
-        "Factual sentence includes terms absent from the source title/summary: run, same"
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
       ],
-      "proposed_text": "lemma‑platform lets you run the same workflow from Slack and Teams. Verify identical execution by triggering the workflow in both channels and comparing logs. https://github.com/lemma-work/lemma-platform",
-      "evidence_quote": "Agents, apps and workflows your team shares, used from Slack, Telegram, WhatsApp, Teams, Email, Web or your own AI agent.",
+      "proposed_text": "Open Air Workout locates outdoor gyms, pull‑up bars, and fitness trails worldwide. Use the location filter to identify coverage gaps before launching a local fitness app. https://openairworkout.com/",
+      "evidence_quote": "Open Air Workout Find outdoor gyms, calisthenics parks, pull‑up bars, and fitness trails near you and around the world.",
       "automatic_repair_attempt": true,
       "original_rejection_reasons": [
+        "The factual opening bundles multiple features; narrow it to one capability."
+      ]
+    },
+    {
+      "candidate_id": "55c557b3bc0267ca",
+      "title": "Securing your app, together",
+      "reasons": [
+        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about."
+      ],
+      "proposed_text": "Shopify’s AI Toolkit security check scans for unauthenticated routes. Run the AI Toolkit check before publishing to catch unauthenticated route vulnerabilities. https://shopify.dev/changelog/blog/securing-your-app-together",
+      "evidence_quote": "[A single prompt with AI Toolkit] checks for Shopify‑specific vulnerabilities, such as unauthenticated routes, cross‑shop data access and unverified webhooks.",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.",
         "The factual opening bundles multiple features; narrow it to one capability.",
-        "Fact sentence is too long; narrow it to one source-backed capability."
+        "Fact sentence is too long; narrow it to one source-backed capability.",
+        "Editorial takeaway is not specific enough to this candidate's technical/product details."
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "1a7522246a5dab49",
-      "title": "Tell HN: Don't use Fathom Analytics (founder is blocking criticism)",
-      "url": "https://news.ycombinator.com/item?id=50210534",
+      "id": "89161699eb1c8824",
+      "title": "Show HN: A map of outdoor gyms and pull-up bars",
+      "url": "https://openairworkout.com/",
       "source": "Hacker News",
-      "primary_category": "data_and_growth",
-      "priority_score": 69,
-      "hourly_adjusted_score": 69,
+      "primary_category": "product_and_workflow_tools",
+      "priority_score": 62,
+      "hourly_adjusted_score": 64,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-23T15:19:29+00:00",
-      "days_old": 0.62,
-      "primary_source_verified": false,
-      "primary_source_http_status": null,
-      "primary_source_reason": "Primary source returned HTTP 429."
-    },
-    {
-      "id": "176426a27e3a6963",
-      "title": "lemma-work/lemma-platform",
-      "url": "https://github.com/lemma-work/lemma-platform",
-      "source": "GitHub Search",
-      "primary_category": "ai_and_automation",
-      "priority_score": 71,
-      "hourly_adjusted_score": 65,
-      "stars_current": 633,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "insufficient_history",
-      "published_at": "2026-10-24T05:59:53+00:00",
-      "days_old": 0.01,
+      "published_at": "2026-10-24T03:42:02+00:00",
+      "days_old": 0.15,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "ed7796989fb07d55",
-      "title": "pipeshub-ai/pipeshub-ai",
-      "url": "https://github.com/pipeshub-ai/pipeshub-ai",
-      "source": "GitHub Search",
-      "primary_category": "ai_and_automation",
-      "priority_score": 71,
-      "hourly_adjusted_score": 65,
-      "stars_current": 3845,
+      "id": "4f189644b99609e6",
+      "title": "Show HN: Encarta 95 Web",
+      "url": "https://benwinding.github.io/encarta_95_web/#/article/Art",
+      "source": "Hacker News",
+      "primary_category": "product_and_workflow_tools",
+      "priority_score": 62,
+      "hourly_adjusted_score": 64,
+      "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
-      "trend_signal": "insufficient_history",
-      "published_at": "2026-10-24T06:10:57+00:00",
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-24T07:18:37+00:00",
       "days_old": 0.0,
+      "primary_source_verified": false,
+      "primary_source_http_status": null,
+      "primary_source_reason": "Primary page title/content does not sufficiently match the candidate headline."
+    },
+    {
+      "id": "55c557b3bc0267ca",
+      "title": "Securing your app, together",
+      "url": "https://shopify.dev/changelog/blog/securing-your-app-together",
+      "source": "Shopify Developer Changelog",
+      "primary_category": "commerce_and_digital_products",
+      "priority_score": 69,
+      "hourly_adjusted_score": 61,
+      "stars_current": null,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-20T19:00:00+00:00",
+      "days_old": 3.52,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
@@ -384,75 +337,25 @@
   "automatic_repair": {
     "attempted": true,
     "drafts_submitted": 2,
-    "repaired_local_passes": 1,
-    "repair_rejections": 1,
+    "repaired_local_passes": 0,
+    "repair_rejections": 2,
     "repair_error": null,
     "editorial_repair_attempted": false,
     "editorial_repair_drafts_submitted": 0,
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 1,
-    "submitted_for_independent_review": 1,
-    "passed_independent_review": 1,
+    "locally_valid_drafts": 0,
+    "submitted_for_independent_review": 0,
+    "passed_independent_review": 0,
     "rejected_by_independent_review": 0,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
-  "recommended_draft": {
-    "candidate_id": "ed7796989fb07d55",
-    "title": "pipeshub-ai/pipeshub-ai",
-    "source": "GitHub Search",
-    "source_kind": "github_repository",
-    "url": "https://github.com/pipeshub-ai/pipeshub-ai",
-    "primary_source_verified": true,
-    "primary_source_title": "GitHub - pipeshub-ai/pipeshub-ai: The open-source context layer for AI agents. PipesHub turns your company's knowledge (Slack, Drive, Jira, GitHub, Microsoft 365 and 40+ connectors) into a permission-aware workspace that agents can search, grep, navigate and cite. MCP, SDKs and built-in agents. Self",
-    "primary_source_final_url": "https://github.com/pipeshub-ai/pipeshub-ai",
-    "primary_source_http_status": 200,
-    "category": "ai_and_automation",
-    "priority_score": 71,
-    "hourly_adjusted_score": 65,
-    "post_text": "pipeshub‑ai turns Jira knowledge into a permission‑aware workspace for agents. Test permission handling by querying a protected Jira issue and checking access logs. https://github.com/pipeshub-ai/pipeshub-ai",
-    "fact_sentence": "pipeshub‑ai turns Jira knowledge into a permission‑aware workspace for agents.",
-    "format": "tweet",
-    "audience": "developers",
-    "angle": "security",
-    "rationale": "Focused on a single documented feature and added a concrete permission‑testing step.",
-    "evidence_quote": "PipesHub turns your company&#39;s knowledge (Slack, Drive, Jira, GitHub, Microsoft 365 and 40+ connectors) into a permission-aware workspace that agents...",
-    "editorial_takeaway": "Test permission handling by querying a protected Jira issue and checking access logs.",
-    "claim_evidence": [
-      {
-        "claim": "pipeshub‑ai turns Jira knowledge into a permission‑aware workspace for agents.",
-        "quote": "PipesHub turns your company&#39;s knowledge (Slack, Drive, Jira, GitHub, Microsoft 365 and 40+ connectors) into a permission-aware workspace that agents..."
-      }
-    ],
-    "scores": {
-      "timeliness": 8,
-      "usefulness": 9,
-      "novelty": 7,
-      "evidence": 10,
-      "insight": 9
-    },
-    "editorial_score": 8.8,
-    "character_count": 207,
-    "status": "dry_run_passed_not_published",
-    "published_to_x": false,
-    "automatic_repair_attempt": true,
-    "repair_note": "A single automatic rewrite cleared the same local validator; the independent editorial review is still required.",
-    "editorial_review": {
-      "clarity_score": 8,
-      "technical_coherence_score": 8,
-      "takeaway_value_score": 8,
-      "source_faithfulness_score": 8,
-      "originality_score": 8,
-      "reason": "Clear, accurate, and adds a concrete test idea.",
-      "passed": true
-    }
-  },
   "state_summary": {
     "used_candidates_in_cooldown": 4,
-    "recently_attempted_candidates": 14,
+    "recently_attempted_candidates": 16,
     "recent_draft_passes_today": 2
   }
 }
