@@ -1,59 +1,59 @@
 {
-  "generated_at_ist": "2026-10-24T08:42:54+05:30",
-  "run_at_ist": "2026-10-24T08:42:54+05:30",
+  "generated_at_ist": "2026-10-24T09:44:09+05:30",
+  "run_at_ist": "2026-10-24T09:44:09+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 178,
-  "eligible_candidate_count": 102,
+  "candidate_count_raw": 173,
+  "eligible_candidate_count": 99,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4629
+      "total_count": 4632
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1014
+      "total_count": 1015
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 368
+      "total_count": 370
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2859
+      "total_count": 2858
     },
     {
       "source": "GitHub Search · github-ecommerce-digital-products",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 420
+      "total_count": 421
     },
     {
       "source": "GitHub Search · github-mcp-servers",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1997
+      "total_count": 2001
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3167
+      "total_count": 3170
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
@@ -134,7 +134,7 @@
     {
       "source": "Product Hunt",
       "kind": "rss",
-      "items_kept": 41,
+      "items_kept": 40,
       "status": "ok"
     },
     {
@@ -145,10 +145,10 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-24T03:12:54+00:00",
+    "observed_at_utc": "2026-10-24T04:14:09+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 84,
-    "previously_tracked_repositories_refreshed": 116,
+    "repositories_seen_in_discovery": 80,
+    "previously_tracked_repositories_refreshed": 120,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
@@ -158,29 +158,29 @@
   },
   "primary_source_checks": [
     {
-      "candidate_id": "f49d2e656c0ade72",
-      "title": "Show HN: Kavela – AI Automations that do not fail silently",
-      "source_url": "https://kavela.ai",
+      "candidate_id": "8f37a9f556ed7412",
+      "title": "Show HN: The cost of slop. Subscription-adjusted",
+      "source_url": "https://slopsidy.com/",
       "verified": true,
-      "final_url": "https://kavela.ai",
+      "final_url": "https://slopsidy.com/",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "e95e12447b71a006",
-      "title": "Unlink a customer's identity provider subject with the GraphQL Admin API",
-      "source_url": "https://shopify.dev/changelog/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api",
+      "candidate_id": "1bb3ba9961b47eb3",
+      "title": "Show HN: Web Bot Auth SDK and SSH Utilty",
+      "source_url": "https://messh.io",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api",
+      "final_url": "https://messh.io",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "29d58fa649949b0d",
-      "title": "Show HN: AI Crash Debugging Gauntlet",
-      "source_url": "https://www.forensicdbg.com/post/forensicdbg-s-ai-crash-debugging-gauntlet",
+      "candidate_id": "f803dce2f9c77322",
+      "title": "POS UI extensions now support reactive storage access",
+      "source_url": "https://shopify.dev/changelog/pos-ui-extensions-now-support-reactive-storage-access",
       "verified": true,
-      "final_url": "https://www.forensicdbg.com/post/forensicdbg-s-ai-crash-debugging-gauntlet",
+      "final_url": "https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access",
       "http_status": 200,
       "reason": ""
     }
@@ -193,43 +193,61 @@
   "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "f49d2e656c0ade72",
-      "title": "Show HN: Kavela – AI Automations that do not fail silently",
+      "candidate_id": null,
+      "title": "Unmapped model draft",
+      "proposed_text": "",
       "reasons": [
-        "Supporting quotes cover only 60% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Model omitted a valid candidate ID and no exact verified source URL matched."
+      ]
+    },
+    {
+      "candidate_id": "1bb3ba9961b47eb3",
+      "title": "Show HN: Web Bot Auth SDK and SSH Utilty",
+      "reasons": [
+        "A supporting quote does not share enough wording with its stated claim",
+        "Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "Kavela runs AI workflow in plain words and checks each run before reaching you on Claude or Codex. Verify Kavela logs each step; a silent failure will surface in the run history. https://kavela.ai",
-      "evidence_quote": "Kavela runs it in your tools and checks every run before it reaches you, on your Claude or Codex plan.",
+      "proposed_text": "messh publishes SSH keys by username so anyone can add them with one command. Verify the key stays local by checking your .ssh folder after publish. https://messh.io",
+      "evidence_quote": "Your name. Your keys. Publish your SSH keys once; anyone grants access with one command.",
       "claim_evidence": [
         {
-          "claim": "Kavela runs AI workflow in plain words and checks each run before reaching you on Claude or Codex",
-          "quote": "Kavela runs it in your tools and checks every run before it reaches you, on your Claude or Codex plan."
+          "claim": "messh publishes SSH keys by username so anyone can add them with one command.",
+          "quote": "Your name. Your keys. Publish your SSH keys once; anyone grants access with one command."
         }
       ]
     },
     {
-      "candidate_id": "e95e12447b71a006",
-      "title": "Unlink a customer's identity provider subject with the GraphQL Admin API",
+      "candidate_id": null,
+      "title": "Unmapped model draft",
+      "proposed_text": "",
       "reasons": [
-        "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "Fact plus takeaway exceeds the per-link character budget.",
-        "Draft is 302 raw characters; limit is 280"
+        "Model omitted a valid candidate ID and no exact verified source URL matched."
+      ]
+    },
+    {
+      "candidate_id": "f803dce2f9c77322",
+      "title": "POS UI extensions now support reactive storage access",
+      "reasons": [
+        "Takeaway implies an undocumented product capability: sync. Reframe as a check of documented behavior.",
+        "Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.",
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
+        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation."
       ],
-      "proposed_text": "IdentityProviderSubjectDelete mutation can unlink a customer from a third‑party identity provider. After unlinking, confirm the customer is signed out of all sessions by checking session tokens. https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api",
-      "evidence_quote": "you can use the identityProviderSubjectDelete mutation to unlink a customer from a third-party identity provider",
+      "proposed_text": "shopify.storage.current lets POS extensions react to cross‑target storage changes. Subscribe to the signal in each target to keep UI in sync. https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access",
+      "evidence_quote": "The new shopify.storage.current API lets POS UI extension developers respond automatically when stored values change across extension targets on the same POS device.",
       "claim_evidence": [
         {
-          "claim": "IdentityProviderSubjectDelete mutation can unlink a customer from a third‑party identity provider",
-          "quote": "you can use the identityProviderSubjectDelete mutation to unlink a customer from a third-party identity provider"
+          "claim": "shopify.storage.current lets POS extensions react to cross‑target storage changes.",
+          "quote": "The new shopify.storage.current API lets POS UI extension developers respond automatically when stored values change across extension targets on the same POS device."
         }
       ]
     },
     {
-      "candidate_id": "29d58fa649949b0d",
-      "title": "Show HN: AI Crash Debugging Gauntlet",
-      "proposed_text": "ForensicDbg built a Claude Code‑driven crash dump evaluation competition to benchmark AI debugging. Run the gauntlet on your own crash dumps to benchmark AI accuracy before adopting. https://www.forensicdbg.com/post/forensicdbg-s-ai-crash-debugging-gauntlet",
+      "candidate_id": "8f37a9f556ed7412",
+      "title": "Show HN: The cost of slop. Subscription-adjusted",
+      "proposed_text": "slopsidy compares AI subscription costs per task with allowance factored. Run a sample task on each plan to confirm the estimate. https://slopsidy.com/",
       "reasons": [
-        "Post restates headline and basic claim without adding new insight or a concrete, actionable detail beyond what the source already states."
+        "Post restates headline and basic claim without adding new insight or unique angle."
       ],
       "editorial_review": {
         "clarity_score": 8,
@@ -240,64 +258,44 @@
       }
     },
     {
-      "candidate_id": "29d58fa649949b0d",
-      "title": "Show HN: AI Crash Debugging Gauntlet",
+      "candidate_id": "8f37a9f556ed7412",
+      "title": "Show HN: The cost of slop. Subscription-adjusted",
       "reasons": [
         "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "No claim-by-claim supporting evidence was provided",
-        "Supporting quotes cover only 55% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation."
       ],
-      "proposed_text": "ForensicDbg’s AI Crash Debugging Gauntlet uses Claude Code 5.5 with default Sonnet Medium settings. Run the gauntlet with the default Sonnet Medium settings to match the benchmark conditions. https://www.forensicdbg.com/post/forensicdbg-s-ai-crash-debugging-gauntlet",
-      "evidence_quote": "These tests are run using Claude Code 5.5 with the default Sonnet Medium settings.",
+      "proposed_text": "slopsidy compares AI subscription costs per task with allowance factored. When estimating cost per task, remember slopsidy assumes full allowance usage for Claude Code and Codex. https://slopsidy.com/",
+      "evidence_quote": "Subscription estimates cover Claude Code and Codex and assume full use of the allowance.",
       "automatic_repair_attempt": true,
       "original_rejection_reasons": [
-        "Post restates headline and basic claim without adding new insight or a concrete, actionable detail beyond what the source already states."
+        "Post restates headline and basic claim without adding new insight or unique angle."
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "f49d2e656c0ade72",
-      "title": "Show HN: Kavela – AI Automations that do not fail silently",
-      "url": "https://kavela.ai",
+      "id": "8f37a9f556ed7412",
+      "title": "Show HN: The cost of slop. Subscription-adjusted",
+      "url": "https://slopsidy.com/",
       "source": "Hacker News",
-      "primary_category": "ai_and_automation",
-      "priority_score": 75,
-      "hourly_adjusted_score": 77,
+      "primary_category": "data_and_growth",
+      "priority_score": 65,
+      "hourly_adjusted_score": 67,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-23T14:18:31+00:00",
-      "days_old": 0.54,
+      "published_at": "2026-10-23T18:45:00+00:00",
+      "days_old": 0.4,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "e95e12447b71a006",
-      "title": "Unlink a customer's identity provider subject with the GraphQL Admin API",
-      "url": "https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api",
-      "source": "Shopify Developer Changelog",
-      "primary_category": "developer_tools",
-      "priority_score": 72,
-      "hourly_adjusted_score": 72,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-23T13:00:00+00:00",
-      "days_old": 0.59,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "29d58fa649949b0d",
-      "title": "Show HN: AI Crash Debugging Gauntlet",
-      "url": "https://www.forensicdbg.com/post/forensicdbg-s-ai-crash-debugging-gauntlet",
+      "id": "1bb3ba9961b47eb3",
+      "title": "Show HN: Web Bot Auth SDK and SSH Utilty",
+      "url": "https://messh.io",
       "source": "Hacker News",
       "primary_category": "product_and_workflow_tools",
       "priority_score": 65,
@@ -307,8 +305,27 @@
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-23T23:11:06+00:00",
-      "days_old": 0.17,
+      "published_at": "2026-10-24T03:27:01+00:00",
+      "days_old": 0.03,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "f803dce2f9c77322",
+      "title": "POS UI extensions now support reactive storage access",
+      "url": "https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access",
+      "source": "Shopify Developer Changelog",
+      "primary_category": "commerce_and_digital_products",
+      "priority_score": 74,
+      "hourly_adjusted_score": 66,
+      "stars_current": null,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-22T16:00:00+00:00",
+      "days_old": 1.51,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""

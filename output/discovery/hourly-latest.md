@@ -1,9 +1,9 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-24T08:42:54+05:30
+- Run time (IST): 2026-10-24T09:44:09+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 102
+- Candidate pool after freshness/diversity filters: 99
 - Independent editorial review: 0 draft(s) passed / 1 rejected
 - Drafts passing local checks: 0
 - Outcome: **skip**
@@ -31,14 +31,14 @@
 | Hacker News · hn-shopify | 7 | ok |
 | Hacker News · hn-show-hn | 10 | ok |
 | Console.dev | 12 | ok |
-| Product Hunt | 41 | ok |
+| Product Hunt | 40 | ok |
 | Shopify Developer Changelog | 11 | ok |
 
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 84
-- Previously tracked repositories refreshed outside search results: 116
+- Repositories seen in this discovery run: 80
+- Previously tracked repositories refreshed outside search results: 120
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
 - Repositories with a 20–36 hour comparison baseline: 11
@@ -48,9 +48,9 @@
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| Show HN: Kavela – AI Automations that do not fail silently | yes | 200 | https://kavela.ai |
-| Unlink a customer's identity provider subject with the GraphQL Admin API | yes | 200 | https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api |
-| Show HN: AI Crash Debugging Gauntlet | yes | 200 | https://www.forensicdbg.com/post/forensicdbg-s-ai-crash-debugging-gauntlet |
+| Show HN: The cost of slop. Subscription-adjusted | yes | 200 | https://slopsidy.com/ |
+| Show HN: Web Bot Auth SDK and SSH Utilty | yes | 200 | https://messh.io |
+| POS UI extensions now support reactive storage access | yes | 200 | https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access |
 
 ## Selected draft candidates
 
@@ -67,25 +67,27 @@ No draft cleared the complete local and independent-editor gate. See the decisio
 
 ## Rejected draft options
 
-- Show HN: Kavela – AI Automations that do not fail silently: Supporting quotes cover only 60% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: Kavela runs AI workflow in plain words and checks each run before reaching you on Claude or Codex. Verify Kavela logs each step; a silent failure will surface in the run history. https://kavela.ai
-  - Model evidence quote: “Kavela runs it in your tools and checks every run before it reaches you, on your Claude or Codex plan.”
-  - Claim support: Kavela runs AI workflow in plain words and checks each run before reaching you on Claude or Codex ← “Kavela runs it in your tools and checks every run before it reaches you, on your Claude or Codex plan.”
-- Unlink a customer's identity provider subject with the GraphQL Admin API: Editorial takeaway is too long; keep the analysis concrete and concise.; Fact plus takeaway exceeds the per-link character budget.; Draft is 302 raw characters; limit is 280
-  - Rejected text: IdentityProviderSubjectDelete mutation can unlink a customer from a third‑party identity provider. After unlinking, confirm the customer is signed out of all sessions by checking session tokens. https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api
-  - Model evidence quote: “you can use the identityProviderSubjectDelete mutation to unlink a customer from a third-party identity provider”
-  - Claim support: IdentityProviderSubjectDelete mutation can unlink a customer from a third‑party identity provider ← “you can use the identityProviderSubjectDelete mutation to unlink a customer from a third-party identity provider”
-- Show HN: AI Crash Debugging Gauntlet: Post restates headline and basic claim without adding new insight or a concrete, actionable detail beyond what the source already states.
-  - Rejected text: ForensicDbg built a Claude Code‑driven crash dump evaluation competition to benchmark AI debugging. Run the gauntlet on your own crash dumps to benchmark AI accuracy before adopting. https://www.forensicdbg.com/post/forensicdbg-s-ai-crash-debugging-gauntlet
-- Show HN: AI Crash Debugging Gauntlet: Editorial takeaway is too long; keep the analysis concrete and concise.; No claim-by-claim supporting evidence was provided; Supporting quotes cover only 55% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: ForensicDbg’s AI Crash Debugging Gauntlet uses Claude Code 5.5 with default Sonnet Medium settings. Run the gauntlet with the default Sonnet Medium settings to match the benchmark conditions. https://www.forensicdbg.com/post/forensicdbg-s-ai-crash-debugging-gauntlet
-  - Model evidence quote: “These tests are run using Claude Code 5.5 with the default Sonnet Medium settings.”
+- Unmapped model draft: Model omitted a valid candidate ID and no exact verified source URL matched.
+- Show HN: Web Bot Auth SDK and SSH Utilty: A supporting quote does not share enough wording with its stated claim; Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: messh publishes SSH keys by username so anyone can add them with one command. Verify the key stays local by checking your .ssh folder after publish. https://messh.io
+  - Model evidence quote: “Your name. Your keys. Publish your SSH keys once; anyone grants access with one command.”
+  - Claim support: messh publishes SSH keys by username so anyone can add them with one command. ← “Your name. Your keys. Publish your SSH keys once; anyone grants access with one command.”
+- Unmapped model draft: Model omitted a valid candidate ID and no exact verified source URL matched.
+- POS UI extensions now support reactive storage access: Takeaway implies an undocumented product capability: sync. Reframe as a check of documented behavior.; Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.
+  - Rejected text: shopify.storage.current lets POS extensions react to cross‑target storage changes. Subscribe to the signal in each target to keep UI in sync. https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access
+  - Model evidence quote: “The new shopify.storage.current API lets POS UI extension developers respond automatically when stored values change across extension targets on the same POS device.”
+  - Claim support: shopify.storage.current lets POS extensions react to cross‑target storage changes. ← “The new shopify.storage.current API lets POS UI extension developers respond automatically when stored values change across extension targets on the same POS device.”
+- Show HN: The cost of slop. Subscription-adjusted: Post restates headline and basic claim without adding new insight or unique angle.
+  - Rejected text: slopsidy compares AI subscription costs per task with allowance factored. Run a sample task on each plan to confirm the estimate. https://slopsidy.com/
+- Show HN: The cost of slop. Subscription-adjusted: Editorial takeaway is too long; keep the analysis concrete and concise.; Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.
+  - Rejected text: slopsidy compares AI subscription costs per task with allowance factored. When estimating cost per task, remember slopsidy assumes full allowance usage for Claude Code and Codex. https://slopsidy.com/
+  - Model evidence quote: “Subscription estimates cover Claude Code and Codex and assume full use of the allowance.”
 
 ## Top discovery candidates considered
 
-- Show HN: Kavela – AI Automations that do not fail silently | Hacker News | ai_and_automation | raw 75, adjusted 77 | https://kavela.ai
-- Unlink a customer's identity provider subject with the GraphQL Admin API | Shopify Developer Changelog | developer_tools | raw 72, adjusted 72 | https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api
-- Show HN: AI Crash Debugging Gauntlet | Hacker News | product_and_workflow_tools | raw 65, adjusted 67 | https://www.forensicdbg.com/post/forensicdbg-s-ai-crash-debugging-gauntlet
+- Show HN: The cost of slop. Subscription-adjusted | Hacker News | data_and_growth | raw 65, adjusted 67 | https://slopsidy.com/
+- Show HN: Web Bot Auth SDK and SSH Utilty | Hacker News | product_and_workflow_tools | raw 65, adjusted 67 | https://messh.io
+- POS UI extensions now support reactive storage access | Shopify Developer Changelog | commerce_and_digital_products | raw 74, adjusted 66 | https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access
 
 ## Safety and interpretation
 
