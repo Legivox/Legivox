@@ -1,24 +1,24 @@
 {
-  "generated_at_ist": "2026-10-24T14:41:28+05:30",
-  "run_at_ist": "2026-10-24T14:41:28+05:30",
+  "generated_at_ist": "2026-10-24T15:40:30+05:30",
+  "run_at_ist": "2026-10-24T15:40:30+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 176,
-  "eligible_candidate_count": 88,
+  "candidate_count_raw": 172,
+  "eligible_candidate_count": 83,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4664
+      "total_count": 4671
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1026
+      "total_count": 1028
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
@@ -32,7 +32,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2876
+      "total_count": 2878
     },
     {
       "source": "GitHub Search · github-ecommerce-digital-products",
@@ -46,14 +46,14 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2014
+      "total_count": 2018
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3184
+      "total_count": 3186
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
@@ -114,7 +114,7 @@
     {
       "source": "Hacker News · hn-shopify",
       "kind": "hacker_news",
-      "items_kept": 8,
+      "items_kept": 7,
       "status": "ok",
       "total_count": 10
     },
@@ -145,27 +145,18 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-24T09:11:28+00:00",
+    "observed_at_utc": "2026-10-24T10:10:30+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 81,
-    "previously_tracked_repositories_refreshed": 118,
+    "repositories_seen_in_discovery": 78,
+    "previously_tracked_repositories_refreshed": 121,
     "refresh_failures": 1,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 199,
-    "repositories_with_20_to_36_hour_baseline": 7,
+    "repositories_with_20_to_36_hour_baseline": 9,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
-    {
-      "candidate_id": "1533c768c95eedf5",
-      "title": "Show HN: Multipeer, a multiplayer infinite canvas for people and their agents",
-      "source_url": "https://multipeer.sh",
-      "verified": true,
-      "final_url": "https://multipeer.sh",
-      "http_status": 200,
-      "reason": ""
-    },
     {
       "candidate_id": "4f189644b99609e6",
       "title": "Show HN: Encarta 95 Web",
@@ -176,11 +167,20 @@
       "reason": "Primary page title/content does not sufficiently match the candidate headline."
     },
     {
-      "candidate_id": "4ef43ce31f0c5ea0",
-      "title": "Exclusive > timestamp filters exclude the full second",
-      "source_url": "https://shopify.dev/changelog/exclusive-timestamp-filters",
+      "candidate_id": "bce9f30903e287cd",
+      "title": "Show HN: Benchmarks of continual learning model trained for a month on a laptop",
+      "source_url": "https://news.ycombinator.com/item?id=50219762",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/exclusive-timestamp-filters",
+      "final_url": "https://news.ycombinator.com/item?id=50219762",
+      "http_status": 200,
+      "reason": ""
+    },
+    {
+      "candidate_id": "301687e3d4a1ad4d",
+      "title": "gotempsh/temps",
+      "source_url": "https://github.com/gotempsh/temps",
+      "verified": true,
+      "final_url": "https://github.com/gotempsh/temps",
       "http_status": 200,
       "reason": ""
     }
@@ -197,59 +197,10 @@
     }
   ],
   "daily_draft_cap": 16,
-  "daily_drafts_already_passed": 2,
-  "outcome": "dry_run_passed",
-  "decision_reason": "At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.",
-  "passing_drafts": [
-    {
-      "candidate_id": "4ef43ce31f0c5ea0",
-      "title": "Exclusive > timestamp filters exclude the full second",
-      "source": "Shopify Developer Changelog",
-      "source_kind": "official_changelog",
-      "url": "https://shopify.dev/changelog/posts/exclusive-timestamp-filters",
-      "primary_source_verified": true,
-      "primary_source_title": "Exclusive > timestamp filters exclude the full second - Shopify developer changelog",
-      "primary_source_final_url": "https://shopify.dev/changelog/posts/exclusive-timestamp-filters",
-      "primary_source_http_status": 200,
-      "category": "commerce_and_digital_products",
-      "priority_score": 63,
-      "hourly_adjusted_score": 55,
-      "post_text": "Shopify GraphQL Admin API now excludes the full second for > timestamp filters. Add fractional seconds to > bounds to capture events at exact seconds. https://shopify.dev/changelog/posts/exclusive-timestamp-filters",
-      "fact_sentence": "Shopify GraphQL Admin API now excludes the full second for > timestamp filters.",
-      "format": "release",
-      "audience": "shopify developers",
-      "angle": "API update",
-      "rationale": "Highlights a precise API change and a concrete adjustment to queries.",
-      "evidence_quote": "As of API version 2026-10 , an exclusive lower bound ( > ) on a timestamp filter in the GraphQL Admin API search syntax excludes the full second.",
-      "editorial_takeaway": "Add fractional seconds to > bounds to capture events at exact seconds.",
-      "claim_evidence": [
-        {
-          "claim": "Shopify GraphQL Admin API now excludes the full second for > timestamp filters.",
-          "quote": "As of API version 2026-10 , an exclusive lower bound ( > ) on a timestamp filter in the GraphQL Admin API search syntax excludes the full second."
-        }
-      ],
-      "scores": {
-        "timeliness": 10,
-        "usefulness": 9,
-        "novelty": 8,
-        "evidence": 9,
-        "insight": 9
-      },
-      "editorial_score": 8.85,
-      "character_count": 214,
-      "status": "dry_run_passed_not_published",
-      "published_to_x": false,
-      "editorial_review": {
-        "clarity_score": 9,
-        "technical_coherence_score": 9,
-        "takeaway_value_score": 9,
-        "source_faithfulness_score": 9,
-        "originality_score": 9,
-        "reason": "Clear, accurate, and adds actionable advice beyond the headline.",
-        "passed": true
-      }
-    }
-  ],
+  "daily_drafts_already_passed": 3,
+  "outcome": "skip",
+  "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
+  "passing_drafts": [],
   "rejected_drafts": [
     {
       "candidate_id": "4f189644b99609e6",
@@ -261,151 +212,163 @@
       ]
     },
     {
-      "candidate_id": "1533c768c95eedf5",
-      "title": "Show HN: Multipeer, a multiplayer infinite canvas for people and their agents",
+      "candidate_id": "bce9f30903e287cd",
+      "title": "Show HN: Benchmarks of continual learning model trained for a month on a laptop",
       "reasons": [
-        "Takeaway implies an undocumented product capability: sync. Reframe as a check of documented behavior.",
-        "Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration."
+        "Unsupported numeric claim(s): 1.26"
       ],
-      "proposed_text": "Multipeer lets agents run in a shared infinite canvas. Test that agent logs sync across teammates before scaling. https://multipeer.sh",
-      "evidence_quote": "run agents in multiplayer. your agents, terminals, files and notes, with everyone on one infinite canvas.",
+      "proposed_text": "mini-AGI trains a byte‑level continual model on a single 8 GB RTX 3070 laptop. Verify VRAM usage stays below 8 GB while model grows to 1.26 B params. https://news.ycombinator.com/item?id=50219762",
+      "evidence_quote": "mini-AGI, an experiment in training a byte-level, continually learning language model from scratch on a single 8 GB laptop GPU (an RTX 3070). To recap the setup briefly: it completely decouples model size from VRAM by paging experts to and from an NVMe drive",
       "claim_evidence": [
         {
-          "claim": "Multipeer lets agents run in a shared infinite canvas.",
-          "quote": "run agents in multiplayer. your agents, terminals, files and notes, with everyone on one infinite canvas."
+          "claim": "mini-AGI trains a byte‑level continual model on a single 8 GB RTX 3070 laptop",
+          "quote": "mini-AGI, an experiment in training a byte-level, continually learning language model from scratch on a single 8 GB laptop GPU (an RTX 3070). To recap the setup briefly: it completely decouples model size from VRAM by paging experts to and from an NVMe drive"
         }
+      ]
+    },
+    {
+      "candidate_id": null,
+      "title": "Unmapped model draft",
+      "proposed_text": "",
+      "reasons": [
+        "Model omitted a valid candidate ID and no exact verified source URL matched."
+      ]
+    },
+    {
+      "candidate_id": "301687e3d4a1ad4d",
+      "title": "gotempsh/temps",
+      "reasons": [
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Fact sentence is too long; narrow it to one source-backed capability."
+      ],
+      "proposed_text": "temps is an AI‑native open‑source alternative to Vercel, Sentry, PostHog, and more, offering 440+ CLI operations. Run a sample deployment CLI to confirm end‑to‑end CI/CD works before full migration. https://github.com/gotempsh/temps",
+      "evidence_quote": "AI-native open-source alternative to Vercel + Sentry + PostHog + Pingdom + Resend + E2B. 440+ CLI operations with drop-in skills for Claude Code, Codex & OpenCode",
+      "claim_evidence": [
+        {
+          "claim": "temps is an AI‑native open‑source alternative to Vercel, Sentry, PostHog, and more, offering 440+ CLI operations.",
+          "quote": "AI-native open-source alternative to Vercel + Sentry + PostHog + Pingdom + Resend + E2B. 440+ CLI operations with drop-in skills for Claude Code, Codex & OpenCode"
+        }
+      ]
+    },
+    {
+      "candidate_id": "bce9f30903e287cd",
+      "title": "Show HN: Benchmarks of continual learning model trained for a month on a laptop",
+      "reasons": [
+        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.",
+        "Editorial takeaway is too long; keep the analysis concrete and concise."
+      ],
+      "proposed_text": "mini‑AGI uses an 8 GB RTX 3070 GPU with 5.1 GB VRAM for training. Keep VRAM usage under 8 GB by paging experts to NVMe; monitor resident memory during training. https://news.ycombinator.com/item?id=50219762",
+      "evidence_quote": "mini‑AGI, an experiment in training a byte‑level, continually learning language model from scratch on a single 8 GB laptop GPU (an RTX 3070). To recap the setup briefly: it completely decouples model size from VRAM by paging experts to and from an NVMe drive",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "Unsupported numeric claim(s): 1.26"
+      ]
+    },
+    {
+      "candidate_id": "301687e3d4a1ad4d",
+      "title": "gotempsh/temps",
+      "proposed_text": "temps is a Rust‑based self‑hosted CLI for CI/CD and monitoring. Run \"temps deploy\" to verify end‑to‑end CI/CD before full migration. https://github.com/gotempsh/temps",
+      "reasons": [
+        "The post’s takeaway recommends running \"temps deploy\" but the source excerpt does not mention this command or its effect, so the claim lacks evidence and usefulness."
+      ],
+      "editorial_review": {
+        "clarity_score": 8,
+        "technical_coherence_score": 8,
+        "takeaway_value_score": 4,
+        "source_faithfulness_score": 5,
+        "originality_score": 5
+      }
+    },
+    {
+      "candidate_id": "301687e3d4a1ad4d",
+      "title": "gotempsh/temps",
+      "proposed_text": "temps is a self‑hosted Rust binary for CI/CD and monitoring. Configure OpenTelemetry in temps to stream metrics to your monitoring stack. https://github.com/gotempsh/temps",
+      "reasons": [
+        "Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi"
       ]
     }
   ],
   "candidate_shortlist": [
-    {
-      "id": "1533c768c95eedf5",
-      "title": "Show HN: Multipeer, a multiplayer infinite canvas for people and their agents",
-      "url": "https://multipeer.sh",
-      "source": "Hacker News",
-      "primary_category": "product_and_workflow_tools",
-      "priority_score": 64,
-      "hourly_adjusted_score": 66,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-24T09:05:28+00:00",
-      "days_old": 0.0,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
     {
       "id": "4f189644b99609e6",
       "title": "Show HN: Encarta 95 Web",
       "url": "https://benwinding.github.io/encarta_95_web/#/article/Art",
       "source": "Hacker News",
       "primary_category": "product_and_workflow_tools",
-      "priority_score": 62,
-      "hourly_adjusted_score": 64,
+      "priority_score": 63,
+      "hourly_adjusted_score": 65,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
       "published_at": "2026-10-24T07:18:37+00:00",
-      "days_old": 0.08,
+      "days_old": 0.12,
       "primary_source_verified": false,
       "primary_source_http_status": null,
       "primary_source_reason": "Primary page title/content does not sufficiently match the candidate headline."
     },
     {
-      "id": "4ef43ce31f0c5ea0",
-      "title": "Exclusive > timestamp filters exclude the full second",
-      "url": "https://shopify.dev/changelog/posts/exclusive-timestamp-filters",
-      "source": "Shopify Developer Changelog",
-      "primary_category": "commerce_and_digital_products",
-      "priority_score": 63,
-      "hourly_adjusted_score": 55,
+      "id": "bce9f30903e287cd",
+      "title": "Show HN: Benchmarks of continual learning model trained for a month on a laptop",
+      "url": "https://news.ycombinator.com/item?id=50219762",
+      "source": "Hacker News",
+      "primary_category": "product_and_workflow_tools",
+      "priority_score": 62,
+      "hourly_adjusted_score": 62,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-19T18:00:00+00:00",
-      "days_old": 4.63,
+      "published_at": "2026-10-24T10:09:27+00:00",
+      "days_old": 0.0,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "301687e3d4a1ad4d",
+      "title": "gotempsh/temps",
+      "url": "https://github.com/gotempsh/temps",
+      "source": "GitHub Search",
+      "primary_category": "data_and_growth",
+      "priority_score": 74,
+      "hourly_adjusted_score": 58,
+      "stars_current": 866,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "insufficient_history",
+      "published_at": "2026-10-24T10:08:07+00:00",
+      "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     }
   ],
   "automatic_repair": {
-    "attempted": false,
-    "drafts_submitted": 0,
-    "repaired_local_passes": 0,
-    "repair_rejections": 0,
-    "repair_error": null,
-    "editorial_repair_attempted": false,
-    "editorial_repair_drafts_submitted": 0,
+    "attempted": true,
+    "drafts_submitted": 3,
+    "repaired_local_passes": 2,
+    "repair_rejections": 2,
+    "repair_error": "Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi",
+    "editorial_repair_attempted": true,
+    "editorial_repair_drafts_submitted": 1,
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 1,
-    "submitted_for_independent_review": 1,
-    "passed_independent_review": 1,
-    "rejected_by_independent_review": 0,
+    "locally_valid_drafts": 2,
+    "submitted_for_independent_review": 2,
+    "passed_independent_review": 0,
+    "rejected_by_independent_review": 2,
     "lower_ranked_not_reviewed": 0,
-    "review_error": null,
+    "review_error": "Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi",
     "automatic_gate": "fail_closed"
-  },
-  "recommended_draft": {
-    "candidate_id": "4ef43ce31f0c5ea0",
-    "title": "Exclusive > timestamp filters exclude the full second",
-    "source": "Shopify Developer Changelog",
-    "source_kind": "official_changelog",
-    "url": "https://shopify.dev/changelog/posts/exclusive-timestamp-filters",
-    "primary_source_verified": true,
-    "primary_source_title": "Exclusive > timestamp filters exclude the full second - Shopify developer changelog",
-    "primary_source_final_url": "https://shopify.dev/changelog/posts/exclusive-timestamp-filters",
-    "primary_source_http_status": 200,
-    "category": "commerce_and_digital_products",
-    "priority_score": 63,
-    "hourly_adjusted_score": 55,
-    "post_text": "Shopify GraphQL Admin API now excludes the full second for > timestamp filters. Add fractional seconds to > bounds to capture events at exact seconds. https://shopify.dev/changelog/posts/exclusive-timestamp-filters",
-    "fact_sentence": "Shopify GraphQL Admin API now excludes the full second for > timestamp filters.",
-    "format": "release",
-    "audience": "shopify developers",
-    "angle": "API update",
-    "rationale": "Highlights a precise API change and a concrete adjustment to queries.",
-    "evidence_quote": "As of API version 2026-10 , an exclusive lower bound ( > ) on a timestamp filter in the GraphQL Admin API search syntax excludes the full second.",
-    "editorial_takeaway": "Add fractional seconds to > bounds to capture events at exact seconds.",
-    "claim_evidence": [
-      {
-        "claim": "Shopify GraphQL Admin API now excludes the full second for > timestamp filters.",
-        "quote": "As of API version 2026-10 , an exclusive lower bound ( > ) on a timestamp filter in the GraphQL Admin API search syntax excludes the full second."
-      }
-    ],
-    "scores": {
-      "timeliness": 10,
-      "usefulness": 9,
-      "novelty": 8,
-      "evidence": 9,
-      "insight": 9
-    },
-    "editorial_score": 8.85,
-    "character_count": 214,
-    "status": "dry_run_passed_not_published",
-    "published_to_x": false,
-    "editorial_review": {
-      "clarity_score": 9,
-      "technical_coherence_score": 9,
-      "takeaway_value_score": 9,
-      "source_faithfulness_score": 9,
-      "originality_score": 9,
-      "reason": "Clear, accurate, and adds actionable advice beyond the headline.",
-      "passed": true
-    }
   },
   "state_summary": {
     "used_candidates_in_cooldown": 5,
-    "recently_attempted_candidates": 20,
+    "recently_attempted_candidates": 22,
     "recent_draft_passes_today": 3
   }
 }
