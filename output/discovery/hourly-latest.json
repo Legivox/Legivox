@@ -1,59 +1,59 @@
 {
-  "generated_at_ist": "2026-10-24T19:38:16+05:30",
-  "run_at_ist": "2026-10-24T19:38:16+05:30",
+  "generated_at_ist": "2026-10-24T20:38:35+05:30",
+  "run_at_ist": "2026-10-24T20:38:35+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 173,
-  "eligible_candidate_count": 75,
+  "candidate_count_raw": 176,
+  "eligible_candidate_count": 84,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4708
+      "total_count": 4713
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1035
+      "total_count": 1036
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 373
+      "total_count": 375
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2896
+      "total_count": 2901
     },
     {
       "source": "GitHub Search · github-ecommerce-digital-products",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 428
+      "total_count": 429
     },
     {
       "source": "GitHub Search · github-mcp-servers",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2035
+      "total_count": 2038
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3204
+      "total_count": 3210
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
@@ -67,12 +67,12 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 262
+      "total_count": 263
     },
     {
       "source": "Hacker News · hn-analytics-growth",
       "kind": "hacker_news",
-      "items_kept": 10,
+      "items_kept": 9,
       "status": "ok",
       "total_count": 10
     },
@@ -134,21 +134,21 @@
     {
       "source": "Product Hunt",
       "kind": "rss",
-      "items_kept": 42,
+      "items_kept": 41,
       "status": "ok"
     },
     {
       "source": "Shopify Developer Changelog",
       "kind": "rss",
-      "items_kept": 11,
+      "items_kept": 10,
       "status": "ok"
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-24T14:08:16+00:00",
+    "observed_at_utc": "2026-10-24T15:08:35+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 77,
-    "previously_tracked_repositories_refreshed": 123,
+    "repositories_seen_in_discovery": 83,
+    "previously_tracked_repositories_refreshed": 117,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
@@ -158,174 +158,141 @@
   },
   "primary_source_checks": [
     {
-      "candidate_id": "5c0164d30949ac47",
-      "title": "mixpeek/amux",
-      "source_url": "https://github.com/mixpeek/amux",
+      "candidate_id": "1b96ef0038e1a333",
+      "title": "Show HN: Jam – a platform where beginners can collaborate in music",
+      "source_url": "https://github.com/hellojunchobo/Jam-music",
       "verified": true,
-      "final_url": "https://github.com/mixpeek/amux",
+      "final_url": "https://github.com/hellojunchobo/Jam-music",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "127639cc62d76a80",
-      "title": "Basedash Scheduled CSV Exports",
-      "source_url": "https://www.producthunt.com/products/basedash",
-      "verified": false,
-      "final_url": null,
-      "http_status": null,
-      "reason": "Primary source returned HTTP 403."
+      "candidate_id": "01ff128cdf0f111d",
+      "title": "Show HN: Visual Studio extension that shows decimal and hex in the debugger",
+      "source_url": "https://github.com/JochenBaier/AlwaysHex",
+      "verified": true,
+      "final_url": "https://github.com/JochenBaier/AlwaysHex",
+      "http_status": 200,
+      "reason": ""
     },
     {
-      "candidate_id": "fbfdec28cfffc04c",
-      "title": "PostHog/posthog",
-      "source_url": "https://github.com/PostHog/posthog",
+      "candidate_id": "41a79b9064c07335",
+      "title": "dork-labs/dorkos",
+      "source_url": "https://github.com/dork-labs/dorkos",
       "verified": true,
-      "final_url": "https://github.com/PostHog/posthog",
+      "final_url": "https://github.com/dork-labs/dorkos",
       "http_status": 200,
       "reason": ""
     }
   ],
-  "rejected_primary_sources": [
-    {
-      "candidate_id": "127639cc62d76a80",
-      "title": "Basedash Scheduled CSV Exports",
-      "source": "Product Hunt",
-      "url": "https://www.producthunt.com/products/basedash",
-      "reasons": [
-        "Primary source returned HTTP 403."
-      ]
-    }
-  ],
+  "rejected_primary_sources": [],
   "daily_draft_cap": 16,
   "daily_drafts_already_passed": 4,
   "outcome": "skip",
-  "decision_reason": "All generated drafts failed the local evidence/editorial checks; the hour was skipped.",
+  "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
   "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "127639cc62d76a80",
-      "title": "Basedash Scheduled CSV Exports",
-      "source": "Product Hunt",
-      "url": "https://www.producthunt.com/products/basedash",
-      "reasons": [
-        "Primary source returned HTTP 403."
-      ]
-    },
-    {
-      "candidate_id": "5c0164d30949ac47",
-      "title": "mixpeek/amux",
+      "candidate_id": "1b96ef0038e1a333",
+      "title": "Show HN: Jam – a platform where beginners can collaborate in music",
       "reasons": [
         "The factual opening bundles multiple features; narrow it to one capability.",
-        "Fact sentence is too long; narrow it to one source-backed capability."
+        "A supporting quote does not share enough wording with its stated claim",
+        "Supporting quotes cover only 40% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "amux is an open‑source Rust control plane that orchestrates Claude, Codex, and Gemini workers on a shared board. Validate that atomic tasks finish before the next loop to avoid stale state. https://github.com/mixpeek/amux",
-      "evidence_quote": "Open‑source control plane for AI coding agents. Run an AI engineering team: parallel Claude Code, Codex, and Gemini workers with a shared board",
+      "proposed_text": "Jam-music lets users play piano, bass, and drums together in shared rooms. Test room code collision by generating many codes; ensure uniqueness. https://github.com/hellojunchobo/Jam-music",
+      "evidence_quote": "Three instruments: piano, bass, and drums Rooms: create a room, share the 4-letter code",
       "claim_evidence": [
         {
-          "claim": "amux orchestrates Claude, Codex, and Gemini workers on a shared board",
-          "quote": "Open‑source control plane for AI coding agents. Run an AI engineering team: parallel Claude Code, Codex, and Gemini workers with a shared board"
+          "claim": "Jam-music lets users play piano, bass, and drums together in shared rooms.",
+          "quote": "Three instruments: piano, bass, and drums Rooms: create a room, share the 4-letter code"
         }
       ]
     },
     {
-      "candidate_id": "fbfdec28cfffc04c",
-      "title": "PostHog/posthog",
+      "candidate_id": "41a79b9064c07335",
+      "title": "dork-labs/dorkos",
       "reasons": [
         "The factual opening bundles multiple features; narrow it to one capability."
       ],
-      "proposed_text": "PostHog aggregates AI observability, analytics, and session replay into a single platform. Run a replay test on a critical user flow to confirm flag changes propagate correctly. https://github.com/PostHog/posthog",
-      "evidence_quote": "PostHog is the leading platform for building self-driving products. Our developer tools – AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more",
+      "proposed_text": "dorkos is a self‑hosted CLI that orchestrates Claude Code, Codex, and OpenCode agents. Run a test agent and confirm its actions are logged before execution. https://github.com/dork-labs/dorkos",
+      "evidence_quote": "Self-hosted, MIT. You, multiplied. One place for every AI agent you run: Claude Code, Codex, and OpenCode side by side.",
       "claim_evidence": [
         {
-          "claim": "PostHog aggregates AI observability, analytics, and session replay into a single platform",
-          "quote": "PostHog is the leading platform for building self-driving products. Our developer tools – AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more"
+          "claim": "dorkos is a self‑hosted CLI that orchestrates Claude Code, Codex, and OpenCode agents.",
+          "quote": "Self-hosted, MIT. You, multiplied. One place for every AI agent you run: Claude Code, Codex, and OpenCode side by side."
         }
       ]
     },
     {
-      "candidate_id": "5c0164d30949ac47",
-      "title": "mixpeek/amux",
+      "candidate_id": "01ff128cdf0f111d",
+      "title": "Show HN: Visual Studio extension that shows decimal and hex in the debugger",
+      "proposed_text": "AlwaysHex shows variable values in decimal and hex simultaneously during debugging. Verify that hex view updates when stepping; compare with debugger's default. https://github.com/JochenBaier/AlwaysHex",
       "reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability.",
-        "No claim-by-claim supporting evidence was provided",
-        "Supporting quotes cover only 64% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Post repeats headline fact and generic advice; lacks new insight or concrete next step beyond what source states."
       ],
-      "proposed_text": "amux is an open‑source control plane that runs parallel Claude, Codex, and Gemini workers on a shared board. Validate that atomic tasks finish before the next loop to avoid stale state. https://github.com/mixpeek/amux",
-      "evidence_quote": "parallel Claude Code, Codex, and Gemini workers with a shared board",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability.",
-        "Fact sentence is too long; narrow it to one source-backed capability."
-      ]
-    },
-    {
-      "candidate_id": "fbfdec28cfffc04c",
-      "title": "PostHog/posthog",
-      "reasons": [
-        "No claim-by-claim supporting evidence was provided",
-        "Supporting quotes cover only 33% of factual wording; narrow the claim or provide a closer primary-source quote"
-      ],
-      "proposed_text": "PostHog provides AI observability and analytics for self‑driving products. Run a replay test on a critical user flow to confirm flag changes propagate correctly. https://github.com/PostHog/posthog",
-      "evidence_quote": "AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability."
-      ]
+      "editorial_review": {
+        "clarity_score": 8,
+        "technical_coherence_score": 8,
+        "takeaway_value_score": 7,
+        "source_faithfulness_score": 9,
+        "originality_score": 5
+      }
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "5c0164d30949ac47",
-      "title": "mixpeek/amux",
-      "url": "https://github.com/mixpeek/amux",
-      "source": "GitHub Search",
-      "primary_category": "security_and_self_hosting",
-      "priority_score": 68,
-      "hourly_adjusted_score": 52,
-      "stars_current": 544,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "insufficient_history",
-      "published_at": "2026-10-24T14:09:00+00:00",
-      "days_old": 0.0,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "127639cc62d76a80",
-      "title": "Basedash Scheduled CSV Exports",
-      "url": "https://www.producthunt.com/products/basedash",
-      "source": "Product Hunt",
+      "id": "1b96ef0038e1a333",
+      "title": "Show HN: Jam – a platform where beginners can collaborate in music",
+      "url": "https://github.com/hellojunchobo/Jam-music",
+      "source": "Hacker News",
       "primary_category": "product_and_workflow_tools",
-      "priority_score": 51,
-      "hourly_adjusted_score": 51,
+      "priority_score": 62,
+      "hourly_adjusted_score": 64,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-23T17:51:50+00:00",
-      "days_old": 0.84,
-      "primary_source_verified": false,
-      "primary_source_http_status": null,
-      "primary_source_reason": "Primary source returned HTTP 403."
+      "published_at": "2026-10-24T14:55:36+00:00",
+      "days_old": 0.01,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
     },
     {
-      "id": "fbfdec28cfffc04c",
-      "title": "PostHog/posthog",
-      "url": "https://github.com/PostHog/posthog",
+      "id": "01ff128cdf0f111d",
+      "title": "Show HN: Visual Studio extension that shows decimal and hex in the debugger",
+      "url": "https://github.com/JochenBaier/AlwaysHex",
+      "source": "Hacker News",
+      "primary_category": "product_and_workflow_tools",
+      "priority_score": 59,
+      "hourly_adjusted_score": 61,
+      "stars_current": null,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-24T14:29:46+00:00",
+      "days_old": 0.03,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "41a79b9064c07335",
+      "title": "dork-labs/dorkos",
+      "url": "https://github.com/dork-labs/dorkos",
       "source": "GitHub Search",
-      "primary_category": "data_and_growth",
-      "priority_score": 66,
-      "hourly_adjusted_score": 50,
-      "stars_current": 40405,
+      "primary_category": "security_and_self_hosting",
+      "priority_score": 70,
+      "hourly_adjusted_score": 54,
+      "stars_current": 12,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "insufficient_history",
-      "published_at": "2026-10-24T14:08:58+00:00",
+      "published_at": "2026-10-24T15:08:58+00:00",
       "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
@@ -334,19 +301,19 @@
   ],
   "automatic_repair": {
     "attempted": true,
-    "drafts_submitted": 2,
+    "drafts_submitted": 0,
     "repaired_local_passes": 0,
-    "repair_rejections": 2,
+    "repair_rejections": 0,
     "repair_error": null,
-    "editorial_repair_attempted": false,
+    "editorial_repair_attempted": true,
     "editorial_repair_drafts_submitted": 0,
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 0,
-    "submitted_for_independent_review": 0,
+    "locally_valid_drafts": 1,
+    "submitted_for_independent_review": 1,
     "passed_independent_review": 0,
-    "rejected_by_independent_review": 0,
+    "rejected_by_independent_review": 1,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"

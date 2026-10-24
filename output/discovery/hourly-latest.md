@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-24T19:38:16+05:30
+- Run time (IST): 2026-10-24T20:38:35+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 75
-- Independent editorial review: 0 draft(s) passed / 0 rejected
+- Candidate pool after freshness/diversity filters: 84
+- Independent editorial review: 0 draft(s) passed / 1 rejected
 - Drafts passing local checks: 0
 - Outcome: **skip**
-- Decision reason: All generated drafts failed the local evidence/editorial checks; the hour was skipped.
+- Decision reason: Every draft submitted for independent editorial review was rejected; The hour was skipped.
 
 ## Source health
 
@@ -22,7 +22,7 @@
 | GitHub Search · github-self-hosted | 10 | ok |
 | GitHub Search · github-shopify-commerce | 10 | ok |
 | GitHub Search · github-workflow-automation | 10 | ok |
-| Hacker News · hn-analytics-growth | 10 | ok |
+| Hacker News · hn-analytics-growth | 9 | ok |
 | Hacker News · hn-automation-api | 1 | ok |
 | Hacker News · hn-creator-business | 0 | ok |
 | Hacker News · hn-digital-products | 1 | ok |
@@ -31,14 +31,14 @@
 | Hacker News · hn-shopify | 10 | ok |
 | Hacker News · hn-show-hn | 10 | ok |
 | Console.dev | 12 | ok |
-| Product Hunt | 42 | ok |
-| Shopify Developer Changelog | 11 | ok |
+| Product Hunt | 41 | ok |
+| Shopify Developer Changelog | 10 | ok |
 
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 77
-- Previously tracked repositories refreshed outside search results: 123
+- Repositories seen in this discovery run: 83
+- Previously tracked repositories refreshed outside search results: 117
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
 - Repositories with a 20–36 hour comparison baseline: 8
@@ -48,46 +48,41 @@
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| mixpeek/amux | yes | 200 | https://github.com/mixpeek/amux |
-| Basedash Scheduled CSV Exports | no | — | Primary source returned HTTP 403. |
-| PostHog/posthog | yes | 200 | https://github.com/PostHog/posthog |
+| Show HN: Jam – a platform where beginners can collaborate in music | yes | 200 | https://github.com/hellojunchobo/Jam-music |
+| Show HN: Visual Studio extension that shows decimal and hex in the debugger | yes | 200 | https://github.com/JochenBaier/AlwaysHex |
+| dork-labs/dorkos | yes | 200 | https://github.com/dork-labs/dorkos |
 
 ## Selected draft candidates
 
-No candidate produced a draft that passed every local check. Skipping is intentional.
+No draft cleared the complete local and independent-editor gate. See the decision reason and rejected-draft section for locally valid drafts that were rejected, not reviewed, or blocked by a review error.
 
 ## Automatic repair attempt
 
 - Attempted: yes
-- Repaired drafts submitted: 2
+- Repaired drafts submitted: 0
 - Repaired drafts that passed local validation: 0
-- Repaired drafts rejected: 2
+- Repaired drafts rejected: 0
 - Repair error: none
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
-- Basedash Scheduled CSV Exports: Primary source returned HTTP 403.
-- mixpeek/amux: The factual opening bundles multiple features; narrow it to one capability.; Fact sentence is too long; narrow it to one source-backed capability.
-  - Rejected text: amux is an open‑source Rust control plane that orchestrates Claude, Codex, and Gemini workers on a shared board. Validate that atomic tasks finish before the next loop to avoid stale state. https://github.com/mixpeek/amux
-  - Model evidence quote: “Open‑source control plane for AI coding agents. Run an AI engineering team: parallel Claude Code, Codex, and Gemini workers with a shared board”
-  - Claim support: amux orchestrates Claude, Codex, and Gemini workers on a shared board ← “Open‑source control plane for AI coding agents. Run an AI engineering team: parallel Claude Code, Codex, and Gemini workers with a shared board”
-- PostHog/posthog: The factual opening bundles multiple features; narrow it to one capability.
-  - Rejected text: PostHog aggregates AI observability, analytics, and session replay into a single platform. Run a replay test on a critical user flow to confirm flag changes propagate correctly. https://github.com/PostHog/posthog
-  - Model evidence quote: “PostHog is the leading platform for building self-driving products. Our developer tools – AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more”
-  - Claim support: PostHog aggregates AI observability, analytics, and session replay into a single platform ← “PostHog is the leading platform for building self-driving products. Our developer tools – AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more”
-- mixpeek/amux: The factual opening bundles multiple features; narrow it to one capability.; No claim-by-claim supporting evidence was provided; Supporting quotes cover only 64% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: amux is an open‑source control plane that runs parallel Claude, Codex, and Gemini workers on a shared board. Validate that atomic tasks finish before the next loop to avoid stale state. https://github.com/mixpeek/amux
-  - Model evidence quote: “parallel Claude Code, Codex, and Gemini workers with a shared board”
-- PostHog/posthog: No claim-by-claim supporting evidence was provided; Supporting quotes cover only 33% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: PostHog provides AI observability and analytics for self‑driving products. Run a replay test on a critical user flow to confirm flag changes propagate correctly. https://github.com/PostHog/posthog
-  - Model evidence quote: “AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more”
+- Show HN: Jam – a platform where beginners can collaborate in music: The factual opening bundles multiple features; narrow it to one capability.; A supporting quote does not share enough wording with its stated claim; Supporting quotes cover only 40% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: Jam-music lets users play piano, bass, and drums together in shared rooms. Test room code collision by generating many codes; ensure uniqueness. https://github.com/hellojunchobo/Jam-music
+  - Model evidence quote: “Three instruments: piano, bass, and drums Rooms: create a room, share the 4-letter code”
+  - Claim support: Jam-music lets users play piano, bass, and drums together in shared rooms. ← “Three instruments: piano, bass, and drums Rooms: create a room, share the 4-letter code”
+- dork-labs/dorkos: The factual opening bundles multiple features; narrow it to one capability.
+  - Rejected text: dorkos is a self‑hosted CLI that orchestrates Claude Code, Codex, and OpenCode agents. Run a test agent and confirm its actions are logged before execution. https://github.com/dork-labs/dorkos
+  - Model evidence quote: “Self-hosted, MIT. You, multiplied. One place for every AI agent you run: Claude Code, Codex, and OpenCode side by side.”
+  - Claim support: dorkos is a self‑hosted CLI that orchestrates Claude Code, Codex, and OpenCode agents. ← “Self-hosted, MIT. You, multiplied. One place for every AI agent you run: Claude Code, Codex, and OpenCode side by side.”
+- Show HN: Visual Studio extension that shows decimal and hex in the debugger: Post repeats headline fact and generic advice; lacks new insight or concrete next step beyond what source states.
+  - Rejected text: AlwaysHex shows variable values in decimal and hex simultaneously during debugging. Verify that hex view updates when stepping; compare with debugger's default. https://github.com/JochenBaier/AlwaysHex
 
 ## Top discovery candidates considered
 
-- mixpeek/amux | GitHub Search | security_and_self_hosting | raw 68, adjusted 52 | current stars 544 | GitHub star trend: building baseline | https://github.com/mixpeek/amux
-- Basedash Scheduled CSV Exports | Product Hunt | product_and_workflow_tools | raw 51, adjusted 51 | https://www.producthunt.com/products/basedash
-- PostHog/posthog | GitHub Search | data_and_growth | raw 66, adjusted 50 | current stars 40405 | GitHub star trend: building baseline | https://github.com/PostHog/posthog
+- Show HN: Jam – a platform where beginners can collaborate in music | Hacker News | product_and_workflow_tools | raw 62, adjusted 64 | https://github.com/hellojunchobo/Jam-music
+- Show HN: Visual Studio extension that shows decimal and hex in the debugger | Hacker News | product_and_workflow_tools | raw 59, adjusted 61 | https://github.com/JochenBaier/AlwaysHex
+- dork-labs/dorkos | GitHub Search | security_and_self_hosting | raw 70, adjusted 54 | current stars 12 | GitHub star trend: building baseline | https://github.com/dork-labs/dorkos
 
 ## Safety and interpretation
 
