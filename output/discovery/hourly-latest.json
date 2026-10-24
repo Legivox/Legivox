@@ -1,9 +1,9 @@
 {
-  "generated_at_ist": "2026-10-24T16:39:43+05:30",
-  "run_at_ist": "2026-10-24T16:39:43+05:30",
+  "generated_at_ist": "2026-10-24T17:39:22+05:30",
+  "run_at_ist": "2026-10-24T17:39:22+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 177,
+  "candidate_count_raw": 176,
   "eligible_candidate_count": 87,
   "source_diagnostics": [
     {
@@ -11,14 +11,14 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4680
+      "total_count": 4686
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1029
+      "total_count": 1031
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
@@ -32,28 +32,28 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2880
+      "total_count": 2885
     },
     {
       "source": "GitHub Search · github-ecommerce-digital-products",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 425
+      "total_count": 426
     },
     {
       "source": "GitHub Search · github-mcp-servers",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2021
+      "total_count": 2024
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3191
+      "total_count": 3194
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
@@ -72,7 +72,7 @@
     {
       "source": "Hacker News · hn-analytics-growth",
       "kind": "hacker_news",
-      "items_kept": 9,
+      "items_kept": 10,
       "status": "ok",
       "total_count": 10
     },
@@ -114,7 +114,7 @@
     {
       "source": "Hacker News · hn-shopify",
       "kind": "hacker_news",
-      "items_kept": 10,
+      "items_kept": 7,
       "status": "ok",
       "total_count": 10
     },
@@ -145,188 +145,200 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-24T11:09:43+00:00",
+    "observed_at_utc": "2026-10-24T12:09:22+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 81,
-    "previously_tracked_repositories_refreshed": 119,
+    "repositories_seen_in_discovery": 82,
+    "previously_tracked_repositories_refreshed": 118,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
-    "repositories_with_20_to_36_hour_baseline": 9,
+    "repositories_with_20_to_36_hour_baseline": 8,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "4f189644b99609e6",
-      "title": "Show HN: Encarta 95 Web",
-      "source_url": "https://benwinding.github.io/encarta_95_web/#/article/Art",
-      "verified": false,
-      "final_url": null,
-      "http_status": null,
-      "reason": "Primary page title/content does not sufficiently match the candidate headline."
-    },
-    {
-      "candidate_id": "b7016d2db526680c",
-      "title": "Tool: Pele",
-      "source_url": "https://pele.run/?ref=console.dev",
+      "candidate_id": "ac29196abb1ad5ae",
+      "title": "Tool: KiviDB",
+      "source_url": "https://kividb.io/?ref=console.dev",
       "verified": true,
-      "final_url": "https://pele.run/?ref=console.dev",
+      "final_url": "https://kividb.io/?ref=console.dev",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "769635c4c0589719",
-      "title": "IHUI-INF-AI/IHUI-AI",
-      "source_url": "https://github.com/IHUI-INF-AI/IHUI-AI",
+      "candidate_id": "4a07de1a6b6420d6",
+      "title": "spatiumnorth/spatiumddi",
+      "source_url": "https://github.com/spatiumnorth/spatiumddi",
       "verified": true,
-      "final_url": "https://github.com/IHUI-INF-AI/IHUI-AI",
+      "final_url": "https://github.com/spatiumnorth/spatiumddi",
+      "http_status": 200,
+      "reason": ""
+    },
+    {
+      "candidate_id": "173e910281dd9255",
+      "title": "Sponsor: Falconer",
+      "source_url": "https://falconer.com/go/1Kfw2Ht",
+      "verified": true,
+      "final_url": "https://falconer.com/about/knowledge-health?utm_source=console.dev&utm_medium=newsletter&utm_content=knowledge-health",
       "http_status": 200,
       "reason": ""
     }
   ],
-  "rejected_primary_sources": [
-    {
-      "candidate_id": "4f189644b99609e6",
-      "title": "Show HN: Encarta 95 Web",
-      "source": "Hacker News",
-      "url": "https://benwinding.github.io/encarta_95_web/#/article/Art",
-      "reasons": [
-        "Primary page title/content does not sufficiently match the candidate headline."
-      ]
-    }
-  ],
+  "rejected_primary_sources": [],
   "daily_draft_cap": 16,
   "daily_drafts_already_passed": 3,
   "outcome": "skip",
-  "decision_reason": "All generated drafts failed the local evidence/editorial checks; the hour was skipped.",
+  "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
   "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "4f189644b99609e6",
-      "title": "Show HN: Encarta 95 Web",
-      "source": "Hacker News",
-      "url": "https://benwinding.github.io/encarta_95_web/#/article/Art",
+      "candidate_id": "ac29196abb1ad5ae",
+      "title": "Tool: KiviDB",
       "reasons": [
-        "Primary page title/content does not sufficiently match the candidate headline."
-      ]
-    },
-    {
-      "candidate_id": "b7016d2db526680c",
-      "title": "Tool: Pele",
-      "reasons": [
-        "Unsupported numeric claim(s): 1ms"
+        "Efficiency/savings takeaway lacks a baseline or direct metric; repeating the same prompt twice does not isolate savings. Compare against a control/raw path or inspect a direct usage metric.",
+        "Editorial takeaway is not specific enough to this candidate's technical/product details.",
+        "Supporting quotes cover only 56% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "Pele renders Mermaid syntax to SVG using CSS variables for theming. Test render time under 1 ms on target devices to confirm performance claim. https://pele.run/?ref=console.dev",
-      "evidence_quote": "Pele is a lightweight open source library that renders Mermaid diagrams to SVG, themed with CSS variables.",
+      "proposed_text": "KiviDB runs Redis commands on every core, boosting p99 latency. Test p99 latency under load to confirm performance gains. https://kividb.io/?ref=console.dev",
+      "evidence_quote": "runs Redis commands on every core",
       "claim_evidence": [
         {
-          "claim": "Pele renders Mermaid syntax to SVG using CSS variables for theming.",
-          "quote": "Pele is a lightweight open source library that renders Mermaid diagrams to SVG, themed with CSS variables."
+          "claim": "KiviDB runs Redis commands on every core, boosting p99 latency.",
+          "quote": "runs Redis commands on every core"
         }
       ]
     },
     {
-      "candidate_id": "769635c4c0589719",
-      "title": "IHUI-INF-AI/IHUI-AI",
-      "reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability.",
-        "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "Supporting quotes cover only 62% of factual wording; narrow the claim or provide a closer primary-source quote"
-      ],
-      "proposed_text": "IHUI‑AI unifies 176 LLMs across eight platforms via LangGraph, MCP, and A2A. Verify multi‑tenant RLS by querying a protected table from two tenants to ensure isolation. https://github.com/IHUI-INF-AI/IHUI-AI",
-      "evidence_quote": "unifies 176 LLMs via LangGraph + MCP + A2A. Multi‑tenant RLS over 340 tables",
-      "claim_evidence": [
-        {
-          "claim": "IHUI‑AI unifies 176 LLMs across eight platforms via LangGraph, MCP, and A2A.",
-          "quote": "unifies 176 LLMs via LangGraph + MCP + A2A. Multi‑tenant RLS over 340 tables"
-        }
-      ]
-    },
-    {
-      "candidate_id": "b7016d2db526680c",
-      "title": "Tool: Pele",
-      "reasons": [
-        "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
-      ],
-      "proposed_text": "Pele renders Mermaid syntax to SVG using CSS variables for theming. Confirm that Pele supports all diagram types in Mermaid 12.1.0 by rendering a sample diagram. https://pele.run/?ref=console.dev",
-      "evidence_quote": "Pele supports every diagram type built into Mermaid 12.1.0.",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "Unsupported numeric claim(s): 1ms"
-      ]
-    },
-    {
-      "candidate_id": "769635c4c0589719",
-      "title": "IHUI-INF-AI/IHUI-AI",
+      "candidate_id": "4a07de1a6b6420d6",
+      "title": "spatiumnorth/spatiumddi",
       "reasons": [
         "The factual opening bundles multiple features; narrow it to one capability."
       ],
-      "proposed_text": "IHUI‑AI unifies 176 LLMs via LangGraph, MCP, and A2A. Verify multi‑tenant RLS isolation by querying a protected table from two tenants. https://github.com/IHUI-INF-AI/IHUI-AI",
-      "evidence_quote": "Multi‑tenant RLS over 340 tables",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability.",
-        "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "Supporting quotes cover only 62% of factual wording; narrow the claim or provide a closer primary-source quote"
+      "proposed_text": "spatiumddi runs BIND9, PowerDNS, and Kea containers via FastAPI. Verify DNS consistency by querying each container after deployment. https://github.com/spatiumnorth/spatiumddi",
+      "evidence_quote": "Runs its own BIND9 / PowerDNS / Kea service containers, with a FastAPI control plane",
+      "claim_evidence": [
+        {
+          "claim": "spatiumddi runs BIND9, PowerDNS, and Kea containers via FastAPI.",
+          "quote": "Runs its own BIND9 / PowerDNS / Kea service containers, with a FastAPI control plane"
+        }
       ]
+    },
+    {
+      "candidate_id": "173e910281dd9255",
+      "title": "Sponsor: Falconer",
+      "reasons": [
+        "The factual opening bundles multiple features; narrow it to one capability."
+      ],
+      "proposed_text": "Falconer grades docs on coherence, coverage, freshness, and density. Run a weekly scan to catch stale content before agents consume it. https://falconer.com/about/knowledge-health?utm_source=console.dev&utm_medium=newsletter&utm_content=knowledge-health",
+      "evidence_quote": "Falconer grades your docs on coherence, coverage, freshness, density, and completeness",
+      "claim_evidence": [
+        {
+          "claim": "Falconer grades docs on coherence, coverage, freshness, and density.",
+          "quote": "Falconer grades your docs on coherence, coverage, freshness, density, and completeness"
+        }
+      ]
+    },
+    {
+      "candidate_id": "ac29196abb1ad5ae",
+      "title": "Tool: KiviDB",
+      "proposed_text": "KiviDB supports full‑text search built into the database. Run a sample full‑text query after deployment to confirm search functionality. https://kividb.io/?ref=console.dev",
+      "reasons": [
+        "Technical coherence low: claim about full‑text search is true, but takeaway is generic and not tied to a specific test or metric."
+      ],
+      "editorial_review": {
+        "clarity_score": 8,
+        "technical_coherence_score": 6,
+        "takeaway_value_score": 7,
+        "source_faithfulness_score": 9,
+        "originality_score": 5
+      }
+    },
+    {
+      "candidate_id": "4a07de1a6b6420d6",
+      "title": "spatiumnorth/spatiumddi",
+      "proposed_text": "spatiumddi runs its own BIND9 service container. After deployment, query the BIND9 container to verify DNS resolution. https://github.com/spatiumnorth/spatiumddi",
+      "reasons": [
+        "Technical coherence low: statement about BIND9 container is correct, but takeaway is generic DNS query advice without concrete verification steps."
+      ],
+      "editorial_review": {
+        "clarity_score": 8,
+        "technical_coherence_score": 6,
+        "takeaway_value_score": 7,
+        "source_faithfulness_score": 9,
+        "originality_score": 5
+      }
+    },
+    {
+      "candidate_id": "173e910281dd9255",
+      "title": "Sponsor: Falconer",
+      "proposed_text": "Falconer grades documents on coherence. Run a coherence scan to spot contradictory sections before agents consume the docs. https://falconer.com/about/knowledge-health?utm_source=console.dev&utm_medium=newsletter&utm_content=knowledge-health",
+      "reasons": [
+        "Technical coherence low: claim about grading coherence is accurate, but takeaway is generic and lacks actionable detail."
+      ],
+      "editorial_review": {
+        "clarity_score": 8,
+        "technical_coherence_score": 6,
+        "takeaway_value_score": 7,
+        "source_faithfulness_score": 9,
+        "originality_score": 5
+      }
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "4f189644b99609e6",
-      "title": "Show HN: Encarta 95 Web",
-      "url": "https://benwinding.github.io/encarta_95_web/#/article/Art",
-      "source": "Hacker News",
-      "primary_category": "product_and_workflow_tools",
-      "priority_score": 63,
-      "hourly_adjusted_score": 65,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-24T07:18:37+00:00",
-      "days_old": 0.16,
-      "primary_source_verified": false,
-      "primary_source_http_status": null,
-      "primary_source_reason": "Primary page title/content does not sufficiently match the candidate headline."
-    },
-    {
-      "id": "b7016d2db526680c",
-      "title": "Tool: Pele",
-      "url": "https://pele.run/?ref=console.dev",
+      "id": "ac29196abb1ad5ae",
+      "title": "Tool: KiviDB",
+      "url": "https://kividb.io/?ref=console.dev",
       "source": "Console.dev",
       "primary_category": "product_and_workflow_tools",
-      "priority_score": 60,
-      "hourly_adjusted_score": 60,
+      "priority_score": 59,
+      "hourly_adjusted_score": 59,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
       "published_at": "2026-10-22T07:00:00+00:00",
-      "days_old": 2.17,
+      "days_old": 2.21,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "769635c4c0589719",
-      "title": "IHUI-INF-AI/IHUI-AI",
-      "url": "https://github.com/IHUI-INF-AI/IHUI-AI",
+      "id": "4a07de1a6b6420d6",
+      "title": "spatiumnorth/spatiumddi",
+      "url": "https://github.com/spatiumnorth/spatiumddi",
       "source": "GitHub Search",
       "primary_category": "security_and_self_hosting",
       "priority_score": 71,
       "hourly_adjusted_score": 55,
-      "stars_current": 31,
+      "stars_current": 71,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "insufficient_history",
-      "published_at": "2026-10-24T11:09:45+00:00",
+      "published_at": "2026-10-24T12:09:24+00:00",
       "days_old": 0.0,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "173e910281dd9255",
+      "title": "Sponsor: Falconer",
+      "url": "https://falconer.com/about/knowledge-health?utm_source=console.dev&utm_medium=newsletter&utm_content=knowledge-health",
+      "source": "Console.dev",
+      "primary_category": "developer_tools",
+      "priority_score": 54,
+      "hourly_adjusted_score": 54,
+      "stars_current": null,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-22T07:00:00+00:00",
+      "days_old": 2.21,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
@@ -334,26 +346,26 @@
   ],
   "automatic_repair": {
     "attempted": true,
-    "drafts_submitted": 2,
-    "repaired_local_passes": 0,
-    "repair_rejections": 2,
-    "repair_error": null,
-    "editorial_repair_attempted": false,
+    "drafts_submitted": 3,
+    "repaired_local_passes": 3,
+    "repair_rejections": 0,
+    "repair_error": "Automatic repair failed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi",
+    "editorial_repair_attempted": true,
     "editorial_repair_drafts_submitted": 0,
-    "editorial_repair_error": null
+    "editorial_repair_error": "Automatic repair failed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi"
   },
   "editorial_review": {
-    "locally_valid_drafts": 0,
-    "submitted_for_independent_review": 0,
+    "locally_valid_drafts": 3,
+    "submitted_for_independent_review": 3,
     "passed_independent_review": 0,
-    "rejected_by_independent_review": 0,
+    "rejected_by_independent_review": 3,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
   "state_summary": {
     "used_candidates_in_cooldown": 5,
-    "recently_attempted_candidates": 24,
+    "recently_attempted_candidates": 27,
     "recent_draft_passes_today": 3
   }
 }

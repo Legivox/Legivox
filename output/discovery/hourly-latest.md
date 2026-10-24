@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-24T16:39:43+05:30
+- Run time (IST): 2026-10-24T17:39:22+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
 - Candidate pool after freshness/diversity filters: 87
-- Independent editorial review: 0 draft(s) passed / 0 rejected
+- Independent editorial review: 0 draft(s) passed / 3 rejected
 - Drafts passing local checks: 0
 - Outcome: **skip**
-- Decision reason: All generated drafts failed the local evidence/editorial checks; the hour was skipped.
+- Decision reason: Every draft submitted for independent editorial review was rejected; The hour was skipped.
 
 ## Source health
 
@@ -22,13 +22,13 @@
 | GitHub Search · github-self-hosted | 10 | ok |
 | GitHub Search · github-shopify-commerce | 10 | ok |
 | GitHub Search · github-workflow-automation | 10 | ok |
-| Hacker News · hn-analytics-growth | 9 | ok |
+| Hacker News · hn-analytics-growth | 10 | ok |
 | Hacker News · hn-automation-api | 1 | ok |
 | Hacker News · hn-creator-business | 0 | ok |
 | Hacker News · hn-digital-products | 1 | ok |
 | Hacker News · hn-ecommerce-payments | 0 | ok |
 | Hacker News · hn-security-selfhost | 0 | ok |
-| Hacker News · hn-shopify | 10 | ok |
+| Hacker News · hn-shopify | 7 | ok |
 | Hacker News · hn-show-hn | 10 | ok |
 | Console.dev | 12 | ok |
 | Product Hunt | 43 | ok |
@@ -37,57 +37,60 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 81
-- Previously tracked repositories refreshed outside search results: 119
+- Repositories seen in this discovery run: 82
+- Previously tracked repositories refreshed outside search results: 118
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
-- Repositories with a 20–36 hour comparison baseline: 9
+- Repositories with a 20–36 hour comparison baseline: 8
 - First observations are baseline samples, not evidence of trending. Star velocity is reported only when a historical comparison exists.
 
 ## Primary-source verification
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| Show HN: Encarta 95 Web | no | — | Primary page title/content does not sufficiently match the candidate headline. |
-| Tool: Pele | yes | 200 | https://pele.run/?ref=console.dev |
-| IHUI-INF-AI/IHUI-AI | yes | 200 | https://github.com/IHUI-INF-AI/IHUI-AI |
+| Tool: KiviDB | yes | 200 | https://kividb.io/?ref=console.dev |
+| spatiumnorth/spatiumddi | yes | 200 | https://github.com/spatiumnorth/spatiumddi |
+| Sponsor: Falconer | yes | 200 | https://falconer.com/about/knowledge-health?utm_source=console.dev&utm_medium=newsletter&utm_content=knowledge-health |
 
 ## Selected draft candidates
 
-No candidate produced a draft that passed every local check. Skipping is intentional.
+No draft cleared the complete local and independent-editor gate. See the decision reason and rejected-draft section for locally valid drafts that were rejected, not reviewed, or blocked by a review error.
 
 ## Automatic repair attempt
 
 - Attempted: yes
-- Repaired drafts submitted: 2
-- Repaired drafts that passed local validation: 0
-- Repaired drafts rejected: 2
-- Repair error: none
+- Repaired drafts submitted: 3
+- Repaired drafts that passed local validation: 3
+- Repaired drafts rejected: 0
+- Repair error: Automatic repair failed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
-- Show HN: Encarta 95 Web: Primary page title/content does not sufficiently match the candidate headline.
-- Tool: Pele: Unsupported numeric claim(s): 1ms
-  - Rejected text: Pele renders Mermaid syntax to SVG using CSS variables for theming. Test render time under 1 ms on target devices to confirm performance claim. https://pele.run/?ref=console.dev
-  - Model evidence quote: “Pele is a lightweight open source library that renders Mermaid diagrams to SVG, themed with CSS variables.”
-  - Claim support: Pele renders Mermaid syntax to SVG using CSS variables for theming. ← “Pele is a lightweight open source library that renders Mermaid diagrams to SVG, themed with CSS variables.”
-- IHUI-INF-AI/IHUI-AI: The factual opening bundles multiple features; narrow it to one capability.; Editorial takeaway is too long; keep the analysis concrete and concise.; Supporting quotes cover only 62% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: IHUI‑AI unifies 176 LLMs across eight platforms via LangGraph, MCP, and A2A. Verify multi‑tenant RLS by querying a protected table from two tenants to ensure isolation. https://github.com/IHUI-INF-AI/IHUI-AI
-  - Model evidence quote: “unifies 176 LLMs via LangGraph + MCP + A2A. Multi‑tenant RLS over 340 tables”
-  - Claim support: IHUI‑AI unifies 176 LLMs across eight platforms via LangGraph, MCP, and A2A. ← “unifies 176 LLMs via LangGraph + MCP + A2A. Multi‑tenant RLS over 340 tables”
-- Tool: Pele: Editorial takeaway is too long; keep the analysis concrete and concise.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
-  - Rejected text: Pele renders Mermaid syntax to SVG using CSS variables for theming. Confirm that Pele supports all diagram types in Mermaid 12.1.0 by rendering a sample diagram. https://pele.run/?ref=console.dev
-  - Model evidence quote: “Pele supports every diagram type built into Mermaid 12.1.0.”
-- IHUI-INF-AI/IHUI-AI: The factual opening bundles multiple features; narrow it to one capability.
-  - Rejected text: IHUI‑AI unifies 176 LLMs via LangGraph, MCP, and A2A. Verify multi‑tenant RLS isolation by querying a protected table from two tenants. https://github.com/IHUI-INF-AI/IHUI-AI
-  - Model evidence quote: “Multi‑tenant RLS over 340 tables”
+- Tool: KiviDB: Efficiency/savings takeaway lacks a baseline or direct metric; repeating the same prompt twice does not isolate savings. Compare against a control/raw path or inspect a direct usage metric.; Editorial takeaway is not specific enough to this candidate's technical/product details.; Supporting quotes cover only 56% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: KiviDB runs Redis commands on every core, boosting p99 latency. Test p99 latency under load to confirm performance gains. https://kividb.io/?ref=console.dev
+  - Model evidence quote: “runs Redis commands on every core”
+  - Claim support: KiviDB runs Redis commands on every core, boosting p99 latency. ← “runs Redis commands on every core”
+- spatiumnorth/spatiumddi: The factual opening bundles multiple features; narrow it to one capability.
+  - Rejected text: spatiumddi runs BIND9, PowerDNS, and Kea containers via FastAPI. Verify DNS consistency by querying each container after deployment. https://github.com/spatiumnorth/spatiumddi
+  - Model evidence quote: “Runs its own BIND9 / PowerDNS / Kea service containers, with a FastAPI control plane”
+  - Claim support: spatiumddi runs BIND9, PowerDNS, and Kea containers via FastAPI. ← “Runs its own BIND9 / PowerDNS / Kea service containers, with a FastAPI control plane”
+- Sponsor: Falconer: The factual opening bundles multiple features; narrow it to one capability.
+  - Rejected text: Falconer grades docs on coherence, coverage, freshness, and density. Run a weekly scan to catch stale content before agents consume it. https://falconer.com/about/knowledge-health?utm_source=console.dev&utm_medium=newsletter&utm_content=knowledge-health
+  - Model evidence quote: “Falconer grades your docs on coherence, coverage, freshness, density, and completeness”
+  - Claim support: Falconer grades docs on coherence, coverage, freshness, and density. ← “Falconer grades your docs on coherence, coverage, freshness, density, and completeness”
+- Tool: KiviDB: Technical coherence low: claim about full‑text search is true, but takeaway is generic and not tied to a specific test or metric.
+  - Rejected text: KiviDB supports full‑text search built into the database. Run a sample full‑text query after deployment to confirm search functionality. https://kividb.io/?ref=console.dev
+- spatiumnorth/spatiumddi: Technical coherence low: statement about BIND9 container is correct, but takeaway is generic DNS query advice without concrete verification steps.
+  - Rejected text: spatiumddi runs its own BIND9 service container. After deployment, query the BIND9 container to verify DNS resolution. https://github.com/spatiumnorth/spatiumddi
+- Sponsor: Falconer: Technical coherence low: claim about grading coherence is accurate, but takeaway is generic and lacks actionable detail.
+  - Rejected text: Falconer grades documents on coherence. Run a coherence scan to spot contradictory sections before agents consume the docs. https://falconer.com/about/knowledge-health?utm_source=console.dev&utm_medium=newsletter&utm_content=knowledge-health
 
 ## Top discovery candidates considered
 
-- Show HN: Encarta 95 Web | Hacker News | product_and_workflow_tools | raw 63, adjusted 65 | https://benwinding.github.io/encarta_95_web/#/article/Art
-- Tool: Pele | Console.dev | product_and_workflow_tools | raw 60, adjusted 60 | https://pele.run/?ref=console.dev
-- IHUI-INF-AI/IHUI-AI | GitHub Search | security_and_self_hosting | raw 71, adjusted 55 | current stars 31 | GitHub star trend: building baseline | https://github.com/IHUI-INF-AI/IHUI-AI
+- Tool: KiviDB | Console.dev | product_and_workflow_tools | raw 59, adjusted 59 | https://kividb.io/?ref=console.dev
+- spatiumnorth/spatiumddi | GitHub Search | security_and_self_hosting | raw 71, adjusted 55 | current stars 71 | GitHub star trend: building baseline | https://github.com/spatiumnorth/spatiumddi
+- Sponsor: Falconer | Console.dev | developer_tools | raw 54, adjusted 54 | https://falconer.com/about/knowledge-health?utm_source=console.dev&utm_medium=newsletter&utm_content=knowledge-health
 
 ## Safety and interpretation
 
