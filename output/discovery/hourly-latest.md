@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-24T17:39:22+05:30
+- Run time (IST): 2026-10-24T18:49:58+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 87
-- Independent editorial review: 0 draft(s) passed / 3 rejected
-- Drafts passing local checks: 0
-- Outcome: **skip**
-- Decision reason: Every draft submitted for independent editorial review was rejected; The hour was skipped.
+- Candidate pool after freshness/diversity filters: 86
+- Independent editorial review: 1 draft(s) passed / 1 rejected
+- Drafts passing local checks: 1
+- Outcome: **dry_run_passed**
+- Decision reason: At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.
 
 ## Source health
 
@@ -31,14 +31,14 @@
 | Hacker News · hn-shopify | 7 | ok |
 | Hacker News · hn-show-hn | 10 | ok |
 | Console.dev | 12 | ok |
-| Product Hunt | 43 | ok |
+| Product Hunt | 44 | ok |
 | Shopify Developer Changelog | 11 | ok |
 
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 82
-- Previously tracked repositories refreshed outside search results: 118
+- Repositories seen in this discovery run: 86
+- Previously tracked repositories refreshed outside search results: 114
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
 - Repositories with a 20–36 hour comparison baseline: 8
@@ -48,53 +48,75 @@
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| Tool: KiviDB | yes | 200 | https://kividb.io/?ref=console.dev |
-| spatiumnorth/spatiumddi | yes | 200 | https://github.com/spatiumnorth/spatiumddi |
-| Sponsor: Falconer | yes | 200 | https://falconer.com/about/knowledge-health?utm_source=console.dev&utm_medium=newsletter&utm_content=knowledge-health |
+| betterlytics/betterlytics | yes | 200 | https://github.com/betterlytics/betterlytics |
+| reloop-labs/reloop | yes | 200 | https://github.com/reloop-labs/reloop |
+| Beta: durable-harness | yes | 200 | https://vercel.com/blog/making-every-harness-durable?ref=console.dev |
 
 ## Selected draft candidates
 
-No draft cleared the complete local and independent-editor gate. See the decision reason and rejected-draft section for locally valid drafts that were rejected, not reviewed, or blocked by a review error.
+### Draft option 1: Beta: durable-harness
+
+- Category: developer_tools
+- Source: Console.dev
+- Format: short
+- Editorial score: 8.8/10
+- Model scores: timeliness 8/10, usefulness 9/10, novelty 7/10, evidence 10/10, insight 9/10
+- Independent editor scores: {"clarity_score": 9, "technical_coherence_score": 9, "takeaway_value_score": 8, "source_faithfulness_score": 9, "originality_score": 7, "reason": "Clear claim, supported by source, and practical test for session persistence.", "passed": true}
+- Live primary page: https://vercel.com/blog/making-every-harness-durable?ref=console.dev (HTTP 200)
+- Exact source evidence: “durable-harness makes Pi, OpenCode, Claude Code, and Codex durable on Vercel, Postgres, or your laptop, so agent sessions survive crashes and timeouts.”
+- Why this angle: Isolated a single capability and suggested a concrete durability test.
+- Editorial takeaway: Restart an agent after a simulated crash to verify session persistence.
+- Source: https://vercel.com/blog/making-every-harness-durable?ref=console.dev
+
+**Claim-by-claim source quotes:**
+
+- durable-harness ensures agent sessions survive crashes on Vercel. ← “durable-harness makes Pi, OpenCode, Claude Code, and Codex durable on Vercel, Postgres, or your laptop, so agent sessions survive crashes and timeouts.”
+
+Proposed post (not published):
+
+> durable-harness ensures agent sessions survive crashes on Vercel. Restart an agent after a simulated crash to verify session persistence. https://vercel.com/blog/making-every-harness-durable?ref=console.dev
+
+- Length: 206/280 raw characters
+- Automated gate: passed live source, evidence, originality, URL and length checks; live publishing is disabled in dry-run mode.
 
 ## Automatic repair attempt
 
 - Attempted: yes
 - Repaired drafts submitted: 3
-- Repaired drafts that passed local validation: 3
-- Repaired drafts rejected: 0
-- Repair error: Automatic repair failed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi
+- Repaired drafts that passed local validation: 2
+- Repaired drafts rejected: 1
+- Repair error: none
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
-- Tool: KiviDB: Efficiency/savings takeaway lacks a baseline or direct metric; repeating the same prompt twice does not isolate savings. Compare against a control/raw path or inspect a direct usage metric.; Editorial takeaway is not specific enough to this candidate's technical/product details.; Supporting quotes cover only 56% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: KiviDB runs Redis commands on every core, boosting p99 latency. Test p99 latency under load to confirm performance gains. https://kividb.io/?ref=console.dev
-  - Model evidence quote: “runs Redis commands on every core”
-  - Claim support: KiviDB runs Redis commands on every core, boosting p99 latency. ← “runs Redis commands on every core”
-- spatiumnorth/spatiumddi: The factual opening bundles multiple features; narrow it to one capability.
-  - Rejected text: spatiumddi runs BIND9, PowerDNS, and Kea containers via FastAPI. Verify DNS consistency by querying each container after deployment. https://github.com/spatiumnorth/spatiumddi
-  - Model evidence quote: “Runs its own BIND9 / PowerDNS / Kea service containers, with a FastAPI control plane”
-  - Claim support: spatiumddi runs BIND9, PowerDNS, and Kea containers via FastAPI. ← “Runs its own BIND9 / PowerDNS / Kea service containers, with a FastAPI control plane”
-- Sponsor: Falconer: The factual opening bundles multiple features; narrow it to one capability.
-  - Rejected text: Falconer grades docs on coherence, coverage, freshness, and density. Run a weekly scan to catch stale content before agents consume it. https://falconer.com/about/knowledge-health?utm_source=console.dev&utm_medium=newsletter&utm_content=knowledge-health
-  - Model evidence quote: “Falconer grades your docs on coherence, coverage, freshness, density, and completeness”
-  - Claim support: Falconer grades docs on coherence, coverage, freshness, and density. ← “Falconer grades your docs on coherence, coverage, freshness, density, and completeness”
-- Tool: KiviDB: Technical coherence low: claim about full‑text search is true, but takeaway is generic and not tied to a specific test or metric.
-  - Rejected text: KiviDB supports full‑text search built into the database. Run a sample full‑text query after deployment to confirm search functionality. https://kividb.io/?ref=console.dev
-- spatiumnorth/spatiumddi: Technical coherence low: statement about BIND9 container is correct, but takeaway is generic DNS query advice without concrete verification steps.
-  - Rejected text: spatiumddi runs its own BIND9 service container. After deployment, query the BIND9 container to verify DNS resolution. https://github.com/spatiumnorth/spatiumddi
-- Sponsor: Falconer: Technical coherence low: claim about grading coherence is accurate, but takeaway is generic and lacks actionable detail.
-  - Rejected text: Falconer grades documents on coherence. Run a coherence scan to spot contradictory sections before agents consume the docs. https://falconer.com/about/knowledge-health?utm_source=console.dev&utm_medium=newsletter&utm_content=knowledge-health
+- betterlytics/betterlytics: The factual opening bundles multiple features; narrow it to one capability.
+  - Rejected text: betterlytics offers session replay, error tracking, Core Web Vitals and uptime monitoring in one tool. Verify session replay after GDPR compliance to ensure privacy‑friendly analytics. https://github.com/betterlytics/betterlytics
+  - Model evidence quote: “Open‑source web analytics with session replay, error tracking, Core Web Vitals and uptime monitoring in one tool. Cookieless, EU‑hosted cloud or self‑hosted.”
+  - Claim support: betterlytics offers session replay, error tracking, Core Web Vitals and uptime monitoring in one tool. ← “Open‑source web analytics with session replay, error tracking, Core Web Vitals and uptime monitoring in one tool. Cookieless, EU‑hosted cloud or self‑hosted.”
+- reloop-labs/reloop: The factual opening bundles multiple features; narrow it to one capability.; Editorial takeaway is not specific enough to this candidate's technical/product details.
+  - Rejected text: reloop provides an open‑source transactional email API with SMTP, inbound mail, webhooks and campaigns. Run deliverability tests against major spam filters before scaling production traffic. https://github.com/reloop-labs/reloop
+  - Model evidence quote: “Open‑source transactional email API and self‑hostable Resend alternative. SMTP, inbound mail, webhooks, and campaigns for developers.”
+  - Claim support: reloop provides an open‑source transactional email API with SMTP, inbound mail, webhooks and campaigns. ← “Open‑source transactional email API and self‑hostable Resend alternative. SMTP, inbound mail, webhooks, and campaigns for developers.”
+- Beta: durable-harness: The factual opening bundles multiple features; narrow it to one capability.
+  - Rejected text: durable-harness makes Pi, OpenCode, Claude Code and Codex durable on Vercel, Postgres or laptop. Test session persistence after a crash to confirm durability across environments. https://vercel.com/blog/making-every-harness-durable?ref=console.dev
+  - Model evidence quote: “durable-harness makes Pi, OpenCode, Claude Code, and Codex durable on Vercel, Postgres, or your laptop, so agent sessions survive crashes and timeouts.”
+  - Claim support: durable-harness makes Pi, OpenCode, Claude Code and Codex durable on Vercel, Postgres or laptop. ← “durable-harness makes Pi, OpenCode, Claude Code, and Codex durable on Vercel, Postgres, or your laptop, so agent sessions survive crashes and timeouts.”
+- reloop-labs/reloop: No claim-by-claim supporting evidence was provided; Supporting quotes cover only 17% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: reloop offers an SMTP interface for transactional email. Test SMTP delivery against a test mailbox to confirm authentication. https://github.com/reloop-labs/reloop
+  - Model evidence quote: “SMTP, inbound mail, webhooks, and campaigns for developers.”
+- betterlytics/betterlytics: Takeaway assumes GDPR compliance affects session replay, but source does not link GDPR to replay functionality.
+  - Rejected text: betterlytics provides session replay for web analytics. Verify session replay captures user interactions after GDPR compliance. https://github.com/betterlytics/betterlytics
 
 ## Top discovery candidates considered
 
-- Tool: KiviDB | Console.dev | product_and_workflow_tools | raw 59, adjusted 59 | https://kividb.io/?ref=console.dev
-- spatiumnorth/spatiumddi | GitHub Search | security_and_self_hosting | raw 71, adjusted 55 | current stars 71 | GitHub star trend: building baseline | https://github.com/spatiumnorth/spatiumddi
-- Sponsor: Falconer | Console.dev | developer_tools | raw 54, adjusted 54 | https://falconer.com/about/knowledge-health?utm_source=console.dev&utm_medium=newsletter&utm_content=knowledge-health
+- betterlytics/betterlytics | GitHub Search | data_and_growth | raw 71, adjusted 55 | current stars 180 | GitHub star trend: building baseline | https://github.com/betterlytics/betterlytics
+- reloop-labs/reloop | GitHub Search | developer_tools | raw 70, adjusted 54 | current stars 167 | GitHub star trend: building baseline | https://github.com/reloop-labs/reloop
+- Beta: durable-harness | Console.dev | developer_tools | raw 52, adjusted 52 | https://vercel.com/blog/making-every-harness-durable?ref=console.dev
 
 ## Safety and interpretation
 
-- This run did not produce a publishable draft; no post was published to X.
+- At least one draft passed the automated quality gates; this dry-run workflow itself never publishes to X.
 - Model scores are editorial estimates; they are not verified popularity or market demand.
 - Candidate content and metadata are untrusted input. Factual copy must be supported by the fetched primary page.
 - A skip can mean no fresh candidates, a daily diversity/cap limit, a model/API problem or weak drafts. Check the reason above.
