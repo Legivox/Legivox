@@ -1,24 +1,24 @@
 {
-  "generated_at_ist": "2026-10-24T12:53:41+05:30",
-  "run_at_ist": "2026-10-24T12:53:41+05:30",
+  "generated_at_ist": "2026-10-24T13:40:18+05:30",
+  "run_at_ist": "2026-10-24T13:40:18+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 170,
-  "eligible_candidate_count": 91,
+  "candidate_count_raw": 178,
+  "eligible_candidate_count": 93,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4657
+      "total_count": 4659
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1024
+      "total_count": 1025
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
@@ -32,7 +32,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2870
+      "total_count": 2872
     },
     {
       "source": "GitHub Search · github-ecommerce-digital-products",
@@ -67,19 +67,19 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 259
+      "total_count": 260
     },
     {
       "source": "Hacker News · hn-analytics-growth",
       "kind": "hacker_news",
-      "items_kept": 9,
+      "items_kept": 8,
       "status": "ok",
       "total_count": 10
     },
     {
       "source": "Hacker News · hn-automation-api",
       "kind": "hacker_news",
-      "items_kept": 0,
+      "items_kept": 1,
       "status": "ok",
       "total_count": 10
     },
@@ -114,7 +114,7 @@
     {
       "source": "Hacker News · hn-shopify",
       "kind": "hacker_news",
-      "items_kept": 6,
+      "items_kept": 10,
       "status": "ok",
       "total_count": 10
     },
@@ -134,7 +134,7 @@
     {
       "source": "Product Hunt",
       "kind": "rss",
-      "items_kept": 43,
+      "items_kept": 44,
       "status": "ok"
     },
     {
@@ -145,10 +145,10 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-24T07:23:41+00:00",
+    "observed_at_utc": "2026-10-24T08:10:18+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 78,
-    "previously_tracked_repositories_refreshed": 122,
+    "repositories_seen_in_discovery": 82,
+    "previously_tracked_repositories_refreshed": 118,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
@@ -157,15 +157,6 @@
     "watchlist_limit": 200
   },
   "primary_source_checks": [
-    {
-      "candidate_id": "89161699eb1c8824",
-      "title": "Show HN: A map of outdoor gyms and pull-up bars",
-      "source_url": "https://openairworkout.com/",
-      "verified": true,
-      "final_url": "https://openairworkout.com/",
-      "http_status": 200,
-      "reason": ""
-    },
     {
       "candidate_id": "4f189644b99609e6",
       "title": "Show HN: Encarta 95 Web",
@@ -176,11 +167,20 @@
       "reason": "Primary page title/content does not sufficiently match the candidate headline."
     },
     {
-      "candidate_id": "55c557b3bc0267ca",
-      "title": "Securing your app, together",
-      "source_url": "https://shopify.dev/changelog/securing-your-app-together",
+      "candidate_id": "7736c647a9d12cc4",
+      "title": "Show HN: Code Counter Machine a modern analysis of AI driven development costs",
+      "source_url": "https://github.com/insanai/ccm",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/blog/securing-your-app-together",
+      "final_url": "https://github.com/insanai/ccm",
+      "http_status": 200,
+      "reason": ""
+    },
+    {
+      "candidate_id": "1376885ee190dc1c",
+      "title": "Polaris 2.0 is now stable",
+      "source_url": "https://shopify.dev/changelog/polaris-cdn-2-0-is-now-stable",
+      "verified": true,
+      "final_url": "https://shopify.dev/changelog/posts/polaris-cdn-2-0-is-now-stable",
       "http_status": 200,
       "reason": ""
     }
@@ -199,7 +199,7 @@
   "daily_draft_cap": 16,
   "daily_drafts_already_passed": 2,
   "outcome": "skip",
-  "decision_reason": "All generated drafts failed the local evidence/editorial checks; the hour was skipped.",
+  "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
   "passing_drafts": [],
   "rejected_drafts": [
     {
@@ -212,89 +212,68 @@
       ]
     },
     {
-      "candidate_id": "89161699eb1c8824",
-      "title": "Show HN: A map of outdoor gyms and pull-up bars",
+      "candidate_id": "7736c647a9d12cc4",
+      "title": "Show HN: Code Counter Machine a modern analysis of AI driven development costs",
       "reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability."
+        "A supporting quote does not share enough wording with its stated claim",
+        "Supporting quotes cover only 43% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "Open Air Workout maps 25k+ outdoor gyms, pull‑up bars, and fitness trails worldwide. Use the location filter to verify coverage gaps before launching a local fitness app. https://openairworkout.com/",
-      "evidence_quote": "Open Air Workout Find outdoor gyms, calisthenics parks, pull‑up bars, and fitness trails near you and around the world.",
+      "proposed_text": "ccm CLI counts source lines and estimates AI development costs. Run ccm before code reviews to benchmark AI vs human effort. https://github.com/insanai/ccm",
+      "evidence_quote": "Count source. Explain changes. Inspect evidence and AI, tool, and human development cost scenarios.",
       "claim_evidence": [
         {
-          "claim": "Open Air Workout maps 25k+ outdoor gyms, pull‑up bars, and fitness trails worldwide.",
-          "quote": "Open Air Workout Find outdoor gyms, calisthenics parks, pull‑up bars, and fitness trails near you and around the world."
+          "claim": "ccm CLI counts source lines and estimates AI development costs.",
+          "quote": "Count source. Explain changes. Inspect evidence and AI, tool, and human development cost scenarios."
         }
       ]
     },
     {
-      "candidate_id": "55c557b3bc0267ca",
-      "title": "Securing your app, together",
+      "candidate_id": "1376885ee190dc1c",
+      "title": "Polaris 2.0 is now stable",
       "reasons": [
-        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.",
-        "The factual opening bundles multiple features; narrow it to one capability.",
-        "Fact sentence is too long; narrow it to one source-backed capability.",
-        "Editorial takeaway is not specific enough to this candidate's technical/product details."
+        "Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "Shopify’s AI Toolkit security check scans for unauthenticated routes, cross‑shop data access, and unverified webhooks. Run the check before publishing; a clean result does not guarantee absence of logic flaws. https://shopify.dev/changelog/blog/securing-your-app-together",
-      "evidence_quote": "[A single prompt with AI Toolkit] checks for Shopify‑specific vulnerabilities, such as unauthenticated routes, cross‑shop data access and unverified webhooks.",
+      "proposed_text": "Polaris 2.0 CDN is now stable and can be pinned to polaris-2.0.js. Pin your app to polaris-2.0.js to lock in the 2.0 UI until next major release. https://shopify.dev/changelog/posts/polaris-cdn-2-0-is-now-stable",
+      "evidence_quote": "Polaris 2.0 is now stable - Shopify developer changelog",
       "claim_evidence": [
         {
-          "claim": "Shopify’s AI Toolkit security check scans for unauthenticated routes, cross‑shop data access, and unverified webhooks.",
-          "quote": "[A single prompt with AI Toolkit] checks for Shopify‑specific vulnerabilities, such as unauthenticated routes, cross‑shop data access and unverified webhooks."
+          "claim": "Polaris 2.0 CDN is now stable and can be pinned to polaris-2.0.js.",
+          "quote": "Polaris 2.0 is now stable - Shopify developer changelog"
         }
       ]
     },
     {
-      "candidate_id": "89161699eb1c8824",
-      "title": "Show HN: A map of outdoor gyms and pull-up bars",
+      "candidate_id": "1376885ee190dc1c",
+      "title": "Polaris 2.0 is now stable",
+      "proposed_text": "Polaris 2.0 CDN is now stable and can be pinned to polaris-2.0.js. Pin your app to polaris-2.0.js to lock in the 2.0 UI until the next major release. https://shopify.dev/changelog/posts/polaris-cdn-2-0-is-now-stable",
       "reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability.",
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
+        "The post merely restates the headline and basic pinning instruction without adding new insight or a unique perspective."
       ],
-      "proposed_text": "Open Air Workout locates outdoor gyms, pull‑up bars, and fitness trails worldwide. Use the location filter to identify coverage gaps before launching a local fitness app. https://openairworkout.com/",
-      "evidence_quote": "Open Air Workout Find outdoor gyms, calisthenics parks, pull‑up bars, and fitness trails near you and around the world.",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability."
-      ]
+      "editorial_review": {
+        "clarity_score": 8,
+        "technical_coherence_score": 8,
+        "takeaway_value_score": 8,
+        "source_faithfulness_score": 9,
+        "originality_score": 4
+      }
     },
     {
-      "candidate_id": "55c557b3bc0267ca",
-      "title": "Securing your app, together",
+      "candidate_id": "1376885ee190dc1c",
+      "title": "Polaris 2.0 is now stable",
+      "proposed_text": "Polaris 2.0 CDN is now stable and can be pinned to polaris-2.0.js. Pin to polaris-2.0.js to lock UI across future 2.x releases. https://shopify.dev/changelog/posts/polaris-cdn-2-0-is-now-stable",
       "reasons": [
-        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about."
+        "Post restates headline without adding new insight; originality below threshold."
       ],
-      "proposed_text": "Shopify’s AI Toolkit security check scans for unauthenticated routes. Run the AI Toolkit check before publishing to catch unauthenticated route vulnerabilities. https://shopify.dev/changelog/blog/securing-your-app-together",
-      "evidence_quote": "[A single prompt with AI Toolkit] checks for Shopify‑specific vulnerabilities, such as unauthenticated routes, cross‑shop data access and unverified webhooks.",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.",
-        "The factual opening bundles multiple features; narrow it to one capability.",
-        "Fact sentence is too long; narrow it to one source-backed capability.",
-        "Editorial takeaway is not specific enough to this candidate's technical/product details."
-      ]
+      "editorial_review": {
+        "clarity_score": 8,
+        "technical_coherence_score": 8,
+        "takeaway_value_score": 8,
+        "source_faithfulness_score": 8,
+        "originality_score": 5
+      }
     }
   ],
   "candidate_shortlist": [
-    {
-      "id": "89161699eb1c8824",
-      "title": "Show HN: A map of outdoor gyms and pull-up bars",
-      "url": "https://openairworkout.com/",
-      "source": "Hacker News",
-      "primary_category": "product_and_workflow_tools",
-      "priority_score": 62,
-      "hourly_adjusted_score": 64,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-24T03:42:02+00:00",
-      "days_old": 0.15,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
     {
       "id": "4f189644b99609e6",
       "title": "Show HN: Encarta 95 Web",
@@ -309,26 +288,45 @@
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
       "published_at": "2026-10-24T07:18:37+00:00",
-      "days_old": 0.0,
+      "days_old": 0.04,
       "primary_source_verified": false,
       "primary_source_http_status": null,
       "primary_source_reason": "Primary page title/content does not sufficiently match the candidate headline."
     },
     {
-      "id": "55c557b3bc0267ca",
-      "title": "Securing your app, together",
-      "url": "https://shopify.dev/changelog/blog/securing-your-app-together",
-      "source": "Shopify Developer Changelog",
-      "primary_category": "commerce_and_digital_products",
-      "priority_score": 69,
-      "hourly_adjusted_score": 61,
+      "id": "7736c647a9d12cc4",
+      "title": "Show HN: Code Counter Machine a modern analysis of AI driven development costs",
+      "url": "https://github.com/insanai/ccm",
+      "source": "Hacker News",
+      "primary_category": "product_and_workflow_tools",
+      "priority_score": 60,
+      "hourly_adjusted_score": 62,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-20T19:00:00+00:00",
-      "days_old": 3.52,
+      "published_at": "2026-10-24T05:47:12+00:00",
+      "days_old": 0.1,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "1376885ee190dc1c",
+      "title": "Polaris 2.0 is now stable",
+      "url": "https://shopify.dev/changelog/posts/polaris-cdn-2-0-is-now-stable",
+      "source": "Shopify Developer Changelog",
+      "primary_category": "commerce_and_digital_products",
+      "priority_score": 68,
+      "hourly_adjusted_score": 60,
+      "stars_current": null,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-22T14:00:00+00:00",
+      "days_old": 1.76,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
@@ -337,25 +335,25 @@
   "automatic_repair": {
     "attempted": true,
     "drafts_submitted": 2,
-    "repaired_local_passes": 0,
-    "repair_rejections": 2,
+    "repaired_local_passes": 2,
+    "repair_rejections": 1,
     "repair_error": null,
-    "editorial_repair_attempted": false,
-    "editorial_repair_drafts_submitted": 0,
+    "editorial_repair_attempted": true,
+    "editorial_repair_drafts_submitted": 1,
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 0,
-    "submitted_for_independent_review": 0,
+    "locally_valid_drafts": 2,
+    "submitted_for_independent_review": 2,
     "passed_independent_review": 0,
-    "rejected_by_independent_review": 0,
+    "rejected_by_independent_review": 2,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
   "state_summary": {
     "used_candidates_in_cooldown": 4,
-    "recently_attempted_candidates": 16,
+    "recently_attempted_candidates": 18,
     "recent_draft_passes_today": 2
   }
 }
