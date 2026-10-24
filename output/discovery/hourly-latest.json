@@ -1,24 +1,24 @@
 {
-  "generated_at_ist": "2026-10-24T20:38:35+05:30",
-  "run_at_ist": "2026-10-24T20:38:35+05:30",
+  "generated_at_ist": "2026-10-24T21:39:43+05:30",
+  "run_at_ist": "2026-10-24T21:39:43+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 176,
-  "eligible_candidate_count": 84,
+  "candidate_count_raw": 171,
+  "eligible_candidate_count": 79,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4713
+      "total_count": 4727
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1036
+      "total_count": 1037
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
@@ -32,7 +32,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2901
+      "total_count": 2906
     },
     {
       "source": "GitHub Search · github-ecommerce-digital-products",
@@ -46,14 +46,14 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2038
+      "total_count": 2044
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3210
+      "total_count": 3214
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
@@ -72,7 +72,7 @@
     {
       "source": "Hacker News · hn-analytics-growth",
       "kind": "hacker_news",
-      "items_kept": 9,
+      "items_kept": 10,
       "status": "ok",
       "total_count": 10
     },
@@ -134,7 +134,7 @@
     {
       "source": "Product Hunt",
       "kind": "rss",
-      "items_kept": 41,
+      "items_kept": 42,
       "status": "ok"
     },
     {
@@ -145,42 +145,42 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-24T15:08:35+00:00",
+    "observed_at_utc": "2026-10-24T16:09:43+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 83,
-    "previously_tracked_repositories_refreshed": 117,
+    "repositories_seen_in_discovery": 76,
+    "previously_tracked_repositories_refreshed": 124,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
-    "repositories_with_20_to_36_hour_baseline": 8,
+    "repositories_with_20_to_36_hour_baseline": 7,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "1b96ef0038e1a333",
-      "title": "Show HN: Jam – a platform where beginners can collaborate in music",
-      "source_url": "https://github.com/hellojunchobo/Jam-music",
+      "candidate_id": "d5a378f87965e62e",
+      "title": "Show HN: A set of test-cases for CP/M emulators",
+      "source_url": "https://github.com/skx/cpm-test",
       "verified": true,
-      "final_url": "https://github.com/hellojunchobo/Jam-music",
+      "final_url": "https://github.com/skx/cpm-test",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "01ff128cdf0f111d",
-      "title": "Show HN: Visual Studio extension that shows decimal and hex in the debugger",
-      "source_url": "https://github.com/JochenBaier/AlwaysHex",
+      "candidate_id": "d0580c0fa30f0640",
+      "title": "metadist/synaplan",
+      "source_url": "https://github.com/metadist/synaplan",
       "verified": true,
-      "final_url": "https://github.com/JochenBaier/AlwaysHex",
+      "final_url": "https://github.com/metadist/synaplan",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "41a79b9064c07335",
-      "title": "dork-labs/dorkos",
-      "source_url": "https://github.com/dork-labs/dorkos",
+      "candidate_id": "93c1a58362adf1d5",
+      "title": "productdevbook/yuva",
+      "source_url": "https://github.com/productdevbook/yuva",
       "verified": true,
-      "final_url": "https://github.com/dork-labs/dorkos",
+      "final_url": "https://github.com/productdevbook/yuva",
       "http_status": 200,
       "reason": ""
     }
@@ -188,63 +188,96 @@
   "rejected_primary_sources": [],
   "daily_draft_cap": 16,
   "daily_drafts_already_passed": 4,
-  "outcome": "skip",
-  "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
-  "passing_drafts": [],
-  "rejected_drafts": [
+  "outcome": "dry_run_passed",
+  "decision_reason": "At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.",
+  "passing_drafts": [
     {
-      "candidate_id": "1b96ef0038e1a333",
-      "title": "Show HN: Jam – a platform where beginners can collaborate in music",
-      "reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability.",
-        "A supporting quote does not share enough wording with its stated claim",
-        "Supporting quotes cover only 40% of factual wording; narrow the claim or provide a closer primary-source quote"
-      ],
-      "proposed_text": "Jam-music lets users play piano, bass, and drums together in shared rooms. Test room code collision by generating many codes; ensure uniqueness. https://github.com/hellojunchobo/Jam-music",
-      "evidence_quote": "Three instruments: piano, bass, and drums Rooms: create a room, share the 4-letter code",
+      "candidate_id": "d0580c0fa30f0640",
+      "title": "metadist/synaplan",
+      "source": "GitHub Search",
+      "source_kind": "github_repository",
+      "url": "https://github.com/metadist/synaplan",
+      "primary_source_verified": true,
+      "primary_source_title": "GitHub - metadist/synaplan: Open-source, self-hosted AI platform (PHP/Symfony): chat with any model, RAG over your docs, embeddable widget, MCP — see the cost of every answer. Apache-2.0.",
+      "primary_source_final_url": "https://github.com/metadist/synaplan",
+      "primary_source_http_status": 200,
+      "category": "security_and_self_hosting",
+      "priority_score": 68,
+      "hourly_adjusted_score": 52,
+      "post_text": "synaplan is a self‑hosted AI platform that lets you chat with any model and run RAG over your docs. Deploy synaplan in Docker and expose the widget to embed in your help center. https://github.com/metadist/synaplan",
+      "fact_sentence": "synaplan is a self‑hosted AI platform that lets you chat with any model and run RAG over your docs.",
+      "format": "practical_workflow",
+      "audience": "developers",
+      "angle": "deployment",
+      "rationale": "Illustrates deployment and integration steps",
+      "evidence_quote": "Open-source, self-hosted AI platform (PHP/Symfony): chat with any model, RAG over your docs",
+      "editorial_takeaway": "Deploy synaplan in Docker and expose the widget to embed in your help center.",
       "claim_evidence": [
         {
-          "claim": "Jam-music lets users play piano, bass, and drums together in shared rooms.",
-          "quote": "Three instruments: piano, bass, and drums Rooms: create a room, share the 4-letter code"
+          "claim": "synaplan is a self‑hosted AI platform that lets you chat with any model and run RAG over your docs",
+          "quote": "Open-source, self-hosted AI platform (PHP/Symfony): chat with any model, RAG over your docs"
         }
-      ]
-    },
-    {
-      "candidate_id": "41a79b9064c07335",
-      "title": "dork-labs/dorkos",
-      "reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability."
       ],
-      "proposed_text": "dorkos is a self‑hosted CLI that orchestrates Claude Code, Codex, and OpenCode agents. Run a test agent and confirm its actions are logged before execution. https://github.com/dork-labs/dorkos",
-      "evidence_quote": "Self-hosted, MIT. You, multiplied. One place for every AI agent you run: Claude Code, Codex, and OpenCode side by side.",
-      "claim_evidence": [
-        {
-          "claim": "dorkos is a self‑hosted CLI that orchestrates Claude Code, Codex, and OpenCode agents.",
-          "quote": "Self-hosted, MIT. You, multiplied. One place for every AI agent you run: Claude Code, Codex, and OpenCode side by side."
-        }
-      ]
-    },
-    {
-      "candidate_id": "01ff128cdf0f111d",
-      "title": "Show HN: Visual Studio extension that shows decimal and hex in the debugger",
-      "proposed_text": "AlwaysHex shows variable values in decimal and hex simultaneously during debugging. Verify that hex view updates when stepping; compare with debugger's default. https://github.com/JochenBaier/AlwaysHex",
-      "reasons": [
-        "Post repeats headline fact and generic advice; lacks new insight or concrete next step beyond what source states."
-      ],
+      "scores": {
+        "timeliness": 9,
+        "usefulness": 8,
+        "novelty": 7,
+        "evidence": 9,
+        "insight": 8
+      },
+      "editorial_score": 8.25,
+      "character_count": 214,
+      "status": "dry_run_passed_not_published",
+      "published_to_x": false,
       "editorial_review": {
         "clarity_score": 8,
         "technical_coherence_score": 8,
-        "takeaway_value_score": 7,
-        "source_faithfulness_score": 9,
-        "originality_score": 5
+        "takeaway_value_score": 8,
+        "source_faithfulness_score": 8,
+        "originality_score": 8,
+        "reason": "Clear, accurate, and adds a useful deployment tip.",
+        "passed": true
       }
+    }
+  ],
+  "rejected_drafts": [
+    {
+      "candidate_id": "d5a378f87965e62e",
+      "title": "Show HN: A set of test-cases for CP/M emulators",
+      "reasons": [
+        "Supporting quotes cover only 57% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ],
+      "proposed_text": "cpm-test provides test cases that run against CP/M emulators. Run these tests on your emulator to catch missing BDOS calls before shipping. https://github.com/skx/cpm-test",
+      "evidence_quote": "Testing code for running against CP/M emulators",
+      "claim_evidence": [
+        {
+          "claim": "cpm-test provides test cases that run against CP/M emulators",
+          "quote": "Testing code for running against CP/M emulators"
+        }
+      ]
+    },
+    {
+      "candidate_id": "93c1a58362adf1d5",
+      "title": "productdevbook/yuva",
+      "reasons": [
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Supporting quotes cover only 56% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ],
+      "proposed_text": "yuva unifies email, live chat, and in‑app messaging into a single inbox for teams. Add a status page widget to yuva to surface uptime to customers. https://github.com/productdevbook/yuva",
+      "evidence_quote": "Open-source customer messaging for teams with many products: e‑mail, live chat and in‑app conversations in one inbox",
+      "claim_evidence": [
+        {
+          "claim": "yuva unifies email, live chat, and in‑app messaging into a single inbox for teams",
+          "quote": "Open-source customer messaging for teams with many products: e‑mail, live chat and in‑app conversations in one inbox"
+        }
+      ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "1b96ef0038e1a333",
-      "title": "Show HN: Jam – a platform where beginners can collaborate in music",
-      "url": "https://github.com/hellojunchobo/Jam-music",
+      "id": "d5a378f87965e62e",
+      "title": "Show HN: A set of test-cases for CP/M emulators",
+      "url": "https://github.com/skx/cpm-test",
       "source": "Hacker News",
       "primary_category": "product_and_workflow_tools",
       "priority_score": 62,
@@ -254,73 +287,121 @@
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-24T14:55:36+00:00",
-      "days_old": 0.01,
+      "published_at": "2026-10-24T15:38:43+00:00",
+      "days_old": 0.02,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "01ff128cdf0f111d",
-      "title": "Show HN: Visual Studio extension that shows decimal and hex in the debugger",
-      "url": "https://github.com/JochenBaier/AlwaysHex",
-      "source": "Hacker News",
-      "primary_category": "product_and_workflow_tools",
-      "priority_score": 59,
-      "hourly_adjusted_score": 61,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-24T14:29:46+00:00",
-      "days_old": 0.03,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "41a79b9064c07335",
-      "title": "dork-labs/dorkos",
-      "url": "https://github.com/dork-labs/dorkos",
+      "id": "d0580c0fa30f0640",
+      "title": "metadist/synaplan",
+      "url": "https://github.com/metadist/synaplan",
       "source": "GitHub Search",
       "primary_category": "security_and_self_hosting",
-      "priority_score": 70,
-      "hourly_adjusted_score": 54,
-      "stars_current": 12,
+      "priority_score": 68,
+      "hourly_adjusted_score": 52,
+      "stars_current": 221,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "insufficient_history",
-      "published_at": "2026-10-24T15:08:58+00:00",
+      "published_at": "2026-10-24T16:10:05+00:00",
       "days_old": 0.0,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "93c1a58362adf1d5",
+      "title": "productdevbook/yuva",
+      "url": "https://github.com/productdevbook/yuva",
+      "source": "GitHub Search",
+      "primary_category": "data_and_growth",
+      "priority_score": 68,
+      "hourly_adjusted_score": 52,
+      "stars_current": 25,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "insufficient_history",
+      "published_at": "2026-10-24T16:01:44+00:00",
+      "days_old": 0.01,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     }
   ],
   "automatic_repair": {
-    "attempted": true,
+    "attempted": false,
     "drafts_submitted": 0,
     "repaired_local_passes": 0,
     "repair_rejections": 0,
     "repair_error": null,
-    "editorial_repair_attempted": true,
+    "editorial_repair_attempted": false,
     "editorial_repair_drafts_submitted": 0,
     "editorial_repair_error": null
   },
   "editorial_review": {
     "locally_valid_drafts": 1,
     "submitted_for_independent_review": 1,
-    "passed_independent_review": 0,
-    "rejected_by_independent_review": 1,
+    "passed_independent_review": 1,
+    "rejected_by_independent_review": 0,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
+  "recommended_draft": {
+    "candidate_id": "d0580c0fa30f0640",
+    "title": "metadist/synaplan",
+    "source": "GitHub Search",
+    "source_kind": "github_repository",
+    "url": "https://github.com/metadist/synaplan",
+    "primary_source_verified": true,
+    "primary_source_title": "GitHub - metadist/synaplan: Open-source, self-hosted AI platform (PHP/Symfony): chat with any model, RAG over your docs, embeddable widget, MCP — see the cost of every answer. Apache-2.0.",
+    "primary_source_final_url": "https://github.com/metadist/synaplan",
+    "primary_source_http_status": 200,
+    "category": "security_and_self_hosting",
+    "priority_score": 68,
+    "hourly_adjusted_score": 52,
+    "post_text": "synaplan is a self‑hosted AI platform that lets you chat with any model and run RAG over your docs. Deploy synaplan in Docker and expose the widget to embed in your help center. https://github.com/metadist/synaplan",
+    "fact_sentence": "synaplan is a self‑hosted AI platform that lets you chat with any model and run RAG over your docs.",
+    "format": "practical_workflow",
+    "audience": "developers",
+    "angle": "deployment",
+    "rationale": "Illustrates deployment and integration steps",
+    "evidence_quote": "Open-source, self-hosted AI platform (PHP/Symfony): chat with any model, RAG over your docs",
+    "editorial_takeaway": "Deploy synaplan in Docker and expose the widget to embed in your help center.",
+    "claim_evidence": [
+      {
+        "claim": "synaplan is a self‑hosted AI platform that lets you chat with any model and run RAG over your docs",
+        "quote": "Open-source, self-hosted AI platform (PHP/Symfony): chat with any model, RAG over your docs"
+      }
+    ],
+    "scores": {
+      "timeliness": 9,
+      "usefulness": 8,
+      "novelty": 7,
+      "evidence": 9,
+      "insight": 8
+    },
+    "editorial_score": 8.25,
+    "character_count": 214,
+    "status": "dry_run_passed_not_published",
+    "published_to_x": false,
+    "editorial_review": {
+      "clarity_score": 8,
+      "technical_coherence_score": 8,
+      "takeaway_value_score": 8,
+      "source_faithfulness_score": 8,
+      "originality_score": 8,
+      "reason": "Clear, accurate, and adds a useful deployment tip.",
+      "passed": true
+    }
+  },
   "state_summary": {
-    "used_candidates_in_cooldown": 6,
+    "used_candidates_in_cooldown": 7,
     "recently_attempted_candidates": 32,
-    "recent_draft_passes_today": 4
+    "recent_draft_passes_today": 5
   }
 }
