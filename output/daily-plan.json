@@ -1,0 +1,61 @@
+{
+  "date_ist": "2026-10-24",
+  "prepared_at_ist": "2026-10-24 15:26:15 IST",
+  "research_window_days": 1,
+  "research_source": "Multidomain discovery + independent editorial review",
+  "source_report_generated_at_ist": "2026-10-24T14:41:28+05:30",
+  "source_report_age_minutes": 44,
+  "star_baseline_repositories": 7,
+  "posts": [
+    {
+      "idea_id": "multidomain-4ef43ce31f0c5ea0",
+      "niche": "commerce_and_digital_products",
+      "problem": "Exclusive > timestamp filters exclude the full second",
+      "evidence": "Primary source verified (HTTP 200): https://shopify.dev/changelog/posts/exclusive-timestamp-filters. Exact evidence: As of API version 2026-10 , an exclusive lower bound ( > ) on a timestamp filter in the GraphQL Admin API search syntax excludes the full second.",
+      "solution_hypothesis": "Add fractional seconds to > bounds to capture events at exact seconds.",
+      "text": "Shopify GraphQL Admin API now excludes the full second for > timestamp filters. Add fractional seconds to > bounds to capture events at exact seconds. https://shopify.dev/changelog/posts/exclusive-timestamp-filters",
+      "text_hash": "843a8e6caed30a32267b7588491df92cb9ecd336edae9c2e8d967f54c9e9cf1b",
+      "image_query": "",
+      "research": {
+        "query": "Multidomain primary-source discovery and independent editorial review",
+        "score": 8.85,
+        "hits": [
+          {
+            "title": "Exclusive > timestamp filters exclude the full second",
+            "url": "https://shopify.dev/changelog/posts/exclusive-timestamp-filters",
+            "external_url": "https://shopify.dev/changelog/posts/exclusive-timestamp-filters",
+            "points": 0,
+            "comments": 0,
+            "created_at": "2026-10-24T14:41:28+05:30",
+            "matched_terms": []
+          }
+        ],
+        "error": null
+      },
+      "status": "published: https://x.com/i/status/2113936240647282961",
+      "slot": 1,
+      "editorial_scores": {
+        "model": {
+          "timeliness": 10,
+          "usefulness": 9,
+          "novelty": 8,
+          "evidence": 9,
+          "insight": 9
+        },
+        "overall": 8.85,
+        "independent_review": {
+          "clarity_score": 9,
+          "technical_coherence_score": 9,
+          "takeaway_value_score": 9,
+          "source_faithfulness_score": 9,
+          "originality_score": 9,
+          "reason": "Clear, accurate, and adds actionable advice beyond the headline.",
+          "passed": true
+        }
+      },
+      "published_at_ist": "2026-10-24T15:40:49+05:30",
+      "published_url": "https://x.com/i/status/2113936240647282961",
+      "image": null
+    }
+  ]
+}

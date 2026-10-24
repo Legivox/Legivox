@@ -1,23 +1,23 @@
 # Legivox daily content plan
 
-Prepared: 2026-10-24 12:39:07 IST
+Prepared: 2026-10-24 15:26:15 IST
 
 > This scheduled post came from a fresh multidomain discovery report, passed primary-source and deterministic evidence checks, and passed an independent editorial review. The star-history baseline is a trend signal, not proof of market demand.
 
-## Post 1 · multidomain-ed7796989fb07d55
+## Post 1 · multidomain-4ef43ce31f0c5ea0
 
 **Planned copy**
 
-pipeshub‑ai turns Jira knowledge into a permission‑aware workspace for agents. Test permission handling by querying a protected Jira issue and checking access logs. https://github.com/pipeshub-ai/pipeshub-ai
+Shopify GraphQL Admin API now excludes the full second for > timestamp filters. Add fractional seconds to > bounds to capture events at exact seconds. https://shopify.dev/changelog/posts/exclusive-timestamp-filters
 
-- Topic: ai_and_automation
-- Editorial score (model estimate): 8.8
+- Topic: commerce_and_digital_products
+- Editorial score (model estimate): 8.85
 
 **Source article**
 
-- [pipeshub-ai/pipeshub-ai](https://github.com/pipeshub-ai/pipeshub-ai)
+- [Exclusive > timestamp filters exclude the full second](https://shopify.dev/changelog/posts/exclusive-timestamp-filters)
 
-- Status: published: https://x.com/i/status/2113890702740566231
+- Status: published: https://x.com/i/status/2113936240647282961
 
 ## Media policy
 
