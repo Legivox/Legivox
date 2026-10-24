@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-24T21:39:43+05:30
+- Run time (IST): 2026-10-24T22:40:22+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 79
-- Independent editorial review: 1 draft(s) passed / 0 rejected
-- Drafts passing local checks: 1
-- Outcome: **dry_run_passed**
-- Decision reason: At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.
+- Candidate pool after freshness/diversity filters: 87
+- Independent editorial review: 0 draft(s) passed / 1 rejected
+- Drafts passing local checks: 0
+- Outcome: **skip**
+- Decision reason: Every draft submitted for independent editorial review was rejected; The hour was skipped.
 
 ## Source health
 
@@ -22,7 +22,7 @@
 | GitHub Search · github-self-hosted | 10 | ok |
 | GitHub Search · github-shopify-commerce | 10 | ok |
 | GitHub Search · github-workflow-automation | 10 | ok |
-| Hacker News · hn-analytics-growth | 10 | ok |
+| Hacker News · hn-analytics-growth | 9 | ok |
 | Hacker News · hn-automation-api | 1 | ok |
 | Hacker News · hn-creator-business | 0 | ok |
 | Hacker News · hn-digital-products | 1 | ok |
@@ -37,77 +37,59 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 76
-- Previously tracked repositories refreshed outside search results: 124
+- Repositories seen in this discovery run: 82
+- Previously tracked repositories refreshed outside search results: 118
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
-- Repositories with a 20–36 hour comparison baseline: 7
+- Repositories with a 20–36 hour comparison baseline: 6
 - First observations are baseline samples, not evidence of trending. Star velocity is reported only when a historical comparison exists.
 
 ## Primary-source verification
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| Show HN: A set of test-cases for CP/M emulators | yes | 200 | https://github.com/skx/cpm-test |
-| metadist/synaplan | yes | 200 | https://github.com/metadist/synaplan |
-| productdevbook/yuva | yes | 200 | https://github.com/productdevbook/yuva |
+| Show HN: Orisuji, a maze you solve by folding your phone | yes | 200 | https://apps.apple.com/us/app/orisuji/id6817092898 |
+| Show HN: Loböle, open-source parametric CAD that AI agents can drive | yes | 200 | https://github.com/eliasaronson/lobole |
+| Unlink a customer's identity provider subject with the GraphQL Admin API | yes | 200 | https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api |
 
 ## Selected draft candidates
 
-### Draft option 1: metadist/synaplan
-
-- Category: security_and_self_hosting
-- Source: GitHub Search
-- Format: practical_workflow
-- Editorial score: 8.25/10
-- Model scores: timeliness 9/10, usefulness 8/10, novelty 7/10, evidence 9/10, insight 8/10
-- Independent editor scores: {"clarity_score": 8, "technical_coherence_score": 8, "takeaway_value_score": 8, "source_faithfulness_score": 8, "originality_score": 8, "reason": "Clear, accurate, and adds a useful deployment tip.", "passed": true}
-- Live primary page: https://github.com/metadist/synaplan (HTTP 200)
-- Exact source evidence: “Open-source, self-hosted AI platform (PHP/Symfony): chat with any model, RAG over your docs”
-- Why this angle: Illustrates deployment and integration steps
-- Editorial takeaway: Deploy synaplan in Docker and expose the widget to embed in your help center.
-- Source: https://github.com/metadist/synaplan
-
-**Claim-by-claim source quotes:**
-
-- synaplan is a self‑hosted AI platform that lets you chat with any model and run RAG over your docs ← “Open-source, self-hosted AI platform (PHP/Symfony): chat with any model, RAG over your docs”
-
-Proposed post (not published):
-
-> synaplan is a self‑hosted AI platform that lets you chat with any model and run RAG over your docs. Deploy synaplan in Docker and expose the widget to embed in your help center. https://github.com/metadist/synaplan
-
-- Length: 214/280 raw characters
-- Automated gate: passed live source, evidence, originality, URL and length checks; live publishing is disabled in dry-run mode.
+No draft cleared the complete local and independent-editor gate. See the decision reason and rejected-draft section for locally valid drafts that were rejected, not reviewed, or blocked by a review error.
 
 ## Automatic repair attempt
 
-- Attempted: no
-- Repaired drafts submitted: 0
+- Attempted: yes
+- Repaired drafts submitted: 1
 - Repaired drafts that passed local validation: 0
-- Repaired drafts rejected: 0
+- Repaired drafts rejected: 1
 - Repair error: none
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
-- Show HN: A set of test-cases for CP/M emulators: Supporting quotes cover only 57% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: cpm-test provides test cases that run against CP/M emulators. Run these tests on your emulator to catch missing BDOS calls before shipping. https://github.com/skx/cpm-test
-  - Model evidence quote: “Testing code for running against CP/M emulators”
-  - Claim support: cpm-test provides test cases that run against CP/M emulators ← “Testing code for running against CP/M emulators”
-- productdevbook/yuva: The factual opening bundles multiple features; narrow it to one capability.; Supporting quotes cover only 56% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: yuva unifies email, live chat, and in‑app messaging into a single inbox for teams. Add a status page widget to yuva to surface uptime to customers. https://github.com/productdevbook/yuva
-  - Model evidence quote: “Open-source customer messaging for teams with many products: e‑mail, live chat and in‑app conversations in one inbox”
-  - Claim support: yuva unifies email, live chat, and in‑app messaging into a single inbox for teams ← “Open-source customer messaging for teams with many products: e‑mail, live chat and in‑app conversations in one inbox”
+- Show HN: Loböle, open-source parametric CAD that AI agents can drive: Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.; Supporting quotes cover only 62% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: Loböle is a parametric CAD that exposes a Python API and MCP agents. Create a part via MCP in a unit test to verify API consistency. https://github.com/eliasaronson/lobole
+  - Model evidence quote: “Parametric 3D CAD with assemblies, drawings, FEM and CAM, scriptable from Python and agents over MCP.”
+  - Claim support: Loböle is a parametric CAD that exposes a Python API and MCP agents. ← “Parametric 3D CAD with assemblies, drawings, FEM and CAM, scriptable from Python and agents over MCP.”
+- Unlink a customer's identity provider subject with the GraphQL Admin API: Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.
+  - Rejected text: Shopify added identityProviderSubjectDelete mutation in API 2027‑01. After unlinking, test that the customer’s session is revoked. https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api
+  - Model evidence quote: “As of API version 2027-01, you can use the identityProviderSubjectDelete mutation to unlink a customer from a third‑party identity provider.”
+  - Claim support: Shopify added identityProviderSubjectDelete mutation in API 2027‑01. ← “As of API version 2027-01, you can use the identityProviderSubjectDelete mutation to unlink a customer from a third‑party identity provider.”
+- Show HN: Orisuji, a maze you solve by folding your phone: The post claims folding mid‑turn doesn’t reset the turn counter, but the source provides no evidence for this behavior. The takeaway is unsupported and adds no new insight.
+  - Rejected text: Orisuji is a paper maze puzzle that uses phone folding on iPhone Duo. Verify that folding mid‑turn doesn’t reset the turn counter. https://apps.apple.com/us/app/orisuji/id6817092898
+- Show HN: Orisuji, a maze you solve by folding your phone: Editorial takeaway is too long; keep the analysis concrete and concise.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
+  - Rejected text: Orisuji is a paper maze puzzle that uses phone folding on iPhone Duo. Folding the phone counts as a move, and the maze continues seamlessly across the folded screen. https://apps.apple.com/us/app/orisuji/id6817092898
+  - Model evidence quote: “Designed for iPhone Duo: folding the phone is the move, and the folded maze carries on, combined, on the cover screen.”
 
 ## Top discovery candidates considered
 
-- Show HN: A set of test-cases for CP/M emulators | Hacker News | product_and_workflow_tools | raw 62, adjusted 64 | https://github.com/skx/cpm-test
-- metadist/synaplan | GitHub Search | security_and_self_hosting | raw 68, adjusted 52 | current stars 221 | GitHub star trend: building baseline | https://github.com/metadist/synaplan
-- productdevbook/yuva | GitHub Search | data_and_growth | raw 68, adjusted 52 | current stars 25 | GitHub star trend: building baseline | https://github.com/productdevbook/yuva
+- Show HN: Orisuji, a maze you solve by folding your phone | Hacker News | product_and_workflow_tools | raw 65, adjusted 67 | https://apps.apple.com/us/app/orisuji/id6817092898
+- Show HN: Loböle, open-source parametric CAD that AI agents can drive | Hacker News | product_and_workflow_tools | raw 64, adjusted 66 | https://github.com/eliasaronson/lobole
+- Unlink a customer's identity provider subject with the GraphQL Admin API | Shopify Developer Changelog | developer_tools | raw 68, adjusted 50 | https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api
 
 ## Safety and interpretation
 
-- At least one draft passed the automated quality gates; this dry-run workflow itself never publishes to X.
+- This run did not produce a publishable draft; no post was published to X.
 - Model scores are editorial estimates; they are not verified popularity or market demand.
 - Candidate content and metadata are untrusted input. Factual copy must be supported by the fetched primary page.
 - A skip can mean no fresh candidates, a daily diversity/cap limit, a model/API problem or weak drafts. Check the reason above.

@@ -1,59 +1,59 @@
 {
-  "generated_at_ist": "2026-10-24T21:39:43+05:30",
-  "run_at_ist": "2026-10-24T21:39:43+05:30",
+  "generated_at_ist": "2026-10-24T22:40:22+05:30",
+  "run_at_ist": "2026-10-24T22:40:22+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 171,
-  "eligible_candidate_count": 79,
+  "candidate_count_raw": 176,
+  "eligible_candidate_count": 87,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4727
+      "total_count": 4737
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1037
+      "total_count": 1038
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 375
+      "total_count": 376
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2906
+      "total_count": 2910
     },
     {
       "source": "GitHub Search · github-ecommerce-digital-products",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 429
+      "total_count": 430
     },
     {
       "source": "GitHub Search · github-mcp-servers",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2044
+      "total_count": 2049
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3214
+      "total_count": 3218
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
@@ -67,12 +67,12 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 263
+      "total_count": 264
     },
     {
       "source": "Hacker News · hn-analytics-growth",
       "kind": "hacker_news",
-      "items_kept": 10,
+      "items_kept": 9,
       "status": "ok",
       "total_count": 10
     },
@@ -145,259 +145,191 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-24T16:09:43+00:00",
+    "observed_at_utc": "2026-10-24T17:10:22+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 76,
-    "previously_tracked_repositories_refreshed": 124,
+    "repositories_seen_in_discovery": 82,
+    "previously_tracked_repositories_refreshed": 118,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
-    "repositories_with_20_to_36_hour_baseline": 7,
+    "repositories_with_20_to_36_hour_baseline": 6,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "d5a378f87965e62e",
-      "title": "Show HN: A set of test-cases for CP/M emulators",
-      "source_url": "https://github.com/skx/cpm-test",
+      "candidate_id": "3da33975fbe52741",
+      "title": "Show HN: Orisuji, a maze you solve by folding your phone",
+      "source_url": "https://apps.apple.com/us/app/orisuji/id6817092898",
       "verified": true,
-      "final_url": "https://github.com/skx/cpm-test",
+      "final_url": "https://apps.apple.com/us/app/orisuji/id6817092898",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "d0580c0fa30f0640",
-      "title": "metadist/synaplan",
-      "source_url": "https://github.com/metadist/synaplan",
+      "candidate_id": "6061dbe18fca8520",
+      "title": "Show HN: Loböle, open-source parametric CAD that AI agents can drive",
+      "source_url": "https://github.com/eliasaronson/lobole",
       "verified": true,
-      "final_url": "https://github.com/metadist/synaplan",
+      "final_url": "https://github.com/eliasaronson/lobole",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "93c1a58362adf1d5",
-      "title": "productdevbook/yuva",
-      "source_url": "https://github.com/productdevbook/yuva",
+      "candidate_id": "e95e12447b71a006",
+      "title": "Unlink a customer's identity provider subject with the GraphQL Admin API",
+      "source_url": "https://shopify.dev/changelog/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api",
       "verified": true,
-      "final_url": "https://github.com/productdevbook/yuva",
+      "final_url": "https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api",
       "http_status": 200,
       "reason": ""
     }
   ],
   "rejected_primary_sources": [],
   "daily_draft_cap": 16,
-  "daily_drafts_already_passed": 4,
-  "outcome": "dry_run_passed",
-  "decision_reason": "At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.",
-  "passing_drafts": [
-    {
-      "candidate_id": "d0580c0fa30f0640",
-      "title": "metadist/synaplan",
-      "source": "GitHub Search",
-      "source_kind": "github_repository",
-      "url": "https://github.com/metadist/synaplan",
-      "primary_source_verified": true,
-      "primary_source_title": "GitHub - metadist/synaplan: Open-source, self-hosted AI platform (PHP/Symfony): chat with any model, RAG over your docs, embeddable widget, MCP — see the cost of every answer. Apache-2.0.",
-      "primary_source_final_url": "https://github.com/metadist/synaplan",
-      "primary_source_http_status": 200,
-      "category": "security_and_self_hosting",
-      "priority_score": 68,
-      "hourly_adjusted_score": 52,
-      "post_text": "synaplan is a self‑hosted AI platform that lets you chat with any model and run RAG over your docs. Deploy synaplan in Docker and expose the widget to embed in your help center. https://github.com/metadist/synaplan",
-      "fact_sentence": "synaplan is a self‑hosted AI platform that lets you chat with any model and run RAG over your docs.",
-      "format": "practical_workflow",
-      "audience": "developers",
-      "angle": "deployment",
-      "rationale": "Illustrates deployment and integration steps",
-      "evidence_quote": "Open-source, self-hosted AI platform (PHP/Symfony): chat with any model, RAG over your docs",
-      "editorial_takeaway": "Deploy synaplan in Docker and expose the widget to embed in your help center.",
-      "claim_evidence": [
-        {
-          "claim": "synaplan is a self‑hosted AI platform that lets you chat with any model and run RAG over your docs",
-          "quote": "Open-source, self-hosted AI platform (PHP/Symfony): chat with any model, RAG over your docs"
-        }
-      ],
-      "scores": {
-        "timeliness": 9,
-        "usefulness": 8,
-        "novelty": 7,
-        "evidence": 9,
-        "insight": 8
-      },
-      "editorial_score": 8.25,
-      "character_count": 214,
-      "status": "dry_run_passed_not_published",
-      "published_to_x": false,
-      "editorial_review": {
-        "clarity_score": 8,
-        "technical_coherence_score": 8,
-        "takeaway_value_score": 8,
-        "source_faithfulness_score": 8,
-        "originality_score": 8,
-        "reason": "Clear, accurate, and adds a useful deployment tip.",
-        "passed": true
-      }
-    }
-  ],
+  "daily_drafts_already_passed": 5,
+  "outcome": "skip",
+  "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
+  "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "d5a378f87965e62e",
-      "title": "Show HN: A set of test-cases for CP/M emulators",
+      "candidate_id": "6061dbe18fca8520",
+      "title": "Show HN: Loböle, open-source parametric CAD that AI agents can drive",
       "reasons": [
-        "Supporting quotes cover only 57% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.",
+        "Supporting quotes cover only 62% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "cpm-test provides test cases that run against CP/M emulators. Run these tests on your emulator to catch missing BDOS calls before shipping. https://github.com/skx/cpm-test",
-      "evidence_quote": "Testing code for running against CP/M emulators",
+      "proposed_text": "Loböle is a parametric CAD that exposes a Python API and MCP agents. Create a part via MCP in a unit test to verify API consistency. https://github.com/eliasaronson/lobole",
+      "evidence_quote": "Parametric 3D CAD with assemblies, drawings, FEM and CAM, scriptable from Python and agents over MCP.",
       "claim_evidence": [
         {
-          "claim": "cpm-test provides test cases that run against CP/M emulators",
-          "quote": "Testing code for running against CP/M emulators"
+          "claim": "Loböle is a parametric CAD that exposes a Python API and MCP agents.",
+          "quote": "Parametric 3D CAD with assemblies, drawings, FEM and CAM, scriptable from Python and agents over MCP."
         }
       ]
     },
     {
-      "candidate_id": "93c1a58362adf1d5",
-      "title": "productdevbook/yuva",
+      "candidate_id": "e95e12447b71a006",
+      "title": "Unlink a customer's identity provider subject with the GraphQL Admin API",
       "reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability.",
-        "Supporting quotes cover only 56% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about."
       ],
-      "proposed_text": "yuva unifies email, live chat, and in‑app messaging into a single inbox for teams. Add a status page widget to yuva to surface uptime to customers. https://github.com/productdevbook/yuva",
-      "evidence_quote": "Open-source customer messaging for teams with many products: e‑mail, live chat and in‑app conversations in one inbox",
+      "proposed_text": "Shopify added identityProviderSubjectDelete mutation in API 2027‑01. After unlinking, test that the customer’s session is revoked. https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api",
+      "evidence_quote": "As of API version 2027-01, you can use the identityProviderSubjectDelete mutation to unlink a customer from a third‑party identity provider.",
       "claim_evidence": [
         {
-          "claim": "yuva unifies email, live chat, and in‑app messaging into a single inbox for teams",
-          "quote": "Open-source customer messaging for teams with many products: e‑mail, live chat and in‑app conversations in one inbox"
+          "claim": "Shopify added identityProviderSubjectDelete mutation in API 2027‑01.",
+          "quote": "As of API version 2027-01, you can use the identityProviderSubjectDelete mutation to unlink a customer from a third‑party identity provider."
         }
+      ]
+    },
+    {
+      "candidate_id": "3da33975fbe52741",
+      "title": "Show HN: Orisuji, a maze you solve by folding your phone",
+      "proposed_text": "Orisuji is a paper maze puzzle that uses phone folding on iPhone Duo. Verify that folding mid‑turn doesn’t reset the turn counter. https://apps.apple.com/us/app/orisuji/id6817092898",
+      "reasons": [
+        "The post claims folding mid‑turn doesn’t reset the turn counter, but the source provides no evidence for this behavior. The takeaway is unsupported and adds no new insight."
+      ],
+      "editorial_review": {
+        "clarity_score": 8,
+        "technical_coherence_score": 4,
+        "takeaway_value_score": 5,
+        "source_faithfulness_score": 6,
+        "originality_score": 4
+      }
+    },
+    {
+      "candidate_id": "3da33975fbe52741",
+      "title": "Show HN: Orisuji, a maze you solve by folding your phone",
+      "reasons": [
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
+      ],
+      "proposed_text": "Orisuji is a paper maze puzzle that uses phone folding on iPhone Duo. Folding the phone counts as a move, and the maze continues seamlessly across the folded screen. https://apps.apple.com/us/app/orisuji/id6817092898",
+      "evidence_quote": "Designed for iPhone Duo: folding the phone is the move, and the folded maze carries on, combined, on the cover screen.",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "The post claims folding mid‑turn doesn’t reset the turn counter, but the source provides no evidence for this behavior. The takeaway is unsupported and adds no new insight."
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "d5a378f87965e62e",
-      "title": "Show HN: A set of test-cases for CP/M emulators",
-      "url": "https://github.com/skx/cpm-test",
+      "id": "3da33975fbe52741",
+      "title": "Show HN: Orisuji, a maze you solve by folding your phone",
+      "url": "https://apps.apple.com/us/app/orisuji/id6817092898",
       "source": "Hacker News",
       "primary_category": "product_and_workflow_tools",
-      "priority_score": 62,
-      "hourly_adjusted_score": 64,
+      "priority_score": 65,
+      "hourly_adjusted_score": 67,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-24T15:38:43+00:00",
+      "published_at": "2026-10-24T16:34:39+00:00",
       "days_old": 0.02,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "d0580c0fa30f0640",
-      "title": "metadist/synaplan",
-      "url": "https://github.com/metadist/synaplan",
-      "source": "GitHub Search",
-      "primary_category": "security_and_self_hosting",
-      "priority_score": 68,
-      "hourly_adjusted_score": 52,
-      "stars_current": 221,
+      "id": "6061dbe18fca8520",
+      "title": "Show HN: Loböle, open-source parametric CAD that AI agents can drive",
+      "url": "https://github.com/eliasaronson/lobole",
+      "source": "Hacker News",
+      "primary_category": "product_and_workflow_tools",
+      "priority_score": 64,
+      "hourly_adjusted_score": 66,
+      "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
-      "trend_signal": "insufficient_history",
-      "published_at": "2026-10-24T16:10:05+00:00",
-      "days_old": 0.0,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-24T16:58:21+00:00",
+      "days_old": 0.01,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "93c1a58362adf1d5",
-      "title": "productdevbook/yuva",
-      "url": "https://github.com/productdevbook/yuva",
-      "source": "GitHub Search",
-      "primary_category": "data_and_growth",
+      "id": "e95e12447b71a006",
+      "title": "Unlink a customer's identity provider subject with the GraphQL Admin API",
+      "url": "https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api",
+      "source": "Shopify Developer Changelog",
+      "primary_category": "developer_tools",
       "priority_score": 68,
-      "hourly_adjusted_score": 52,
-      "stars_current": 25,
+      "hourly_adjusted_score": 50,
+      "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
-      "trend_signal": "insufficient_history",
-      "published_at": "2026-10-24T16:01:44+00:00",
-      "days_old": 0.01,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-23T13:00:00+00:00",
+      "days_old": 1.17,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     }
   ],
   "automatic_repair": {
-    "attempted": false,
-    "drafts_submitted": 0,
+    "attempted": true,
+    "drafts_submitted": 1,
     "repaired_local_passes": 0,
-    "repair_rejections": 0,
+    "repair_rejections": 1,
     "repair_error": null,
-    "editorial_repair_attempted": false,
-    "editorial_repair_drafts_submitted": 0,
+    "editorial_repair_attempted": true,
+    "editorial_repair_drafts_submitted": 1,
     "editorial_repair_error": null
   },
   "editorial_review": {
     "locally_valid_drafts": 1,
     "submitted_for_independent_review": 1,
-    "passed_independent_review": 1,
-    "rejected_by_independent_review": 0,
+    "passed_independent_review": 0,
+    "rejected_by_independent_review": 1,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
-  },
-  "recommended_draft": {
-    "candidate_id": "d0580c0fa30f0640",
-    "title": "metadist/synaplan",
-    "source": "GitHub Search",
-    "source_kind": "github_repository",
-    "url": "https://github.com/metadist/synaplan",
-    "primary_source_verified": true,
-    "primary_source_title": "GitHub - metadist/synaplan: Open-source, self-hosted AI platform (PHP/Symfony): chat with any model, RAG over your docs, embeddable widget, MCP — see the cost of every answer. Apache-2.0.",
-    "primary_source_final_url": "https://github.com/metadist/synaplan",
-    "primary_source_http_status": 200,
-    "category": "security_and_self_hosting",
-    "priority_score": 68,
-    "hourly_adjusted_score": 52,
-    "post_text": "synaplan is a self‑hosted AI platform that lets you chat with any model and run RAG over your docs. Deploy synaplan in Docker and expose the widget to embed in your help center. https://github.com/metadist/synaplan",
-    "fact_sentence": "synaplan is a self‑hosted AI platform that lets you chat with any model and run RAG over your docs.",
-    "format": "practical_workflow",
-    "audience": "developers",
-    "angle": "deployment",
-    "rationale": "Illustrates deployment and integration steps",
-    "evidence_quote": "Open-source, self-hosted AI platform (PHP/Symfony): chat with any model, RAG over your docs",
-    "editorial_takeaway": "Deploy synaplan in Docker and expose the widget to embed in your help center.",
-    "claim_evidence": [
-      {
-        "claim": "synaplan is a self‑hosted AI platform that lets you chat with any model and run RAG over your docs",
-        "quote": "Open-source, self-hosted AI platform (PHP/Symfony): chat with any model, RAG over your docs"
-      }
-    ],
-    "scores": {
-      "timeliness": 9,
-      "usefulness": 8,
-      "novelty": 7,
-      "evidence": 9,
-      "insight": 8
-    },
-    "editorial_score": 8.25,
-    "character_count": 214,
-    "status": "dry_run_passed_not_published",
-    "published_to_x": false,
-    "editorial_review": {
-      "clarity_score": 8,
-      "technical_coherence_score": 8,
-      "takeaway_value_score": 8,
-      "source_faithfulness_score": 8,
-      "originality_score": 8,
-      "reason": "Clear, accurate, and adds a useful deployment tip.",
-      "passed": true
-    }
   },
   "state_summary": {
     "used_candidates_in_cooldown": 7,
