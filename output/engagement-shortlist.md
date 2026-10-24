@@ -1,6 +1,6 @@
 # Legivox engagement shortlist
 
-Generated: 2026-10-23 06:45:16 IST
+Generated: 2026-10-24 06:48:10 IST
 
 These are candidates to review manually. No likes, replies, reposts, or follows are automated by this workflow.
 
@@ -8,22 +8,22 @@ These are candidates to review manually. No likes, replies, reposts, or follows 
 
 Search: `feature requests`
 
-- [oleks01](https://x.com/oleks01/status/2113312389131391341): @rishabhnasa + fix the bugs and feature requests people have been asking about for a long time, and maybe even become number one
-- [Pavan_Belagatti](https://x.com/Pavan_Belagatti/status/2113152830815297694): I built a small AI software factory that runs itself whenever an issue or a feature request comes. Here's the complete walkthrough. https://t.co/s41p4Kd0AM
-- [Secureintent_ai](https://x.com/Secureintent_ai/status/2112901284173160770): @Saas_addy B. Listen to what users ask for, but solve the problem behind the request. Great SaaS products don't just fulfill feature requests; they eliminate pain points.
+- [mpeyfuss](https://x.com/mpeyfuss/status/2113691982430363873): @zherring You're always so patient with my feature requests lol
+- [tecstoic](https://x.com/tecstoic/status/2113499789199544770): @oldstackjournal I am the only user of my app and i keep making feature requests
+- [khudonogov](https://x.com/khudonogov/status/2113330358187937879): @elonmusk @bot Bot Pages are cool! Spent all day playing with them and put together almost 20 feature requests. @elonmusk Who should I send them to?
 
 ## freelance developers
 
 Search: `freelancer scope creep`
 
-- [archoslabsxyz](https://x.com/archoslabsxyz/status/2113405346975015418): Scope creep on a fixed-fee job: set the threshold in the SOW. Under 2 hours, absorb and log. Over 2 hours, a change request with price and date. Verbal approval counts as no approval.
-- [Miaarteh](https://x.com/Miaarteh/status/2113382407017779370): I’d want help with the awkward client emails first. Especially the “one quick addition” that wasn’t in the original agreement With MonoDesk, you can upload that email and its AI Co Worker flags what’s outside the agreed 
+- [fajritbaby](https://x.com/fajritbaby/status/2113489761507676474): When Client Requests Keep Growing, Where Does the Work End? Founders and service providers, one small client request can quickly turn into hours of unpaid work. This is called scope creep — when a project expands beyond 
 - [fay_crypt](https://x.com/fay_crypt/status/2113376120196182349): @Laurentxdev @_MonoDesk Scope creep is a real headache for freelancers. Having AI flag requests that fall outside the agreed scope could make those client conversations much easier.
+- [Laurentxdev](https://x.com/Laurentxdev/status/2113373184212844743): AI is most useful on the admin side of freelancing monodesk knows the client and the scope, so it drafts the proposal and flags one quick addition, as out of scope Works with claude or chatgpt via MCP too Try @_MonoDesk 
 
 ## small online sellers
 
 Search: `inventory margins`
 
-- [gary_burtka](https://x.com/gary_burtka/status/2113352438879027225): Q4 is already here, but there’s still time to fix the things that matter. Inventory. Product feeds. Marketplace listings. Mobile checkout. Holiday creative. Shipping deadlines. Remarketing. Margins. My Last-Minute Q4 Eco
-- [OneirERP](https://x.com/OneirERP/status/2113320330307772676): Oneir Minute | Building Supply &amp; Tariffs Changing supplier costs? Review open quotes and check margins before confirming pricing. Oneir connects purchasing, inventory, sales &amp; accounting. https://t.co/kmMKDMtdfs 
-- [joshmaycpa](https://x.com/joshmaycpa/status/2113309825484345652): If you’ve never performed an inventory analysis. You should be looking at EACH sku and understanding your safety stock levels and upper bounds. How it works: • Lower line (Safety Stock / Reorder Point): When on-hand inve
+- [illuminationbiz](https://x.com/illuminationbiz/status/2113686673821454589): Too much skin care inventory ties up cash. Too little creates stockouts. Improve demand forecasting, reorder planning, expiration tracking and SKU profitability to protect margins and support growth. https://t.co/GwtE5tb
+- [joinyellowbrick](https://x.com/joinyellowbrick/status/2113660782663680118): Your favorite athletic shoe brand is trading near its lowest-ever EBITDA multiple as Nike dumps inventory in US and hurts everyone's sales while they protect margins Amer Sports $AS - 10x EBITDA v 16x 5y median Deckers $
+- [StockTradeNDQ](https://x.com/StockTradeNDQ/status/2113642971560358191): @grok @grok Fair points, but investing is about future earnings power, not just current margins. LULU may be more profitable today, but NKE’s global brand strength, scale and turnaround potential shouldn’t be underestima
