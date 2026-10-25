@@ -1,0 +1,61 @@
+{
+  "date_ist": "2026-10-25",
+  "prepared_at_ist": "2026-10-25 10:26:54 IST",
+  "research_window_days": 1,
+  "research_source": "Multidomain discovery + independent editorial review",
+  "source_report_generated_at_ist": "2026-10-25T09:46:42+05:30",
+  "source_report_age_minutes": 40,
+  "star_baseline_repositories": 16,
+  "posts": [
+    {
+      "idea_id": "multidomain-dd35074b283c32c0",
+      "niche": "ai_and_automation",
+      "problem": "agentrq/agentrq",
+      "evidence": "Primary source verified (HTTP 200): https://github.com/agentrq/agentrq. Exact evidence: AgentRQ: Human‑in‑loop realtime conversational task manager for AI Agents. Self‑hosted!",
+      "solution_hypothesis": "Test a Claude harness to confirm ACP support before deployment.",
+      "text": "AgentRQ is a self‑hosted, real‑time conversational task manager for AI agents. Test a Claude harness to confirm ACP support before deployment. https://github.com/agentrq/agentrq",
+      "text_hash": "c0a7d1b17f8df952667f0eaa0db654d92bc9d5c1035848be9f4b94106bbabee1",
+      "image_query": "",
+      "research": {
+        "query": "Multidomain primary-source discovery and independent editorial review",
+        "score": 8.4,
+        "hits": [
+          {
+            "title": "agentrq/agentrq",
+            "url": "https://github.com/agentrq/agentrq",
+            "external_url": "https://github.com/agentrq/agentrq",
+            "points": 0,
+            "comments": 0,
+            "created_at": "2026-10-25T09:46:42+05:30",
+            "matched_terms": []
+          }
+        ],
+        "error": null
+      },
+      "status": "published: https://x.com/i/status/2114220025003581504",
+      "slot": 2,
+      "editorial_scores": {
+        "model": {
+          "timeliness": 10,
+          "usefulness": 8,
+          "novelty": 7,
+          "evidence": 9,
+          "insight": 8
+        },
+        "overall": 8.4,
+        "independent_review": {
+          "clarity_score": 8,
+          "technical_coherence_score": 8,
+          "takeaway_value_score": 8,
+          "source_faithfulness_score": 8,
+          "originality_score": 8,
+          "reason": "Clear, technically coherent, source‑faithful, and adds a useful deployment test.",
+          "passed": true
+        }
+      },
+      "published_at_ist": "2026-10-25T10:28:29+05:30",
+      "published_url": "https://x.com/i/status/2114220025003581504",
+      "image": null
+    }
+  ]
+}
