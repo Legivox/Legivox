@@ -1,78 +1,78 @@
 {
-  "generated_at_ist": "2026-10-24T22:40:22+05:30",
-  "run_at_ist": "2026-10-24T22:40:22+05:30",
+  "generated_at_ist": "2026-10-25T07:43:03+05:30",
+  "run_at_ist": "2026-10-25T07:43:03+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 176,
-  "eligible_candidate_count": 87,
+  "candidate_count_raw": 170,
+  "eligible_candidate_count": 90,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4737
+      "total_count": 4610
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1038
+      "total_count": 1011
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 376
+      "total_count": 358
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2910
+      "total_count": 2827
     },
     {
       "source": "GitHub Search · github-ecommerce-digital-products",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 430
+      "total_count": 417
     },
     {
       "source": "GitHub Search · github-mcp-servers",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2049
+      "total_count": 1982
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3218
+      "total_count": 3147
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 134
+      "total_count": 128
     },
     {
       "source": "GitHub Search · github-workflow-automation",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 264
+      "total_count": 261
     },
     {
       "source": "Hacker News · hn-analytics-growth",
       "kind": "hacker_news",
-      "items_kept": 9,
+      "items_kept": 10,
       "status": "ok",
       "total_count": 10
     },
@@ -114,7 +114,7 @@
     {
       "source": "Hacker News · hn-shopify",
       "kind": "hacker_news",
-      "items_kept": 10,
+      "items_kept": 9,
       "status": "ok",
       "total_count": 10
     },
@@ -134,7 +134,7 @@
     {
       "source": "Product Hunt",
       "kind": "rss",
-      "items_kept": 42,
+      "items_kept": 41,
       "status": "ok"
     },
     {
@@ -145,168 +145,168 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-24T17:10:22+00:00",
+    "observed_at_utc": "2026-10-25T02:13:03+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 82,
-    "previously_tracked_repositories_refreshed": 118,
+    "repositories_seen_in_discovery": 78,
+    "previously_tracked_repositories_refreshed": 122,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
-    "repositories_with_20_to_36_hour_baseline": 6,
+    "repositories_with_20_to_36_hour_baseline": 15,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "3da33975fbe52741",
-      "title": "Show HN: Orisuji, a maze you solve by folding your phone",
-      "source_url": "https://apps.apple.com/us/app/orisuji/id6817092898",
+      "candidate_id": "c58c08aca0b0ad74",
+      "title": "ChiefGyk3D/Stream-Daemon",
+      "source_url": "https://github.com/ChiefGyk3D/Stream-Daemon",
       "verified": true,
-      "final_url": "https://apps.apple.com/us/app/orisuji/id6817092898",
+      "final_url": "https://github.com/ChiefGyk3D/Stream-Daemon",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "6061dbe18fca8520",
-      "title": "Show HN: Loböle, open-source parametric CAD that AI agents can drive",
-      "source_url": "https://github.com/eliasaronson/lobole",
+      "candidate_id": "769635c4c0589719",
+      "title": "IHUI-INF-AI/IHUI-AI",
+      "source_url": "https://github.com/IHUI-INF-AI/IHUI-AI",
       "verified": true,
-      "final_url": "https://github.com/eliasaronson/lobole",
+      "final_url": "https://github.com/IHUI-INF-AI/IHUI-AI",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "e95e12447b71a006",
-      "title": "Unlink a customer's identity provider subject with the GraphQL Admin API",
-      "source_url": "https://shopify.dev/changelog/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api",
+      "candidate_id": "01b44b612fda8613",
+      "title": "POS UI extensions 2026-10 adds s-pos-list, a virtualized list with custom row templates",
+      "source_url": "https://shopify.dev/changelog/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api",
+      "final_url": "https://shopify.dev/changelog/posts/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates",
       "http_status": 200,
       "reason": ""
     }
   ],
   "rejected_primary_sources": [],
   "daily_draft_cap": 16,
-  "daily_drafts_already_passed": 5,
+  "daily_drafts_already_passed": 0,
   "outcome": "skip",
-  "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
+  "decision_reason": "All generated drafts failed the local evidence/editorial checks; the hour was skipped.",
   "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "6061dbe18fca8520",
-      "title": "Show HN: Loböle, open-source parametric CAD that AI agents can drive",
+      "candidate_id": "c58c08aca0b0ad74",
+      "title": "ChiefGyk3D/Stream-Daemon",
       "reasons": [
-        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.",
-        "Supporting quotes cover only 62% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "The factual opening bundles multiple features; narrow it to one capability."
       ],
-      "proposed_text": "Loböle is a parametric CAD that exposes a Python API and MCP agents. Create a part via MCP in a unit test to verify API consistency. https://github.com/eliasaronson/lobole",
-      "evidence_quote": "Parametric 3D CAD with assemblies, drawings, FEM and CAM, scriptable from Python and agents over MCP.",
+      "proposed_text": "Stream‑Daemon monitors Twitch, YouTube, Kick and posts live updates to Mastodon, Discord, Matrix, Bluesky. Run it in Docker and verify secrets are not exposed in container logs. https://github.com/ChiefGyk3D/Stream-Daemon",
+      "evidence_quote": "Stream Daemon is an open‑source automation tool for live streamers and creators. It monitors Twitch, YouTube, Kick, and more, posting live updates to Mastodon, Discord, Matrix, Bluesky, and other platforms.",
       "claim_evidence": [
         {
-          "claim": "Loböle is a parametric CAD that exposes a Python API and MCP agents.",
-          "quote": "Parametric 3D CAD with assemblies, drawings, FEM and CAM, scriptable from Python and agents over MCP."
+          "claim": "Stream‑Daemon monitors Twitch, YouTube, Kick and posts live updates to Mastodon, Discord, Matrix, Bluesky.",
+          "quote": "Stream Daemon is an open‑source automation tool for live streamers and creators. It monitors Twitch, YouTube, Kick, and more, posting live updates to Mastodon, Discord, Matrix, Bluesky, and other platforms."
         }
       ]
     },
     {
-      "candidate_id": "e95e12447b71a006",
-      "title": "Unlink a customer's identity provider subject with the GraphQL Admin API",
+      "candidate_id": "769635c4c0589719",
+      "title": "IHUI-INF-AI/IHUI-AI",
       "reasons": [
-        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about."
+        "The factual opening bundles multiple features; narrow it to one capability."
       ],
-      "proposed_text": "Shopify added identityProviderSubjectDelete mutation in API 2027‑01. After unlinking, test that the customer’s session is revoked. https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api",
-      "evidence_quote": "As of API version 2027-01, you can use the identityProviderSubjectDelete mutation to unlink a customer from a third‑party identity provider.",
+      "proposed_text": "IHUI‑AI unifies 176 LLMs via LangGraph, MCP, and A2A. Benchmark latency of a single LLM call before deployment to meet SLA targets. https://github.com/IHUI-INF-AI/IHUI-AI",
+      "evidence_quote": "Eight‑platform full‑stack AI operating system - unifies 176 LLMs via LangGraph + MCP + A2A.",
       "claim_evidence": [
         {
-          "claim": "Shopify added identityProviderSubjectDelete mutation in API 2027‑01.",
-          "quote": "As of API version 2027-01, you can use the identityProviderSubjectDelete mutation to unlink a customer from a third‑party identity provider."
+          "claim": "IHUI‑AI unifies 176 LLMs via LangGraph, MCP, and A2A.",
+          "quote": "Eight‑platform full‑stack AI operating system - unifies 176 LLMs via LangGraph + MCP + A2A."
         }
       ]
     },
     {
-      "candidate_id": "3da33975fbe52741",
-      "title": "Show HN: Orisuji, a maze you solve by folding your phone",
-      "proposed_text": "Orisuji is a paper maze puzzle that uses phone folding on iPhone Duo. Verify that folding mid‑turn doesn’t reset the turn counter. https://apps.apple.com/us/app/orisuji/id6817092898",
+      "candidate_id": "01b44b612fda8613",
+      "title": "POS UI extensions 2026-10 adds s-pos-list, a virtualized list with custom row templates",
       "reasons": [
-        "The post claims folding mid‑turn doesn’t reset the turn counter, but the source provides no evidence for this behavior. The takeaway is unsupported and adds no new insight."
+        "Fact plus takeaway exceeds the per-link character budget.",
+        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
+        "Draft is 287 raw characters; limit is 280"
       ],
-      "editorial_review": {
-        "clarity_score": 8,
-        "technical_coherence_score": 4,
-        "takeaway_value_score": 5,
-        "source_faithfulness_score": 6,
-        "originality_score": 4
-      }
+      "proposed_text": "s‑pos‑list is a virtualized list component for Polaris web components in POS 2026‑10. Replace List component in existing extensions and run scroll performance test. https://shopify.dev/changelog/posts/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates",
+      "evidence_quote": "POS UI extensions API version `2026-10` adds `s-pos-list`, a virtualized list component",
+      "claim_evidence": [
+        {
+          "claim": "s‑pos‑list is a virtualized list component for Polaris web components in POS 2026‑10.",
+          "quote": "POS UI extensions API version `2026-10` adds `s-pos-list`, a virtualized list component"
+        }
+      ]
     },
     {
-      "candidate_id": "3da33975fbe52741",
-      "title": "Show HN: Orisuji, a maze you solve by folding your phone",
+      "candidate_id": "c58c08aca0b0ad74",
+      "title": "ChiefGyk3D/Stream-Daemon",
       "reasons": [
-        "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
+        "Editorial takeaway is too long; keep the analysis concrete and concise."
       ],
-      "proposed_text": "Orisuji is a paper maze puzzle that uses phone folding on iPhone Duo. Folding the phone counts as a move, and the maze continues seamlessly across the folded screen. https://apps.apple.com/us/app/orisuji/id6817092898",
-      "evidence_quote": "Designed for iPhone Duo: folding the phone is the move, and the folded maze carries on, combined, on the cover screen.",
+      "proposed_text": "Stream‑Daemon monitors Twitch streams. When running in Docker, verify that secrets are not written to container logs to avoid credential leakage. https://github.com/ChiefGyk3D/Stream-Daemon",
+      "evidence_quote": "It monitors Twitch, YouTube, Kick, and more, posting live updates to Mastodon, Discord, Matrix, Bluesky, and other platforms.",
       "automatic_repair_attempt": true,
       "original_rejection_reasons": [
-        "The post claims folding mid‑turn doesn’t reset the turn counter, but the source provides no evidence for this behavior. The takeaway is unsupported and adds no new insight."
+        "The factual opening bundles multiple features; narrow it to one capability."
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "3da33975fbe52741",
-      "title": "Show HN: Orisuji, a maze you solve by folding your phone",
-      "url": "https://apps.apple.com/us/app/orisuji/id6817092898",
-      "source": "Hacker News",
-      "primary_category": "product_and_workflow_tools",
-      "priority_score": 65,
-      "hourly_adjusted_score": 67,
-      "stars_current": null,
+      "id": "c58c08aca0b0ad74",
+      "title": "ChiefGyk3D/Stream-Daemon",
+      "url": "https://github.com/ChiefGyk3D/Stream-Daemon",
+      "source": "GitHub Search",
+      "primary_category": "creator_and_indie_business",
+      "priority_score": 74,
+      "hourly_adjusted_score": 76,
+      "stars_current": 37,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-24T16:34:39+00:00",
-      "days_old": 0.02,
+      "trend_signal": "insufficient_history",
+      "published_at": "2026-10-25T01:29:25+00:00",
+      "days_old": 0.03,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "6061dbe18fca8520",
-      "title": "Show HN: Loböle, open-source parametric CAD that AI agents can drive",
-      "url": "https://github.com/eliasaronson/lobole",
-      "source": "Hacker News",
-      "primary_category": "product_and_workflow_tools",
-      "priority_score": 64,
-      "hourly_adjusted_score": 66,
-      "stars_current": null,
+      "id": "769635c4c0589719",
+      "title": "IHUI-INF-AI/IHUI-AI",
+      "url": "https://github.com/IHUI-INF-AI/IHUI-AI",
+      "source": "GitHub Search",
+      "primary_category": "security_and_self_hosting",
+      "priority_score": 71,
+      "hourly_adjusted_score": 75,
+      "stars_current": 31,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-24T16:58:21+00:00",
-      "days_old": 0.01,
+      "trend_signal": "insufficient_history",
+      "published_at": "2026-10-25T02:13:13+00:00",
+      "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "e95e12447b71a006",
-      "title": "Unlink a customer's identity provider subject with the GraphQL Admin API",
-      "url": "https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api",
+      "id": "01b44b612fda8613",
+      "title": "POS UI extensions 2026-10 adds s-pos-list, a virtualized list with custom row templates",
+      "url": "https://shopify.dev/changelog/posts/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates",
       "source": "Shopify Developer Changelog",
-      "primary_category": "developer_tools",
-      "priority_score": 68,
-      "hourly_adjusted_score": 50,
+      "primary_category": "commerce_and_digital_products",
+      "priority_score": 74,
+      "hourly_adjusted_score": 74,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-23T13:00:00+00:00",
-      "days_old": 1.17,
+      "published_at": "2026-10-22T16:00:00+00:00",
+      "days_old": 2.43,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
@@ -318,22 +318,22 @@
     "repaired_local_passes": 0,
     "repair_rejections": 1,
     "repair_error": null,
-    "editorial_repair_attempted": true,
-    "editorial_repair_drafts_submitted": 1,
+    "editorial_repair_attempted": false,
+    "editorial_repair_drafts_submitted": 0,
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 1,
-    "submitted_for_independent_review": 1,
+    "locally_valid_drafts": 0,
+    "submitted_for_independent_review": 0,
     "passed_independent_review": 0,
-    "rejected_by_independent_review": 1,
+    "rejected_by_independent_review": 0,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
   "state_summary": {
     "used_candidates_in_cooldown": 7,
-    "recently_attempted_candidates": 32,
-    "recent_draft_passes_today": 5
+    "recently_attempted_candidates": 12,
+    "recent_draft_passes_today": 0
   }
 }

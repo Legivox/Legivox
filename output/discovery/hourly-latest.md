@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-24T22:40:22+05:30
+- Run time (IST): 2026-10-25T07:43:03+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 87
-- Independent editorial review: 0 draft(s) passed / 1 rejected
+- Candidate pool after freshness/diversity filters: 90
+- Independent editorial review: 0 draft(s) passed / 0 rejected
 - Drafts passing local checks: 0
 - Outcome: **skip**
-- Decision reason: Every draft submitted for independent editorial review was rejected; The hour was skipped.
+- Decision reason: All generated drafts failed the local evidence/editorial checks; the hour was skipped.
 
 ## Source health
 
@@ -22,39 +22,39 @@
 | GitHub Search · github-self-hosted | 10 | ok |
 | GitHub Search · github-shopify-commerce | 10 | ok |
 | GitHub Search · github-workflow-automation | 10 | ok |
-| Hacker News · hn-analytics-growth | 9 | ok |
+| Hacker News · hn-analytics-growth | 10 | ok |
 | Hacker News · hn-automation-api | 1 | ok |
 | Hacker News · hn-creator-business | 0 | ok |
 | Hacker News · hn-digital-products | 1 | ok |
 | Hacker News · hn-ecommerce-payments | 0 | ok |
 | Hacker News · hn-security-selfhost | 0 | ok |
-| Hacker News · hn-shopify | 10 | ok |
+| Hacker News · hn-shopify | 9 | ok |
 | Hacker News · hn-show-hn | 10 | ok |
 | Console.dev | 12 | ok |
-| Product Hunt | 42 | ok |
+| Product Hunt | 41 | ok |
 | Shopify Developer Changelog | 10 | ok |
 
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 82
-- Previously tracked repositories refreshed outside search results: 118
+- Repositories seen in this discovery run: 78
+- Previously tracked repositories refreshed outside search results: 122
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
-- Repositories with a 20–36 hour comparison baseline: 6
+- Repositories with a 20–36 hour comparison baseline: 15
 - First observations are baseline samples, not evidence of trending. Star velocity is reported only when a historical comparison exists.
 
 ## Primary-source verification
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| Show HN: Orisuji, a maze you solve by folding your phone | yes | 200 | https://apps.apple.com/us/app/orisuji/id6817092898 |
-| Show HN: Loböle, open-source parametric CAD that AI agents can drive | yes | 200 | https://github.com/eliasaronson/lobole |
-| Unlink a customer's identity provider subject with the GraphQL Admin API | yes | 200 | https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api |
+| ChiefGyk3D/Stream-Daemon | yes | 200 | https://github.com/ChiefGyk3D/Stream-Daemon |
+| IHUI-INF-AI/IHUI-AI | yes | 200 | https://github.com/IHUI-INF-AI/IHUI-AI |
+| POS UI extensions 2026-10 adds s-pos-list, a virtualized list with custom row templates | yes | 200 | https://shopify.dev/changelog/posts/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates |
 
 ## Selected draft candidates
 
-No draft cleared the complete local and independent-editor gate. See the decision reason and rejected-draft section for locally valid drafts that were rejected, not reviewed, or blocked by a review error.
+No candidate produced a draft that passed every local check. Skipping is intentional.
 
 ## Automatic repair attempt
 
@@ -67,25 +67,27 @@ No draft cleared the complete local and independent-editor gate. See the decisio
 
 ## Rejected draft options
 
-- Show HN: Loböle, open-source parametric CAD that AI agents can drive: Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.; Supporting quotes cover only 62% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: Loböle is a parametric CAD that exposes a Python API and MCP agents. Create a part via MCP in a unit test to verify API consistency. https://github.com/eliasaronson/lobole
-  - Model evidence quote: “Parametric 3D CAD with assemblies, drawings, FEM and CAM, scriptable from Python and agents over MCP.”
-  - Claim support: Loböle is a parametric CAD that exposes a Python API and MCP agents. ← “Parametric 3D CAD with assemblies, drawings, FEM and CAM, scriptable from Python and agents over MCP.”
-- Unlink a customer's identity provider subject with the GraphQL Admin API: Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.
-  - Rejected text: Shopify added identityProviderSubjectDelete mutation in API 2027‑01. After unlinking, test that the customer’s session is revoked. https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api
-  - Model evidence quote: “As of API version 2027-01, you can use the identityProviderSubjectDelete mutation to unlink a customer from a third‑party identity provider.”
-  - Claim support: Shopify added identityProviderSubjectDelete mutation in API 2027‑01. ← “As of API version 2027-01, you can use the identityProviderSubjectDelete mutation to unlink a customer from a third‑party identity provider.”
-- Show HN: Orisuji, a maze you solve by folding your phone: The post claims folding mid‑turn doesn’t reset the turn counter, but the source provides no evidence for this behavior. The takeaway is unsupported and adds no new insight.
-  - Rejected text: Orisuji is a paper maze puzzle that uses phone folding on iPhone Duo. Verify that folding mid‑turn doesn’t reset the turn counter. https://apps.apple.com/us/app/orisuji/id6817092898
-- Show HN: Orisuji, a maze you solve by folding your phone: Editorial takeaway is too long; keep the analysis concrete and concise.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
-  - Rejected text: Orisuji is a paper maze puzzle that uses phone folding on iPhone Duo. Folding the phone counts as a move, and the maze continues seamlessly across the folded screen. https://apps.apple.com/us/app/orisuji/id6817092898
-  - Model evidence quote: “Designed for iPhone Duo: folding the phone is the move, and the folded maze carries on, combined, on the cover screen.”
+- ChiefGyk3D/Stream-Daemon: The factual opening bundles multiple features; narrow it to one capability.
+  - Rejected text: Stream‑Daemon monitors Twitch, YouTube, Kick and posts live updates to Mastodon, Discord, Matrix, Bluesky. Run it in Docker and verify secrets are not exposed in container logs. https://github.com/ChiefGyk3D/Stream-Daemon
+  - Model evidence quote: “Stream Daemon is an open‑source automation tool for live streamers and creators. It monitors Twitch, YouTube, Kick, and more, posting live updates to Mastodon, Discord, Matrix, Bluesky, and other platforms.”
+  - Claim support: Stream‑Daemon monitors Twitch, YouTube, Kick and posts live updates to Mastodon, Discord, Matrix, Bluesky. ← “Stream Daemon is an open‑source automation tool for live streamers and creators. It monitors Twitch, YouTube, Kick, and more, posting live updates to Mastodon, Discord, Matrix, Bluesky, and other platforms.”
+- IHUI-INF-AI/IHUI-AI: The factual opening bundles multiple features; narrow it to one capability.
+  - Rejected text: IHUI‑AI unifies 176 LLMs via LangGraph, MCP, and A2A. Benchmark latency of a single LLM call before deployment to meet SLA targets. https://github.com/IHUI-INF-AI/IHUI-AI
+  - Model evidence quote: “Eight‑platform full‑stack AI operating system - unifies 176 LLMs via LangGraph + MCP + A2A.”
+  - Claim support: IHUI‑AI unifies 176 LLMs via LangGraph, MCP, and A2A. ← “Eight‑platform full‑stack AI operating system - unifies 176 LLMs via LangGraph + MCP + A2A.”
+- POS UI extensions 2026-10 adds s-pos-list, a virtualized list with custom row templates: Fact plus takeaway exceeds the per-link character budget.; Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.; Draft is 287 raw characters; limit is 280
+  - Rejected text: s‑pos‑list is a virtualized list component for Polaris web components in POS 2026‑10. Replace List component in existing extensions and run scroll performance test. https://shopify.dev/changelog/posts/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates
+  - Model evidence quote: “POS UI extensions API version `2026-10` adds `s-pos-list`, a virtualized list component”
+  - Claim support: s‑pos‑list is a virtualized list component for Polaris web components in POS 2026‑10. ← “POS UI extensions API version `2026-10` adds `s-pos-list`, a virtualized list component”
+- ChiefGyk3D/Stream-Daemon: Editorial takeaway is too long; keep the analysis concrete and concise.
+  - Rejected text: Stream‑Daemon monitors Twitch streams. When running in Docker, verify that secrets are not written to container logs to avoid credential leakage. https://github.com/ChiefGyk3D/Stream-Daemon
+  - Model evidence quote: “It monitors Twitch, YouTube, Kick, and more, posting live updates to Mastodon, Discord, Matrix, Bluesky, and other platforms.”
 
 ## Top discovery candidates considered
 
-- Show HN: Orisuji, a maze you solve by folding your phone | Hacker News | product_and_workflow_tools | raw 65, adjusted 67 | https://apps.apple.com/us/app/orisuji/id6817092898
-- Show HN: Loböle, open-source parametric CAD that AI agents can drive | Hacker News | product_and_workflow_tools | raw 64, adjusted 66 | https://github.com/eliasaronson/lobole
-- Unlink a customer's identity provider subject with the GraphQL Admin API | Shopify Developer Changelog | developer_tools | raw 68, adjusted 50 | https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api
+- ChiefGyk3D/Stream-Daemon | GitHub Search | creator_and_indie_business | raw 74, adjusted 76 | current stars 37 | GitHub star trend: building baseline | https://github.com/ChiefGyk3D/Stream-Daemon
+- IHUI-INF-AI/IHUI-AI | GitHub Search | security_and_self_hosting | raw 71, adjusted 75 | current stars 31 | GitHub star trend: building baseline | https://github.com/IHUI-INF-AI/IHUI-AI
+- POS UI extensions 2026-10 adds s-pos-list, a virtualized list with custom row templates | Shopify Developer Changelog | commerce_and_digital_products | raw 74, adjusted 74 | https://shopify.dev/changelog/posts/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates
 
 ## Safety and interpretation
 
