@@ -1,17 +1,17 @@
 {
-  "generated_at_ist": "2026-10-25T17:38:04+05:30",
-  "run_at_ist": "2026-10-25T17:38:04+05:30",
+  "generated_at_ist": "2026-10-25T18:49:54+05:30",
+  "run_at_ist": "2026-10-25T18:49:54+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 173,
-  "eligible_candidate_count": 82,
+  "candidate_count_raw": 171,
+  "eligible_candidate_count": 78,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4659
+      "total_count": 4665
     },
     {
       "source": "GitHub Search · github-analytics-seo",
@@ -25,19 +25,19 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 362
+      "total_count": 363
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2852
+      "total_count": 2854
     },
     {
       "source": "GitHub Search · github-ecommerce-digital-products",
       "kind": "github_repository",
-      "items_kept": 10,
+      "items_kept": 9,
       "status": "ok",
       "total_count": 421
     },
@@ -46,21 +46,21 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2020
+      "total_count": 2023
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3177
+      "total_count": 3184
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 129
+      "total_count": 130
     },
     {
       "source": "GitHub Search · github-workflow-automation",
@@ -134,7 +134,7 @@
     {
       "source": "Product Hunt",
       "kind": "rss",
-      "items_kept": 43,
+      "items_kept": 44,
       "status": "ok"
     },
     {
@@ -145,33 +145,24 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-25T12:08:04+00:00",
+    "observed_at_utc": "2026-10-25T13:19:54+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 79,
-    "previously_tracked_repositories_refreshed": 121,
+    "repositories_seen_in_discovery": 76,
+    "previously_tracked_repositories_refreshed": 124,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
-    "repositories_with_20_to_36_hour_baseline": 15,
+    "repositories_with_20_to_36_hour_baseline": 17,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "e6c237a560db04dd",
-      "title": "Show HN: Find overlapping Rust tests with mutation testing",
-      "source_url": "https://github.com/yasuyuky/cargo-test-prune",
+      "candidate_id": "7736c647a9d12cc4",
+      "title": "Show HN: Code Counter Machine a modern analysis of AI driven development costs",
+      "source_url": "https://github.com/insanai/ccm",
       "verified": true,
-      "final_url": "https://github.com/yasuyuky/cargo-test-prune",
-      "http_status": 200,
-      "reason": ""
-    },
-    {
-      "candidate_id": "00e1094b39c9bd7d",
-      "title": "zzet/gortex",
-      "source_url": "https://github.com/zzet/gortex",
-      "verified": true,
-      "final_url": "https://github.com/zzet/gortex",
+      "final_url": "https://github.com/insanai/ccm",
       "http_status": 200,
       "reason": ""
     },
@@ -183,6 +174,15 @@
       "final_url": null,
       "http_status": null,
       "reason": "Primary source returned HTTP 403."
+    },
+    {
+      "candidate_id": "301687e3d4a1ad4d",
+      "title": "gotempsh/temps",
+      "source_url": "https://github.com/gotempsh/temps",
+      "verified": true,
+      "final_url": "https://github.com/gotempsh/temps",
+      "http_status": 200,
+      "reason": ""
     }
   ],
   "rejected_primary_sources": [
@@ -199,7 +199,7 @@
   "daily_draft_cap": 16,
   "daily_drafts_already_passed": 4,
   "outcome": "skip",
-  "decision_reason": "All generated drafts failed the local evidence/editorial checks; the hour was skipped.",
+  "decision_reason": "No draft cleared the complete automatic quality gate; independent editorial review failed closed. Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi",
   "passing_drafts": [],
   "rejected_drafts": [
     {
@@ -212,70 +212,64 @@
       ]
     },
     {
-      "candidate_id": "e6c237a560db04dd",
-      "title": "Show HN: Find overlapping Rust tests with mutation testing",
+      "candidate_id": "7736c647a9d12cc4",
+      "title": "Show HN: Code Counter Machine a modern analysis of AI driven development costs",
       "reasons": [
-        "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
+        "A supporting quote does not share enough wording with its stated claim",
+        "Supporting quotes cover only 25% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "cargo-test-prune finds Rust tests that cover detected mutants. Run it before CI to prune redundant tests, but verify that removed tests don’t miss edge cases. https://github.com/yasuyuky/cargo-test-prune",
-      "evidence_quote": "Find Rust tests whose observed mutant detection is covered by tests you keep.",
+      "proposed_text": "CCM CLI estimates AI‑driven development costs with a new calculation model. Run CCM before budgeting to compare AI vs human cost estimates. https://github.com/insanai/ccm",
+      "evidence_quote": "Count source. Explain changes. Inspect evidence and AI, tool, and human development cost scenarios.",
       "claim_evidence": [
         {
-          "claim": "cargo-test-prune finds Rust tests that cover detected mutants.",
-          "quote": "Find Rust tests whose observed mutant detection is covered by tests you keep."
+          "claim": "CCM CLI estimates AI‑driven development costs with a new calculation model.",
+          "quote": "Count source. Explain changes. Inspect evidence and AI, tool, and human development cost scenarios."
         }
       ]
     },
     {
-      "candidate_id": "e6c237a560db04dd",
-      "title": "Show HN: Find overlapping Rust tests with mutation testing",
+      "candidate_id": "301687e3d4a1ad4d",
+      "title": "gotempsh/temps",
       "reasons": [
-        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation."
-      ],
-      "proposed_text": "cargo-test-prune finds Rust tests whose observed mutant detection is covered by tests you keep. Run cargo-test-prune before CI to prune redundant tests. https://github.com/yasuyuky/cargo-test-prune",
-      "evidence_quote": "Find Rust tests whose observed mutant detection is covered by tests you keep.",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
+        "The factual opening bundles multiple features; narrow it to one capability.",
         "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Primary-source evidence quote is oversized or dominated by page navigation; use a concise source-backed excerpt.",
+        "Claim evidence quote is oversized or dominated by page navigation; use a concise source-backed excerpt."
+      ],
+      "proposed_text": "Temps offers 440+ CLI ops for AI‑native deployment, analytics, and error tracking. Use Temps' CLI to replace multiple SaaS tools, but verify each skill’s API limits before scaling. https://github.com/gotempsh/temps",
+      "evidence_quote": "AI-native open-source alternative to Vercel + Sentry + PostHog + Pingdom + Resend + E2B. 440+ CLI operations with drop‑in skills for Claude Code, Codex & OpenCode — deployments, analytics, session replay, error tracking, OpenTelemetry, email, sandboxes & AI gateway in one self‑hosted Rust binary.",
+      "claim_evidence": [
+        {
+          "claim": "Temps offers 440+ CLI ops for AI‑native deployment, analytics, and error tracking.",
+          "quote": "AI-native open-source alternative to Vercel + Sentry + PostHog + Pingdom + Resend + E2B. 440+ CLI operations with drop‑in skills for Claude Code, Codex & OpenCode — deployments, analytics, session replay, error tracking, OpenTelemetry, email, sandboxes & AI gateway in one self‑hosted Rust binary."
+        }
+      ]
+    },
+    {
+      "candidate_id": "301687e3d4a1ad4d",
+      "title": "gotempsh/temps",
+      "proposed_text": "Temps offers a CLI operation for AI‑native deployment. When scaling, verify each skill’s API limits to avoid throttling. https://github.com/gotempsh/temps",
+      "reasons": [
+        "Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi"
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "e6c237a560db04dd",
-      "title": "Show HN: Find overlapping Rust tests with mutation testing",
-      "url": "https://github.com/yasuyuky/cargo-test-prune",
+      "id": "7736c647a9d12cc4",
+      "title": "Show HN: Code Counter Machine a modern analysis of AI driven development costs",
+      "url": "https://github.com/insanai/ccm",
       "source": "Hacker News",
       "primary_category": "product_and_workflow_tools",
-      "priority_score": 62,
-      "hourly_adjusted_score": 64,
+      "priority_score": 64,
+      "hourly_adjusted_score": 66,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-25T12:02:00+00:00",
-      "days_old": 0.0,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "00e1094b39c9bd7d",
-      "title": "zzet/gortex",
-      "url": "https://github.com/zzet/gortex",
-      "source": "GitHub Search",
-      "primary_category": "developer_tools",
-      "priority_score": 68,
-      "hourly_adjusted_score": 52,
-      "stars_current": 1919,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "insufficient_history",
-      "published_at": "2026-10-25T12:05:51+00:00",
+      "published_at": "2026-10-25T13:13:26+00:00",
       "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
@@ -295,34 +289,53 @@
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
       "published_at": "2026-10-25T05:39:16+00:00",
-      "days_old": 0.27,
+      "days_old": 0.32,
       "primary_source_verified": false,
       "primary_source_http_status": null,
       "primary_source_reason": "Primary source returned HTTP 403."
+    },
+    {
+      "id": "301687e3d4a1ad4d",
+      "title": "gotempsh/temps",
+      "url": "https://github.com/gotempsh/temps",
+      "source": "GitHub Search",
+      "primary_category": "data_and_growth",
+      "priority_score": 74,
+      "hourly_adjusted_score": 50,
+      "stars_current": 867,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "insufficient_history",
+      "published_at": "2026-10-25T13:19:28+00:00",
+      "days_old": 0.0,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
     }
   ],
   "automatic_repair": {
     "attempted": true,
     "drafts_submitted": 1,
-    "repaired_local_passes": 0,
-    "repair_rejections": 1,
+    "repaired_local_passes": 1,
+    "repair_rejections": 0,
     "repair_error": null,
     "editorial_repair_attempted": false,
     "editorial_repair_drafts_submitted": 0,
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 0,
-    "submitted_for_independent_review": 0,
+    "locally_valid_drafts": 1,
+    "submitted_for_independent_review": 1,
     "passed_independent_review": 0,
-    "rejected_by_independent_review": 0,
+    "rejected_by_independent_review": 1,
     "lower_ranked_not_reviewed": 0,
-    "review_error": null,
+    "review_error": "Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi",
     "automatic_gate": "fail_closed"
   },
   "state_summary": {
     "used_candidates_in_cooldown": 11,
-    "recently_attempted_candidates": 31,
+    "recently_attempted_candidates": 33,
     "recent_draft_passes_today": 4
   }
 }
