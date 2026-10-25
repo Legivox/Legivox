@@ -1,6 +1,6 @@
 {
-  "generated_at_ist": "2026-10-25T19:38:41+05:30",
-  "run_at_ist": "2026-10-25T19:38:41+05:30",
+  "generated_at_ist": "2026-10-25T20:39:36+05:30",
+  "run_at_ist": "2026-10-25T20:39:36+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
   "candidate_count_raw": 181,
@@ -11,14 +11,14 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4673
+      "total_count": 4679
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1025
+      "total_count": 1026
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
@@ -32,28 +32,28 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2862
+      "total_count": 2869
     },
     {
       "source": "GitHub Search · github-ecommerce-digital-products",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 421
+      "total_count": 422
     },
     {
       "source": "GitHub Search · github-mcp-servers",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2025
+      "total_count": 2033
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3187
+      "total_count": 3192
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
@@ -67,7 +67,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 265
+      "total_count": 266
     },
     {
       "source": "Hacker News · hn-analytics-growth",
@@ -114,7 +114,7 @@
     {
       "source": "Hacker News · hn-shopify",
       "kind": "hacker_news",
-      "items_kept": 8,
+      "items_kept": 10,
       "status": "ok",
       "total_count": 10
     },
@@ -140,29 +140,29 @@
     {
       "source": "Shopify Developer Changelog",
       "kind": "rss",
-      "items_kept": 9,
+      "items_kept": 10,
       "status": "ok"
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-25T14:08:41+00:00",
+    "observed_at_utc": "2026-10-25T15:09:36+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 87,
-    "previously_tracked_repositories_refreshed": 113,
+    "repositories_seen_in_discovery": 84,
+    "previously_tracked_repositories_refreshed": 116,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
-    "repositories_with_20_to_36_hour_baseline": 17,
+    "repositories_with_20_to_36_hour_baseline": 15,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "395bd10bb47f4dff",
-      "title": "appsmithorg/appsmith",
-      "source_url": "https://github.com/appsmithorg/appsmith",
+      "candidate_id": "ba0e4f961d94650d",
+      "title": "Show HN: See how much revenue declined cards cost your SaaS",
+      "source_url": "https://declinekit.com/audit",
       "verified": true,
-      "final_url": "https://github.com/appsmithorg/appsmith",
+      "final_url": "https://declinekit.com/audit",
       "http_status": 200,
       "reason": ""
     },
@@ -176,13 +176,13 @@
       "reason": "Primary source returned HTTP 403."
     },
     {
-      "candidate_id": "e59aabed7f24eafb",
-      "title": "Yourcast 2.0",
-      "source_url": "https://www.producthunt.com/products/yourcast",
-      "verified": false,
-      "final_url": null,
-      "http_status": null,
-      "reason": "Primary source returned HTTP 403."
+      "candidate_id": "173e910281dd9255",
+      "title": "Sponsor: Falconer",
+      "source_url": "https://falconer.com/go/1Kfw2Ht",
+      "verified": true,
+      "final_url": "https://falconer.com/about/knowledge-health?utm_source=console.dev&utm_medium=newsletter&utm_content=knowledge-health",
+      "http_status": 200,
+      "reason": ""
     }
   ],
   "rejected_primary_sources": [
@@ -194,21 +194,12 @@
       "reasons": [
         "Primary source returned HTTP 403."
       ]
-    },
-    {
-      "candidate_id": "e59aabed7f24eafb",
-      "title": "Yourcast 2.0",
-      "source": "Product Hunt",
-      "url": "https://www.producthunt.com/products/yourcast",
-      "reasons": [
-        "Primary source returned HTTP 403."
-      ]
     }
   ],
   "daily_draft_cap": 16,
   "daily_drafts_already_passed": 4,
   "outcome": "skip",
-  "decision_reason": "All generated drafts failed the local evidence/editorial checks; the hour was skipped.",
+  "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
   "passing_drafts": [],
   "rejected_drafts": [
     {
@@ -221,62 +212,80 @@
       ]
     },
     {
-      "candidate_id": "e59aabed7f24eafb",
-      "title": "Yourcast 2.0",
-      "source": "Product Hunt",
-      "url": "https://www.producthunt.com/products/yourcast",
+      "candidate_id": "ba0e4f961d94650d",
+      "title": "Show HN: See how much revenue declined cards cost your SaaS",
       "reasons": [
-        "Primary source returned HTTP 403."
-      ]
-    },
-    {
-      "candidate_id": "395bd10bb47f4dff",
-      "title": "appsmithorg/appsmith",
-      "reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability.",
-        "Supporting quotes cover only 62% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about."
       ],
-      "proposed_text": "Appsmith is a low‑code platform that builds admin panels, internal tools, and dashboards. Run a quick CRUD widget test against your DB to confirm integration. https://github.com/appsmithorg/appsmith",
-      "evidence_quote": "Platform to build admin panels, internal tools, and dashboards. Integrates with 25+ databases and any API.",
+      "proposed_text": "DeclineKit’s free audit sums failed Stripe subscription invoices from the last 90 days. Run the audit before billing cycles to catch recoverable revenue. https://declinekit.com/audit",
+      "evidence_quote": "See how much subscription revenue you lost to declined cards in the last 90 days.",
       "claim_evidence": [
         {
-          "claim": "Appsmith is a low‑code platform that builds admin panels, internal tools, and dashboards.",
-          "quote": "Platform to build admin panels, internal tools, and dashboards. Integrates with 25+ databases and any API."
+          "claim": "DeclineKit’s free audit sums failed Stripe subscription invoices from the last 90 days.",
+          "quote": "See how much subscription revenue you lost to declined cards in the last 90 days."
         }
       ]
     },
     {
-      "candidate_id": "395bd10bb47f4dff",
-      "title": "appsmithorg/appsmith",
+      "candidate_id": "173e910281dd9255",
+      "title": "Sponsor: Falconer",
       "reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability.",
-        "Editorial takeaway is too long; keep the analysis concrete and concise."
+        "The factual opening bundles multiple features; narrow it to one capability."
       ],
-      "proposed_text": "Appsmith builds admin panels, internal tools, and dashboards. Verify database connectivity by running a CRUD widget test against a supported database before deployment. https://github.com/appsmithorg/appsmith",
-      "evidence_quote": "Platform to build admin panels, internal tools, and dashboards. Integrates with 25+ databases and any API.",
+      "proposed_text": "Falconer grades docs on coherence, coverage, freshness, density, and completeness. Prioritize doc updates that improve agent accuracy based on the score. https://falconer.com/about/knowledge-health?utm_source=console.dev&utm_medium=newsletter&utm_content=knowledge-health",
+      "evidence_quote": "Falconer grades your docs on coherence, coverage, freshness, density, and completeness, surfacing outdated content, gaps, and contradictions before agents act.",
+      "claim_evidence": [
+        {
+          "claim": "Falconer grades docs on coherence, coverage, freshness, density, and completeness.",
+          "quote": "Falconer grades your docs on coherence, coverage, freshness, density, and completeness, surfacing outdated content, gaps, and contradictions before agents act."
+        }
+      ]
+    },
+    {
+      "candidate_id": "ba0e4f961d94650d",
+      "title": "Show HN: See how much revenue declined cards cost your SaaS",
+      "reasons": [
+        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about."
+      ],
+      "proposed_text": "DeclineKit’s free audit sums failed Stripe subscription invoices from the last 90 days. Run the audit before billing cycles to recover revenue lost to declined cards. https://declinekit.com/audit",
+      "evidence_quote": "See how much subscription revenue you lost to declined cards in the last 90 days.",
       "automatic_repair_attempt": true,
       "original_rejection_reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability.",
-        "Supporting quotes cover only 62% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about."
       ]
+    },
+    {
+      "candidate_id": "173e910281dd9255",
+      "title": "Sponsor: Falconer",
+      "proposed_text": "Falconer grades docs on coherence. Prioritize documents with low coherence scores to improve agent accuracy. https://falconer.com/about/knowledge-health?utm_source=console.dev&utm_medium=newsletter&utm_content=knowledge-health",
+      "reasons": [
+        "The post merely repeats the headline and a single fact from the source without adding new insight or a concrete, actionable step beyond the obvious recommendation."
+      ],
+      "editorial_review": {
+        "clarity_score": 8,
+        "technical_coherence_score": 8,
+        "takeaway_value_score": 7,
+        "source_faithfulness_score": 9,
+        "originality_score": 4
+      }
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "395bd10bb47f4dff",
-      "title": "appsmithorg/appsmith",
-      "url": "https://github.com/appsmithorg/appsmith",
-      "source": "GitHub Search",
-      "primary_category": "developer_tools",
-      "priority_score": 67,
-      "hourly_adjusted_score": 51,
-      "stars_current": 41119,
+      "id": "ba0e4f961d94650d",
+      "title": "Show HN: See how much revenue declined cards cost your SaaS",
+      "url": "https://declinekit.com/audit",
+      "source": "Hacker News",
+      "primary_category": "product_and_workflow_tools",
+      "priority_score": 62,
+      "hourly_adjusted_score": 64,
+      "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
-      "trend_signal": "insufficient_history",
-      "published_at": "2026-10-25T14:06:47+00:00",
-      "days_old": 0.0,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-25T14:47:25+00:00",
+      "days_old": 0.02,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
@@ -295,53 +304,53 @@
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
       "published_at": "2026-10-25T05:39:16+00:00",
-      "days_old": 0.35,
+      "days_old": 0.4,
       "primary_source_verified": false,
       "primary_source_http_status": null,
       "primary_source_reason": "Primary source returned HTTP 403."
     },
     {
-      "id": "e59aabed7f24eafb",
-      "title": "Yourcast 2.0",
-      "url": "https://www.producthunt.com/products/yourcast",
-      "source": "Product Hunt",
-      "primary_category": "product_and_workflow_tools",
-      "priority_score": 51,
-      "hourly_adjusted_score": 51,
+      "id": "173e910281dd9255",
+      "title": "Sponsor: Falconer",
+      "url": "https://falconer.com/about/knowledge-health?utm_source=console.dev&utm_medium=newsletter&utm_content=knowledge-health",
+      "source": "Console.dev",
+      "primary_category": "developer_tools",
+      "priority_score": 49,
+      "hourly_adjusted_score": 49,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-24T14:42:59+00:00",
-      "days_old": 0.98,
-      "primary_source_verified": false,
-      "primary_source_http_status": null,
-      "primary_source_reason": "Primary source returned HTTP 403."
+      "published_at": "2026-10-22T07:00:00+00:00",
+      "days_old": 3.34,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
     }
   ],
   "automatic_repair": {
     "attempted": true,
-    "drafts_submitted": 1,
-    "repaired_local_passes": 0,
+    "drafts_submitted": 2,
+    "repaired_local_passes": 1,
     "repair_rejections": 1,
-    "repair_error": null,
-    "editorial_repair_attempted": false,
+    "repair_error": "Automatic repair failed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi",
+    "editorial_repair_attempted": true,
     "editorial_repair_drafts_submitted": 0,
-    "editorial_repair_error": null
+    "editorial_repair_error": "Automatic repair failed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi"
   },
   "editorial_review": {
-    "locally_valid_drafts": 0,
-    "submitted_for_independent_review": 0,
+    "locally_valid_drafts": 1,
+    "submitted_for_independent_review": 1,
     "passed_independent_review": 0,
-    "rejected_by_independent_review": 0,
+    "rejected_by_independent_review": 1,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
   "state_summary": {
     "used_candidates_in_cooldown": 11,
-    "recently_attempted_candidates": 34,
+    "recently_attempted_candidates": 33,
     "recent_draft_passes_today": 4
   }
 }

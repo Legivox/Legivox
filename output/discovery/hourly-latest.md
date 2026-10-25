@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-25T19:38:41+05:30
+- Run time (IST): 2026-10-25T20:39:36+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
 - Candidate pool after freshness/diversity filters: 87
-- Independent editorial review: 0 draft(s) passed / 0 rejected
+- Independent editorial review: 0 draft(s) passed / 1 rejected
 - Drafts passing local checks: 0
 - Outcome: **skip**
-- Decision reason: All generated drafts failed the local evidence/editorial checks; the hour was skipped.
+- Decision reason: Every draft submitted for independent editorial review was rejected; The hour was skipped.
 
 ## Source health
 
@@ -28,60 +28,65 @@
 | Hacker News · hn-digital-products | 1 | ok |
 | Hacker News · hn-ecommerce-payments | 0 | ok |
 | Hacker News · hn-security-selfhost | 0 | ok |
-| Hacker News · hn-shopify | 8 | ok |
+| Hacker News · hn-shopify | 10 | ok |
 | Hacker News · hn-show-hn | 10 | ok |
 | Console.dev | 12 | ok |
 | Product Hunt | 43 | ok |
-| Shopify Developer Changelog | 9 | ok |
+| Shopify Developer Changelog | 10 | ok |
 
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 87
-- Previously tracked repositories refreshed outside search results: 113
+- Repositories seen in this discovery run: 84
+- Previously tracked repositories refreshed outside search results: 116
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
-- Repositories with a 20–36 hour comparison baseline: 17
+- Repositories with a 20–36 hour comparison baseline: 15
 - First observations are baseline samples, not evidence of trending. Star velocity is reported only when a historical comparison exists.
 
 ## Primary-source verification
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| appsmithorg/appsmith | yes | 200 | https://github.com/appsmithorg/appsmith |
+| Show HN: See how much revenue declined cards cost your SaaS | yes | 200 | https://declinekit.com/audit |
 | AgentGrid.io | no | — | Primary source returned HTTP 403. |
-| Yourcast 2.0 | no | — | Primary source returned HTTP 403. |
+| Sponsor: Falconer | yes | 200 | https://falconer.com/about/knowledge-health?utm_source=console.dev&utm_medium=newsletter&utm_content=knowledge-health |
 
 ## Selected draft candidates
 
-No candidate produced a draft that passed every local check. Skipping is intentional.
+No draft cleared the complete local and independent-editor gate. See the decision reason and rejected-draft section for locally valid drafts that were rejected, not reviewed, or blocked by a review error.
 
 ## Automatic repair attempt
 
 - Attempted: yes
-- Repaired drafts submitted: 1
-- Repaired drafts that passed local validation: 0
+- Repaired drafts submitted: 2
+- Repaired drafts that passed local validation: 1
 - Repaired drafts rejected: 1
-- Repair error: none
+- Repair error: Automatic repair failed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
 - AgentGrid.io: Primary source returned HTTP 403.
-- Yourcast 2.0: Primary source returned HTTP 403.
-- appsmithorg/appsmith: The factual opening bundles multiple features; narrow it to one capability.; Supporting quotes cover only 62% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: Appsmith is a low‑code platform that builds admin panels, internal tools, and dashboards. Run a quick CRUD widget test against your DB to confirm integration. https://github.com/appsmithorg/appsmith
-  - Model evidence quote: “Platform to build admin panels, internal tools, and dashboards. Integrates with 25+ databases and any API.”
-  - Claim support: Appsmith is a low‑code platform that builds admin panels, internal tools, and dashboards. ← “Platform to build admin panels, internal tools, and dashboards. Integrates with 25+ databases and any API.”
-- appsmithorg/appsmith: The factual opening bundles multiple features; narrow it to one capability.; Editorial takeaway is too long; keep the analysis concrete and concise.
-  - Rejected text: Appsmith builds admin panels, internal tools, and dashboards. Verify database connectivity by running a CRUD widget test against a supported database before deployment. https://github.com/appsmithorg/appsmith
-  - Model evidence quote: “Platform to build admin panels, internal tools, and dashboards. Integrates with 25+ databases and any API.”
+- Show HN: See how much revenue declined cards cost your SaaS: Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.
+  - Rejected text: DeclineKit’s free audit sums failed Stripe subscription invoices from the last 90 days. Run the audit before billing cycles to catch recoverable revenue. https://declinekit.com/audit
+  - Model evidence quote: “See how much subscription revenue you lost to declined cards in the last 90 days.”
+  - Claim support: DeclineKit’s free audit sums failed Stripe subscription invoices from the last 90 days. ← “See how much subscription revenue you lost to declined cards in the last 90 days.”
+- Sponsor: Falconer: The factual opening bundles multiple features; narrow it to one capability.
+  - Rejected text: Falconer grades docs on coherence, coverage, freshness, density, and completeness. Prioritize doc updates that improve agent accuracy based on the score. https://falconer.com/about/knowledge-health?utm_source=console.dev&utm_medium=newsletter&utm_content=knowledge-health
+  - Model evidence quote: “Falconer grades your docs on coherence, coverage, freshness, density, and completeness, surfacing outdated content, gaps, and contradictions before agents act.”
+  - Claim support: Falconer grades docs on coherence, coverage, freshness, density, and completeness. ← “Falconer grades your docs on coherence, coverage, freshness, density, and completeness, surfacing outdated content, gaps, and contradictions before agents act.”
+- Show HN: See how much revenue declined cards cost your SaaS: Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.
+  - Rejected text: DeclineKit’s free audit sums failed Stripe subscription invoices from the last 90 days. Run the audit before billing cycles to recover revenue lost to declined cards. https://declinekit.com/audit
+  - Model evidence quote: “See how much subscription revenue you lost to declined cards in the last 90 days.”
+- Sponsor: Falconer: The post merely repeats the headline and a single fact from the source without adding new insight or a concrete, actionable step beyond the obvious recommendation.
+  - Rejected text: Falconer grades docs on coherence. Prioritize documents with low coherence scores to improve agent accuracy. https://falconer.com/about/knowledge-health?utm_source=console.dev&utm_medium=newsletter&utm_content=knowledge-health
 
 ## Top discovery candidates considered
 
-- appsmithorg/appsmith | GitHub Search | developer_tools | raw 67, adjusted 51 | current stars 41119 | GitHub star trend: building baseline | https://github.com/appsmithorg/appsmith
+- Show HN: See how much revenue declined cards cost your SaaS | Hacker News | product_and_workflow_tools | raw 62, adjusted 64 | https://declinekit.com/audit
 - AgentGrid.io | Product Hunt | product_and_workflow_tools | raw 51, adjusted 51 | https://www.producthunt.com/products/agentgrid-io
-- Yourcast 2.0 | Product Hunt | product_and_workflow_tools | raw 51, adjusted 51 | https://www.producthunt.com/products/yourcast
+- Sponsor: Falconer | Console.dev | developer_tools | raw 49, adjusted 49 | https://falconer.com/about/knowledge-health?utm_source=console.dev&utm_medium=newsletter&utm_content=knowledge-health
 
 ## Safety and interpretation
 
