@@ -1,24 +1,24 @@
 {
-  "generated_at_ist": "2026-10-25T18:49:54+05:30",
-  "run_at_ist": "2026-10-25T18:49:54+05:30",
+  "generated_at_ist": "2026-10-25T19:38:41+05:30",
+  "run_at_ist": "2026-10-25T19:38:41+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 171,
-  "eligible_candidate_count": 78,
+  "candidate_count_raw": 181,
+  "eligible_candidate_count": 87,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4665
+      "total_count": 4673
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1023
+      "total_count": 1025
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
@@ -32,12 +32,12 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2854
+      "total_count": 2862
     },
     {
       "source": "GitHub Search · github-ecommerce-digital-products",
       "kind": "github_repository",
-      "items_kept": 9,
+      "items_kept": 10,
       "status": "ok",
       "total_count": 421
     },
@@ -46,14 +46,14 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2023
+      "total_count": 2025
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3184
+      "total_count": 3187
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
@@ -67,7 +67,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 264
+      "total_count": 265
     },
     {
       "source": "Hacker News · hn-analytics-growth",
@@ -134,21 +134,21 @@
     {
       "source": "Product Hunt",
       "kind": "rss",
-      "items_kept": 44,
+      "items_kept": 43,
       "status": "ok"
     },
     {
       "source": "Shopify Developer Changelog",
       "kind": "rss",
-      "items_kept": 10,
+      "items_kept": 9,
       "status": "ok"
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-25T13:19:54+00:00",
+    "observed_at_utc": "2026-10-25T14:08:41+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 76,
-    "previously_tracked_repositories_refreshed": 124,
+    "repositories_seen_in_discovery": 87,
+    "previously_tracked_repositories_refreshed": 113,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
@@ -158,11 +158,11 @@
   },
   "primary_source_checks": [
     {
-      "candidate_id": "7736c647a9d12cc4",
-      "title": "Show HN: Code Counter Machine a modern analysis of AI driven development costs",
-      "source_url": "https://github.com/insanai/ccm",
+      "candidate_id": "395bd10bb47f4dff",
+      "title": "appsmithorg/appsmith",
+      "source_url": "https://github.com/appsmithorg/appsmith",
       "verified": true,
-      "final_url": "https://github.com/insanai/ccm",
+      "final_url": "https://github.com/appsmithorg/appsmith",
       "http_status": 200,
       "reason": ""
     },
@@ -176,13 +176,13 @@
       "reason": "Primary source returned HTTP 403."
     },
     {
-      "candidate_id": "301687e3d4a1ad4d",
-      "title": "gotempsh/temps",
-      "source_url": "https://github.com/gotempsh/temps",
-      "verified": true,
-      "final_url": "https://github.com/gotempsh/temps",
-      "http_status": 200,
-      "reason": ""
+      "candidate_id": "e59aabed7f24eafb",
+      "title": "Yourcast 2.0",
+      "source_url": "https://www.producthunt.com/products/yourcast",
+      "verified": false,
+      "final_url": null,
+      "http_status": null,
+      "reason": "Primary source returned HTTP 403."
     }
   ],
   "rejected_primary_sources": [
@@ -194,12 +194,21 @@
       "reasons": [
         "Primary source returned HTTP 403."
       ]
+    },
+    {
+      "candidate_id": "e59aabed7f24eafb",
+      "title": "Yourcast 2.0",
+      "source": "Product Hunt",
+      "url": "https://www.producthunt.com/products/yourcast",
+      "reasons": [
+        "Primary source returned HTTP 403."
+      ]
     }
   ],
   "daily_draft_cap": 16,
   "daily_drafts_already_passed": 4,
   "outcome": "skip",
-  "decision_reason": "No draft cleared the complete automatic quality gate; independent editorial review failed closed. Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi",
+  "decision_reason": "All generated drafts failed the local evidence/editorial checks; the hour was skipped.",
   "passing_drafts": [],
   "rejected_drafts": [
     {
@@ -212,64 +221,61 @@
       ]
     },
     {
-      "candidate_id": "7736c647a9d12cc4",
-      "title": "Show HN: Code Counter Machine a modern analysis of AI driven development costs",
+      "candidate_id": "e59aabed7f24eafb",
+      "title": "Yourcast 2.0",
+      "source": "Product Hunt",
+      "url": "https://www.producthunt.com/products/yourcast",
       "reasons": [
-        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
-        "A supporting quote does not share enough wording with its stated claim",
-        "Supporting quotes cover only 25% of factual wording; narrow the claim or provide a closer primary-source quote"
-      ],
-      "proposed_text": "CCM CLI estimates AI‑driven development costs with a new calculation model. Run CCM before budgeting to compare AI vs human cost estimates. https://github.com/insanai/ccm",
-      "evidence_quote": "Count source. Explain changes. Inspect evidence and AI, tool, and human development cost scenarios.",
-      "claim_evidence": [
-        {
-          "claim": "CCM CLI estimates AI‑driven development costs with a new calculation model.",
-          "quote": "Count source. Explain changes. Inspect evidence and AI, tool, and human development cost scenarios."
-        }
+        "Primary source returned HTTP 403."
       ]
     },
     {
-      "candidate_id": "301687e3d4a1ad4d",
-      "title": "gotempsh/temps",
+      "candidate_id": "395bd10bb47f4dff",
+      "title": "appsmithorg/appsmith",
       "reasons": [
         "The factual opening bundles multiple features; narrow it to one capability.",
-        "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "Primary-source evidence quote is oversized or dominated by page navigation; use a concise source-backed excerpt.",
-        "Claim evidence quote is oversized or dominated by page navigation; use a concise source-backed excerpt."
+        "Supporting quotes cover only 62% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "Temps offers 440+ CLI ops for AI‑native deployment, analytics, and error tracking. Use Temps' CLI to replace multiple SaaS tools, but verify each skill’s API limits before scaling. https://github.com/gotempsh/temps",
-      "evidence_quote": "AI-native open-source alternative to Vercel + Sentry + PostHog + Pingdom + Resend + E2B. 440+ CLI operations with drop‑in skills for Claude Code, Codex & OpenCode — deployments, analytics, session replay, error tracking, OpenTelemetry, email, sandboxes & AI gateway in one self‑hosted Rust binary.",
+      "proposed_text": "Appsmith is a low‑code platform that builds admin panels, internal tools, and dashboards. Run a quick CRUD widget test against your DB to confirm integration. https://github.com/appsmithorg/appsmith",
+      "evidence_quote": "Platform to build admin panels, internal tools, and dashboards. Integrates with 25+ databases and any API.",
       "claim_evidence": [
         {
-          "claim": "Temps offers 440+ CLI ops for AI‑native deployment, analytics, and error tracking.",
-          "quote": "AI-native open-source alternative to Vercel + Sentry + PostHog + Pingdom + Resend + E2B. 440+ CLI operations with drop‑in skills for Claude Code, Codex & OpenCode — deployments, analytics, session replay, error tracking, OpenTelemetry, email, sandboxes & AI gateway in one self‑hosted Rust binary."
+          "claim": "Appsmith is a low‑code platform that builds admin panels, internal tools, and dashboards.",
+          "quote": "Platform to build admin panels, internal tools, and dashboards. Integrates with 25+ databases and any API."
         }
       ]
     },
     {
-      "candidate_id": "301687e3d4a1ad4d",
-      "title": "gotempsh/temps",
-      "proposed_text": "Temps offers a CLI operation for AI‑native deployment. When scaling, verify each skill’s API limits to avoid throttling. https://github.com/gotempsh/temps",
+      "candidate_id": "395bd10bb47f4dff",
+      "title": "appsmithorg/appsmith",
       "reasons": [
-        "Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi"
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Editorial takeaway is too long; keep the analysis concrete and concise."
+      ],
+      "proposed_text": "Appsmith builds admin panels, internal tools, and dashboards. Verify database connectivity by running a CRUD widget test against a supported database before deployment. https://github.com/appsmithorg/appsmith",
+      "evidence_quote": "Platform to build admin panels, internal tools, and dashboards. Integrates with 25+ databases and any API.",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Supporting quotes cover only 62% of factual wording; narrow the claim or provide a closer primary-source quote"
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "7736c647a9d12cc4",
-      "title": "Show HN: Code Counter Machine a modern analysis of AI driven development costs",
-      "url": "https://github.com/insanai/ccm",
-      "source": "Hacker News",
-      "primary_category": "product_and_workflow_tools",
-      "priority_score": 64,
-      "hourly_adjusted_score": 66,
-      "stars_current": null,
+      "id": "395bd10bb47f4dff",
+      "title": "appsmithorg/appsmith",
+      "url": "https://github.com/appsmithorg/appsmith",
+      "source": "GitHub Search",
+      "primary_category": "developer_tools",
+      "priority_score": 67,
+      "hourly_adjusted_score": 51,
+      "stars_current": 41119,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-25T13:13:26+00:00",
+      "trend_signal": "insufficient_history",
+      "published_at": "2026-10-25T14:06:47+00:00",
       "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
@@ -289,53 +295,53 @@
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
       "published_at": "2026-10-25T05:39:16+00:00",
-      "days_old": 0.32,
+      "days_old": 0.35,
       "primary_source_verified": false,
       "primary_source_http_status": null,
       "primary_source_reason": "Primary source returned HTTP 403."
     },
     {
-      "id": "301687e3d4a1ad4d",
-      "title": "gotempsh/temps",
-      "url": "https://github.com/gotempsh/temps",
-      "source": "GitHub Search",
-      "primary_category": "data_and_growth",
-      "priority_score": 74,
-      "hourly_adjusted_score": 50,
-      "stars_current": 867,
+      "id": "e59aabed7f24eafb",
+      "title": "Yourcast 2.0",
+      "url": "https://www.producthunt.com/products/yourcast",
+      "source": "Product Hunt",
+      "primary_category": "product_and_workflow_tools",
+      "priority_score": 51,
+      "hourly_adjusted_score": 51,
+      "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
-      "trend_signal": "insufficient_history",
-      "published_at": "2026-10-25T13:19:28+00:00",
-      "days_old": 0.0,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-24T14:42:59+00:00",
+      "days_old": 0.98,
+      "primary_source_verified": false,
+      "primary_source_http_status": null,
+      "primary_source_reason": "Primary source returned HTTP 403."
     }
   ],
   "automatic_repair": {
     "attempted": true,
     "drafts_submitted": 1,
-    "repaired_local_passes": 1,
-    "repair_rejections": 0,
+    "repaired_local_passes": 0,
+    "repair_rejections": 1,
     "repair_error": null,
     "editorial_repair_attempted": false,
     "editorial_repair_drafts_submitted": 0,
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 1,
-    "submitted_for_independent_review": 1,
+    "locally_valid_drafts": 0,
+    "submitted_for_independent_review": 0,
     "passed_independent_review": 0,
-    "rejected_by_independent_review": 1,
+    "rejected_by_independent_review": 0,
     "lower_ranked_not_reviewed": 0,
-    "review_error": "Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi",
+    "review_error": null,
     "automatic_gate": "fail_closed"
   },
   "state_summary": {
     "used_candidates_in_cooldown": 11,
-    "recently_attempted_candidates": 33,
+    "recently_attempted_candidates": 34,
     "recent_draft_passes_today": 4
   }
 }

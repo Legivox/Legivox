@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-25T18:49:54+05:30
+- Run time (IST): 2026-10-25T19:38:41+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 78
-- Independent editorial review: 0 draft(s) passed / 1 rejected
+- Candidate pool after freshness/diversity filters: 87
+- Independent editorial review: 0 draft(s) passed / 0 rejected
 - Drafts passing local checks: 0
 - Outcome: **skip**
-- Decision reason: No draft cleared the complete automatic quality gate; independent editorial review failed closed. Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi
+- Decision reason: All generated drafts failed the local evidence/editorial checks; the hour was skipped.
 
 ## Source health
 
@@ -17,7 +17,7 @@
 | GitHub Search · github-analytics-seo | 10 | ok |
 | GitHub Search · github-creator-infrastructure | 10 | ok |
 | GitHub Search · github-developer-tools | 10 | ok |
-| GitHub Search · github-ecommerce-digital-products | 9 | ok |
+| GitHub Search · github-ecommerce-digital-products | 10 | ok |
 | GitHub Search · github-mcp-servers | 10 | ok |
 | GitHub Search · github-self-hosted | 10 | ok |
 | GitHub Search · github-shopify-commerce | 10 | ok |
@@ -31,14 +31,14 @@
 | Hacker News · hn-shopify | 8 | ok |
 | Hacker News · hn-show-hn | 10 | ok |
 | Console.dev | 12 | ok |
-| Product Hunt | 44 | ok |
-| Shopify Developer Changelog | 10 | ok |
+| Product Hunt | 43 | ok |
+| Shopify Developer Changelog | 9 | ok |
 
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 76
-- Previously tracked repositories refreshed outside search results: 124
+- Repositories seen in this discovery run: 87
+- Previously tracked repositories refreshed outside search results: 113
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
 - Repositories with a 20–36 hour comparison baseline: 17
@@ -48,42 +48,40 @@
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| Show HN: Code Counter Machine a modern analysis of AI driven development costs | yes | 200 | https://github.com/insanai/ccm |
+| appsmithorg/appsmith | yes | 200 | https://github.com/appsmithorg/appsmith |
 | AgentGrid.io | no | — | Primary source returned HTTP 403. |
-| gotempsh/temps | yes | 200 | https://github.com/gotempsh/temps |
+| Yourcast 2.0 | no | — | Primary source returned HTTP 403. |
 
 ## Selected draft candidates
 
-No draft cleared the complete local and independent-editor gate. See the decision reason and rejected-draft section for locally valid drafts that were rejected, not reviewed, or blocked by a review error.
+No candidate produced a draft that passed every local check. Skipping is intentional.
 
 ## Automatic repair attempt
 
 - Attempted: yes
 - Repaired drafts submitted: 1
-- Repaired drafts that passed local validation: 1
-- Repaired drafts rejected: 0
+- Repaired drafts that passed local validation: 0
+- Repaired drafts rejected: 1
 - Repair error: none
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
 - AgentGrid.io: Primary source returned HTTP 403.
-- Show HN: Code Counter Machine a modern analysis of AI driven development costs: Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.; A supporting quote does not share enough wording with its stated claim; Supporting quotes cover only 25% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: CCM CLI estimates AI‑driven development costs with a new calculation model. Run CCM before budgeting to compare AI vs human cost estimates. https://github.com/insanai/ccm
-  - Model evidence quote: “Count source. Explain changes. Inspect evidence and AI, tool, and human development cost scenarios.”
-  - Claim support: CCM CLI estimates AI‑driven development costs with a new calculation model. ← “Count source. Explain changes. Inspect evidence and AI, tool, and human development cost scenarios.”
-- gotempsh/temps: The factual opening bundles multiple features; narrow it to one capability.; Editorial takeaway is too long; keep the analysis concrete and concise.; Primary-source evidence quote is oversized or dominated by page navigation; use a concise source-backed excerpt.; Claim evidence quote is oversized or dominated by page navigation; use a concise source-backed excerpt.
-  - Rejected text: Temps offers 440+ CLI ops for AI‑native deployment, analytics, and error tracking. Use Temps' CLI to replace multiple SaaS tools, but verify each skill’s API limits before scaling. https://github.com/gotempsh/temps
-  - Model evidence quote: “AI-native open-source alternative to Vercel + Sentry + PostHog + Pingdom + Resend + E2B. 440+ CLI operations with drop‑in skills for Claude Code, Codex & OpenCode — deployments, analytics, session replay, error tracking, OpenTelemetry, email, sandboxes & AI gateway in one self‑hosted Rust binary.”
-  - Claim support: Temps offers 440+ CLI ops for AI‑native deployment, analytics, and error tracking. ← “AI-native open-source alternative to Vercel + Sentry + PostHog + Pingdom + Resend + E2B. 440+ CLI operations with drop‑in skills for Claude Code, Codex & OpenCode — deployments, analytics, session replay, error tracking, OpenTelemetry, email, sandboxes & AI gateway in one self‑hosted Rust binary.”
-- gotempsh/temps: Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi
-  - Rejected text: Temps offers a CLI operation for AI‑native deployment. When scaling, verify each skill’s API limits to avoid throttling. https://github.com/gotempsh/temps
+- Yourcast 2.0: Primary source returned HTTP 403.
+- appsmithorg/appsmith: The factual opening bundles multiple features; narrow it to one capability.; Supporting quotes cover only 62% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: Appsmith is a low‑code platform that builds admin panels, internal tools, and dashboards. Run a quick CRUD widget test against your DB to confirm integration. https://github.com/appsmithorg/appsmith
+  - Model evidence quote: “Platform to build admin panels, internal tools, and dashboards. Integrates with 25+ databases and any API.”
+  - Claim support: Appsmith is a low‑code platform that builds admin panels, internal tools, and dashboards. ← “Platform to build admin panels, internal tools, and dashboards. Integrates with 25+ databases and any API.”
+- appsmithorg/appsmith: The factual opening bundles multiple features; narrow it to one capability.; Editorial takeaway is too long; keep the analysis concrete and concise.
+  - Rejected text: Appsmith builds admin panels, internal tools, and dashboards. Verify database connectivity by running a CRUD widget test against a supported database before deployment. https://github.com/appsmithorg/appsmith
+  - Model evidence quote: “Platform to build admin panels, internal tools, and dashboards. Integrates with 25+ databases and any API.”
 
 ## Top discovery candidates considered
 
-- Show HN: Code Counter Machine a modern analysis of AI driven development costs | Hacker News | product_and_workflow_tools | raw 64, adjusted 66 | https://github.com/insanai/ccm
+- appsmithorg/appsmith | GitHub Search | developer_tools | raw 67, adjusted 51 | current stars 41119 | GitHub star trend: building baseline | https://github.com/appsmithorg/appsmith
 - AgentGrid.io | Product Hunt | product_and_workflow_tools | raw 51, adjusted 51 | https://www.producthunt.com/products/agentgrid-io
-- gotempsh/temps | GitHub Search | data_and_growth | raw 74, adjusted 50 | current stars 867 | GitHub star trend: building baseline | https://github.com/gotempsh/temps
+- Yourcast 2.0 | Product Hunt | product_and_workflow_tools | raw 51, adjusted 51 | https://www.producthunt.com/products/yourcast
 
 ## Safety and interpretation
 
