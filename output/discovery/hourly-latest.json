@@ -1,24 +1,24 @@
 {
-  "generated_at_ist": "2026-10-25T16:39:38+05:30",
-  "run_at_ist": "2026-10-25T16:39:38+05:30",
+  "generated_at_ist": "2026-10-25T17:38:04+05:30",
+  "run_at_ist": "2026-10-25T17:38:04+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 177,
-  "eligible_candidate_count": 86,
+  "candidate_count_raw": 173,
+  "eligible_candidate_count": 82,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4653
+      "total_count": 4659
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1021
+      "total_count": 1023
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
@@ -32,28 +32,28 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2851
+      "total_count": 2852
     },
     {
       "source": "GitHub Search · github-ecommerce-digital-products",
       "kind": "github_repository",
-      "items_kept": 9,
+      "items_kept": 10,
       "status": "ok",
-      "total_count": 420
+      "total_count": 421
     },
     {
       "source": "GitHub Search · github-mcp-servers",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2018
+      "total_count": 2020
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3174
+      "total_count": 3177
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
@@ -145,33 +145,33 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-25T11:09:38+00:00",
+    "observed_at_utc": "2026-10-25T12:08:04+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 83,
-    "previously_tracked_repositories_refreshed": 117,
+    "repositories_seen_in_discovery": 79,
+    "previously_tracked_repositories_refreshed": 121,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
-    "repositories_with_20_to_36_hour_baseline": 17,
+    "repositories_with_20_to_36_hour_baseline": 15,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "2ce5e5c1e4c24abb",
-      "title": "Show HN: Philosophic Moon in Your Terminal",
-      "source_url": "https://github.com/SorBalda/philosophic-moon",
+      "candidate_id": "e6c237a560db04dd",
+      "title": "Show HN: Find overlapping Rust tests with mutation testing",
+      "source_url": "https://github.com/yasuyuky/cargo-test-prune",
       "verified": true,
-      "final_url": "https://github.com/SorBalda/philosophic-moon",
+      "final_url": "https://github.com/yasuyuky/cargo-test-prune",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "d2ed9d05b5e290fe",
-      "title": "HugoRCD/shelve",
-      "source_url": "https://github.com/HugoRCD/shelve",
+      "candidate_id": "00e1094b39c9bd7d",
+      "title": "zzet/gortex",
+      "source_url": "https://github.com/zzet/gortex",
       "verified": true,
-      "final_url": "https://github.com/HugoRCD/shelve",
+      "final_url": "https://github.com/zzet/gortex",
       "http_status": 200,
       "reason": ""
     },
@@ -199,7 +199,7 @@
   "daily_draft_cap": 16,
   "daily_drafts_already_passed": 4,
   "outcome": "skip",
-  "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
+  "decision_reason": "All generated drafts failed the local evidence/editorial checks; the hour was skipped.",
   "passing_drafts": [],
   "rejected_drafts": [
     {
@@ -212,70 +212,70 @@
       ]
     },
     {
-      "candidate_id": "2ce5e5c1e4c24abb",
-      "title": "Show HN: Philosophic Moon in Your Terminal",
-      "proposed_text": "Philosophic Moon displays a quiet moon in the terminal. Test terminal size to ensure moon renders without clipping. https://github.com/SorBalda/philosophic-moon",
+      "candidate_id": "e6c237a560db04dd",
+      "title": "Show HN: Find overlapping Rust tests with mutation testing",
       "reasons": [
-        "Takeaway about terminal size clipping is not documented; post lacks concrete, source-backed guidance."
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "editorial_review": {
-        "clarity_score": 6,
-        "technical_coherence_score": 5,
-        "takeaway_value_score": 4,
-        "source_faithfulness_score": 5,
-        "originality_score": 5
-      }
+      "proposed_text": "cargo-test-prune finds Rust tests that cover detected mutants. Run it before CI to prune redundant tests, but verify that removed tests don’t miss edge cases. https://github.com/yasuyuky/cargo-test-prune",
+      "evidence_quote": "Find Rust tests whose observed mutant detection is covered by tests you keep.",
+      "claim_evidence": [
+        {
+          "claim": "cargo-test-prune finds Rust tests that cover detected mutants.",
+          "quote": "Find Rust tests whose observed mutant detection is covered by tests you keep."
+        }
+      ]
     },
     {
-      "candidate_id": "d2ed9d05b5e290fe",
-      "title": "HugoRCD/shelve",
-      "proposed_text": "Shelve provides CLI and GitHub sync for managing secrets. Run `shelve sync` after each PR to keep secrets up to date. https://github.com/HugoRCD/shelve",
+      "candidate_id": "e6c237a560db04dd",
+      "title": "Show HN: Find overlapping Rust tests with mutation testing",
       "reasons": [
-        "Advice to run `shelve sync` after each PR is not supported by the primary page; no mention of PR workflow."
+        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation."
       ],
-      "editorial_review": {
-        "clarity_score": 6,
-        "technical_coherence_score": 5,
-        "takeaway_value_score": 4,
-        "source_faithfulness_score": 5,
-        "originality_score": 5
-      }
+      "proposed_text": "cargo-test-prune finds Rust tests whose observed mutant detection is covered by tests you keep. Run cargo-test-prune before CI to prune redundant tests. https://github.com/yasuyuky/cargo-test-prune",
+      "evidence_quote": "Find Rust tests whose observed mutant detection is covered by tests you keep.",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "2ce5e5c1e4c24abb",
-      "title": "Show HN: Philosophic Moon in Your Terminal",
-      "url": "https://github.com/SorBalda/philosophic-moon",
+      "id": "e6c237a560db04dd",
+      "title": "Show HN: Find overlapping Rust tests with mutation testing",
+      "url": "https://github.com/yasuyuky/cargo-test-prune",
       "source": "Hacker News",
       "primary_category": "product_and_workflow_tools",
-      "priority_score": 56,
-      "hourly_adjusted_score": 58,
+      "priority_score": 62,
+      "hourly_adjusted_score": 64,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-25T10:30:42+00:00",
-      "days_old": 0.03,
+      "published_at": "2026-10-25T12:02:00+00:00",
+      "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "d2ed9d05b5e290fe",
-      "title": "HugoRCD/shelve",
-      "url": "https://github.com/HugoRCD/shelve",
+      "id": "00e1094b39c9bd7d",
+      "title": "zzet/gortex",
+      "url": "https://github.com/zzet/gortex",
       "source": "GitHub Search",
       "primary_category": "developer_tools",
-      "priority_score": 67,
-      "hourly_adjusted_score": 51,
-      "stars_current": 459,
+      "priority_score": 68,
+      "hourly_adjusted_score": 52,
+      "stars_current": 1919,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "insufficient_history",
-      "published_at": "2026-10-25T11:09:03+00:00",
+      "published_at": "2026-10-25T12:05:51+00:00",
       "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
@@ -295,7 +295,7 @@
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
       "published_at": "2026-10-25T05:39:16+00:00",
-      "days_old": 0.23,
+      "days_old": 0.27,
       "primary_source_verified": false,
       "primary_source_http_status": null,
       "primary_source_reason": "Primary source returned HTTP 403."
@@ -303,26 +303,26 @@
   ],
   "automatic_repair": {
     "attempted": true,
-    "drafts_submitted": 0,
+    "drafts_submitted": 1,
     "repaired_local_passes": 0,
-    "repair_rejections": 0,
-    "repair_error": "Automatic repair failed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi",
-    "editorial_repair_attempted": true,
+    "repair_rejections": 1,
+    "repair_error": null,
+    "editorial_repair_attempted": false,
     "editorial_repair_drafts_submitted": 0,
-    "editorial_repair_error": "Automatic repair failed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi"
+    "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 2,
-    "submitted_for_independent_review": 2,
+    "locally_valid_drafts": 0,
+    "submitted_for_independent_review": 0,
     "passed_independent_review": 0,
-    "rejected_by_independent_review": 2,
+    "rejected_by_independent_review": 0,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
   "state_summary": {
     "used_candidates_in_cooldown": 11,
-    "recently_attempted_candidates": 29,
+    "recently_attempted_candidates": 31,
     "recent_draft_passes_today": 4
   }
 }
