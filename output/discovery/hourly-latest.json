@@ -1,24 +1,24 @@
 {
-  "generated_at_ist": "2026-10-25T08:43:04+05:30",
-  "run_at_ist": "2026-10-25T08:43:04+05:30",
+  "generated_at_ist": "2026-10-25T09:46:42+05:30",
+  "run_at_ist": "2026-10-25T09:46:42+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 175,
-  "eligible_candidate_count": 94,
+  "candidate_count_raw": 172,
+  "eligible_candidate_count": 91,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4612
+      "total_count": 4621
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1012
+      "total_count": 1013
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
@@ -32,7 +32,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2830
+      "total_count": 2833
     },
     {
       "source": "GitHub Search · github-ecommerce-digital-products",
@@ -46,14 +46,14 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1985
+      "total_count": 1988
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3151
+      "total_count": 3153
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
@@ -145,42 +145,42 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-25T03:13:04+00:00",
+    "observed_at_utc": "2026-10-25T04:16:42+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 82,
-    "previously_tracked_repositories_refreshed": 118,
+    "repositories_seen_in_discovery": 79,
+    "previously_tracked_repositories_refreshed": 121,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
-    "repositories_with_20_to_36_hour_baseline": 14,
+    "repositories_with_20_to_36_hour_baseline": 16,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "3c0bf23284500257",
-      "title": "krillinai/OpenCreator",
-      "source_url": "https://github.com/krillinai/OpenCreator",
+      "candidate_id": "a5e43b1572bfaf36",
+      "title": "paperclipai/paperclip",
+      "source_url": "https://github.com/paperclipai/paperclip",
       "verified": true,
-      "final_url": "https://github.com/krillinai/OpenCreator",
+      "final_url": "https://github.com/paperclipai/paperclip",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "e12e7a321e45ada2",
-      "title": "Osmantic/ODS",
-      "source_url": "https://github.com/Osmantic/ODS",
+      "candidate_id": "dd35074b283c32c0",
+      "title": "agentrq/agentrq",
+      "source_url": "https://github.com/agentrq/agentrq",
       "verified": true,
-      "final_url": "https://github.com/Osmantic/ODS",
+      "final_url": "https://github.com/agentrq/agentrq",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "f803dce2f9c77322",
-      "title": "POS UI extensions now support reactive storage access",
-      "source_url": "https://shopify.dev/changelog/pos-ui-extensions-now-support-reactive-storage-access",
+      "candidate_id": "8af5fa528f542499",
+      "title": "Show HN: Perch, a calm Mac app for juggling Claude Code sessions",
+      "source_url": "https://perchfocus.com/",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access",
+      "final_url": "https://perchfocus.com/",
       "http_status": 200,
       "reason": ""
     }
@@ -188,139 +188,223 @@
   "rejected_primary_sources": [],
   "daily_draft_cap": 16,
   "daily_drafts_already_passed": 0,
-  "outcome": "skip",
-  "decision_reason": "All generated drafts failed the local evidence/editorial checks; the hour was skipped.",
-  "passing_drafts": [],
+  "outcome": "dry_run_passed",
+  "decision_reason": "At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.",
+  "passing_drafts": [
+    {
+      "candidate_id": "dd35074b283c32c0",
+      "title": "agentrq/agentrq",
+      "source": "GitHub Search",
+      "source_kind": "github_repository",
+      "url": "https://github.com/agentrq/agentrq",
+      "primary_source_verified": true,
+      "primary_source_title": "GitHub - agentrq/agentrq: AgentRQ: Human-in-loop realtime conversational task manager for AI Agents. Self-hosted! Control your own agents from wherever you want Mobile, Web, Desktop. Designed to work well with your own Claude subscriptions and any harness with ACP support.",
+      "primary_source_final_url": "https://github.com/agentrq/agentrq",
+      "primary_source_http_status": 200,
+      "category": "ai_and_automation",
+      "priority_score": 73,
+      "hourly_adjusted_score": 77,
+      "post_text": "AgentRQ is a self‑hosted, real‑time conversational task manager for AI agents. Test a Claude harness to confirm ACP support before deployment. https://github.com/agentrq/agentrq",
+      "fact_sentence": "AgentRQ is a self‑hosted, real‑time conversational task manager for AI agents.",
+      "format": "tool_discovery",
+      "audience": "developers",
+      "angle": "human‑in‑loop",
+      "rationale": "The repository title directly describes the product and its self‑hosted nature. The takeaway addresses a practical validation step for ACP integration.",
+      "evidence_quote": "AgentRQ: Human‑in‑loop realtime conversational task manager for AI Agents. Self‑hosted!",
+      "editorial_takeaway": "Test a Claude harness to confirm ACP support before deployment.",
+      "claim_evidence": [
+        {
+          "claim": "AgentRQ is a self‑hosted, real‑time conversational task manager for AI agents",
+          "quote": "AgentRQ: Human‑in‑loop realtime conversational task manager for AI Agents. Self‑hosted!"
+        }
+      ],
+      "scores": {
+        "timeliness": 10,
+        "usefulness": 8,
+        "novelty": 7,
+        "evidence": 9,
+        "insight": 8
+      },
+      "editorial_score": 8.4,
+      "character_count": 177,
+      "status": "dry_run_passed_not_published",
+      "published_to_x": false,
+      "editorial_review": {
+        "clarity_score": 8,
+        "technical_coherence_score": 8,
+        "takeaway_value_score": 8,
+        "source_faithfulness_score": 8,
+        "originality_score": 8,
+        "reason": "Clear, technically coherent, source‑faithful, and adds a useful deployment test.",
+        "passed": true
+      }
+    }
+  ],
   "rejected_drafts": [
     {
-      "candidate_id": "3c0bf23284500257",
-      "title": "krillinai/OpenCreator",
-      "reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability.",
-        "Supporting quotes cover only 56% of factual wording; narrow the claim or provide a closer primary-source quote"
-      ],
-      "proposed_text": "OpenCreator downloads videos, translates, and generates images, voice, avatars, edits. Run a video translation pipeline locally to verify agent coordination. https://github.com/krillinai/OpenCreator",
-      "evidence_quote": "Video downloading, video translation, create videos, images, voice, avatars, and edit...",
-      "claim_evidence": [
-        {
-          "claim": "OpenCreator downloads videos, translates, and generates images, voice, avatars, edits.",
-          "quote": "Video downloading, video translation, create videos, images, voice, avatars, and edit..."
-        }
-      ]
-    },
-    {
-      "candidate_id": "e12e7a321e45ada2",
-      "title": "Osmantic/ODS",
-      "reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability."
-      ],
-      "proposed_text": "ODS V3 Pre‑Release turns a PC, Mac, or Linux box into a private AI server. Validate Docker deployment and confirm GPU support before scaling. https://github.com/Osmantic/ODS",
-      "evidence_quote": "Turn your PC, Mac, or Linux box into a private AI server.",
-      "claim_evidence": [
-        {
-          "claim": "ODS V3 Pre‑Release turns a PC, Mac, or Linux box into a private AI server.",
-          "quote": "Turn your PC, Mac, or Linux box into a private AI server."
-        }
-      ]
-    },
-    {
-      "candidate_id": "f803dce2f9c77322",
-      "title": "POS UI extensions now support reactive storage access",
+      "candidate_id": "a5e43b1572bfaf36",
+      "title": "paperclipai/paperclip",
       "reasons": [
         "Takeaway implies an undocumented product capability: sync. Reframe as a check of documented behavior.",
-        "Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration."
+        "Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.",
+        "Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "shopify.storage.current lets POS UI extensions react to stored value changes. Add a listener to update UI on storage changes; test cross‑target sync. https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access",
-      "evidence_quote": "The new `shopify.storage.current` API lets POS UI extension developers respond automatically when stored values change across extension targets on the same POS device.",
+      "proposed_text": "paperclip is an open‑source app for managing agents at work. Run a sample workflow to verify agent‑skill sync before scaling. https://github.com/paperclipai/paperclip",
+      "evidence_quote": "The open‑source app everyone uses to manage agents at work",
       "claim_evidence": [
         {
-          "claim": "shopify.storage.current lets POS UI extensions react to stored value changes.",
-          "quote": "The new `shopify.storage.current` API lets POS UI extension developers respond automatically when stored values change across extension targets on the same POS device."
+          "claim": "paperclip is an open‑source app for managing agents at work",
+          "quote": "The open‑source app everyone uses to manage agents at work"
+        }
+      ]
+    },
+    {
+      "candidate_id": "8af5fa528f542499",
+      "title": "Show HN: Perch, a calm Mac app for juggling Claude Code sessions",
+      "reasons": [
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
+        "Supporting quotes cover only 60% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ],
+      "proposed_text": "Perch is a calm Mac app that centralises Claude Code sessions, PRs, and links. Enable mute mode to focus while only seeing pending CI or reviewer actions. https://perchfocus.com/",
+      "evidence_quote": "A calm Mac home for your Claude Code work, with every session, PR, and link in one place.",
+      "claim_evidence": [
+        {
+          "claim": "Perch is a calm Mac app that centralises Claude Code sessions, PRs, and links",
+          "quote": "A calm Mac home for your Claude Code work, with every session, PR, and link in one place."
         }
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "3c0bf23284500257",
-      "title": "krillinai/OpenCreator",
-      "url": "https://github.com/krillinai/OpenCreator",
-      "source": "GitHub Search",
-      "primary_category": "creator_and_indie_business",
-      "priority_score": 65,
-      "hourly_adjusted_score": 84,
-      "stars_current": 13913,
-      "stars_delta_24h": 38,
-      "stars_delta_baseline_hours": 24.0,
-      "stars_growth_percent_24h": 0.27,
-      "trend_signal": "measured_star_growth",
-      "published_at": "2026-10-25T02:51:28+00:00",
-      "days_old": 0.02,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "e12e7a321e45ada2",
-      "title": "Osmantic/ODS",
-      "url": "https://github.com/Osmantic/ODS",
+      "id": "a5e43b1572bfaf36",
+      "title": "paperclipai/paperclip",
+      "url": "https://github.com/paperclipai/paperclip",
       "source": "GitHub Search",
       "primary_category": "ai_and_automation",
-      "priority_score": 68,
-      "hourly_adjusted_score": 79,
-      "stars_current": 7677,
-      "stars_delta_24h": 7,
-      "stars_delta_baseline_hours": 22.0,
-      "stars_growth_percent_24h": 0.09,
+      "priority_score": 69,
+      "hourly_adjusted_score": 88,
+      "stars_current": 107022,
+      "stars_delta_24h": 328,
+      "stars_delta_baseline_hours": 20.1,
+      "stars_growth_percent_24h": 0.31,
       "trend_signal": "measured_star_growth",
-      "published_at": "2026-10-25T02:56:23+00:00",
+      "published_at": "2026-10-25T04:05:56+00:00",
       "days_old": 0.01,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "f803dce2f9c77322",
-      "title": "POS UI extensions now support reactive storage access",
-      "url": "https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access",
-      "source": "Shopify Developer Changelog",
-      "primary_category": "commerce_and_digital_products",
-      "priority_score": 74,
+      "id": "dd35074b283c32c0",
+      "title": "agentrq/agentrq",
+      "url": "https://github.com/agentrq/agentrq",
+      "source": "GitHub Search",
+      "primary_category": "ai_and_automation",
+      "priority_score": 73,
+      "hourly_adjusted_score": 77,
+      "stars_current": 1167,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "insufficient_history",
+      "published_at": "2026-10-25T04:12:39+00:00",
+      "days_old": 0.0,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "8af5fa528f542499",
+      "title": "Show HN: Perch, a calm Mac app for juggling Claude Code sessions",
+      "url": "https://perchfocus.com/",
+      "source": "Hacker News",
+      "primary_category": "data_and_growth",
+      "priority_score": 72,
       "hourly_adjusted_score": 74,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-22T16:00:00+00:00",
-      "days_old": 2.47,
+      "published_at": "2026-10-24T21:01:39+00:00",
+      "days_old": 0.3,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     }
   ],
   "automatic_repair": {
-    "attempted": true,
+    "attempted": false,
     "drafts_submitted": 0,
     "repaired_local_passes": 0,
     "repair_rejections": 0,
-    "repair_error": "Automatic repair failed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi",
+    "repair_error": null,
     "editorial_repair_attempted": false,
     "editorial_repair_drafts_submitted": 0,
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 0,
-    "submitted_for_independent_review": 0,
-    "passed_independent_review": 0,
+    "locally_valid_drafts": 1,
+    "submitted_for_independent_review": 1,
+    "passed_independent_review": 1,
     "rejected_by_independent_review": 0,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
+  "recommended_draft": {
+    "candidate_id": "dd35074b283c32c0",
+    "title": "agentrq/agentrq",
+    "source": "GitHub Search",
+    "source_kind": "github_repository",
+    "url": "https://github.com/agentrq/agentrq",
+    "primary_source_verified": true,
+    "primary_source_title": "GitHub - agentrq/agentrq: AgentRQ: Human-in-loop realtime conversational task manager for AI Agents. Self-hosted! Control your own agents from wherever you want Mobile, Web, Desktop. Designed to work well with your own Claude subscriptions and any harness with ACP support.",
+    "primary_source_final_url": "https://github.com/agentrq/agentrq",
+    "primary_source_http_status": 200,
+    "category": "ai_and_automation",
+    "priority_score": 73,
+    "hourly_adjusted_score": 77,
+    "post_text": "AgentRQ is a self‑hosted, real‑time conversational task manager for AI agents. Test a Claude harness to confirm ACP support before deployment. https://github.com/agentrq/agentrq",
+    "fact_sentence": "AgentRQ is a self‑hosted, real‑time conversational task manager for AI agents.",
+    "format": "tool_discovery",
+    "audience": "developers",
+    "angle": "human‑in‑loop",
+    "rationale": "The repository title directly describes the product and its self‑hosted nature. The takeaway addresses a practical validation step for ACP integration.",
+    "evidence_quote": "AgentRQ: Human‑in‑loop realtime conversational task manager for AI Agents. Self‑hosted!",
+    "editorial_takeaway": "Test a Claude harness to confirm ACP support before deployment.",
+    "claim_evidence": [
+      {
+        "claim": "AgentRQ is a self‑hosted, real‑time conversational task manager for AI agents",
+        "quote": "AgentRQ: Human‑in‑loop realtime conversational task manager for AI Agents. Self‑hosted!"
+      }
+    ],
+    "scores": {
+      "timeliness": 10,
+      "usefulness": 8,
+      "novelty": 7,
+      "evidence": 9,
+      "insight": 8
+    },
+    "editorial_score": 8.4,
+    "character_count": 177,
+    "status": "dry_run_passed_not_published",
+    "published_to_x": false,
+    "editorial_review": {
+      "clarity_score": 8,
+      "technical_coherence_score": 8,
+      "takeaway_value_score": 8,
+      "source_faithfulness_score": 8,
+      "originality_score": 8,
+      "reason": "Clear, technically coherent, source‑faithful, and adds a useful deployment test.",
+      "passed": true
+    }
+  },
   "state_summary": {
-    "used_candidates_in_cooldown": 7,
+    "used_candidates_in_cooldown": 8,
     "recently_attempted_candidates": 12,
-    "recent_draft_passes_today": 0
+    "recent_draft_passes_today": 1
   }
 }
