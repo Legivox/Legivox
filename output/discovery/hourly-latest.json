@@ -1,24 +1,24 @@
 {
-  "generated_at_ist": "2026-10-25T11:41:22+05:30",
-  "run_at_ist": "2026-10-25T11:41:22+05:30",
+  "generated_at_ist": "2026-10-25T12:53:56+05:30",
+  "run_at_ist": "2026-10-25T12:53:56+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 171,
-  "eligible_candidate_count": 88,
+  "candidate_count_raw": 174,
+  "eligible_candidate_count": 91,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4630
+      "total_count": 4633
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1016
+      "total_count": 1017
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
@@ -32,28 +32,28 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2840
+      "total_count": 2843
     },
     {
       "source": "GitHub Search · github-ecommerce-digital-products",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 417
+      "total_count": 418
     },
     {
       "source": "GitHub Search · github-mcp-servers",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1998
+      "total_count": 2002
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3161
+      "total_count": 3160
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
@@ -114,7 +114,7 @@
     {
       "source": "Hacker News · hn-shopify",
       "kind": "hacker_news",
-      "items_kept": 10,
+      "items_kept": 8,
       "status": "ok",
       "total_count": 10
     },
@@ -145,262 +145,183 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-25T06:11:22+00:00",
+    "observed_at_utc": "2026-10-25T07:23:56+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 79,
-    "previously_tracked_repositories_refreshed": 121,
+    "repositories_seen_in_discovery": 84,
+    "previously_tracked_repositories_refreshed": 116,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
-    "repositories_with_20_to_36_hour_baseline": 12,
+    "repositories_with_20_to_36_hour_baseline": 11,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "a33e3aeadf7c4ba8",
-      "title": "Show HN: Independent Vet – Find locally owned vets (and corporate ones) near you",
-      "source_url": "https://independentvet.com/",
+      "candidate_id": "447b1f3b8be0f3b9",
+      "title": "Show HN: Hindsight – Lightweight, elegant, open-source tracker for Windows/macOS",
+      "source_url": "https://github.com/Tomotsugu-dev/Hindsight",
       "verified": true,
-      "final_url": "https://independentvet.com/",
+      "final_url": "https://github.com/Tomotsugu-dev/Hindsight",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "e09502aa6140a5a1",
-      "title": "Show HN: Music player for visually exploring music collection",
-      "source_url": "https://github.com/Cliff-Lee/melodex",
+      "candidate_id": "e020329aa2fcaea1",
+      "title": "Show HN: Git-ing Over it, learn Git like you'll use it IRL",
+      "source_url": "https://git-ing-over-it.vercel.app/",
       "verified": true,
-      "final_url": "https://github.com/Cliff-Lee/melodex",
+      "final_url": "https://git-ing-over-it.vercel.app/",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "a3dea7a0068cba70",
-      "title": "codelibs/fess",
-      "source_url": "https://github.com/codelibs/fess",
+      "candidate_id": "e95e12447b71a006",
+      "title": "Unlink a customer's identity provider subject with the GraphQL Admin API",
+      "source_url": "https://shopify.dev/changelog/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api",
       "verified": true,
-      "final_url": "https://github.com/codelibs/fess",
+      "final_url": "https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api",
       "http_status": 200,
       "reason": ""
     }
   ],
   "rejected_primary_sources": [],
   "daily_draft_cap": 16,
-  "daily_drafts_already_passed": 2,
-  "outcome": "dry_run_passed",
-  "decision_reason": "At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.",
-  "passing_drafts": [
-    {
-      "candidate_id": "a3dea7a0068cba70",
-      "title": "codelibs/fess",
-      "source": "GitHub Search",
-      "source_kind": "github_repository",
-      "url": "https://github.com/codelibs/fess",
-      "primary_source_verified": true,
-      "primary_source_title": "GitHub - codelibs/fess: Open-source, self-hosted enterprise & site search server built on OpenSearch. Crawls web / file / DB / cloud sources, 20+ languages, REST API, and AI/RAG & semantic search. Apache-2.0.",
-      "primary_source_final_url": "https://github.com/codelibs/fess",
-      "primary_source_http_status": 200,
-      "category": "security_and_self_hosting",
-      "priority_score": 72,
-      "hourly_adjusted_score": 66,
-      "post_text": "Fess is a self‑hosted enterprise search server built on OpenSearch that supports AI‑powered semantic search. Run a benchmark on a subset of data to gauge latency before full deployment. https://github.com/codelibs/fess",
-      "fact_sentence": "Fess is a self‑hosted enterprise search server built on OpenSearch that supports AI‑powered semantic search.",
-      "format": "tool_discovery",
-      "audience": "developers",
-      "angle": "search infrastructure",
-      "rationale": "Highlights core capability and a practical performance check.",
-      "evidence_quote": "Open‑source, self‑hosted enterprise & site search server built on OpenSearch. Crawls web / file / DB / cloud sources, 20+ languages, REST API, and AI/RAG & semantic search.",
-      "editorial_takeaway": "Run a benchmark on a subset of data to gauge latency before full deployment.",
-      "claim_evidence": [
-        {
-          "claim": "Fess is a self‑hosted enterprise search server built on OpenSearch that supports AI‑powered semantic search.",
-          "quote": "Open‑source, self‑hosted enterprise & site search server built on OpenSearch. Crawls web / file / DB / cloud sources, 20+ languages, REST API, and AI/RAG & semantic search."
-        }
-      ],
-      "scores": {
-        "timeliness": 9,
-        "usefulness": 8,
-        "novelty": 7,
-        "evidence": 9,
-        "insight": 8
-      },
-      "editorial_score": 8.25,
-      "character_count": 218,
-      "status": "dry_run_passed_not_published",
-      "published_to_x": false,
-      "editorial_review": {
-        "clarity_score": 8,
-        "technical_coherence_score": 8,
-        "takeaway_value_score": 8,
-        "source_faithfulness_score": 8,
-        "originality_score": 8,
-        "reason": "Clear, accurate, and adds a practical benchmark suggestion.",
-        "passed": true
-      }
-    }
-  ],
+  "daily_drafts_already_passed": 3,
+  "outcome": "skip",
+  "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
+  "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "a33e3aeadf7c4ba8",
-      "title": "Show HN: Independent Vet – Find locally owned vets (and corporate ones) near you",
+      "candidate_id": "e020329aa2fcaea1",
+      "title": "Show HN: Git-ing Over it, learn Git like you'll use it IRL",
       "reasons": [
-        "Supporting quotes cover only 60% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
+        "A supporting quote does not share enough wording with its stated claim",
+        "Unsupported numeric claim(s): 5",
+        "Factual sentence includes terms absent from the source title/summary: browser, game, scenario, simulate"
       ],
-      "proposed_text": "Independent Vet lets users find locally owned veterinary practices and see ownership status. Verify ownership filters before booking to avoid PE‑owned surprises. https://independentvet.com/",
-      "evidence_quote": "Find locally owned veterinary practices near you and see which clinics are verified independent or corporately owned.",
+      "proposed_text": "Git‑ing Over It is a browser game that simulates real git terminal scenarios. Play level 5 to practice resolving merge conflicts before a PR. https://git-ing-over-it.vercel.app/",
+      "evidence_quote": "Real terminal, real git engine, and coworkers who keep breaking the repo.",
       "claim_evidence": [
         {
-          "claim": "Independent Vet lets users find locally owned veterinary practices and see ownership status.",
-          "quote": "Find locally owned veterinary practices near you and see which clinics are verified independent or corporately owned."
+          "claim": "Git‑ing Over It is a browser game that simulates real git terminal scenarios.",
+          "quote": "Real terminal, real git engine, and coworkers who keep breaking the repo."
         }
       ]
     },
     {
-      "candidate_id": "e09502aa6140a5a1",
-      "title": "Show HN: Music player for visually exploring music collection",
+      "candidate_id": "447b1f3b8be0f3b9",
+      "title": "Show HN: Hindsight – Lightweight, elegant, open-source tracker for Windows/macOS",
+      "proposed_text": "Hindsight is a local‑first desktop activity tracker with on‑device AI daily summaries. Test sync by toggling between machines to confirm data stays local. https://github.com/Tomotsugu-dev/Hindsight",
       "reasons": [
-        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation."
+        "Post restates headline and basic fact; lacks new insight or actionable detail beyond source."
       ],
-      "proposed_text": "Melodex is a local‑first music player that builds a visual Music Map and Album Wall. Test map navigation on a small library before scaling to full collection. https://github.com/Cliff-Lee/melodex",
-      "evidence_quote": "Open‑source, local‑first music player with a visual Music Map, Album Wall and listening journeys.",
-      "claim_evidence": [
-        {
-          "claim": "Melodex is a local‑first music player that builds a visual Music Map and Album Wall.",
-          "quote": "Open‑source, local‑first music player with a visual Music Map, Album Wall and listening journeys."
-        }
-      ]
+      "editorial_review": {
+        "clarity_score": 8,
+        "technical_coherence_score": 8,
+        "takeaway_value_score": 7,
+        "source_faithfulness_score": 9,
+        "originality_score": 5
+      }
+    },
+    {
+      "candidate_id": "e95e12447b71a006",
+      "title": "Unlink a customer's identity provider subject with the GraphQL Admin API",
+      "proposed_text": "Shopify added identityProviderSubjectDelete to unlink customers in 2027‑01. After unlinking, verify the customer is signed out of all sessions. https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api",
+      "reasons": [
+        "Rephrases changelog entry without adding new context or practical guidance beyond what is already documented."
+      ],
+      "editorial_review": {
+        "clarity_score": 8,
+        "technical_coherence_score": 8,
+        "takeaway_value_score": 7,
+        "source_faithfulness_score": 9,
+        "originality_score": 5
+      }
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "a33e3aeadf7c4ba8",
-      "title": "Show HN: Independent Vet – Find locally owned vets (and corporate ones) near you",
-      "url": "https://independentvet.com/",
+      "id": "447b1f3b8be0f3b9",
+      "title": "Show HN: Hindsight – Lightweight, elegant, open-source tracker for Windows/macOS",
+      "url": "https://github.com/Tomotsugu-dev/Hindsight",
       "source": "Hacker News",
       "primary_category": "product_and_workflow_tools",
-      "priority_score": 66,
-      "hourly_adjusted_score": 68,
+      "priority_score": 69,
+      "hourly_adjusted_score": 71,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-25T04:26:00+00:00",
-      "days_old": 0.07,
+      "published_at": "2026-10-25T07:04:10+00:00",
+      "days_old": 0.01,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "e09502aa6140a5a1",
-      "title": "Show HN: Music player for visually exploring music collection",
-      "url": "https://github.com/Cliff-Lee/melodex",
+      "id": "e020329aa2fcaea1",
+      "title": "Show HN: Git-ing Over it, learn Git like you'll use it IRL",
+      "url": "https://git-ing-over-it.vercel.app/",
       "source": "Hacker News",
       "primary_category": "product_and_workflow_tools",
-      "priority_score": 65,
-      "hourly_adjusted_score": 67,
+      "priority_score": 63,
+      "hourly_adjusted_score": 65,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-25T05:23:26+00:00",
-      "days_old": 0.03,
+      "published_at": "2026-10-25T04:23:11+00:00",
+      "days_old": 0.13,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "a3dea7a0068cba70",
-      "title": "codelibs/fess",
-      "url": "https://github.com/codelibs/fess",
-      "source": "GitHub Search",
-      "primary_category": "security_and_self_hosting",
-      "priority_score": 72,
-      "hourly_adjusted_score": 66,
-      "stars_current": 1142,
+      "id": "e95e12447b71a006",
+      "title": "Unlink a customer's identity provider subject with the GraphQL Admin API",
+      "url": "https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api",
+      "source": "Shopify Developer Changelog",
+      "primary_category": "developer_tools",
+      "priority_score": 68,
+      "hourly_adjusted_score": 58,
+      "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
-      "trend_signal": "insufficient_history",
-      "published_at": "2026-10-25T06:11:27+00:00",
-      "days_old": 0.0,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-23T13:00:00+00:00",
+      "days_old": 1.77,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     }
   ],
   "automatic_repair": {
-    "attempted": false,
+    "attempted": true,
     "drafts_submitted": 0,
     "repaired_local_passes": 0,
     "repair_rejections": 0,
     "repair_error": null,
-    "editorial_repair_attempted": false,
+    "editorial_repair_attempted": true,
     "editorial_repair_drafts_submitted": 0,
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 1,
-    "submitted_for_independent_review": 1,
-    "passed_independent_review": 1,
-    "rejected_by_independent_review": 0,
+    "locally_valid_drafts": 2,
+    "submitted_for_independent_review": 2,
+    "passed_independent_review": 0,
+    "rejected_by_independent_review": 2,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
-  "recommended_draft": {
-    "candidate_id": "a3dea7a0068cba70",
-    "title": "codelibs/fess",
-    "source": "GitHub Search",
-    "source_kind": "github_repository",
-    "url": "https://github.com/codelibs/fess",
-    "primary_source_verified": true,
-    "primary_source_title": "GitHub - codelibs/fess: Open-source, self-hosted enterprise & site search server built on OpenSearch. Crawls web / file / DB / cloud sources, 20+ languages, REST API, and AI/RAG & semantic search. Apache-2.0.",
-    "primary_source_final_url": "https://github.com/codelibs/fess",
-    "primary_source_http_status": 200,
-    "category": "security_and_self_hosting",
-    "priority_score": 72,
-    "hourly_adjusted_score": 66,
-    "post_text": "Fess is a self‑hosted enterprise search server built on OpenSearch that supports AI‑powered semantic search. Run a benchmark on a subset of data to gauge latency before full deployment. https://github.com/codelibs/fess",
-    "fact_sentence": "Fess is a self‑hosted enterprise search server built on OpenSearch that supports AI‑powered semantic search.",
-    "format": "tool_discovery",
-    "audience": "developers",
-    "angle": "search infrastructure",
-    "rationale": "Highlights core capability and a practical performance check.",
-    "evidence_quote": "Open‑source, self‑hosted enterprise & site search server built on OpenSearch. Crawls web / file / DB / cloud sources, 20+ languages, REST API, and AI/RAG & semantic search.",
-    "editorial_takeaway": "Run a benchmark on a subset of data to gauge latency before full deployment.",
-    "claim_evidence": [
-      {
-        "claim": "Fess is a self‑hosted enterprise search server built on OpenSearch that supports AI‑powered semantic search.",
-        "quote": "Open‑source, self‑hosted enterprise & site search server built on OpenSearch. Crawls web / file / DB / cloud sources, 20+ languages, REST API, and AI/RAG & semantic search."
-      }
-    ],
-    "scores": {
-      "timeliness": 9,
-      "usefulness": 8,
-      "novelty": 7,
-      "evidence": 9,
-      "insight": 8
-    },
-    "editorial_score": 8.25,
-    "character_count": 218,
-    "status": "dry_run_passed_not_published",
-    "published_to_x": false,
-    "editorial_review": {
-      "clarity_score": 8,
-      "technical_coherence_score": 8,
-      "takeaway_value_score": 8,
-      "source_faithfulness_score": 8,
-      "originality_score": 8,
-      "reason": "Clear, accurate, and adds a practical benchmark suggestion.",
-      "passed": true
-    }
-  },
   "state_summary": {
     "used_candidates_in_cooldown": 10,
-    "recently_attempted_candidates": 15,
+    "recently_attempted_candidates": 18,
     "recent_draft_passes_today": 3
   }
 }

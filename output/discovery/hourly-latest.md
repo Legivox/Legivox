@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-25T11:41:22+05:30
+- Run time (IST): 2026-10-25T12:53:56+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 88
-- Independent editorial review: 1 draft(s) passed / 0 rejected
-- Drafts passing local checks: 1
-- Outcome: **dry_run_passed**
-- Decision reason: At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.
+- Candidate pool after freshness/diversity filters: 91
+- Independent editorial review: 0 draft(s) passed / 2 rejected
+- Drafts passing local checks: 0
+- Outcome: **skip**
+- Decision reason: Every draft submitted for independent editorial review was rejected; The hour was skipped.
 
 ## Source health
 
@@ -28,7 +28,7 @@
 | Hacker News · hn-digital-products | 1 | ok |
 | Hacker News · hn-ecommerce-payments | 0 | ok |
 | Hacker News · hn-security-selfhost | 0 | ok |
-| Hacker News · hn-shopify | 10 | ok |
+| Hacker News · hn-shopify | 8 | ok |
 | Hacker News · hn-show-hn | 10 | ok |
 | Console.dev | 12 | ok |
 | Product Hunt | 40 | ok |
@@ -37,51 +37,28 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 79
-- Previously tracked repositories refreshed outside search results: 121
+- Repositories seen in this discovery run: 84
+- Previously tracked repositories refreshed outside search results: 116
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
-- Repositories with a 20–36 hour comparison baseline: 12
+- Repositories with a 20–36 hour comparison baseline: 11
 - First observations are baseline samples, not evidence of trending. Star velocity is reported only when a historical comparison exists.
 
 ## Primary-source verification
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| Show HN: Independent Vet – Find locally owned vets (and corporate ones) near you | yes | 200 | https://independentvet.com/ |
-| Show HN: Music player for visually exploring music collection | yes | 200 | https://github.com/Cliff-Lee/melodex |
-| codelibs/fess | yes | 200 | https://github.com/codelibs/fess |
+| Show HN: Hindsight – Lightweight, elegant, open-source tracker for Windows/macOS | yes | 200 | https://github.com/Tomotsugu-dev/Hindsight |
+| Show HN: Git-ing Over it, learn Git like you'll use it IRL | yes | 200 | https://git-ing-over-it.vercel.app/ |
+| Unlink a customer's identity provider subject with the GraphQL Admin API | yes | 200 | https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api |
 
 ## Selected draft candidates
 
-### Draft option 1: codelibs/fess
-
-- Category: security_and_self_hosting
-- Source: GitHub Search
-- Format: tool_discovery
-- Editorial score: 8.25/10
-- Model scores: timeliness 9/10, usefulness 8/10, novelty 7/10, evidence 9/10, insight 8/10
-- Independent editor scores: {"clarity_score": 8, "technical_coherence_score": 8, "takeaway_value_score": 8, "source_faithfulness_score": 8, "originality_score": 8, "reason": "Clear, accurate, and adds a practical benchmark suggestion.", "passed": true}
-- Live primary page: https://github.com/codelibs/fess (HTTP 200)
-- Exact source evidence: “Open‑source, self‑hosted enterprise & site search server built on OpenSearch. Crawls web / file / DB / cloud sources, 20+ languages, REST API, and AI/RAG & semantic search.”
-- Why this angle: Highlights core capability and a practical performance check.
-- Editorial takeaway: Run a benchmark on a subset of data to gauge latency before full deployment.
-- Source: https://github.com/codelibs/fess
-
-**Claim-by-claim source quotes:**
-
-- Fess is a self‑hosted enterprise search server built on OpenSearch that supports AI‑powered semantic search. ← “Open‑source, self‑hosted enterprise & site search server built on OpenSearch. Crawls web / file / DB / cloud sources, 20+ languages, REST API, and AI/RAG & semantic search.”
-
-Proposed post (not published):
-
-> Fess is a self‑hosted enterprise search server built on OpenSearch that supports AI‑powered semantic search. Run a benchmark on a subset of data to gauge latency before full deployment. https://github.com/codelibs/fess
-
-- Length: 218/280 raw characters
-- Automated gate: passed live source, evidence, originality, URL and length checks; live publishing is disabled in dry-run mode.
+No draft cleared the complete local and independent-editor gate. See the decision reason and rejected-draft section for locally valid drafts that were rejected, not reviewed, or blocked by a review error.
 
 ## Automatic repair attempt
 
-- Attempted: no
+- Attempted: yes
 - Repaired drafts submitted: 0
 - Repaired drafts that passed local validation: 0
 - Repaired drafts rejected: 0
@@ -90,24 +67,24 @@ Proposed post (not published):
 
 ## Rejected draft options
 
-- Show HN: Independent Vet – Find locally owned vets (and corporate ones) near you: Supporting quotes cover only 60% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: Independent Vet lets users find locally owned veterinary practices and see ownership status. Verify ownership filters before booking to avoid PE‑owned surprises. https://independentvet.com/
-  - Model evidence quote: “Find locally owned veterinary practices near you and see which clinics are verified independent or corporately owned.”
-  - Claim support: Independent Vet lets users find locally owned veterinary practices and see ownership status. ← “Find locally owned veterinary practices near you and see which clinics are verified independent or corporately owned.”
-- Show HN: Music player for visually exploring music collection: Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.
-  - Rejected text: Melodex is a local‑first music player that builds a visual Music Map and Album Wall. Test map navigation on a small library before scaling to full collection. https://github.com/Cliff-Lee/melodex
-  - Model evidence quote: “Open‑source, local‑first music player with a visual Music Map, Album Wall and listening journeys.”
-  - Claim support: Melodex is a local‑first music player that builds a visual Music Map and Album Wall. ← “Open‑source, local‑first music player with a visual Music Map, Album Wall and listening journeys.”
+- Show HN: Git-ing Over it, learn Git like you'll use it IRL: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; A supporting quote does not share enough wording with its stated claim; Unsupported numeric claim(s): 5; Factual sentence includes terms absent from the source title/summary: browser, game, scenario, simulate
+  - Rejected text: Git‑ing Over It is a browser game that simulates real git terminal scenarios. Play level 5 to practice resolving merge conflicts before a PR. https://git-ing-over-it.vercel.app/
+  - Model evidence quote: “Real terminal, real git engine, and coworkers who keep breaking the repo.”
+  - Claim support: Git‑ing Over It is a browser game that simulates real git terminal scenarios. ← “Real terminal, real git engine, and coworkers who keep breaking the repo.”
+- Show HN: Hindsight – Lightweight, elegant, open-source tracker for Windows/macOS: Post restates headline and basic fact; lacks new insight or actionable detail beyond source.
+  - Rejected text: Hindsight is a local‑first desktop activity tracker with on‑device AI daily summaries. Test sync by toggling between machines to confirm data stays local. https://github.com/Tomotsugu-dev/Hindsight
+- Unlink a customer's identity provider subject with the GraphQL Admin API: Rephrases changelog entry without adding new context or practical guidance beyond what is already documented.
+  - Rejected text: Shopify added identityProviderSubjectDelete to unlink customers in 2027‑01. After unlinking, verify the customer is signed out of all sessions. https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api
 
 ## Top discovery candidates considered
 
-- Show HN: Independent Vet – Find locally owned vets (and corporate ones) near you | Hacker News | product_and_workflow_tools | raw 66, adjusted 68 | https://independentvet.com/
-- Show HN: Music player for visually exploring music collection | Hacker News | product_and_workflow_tools | raw 65, adjusted 67 | https://github.com/Cliff-Lee/melodex
-- codelibs/fess | GitHub Search | security_and_self_hosting | raw 72, adjusted 66 | current stars 1142 | GitHub star trend: building baseline | https://github.com/codelibs/fess
+- Show HN: Hindsight – Lightweight, elegant, open-source tracker for Windows/macOS | Hacker News | product_and_workflow_tools | raw 69, adjusted 71 | https://github.com/Tomotsugu-dev/Hindsight
+- Show HN: Git-ing Over it, learn Git like you'll use it IRL | Hacker News | product_and_workflow_tools | raw 63, adjusted 65 | https://git-ing-over-it.vercel.app/
+- Unlink a customer's identity provider subject with the GraphQL Admin API | Shopify Developer Changelog | developer_tools | raw 68, adjusted 58 | https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api
 
 ## Safety and interpretation
 
-- At least one draft passed the automated quality gates; this dry-run workflow itself never publishes to X.
+- This run did not produce a publishable draft; no post was published to X.
 - Model scores are editorial estimates; they are not verified popularity or market demand.
 - Candidate content and metadata are untrusted input. Factual copy must be supported by the fetched primary page.
 - A skip can mean no fresh candidates, a daily diversity/cap limit, a model/API problem or weak drafts. Check the reason above.
