@@ -1,45 +1,45 @@
 {
-  "generated_at_ist": "2026-10-25T21:40:08+05:30",
-  "run_at_ist": "2026-10-25T21:40:08+05:30",
+  "generated_at_ist": "2026-10-25T22:41:02+05:30",
+  "run_at_ist": "2026-10-25T22:41:02+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 179,
-  "eligible_candidate_count": 85,
+  "candidate_count_raw": 174,
+  "eligible_candidate_count": 87,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4686
+      "total_count": 4689
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1027
+      "total_count": 1028
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 363
+      "total_count": 364
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2875
+      "total_count": 2880
     },
     {
       "source": "GitHub Search · github-ecommerce-digital-products",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 422
+      "total_count": 423
     },
     {
       "source": "GitHub Search · github-mcp-servers",
@@ -53,7 +53,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3199
+      "total_count": 3207
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
@@ -145,333 +145,228 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-25T16:10:08+00:00",
+    "observed_at_utc": "2026-10-25T17:11:02+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 83,
-    "previously_tracked_repositories_refreshed": 117,
+    "repositories_seen_in_discovery": 78,
+    "previously_tracked_repositories_refreshed": 122,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
-    "repositories_with_20_to_36_hour_baseline": 13,
+    "repositories_with_20_to_36_hour_baseline": 12,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "0192ffc8a9e4e709",
-      "title": "Show HN: Swingback, get feedback from your user for free",
-      "source_url": "https://swingback.dev",
+      "candidate_id": "a5e43b1572bfaf36",
+      "title": "paperclipai/paperclip",
+      "source_url": "https://github.com/paperclipai/paperclip",
       "verified": true,
-      "final_url": "https://swingback.dev",
+      "final_url": "https://github.com/paperclipai/paperclip",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "bb3b22ee49e68f15",
-      "title": "MikkoParkkola/mcp-gateway",
-      "source_url": "https://github.com/MikkoParkkola/mcp-gateway",
+      "candidate_id": "c58c08aca0b0ad74",
+      "title": "ChiefGyk3D/Stream-Daemon",
+      "source_url": "https://github.com/ChiefGyk3D/Stream-Daemon",
       "verified": true,
-      "final_url": "https://github.com/MikkoParkkola/mcp-gateway",
+      "final_url": "https://github.com/ChiefGyk3D/Stream-Daemon",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "33aa528b7cafa355",
-      "title": "AgentGrid.io",
-      "source_url": "https://www.producthunt.com/products/agentgrid-io",
-      "verified": false,
-      "final_url": null,
-      "http_status": null,
-      "reason": "Primary source returned HTTP 403."
+      "candidate_id": "8af5fa528f542499",
+      "title": "Show HN: Perch, a calm Mac app for juggling Claude Code sessions",
+      "source_url": "https://perchfocus.com/",
+      "verified": true,
+      "final_url": "https://perchfocus.com/",
+      "http_status": 200,
+      "reason": ""
     }
   ],
-  "rejected_primary_sources": [
-    {
-      "candidate_id": "33aa528b7cafa355",
-      "title": "AgentGrid.io",
-      "source": "Product Hunt",
-      "url": "https://www.producthunt.com/products/agentgrid-io",
-      "reasons": [
-        "Primary source returned HTTP 403."
-      ]
-    }
-  ],
+  "rejected_primary_sources": [],
   "daily_draft_cap": 16,
-  "daily_drafts_already_passed": 4,
-  "outcome": "dry_run_passed",
-  "decision_reason": "At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.",
-  "passing_drafts": [
-    {
-      "candidate_id": "0192ffc8a9e4e709",
-      "title": "Show HN: Swingback, get feedback from your user for free",
-      "source": "Hacker News",
-      "source_kind": "hacker_news",
-      "url": "https://swingback.dev",
-      "primary_source_verified": true,
-      "primary_source_title": "Swingback: user feedback tool with voting, roadmap and changelog",
-      "primary_source_final_url": "https://swingback.dev",
-      "primary_source_http_status": 200,
-      "category": "product_and_workflow_tools",
-      "priority_score": 66,
-      "hourly_adjusted_score": 68,
-      "post_text": "Swingback syncs feature requests to GitHub and Linear. Test that a new vote creates a GitHub issue to confirm sync. https://swingback.dev",
-      "fact_sentence": "Swingback syncs feature requests to GitHub and Linear.",
-      "format": "short",
-      "audience": "developers",
-      "angle": "integration",
-      "rationale": "The primary page explicitly states sync with GitHub and Linear; the takeaway focuses on verifying that relationship.",
-      "evidence_quote": "Swingback: user feedback tool with voting, roadmap and changelog Collect user feedback in a portal and an in-app widget, sync feature requests with GitHub and Linear, and tell every voter when you ship.",
-      "editorial_takeaway": "Test that a new vote creates a GitHub issue to confirm sync.",
-      "claim_evidence": [
-        {
-          "claim": "Swingback syncs feature requests to GitHub and Linear.",
-          "quote": "Swingback: user feedback tool with voting, roadmap and changelog Collect user feedback in a portal and an in-app widget, sync feature requests with GitHub and Linear, and tell every voter when you ship."
-        }
-      ],
-      "scores": {
-        "timeliness": 8,
-        "usefulness": 9,
-        "novelty": 6,
-        "evidence": 10,
-        "insight": 9
-      },
-      "editorial_score": 8.8,
-      "character_count": 137,
-      "status": "dry_run_passed_not_published",
-      "published_to_x": false,
-      "automatic_repair_attempt": true,
-      "repair_note": "A single automatic rewrite cleared the same local validator; the independent editorial review is still required.",
-      "editorial_review": {
-        "clarity_score": 8,
-        "technical_coherence_score": 8,
-        "takeaway_value_score": 8,
-        "source_faithfulness_score": 9,
-        "originality_score": 7,
-        "reason": "Clear, accurate claim with direct source support and a concrete testable takeaway.",
-        "passed": true
-      }
-    },
-    {
-      "candidate_id": "bb3b22ee49e68f15",
-      "title": "MikkoParkkola/mcp-gateway",
-      "source": "GitHub Search",
-      "source_kind": "github_repository",
-      "url": "https://github.com/MikkoParkkola/mcp-gateway",
-      "primary_source_verified": true,
-      "primary_source_title": "GitHub - MikkoParkkola/mcp-gateway: Unlimited MCP servers, tools and APIs. One fixed context cost. Plug every tool you own into Claude, Cursor, Codex or any MCP client: your agent sees a handful, finds the rest on demand, and never drowns in tool definitions. Self-hosted MCP gateway and proxy in one",
-      "primary_source_final_url": "https://github.com/MikkoParkkola/mcp-gateway",
-      "primary_source_http_status": 200,
-      "category": "ai_and_automation",
-      "priority_score": 75,
-      "hourly_adjusted_score": 51,
-      "post_text": "mcp‑gateway is a Rust binary that proxies MCP servers. Verify that a one‑command import registers existing servers before deployment. https://github.com/MikkoParkkola/mcp-gateway",
-      "fact_sentence": "mcp‑gateway is a Rust binary that proxies MCP servers.",
-      "format": "short",
-      "audience": "developers",
-      "angle": "deployment",
-      "rationale": "The source confirms a one‑command import; the takeaway tests that import.",
-      "evidence_quote": "Self-hosted MCP gateway and proxy in one Rust binary, 100+ API integrations built in, one-command import of existing servers.",
-      "editorial_takeaway": "Verify that a one‑command import registers existing servers before deployment.",
-      "claim_evidence": [
-        {
-          "claim": "mcp‑gateway is a Rust binary that proxies MCP servers.",
-          "quote": "Self-hosted MCP gateway and proxy in one Rust binary, 100+ API integrations built in, one-command import of existing servers."
-        }
-      ],
-      "scores": {
-        "timeliness": 8,
-        "usefulness": 9,
-        "novelty": 6,
-        "evidence": 10,
-        "insight": 9
-      },
-      "editorial_score": 8.8,
-      "character_count": 178,
-      "status": "dry_run_passed_not_published",
-      "published_to_x": false,
-      "automatic_repair_attempt": true,
-      "repair_note": "A single automatic rewrite cleared the same local validator; the independent editorial review is still required.",
-      "editorial_review": {
-        "clarity_score": 8,
-        "technical_coherence_score": 8,
-        "takeaway_value_score": 8,
-        "source_faithfulness_score": 9,
-        "originality_score": 7,
-        "reason": "Accurate description of Rust binary and actionable verification step, fully supported by source.",
-        "passed": true
-      }
-    }
-  ],
+  "daily_drafts_already_passed": 5,
+  "outcome": "skip",
+  "decision_reason": "All generated drafts failed the local evidence/editorial checks; the hour was skipped.",
+  "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "33aa528b7cafa355",
-      "title": "AgentGrid.io",
-      "source": "Product Hunt",
-      "url": "https://www.producthunt.com/products/agentgrid-io",
+      "candidate_id": "a5e43b1572bfaf36",
+      "title": "paperclipai/paperclip",
       "reasons": [
-        "Primary source returned HTTP 403."
-      ]
-    },
-    {
-      "candidate_id": "0192ffc8a9e4e709",
-      "title": "Show HN: Swingback, get feedback from your user for free",
-      "reasons": [
+        "Takeaway implies an undocumented product capability: sync. Reframe as a check of documented behavior.",
         "Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.",
-        "Fact sentence is too long; narrow it to one source-backed capability."
+        "Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "Swingback lets you collect user feedback via a portal and in‑app widget, syncing requests with GitHub and Linear. Run a test that a new vote triggers a GitHub issue creation to confirm sync works. https://swingback.dev",
-      "evidence_quote": "Collect user feedback in a portal and an in‑app widget, sync feature requests with GitHub and Linear",
+      "proposed_text": "paperclip is an open‑source agent orchestration app. Test agent skill sync by creating a dummy skill and verifying orchestration logs. https://github.com/paperclipai/paperclip",
+      "evidence_quote": "The open‑source app everyone uses to manage agents at work",
       "claim_evidence": [
         {
-          "claim": "Swingback lets you collect user feedback via a portal and in‑app widget, syncing requests with GitHub and Linear",
-          "quote": "Collect user feedback in a portal and an in‑app widget, sync feature requests with GitHub and Linear"
+          "claim": "paperclip is an open‑source agent orchestration app",
+          "quote": "The open‑source app everyone uses to manage agents at work"
         }
       ]
     },
     {
-      "candidate_id": "bb3b22ee49e68f15",
-      "title": "MikkoParkkola/mcp-gateway",
+      "candidate_id": "c58c08aca0b0ad74",
+      "title": "ChiefGyk3D/Stream-Daemon",
       "reasons": [
-        "Fact sentence is too long; narrow it to one source-backed capability.",
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration."
+      ],
+      "proposed_text": "Stream‑Daemon posts live stream updates to Mastodon, Discord, Matrix, Bluesky. Validate that a test stream triggers a message in each channel before launch. https://github.com/ChiefGyk3D/Stream-Daemon",
+      "evidence_quote": "posting live updates to Mastodon, Discord, Matrix, Bluesky",
+      "claim_evidence": [
+        {
+          "claim": "Stream‑Daemon posts live stream updates to Mastodon, Discord, Matrix, Bluesky",
+          "quote": "posting live updates to Mastodon, Discord, Matrix, Bluesky"
+        }
+      ]
+    },
+    {
+      "candidate_id": "8af5fa528f542499",
+      "title": "Show HN: Perch, a calm Mac app for juggling Claude Code sessions",
+      "reasons": [
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Supporting quotes cover only 56% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ],
+      "proposed_text": "Perch is a Mac app that consolidates Claude Code sessions, PRs, and links. Check that Perch suppresses notifications when no Claude or CI activity occurs. https://perchfocus.com/",
+      "evidence_quote": "A calm Mac home for your Claude Code work, with every session, PR, and link in one place.",
+      "claim_evidence": [
+        {
+          "claim": "Perch is a Mac app that consolidates Claude Code sessions, PRs, and links",
+          "quote": "A calm Mac home for your Claude Code work, with every session, PR, and link in one place."
+        }
+      ]
+    },
+    {
+      "candidate_id": "a5e43b1572bfaf36",
+      "title": "paperclipai/paperclip",
+      "reasons": [
         "Editorial takeaway is too long; keep the analysis concrete and concise."
       ],
-      "proposed_text": "mcp‑gateway is a Rust binary that proxies MCP servers, offering a fixed context cost and 100+ built‑in API integrations. Verify that a one‑command import correctly registers existing servers before deploying to production. https://github.com/MikkoParkkola/mcp-gateway",
-      "evidence_quote": "Self‑hosted MCP gateway and proxy in one Rust binary, 100+ API integrations built in, one‑command import of existing servers",
-      "claim_evidence": [
-        {
-          "claim": "mcp‑gateway is a Rust binary that proxies MCP servers, offering a fixed context cost and 100+ built‑in API integrations",
-          "quote": "Self‑hosted MCP gateway and proxy in one Rust binary, 100+ API integrations built in, one‑command import of existing servers"
-        }
+      "proposed_text": "paperclip is an open‑source agent orchestration app. Create a dummy skill in the .agents/skills folder and verify it appears in the agent list in the UI. https://github.com/paperclipai/paperclip",
+      "evidence_quote": ".agents/ skills",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "Takeaway implies an undocumented product capability: sync. Reframe as a check of documented behavior.",
+        "Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.",
+        "Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ]
+    },
+    {
+      "candidate_id": "c58c08aca0b0ad74",
+      "title": "ChiefGyk3D/Stream-Daemon",
+      "reasons": [
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration."
+      ],
+      "proposed_text": "Stream‑Daemon posts live updates to Mastodon, Discord, Matrix, Bluesky. Trigger a test stream and confirm a message appears in Discord before launch. https://github.com/ChiefGyk3D/Stream-Daemon",
+      "evidence_quote": "posting live updates to Mastodon, Discord, Matrix, Bluesky",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration."
+      ]
+    },
+    {
+      "candidate_id": "8af5fa528f542499",
+      "title": "Show HN: Perch, a calm Mac app for juggling Claude Code sessions",
+      "reasons": [
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
+        "No claim-by-claim supporting evidence was provided",
+        "Supporting quotes cover only 11% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ],
+      "proposed_text": "Perch is a Mac app that consolidates Claude Code sessions, PRs, and links. Open Perch while no Claude or CI activity is happening and confirm no notifications are shown. https://perchfocus.com/",
+      "evidence_quote": "Perch stays quiet while you're in flow, and tells you when something needs you",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Supporting quotes cover only 56% of factual wording; narrow the claim or provide a closer primary-source quote"
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "0192ffc8a9e4e709",
-      "title": "Show HN: Swingback, get feedback from your user for free",
-      "url": "https://swingback.dev",
-      "source": "Hacker News",
-      "primary_category": "product_and_workflow_tools",
-      "priority_score": 66,
-      "hourly_adjusted_score": 68,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-25T15:26:07+00:00",
-      "days_old": 0.03,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "bb3b22ee49e68f15",
-      "title": "MikkoParkkola/mcp-gateway",
-      "url": "https://github.com/MikkoParkkola/mcp-gateway",
+      "id": "a5e43b1572bfaf36",
+      "title": "paperclipai/paperclip",
+      "url": "https://github.com/paperclipai/paperclip",
       "source": "GitHub Search",
       "primary_category": "ai_and_automation",
-      "priority_score": 75,
-      "hourly_adjusted_score": 51,
-      "stars_current": 85,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "insufficient_history",
-      "published_at": "2026-10-25T16:09:57+00:00",
+      "priority_score": 69,
+      "hourly_adjusted_score": 60,
+      "stars_current": 107201,
+      "stars_delta_24h": 360,
+      "stars_delta_baseline_hours": 24.0,
+      "stars_growth_percent_24h": 0.34,
+      "trend_signal": "measured_star_growth",
+      "published_at": "2026-10-25T17:06:30+00:00",
       "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "33aa528b7cafa355",
-      "title": "AgentGrid.io",
-      "url": "https://www.producthunt.com/products/agentgrid-io",
-      "source": "Product Hunt",
-      "primary_category": "product_and_workflow_tools",
-      "priority_score": 51,
-      "hourly_adjusted_score": 51,
+      "id": "c58c08aca0b0ad74",
+      "title": "ChiefGyk3D/Stream-Daemon",
+      "url": "https://github.com/ChiefGyk3D/Stream-Daemon",
+      "source": "GitHub Search",
+      "primary_category": "creator_and_indie_business",
+      "priority_score": 74,
+      "hourly_adjusted_score": 56,
+      "stars_current": 37,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "insufficient_history",
+      "published_at": "2026-10-25T16:29:49+00:00",
+      "days_old": 0.03,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "8af5fa528f542499",
+      "title": "Show HN: Perch, a calm Mac app for juggling Claude Code sessions",
+      "url": "https://perchfocus.com/",
+      "source": "Hacker News",
+      "primary_category": "data_and_growth",
+      "priority_score": 72,
+      "hourly_adjusted_score": 56,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-25T05:39:16+00:00",
-      "days_old": 0.44,
-      "primary_source_verified": false,
-      "primary_source_http_status": null,
-      "primary_source_reason": "Primary source returned HTTP 403."
+      "published_at": "2026-10-24T21:01:39+00:00",
+      "days_old": 0.84,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
     }
   ],
   "automatic_repair": {
     "attempted": true,
-    "drafts_submitted": 2,
-    "repaired_local_passes": 2,
-    "repair_rejections": 0,
+    "drafts_submitted": 3,
+    "repaired_local_passes": 0,
+    "repair_rejections": 3,
     "repair_error": null,
     "editorial_repair_attempted": false,
     "editorial_repair_drafts_submitted": 0,
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 2,
-    "submitted_for_independent_review": 2,
-    "passed_independent_review": 2,
+    "locally_valid_drafts": 0,
+    "submitted_for_independent_review": 0,
+    "passed_independent_review": 0,
     "rejected_by_independent_review": 0,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
-  },
-  "recommended_draft": {
-    "candidate_id": "0192ffc8a9e4e709",
-    "title": "Show HN: Swingback, get feedback from your user for free",
-    "source": "Hacker News",
-    "source_kind": "hacker_news",
-    "url": "https://swingback.dev",
-    "primary_source_verified": true,
-    "primary_source_title": "Swingback: user feedback tool with voting, roadmap and changelog",
-    "primary_source_final_url": "https://swingback.dev",
-    "primary_source_http_status": 200,
-    "category": "product_and_workflow_tools",
-    "priority_score": 66,
-    "hourly_adjusted_score": 68,
-    "post_text": "Swingback syncs feature requests to GitHub and Linear. Test that a new vote creates a GitHub issue to confirm sync. https://swingback.dev",
-    "fact_sentence": "Swingback syncs feature requests to GitHub and Linear.",
-    "format": "short",
-    "audience": "developers",
-    "angle": "integration",
-    "rationale": "The primary page explicitly states sync with GitHub and Linear; the takeaway focuses on verifying that relationship.",
-    "evidence_quote": "Swingback: user feedback tool with voting, roadmap and changelog Collect user feedback in a portal and an in-app widget, sync feature requests with GitHub and Linear, and tell every voter when you ship.",
-    "editorial_takeaway": "Test that a new vote creates a GitHub issue to confirm sync.",
-    "claim_evidence": [
-      {
-        "claim": "Swingback syncs feature requests to GitHub and Linear.",
-        "quote": "Swingback: user feedback tool with voting, roadmap and changelog Collect user feedback in a portal and an in-app widget, sync feature requests with GitHub and Linear, and tell every voter when you ship."
-      }
-    ],
-    "scores": {
-      "timeliness": 8,
-      "usefulness": 9,
-      "novelty": 6,
-      "evidence": 10,
-      "insight": 9
-    },
-    "editorial_score": 8.8,
-    "character_count": 137,
-    "status": "dry_run_passed_not_published",
-    "published_to_x": false,
-    "automatic_repair_attempt": true,
-    "repair_note": "A single automatic rewrite cleared the same local validator; the independent editorial review is still required.",
-    "editorial_review": {
-      "clarity_score": 8,
-      "technical_coherence_score": 8,
-      "takeaway_value_score": 8,
-      "source_faithfulness_score": 9,
-      "originality_score": 7,
-      "reason": "Clear, accurate claim with direct source support and a concrete testable takeaway.",
-      "passed": true
-    }
   },
   "state_summary": {
     "used_candidates_in_cooldown": 12,

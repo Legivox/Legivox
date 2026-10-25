@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-25T21:40:08+05:30
+- Run time (IST): 2026-10-25T22:41:02+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 85
-- Independent editorial review: 2 draft(s) passed / 0 rejected
-- Drafts passing local checks: 2
-- Outcome: **dry_run_passed**
-- Decision reason: At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.
+- Candidate pool after freshness/diversity filters: 87
+- Independent editorial review: 0 draft(s) passed / 0 rejected
+- Drafts passing local checks: 0
+- Outcome: **skip**
+- Decision reason: All generated drafts failed the local evidence/editorial checks; the hour was skipped.
 
 ## Source health
 
@@ -37,103 +37,67 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 83
-- Previously tracked repositories refreshed outside search results: 117
+- Repositories seen in this discovery run: 78
+- Previously tracked repositories refreshed outside search results: 122
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
-- Repositories with a 20–36 hour comparison baseline: 13
+- Repositories with a 20–36 hour comparison baseline: 12
 - First observations are baseline samples, not evidence of trending. Star velocity is reported only when a historical comparison exists.
 
 ## Primary-source verification
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| Show HN: Swingback, get feedback from your user for free | yes | 200 | https://swingback.dev |
-| MikkoParkkola/mcp-gateway | yes | 200 | https://github.com/MikkoParkkola/mcp-gateway |
-| AgentGrid.io | no | — | Primary source returned HTTP 403. |
+| paperclipai/paperclip | yes | 200 | https://github.com/paperclipai/paperclip |
+| ChiefGyk3D/Stream-Daemon | yes | 200 | https://github.com/ChiefGyk3D/Stream-Daemon |
+| Show HN: Perch, a calm Mac app for juggling Claude Code sessions | yes | 200 | https://perchfocus.com/ |
 
 ## Selected draft candidates
 
-### Draft option 1: Show HN: Swingback, get feedback from your user for free
-
-- Category: product_and_workflow_tools
-- Source: Hacker News
-- Format: short
-- Editorial score: 8.8/10
-- Model scores: timeliness 8/10, usefulness 9/10, novelty 6/10, evidence 10/10, insight 9/10
-- Independent editor scores: {"clarity_score": 8, "technical_coherence_score": 8, "takeaway_value_score": 8, "source_faithfulness_score": 9, "originality_score": 7, "reason": "Clear, accurate claim with direct source support and a concrete testable takeaway.", "passed": true}
-- Live primary page: https://swingback.dev (HTTP 200)
-- Exact source evidence: “Swingback: user feedback tool with voting, roadmap and changelog Collect user feedback in a portal and an in-app widget, sync feature requests with GitHub and Linear, and tell every voter when you ship.”
-- Why this angle: The primary page explicitly states sync with GitHub and Linear; the takeaway focuses on verifying that relationship.
-- Editorial takeaway: Test that a new vote creates a GitHub issue to confirm sync.
-- Source: https://swingback.dev
-
-**Claim-by-claim source quotes:**
-
-- Swingback syncs feature requests to GitHub and Linear. ← “Swingback: user feedback tool with voting, roadmap and changelog Collect user feedback in a portal and an in-app widget, sync feature requests with GitHub and Linear, and tell every voter when you ship.”
-
-Proposed post (not published):
-
-> Swingback syncs feature requests to GitHub and Linear. Test that a new vote creates a GitHub issue to confirm sync. https://swingback.dev
-
-- Length: 137/280 raw characters
-- Automated gate: passed live source, evidence, originality, URL and length checks; live publishing is disabled in dry-run mode.
-
-### Draft option 2: MikkoParkkola/mcp-gateway
-
-- Category: ai_and_automation
-- Source: GitHub Search
-- Format: short
-- Editorial score: 8.8/10
-- Model scores: timeliness 8/10, usefulness 9/10, novelty 6/10, evidence 10/10, insight 9/10
-- Independent editor scores: {"clarity_score": 8, "technical_coherence_score": 8, "takeaway_value_score": 8, "source_faithfulness_score": 9, "originality_score": 7, "reason": "Accurate description of Rust binary and actionable verification step, fully supported by source.", "passed": true}
-- Live primary page: https://github.com/MikkoParkkola/mcp-gateway (HTTP 200)
-- Exact source evidence: “Self-hosted MCP gateway and proxy in one Rust binary, 100+ API integrations built in, one-command import of existing servers.”
-- Why this angle: The source confirms a one‑command import; the takeaway tests that import.
-- Editorial takeaway: Verify that a one‑command import registers existing servers before deployment.
-- Source: https://github.com/MikkoParkkola/mcp-gateway
-
-**Claim-by-claim source quotes:**
-
-- mcp‑gateway is a Rust binary that proxies MCP servers. ← “Self-hosted MCP gateway and proxy in one Rust binary, 100+ API integrations built in, one-command import of existing servers.”
-
-Proposed post (not published):
-
-> mcp‑gateway is a Rust binary that proxies MCP servers. Verify that a one‑command import registers existing servers before deployment. https://github.com/MikkoParkkola/mcp-gateway
-
-- Length: 178/280 raw characters
-- Automated gate: passed live source, evidence, originality, URL and length checks; live publishing is disabled in dry-run mode.
+No candidate produced a draft that passed every local check. Skipping is intentional.
 
 ## Automatic repair attempt
 
 - Attempted: yes
-- Repaired drafts submitted: 2
-- Repaired drafts that passed local validation: 2
-- Repaired drafts rejected: 0
+- Repaired drafts submitted: 3
+- Repaired drafts that passed local validation: 0
+- Repaired drafts rejected: 3
 - Repair error: none
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
-- AgentGrid.io: Primary source returned HTTP 403.
-- Show HN: Swingback, get feedback from your user for free: Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.; Fact sentence is too long; narrow it to one source-backed capability.
-  - Rejected text: Swingback lets you collect user feedback via a portal and in‑app widget, syncing requests with GitHub and Linear. Run a test that a new vote triggers a GitHub issue creation to confirm sync works. https://swingback.dev
-  - Model evidence quote: “Collect user feedback in a portal and an in‑app widget, sync feature requests with GitHub and Linear”
-  - Claim support: Swingback lets you collect user feedback via a portal and in‑app widget, syncing requests with GitHub and Linear ← “Collect user feedback in a portal and an in‑app widget, sync feature requests with GitHub and Linear”
-- MikkoParkkola/mcp-gateway: Fact sentence is too long; narrow it to one source-backed capability.; Editorial takeaway is too long; keep the analysis concrete and concise.
-  - Rejected text: mcp‑gateway is a Rust binary that proxies MCP servers, offering a fixed context cost and 100+ built‑in API integrations. Verify that a one‑command import correctly registers existing servers before deploying to production. https://github.com/MikkoParkkola/mcp-gateway
-  - Model evidence quote: “Self‑hosted MCP gateway and proxy in one Rust binary, 100+ API integrations built in, one‑command import of existing servers”
-  - Claim support: mcp‑gateway is a Rust binary that proxies MCP servers, offering a fixed context cost and 100+ built‑in API integrations ← “Self‑hosted MCP gateway and proxy in one Rust binary, 100+ API integrations built in, one‑command import of existing servers”
+- paperclipai/paperclip: Takeaway implies an undocumented product capability: sync. Reframe as a check of documented behavior.; Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.; Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: paperclip is an open‑source agent orchestration app. Test agent skill sync by creating a dummy skill and verifying orchestration logs. https://github.com/paperclipai/paperclip
+  - Model evidence quote: “The open‑source app everyone uses to manage agents at work”
+  - Claim support: paperclip is an open‑source agent orchestration app ← “The open‑source app everyone uses to manage agents at work”
+- ChiefGyk3D/Stream-Daemon: The factual opening bundles multiple features; narrow it to one capability.; Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.
+  - Rejected text: Stream‑Daemon posts live stream updates to Mastodon, Discord, Matrix, Bluesky. Validate that a test stream triggers a message in each channel before launch. https://github.com/ChiefGyk3D/Stream-Daemon
+  - Model evidence quote: “posting live updates to Mastodon, Discord, Matrix, Bluesky”
+  - Claim support: Stream‑Daemon posts live stream updates to Mastodon, Discord, Matrix, Bluesky ← “posting live updates to Mastodon, Discord, Matrix, Bluesky”
+- Show HN: Perch, a calm Mac app for juggling Claude Code sessions: The factual opening bundles multiple features; narrow it to one capability.; Supporting quotes cover only 56% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: Perch is a Mac app that consolidates Claude Code sessions, PRs, and links. Check that Perch suppresses notifications when no Claude or CI activity occurs. https://perchfocus.com/
+  - Model evidence quote: “A calm Mac home for your Claude Code work, with every session, PR, and link in one place.”
+  - Claim support: Perch is a Mac app that consolidates Claude Code sessions, PRs, and links ← “A calm Mac home for your Claude Code work, with every session, PR, and link in one place.”
+- paperclipai/paperclip: Editorial takeaway is too long; keep the analysis concrete and concise.
+  - Rejected text: paperclip is an open‑source agent orchestration app. Create a dummy skill in the .agents/skills folder and verify it appears in the agent list in the UI. https://github.com/paperclipai/paperclip
+  - Model evidence quote: “.agents/ skills”
+- ChiefGyk3D/Stream-Daemon: The factual opening bundles multiple features; narrow it to one capability.; Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.
+  - Rejected text: Stream‑Daemon posts live updates to Mastodon, Discord, Matrix, Bluesky. Trigger a test stream and confirm a message appears in Discord before launch. https://github.com/ChiefGyk3D/Stream-Daemon
+  - Model evidence quote: “posting live updates to Mastodon, Discord, Matrix, Bluesky”
+- Show HN: Perch, a calm Mac app for juggling Claude Code sessions: The factual opening bundles multiple features; narrow it to one capability.; Editorial takeaway is too long; keep the analysis concrete and concise.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; No claim-by-claim supporting evidence was provided; Supporting quotes cover only 11% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: Perch is a Mac app that consolidates Claude Code sessions, PRs, and links. Open Perch while no Claude or CI activity is happening and confirm no notifications are shown. https://perchfocus.com/
+  - Model evidence quote: “Perch stays quiet while you're in flow, and tells you when something needs you”
 
 ## Top discovery candidates considered
 
-- Show HN: Swingback, get feedback from your user for free | Hacker News | product_and_workflow_tools | raw 66, adjusted 68 | https://swingback.dev
-- MikkoParkkola/mcp-gateway | GitHub Search | ai_and_automation | raw 75, adjusted 51 | current stars 85 | GitHub star trend: building baseline | https://github.com/MikkoParkkola/mcp-gateway
-- AgentGrid.io | Product Hunt | product_and_workflow_tools | raw 51, adjusted 51 | https://www.producthunt.com/products/agentgrid-io
+- paperclipai/paperclip | GitHub Search | ai_and_automation | raw 69, adjusted 60 | current stars 107201 | GitHub stars +360 over about 24.0h | https://github.com/paperclipai/paperclip
+- ChiefGyk3D/Stream-Daemon | GitHub Search | creator_and_indie_business | raw 74, adjusted 56 | current stars 37 | GitHub star trend: building baseline | https://github.com/ChiefGyk3D/Stream-Daemon
+- Show HN: Perch, a calm Mac app for juggling Claude Code sessions | Hacker News | data_and_growth | raw 72, adjusted 56 | https://perchfocus.com/
 
 ## Safety and interpretation
 
-- At least one draft passed the automated quality gates; this dry-run workflow itself never publishes to X.
+- This run did not produce a publishable draft; no post was published to X.
 - Model scores are editorial estimates; they are not verified popularity or market demand.
 - Candidate content and metadata are untrusted input. Factual copy must be supported by the fetched primary page.
 - A skip can mean no fresh candidates, a daily diversity/cap limit, a model/API problem or weak drafts. Check the reason above.
