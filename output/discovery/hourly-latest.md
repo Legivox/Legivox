@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-25T12:53:56+05:30
+- Run time (IST): 2026-10-25T13:39:28+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 91
-- Independent editorial review: 0 draft(s) passed / 2 rejected
-- Drafts passing local checks: 0
-- Outcome: **skip**
-- Decision reason: Every draft submitted for independent editorial review was rejected; The hour was skipped.
+- Candidate pool after freshness/diversity filters: 85
+- Independent editorial review: 1 draft(s) passed / 0 rejected
+- Drafts passing local checks: 1
+- Outcome: **dry_run_passed**
+- Decision reason: At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.
 
 ## Source health
 
@@ -28,17 +28,17 @@
 | Hacker News · hn-digital-products | 1 | ok |
 | Hacker News · hn-ecommerce-payments | 0 | ok |
 | Hacker News · hn-security-selfhost | 0 | ok |
-| Hacker News · hn-shopify | 8 | ok |
+| Hacker News · hn-shopify | 10 | ok |
 | Hacker News · hn-show-hn | 10 | ok |
 | Console.dev | 12 | ok |
-| Product Hunt | 40 | ok |
+| Product Hunt | 43 | ok |
 | Shopify Developer Changelog | 10 | ok |
 
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 84
-- Previously tracked repositories refreshed outside search results: 116
+- Repositories seen in this discovery run: 76
+- Previously tracked repositories refreshed outside search results: 124
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
 - Repositories with a 20–36 hour comparison baseline: 11
@@ -48,17 +48,40 @@
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| Show HN: Hindsight – Lightweight, elegant, open-source tracker for Windows/macOS | yes | 200 | https://github.com/Tomotsugu-dev/Hindsight |
-| Show HN: Git-ing Over it, learn Git like you'll use it IRL | yes | 200 | https://git-ing-over-it.vercel.app/ |
-| Unlink a customer's identity provider subject with the GraphQL Admin API | yes | 200 | https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api |
+| Show HN: Tributary – Discover who influenced your favorite musicians | yes | 200 | https://tributary.music/ |
+| Show HN: Dadgpt Open Source Halloween Costume | yes | 200 | https://dadgptcostume.vercel.app/ |
+| Metaobject analytics queryable capability available in the Admin API | yes | 200 | https://shopify.dev/changelog/posts/metaobject-analytics-queryable-capability-available-in-the-admin-api |
 
 ## Selected draft candidates
 
-No draft cleared the complete local and independent-editor gate. See the decision reason and rejected-draft section for locally valid drafts that were rejected, not reviewed, or blocked by a review error.
+### Draft option 1: Metaobject analytics queryable capability available in the Admin API
+
+- Category: data_and_growth
+- Source: Shopify Developer Changelog
+- Format: engineering_lesson
+- Editorial score: 8.1/10
+- Model scores: timeliness 8/10, usefulness 8/10, novelty 7/10, evidence 9/10, insight 8/10
+- Independent editor scores: {"clarity_score": 8, "technical_coherence_score": 8, "takeaway_value_score": 8, "source_faithfulness_score": 8, "originality_score": 8, "reason": "Clear, technically accurate, and adds a useful guard recommendation not directly stated in the source.", "passed": true}
+- Live primary page: https://shopify.dev/changelog/posts/metaobject-analytics-queryable-capability-available-in-the-admin-api (HTTP 200)
+- Exact source evidence: “graphql) Starting with GraphQL Admin API version `2027-01`, you can read and configure the `analyticsQueryable` capability on metaobject definitions.”
+- Why this angle: The changelog explicitly lists the new input field for setting analyticsQueryable. The takeaway advises checking the error code CAPABILITY_NOT_ELIGIBLE, a documented guard that developers should handle.
+- Editorial takeaway: Add a guard to check CAPABILITY_NOT_ELIGIBLE when enabling analytics.
+- Source: https://shopify.dev/changelog/posts/metaobject-analytics-queryable-capability-available-in-the-admin-api
+
+**Claim-by-claim source quotes:**
+
+- Metaobject analyticsQueryable can now be set via GraphQL Admin API. ← “graphql) Starting with GraphQL Admin API version `2027-01`, you can read and configure the `analyticsQueryable` capability on metaobject definitions.”
+
+Proposed post (not published):
+
+> Metaobject analyticsQueryable can now be set via GraphQL Admin API. Add a guard to check CAPABILITY_NOT_ELIGIBLE when enabling analytics. https://shopify.dev/changelog/posts/metaobject-analytics-queryable-capability-available-in-the-admin-api
+
+- Length: 242/280 raw characters
+- Automated gate: passed live source, evidence, originality, URL and length checks; live publishing is disabled in dry-run mode.
 
 ## Automatic repair attempt
 
-- Attempted: yes
+- Attempted: no
 - Repaired drafts submitted: 0
 - Repaired drafts that passed local validation: 0
 - Repaired drafts rejected: 0
@@ -67,24 +90,24 @@ No draft cleared the complete local and independent-editor gate. See the decisio
 
 ## Rejected draft options
 
-- Show HN: Git-ing Over it, learn Git like you'll use it IRL: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; A supporting quote does not share enough wording with its stated claim; Unsupported numeric claim(s): 5; Factual sentence includes terms absent from the source title/summary: browser, game, scenario, simulate
-  - Rejected text: Git‑ing Over It is a browser game that simulates real git terminal scenarios. Play level 5 to practice resolving merge conflicts before a PR. https://git-ing-over-it.vercel.app/
-  - Model evidence quote: “Real terminal, real git engine, and coworkers who keep breaking the repo.”
-  - Claim support: Git‑ing Over It is a browser game that simulates real git terminal scenarios. ← “Real terminal, real git engine, and coworkers who keep breaking the repo.”
-- Show HN: Hindsight – Lightweight, elegant, open-source tracker for Windows/macOS: Post restates headline and basic fact; lacks new insight or actionable detail beyond source.
-  - Rejected text: Hindsight is a local‑first desktop activity tracker with on‑device AI daily summaries. Test sync by toggling between machines to confirm data stays local. https://github.com/Tomotsugu-dev/Hindsight
-- Unlink a customer's identity provider subject with the GraphQL Admin API: Rephrases changelog entry without adding new context or practical guidance beyond what is already documented.
-  - Rejected text: Shopify added identityProviderSubjectDelete to unlink customers in 2027‑01. After unlinking, verify the customer is signed out of all sessions. https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api
+- Show HN: Tributary – Discover who influenced your favorite musicians: A supporting quote does not share enough wording with its stated claim; Factual sentence includes terms absent from the source title/summary: influence, pair, similarity, track
+  - Rejected text: Tributary pairs an artist’s track with an influence’s track to show similarities. Test the pairings by listening side‑by‑side to spot genre shifts. https://tributary.music/
+  - Model evidence quote: “Hear the songs and read the stories behind the connections.”
+  - Claim support: Tributary pairs an artist’s track with an influence’s track to show similarities. ← “Hear the songs and read the stories behind the connections.”
+- Show HN: Dadgpt Open Source Halloween Costume: A supporting quote does not share enough wording with its stated claim; Supporting quotes cover only 38% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: DadGPT Costume lets a phone in a hat answer dad jokes aloud. Verify microphone permissions before deploying to avoid silent failures. https://dadgptcostume.vercel.app/
+  - Model evidence quote: “Tap the mic, ask Dad anything, and he answers out loud with a dad joke.”
+  - Claim support: DadGPT Costume lets a phone in a hat answer dad jokes aloud. ← “Tap the mic, ask Dad anything, and he answers out loud with a dad joke.”
 
 ## Top discovery candidates considered
 
-- Show HN: Hindsight – Lightweight, elegant, open-source tracker for Windows/macOS | Hacker News | product_and_workflow_tools | raw 69, adjusted 71 | https://github.com/Tomotsugu-dev/Hindsight
-- Show HN: Git-ing Over it, learn Git like you'll use it IRL | Hacker News | product_and_workflow_tools | raw 63, adjusted 65 | https://git-ing-over-it.vercel.app/
-- Unlink a customer's identity provider subject with the GraphQL Admin API | Shopify Developer Changelog | developer_tools | raw 68, adjusted 58 | https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api
+- Show HN: Tributary – Discover who influenced your favorite musicians | Hacker News | product_and_workflow_tools | raw 63, adjusted 65 | https://tributary.music/
+- Show HN: Dadgpt Open Source Halloween Costume | Hacker News | product_and_workflow_tools | raw 58, adjusted 60 | https://dadgptcostume.vercel.app/
+- Metaobject analytics queryable capability available in the Admin API | Shopify Developer Changelog | data_and_growth | raw 66, adjusted 56 | https://shopify.dev/changelog/posts/metaobject-analytics-queryable-capability-available-in-the-admin-api
 
 ## Safety and interpretation
 
-- This run did not produce a publishable draft; no post was published to X.
+- At least one draft passed the automated quality gates; this dry-run workflow itself never publishes to X.
 - Model scores are editorial estimates; they are not verified popularity or market demand.
 - Candidate content and metadata are untrusted input. Factual copy must be supported by the fetched primary page.
 - A skip can mean no fresh candidates, a daily diversity/cap limit, a model/API problem or weak drafts. Check the reason above.
