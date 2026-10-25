@@ -1,24 +1,24 @@
 {
-  "generated_at_ist": "2026-10-25T07:43:03+05:30",
-  "run_at_ist": "2026-10-25T07:43:03+05:30",
+  "generated_at_ist": "2026-10-25T08:43:04+05:30",
+  "run_at_ist": "2026-10-25T08:43:04+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 170,
-  "eligible_candidate_count": 90,
+  "candidate_count_raw": 175,
+  "eligible_candidate_count": 94,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4610
+      "total_count": 4612
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1011
+      "total_count": 1012
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
@@ -32,7 +32,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2827
+      "total_count": 2830
     },
     {
       "source": "GitHub Search · github-ecommerce-digital-products",
@@ -46,14 +46,14 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1982
+      "total_count": 1985
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3147
+      "total_count": 3151
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
@@ -114,7 +114,7 @@
     {
       "source": "Hacker News · hn-shopify",
       "kind": "hacker_news",
-      "items_kept": 9,
+      "items_kept": 8,
       "status": "ok",
       "total_count": 10
     },
@@ -134,7 +134,7 @@
     {
       "source": "Product Hunt",
       "kind": "rss",
-      "items_kept": 41,
+      "items_kept": 42,
       "status": "ok"
     },
     {
@@ -145,42 +145,42 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-25T02:13:03+00:00",
+    "observed_at_utc": "2026-10-25T03:13:04+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 78,
-    "previously_tracked_repositories_refreshed": 122,
+    "repositories_seen_in_discovery": 82,
+    "previously_tracked_repositories_refreshed": 118,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
-    "repositories_with_20_to_36_hour_baseline": 15,
+    "repositories_with_20_to_36_hour_baseline": 14,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "c58c08aca0b0ad74",
-      "title": "ChiefGyk3D/Stream-Daemon",
-      "source_url": "https://github.com/ChiefGyk3D/Stream-Daemon",
+      "candidate_id": "3c0bf23284500257",
+      "title": "krillinai/OpenCreator",
+      "source_url": "https://github.com/krillinai/OpenCreator",
       "verified": true,
-      "final_url": "https://github.com/ChiefGyk3D/Stream-Daemon",
+      "final_url": "https://github.com/krillinai/OpenCreator",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "769635c4c0589719",
-      "title": "IHUI-INF-AI/IHUI-AI",
-      "source_url": "https://github.com/IHUI-INF-AI/IHUI-AI",
+      "candidate_id": "e12e7a321e45ada2",
+      "title": "Osmantic/ODS",
+      "source_url": "https://github.com/Osmantic/ODS",
       "verified": true,
-      "final_url": "https://github.com/IHUI-INF-AI/IHUI-AI",
+      "final_url": "https://github.com/Osmantic/ODS",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "01b44b612fda8613",
-      "title": "POS UI extensions 2026-10 adds s-pos-list, a virtualized list with custom row templates",
-      "source_url": "https://shopify.dev/changelog/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates",
+      "candidate_id": "f803dce2f9c77322",
+      "title": "POS UI extensions now support reactive storage access",
+      "source_url": "https://shopify.dev/changelog/pos-ui-extensions-now-support-reactive-storage-access",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates",
+      "final_url": "https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access",
       "http_status": 200,
       "reason": ""
     }
@@ -193,109 +193,96 @@
   "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "c58c08aca0b0ad74",
-      "title": "ChiefGyk3D/Stream-Daemon",
+      "candidate_id": "3c0bf23284500257",
+      "title": "krillinai/OpenCreator",
       "reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability."
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Supporting quotes cover only 56% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "Stream‑Daemon monitors Twitch, YouTube, Kick and posts live updates to Mastodon, Discord, Matrix, Bluesky. Run it in Docker and verify secrets are not exposed in container logs. https://github.com/ChiefGyk3D/Stream-Daemon",
-      "evidence_quote": "Stream Daemon is an open‑source automation tool for live streamers and creators. It monitors Twitch, YouTube, Kick, and more, posting live updates to Mastodon, Discord, Matrix, Bluesky, and other platforms.",
+      "proposed_text": "OpenCreator downloads videos, translates, and generates images, voice, avatars, edits. Run a video translation pipeline locally to verify agent coordination. https://github.com/krillinai/OpenCreator",
+      "evidence_quote": "Video downloading, video translation, create videos, images, voice, avatars, and edit...",
       "claim_evidence": [
         {
-          "claim": "Stream‑Daemon monitors Twitch, YouTube, Kick and posts live updates to Mastodon, Discord, Matrix, Bluesky.",
-          "quote": "Stream Daemon is an open‑source automation tool for live streamers and creators. It monitors Twitch, YouTube, Kick, and more, posting live updates to Mastodon, Discord, Matrix, Bluesky, and other platforms."
+          "claim": "OpenCreator downloads videos, translates, and generates images, voice, avatars, edits.",
+          "quote": "Video downloading, video translation, create videos, images, voice, avatars, and edit..."
         }
       ]
     },
     {
-      "candidate_id": "769635c4c0589719",
-      "title": "IHUI-INF-AI/IHUI-AI",
+      "candidate_id": "e12e7a321e45ada2",
+      "title": "Osmantic/ODS",
       "reasons": [
         "The factual opening bundles multiple features; narrow it to one capability."
       ],
-      "proposed_text": "IHUI‑AI unifies 176 LLMs via LangGraph, MCP, and A2A. Benchmark latency of a single LLM call before deployment to meet SLA targets. https://github.com/IHUI-INF-AI/IHUI-AI",
-      "evidence_quote": "Eight‑platform full‑stack AI operating system - unifies 176 LLMs via LangGraph + MCP + A2A.",
+      "proposed_text": "ODS V3 Pre‑Release turns a PC, Mac, or Linux box into a private AI server. Validate Docker deployment and confirm GPU support before scaling. https://github.com/Osmantic/ODS",
+      "evidence_quote": "Turn your PC, Mac, or Linux box into a private AI server.",
       "claim_evidence": [
         {
-          "claim": "IHUI‑AI unifies 176 LLMs via LangGraph, MCP, and A2A.",
-          "quote": "Eight‑platform full‑stack AI operating system - unifies 176 LLMs via LangGraph + MCP + A2A."
+          "claim": "ODS V3 Pre‑Release turns a PC, Mac, or Linux box into a private AI server.",
+          "quote": "Turn your PC, Mac, or Linux box into a private AI server."
         }
       ]
     },
     {
-      "candidate_id": "01b44b612fda8613",
-      "title": "POS UI extensions 2026-10 adds s-pos-list, a virtualized list with custom row templates",
+      "candidate_id": "f803dce2f9c77322",
+      "title": "POS UI extensions now support reactive storage access",
       "reasons": [
-        "Fact plus takeaway exceeds the per-link character budget.",
-        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
-        "Draft is 287 raw characters; limit is 280"
+        "Takeaway implies an undocumented product capability: sync. Reframe as a check of documented behavior.",
+        "Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration."
       ],
-      "proposed_text": "s‑pos‑list is a virtualized list component for Polaris web components in POS 2026‑10. Replace List component in existing extensions and run scroll performance test. https://shopify.dev/changelog/posts/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates",
-      "evidence_quote": "POS UI extensions API version `2026-10` adds `s-pos-list`, a virtualized list component",
+      "proposed_text": "shopify.storage.current lets POS UI extensions react to stored value changes. Add a listener to update UI on storage changes; test cross‑target sync. https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access",
+      "evidence_quote": "The new `shopify.storage.current` API lets POS UI extension developers respond automatically when stored values change across extension targets on the same POS device.",
       "claim_evidence": [
         {
-          "claim": "s‑pos‑list is a virtualized list component for Polaris web components in POS 2026‑10.",
-          "quote": "POS UI extensions API version `2026-10` adds `s-pos-list`, a virtualized list component"
+          "claim": "shopify.storage.current lets POS UI extensions react to stored value changes.",
+          "quote": "The new `shopify.storage.current` API lets POS UI extension developers respond automatically when stored values change across extension targets on the same POS device."
         }
-      ]
-    },
-    {
-      "candidate_id": "c58c08aca0b0ad74",
-      "title": "ChiefGyk3D/Stream-Daemon",
-      "reasons": [
-        "Editorial takeaway is too long; keep the analysis concrete and concise."
-      ],
-      "proposed_text": "Stream‑Daemon monitors Twitch streams. When running in Docker, verify that secrets are not written to container logs to avoid credential leakage. https://github.com/ChiefGyk3D/Stream-Daemon",
-      "evidence_quote": "It monitors Twitch, YouTube, Kick, and more, posting live updates to Mastodon, Discord, Matrix, Bluesky, and other platforms.",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability."
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "c58c08aca0b0ad74",
-      "title": "ChiefGyk3D/Stream-Daemon",
-      "url": "https://github.com/ChiefGyk3D/Stream-Daemon",
+      "id": "3c0bf23284500257",
+      "title": "krillinai/OpenCreator",
+      "url": "https://github.com/krillinai/OpenCreator",
       "source": "GitHub Search",
       "primary_category": "creator_and_indie_business",
-      "priority_score": 74,
-      "hourly_adjusted_score": 76,
-      "stars_current": 37,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "insufficient_history",
-      "published_at": "2026-10-25T01:29:25+00:00",
-      "days_old": 0.03,
+      "priority_score": 65,
+      "hourly_adjusted_score": 84,
+      "stars_current": 13913,
+      "stars_delta_24h": 38,
+      "stars_delta_baseline_hours": 24.0,
+      "stars_growth_percent_24h": 0.27,
+      "trend_signal": "measured_star_growth",
+      "published_at": "2026-10-25T02:51:28+00:00",
+      "days_old": 0.02,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "769635c4c0589719",
-      "title": "IHUI-INF-AI/IHUI-AI",
-      "url": "https://github.com/IHUI-INF-AI/IHUI-AI",
+      "id": "e12e7a321e45ada2",
+      "title": "Osmantic/ODS",
+      "url": "https://github.com/Osmantic/ODS",
       "source": "GitHub Search",
-      "primary_category": "security_and_self_hosting",
-      "priority_score": 71,
-      "hourly_adjusted_score": 75,
-      "stars_current": 31,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "insufficient_history",
-      "published_at": "2026-10-25T02:13:13+00:00",
-      "days_old": 0.0,
+      "primary_category": "ai_and_automation",
+      "priority_score": 68,
+      "hourly_adjusted_score": 79,
+      "stars_current": 7677,
+      "stars_delta_24h": 7,
+      "stars_delta_baseline_hours": 22.0,
+      "stars_growth_percent_24h": 0.09,
+      "trend_signal": "measured_star_growth",
+      "published_at": "2026-10-25T02:56:23+00:00",
+      "days_old": 0.01,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "01b44b612fda8613",
-      "title": "POS UI extensions 2026-10 adds s-pos-list, a virtualized list with custom row templates",
-      "url": "https://shopify.dev/changelog/posts/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates",
+      "id": "f803dce2f9c77322",
+      "title": "POS UI extensions now support reactive storage access",
+      "url": "https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access",
       "source": "Shopify Developer Changelog",
       "primary_category": "commerce_and_digital_products",
       "priority_score": 74,
@@ -306,7 +293,7 @@
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
       "published_at": "2026-10-22T16:00:00+00:00",
-      "days_old": 2.43,
+      "days_old": 2.47,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
@@ -314,10 +301,10 @@
   ],
   "automatic_repair": {
     "attempted": true,
-    "drafts_submitted": 1,
+    "drafts_submitted": 0,
     "repaired_local_passes": 0,
-    "repair_rejections": 1,
-    "repair_error": null,
+    "repair_rejections": 0,
+    "repair_error": "Automatic repair failed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi",
     "editorial_repair_attempted": false,
     "editorial_repair_drafts_submitted": 0,
     "editorial_repair_error": null
