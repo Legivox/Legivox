@@ -1,17 +1,17 @@
 {
-  "generated_at_ist": "2026-10-25T13:39:28+05:30",
-  "run_at_ist": "2026-10-25T13:39:28+05:30",
+  "generated_at_ist": "2026-10-25T14:41:43+05:30",
+  "run_at_ist": "2026-10-25T14:41:43+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 171,
-  "eligible_candidate_count": 85,
+  "candidate_count_raw": 176,
+  "eligible_candidate_count": 87,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4636
+      "total_count": 4646
     },
     {
       "source": "GitHub Search · github-analytics-seo",
@@ -25,35 +25,35 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 359
+      "total_count": 360
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2843
+      "total_count": 2844
     },
     {
       "source": "GitHub Search · github-ecommerce-digital-products",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 418
+      "total_count": 419
     },
     {
       "source": "GitHub Search · github-mcp-servers",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2004
+      "total_count": 2012
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3163
+      "total_count": 3166
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
@@ -67,7 +67,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 262
+      "total_count": 263
     },
     {
       "source": "Hacker News · hn-analytics-growth",
@@ -145,10 +145,10 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-25T08:09:28+00:00",
+    "observed_at_utc": "2026-10-25T09:11:43+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 76,
-    "previously_tracked_repositories_refreshed": 124,
+    "repositories_seen_in_discovery": 81,
+    "previously_tracked_repositories_refreshed": 119,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
@@ -158,251 +158,166 @@
   },
   "primary_source_checks": [
     {
-      "candidate_id": "57c9e02f9c8dab4a",
-      "title": "Show HN: Tributary – Discover who influenced your favorite musicians",
-      "source_url": "https://tributary.music/",
+      "candidate_id": "f0565a973cc11bb6",
+      "title": "Show HN: Only thing you need to stay informed on tech without doom scrolling x",
+      "source_url": "https://techtwitter.io",
       "verified": true,
-      "final_url": "https://tributary.music/",
+      "final_url": "https://techtwitter.io",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "b45ea83717ef5b1d",
-      "title": "Show HN: Dadgpt Open Source Halloween Costume",
-      "source_url": "https://dadgptcostume.vercel.app/",
+      "candidate_id": "b7016d2db526680c",
+      "title": "Tool: Pele",
+      "source_url": "https://pele.run/?ref=console.dev",
       "verified": true,
-      "final_url": "https://dadgptcostume.vercel.app/",
+      "final_url": "https://pele.run/?ref=console.dev",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "dd89fbbb59577fc8",
-      "title": "Metaobject analytics queryable capability available in the Admin API",
-      "source_url": "https://shopify.dev/changelog/metaobject-analytics-queryable-capability-available-in-the-admin-api",
+      "candidate_id": "ebbeffe90ed5bf1f",
+      "title": "jwuthri-cloud/Tracely-ai",
+      "source_url": "https://github.com/jwuthri-cloud/Tracely-ai",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/metaobject-analytics-queryable-capability-available-in-the-admin-api",
+      "final_url": "https://github.com/jwuthri-cloud/Tracely-ai",
       "http_status": 200,
       "reason": ""
     }
   ],
   "rejected_primary_sources": [],
   "daily_draft_cap": 16,
-  "daily_drafts_already_passed": 3,
-  "outcome": "dry_run_passed",
-  "decision_reason": "At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.",
-  "passing_drafts": [
-    {
-      "candidate_id": "dd89fbbb59577fc8",
-      "title": "Metaobject analytics queryable capability available in the Admin API",
-      "source": "Shopify Developer Changelog",
-      "source_kind": "official_changelog",
-      "url": "https://shopify.dev/changelog/posts/metaobject-analytics-queryable-capability-available-in-the-admin-api",
-      "primary_source_verified": true,
-      "primary_source_title": "",
-      "primary_source_final_url": "https://shopify.dev/changelog/posts/metaobject-analytics-queryable-capability-available-in-the-admin-api",
-      "primary_source_http_status": 200,
-      "category": "data_and_growth",
-      "priority_score": 66,
-      "hourly_adjusted_score": 56,
-      "post_text": "Metaobject analyticsQueryable can now be set via GraphQL Admin API. Add a guard to check CAPABILITY_NOT_ELIGIBLE when enabling analytics. https://shopify.dev/changelog/posts/metaobject-analytics-queryable-capability-available-in-the-admin-api",
-      "fact_sentence": "Metaobject analyticsQueryable can now be set via GraphQL Admin API.",
-      "format": "engineering_lesson",
-      "audience": "shopify developers",
-      "angle": "API changes",
-      "rationale": "The changelog explicitly lists the new input field for setting analyticsQueryable. The takeaway advises checking the error code CAPABILITY_NOT_ELIGIBLE, a documented guard that developers should handle.",
-      "evidence_quote": "graphql) Starting with GraphQL Admin API version `2027-01`, you can read and configure the `analyticsQueryable` capability on metaobject definitions.",
-      "editorial_takeaway": "Add a guard to check CAPABILITY_NOT_ELIGIBLE when enabling analytics.",
-      "claim_evidence": [
-        {
-          "claim": "Metaobject analyticsQueryable can now be set via GraphQL Admin API.",
-          "quote": "graphql) Starting with GraphQL Admin API version `2027-01`, you can read and configure the `analyticsQueryable` capability on metaobject definitions."
-        }
-      ],
-      "scores": {
-        "timeliness": 8,
-        "usefulness": 8,
-        "novelty": 7,
-        "evidence": 9,
-        "insight": 8
-      },
-      "editorial_score": 8.1,
-      "character_count": 242,
-      "status": "dry_run_passed_not_published",
-      "published_to_x": false,
-      "editorial_review": {
-        "clarity_score": 8,
-        "technical_coherence_score": 8,
-        "takeaway_value_score": 8,
-        "source_faithfulness_score": 8,
-        "originality_score": 8,
-        "reason": "Clear, technically accurate, and adds a useful guard recommendation not directly stated in the source.",
-        "passed": true
-      }
-    }
-  ],
+  "daily_drafts_already_passed": 4,
+  "outcome": "skip",
+  "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
+  "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "57c9e02f9c8dab4a",
-      "title": "Show HN: Tributary – Discover who influenced your favorite musicians",
+      "candidate_id": "b7016d2db526680c",
+      "title": "Tool: Pele",
       "reasons": [
-        "A supporting quote does not share enough wording with its stated claim",
-        "Factual sentence includes terms absent from the source title/summary: influence, pair, similarity, track"
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
       ],
-      "proposed_text": "Tributary pairs an artist’s track with an influence’s track to show similarities. Test the pairings by listening side‑by‑side to spot genre shifts. https://tributary.music/",
-      "evidence_quote": "Hear the songs and read the stories behind the connections.",
+      "proposed_text": "Pele renders Mermaid syntax to SVG with CSS variable theming. Insert Pele's SVG into your page and adjust CSS vars for brand colors. https://pele.run/?ref=console.dev",
+      "evidence_quote": "Pele is a lightweight open source library that renders Mermaid diagrams to SVG, themed with CSS variables.",
       "claim_evidence": [
         {
-          "claim": "Tributary pairs an artist’s track with an influence’s track to show similarities.",
-          "quote": "Hear the songs and read the stories behind the connections."
+          "claim": "Pele renders Mermaid syntax to SVG with CSS variable theming.",
+          "quote": "Pele is a lightweight open source library that renders Mermaid diagrams to SVG, themed with CSS variables."
         }
       ]
     },
     {
-      "candidate_id": "b45ea83717ef5b1d",
-      "title": "Show HN: Dadgpt Open Source Halloween Costume",
+      "candidate_id": "ebbeffe90ed5bf1f",
+      "title": "jwuthri-cloud/Tracely-ai",
+      "proposed_text": "Tracely‑ai freezes production traces into replayable regression tests. Run a frozen trace before merging to catch regressions. https://github.com/jwuthri-cloud/Tracely-ai",
       "reasons": [
-        "A supporting quote does not share enough wording with its stated claim",
-        "Supporting quotes cover only 38% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Post merely restates headline; lacks new insight or actionable detail beyond source."
       ],
-      "proposed_text": "DadGPT Costume lets a phone in a hat answer dad jokes aloud. Verify microphone permissions before deploying to avoid silent failures. https://dadgptcostume.vercel.app/",
-      "evidence_quote": "Tap the mic, ask Dad anything, and he answers out loud with a dad joke.",
-      "claim_evidence": [
-        {
-          "claim": "DadGPT Costume lets a phone in a hat answer dad jokes aloud.",
-          "quote": "Tap the mic, ask Dad anything, and he answers out loud with a dad joke."
-        }
+      "editorial_review": {
+        "clarity_score": 9,
+        "technical_coherence_score": 9,
+        "takeaway_value_score": 8,
+        "source_faithfulness_score": 9,
+        "originality_score": 4
+      }
+    },
+    {
+      "candidate_id": "ebbeffe90ed5bf1f",
+      "title": "jwuthri-cloud/Tracely-ai",
+      "reasons": [
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "Unsupported strong claim: only"
+      ],
+      "proposed_text": "Tracely‑ai is a self‑hostable CI/CD tool for AI agents that grades production traces and blocks regressions. Configure Tracely‑ai to block a pull request when trace grading fails, ensuring only trace‑compliant changes are merged. https://github.com/jwuthri-cloud/Tracely-ai",
+      "evidence_quote": "Trace‑native CI/CD for AI agents: grade production traces, cluster failures, freeze them into replayable regression tests, and block PRs that regress. Self‑hostable.",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "Post merely restates headline; lacks new insight or actionable detail beyond source."
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "57c9e02f9c8dab4a",
-      "title": "Show HN: Tributary – Discover who influenced your favorite musicians",
-      "url": "https://tributary.music/",
+      "id": "f0565a973cc11bb6",
+      "title": "Show HN: Only thing you need to stay informed on tech without doom scrolling x",
+      "url": "https://techtwitter.io",
       "source": "Hacker News",
       "primary_category": "product_and_workflow_tools",
-      "priority_score": 63,
-      "hourly_adjusted_score": 65,
+      "priority_score": 55,
+      "hourly_adjusted_score": 57,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-24T21:51:53+00:00",
-      "days_old": 0.43,
+      "published_at": "2026-10-25T08:48:45+00:00",
+      "days_old": 0.02,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "b45ea83717ef5b1d",
-      "title": "Show HN: Dadgpt Open Source Halloween Costume",
-      "url": "https://dadgptcostume.vercel.app/",
-      "source": "Hacker News",
+      "id": "b7016d2db526680c",
+      "title": "Tool: Pele",
+      "url": "https://pele.run/?ref=console.dev",
+      "source": "Console.dev",
       "primary_category": "product_and_workflow_tools",
-      "priority_score": 58,
-      "hourly_adjusted_score": 60,
+      "priority_score": 55,
+      "hourly_adjusted_score": 55,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-25T04:10:48+00:00",
-      "days_old": 0.17,
+      "published_at": "2026-10-22T07:00:00+00:00",
+      "days_old": 3.09,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "dd89fbbb59577fc8",
-      "title": "Metaobject analytics queryable capability available in the Admin API",
-      "url": "https://shopify.dev/changelog/posts/metaobject-analytics-queryable-capability-available-in-the-admin-api",
-      "source": "Shopify Developer Changelog",
-      "primary_category": "data_and_growth",
-      "priority_score": 66,
-      "hourly_adjusted_score": 56,
-      "stars_current": null,
+      "id": "ebbeffe90ed5bf1f",
+      "title": "jwuthri-cloud/Tracely-ai",
+      "url": "https://github.com/jwuthri-cloud/Tracely-ai",
+      "source": "GitHub Search",
+      "primary_category": "developer_tools",
+      "priority_score": 65,
+      "hourly_adjusted_score": 49,
+      "stars_current": 1170,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-20T20:40:00+00:00",
-      "days_old": 4.48,
+      "trend_signal": "insufficient_history",
+      "published_at": "2026-10-25T09:09:13+00:00",
+      "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     }
   ],
   "automatic_repair": {
-    "attempted": false,
-    "drafts_submitted": 0,
+    "attempted": true,
+    "drafts_submitted": 1,
     "repaired_local_passes": 0,
-    "repair_rejections": 0,
+    "repair_rejections": 1,
     "repair_error": null,
-    "editorial_repair_attempted": false,
-    "editorial_repair_drafts_submitted": 0,
+    "editorial_repair_attempted": true,
+    "editorial_repair_drafts_submitted": 1,
     "editorial_repair_error": null
   },
   "editorial_review": {
     "locally_valid_drafts": 1,
     "submitted_for_independent_review": 1,
-    "passed_independent_review": 1,
-    "rejected_by_independent_review": 0,
+    "passed_independent_review": 0,
+    "rejected_by_independent_review": 1,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
-  "recommended_draft": {
-    "candidate_id": "dd89fbbb59577fc8",
-    "title": "Metaobject analytics queryable capability available in the Admin API",
-    "source": "Shopify Developer Changelog",
-    "source_kind": "official_changelog",
-    "url": "https://shopify.dev/changelog/posts/metaobject-analytics-queryable-capability-available-in-the-admin-api",
-    "primary_source_verified": true,
-    "primary_source_title": "",
-    "primary_source_final_url": "https://shopify.dev/changelog/posts/metaobject-analytics-queryable-capability-available-in-the-admin-api",
-    "primary_source_http_status": 200,
-    "category": "data_and_growth",
-    "priority_score": 66,
-    "hourly_adjusted_score": 56,
-    "post_text": "Metaobject analyticsQueryable can now be set via GraphQL Admin API. Add a guard to check CAPABILITY_NOT_ELIGIBLE when enabling analytics. https://shopify.dev/changelog/posts/metaobject-analytics-queryable-capability-available-in-the-admin-api",
-    "fact_sentence": "Metaobject analyticsQueryable can now be set via GraphQL Admin API.",
-    "format": "engineering_lesson",
-    "audience": "shopify developers",
-    "angle": "API changes",
-    "rationale": "The changelog explicitly lists the new input field for setting analyticsQueryable. The takeaway advises checking the error code CAPABILITY_NOT_ELIGIBLE, a documented guard that developers should handle.",
-    "evidence_quote": "graphql) Starting with GraphQL Admin API version `2027-01`, you can read and configure the `analyticsQueryable` capability on metaobject definitions.",
-    "editorial_takeaway": "Add a guard to check CAPABILITY_NOT_ELIGIBLE when enabling analytics.",
-    "claim_evidence": [
-      {
-        "claim": "Metaobject analyticsQueryable can now be set via GraphQL Admin API.",
-        "quote": "graphql) Starting with GraphQL Admin API version `2027-01`, you can read and configure the `analyticsQueryable` capability on metaobject definitions."
-      }
-    ],
-    "scores": {
-      "timeliness": 8,
-      "usefulness": 8,
-      "novelty": 7,
-      "evidence": 9,
-      "insight": 8
-    },
-    "editorial_score": 8.1,
-    "character_count": 242,
-    "status": "dry_run_passed_not_published",
-    "published_to_x": false,
-    "editorial_review": {
-      "clarity_score": 8,
-      "technical_coherence_score": 8,
-      "takeaway_value_score": 8,
-      "source_faithfulness_score": 8,
-      "originality_score": 8,
-      "reason": "Clear, technically accurate, and adds a useful guard recommendation not directly stated in the source.",
-      "passed": true
-    }
-  },
   "state_summary": {
     "used_candidates_in_cooldown": 11,
-    "recently_attempted_candidates": 21,
+    "recently_attempted_candidates": 24,
     "recent_draft_passes_today": 4
   }
 }

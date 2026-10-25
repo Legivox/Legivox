@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-25T13:39:28+05:30
+- Run time (IST): 2026-10-25T14:41:43+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 85
-- Independent editorial review: 1 draft(s) passed / 0 rejected
-- Drafts passing local checks: 1
-- Outcome: **dry_run_passed**
-- Decision reason: At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.
+- Candidate pool after freshness/diversity filters: 87
+- Independent editorial review: 0 draft(s) passed / 1 rejected
+- Drafts passing local checks: 0
+- Outcome: **skip**
+- Decision reason: Every draft submitted for independent editorial review was rejected; The hour was skipped.
 
 ## Source health
 
@@ -37,8 +37,8 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 76
-- Previously tracked repositories refreshed outside search results: 124
+- Repositories seen in this discovery run: 81
+- Previously tracked repositories refreshed outside search results: 119
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
 - Repositories with a 20–36 hour comparison baseline: 11
@@ -48,66 +48,44 @@
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| Show HN: Tributary – Discover who influenced your favorite musicians | yes | 200 | https://tributary.music/ |
-| Show HN: Dadgpt Open Source Halloween Costume | yes | 200 | https://dadgptcostume.vercel.app/ |
-| Metaobject analytics queryable capability available in the Admin API | yes | 200 | https://shopify.dev/changelog/posts/metaobject-analytics-queryable-capability-available-in-the-admin-api |
+| Show HN: Only thing you need to stay informed on tech without doom scrolling x | yes | 200 | https://techtwitter.io |
+| Tool: Pele | yes | 200 | https://pele.run/?ref=console.dev |
+| jwuthri-cloud/Tracely-ai | yes | 200 | https://github.com/jwuthri-cloud/Tracely-ai |
 
 ## Selected draft candidates
 
-### Draft option 1: Metaobject analytics queryable capability available in the Admin API
-
-- Category: data_and_growth
-- Source: Shopify Developer Changelog
-- Format: engineering_lesson
-- Editorial score: 8.1/10
-- Model scores: timeliness 8/10, usefulness 8/10, novelty 7/10, evidence 9/10, insight 8/10
-- Independent editor scores: {"clarity_score": 8, "technical_coherence_score": 8, "takeaway_value_score": 8, "source_faithfulness_score": 8, "originality_score": 8, "reason": "Clear, technically accurate, and adds a useful guard recommendation not directly stated in the source.", "passed": true}
-- Live primary page: https://shopify.dev/changelog/posts/metaobject-analytics-queryable-capability-available-in-the-admin-api (HTTP 200)
-- Exact source evidence: “graphql) Starting with GraphQL Admin API version `2027-01`, you can read and configure the `analyticsQueryable` capability on metaobject definitions.”
-- Why this angle: The changelog explicitly lists the new input field for setting analyticsQueryable. The takeaway advises checking the error code CAPABILITY_NOT_ELIGIBLE, a documented guard that developers should handle.
-- Editorial takeaway: Add a guard to check CAPABILITY_NOT_ELIGIBLE when enabling analytics.
-- Source: https://shopify.dev/changelog/posts/metaobject-analytics-queryable-capability-available-in-the-admin-api
-
-**Claim-by-claim source quotes:**
-
-- Metaobject analyticsQueryable can now be set via GraphQL Admin API. ← “graphql) Starting with GraphQL Admin API version `2027-01`, you can read and configure the `analyticsQueryable` capability on metaobject definitions.”
-
-Proposed post (not published):
-
-> Metaobject analyticsQueryable can now be set via GraphQL Admin API. Add a guard to check CAPABILITY_NOT_ELIGIBLE when enabling analytics. https://shopify.dev/changelog/posts/metaobject-analytics-queryable-capability-available-in-the-admin-api
-
-- Length: 242/280 raw characters
-- Automated gate: passed live source, evidence, originality, URL and length checks; live publishing is disabled in dry-run mode.
+No draft cleared the complete local and independent-editor gate. See the decision reason and rejected-draft section for locally valid drafts that were rejected, not reviewed, or blocked by a review error.
 
 ## Automatic repair attempt
 
-- Attempted: no
-- Repaired drafts submitted: 0
+- Attempted: yes
+- Repaired drafts submitted: 1
 - Repaired drafts that passed local validation: 0
-- Repaired drafts rejected: 0
+- Repaired drafts rejected: 1
 - Repair error: none
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
-- Show HN: Tributary – Discover who influenced your favorite musicians: A supporting quote does not share enough wording with its stated claim; Factual sentence includes terms absent from the source title/summary: influence, pair, similarity, track
-  - Rejected text: Tributary pairs an artist’s track with an influence’s track to show similarities. Test the pairings by listening side‑by‑side to spot genre shifts. https://tributary.music/
-  - Model evidence quote: “Hear the songs and read the stories behind the connections.”
-  - Claim support: Tributary pairs an artist’s track with an influence’s track to show similarities. ← “Hear the songs and read the stories behind the connections.”
-- Show HN: Dadgpt Open Source Halloween Costume: A supporting quote does not share enough wording with its stated claim; Supporting quotes cover only 38% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: DadGPT Costume lets a phone in a hat answer dad jokes aloud. Verify microphone permissions before deploying to avoid silent failures. https://dadgptcostume.vercel.app/
-  - Model evidence quote: “Tap the mic, ask Dad anything, and he answers out loud with a dad joke.”
-  - Claim support: DadGPT Costume lets a phone in a hat answer dad jokes aloud. ← “Tap the mic, ask Dad anything, and he answers out loud with a dad joke.”
+- Tool: Pele: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
+  - Rejected text: Pele renders Mermaid syntax to SVG with CSS variable theming. Insert Pele's SVG into your page and adjust CSS vars for brand colors. https://pele.run/?ref=console.dev
+  - Model evidence quote: “Pele is a lightweight open source library that renders Mermaid diagrams to SVG, themed with CSS variables.”
+  - Claim support: Pele renders Mermaid syntax to SVG with CSS variable theming. ← “Pele is a lightweight open source library that renders Mermaid diagrams to SVG, themed with CSS variables.”
+- jwuthri-cloud/Tracely-ai: Post merely restates headline; lacks new insight or actionable detail beyond source.
+  - Rejected text: Tracely‑ai freezes production traces into replayable regression tests. Run a frozen trace before merging to catch regressions. https://github.com/jwuthri-cloud/Tracely-ai
+- jwuthri-cloud/Tracely-ai: Editorial takeaway is too long; keep the analysis concrete and concise.; Unsupported strong claim: only
+  - Rejected text: Tracely‑ai is a self‑hostable CI/CD tool for AI agents that grades production traces and blocks regressions. Configure Tracely‑ai to block a pull request when trace grading fails, ensuring only trace‑compliant changes are merged. https://github.com/jwuthri-cloud/Tracely-ai
+  - Model evidence quote: “Trace‑native CI/CD for AI agents: grade production traces, cluster failures, freeze them into replayable regression tests, and block PRs that regress. Self‑hostable.”
 
 ## Top discovery candidates considered
 
-- Show HN: Tributary – Discover who influenced your favorite musicians | Hacker News | product_and_workflow_tools | raw 63, adjusted 65 | https://tributary.music/
-- Show HN: Dadgpt Open Source Halloween Costume | Hacker News | product_and_workflow_tools | raw 58, adjusted 60 | https://dadgptcostume.vercel.app/
-- Metaobject analytics queryable capability available in the Admin API | Shopify Developer Changelog | data_and_growth | raw 66, adjusted 56 | https://shopify.dev/changelog/posts/metaobject-analytics-queryable-capability-available-in-the-admin-api
+- Show HN: Only thing you need to stay informed on tech without doom scrolling x | Hacker News | product_and_workflow_tools | raw 55, adjusted 57 | https://techtwitter.io
+- Tool: Pele | Console.dev | product_and_workflow_tools | raw 55, adjusted 55 | https://pele.run/?ref=console.dev
+- jwuthri-cloud/Tracely-ai | GitHub Search | developer_tools | raw 65, adjusted 49 | current stars 1170 | GitHub star trend: building baseline | https://github.com/jwuthri-cloud/Tracely-ai
 
 ## Safety and interpretation
 
-- At least one draft passed the automated quality gates; this dry-run workflow itself never publishes to X.
+- This run did not produce a publishable draft; no post was published to X.
 - Model scores are editorial estimates; they are not verified popularity or market demand.
 - Candidate content and metadata are untrusted input. Factual copy must be supported by the fetched primary page.
 - A skip can mean no fresh candidates, a daily diversity/cap limit, a model/API problem or weak drafts. Check the reason above.
