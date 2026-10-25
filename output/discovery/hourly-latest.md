@@ -1,9 +1,9 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-25T14:41:43+05:30
+- Run time (IST): 2026-10-25T15:39:56+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 87
+- Candidate pool after freshness/diversity filters: 90
 - Independent editorial review: 0 draft(s) passed / 1 rejected
 - Drafts passing local checks: 0
 - Outcome: **skip**
@@ -28,7 +28,7 @@
 | Hacker News · hn-digital-products | 1 | ok |
 | Hacker News · hn-ecommerce-payments | 0 | ok |
 | Hacker News · hn-security-selfhost | 0 | ok |
-| Hacker News · hn-shopify | 10 | ok |
+| Hacker News · hn-shopify | 8 | ok |
 | Hacker News · hn-show-hn | 10 | ok |
 | Console.dev | 12 | ok |
 | Product Hunt | 43 | ok |
@@ -37,20 +37,20 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 81
-- Previously tracked repositories refreshed outside search results: 119
+- Repositories seen in this discovery run: 82
+- Previously tracked repositories refreshed outside search results: 118
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
-- Repositories with a 20–36 hour comparison baseline: 11
+- Repositories with a 20–36 hour comparison baseline: 13
 - First observations are baseline samples, not evidence of trending. Star velocity is reported only when a historical comparison exists.
 
 ## Primary-source verification
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| Show HN: Only thing you need to stay informed on tech without doom scrolling x | yes | 200 | https://techtwitter.io |
-| Tool: Pele | yes | 200 | https://pele.run/?ref=console.dev |
-| jwuthri-cloud/Tracely-ai | yes | 200 | https://github.com/jwuthri-cloud/Tracely-ai |
+| Show HN: OpenXet | yes | 200 | https://github.com/stubbi/openxet |
+| Tool: KiviDB | yes | 200 | https://kividb.io/?ref=console.dev |
+| BrokkAi/mjolnir | yes | 200 | https://github.com/BrokkAi/mjolnir |
 
 ## Selected draft candidates
 
@@ -59,29 +59,40 @@ No draft cleared the complete local and independent-editor gate. See the decisio
 ## Automatic repair attempt
 
 - Attempted: yes
-- Repaired drafts submitted: 1
-- Repaired drafts that passed local validation: 0
-- Repaired drafts rejected: 1
+- Repaired drafts submitted: 3
+- Repaired drafts that passed local validation: 1
+- Repaired drafts rejected: 2
 - Repair error: none
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
-- Tool: Pele: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
-  - Rejected text: Pele renders Mermaid syntax to SVG with CSS variable theming. Insert Pele's SVG into your page and adjust CSS vars for brand colors. https://pele.run/?ref=console.dev
-  - Model evidence quote: “Pele is a lightweight open source library that renders Mermaid diagrams to SVG, themed with CSS variables.”
-  - Claim support: Pele renders Mermaid syntax to SVG with CSS variable theming. ← “Pele is a lightweight open source library that renders Mermaid diagrams to SVG, themed with CSS variables.”
-- jwuthri-cloud/Tracely-ai: Post merely restates headline; lacks new insight or actionable detail beyond source.
-  - Rejected text: Tracely‑ai freezes production traces into replayable regression tests. Run a frozen trace before merging to catch regressions. https://github.com/jwuthri-cloud/Tracely-ai
-- jwuthri-cloud/Tracely-ai: Editorial takeaway is too long; keep the analysis concrete and concise.; Unsupported strong claim: only
-  - Rejected text: Tracely‑ai is a self‑hostable CI/CD tool for AI agents that grades production traces and blocks regressions. Configure Tracely‑ai to block a pull request when trace grading fails, ensuring only trace‑compliant changes are merged. https://github.com/jwuthri-cloud/Tracely-ai
-  - Model evidence quote: “Trace‑native CI/CD for AI agents: grade production traces, cluster failures, freeze them into replayable regression tests, and block PRs that regress. Self‑hostable.”
+- Show HN: OpenXet: Editorial takeaway is too long; keep the analysis concrete and concise.
+  - Rejected text: Openxet implements the Xet protocol for chunk‑deduplicated storage of large, versioned files. Test migration of a Git repo to openxet by running `git clone --filter=blob:none` and verifying integrity. https://github.com/stubbi/openxet
+  - Model evidence quote: “Open-source server and client for the Xet protocol: chunk‑deduplicated storage for large, versioned files that works with the official Hugging Face and Git tools.”
+  - Claim support: Openxet implements the Xet protocol for chunk‑deduplicated storage of large, versioned files. ← “Open-source server and client for the Xet protocol: chunk‑deduplicated storage for large, versioned files that works with the official Hugging Face and Git tools.”
+- Tool: KiviDB: Editorial takeaway is too long; keep the analysis concrete and concise.
+  - Rejected text: KiviDB is a multithreaded, Redis‑compatible in‑memory database written in Rust. Benchmark p99 latency against Redis by running `redis-benchmark -q -t set,get` on both and comparing results. https://kividb.io/?ref=console.dev
+  - Model evidence quote: “KiviDB is a multithreaded, Redis- and Valkey-compatible in-memory database written in Rust, with full-text and vector search built in.”
+  - Claim support: KiviDB is a multithreaded, Redis‑compatible in‑memory database written in Rust. ← “KiviDB is a multithreaded, Redis- and Valkey-compatible in-memory database written in Rust, with full-text and vector search built in.”
+- BrokkAi/mjolnir: Fact sentence is too long; narrow it to one source-backed capability.; Editorial takeaway is too long; keep the analysis concrete and concise.; A supporting quote does not share enough wording with its stated claim; Supporting quotes cover only 38% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: Mjolnir provides durable sessions and isolated environments for AI coding agents via a Rust terminal and web control plane. Validate session persistence by restarting the terminal and confirming the agent state remains. https://github.com/BrokkAi/mjolnir
+  - Model evidence quote: “Manage Codex, Claude Code, Muse Code, Kimi Code, Grok Build, and DeepSeek Harness with durable sessions, isolated environments, quotas, and remote control.”
+  - Claim support: Mjolnir provides durable sessions and isolated environments for AI coding agents via a Rust terminal and web control plane. ← “Manage Codex, Claude Code, Muse Code, Kimi Code, Grok Build, and DeepSeek Harness with durable sessions, isolated environments, quotas, and remote control.”
+- BrokkAi/mjolnir: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; No claim-by-claim supporting evidence was provided; Supporting quotes cover only 33% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: Mjolnir offers durable sessions for AI coding agents. Restart the Rust terminal to confirm session persistence. https://github.com/BrokkAi/mjolnir
+  - Model evidence quote: “Manage Codex, Claude Code, Muse Code, Kimi Code, Grok Build, and DeepSeek Harness with durable sessions, isolated environments, quotas, and remote control.”
+- Tool: KiviDB: Post repeats headline facts; no new insight or unique angle.
+  - Rejected text: KiviDB is a multithreaded, Redis‑compatible in‑memory database. Run `redis-benchmark -q -t set,get` to compare p99 latency. https://kividb.io/?ref=console.dev
+- Tool: KiviDB: Editorial takeaway is too long; keep the analysis concrete and concise.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
+  - Rejected text: KiviDB is a multithreaded, Redis‑compatible in‑memory database written in Rust. Because it speaks RESP2 and RESP3, existing Redis clients can connect without code changes, simplifying migration. https://kividb.io/?ref=console.dev
+  - Model evidence quote: “KiviDB is a multithreaded, Redis- and Valkey-compatible in-memory database written in Rust, with full-text and vector search built in. It runs Redis commands on every core, with full-text search, vector search, JSON and time series built in, and it speaks the Redis protocol (RESP2 and RESP3), so exi”
 
 ## Top discovery candidates considered
 
-- Show HN: Only thing you need to stay informed on tech without doom scrolling x | Hacker News | product_and_workflow_tools | raw 55, adjusted 57 | https://techtwitter.io
-- Tool: Pele | Console.dev | product_and_workflow_tools | raw 55, adjusted 55 | https://pele.run/?ref=console.dev
-- jwuthri-cloud/Tracely-ai | GitHub Search | developer_tools | raw 65, adjusted 49 | current stars 1170 | GitHub star trend: building baseline | https://github.com/jwuthri-cloud/Tracely-ai
+- Show HN: OpenXet | Hacker News | product_and_workflow_tools | raw 69, adjusted 71 | https://github.com/stubbi/openxet
+- Tool: KiviDB | Console.dev | product_and_workflow_tools | raw 54, adjusted 54 | https://kividb.io/?ref=console.dev
+- BrokkAi/mjolnir | GitHub Search | developer_tools | raw 67, adjusted 51 | current stars 105 | GitHub star trend: building baseline | https://github.com/BrokkAi/mjolnir
 
 ## Safety and interpretation
 
