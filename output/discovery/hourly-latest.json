@@ -1,10 +1,10 @@
 {
-  "generated_at_ist": "2026-10-25T15:39:56+05:30",
-  "run_at_ist": "2026-10-25T15:39:56+05:30",
+  "generated_at_ist": "2026-10-25T16:39:38+05:30",
+  "run_at_ist": "2026-10-25T16:39:38+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 175,
-  "eligible_candidate_count": 90,
+  "candidate_count_raw": 177,
+  "eligible_candidate_count": 86,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
@@ -18,42 +18,42 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1020
+      "total_count": 1021
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 361
+      "total_count": 362
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2849
+      "total_count": 2851
     },
     {
       "source": "GitHub Search · github-ecommerce-digital-products",
       "kind": "github_repository",
-      "items_kept": 10,
+      "items_kept": 9,
       "status": "ok",
-      "total_count": 419
+      "total_count": 420
     },
     {
       "source": "GitHub Search · github-mcp-servers",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2017
+      "total_count": 2018
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3171
+      "total_count": 3174
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
@@ -145,47 +145,57 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-25T10:09:56+00:00",
+    "observed_at_utc": "2026-10-25T11:09:38+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 82,
-    "previously_tracked_repositories_refreshed": 118,
+    "repositories_seen_in_discovery": 83,
+    "previously_tracked_repositories_refreshed": 117,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
-    "repositories_with_20_to_36_hour_baseline": 13,
+    "repositories_with_20_to_36_hour_baseline": 17,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "26070af6cc5800b8",
-      "title": "Show HN: OpenXet",
-      "source_url": "https://github.com/stubbi/openxet",
+      "candidate_id": "2ce5e5c1e4c24abb",
+      "title": "Show HN: Philosophic Moon in Your Terminal",
+      "source_url": "https://github.com/SorBalda/philosophic-moon",
       "verified": true,
-      "final_url": "https://github.com/stubbi/openxet",
+      "final_url": "https://github.com/SorBalda/philosophic-moon",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "ac29196abb1ad5ae",
-      "title": "Tool: KiviDB",
-      "source_url": "https://kividb.io/?ref=console.dev",
+      "candidate_id": "d2ed9d05b5e290fe",
+      "title": "HugoRCD/shelve",
+      "source_url": "https://github.com/HugoRCD/shelve",
       "verified": true,
-      "final_url": "https://kividb.io/?ref=console.dev",
+      "final_url": "https://github.com/HugoRCD/shelve",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "3d7e21ab57a18249",
-      "title": "BrokkAi/mjolnir",
-      "source_url": "https://github.com/BrokkAi/mjolnir",
-      "verified": true,
-      "final_url": "https://github.com/BrokkAi/mjolnir",
-      "http_status": 200,
-      "reason": ""
+      "candidate_id": "33aa528b7cafa355",
+      "title": "AgentGrid.io",
+      "source_url": "https://www.producthunt.com/products/agentgrid-io",
+      "verified": false,
+      "final_url": null,
+      "http_status": null,
+      "reason": "Primary source returned HTTP 403."
     }
   ],
-  "rejected_primary_sources": [],
+  "rejected_primary_sources": [
+    {
+      "candidate_id": "33aa528b7cafa355",
+      "title": "AgentGrid.io",
+      "source": "Product Hunt",
+      "url": "https://www.producthunt.com/products/agentgrid-io",
+      "reasons": [
+        "Primary source returned HTTP 403."
+      ]
+    }
+  ],
   "daily_draft_cap": 16,
   "daily_drafts_already_passed": 4,
   "outcome": "skip",
@@ -193,182 +203,126 @@
   "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "26070af6cc5800b8",
-      "title": "Show HN: OpenXet",
+      "candidate_id": "33aa528b7cafa355",
+      "title": "AgentGrid.io",
+      "source": "Product Hunt",
+      "url": "https://www.producthunt.com/products/agentgrid-io",
       "reasons": [
-        "Editorial takeaway is too long; keep the analysis concrete and concise."
-      ],
-      "proposed_text": "Openxet implements the Xet protocol for chunk‑deduplicated storage of large, versioned files. Test migration of a Git repo to openxet by running `git clone --filter=blob:none` and verifying integrity. https://github.com/stubbi/openxet",
-      "evidence_quote": "Open-source server and client for the Xet protocol: chunk‑deduplicated storage for large, versioned files that works with the official Hugging Face and Git tools.",
-      "claim_evidence": [
-        {
-          "claim": "Openxet implements the Xet protocol for chunk‑deduplicated storage of large, versioned files.",
-          "quote": "Open-source server and client for the Xet protocol: chunk‑deduplicated storage for large, versioned files that works with the official Hugging Face and Git tools."
-        }
+        "Primary source returned HTTP 403."
       ]
     },
     {
-      "candidate_id": "ac29196abb1ad5ae",
-      "title": "Tool: KiviDB",
+      "candidate_id": "2ce5e5c1e4c24abb",
+      "title": "Show HN: Philosophic Moon in Your Terminal",
+      "proposed_text": "Philosophic Moon displays a quiet moon in the terminal. Test terminal size to ensure moon renders without clipping. https://github.com/SorBalda/philosophic-moon",
       "reasons": [
-        "Editorial takeaway is too long; keep the analysis concrete and concise."
-      ],
-      "proposed_text": "KiviDB is a multithreaded, Redis‑compatible in‑memory database written in Rust. Benchmark p99 latency against Redis by running `redis-benchmark -q -t set,get` on both and comparing results. https://kividb.io/?ref=console.dev",
-      "evidence_quote": "KiviDB is a multithreaded, Redis- and Valkey-compatible in-memory database written in Rust, with full-text and vector search built in.",
-      "claim_evidence": [
-        {
-          "claim": "KiviDB is a multithreaded, Redis‑compatible in‑memory database written in Rust.",
-          "quote": "KiviDB is a multithreaded, Redis- and Valkey-compatible in-memory database written in Rust, with full-text and vector search built in."
-        }
-      ]
-    },
-    {
-      "candidate_id": "3d7e21ab57a18249",
-      "title": "BrokkAi/mjolnir",
-      "reasons": [
-        "Fact sentence is too long; narrow it to one source-backed capability.",
-        "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "A supporting quote does not share enough wording with its stated claim",
-        "Supporting quotes cover only 38% of factual wording; narrow the claim or provide a closer primary-source quote"
-      ],
-      "proposed_text": "Mjolnir provides durable sessions and isolated environments for AI coding agents via a Rust terminal and web control plane. Validate session persistence by restarting the terminal and confirming the agent state remains. https://github.com/BrokkAi/mjolnir",
-      "evidence_quote": "Manage Codex, Claude Code, Muse Code, Kimi Code, Grok Build, and DeepSeek Harness with durable sessions, isolated environments, quotas, and remote control.",
-      "claim_evidence": [
-        {
-          "claim": "Mjolnir provides durable sessions and isolated environments for AI coding agents via a Rust terminal and web control plane.",
-          "quote": "Manage Codex, Claude Code, Muse Code, Kimi Code, Grok Build, and DeepSeek Harness with durable sessions, isolated environments, quotas, and remote control."
-        }
-      ]
-    },
-    {
-      "candidate_id": "3d7e21ab57a18249",
-      "title": "BrokkAi/mjolnir",
-      "reasons": [
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
-        "No claim-by-claim supporting evidence was provided",
-        "Supporting quotes cover only 33% of factual wording; narrow the claim or provide a closer primary-source quote"
-      ],
-      "proposed_text": "Mjolnir offers durable sessions for AI coding agents. Restart the Rust terminal to confirm session persistence. https://github.com/BrokkAi/mjolnir",
-      "evidence_quote": "Manage Codex, Claude Code, Muse Code, Kimi Code, Grok Build, and DeepSeek Harness with durable sessions, isolated environments, quotas, and remote control.",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "Fact sentence is too long; narrow it to one source-backed capability.",
-        "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "A supporting quote does not share enough wording with its stated claim",
-        "Supporting quotes cover only 38% of factual wording; narrow the claim or provide a closer primary-source quote"
-      ]
-    },
-    {
-      "candidate_id": "ac29196abb1ad5ae",
-      "title": "Tool: KiviDB",
-      "proposed_text": "KiviDB is a multithreaded, Redis‑compatible in‑memory database. Run `redis-benchmark -q -t set,get` to compare p99 latency. https://kividb.io/?ref=console.dev",
-      "reasons": [
-        "Post repeats headline facts; no new insight or unique angle."
+        "Takeaway about terminal size clipping is not documented; post lacks concrete, source-backed guidance."
       ],
       "editorial_review": {
-        "clarity_score": 9,
-        "technical_coherence_score": 9,
-        "takeaway_value_score": 8,
-        "source_faithfulness_score": 9,
-        "originality_score": 4
+        "clarity_score": 6,
+        "technical_coherence_score": 5,
+        "takeaway_value_score": 4,
+        "source_faithfulness_score": 5,
+        "originality_score": 5
       }
     },
     {
-      "candidate_id": "ac29196abb1ad5ae",
-      "title": "Tool: KiviDB",
+      "candidate_id": "d2ed9d05b5e290fe",
+      "title": "HugoRCD/shelve",
+      "proposed_text": "Shelve provides CLI and GitHub sync for managing secrets. Run `shelve sync` after each PR to keep secrets up to date. https://github.com/HugoRCD/shelve",
       "reasons": [
-        "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
+        "Advice to run `shelve sync` after each PR is not supported by the primary page; no mention of PR workflow."
       ],
-      "proposed_text": "KiviDB is a multithreaded, Redis‑compatible in‑memory database written in Rust. Because it speaks RESP2 and RESP3, existing Redis clients can connect without code changes, simplifying migration. https://kividb.io/?ref=console.dev",
-      "evidence_quote": "KiviDB is a multithreaded, Redis- and Valkey-compatible in-memory database written in Rust, with full-text and vector search built in. It runs Redis commands on every core, with full-text search, vector search, JSON and time series built in, and it speaks the Redis protocol (RESP2 and RESP3), so exi",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "Post repeats headline facts; no new insight or unique angle."
-      ]
+      "editorial_review": {
+        "clarity_score": 6,
+        "technical_coherence_score": 5,
+        "takeaway_value_score": 4,
+        "source_faithfulness_score": 5,
+        "originality_score": 5
+      }
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "26070af6cc5800b8",
-      "title": "Show HN: OpenXet",
-      "url": "https://github.com/stubbi/openxet",
+      "id": "2ce5e5c1e4c24abb",
+      "title": "Show HN: Philosophic Moon in Your Terminal",
+      "url": "https://github.com/SorBalda/philosophic-moon",
       "source": "Hacker News",
       "primary_category": "product_and_workflow_tools",
-      "priority_score": 69,
-      "hourly_adjusted_score": 71,
+      "priority_score": 56,
+      "hourly_adjusted_score": 58,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-25T09:29:43+00:00",
+      "published_at": "2026-10-25T10:30:42+00:00",
       "days_old": 0.03,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "ac29196abb1ad5ae",
-      "title": "Tool: KiviDB",
-      "url": "https://kividb.io/?ref=console.dev",
-      "source": "Console.dev",
-      "primary_category": "product_and_workflow_tools",
-      "priority_score": 54,
-      "hourly_adjusted_score": 54,
-      "stars_current": null,
+      "id": "d2ed9d05b5e290fe",
+      "title": "HugoRCD/shelve",
+      "url": "https://github.com/HugoRCD/shelve",
+      "source": "GitHub Search",
+      "primary_category": "developer_tools",
+      "priority_score": 67,
+      "hourly_adjusted_score": 51,
+      "stars_current": 459,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-22T07:00:00+00:00",
-      "days_old": 3.13,
+      "trend_signal": "insufficient_history",
+      "published_at": "2026-10-25T11:09:03+00:00",
+      "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "3d7e21ab57a18249",
-      "title": "BrokkAi/mjolnir",
-      "url": "https://github.com/BrokkAi/mjolnir",
-      "source": "GitHub Search",
-      "primary_category": "developer_tools",
-      "priority_score": 67,
+      "id": "33aa528b7cafa355",
+      "title": "AgentGrid.io",
+      "url": "https://www.producthunt.com/products/agentgrid-io",
+      "source": "Product Hunt",
+      "primary_category": "product_and_workflow_tools",
+      "priority_score": 51,
       "hourly_adjusted_score": 51,
-      "stars_current": 105,
+      "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
-      "trend_signal": "insufficient_history",
-      "published_at": "2026-10-25T10:08:01+00:00",
-      "days_old": 0.0,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-25T05:39:16+00:00",
+      "days_old": 0.23,
+      "primary_source_verified": false,
+      "primary_source_http_status": null,
+      "primary_source_reason": "Primary source returned HTTP 403."
     }
   ],
   "automatic_repair": {
     "attempted": true,
-    "drafts_submitted": 3,
-    "repaired_local_passes": 1,
-    "repair_rejections": 2,
-    "repair_error": null,
+    "drafts_submitted": 0,
+    "repaired_local_passes": 0,
+    "repair_rejections": 0,
+    "repair_error": "Automatic repair failed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi",
     "editorial_repair_attempted": true,
-    "editorial_repair_drafts_submitted": 1,
-    "editorial_repair_error": null
+    "editorial_repair_drafts_submitted": 0,
+    "editorial_repair_error": "Automatic repair failed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi"
   },
   "editorial_review": {
-    "locally_valid_drafts": 1,
-    "submitted_for_independent_review": 1,
+    "locally_valid_drafts": 2,
+    "submitted_for_independent_review": 2,
     "passed_independent_review": 0,
-    "rejected_by_independent_review": 1,
+    "rejected_by_independent_review": 2,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
   "state_summary": {
     "used_candidates_in_cooldown": 11,
-    "recently_attempted_candidates": 27,
+    "recently_attempted_candidates": 29,
     "recent_draft_passes_today": 4
   }
 }
