@@ -1,24 +1,24 @@
 {
-  "generated_at_ist": "2026-10-25T10:44:05+05:30",
-  "run_at_ist": "2026-10-25T10:44:05+05:30",
+  "generated_at_ist": "2026-10-25T11:41:22+05:30",
+  "run_at_ist": "2026-10-25T11:41:22+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 174,
-  "eligible_candidate_count": 91,
+  "candidate_count_raw": 171,
+  "eligible_candidate_count": 88,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4624
+      "total_count": 4630
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1013
+      "total_count": 1016
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
@@ -32,7 +32,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2834
+      "total_count": 2840
     },
     {
       "source": "GitHub Search · github-ecommerce-digital-products",
@@ -46,14 +46,14 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1992
+      "total_count": 1998
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3158
+      "total_count": 3161
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
@@ -134,7 +134,7 @@
     {
       "source": "Product Hunt",
       "kind": "rss",
-      "items_kept": 42,
+      "items_kept": 40,
       "status": "ok"
     },
     {
@@ -145,7 +145,7 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-25T05:14:05+00:00",
+    "observed_at_utc": "2026-10-25T06:11:22+00:00",
     "tracked_repositories": 200,
     "repositories_seen_in_discovery": 79,
     "previously_tracked_repositories_refreshed": 121,
@@ -158,174 +158,174 @@
   },
   "primary_source_checks": [
     {
-      "candidate_id": "5f17ca91997a2ace",
-      "title": "Show HN: An OSS browser and work environment for humans and agents",
-      "source_url": "https://github.com/zephium-browser/Zephium",
+      "candidate_id": "a33e3aeadf7c4ba8",
+      "title": "Show HN: Independent Vet – Find locally owned vets (and corporate ones) near you",
+      "source_url": "https://independentvet.com/",
       "verified": true,
-      "final_url": "https://github.com/zephium-browser/Zephium",
+      "final_url": "https://independentvet.com/",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "55c557b3bc0267ca",
-      "title": "Securing your app, together",
-      "source_url": "https://shopify.dev/changelog/securing-your-app-together",
+      "candidate_id": "e09502aa6140a5a1",
+      "title": "Show HN: Music player for visually exploring music collection",
+      "source_url": "https://github.com/Cliff-Lee/melodex",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/blog/securing-your-app-together",
+      "final_url": "https://github.com/Cliff-Lee/melodex",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "1376885ee190dc1c",
-      "title": "Polaris 2.0 is now stable",
-      "source_url": "https://shopify.dev/changelog/polaris-cdn-2-0-is-now-stable",
+      "candidate_id": "a3dea7a0068cba70",
+      "title": "codelibs/fess",
+      "source_url": "https://github.com/codelibs/fess",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/polaris-cdn-2-0-is-now-stable",
+      "final_url": "https://github.com/codelibs/fess",
       "http_status": 200,
       "reason": ""
     }
   ],
   "rejected_primary_sources": [],
   "daily_draft_cap": 16,
-  "daily_drafts_already_passed": 1,
+  "daily_drafts_already_passed": 2,
   "outcome": "dry_run_passed",
   "decision_reason": "At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.",
   "passing_drafts": [
     {
-      "candidate_id": "1376885ee190dc1c",
-      "title": "Polaris 2.0 is now stable",
-      "source": "Shopify Developer Changelog",
-      "source_kind": "official_changelog",
-      "url": "https://shopify.dev/changelog/posts/polaris-cdn-2-0-is-now-stable",
+      "candidate_id": "a3dea7a0068cba70",
+      "title": "codelibs/fess",
+      "source": "GitHub Search",
+      "source_kind": "github_repository",
+      "url": "https://github.com/codelibs/fess",
       "primary_source_verified": true,
-      "primary_source_title": "",
-      "primary_source_final_url": "https://shopify.dev/changelog/posts/polaris-cdn-2-0-is-now-stable",
+      "primary_source_title": "GitHub - codelibs/fess: Open-source, self-hosted enterprise & site search server built on OpenSearch. Crawls web / file / DB / cloud sources, 20+ languages, REST API, and AI/RAG & semantic search. Apache-2.0.",
+      "primary_source_final_url": "https://github.com/codelibs/fess",
       "primary_source_http_status": 200,
-      "category": "commerce_and_digital_products",
-      "priority_score": 68,
-      "hourly_adjusted_score": 68,
-      "post_text": "Polaris 2.0 is now available on the stable CDN and must be pinned to polaris-2.0.js. Pin the CDN URL in your app config to avoid accidental upgrades. https://shopify.dev/changelog/posts/polaris-cdn-2-0-is-now-stable",
-      "fact_sentence": "Polaris 2.0 is now available on the stable CDN and must be pinned to polaris-2.0.js.",
-      "format": "practical_workflow",
-      "audience": "app developers",
-      "angle": "UI",
-      "rationale": "Provides a concrete versioning step for Polaris 2.0.",
-      "evidence_quote": "is now stable Polaris Web Components 2.0 is now available on the stable Polaris CDN channels.",
-      "editorial_takeaway": "Pin the CDN URL in your app config to avoid accidental upgrades.",
+      "category": "security_and_self_hosting",
+      "priority_score": 72,
+      "hourly_adjusted_score": 66,
+      "post_text": "Fess is a self‑hosted enterprise search server built on OpenSearch that supports AI‑powered semantic search. Run a benchmark on a subset of data to gauge latency before full deployment. https://github.com/codelibs/fess",
+      "fact_sentence": "Fess is a self‑hosted enterprise search server built on OpenSearch that supports AI‑powered semantic search.",
+      "format": "tool_discovery",
+      "audience": "developers",
+      "angle": "search infrastructure",
+      "rationale": "Highlights core capability and a practical performance check.",
+      "evidence_quote": "Open‑source, self‑hosted enterprise & site search server built on OpenSearch. Crawls web / file / DB / cloud sources, 20+ languages, REST API, and AI/RAG & semantic search.",
+      "editorial_takeaway": "Run a benchmark on a subset of data to gauge latency before full deployment.",
       "claim_evidence": [
         {
-          "claim": "Polaris 2.0 is now available on the stable CDN and must be pinned to polaris-2.0.js.",
-          "quote": "is now stable Polaris Web Components 2.0 is now available on the stable Polaris CDN channels."
+          "claim": "Fess is a self‑hosted enterprise search server built on OpenSearch that supports AI‑powered semantic search.",
+          "quote": "Open‑source, self‑hosted enterprise & site search server built on OpenSearch. Crawls web / file / DB / cloud sources, 20+ languages, REST API, and AI/RAG & semantic search."
         }
       ],
       "scores": {
-        "timeliness": 8,
+        "timeliness": 9,
         "usefulness": 8,
-        "novelty": 8,
-        "evidence": 8,
+        "novelty": 7,
+        "evidence": 9,
         "insight": 8
       },
-      "editorial_score": 7.85,
-      "character_count": 215,
+      "editorial_score": 8.25,
+      "character_count": 218,
       "status": "dry_run_passed_not_published",
       "published_to_x": false,
       "editorial_review": {
-        "clarity_score": 9,
-        "technical_coherence_score": 9,
+        "clarity_score": 8,
+        "technical_coherence_score": 8,
         "takeaway_value_score": 8,
-        "source_faithfulness_score": 9,
-        "originality_score": 7,
-        "reason": "Clear, accurate, actionable; source fully supports claim.",
+        "source_faithfulness_score": 8,
+        "originality_score": 8,
+        "reason": "Clear, accurate, and adds a practical benchmark suggestion.",
         "passed": true
       }
     }
   ],
   "rejected_drafts": [
     {
-      "candidate_id": "55c557b3bc0267ca",
-      "title": "Securing your app, together",
+      "candidate_id": "a33e3aeadf7c4ba8",
+      "title": "Show HN: Independent Vet – Find locally owned vets (and corporate ones) near you",
       "reasons": [
-        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about."
+        "Supporting quotes cover only 60% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "Shopify's new security check scans for unauthenticated routes and unverified webhooks. Run the AI Toolkit scan before release and confirm no false positives. https://shopify.dev/changelog/blog/securing-your-app-together",
-      "evidence_quote": "",
+      "proposed_text": "Independent Vet lets users find locally owned veterinary practices and see ownership status. Verify ownership filters before booking to avoid PE‑owned surprises. https://independentvet.com/",
+      "evidence_quote": "Find locally owned veterinary practices near you and see which clinics are verified independent or corporately owned.",
       "claim_evidence": [
         {
-          "claim": "Shopify's new security check scans for unauthenticated routes and unverified webhooks.",
-          "quote": "[A single prompt with AI Toolkit] checks for Shopify-specific vulnerabilities, such as unauthenticated routes, cross-shop data access and unverified webhooks."
+          "claim": "Independent Vet lets users find locally owned veterinary practices and see ownership status.",
+          "quote": "Find locally owned veterinary practices near you and see which clinics are verified independent or corporately owned."
         }
       ]
     },
     {
-      "candidate_id": "5f17ca91997a2ace",
-      "title": "Show HN: An OSS browser and work environment for humans and agents",
-      "proposed_text": "Zephium is a fast, fully-featured browser built in Rust. Check adblocking by loading a known ad page and ensuring no ads load. https://github.com/zephium-browser/Zephium",
+      "candidate_id": "e09502aa6140a5a1",
+      "title": "Show HN: Music player for visually exploring music collection",
       "reasons": [
-        "Adblocking claim unsupported; Rust not cited; source faithfulness low."
+        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation."
       ],
-      "editorial_review": {
-        "clarity_score": 4,
-        "technical_coherence_score": 3,
-        "takeaway_value_score": 3,
-        "source_faithfulness_score": 2,
-        "originality_score": 3
-      }
+      "proposed_text": "Melodex is a local‑first music player that builds a visual Music Map and Album Wall. Test map navigation on a small library before scaling to full collection. https://github.com/Cliff-Lee/melodex",
+      "evidence_quote": "Open‑source, local‑first music player with a visual Music Map, Album Wall and listening journeys.",
+      "claim_evidence": [
+        {
+          "claim": "Melodex is a local‑first music player that builds a visual Music Map and Album Wall.",
+          "quote": "Open‑source, local‑first music player with a visual Music Map, Album Wall and listening journeys."
+        }
+      ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "5f17ca91997a2ace",
-      "title": "Show HN: An OSS browser and work environment for humans and agents",
-      "url": "https://github.com/zephium-browser/Zephium",
+      "id": "a33e3aeadf7c4ba8",
+      "title": "Show HN: Independent Vet – Find locally owned vets (and corporate ones) near you",
+      "url": "https://independentvet.com/",
       "source": "Hacker News",
       "primary_category": "product_and_workflow_tools",
-      "priority_score": 68,
-      "hourly_adjusted_score": 70,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-25T03:16:39+00:00",
-      "days_old": 0.08,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "55c557b3bc0267ca",
-      "title": "Securing your app, together",
-      "url": "https://shopify.dev/changelog/blog/securing-your-app-together",
-      "source": "Shopify Developer Changelog",
-      "primary_category": "commerce_and_digital_products",
-      "priority_score": 69,
-      "hourly_adjusted_score": 69,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-20T19:00:00+00:00",
-      "days_old": 4.43,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "1376885ee190dc1c",
-      "title": "Polaris 2.0 is now stable",
-      "url": "https://shopify.dev/changelog/posts/polaris-cdn-2-0-is-now-stable",
-      "source": "Shopify Developer Changelog",
-      "primary_category": "commerce_and_digital_products",
-      "priority_score": 68,
+      "priority_score": 66,
       "hourly_adjusted_score": 68,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-22T14:00:00+00:00",
-      "days_old": 2.63,
+      "published_at": "2026-10-25T04:26:00+00:00",
+      "days_old": 0.07,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "e09502aa6140a5a1",
+      "title": "Show HN: Music player for visually exploring music collection",
+      "url": "https://github.com/Cliff-Lee/melodex",
+      "source": "Hacker News",
+      "primary_category": "product_and_workflow_tools",
+      "priority_score": 65,
+      "hourly_adjusted_score": 67,
+      "stars_current": null,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-25T05:23:26+00:00",
+      "days_old": 0.03,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "a3dea7a0068cba70",
+      "title": "codelibs/fess",
+      "url": "https://github.com/codelibs/fess",
+      "source": "GitHub Search",
+      "primary_category": "security_and_self_hosting",
+      "priority_score": 72,
+      "hourly_adjusted_score": 66,
+      "stars_current": 1142,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "insufficient_history",
+      "published_at": "2026-10-25T06:11:27+00:00",
+      "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
@@ -342,65 +342,65 @@
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 2,
-    "submitted_for_independent_review": 2,
+    "locally_valid_drafts": 1,
+    "submitted_for_independent_review": 1,
     "passed_independent_review": 1,
-    "rejected_by_independent_review": 1,
+    "rejected_by_independent_review": 0,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
   "recommended_draft": {
-    "candidate_id": "1376885ee190dc1c",
-    "title": "Polaris 2.0 is now stable",
-    "source": "Shopify Developer Changelog",
-    "source_kind": "official_changelog",
-    "url": "https://shopify.dev/changelog/posts/polaris-cdn-2-0-is-now-stable",
+    "candidate_id": "a3dea7a0068cba70",
+    "title": "codelibs/fess",
+    "source": "GitHub Search",
+    "source_kind": "github_repository",
+    "url": "https://github.com/codelibs/fess",
     "primary_source_verified": true,
-    "primary_source_title": "",
-    "primary_source_final_url": "https://shopify.dev/changelog/posts/polaris-cdn-2-0-is-now-stable",
+    "primary_source_title": "GitHub - codelibs/fess: Open-source, self-hosted enterprise & site search server built on OpenSearch. Crawls web / file / DB / cloud sources, 20+ languages, REST API, and AI/RAG & semantic search. Apache-2.0.",
+    "primary_source_final_url": "https://github.com/codelibs/fess",
     "primary_source_http_status": 200,
-    "category": "commerce_and_digital_products",
-    "priority_score": 68,
-    "hourly_adjusted_score": 68,
-    "post_text": "Polaris 2.0 is now available on the stable CDN and must be pinned to polaris-2.0.js. Pin the CDN URL in your app config to avoid accidental upgrades. https://shopify.dev/changelog/posts/polaris-cdn-2-0-is-now-stable",
-    "fact_sentence": "Polaris 2.0 is now available on the stable CDN and must be pinned to polaris-2.0.js.",
-    "format": "practical_workflow",
-    "audience": "app developers",
-    "angle": "UI",
-    "rationale": "Provides a concrete versioning step for Polaris 2.0.",
-    "evidence_quote": "is now stable Polaris Web Components 2.0 is now available on the stable Polaris CDN channels.",
-    "editorial_takeaway": "Pin the CDN URL in your app config to avoid accidental upgrades.",
+    "category": "security_and_self_hosting",
+    "priority_score": 72,
+    "hourly_adjusted_score": 66,
+    "post_text": "Fess is a self‑hosted enterprise search server built on OpenSearch that supports AI‑powered semantic search. Run a benchmark on a subset of data to gauge latency before full deployment. https://github.com/codelibs/fess",
+    "fact_sentence": "Fess is a self‑hosted enterprise search server built on OpenSearch that supports AI‑powered semantic search.",
+    "format": "tool_discovery",
+    "audience": "developers",
+    "angle": "search infrastructure",
+    "rationale": "Highlights core capability and a practical performance check.",
+    "evidence_quote": "Open‑source, self‑hosted enterprise & site search server built on OpenSearch. Crawls web / file / DB / cloud sources, 20+ languages, REST API, and AI/RAG & semantic search.",
+    "editorial_takeaway": "Run a benchmark on a subset of data to gauge latency before full deployment.",
     "claim_evidence": [
       {
-        "claim": "Polaris 2.0 is now available on the stable CDN and must be pinned to polaris-2.0.js.",
-        "quote": "is now stable Polaris Web Components 2.0 is now available on the stable Polaris CDN channels."
+        "claim": "Fess is a self‑hosted enterprise search server built on OpenSearch that supports AI‑powered semantic search.",
+        "quote": "Open‑source, self‑hosted enterprise & site search server built on OpenSearch. Crawls web / file / DB / cloud sources, 20+ languages, REST API, and AI/RAG & semantic search."
       }
     ],
     "scores": {
-      "timeliness": 8,
+      "timeliness": 9,
       "usefulness": 8,
-      "novelty": 8,
-      "evidence": 8,
+      "novelty": 7,
+      "evidence": 9,
       "insight": 8
     },
-    "editorial_score": 7.85,
-    "character_count": 215,
+    "editorial_score": 8.25,
+    "character_count": 218,
     "status": "dry_run_passed_not_published",
     "published_to_x": false,
     "editorial_review": {
-      "clarity_score": 9,
-      "technical_coherence_score": 9,
+      "clarity_score": 8,
+      "technical_coherence_score": 8,
       "takeaway_value_score": 8,
-      "source_faithfulness_score": 9,
-      "originality_score": 7,
-      "reason": "Clear, accurate, actionable; source fully supports claim.",
+      "source_faithfulness_score": 8,
+      "originality_score": 8,
+      "reason": "Clear, accurate, and adds a practical benchmark suggestion.",
       "passed": true
     }
   },
   "state_summary": {
-    "used_candidates_in_cooldown": 9,
-    "recently_attempted_candidates": 12,
-    "recent_draft_passes_today": 2
+    "used_candidates_in_cooldown": 10,
+    "recently_attempted_candidates": 15,
+    "recent_draft_passes_today": 3
   }
 }
