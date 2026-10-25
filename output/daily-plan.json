@@ -1,60 +1,60 @@
 {
   "date_ist": "2026-10-25",
-  "prepared_at_ist": "2026-10-25 10:26:54 IST",
+  "prepared_at_ist": "2026-10-25 11:23:10 IST",
   "research_window_days": 1,
   "research_source": "Multidomain discovery + independent editorial review",
-  "source_report_generated_at_ist": "2026-10-25T09:46:42+05:30",
-  "source_report_age_minutes": 40,
-  "star_baseline_repositories": 16,
+  "source_report_generated_at_ist": "2026-10-25T10:44:05+05:30",
+  "source_report_age_minutes": 39,
+  "star_baseline_repositories": 12,
   "posts": [
     {
-      "idea_id": "multidomain-dd35074b283c32c0",
-      "niche": "ai_and_automation",
-      "problem": "agentrq/agentrq",
-      "evidence": "Primary source verified (HTTP 200): https://github.com/agentrq/agentrq. Exact evidence: AgentRQ: Human‑in‑loop realtime conversational task manager for AI Agents. Self‑hosted!",
-      "solution_hypothesis": "Test a Claude harness to confirm ACP support before deployment.",
-      "text": "AgentRQ is a self‑hosted, real‑time conversational task manager for AI agents. Test a Claude harness to confirm ACP support before deployment. https://github.com/agentrq/agentrq",
-      "text_hash": "c0a7d1b17f8df952667f0eaa0db654d92bc9d5c1035848be9f4b94106bbabee1",
+      "idea_id": "multidomain-1376885ee190dc1c",
+      "niche": "commerce_and_digital_products",
+      "problem": "Polaris 2.0 is now stable",
+      "evidence": "Primary source verified (HTTP 200): https://shopify.dev/changelog/posts/polaris-cdn-2-0-is-now-stable. Exact evidence: is now stable Polaris Web Components 2.0 is now available on the stable Polaris CDN channels.",
+      "solution_hypothesis": "Pin the CDN URL in your app config to avoid accidental upgrades.",
+      "text": "Polaris 2.0 is now available on the stable CDN and must be pinned to polaris-2.0.js. Pin the CDN URL in your app config to avoid accidental upgrades. https://shopify.dev/changelog/posts/polaris-cdn-2-0-is-now-stable",
+      "text_hash": "6307726829a1e73ccdc9664163979f49abe5c67e44bc29be36b3b0a2408d9cc3",
       "image_query": "",
       "research": {
         "query": "Multidomain primary-source discovery and independent editorial review",
-        "score": 8.4,
+        "score": 7.85,
         "hits": [
           {
-            "title": "agentrq/agentrq",
-            "url": "https://github.com/agentrq/agentrq",
-            "external_url": "https://github.com/agentrq/agentrq",
+            "title": "Polaris 2.0 is now stable",
+            "url": "https://shopify.dev/changelog/posts/polaris-cdn-2-0-is-now-stable",
+            "external_url": "https://shopify.dev/changelog/posts/polaris-cdn-2-0-is-now-stable",
             "points": 0,
             "comments": 0,
-            "created_at": "2026-10-25T09:46:42+05:30",
+            "created_at": "2026-10-25T10:44:05+05:30",
             "matched_terms": []
           }
         ],
         "error": null
       },
-      "status": "published: https://x.com/i/status/2114220025003581504",
-      "slot": 2,
+      "status": "published: https://x.com/i/status/2114239169044308278",
+      "slot": 0,
       "editorial_scores": {
         "model": {
-          "timeliness": 10,
+          "timeliness": 8,
           "usefulness": 8,
-          "novelty": 7,
-          "evidence": 9,
+          "novelty": 8,
+          "evidence": 8,
           "insight": 8
         },
-        "overall": 8.4,
+        "overall": 7.85,
         "independent_review": {
-          "clarity_score": 8,
-          "technical_coherence_score": 8,
+          "clarity_score": 9,
+          "technical_coherence_score": 9,
           "takeaway_value_score": 8,
-          "source_faithfulness_score": 8,
-          "originality_score": 8,
-          "reason": "Clear, technically coherent, source‑faithful, and adds a useful deployment test.",
+          "source_faithfulness_score": 9,
+          "originality_score": 7,
+          "reason": "Clear, accurate, actionable; source fully supports claim.",
           "passed": true
         }
       },
-      "published_at_ist": "2026-10-25T10:28:29+05:30",
-      "published_url": "https://x.com/i/status/2114220025003581504",
+      "published_at_ist": "2026-10-25T11:44:33+05:30",
+      "published_url": "https://x.com/i/status/2114239169044308278",
       "image": null
     }
   ]

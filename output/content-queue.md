@@ -1,23 +1,23 @@
 # Legivox daily content plan
 
-Prepared: 2026-10-25 10:26:54 IST
+Prepared: 2026-10-25 11:23:10 IST
 
 > This scheduled post came from a fresh multidomain discovery report, passed primary-source and deterministic evidence checks, and passed an independent editorial review. The star-history baseline is a trend signal, not proof of market demand.
 
-## Post 1 · multidomain-dd35074b283c32c0
+## Post 1 · multidomain-1376885ee190dc1c
 
 **Planned copy**
 
-AgentRQ is a self‑hosted, real‑time conversational task manager for AI agents. Test a Claude harness to confirm ACP support before deployment. https://github.com/agentrq/agentrq
+Polaris 2.0 is now available on the stable CDN and must be pinned to polaris-2.0.js. Pin the CDN URL in your app config to avoid accidental upgrades. https://shopify.dev/changelog/posts/polaris-cdn-2-0-is-now-stable
 
-- Topic: ai_and_automation
-- Editorial score (model estimate): 8.4
+- Topic: commerce_and_digital_products
+- Editorial score (model estimate): 7.85
 
 **Source article**
 
-- [agentrq/agentrq](https://github.com/agentrq/agentrq)
+- [Polaris 2.0 is now stable](https://shopify.dev/changelog/posts/polaris-cdn-2-0-is-now-stable)
 
-- Status: published: https://x.com/i/status/2114220025003581504
+- Status: published: https://x.com/i/status/2114239169044308278
 
 ## Media policy
 
