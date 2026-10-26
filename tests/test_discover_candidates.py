@@ -97,6 +97,7 @@ class DiscoveryHelpersTests(unittest.TestCase):
         )
         self.assertIsNotNone(candidate)
         self.assertLessEqual(candidate["score_components"]["public_signal"], 4)
+        self.assertEqual(candidate["score_components"]["recency"], 8)
 
     def test_shopify_support_ticket_ids_are_excluded_from_candidates(self):
         candidate = discovery.normalize_candidate(
