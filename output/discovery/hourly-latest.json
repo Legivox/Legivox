@@ -1,78 +1,78 @@
 {
-  "generated_at_ist": "2026-10-26T19:37:54+05:30",
-  "run_at_ist": "2026-10-26T19:37:54+05:30",
+  "generated_at_ist": "2026-10-26T21:23:02+05:30",
+  "run_at_ist": "2026-10-26T21:23:02+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 173,
-  "eligible_candidate_count": 102,
+  "candidate_count_raw": 166,
+  "eligible_candidate_count": 99,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4705
+      "total_count": 4723
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1001
+      "total_count": 1007
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 354
+      "total_count": 356
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2891
+      "total_count": 2900
     },
     {
       "source": "GitHub Search · github-ecommerce-digital-products",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 411
+      "total_count": 415
     },
     {
       "source": "GitHub Search · github-mcp-servers",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2051
+      "total_count": 2060
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3232
+      "total_count": 3243
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 126
+      "total_count": 127
     },
     {
       "source": "GitHub Search · github-workflow-automation",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 271
+      "total_count": 272
     },
     {
       "source": "Hacker News · hn-analytics-growth",
       "kind": "hacker_news",
-      "items_kept": 9,
+      "items_kept": 8,
       "status": "ok",
       "total_count": 10
     },
@@ -114,7 +114,7 @@
     {
       "source": "Hacker News · hn-shopify",
       "kind": "hacker_news",
-      "items_kept": 10,
+      "items_kept": 5,
       "status": "ok",
       "total_count": 10
     },
@@ -145,57 +145,47 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-26T14:07:54+00:00",
+    "observed_at_utc": "2026-10-26T15:53:02+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 84,
-    "previously_tracked_repositories_refreshed": 116,
+    "repositories_seen_in_discovery": 81,
+    "previously_tracked_repositories_refreshed": 119,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
-    "repositories_with_20_to_36_hour_baseline": 5,
+    "repositories_with_20_to_36_hour_baseline": 4,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "af647c3831b2ec95",
-      "title": "Show HN: TablePro – open-source native database client for macOS",
-      "source_url": "https://github.com/TableProApp/TablePro",
+      "candidate_id": "a12efc0e7dac2812",
+      "title": "Enable the analytics queryable capability on metafield and metaobject definitions from your app's TOML",
+      "source_url": "https://shopify.dev/changelog/make-metafield-definitions-analytics-queryable-from-app-s-toml",
       "verified": true,
-      "final_url": "https://github.com/TableProApp/TablePro",
+      "final_url": "https://shopify.dev/changelog/posts/make-metafield-definitions-analytics-queryable-from-app-s-toml",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "a92e52ee3c14a954",
-      "title": "Show HN: Building the European Company Graph one website at a time",
-      "source_url": "https://firmendaten.researchly.at/netzwerk",
-      "verified": false,
-      "final_url": null,
-      "http_status": null,
-      "reason": "Primary page title/content does not sufficiently match the candidate headline."
+      "candidate_id": "01b44b612fda8613",
+      "title": "POS UI extensions 2026-10 adds s-pos-list, a virtualized list with custom row templates",
+      "source_url": "https://shopify.dev/changelog/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates",
+      "verified": true,
+      "final_url": "https://shopify.dev/changelog/posts/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates",
+      "http_status": 200,
+      "reason": ""
     },
     {
-      "candidate_id": "8688bc747792713c",
-      "title": "Beta: Enroute",
-      "source_url": "https://enroute.sh/?ref=console.dev",
+      "candidate_id": "a6c606a393da5a46",
+      "title": "Show HN: Ranwhat.com",
+      "source_url": "https://github.com/MatijaMiki/ranwhat",
       "verified": true,
-      "final_url": "https://enroute.sh/?ref=console.dev",
+      "final_url": "https://github.com/MatijaMiki/ranwhat",
       "http_status": 200,
       "reason": ""
     }
   ],
-  "rejected_primary_sources": [
-    {
-      "candidate_id": "a92e52ee3c14a954",
-      "title": "Show HN: Building the European Company Graph one website at a time",
-      "source": "Hacker News",
-      "url": "https://firmendaten.researchly.at/netzwerk",
-      "reasons": [
-        "Primary page title/content does not sufficiently match the candidate headline."
-      ]
-    }
-  ],
+  "rejected_primary_sources": [],
   "daily_draft_cap": 16,
   "daily_drafts_already_passed": 4,
   "outcome": "skip",
@@ -203,115 +193,122 @@
   "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "a92e52ee3c14a954",
-      "title": "Show HN: Building the European Company Graph one website at a time",
-      "source": "Hacker News",
-      "url": "https://firmendaten.researchly.at/netzwerk",
+      "candidate_id": "a6c606a393da5a46",
+      "title": "Show HN: Ranwhat.com",
       "reasons": [
-        "Primary page title/content does not sufficiently match the candidate headline."
-      ]
-    },
-    {
-      "candidate_id": "af647c3831b2ec95",
-      "title": "Show HN: TablePro – open-source native database client for macOS",
-      "reasons": [
-        "Opening sentence is too close to the source headline; add a distinct editorial framing.",
-        "Supporting quotes cover only 60% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "A supporting quote does not share enough wording with its stated claim",
+        "Supporting quotes cover only 33% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "TablePro is a free, open‑source database client for macOS. Run a sample PostgreSQL connection to confirm native macOS performance. https://github.com/TableProApp/TablePro",
-      "evidence_quote": "Free and open source database client built natively for developers",
+      "proposed_text": "Ranwhat scans AI agent commands for leaked secrets. Run locally against your agent logs to catch hidden keys. https://github.com/MatijaMiki/ranwhat",
+      "evidence_quote": "Flight recorder and secret scanner for AI coding agents",
       "claim_evidence": [
         {
-          "claim": "TablePro is a free, open‑source database client for macOS.",
-          "quote": "Free and open source database client built natively for developers"
+          "claim": "Ranwhat scans AI agent commands for leaked secrets",
+          "quote": "Flight recorder and secret scanner for AI coding agents"
         }
       ]
     },
     {
-      "candidate_id": "8688bc747792713c",
-      "title": "Beta: Enroute",
-      "proposed_text": "Enroute is an open‑source, fully headless git infrastructure. Run a CI pipeline to verify agentic workloads trigger correctly. https://enroute.sh/?ref=console.dev",
+      "candidate_id": "a12efc0e7dac2812",
+      "title": "Enable the analytics queryable capability on metafield and metaobject definitions from your app's TOML",
+      "proposed_text": "Shopify lets you set analytics_queryable on metafields via shopify.app.toml. Deploy the app and verify the field appears in Analytics dimensions. https://shopify.dev/changelog/posts/make-metafield-definitions-analytics-queryable-from-app-s-toml",
       "reasons": [
-        "Takeaway suggests running a CI pipeline, but the source does not describe this workflow or its necessity for agentic workloads. The recommendation lacks direct evidence and is not a concrete, supported next step."
+        "Post merely restates headline; no new insight or actionable detail beyond source."
       ],
       "editorial_review": {
         "clarity_score": 8,
         "technical_coherence_score": 8,
-        "takeaway_value_score": 5,
+        "takeaway_value_score": 8,
         "source_faithfulness_score": 8,
-        "originality_score": 7
+        "originality_score": 4
       }
     },
     {
-      "candidate_id": "8688bc747792713c",
-      "title": "Beta: Enroute",
-      "proposed_text": "Enroute is an open‑source, fully headless git infrastructure. Configure Enroute to run agentic workloads without a UI. https://enroute.sh/?ref=console.dev",
+      "candidate_id": "01b44b612fda8613",
+      "title": "POS UI extensions 2026-10 adds s-pos-list, a virtualized list with custom row templates",
+      "proposed_text": "Shopify POS 2026-10 adds s-pos-list, a virtualized list component. Replace older List component and test row template rendering. https://shopify.dev/changelog/posts/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates",
       "reasons": [
-        "Post merely repeats headline facts; lacks new insight or actionable detail beyond source."
+        "Post repeats headline; lacks original perspective or deeper guidance."
       ],
       "editorial_review": {
         "clarity_score": 8,
         "technical_coherence_score": 8,
-        "takeaway_value_score": 7,
-        "source_faithfulness_score": 9,
-        "originality_score": 3
+        "takeaway_value_score": 8,
+        "source_faithfulness_score": 8,
+        "originality_score": 4
       }
+    },
+    {
+      "candidate_id": "a12efc0e7dac2812",
+      "title": "Enable the analytics queryable capability on metafield and metaobject definitions from your app's TOML",
+      "reasons": [
+        "Fact sentence is too long; narrow it to one source-backed capability.",
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "Fact plus takeaway exceeds the per-link character budget.",
+        "Draft is 354 raw characters; limit is 280"
+      ],
+      "proposed_text": "Set `analytics_queryable = true` on a metafield or metaobject field in shopify.app.toml to make its values queryable in Analytics. After adding the capability, run `shopify app deploy` so the change is distributed to every shop where the app is installed. https://shopify.dev/changelog/posts/make-metafield-definitions-analytics-queryable-from-app-s-toml",
+      "evidence_quote": "A metaobject definition can use the capability only if at least one of its fields has an analytics-compatible type.",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "Post merely restates headline; no new insight or actionable detail beyond source."
+      ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "af647c3831b2ec95",
-      "title": "Show HN: TablePro – open-source native database client for macOS",
-      "url": "https://github.com/TableProApp/TablePro",
-      "source": "Hacker News",
-      "primary_category": "product_and_workflow_tools",
-      "priority_score": 68,
-      "hourly_adjusted_score": 52,
+      "id": "a12efc0e7dac2812",
+      "title": "Enable the analytics queryable capability on metafield and metaobject definitions from your app's TOML",
+      "url": "https://shopify.dev/changelog/posts/make-metafield-definitions-analytics-queryable-from-app-s-toml",
+      "source": "Shopify Developer Changelog",
+      "primary_category": "commerce_and_digital_products",
+      "priority_score": 69,
+      "hourly_adjusted_score": 61,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-26T13:47:47+00:00",
-      "days_old": 0.01,
+      "published_at": "2026-10-20T16:00:00+00:00",
+      "days_old": 6.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "a92e52ee3c14a954",
-      "title": "Show HN: Building the European Company Graph one website at a time",
-      "url": "https://firmendaten.researchly.at/netzwerk",
-      "source": "Hacker News",
-      "primary_category": "product_and_workflow_tools",
-      "priority_score": 65,
-      "hourly_adjusted_score": 49,
+      "id": "01b44b612fda8613",
+      "title": "POS UI extensions 2026-10 adds s-pos-list, a virtualized list with custom row templates",
+      "url": "https://shopify.dev/changelog/posts/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates",
+      "source": "Shopify Developer Changelog",
+      "primary_category": "commerce_and_digital_products",
+      "priority_score": 69,
+      "hourly_adjusted_score": 61,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-26T13:58:24+00:00",
-      "days_old": 0.01,
-      "primary_source_verified": false,
-      "primary_source_http_status": null,
-      "primary_source_reason": "Primary page title/content does not sufficiently match the candidate headline."
+      "published_at": "2026-10-22T16:00:00+00:00",
+      "days_old": 4.0,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
     },
     {
-      "id": "8688bc747792713c",
-      "title": "Beta: Enroute",
-      "url": "https://enroute.sh/?ref=console.dev",
-      "source": "Console.dev",
-      "primary_category": "developer_tools",
-      "priority_score": 47,
-      "hourly_adjusted_score": 47,
+      "id": "a6c606a393da5a46",
+      "title": "Show HN: Ranwhat.com",
+      "url": "https://github.com/MatijaMiki/ranwhat",
+      "source": "Hacker News",
+      "primary_category": "product_and_workflow_tools",
+      "priority_score": 66,
+      "hourly_adjusted_score": 50,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-22T07:00:00+00:00",
-      "days_old": 4.3,
+      "published_at": "2026-10-26T15:19:05+00:00",
+      "days_old": 0.02,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
@@ -320,7 +317,7 @@
   "automatic_repair": {
     "attempted": true,
     "drafts_submitted": 1,
-    "repaired_local_passes": 1,
+    "repaired_local_passes": 0,
     "repair_rejections": 1,
     "repair_error": null,
     "editorial_repair_attempted": true,
@@ -338,7 +335,7 @@
   },
   "state_summary": {
     "used_candidates_in_cooldown": 16,
-    "recently_attempted_candidates": 30,
+    "recently_attempted_candidates": 29,
     "recent_draft_passes_today": 4
   }
 }
