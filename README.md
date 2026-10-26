@@ -11,7 +11,7 @@ For scheduled posts, a random target is chosen inside the first 45 minutes of ea
 
 ## What is and isn't automated
 - Topic discovery uses public GitHub, Hacker News, RSS and WordPress.org directory sources. Stars, votes, installs and listing counts are discovery signals, not proof of quality or popularity.
-- The legacy curated-plan workflow still uses individually written copy in data/ideas.json; the scheduled publishing slots now generate source-led news posts through the RSS + Groq pipeline.
+- The legacy curated-plan workflow still uses individually written copy in `data/ideas.json`; scheduled publishing uses the multidomain source-grounded discovery and editorial quality gates by default. The RSS + Groq workflow remains a manually triggered dry run and a fallback path only when the multidomain publisher flag is explicitly disabled.
 - A reviewed starter library contains 20 topics and 60 copy variations for the curated plan. Hashes prevent intentional text reuse.
 - The image step for curated posts searches Wikimedia Commons and attaches only relevant candidates marked CC0 or public domain. Scheduled RSS/Groq news posts default to text-only rather than attaching a generic category image.
 - X search results for the day's niches are saved to output/engagement-shortlist.md for manual review. The workflow does not automate likes, replies, follows or reposts.
