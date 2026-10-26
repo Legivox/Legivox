@@ -407,15 +407,15 @@
   },
   "source_weights": {
     "Shopify Developer Changelog": 18,
-    "Shopify Community": 17,
+    "Shopify Community": 13,
     "Console.dev": 18,
     "GitHub Search": 11,
     "Product Hunt": 16,
     "Hacker News": 15,
-    "Stripe Blog": 18,
-    "Ahrefs Blog": 18,
-    "Indie Hackers": 17,
-    "WooCommerce Blog": 17,
+    "Stripe Blog": 20,
+    "Ahrefs Blog": 20,
+    "Indie Hackers": 18,
+    "WooCommerce Blog": 19,
     "WordPress Plugin Directory": 12
   },
   "wordpress_searches": [
