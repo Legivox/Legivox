@@ -1259,6 +1259,26 @@ class HourlyDryRunTests(unittest.TestCase):
         self.assertTrue(hourly.is_fresh(weekly, 14))
         self.assertTrue(hourly.is_fresh(weekly, 7))
 
+    def test_expanded_content_sources_have_reasonable_freshness_windows(self):
+        cases = [
+            ("Shopify Community", 2.5, True),
+            ("Shopify Community", 3.5, False),
+            ("Product Hunt", 2.5, True),
+            ("Product Hunt", 3.5, False),
+            ("Stripe Blog", 6.5, True),
+            ("Stripe Blog", 7.5, False),
+            ("Indie Hackers (unofficial third-party feed)", 6.5, True),
+            ("Indie Hackers (unofficial third-party feed)", 7.5, False),
+            ("WooCommerce Blog", 6.5, True),
+            ("WooCommerce Blog", 7.5, False),
+            ("Ahrefs Blog", 9.5, True),
+            ("Ahrefs Blog", 10.5, False),
+        ]
+        for source, days_old, expected in cases:
+            with self.subTest(source=source, days_old=days_old):
+                candidate = dict(self.candidate, source=source, days_old=days_old)
+                self.assertEqual(hourly.is_fresh(candidate, 1), expected)
+
     def test_github_star_velocity_requires_persisted_20_to_36_hour_baseline(self):
         state = hourly.empty_state()
         candidate = dict(self.candidate)
