@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-26T08:47:58+05:30
+- Run time (IST): 2026-10-26T09:49:58+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 93
-- Independent editorial review: 0 draft(s) passed / 1 rejected
+- Candidate pool after freshness/diversity filters: 90
+- Independent editorial review: 0 draft(s) passed / 0 rejected
 - Drafts passing local checks: 0
 - Outcome: **skip**
-- Decision reason: Every draft submitted for independent editorial review was rejected; The hour was skipped.
+- Decision reason: All generated drafts failed the local evidence/editorial checks; the hour was skipped.
 
 ## Source health
 
@@ -37,24 +37,24 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 81
-- Previously tracked repositories refreshed outside search results: 119
+- Repositories seen in this discovery run: 84
+- Previously tracked repositories refreshed outside search results: 116
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
-- Repositories with a 20–36 hour comparison baseline: 15
+- Repositories with a 20–36 hour comparison baseline: 17
 - First observations are baseline samples, not evidence of trending. Star velocity is reported only when a historical comparison exists.
 
 ## Primary-source verification
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| Show HN: A 3D mesh playground for coding agents (three.js + manifold-3d) | no | — | Primary page title/content does not sufficiently match the candidate headline. |
-| Enable the analytics queryable capability on metafield and metaobject definitions from your app's TOML | yes | 200 | https://shopify.dev/changelog/posts/make-metafield-definitions-analytics-queryable-from-app-s-toml |
-| POS UI extensions 2026-10 adds s-pos-list, a virtualized list with custom row templates | yes | 200 | https://shopify.dev/changelog/posts/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates |
+| Show HN: Nodecode, open-source living agent in Lisp that rewrites itself for you | yes | 200 | https://github.com/nodecode-ai/nodecode |
+| POS UI extensions now support reactive storage access | yes | 200 | https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access |
+| Securing your app, together | yes | 200 | https://shopify.dev/changelog/blog/securing-your-app-together |
 
 ## Selected draft candidates
 
-No draft cleared the complete local and independent-editor gate. See the decision reason and rejected-draft section for locally valid drafts that were rejected, not reviewed, or blocked by a review error.
+No candidate produced a draft that passed every local check. Skipping is intentional.
 
 ## Automatic repair attempt
 
@@ -67,22 +67,27 @@ No draft cleared the complete local and independent-editor gate. See the decisio
 
 ## Rejected draft options
 
-- Show HN: A 3D mesh playground for coding agents (three.js + manifold-3d): Primary page title/content does not sufficiently match the candidate headline.
-- Enable the analytics queryable capability on metafield and metaobject definitions from your app's TOML: Fact plus takeaway exceeds the per-link character budget.; Draft is 288 raw characters; limit is 280
-  - Rejected text: Shopify lets you set analytics_queryable on metafield and metaobject definitions in shopify.app.toml. Deploy the app and verify the fields appear as dimensions in Analytics before shipping. https://shopify.dev/changelog/posts/make-metafield-definitions-analytics-queryable-from-app-s-toml
-  - Model evidence quote: “capabilities.analytics_queryable = true”
-  - Claim support: Shopify lets you set analytics_queryable on metafield and metaobject definitions in shopify.app.toml. ← “capabilities.analytics_queryable = true”
-- POS UI extensions 2026-10 adds s-pos-list, a virtualized list with custom row templates: Takeaway is generic and adds no new insight beyond the headline.
-  - Rejected text: POS UI extensions 2026‑10 introduces s‑pos‑list, a virtualized list component. Replace older List component and test row template rendering for performance. https://shopify.dev/changelog/posts/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates
-- POS UI extensions 2026-10 adds s-pos-list, a virtualized list with custom row templates: Opening sentence is too close to the source headline; add a distinct editorial framing.
-  - Rejected text: POS UI extensions 2026‑10 adds s‑pos‑list, a virtualized list component. Verify mixed row templates render correctly in a single list. https://shopify.dev/changelog/posts/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates
-  - Model evidence quote: “POS UI extensions API version `2026-10` adds `s-pos-list`, a virtualized list component for Polaris web components. Instead of `List`’s fixed row layout, each kind of row gets its own template, so one list can mix headings, dividers, and content rows.”
+- Show HN: Nodecode, open-source living agent in Lisp that rewrites itself for you: Opening sentence is too close to the source headline; add a distinct editorial framing.; Supporting quotes cover only 57% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: Nodecode is a living agent organism in Lisp that rewrites itself. Verify self‑rewrite by inspecting generated markdown after a task run. https://github.com/nodecode-ai/nodecode
+  - Model evidence quote: “A living agent organism in Lisp.”
+  - Claim support: Nodecode is a living agent organism in Lisp that rewrites itself. ← “A living agent organism in Lisp.”
+- POS UI extensions now support reactive storage access: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
+  - Rejected text: shopify.storage.current lets POS UI extensions react to storage changes across targets. Subscribe to a key and assert updates propagate to all extension targets. https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access
+  - Model evidence quote: “The new `shopify.storage.current` API lets POS UI extension developers respond automatically when stored values change across extension targets on the same POS device.”
+  - Claim support: shopify.storage.current lets POS UI extensions react to storage changes across targets. ← “The new `shopify.storage.current` API lets POS UI extension developers respond automatically when stored values change across extension targets on the same POS device.”
+- Securing your app, together: Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.; Fact sentence is too long; narrow it to one source-backed capability.
+  - Rejected text: Shopify AI Toolkit security check scans for unauthenticated routes, cross‑shop data access and unverified webhooks. Run the check pre‑release and verify no false positives before app store submission. https://shopify.dev/changelog/blog/securing-your-app-together
+  - Model evidence quote: “A single prompt with AI Toolkit checks for Shopify-specific vulnerabilities, such as unauthenticated routes, cross-shop data access and unverified webhooks.”
+  - Claim support: Shopify AI Toolkit security check scans for unauthenticated routes, cross‑shop data access and unverified webhooks. ← “A single prompt with AI Toolkit checks for Shopify-specific vulnerabilities, such as unauthenticated routes, cross-shop data access and unverified webhooks.”
+- POS UI extensions now support reactive storage access: Fact sentence is too long; narrow it to one source-backed capability.; Editorial takeaway is too long; keep the analysis concrete and concise.; Fact plus takeaway exceeds the per-link character budget.; Draft is 314 raw characters; limit is 280
+  - Rejected text: shopify.storage.current lets POS UI extensions respond automatically when stored values change across extension targets. Handle the initial undefined state when subscribing to shopify.storage.current to avoid runtime errors. https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access
+  - Model evidence quote: “The new `shopify.storage.current` API lets POS UI extension developers respond automatically when stored values change across extension targets on the same POS device.”
 
 ## Top discovery candidates considered
 
-- Show HN: A 3D mesh playground for coding agents (three.js + manifold-3d) | Hacker News | product_and_workflow_tools | raw 71, adjusted 73 | https://sketchagent.dev/s/yfYU6LhT
-- Enable the analytics queryable capability on metafield and metaobject definitions from your app's TOML | Shopify Developer Changelog | commerce_and_digital_products | raw 69, adjusted 69 | https://shopify.dev/changelog/posts/make-metafield-definitions-analytics-queryable-from-app-s-toml
-- POS UI extensions 2026-10 adds s-pos-list, a virtualized list with custom row templates | Shopify Developer Changelog | commerce_and_digital_products | raw 69, adjusted 69 | https://shopify.dev/changelog/posts/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates
+- Show HN: Nodecode, open-source living agent in Lisp that rewrites itself for you | Hacker News | product_and_workflow_tools | raw 72, adjusted 74 | https://github.com/nodecode-ai/nodecode
+- POS UI extensions now support reactive storage access | Shopify Developer Changelog | commerce_and_digital_products | raw 69, adjusted 69 | https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access
+- Securing your app, together | Shopify Developer Changelog | commerce_and_digital_products | raw 69, adjusted 69 | https://shopify.dev/changelog/blog/securing-your-app-together
 
 ## Safety and interpretation
 

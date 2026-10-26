@@ -1,24 +1,24 @@
 {
-  "generated_at_ist": "2026-10-26T08:47:58+05:30",
-  "run_at_ist": "2026-10-26T08:47:58+05:30",
+  "generated_at_ist": "2026-10-26T09:49:58+05:30",
+  "run_at_ist": "2026-10-26T09:49:58+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 174,
-  "eligible_candidate_count": 93,
+  "candidate_count_raw": 177,
+  "eligible_candidate_count": 90,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4600
+      "total_count": 4609
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 979
+      "total_count": 980
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
@@ -32,28 +32,28 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2829
+      "total_count": 2834
     },
     {
       "source": "GitHub Search · github-ecommerce-digital-products",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 404
+      "total_count": 405
     },
     {
       "source": "GitHub Search · github-mcp-servers",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1993
+      "total_count": 1996
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3173
+      "total_count": 3179
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
@@ -67,7 +67,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 266
+      "total_count": 268
     },
     {
       "source": "Hacker News · hn-analytics-growth",
@@ -145,160 +145,141 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-26T03:17:58+00:00",
+    "observed_at_utc": "2026-10-26T04:19:58+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 81,
-    "previously_tracked_repositories_refreshed": 119,
+    "repositories_seen_in_discovery": 84,
+    "previously_tracked_repositories_refreshed": 116,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
-    "repositories_with_20_to_36_hour_baseline": 15,
+    "repositories_with_20_to_36_hour_baseline": 17,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "2fc7d4cdb38fb784",
-      "title": "Show HN: A 3D mesh playground for coding agents (three.js + manifold-3d)",
-      "source_url": "https://sketchagent.dev/s/yfYU6LhT",
-      "verified": false,
-      "final_url": null,
-      "http_status": null,
-      "reason": "Primary page title/content does not sufficiently match the candidate headline."
-    },
-    {
-      "candidate_id": "a12efc0e7dac2812",
-      "title": "Enable the analytics queryable capability on metafield and metaobject definitions from your app's TOML",
-      "source_url": "https://shopify.dev/changelog/make-metafield-definitions-analytics-queryable-from-app-s-toml",
+      "candidate_id": "04a5ff0ef6c57791",
+      "title": "Show HN: Nodecode, open-source living agent in Lisp that rewrites itself for you",
+      "source_url": "https://github.com/nodecode-ai/nodecode",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/make-metafield-definitions-analytics-queryable-from-app-s-toml",
+      "final_url": "https://github.com/nodecode-ai/nodecode",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "01b44b612fda8613",
-      "title": "POS UI extensions 2026-10 adds s-pos-list, a virtualized list with custom row templates",
-      "source_url": "https://shopify.dev/changelog/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates",
+      "candidate_id": "f803dce2f9c77322",
+      "title": "POS UI extensions now support reactive storage access",
+      "source_url": "https://shopify.dev/changelog/pos-ui-extensions-now-support-reactive-storage-access",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates",
+      "final_url": "https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access",
+      "http_status": 200,
+      "reason": ""
+    },
+    {
+      "candidate_id": "55c557b3bc0267ca",
+      "title": "Securing your app, together",
+      "source_url": "https://shopify.dev/changelog/securing-your-app-together",
+      "verified": true,
+      "final_url": "https://shopify.dev/changelog/blog/securing-your-app-together",
       "http_status": 200,
       "reason": ""
     }
   ],
-  "rejected_primary_sources": [
-    {
-      "candidate_id": "2fc7d4cdb38fb784",
-      "title": "Show HN: A 3D mesh playground for coding agents (three.js + manifold-3d)",
-      "source": "Hacker News",
-      "url": "https://sketchagent.dev/s/yfYU6LhT",
-      "reasons": [
-        "Primary page title/content does not sufficiently match the candidate headline."
-      ]
-    }
-  ],
+  "rejected_primary_sources": [],
   "daily_draft_cap": 16,
   "daily_drafts_already_passed": 1,
   "outcome": "skip",
-  "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
+  "decision_reason": "All generated drafts failed the local evidence/editorial checks; the hour was skipped.",
   "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "2fc7d4cdb38fb784",
-      "title": "Show HN: A 3D mesh playground for coding agents (three.js + manifold-3d)",
-      "source": "Hacker News",
-      "url": "https://sketchagent.dev/s/yfYU6LhT",
+      "candidate_id": "04a5ff0ef6c57791",
+      "title": "Show HN: Nodecode, open-source living agent in Lisp that rewrites itself for you",
       "reasons": [
-        "Primary page title/content does not sufficiently match the candidate headline."
-      ]
-    },
-    {
-      "candidate_id": "a12efc0e7dac2812",
-      "title": "Enable the analytics queryable capability on metafield and metaobject definitions from your app's TOML",
-      "reasons": [
-        "Fact plus takeaway exceeds the per-link character budget.",
-        "Draft is 288 raw characters; limit is 280"
+        "Opening sentence is too close to the source headline; add a distinct editorial framing.",
+        "Supporting quotes cover only 57% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "Shopify lets you set analytics_queryable on metafield and metaobject definitions in shopify.app.toml. Deploy the app and verify the fields appear as dimensions in Analytics before shipping. https://shopify.dev/changelog/posts/make-metafield-definitions-analytics-queryable-from-app-s-toml",
-      "evidence_quote": "capabilities.analytics_queryable = true",
+      "proposed_text": "Nodecode is a living agent organism in Lisp that rewrites itself. Verify self‑rewrite by inspecting generated markdown after a task run. https://github.com/nodecode-ai/nodecode",
+      "evidence_quote": "A living agent organism in Lisp.",
       "claim_evidence": [
         {
-          "claim": "Shopify lets you set analytics_queryable on metafield and metaobject definitions in shopify.app.toml.",
-          "quote": "capabilities.analytics_queryable = true"
+          "claim": "Nodecode is a living agent organism in Lisp that rewrites itself.",
+          "quote": "A living agent organism in Lisp."
         }
       ]
     },
     {
-      "candidate_id": "01b44b612fda8613",
-      "title": "POS UI extensions 2026-10 adds s-pos-list, a virtualized list with custom row templates",
-      "proposed_text": "POS UI extensions 2026‑10 introduces s‑pos‑list, a virtualized list component. Replace older List component and test row template rendering for performance. https://shopify.dev/changelog/posts/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates",
+      "candidate_id": "f803dce2f9c77322",
+      "title": "POS UI extensions now support reactive storage access",
       "reasons": [
-        "Takeaway is generic and adds no new insight beyond the headline."
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
       ],
-      "editorial_review": {
-        "clarity_score": 8,
-        "technical_coherence_score": 8,
-        "takeaway_value_score": 6,
-        "source_faithfulness_score": 9,
-        "originality_score": 4
-      }
+      "proposed_text": "shopify.storage.current lets POS UI extensions react to storage changes across targets. Subscribe to a key and assert updates propagate to all extension targets. https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access",
+      "evidence_quote": "The new `shopify.storage.current` API lets POS UI extension developers respond automatically when stored values change across extension targets on the same POS device.",
+      "claim_evidence": [
+        {
+          "claim": "shopify.storage.current lets POS UI extensions react to storage changes across targets.",
+          "quote": "The new `shopify.storage.current` API lets POS UI extension developers respond automatically when stored values change across extension targets on the same POS device."
+        }
+      ]
     },
     {
-      "candidate_id": "01b44b612fda8613",
-      "title": "POS UI extensions 2026-10 adds s-pos-list, a virtualized list with custom row templates",
+      "candidate_id": "55c557b3bc0267ca",
+      "title": "Securing your app, together",
       "reasons": [
-        "Opening sentence is too close to the source headline; add a distinct editorial framing."
+        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.",
+        "Fact sentence is too long; narrow it to one source-backed capability."
       ],
-      "proposed_text": "POS UI extensions 2026‑10 adds s‑pos‑list, a virtualized list component. Verify mixed row templates render correctly in a single list. https://shopify.dev/changelog/posts/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates",
-      "evidence_quote": "POS UI extensions API version `2026-10` adds `s-pos-list`, a virtualized list component for Polaris web components. Instead of `List`’s fixed row layout, each kind of row gets its own template, so one list can mix headings, dividers, and content rows.",
+      "proposed_text": "Shopify AI Toolkit security check scans for unauthenticated routes, cross‑shop data access and unverified webhooks. Run the check pre‑release and verify no false positives before app store submission. https://shopify.dev/changelog/blog/securing-your-app-together",
+      "evidence_quote": "A single prompt with AI Toolkit checks for Shopify-specific vulnerabilities, such as unauthenticated routes, cross-shop data access and unverified webhooks.",
+      "claim_evidence": [
+        {
+          "claim": "Shopify AI Toolkit security check scans for unauthenticated routes, cross‑shop data access and unverified webhooks.",
+          "quote": "A single prompt with AI Toolkit checks for Shopify-specific vulnerabilities, such as unauthenticated routes, cross-shop data access and unverified webhooks."
+        }
+      ]
+    },
+    {
+      "candidate_id": "f803dce2f9c77322",
+      "title": "POS UI extensions now support reactive storage access",
+      "reasons": [
+        "Fact sentence is too long; narrow it to one source-backed capability.",
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "Fact plus takeaway exceeds the per-link character budget.",
+        "Draft is 314 raw characters; limit is 280"
+      ],
+      "proposed_text": "shopify.storage.current lets POS UI extensions respond automatically when stored values change across extension targets. Handle the initial undefined state when subscribing to shopify.storage.current to avoid runtime errors. https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access",
+      "evidence_quote": "The new `shopify.storage.current` API lets POS UI extension developers respond automatically when stored values change across extension targets on the same POS device.",
       "automatic_repair_attempt": true,
       "original_rejection_reasons": [
-        "Takeaway is generic and adds no new insight beyond the headline."
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "2fc7d4cdb38fb784",
-      "title": "Show HN: A 3D mesh playground for coding agents (three.js + manifold-3d)",
-      "url": "https://sketchagent.dev/s/yfYU6LhT",
+      "id": "04a5ff0ef6c57791",
+      "title": "Show HN: Nodecode, open-source living agent in Lisp that rewrites itself for you",
+      "url": "https://github.com/nodecode-ai/nodecode",
       "source": "Hacker News",
       "primary_category": "product_and_workflow_tools",
-      "priority_score": 71,
-      "hourly_adjusted_score": 73,
+      "priority_score": 72,
+      "hourly_adjusted_score": 74,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-26T00:02:39+00:00",
-      "days_old": 0.14,
-      "primary_source_verified": false,
-      "primary_source_http_status": null,
-      "primary_source_reason": "Primary page title/content does not sufficiently match the candidate headline."
-    },
-    {
-      "id": "a12efc0e7dac2812",
-      "title": "Enable the analytics queryable capability on metafield and metaobject definitions from your app's TOML",
-      "url": "https://shopify.dev/changelog/posts/make-metafield-definitions-analytics-queryable-from-app-s-toml",
-      "source": "Shopify Developer Changelog",
-      "primary_category": "commerce_and_digital_products",
-      "priority_score": 69,
-      "hourly_adjusted_score": 69,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-20T16:00:00+00:00",
-      "days_old": 5.47,
+      "published_at": "2026-10-26T03:30:18+00:00",
+      "days_old": 0.03,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "01b44b612fda8613",
-      "title": "POS UI extensions 2026-10 adds s-pos-list, a virtualized list with custom row templates",
-      "url": "https://shopify.dev/changelog/posts/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates",
+      "id": "f803dce2f9c77322",
+      "title": "POS UI extensions now support reactive storage access",
+      "url": "https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access",
       "source": "Shopify Developer Changelog",
       "primary_category": "commerce_and_digital_products",
       "priority_score": 69,
@@ -309,7 +290,26 @@
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
       "published_at": "2026-10-22T16:00:00+00:00",
-      "days_old": 3.47,
+      "days_old": 3.51,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "55c557b3bc0267ca",
+      "title": "Securing your app, together",
+      "url": "https://shopify.dev/changelog/blog/securing-your-app-together",
+      "source": "Shopify Developer Changelog",
+      "primary_category": "commerce_and_digital_products",
+      "priority_score": 69,
+      "hourly_adjusted_score": 69,
+      "stars_current": null,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-20T19:00:00+00:00",
+      "days_old": 5.39,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
@@ -321,22 +321,22 @@
     "repaired_local_passes": 0,
     "repair_rejections": 1,
     "repair_error": null,
-    "editorial_repair_attempted": true,
-    "editorial_repair_drafts_submitted": 1,
+    "editorial_repair_attempted": false,
+    "editorial_repair_drafts_submitted": 0,
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 1,
-    "submitted_for_independent_review": 1,
+    "locally_valid_drafts": 0,
+    "submitted_for_independent_review": 0,
     "passed_independent_review": 0,
-    "rejected_by_independent_review": 1,
+    "rejected_by_independent_review": 0,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
   "state_summary": {
     "used_candidates_in_cooldown": 13,
-    "recently_attempted_candidates": 9,
+    "recently_attempted_candidates": 10,
     "recent_draft_passes_today": 1
   }
 }
