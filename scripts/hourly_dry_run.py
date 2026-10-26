@@ -305,9 +305,22 @@ def is_fresh(candidate: dict, lookback_days: int) -> bool:
         allowed_days = 10
     elif source == "Shopify Developer Changelog":
         allowed_days = 7
+    elif source == "Shopify Community":
+        # Community problems/workarounds remain useful for a few days, but should
+        # not compete with newer reports indefinitely.
+        allowed_days = 3
+    elif source == "Product Hunt":
+        # Launches are still reasonably current across a short multi-day window.
+        allowed_days = 3
+    elif source in {"Stripe Blog", "Indie Hackers (unofficial third-party feed)", "WooCommerce Blog"}:
+        # Editorial posts and founder workflows are useful beyond a single day.
+        allowed_days = 7
+    elif source == "Ahrefs Blog":
+        # SEO guides are less time-sensitive than launches and breaking changes.
+        allowed_days = 10
     elif source == "WordPress Plugin Directory":
         # A plugin directory listing is not a breaking-news item. Allow enough time
-        # for a maintained, widely adopted plugin to be considered for an explainer.
+        # for a maintained plugin to be considered for an explainer.
         allowed_days = 30
     else:
         allowed_days = min(lookback_days, 3)
