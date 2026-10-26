@@ -95,38 +95,104 @@
       ]
     }
   ],
-  "note": "The generic digital-product sales/profit tracker category is a cautionary example: competitor density is visible, while buyer search volume and unmet need remain unmeasured. Do not build until the narrower hypothesis is confirmed by marketplace search data, competitor complaint analysis and willingness-to-pay tests.",
+  "note": "Initial scan rejects a generic tracker and does not yet validate a narrower product. Cross-platform payout/fee/refund reconciliation is an investigation question only. Next: gather 15 Etsy Marketplace Insights search/listing pairs, 30 independent buyer problem reports, at least 10 competitor listings with their negative/middle reviews, verify export schemas and platform terms, and test a narrowly scoped paid offer with unrelated buyers before building.",
   "initial_market_scan": {
     "as_of": "2026-10-26",
     "method": "Public marketplace listings and official help pages; not a full market sizing study",
     "observations": [
       {
-        "source": "Etsy Digital Product Sales Tracker search",
+        "source": "Etsy Digital Products Sales Tracker search",
         "url": "https://www.etsy.com/market/digital_products_sales_tracker",
         "signal_type": "competition",
-        "observation": "Etsy search results page reports 5,000+ items and shows multiple downloadable tracker/spreadsheet products at low prices.",
-        "implication": "A generic sales-tracker spreadsheet is likely commoditized; do not build one without a narrower verified gap."
+        "observation": "Search result page currently shows 5,000+ items, many low-priced tracker/spreadsheet products.",
+        "implication": "Generic digital product tracking is crowded; result count is not buyer search volume or sales."
       },
       {
         "source": "Etsy Seller Profit Tracker search",
         "url": "https://www.etsy.com/market/etsy_seller_profit_tracker",
         "signal_type": "competition_and_price",
-        "observation": "Etsy search results show 5,000+ items and examples of profit/fee/tracker spreadsheets at roughly $1 to $20, some with hundreds or thousands of displayed review counts.",
-        "implication": "There is evidence of an established category and existing competition, but the result count is listings, not buyer search volume or sales."
+        "observation": "Search result page currently shows 5,000+ items; examples are typically low-priced spreadsheets with high review counts on some listings.",
+        "implication": "The category has incumbents and visible price competition; generic feature additions unlikely to be defensible."
       },
       {
-        "source": "Etsy Gumroad Tracker search",
+        "source": "Etsy India Gumroad Tracker search",
         "url": "https://www.etsy.com/in-en/market/gumroad_tracker",
         "signal_type": "narrower_competition",
-        "observation": "Etsy India search results show 95+ items and multiple cross-platform digital seller tracker products priced roughly $5 to $35.",
-        "implication": "Cross-platform seller operations is worth investigating more narrowly, but the listings do not prove demand for a new product or a specific unmet need."
+        "observation": "Search page shows 95+ items; several cross-platform trackers cover Etsy/Gumroad/Payhip/Shopify and fees/refunds/income/profit.",
+        "implication": "Cross-platform seller operations merits investigation but does not establish an unserved niche."
       },
       {
         "source": "Etsy Marketplace Insights",
         "url": "https://help.etsy.com/hc/en-us/articles/35122361353239-How-Do-I-Use-Etsy-s-Marketplace-Insights-Tool",
         "signal_type": "buyer_search_and_supply",
-        "observation": "The official tool exposes buyer search and listing counts over the last 30 days and currently allows 15 free keyword searches per week.",
-        "implication": "Use actual marketplace query values in the next validation step; public listing counts cannot substitute for this demand data."
+        "observation": "Official seller dashboard tool reports buyer search and listing counts for the last 30 days, with up to 15 free keyword searches per week.",
+        "implication": "Collect actual term-level search/listing values before ranking Etsy niche ideas."
+      },
+      {
+        "source": "Etsy CSV exports and Gumroad sales/payout exports",
+        "url": "https://help.etsy.com/hc/en-in/articles/360000343328-How-to-Download-a-Spreadsheet-of-Your-Sold-Transactions",
+        "signal_type": "feasibility_and_existing_workflow",
+        "observation": "Both platforms expose CSV exports, and current Etsy competitor products already advertise CSV import, fee calculations, refunds, SKU matching, P&L and reconciliation checks.",
+        "implication": "CSV-first reconciliation is technically feasible but already competitive; identify a specific underserved failure before building."
+      },
+      {
+        "source": "Etsy bookkeeping spreadsheet review",
+        "url": "https://www.etsy.com/listing/4310425934/easy-bookkeeping-spreadsheet-for-etsy",
+        "signal_type": "candidate_pain_example",
+        "observation": "One review alleged expenses were counted as revenue and refunds were missed; the listing has a very small review base.",
+        "implication": "Treat as a lead to look for repeated accuracy/reliability complaints, not as a representative quality finding."
+      }
+    ],
+    "competitor_examples": [
+      {
+        "name": "Marketplace Business OS PRO",
+        "url": "https://www.etsy.com/listing/4566900221/etsy-seller-spreadsheet-excel-multi",
+        "asking_price": "$15.33 shown at crawl",
+        "features": [
+          "22-sheet Excel business model",
+          "multiple marketplaces",
+          "platform fees",
+          "expected-vs-actual payout control",
+          "CSV/manual entry; no automatic marketplace/bank sync"
+        ],
+        "implication": "Generic multi-channel payout reconciliation is already directly offered."
+      },
+      {
+        "name": "Etsy Seller Spreadsheet 2026",
+        "url": "https://www.etsy.com/listing/4592650592/etsy-seller-spreadsheet-2026-fee",
+        "asking_price": "Price may vary; check listing at next review",
+        "features": [
+          "Etsy Order Items CSV import",
+          "fee calculation",
+          "refund-aware net profit",
+          "product SKU/keyword matching",
+          "monthly profit dashboard"
+        ],
+        "implication": "CSV import plus fee-aware profit tracking is already covered in Etsy-specific products."
+      },
+      {
+        "name": "Etsy Seller Bookkeeping Spreadsheet",
+        "url": "https://www.etsy.com/listing/4585379809/etsy-seller-bookkeeping-spreadsheet",
+        "asking_price": "Price may vary; check listing at next review",
+        "features": [
+          "statement CSV import",
+          "monthly P&L",
+          "monthly reconciliation check",
+          "multiple fee categories"
+        ],
+        "implication": "A generic reconciliation-check feature is not enough to differentiate."
+      },
+      {
+        "name": "Digital Seller Payout and Profit Tracker",
+        "url": "https://www.etsy.com/listing/4573816671/etsy-gumroad-payout-reconciliation",
+        "asking_price": "Price not reliably surfaced in indexed excerpt",
+        "features": [
+          "Digital-seller focus",
+          "manual fee and payout reconciliation",
+          "Etsy/Gumroad with optional Shopify/Stripe/PayPal/other channels",
+          "manual entry; no direct login"
+        ],
+        "implication": "Cross-platform digital seller focus is also present in competing offers."
       }
     ]
   }
