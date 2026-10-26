@@ -118,6 +118,46 @@ class DiscoveryHelpersTests(unittest.TestCase):
         self.assertEqual(candidate["signals"]["rating_percent"], 94.0)
         self.assertIn("not paid-revenue evidence", candidate["signals"]["signal_interpretation"])
 
+    def test_preview_selection_prioritizes_one_candidate_per_source(self):
+        sources = [
+            "GitHub Search", "Hacker News", "Shopify Community",
+            "Shopify Developer Changelog", "WordPress Plugin Directory",
+            "Indie Hackers (unofficial third-party feed)", "Product Hunt",
+            "Console.dev", "Ahrefs Blog", "Stripe Blog", "WooCommerce Blog",
+        ]
+        candidates = []
+        for index, source in enumerate(sources):
+            candidates.append({
+                "id": f"source-{index}",
+                "url": f"https://example.com/source-{index}",
+                "source": source,
+                "primary_category": (
+                    "commerce_and_digital_products"
+                    if index in (0, 2, 3, 10)
+                    else f"category-{index}"
+                ),
+                "priority_score": 100 - index,
+            })
+        # Extra high-ranked GitHub items must not crowd the other sources out.
+        for index in range(20):
+            candidates.insert(0, {
+                "id": f"github-extra-{index}",
+                "url": f"https://example.com/github-extra-{index}",
+                "source": "GitHub Search",
+                "primary_category": "commerce_and_digital_products",
+                "priority_score": 200 - index,
+            })
+
+        selected = discovery.select_preview_candidates(candidates, 11)
+        selected_sources = {
+            "GitHub Search" if row["source"].startswith("GitHub Search")
+            else "Hacker News" if row["source"].startswith("Hacker News")
+            else row["source"]
+            for row in selected
+        }
+        self.assertEqual(len(selected), 11)
+        self.assertTrue(set(sources).issubset(selected_sources))
+
     def test_preview_selection_limits_source_and_category_concentration(self):
         candidates = []
         sources = (
