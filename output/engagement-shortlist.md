@@ -1,6 +1,6 @@
 # Legivox engagement shortlist
 
-Generated: 2026-10-25 06:37:12 IST
+Generated: 2026-10-26 06:51:56 IST
 
 These are candidates to review manually. No likes, replies, reposts, or follows are automated by this workflow.
 
@@ -8,22 +8,22 @@ These are candidates to review manually. No likes, replies, reposts, or follows 
 
 Search: `feature requests`
 
-- [JamesLimmer](https://x.com/JamesLimmer/status/2114116616351007014): @BrockRiddickIFB Please post this in the “X bugs and feature requests” channel. I also posted recently - had to delete the app to install an OS update
-- [marciac95_](https://x.com/marciac95_/status/2114116104339804393): Day 10 of #100DaysOfCode I am cleaning up my startup/bunny app's code. I am deleting unused stuff and re-doing some functions so its easier to understand and make changes for later. I am also going through the list of fe
-- [Av1dlive](https://x.com/Av1dlive/status/2113979337594790080): 7. product roadmap keep customer requests close to the decisions they influence. [start of prompt] Create a product dashboard for feedback, feature requests, bugs and planned releases. Each item needs a problem statement
+- [InductiveAuto](https://x.com/InductiveAuto/status/2114506803656499474): Git with Ignition Episode 2: https://t.co/LKwKfwXwjz TOPICS: • How to sync file system changes using UI &amp; API scans • Collaborate through feature branches and pull requests • Create formal releases using version tags
+- [dmitryrechkin](https://x.com/dmitryrechkin/status/2114464543451558121): Bug reports are way more urgent than feature requests. Fixing what's broken directly shows users you value their experience and trust. This impacts retention and satisfaction far more than adding new functionality. Prior
+- [RemyAlidarso](https://x.com/RemyAlidarso/status/2114463600664268977): Builders, do you make use of any existing feature request / feedback tool? Or how do you currently receive feature requests / feedback?
 
 ## freelance developers
 
 Search: `freelancer scope creep`
 
+- [rgenzon](https://x.com/rgenzon/status/2113903453571260832): The agency life nobody talks about: scope creep at 2am. "Can you also just quickly..." is the most dangerous sentence in client work. Scope agreements exist for a reason. Use them. Enforce them. Politely but firmly.
 - [fajritbaby](https://x.com/fajritbaby/status/2113489761507676474): When Client Requests Keep Growing, Where Does the Work End? Founders and service providers, one small client request can quickly turn into hours of unpaid work. This is called scope creep — when a project expands beyond 
-- [fay_crypt](https://x.com/fay_crypt/status/2113376120196182349): @Laurentxdev @_MonoDesk Scope creep is a real headache for freelancers. Having AI flag requests that fall outside the agreed scope could make those client conversations much easier.
-- [alex_prompter](https://x.com/alex_prompter/status/2103020406466830753): 4. Scope creep "Adopt the role of an expert freelance contracts advisor. I'm a [freelancer]. Find anything that lets this client ask for more work without paying more, or keep my files forever. Suggest fairer wording."
+- [SamVale29](https://x.com/SamVale29/status/2112242379000582436): Scope creep isn't a client problem. It's a missing sentence in the contract.
 
 ## small online sellers
 
 Search: `inventory margins`
 
-- [Zhicheng_2013](https://x.com/Zhicheng_2013/status/2114081654444867837): Downtime kills margins. 📉 Modular manganese steel screens swap fast, lasting 3-5x longer via work-hardening. Ready stock keeps your line moving without inventory bloat. ⚙️ See the supply logic: https://t.co/6Delng5HBS #M
-- [skyworthcctvug](https://x.com/skyworthcctvug/status/2113656155746799824): Warehouse shrinkage eating into your margins? 📦 Cover expansive inventory floors and high-rack storage with Skyworth 360° PTZ cameras. High-definition monitoring that deters theft before it happens. #SkyworthUganda #cctv
-- [Adam_DelDuca](https://x.com/Adam_DelDuca/status/2113624012592996625): YouTube vs dropshipping Dropshipping: Inventory problems, daily ad spend, refunds, thin margins Faceless YouTube: No inventory, no ad spend, videos that earn for years I’ve seen people do well with both Only one keeps pa
+- [SlowBooksPro](https://x.com/SlowBooksPro/status/2114416278924660779): Perpetual inventory: the count on this page is the count on the shelf. An inventory item carries two accounts — what it credits when sold, what it debits as cost — which is the difference between a real gross margin and 
+- [IntrinsicBrief](https://x.com/IntrinsicBrief/status/2114382300733427759): Who funds Costco’s shelves? At FY2026 year-end, payables were $22.6B against $19.3B of inventory: a $3.3B gap. Supplier credit reduces capital tied up in stock. Valuing $COST on thin retail margins alone misses that adva
+- [winepairing_ai](https://x.com/winepairing_ai/status/2114312693016371267): Wine inventory isn't just about stock—it's about velocity. AI helps your team identify which bottles to move and how to pair them on the fly, turning slow-moving stock into high-margin revenue. Smarter lists, better marg
