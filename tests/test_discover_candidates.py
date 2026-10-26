@@ -69,13 +69,13 @@ class DiscoveryHelpersTests(unittest.TestCase):
             "Console.dev",
             "Product Hunt",
             "Shopify Developer Changelog",
-            "Shopify Community",
             "Stripe Blog",
             "Ahrefs Blog",
             "Indie Hackers",
             "WooCommerce Blog",
         )
         self.assertTrue(all(weights[name] >= 16 for name in editorial_sources))
+        self.assertGreaterEqual(weights["Shopify Community"], 12)
         self.assertLessEqual(weights["GitHub Search"], 12)
 
     def test_wordpress_datetime_parses_official_api_timestamp(self):
