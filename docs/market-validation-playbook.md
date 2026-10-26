@@ -117,16 +117,26 @@ Deliver the smallest artifact that solves the job: a spreadsheet/workbook, templ
 
 ## First public-market scan: 26 October 2026
 
-The first pass gives one useful negative result: **do not start by making another generic digital-product sales/profit tracker spreadsheet**.
+The first pass has already ruled out one overly broad product idea: **do not build another generic digital-product sales/profit tracker spreadsheet**.
 
-- Etsy's [Digital Product Sales Tracker search](https://www.etsy.com/market/digital_products_sales_tracker) currently shows 5,000+ items. The [Etsy Seller Profit Tracker search](https://www.etsy.com/market/etsy_seller_profit_tracker) also shows thousands of competing tracker, bookkeeping, inventory and fee-calculator listings. The visible examples span roughly $1–$20, many discounted, and some display hundreds or thousands of reviews.
-- The narrower [Gumroad Tracker search on Etsy India](https://www.etsy.com/in-en/market/gumroad_tracker) shows 95+ items and examples spanning roughly $5–$35 for cross-platform seller trackers.
-- Some visible offers already advertise Etsy/Gumroad/Payhip/Shopify tracking; at least one listing markets CSV import. So "multi-platform dashboard" alone is not a defensible gap.
-- These listing counts show competitor density, not demand. They are not monthly search volume, confirmed sales, or proof that the customer is dissatisfied. Etsy's official [Marketplace Insights tool](https://help.etsy.com/hc/en-us/articles/35122361353239-How-Do-I-Use-Etsy-s-Marketplace-Insights-Tool) is the next source for comparing buyer searches with listing supply.
+### What the evidence shows
 
-**Updated hypothesis to test:** CSV-first reconciliation of fees, refunds, discounts, payouts and product-level margin for sellers already selling across two or more digital-product platforms. This is not a recommendation to build it yet. We need to learn whether sellers genuinely struggle with this step, whether their current platform exports make it feasible, and whether they will pay for a better workflow. The structured status and required evidence are tracked in `data/market_validation_hypotheses.json`.
+- Etsy search result pages for [Digital Products Sales Tracker](https://www.etsy.com/market/digital_products_sales_tracker) and [Etsy Seller Profit Tracker](https://www.etsy.com/market/etsy_seller_profit_tracker) each display **5,000+ items**. These results contain low-priced trackers and spreadsheets; that is evidence of crowded supply, not proof of search demand or actual monthly sales. citeturn871344search1turn871344search2
+- The narrower [Gumroad Tracker search on Etsy India](https://www.etsy.com/in-en/market/gumroad_tracker) displays **95+ items** with multiple cross-platform digital-product trackers, generally shown in the range of about $5–$35. Several direct listings already mention Etsy, Gumroad, Payhip, Shopify, Stripe, fees, refunds, income and profit. citeturn871344search0
+- A multi-channel Excel product is listed at $15.33 and advertises 22 connected worksheets, fee handling and a payout-control/reconciliation workflow for Etsy, eBay, Vinted, Shopify and other sellers. It explicitly does not offer automatic marketplace or bank synchronization. citeturn960811search1
+- A separate Etsy bookkeeping spreadsheet claims an Etsy CSV import path with 4,000 statement rows and a reconciliation check; another current Etsy/Shopify tracker describes pasting order CSV exports, matching products by SKU or keyword, and computing fees and net profit. That means CSV import and payout checking are already competitive features, not a white-space idea on their own. citeturn960811search2turn960811search6
+- Etsy officially allows sellers to export order-item, orders, Etsy Payments sales and deposit CSVs. Gumroad supports customer/sales CSV exports and downloadable payout CSVs. There is data to work with, but export access alone does not mean a new product has an advantage. citeturn457095search0turn457095search1turn457095search6
+- One current Etsy bookkeeping review alleges that expenses were counted as revenue and refunds were missed. This is a **single anecdote from a low-review-count listing**, not proof the category generally has quality problems. It gives us a concrete issue to investigate across multiple products and buyer interviews. citeturn960811search3
 
-The important outcome of this scan is not "we found the product." It is "we rejected the broad version before spending time building it." The narrower hypothesis remains unvalidated until the marketplace search data, negative-review analysis, buyer interviews and paid-offer test support it.
+### Updated judgement
+
+The generic tracker hypothesis is **rejected as a broad build direction**. A cross-platform payout/fee/refund reconciliation helper is still only an investigation hypothesis, and its moat is weak until we verify a problem the existing products actually fail to solve.
+
+The candidate differentiation we should investigate is not another spreadsheet with more tabs. It is whether a specific multi-platform digital seller is still forced to manually reconcile inconsistent export formats, refunds, platform fees, currencies and actual payouts, and whether existing products fail that job badly enough for the seller to pay for a better workflow. We need independent problem reports and specific competitor gaps before describing this as a real market opportunity.
+
+The next evidence step is Etsy Marketplace Insights. The official tool shows buyer search counts and listing counts for the preceding 30 days, allows 15 free keyword searches per week, and is only accessible from a seller's Shop Manager. Record those values manually; do not scrape the signed-in dashboard. citeturn869098search0
+
+**Initial decision: do not build yet.** We have enough evidence to avoid the generic tracker category, but not enough to approve a narrower product.
 
 ## Starter hypothesis backlog (not recommendations yet)
 
