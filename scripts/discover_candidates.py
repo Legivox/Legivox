@@ -718,6 +718,59 @@ def discover(config: dict, lookback_days: int = 14, per_source: int = 15) -> tup
     return unique, diagnostics
 
 
+def select_preview_candidates(candidates: list[dict], limit: int) -> list[dict]:
+    """Build a source/category-diverse preview without changing candidate ranking.
+
+    This function affects only the human-readable discovery report. The hourly
+    publisher has its own ranking and diversity rules and never consumes this
+    preview selection.
+    """
+    if limit <= 0:
+        return []
+    selected: list[dict] = []
+    selected_ids: set[str] = set()
+    source_counts: dict[str, int] = {}
+    category_counts: dict[str, int] = {}
+    max_per_source_group = 3
+    max_per_category = 6
+
+    def source_group(item: dict) -> str:
+        source = str(item.get("source") or "Unknown source")
+        if source.startswith("GitHub Search"):
+            return "GitHub Search"
+        if source.startswith("Hacker News"):
+            return "Hacker News"
+        if source.startswith("WordPress Plugin Directory"):
+            return "WordPress Plugin Directory"
+        return source
+
+    for item in candidates:
+        source = source_group(item)
+        category = str(item.get("primary_category") or "unknown")
+        if source_counts.get(source, 0) >= max_per_source_group:
+            continue
+        if category_counts.get(category, 0) >= max_per_category:
+            continue
+        selected.append(item)
+        selected_ids.add(str(item.get("id") or item.get("url") or id(item)))
+        source_counts[source] = source_counts.get(source, 0) + 1
+        category_counts[category] = category_counts.get(category, 0) + 1
+        if len(selected) >= limit:
+            return selected
+
+    # If diversity caps leave slots unused (for example, a one-source test set),
+    # fill remaining slots by original priority order without duplicating rows.
+    for item in candidates:
+        identity = str(item.get("id") or item.get("url") or id(item))
+        if identity in selected_ids:
+            continue
+        selected.append(item)
+        selected_ids.add(identity)
+        if len(selected) >= limit:
+            break
+    return selected
+
+
 def write_report(
     candidates: list[dict],
     diagnostics: list[dict],
@@ -728,7 +781,7 @@ def write_report(
 ) -> tuple[Path, Path]:
     output_dir.mkdir(parents=True, exist_ok=True)
     now_ist = datetime.now(IST).isoformat(timespec="seconds")
-    visible = candidates[:limit]
+    visible = select_preview_candidates(candidates, limit)
     payload = {
         "generated_at_ist": now_ist,
         "mode": "research_only_dry_run",
@@ -736,6 +789,11 @@ def write_report(
         "lookback_days": lookback_days,
         "candidate_count_total": len(candidates),
         "candidate_count_shown": len(visible),
+        "preview_selection": {
+            "policy": "priority-ranked source/category-diverse sample; preview-only, not used by the publisher",
+            "max_per_source_group": 3,
+            "max_per_category": 6,
+        },
         "source_diagnostics": diagnostics,
         "candidates": visible,
         "editorial_safety": [
@@ -761,7 +819,9 @@ def write_report(
         f"- Candidates shown: {len(visible)}",
         f"- Source checks successful: {okay}/{len(diagnostics)}",
         "",
-        "Legivox discovers useful developer tools, AI and automation projects, creator tools, digital-product platforms, commerce workflows, marketing tactics and technology. The ranking prioritises candidates for editorial review; it does not verify claims or establish overall quality.",
+        "Legivox discovers useful developer tools, AI and automation projects, creator tools, digital-product platforms, commerce workflows, marketing tactics and technology. The priority score ranks candidates, but this report applies source/category caps to show a more representative review sample.",
+        "",
+        "The preview diversity caps affect only this report. The hourly publishing selector uses its own ranking and diversity rules; this file is not consumed by the publisher.",
         "",
         "## Source health",
         "",
