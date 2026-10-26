@@ -209,7 +209,11 @@ def normalize_candidate(
     if pub_dt:
         days_old = max(0.0, (now.astimezone(timezone.utc) - pub_dt).total_seconds() / 86400.0)
 
-    if days_old is None:
+    if source == "WordPress Plugin Directory":
+        # Plugin listing "last updated" is not a news publication date. Keep the
+        # date for freshness eligibility, but do not award breaking-news recency.
+        recency_points = 8
+    elif days_old is None:
         recency_points = 8
     elif days_old <= 1:
         recency_points = 30
