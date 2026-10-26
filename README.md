@@ -1,6 +1,6 @@
 # Legivox Automation
 
-Zero-budget GitHub Actions workflow for daily research, quality-gated RSS/Groq news drafts, optional freely licensed images for curated posts, and scheduled X publishing.
+Zero-budget GitHub Actions workflow for multidomain research, quality-gated source-grounded X publishing, GitHub star tracking, and evidence-led digital-product market research.
 
 ## Schedule
 - 06:00 IST: prepare the curated research plan and manual-engagement shortlist.
@@ -18,19 +18,34 @@ For scheduled posts, a random target is chosen inside the first 45 minutes of ea
 
 ## Experimental multidomain discovery
 
-The feature branch feature/multidomain-discovery-v1 adds a **research-only** discovery queue for useful technology across six lanes:
+The automated discovery queue is **research-only** and now covers useful digital products, creator tools, online-business workflows, commerce operations, marketing/distribution tactics and technology people can act on. Current editorial lanes include:
 - Developer tools and infrastructure.
 - AI, agents and automation.
-- Shopify, ecommerce, checkout, payments and digital products.
-- Creator tools and indie-business infrastructure.
+- Digital products, templates, downloads and creator commerce.
+- Online seller and small-business operations.
+- Ecommerce, storefronts, payments and subscriptions.
+- Creator tools, independent businesses and monetization.
+- Search, SEO, marketing and distribution.
 - Analytics, data and growth.
 - Security, privacy and self-hosting.
 
-The source registry is data/discovery_sources.json. The first adapters use GitHub repository search, Hacker News/Show HN, Console.dev RSS, Product Hunt RSS, and the official Shopify Developer Changelog. The goal is to discover technology people can build with, automate, use to launch, or use to sell online, not to limit Legivox to software engineering news.
+The source registry is data/discovery_sources.json. Current automated discovery includes GitHub repository search, Hacker News/Show HN, Product Hunt, Console.dev, Shopify Developer Changelog, Shopify Community, Stripe Blog, Ahrefs Blog, WooCommerce Blog, an unofficial Indie Hackers RSS mirror, and WordPress.org's public Plugin Directory API. Indie Hackers is marked as an unofficial feed; generated claims still require primary-source verification. The research report records per-source health, and a source failure should not be mistaken for evidence that a market is quiet.
+
+These sources serve different purposes: changelogs and blogs explain what changed; community posts surface problems and workarounds; marketplace listings/reviews show competitors and prices; search data helps compare demand with supply; and plugin installs/reviews show usage and feedback. None of these signals alone proves willingness to pay.
 
 The research script is scripts/discover_candidates.py. Run the command *python scripts/discover_candidates.py --lookback-days 14 --limit 30* from the repository root to fetch a live preview. It writes output/discovery/discovery-report.md and output/discovery/discovery-candidates.json. No extra Python packages are required. An optional GITHUB_TOKEN environment variable improves GitHub API rate-limit headroom; do not commit any token.
 
 The separate GitHub Actions workflow **Legivox multidomain discovery preview** runs tests and a read-only discovery preview on matching pull requests. Once the workflow is available on the default branch, it can also be run manually with a 7-, 14- or 30-day lookback. The report appears in the Actions run summary. It does not load the X session cookie or Groq API key, write to the production plan, or publish/interact on X.
+
+## Market-first digital-product research
+
+Our own product research is a separate track from the public X content queue. Read [the market-validation playbook](docs/market-validation-playbook.md), the [market research source map](data/market_research_sources.json), and the [unvalidated hypothesis backlog](data/market_validation_hypotheses.json).
+
+The core rule is **market first, product second**. Pick a specific buyer and recurring job, look for independent evidence that people already search, spend money or use workarounds, study competing products and their negative reviews, prove that we can reach buyers without relying on paid ads or a pre-existing audience, and test a paid offer before building the full product.
+
+Etsy Marketplace Insights is a manual research source because it requires seller-dashboard access; its official help page describes buyer search and listing counts over the previous 30 days and currently allows 15 free keyword searches per week. Google Trends gives normalized relative interest, not absolute search volume. AppSumo/Gumroad listings and reviews can reveal prices and competitors, but public listings alone do not expose reliable sales data. WordPress installs and ratings describe adoption and feedback, not payment. These distinctions are documented in the playbook and the source registry.
+
+The starting hypothesis backlog covers digital-download seller operations, spreadsheet-heavy small-business work, and creator/freelancer distribution workflows. They are **unvalidated hypotheses**, not chosen products. No product should move to a build phase without evidence of a specific problem, existing spending, a credible market gap, an organic acquisition path, and a paid pilot or pre-order.
 
 ## Editorial quality standard: explain, don't announce
 
@@ -53,13 +68,13 @@ The post must name the product/platform/capability in its opening, state one liv
 
 Preferred formats are release context, tool review, practical workflow, comparison/trade-off, and engineering lesson. A candidate that cannot support a useful angle should be skipped.
 
-The current automated source adapters are still limited to GitHub search, Hacker News/Show HN, Console.dev RSS, Product Hunt RSS, and Shopify Developer Changelog. The remaining creators/blogs/directories are editorial benchmarks and future integration candidates, not currently connected feeds.
+The automated source set is broader than the original developer-tool queue, but it still cannot access logged-in marketplace dashboards. Etsy Marketplace Insights, Google Trends exports, full competitor negative-review analysis, Shopify App Store reviews and Gumroad price comparisons are documented manual/market research inputs rather than falsely presented as connected APIs.
 
 The priority score is a queue-sorting heuristic, not a quality rating, validation of claims, proof of market demand, or popularity measurement. Every run samples current stars for GitHub repositories returned by discovery and refreshes a bounded watchlist of up to 200 previously tracked public repositories through the GitHub REST API, even when they no longer appear in that hour's search results. Samples and repository IDs are persisted in output/discovery/hourly-state.json; the trend delta is calculated from a sample 20–36 hours old, and can be positive or negative. The first sample is only a baseline, not evidence of a trend; lifetime stars alone should never be described as trending. Primary-page fetch and quote validation do not replace careful interpretation of pricing, licence, limits, integrations and privacy/security trade-offs.
 
-The separate **Legivox hourly discovery and draft preview** workflow is configured for hourly checks at :17 IST from 07:17 through 22:17, ahead of the next hourly publishing slot. It selects a diverse slate, verifies live primary pages, generates source-grounded copy, applies deterministic claim/editorial checks, makes at most one evidence-constrained rewrite if the first pass fails, and runs an independent automated editor on the highest-ranked local pass. Originality is an explicit independent score, not the draft model's self-rating. A post passes only if every gate passes; otherwise the hour is skipped. The daily cap is 10 passing dry-run drafts. Reports include primary-source checks, star counts/deltas, original rejection reasons, any repair attempt and both quality-gate outcomes. The bounded GitHub star watchlist is sampled hourly, including tracked repositories missing from the latest discovery results; a trend delta is calculated only after a 20–36-hour baseline exists. Scheduled, manual, and feature-branch push-triggered hourly runs persist star and audit state on the dedicated `legivox-hourly-state` branch. A shared concurrency group serializes those state writers. The separate multidomain discovery preview workflow uploads read-only candidate reports without modifying star-history state. This workflow does not load the X cookie or publish to X.
+The separate **Legivox hourly discovery and draft preview** workflow is configured for hourly checks at :17 IST from 07:17 through 22:17, ahead of the next hourly publishing slot. It selects a diverse slate, verifies live primary pages, generates source-grounded copy, applies deterministic claim/editorial checks, makes at most one evidence-constrained rewrite if the first pass fails, and runs an independent automated editor on the highest-ranked local pass. Originality is an explicit independent score, not the draft model's self-rating. A post passes only if every gate passes; otherwise the hour is skipped. The default daily cap is 16 passing dry-run drafts. Reports include primary-source checks, star counts/deltas, original rejection reasons, any repair attempt and both quality-gate outcomes. The bounded GitHub star watchlist is sampled hourly, including tracked repositories missing from the latest discovery results; a trend delta is calculated only after a 20–36-hour baseline exists. Scheduled, manual, and feature-branch push-triggered hourly runs persist star and audit state on the dedicated `legivox-hourly-state` branch. A shared concurrency group serializes those state writers. The separate multidomain discovery preview workflow uploads read-only candidate reports without modifying star-history state. This workflow does not load the X cookie or publish to X.
 
-The hourly workflow is currently on this feature branch, so its cron is not active until the workflow is merged to the default branch. Feature-branch push-triggered runs can update only the dedicated `legivox-hourly-state` branch, not the code branch; they remain research-only and do not publish to X. After merge, the scheduled cron and manual dispatch use that same persistent state branch and serialized writer lock. This branch remains a dry-run-only experiment; do not merge it into production until repeated live previews show sound posts and an accurate star baseline.
+The hourly research workflow is active on the default branch. It persists reports and star history to the dedicated `legivox-hourly-state` branch, separately from production code, and remains research-only; it does not load the X session cookie or publish to X.
 
 The production publisher consumes the multidomain handoff by default after rollout; the repository Actions variable `LEGIVOX_MULTIDOMAIN_PUBLISHING_ENABLED` can be explicitly set to `false` to retain the legacy RSS/Groq path. Scheduled slots consume only a fresh (at most 90-minute-old) report that passed primary-source, evidence, independent-editor, character-limit, unpublished-status, and star-baseline checks. A missing, stale, failed, or incomplete report skips the slot; there is no RSS fallback while the flag is enabled. The feature branch must pass its full test suite before merge; hourly schedules only activate once this workflow is on the default branch.
 
