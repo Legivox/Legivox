@@ -19,28 +19,29 @@
   },
   "hypotheses": [
     {
-      "id": "digital-seller-profit-ops",
-      "title": "A narrow operations product for digital-download sellers",
-      "target_buyer": "A specific segment of people already selling downloadable products on Etsy, Gumroad, Shopify or similar platforms",
-      "problem_hypothesis": "One specific workflow around fee-aware margin, refunds, product updates, listing maintenance or cross-channel reporting is still handled with fragile manual work",
+      "id": "digital-seller-payout-reconciliation",
+      "title": "CSV-first fee, refund and payout reconciliation for multi-platform digital-product sellers",
+      "target_buyer": "Existing digital-product sellers selling on two or more marketplaces/platforms and already tracking income in spreadsheets",
+      "problem_hypothesis": "Manual trackers may not reliably reconcile platform fees, discounts, refunds, payouts and product-level margin across multiple platforms; a narrow import-and-reconciliation workflow may be more defensible than another generic tracker.",
       "candidate_formats": [
-        "spreadsheet/workbook",
-        "small data-cleanup utility",
-        "workflow template"
+        "CSV import tool",
+        "spreadsheet plus reconciliation helper",
+        "small browser/local utility"
       ],
-      "status": "unvalidated",
+      "status": "researching",
+      "current_signal": "Competition is clearly present in general tracker spreadsheets. Public listings show products spanning Etsy/Gumroad/Payhip/Shopify; at least one Etsy result advertises CSV import but has only two displayed reviews. This is a question to investigate, not a validated gap.",
       "evidence_to_collect": [
-        "Marketplace keyword search and listing counts",
-        "at least 20 independent seller pain reports",
-        "10 competitor products and negative reviews",
-        "actual paid alternatives and price bands",
-        "3 unrelated paid pre-orders or equivalent strong commitment"
+        "Use Etsy Marketplace Insights for buyer searches vs listing counts on payout reconciliation, Etsy CSV import, Gumroad sales tracker, refund tracker and fee calculator terms",
+        "Review at least 30 negative/middle-rated reviews of 10 direct competitors",
+        "Read official CSV/export schemas and platform terms before assuming integrations are feasible",
+        "Interview sellers already selling on at least two channels about their last reconciliation problem and time spent",
+        "Test an offer/sample with 30 qualified prospects and seek at least 3 paid pre-orders from unrelated buyers"
       ],
       "kill_criteria": [
-        "Only generic searches with overwhelming low-priced competition",
-        "No repeated specific pain after review analysis",
-        "No reachable organic channel",
-        "Prospects will not commit money"
+        "Most buyers sell through only one platform",
+        "Existing platform exports and tools already solve the problem with little friction",
+        "No repeated complaint about reconciliation or manual entry",
+        "No organic acquisition path or buyers will not pay"
       ]
     },
     {
@@ -94,5 +95,39 @@
       ]
     }
   ],
-  "note": "These are hypotheses, not recommendations. No market, product, price or demand level has been validated. Scores stay blank until evidence is collected."
+  "note": "The generic digital-product sales/profit tracker category is a cautionary example: competitor density is visible, while buyer search volume and unmet need remain unmeasured. Do not build until the narrower hypothesis is confirmed by marketplace search data, competitor complaint analysis and willingness-to-pay tests.",
+  "initial_market_scan": {
+    "as_of": "2026-10-26",
+    "method": "Public marketplace listings and official help pages; not a full market sizing study",
+    "observations": [
+      {
+        "source": "Etsy Digital Product Sales Tracker search",
+        "url": "https://www.etsy.com/market/digital_products_sales_tracker",
+        "signal_type": "competition",
+        "observation": "Etsy search results page reports 5,000+ items and shows multiple downloadable tracker/spreadsheet products at low prices.",
+        "implication": "A generic sales-tracker spreadsheet is likely commoditized; do not build one without a narrower verified gap."
+      },
+      {
+        "source": "Etsy Seller Profit Tracker search",
+        "url": "https://www.etsy.com/market/etsy_seller_profit_tracker",
+        "signal_type": "competition_and_price",
+        "observation": "Etsy search results show 5,000+ items and examples of profit/fee/tracker spreadsheets at roughly $1 to $20, some with hundreds or thousands of displayed review counts.",
+        "implication": "There is evidence of an established category and existing competition, but the result count is listings, not buyer search volume or sales."
+      },
+      {
+        "source": "Etsy Gumroad Tracker search",
+        "url": "https://www.etsy.com/in-en/market/gumroad_tracker",
+        "signal_type": "narrower_competition",
+        "observation": "Etsy India search results show 95+ items and multiple cross-platform digital seller tracker products priced roughly $5 to $35.",
+        "implication": "Cross-platform seller operations is worth investigating more narrowly, but the listings do not prove demand for a new product or a specific unmet need."
+      },
+      {
+        "source": "Etsy Marketplace Insights",
+        "url": "https://help.etsy.com/hc/en-us/articles/35122361353239-How-Do-I-Use-Etsy-s-Marketplace-Insights-Tool",
+        "signal_type": "buyer_search_and_supply",
+        "observation": "The official tool exposes buyer search and listing counts over the last 30 days and currently allows 15 free keyword searches per week.",
+        "implication": "Use actual marketplace query values in the next validation step; public listing counts cannot substitute for this demand data."
+      }
+    ]
+  }
 }
