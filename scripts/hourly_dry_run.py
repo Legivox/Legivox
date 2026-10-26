@@ -305,6 +305,10 @@ def is_fresh(candidate: dict, lookback_days: int) -> bool:
         allowed_days = 10
     elif source == "Shopify Developer Changelog":
         allowed_days = 7
+    elif source == "WordPress Plugin Directory":
+        # A plugin directory listing is not a breaking-news item. Allow enough time
+        # for a maintained, widely adopted plugin to be considered for an explainer.
+        allowed_days = 30
     else:
         allowed_days = min(lookback_days, 3)
     return float(days_old) <= allowed_days
