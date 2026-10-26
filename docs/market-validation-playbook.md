@@ -115,6 +115,19 @@ Record the exact query, marketplace, community or partner path through which a s
 
 Deliver the smallest artifact that solves the job: a spreadsheet/workbook, template pack, guide with operational tools, script, small automation, plugin or micro-utility. Start with manual fulfilment if it tests the buyer outcome. Automate only the part whose value has been demonstrated.
 
+## First public-market scan: 26 October 2026
+
+The first pass gives one useful negative result: **do not start by making another generic digital-product sales/profit tracker spreadsheet**.
+
+- Etsy's [Digital Product Sales Tracker search](https://www.etsy.com/market/digital_products_sales_tracker) currently shows 5,000+ items. The [Etsy Seller Profit Tracker search](https://www.etsy.com/market/etsy_seller_profit_tracker) also shows thousands of competing tracker, bookkeeping, inventory and fee-calculator listings. The visible examples span roughly $1–$20, many discounted, and some display hundreds or thousands of reviews.
+- The narrower [Gumroad Tracker search on Etsy India](https://www.etsy.com/in-en/market/gumroad_tracker) shows 95+ items and examples spanning roughly $5–$35 for cross-platform seller trackers.
+- Some visible offers already advertise Etsy/Gumroad/Payhip/Shopify tracking; at least one listing markets CSV import. So "multi-platform dashboard" alone is not a defensible gap.
+- These listing counts show competitor density, not demand. They are not monthly search volume, confirmed sales, or proof that the customer is dissatisfied. Etsy's official [Marketplace Insights tool](https://help.etsy.com/hc/en-us/articles/35122361353239-How-Do-I-Use-Etsy-s-Marketplace-Insights-Tool) is the next source for comparing buyer searches with listing supply.
+
+**Updated hypothesis to test:** CSV-first reconciliation of fees, refunds, discounts, payouts and product-level margin for sellers already selling across two or more digital-product platforms. This is not a recommendation to build it yet. We need to learn whether sellers genuinely struggle with this step, whether their current platform exports make it feasible, and whether they will pay for a better workflow. The structured status and required evidence are tracked in `data/market_validation_hypotheses.json`.
+
+The important outcome of this scan is not "we found the product." It is "we rejected the broad version before spending time building it." The narrower hypothesis remains unvalidated until the marketplace search data, negative-review analysis, buyer interviews and paid-offer test support it.
+
 ## Starter hypothesis backlog (not recommendations yet)
 
 These are research directions only. None has passed validation:
