@@ -1,0 +1,102 @@
+name: Legivox isolated hourly draft preview
+
+on:
+  push:
+    branches:
+      - "feature/market-intelligence-sources-v1"
+    paths:
+      - "scripts/discover_candidates.py"
+      - "scripts/hourly_dry_run.py"
+      - "data/discovery_sources.json"
+      - "tests/test_discover_candidates.py"
+      - "tests/test_hourly_dry_run.py"
+      - ".github/workflows/isolated-hourly-draft-preview.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: legivox-isolated-hourly-preview
+  cancel-in-progress: true
+
+jobs:
+  draft-preview:
+    name: Run isolated candidate-to-draft quality gates
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out feature branch
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.12"
+
+      - name: Validate registry and compile discovery code
+        run: |
+          python -m json.tool data/discovery_sources.json > /dev/null
+          python -m py_compile scripts/discover_candidates.py scripts/hourly_dry_run.py
+
+      - name: Copy production history into a temporary workspace
+        env:
+          STATE_BRANCH: legivox-hourly-state
+        run: |
+          # Read-only fetch. Nothing in this workflow pushes to the state branch.
+          git fetch --no-tags origin "$STATE_BRANCH"
+          mkdir -p "$RUNNER_TEMP/legivox-hourly-preview"
+          git show "origin/$STATE_BRANCH:output/discovery/hourly-state.json" > "$RUNNER_TEMP/legivox-hourly-preview/hourly-state.json"
+          test -s "$RUNNER_TEMP/legivox-hourly-preview/hourly-state.json"
+          echo "Loaded existing star-history and cooldown state into the runner's temporary directory."
+
+      - name: Run one real hourly dry-run with isolated output
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GROQ_MODEL: openai/gpt-oss-20b
+          MAX_DAILY_DRAFTS: "16"
+        run: |
+          test -n "$GROQ_API_KEY" || { echo "GROQ_API_KEY is not configured; refusing to report an untested draft run." >&2; exit 1; }
+          python scripts/hourly_dry_run.py \
+            --dry-run \
+            --lookback-days 14 \
+            --pool-size 3 \
+            --output-dir "$RUNNER_TEMP/legivox-hourly-preview"
+
+      - name: Stage the audit report inside the runner workspace
+        if: always()
+        run: |
+          mkdir -p output/isolated-hourly-preview
+          if [ -f "$RUNNER_TEMP/legivox-hourly-preview/hourly-latest.md" ]; then
+            cp "$RUNNER_TEMP/legivox-hourly-preview/hourly-latest.md" output/isolated-hourly-preview/
+          fi
+          if [ -f "$RUNNER_TEMP/legivox-hourly-preview/hourly-latest.json" ]; then
+            cp "$RUNNER_TEMP/legivox-hourly-preview/hourly-latest.json" output/isolated-hourly-preview/
+          fi
+          if [ -f output/isolated-hourly-preview/hourly-latest.json ]; then
+            python -c 'import json; p=json.load(open("output/isolated-hourly-preview/hourly-latest.json", encoding="utf-8")); print("Decision outcome:", p.get("outcome")); print("Reason:", p.get("decision_reason")); print("Raw candidates:", p.get("candidate_count_raw")); print("Eligible candidates:", p.get("eligible_candidate_count")); print("Passing drafts:", len(p.get("passing_drafts", []))); print("Posted to X:", p.get("posted_to_x"))'
+          else
+            echo "The dry-run did not produce a JSON report."
+          fi
+
+      - name: Upload isolated draft and decision report
+        if: always() && hashFiles('output/isolated-hourly-preview/hourly-latest.json') != ''
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: legivox-isolated-hourly-draft-preview
+          path: |
+            output/isolated-hourly-preview/hourly-latest.md
+            output/isolated-hourly-preview/hourly-latest.json
+          if-no-files-found: warn
+          retention-days: 7
+
+      - name: Add isolated report to Actions summary
+        if: always()
+        run: |
+          if [ -f output/isolated-hourly-preview/hourly-latest.md ]; then
+            cat output/isolated-hourly-preview/hourly-latest.md >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "No hourly draft report was produced. Inspect the failed step above." >> "$GITHUB_STEP_SUMMARY"
+          fi
