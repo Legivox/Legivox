@@ -1,9 +1,9 @@
 {
-  "generated_at_ist": "2026-10-26T15:54:15+05:30",
-  "run_at_ist": "2026-10-26T15:54:15+05:30",
+  "generated_at_ist": "2026-10-26T16:53:30+05:30",
+  "run_at_ist": "2026-10-26T16:53:30+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 164,
+  "candidate_count_raw": 163,
   "eligible_candidate_count": 94,
   "source_diagnostics": [
     {
@@ -11,56 +11,56 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4662
+      "total_count": 4377
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 991
+      "total_count": 992
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 353
+      "total_count": 354
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2859
+      "total_count": 2866
     },
     {
       "source": "GitHub Search · github-ecommerce-digital-products",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 408
+      "total_count": 409
     },
     {
       "source": "GitHub Search · github-mcp-servers",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2026
+      "total_count": 2035
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3210
+      "total_count": 3214
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 124
+      "total_count": 125
     },
     {
       "source": "GitHub Search · github-workflow-automation",
@@ -145,189 +145,189 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-26T10:24:15+00:00",
+    "observed_at_utc": "2026-10-26T11:23:30+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 81,
-    "previously_tracked_repositories_refreshed": 119,
+    "repositories_seen_in_discovery": 80,
+    "previously_tracked_repositories_refreshed": 120,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
-    "repositories_with_20_to_36_hour_baseline": 7,
+    "repositories_with_20_to_36_hour_baseline": 6,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "267bbe3e5cf85a6a",
-      "title": "Show HN: Deepswapp Browser: browser the browser with another browser",
-      "source_url": "https://deepswapp.com",
+      "candidate_id": "4c1e28361836cfc3",
+      "title": "Show HN: Ultimidi – learn piano through games",
+      "source_url": "https://game.ultimidi.com/",
       "verified": true,
-      "final_url": "https://deepswapp.com",
+      "final_url": "https://game.ultimidi.com/",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "f72023e340ff9ed7",
-      "title": "Show HN: Claude optimizes mel-band roformer to run 4x faster on Mac",
-      "source_url": "https://github.com/aipdv/fast-melroformer",
+      "candidate_id": "9b9706b09dcadfde",
+      "title": "Show HN: Nord Theme for Cursor",
+      "source_url": "https://github.com/willio/nord-theme-for-cursor",
       "verified": true,
-      "final_url": "https://github.com/aipdv/fast-melroformer",
+      "final_url": "https://github.com/willio/nord-theme-for-cursor",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "ea81990def941358",
-      "title": "itswadesh/gocommerce",
-      "source_url": "https://github.com/itswadesh/gocommerce",
+      "candidate_id": "173e910281dd9255",
+      "title": "Sponsor: Falconer",
+      "source_url": "https://falconer.com/go/1Kfw2Ht",
       "verified": true,
-      "final_url": "https://github.com/itswadesh/gocommerce",
+      "final_url": "https://falconer.com/about/knowledge-health?utm_source=console.dev&utm_medium=newsletter&utm_content=knowledge-health",
       "http_status": 200,
       "reason": ""
     }
   ],
   "rejected_primary_sources": [],
   "daily_draft_cap": 16,
-  "daily_drafts_already_passed": 2,
+  "daily_drafts_already_passed": 3,
   "outcome": "dry_run_passed",
   "decision_reason": "At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.",
   "passing_drafts": [
     {
-      "candidate_id": "ea81990def941358",
-      "title": "itswadesh/gocommerce",
-      "source": "GitHub Search",
-      "source_kind": "github_repository",
-      "url": "https://github.com/itswadesh/gocommerce",
+      "candidate_id": "9b9706b09dcadfde",
+      "title": "Show HN: Nord Theme for Cursor",
+      "source": "Hacker News",
+      "source_kind": "hacker_news",
+      "url": "https://github.com/willio/nord-theme-for-cursor",
       "primary_source_verified": true,
-      "primary_source_title": "GitHub - itswadesh/gocommerce: A composable commerce engine for Go: catalog, carts, checkout, orders, payments and inventory as a library, with an embedded admin panel. One production dependency.",
-      "primary_source_final_url": "https://github.com/itswadesh/gocommerce",
+      "primary_source_title": "GitHub - willio/nord-theme-for-cursor: Nord (Polar Night) glass theme for Cursor — custom theme written to Cursor's theme store, with tested apply/restore/verify scripts",
+      "primary_source_final_url": "https://github.com/willio/nord-theme-for-cursor",
       "primary_source_http_status": 200,
-      "category": "commerce_and_digital_products",
-      "priority_score": 68,
-      "hourly_adjusted_score": 52,
-      "post_text": "gocommerce includes an embedded admin panel for catalog and orders. Test admin panel CRUD routes and data integrity before production use. https://github.com/itswadesh/gocommerce",
-      "fact_sentence": "gocommerce includes an embedded admin panel for catalog and orders.",
+      "category": "product_and_workflow_tools",
+      "priority_score": 56,
+      "hourly_adjusted_score": 58,
+      "post_text": "Nord theme for Cursor offers a low‑contrast glass palette with tested apply/restore scripts. Verify theme persistence after Cursor restarts to catch state bugs. https://github.com/willio/nord-theme-for-cursor",
+      "fact_sentence": "Nord theme for Cursor offers a low‑contrast glass palette with tested apply/restore scripts.",
       "format": "tool_discovery",
       "audience": "developers",
       "angle": "practical_workflow",
-      "rationale": "The repository description confirms the admin panel feature, enabling a focused integration test.",
-      "evidence_quote": "GitHub - itswadesh/gocommerce: A composable commerce engine for Go: catalog, carts, checkout, orders, payments and inventory as a library, with an embedded admin panel.",
-      "editorial_takeaway": "Test admin panel CRUD routes and data integrity before production use.",
+      "rationale": "The source confirms the theme’s tested scripts; persistence testing is a practical validation step.",
+      "evidence_quote": "Nord (Polar Night) glass theme for Cursor — custom theme written to Cursor's theme store, with tested apply/restore/verify scripts",
+      "editorial_takeaway": "Verify theme persistence after Cursor restarts to catch state bugs.",
       "claim_evidence": [
         {
-          "claim": "gocommerce includes an embedded admin panel for catalog and orders.",
-          "quote": "GitHub - itswadesh/gocommerce: A composable commerce engine for Go: catalog, carts, checkout, orders, payments and inventory as a library, with an embedded admin panel."
+          "claim": "Nord theme for Cursor offers a low‑contrast glass palette with tested apply/restore scripts.",
+          "quote": "Nord (Polar Night) glass theme for Cursor — custom theme written to Cursor's theme store, with tested apply/restore/verify scripts"
         }
       ],
       "scores": {
         "timeliness": 8,
-        "usefulness": 9,
+        "usefulness": 8,
         "novelty": 7,
         "evidence": 9,
         "insight": 8
       },
-      "editorial_score": 8.35,
-      "character_count": 178,
+      "editorial_score": 8.1,
+      "character_count": 208,
       "status": "dry_run_passed_not_published",
       "published_to_x": false,
       "editorial_review": {
-        "clarity_score": 9,
-        "technical_coherence_score": 9,
+        "clarity_score": 8,
+        "technical_coherence_score": 8,
         "takeaway_value_score": 8,
-        "source_faithfulness_score": 9,
+        "source_faithfulness_score": 8,
         "originality_score": 8,
-        "reason": "Clear, source-backed claim, useful testing advice, no unsupported assertions.",
+        "reason": "Clear, technically coherent, source‑faithful, and adds a useful verification step.",
         "passed": true
       }
     }
   ],
   "rejected_drafts": [
     {
-      "candidate_id": "267bbe3e5cf85a6a",
-      "title": "Show HN: Deepswapp Browser: browser the browser with another browser",
+      "candidate_id": "4c1e28361836cfc3",
+      "title": "Show HN: Ultimidi – learn piano through games",
       "reasons": [
-        "Unsupported numeric claim(s): 10min"
+        "Supporting quotes cover only 62% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "Deepswapp Browser renders only essential data in a single‑file HTML page. Verify page loads within 10 min and costs $0.40c on deepseek‑v4.1‑flash. https://deepswapp.com",
-      "evidence_quote": "Single-file HTML page Only essential data rendered",
+      "proposed_text": "Ultimidi: Piano Journey lets users learn piano via short lessons and songs. Test lesson progression to ensure difficulty scales linearly. https://game.ultimidi.com/",
+      "evidence_quote": "Learn piano through short lessons, familiar songs, and a colorful musical adventure.",
       "claim_evidence": [
         {
-          "claim": "The source says Deepswapp Browser renders only essential data in a single‑file HTML page",
-          "quote": "Single-file HTML page Only essential data rendered"
+          "claim": "Ultimidi: Piano Journey lets users learn piano via short lessons and songs.",
+          "quote": "Learn piano through short lessons, familiar songs, and a colorful musical adventure."
         }
       ]
     },
     {
-      "candidate_id": "f72023e340ff9ed7",
-      "title": "Show HN: Claude optimizes mel-band roformer to run 4x faster on Mac",
+      "candidate_id": "173e910281dd9255",
+      "title": "Sponsor: Falconer",
       "reasons": [
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
-        "Unsupported numeric claim(s): 3",
-        "Supporting quotes cover only 62% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Fact plus takeaway exceeds the per-link character budget.",
+        "Draft is 285 raw characters; limit is 280"
       ],
-      "proposed_text": "fast‑melroformer achieves 4x real‑time voice separation on an 8 GB M3 MacBook Air. Benchmark the same 3‑minute clip to confirm 4x speed before deployment. https://github.com/aipdv/fast-melroformer",
-      "evidence_quote": "",
+      "proposed_text": "Falconer grades docs on coherence, coverage, freshness, density, and completeness. Run a quarterly audit to catch emerging contradictions before agents use stale data. https://falconer.com/about/knowledge-health?utm_source=console.dev&utm_medium=newsletter&utm_content=knowledge-health",
+      "evidence_quote": "Falconer grades your docs on coherence, coverage, freshness, density, and completeness, surfacing outdated content, gaps, and contradictions before agents act.",
       "claim_evidence": [
         {
-          "claim": "The source says fast‑melroformer achieves 4x real‑time voice separation on an 8 GB M3 MacBook Air",
-          "quote": "at 4x real time on an 8 GB M3 MacBook Air"
+          "claim": "Falconer grades docs on coherence, coverage, freshness, density, and completeness.",
+          "quote": "Falconer grades your docs on coherence, coverage, freshness, density, and completeness, surfacing outdated content, gaps, and contradictions before agents act."
         }
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "267bbe3e5cf85a6a",
-      "title": "Show HN: Deepswapp Browser: browser the browser with another browser",
-      "url": "https://deepswapp.com",
+      "id": "4c1e28361836cfc3",
+      "title": "Show HN: Ultimidi – learn piano through games",
+      "url": "https://game.ultimidi.com/",
       "source": "Hacker News",
       "primary_category": "product_and_workflow_tools",
-      "priority_score": 66,
-      "hourly_adjusted_score": 68,
+      "priority_score": 63,
+      "hourly_adjusted_score": 65,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-26T09:34:54+00:00",
-      "days_old": 0.03,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "f72023e340ff9ed7",
-      "title": "Show HN: Claude optimizes mel-band roformer to run 4x faster on Mac",
-      "url": "https://github.com/aipdv/fast-melroformer",
-      "source": "Hacker News",
-      "primary_category": "product_and_workflow_tools",
-      "priority_score": 58,
-      "hourly_adjusted_score": 60,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-26T09:55:54+00:00",
+      "published_at": "2026-10-26T10:58:23+00:00",
       "days_old": 0.02,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "ea81990def941358",
-      "title": "itswadesh/gocommerce",
-      "url": "https://github.com/itswadesh/gocommerce",
-      "source": "GitHub Search",
-      "primary_category": "commerce_and_digital_products",
-      "priority_score": 68,
-      "hourly_adjusted_score": 52,
-      "stars_current": 7,
+      "id": "9b9706b09dcadfde",
+      "title": "Show HN: Nord Theme for Cursor",
+      "url": "https://github.com/willio/nord-theme-for-cursor",
+      "source": "Hacker News",
+      "primary_category": "product_and_workflow_tools",
+      "priority_score": 56,
+      "hourly_adjusted_score": 58,
+      "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
-      "trend_signal": "insufficient_history",
-      "published_at": "2026-10-26T10:10:07+00:00",
-      "days_old": 0.01,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-26T10:17:29+00:00",
+      "days_old": 0.05,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "173e910281dd9255",
+      "title": "Sponsor: Falconer",
+      "url": "https://falconer.com/about/knowledge-health?utm_source=console.dev&utm_medium=newsletter&utm_content=knowledge-health",
+      "source": "Console.dev",
+      "primary_category": "developer_tools",
+      "priority_score": 49,
+      "hourly_adjusted_score": 49,
+      "stars_current": null,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-22T07:00:00+00:00",
+      "days_old": 4.18,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
@@ -353,56 +353,56 @@
     "automatic_gate": "fail_closed"
   },
   "recommended_draft": {
-    "candidate_id": "ea81990def941358",
-    "title": "itswadesh/gocommerce",
-    "source": "GitHub Search",
-    "source_kind": "github_repository",
-    "url": "https://github.com/itswadesh/gocommerce",
+    "candidate_id": "9b9706b09dcadfde",
+    "title": "Show HN: Nord Theme for Cursor",
+    "source": "Hacker News",
+    "source_kind": "hacker_news",
+    "url": "https://github.com/willio/nord-theme-for-cursor",
     "primary_source_verified": true,
-    "primary_source_title": "GitHub - itswadesh/gocommerce: A composable commerce engine for Go: catalog, carts, checkout, orders, payments and inventory as a library, with an embedded admin panel. One production dependency.",
-    "primary_source_final_url": "https://github.com/itswadesh/gocommerce",
+    "primary_source_title": "GitHub - willio/nord-theme-for-cursor: Nord (Polar Night) glass theme for Cursor — custom theme written to Cursor's theme store, with tested apply/restore/verify scripts",
+    "primary_source_final_url": "https://github.com/willio/nord-theme-for-cursor",
     "primary_source_http_status": 200,
-    "category": "commerce_and_digital_products",
-    "priority_score": 68,
-    "hourly_adjusted_score": 52,
-    "post_text": "gocommerce includes an embedded admin panel for catalog and orders. Test admin panel CRUD routes and data integrity before production use. https://github.com/itswadesh/gocommerce",
-    "fact_sentence": "gocommerce includes an embedded admin panel for catalog and orders.",
+    "category": "product_and_workflow_tools",
+    "priority_score": 56,
+    "hourly_adjusted_score": 58,
+    "post_text": "Nord theme for Cursor offers a low‑contrast glass palette with tested apply/restore scripts. Verify theme persistence after Cursor restarts to catch state bugs. https://github.com/willio/nord-theme-for-cursor",
+    "fact_sentence": "Nord theme for Cursor offers a low‑contrast glass palette with tested apply/restore scripts.",
     "format": "tool_discovery",
     "audience": "developers",
     "angle": "practical_workflow",
-    "rationale": "The repository description confirms the admin panel feature, enabling a focused integration test.",
-    "evidence_quote": "GitHub - itswadesh/gocommerce: A composable commerce engine for Go: catalog, carts, checkout, orders, payments and inventory as a library, with an embedded admin panel.",
-    "editorial_takeaway": "Test admin panel CRUD routes and data integrity before production use.",
+    "rationale": "The source confirms the theme’s tested scripts; persistence testing is a practical validation step.",
+    "evidence_quote": "Nord (Polar Night) glass theme for Cursor — custom theme written to Cursor's theme store, with tested apply/restore/verify scripts",
+    "editorial_takeaway": "Verify theme persistence after Cursor restarts to catch state bugs.",
     "claim_evidence": [
       {
-        "claim": "gocommerce includes an embedded admin panel for catalog and orders.",
-        "quote": "GitHub - itswadesh/gocommerce: A composable commerce engine for Go: catalog, carts, checkout, orders, payments and inventory as a library, with an embedded admin panel."
+        "claim": "Nord theme for Cursor offers a low‑contrast glass palette with tested apply/restore scripts.",
+        "quote": "Nord (Polar Night) glass theme for Cursor — custom theme written to Cursor's theme store, with tested apply/restore/verify scripts"
       }
     ],
     "scores": {
       "timeliness": 8,
-      "usefulness": 9,
+      "usefulness": 8,
       "novelty": 7,
       "evidence": 9,
       "insight": 8
     },
-    "editorial_score": 8.35,
-    "character_count": 178,
+    "editorial_score": 8.1,
+    "character_count": 208,
     "status": "dry_run_passed_not_published",
     "published_to_x": false,
     "editorial_review": {
-      "clarity_score": 9,
-      "technical_coherence_score": 9,
+      "clarity_score": 8,
+      "technical_coherence_score": 8,
       "takeaway_value_score": 8,
-      "source_faithfulness_score": 9,
+      "source_faithfulness_score": 8,
       "originality_score": 8,
-      "reason": "Clear, source-backed claim, useful testing advice, no unsupported assertions.",
+      "reason": "Clear, technically coherent, source‑faithful, and adds a useful verification step.",
       "passed": true
     }
   },
   "state_summary": {
-    "used_candidates_in_cooldown": 15,
-    "recently_attempted_candidates": 25,
-    "recent_draft_passes_today": 3
+    "used_candidates_in_cooldown": 16,
+    "recently_attempted_candidates": 28,
+    "recent_draft_passes_today": 4
   }
 }

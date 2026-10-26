@@ -1,6 +1,6 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-26T15:54:15+05:30
+- Run time (IST): 2026-10-26T16:53:30+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
 - Candidate pool after freshness/diversity filters: 94
@@ -37,46 +37,46 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 81
-- Previously tracked repositories refreshed outside search results: 119
+- Repositories seen in this discovery run: 80
+- Previously tracked repositories refreshed outside search results: 120
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
-- Repositories with a 20–36 hour comparison baseline: 7
+- Repositories with a 20–36 hour comparison baseline: 6
 - First observations are baseline samples, not evidence of trending. Star velocity is reported only when a historical comparison exists.
 
 ## Primary-source verification
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| Show HN: Deepswapp Browser: browser the browser with another browser | yes | 200 | https://deepswapp.com |
-| Show HN: Claude optimizes mel-band roformer to run 4x faster on Mac | yes | 200 | https://github.com/aipdv/fast-melroformer |
-| itswadesh/gocommerce | yes | 200 | https://github.com/itswadesh/gocommerce |
+| Show HN: Ultimidi – learn piano through games | yes | 200 | https://game.ultimidi.com/ |
+| Show HN: Nord Theme for Cursor | yes | 200 | https://github.com/willio/nord-theme-for-cursor |
+| Sponsor: Falconer | yes | 200 | https://falconer.com/about/knowledge-health?utm_source=console.dev&utm_medium=newsletter&utm_content=knowledge-health |
 
 ## Selected draft candidates
 
-### Draft option 1: itswadesh/gocommerce
+### Draft option 1: Show HN: Nord Theme for Cursor
 
-- Category: commerce_and_digital_products
-- Source: GitHub Search
+- Category: product_and_workflow_tools
+- Source: Hacker News
 - Format: tool_discovery
-- Editorial score: 8.35/10
-- Model scores: timeliness 8/10, usefulness 9/10, novelty 7/10, evidence 9/10, insight 8/10
-- Independent editor scores: {"clarity_score": 9, "technical_coherence_score": 9, "takeaway_value_score": 8, "source_faithfulness_score": 9, "originality_score": 8, "reason": "Clear, source-backed claim, useful testing advice, no unsupported assertions.", "passed": true}
-- Live primary page: https://github.com/itswadesh/gocommerce (HTTP 200)
-- Exact source evidence: “GitHub - itswadesh/gocommerce: A composable commerce engine for Go: catalog, carts, checkout, orders, payments and inventory as a library, with an embedded admin panel.”
-- Why this angle: The repository description confirms the admin panel feature, enabling a focused integration test.
-- Editorial takeaway: Test admin panel CRUD routes and data integrity before production use.
-- Source: https://github.com/itswadesh/gocommerce
+- Editorial score: 8.1/10
+- Model scores: timeliness 8/10, usefulness 8/10, novelty 7/10, evidence 9/10, insight 8/10
+- Independent editor scores: {"clarity_score": 8, "technical_coherence_score": 8, "takeaway_value_score": 8, "source_faithfulness_score": 8, "originality_score": 8, "reason": "Clear, technically coherent, source‑faithful, and adds a useful verification step.", "passed": true}
+- Live primary page: https://github.com/willio/nord-theme-for-cursor (HTTP 200)
+- Exact source evidence: “Nord (Polar Night) glass theme for Cursor — custom theme written to Cursor's theme store, with tested apply/restore/verify scripts”
+- Why this angle: The source confirms the theme’s tested scripts; persistence testing is a practical validation step.
+- Editorial takeaway: Verify theme persistence after Cursor restarts to catch state bugs.
+- Source: https://github.com/willio/nord-theme-for-cursor
 
 **Claim-by-claim source quotes:**
 
-- gocommerce includes an embedded admin panel for catalog and orders. ← “GitHub - itswadesh/gocommerce: A composable commerce engine for Go: catalog, carts, checkout, orders, payments and inventory as a library, with an embedded admin panel.”
+- Nord theme for Cursor offers a low‑contrast glass palette with tested apply/restore scripts. ← “Nord (Polar Night) glass theme for Cursor — custom theme written to Cursor's theme store, with tested apply/restore/verify scripts”
 
 Proposed post (not published):
 
-> gocommerce includes an embedded admin panel for catalog and orders. Test admin panel CRUD routes and data integrity before production use. https://github.com/itswadesh/gocommerce
+> Nord theme for Cursor offers a low‑contrast glass palette with tested apply/restore scripts. Verify theme persistence after Cursor restarts to catch state bugs. https://github.com/willio/nord-theme-for-cursor
 
-- Length: 178/280 raw characters
+- Length: 208/280 raw characters
 - Automated gate: passed live source, evidence, originality, URL and length checks; live publishing is disabled in dry-run mode.
 
 ## Automatic repair attempt
@@ -90,19 +90,20 @@ Proposed post (not published):
 
 ## Rejected draft options
 
-- Show HN: Deepswapp Browser: browser the browser with another browser: Unsupported numeric claim(s): 10min
-  - Rejected text: Deepswapp Browser renders only essential data in a single‑file HTML page. Verify page loads within 10 min and costs $0.40c on deepseek‑v4.1‑flash. https://deepswapp.com
-  - Model evidence quote: “Single-file HTML page Only essential data rendered”
-  - Claim support: The source says Deepswapp Browser renders only essential data in a single‑file HTML page ← “Single-file HTML page Only essential data rendered”
-- Show HN: Claude optimizes mel-band roformer to run 4x faster on Mac: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; Unsupported numeric claim(s): 3; Supporting quotes cover only 62% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: fast‑melroformer achieves 4x real‑time voice separation on an 8 GB M3 MacBook Air. Benchmark the same 3‑minute clip to confirm 4x speed before deployment. https://github.com/aipdv/fast-melroformer
-  - Claim support: The source says fast‑melroformer achieves 4x real‑time voice separation on an 8 GB M3 MacBook Air ← “at 4x real time on an 8 GB M3 MacBook Air”
+- Show HN: Ultimidi – learn piano through games: Supporting quotes cover only 62% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: Ultimidi: Piano Journey lets users learn piano via short lessons and songs. Test lesson progression to ensure difficulty scales linearly. https://game.ultimidi.com/
+  - Model evidence quote: “Learn piano through short lessons, familiar songs, and a colorful musical adventure.”
+  - Claim support: Ultimidi: Piano Journey lets users learn piano via short lessons and songs. ← “Learn piano through short lessons, familiar songs, and a colorful musical adventure.”
+- Sponsor: Falconer: The factual opening bundles multiple features; narrow it to one capability.; Fact plus takeaway exceeds the per-link character budget.; Draft is 285 raw characters; limit is 280
+  - Rejected text: Falconer grades docs on coherence, coverage, freshness, density, and completeness. Run a quarterly audit to catch emerging contradictions before agents use stale data. https://falconer.com/about/knowledge-health?utm_source=console.dev&utm_medium=newsletter&utm_content=knowledge-health
+  - Model evidence quote: “Falconer grades your docs on coherence, coverage, freshness, density, and completeness, surfacing outdated content, gaps, and contradictions before agents act.”
+  - Claim support: Falconer grades docs on coherence, coverage, freshness, density, and completeness. ← “Falconer grades your docs on coherence, coverage, freshness, density, and completeness, surfacing outdated content, gaps, and contradictions before agents act.”
 
 ## Top discovery candidates considered
 
-- Show HN: Deepswapp Browser: browser the browser with another browser | Hacker News | product_and_workflow_tools | raw 66, adjusted 68 | https://deepswapp.com
-- Show HN: Claude optimizes mel-band roformer to run 4x faster on Mac | Hacker News | product_and_workflow_tools | raw 58, adjusted 60 | https://github.com/aipdv/fast-melroformer
-- itswadesh/gocommerce | GitHub Search | commerce_and_digital_products | raw 68, adjusted 52 | current stars 7 | GitHub star trend: building baseline | https://github.com/itswadesh/gocommerce
+- Show HN: Ultimidi – learn piano through games | Hacker News | product_and_workflow_tools | raw 63, adjusted 65 | https://game.ultimidi.com/
+- Show HN: Nord Theme for Cursor | Hacker News | product_and_workflow_tools | raw 56, adjusted 58 | https://github.com/willio/nord-theme-for-cursor
+- Sponsor: Falconer | Console.dev | developer_tools | raw 49, adjusted 49 | https://falconer.com/about/knowledge-health?utm_source=console.dev&utm_medium=newsletter&utm_content=knowledge-health
 
 ## Safety and interpretation
 
