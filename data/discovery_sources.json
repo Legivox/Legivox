@@ -40,13 +40,13 @@
     {
       "id": "indie-hackers-feed",
       "name": "Indie Hackers (unofficial feed)",
-      "url": "https://feed.indiehackers.world/posts.rss",
+      "url": "https://ihrss.io/newest",
       "category_hint": "creator_and_indie_business"
     },
     {
       "id": "woocommerce-blog",
       "name": "WooCommerce Blog",
-      "url": "https://woocommerce.com/posts/feed",
+      "url": "https://woocommerce.com/blog/feed/",
       "category_hint": "commerce_and_digital_products"
     }
   ],
