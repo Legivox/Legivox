@@ -195,7 +195,7 @@ def normalize_candidate(
     # Support-ticket IDs are not useful editorial evidence and can unnecessarily
     # amplify a user-specific dispute when the forum page is publicly indexed.
     if source == "Shopify Community" and re.search(
-        r"\\b(?:support\\s+)?ticket\\b[^\\d]{0,20}\\d{4,}\\b",
+        r"\b(?:support\s+)?ticket\b[^\d]{0,20}\d{4,}\b",
         clean_title + " " + summary_text,
         flags=re.I,
     ):
