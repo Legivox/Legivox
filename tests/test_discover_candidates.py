@@ -79,6 +79,38 @@ class DiscoveryHelpersTests(unittest.TestCase):
         self.assertGreaterEqual(weights["Shopify Community"], 12)
         self.assertLessEqual(weights["GitHub Search"], 12)
 
+    def test_wordpress_directory_counts_are_capped_as_weak_signals(self):
+        candidate = discovery.normalize_candidate(
+            source="WordPress Plugin Directory",
+            source_kind="wordpress_plugin",
+            title="Popular digital download and ecommerce plugin",
+            url="https://wordpress.org/plugins/example-plugin/",
+            summary="A plugin with API integrations and automation for online commerce workflows.",
+            published_at=self.now,
+            signals={
+                "active_installs": 1000000,
+                "num_ratings": 100000,
+                "downloaded": 10000000,
+            },
+            config=self.config,
+            now=self.now,
+        )
+        self.assertIsNotNone(candidate)
+        self.assertLessEqual(candidate["score_components"]["public_signal"], 4)
+
+    def test_shopify_support_ticket_ids_are_excluded_from_candidates(self):
+        candidate = discovery.normalize_candidate(
+            source="Shopify Community",
+            source_kind="rss",
+            title="Payments held, support ticket 70982518 open for 12 days",
+            url="https://community.shopify.com/t/example/123",
+            summary="A store owner asks for help with an individual case.",
+            published_at=self.now,
+            config=self.config,
+            now=self.now,
+        )
+        self.assertIsNone(candidate)
+
     def test_wordpress_datetime_parses_official_api_timestamp(self):
         parsed = discovery.parse_wordpress_datetime("2026-10-20 4:15pm GMT")
         self.assertEqual(parsed, "2026-10-20T16:15:00+00:00")
