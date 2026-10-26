@@ -1,9 +1,9 @@
 {
-  "generated_at_ist": "2026-10-26T13:06:20+05:30",
-  "run_at_ist": "2026-10-26T13:06:20+05:30",
+  "generated_at_ist": "2026-10-26T13:58:43+05:30",
+  "run_at_ist": "2026-10-26T13:58:43+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 163,
+  "candidate_count_raw": 166,
   "eligible_candidate_count": 104,
   "source_diagnostics": [
     {
@@ -11,28 +11,28 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4631
+      "total_count": 4640
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 982
+      "total_count": 984
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 348
+      "total_count": 349
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2851
+      "total_count": 2852
     },
     {
       "source": "GitHub Search · github-ecommerce-digital-products",
@@ -46,14 +46,14 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2008
+      "total_count": 2012
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3197
+      "total_count": 3201
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
@@ -72,14 +72,14 @@
     {
       "source": "Hacker News · hn-analytics-growth",
       "kind": "hacker_news",
-      "items_kept": 3,
+      "items_kept": 4,
       "status": "ok",
       "total_count": 10
     },
     {
       "source": "Hacker News · hn-automation-api",
       "kind": "hacker_news",
-      "items_kept": 0,
+      "items_kept": 1,
       "status": "ok",
       "total_count": 10
     },
@@ -145,42 +145,42 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-26T07:36:20+00:00",
+    "observed_at_utc": "2026-10-26T08:28:43+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 81,
-    "previously_tracked_repositories_refreshed": 119,
+    "repositories_seen_in_discovery": 83,
+    "previously_tracked_repositories_refreshed": 117,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
-    "repositories_with_20_to_36_hour_baseline": 10,
+    "repositories_with_20_to_36_hour_baseline": 9,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "d3ffc07a3891c12c",
-      "title": "Show HN: Tabverse – a free, open-source, with self-hostable server Workona clone",
-      "source_url": "https://news.ycombinator.com/item?id=50240121",
+      "candidate_id": "301687e3d4a1ad4d",
+      "title": "gotempsh/temps",
+      "source_url": "https://github.com/gotempsh/temps",
       "verified": true,
-      "final_url": "https://news.ycombinator.com/item?id=50240121",
+      "final_url": "https://github.com/gotempsh/temps",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "bb3b22ee49e68f15",
-      "title": "MikkoParkkola/mcp-gateway",
-      "source_url": "https://github.com/MikkoParkkola/mcp-gateway",
+      "candidate_id": "6317efb1024f9afd",
+      "title": "Show HN: Continue Your Google AI Mode Chats in Gemini/Claude",
+      "source_url": "https://chromewebstore.google.com/detail/relay-continue-google-sea/fjjfadgooapnegipjocinojjhaajghag",
       "verified": true,
-      "final_url": "https://github.com/MikkoParkkola/mcp-gateway",
+      "final_url": "https://chromewebstore.google.com/detail/relay-continue-google-sea/fjjfadgooapnegipjocinojjhaajghag",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "5113f4600cf59250",
-      "title": "chattermate/chattermate.chat",
-      "source_url": "https://github.com/chattermate/chattermate.chat",
+      "candidate_id": "765c0cf4edc3ca27",
+      "title": "Show HN: pw-repl – A Playwright-powered REPL for you and your agents to share",
+      "source_url": "https://github.com/arcanemachine/pw-repl",
       "verified": true,
-      "final_url": "https://github.com/chattermate/chattermate.chat",
+      "final_url": "https://github.com/arcanemachine/pw-repl",
       "http_status": 200,
       "reason": ""
     }
@@ -193,120 +193,179 @@
   "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "5113f4600cf59250",
-      "title": "chattermate/chattermate.chat",
+      "candidate_id": "301687e3d4a1ad4d",
+      "title": "gotempsh/temps",
       "reasons": [
-        "Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration."
+        "The factual opening bundles multiple features; narrow it to one capability."
       ],
-      "proposed_text": "chattermate.chat is an open‑source AI customer support platform with human handoff and Shopify integration. Deploy a test bot and verify Shopify order events trigger chat flows. https://github.com/chattermate/chattermate.chat",
-      "evidence_quote": "Open‑source AI customer support platform — AI chatbot with human handoff, Shopify & Slack integrations",
+      "proposed_text": "temps is a Rust binary offering 440+ CLI ops with drop‑in skills for Claude Code, Codex & OpenCode. Run a sample deployment CLI to verify skill integration before production. https://github.com/gotempsh/temps",
+      "evidence_quote": "AI-native open-source alternative to Vercel + Sentry + PostHog + Pingdom + Resend + E2B. 440+ CLI operations with drop-in skills for Claude Code, Codex & OpenCode — deployments, analytics, session replay, error tracking, OpenTelemetry, email, sandboxes & AI gateway in one self-hosted Rust binary.",
       "claim_evidence": [
         {
-          "claim": "chattermate.chat is an open‑source AI customer support platform with human handoff and Shopify integration",
-          "quote": "Open‑source AI customer support platform — AI chatbot with human handoff, Shopify & Slack integrations"
+          "claim": "temps is a Rust binary offering 440+ CLI ops with drop‑in skills for Claude Code, Codex & OpenCode.",
+          "quote": "AI-native open-source alternative to Vercel + Sentry + PostHog + Pingdom + Resend + E2B. 440+ CLI operations with drop-in skills for Claude Code, Codex & OpenCode — deployments, analytics, session replay, error tracking, OpenTelemetry, email, sandboxes & AI gateway in one self-hosted Rust binary."
         }
       ]
     },
     {
-      "candidate_id": "d3ffc07a3891c12c",
-      "title": "Show HN: Tabverse – a free, open-source, with self-hostable server Workona clone",
-      "proposed_text": "Tabverse is a local‑first Workona‑like Chrome extension for managing tabs. Test tab persistence across restarts to confirm local‑first behavior. https://news.ycombinator.com/item?id=50240121",
+      "candidate_id": null,
+      "title": "Unmapped model draft",
+      "proposed_text": "",
       "reasons": [
-        "Originality too low; post merely restates headline and basic claim without new insight."
-      ],
-      "editorial_review": {
-        "clarity_score": 8,
-        "technical_coherence_score": 8,
-        "takeaway_value_score": 7,
-        "source_faithfulness_score": 9,
-        "originality_score": 5
-      }
+        "Model omitted a valid candidate ID and no exact verified source URL matched."
+      ]
     },
     {
-      "candidate_id": "bb3b22ee49e68f15",
-      "title": "MikkoParkkola/mcp-gateway",
-      "proposed_text": "mcp‑gateway is a self‑hosted MCP gateway and proxy in one Rust binary. Run a simple tool call through the gateway to verify constant context cost. https://github.com/MikkoParkkola/mcp-gateway",
+      "candidate_id": "6317efb1024f9afd",
+      "title": "Show HN: Continue Your Google AI Mode Chats in Gemini/Claude",
       "reasons": [
-        "Originality too low; post repeats headline and basic claim without added perspective."
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
       ],
-      "editorial_review": {
-        "clarity_score": 8,
-        "technical_coherence_score": 8,
-        "takeaway_value_score": 7,
-        "source_faithfulness_score": 9,
-        "originality_score": 5
-      }
+      "proposed_text": "Relay extension lets you continue a Google AI Mode chat into Gemini/Claude. Click the \"Relay: Continue in\" button after the conversation finishes to embed the chat context. https://chromewebstore.google.com/detail/relay-continue-google-sea/fjjfadgooapnegipjocinojjhaajghag",
+      "evidence_quote": "Continue a Google AI Mode chat in Gemini/Claude (ChatGPT support coming soon)",
+      "claim_evidence": [
+        {
+          "claim": "Relay extension lets you continue a Google AI Mode chat into Gemini/Claude.",
+          "quote": "Continue a Google AI Mode chat in Gemini/Claude (ChatGPT support coming soon)"
+        }
+      ]
     },
     {
-      "candidate_id": "d3ffc07a3891c12c",
-      "title": "Show HN: Tabverse – a free, open-source, with self-hostable server Workona clone",
+      "candidate_id": null,
+      "title": "Unmapped model draft",
+      "proposed_text": "",
       "reasons": [
-        "No claim-by-claim supporting evidence was provided",
-        "Unsupported strong claim: unlimited",
-        "Supporting quotes cover only 30% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Model omitted a valid candidate ID and no exact verified source URL matched."
+      ]
+    },
+    {
+      "candidate_id": "765c0cf4edc3ca27",
+      "title": "Show HN: pw-repl – A Playwright-powered REPL for you and your agents to share",
+      "reasons": [
+        "Fact sentence is too long; narrow it to one source-backed capability."
       ],
-      "proposed_text": "Tabverse is a local‑first Chrome extension that lets you create unlimited tab spaces without a server. Verify that tabs remain open after a browser restart to confirm local‑first persistence. https://news.ycombinator.com/item?id=50240121",
-      "evidence_quote": "The only limit is your local storage spaces so that you can have as many spaces(I call tabverse) as you can.",
+      "proposed_text": "pw-repl is a Playwright-powered swiss‑army knife that harnesses the Chrome Debug Protocol in an existing or headless browser session. Use pw-repl to attach to a running Chrome instance for debugging agent interactions. https://github.com/arcanemachine/pw-repl",
+      "evidence_quote": "A Playwright-powered swiss-army knife that lets you and your agents harness the power of the Chrome Debug Protocol in your existing browser session, or a headless one.",
+      "claim_evidence": [
+        {
+          "claim": "pw-repl is a Playwright-powered swiss‑army knife that harnesses the Chrome Debug Protocol in an existing or headless browser session.",
+          "quote": "A Playwright-powered swiss-army knife that lets you and your agents harness the power of the Chrome Debug Protocol in your existing browser session, or a headless one."
+        }
+      ]
+    },
+    {
+      "candidate_id": "6317efb1024f9afd",
+      "title": "Show HN: Continue Your Google AI Mode Chats in Gemini/Claude",
+      "reasons": [
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
+      ],
+      "proposed_text": "Relay extension continues Google AI Mode chat into Gemini. Click \"Relay: Continue in\" after chat ends to embed context. https://chromewebstore.google.com/detail/relay-continue-google-sea/fjjfadgooapnegipjocinojjhaajghag",
+      "evidence_quote": "Continue a Google AI Mode chat in Gemini/Claude (ChatGPT support coming soon)",
       "automatic_repair_attempt": true,
       "original_rejection_reasons": [
-        "Originality too low; post merely restates headline and basic claim without new insight."
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
+      ]
+    },
+    {
+      "candidate_id": "765c0cf4edc3ca27",
+      "title": "Show HN: pw-repl – A Playwright-powered REPL for you and your agents to share",
+      "reasons": [
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
+        "No claim-by-claim supporting evidence was provided",
+        "Factual sentence includes terms absent from the source title/summary: attach, instance"
+      ],
+      "proposed_text": "pw-repl lets you attach to a running Chrome instance. Use \"pw-repl attach\" to debug an agent in a live browser. https://github.com/arcanemachine/pw-repl",
+      "evidence_quote": "A Playwright-powered swiss‑army knife that lets you and your agents harness the power of the Chrome Debug Protocol in your existing browser session, or a headless one",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "Fact sentence is too long; narrow it to one source-backed capability."
+      ]
+    },
+    {
+      "candidate_id": "301687e3d4a1ad4d",
+      "title": "gotempsh/temps",
+      "proposed_text": "temps is a Rust binary that offers 440+ CLI operations. Run \"temps deploy\" to confirm the deployment CLI works. https://github.com/gotempsh/temps",
+      "reasons": [
+        "Post restates headline facts without adding new insight; originality below threshold."
+      ],
+      "editorial_review": {
+        "clarity_score": 8,
+        "technical_coherence_score": 8,
+        "takeaway_value_score": 8,
+        "source_faithfulness_score": 8,
+        "originality_score": 5
+      }
+    },
+    {
+      "candidate_id": "301687e3d4a1ad4d",
+      "title": "gotempsh/temps",
+      "reasons": [
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
+      ],
+      "proposed_text": "temps is a Rust binary that offers 440+ CLI operations. Use temps to collect OpenTelemetry traces in a self-hosted Rust environment. https://github.com/gotempsh/temps",
+      "evidence_quote": "OpenTelemetry",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "Post restates headline facts without adding new insight; originality below threshold."
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "d3ffc07a3891c12c",
-      "title": "Show HN: Tabverse – a free, open-source, with self-hostable server Workona clone",
-      "url": "https://news.ycombinator.com/item?id=50240121",
-      "source": "Hacker News",
-      "primary_category": "product_and_workflow_tools",
-      "priority_score": 71,
-      "hourly_adjusted_score": 71,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-26T07:04:15+00:00",
-      "days_old": 0.02,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "bb3b22ee49e68f15",
-      "title": "MikkoParkkola/mcp-gateway",
-      "url": "https://github.com/MikkoParkkola/mcp-gateway",
+      "id": "301687e3d4a1ad4d",
+      "title": "gotempsh/temps",
+      "url": "https://github.com/gotempsh/temps",
       "source": "GitHub Search",
-      "primary_category": "security_and_self_hosting",
-      "priority_score": 75,
-      "hourly_adjusted_score": 69,
-      "stars_current": 85,
+      "primary_category": "data_and_growth",
+      "priority_score": 74,
+      "hourly_adjusted_score": 68,
+      "stars_current": 869,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "insufficient_history",
-      "published_at": "2026-10-26T07:36:48+00:00",
+      "published_at": "2026-10-26T08:27:43+00:00",
       "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "5113f4600cf59250",
-      "title": "chattermate/chattermate.chat",
-      "url": "https://github.com/chattermate/chattermate.chat",
-      "source": "GitHub Search",
-      "primary_category": "commerce_and_digital_products",
-      "priority_score": 72,
-      "hourly_adjusted_score": 66,
-      "stars_current": 148,
+      "id": "6317efb1024f9afd",
+      "title": "Show HN: Continue Your Google AI Mode Chats in Gemini/Claude",
+      "url": "https://chromewebstore.google.com/detail/relay-continue-google-sea/fjjfadgooapnegipjocinojjhaajghag",
+      "source": "Hacker News",
+      "primary_category": "product_and_workflow_tools",
+      "priority_score": 65,
+      "hourly_adjusted_score": 67,
+      "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
-      "trend_signal": "insufficient_history",
-      "published_at": "2026-10-26T07:11:03+00:00",
-      "days_old": 0.02,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-26T07:35:56+00:00",
+      "days_old": 0.04,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "765c0cf4edc3ca27",
+      "title": "Show HN: pw-repl – A Playwright-powered REPL for you and your agents to share",
+      "url": "https://github.com/arcanemachine/pw-repl",
+      "source": "Hacker News",
+      "primary_category": "product_and_workflow_tools",
+      "priority_score": 62,
+      "hourly_adjusted_score": 64,
+      "stars_current": null,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-26T07:28:33+00:00",
+      "days_old": 0.04,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
@@ -314,26 +373,26 @@
   ],
   "automatic_repair": {
     "attempted": true,
-    "drafts_submitted": 1,
-    "repaired_local_passes": 0,
-    "repair_rejections": 1,
+    "drafts_submitted": 4,
+    "repaired_local_passes": 1,
+    "repair_rejections": 3,
     "repair_error": null,
     "editorial_repair_attempted": true,
     "editorial_repair_drafts_submitted": 1,
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 2,
-    "submitted_for_independent_review": 2,
+    "locally_valid_drafts": 1,
+    "submitted_for_independent_review": 1,
     "passed_independent_review": 0,
-    "rejected_by_independent_review": 2,
+    "rejected_by_independent_review": 1,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
   "state_summary": {
     "used_candidates_in_cooldown": 13,
-    "recently_attempted_candidates": 16,
+    "recently_attempted_candidates": 19,
     "recent_draft_passes_today": 1
   }
 }

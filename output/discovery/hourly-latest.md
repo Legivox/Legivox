@@ -1,10 +1,10 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-26T13:06:20+05:30
+- Run time (IST): 2026-10-26T13:58:43+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
 - Candidate pool after freshness/diversity filters: 104
-- Independent editorial review: 0 draft(s) passed / 2 rejected
+- Independent editorial review: 0 draft(s) passed / 1 rejected
 - Drafts passing local checks: 0
 - Outcome: **skip**
 - Decision reason: Every draft submitted for independent editorial review was rejected; The hour was skipped.
@@ -22,8 +22,8 @@
 | GitHub Search · github-self-hosted | 10 | ok |
 | GitHub Search · github-shopify-commerce | 10 | ok |
 | GitHub Search · github-workflow-automation | 10 | ok |
-| Hacker News · hn-analytics-growth | 3 | ok |
-| Hacker News · hn-automation-api | 0 | ok |
+| Hacker News · hn-analytics-growth | 4 | ok |
+| Hacker News · hn-automation-api | 1 | ok |
 | Hacker News · hn-creator-business | 0 | ok |
 | Hacker News · hn-digital-products | 1 | ok |
 | Hacker News · hn-ecommerce-payments | 0 | ok |
@@ -37,20 +37,20 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 81
-- Previously tracked repositories refreshed outside search results: 119
+- Repositories seen in this discovery run: 83
+- Previously tracked repositories refreshed outside search results: 117
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
-- Repositories with a 20–36 hour comparison baseline: 10
+- Repositories with a 20–36 hour comparison baseline: 9
 - First observations are baseline samples, not evidence of trending. Star velocity is reported only when a historical comparison exists.
 
 ## Primary-source verification
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| Show HN: Tabverse – a free, open-source, with self-hostable server Workona clone | yes | 200 | https://news.ycombinator.com/item?id=50240121 |
-| MikkoParkkola/mcp-gateway | yes | 200 | https://github.com/MikkoParkkola/mcp-gateway |
-| chattermate/chattermate.chat | yes | 200 | https://github.com/chattermate/chattermate.chat |
+| gotempsh/temps | yes | 200 | https://github.com/gotempsh/temps |
+| Show HN: Continue Your Google AI Mode Chats in Gemini/Claude | yes | 200 | https://chromewebstore.google.com/detail/relay-continue-google-sea/fjjfadgooapnegipjocinojjhaajghag |
+| Show HN: pw-repl – A Playwright-powered REPL for you and your agents to share | yes | 200 | https://github.com/arcanemachine/pw-repl |
 
 ## Selected draft candidates
 
@@ -59,31 +59,45 @@ No draft cleared the complete local and independent-editor gate. See the decisio
 ## Automatic repair attempt
 
 - Attempted: yes
-- Repaired drafts submitted: 1
-- Repaired drafts that passed local validation: 0
-- Repaired drafts rejected: 1
+- Repaired drafts submitted: 4
+- Repaired drafts that passed local validation: 1
+- Repaired drafts rejected: 3
 - Repair error: none
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
-- chattermate/chattermate.chat: Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.
-  - Rejected text: chattermate.chat is an open‑source AI customer support platform with human handoff and Shopify integration. Deploy a test bot and verify Shopify order events trigger chat flows. https://github.com/chattermate/chattermate.chat
-  - Model evidence quote: “Open‑source AI customer support platform — AI chatbot with human handoff, Shopify & Slack integrations”
-  - Claim support: chattermate.chat is an open‑source AI customer support platform with human handoff and Shopify integration ← “Open‑source AI customer support platform — AI chatbot with human handoff, Shopify & Slack integrations”
-- Show HN: Tabverse – a free, open-source, with self-hostable server Workona clone: Originality too low; post merely restates headline and basic claim without new insight.
-  - Rejected text: Tabverse is a local‑first Workona‑like Chrome extension for managing tabs. Test tab persistence across restarts to confirm local‑first behavior. https://news.ycombinator.com/item?id=50240121
-- MikkoParkkola/mcp-gateway: Originality too low; post repeats headline and basic claim without added perspective.
-  - Rejected text: mcp‑gateway is a self‑hosted MCP gateway and proxy in one Rust binary. Run a simple tool call through the gateway to verify constant context cost. https://github.com/MikkoParkkola/mcp-gateway
-- Show HN: Tabverse – a free, open-source, with self-hostable server Workona clone: No claim-by-claim supporting evidence was provided; Unsupported strong claim: unlimited; Supporting quotes cover only 30% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: Tabverse is a local‑first Chrome extension that lets you create unlimited tab spaces without a server. Verify that tabs remain open after a browser restart to confirm local‑first persistence. https://news.ycombinator.com/item?id=50240121
-  - Model evidence quote: “The only limit is your local storage spaces so that you can have as many spaces(I call tabverse) as you can.”
+- gotempsh/temps: The factual opening bundles multiple features; narrow it to one capability.
+  - Rejected text: temps is a Rust binary offering 440+ CLI ops with drop‑in skills for Claude Code, Codex & OpenCode. Run a sample deployment CLI to verify skill integration before production. https://github.com/gotempsh/temps
+  - Model evidence quote: “AI-native open-source alternative to Vercel + Sentry + PostHog + Pingdom + Resend + E2B. 440+ CLI operations with drop-in skills for Claude Code, Codex & OpenCode — deployments, analytics, session replay, error tracking, OpenTelemetry, email, sandboxes & AI gateway in one self-hosted Rust binary.”
+  - Claim support: temps is a Rust binary offering 440+ CLI ops with drop‑in skills for Claude Code, Codex & OpenCode. ← “AI-native open-source alternative to Vercel + Sentry + PostHog + Pingdom + Resend + E2B. 440+ CLI operations with drop-in skills for Claude Code, Codex & OpenCode — deployments, analytics, session replay, error tracking, OpenTelemetry, email, sandboxes & AI gateway in one self-hosted Rust binary.”
+- Unmapped model draft: Model omitted a valid candidate ID and no exact verified source URL matched.
+- Show HN: Continue Your Google AI Mode Chats in Gemini/Claude: Editorial takeaway is too long; keep the analysis concrete and concise.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
+  - Rejected text: Relay extension lets you continue a Google AI Mode chat into Gemini/Claude. Click the "Relay: Continue in" button after the conversation finishes to embed the chat context. https://chromewebstore.google.com/detail/relay-continue-google-sea/fjjfadgooapnegipjocinojjhaajghag
+  - Model evidence quote: “Continue a Google AI Mode chat in Gemini/Claude (ChatGPT support coming soon)”
+  - Claim support: Relay extension lets you continue a Google AI Mode chat into Gemini/Claude. ← “Continue a Google AI Mode chat in Gemini/Claude (ChatGPT support coming soon)”
+- Unmapped model draft: Model omitted a valid candidate ID and no exact verified source URL matched.
+- Show HN: pw-repl – A Playwright-powered REPL for you and your agents to share: Fact sentence is too long; narrow it to one source-backed capability.
+  - Rejected text: pw-repl is a Playwright-powered swiss‑army knife that harnesses the Chrome Debug Protocol in an existing or headless browser session. Use pw-repl to attach to a running Chrome instance for debugging agent interactions. https://github.com/arcanemachine/pw-repl
+  - Model evidence quote: “A Playwright-powered swiss-army knife that lets you and your agents harness the power of the Chrome Debug Protocol in your existing browser session, or a headless one.”
+  - Claim support: pw-repl is a Playwright-powered swiss‑army knife that harnesses the Chrome Debug Protocol in an existing or headless browser session. ← “A Playwright-powered swiss-army knife that lets you and your agents harness the power of the Chrome Debug Protocol in your existing browser session, or a headless one.”
+- Show HN: Continue Your Google AI Mode Chats in Gemini/Claude: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
+  - Rejected text: Relay extension continues Google AI Mode chat into Gemini. Click "Relay: Continue in" after chat ends to embed context. https://chromewebstore.google.com/detail/relay-continue-google-sea/fjjfadgooapnegipjocinojjhaajghag
+  - Model evidence quote: “Continue a Google AI Mode chat in Gemini/Claude (ChatGPT support coming soon)”
+- Show HN: pw-repl – A Playwright-powered REPL for you and your agents to share: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; No claim-by-claim supporting evidence was provided; Factual sentence includes terms absent from the source title/summary: attach, instance
+  - Rejected text: pw-repl lets you attach to a running Chrome instance. Use "pw-repl attach" to debug an agent in a live browser. https://github.com/arcanemachine/pw-repl
+  - Model evidence quote: “A Playwright-powered swiss‑army knife that lets you and your agents harness the power of the Chrome Debug Protocol in your existing browser session, or a headless one”
+- gotempsh/temps: Post restates headline facts without adding new insight; originality below threshold.
+  - Rejected text: temps is a Rust binary that offers 440+ CLI operations. Run "temps deploy" to confirm the deployment CLI works. https://github.com/gotempsh/temps
+- gotempsh/temps: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
+  - Rejected text: temps is a Rust binary that offers 440+ CLI operations. Use temps to collect OpenTelemetry traces in a self-hosted Rust environment. https://github.com/gotempsh/temps
+  - Model evidence quote: “OpenTelemetry”
 
 ## Top discovery candidates considered
 
-- Show HN: Tabverse – a free, open-source, with self-hostable server Workona clone | Hacker News | product_and_workflow_tools | raw 71, adjusted 71 | https://news.ycombinator.com/item?id=50240121
-- MikkoParkkola/mcp-gateway | GitHub Search | security_and_self_hosting | raw 75, adjusted 69 | current stars 85 | GitHub star trend: building baseline | https://github.com/MikkoParkkola/mcp-gateway
-- chattermate/chattermate.chat | GitHub Search | commerce_and_digital_products | raw 72, adjusted 66 | current stars 148 | GitHub star trend: building baseline | https://github.com/chattermate/chattermate.chat
+- gotempsh/temps | GitHub Search | data_and_growth | raw 74, adjusted 68 | current stars 869 | GitHub star trend: building baseline | https://github.com/gotempsh/temps
+- Show HN: Continue Your Google AI Mode Chats in Gemini/Claude | Hacker News | product_and_workflow_tools | raw 65, adjusted 67 | https://chromewebstore.google.com/detail/relay-continue-google-sea/fjjfadgooapnegipjocinojjhaajghag
+- Show HN: pw-repl – A Playwright-powered REPL for you and your agents to share | Hacker News | product_and_workflow_tools | raw 62, adjusted 64 | https://github.com/arcanemachine/pw-repl
 
 ## Safety and interpretation
 
