@@ -1,66 +1,66 @@
 {
-  "generated_at_ist": "2026-10-26T14:55:00+05:30",
-  "run_at_ist": "2026-10-26T14:55:00+05:30",
+  "generated_at_ist": "2026-10-26T15:54:15+05:30",
+  "run_at_ist": "2026-10-26T15:54:15+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
   "candidate_count_raw": 164,
-  "eligible_candidate_count": 95,
+  "eligible_candidate_count": 94,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4654
+      "total_count": 4662
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 987
+      "total_count": 991
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 352
+      "total_count": 353
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2857
+      "total_count": 2859
     },
     {
       "source": "GitHub Search · github-ecommerce-digital-products",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 406
+      "total_count": 408
     },
     {
       "source": "GitHub Search · github-mcp-servers",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2020
+      "total_count": 2026
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3207
+      "total_count": 3210
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 123
+      "total_count": 124
     },
     {
       "source": "GitHub Search · github-workflow-automation",
@@ -145,7 +145,7 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-26T09:25:00+00:00",
+    "observed_at_utc": "2026-10-26T10:24:15+00:00",
     "tracked_repositories": 200,
     "repositories_seen_in_discovery": 81,
     "previously_tracked_repositories_refreshed": 119,
@@ -158,64 +158,64 @@
   },
   "primary_source_checks": [
     {
-      "candidate_id": "4a07de1a6b6420d6",
-      "title": "spatiumnorth/spatiumddi",
-      "source_url": "https://github.com/spatiumnorth/spatiumddi",
+      "candidate_id": "267bbe3e5cf85a6a",
+      "title": "Show HN: Deepswapp Browser: browser the browser with another browser",
+      "source_url": "https://deepswapp.com",
       "verified": true,
-      "final_url": "https://github.com/spatiumnorth/spatiumddi",
+      "final_url": "https://deepswapp.com",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "ecd16914a4ca2477",
-      "title": "open-edge-platform/dlstreamer",
-      "source_url": "https://github.com/open-edge-platform/dlstreamer",
+      "candidate_id": "f72023e340ff9ed7",
+      "title": "Show HN: Claude optimizes mel-band roformer to run 4x faster on Mac",
+      "source_url": "https://github.com/aipdv/fast-melroformer",
       "verified": true,
-      "final_url": "https://github.com/open-edge-platform/dlstreamer",
+      "final_url": "https://github.com/aipdv/fast-melroformer",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "790af130bfe78c59",
-      "title": "Show HN: ShellSprint – A typing game-ish for Linux and Kubernetes commands",
-      "source_url": "https://shellsprint-dev.pages.dev",
+      "candidate_id": "ea81990def941358",
+      "title": "itswadesh/gocommerce",
+      "source_url": "https://github.com/itswadesh/gocommerce",
       "verified": true,
-      "final_url": "https://shellsprint-dev.pages.dev",
+      "final_url": "https://github.com/itswadesh/gocommerce",
       "http_status": 200,
       "reason": ""
     }
   ],
   "rejected_primary_sources": [],
   "daily_draft_cap": 16,
-  "daily_drafts_already_passed": 1,
+  "daily_drafts_already_passed": 2,
   "outcome": "dry_run_passed",
   "decision_reason": "At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.",
   "passing_drafts": [
     {
-      "candidate_id": "ecd16914a4ca2477",
-      "title": "open-edge-platform/dlstreamer",
+      "candidate_id": "ea81990def941358",
+      "title": "itswadesh/gocommerce",
       "source": "GitHub Search",
       "source_kind": "github_repository",
-      "url": "https://github.com/open-edge-platform/dlstreamer",
+      "url": "https://github.com/itswadesh/gocommerce",
       "primary_source_verified": true,
-      "primary_source_title": "GitHub - open-edge-platform/dlstreamer: Deep Learning Streamer (DL Streamer) Pipeline Framework is an open-source streaming media analytics framework, based on GStreamer* multimedia framework, for creating complex media analytics pipelines for the Cloud or at the Edge.",
-      "primary_source_final_url": "https://github.com/open-edge-platform/dlstreamer",
+      "primary_source_title": "GitHub - itswadesh/gocommerce: A composable commerce engine for Go: catalog, carts, checkout, orders, payments and inventory as a library, with an embedded admin panel. One production dependency.",
+      "primary_source_final_url": "https://github.com/itswadesh/gocommerce",
       "primary_source_http_status": 200,
-      "category": "data_and_growth",
-      "priority_score": 67,
-      "hourly_adjusted_score": 61,
-      "post_text": "dlstreamer builds media analytics pipelines on GStreamer. Validate pipeline latency by measuring end‑to‑end frame timestamps. https://github.com/open-edge-platform/dlstreamer",
-      "fact_sentence": "dlstreamer builds media analytics pipelines on GStreamer.",
+      "category": "commerce_and_digital_products",
+      "priority_score": 68,
+      "hourly_adjusted_score": 52,
+      "post_text": "gocommerce includes an embedded admin panel for catalog and orders. Test admin panel CRUD routes and data integrity before production use. https://github.com/itswadesh/gocommerce",
+      "fact_sentence": "gocommerce includes an embedded admin panel for catalog and orders.",
       "format": "tool_discovery",
       "audience": "developers",
-      "angle": "engineering_lesson",
-      "rationale": "Highlights GStreamer integration",
-      "evidence_quote": "GitHub - open-edge-platform/dlstreamer: Deep Learning Streamer (DL Streamer) Pipeline Framework is an open-source streaming media analytics framework, based on GStreamer* multimedia framework, for creating complex media analytics pipelines",
-      "editorial_takeaway": "Validate pipeline latency by measuring end‑to‑end frame timestamps.",
+      "angle": "practical_workflow",
+      "rationale": "The repository description confirms the admin panel feature, enabling a focused integration test.",
+      "evidence_quote": "GitHub - itswadesh/gocommerce: A composable commerce engine for Go: catalog, carts, checkout, orders, payments and inventory as a library, with an embedded admin panel.",
+      "editorial_takeaway": "Test admin panel CRUD routes and data integrity before production use.",
       "claim_evidence": [
         {
-          "claim": "dlstreamer builds media analytics pipelines on GStreamer.",
-          "quote": "GitHub - open-edge-platform/dlstreamer: Deep Learning Streamer (DL Streamer) Pipeline Framework is an open-source streaming media analytics framework, based on GStreamer* multimedia framework, for creating complex media analytics pipelines"
+          "claim": "gocommerce includes an embedded admin panel for catalog and orders.",
+          "quote": "GitHub - itswadesh/gocommerce: A composable commerce engine for Go: catalog, carts, checkout, orders, payments and inventory as a library, with an embedded admin panel."
         }
       ],
       "scores": {
@@ -226,108 +226,108 @@
         "insight": 8
       },
       "editorial_score": 8.35,
-      "character_count": 174,
+      "character_count": 178,
       "status": "dry_run_passed_not_published",
       "published_to_x": false,
       "editorial_review": {
-        "clarity_score": 8,
-        "technical_coherence_score": 7,
-        "takeaway_value_score": 7,
-        "source_faithfulness_score": 8,
-        "originality_score": 7,
-        "reason": "Clear description, source backs claim, added practical latency check is a useful, original tip.",
+        "clarity_score": 9,
+        "technical_coherence_score": 9,
+        "takeaway_value_score": 8,
+        "source_faithfulness_score": 9,
+        "originality_score": 8,
+        "reason": "Clear, source-backed claim, useful testing advice, no unsupported assertions.",
         "passed": true
       }
     }
   ],
   "rejected_drafts": [
     {
-      "candidate_id": "4a07de1a6b6420d6",
-      "title": "spatiumnorth/spatiumddi",
+      "candidate_id": "267bbe3e5cf85a6a",
+      "title": "Show HN: Deepswapp Browser: browser the browser with another browser",
       "reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability."
+        "Unsupported numeric claim(s): 10min"
       ],
-      "proposed_text": "spatiumddi runs its own BIND9, PowerDNS, and Kea containers. Test DNS consistency by querying each container after deployment. https://github.com/spatiumnorth/spatiumddi",
-      "evidence_quote": "Runs its own BIND9 / PowerDNS / Kea service containers",
+      "proposed_text": "Deepswapp Browser renders only essential data in a single‑file HTML page. Verify page loads within 10 min and costs $0.40c on deepseek‑v4.1‑flash. https://deepswapp.com",
+      "evidence_quote": "Single-file HTML page Only essential data rendered",
       "claim_evidence": [
         {
-          "claim": "spatiumddi runs its own BIND9, PowerDNS, and Kea containers",
-          "quote": "Runs its own BIND9 / PowerDNS / Kea service containers"
+          "claim": "The source says Deepswapp Browser renders only essential data in a single‑file HTML page",
+          "quote": "Single-file HTML page Only essential data rendered"
         }
       ]
     },
     {
-      "candidate_id": "790af130bfe78c59",
-      "title": "Show HN: ShellSprint – A typing game-ish for Linux and Kubernetes commands",
+      "candidate_id": "f72023e340ff9ed7",
+      "title": "Show HN: Claude optimizes mel-band roformer to run 4x faster on Mac",
       "reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability.",
         "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
-        "Supporting quotes cover only 56% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Unsupported numeric claim(s): 3",
+        "Supporting quotes cover only 62% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "ShellSprint offers typing lessons for Linux, Rancher, Podman, Ansible, and Kubernetes. Track accuracy over time to spot command recall gaps. https://shellsprint-dev.pages.dev",
-      "evidence_quote": "Practice Linux, Rancher RKE2, Podman, Ansible and Kubernetes commands",
+      "proposed_text": "fast‑melroformer achieves 4x real‑time voice separation on an 8 GB M3 MacBook Air. Benchmark the same 3‑minute clip to confirm 4x speed before deployment. https://github.com/aipdv/fast-melroformer",
+      "evidence_quote": "",
       "claim_evidence": [
         {
-          "claim": "ShellSprint offers typing lessons for Linux, Rancher, Podman, Ansible, and Kubernetes",
-          "quote": "Practice Linux, Rancher RKE2, Podman, Ansible and Kubernetes commands"
+          "claim": "The source says fast‑melroformer achieves 4x real‑time voice separation on an 8 GB M3 MacBook Air",
+          "quote": "at 4x real time on an 8 GB M3 MacBook Air"
         }
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "4a07de1a6b6420d6",
-      "title": "spatiumnorth/spatiumddi",
-      "url": "https://github.com/spatiumnorth/spatiumddi",
-      "source": "GitHub Search",
-      "primary_category": "security_and_self_hosting",
-      "priority_score": 71,
-      "hourly_adjusted_score": 65,
-      "stars_current": 71,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "insufficient_history",
-      "published_at": "2026-10-26T09:24:29+00:00",
-      "days_old": 0.0,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "ecd16914a4ca2477",
-      "title": "open-edge-platform/dlstreamer",
-      "url": "https://github.com/open-edge-platform/dlstreamer",
-      "source": "GitHub Search",
-      "primary_category": "data_and_growth",
-      "priority_score": 67,
-      "hourly_adjusted_score": 61,
-      "stars_current": 643,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "insufficient_history",
-      "published_at": "2026-10-26T09:25:27+00:00",
-      "days_old": 0.0,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "790af130bfe78c59",
-      "title": "Show HN: ShellSprint – A typing game-ish for Linux and Kubernetes commands",
-      "url": "https://shellsprint-dev.pages.dev",
+      "id": "267bbe3e5cf85a6a",
+      "title": "Show HN: Deepswapp Browser: browser the browser with another browser",
+      "url": "https://deepswapp.com",
       "source": "Hacker News",
       "primary_category": "product_and_workflow_tools",
-      "priority_score": 56,
-      "hourly_adjusted_score": 58,
+      "priority_score": 66,
+      "hourly_adjusted_score": 68,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-26T08:18:10+00:00",
-      "days_old": 0.05,
+      "published_at": "2026-10-26T09:34:54+00:00",
+      "days_old": 0.03,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "f72023e340ff9ed7",
+      "title": "Show HN: Claude optimizes mel-band roformer to run 4x faster on Mac",
+      "url": "https://github.com/aipdv/fast-melroformer",
+      "source": "Hacker News",
+      "primary_category": "product_and_workflow_tools",
+      "priority_score": 58,
+      "hourly_adjusted_score": 60,
+      "stars_current": null,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-26T09:55:54+00:00",
+      "days_old": 0.02,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "ea81990def941358",
+      "title": "itswadesh/gocommerce",
+      "url": "https://github.com/itswadesh/gocommerce",
+      "source": "GitHub Search",
+      "primary_category": "commerce_and_digital_products",
+      "priority_score": 68,
+      "hourly_adjusted_score": 52,
+      "stars_current": 7,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "insufficient_history",
+      "published_at": "2026-10-26T10:10:07+00:00",
+      "days_old": 0.01,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
@@ -353,30 +353,30 @@
     "automatic_gate": "fail_closed"
   },
   "recommended_draft": {
-    "candidate_id": "ecd16914a4ca2477",
-    "title": "open-edge-platform/dlstreamer",
+    "candidate_id": "ea81990def941358",
+    "title": "itswadesh/gocommerce",
     "source": "GitHub Search",
     "source_kind": "github_repository",
-    "url": "https://github.com/open-edge-platform/dlstreamer",
+    "url": "https://github.com/itswadesh/gocommerce",
     "primary_source_verified": true,
-    "primary_source_title": "GitHub - open-edge-platform/dlstreamer: Deep Learning Streamer (DL Streamer) Pipeline Framework is an open-source streaming media analytics framework, based on GStreamer* multimedia framework, for creating complex media analytics pipelines for the Cloud or at the Edge.",
-    "primary_source_final_url": "https://github.com/open-edge-platform/dlstreamer",
+    "primary_source_title": "GitHub - itswadesh/gocommerce: A composable commerce engine for Go: catalog, carts, checkout, orders, payments and inventory as a library, with an embedded admin panel. One production dependency.",
+    "primary_source_final_url": "https://github.com/itswadesh/gocommerce",
     "primary_source_http_status": 200,
-    "category": "data_and_growth",
-    "priority_score": 67,
-    "hourly_adjusted_score": 61,
-    "post_text": "dlstreamer builds media analytics pipelines on GStreamer. Validate pipeline latency by measuring end‑to‑end frame timestamps. https://github.com/open-edge-platform/dlstreamer",
-    "fact_sentence": "dlstreamer builds media analytics pipelines on GStreamer.",
+    "category": "commerce_and_digital_products",
+    "priority_score": 68,
+    "hourly_adjusted_score": 52,
+    "post_text": "gocommerce includes an embedded admin panel for catalog and orders. Test admin panel CRUD routes and data integrity before production use. https://github.com/itswadesh/gocommerce",
+    "fact_sentence": "gocommerce includes an embedded admin panel for catalog and orders.",
     "format": "tool_discovery",
     "audience": "developers",
-    "angle": "engineering_lesson",
-    "rationale": "Highlights GStreamer integration",
-    "evidence_quote": "GitHub - open-edge-platform/dlstreamer: Deep Learning Streamer (DL Streamer) Pipeline Framework is an open-source streaming media analytics framework, based on GStreamer* multimedia framework, for creating complex media analytics pipelines",
-    "editorial_takeaway": "Validate pipeline latency by measuring end‑to‑end frame timestamps.",
+    "angle": "practical_workflow",
+    "rationale": "The repository description confirms the admin panel feature, enabling a focused integration test.",
+    "evidence_quote": "GitHub - itswadesh/gocommerce: A composable commerce engine for Go: catalog, carts, checkout, orders, payments and inventory as a library, with an embedded admin panel.",
+    "editorial_takeaway": "Test admin panel CRUD routes and data integrity before production use.",
     "claim_evidence": [
       {
-        "claim": "dlstreamer builds media analytics pipelines on GStreamer.",
-        "quote": "GitHub - open-edge-platform/dlstreamer: Deep Learning Streamer (DL Streamer) Pipeline Framework is an open-source streaming media analytics framework, based on GStreamer* multimedia framework, for creating complex media analytics pipelines"
+        "claim": "gocommerce includes an embedded admin panel for catalog and orders.",
+        "quote": "GitHub - itswadesh/gocommerce: A composable commerce engine for Go: catalog, carts, checkout, orders, payments and inventory as a library, with an embedded admin panel."
       }
     ],
     "scores": {
@@ -387,22 +387,22 @@
       "insight": 8
     },
     "editorial_score": 8.35,
-    "character_count": 174,
+    "character_count": 178,
     "status": "dry_run_passed_not_published",
     "published_to_x": false,
     "editorial_review": {
-      "clarity_score": 8,
-      "technical_coherence_score": 7,
-      "takeaway_value_score": 7,
-      "source_faithfulness_score": 8,
-      "originality_score": 7,
-      "reason": "Clear description, source backs claim, added practical latency check is a useful, original tip.",
+      "clarity_score": 9,
+      "technical_coherence_score": 9,
+      "takeaway_value_score": 8,
+      "source_faithfulness_score": 9,
+      "originality_score": 8,
+      "reason": "Clear, source-backed claim, useful testing advice, no unsupported assertions.",
       "passed": true
     }
   },
   "state_summary": {
-    "used_candidates_in_cooldown": 14,
-    "recently_attempted_candidates": 22,
-    "recent_draft_passes_today": 2
+    "used_candidates_in_cooldown": 15,
+    "recently_attempted_candidates": 25,
+    "recent_draft_passes_today": 3
   }
 }

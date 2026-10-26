@@ -1,9 +1,9 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-26T14:55:00+05:30
+- Run time (IST): 2026-10-26T15:54:15+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 95
+- Candidate pool after freshness/diversity filters: 94
 - Independent editorial review: 1 draft(s) passed / 0 rejected
 - Drafts passing local checks: 1
 - Outcome: **dry_run_passed**
@@ -48,35 +48,35 @@
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| spatiumnorth/spatiumddi | yes | 200 | https://github.com/spatiumnorth/spatiumddi |
-| open-edge-platform/dlstreamer | yes | 200 | https://github.com/open-edge-platform/dlstreamer |
-| Show HN: ShellSprint – A typing game-ish for Linux and Kubernetes commands | yes | 200 | https://shellsprint-dev.pages.dev |
+| Show HN: Deepswapp Browser: browser the browser with another browser | yes | 200 | https://deepswapp.com |
+| Show HN: Claude optimizes mel-band roformer to run 4x faster on Mac | yes | 200 | https://github.com/aipdv/fast-melroformer |
+| itswadesh/gocommerce | yes | 200 | https://github.com/itswadesh/gocommerce |
 
 ## Selected draft candidates
 
-### Draft option 1: open-edge-platform/dlstreamer
+### Draft option 1: itswadesh/gocommerce
 
-- Category: data_and_growth
+- Category: commerce_and_digital_products
 - Source: GitHub Search
 - Format: tool_discovery
 - Editorial score: 8.35/10
 - Model scores: timeliness 8/10, usefulness 9/10, novelty 7/10, evidence 9/10, insight 8/10
-- Independent editor scores: {"clarity_score": 8, "technical_coherence_score": 7, "takeaway_value_score": 7, "source_faithfulness_score": 8, "originality_score": 7, "reason": "Clear description, source backs claim, added practical latency check is a useful, original tip.", "passed": true}
-- Live primary page: https://github.com/open-edge-platform/dlstreamer (HTTP 200)
-- Exact source evidence: “GitHub - open-edge-platform/dlstreamer: Deep Learning Streamer (DL Streamer) Pipeline Framework is an open-source streaming media analytics framework, based on GStreamer* multimedia framework, for creating complex media analytics pipelines”
-- Why this angle: Highlights GStreamer integration
-- Editorial takeaway: Validate pipeline latency by measuring end‑to‑end frame timestamps.
-- Source: https://github.com/open-edge-platform/dlstreamer
+- Independent editor scores: {"clarity_score": 9, "technical_coherence_score": 9, "takeaway_value_score": 8, "source_faithfulness_score": 9, "originality_score": 8, "reason": "Clear, source-backed claim, useful testing advice, no unsupported assertions.", "passed": true}
+- Live primary page: https://github.com/itswadesh/gocommerce (HTTP 200)
+- Exact source evidence: “GitHub - itswadesh/gocommerce: A composable commerce engine for Go: catalog, carts, checkout, orders, payments and inventory as a library, with an embedded admin panel.”
+- Why this angle: The repository description confirms the admin panel feature, enabling a focused integration test.
+- Editorial takeaway: Test admin panel CRUD routes and data integrity before production use.
+- Source: https://github.com/itswadesh/gocommerce
 
 **Claim-by-claim source quotes:**
 
-- dlstreamer builds media analytics pipelines on GStreamer. ← “GitHub - open-edge-platform/dlstreamer: Deep Learning Streamer (DL Streamer) Pipeline Framework is an open-source streaming media analytics framework, based on GStreamer* multimedia framework, for creating complex media analytics pipelines”
+- gocommerce includes an embedded admin panel for catalog and orders. ← “GitHub - itswadesh/gocommerce: A composable commerce engine for Go: catalog, carts, checkout, orders, payments and inventory as a library, with an embedded admin panel.”
 
 Proposed post (not published):
 
-> dlstreamer builds media analytics pipelines on GStreamer. Validate pipeline latency by measuring end‑to‑end frame timestamps. https://github.com/open-edge-platform/dlstreamer
+> gocommerce includes an embedded admin panel for catalog and orders. Test admin panel CRUD routes and data integrity before production use. https://github.com/itswadesh/gocommerce
 
-- Length: 174/280 raw characters
+- Length: 178/280 raw characters
 - Automated gate: passed live source, evidence, originality, URL and length checks; live publishing is disabled in dry-run mode.
 
 ## Automatic repair attempt
@@ -90,20 +90,19 @@ Proposed post (not published):
 
 ## Rejected draft options
 
-- spatiumnorth/spatiumddi: The factual opening bundles multiple features; narrow it to one capability.
-  - Rejected text: spatiumddi runs its own BIND9, PowerDNS, and Kea containers. Test DNS consistency by querying each container after deployment. https://github.com/spatiumnorth/spatiumddi
-  - Model evidence quote: “Runs its own BIND9 / PowerDNS / Kea service containers”
-  - Claim support: spatiumddi runs its own BIND9, PowerDNS, and Kea containers ← “Runs its own BIND9 / PowerDNS / Kea service containers”
-- Show HN: ShellSprint – A typing game-ish for Linux and Kubernetes commands: The factual opening bundles multiple features; narrow it to one capability.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; Supporting quotes cover only 56% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: ShellSprint offers typing lessons for Linux, Rancher, Podman, Ansible, and Kubernetes. Track accuracy over time to spot command recall gaps. https://shellsprint-dev.pages.dev
-  - Model evidence quote: “Practice Linux, Rancher RKE2, Podman, Ansible and Kubernetes commands”
-  - Claim support: ShellSprint offers typing lessons for Linux, Rancher, Podman, Ansible, and Kubernetes ← “Practice Linux, Rancher RKE2, Podman, Ansible and Kubernetes commands”
+- Show HN: Deepswapp Browser: browser the browser with another browser: Unsupported numeric claim(s): 10min
+  - Rejected text: Deepswapp Browser renders only essential data in a single‑file HTML page. Verify page loads within 10 min and costs $0.40c on deepseek‑v4.1‑flash. https://deepswapp.com
+  - Model evidence quote: “Single-file HTML page Only essential data rendered”
+  - Claim support: The source says Deepswapp Browser renders only essential data in a single‑file HTML page ← “Single-file HTML page Only essential data rendered”
+- Show HN: Claude optimizes mel-band roformer to run 4x faster on Mac: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; Unsupported numeric claim(s): 3; Supporting quotes cover only 62% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: fast‑melroformer achieves 4x real‑time voice separation on an 8 GB M3 MacBook Air. Benchmark the same 3‑minute clip to confirm 4x speed before deployment. https://github.com/aipdv/fast-melroformer
+  - Claim support: The source says fast‑melroformer achieves 4x real‑time voice separation on an 8 GB M3 MacBook Air ← “at 4x real time on an 8 GB M3 MacBook Air”
 
 ## Top discovery candidates considered
 
-- spatiumnorth/spatiumddi | GitHub Search | security_and_self_hosting | raw 71, adjusted 65 | current stars 71 | GitHub star trend: building baseline | https://github.com/spatiumnorth/spatiumddi
-- open-edge-platform/dlstreamer | GitHub Search | data_and_growth | raw 67, adjusted 61 | current stars 643 | GitHub star trend: building baseline | https://github.com/open-edge-platform/dlstreamer
-- Show HN: ShellSprint – A typing game-ish for Linux and Kubernetes commands | Hacker News | product_and_workflow_tools | raw 56, adjusted 58 | https://shellsprint-dev.pages.dev
+- Show HN: Deepswapp Browser: browser the browser with another browser | Hacker News | product_and_workflow_tools | raw 66, adjusted 68 | https://deepswapp.com
+- Show HN: Claude optimizes mel-band roformer to run 4x faster on Mac | Hacker News | product_and_workflow_tools | raw 58, adjusted 60 | https://github.com/aipdv/fast-melroformer
+- itswadesh/gocommerce | GitHub Search | commerce_and_digital_products | raw 68, adjusted 52 | current stars 7 | GitHub star trend: building baseline | https://github.com/itswadesh/gocommerce
 
 ## Safety and interpretation
 
