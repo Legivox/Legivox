@@ -1,17 +1,17 @@
 {
-  "generated_at_ist": "2026-10-26T09:49:58+05:30",
-  "run_at_ist": "2026-10-26T09:49:58+05:30",
+  "generated_at_ist": "2026-10-26T10:49:08+05:30",
+  "run_at_ist": "2026-10-26T10:49:08+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 177,
-  "eligible_candidate_count": 90,
+  "candidate_count_raw": 178,
+  "eligible_candidate_count": 89,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4609
+      "total_count": 4615
     },
     {
       "source": "GitHub Search · github-analytics-seo",
@@ -25,49 +25,49 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 343
+      "total_count": 344
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2834
+      "total_count": 2841
     },
     {
       "source": "GitHub Search · github-ecommerce-digital-products",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 405
+      "total_count": 404
     },
     {
       "source": "GitHub Search · github-mcp-servers",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1996
+      "total_count": 1999
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3179
+      "total_count": 3183
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 122
+      "total_count": 123
     },
     {
       "source": "GitHub Search · github-workflow-automation",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 268
+      "total_count": 269
     },
     {
       "source": "Hacker News · hn-analytics-growth",
@@ -114,7 +114,7 @@
     {
       "source": "Hacker News · hn-shopify",
       "kind": "hacker_news",
-      "items_kept": 8,
+      "items_kept": 10,
       "status": "ok",
       "total_count": 10
     },
@@ -145,42 +145,42 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-26T04:19:58+00:00",
+    "observed_at_utc": "2026-10-26T05:19:08+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 84,
-    "previously_tracked_repositories_refreshed": 116,
+    "repositories_seen_in_discovery": 83,
+    "previously_tracked_repositories_refreshed": 117,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
-    "repositories_with_20_to_36_hour_baseline": 17,
+    "repositories_with_20_to_36_hour_baseline": 10,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "04a5ff0ef6c57791",
-      "title": "Show HN: Nodecode, open-source living agent in Lisp that rewrites itself for you",
-      "source_url": "https://github.com/nodecode-ai/nodecode",
+      "candidate_id": "a5e43b1572bfaf36",
+      "title": "paperclipai/paperclip",
+      "source_url": "https://github.com/paperclipai/paperclip",
       "verified": true,
-      "final_url": "https://github.com/nodecode-ai/nodecode",
+      "final_url": "https://github.com/paperclipai/paperclip",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "f803dce2f9c77322",
-      "title": "POS UI extensions now support reactive storage access",
-      "source_url": "https://shopify.dev/changelog/pos-ui-extensions-now-support-reactive-storage-access",
+      "candidate_id": "e95e12447b71a006",
+      "title": "Unlink a customer's identity provider subject with the GraphQL Admin API",
+      "source_url": "https://shopify.dev/changelog/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access",
+      "final_url": "https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "55c557b3bc0267ca",
-      "title": "Securing your app, together",
-      "source_url": "https://shopify.dev/changelog/securing-your-app-together",
+      "candidate_id": "7736c647a9d12cc4",
+      "title": "Show HN: Code Counter Machine a modern analysis of AI driven development costs",
+      "source_url": "https://github.com/insanai/ccm",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/blog/securing-your-app-together",
+      "final_url": "https://github.com/insanai/ccm",
       "http_status": 200,
       "reason": ""
     }
@@ -189,127 +189,157 @@
   "daily_draft_cap": 16,
   "daily_drafts_already_passed": 1,
   "outcome": "skip",
-  "decision_reason": "All generated drafts failed the local evidence/editorial checks; the hour was skipped.",
+  "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
   "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "04a5ff0ef6c57791",
-      "title": "Show HN: Nodecode, open-source living agent in Lisp that rewrites itself for you",
+      "candidate_id": "a5e43b1572bfaf36",
+      "title": "paperclipai/paperclip",
       "reasons": [
-        "Opening sentence is too close to the source headline; add a distinct editorial framing.",
-        "Supporting quotes cover only 57% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Takeaway implies an undocumented product capability: sync. Reframe as a check of documented behavior.",
+        "Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration."
       ],
-      "proposed_text": "Nodecode is a living agent organism in Lisp that rewrites itself. Verify self‑rewrite by inspecting generated markdown after a task run. https://github.com/nodecode-ai/nodecode",
-      "evidence_quote": "A living agent organism in Lisp.",
+      "proposed_text": "paperclip is an open‑source agent orchestration app built in TypeScript. Test agent skill sync by sending a dummy skill update and verifying the UI refreshes. https://github.com/paperclipai/paperclip",
+      "evidence_quote": "The open‑source app everyone uses to manage agents at work",
       "claim_evidence": [
         {
-          "claim": "Nodecode is a living agent organism in Lisp that rewrites itself.",
-          "quote": "A living agent organism in Lisp."
+          "claim": "paperclip is an open‑source agent orchestration app built in TypeScript.",
+          "quote": "The open‑source app everyone uses to manage agents at work"
         }
       ]
     },
     {
-      "candidate_id": "f803dce2f9c77322",
-      "title": "POS UI extensions now support reactive storage access",
+      "candidate_id": "e95e12447b71a006",
+      "title": "Unlink a customer's identity provider subject with the GraphQL Admin API",
       "reasons": [
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
-      ],
-      "proposed_text": "shopify.storage.current lets POS UI extensions react to storage changes across targets. Subscribe to a key and assert updates propagate to all extension targets. https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access",
-      "evidence_quote": "The new `shopify.storage.current` API lets POS UI extension developers respond automatically when stored values change across extension targets on the same POS device.",
-      "claim_evidence": [
-        {
-          "claim": "shopify.storage.current lets POS UI extensions react to storage changes across targets.",
-          "quote": "The new `shopify.storage.current` API lets POS UI extension developers respond automatically when stored values change across extension targets on the same POS device."
-        }
-      ]
-    },
-    {
-      "candidate_id": "55c557b3bc0267ca",
-      "title": "Securing your app, together",
-      "reasons": [
-        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.",
-        "Fact sentence is too long; narrow it to one source-backed capability."
-      ],
-      "proposed_text": "Shopify AI Toolkit security check scans for unauthenticated routes, cross‑shop data access and unverified webhooks. Run the check pre‑release and verify no false positives before app store submission. https://shopify.dev/changelog/blog/securing-your-app-together",
-      "evidence_quote": "A single prompt with AI Toolkit checks for Shopify-specific vulnerabilities, such as unauthenticated routes, cross-shop data access and unverified webhooks.",
-      "claim_evidence": [
-        {
-          "claim": "Shopify AI Toolkit security check scans for unauthenticated routes, cross‑shop data access and unverified webhooks.",
-          "quote": "A single prompt with AI Toolkit checks for Shopify-specific vulnerabilities, such as unauthenticated routes, cross-shop data access and unverified webhooks."
-        }
-      ]
-    },
-    {
-      "candidate_id": "f803dce2f9c77322",
-      "title": "POS UI extensions now support reactive storage access",
-      "reasons": [
-        "Fact sentence is too long; narrow it to one source-backed capability.",
-        "Editorial takeaway is too long; keep the analysis concrete and concise.",
         "Fact plus takeaway exceeds the per-link character budget.",
-        "Draft is 314 raw characters; limit is 280"
+        "Draft is 283 raw characters; limit is 280"
       ],
-      "proposed_text": "shopify.storage.current lets POS UI extensions respond automatically when stored values change across extension targets. Handle the initial undefined state when subscribing to shopify.storage.current to avoid runtime errors. https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access",
-      "evidence_quote": "The new `shopify.storage.current` API lets POS UI extension developers respond automatically when stored values change across extension targets on the same POS device.",
+      "proposed_text": "identityProviderSubjectDelete mutation unlinks a customer from a third‑party identity provider. After unlinking, confirm the customer is logged out by checking session tokens. https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api",
+      "evidence_quote": "identityProviderSubjectDelete mutation to unlink a customer from a third‑party identity provider",
+      "claim_evidence": [
+        {
+          "claim": "identityProviderSubjectDelete mutation unlinks a customer from a third‑party identity provider.",
+          "quote": "identityProviderSubjectDelete mutation to unlink a customer from a third‑party identity provider"
+        }
+      ]
+    },
+    {
+      "candidate_id": "7736c647a9d12cc4",
+      "title": "Show HN: Code Counter Machine a modern analysis of AI driven development costs",
+      "reasons": [
+        "A supporting quote does not share enough wording with its stated claim",
+        "Supporting quotes cover only 29% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ],
+      "proposed_text": "ccm is a Rust CLI that estimates AI‑driven development costs. Run ccm on a sample repo and compare its cost estimate to a manual COCOMO calculation. https://github.com/insanai/ccm",
+      "evidence_quote": "Count source. Explain changes. Inspect evidence and AI, tool, and human development cost scenarios.",
+      "claim_evidence": [
+        {
+          "claim": "ccm is a Rust CLI that estimates AI‑driven development costs.",
+          "quote": "Count source. Explain changes. Inspect evidence and AI, tool, and human development cost scenarios."
+        }
+      ]
+    },
+    {
+      "candidate_id": "7736c647a9d12cc4",
+      "title": "Show HN: Code Counter Machine a modern analysis of AI driven development costs",
+      "reasons": [
+        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
+        "No claim-by-claim supporting evidence was provided",
+        "Supporting quotes cover only 29% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ],
+      "proposed_text": "ccm is a Rust CLI that estimates AI‑driven development costs. Run ccm on a repository and inspect the generated cost estimate output. https://github.com/insanai/ccm",
+      "evidence_quote": "Count source. Explain changes. Inspect evidence and AI, tool, and human development cost scenarios.",
       "automatic_repair_attempt": true,
       "original_rejection_reasons": [
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
+        "A supporting quote does not share enough wording with its stated claim",
+        "Supporting quotes cover only 29% of factual wording; narrow the claim or provide a closer primary-source quote"
       ]
+    },
+    {
+      "candidate_id": "e95e12447b71a006",
+      "title": "Unlink a customer's identity provider subject with the GraphQL Admin API",
+      "reasons": [
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
+      ],
+      "proposed_text": "identityProviderSubjectDelete mutation unlinks a customer from a third‑party identity provider. After unlinking, the customer is logged out of all active sessions. https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api",
+      "evidence_quote": "identityProviderSubjectDelete mutation to unlink a customer from a third‑party identity provider",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "Fact plus takeaway exceeds the per-link character budget.",
+        "Draft is 283 raw characters; limit is 280"
+      ]
+    },
+    {
+      "candidate_id": "a5e43b1572bfaf36",
+      "title": "paperclipai/paperclip",
+      "proposed_text": "paperclip is an open‑source agent orchestration app. Verify that the UI shows the latest agent skill after a skill file is updated. https://github.com/paperclipai/paperclip",
+      "reasons": [
+        "The post claims the UI reflects skill updates, but the source excerpt only describes the app as open‑source; no evidence of UI behavior is provided."
+      ],
+      "editorial_review": {
+        "clarity_score": 8,
+        "technical_coherence_score": 4,
+        "takeaway_value_score": 5,
+        "source_faithfulness_score": 6,
+        "originality_score": 3
+      }
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "04a5ff0ef6c57791",
-      "title": "Show HN: Nodecode, open-source living agent in Lisp that rewrites itself for you",
-      "url": "https://github.com/nodecode-ai/nodecode",
+      "id": "a5e43b1572bfaf36",
+      "title": "paperclipai/paperclip",
+      "url": "https://github.com/paperclipai/paperclip",
+      "source": "GitHub Search",
+      "primary_category": "ai_and_automation",
+      "priority_score": 69,
+      "hourly_adjusted_score": 70,
+      "stars_current": 107365,
+      "stars_delta_24h": 334,
+      "stars_delta_baseline_hours": 24.1,
+      "stars_growth_percent_24h": 0.31,
+      "trend_signal": "measured_star_growth",
+      "published_at": "2026-10-26T05:09:39+00:00",
+      "days_old": 0.01,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "e95e12447b71a006",
+      "title": "Unlink a customer's identity provider subject with the GraphQL Admin API",
+      "url": "https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api",
+      "source": "Shopify Developer Changelog",
+      "primary_category": "developer_tools",
+      "priority_score": 68,
+      "hourly_adjusted_score": 68,
+      "stars_current": null,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-23T13:00:00+00:00",
+      "days_old": 2.68,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "7736c647a9d12cc4",
+      "title": "Show HN: Code Counter Machine a modern analysis of AI driven development costs",
+      "url": "https://github.com/insanai/ccm",
       "source": "Hacker News",
       "primary_category": "product_and_workflow_tools",
-      "priority_score": 72,
-      "hourly_adjusted_score": 74,
+      "priority_score": 64,
+      "hourly_adjusted_score": 66,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-26T03:30:18+00:00",
-      "days_old": 0.03,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "f803dce2f9c77322",
-      "title": "POS UI extensions now support reactive storage access",
-      "url": "https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access",
-      "source": "Shopify Developer Changelog",
-      "primary_category": "commerce_and_digital_products",
-      "priority_score": 69,
-      "hourly_adjusted_score": 69,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-22T16:00:00+00:00",
-      "days_old": 3.51,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "55c557b3bc0267ca",
-      "title": "Securing your app, together",
-      "url": "https://shopify.dev/changelog/blog/securing-your-app-together",
-      "source": "Shopify Developer Changelog",
-      "primary_category": "commerce_and_digital_products",
-      "priority_score": 69,
-      "hourly_adjusted_score": 69,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-20T19:00:00+00:00",
-      "days_old": 5.39,
+      "published_at": "2026-10-25T13:13:26+00:00",
+      "days_old": 0.67,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
@@ -317,19 +347,19 @@
   ],
   "automatic_repair": {
     "attempted": true,
-    "drafts_submitted": 1,
-    "repaired_local_passes": 0,
-    "repair_rejections": 1,
-    "repair_error": null,
-    "editorial_repair_attempted": false,
+    "drafts_submitted": 3,
+    "repaired_local_passes": 1,
+    "repair_rejections": 2,
+    "repair_error": "Automatic repair failed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi",
+    "editorial_repair_attempted": true,
     "editorial_repair_drafts_submitted": 0,
-    "editorial_repair_error": null
+    "editorial_repair_error": "Automatic repair failed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi"
   },
   "editorial_review": {
-    "locally_valid_drafts": 0,
-    "submitted_for_independent_review": 0,
+    "locally_valid_drafts": 1,
+    "submitted_for_independent_review": 1,
     "passed_independent_review": 0,
-    "rejected_by_independent_review": 0,
+    "rejected_by_independent_review": 1,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"

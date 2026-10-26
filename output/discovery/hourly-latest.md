@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-26T09:49:58+05:30
+- Run time (IST): 2026-10-26T10:49:08+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 90
-- Independent editorial review: 0 draft(s) passed / 0 rejected
+- Candidate pool after freshness/diversity filters: 89
+- Independent editorial review: 0 draft(s) passed / 1 rejected
 - Drafts passing local checks: 0
 - Outcome: **skip**
-- Decision reason: All generated drafts failed the local evidence/editorial checks; the hour was skipped.
+- Decision reason: Every draft submitted for independent editorial review was rejected; The hour was skipped.
 
 ## Source health
 
@@ -28,7 +28,7 @@
 | Hacker News · hn-digital-products | 1 | ok |
 | Hacker News · hn-ecommerce-payments | 0 | ok |
 | Hacker News · hn-security-selfhost | 0 | ok |
-| Hacker News · hn-shopify | 8 | ok |
+| Hacker News · hn-shopify | 10 | ok |
 | Hacker News · hn-show-hn | 10 | ok |
 | Console.dev | 12 | ok |
 | Product Hunt | 41 | ok |
@@ -37,57 +37,62 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 84
-- Previously tracked repositories refreshed outside search results: 116
+- Repositories seen in this discovery run: 83
+- Previously tracked repositories refreshed outside search results: 117
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
-- Repositories with a 20–36 hour comparison baseline: 17
+- Repositories with a 20–36 hour comparison baseline: 10
 - First observations are baseline samples, not evidence of trending. Star velocity is reported only when a historical comparison exists.
 
 ## Primary-source verification
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| Show HN: Nodecode, open-source living agent in Lisp that rewrites itself for you | yes | 200 | https://github.com/nodecode-ai/nodecode |
-| POS UI extensions now support reactive storage access | yes | 200 | https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access |
-| Securing your app, together | yes | 200 | https://shopify.dev/changelog/blog/securing-your-app-together |
+| paperclipai/paperclip | yes | 200 | https://github.com/paperclipai/paperclip |
+| Unlink a customer's identity provider subject with the GraphQL Admin API | yes | 200 | https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api |
+| Show HN: Code Counter Machine a modern analysis of AI driven development costs | yes | 200 | https://github.com/insanai/ccm |
 
 ## Selected draft candidates
 
-No candidate produced a draft that passed every local check. Skipping is intentional.
+No draft cleared the complete local and independent-editor gate. See the decision reason and rejected-draft section for locally valid drafts that were rejected, not reviewed, or blocked by a review error.
 
 ## Automatic repair attempt
 
 - Attempted: yes
-- Repaired drafts submitted: 1
-- Repaired drafts that passed local validation: 0
-- Repaired drafts rejected: 1
-- Repair error: none
+- Repaired drafts submitted: 3
+- Repaired drafts that passed local validation: 1
+- Repaired drafts rejected: 2
+- Repair error: Automatic repair failed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
-- Show HN: Nodecode, open-source living agent in Lisp that rewrites itself for you: Opening sentence is too close to the source headline; add a distinct editorial framing.; Supporting quotes cover only 57% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: Nodecode is a living agent organism in Lisp that rewrites itself. Verify self‑rewrite by inspecting generated markdown after a task run. https://github.com/nodecode-ai/nodecode
-  - Model evidence quote: “A living agent organism in Lisp.”
-  - Claim support: Nodecode is a living agent organism in Lisp that rewrites itself. ← “A living agent organism in Lisp.”
-- POS UI extensions now support reactive storage access: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
-  - Rejected text: shopify.storage.current lets POS UI extensions react to storage changes across targets. Subscribe to a key and assert updates propagate to all extension targets. https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access
-  - Model evidence quote: “The new `shopify.storage.current` API lets POS UI extension developers respond automatically when stored values change across extension targets on the same POS device.”
-  - Claim support: shopify.storage.current lets POS UI extensions react to storage changes across targets. ← “The new `shopify.storage.current` API lets POS UI extension developers respond automatically when stored values change across extension targets on the same POS device.”
-- Securing your app, together: Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.; Fact sentence is too long; narrow it to one source-backed capability.
-  - Rejected text: Shopify AI Toolkit security check scans for unauthenticated routes, cross‑shop data access and unverified webhooks. Run the check pre‑release and verify no false positives before app store submission. https://shopify.dev/changelog/blog/securing-your-app-together
-  - Model evidence quote: “A single prompt with AI Toolkit checks for Shopify-specific vulnerabilities, such as unauthenticated routes, cross-shop data access and unverified webhooks.”
-  - Claim support: Shopify AI Toolkit security check scans for unauthenticated routes, cross‑shop data access and unverified webhooks. ← “A single prompt with AI Toolkit checks for Shopify-specific vulnerabilities, such as unauthenticated routes, cross-shop data access and unverified webhooks.”
-- POS UI extensions now support reactive storage access: Fact sentence is too long; narrow it to one source-backed capability.; Editorial takeaway is too long; keep the analysis concrete and concise.; Fact plus takeaway exceeds the per-link character budget.; Draft is 314 raw characters; limit is 280
-  - Rejected text: shopify.storage.current lets POS UI extensions respond automatically when stored values change across extension targets. Handle the initial undefined state when subscribing to shopify.storage.current to avoid runtime errors. https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access
-  - Model evidence quote: “The new `shopify.storage.current` API lets POS UI extension developers respond automatically when stored values change across extension targets on the same POS device.”
+- paperclipai/paperclip: Takeaway implies an undocumented product capability: sync. Reframe as a check of documented behavior.; Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.
+  - Rejected text: paperclip is an open‑source agent orchestration app built in TypeScript. Test agent skill sync by sending a dummy skill update and verifying the UI refreshes. https://github.com/paperclipai/paperclip
+  - Model evidence quote: “The open‑source app everyone uses to manage agents at work”
+  - Claim support: paperclip is an open‑source agent orchestration app built in TypeScript. ← “The open‑source app everyone uses to manage agents at work”
+- Unlink a customer's identity provider subject with the GraphQL Admin API: Fact plus takeaway exceeds the per-link character budget.; Draft is 283 raw characters; limit is 280
+  - Rejected text: identityProviderSubjectDelete mutation unlinks a customer from a third‑party identity provider. After unlinking, confirm the customer is logged out by checking session tokens. https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api
+  - Model evidence quote: “identityProviderSubjectDelete mutation to unlink a customer from a third‑party identity provider”
+  - Claim support: identityProviderSubjectDelete mutation unlinks a customer from a third‑party identity provider. ← “identityProviderSubjectDelete mutation to unlink a customer from a third‑party identity provider”
+- Show HN: Code Counter Machine a modern analysis of AI driven development costs: A supporting quote does not share enough wording with its stated claim; Supporting quotes cover only 29% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: ccm is a Rust CLI that estimates AI‑driven development costs. Run ccm on a sample repo and compare its cost estimate to a manual COCOMO calculation. https://github.com/insanai/ccm
+  - Model evidence quote: “Count source. Explain changes. Inspect evidence and AI, tool, and human development cost scenarios.”
+  - Claim support: ccm is a Rust CLI that estimates AI‑driven development costs. ← “Count source. Explain changes. Inspect evidence and AI, tool, and human development cost scenarios.”
+- Show HN: Code Counter Machine a modern analysis of AI driven development costs: Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.; No claim-by-claim supporting evidence was provided; Supporting quotes cover only 29% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: ccm is a Rust CLI that estimates AI‑driven development costs. Run ccm on a repository and inspect the generated cost estimate output. https://github.com/insanai/ccm
+  - Model evidence quote: “Count source. Explain changes. Inspect evidence and AI, tool, and human development cost scenarios.”
+- Unlink a customer's identity provider subject with the GraphQL Admin API: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
+  - Rejected text: identityProviderSubjectDelete mutation unlinks a customer from a third‑party identity provider. After unlinking, the customer is logged out of all active sessions. https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api
+  - Model evidence quote: “identityProviderSubjectDelete mutation to unlink a customer from a third‑party identity provider”
+- paperclipai/paperclip: The post claims the UI reflects skill updates, but the source excerpt only describes the app as open‑source; no evidence of UI behavior is provided.
+  - Rejected text: paperclip is an open‑source agent orchestration app. Verify that the UI shows the latest agent skill after a skill file is updated. https://github.com/paperclipai/paperclip
 
 ## Top discovery candidates considered
 
-- Show HN: Nodecode, open-source living agent in Lisp that rewrites itself for you | Hacker News | product_and_workflow_tools | raw 72, adjusted 74 | https://github.com/nodecode-ai/nodecode
-- POS UI extensions now support reactive storage access | Shopify Developer Changelog | commerce_and_digital_products | raw 69, adjusted 69 | https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access
-- Securing your app, together | Shopify Developer Changelog | commerce_and_digital_products | raw 69, adjusted 69 | https://shopify.dev/changelog/blog/securing-your-app-together
+- paperclipai/paperclip | GitHub Search | ai_and_automation | raw 69, adjusted 70 | current stars 107365 | GitHub stars +334 over about 24.1h | https://github.com/paperclipai/paperclip
+- Unlink a customer's identity provider subject with the GraphQL Admin API | Shopify Developer Changelog | developer_tools | raw 68, adjusted 68 | https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api
+- Show HN: Code Counter Machine a modern analysis of AI driven development costs | Hacker News | product_and_workflow_tools | raw 64, adjusted 66 | https://github.com/insanai/ccm
 
 ## Safety and interpretation
 
