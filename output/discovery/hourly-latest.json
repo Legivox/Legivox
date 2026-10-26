@@ -1,24 +1,24 @@
 {
-  "generated_at_ist": "2026-10-26T10:49:08+05:30",
-  "run_at_ist": "2026-10-26T10:49:08+05:30",
+  "generated_at_ist": "2026-10-26T11:48:14+05:30",
+  "run_at_ist": "2026-10-26T11:48:14+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 178,
-  "eligible_candidate_count": 89,
+  "candidate_count_raw": 174,
+  "eligible_candidate_count": 85,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4615
+      "total_count": 4621
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 980
+      "total_count": 981
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
@@ -32,7 +32,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2841
+      "total_count": 2845
     },
     {
       "source": "GitHub Search · github-ecommerce-digital-products",
@@ -46,14 +46,14 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1999
+      "total_count": 2001
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3183
+      "total_count": 3190
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
@@ -67,7 +67,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 269
+      "total_count": 270
     },
     {
       "source": "Hacker News · hn-analytics-growth",
@@ -145,10 +145,10 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-26T05:19:08+00:00",
+    "observed_at_utc": "2026-10-26T06:18:14+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 83,
-    "previously_tracked_repositories_refreshed": 117,
+    "repositories_seen_in_discovery": 79,
+    "previously_tracked_repositories_refreshed": 121,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
@@ -158,29 +158,29 @@
   },
   "primary_source_checks": [
     {
-      "candidate_id": "a5e43b1572bfaf36",
-      "title": "paperclipai/paperclip",
-      "source_url": "https://github.com/paperclipai/paperclip",
+      "candidate_id": "55bc1924e899a999",
+      "title": "Show HN: UIPalooza – Do AI models have a recognizable design taste?",
+      "source_url": "https://uipalooza.ai/",
       "verified": true,
-      "final_url": "https://github.com/paperclipai/paperclip",
+      "final_url": "https://uipalooza.ai/",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "e95e12447b71a006",
-      "title": "Unlink a customer's identity provider subject with the GraphQL Admin API",
-      "source_url": "https://shopify.dev/changelog/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api",
+      "candidate_id": "769635c4c0589719",
+      "title": "IHUI-INF-AI/IHUI-AI",
+      "source_url": "https://github.com/IHUI-INF-AI/IHUI-AI",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api",
+      "final_url": "https://github.com/IHUI-INF-AI/IHUI-AI",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "7736c647a9d12cc4",
-      "title": "Show HN: Code Counter Machine a modern analysis of AI driven development costs",
-      "source_url": "https://github.com/insanai/ccm",
+      "candidate_id": "e510ab3edae18040",
+      "title": "beenuar/AiSOC",
+      "source_url": "https://github.com/beenuar/AiSOC",
       "verified": true,
-      "final_url": "https://github.com/insanai/ccm",
+      "final_url": "https://github.com/beenuar/AiSOC",
       "http_status": 200,
       "reason": ""
     }
@@ -189,146 +189,104 @@
   "daily_draft_cap": 16,
   "daily_drafts_already_passed": 1,
   "outcome": "skip",
-  "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
+  "decision_reason": "All generated drafts failed the local evidence/editorial checks; the hour was skipped.",
   "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "a5e43b1572bfaf36",
-      "title": "paperclipai/paperclip",
+      "candidate_id": "55bc1924e899a999",
+      "title": "Show HN: UIPalooza – Do AI models have a recognizable design taste?",
       "reasons": [
-        "Takeaway implies an undocumented product capability: sync. Reframe as a check of documented behavior.",
-        "Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration."
+        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about."
       ],
-      "proposed_text": "paperclip is an open‑source agent orchestration app built in TypeScript. Test agent skill sync by sending a dummy skill update and verifying the UI refreshes. https://github.com/paperclipai/paperclip",
-      "evidence_quote": "The open‑source app everyone uses to manage agents at work",
+      "proposed_text": "UI Palooza lets you compare AI-generated interfaces across models. Run the same brief on multiple models to spot consistent design biases. https://uipalooza.ai/",
+      "evidence_quote": "Compare AI-generated interfaces across models",
       "claim_evidence": [
         {
-          "claim": "paperclip is an open‑source agent orchestration app built in TypeScript.",
-          "quote": "The open‑source app everyone uses to manage agents at work"
+          "claim": "UI Palooza lets you compare AI-generated interfaces across models.",
+          "quote": "Compare AI-generated interfaces across models"
         }
       ]
     },
     {
-      "candidate_id": "e95e12447b71a006",
-      "title": "Unlink a customer's identity provider subject with the GraphQL Admin API",
+      "candidate_id": "769635c4c0589719",
+      "title": "IHUI-INF-AI/IHUI-AI",
       "reasons": [
-        "Fact plus takeaway exceeds the per-link character budget.",
-        "Draft is 283 raw characters; limit is 280"
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
       ],
-      "proposed_text": "identityProviderSubjectDelete mutation unlinks a customer from a third‑party identity provider. After unlinking, confirm the customer is logged out by checking session tokens. https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api",
-      "evidence_quote": "identityProviderSubjectDelete mutation to unlink a customer from a third‑party identity provider",
+      "proposed_text": "IHUI-AI unifies 176 LLMs via LangGraph, MCP, and A2A. Use its multi‑tenant RLS to isolate tenant data across 340 tables. https://github.com/IHUI-INF-AI/IHUI-AI",
+      "evidence_quote": "unifies 176 LLMs via LangGraph + MCP + A2A",
       "claim_evidence": [
         {
-          "claim": "identityProviderSubjectDelete mutation unlinks a customer from a third‑party identity provider.",
-          "quote": "identityProviderSubjectDelete mutation to unlink a customer from a third‑party identity provider"
+          "claim": "IHUI-AI unifies 176 LLMs via LangGraph, MCP, and A2A.",
+          "quote": "unifies 176 LLMs via LangGraph + MCP + A2A"
         }
       ]
     },
     {
-      "candidate_id": "7736c647a9d12cc4",
-      "title": "Show HN: Code Counter Machine a modern analysis of AI driven development costs",
+      "candidate_id": "e510ab3edae18040",
+      "title": "beenuar/AiSOC",
       "reasons": [
         "A supporting quote does not share enough wording with its stated claim",
-        "Supporting quotes cover only 29% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Supporting quotes cover only 43% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "ccm is a Rust CLI that estimates AI‑driven development costs. Run ccm on a sample repo and compare its cost estimate to a manual COCOMO calculation. https://github.com/insanai/ccm",
-      "evidence_quote": "Count source. Explain changes. Inspect evidence and AI, tool, and human development cost scenarios.",
+      "proposed_text": "AiSOC is an open‑source AI SOC that fuses alerts and logs with LLM triage. Deploy without API keys by running the included MCP server for Claude. https://github.com/beenuar/AiSOC",
+      "evidence_quote": "Open-source AI Security Operations Center: alert fusion, LLM-agent triage",
       "claim_evidence": [
         {
-          "claim": "ccm is a Rust CLI that estimates AI‑driven development costs.",
-          "quote": "Count source. Explain changes. Inspect evidence and AI, tool, and human development cost scenarios."
+          "claim": "AiSOC is an open‑source AI SOC that fuses alerts and logs with LLM triage.",
+          "quote": "Open-source AI Security Operations Center: alert fusion, LLM-agent triage"
         }
       ]
     },
     {
-      "candidate_id": "7736c647a9d12cc4",
-      "title": "Show HN: Code Counter Machine a modern analysis of AI driven development costs",
+      "candidate_id": "e510ab3edae18040",
+      "title": "beenuar/AiSOC",
       "reasons": [
-        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
         "No claim-by-claim supporting evidence was provided",
-        "Supporting quotes cover only 29% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Supporting quotes cover only 43% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "ccm is a Rust CLI that estimates AI‑driven development costs. Run ccm on a repository and inspect the generated cost estimate output. https://github.com/insanai/ccm",
-      "evidence_quote": "Count source. Explain changes. Inspect evidence and AI, tool, and human development cost scenarios.",
+      "proposed_text": "AiSOC is an open‑source AI SOC that fuses alerts and logs with LLM triage. Deploy AiSOC locally without external API keys by running its MCP server. https://github.com/beenuar/AiSOC",
+      "evidence_quote": "Open‑source AI Security Operations Center: alert fusion, LLM‑agent triage",
       "automatic_repair_attempt": true,
       "original_rejection_reasons": [
         "A supporting quote does not share enough wording with its stated claim",
-        "Supporting quotes cover only 29% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Supporting quotes cover only 43% of factual wording; narrow the claim or provide a closer primary-source quote"
       ]
     },
     {
-      "candidate_id": "e95e12447b71a006",
-      "title": "Unlink a customer's identity provider subject with the GraphQL Admin API",
+      "candidate_id": "769635c4c0589719",
+      "title": "IHUI-INF-AI/IHUI-AI",
       "reasons": [
         "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
       ],
-      "proposed_text": "identityProviderSubjectDelete mutation unlinks a customer from a third‑party identity provider. After unlinking, the customer is logged out of all active sessions. https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api",
-      "evidence_quote": "identityProviderSubjectDelete mutation to unlink a customer from a third‑party identity provider",
+      "proposed_text": "IHUI‑AI unifies 176 LLMs via LangGraph. Enable multi‑tenant RLS to isolate tenant data across 340 tables. https://github.com/IHUI-INF-AI/IHUI-AI",
+      "evidence_quote": "unifies 176 LLMs via LangGraph + MCP + A2A",
       "automatic_repair_attempt": true,
       "original_rejection_reasons": [
-        "Fact plus takeaway exceeds the per-link character budget.",
-        "Draft is 283 raw characters; limit is 280"
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
       ]
     },
     {
-      "candidate_id": "a5e43b1572bfaf36",
-      "title": "paperclipai/paperclip",
-      "proposed_text": "paperclip is an open‑source agent orchestration app. Verify that the UI shows the latest agent skill after a skill file is updated. https://github.com/paperclipai/paperclip",
+      "candidate_id": "55bc1924e899a999",
+      "title": "Show HN: UIPalooza – Do AI models have a recognizable design taste?",
       "reasons": [
-        "The post claims the UI reflects skill updates, but the source excerpt only describes the app as open‑source; no evidence of UI behavior is provided."
+        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about."
       ],
-      "editorial_review": {
-        "clarity_score": 8,
-        "technical_coherence_score": 4,
-        "takeaway_value_score": 5,
-        "source_faithfulness_score": 6,
-        "originality_score": 3
-      }
+      "proposed_text": "UI Palooza lets you compare AI-generated interfaces across models. Run the same brief on multiple models to spot consistent design biases. https://uipalooza.ai/",
+      "evidence_quote": "Compare AI-generated interfaces across models",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about."
+      ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "a5e43b1572bfaf36",
-      "title": "paperclipai/paperclip",
-      "url": "https://github.com/paperclipai/paperclip",
-      "source": "GitHub Search",
-      "primary_category": "ai_and_automation",
-      "priority_score": 69,
-      "hourly_adjusted_score": 70,
-      "stars_current": 107365,
-      "stars_delta_24h": 334,
-      "stars_delta_baseline_hours": 24.1,
-      "stars_growth_percent_24h": 0.31,
-      "trend_signal": "measured_star_growth",
-      "published_at": "2026-10-26T05:09:39+00:00",
-      "days_old": 0.01,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "e95e12447b71a006",
-      "title": "Unlink a customer's identity provider subject with the GraphQL Admin API",
-      "url": "https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api",
-      "source": "Shopify Developer Changelog",
-      "primary_category": "developer_tools",
-      "priority_score": 68,
-      "hourly_adjusted_score": 68,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-23T13:00:00+00:00",
-      "days_old": 2.68,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "7736c647a9d12cc4",
-      "title": "Show HN: Code Counter Machine a modern analysis of AI driven development costs",
-      "url": "https://github.com/insanai/ccm",
+      "id": "55bc1924e899a999",
+      "title": "Show HN: UIPalooza – Do AI models have a recognizable design taste?",
+      "url": "https://uipalooza.ai/",
       "source": "Hacker News",
       "primary_category": "product_and_workflow_tools",
       "priority_score": 64,
@@ -338,8 +296,46 @@
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-25T13:13:26+00:00",
-      "days_old": 0.67,
+      "published_at": "2026-10-26T04:00:04+00:00",
+      "days_old": 0.1,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "769635c4c0589719",
+      "title": "IHUI-INF-AI/IHUI-AI",
+      "url": "https://github.com/IHUI-INF-AI/IHUI-AI",
+      "source": "GitHub Search",
+      "primary_category": "security_and_self_hosting",
+      "priority_score": 71,
+      "hourly_adjusted_score": 65,
+      "stars_current": 31,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "insufficient_history",
+      "published_at": "2026-10-26T06:18:50+00:00",
+      "days_old": 0.0,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "e510ab3edae18040",
+      "title": "beenuar/AiSOC",
+      "url": "https://github.com/beenuar/AiSOC",
+      "source": "GitHub Search",
+      "primary_category": "security_and_self_hosting",
+      "priority_score": 70,
+      "hourly_adjusted_score": 64,
+      "stars_current": 3817,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "insufficient_history",
+      "published_at": "2026-10-26T06:18:52+00:00",
+      "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
@@ -348,25 +344,25 @@
   "automatic_repair": {
     "attempted": true,
     "drafts_submitted": 3,
-    "repaired_local_passes": 1,
-    "repair_rejections": 2,
-    "repair_error": "Automatic repair failed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi",
-    "editorial_repair_attempted": true,
+    "repaired_local_passes": 0,
+    "repair_rejections": 3,
+    "repair_error": null,
+    "editorial_repair_attempted": false,
     "editorial_repair_drafts_submitted": 0,
-    "editorial_repair_error": "Automatic repair failed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi"
+    "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 1,
-    "submitted_for_independent_review": 1,
+    "locally_valid_drafts": 0,
+    "submitted_for_independent_review": 0,
     "passed_independent_review": 0,
-    "rejected_by_independent_review": 1,
+    "rejected_by_independent_review": 0,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
   "state_summary": {
     "used_candidates_in_cooldown": 13,
-    "recently_attempted_candidates": 10,
+    "recently_attempted_candidates": 13,
     "recent_draft_passes_today": 1
   }
 }

@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-26T10:49:08+05:30
+- Run time (IST): 2026-10-26T11:48:14+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 89
-- Independent editorial review: 0 draft(s) passed / 1 rejected
+- Candidate pool after freshness/diversity filters: 85
+- Independent editorial review: 0 draft(s) passed / 0 rejected
 - Drafts passing local checks: 0
 - Outcome: **skip**
-- Decision reason: Every draft submitted for independent editorial review was rejected; The hour was skipped.
+- Decision reason: All generated drafts failed the local evidence/editorial checks; the hour was skipped.
 
 ## Source health
 
@@ -37,8 +37,8 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 83
-- Previously tracked repositories refreshed outside search results: 117
+- Repositories seen in this discovery run: 79
+- Previously tracked repositories refreshed outside search results: 121
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
 - Repositories with a 20–36 hour comparison baseline: 10
@@ -48,51 +48,52 @@
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| paperclipai/paperclip | yes | 200 | https://github.com/paperclipai/paperclip |
-| Unlink a customer's identity provider subject with the GraphQL Admin API | yes | 200 | https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api |
-| Show HN: Code Counter Machine a modern analysis of AI driven development costs | yes | 200 | https://github.com/insanai/ccm |
+| Show HN: UIPalooza – Do AI models have a recognizable design taste? | yes | 200 | https://uipalooza.ai/ |
+| IHUI-INF-AI/IHUI-AI | yes | 200 | https://github.com/IHUI-INF-AI/IHUI-AI |
+| beenuar/AiSOC | yes | 200 | https://github.com/beenuar/AiSOC |
 
 ## Selected draft candidates
 
-No draft cleared the complete local and independent-editor gate. See the decision reason and rejected-draft section for locally valid drafts that were rejected, not reviewed, or blocked by a review error.
+No candidate produced a draft that passed every local check. Skipping is intentional.
 
 ## Automatic repair attempt
 
 - Attempted: yes
 - Repaired drafts submitted: 3
-- Repaired drafts that passed local validation: 1
-- Repaired drafts rejected: 2
-- Repair error: Automatic repair failed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi
+- Repaired drafts that passed local validation: 0
+- Repaired drafts rejected: 3
+- Repair error: none
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
-- paperclipai/paperclip: Takeaway implies an undocumented product capability: sync. Reframe as a check of documented behavior.; Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.
-  - Rejected text: paperclip is an open‑source agent orchestration app built in TypeScript. Test agent skill sync by sending a dummy skill update and verifying the UI refreshes. https://github.com/paperclipai/paperclip
-  - Model evidence quote: “The open‑source app everyone uses to manage agents at work”
-  - Claim support: paperclip is an open‑source agent orchestration app built in TypeScript. ← “The open‑source app everyone uses to manage agents at work”
-- Unlink a customer's identity provider subject with the GraphQL Admin API: Fact plus takeaway exceeds the per-link character budget.; Draft is 283 raw characters; limit is 280
-  - Rejected text: identityProviderSubjectDelete mutation unlinks a customer from a third‑party identity provider. After unlinking, confirm the customer is logged out by checking session tokens. https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api
-  - Model evidence quote: “identityProviderSubjectDelete mutation to unlink a customer from a third‑party identity provider”
-  - Claim support: identityProviderSubjectDelete mutation unlinks a customer from a third‑party identity provider. ← “identityProviderSubjectDelete mutation to unlink a customer from a third‑party identity provider”
-- Show HN: Code Counter Machine a modern analysis of AI driven development costs: A supporting quote does not share enough wording with its stated claim; Supporting quotes cover only 29% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: ccm is a Rust CLI that estimates AI‑driven development costs. Run ccm on a sample repo and compare its cost estimate to a manual COCOMO calculation. https://github.com/insanai/ccm
-  - Model evidence quote: “Count source. Explain changes. Inspect evidence and AI, tool, and human development cost scenarios.”
-  - Claim support: ccm is a Rust CLI that estimates AI‑driven development costs. ← “Count source. Explain changes. Inspect evidence and AI, tool, and human development cost scenarios.”
-- Show HN: Code Counter Machine a modern analysis of AI driven development costs: Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.; No claim-by-claim supporting evidence was provided; Supporting quotes cover only 29% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: ccm is a Rust CLI that estimates AI‑driven development costs. Run ccm on a repository and inspect the generated cost estimate output. https://github.com/insanai/ccm
-  - Model evidence quote: “Count source. Explain changes. Inspect evidence and AI, tool, and human development cost scenarios.”
-- Unlink a customer's identity provider subject with the GraphQL Admin API: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
-  - Rejected text: identityProviderSubjectDelete mutation unlinks a customer from a third‑party identity provider. After unlinking, the customer is logged out of all active sessions. https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api
-  - Model evidence quote: “identityProviderSubjectDelete mutation to unlink a customer from a third‑party identity provider”
-- paperclipai/paperclip: The post claims the UI reflects skill updates, but the source excerpt only describes the app as open‑source; no evidence of UI behavior is provided.
-  - Rejected text: paperclip is an open‑source agent orchestration app. Verify that the UI shows the latest agent skill after a skill file is updated. https://github.com/paperclipai/paperclip
+- Show HN: UIPalooza – Do AI models have a recognizable design taste?: Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.
+  - Rejected text: UI Palooza lets you compare AI-generated interfaces across models. Run the same brief on multiple models to spot consistent design biases. https://uipalooza.ai/
+  - Model evidence quote: “Compare AI-generated interfaces across models”
+  - Claim support: UI Palooza lets you compare AI-generated interfaces across models. ← “Compare AI-generated interfaces across models”
+- IHUI-INF-AI/IHUI-AI: The factual opening bundles multiple features; narrow it to one capability.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
+  - Rejected text: IHUI-AI unifies 176 LLMs via LangGraph, MCP, and A2A. Use its multi‑tenant RLS to isolate tenant data across 340 tables. https://github.com/IHUI-INF-AI/IHUI-AI
+  - Model evidence quote: “unifies 176 LLMs via LangGraph + MCP + A2A”
+  - Claim support: IHUI-AI unifies 176 LLMs via LangGraph, MCP, and A2A. ← “unifies 176 LLMs via LangGraph + MCP + A2A”
+- beenuar/AiSOC: A supporting quote does not share enough wording with its stated claim; Supporting quotes cover only 43% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: AiSOC is an open‑source AI SOC that fuses alerts and logs with LLM triage. Deploy without API keys by running the included MCP server for Claude. https://github.com/beenuar/AiSOC
+  - Model evidence quote: “Open-source AI Security Operations Center: alert fusion, LLM-agent triage”
+  - Claim support: AiSOC is an open‑source AI SOC that fuses alerts and logs with LLM triage. ← “Open-source AI Security Operations Center: alert fusion, LLM-agent triage”
+- beenuar/AiSOC: No claim-by-claim supporting evidence was provided; Supporting quotes cover only 43% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: AiSOC is an open‑source AI SOC that fuses alerts and logs with LLM triage. Deploy AiSOC locally without external API keys by running its MCP server. https://github.com/beenuar/AiSOC
+  - Model evidence quote: “Open‑source AI Security Operations Center: alert fusion, LLM‑agent triage”
+- IHUI-INF-AI/IHUI-AI: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
+  - Rejected text: IHUI‑AI unifies 176 LLMs via LangGraph. Enable multi‑tenant RLS to isolate tenant data across 340 tables. https://github.com/IHUI-INF-AI/IHUI-AI
+  - Model evidence quote: “unifies 176 LLMs via LangGraph + MCP + A2A”
+- Show HN: UIPalooza – Do AI models have a recognizable design taste?: Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.
+  - Rejected text: UI Palooza lets you compare AI-generated interfaces across models. Run the same brief on multiple models to spot consistent design biases. https://uipalooza.ai/
+  - Model evidence quote: “Compare AI-generated interfaces across models”
 
 ## Top discovery candidates considered
 
-- paperclipai/paperclip | GitHub Search | ai_and_automation | raw 69, adjusted 70 | current stars 107365 | GitHub stars +334 over about 24.1h | https://github.com/paperclipai/paperclip
-- Unlink a customer's identity provider subject with the GraphQL Admin API | Shopify Developer Changelog | developer_tools | raw 68, adjusted 68 | https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api
-- Show HN: Code Counter Machine a modern analysis of AI driven development costs | Hacker News | product_and_workflow_tools | raw 64, adjusted 66 | https://github.com/insanai/ccm
+- Show HN: UIPalooza – Do AI models have a recognizable design taste? | Hacker News | product_and_workflow_tools | raw 64, adjusted 66 | https://uipalooza.ai/
+- IHUI-INF-AI/IHUI-AI | GitHub Search | security_and_self_hosting | raw 71, adjusted 65 | current stars 31 | GitHub star trend: building baseline | https://github.com/IHUI-INF-AI/IHUI-AI
+- beenuar/AiSOC | GitHub Search | security_and_self_hosting | raw 70, adjusted 64 | current stars 3817 | GitHub star trend: building baseline | https://github.com/beenuar/AiSOC
 
 ## Safety and interpretation
 
