@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "feeds": [
     {
       "id": "console-dev",
@@ -17,6 +17,36 @@
       "id": "shopify-dev-changelog",
       "name": "Shopify Developer Changelog",
       "url": "https://shopify.dev/changelog/feed.xml",
+      "category_hint": "commerce_and_digital_products"
+    },
+    {
+      "id": "shopify-community-latest",
+      "name": "Shopify Community",
+      "url": "https://community.shopify.com/latest.rss",
+      "category_hint": "commerce_and_digital_products"
+    },
+    {
+      "id": "stripe-blog",
+      "name": "Stripe Blog",
+      "url": "https://stripe.com/blog/feed.rss",
+      "category_hint": "commerce_and_digital_products"
+    },
+    {
+      "id": "ahrefs-blog",
+      "name": "Ahrefs Blog",
+      "url": "https://ahrefs.com/blog/feed",
+      "category_hint": "marketing_and_distribution"
+    },
+    {
+      "id": "indie-hackers-feed",
+      "name": "Indie Hackers (unofficial feed)",
+      "url": "https://feed.indiehackers.world/posts.rss",
+      "category_hint": "creator_and_indie_business"
+    },
+    {
+      "id": "woocommerce-blog",
+      "name": "WooCommerce Blog",
+      "url": "https://woocommerce.com/posts/feed",
       "category_hint": "commerce_and_digital_products"
     }
   ],
@@ -65,6 +95,21 @@
       "id": "github-self-hosted",
       "category": "security_and_self_hosting",
       "query": "stars:>=10 pushed:>={active_since} topic:self-hosted"
+    },
+    {
+      "id": "github-digital-product-tools",
+      "category": "digital_product_business",
+      "query": "stars:>=5 pushed:>={active_since} \"digital product\""
+    },
+    {
+      "id": "github-seller-operations",
+      "category": "online_seller_operations",
+      "query": "stars:>=5 pushed:>={active_since} inventory"
+    },
+    {
+      "id": "github-marketing-distribution",
+      "category": "marketing_and_distribution",
+      "query": "stars:>=10 pushed:>={active_since} topic:seo"
     }
   ],
   "hn_searches": [
@@ -114,6 +159,30 @@
       "id": "hn-security-selfhost",
       "category": "security_and_self_hosting",
       "query": "self-hosted privacy security",
+      "tags": "story"
+    },
+    {
+      "id": "hn-indie-business-revenue",
+      "category": "creator_and_indie_business",
+      "query": "indie hacker revenue",
+      "tags": "story"
+    },
+    {
+      "id": "hn-digital-downloads-templates",
+      "category": "digital_product_business",
+      "query": "digital download template",
+      "tags": "story"
+    },
+    {
+      "id": "hn-seller-operations",
+      "category": "online_seller_operations",
+      "query": "ecommerce seller inventory",
+      "tags": "story"
+    },
+    {
+      "id": "hn-marketing-distribution",
+      "category": "marketing_and_distribution",
+      "query": "SEO newsletter marketing",
       "tags": "story"
     }
   ],
@@ -261,13 +330,119 @@
         "compliance",
         "secrets management"
       ]
+    },
+    "digital_product_business": {
+      "label": "Digital products and creator commerce",
+      "keywords": [
+        "digital product",
+        "digital products",
+        "digital download",
+        "digital downloads",
+        "template",
+        "templates",
+        "notion template",
+        "canva template",
+        "ebook",
+        "workbook",
+        "spreadsheet",
+        "printable",
+        "course creator",
+        "gumroad",
+        "etsy seller",
+        "creative market",
+        "digital asset",
+        "presets",
+        "fonts",
+        "creator commerce",
+        "digital shop"
+      ]
+    },
+    "online_seller_operations": {
+      "label": "Online seller operations and small-business workflows",
+      "keywords": [
+        "seller operations",
+        "inventory management",
+        "inventory",
+        "reorder",
+        "order management",
+        "profit margin",
+        "pricing calculator",
+        "cost of goods",
+        "bookkeeping",
+        "invoice",
+        "invoicing",
+        "supplier",
+        "purchase order",
+        "returns",
+        "refunds",
+        "product listing",
+        "marketplace seller",
+        "small business operations",
+        "sales tax"
+      ]
+    },
+    "marketing_and_distribution": {
+      "label": "Marketing, search and digital-product distribution",
+      "keywords": [
+        "marketing",
+        "seo",
+        "keyword research",
+        "search volume",
+        "organic traffic",
+        "newsletter",
+        "email marketing",
+        "landing page",
+        "conversion",
+        "affiliate",
+        "distribution",
+        "creator marketing",
+        "launch strategy",
+        "customer acquisition",
+        "content marketing",
+        "lead generation",
+        "paid ads",
+        "market validation"
+      ]
     }
   },
   "source_weights": {
-    "Shopify Developer Changelog": 24,
-    "Console.dev": 21,
-    "GitHub Search": 13,
-    "Product Hunt": 15,
-    "Hacker News": 15
-  }
+    "Shopify Developer Changelog": 14,
+    "Shopify Community": 16,
+    "Console.dev": 16,
+    "GitHub Search": 11,
+    "Product Hunt": 13,
+    "Hacker News": 16,
+    "Stripe Blog": 12,
+    "Ahrefs Blog": 13,
+    "Indie Hackers": 14,
+    "WooCommerce Blog": 13,
+    "WordPress Plugin Directory": 12
+  },
+  "wordpress_searches": [
+    {
+      "id": "wp-digital-downloads",
+      "query": "digital downloads",
+      "category": "digital_product_business"
+    },
+    {
+      "id": "wp-ecommerce",
+      "query": "ecommerce",
+      "category": "commerce_and_digital_products"
+    },
+    {
+      "id": "wp-inventory-management",
+      "query": "inventory management",
+      "category": "online_seller_operations"
+    },
+    {
+      "id": "wp-membership-creators",
+      "query": "membership",
+      "category": "creator_and_indie_business"
+    },
+    {
+      "id": "wp-marketing-analytics",
+      "query": "marketing analytics",
+      "category": "marketing_and_distribution"
+    }
+  ]
 }
