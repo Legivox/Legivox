@@ -39,8 +39,8 @@
     },
     {
       "id": "indie-hackers-feed",
-      "name": "Indie Hackers (unofficial feed)",
-      "url": "https://ihrss.io/newest",
+      "name": "Indie Hackers (unofficial third-party feed)",
+      "url": "https://rss.app/feeds/faq798zw7eJuer9w.xml",
       "category_hint": "creator_and_indie_business"
     },
     {
