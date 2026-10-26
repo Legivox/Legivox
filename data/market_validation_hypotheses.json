@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "updated_at": "2026-10-26",
+  "status_definitions": [
+    "unvalidated",
+    "researching",
+    "pre_selling",
+    "validated",
+    "rejected"
+  ],
+  "scoring_dimensions": {
+    "buyer_specificity": "0-5; can we describe a narrow buyer and the situation they are in?",
+    "pain_frequency_and_cost": "0-5; evidence of repeated work, errors, risk, wasted time or lost revenue",
+    "existing_spending": "0-5; paid competitors, actual purchases, or paid workaround evidence",
+    "market_gap": "0-5; repeated negative-review themes or underserved workflow confirmed by buyers",
+    "distribution_access": "0-5; credible marketplace/search/community/direct path without paid ads or a pre-existing audience",
+    "build_and_maintenance_cost": "0-5; higher means cheaper/faster to deliver and maintain",
+    "willingness_to_pay": "0-5; actual payments or pre-orders score above opinions and waitlist sign-ups"
+  },
+  "hypotheses": [
+    {
+      "id": "digital-seller-profit-ops",
+      "title": "A narrow operations product for digital-download sellers",
+      "target_buyer": "A specific segment of people already selling downloadable products on Etsy, Gumroad, Shopify or similar platforms",
+      "problem_hypothesis": "One specific workflow around fee-aware margin, refunds, product updates, listing maintenance or cross-channel reporting is still handled with fragile manual work",
+      "candidate_formats": [
+        "spreadsheet/workbook",
+        "small data-cleanup utility",
+        "workflow template"
+      ],
+      "status": "unvalidated",
+      "evidence_to_collect": [
+        "Marketplace keyword search and listing counts",
+        "at least 20 independent seller pain reports",
+        "10 competitor products and negative reviews",
+        "actual paid alternatives and price bands",
+        "3 unrelated paid pre-orders or equivalent strong commitment"
+      ],
+      "kill_criteria": [
+        "Only generic searches with overwhelming low-priced competition",
+        "No repeated specific pain after review analysis",
+        "No reachable organic channel",
+        "Prospects will not commit money"
+      ]
+    },
+    {
+      "id": "small-business-repetitive-work",
+      "title": "A narrow spreadsheet-heavy task for a small-business segment",
+      "target_buyer": "One identifiable small-business profession or operator role",
+      "problem_hypothesis": "The buyer repeats a measurable, error-prone task in spreadsheets, email, CSVs or a combination of disconnected tools",
+      "candidate_formats": [
+        "spreadsheet",
+        "checklist and operating pack",
+        "CSV utility",
+        "small automation"
+      ],
+      "status": "unvalidated",
+      "evidence_to_collect": [
+        "Recent problem reports from at least three source groups",
+        "Existing workflow and time/cost of workaround",
+        "Paid competitor/substitute evidence",
+        "A manually delivered pilot",
+        "3 unrelated paid pre-orders or equivalent strong commitment"
+      ],
+      "kill_criteria": [
+        "Pain is occasional or low-cost",
+        "A free incumbent solves it adequately",
+        "Buyer acquisition depends on expensive ads"
+      ]
+    },
+    {
+      "id": "creator-distribution-workflow",
+      "title": "A repeatable distribution workflow for a specific creator or freelancer",
+      "target_buyer": "A narrowly defined creator, freelancer or small agency already trying to win customers",
+      "problem_hypothesis": "A repeated content, SEO, proposal, lead tracking or reporting workflow costs enough time that the buyer already spends money or uses brittle workarounds",
+      "candidate_formats": [
+        "template bundle",
+        "reporting workbook",
+        "automation starter kit",
+        "small script"
+      ],
+      "status": "unvalidated",
+      "evidence_to_collect": [
+        "Paid competitors and current price points",
+        "Recurring dissatisfaction in detailed reviews",
+        "Evidence of buyer-search intent",
+        "An organic channel the buyers already use",
+        "Paid pilot/pre-order evidence"
+      ],
+      "kill_criteria": [
+        "Only creator-launch hype or generic AI interest",
+        "No defensible workflow gap",
+        "No reliable search/community distribution route"
+      ]
+    }
+  ],
+  "note": "These are hypotheses, not recommendations. No market, product, price or demand level has been validated. Scores stay blank until evidence is collected."
+}
