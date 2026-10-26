@@ -191,6 +191,15 @@ def normalize_candidate(
         return None
 
     summary_text = clean_text(summary)[:MAX_DESCRIPTION]
+    # Do not promote an individual's support case as general audience content.
+    # Support-ticket IDs are not useful editorial evidence and can unnecessarily
+    # amplify a user-specific dispute when the forum page is publicly indexed.
+    if source == "Shopify Community" and re.search(
+        r"\\b(?:support\\s+)?ticket\\b[^\\d]{0,20}\\d{4,}\\b",
+        clean_title + " " + summary_text,
+        flags=re.I,
+    ):
+        return None
     pub_dt = parse_datetime(published_at)
     search_text = " ".join([clean_title, summary_text, clean_text(extra_text)])
     categories = category_matches(search_text, config, category_hint)
@@ -230,16 +239,18 @@ def normalize_candidate(
         traction_points += min(10, round(2.5 * math.log1p(points)))
     if comments:
         traction_points += min(4, round(1.2 * math.log1p(comments)))
-    # WordPress install and rating counts can help prioritise directory entries, but they do not verify quality or compatibility.
+    # Directory adoption counts are weak context, not editorial quality or recency.
+    # Cap the combined effect so popular plugin listings cannot dominate timely,
+    # independently useful articles and release notes on popularity alone.
     active_installs = max(0, int(signal_values.get("active_installs") or 0))
     num_ratings = max(0, int(signal_values.get("num_ratings") or 0))
     downloaded = max(0, int(signal_values.get("downloaded") or 0))
     if active_installs:
-        traction_points += min(4, round(math.log10(active_installs + 1)))
+        traction_points += min(2, round(0.5 * math.log10(active_installs + 1)))
     if num_ratings:
-        traction_points += min(3, round(0.75 * math.log1p(num_ratings)))
+        traction_points += min(1, round(0.25 * math.log1p(num_ratings)))
     if downloaded:
-        traction_points += min(2, round(0.5 * math.log10(downloaded + 1)))
+        traction_points += min(1, round(0.25 * math.log10(downloaded + 1)))
     traction_points = min(12, traction_points)
 
     technical_markers = (
