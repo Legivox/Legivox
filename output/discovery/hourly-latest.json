@@ -1,38 +1,38 @@
 {
-  "generated_at_ist": "2026-10-26T11:48:14+05:30",
-  "run_at_ist": "2026-10-26T11:48:14+05:30",
+  "generated_at_ist": "2026-10-26T13:06:20+05:30",
+  "run_at_ist": "2026-10-26T13:06:20+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 174,
-  "eligible_candidate_count": 85,
+  "candidate_count_raw": 163,
+  "eligible_candidate_count": 104,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4621
+      "total_count": 4631
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 981
+      "total_count": 982
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 344
+      "total_count": 348
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2845
+      "total_count": 2851
     },
     {
       "source": "GitHub Search · github-ecommerce-digital-products",
@@ -46,14 +46,14 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2001
+      "total_count": 2008
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3190
+      "total_count": 3197
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
@@ -67,19 +67,19 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 270
+      "total_count": 271
     },
     {
       "source": "Hacker News · hn-analytics-growth",
       "kind": "hacker_news",
-      "items_kept": 10,
+      "items_kept": 3,
       "status": "ok",
       "total_count": 10
     },
     {
       "source": "Hacker News · hn-automation-api",
       "kind": "hacker_news",
-      "items_kept": 1,
+      "items_kept": 0,
       "status": "ok",
       "total_count": 10
     },
@@ -114,7 +114,7 @@
     {
       "source": "Hacker News · hn-shopify",
       "kind": "hacker_news",
-      "items_kept": 10,
+      "items_kept": 6,
       "status": "ok",
       "total_count": 10
     },
@@ -134,7 +134,7 @@
     {
       "source": "Product Hunt",
       "kind": "rss",
-      "items_kept": 41,
+      "items_kept": 40,
       "status": "ok"
     },
     {
@@ -145,10 +145,10 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-26T06:18:14+00:00",
+    "observed_at_utc": "2026-10-26T07:36:20+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 79,
-    "previously_tracked_repositories_refreshed": 121,
+    "repositories_seen_in_discovery": 81,
+    "previously_tracked_repositories_refreshed": 119,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
@@ -158,29 +158,29 @@
   },
   "primary_source_checks": [
     {
-      "candidate_id": "55bc1924e899a999",
-      "title": "Show HN: UIPalooza – Do AI models have a recognizable design taste?",
-      "source_url": "https://uipalooza.ai/",
+      "candidate_id": "d3ffc07a3891c12c",
+      "title": "Show HN: Tabverse – a free, open-source, with self-hostable server Workona clone",
+      "source_url": "https://news.ycombinator.com/item?id=50240121",
       "verified": true,
-      "final_url": "https://uipalooza.ai/",
+      "final_url": "https://news.ycombinator.com/item?id=50240121",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "769635c4c0589719",
-      "title": "IHUI-INF-AI/IHUI-AI",
-      "source_url": "https://github.com/IHUI-INF-AI/IHUI-AI",
+      "candidate_id": "bb3b22ee49e68f15",
+      "title": "MikkoParkkola/mcp-gateway",
+      "source_url": "https://github.com/MikkoParkkola/mcp-gateway",
       "verified": true,
-      "final_url": "https://github.com/IHUI-INF-AI/IHUI-AI",
+      "final_url": "https://github.com/MikkoParkkola/mcp-gateway",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "e510ab3edae18040",
-      "title": "beenuar/AiSOC",
-      "source_url": "https://github.com/beenuar/AiSOC",
+      "candidate_id": "5113f4600cf59250",
+      "title": "chattermate/chattermate.chat",
+      "source_url": "https://github.com/chattermate/chattermate.chat",
       "verified": true,
-      "final_url": "https://github.com/beenuar/AiSOC",
+      "final_url": "https://github.com/chattermate/chattermate.chat",
       "http_status": 200,
       "reason": ""
     }
@@ -189,153 +189,124 @@
   "daily_draft_cap": 16,
   "daily_drafts_already_passed": 1,
   "outcome": "skip",
-  "decision_reason": "All generated drafts failed the local evidence/editorial checks; the hour was skipped.",
+  "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
   "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "55bc1924e899a999",
-      "title": "Show HN: UIPalooza – Do AI models have a recognizable design taste?",
+      "candidate_id": "5113f4600cf59250",
+      "title": "chattermate/chattermate.chat",
       "reasons": [
-        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about."
+        "Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration."
       ],
-      "proposed_text": "UI Palooza lets you compare AI-generated interfaces across models. Run the same brief on multiple models to spot consistent design biases. https://uipalooza.ai/",
-      "evidence_quote": "Compare AI-generated interfaces across models",
+      "proposed_text": "chattermate.chat is an open‑source AI customer support platform with human handoff and Shopify integration. Deploy a test bot and verify Shopify order events trigger chat flows. https://github.com/chattermate/chattermate.chat",
+      "evidence_quote": "Open‑source AI customer support platform — AI chatbot with human handoff, Shopify & Slack integrations",
       "claim_evidence": [
         {
-          "claim": "UI Palooza lets you compare AI-generated interfaces across models.",
-          "quote": "Compare AI-generated interfaces across models"
+          "claim": "chattermate.chat is an open‑source AI customer support platform with human handoff and Shopify integration",
+          "quote": "Open‑source AI customer support platform — AI chatbot with human handoff, Shopify & Slack integrations"
         }
       ]
     },
     {
-      "candidate_id": "769635c4c0589719",
-      "title": "IHUI-INF-AI/IHUI-AI",
+      "candidate_id": "d3ffc07a3891c12c",
+      "title": "Show HN: Tabverse – a free, open-source, with self-hostable server Workona clone",
+      "proposed_text": "Tabverse is a local‑first Workona‑like Chrome extension for managing tabs. Test tab persistence across restarts to confirm local‑first behavior. https://news.ycombinator.com/item?id=50240121",
       "reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability.",
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
+        "Originality too low; post merely restates headline and basic claim without new insight."
       ],
-      "proposed_text": "IHUI-AI unifies 176 LLMs via LangGraph, MCP, and A2A. Use its multi‑tenant RLS to isolate tenant data across 340 tables. https://github.com/IHUI-INF-AI/IHUI-AI",
-      "evidence_quote": "unifies 176 LLMs via LangGraph + MCP + A2A",
-      "claim_evidence": [
-        {
-          "claim": "IHUI-AI unifies 176 LLMs via LangGraph, MCP, and A2A.",
-          "quote": "unifies 176 LLMs via LangGraph + MCP + A2A"
-        }
-      ]
+      "editorial_review": {
+        "clarity_score": 8,
+        "technical_coherence_score": 8,
+        "takeaway_value_score": 7,
+        "source_faithfulness_score": 9,
+        "originality_score": 5
+      }
     },
     {
-      "candidate_id": "e510ab3edae18040",
-      "title": "beenuar/AiSOC",
+      "candidate_id": "bb3b22ee49e68f15",
+      "title": "MikkoParkkola/mcp-gateway",
+      "proposed_text": "mcp‑gateway is a self‑hosted MCP gateway and proxy in one Rust binary. Run a simple tool call through the gateway to verify constant context cost. https://github.com/MikkoParkkola/mcp-gateway",
       "reasons": [
-        "A supporting quote does not share enough wording with its stated claim",
-        "Supporting quotes cover only 43% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Originality too low; post repeats headline and basic claim without added perspective."
       ],
-      "proposed_text": "AiSOC is an open‑source AI SOC that fuses alerts and logs with LLM triage. Deploy without API keys by running the included MCP server for Claude. https://github.com/beenuar/AiSOC",
-      "evidence_quote": "Open-source AI Security Operations Center: alert fusion, LLM-agent triage",
-      "claim_evidence": [
-        {
-          "claim": "AiSOC is an open‑source AI SOC that fuses alerts and logs with LLM triage.",
-          "quote": "Open-source AI Security Operations Center: alert fusion, LLM-agent triage"
-        }
-      ]
+      "editorial_review": {
+        "clarity_score": 8,
+        "technical_coherence_score": 8,
+        "takeaway_value_score": 7,
+        "source_faithfulness_score": 9,
+        "originality_score": 5
+      }
     },
     {
-      "candidate_id": "e510ab3edae18040",
-      "title": "beenuar/AiSOC",
+      "candidate_id": "d3ffc07a3891c12c",
+      "title": "Show HN: Tabverse – a free, open-source, with self-hostable server Workona clone",
       "reasons": [
         "No claim-by-claim supporting evidence was provided",
-        "Supporting quotes cover only 43% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Unsupported strong claim: unlimited",
+        "Supporting quotes cover only 30% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "AiSOC is an open‑source AI SOC that fuses alerts and logs with LLM triage. Deploy AiSOC locally without external API keys by running its MCP server. https://github.com/beenuar/AiSOC",
-      "evidence_quote": "Open‑source AI Security Operations Center: alert fusion, LLM‑agent triage",
+      "proposed_text": "Tabverse is a local‑first Chrome extension that lets you create unlimited tab spaces without a server. Verify that tabs remain open after a browser restart to confirm local‑first persistence. https://news.ycombinator.com/item?id=50240121",
+      "evidence_quote": "The only limit is your local storage spaces so that you can have as many spaces(I call tabverse) as you can.",
       "automatic_repair_attempt": true,
       "original_rejection_reasons": [
-        "A supporting quote does not share enough wording with its stated claim",
-        "Supporting quotes cover only 43% of factual wording; narrow the claim or provide a closer primary-source quote"
-      ]
-    },
-    {
-      "candidate_id": "769635c4c0589719",
-      "title": "IHUI-INF-AI/IHUI-AI",
-      "reasons": [
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
-      ],
-      "proposed_text": "IHUI‑AI unifies 176 LLMs via LangGraph. Enable multi‑tenant RLS to isolate tenant data across 340 tables. https://github.com/IHUI-INF-AI/IHUI-AI",
-      "evidence_quote": "unifies 176 LLMs via LangGraph + MCP + A2A",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability.",
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
-      ]
-    },
-    {
-      "candidate_id": "55bc1924e899a999",
-      "title": "Show HN: UIPalooza – Do AI models have a recognizable design taste?",
-      "reasons": [
-        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about."
-      ],
-      "proposed_text": "UI Palooza lets you compare AI-generated interfaces across models. Run the same brief on multiple models to spot consistent design biases. https://uipalooza.ai/",
-      "evidence_quote": "Compare AI-generated interfaces across models",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about."
+        "Originality too low; post merely restates headline and basic claim without new insight."
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "55bc1924e899a999",
-      "title": "Show HN: UIPalooza – Do AI models have a recognizable design taste?",
-      "url": "https://uipalooza.ai/",
+      "id": "d3ffc07a3891c12c",
+      "title": "Show HN: Tabverse – a free, open-source, with self-hostable server Workona clone",
+      "url": "https://news.ycombinator.com/item?id=50240121",
       "source": "Hacker News",
       "primary_category": "product_and_workflow_tools",
-      "priority_score": 64,
-      "hourly_adjusted_score": 66,
+      "priority_score": 71,
+      "hourly_adjusted_score": 71,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-26T04:00:04+00:00",
-      "days_old": 0.1,
+      "published_at": "2026-10-26T07:04:15+00:00",
+      "days_old": 0.02,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "769635c4c0589719",
-      "title": "IHUI-INF-AI/IHUI-AI",
-      "url": "https://github.com/IHUI-INF-AI/IHUI-AI",
+      "id": "bb3b22ee49e68f15",
+      "title": "MikkoParkkola/mcp-gateway",
+      "url": "https://github.com/MikkoParkkola/mcp-gateway",
       "source": "GitHub Search",
       "primary_category": "security_and_self_hosting",
-      "priority_score": 71,
-      "hourly_adjusted_score": 65,
-      "stars_current": 31,
+      "priority_score": 75,
+      "hourly_adjusted_score": 69,
+      "stars_current": 85,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "insufficient_history",
-      "published_at": "2026-10-26T06:18:50+00:00",
+      "published_at": "2026-10-26T07:36:48+00:00",
       "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "e510ab3edae18040",
-      "title": "beenuar/AiSOC",
-      "url": "https://github.com/beenuar/AiSOC",
+      "id": "5113f4600cf59250",
+      "title": "chattermate/chattermate.chat",
+      "url": "https://github.com/chattermate/chattermate.chat",
       "source": "GitHub Search",
-      "primary_category": "security_and_self_hosting",
-      "priority_score": 70,
-      "hourly_adjusted_score": 64,
-      "stars_current": 3817,
+      "primary_category": "commerce_and_digital_products",
+      "priority_score": 72,
+      "hourly_adjusted_score": 66,
+      "stars_current": 148,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "insufficient_history",
-      "published_at": "2026-10-26T06:18:52+00:00",
-      "days_old": 0.0,
+      "published_at": "2026-10-26T07:11:03+00:00",
+      "days_old": 0.02,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
@@ -343,26 +314,26 @@
   ],
   "automatic_repair": {
     "attempted": true,
-    "drafts_submitted": 3,
+    "drafts_submitted": 1,
     "repaired_local_passes": 0,
-    "repair_rejections": 3,
+    "repair_rejections": 1,
     "repair_error": null,
-    "editorial_repair_attempted": false,
-    "editorial_repair_drafts_submitted": 0,
+    "editorial_repair_attempted": true,
+    "editorial_repair_drafts_submitted": 1,
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 0,
-    "submitted_for_independent_review": 0,
+    "locally_valid_drafts": 2,
+    "submitted_for_independent_review": 2,
     "passed_independent_review": 0,
-    "rejected_by_independent_review": 0,
+    "rejected_by_independent_review": 2,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
   "state_summary": {
     "used_candidates_in_cooldown": 13,
-    "recently_attempted_candidates": 13,
+    "recently_attempted_candidates": 16,
     "recent_draft_passes_today": 1
   }
 }

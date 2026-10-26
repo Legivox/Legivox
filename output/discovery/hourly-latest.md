@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-26T11:48:14+05:30
+- Run time (IST): 2026-10-26T13:06:20+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 85
-- Independent editorial review: 0 draft(s) passed / 0 rejected
+- Candidate pool after freshness/diversity filters: 104
+- Independent editorial review: 0 draft(s) passed / 2 rejected
 - Drafts passing local checks: 0
 - Outcome: **skip**
-- Decision reason: All generated drafts failed the local evidence/editorial checks; the hour was skipped.
+- Decision reason: Every draft submitted for independent editorial review was rejected; The hour was skipped.
 
 ## Source health
 
@@ -22,23 +22,23 @@
 | GitHub Search · github-self-hosted | 10 | ok |
 | GitHub Search · github-shopify-commerce | 10 | ok |
 | GitHub Search · github-workflow-automation | 10 | ok |
-| Hacker News · hn-analytics-growth | 10 | ok |
-| Hacker News · hn-automation-api | 1 | ok |
+| Hacker News · hn-analytics-growth | 3 | ok |
+| Hacker News · hn-automation-api | 0 | ok |
 | Hacker News · hn-creator-business | 0 | ok |
 | Hacker News · hn-digital-products | 1 | ok |
 | Hacker News · hn-ecommerce-payments | 0 | ok |
 | Hacker News · hn-security-selfhost | 0 | ok |
-| Hacker News · hn-shopify | 10 | ok |
+| Hacker News · hn-shopify | 6 | ok |
 | Hacker News · hn-show-hn | 10 | ok |
 | Console.dev | 12 | ok |
-| Product Hunt | 41 | ok |
+| Product Hunt | 40 | ok |
 | Shopify Developer Changelog | 10 | ok |
 
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 79
-- Previously tracked repositories refreshed outside search results: 121
+- Repositories seen in this discovery run: 81
+- Previously tracked repositories refreshed outside search results: 119
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
 - Repositories with a 20–36 hour comparison baseline: 10
@@ -48,52 +48,42 @@
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| Show HN: UIPalooza – Do AI models have a recognizable design taste? | yes | 200 | https://uipalooza.ai/ |
-| IHUI-INF-AI/IHUI-AI | yes | 200 | https://github.com/IHUI-INF-AI/IHUI-AI |
-| beenuar/AiSOC | yes | 200 | https://github.com/beenuar/AiSOC |
+| Show HN: Tabverse – a free, open-source, with self-hostable server Workona clone | yes | 200 | https://news.ycombinator.com/item?id=50240121 |
+| MikkoParkkola/mcp-gateway | yes | 200 | https://github.com/MikkoParkkola/mcp-gateway |
+| chattermate/chattermate.chat | yes | 200 | https://github.com/chattermate/chattermate.chat |
 
 ## Selected draft candidates
 
-No candidate produced a draft that passed every local check. Skipping is intentional.
+No draft cleared the complete local and independent-editor gate. See the decision reason and rejected-draft section for locally valid drafts that were rejected, not reviewed, or blocked by a review error.
 
 ## Automatic repair attempt
 
 - Attempted: yes
-- Repaired drafts submitted: 3
+- Repaired drafts submitted: 1
 - Repaired drafts that passed local validation: 0
-- Repaired drafts rejected: 3
+- Repaired drafts rejected: 1
 - Repair error: none
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
-- Show HN: UIPalooza – Do AI models have a recognizable design taste?: Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.
-  - Rejected text: UI Palooza lets you compare AI-generated interfaces across models. Run the same brief on multiple models to spot consistent design biases. https://uipalooza.ai/
-  - Model evidence quote: “Compare AI-generated interfaces across models”
-  - Claim support: UI Palooza lets you compare AI-generated interfaces across models. ← “Compare AI-generated interfaces across models”
-- IHUI-INF-AI/IHUI-AI: The factual opening bundles multiple features; narrow it to one capability.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
-  - Rejected text: IHUI-AI unifies 176 LLMs via LangGraph, MCP, and A2A. Use its multi‑tenant RLS to isolate tenant data across 340 tables. https://github.com/IHUI-INF-AI/IHUI-AI
-  - Model evidence quote: “unifies 176 LLMs via LangGraph + MCP + A2A”
-  - Claim support: IHUI-AI unifies 176 LLMs via LangGraph, MCP, and A2A. ← “unifies 176 LLMs via LangGraph + MCP + A2A”
-- beenuar/AiSOC: A supporting quote does not share enough wording with its stated claim; Supporting quotes cover only 43% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: AiSOC is an open‑source AI SOC that fuses alerts and logs with LLM triage. Deploy without API keys by running the included MCP server for Claude. https://github.com/beenuar/AiSOC
-  - Model evidence quote: “Open-source AI Security Operations Center: alert fusion, LLM-agent triage”
-  - Claim support: AiSOC is an open‑source AI SOC that fuses alerts and logs with LLM triage. ← “Open-source AI Security Operations Center: alert fusion, LLM-agent triage”
-- beenuar/AiSOC: No claim-by-claim supporting evidence was provided; Supporting quotes cover only 43% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: AiSOC is an open‑source AI SOC that fuses alerts and logs with LLM triage. Deploy AiSOC locally without external API keys by running its MCP server. https://github.com/beenuar/AiSOC
-  - Model evidence quote: “Open‑source AI Security Operations Center: alert fusion, LLM‑agent triage”
-- IHUI-INF-AI/IHUI-AI: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
-  - Rejected text: IHUI‑AI unifies 176 LLMs via LangGraph. Enable multi‑tenant RLS to isolate tenant data across 340 tables. https://github.com/IHUI-INF-AI/IHUI-AI
-  - Model evidence quote: “unifies 176 LLMs via LangGraph + MCP + A2A”
-- Show HN: UIPalooza – Do AI models have a recognizable design taste?: Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.
-  - Rejected text: UI Palooza lets you compare AI-generated interfaces across models. Run the same brief on multiple models to spot consistent design biases. https://uipalooza.ai/
-  - Model evidence quote: “Compare AI-generated interfaces across models”
+- chattermate/chattermate.chat: Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.
+  - Rejected text: chattermate.chat is an open‑source AI customer support platform with human handoff and Shopify integration. Deploy a test bot and verify Shopify order events trigger chat flows. https://github.com/chattermate/chattermate.chat
+  - Model evidence quote: “Open‑source AI customer support platform — AI chatbot with human handoff, Shopify & Slack integrations”
+  - Claim support: chattermate.chat is an open‑source AI customer support platform with human handoff and Shopify integration ← “Open‑source AI customer support platform — AI chatbot with human handoff, Shopify & Slack integrations”
+- Show HN: Tabverse – a free, open-source, with self-hostable server Workona clone: Originality too low; post merely restates headline and basic claim without new insight.
+  - Rejected text: Tabverse is a local‑first Workona‑like Chrome extension for managing tabs. Test tab persistence across restarts to confirm local‑first behavior. https://news.ycombinator.com/item?id=50240121
+- MikkoParkkola/mcp-gateway: Originality too low; post repeats headline and basic claim without added perspective.
+  - Rejected text: mcp‑gateway is a self‑hosted MCP gateway and proxy in one Rust binary. Run a simple tool call through the gateway to verify constant context cost. https://github.com/MikkoParkkola/mcp-gateway
+- Show HN: Tabverse – a free, open-source, with self-hostable server Workona clone: No claim-by-claim supporting evidence was provided; Unsupported strong claim: unlimited; Supporting quotes cover only 30% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: Tabverse is a local‑first Chrome extension that lets you create unlimited tab spaces without a server. Verify that tabs remain open after a browser restart to confirm local‑first persistence. https://news.ycombinator.com/item?id=50240121
+  - Model evidence quote: “The only limit is your local storage spaces so that you can have as many spaces(I call tabverse) as you can.”
 
 ## Top discovery candidates considered
 
-- Show HN: UIPalooza – Do AI models have a recognizable design taste? | Hacker News | product_and_workflow_tools | raw 64, adjusted 66 | https://uipalooza.ai/
-- IHUI-INF-AI/IHUI-AI | GitHub Search | security_and_self_hosting | raw 71, adjusted 65 | current stars 31 | GitHub star trend: building baseline | https://github.com/IHUI-INF-AI/IHUI-AI
-- beenuar/AiSOC | GitHub Search | security_and_self_hosting | raw 70, adjusted 64 | current stars 3817 | GitHub star trend: building baseline | https://github.com/beenuar/AiSOC
+- Show HN: Tabverse – a free, open-source, with self-hostable server Workona clone | Hacker News | product_and_workflow_tools | raw 71, adjusted 71 | https://news.ycombinator.com/item?id=50240121
+- MikkoParkkola/mcp-gateway | GitHub Search | security_and_self_hosting | raw 75, adjusted 69 | current stars 85 | GitHub star trend: building baseline | https://github.com/MikkoParkkola/mcp-gateway
+- chattermate/chattermate.chat | GitHub Search | commerce_and_digital_products | raw 72, adjusted 66 | current stars 148 | GitHub star trend: building baseline | https://github.com/chattermate/chattermate.chat
 
 ## Safety and interpretation
 
