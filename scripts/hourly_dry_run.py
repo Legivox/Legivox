@@ -579,6 +579,17 @@ def update_github_star_velocity(
 
 
 
+# Shopify Community RSS is useful for the read-only discovery queue, but its topic
+# pages returned HTTP 403 during live primary-source checks on 2026-10-26. Keep
+# those candidates visible for monitoring; do not spend drafting/review calls on
+# pages the automated publisher cannot verify. Remove this block after access works.
+AUTOMATED_DRAFT_BLOCKED_SOURCES = {"Shopify Community"}
+
+
+def source_is_enabled_for_automated_draft(candidate: dict) -> bool:
+    return str(candidate.get("source") or "") not in AUTOMATED_DRAFT_BLOCKED_SOURCES
+
+
 def diversity_rank(
     candidates: list[dict], state: dict, now: datetime, lookback_days: int = 3, *, refresh_star_watchlist: bool = False
 ) -> list[dict]:
@@ -599,6 +610,8 @@ def diversity_rank(
     for candidate in candidates:
         cid = candidate.get("id")
         if not cid or not is_fresh(candidate, lookback_days):
+            continue
+        if not source_is_enabled_for_automated_draft(candidate):
             continue
         used_at = parse_utc(used.get(cid))
         if used_at and now_utc - used_at < timedelta(days=USED_CANDIDATE_COOLDOWN_DAYS):
