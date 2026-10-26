@@ -230,7 +230,7 @@ def normalize_candidate(
         traction_points += min(10, round(2.5 * math.log1p(points)))
     if comments:
         traction_points += min(4, round(1.2 * math.log1p(comments)))
-    # WordPress plugin installs and ratings indicate adoption/feedback, not paid demand.
+    # WordPress install and rating counts can help prioritise directory entries, but they do not verify quality or compatibility.
     active_installs = max(0, int(signal_values.get("active_installs") or 0))
     num_ratings = max(0, int(signal_values.get("num_ratings") or 0))
     downloaded = max(0, int(signal_values.get("downloaded") or 0))
@@ -740,11 +740,10 @@ def write_report(
         "candidates": visible,
         "editorial_safety": [
             "No candidate has been published or automatically drafted into a post.",
-            "Priority score is a queue-ordering heuristic, not a quality, safety, market-demand or popularity verdict.",
-            "Public stars, votes and comments are weak signals and can be gamed; never present them as proof of demand.",
+            "Priority score is a queue-ordering heuristic, not a quality or factual-accuracy verdict.",
+            "Stars, votes and comments are weak activity signals and can be gamed; do not present them as proof of quality or sustained use.",
             "Review the product/project's own page, documentation, price, licence, target user, privacy implications and last update.",
-            "WordPress active installs, downloads and ratings are adoption/feedback signals for free plugins, not proof of paid demand.",
-            "Buyer-search volume, paid competition, negative reviews, conversion and preorders must be researched separately before selecting a product idea.",
+            "WordPress active installs, downloads and ratings are directory metadata and feedback, not independent verification of quality, compatibility, maintenance or security.",
             "For news or platform changes, confirm the effective date and affected versions against the primary source.",
         ],
     }
@@ -762,7 +761,7 @@ def write_report(
         f"- Candidates shown: {len(visible)}",
         f"- Source checks successful: {okay}/{len(diagnostics)}",
         "",
-        "Legivox discovers useful digital products, creator tools, online-business workflows, commerce operations, marketing/distribution tactics and technology. The ranking sorts a review queue; it does not certify claims or infer willingness to pay.",
+        "Legivox discovers useful developer tools, AI and automation projects, creator tools, digital-product platforms, commerce workflows, marketing tactics and technology. The ranking prioritises candidates for editorial review; it does not verify claims or establish overall quality.",
         "",
         "## Source health",
         "",
