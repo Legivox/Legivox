@@ -1,38 +1,38 @@
 {
-  "generated_at_ist": "2026-10-26T21:23:02+05:30",
-  "run_at_ist": "2026-10-26T21:23:02+05:30",
+  "generated_at_ist": "2026-10-26T22:56:35+05:30",
+  "run_at_ist": "2026-10-26T22:56:35+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 166,
-  "eligible_candidate_count": 99,
+  "candidate_count_raw": 170,
+  "eligible_candidate_count": 94,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4723
+      "total_count": 4732
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1007
+      "total_count": 1009
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 356
+      "total_count": 358
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2900
+      "total_count": 2907
     },
     {
       "source": "GitHub Search · github-ecommerce-digital-products",
@@ -46,14 +46,14 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2060
+      "total_count": 2064
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3243
+      "total_count": 3250
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
@@ -72,7 +72,7 @@
     {
       "source": "Hacker News · hn-analytics-growth",
       "kind": "hacker_news",
-      "items_kept": 8,
+      "items_kept": 9,
       "status": "ok",
       "total_count": 10
     },
@@ -114,7 +114,7 @@
     {
       "source": "Hacker News · hn-shopify",
       "kind": "hacker_news",
-      "items_kept": 5,
+      "items_kept": 10,
       "status": "ok",
       "total_count": 10
     },
@@ -145,10 +145,10 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-26T15:53:02+00:00",
+    "observed_at_utc": "2026-10-26T17:26:35+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 81,
-    "previously_tracked_repositories_refreshed": 119,
+    "repositories_seen_in_discovery": 79,
+    "previously_tracked_repositories_refreshed": 121,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
@@ -158,29 +158,29 @@
   },
   "primary_source_checks": [
     {
-      "candidate_id": "a12efc0e7dac2812",
-      "title": "Enable the analytics queryable capability on metafield and metaobject definitions from your app's TOML",
-      "source_url": "https://shopify.dev/changelog/make-metafield-definitions-analytics-queryable-from-app-s-toml",
+      "candidate_id": "e95e12447b71a006",
+      "title": "Unlink a customer's identity provider subject with the GraphQL Admin API",
+      "source_url": "https://shopify.dev/changelog/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/make-metafield-definitions-analytics-queryable-from-app-s-toml",
+      "final_url": "https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "01b44b612fda8613",
-      "title": "POS UI extensions 2026-10 adds s-pos-list, a virtualized list with custom row templates",
-      "source_url": "https://shopify.dev/changelog/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates",
+      "candidate_id": "f803dce2f9c77322",
+      "title": "POS UI extensions now support reactive storage access",
+      "source_url": "https://shopify.dev/changelog/pos-ui-extensions-now-support-reactive-storage-access",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates",
+      "final_url": "https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "a6c606a393da5a46",
-      "title": "Show HN: Ranwhat.com",
-      "source_url": "https://github.com/MatijaMiki/ranwhat",
+      "candidate_id": "a46f1acaee2a44f1",
+      "title": "Show HN: Castellan – A real-time strategy game for agents",
+      "source_url": "https://rts.emersoftware.cl/",
       "verified": true,
-      "final_url": "https://github.com/MatijaMiki/ranwhat",
+      "final_url": "https://rts.emersoftware.cl/",
       "http_status": 200,
       "reason": ""
     }
@@ -193,92 +193,91 @@
   "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "a6c606a393da5a46",
-      "title": "Show HN: Ranwhat.com",
+      "candidate_id": "f803dce2f9c77322",
+      "title": "POS UI extensions now support reactive storage access",
       "reasons": [
-        "A supporting quote does not share enough wording with its stated claim",
-        "Supporting quotes cover only 33% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Supporting quotes cover only 62% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "Ranwhat scans AI agent commands for leaked secrets. Run locally against your agent logs to catch hidden keys. https://github.com/MatijaMiki/ranwhat",
-      "evidence_quote": "Flight recorder and secret scanner for AI coding agents",
+      "proposed_text": "shopify.storage.current provides reactive storage access for POS UI extensions. Test cross‑target updates by subscribing to shopify.storage.current changes. https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access",
+      "evidence_quote": "The new shopify.storage.current API lets POS UI extension developers respond automatically when stored values change across extension targets on the same POS device.",
       "claim_evidence": [
         {
-          "claim": "Ranwhat scans AI agent commands for leaked secrets",
-          "quote": "Flight recorder and secret scanner for AI coding agents"
+          "claim": "shopify.storage.current provides reactive storage access for POS UI extensions",
+          "quote": "The new shopify.storage.current API lets POS UI extension developers respond automatically when stored values change across extension targets on the same POS device."
         }
       ]
     },
     {
-      "candidate_id": "a12efc0e7dac2812",
-      "title": "Enable the analytics queryable capability on metafield and metaobject definitions from your app's TOML",
-      "proposed_text": "Shopify lets you set analytics_queryable on metafields via shopify.app.toml. Deploy the app and verify the field appears in Analytics dimensions. https://shopify.dev/changelog/posts/make-metafield-definitions-analytics-queryable-from-app-s-toml",
+      "candidate_id": "a46f1acaee2a44f1",
+      "title": "Show HN: Castellan – A real-time strategy game for agents",
       "reasons": [
-        "Post merely restates headline; no new insight or actionable detail beyond source."
+        "Opening sentence is too close to the source headline; add a distinct editorial framing."
+      ],
+      "proposed_text": "Castellan is a real‑time strategy game where AI agents battle. Measure agent decision latency to ensure smooth gameplay. https://rts.emersoftware.cl/",
+      "evidence_quote": "Castellan A real-time strategy game whose players are AI agents. Watch their battles.",
+      "claim_evidence": [
+        {
+          "claim": "Castellan is a real‑time strategy game where AI agents battle",
+          "quote": "Castellan A real-time strategy game whose players are AI agents. Watch their battles."
+        }
+      ]
+    },
+    {
+      "candidate_id": "e95e12447b71a006",
+      "title": "Unlink a customer's identity provider subject with the GraphQL Admin API",
+      "proposed_text": "identityProviderSubjectDelete unlinks a customer from a third‑party identity provider. Verify the mutation logs a sign‑out event before re‑linking. https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api",
+      "reasons": [
+        "The post restates the changelog fact without adding new insight or a unique perspective. Originality is below the required threshold."
       ],
       "editorial_review": {
-        "clarity_score": 8,
-        "technical_coherence_score": 8,
+        "clarity_score": 9,
+        "technical_coherence_score": 9,
         "takeaway_value_score": 8,
-        "source_faithfulness_score": 8,
-        "originality_score": 4
+        "source_faithfulness_score": 9,
+        "originality_score": 3
       }
     },
     {
-      "candidate_id": "01b44b612fda8613",
-      "title": "POS UI extensions 2026-10 adds s-pos-list, a virtualized list with custom row templates",
-      "proposed_text": "Shopify POS 2026-10 adds s-pos-list, a virtualized list component. Replace older List component and test row template rendering. https://shopify.dev/changelog/posts/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates",
+      "candidate_id": "e95e12447b71a006",
+      "title": "Unlink a customer's identity provider subject with the GraphQL Admin API",
       "reasons": [
-        "Post repeats headline; lacks original perspective or deeper guidance."
-      ],
-      "editorial_review": {
-        "clarity_score": 8,
-        "technical_coherence_score": 8,
-        "takeaway_value_score": 8,
-        "source_faithfulness_score": 8,
-        "originality_score": 4
-      }
-    },
-    {
-      "candidate_id": "a12efc0e7dac2812",
-      "title": "Enable the analytics queryable capability on metafield and metaobject definitions from your app's TOML",
-      "reasons": [
-        "Fact sentence is too long; narrow it to one source-backed capability.",
         "Editorial takeaway is too long; keep the analysis concrete and concise.",
         "Fact plus takeaway exceeds the per-link character budget.",
-        "Draft is 354 raw characters; limit is 280"
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
+        "Draft is 297 raw characters; limit is 280"
       ],
-      "proposed_text": "Set `analytics_queryable = true` on a metafield or metaobject field in shopify.app.toml to make its values queryable in Analytics. After adding the capability, run `shopify app deploy` so the change is distributed to every shop where the app is installed. https://shopify.dev/changelog/posts/make-metafield-definitions-analytics-queryable-from-app-s-toml",
-      "evidence_quote": "A metaobject definition can use the capability only if at least one of its fields has an analytics-compatible type.",
+      "proposed_text": "identityProviderSubjectDelete mutation unlinks a customer from a third‑party identity provider. Unlinking logs the customer out of all sessions, requiring re‑authentication on next sign‑in. https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api",
+      "evidence_quote": "Unlinking signs the customer out of all of their existing sessions.",
       "automatic_repair_attempt": true,
       "original_rejection_reasons": [
-        "Post merely restates headline; no new insight or actionable detail beyond source."
+        "The post restates the changelog fact without adding new insight or a unique perspective. Originality is below the required threshold."
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "a12efc0e7dac2812",
-      "title": "Enable the analytics queryable capability on metafield and metaobject definitions from your app's TOML",
-      "url": "https://shopify.dev/changelog/posts/make-metafield-definitions-analytics-queryable-from-app-s-toml",
+      "id": "e95e12447b71a006",
+      "title": "Unlink a customer's identity provider subject with the GraphQL Admin API",
+      "url": "https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api",
       "source": "Shopify Developer Changelog",
-      "primary_category": "commerce_and_digital_products",
-      "priority_score": 69,
-      "hourly_adjusted_score": 61,
+      "primary_category": "developer_tools",
+      "priority_score": 63,
+      "hourly_adjusted_score": 63,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-20T16:00:00+00:00",
-      "days_old": 6.0,
+      "published_at": "2026-10-23T13:00:00+00:00",
+      "days_old": 3.19,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "01b44b612fda8613",
-      "title": "POS UI extensions 2026-10 adds s-pos-list, a virtualized list with custom row templates",
-      "url": "https://shopify.dev/changelog/posts/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates",
+      "id": "f803dce2f9c77322",
+      "title": "POS UI extensions now support reactive storage access",
+      "url": "https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access",
       "source": "Shopify Developer Changelog",
       "primary_category": "commerce_and_digital_products",
       "priority_score": 69,
@@ -289,26 +288,26 @@
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
       "published_at": "2026-10-22T16:00:00+00:00",
-      "days_old": 4.0,
+      "days_old": 4.06,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "a6c606a393da5a46",
-      "title": "Show HN: Ranwhat.com",
-      "url": "https://github.com/MatijaMiki/ranwhat",
+      "id": "a46f1acaee2a44f1",
+      "title": "Show HN: Castellan – A real-time strategy game for agents",
+      "url": "https://rts.emersoftware.cl/",
       "source": "Hacker News",
       "primary_category": "product_and_workflow_tools",
-      "priority_score": 66,
-      "hourly_adjusted_score": 50,
+      "priority_score": 72,
+      "hourly_adjusted_score": 56,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-26T15:19:05+00:00",
-      "days_old": 0.02,
+      "published_at": "2026-10-26T16:17:30+00:00",
+      "days_old": 0.05,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
@@ -325,17 +324,17 @@
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 2,
-    "submitted_for_independent_review": 2,
+    "locally_valid_drafts": 1,
+    "submitted_for_independent_review": 1,
     "passed_independent_review": 0,
-    "rejected_by_independent_review": 2,
+    "rejected_by_independent_review": 1,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
   "state_summary": {
     "used_candidates_in_cooldown": 16,
-    "recently_attempted_candidates": 29,
+    "recently_attempted_candidates": 26,
     "recent_draft_passes_today": 4
   }
 }
