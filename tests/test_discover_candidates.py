@@ -53,12 +53,12 @@ class DiscoveryHelpersTests(unittest.TestCase):
         self.assertIn("digital_product_business", categories)
         self.assertIn("online_seller_operations", categories)
 
-    def test_expanded_registry_includes_market_and_business_sources(self):
+    def test_expanded_registry_includes_creator_commerce_and_business_sources(self):
         feed_names = {feed["name"] for feed in self.config["feeds"]}
         self.assertIn("Shopify Community", feed_names)
         self.assertIn("Stripe Blog", feed_names)
         self.assertIn("Ahrefs Blog", feed_names)
-        self.assertIn("Indie Hackers (unofficial feed)", feed_names)
+        self.assertIn("Indie Hackers (unofficial third-party feed)", feed_names)
         self.assertGreaterEqual(len(self.config["wordpress_searches"]), 4)
 
     def test_wordpress_datetime_parses_official_api_timestamp(self):
