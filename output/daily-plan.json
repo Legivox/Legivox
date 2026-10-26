@@ -1,0 +1,61 @@
+{
+  "date_ist": "2026-10-26",
+  "prepared_at_ist": "2026-10-26 15:40:56 IST",
+  "research_window_days": 1,
+  "research_source": "Multidomain discovery + independent editorial review",
+  "source_report_generated_at_ist": "2026-10-26T14:55:00+05:30",
+  "source_report_age_minutes": 45,
+  "star_baseline_repositories": 7,
+  "posts": [
+    {
+      "idea_id": "multidomain-ecd16914a4ca2477",
+      "niche": "data_and_growth",
+      "problem": "open-edge-platform/dlstreamer",
+      "evidence": "Primary source verified (HTTP 200): https://github.com/open-edge-platform/dlstreamer. Exact evidence: GitHub - open-edge-platform/dlstreamer: Deep Learning Streamer (DL Streamer) Pipeline Framework is an open-source streaming media analytics framework, based on GStreamer* multimedia framework, for creating complex media analytics pipelines",
+      "solution_hypothesis": "Validate pipeline latency by measuring end‑to‑end frame timestamps.",
+      "text": "dlstreamer builds media analytics pipelines on GStreamer. Validate pipeline latency by measuring end‑to‑end frame timestamps. https://github.com/open-edge-platform/dlstreamer",
+      "text_hash": "5419544c59b016864917e3783bd47384b8372bb90d77fe7fa34b983ab5eaf4dd",
+      "image_query": "",
+      "research": {
+        "query": "Multidomain primary-source discovery and independent editorial review",
+        "score": 8.35,
+        "hits": [
+          {
+            "title": "open-edge-platform/dlstreamer",
+            "url": "https://github.com/open-edge-platform/dlstreamer",
+            "external_url": "https://github.com/open-edge-platform/dlstreamer",
+            "points": 0,
+            "comments": 0,
+            "created_at": "2026-10-26T14:55:00+05:30",
+            "matched_terms": []
+          }
+        ],
+        "error": null
+      },
+      "status": "published: https://x.com/i/status/2114662024273657955",
+      "slot": 1,
+      "editorial_scores": {
+        "model": {
+          "timeliness": 8,
+          "usefulness": 9,
+          "novelty": 7,
+          "evidence": 9,
+          "insight": 8
+        },
+        "overall": 8.35,
+        "independent_review": {
+          "clarity_score": 8,
+          "technical_coherence_score": 7,
+          "takeaway_value_score": 7,
+          "source_faithfulness_score": 8,
+          "originality_score": 7,
+          "reason": "Clear description, source backs claim, added practical latency check is a useful, original tip.",
+          "passed": true
+        }
+      },
+      "published_at_ist": "2026-10-26T15:44:49+05:30",
+      "published_url": "https://x.com/i/status/2114662024273657955",
+      "image": null
+    }
+  ]
+}

@@ -1,23 +1,23 @@
 # Legivox daily content plan
 
-Prepared: 2026-10-26 08:31:10 IST
+Prepared: 2026-10-26 15:40:56 IST
 
 > This scheduled post came from a fresh multidomain discovery report, passed primary-source and deterministic evidence checks, and passed an independent editorial review. The star-history baseline is a trend signal, not proof of market demand.
 
-## Post 1 · multidomain-c60b77ce50fb8910
+## Post 1 · multidomain-ecd16914a4ca2477
 
 **Planned copy**
 
-ruflo is an agent harness that supports multi‑player swarms and vector RAG integration. Run a simple multi‑agent workflow to verify swarm coordination before scaling. https://github.com/ruvnet/ruflo
+dlstreamer builds media analytics pipelines on GStreamer. Validate pipeline latency by measuring end‑to‑end frame timestamps. https://github.com/open-edge-platform/dlstreamer
 
-- Topic: ai_and_automation
-- Editorial score (model estimate): 8.4
+- Topic: data_and_growth
+- Editorial score (model estimate): 8.35
 
 **Source article**
 
-- [ruvnet/ruflo](https://github.com/ruvnet/ruflo)
+- [open-edge-platform/dlstreamer](https://github.com/open-edge-platform/dlstreamer)
 
-- Status: published: https://x.com/i/status/2114554282519539934
+- Status: published: https://x.com/i/status/2114662024273657955
 
 ## Media policy
 
