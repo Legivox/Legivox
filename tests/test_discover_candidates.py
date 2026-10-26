@@ -150,6 +150,8 @@ class DiscoveryHelpersTests(unittest.TestCase):
         self.assertLessEqual(max(source_groups.values()), 3)
         self.assertLessEqual(max(category_counts.values()), 6)
         self.assertGreaterEqual(len(source_groups), 4)
+        scores = [row["priority_score"] for row in selected]
+        self.assertEqual(scores, sorted(scores, reverse=True))
 
     def test_rss_parser_preserves_primary_link_and_source_date(self):
         xml = """<?xml version="1.0"?>
