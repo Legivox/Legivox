@@ -61,6 +61,23 @@ class DiscoveryHelpersTests(unittest.TestCase):
         self.assertIn("Indie Hackers (unofficial third-party feed)", feed_names)
         self.assertGreaterEqual(len(self.config["wordpress_searches"]), 4)
 
+    def test_new_editorial_feeds_have_competitive_source_weights(self):
+        weights = self.config["source_weights"]
+        # The expanded feeds must be capable of surfacing in discovery; they should
+        # not be structurally buried beneath activity-driven GitHub/ HN candidates.
+        editorial_sources = (
+            "Console.dev",
+            "Product Hunt",
+            "Shopify Developer Changelog",
+            "Shopify Community",
+            "Stripe Blog",
+            "Ahrefs Blog",
+            "Indie Hackers",
+            "WooCommerce Blog",
+        )
+        self.assertTrue(all(weights[name] >= 16 for name in editorial_sources))
+        self.assertLessEqual(weights["GitHub Search"], 12)
+
     def test_wordpress_datetime_parses_official_api_timestamp(self):
         parsed = discovery.parse_wordpress_datetime("2026-10-20 4:15pm GMT")
         self.assertEqual(parsed, "2026-10-20T16:15:00+00:00")
