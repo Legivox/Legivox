@@ -732,7 +732,7 @@ def select_preview_candidates(candidates: list[dict], limit: int) -> list[dict]:
     source_counts: dict[str, int] = {}
     category_counts: dict[str, int] = {}
     max_per_source_group = 3
-    max_per_category = 6
+    max_per_category = 8
 
     def source_group(item: dict) -> str:
         source = str(item.get("source") or "Unknown source")
@@ -784,7 +784,7 @@ def write_report(
         "preview_selection": {
             "policy": "priority-ranked source/category-diverse sample; preview-only, not used by the publisher",
             "max_per_source_group": 3,
-            "max_per_category": 6,
+            "max_per_category": 8,
         },
         "source_diagnostics": diagnostics,
         "candidates": visible,
