@@ -17,7 +17,7 @@ A source can surface a story; it does not automatically make that story accurate
 | Stripe Blog | Payment infrastructure, APIs, checkout and commerce changes | Company-authored source; distinguish product announcements from independent analysis |
 | Ahrefs Blog | SEO, search visibility and digital marketing lessons | Vendor-authored material; label claims and use primary evidence when available |
 | WooCommerce Blog | Ecommerce tooling, store operations and platform changes | Vendor-authored source; distinguish general guidance from product announcements |
-| Indie Hackers via ihrss.io | Founder workflows, launches and distribution lessons | Unofficial community-maintained RSS service; treat its availability and metadata as best-effort, then verify the linked original story |
+| Indie Hackers via RSS.app | Founder workflows, product launches and distribution lessons | Unofficial third-party feed; availability and summaries are best-effort, so verify the original story and disable the feed if it becomes unreliable |
 
 The source registry is `data/discovery_sources.json`. RSS feed diagnostics include item counts, connection/parse failures and status. A feed returning zero eligible items is not necessarily broken; it may have no recent items matching the configured lookback. A fetch or parse error, however, should be reviewed before production rollout.
 
@@ -29,7 +29,7 @@ The source registry is `data/discovery_sources.json`. RSS feed diagnostics inclu
 | Hacker News / Show HN | Discussions and demonstrations related to tools, commerce, automation, analytics, security and indie work | Upvotes/comments help rank discovery candidates, not verify their claims |
 | WordPress.org Plugin Directory API | Plugins for digital downloads, ecommerce, inventory, memberships and marketing analytics | Active installs, downloads and ratings are public adoption/feedback context; they are not paid-revenue data |
 
-The current registry contains 12 GitHub queries, 12 Hacker News queries, 5 WordPress Plugin Directory searches and 8 RSS/Atom feeds. Several niche Hacker News queries may return zero eligible items in a given window. This is acceptable when the search is quiet, but the review report should be monitored for persistent low-yield queries that consume quota without adding useful candidates.
+The current registry contains 12 GitHub queries, 12 Hacker News queries, 5 WordPress Plugin Directory searches and 8 RSS/Atom feeds. Several niche Hacker News queries may return zero eligible items in a given window. This is acceptable when the search is quiet, but the review report should be monitored for persistent low-yield queries that consume quota without adding useful candidates. One unofficial Indie Hackers feed endpoint returned a parse error during the first live preview and has been replaced; the next preview must confirm the replacement is parseable before it can be considered healthy.
 
 ## Separate from content discovery
 
@@ -45,7 +45,7 @@ Before enabling source changes in production:
 2. Run the read-only discovery preview on the branch and inspect the source-health table. Do not accept a feed merely because the workflow itself exited successfully.
 3. Confirm every new source either returns plausible recent items or is explicitly documented as unavailable/low-yield and removed or corrected.
 4. Inspect the generated candidates for a mix of relevant topics, duplicate noise, weakly supported claims and source concentration.
-5. Run the hourly quality-gated dry-run workflow. Verify that primary-page checks, evidence checks, originality and independent editor gates behave as intended, and confirm `posted_to_x=false`.
+5. Keep PR validation read-only. Do not dispatch the state-writing hourly dry-run against this feature branch: it persists the latest report and star snapshots to `legivox-hourly-state`, which is also read by the production publisher. The PR preview tests the current source registry without changing that shared state; the normal scheduled quality-gated run should exercise the new registry after merge.
 6. Review the draft PR and its final passing workflow run before merging. The discovery-preview workflow does not use X credentials or publish. Production source changes take effect only after merge.
 
 The score ranks candidates for review; it is not a claim that the project is high quality, secure, commercially successful, or suitable for every audience.
