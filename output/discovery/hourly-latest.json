@@ -1,17 +1,17 @@
 {
-  "generated_at_ist": "2026-10-26T07:49:43+05:30",
-  "run_at_ist": "2026-10-26T07:49:43+05:30",
+  "generated_at_ist": "2026-10-26T08:47:58+05:30",
+  "run_at_ist": "2026-10-26T08:47:58+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 175,
-  "eligible_candidate_count": 94,
+  "candidate_count_raw": 174,
+  "eligible_candidate_count": 93,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4593
+      "total_count": 4600
     },
     {
       "source": "GitHub Search · github-analytics-seo",
@@ -32,7 +32,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2826
+      "total_count": 2829
     },
     {
       "source": "GitHub Search · github-ecommerce-digital-products",
@@ -46,14 +46,14 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1989
+      "total_count": 1993
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3170
+      "total_count": 3173
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
@@ -67,7 +67,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 265
+      "total_count": 266
     },
     {
       "source": "Hacker News · hn-analytics-growth",
@@ -145,36 +145,18 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-26T02:19:43+00:00",
+    "observed_at_utc": "2026-10-26T03:17:58+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 82,
-    "previously_tracked_repositories_refreshed": 118,
+    "repositories_seen_in_discovery": 81,
+    "previously_tracked_repositories_refreshed": 119,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
-    "repositories_with_20_to_36_hour_baseline": 18,
+    "repositories_with_20_to_36_hour_baseline": 15,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
-    {
-      "candidate_id": "e12e7a321e45ada2",
-      "title": "Osmantic/ODS",
-      "source_url": "https://github.com/Osmantic/ODS",
-      "verified": true,
-      "final_url": "https://github.com/Osmantic/ODS",
-      "http_status": 200,
-      "reason": ""
-    },
-    {
-      "candidate_id": "c60b77ce50fb8910",
-      "title": "ruvnet/ruflo",
-      "source_url": "https://github.com/ruvnet/ruflo",
-      "verified": true,
-      "final_url": "https://github.com/ruvnet/ruflo",
-      "http_status": 200,
-      "reason": ""
-    },
     {
       "candidate_id": "2fc7d4cdb38fb784",
       "title": "Show HN: A 3D mesh playground for coding agents (three.js + manifold-3d)",
@@ -183,6 +165,24 @@
       "final_url": null,
       "http_status": null,
       "reason": "Primary page title/content does not sufficiently match the candidate headline."
+    },
+    {
+      "candidate_id": "a12efc0e7dac2812",
+      "title": "Enable the analytics queryable capability on metafield and metaobject definitions from your app's TOML",
+      "source_url": "https://shopify.dev/changelog/make-metafield-definitions-analytics-queryable-from-app-s-toml",
+      "verified": true,
+      "final_url": "https://shopify.dev/changelog/posts/make-metafield-definitions-analytics-queryable-from-app-s-toml",
+      "http_status": 200,
+      "reason": ""
+    },
+    {
+      "candidate_id": "01b44b612fda8613",
+      "title": "POS UI extensions 2026-10 adds s-pos-list, a virtualized list with custom row templates",
+      "source_url": "https://shopify.dev/changelog/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates",
+      "verified": true,
+      "final_url": "https://shopify.dev/changelog/posts/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates",
+      "http_status": 200,
+      "reason": ""
     }
   ],
   "rejected_primary_sources": [
@@ -197,59 +197,10 @@
     }
   ],
   "daily_draft_cap": 16,
-  "daily_drafts_already_passed": 0,
-  "outcome": "dry_run_passed",
-  "decision_reason": "At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.",
-  "passing_drafts": [
-    {
-      "candidate_id": "c60b77ce50fb8910",
-      "title": "ruvnet/ruflo",
-      "source": "GitHub Search",
-      "source_kind": "github_repository",
-      "url": "https://github.com/ruvnet/ruflo",
-      "primary_source_verified": true,
-      "primary_source_title": "GitHub - ruvnet/ruflo: 🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and man",
-      "primary_source_final_url": "https://github.com/ruvnet/ruflo",
-      "primary_source_http_status": 200,
-      "category": "ai_and_automation",
-      "priority_score": 71,
-      "hourly_adjusted_score": 75,
-      "post_text": "ruflo is an agent harness that supports multi‑player swarms and vector RAG integration. Run a simple multi‑agent workflow to verify swarm coordination before scaling. https://github.com/ruvnet/ruflo",
-      "fact_sentence": "ruflo is an agent harness that supports multi‑player swarms and vector RAG integration.",
-      "format": "tool_discovery",
-      "audience": "developers",
-      "angle": "agent orchestration",
-      "rationale": "The source lists swarm and RAG features, and the takeaway suggests a concrete test of swarm coordination.",
-      "evidence_quote": "Deploy intelligent multi‑player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self‑learning intelligence, federation, vector RAG integration",
-      "editorial_takeaway": "Run a simple multi‑agent workflow to verify swarm coordination before scaling.",
-      "claim_evidence": [
-        {
-          "claim": "ruflo is an agent harness that supports multi‑player swarms and vector RAG integration.",
-          "quote": "Deploy intelligent multi‑player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self‑learning intelligence, federation, vector RAG integration"
-        }
-      ],
-      "scores": {
-        "timeliness": 10,
-        "usefulness": 8,
-        "novelty": 7,
-        "evidence": 9,
-        "insight": 8
-      },
-      "editorial_score": 8.4,
-      "character_count": 198,
-      "status": "dry_run_passed_not_published",
-      "published_to_x": false,
-      "editorial_review": {
-        "clarity_score": 8,
-        "technical_coherence_score": 8,
-        "takeaway_value_score": 8,
-        "source_faithfulness_score": 8,
-        "originality_score": 8,
-        "reason": "Clear, accurate, and adds a practical next step.",
-        "passed": true
-      }
-    }
-  ],
+  "daily_drafts_already_passed": 1,
+  "outcome": "skip",
+  "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
+  "passing_drafts": [],
   "rejected_drafts": [
     {
       "candidate_id": "2fc7d4cdb38fb784",
@@ -261,157 +212,127 @@
       ]
     },
     {
-      "candidate_id": "e12e7a321e45ada2",
-      "title": "Osmantic/ODS",
+      "candidate_id": "a12efc0e7dac2812",
+      "title": "Enable the analytics queryable capability on metafield and metaobject definitions from your app's TOML",
       "reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability.",
-        "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "A supporting quote does not share enough wording with its stated claim",
-        "Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Fact plus takeaway exceeds the per-link character budget.",
+        "Draft is 288 raw characters; limit is 280"
       ],
-      "proposed_text": "ODS V3 Pre‑Release lets you run a private AI server on PC, Mac, or Linux. Run a local test workflow first to confirm Docker image pulls and GPU support before production. https://github.com/Osmantic/ODS",
-      "evidence_quote": "Turn your PC, Mac, or Linux box into a private AI server.",
+      "proposed_text": "Shopify lets you set analytics_queryable on metafield and metaobject definitions in shopify.app.toml. Deploy the app and verify the fields appear as dimensions in Analytics before shipping. https://shopify.dev/changelog/posts/make-metafield-definitions-analytics-queryable-from-app-s-toml",
+      "evidence_quote": "capabilities.analytics_queryable = true",
       "claim_evidence": [
         {
-          "claim": "ODS V3 Pre‑Release lets you run a private AI server on PC, Mac, or Linux.",
-          "quote": "Turn your PC, Mac, or Linux box into a private AI server."
+          "claim": "Shopify lets you set analytics_queryable on metafield and metaobject definitions in shopify.app.toml.",
+          "quote": "capabilities.analytics_queryable = true"
         }
       ]
     },
     {
-      "candidate_id": null,
-      "title": "Unmapped model draft",
-      "proposed_text": "",
+      "candidate_id": "01b44b612fda8613",
+      "title": "POS UI extensions 2026-10 adds s-pos-list, a virtualized list with custom row templates",
+      "proposed_text": "POS UI extensions 2026‑10 introduces s‑pos‑list, a virtualized list component. Replace older List component and test row template rendering for performance. https://shopify.dev/changelog/posts/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates",
       "reasons": [
-        "Model omitted a valid candidate ID and no exact verified source URL matched."
+        "Takeaway is generic and adds no new insight beyond the headline."
+      ],
+      "editorial_review": {
+        "clarity_score": 8,
+        "technical_coherence_score": 8,
+        "takeaway_value_score": 6,
+        "source_faithfulness_score": 9,
+        "originality_score": 4
+      }
+    },
+    {
+      "candidate_id": "01b44b612fda8613",
+      "title": "POS UI extensions 2026-10 adds s-pos-list, a virtualized list with custom row templates",
+      "reasons": [
+        "Opening sentence is too close to the source headline; add a distinct editorial framing."
+      ],
+      "proposed_text": "POS UI extensions 2026‑10 adds s‑pos‑list, a virtualized list component. Verify mixed row templates render correctly in a single list. https://shopify.dev/changelog/posts/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates",
+      "evidence_quote": "POS UI extensions API version `2026-10` adds `s-pos-list`, a virtualized list component for Polaris web components. Instead of `List`’s fixed row layout, each kind of row gets its own template, so one list can mix headings, dividers, and content rows.",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "Takeaway is generic and adds no new insight beyond the headline."
       ]
     }
   ],
   "candidate_shortlist": [
-    {
-      "id": "e12e7a321e45ada2",
-      "title": "Osmantic/ODS",
-      "url": "https://github.com/Osmantic/ODS",
-      "source": "GitHub Search",
-      "primary_category": "ai_and_automation",
-      "priority_score": 68,
-      "hourly_adjusted_score": 83,
-      "stars_current": 7688,
-      "stars_delta_24h": 11,
-      "stars_delta_baseline_hours": 24.1,
-      "stars_growth_percent_24h": 0.14,
-      "trend_signal": "measured_star_growth",
-      "published_at": "2026-10-26T02:09:06+00:00",
-      "days_old": 0.01,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "c60b77ce50fb8910",
-      "title": "ruvnet/ruflo",
-      "url": "https://github.com/ruvnet/ruflo",
-      "source": "GitHub Search",
-      "primary_category": "ai_and_automation",
-      "priority_score": 71,
-      "hourly_adjusted_score": 75,
-      "stars_current": 79300,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "insufficient_history",
-      "published_at": "2026-10-26T02:16:59+00:00",
-      "days_old": 0.0,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
     {
       "id": "2fc7d4cdb38fb784",
       "title": "Show HN: A 3D mesh playground for coding agents (three.js + manifold-3d)",
       "url": "https://sketchagent.dev/s/yfYU6LhT",
       "source": "Hacker News",
       "primary_category": "product_and_workflow_tools",
-      "priority_score": 69,
-      "hourly_adjusted_score": 71,
+      "priority_score": 71,
+      "hourly_adjusted_score": 73,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
       "published_at": "2026-10-26T00:02:39+00:00",
-      "days_old": 0.1,
+      "days_old": 0.14,
       "primary_source_verified": false,
       "primary_source_http_status": null,
       "primary_source_reason": "Primary page title/content does not sufficiently match the candidate headline."
+    },
+    {
+      "id": "a12efc0e7dac2812",
+      "title": "Enable the analytics queryable capability on metafield and metaobject definitions from your app's TOML",
+      "url": "https://shopify.dev/changelog/posts/make-metafield-definitions-analytics-queryable-from-app-s-toml",
+      "source": "Shopify Developer Changelog",
+      "primary_category": "commerce_and_digital_products",
+      "priority_score": 69,
+      "hourly_adjusted_score": 69,
+      "stars_current": null,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-20T16:00:00+00:00",
+      "days_old": 5.47,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "01b44b612fda8613",
+      "title": "POS UI extensions 2026-10 adds s-pos-list, a virtualized list with custom row templates",
+      "url": "https://shopify.dev/changelog/posts/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates",
+      "source": "Shopify Developer Changelog",
+      "primary_category": "commerce_and_digital_products",
+      "priority_score": 69,
+      "hourly_adjusted_score": 69,
+      "stars_current": null,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-22T16:00:00+00:00",
+      "days_old": 3.47,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
     }
   ],
   "automatic_repair": {
-    "attempted": false,
-    "drafts_submitted": 0,
+    "attempted": true,
+    "drafts_submitted": 1,
     "repaired_local_passes": 0,
-    "repair_rejections": 0,
+    "repair_rejections": 1,
     "repair_error": null,
-    "editorial_repair_attempted": false,
-    "editorial_repair_drafts_submitted": 0,
+    "editorial_repair_attempted": true,
+    "editorial_repair_drafts_submitted": 1,
     "editorial_repair_error": null
   },
   "editorial_review": {
     "locally_valid_drafts": 1,
     "submitted_for_independent_review": 1,
-    "passed_independent_review": 1,
-    "rejected_by_independent_review": 0,
+    "passed_independent_review": 0,
+    "rejected_by_independent_review": 1,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
-  },
-  "recommended_draft": {
-    "candidate_id": "c60b77ce50fb8910",
-    "title": "ruvnet/ruflo",
-    "source": "GitHub Search",
-    "source_kind": "github_repository",
-    "url": "https://github.com/ruvnet/ruflo",
-    "primary_source_verified": true,
-    "primary_source_title": "GitHub - ruvnet/ruflo: 🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and man",
-    "primary_source_final_url": "https://github.com/ruvnet/ruflo",
-    "primary_source_http_status": 200,
-    "category": "ai_and_automation",
-    "priority_score": 71,
-    "hourly_adjusted_score": 75,
-    "post_text": "ruflo is an agent harness that supports multi‑player swarms and vector RAG integration. Run a simple multi‑agent workflow to verify swarm coordination before scaling. https://github.com/ruvnet/ruflo",
-    "fact_sentence": "ruflo is an agent harness that supports multi‑player swarms and vector RAG integration.",
-    "format": "tool_discovery",
-    "audience": "developers",
-    "angle": "agent orchestration",
-    "rationale": "The source lists swarm and RAG features, and the takeaway suggests a concrete test of swarm coordination.",
-    "evidence_quote": "Deploy intelligent multi‑player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self‑learning intelligence, federation, vector RAG integration",
-    "editorial_takeaway": "Run a simple multi‑agent workflow to verify swarm coordination before scaling.",
-    "claim_evidence": [
-      {
-        "claim": "ruflo is an agent harness that supports multi‑player swarms and vector RAG integration.",
-        "quote": "Deploy intelligent multi‑player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self‑learning intelligence, federation, vector RAG integration"
-      }
-    ],
-    "scores": {
-      "timeliness": 10,
-      "usefulness": 8,
-      "novelty": 7,
-      "evidence": 9,
-      "insight": 8
-    },
-    "editorial_score": 8.4,
-    "character_count": 198,
-    "status": "dry_run_passed_not_published",
-    "published_to_x": false,
-    "editorial_review": {
-      "clarity_score": 8,
-      "technical_coherence_score": 8,
-      "takeaway_value_score": 8,
-      "source_faithfulness_score": 8,
-      "originality_score": 8,
-      "reason": "Clear, accurate, and adds a practical next step.",
-      "passed": true
-    }
   },
   "state_summary": {
     "used_candidates_in_cooldown": 13,
