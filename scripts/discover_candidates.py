@@ -745,6 +745,9 @@ def select_preview_candidates(candidates: list[dict], limit: int) -> list[dict]:
         return source
 
     for item in candidates:
+        identity = str(item.get("id") or item.get("canonical_url") or item.get("url") or id(item))
+        if identity in selected_ids:
+            continue
         source = source_group(item)
         category = str(item.get("primary_category") or "unknown")
         if source_counts.get(source, 0) >= max_per_source_group:
@@ -752,20 +755,9 @@ def select_preview_candidates(candidates: list[dict], limit: int) -> list[dict]:
         if category_counts.get(category, 0) >= max_per_category:
             continue
         selected.append(item)
-        selected_ids.add(str(item.get("id") or item.get("url") or id(item)))
+        selected_ids.add(identity)
         source_counts[source] = source_counts.get(source, 0) + 1
         category_counts[category] = category_counts.get(category, 0) + 1
-        if len(selected) >= limit:
-            return selected
-
-    # If diversity caps leave slots unused (for example, a one-source test set),
-    # fill remaining slots by original priority order without duplicating rows.
-    for item in candidates:
-        identity = str(item.get("id") or item.get("url") or id(item))
-        if identity in selected_ids:
-            continue
-        selected.append(item)
-        selected_ids.add(identity)
         if len(selected) >= limit:
             break
     return selected
