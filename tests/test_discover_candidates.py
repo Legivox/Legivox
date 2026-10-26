@@ -1,4 +1,5 @@
 import sys
+import collections
 import tempfile
 import unittest
 from datetime import datetime, timedelta, timezone
@@ -116,6 +117,39 @@ class DiscoveryHelpersTests(unittest.TestCase):
         self.assertEqual(candidate["signals"]["num_ratings"], 587)
         self.assertEqual(candidate["signals"]["rating_percent"], 94.0)
         self.assertIn("not paid-revenue evidence", candidate["signals"]["signal_interpretation"])
+
+    def test_preview_selection_limits_source_and_category_concentration(self):
+        candidates = []
+        sources = (
+            "GitHub Search",
+            "Hacker News · hn-show-hn",
+            "Shopify Community",
+            "Ahrefs Blog",
+            "Stripe Blog",
+            "WooCommerce Blog",
+        )
+        categories = ("ai_and_automation", "commerce_and_digital_products")
+        for index in range(30):
+            candidates.append({
+                "id": f"candidate-{index}",
+                "url": f"https://example.com/{index}",
+                "source": sources[index % len(sources)],
+                "primary_category": categories[index % len(categories)],
+                "priority_score": 100 - index,
+            })
+
+        selected = discovery.select_preview_candidates(candidates, 12)
+        source_groups = collections.Counter(
+            "GitHub Search" if row["source"].startswith("GitHub Search")
+            else "Hacker News" if row["source"].startswith("Hacker News")
+            else row["source"]
+            for row in selected
+        )
+        category_counts = collections.Counter(row["primary_category"] for row in selected)
+        self.assertEqual(len(selected), 12)
+        self.assertLessEqual(max(source_groups.values()), 3)
+        self.assertLessEqual(max(category_counts.values()), 6)
+        self.assertGreaterEqual(len(source_groups), 4)
 
     def test_rss_parser_preserves_primary_link_and_source_date(self):
         xml = """<?xml version="1.0"?>
