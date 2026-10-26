@@ -1,59 +1,59 @@
 {
-  "generated_at_ist": "2026-10-26T13:58:43+05:30",
-  "run_at_ist": "2026-10-26T13:58:43+05:30",
+  "generated_at_ist": "2026-10-26T14:55:00+05:30",
+  "run_at_ist": "2026-10-26T14:55:00+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 166,
-  "eligible_candidate_count": 104,
+  "candidate_count_raw": 164,
+  "eligible_candidate_count": 95,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4640
+      "total_count": 4654
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 984
+      "total_count": 987
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 349
+      "total_count": 352
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2852
+      "total_count": 2857
     },
     {
       "source": "GitHub Search · github-ecommerce-digital-products",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 404
+      "total_count": 406
     },
     {
       "source": "GitHub Search · github-mcp-servers",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2012
+      "total_count": 2020
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3201
+      "total_count": 3207
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
@@ -145,42 +145,42 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-26T08:28:43+00:00",
+    "observed_at_utc": "2026-10-26T09:25:00+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 83,
-    "previously_tracked_repositories_refreshed": 117,
+    "repositories_seen_in_discovery": 81,
+    "previously_tracked_repositories_refreshed": 119,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
-    "repositories_with_20_to_36_hour_baseline": 9,
+    "repositories_with_20_to_36_hour_baseline": 7,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "301687e3d4a1ad4d",
-      "title": "gotempsh/temps",
-      "source_url": "https://github.com/gotempsh/temps",
+      "candidate_id": "4a07de1a6b6420d6",
+      "title": "spatiumnorth/spatiumddi",
+      "source_url": "https://github.com/spatiumnorth/spatiumddi",
       "verified": true,
-      "final_url": "https://github.com/gotempsh/temps",
+      "final_url": "https://github.com/spatiumnorth/spatiumddi",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "6317efb1024f9afd",
-      "title": "Show HN: Continue Your Google AI Mode Chats in Gemini/Claude",
-      "source_url": "https://chromewebstore.google.com/detail/relay-continue-google-sea/fjjfadgooapnegipjocinojjhaajghag",
+      "candidate_id": "ecd16914a4ca2477",
+      "title": "open-edge-platform/dlstreamer",
+      "source_url": "https://github.com/open-edge-platform/dlstreamer",
       "verified": true,
-      "final_url": "https://chromewebstore.google.com/detail/relay-continue-google-sea/fjjfadgooapnegipjocinojjhaajghag",
+      "final_url": "https://github.com/open-edge-platform/dlstreamer",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "765c0cf4edc3ca27",
-      "title": "Show HN: pw-repl – A Playwright-powered REPL for you and your agents to share",
-      "source_url": "https://github.com/arcanemachine/pw-repl",
+      "candidate_id": "790af130bfe78c59",
+      "title": "Show HN: ShellSprint – A typing game-ish for Linux and Kubernetes commands",
+      "source_url": "https://shellsprint-dev.pages.dev",
       "verified": true,
-      "final_url": "https://github.com/arcanemachine/pw-repl",
+      "final_url": "https://shellsprint-dev.pages.dev",
       "http_status": 200,
       "reason": ""
     }
@@ -188,211 +188,221 @@
   "rejected_primary_sources": [],
   "daily_draft_cap": 16,
   "daily_drafts_already_passed": 1,
-  "outcome": "skip",
-  "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
-  "passing_drafts": [],
+  "outcome": "dry_run_passed",
+  "decision_reason": "At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.",
+  "passing_drafts": [
+    {
+      "candidate_id": "ecd16914a4ca2477",
+      "title": "open-edge-platform/dlstreamer",
+      "source": "GitHub Search",
+      "source_kind": "github_repository",
+      "url": "https://github.com/open-edge-platform/dlstreamer",
+      "primary_source_verified": true,
+      "primary_source_title": "GitHub - open-edge-platform/dlstreamer: Deep Learning Streamer (DL Streamer) Pipeline Framework is an open-source streaming media analytics framework, based on GStreamer* multimedia framework, for creating complex media analytics pipelines for the Cloud or at the Edge.",
+      "primary_source_final_url": "https://github.com/open-edge-platform/dlstreamer",
+      "primary_source_http_status": 200,
+      "category": "data_and_growth",
+      "priority_score": 67,
+      "hourly_adjusted_score": 61,
+      "post_text": "dlstreamer builds media analytics pipelines on GStreamer. Validate pipeline latency by measuring end‑to‑end frame timestamps. https://github.com/open-edge-platform/dlstreamer",
+      "fact_sentence": "dlstreamer builds media analytics pipelines on GStreamer.",
+      "format": "tool_discovery",
+      "audience": "developers",
+      "angle": "engineering_lesson",
+      "rationale": "Highlights GStreamer integration",
+      "evidence_quote": "GitHub - open-edge-platform/dlstreamer: Deep Learning Streamer (DL Streamer) Pipeline Framework is an open-source streaming media analytics framework, based on GStreamer* multimedia framework, for creating complex media analytics pipelines",
+      "editorial_takeaway": "Validate pipeline latency by measuring end‑to‑end frame timestamps.",
+      "claim_evidence": [
+        {
+          "claim": "dlstreamer builds media analytics pipelines on GStreamer.",
+          "quote": "GitHub - open-edge-platform/dlstreamer: Deep Learning Streamer (DL Streamer) Pipeline Framework is an open-source streaming media analytics framework, based on GStreamer* multimedia framework, for creating complex media analytics pipelines"
+        }
+      ],
+      "scores": {
+        "timeliness": 8,
+        "usefulness": 9,
+        "novelty": 7,
+        "evidence": 9,
+        "insight": 8
+      },
+      "editorial_score": 8.35,
+      "character_count": 174,
+      "status": "dry_run_passed_not_published",
+      "published_to_x": false,
+      "editorial_review": {
+        "clarity_score": 8,
+        "technical_coherence_score": 7,
+        "takeaway_value_score": 7,
+        "source_faithfulness_score": 8,
+        "originality_score": 7,
+        "reason": "Clear description, source backs claim, added practical latency check is a useful, original tip.",
+        "passed": true
+      }
+    }
+  ],
   "rejected_drafts": [
     {
-      "candidate_id": "301687e3d4a1ad4d",
-      "title": "gotempsh/temps",
+      "candidate_id": "4a07de1a6b6420d6",
+      "title": "spatiumnorth/spatiumddi",
       "reasons": [
         "The factual opening bundles multiple features; narrow it to one capability."
       ],
-      "proposed_text": "temps is a Rust binary offering 440+ CLI ops with drop‑in skills for Claude Code, Codex & OpenCode. Run a sample deployment CLI to verify skill integration before production. https://github.com/gotempsh/temps",
-      "evidence_quote": "AI-native open-source alternative to Vercel + Sentry + PostHog + Pingdom + Resend + E2B. 440+ CLI operations with drop-in skills for Claude Code, Codex & OpenCode — deployments, analytics, session replay, error tracking, OpenTelemetry, email, sandboxes & AI gateway in one self-hosted Rust binary.",
+      "proposed_text": "spatiumddi runs its own BIND9, PowerDNS, and Kea containers. Test DNS consistency by querying each container after deployment. https://github.com/spatiumnorth/spatiumddi",
+      "evidence_quote": "Runs its own BIND9 / PowerDNS / Kea service containers",
       "claim_evidence": [
         {
-          "claim": "temps is a Rust binary offering 440+ CLI ops with drop‑in skills for Claude Code, Codex & OpenCode.",
-          "quote": "AI-native open-source alternative to Vercel + Sentry + PostHog + Pingdom + Resend + E2B. 440+ CLI operations with drop-in skills for Claude Code, Codex & OpenCode — deployments, analytics, session replay, error tracking, OpenTelemetry, email, sandboxes & AI gateway in one self-hosted Rust binary."
+          "claim": "spatiumddi runs its own BIND9, PowerDNS, and Kea containers",
+          "quote": "Runs its own BIND9 / PowerDNS / Kea service containers"
         }
       ]
     },
     {
-      "candidate_id": null,
-      "title": "Unmapped model draft",
-      "proposed_text": "",
+      "candidate_id": "790af130bfe78c59",
+      "title": "Show HN: ShellSprint – A typing game-ish for Linux and Kubernetes commands",
       "reasons": [
-        "Model omitted a valid candidate ID and no exact verified source URL matched."
-      ]
-    },
-    {
-      "candidate_id": "6317efb1024f9afd",
-      "title": "Show HN: Continue Your Google AI Mode Chats in Gemini/Claude",
-      "reasons": [
-        "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
-      ],
-      "proposed_text": "Relay extension lets you continue a Google AI Mode chat into Gemini/Claude. Click the \"Relay: Continue in\" button after the conversation finishes to embed the chat context. https://chromewebstore.google.com/detail/relay-continue-google-sea/fjjfadgooapnegipjocinojjhaajghag",
-      "evidence_quote": "Continue a Google AI Mode chat in Gemini/Claude (ChatGPT support coming soon)",
-      "claim_evidence": [
-        {
-          "claim": "Relay extension lets you continue a Google AI Mode chat into Gemini/Claude.",
-          "quote": "Continue a Google AI Mode chat in Gemini/Claude (ChatGPT support coming soon)"
-        }
-      ]
-    },
-    {
-      "candidate_id": null,
-      "title": "Unmapped model draft",
-      "proposed_text": "",
-      "reasons": [
-        "Model omitted a valid candidate ID and no exact verified source URL matched."
-      ]
-    },
-    {
-      "candidate_id": "765c0cf4edc3ca27",
-      "title": "Show HN: pw-repl – A Playwright-powered REPL for you and your agents to share",
-      "reasons": [
-        "Fact sentence is too long; narrow it to one source-backed capability."
-      ],
-      "proposed_text": "pw-repl is a Playwright-powered swiss‑army knife that harnesses the Chrome Debug Protocol in an existing or headless browser session. Use pw-repl to attach to a running Chrome instance for debugging agent interactions. https://github.com/arcanemachine/pw-repl",
-      "evidence_quote": "A Playwright-powered swiss-army knife that lets you and your agents harness the power of the Chrome Debug Protocol in your existing browser session, or a headless one.",
-      "claim_evidence": [
-        {
-          "claim": "pw-repl is a Playwright-powered swiss‑army knife that harnesses the Chrome Debug Protocol in an existing or headless browser session.",
-          "quote": "A Playwright-powered swiss-army knife that lets you and your agents harness the power of the Chrome Debug Protocol in your existing browser session, or a headless one."
-        }
-      ]
-    },
-    {
-      "candidate_id": "6317efb1024f9afd",
-      "title": "Show HN: Continue Your Google AI Mode Chats in Gemini/Claude",
-      "reasons": [
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
-      ],
-      "proposed_text": "Relay extension continues Google AI Mode chat into Gemini. Click \"Relay: Continue in\" after chat ends to embed context. https://chromewebstore.google.com/detail/relay-continue-google-sea/fjjfadgooapnegipjocinojjhaajghag",
-      "evidence_quote": "Continue a Google AI Mode chat in Gemini/Claude (ChatGPT support coming soon)",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
-      ]
-    },
-    {
-      "candidate_id": "765c0cf4edc3ca27",
-      "title": "Show HN: pw-repl – A Playwright-powered REPL for you and your agents to share",
-      "reasons": [
+        "The factual opening bundles multiple features; narrow it to one capability.",
         "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
-        "No claim-by-claim supporting evidence was provided",
-        "Factual sentence includes terms absent from the source title/summary: attach, instance"
+        "Supporting quotes cover only 56% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "pw-repl lets you attach to a running Chrome instance. Use \"pw-repl attach\" to debug an agent in a live browser. https://github.com/arcanemachine/pw-repl",
-      "evidence_quote": "A Playwright-powered swiss‑army knife that lets you and your agents harness the power of the Chrome Debug Protocol in your existing browser session, or a headless one",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "Fact sentence is too long; narrow it to one source-backed capability."
-      ]
-    },
-    {
-      "candidate_id": "301687e3d4a1ad4d",
-      "title": "gotempsh/temps",
-      "proposed_text": "temps is a Rust binary that offers 440+ CLI operations. Run \"temps deploy\" to confirm the deployment CLI works. https://github.com/gotempsh/temps",
-      "reasons": [
-        "Post restates headline facts without adding new insight; originality below threshold."
-      ],
-      "editorial_review": {
-        "clarity_score": 8,
-        "technical_coherence_score": 8,
-        "takeaway_value_score": 8,
-        "source_faithfulness_score": 8,
-        "originality_score": 5
-      }
-    },
-    {
-      "candidate_id": "301687e3d4a1ad4d",
-      "title": "gotempsh/temps",
-      "reasons": [
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
-      ],
-      "proposed_text": "temps is a Rust binary that offers 440+ CLI operations. Use temps to collect OpenTelemetry traces in a self-hosted Rust environment. https://github.com/gotempsh/temps",
-      "evidence_quote": "OpenTelemetry",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "Post restates headline facts without adding new insight; originality below threshold."
+      "proposed_text": "ShellSprint offers typing lessons for Linux, Rancher, Podman, Ansible, and Kubernetes. Track accuracy over time to spot command recall gaps. https://shellsprint-dev.pages.dev",
+      "evidence_quote": "Practice Linux, Rancher RKE2, Podman, Ansible and Kubernetes commands",
+      "claim_evidence": [
+        {
+          "claim": "ShellSprint offers typing lessons for Linux, Rancher, Podman, Ansible, and Kubernetes",
+          "quote": "Practice Linux, Rancher RKE2, Podman, Ansible and Kubernetes commands"
+        }
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "301687e3d4a1ad4d",
-      "title": "gotempsh/temps",
-      "url": "https://github.com/gotempsh/temps",
+      "id": "4a07de1a6b6420d6",
+      "title": "spatiumnorth/spatiumddi",
+      "url": "https://github.com/spatiumnorth/spatiumddi",
       "source": "GitHub Search",
-      "primary_category": "data_and_growth",
-      "priority_score": 74,
-      "hourly_adjusted_score": 68,
-      "stars_current": 869,
+      "primary_category": "security_and_self_hosting",
+      "priority_score": 71,
+      "hourly_adjusted_score": 65,
+      "stars_current": 71,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "insufficient_history",
-      "published_at": "2026-10-26T08:27:43+00:00",
+      "published_at": "2026-10-26T09:24:29+00:00",
       "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "6317efb1024f9afd",
-      "title": "Show HN: Continue Your Google AI Mode Chats in Gemini/Claude",
-      "url": "https://chromewebstore.google.com/detail/relay-continue-google-sea/fjjfadgooapnegipjocinojjhaajghag",
-      "source": "Hacker News",
-      "primary_category": "product_and_workflow_tools",
-      "priority_score": 65,
-      "hourly_adjusted_score": 67,
-      "stars_current": null,
+      "id": "ecd16914a4ca2477",
+      "title": "open-edge-platform/dlstreamer",
+      "url": "https://github.com/open-edge-platform/dlstreamer",
+      "source": "GitHub Search",
+      "primary_category": "data_and_growth",
+      "priority_score": 67,
+      "hourly_adjusted_score": 61,
+      "stars_current": 643,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-26T07:35:56+00:00",
-      "days_old": 0.04,
+      "trend_signal": "insufficient_history",
+      "published_at": "2026-10-26T09:25:27+00:00",
+      "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "765c0cf4edc3ca27",
-      "title": "Show HN: pw-repl – A Playwright-powered REPL for you and your agents to share",
-      "url": "https://github.com/arcanemachine/pw-repl",
+      "id": "790af130bfe78c59",
+      "title": "Show HN: ShellSprint – A typing game-ish for Linux and Kubernetes commands",
+      "url": "https://shellsprint-dev.pages.dev",
       "source": "Hacker News",
       "primary_category": "product_and_workflow_tools",
-      "priority_score": 62,
-      "hourly_adjusted_score": 64,
+      "priority_score": 56,
+      "hourly_adjusted_score": 58,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-26T07:28:33+00:00",
-      "days_old": 0.04,
+      "published_at": "2026-10-26T08:18:10+00:00",
+      "days_old": 0.05,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     }
   ],
   "automatic_repair": {
-    "attempted": true,
-    "drafts_submitted": 4,
-    "repaired_local_passes": 1,
-    "repair_rejections": 3,
+    "attempted": false,
+    "drafts_submitted": 0,
+    "repaired_local_passes": 0,
+    "repair_rejections": 0,
     "repair_error": null,
-    "editorial_repair_attempted": true,
-    "editorial_repair_drafts_submitted": 1,
+    "editorial_repair_attempted": false,
+    "editorial_repair_drafts_submitted": 0,
     "editorial_repair_error": null
   },
   "editorial_review": {
     "locally_valid_drafts": 1,
     "submitted_for_independent_review": 1,
-    "passed_independent_review": 0,
-    "rejected_by_independent_review": 1,
+    "passed_independent_review": 1,
+    "rejected_by_independent_review": 0,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
+  "recommended_draft": {
+    "candidate_id": "ecd16914a4ca2477",
+    "title": "open-edge-platform/dlstreamer",
+    "source": "GitHub Search",
+    "source_kind": "github_repository",
+    "url": "https://github.com/open-edge-platform/dlstreamer",
+    "primary_source_verified": true,
+    "primary_source_title": "GitHub - open-edge-platform/dlstreamer: Deep Learning Streamer (DL Streamer) Pipeline Framework is an open-source streaming media analytics framework, based on GStreamer* multimedia framework, for creating complex media analytics pipelines for the Cloud or at the Edge.",
+    "primary_source_final_url": "https://github.com/open-edge-platform/dlstreamer",
+    "primary_source_http_status": 200,
+    "category": "data_and_growth",
+    "priority_score": 67,
+    "hourly_adjusted_score": 61,
+    "post_text": "dlstreamer builds media analytics pipelines on GStreamer. Validate pipeline latency by measuring end‑to‑end frame timestamps. https://github.com/open-edge-platform/dlstreamer",
+    "fact_sentence": "dlstreamer builds media analytics pipelines on GStreamer.",
+    "format": "tool_discovery",
+    "audience": "developers",
+    "angle": "engineering_lesson",
+    "rationale": "Highlights GStreamer integration",
+    "evidence_quote": "GitHub - open-edge-platform/dlstreamer: Deep Learning Streamer (DL Streamer) Pipeline Framework is an open-source streaming media analytics framework, based on GStreamer* multimedia framework, for creating complex media analytics pipelines",
+    "editorial_takeaway": "Validate pipeline latency by measuring end‑to‑end frame timestamps.",
+    "claim_evidence": [
+      {
+        "claim": "dlstreamer builds media analytics pipelines on GStreamer.",
+        "quote": "GitHub - open-edge-platform/dlstreamer: Deep Learning Streamer (DL Streamer) Pipeline Framework is an open-source streaming media analytics framework, based on GStreamer* multimedia framework, for creating complex media analytics pipelines"
+      }
+    ],
+    "scores": {
+      "timeliness": 8,
+      "usefulness": 9,
+      "novelty": 7,
+      "evidence": 9,
+      "insight": 8
+    },
+    "editorial_score": 8.35,
+    "character_count": 174,
+    "status": "dry_run_passed_not_published",
+    "published_to_x": false,
+    "editorial_review": {
+      "clarity_score": 8,
+      "technical_coherence_score": 7,
+      "takeaway_value_score": 7,
+      "source_faithfulness_score": 8,
+      "originality_score": 7,
+      "reason": "Clear description, source backs claim, added practical latency check is a useful, original tip.",
+      "passed": true
+    }
+  },
   "state_summary": {
-    "used_candidates_in_cooldown": 13,
-    "recently_attempted_candidates": 19,
-    "recent_draft_passes_today": 1
+    "used_candidates_in_cooldown": 14,
+    "recently_attempted_candidates": 22,
+    "recent_draft_passes_today": 2
   }
 }
