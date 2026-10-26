@@ -133,7 +133,7 @@ def load_config() -> dict:
         config = json.loads(CONFIG_PATH.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError) as exc:
         raise RuntimeError("Could not load data/discovery_sources.json: " + type(exc).__name__) from exc
-    for key in ("feeds", "github_searches", "hn_searches", "categories", "source_weights"):
+    for key in ("feeds", "github_searches", "hn_searches", "wordpress_searches", "categories", "source_weights"):
         if key not in config:
             raise RuntimeError("Discovery source registry is missing key: " + key)
     return config
@@ -230,6 +230,16 @@ def normalize_candidate(
         traction_points += min(10, round(2.5 * math.log1p(points)))
     if comments:
         traction_points += min(4, round(1.2 * math.log1p(comments)))
+    # WordPress plugin installs and ratings indicate adoption/feedback, not paid demand.
+    active_installs = max(0, int(signal_values.get("active_installs") or 0))
+    num_ratings = max(0, int(signal_values.get("num_ratings") or 0))
+    downloaded = max(0, int(signal_values.get("downloaded") or 0))
+    if active_installs:
+        traction_points += min(4, round(math.log10(active_installs + 1)))
+    if num_ratings:
+        traction_points += min(3, round(0.75 * math.log1p(num_ratings)))
+    if downloaded:
+        traction_points += min(2, round(0.5 * math.log10(downloaded + 1)))
     traction_points = min(12, traction_points)
 
     technical_markers = (
@@ -507,6 +517,149 @@ def discover_hn_search(
         }
 
 
+
+def parse_wordpress_datetime(value: object) -> str | None:
+    """Normalize the WordPress.org Plugin API's human-readable last-updated timestamp."""
+    raw = str(value or "").strip()
+    parsed = parse_datetime(raw)
+    if parsed:
+        return iso_utc(parsed)
+    match = re.fullmatch(
+        r"(\d{4}-\d{2}-\d{2})\s+(\d{1,2}):(\d{2})\s*(am|pm)\s+GMT",
+        raw,
+        flags=re.I,
+    )
+    if not match:
+        return None
+    try:
+        hour = int(match.group(2)) % 12
+        if match.group(4).casefold() == "pm":
+            hour += 12
+        parsed_dt = datetime.fromisoformat(
+            f"{match.group(1)}T{hour:02d}:{int(match.group(3)):02d}:00+00:00"
+        )
+        return iso_utc(parsed_dt)
+    except ValueError:
+        return None
+
+
+def parse_wordpress_plugin_response(
+    payload: dict,
+    search: dict,
+    config: dict,
+    now: datetime,
+) -> list[dict]:
+    """Convert official WordPress.org Plugin Directory API results into discovery candidates."""
+    results: list[dict] = []
+    for plugin in payload.get("plugins", []):
+        slug = clean_text(plugin.get("slug") or "")
+        title = clean_text(plugin.get("name") or "")
+        if not slug or not title:
+            continue
+        # Keep the official directory page as the primary URL; the vendor homepage
+        # is a secondary evidence link, not a substitute for independent metadata.
+        url = f"https://wordpress.org/plugins/{urllib.parse.quote(slug)}/"
+        description = clean_text(
+            plugin.get("short_description") or plugin.get("description") or ""
+        )
+        try:
+            active_installs = max(0, int(plugin.get("active_installs") or 0))
+        except (TypeError, ValueError):
+            active_installs = 0
+        try:
+            num_ratings = max(0, int(plugin.get("num_ratings") or 0))
+        except (TypeError, ValueError):
+            num_ratings = 0
+        try:
+            rating_percent = max(0.0, min(100.0, float(plugin.get("rating") or 0)))
+        except (TypeError, ValueError):
+            rating_percent = 0.0
+        try:
+            downloaded = max(0, int(plugin.get("downloaded") or 0))
+        except (TypeError, ValueError):
+            downloaded = 0
+        last_updated = parse_wordpress_datetime(plugin.get("last_updated"))
+        signals = {
+            "wordpress_slug": slug,
+            "active_installs": active_installs,
+            "rating_percent": rating_percent,
+            "num_ratings": num_ratings,
+            "downloaded": downloaded,
+            "last_updated": str(plugin.get("last_updated") or ""),
+            "query_id": search.get("id", ""),
+            "signal_interpretation": "free-plugin adoption and review activity; not paid-revenue evidence",
+        }
+        candidate = normalize_candidate(
+            source="WordPress Plugin Directory",
+            source_kind="wordpress_plugin",
+            title=title,
+            url=url,
+            summary=description,
+            published_at=last_updated,
+            category_hint=search.get("category"),
+            signals=signals,
+            evidence_urls=[url, str(plugin.get("homepage") or "")],
+            extra_text=" ".join((slug, " ".join((plugin.get("tags") or {}).keys()))),
+            config=config,
+            now=now,
+        )
+        if candidate:
+            results.append(candidate)
+    return results
+
+
+def discover_wordpress_search(
+    search: dict,
+    config: dict,
+    now: datetime,
+    lookback_days: int,
+    per_source: int,
+) -> tuple[list[dict], dict]:
+    """Search the official WordPress.org plugin directory for product/use-case signals."""
+    params = {
+        "action": "query_plugins",
+        "request[search]": str(search.get("query") or ""),
+        "request[per_page]": str(min(50, per_source)),
+        "request[fields][active_installs]": "1",
+        "request[fields][rating]": "1",
+        "request[fields][num_ratings]": "1",
+        "request[fields][downloaded]": "1",
+        "request[fields][last_updated]": "1",
+        "request[fields][homepage]": "1",
+        "request[fields][short_description]": "1",
+        "request[fields][tags]": "1",
+    }
+    url = "https://api.wordpress.org/plugins/info/1.2/?" + urllib.parse.urlencode(params)
+    try:
+        payload = json.loads(fetch_bytes(url, headers={"Accept": "application/json"}).decode("utf-8"))
+        candidates = parse_wordpress_plugin_response(payload, search, config, now)
+        # Do not apply the release-news freshness cutoff to established plugins:
+        # their current install/review footprint can be useful even between updates.
+        return candidates, {
+            "source": "WordPress Plugin Directory · " + str(search.get("id") or ""),
+            "kind": "wordpress_plugin",
+            "items_kept": len(candidates),
+            "status": "ok",
+            "total_count": int((payload.get("info") or {}).get("results") or len(payload.get("plugins") or [])),
+        }
+    except urllib.error.HTTPError as exc:
+        return [], {
+            "source": "WordPress Plugin Directory · " + str(search.get("id") or ""),
+            "kind": "wordpress_plugin",
+            "items_kept": 0,
+            "status": "error",
+            "error": "HTTP " + str(exc.code),
+        }
+    except Exception as exc:
+        return [], {
+            "source": "WordPress Plugin Directory · " + str(search.get("id") or ""),
+            "kind": "wordpress_plugin",
+            "items_kept": 0,
+            "status": "error",
+            "error": type(exc).__name__,
+        }
+
+
 def merge_duplicates(candidates: list[dict]) -> list[dict]:
     merged: dict[str, dict] = {}
     for candidate in candidates:
@@ -552,6 +705,8 @@ def discover(config: dict, lookback_days: int = 14, per_source: int = 15) -> tup
             jobs.append(pool.submit(discover_github_search, search, config, now, lookback_days, per_source))
         for search in config["hn_searches"]:
             jobs.append(pool.submit(discover_hn_search, search, config, now, lookback_days, per_source))
+        for search in config.get("wordpress_searches", []):
+            jobs.append(pool.submit(discover_wordpress_search, search, config, now, lookback_days, per_source))
         for future in as_completed(jobs):
             found, diagnostic = future.result()
             candidates.extend(found)
@@ -588,6 +743,8 @@ def write_report(
             "Priority score is a queue-ordering heuristic, not a quality, safety, market-demand or popularity verdict.",
             "Public stars, votes and comments are weak signals and can be gamed; never present them as proof of demand.",
             "Review the product/project's own page, documentation, price, licence, target user, privacy implications and last update.",
+            "WordPress active installs, downloads and ratings are adoption/feedback signals for free plugins, not proof of paid demand.",
+            "Buyer-search volume, paid competition, negative reviews, conversion and preorders must be researched separately before selecting a product idea.",
             "For news or platform changes, confirm the effective date and affected versions against the primary source.",
         ],
     }
@@ -605,7 +762,7 @@ def write_report(
         f"- Candidates shown: {len(visible)}",
         f"- Source checks successful: {okay}/{len(diagnostics)}",
         "",
-        "This account is designed to find useful technology people can **build with, automate, use to launch, or use to sell online**. The ranking helps sort a review queue. It does not certify claims or infer willingness to pay.",
+        "Legivox discovers useful digital products, creator tools, online-business workflows, commerce operations, marketing/distribution tactics and technology. The ranking sorts a review queue; it does not certify claims or infer willingness to pay.",
         "",
         "## Source health",
         "",
@@ -637,7 +794,7 @@ def write_report(
         ]
         signals = item.get("signals", {})
         signal_bits = []
-        for key in ("stars", "forks", "points", "comments", "language", "license_spdx", "pushed_at"):
+        for key in ("stars", "forks", "points", "comments", "language", "license_spdx", "pushed_at", "active_installs", "rating_percent", "num_ratings", "downloaded", "last_updated"):
             value = signals.get(key)
             if value not in (None, "", 0):
                 signal_bits.append(f"{key}={value}")
