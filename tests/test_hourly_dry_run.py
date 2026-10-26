@@ -1279,6 +1279,12 @@ class HourlyDryRunTests(unittest.TestCase):
                 candidate = dict(self.candidate, source=source, days_old=days_old)
                 self.assertEqual(hourly.is_fresh(candidate, 1), expected)
 
+    def test_shopify_community_is_discovery_only_until_primary_pages_verify(self):
+        blocked = dict(self.candidate, source="Shopify Community")
+        eligible = dict(self.candidate, source="Stripe Blog")
+        self.assertFalse(hourly.source_is_enabled_for_automated_draft(blocked))
+        self.assertTrue(hourly.source_is_enabled_for_automated_draft(eligible))
+
     def test_github_star_velocity_requires_persisted_20_to_36_hour_baseline(self):
         state = hourly.empty_state()
         candidate = dict(self.candidate)
