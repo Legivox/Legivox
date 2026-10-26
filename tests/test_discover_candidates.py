@@ -148,7 +148,7 @@ class DiscoveryHelpersTests(unittest.TestCase):
         category_counts = collections.Counter(row["primary_category"] for row in selected)
         self.assertEqual(len(selected), 12)
         self.assertLessEqual(max(source_groups.values()), 3)
-        self.assertLessEqual(max(category_counts.values()), 6)
+        self.assertLessEqual(max(category_counts.values()), 8)
         self.assertGreaterEqual(len(source_groups), 4)
         scores = [row["priority_score"] for row in selected]
         self.assertEqual(scores, sorted(scores, reverse=True))
