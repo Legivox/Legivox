@@ -719,20 +719,13 @@ def discover(config: dict, lookback_days: int = 14, per_source: int = 15) -> tup
 
 
 def select_preview_candidates(candidates: list[dict], limit: int) -> list[dict]:
-    """Build a source/category-diverse preview without changing candidate ranking.
+    """Return a priority-ranked preview with representation from healthy sources.
 
-    This function affects only the human-readable discovery report. The hourly
-    publisher has its own ranking and diversity rules and never consumes this
-    preview selection.
+    This selection affects only the read-only review report. The hourly publishing
+    selector has its own ranking/diversity rules and never consumes this preview.
     """
     if limit <= 0:
         return []
-    selected: list[dict] = []
-    selected_ids: set[str] = set()
-    source_counts: dict[str, int] = {}
-    category_counts: dict[str, int] = {}
-    max_per_source_group = 3
-    max_per_category = 8
 
     def source_group(item: dict) -> str:
         source = str(item.get("source") or "Unknown source")
@@ -744,9 +737,43 @@ def select_preview_candidates(candidates: list[dict], limit: int) -> list[dict]:
             return "WordPress Plugin Directory"
         return source
 
+    def identity(item: dict) -> str:
+        return str(item.get("id") or item.get("canonical_url") or item.get("url") or id(item))
+
+    # Preserve the original priority order within each source.
+    grouped: dict[str, list[dict]] = {}
     for item in candidates:
-        identity = str(item.get("id") or item.get("canonical_url") or item.get("url") or id(item))
-        if identity in selected_ids:
+        grouped.setdefault(source_group(item), []).append(item)
+
+    selected_ids: set[str] = set()
+    selected: list[dict] = []
+    source_counts: dict[str, int] = {}
+    category_counts: dict[str, int] = {}
+    max_per_source_group = 3
+    max_per_category = 8
+
+    # Reserve one slot per source before applying category caps. Coverage of
+    # configured sources is the primary purpose of this report.
+    for source, items in grouped.items():
+        if len(selected) >= limit:
+            break
+        item = next((candidate for candidate in items if identity(candidate) not in selected_ids), None)
+        if item is None:
+            continue
+        key = identity(item)
+        category = str(item.get("primary_category") or "unknown")
+        selected.append(item)
+        selected_ids.add(key)
+        source_counts[source] = 1
+        category_counts[category] = category_counts.get(category, 0) + 1
+
+    # Fill the remaining slots by priority, applying soft caps to limit source
+    # concentration without dropping the reserved representation.
+    for item in candidates:
+        if len(selected) >= limit:
+            break
+        key = identity(item)
+        if key in selected_ids:
             continue
         source = source_group(item)
         category = str(item.get("primary_category") or "unknown")
@@ -755,12 +782,22 @@ def select_preview_candidates(candidates: list[dict], limit: int) -> list[dict]:
         if category_counts.get(category, 0) >= max_per_category:
             continue
         selected.append(item)
-        selected_ids.add(identity)
+        selected_ids.add(key)
         source_counts[source] = source_counts.get(source, 0) + 1
         category_counts[category] = category_counts.get(category, 0) + 1
-        if len(selected) >= limit:
+
+    # Keep the rendered report ordered by the original priority sort.
+    selected_set = {identity(item) for item in selected}
+    ordered: list[dict] = []
+    emitted: set[str] = set()
+    for item in candidates:
+        key = identity(item)
+        if key in selected_set and key not in emitted:
+            ordered.append(item)
+            emitted.add(key)
+        if len(ordered) >= limit:
             break
-    return selected
+    return ordered
 
 
 def write_report(
