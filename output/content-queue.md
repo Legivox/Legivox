@@ -1,23 +1,23 @@
 # Legivox daily content plan
 
-Prepared: 2026-10-26 15:40:56 IST
+Prepared: 2026-10-26 16:35:18 IST
 
 > This scheduled post came from a fresh multidomain discovery report, passed primary-source and deterministic evidence checks, and passed an independent editorial review. The star-history baseline is a trend signal, not proof of market demand.
 
-## Post 1 · multidomain-ecd16914a4ca2477
+## Post 1 · multidomain-ea81990def941358
 
 **Planned copy**
 
-dlstreamer builds media analytics pipelines on GStreamer. Validate pipeline latency by measuring end‑to‑end frame timestamps. https://github.com/open-edge-platform/dlstreamer
+gocommerce includes an embedded admin panel for catalog and orders. Test admin panel CRUD routes and data integrity before production use. https://github.com/itswadesh/gocommerce
 
-- Topic: data_and_growth
+- Topic: commerce_and_digital_products
 - Editorial score (model estimate): 8.35
 
 **Source article**
 
-- [open-edge-platform/dlstreamer](https://github.com/open-edge-platform/dlstreamer)
+- [itswadesh/gocommerce](https://github.com/itswadesh/gocommerce)
 
-- Status: published: https://x.com/i/status/2114662024273657955
+- Status: published: https://x.com/i/status/2114675550178738650
 
 ## Media policy
 

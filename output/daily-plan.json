@@ -1,39 +1,39 @@
 {
   "date_ist": "2026-10-26",
-  "prepared_at_ist": "2026-10-26 15:40:56 IST",
+  "prepared_at_ist": "2026-10-26 16:35:18 IST",
   "research_window_days": 1,
   "research_source": "Multidomain discovery + independent editorial review",
-  "source_report_generated_at_ist": "2026-10-26T14:55:00+05:30",
-  "source_report_age_minutes": 45,
+  "source_report_generated_at_ist": "2026-10-26T15:54:15+05:30",
+  "source_report_age_minutes": 41,
   "star_baseline_repositories": 7,
   "posts": [
     {
-      "idea_id": "multidomain-ecd16914a4ca2477",
-      "niche": "data_and_growth",
-      "problem": "open-edge-platform/dlstreamer",
-      "evidence": "Primary source verified (HTTP 200): https://github.com/open-edge-platform/dlstreamer. Exact evidence: GitHub - open-edge-platform/dlstreamer: Deep Learning Streamer (DL Streamer) Pipeline Framework is an open-source streaming media analytics framework, based on GStreamer* multimedia framework, for creating complex media analytics pipelines",
-      "solution_hypothesis": "Validate pipeline latency by measuring end‑to‑end frame timestamps.",
-      "text": "dlstreamer builds media analytics pipelines on GStreamer. Validate pipeline latency by measuring end‑to‑end frame timestamps. https://github.com/open-edge-platform/dlstreamer",
-      "text_hash": "5419544c59b016864917e3783bd47384b8372bb90d77fe7fa34b983ab5eaf4dd",
+      "idea_id": "multidomain-ea81990def941358",
+      "niche": "commerce_and_digital_products",
+      "problem": "itswadesh/gocommerce",
+      "evidence": "Primary source verified (HTTP 200): https://github.com/itswadesh/gocommerce. Exact evidence: GitHub - itswadesh/gocommerce: A composable commerce engine for Go: catalog, carts, checkout, orders, payments and inventory as a library, with an embedded admin panel.",
+      "solution_hypothesis": "Test admin panel CRUD routes and data integrity before production use.",
+      "text": "gocommerce includes an embedded admin panel for catalog and orders. Test admin panel CRUD routes and data integrity before production use. https://github.com/itswadesh/gocommerce",
+      "text_hash": "c3fe22d3a8708988a8fc2f788a13ccd53dc0bf2585fad2e4ff300fe869bfe987",
       "image_query": "",
       "research": {
         "query": "Multidomain primary-source discovery and independent editorial review",
         "score": 8.35,
         "hits": [
           {
-            "title": "open-edge-platform/dlstreamer",
-            "url": "https://github.com/open-edge-platform/dlstreamer",
-            "external_url": "https://github.com/open-edge-platform/dlstreamer",
+            "title": "itswadesh/gocommerce",
+            "url": "https://github.com/itswadesh/gocommerce",
+            "external_url": "https://github.com/itswadesh/gocommerce",
             "points": 0,
             "comments": 0,
-            "created_at": "2026-10-26T14:55:00+05:30",
+            "created_at": "2026-10-26T15:54:15+05:30",
             "matched_terms": []
           }
         ],
         "error": null
       },
-      "status": "published: https://x.com/i/status/2114662024273657955",
-      "slot": 1,
+      "status": "published: https://x.com/i/status/2114675550178738650",
+      "slot": 2,
       "editorial_scores": {
         "model": {
           "timeliness": 8,
@@ -44,17 +44,17 @@
         },
         "overall": 8.35,
         "independent_review": {
-          "clarity_score": 8,
-          "technical_coherence_score": 7,
-          "takeaway_value_score": 7,
-          "source_faithfulness_score": 8,
-          "originality_score": 7,
-          "reason": "Clear description, source backs claim, added practical latency check is a useful, original tip.",
+          "clarity_score": 9,
+          "technical_coherence_score": 9,
+          "takeaway_value_score": 8,
+          "source_faithfulness_score": 9,
+          "originality_score": 8,
+          "reason": "Clear, source-backed claim, useful testing advice, no unsupported assertions.",
           "passed": true
         }
       },
-      "published_at_ist": "2026-10-26T15:44:49+05:30",
-      "published_url": "https://x.com/i/status/2114662024273657955",
+      "published_at_ist": "2026-10-26T16:38:34+05:30",
+      "published_url": "https://x.com/i/status/2114675550178738650",
       "image": null
     }
   ]

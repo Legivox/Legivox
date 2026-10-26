@@ -19,6 +19,7 @@
     "b330278c635243a3e05c2df225fff439e242273c7e11d1cc2ada9f205813c499",
     "c0a7d1b17f8df952667f0eaa0db654d92bc9d5c1035848be9f4b94106bbabee1",
     "c2d91d2da4c5f3450063e8d3b0c31a18d42d3d6f3a925ce3d52162e0422e4133",
+    "c3fe22d3a8708988a8fc2f788a13ccd53dc0bf2585fad2e4ff300fe869bfe987",
     "c4d51192d1e423c760ddfcf7161fbb06c51ac98d1a6ad0f52431c656190bc8aa",
     "cab67264720dddc6feb09f9b05e7252f7762c7f5b3c670e748eff83cde175d51",
     "dcbcc8b76b8c381e7bb9d508253f5fa6b5b60e7f0aab0336369d88fb2573cb6b",
@@ -26,13 +27,12 @@
     "ec33a87dcda44080c144fa6aa6fe7e14a52f36d29df9168bef604957b7ff0d3a",
     "fb868a36fc77f593065b354a9d2fb321effb73da9345c2652acffae608cbbfff"
   ],
-  "published_count": 25,
-  "last_idea_id": "multidomain-ecd16914a4ca2477",
+  "published_count": 26,
+  "last_idea_id": "multidomain-ea81990def941358",
   "last_template_index": 0,
-  "last_published_at": "2026-10-26T15:44:49+05:30",
-  "last_published_url": "https://x.com/i/status/2114662024273657955",
+  "last_published_at": "2026-10-26T16:38:34+05:30",
+  "last_published_url": "https://x.com/i/status/2114675550178738650",
   "recent_idea_ids": [
-    "multidomain-4ef43ce31f0c5ea0",
     "multidomain-974b525b99ba8217",
     "multidomain-d0580c0fa30f0640",
     "multidomain-dd35074b283c32c0",
@@ -40,6 +40,7 @@
     "multidomain-a3dea7a0068cba70",
     "multidomain-dd89fbbb59577fc8",
     "multidomain-c60b77ce50fb8910",
-    "multidomain-ecd16914a4ca2477"
+    "multidomain-ecd16914a4ca2477",
+    "multidomain-ea81990def941358"
   ]
 }
