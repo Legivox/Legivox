@@ -45,6 +45,61 @@ class DiscoveryHelpersTests(unittest.TestCase):
         )
         self.assertEqual(categories[0], "developer_tools")
 
+    def test_digital_product_and_seller_operations_have_distinct_lanes(self):
+        categories = discovery.category_matches(
+            "A Notion template and spreadsheet for Etsy digital download sellers to track inventory, fees and profit margin",
+            self.config,
+        )
+        self.assertIn("digital_product_business", categories)
+        self.assertIn("online_seller_operations", categories)
+
+    def test_expanded_registry_includes_market_and_business_sources(self):
+        feed_names = {feed["name"] for feed in self.config["feeds"]}
+        self.assertIn("Shopify Community", feed_names)
+        self.assertIn("Stripe Blog", feed_names)
+        self.assertIn("Ahrefs Blog", feed_names)
+        self.assertIn("Indie Hackers (unofficial feed)", feed_names)
+        self.assertGreaterEqual(len(self.config["wordpress_searches"]), 4)
+
+    def test_wordpress_datetime_parses_official_api_timestamp(self):
+        parsed = discovery.parse_wordpress_datetime("2026-10-20 4:15pm GMT")
+        self.assertEqual(parsed, "2026-10-20T16:15:00+00:00")
+
+    def test_wordpress_plugin_response_records_adoption_and_feedback_signals(self):
+        payload = {
+            "plugins": [{
+                "name": "Easy Digital Downloads",
+                "slug": "easy-digital-downloads",
+                "url": "https://wordpress.org/plugins/easy-digital-downloads/",
+                "homepage": "https://easydigitaldownloads.com/",
+                "short_description": "Sell digital downloads, ebooks, templates and software from WordPress.",
+                "last_updated": "2026-10-20 4:15pm GMT",
+                "active_installs": 40000,
+                "rating": 94,
+                "num_ratings": 587,
+                "downloaded": 1234567,
+                "tags": {"digital-downloads": "Digital Downloads"},
+            }]
+        }
+        search = {
+            "id": "wp-digital-downloads",
+            "query": "digital downloads",
+            "category": "digital_product_business",
+        }
+        candidates = discovery.parse_wordpress_plugin_response(
+            payload, search, self.config, self.now
+        )
+        self.assertEqual(len(candidates), 1)
+        candidate = candidates[0]
+        self.assertEqual(candidate["source"], "WordPress Plugin Directory")
+        self.assertEqual(candidate["source_kind"], "wordpress_plugin")
+        self.assertEqual(candidate["url"], "https://wordpress.org/plugins/easy-digital-downloads/")
+        self.assertIn("digital_product_business", candidate["categories"])
+        self.assertEqual(candidate["signals"]["active_installs"], 40000)
+        self.assertEqual(candidate["signals"]["num_ratings"], 587)
+        self.assertEqual(candidate["signals"]["rating_percent"], 94.0)
+        self.assertIn("not paid-revenue evidence", candidate["signals"]["signal_interpretation"])
+
     def test_rss_parser_preserves_primary_link_and_source_date(self):
         xml = """<?xml version="1.0"?>
         <rss version="2.0"><channel><item>
