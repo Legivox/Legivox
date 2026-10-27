@@ -1,24 +1,24 @@
 {
-  "generated_at_ist": "2026-10-27T08:46:56+05:30",
-  "run_at_ist": "2026-10-27T08:46:56+05:30",
+  "generated_at_ist": "2026-10-27T09:49:14+05:30",
+  "run_at_ist": "2026-10-27T09:49:14+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 169,
-  "eligible_candidate_count": 89,
+  "candidate_count_raw": 170,
+  "eligible_candidate_count": 87,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4669
+      "total_count": 4678
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 988
+      "total_count": 989
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
@@ -32,28 +32,28 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2853
+      "total_count": 2857
     },
     {
       "source": "GitHub Search · github-ecommerce-digital-products",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 389
+      "total_count": 392
     },
     {
       "source": "GitHub Search · github-mcp-servers",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2028
+      "total_count": 2030
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3224
+      "total_count": 3225
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
@@ -67,7 +67,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 263
+      "total_count": 264
     },
     {
       "source": "Hacker News · hn-analytics-growth",
@@ -114,7 +114,7 @@
     {
       "source": "Hacker News · hn-shopify",
       "kind": "hacker_news",
-      "items_kept": 5,
+      "items_kept": 10,
       "status": "ok",
       "total_count": 10
     },
@@ -145,234 +145,215 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-27T03:16:56+00:00",
+    "observed_at_utc": "2026-10-27T04:19:14+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 81,
-    "previously_tracked_repositories_refreshed": 119,
+    "repositories_seen_in_discovery": 77,
+    "previously_tracked_repositories_refreshed": 123,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
-    "repositories_with_20_to_36_hour_baseline": 9,
+    "repositories_with_20_to_36_hour_baseline": 11,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "71d4fa150d1a6d81",
-      "title": "amplifthq/openmeld",
-      "source_url": "https://github.com/amplifthq/openmeld",
+      "candidate_id": "fbfdec28cfffc04c",
+      "title": "PostHog/posthog",
+      "source_url": "https://github.com/PostHog/posthog",
       "verified": true,
-      "final_url": "https://github.com/amplifthq/openmeld",
+      "final_url": "https://github.com/PostHog/posthog",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "36be873f79a8140f",
-      "title": "oomol-lab/open-flow",
-      "source_url": "https://github.com/oomol-lab/open-flow",
+      "candidate_id": "db1523a8fa7fdf81",
+      "title": "HBAI-Ltd/Toonflow-app",
+      "source_url": "https://github.com/HBAI-Ltd/Toonflow-app",
       "verified": true,
-      "final_url": "https://github.com/oomol-lab/open-flow",
+      "final_url": "https://github.com/HBAI-Ltd/Toonflow-app",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "f753208543d495ee",
-      "title": "Show HN: Limma – MCP for total recall and precision in data retrieval for agents",
-      "source_url": "https://limma.ai",
-      "verified": true,
-      "final_url": "https://limma.ai",
-      "http_status": 200,
-      "reason": ""
+      "candidate_id": "2093a8e42a5b9699",
+      "title": "Ask HN: How do you handle time-series metrics at scale without a large bill?",
+      "source_url": "https://news.ycombinator.com/item?id=50253890",
+      "verified": false,
+      "final_url": null,
+      "http_status": null,
+      "reason": "Primary source returned HTTP 429."
     }
   ],
-  "rejected_primary_sources": [],
+  "rejected_primary_sources": [
+    {
+      "candidate_id": "2093a8e42a5b9699",
+      "title": "Ask HN: How do you handle time-series metrics at scale without a large bill?",
+      "source": "Hacker News",
+      "url": "https://news.ycombinator.com/item?id=50253890",
+      "reasons": [
+        "Primary source returned HTTP 429."
+      ]
+    }
+  ],
   "daily_draft_cap": 16,
   "daily_drafts_already_passed": 0,
   "outcome": "skip",
-  "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
+  "decision_reason": "All generated drafts failed the local evidence/editorial checks; the hour was skipped.",
   "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "71d4fa150d1a6d81",
-      "title": "amplifthq/openmeld",
+      "candidate_id": "2093a8e42a5b9699",
+      "title": "Ask HN: How do you handle time-series metrics at scale without a large bill?",
+      "source": "Hacker News",
+      "url": "https://news.ycombinator.com/item?id=50253890",
       "reasons": [
-        "Supporting quotes cover only 57% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Primary source returned HTTP 429."
+      ]
+    },
+    {
+      "candidate_id": "fbfdec28cfffc04c",
+      "title": "PostHog/posthog",
+      "reasons": [
+        "The factual opening bundles multiple features; narrow it to one capability."
       ],
-      "proposed_text": "Openmeld lets people and AI agents share context and coordinate tasks. Verify a bot‑created task shows up in shared context. https://github.com/amplifthq/openmeld",
-      "evidence_quote": "Share context, coordinate tasks",
+      "proposed_text": "PostHog provides AI observability, analytics, session replay, flags, experiments. Validate that session replay captures user actions before enabling production flags. https://github.com/PostHog/posthog",
+      "evidence_quote": "Our developer tools – AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more – capture all the context agents need to diagnose problems, uncover opportunities, and ship fixes.",
       "claim_evidence": [
         {
-          "claim": "Openmeld lets people and AI agents share context and coordinate tasks",
-          "quote": "Share context, coordinate tasks"
+          "claim": "PostHog provides AI observability, analytics, session replay, flags, experiments.",
+          "quote": "Our developer tools – AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more – capture all the context agents need to diagnose problems, uncover opportunities, and ship fixes."
         }
       ]
     },
     {
-      "candidate_id": "36be873f79a8140f",
-      "title": "oomol-lab/open-flow",
+      "candidate_id": "db1523a8fa7fdf81",
+      "title": "HBAI-Ltd/Toonflow-app",
       "reasons": [
-        "A supporting quote does not share enough wording with its stated claim",
-        "Supporting quotes cover only 25% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Takeaway implies an undocumented product capability: sync. Reframe as a check of documented behavior."
       ],
-      "proposed_text": "Open‑Flow is a visual workflow engine that runs TypeScript code in isolated containers. Run a sample workflow locally to confirm isolated execution. https://github.com/oomol-lab/open-flow",
-      "evidence_quote": "real TypeScript, isolated execution",
+      "proposed_text": "Toonflow is a video platform with infinite canvas, agents, and storyboarding. Test local deployment by running the MCP plugin to ensure cross‑platform client sync. https://github.com/HBAI-Ltd/Toonflow-app",
+      "evidence_quote": "融合无限画布、AI Agent 与可视化工作流，支持本地部署、自选模型、跨平台客户端、MCP 与插件扩展。",
       "claim_evidence": [
         {
-          "claim": "Open‑Flow is a visual workflow engine that runs TypeScript code in isolated containers",
-          "quote": "real TypeScript, isolated execution"
+          "claim": "Toonflow is a video platform with infinite canvas, agents, and storyboarding.",
+          "quote": "融合无限画布、AI Agent 与可视化工作流，支持本地部署、自选模型、跨平台客户端、MCP 与插件扩展。"
         }
       ]
     },
     {
-      "candidate_id": "f753208543d495ee",
-      "title": "Show HN: Limma – MCP for total recall and precision in data retrieval for agents",
-      "reasons": [
-        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
-        "Supporting quotes cover only 60% of factual wording; narrow the claim or provide a closer primary-source quote"
-      ],
-      "proposed_text": "Limma is a single MCP server that reads all company data and returns exact answers. Check that Limma reports gaps when a document cannot be read. https://limma.ai",
-      "evidence_quote": "One MCP server that reads your company's data in full, so your agents answer from every part of it.",
-      "claim_evidence": [
-        {
-          "claim": "Limma is a single MCP server that reads all company data and returns exact answers",
-          "quote": "One MCP server that reads your company's data in full, so your agents answer from every part of it"
-        }
-      ]
-    },
-    {
-      "candidate_id": "36be873f79a8140f",
-      "title": "oomol-lab/open-flow",
+      "candidate_id": "db1523a8fa7fdf81",
+      "title": "HBAI-Ltd/Toonflow-app",
       "reasons": [
         "No claim-by-claim supporting evidence was provided",
-        "Factual sentence includes terms absent from the source title/summary: container, runs"
+        "Supporting quotes cover only 0% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "Open‑Flow runs TypeScript in isolated containers. Run a sample workflow locally to confirm isolation. https://github.com/oomol-lab/open-flow",
-      "evidence_quote": "real TypeScript, isolated execution",
+      "proposed_text": "Toonflow supports self‑hosted deployment. Run the local Docker compose to verify the MCP plugin starts correctly. https://github.com/HBAI-Ltd/Toonflow-app",
+      "evidence_quote": "支持本地部署",
       "automatic_repair_attempt": true,
       "original_rejection_reasons": [
-        "A supporting quote does not share enough wording with its stated claim",
-        "Supporting quotes cover only 25% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Takeaway implies an undocumented product capability: sync. Reframe as a check of documented behavior."
       ]
     },
     {
-      "candidate_id": "f753208543d495ee",
-      "title": "Show HN: Limma – MCP for total recall and precision in data retrieval for agents",
+      "candidate_id": "fbfdec28cfffc04c",
+      "title": "PostHog/posthog",
       "reasons": [
-        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation."
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
+        "No claim-by-claim supporting evidence was provided",
+        "Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "Limma reads all company data into a single MCP server. Check Limma reports gaps when a document cannot be read. https://limma.ai",
-      "evidence_quote": "Honest about gaps If something is not on the map, a document could not be read",
+      "proposed_text": "PostHog offers session replay. Capture a user session and confirm replay records all page views before flag activation. https://github.com/PostHog/posthog",
+      "evidence_quote": "session replay",
       "automatic_repair_attempt": true,
       "original_rejection_reasons": [
-        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
-        "Supporting quotes cover only 60% of factual wording; narrow the claim or provide a closer primary-source quote"
-      ]
-    },
-    {
-      "candidate_id": "71d4fa150d1a6d81",
-      "title": "amplifthq/openmeld",
-      "proposed_text": "Openmeld lets teams share context and coordinate tasks. Verify a bot‑created task appears in shared context. https://github.com/amplifthq/openmeld",
-      "reasons": [
-        "Takeaway claims bot‑created task visibility, but source only states general context sharing; no evidence of bot tasks or verification steps."
-      ],
-      "editorial_review": {
-        "clarity_score": 8,
-        "technical_coherence_score": 7,
-        "takeaway_value_score": 4,
-        "source_faithfulness_score": 5,
-        "originality_score": 3
-      }
-    },
-    {
-      "candidate_id": "71d4fa150d1a6d81",
-      "title": "amplifthq/openmeld",
-      "proposed_text": "Openmeld is an open‑source collaboration system that lets teams share context and coordinate tasks. Leverage Openmeld’s parallel work feature to avoid task duplication. https://github.com/amplifthq/openmeld",
-      "reasons": [
-        "Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi"
+        "The factual opening bundles multiple features; narrow it to one capability."
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "71d4fa150d1a6d81",
-      "title": "amplifthq/openmeld",
-      "url": "https://github.com/amplifthq/openmeld",
+      "id": "fbfdec28cfffc04c",
+      "title": "PostHog/posthog",
+      "url": "https://github.com/PostHog/posthog",
+      "source": "GitHub Search",
+      "primary_category": "data_and_growth",
+      "priority_score": 66,
+      "hourly_adjusted_score": 85,
+      "stars_current": 40460,
+      "stars_delta_24h": 15,
+      "stars_delta_baseline_hours": 20.7,
+      "stars_growth_percent_24h": 0.04,
+      "trend_signal": "measured_star_growth",
+      "published_at": "2026-10-27T04:19:26+00:00",
+      "days_old": 0.0,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "db1523a8fa7fdf81",
+      "title": "HBAI-Ltd/Toonflow-app",
+      "url": "https://github.com/HBAI-Ltd/Toonflow-app",
       "source": "GitHub Search",
       "primary_category": "ai_and_automation",
-      "priority_score": 72,
-      "hourly_adjusted_score": 76,
-      "stars_current": 1397,
+      "priority_score": 75,
+      "hourly_adjusted_score": 79,
+      "stars_current": 19540,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "insufficient_history",
-      "published_at": "2026-10-27T03:09:35+00:00",
+      "published_at": "2026-10-27T04:10:59+00:00",
       "days_old": 0.01,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "36be873f79a8140f",
-      "title": "oomol-lab/open-flow",
-      "url": "https://github.com/oomol-lab/open-flow",
-      "source": "GitHub Search",
-      "primary_category": "ai_and_automation",
-      "priority_score": 71,
-      "hourly_adjusted_score": 75,
-      "stars_current": 277,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "insufficient_history",
-      "published_at": "2026-10-27T03:08:15+00:00",
-      "days_old": 0.01,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "f753208543d495ee",
-      "title": "Show HN: Limma – MCP for total recall and precision in data retrieval for agents",
-      "url": "https://limma.ai",
+      "id": "2093a8e42a5b9699",
+      "title": "Ask HN: How do you handle time-series metrics at scale without a large bill?",
+      "url": "https://news.ycombinator.com/item?id=50253890",
       "source": "Hacker News",
-      "primary_category": "product_and_workflow_tools",
+      "primary_category": "data_and_growth",
       "priority_score": 69,
-      "hourly_adjusted_score": 71,
+      "hourly_adjusted_score": 69,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-27T02:50:43+00:00",
-      "days_old": 0.02,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
+      "published_at": "2026-10-27T02:09:29+00:00",
+      "days_old": 0.09,
+      "primary_source_verified": false,
+      "primary_source_http_status": null,
+      "primary_source_reason": "Primary source returned HTTP 429."
     }
   ],
   "automatic_repair": {
     "attempted": true,
-    "drafts_submitted": 4,
-    "repaired_local_passes": 2,
-    "repair_rejections": 3,
-    "repair_error": "Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi",
-    "editorial_repair_attempted": true,
-    "editorial_repair_drafts_submitted": 1,
+    "drafts_submitted": 2,
+    "repaired_local_passes": 0,
+    "repair_rejections": 2,
+    "repair_error": null,
+    "editorial_repair_attempted": false,
+    "editorial_repair_drafts_submitted": 0,
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 2,
-    "submitted_for_independent_review": 2,
+    "locally_valid_drafts": 0,
+    "submitted_for_independent_review": 0,
     "passed_independent_review": 0,
-    "rejected_by_independent_review": 2,
+    "rejected_by_independent_review": 0,
     "lower_ranked_not_reviewed": 0,
-    "review_error": "Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi",
+    "review_error": null,
     "automatic_gate": "fail_closed"
   },
   "state_summary": {
     "used_candidates_in_cooldown": 16,
-    "recently_attempted_candidates": 12,
+    "recently_attempted_candidates": 11,
     "recent_draft_passes_today": 0
   }
 }
