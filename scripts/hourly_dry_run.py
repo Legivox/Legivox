@@ -747,18 +747,33 @@ def request_groq(messages: list[dict], max_tokens: int = 4096, retry_429: bool =
             if not daily_token_limit and retry_after <= 60:
                 time.sleep(min(60, max(1, retry_after)))
                 return request_groq(messages, max_tokens=max_tokens, retry_429=False)
-        # Surface only the provider's error message, never request headers or credentials.
+        # Surface only the provider's error detail, never request headers or credentials.
         detail = ""
+        error_object: object = {}
         try:
             error_payload = json.loads(body)
             error_object = error_payload.get("error") if isinstance(error_payload, dict) else {}
-            if isinstance(error_object, dict):
-                detail = clean(error_object.get("message") or "")[:240]
-            elif isinstance(error_object, str):
-                detail = clean(error_object)[:240]
         except (json.JSONDecodeError, TypeError):
-            detail = ""
-        suffix = ": " + detail if detail else ""
+            error_object = {}
+
+        if isinstance(error_object, dict):
+            detail = clean(error_object.get("message") or "")
+            if not detail:
+                parts = [
+                    clean(error_object.get(key))
+                    for key in ("type", "code", "param")
+                    if clean(error_object.get(key))
+                ]
+                detail = " / ".join(parts)
+        elif isinstance(error_object, str):
+            detail = clean(error_object)
+
+        # Some gateways send a non-JSON or nonstandard error body. Include a short,
+        # single-line response fragment for diagnosis; never log request payloads,
+        # authorization headers or model output.
+        if not detail and body:
+            detail = re.sub(r"\\s+", " ", body).strip()[:240]
+        suffix = ": " + detail[:240] if detail else ""
         raise RuntimeError(f"Groq returned HTTP {exc.code}{suffix}") from None
     except (urllib.error.URLError, TimeoutError, json.JSONDecodeError) as exc:
         raise RuntimeError("Groq request failed: " + type(exc).__name__) from None
@@ -1122,12 +1137,19 @@ def draft_candidates(candidates: list[dict]) -> tuple[list[dict], str | None]:
             prepared.append(compose_post_from_fields(draft, candidate) if candidate else draft)
         return prepared, None
     except (RuntimeError, KeyError, IndexError, TypeError, json.JSONDecodeError) as exc:
-        if isinstance(exc, RuntimeError) and "HTTP 413" in str(exc) and len(candidates) > 1:
-            # Some provider/model gateways impose a stricter request-size limit than
-            # their advertised context window. Retry with a smaller diverse prefix.
-            # This is an adaptive request-size fallback, not a relaxation of quality checks.
-            smaller_pool = candidates[:max(1, len(candidates) // 2)]
-            return draft_candidates(smaller_pool)
+        if isinstance(exc, RuntimeError) and len(candidates) > 1:
+            error_text = clean(str(exc)).casefold()
+            request_size_error = any(marker in error_text for marker in (
+                "http 413", "context length", "maximum context", "too many tokens",
+                "prompt is too long", "request too large", "payload too large",
+                "max prompt", "token limit",
+            ))
+            if request_size_error:
+                # Some provider/model gateways report oversized requests as HTTP 400
+                # instead of 413. Retry a smaller diverse prefix only when the error
+                # explicitly indicates a request/context limit; never mask other 400s.
+                smaller_pool = candidates[:max(1, len(candidates) // 2)]
+                return draft_candidates(smaller_pool)
         return [], clean(str(exc)) or type(exc).__name__
 
 
