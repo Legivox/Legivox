@@ -1,24 +1,24 @@
 {
-  "generated_at_ist": "2026-10-27T22:00:04+05:30",
-  "run_at_ist": "2026-10-27T22:00:04+05:30",
+  "generated_at_ist": "2026-10-27T22:59:28+05:30",
+  "run_at_ist": "2026-10-27T22:59:28+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 297,
-  "eligible_candidate_count": 183,
+  "candidate_count_raw": 299,
+  "eligible_candidate_count": 186,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4764
+      "total_count": 4770
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1017
+      "total_count": 1021
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
@@ -32,7 +32,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2908
+      "total_count": 2910
     },
     {
       "source": "GitHub Search · github-digital-product-tools",
@@ -46,49 +46,49 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 410
+      "total_count": 411
     },
     {
       "source": "GitHub Search · github-marketing-distribution",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 227
+      "total_count": 228
     },
     {
       "source": "GitHub Search · github-mcp-servers",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2072
+      "total_count": 2075
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3296
+      "total_count": 3301
     },
     {
       "source": "GitHub Search · github-seller-operations",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 358
+      "total_count": 362
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 126
+      "total_count": 127
     },
     {
       "source": "GitHub Search · github-workflow-automation",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 266
+      "total_count": 268
     },
     {
       "source": "Hacker News · hn-analytics-growth",
@@ -195,7 +195,7 @@
     {
       "source": "Product Hunt",
       "kind": "rss",
-      "items_kept": 41,
+      "items_kept": 39,
       "status": "ok"
     },
     {
@@ -207,7 +207,7 @@
     {
       "source": "Shopify Developer Changelog",
       "kind": "rss",
-      "items_kept": 13,
+      "items_kept": 15,
       "status": "ok"
     },
     {
@@ -259,7 +259,7 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-27T16:30:04+00:00",
+    "observed_at_utc": "2026-10-27T17:29:28+00:00",
     "tracked_repositories": 200,
     "repositories_seen_in_discovery": 113,
     "previously_tracked_repositories_refreshed": 87,
@@ -272,29 +272,29 @@
   },
   "primary_source_checks": [
     {
-      "candidate_id": "25df9fa68f72f18a",
-      "title": "Secure your app with network access rules in `shopify.app.toml`",
-      "source_url": "https://shopify.dev/changelog/secure-your-app-with-network-access-hosts-in-shopify-app-toml",
+      "candidate_id": "e16193c74cec9e6f",
+      "title": "Migrate to expiring offline access tokens before January 1, 2027",
+      "source_url": "https://shopify.dev/changelog/migrate-to-expiring-offline-access-tokens-before-january-2027",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml",
+      "final_url": "https://shopify.dev/changelog/posts/migrate-to-expiring-offline-access-tokens-before-january-2027",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "15e0c3fd4c3565bc",
-      "title": "Show HN: DocPerRow – one Word document per spreadsheet row, in the browser",
-      "source_url": "https://docperrow.netlify.app/",
+      "candidate_id": "6c933a0a7009a87b",
+      "title": "Security update: Offline token dates, new security features",
+      "source_url": "https://shopify.dev/changelog/app-security-updates-october-2026",
       "verified": true,
-      "final_url": "https://docperrow.netlify.app/",
+      "final_url": "https://shopify.dev/changelog/blog/app-security-updates-october-2026",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "70983834ee5fe00d",
-      "title": "Show HN: Formstep, Request information from customers without the back-and-forth",
-      "source_url": "https://formstep.io/",
+      "candidate_id": "2093a8e42a5b9699",
+      "title": "Ask HN: How do you handle time-series metrics at scale without a large bill?",
+      "source_url": "https://news.ycombinator.com/item?id=50253890",
       "verified": true,
-      "final_url": "https://formstep.io/",
+      "final_url": "https://news.ycombinator.com/item?id=50253890",
       "http_status": 200,
       "reason": ""
     }
@@ -307,92 +307,125 @@
   "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "25df9fa68f72f18a",
-      "title": "Secure your app with network access rules in `shopify.app.toml`",
-      "proposed_text": "Shopify’s network_access section lets you list allowed_navigation_hosts and allowed_sources. Check that URLs in allowed_navigation_hosts bypass Shopify’s external‑site warning. https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml",
+      "candidate_id": "6c933a0a7009a87b",
+      "title": "Security update: Offline token dates, new security features",
       "reasons": [
-        "Post restates headline facts without adding new insight; originality below threshold."
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
+      ],
+      "proposed_text": "All public apps must migrate to expiring offline access tokens by Jan 1 2027. Enable client‑credentials access and IP restrictions to strengthen security. https://shopify.dev/changelog/blog/app-security-updates-october-2026",
+      "evidence_quote": "All public apps that call the Admin API must migrate to expiring offline access tokens by January 1, 2027",
+      "claim_evidence": [
+        {
+          "claim": "All public apps must migrate to expiring offline access tokens by Jan 1 2027",
+          "quote": "All public apps that call the Admin API must migrate to expiring offline access tokens by January 1, 2027"
+        }
+      ]
+    },
+    {
+      "candidate_id": "2093a8e42a5b9699",
+      "title": "Ask HN: How do you handle time-series metrics at scale without a large bill?",
+      "reasons": [
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Fact sentence is too long; narrow it to one source-backed capability.",
+        "Primary-source evidence quote is oversized or dominated by page navigation; use a concise source-backed excerpt.",
+        "Claim evidence quote is oversized or dominated by page navigation; use a concise source-backed excerpt.",
+        "Supporting quotes cover only 64% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ],
+      "proposed_text": "The question lists PostgreSQL, SQLite, ClickHouse, DuckDB, BigQuery, Timestream, and Cloudflare Analytics Engine as time‑series options. Benchmark write throughput and cost per GB for each before choosing. https://news.ycombinator.com/item?id=50253890",
+      "evidence_quote": "I've considered just standard PostgreSQL, SQLite on the edge (Cloudflare D1 / Turso), purpose built columnar databases (Clickhouse, DuckDB) and the ones managed by big cloud like Google BigQuery, Amazon Timestream, and Cloudflare Analytics Engine",
+      "claim_evidence": [
+        {
+          "claim": "The question lists PostgreSQL, SQLite, ClickHouse, DuckDB, BigQuery, Timestream, and Cloudflare Analytics Engine as time‑series options",
+          "quote": "I've considered just standard PostgreSQL, SQLite on the edge (Cloudflare D1 / Turso), purpose built columnar databases (Clickhouse, DuckDB) and the ones managed by big cloud like Google BigQuery, Amazon Timestream, and Cloudflare Analytics Engine"
+        }
+      ]
+    },
+    {
+      "candidate_id": "e16193c74cec9e6f",
+      "title": "Migrate to expiring offline access tokens before January 1, 2027",
+      "proposed_text": "Public apps must migrate to expiring offline access tokens before Jan 1 2027. Verify token expiration handling and update OAuth flow before the deadline. https://shopify.dev/changelog/posts/migrate-to-expiring-offline-access-tokens-before-january-2027",
+      "reasons": [
+        "Post restates the deadline without adding new insight or actionable detail beyond the source; originality below threshold."
       ],
       "editorial_review": {
-        "clarity_score": 8,
-        "technical_coherence_score": 8,
-        "takeaway_value_score": 7,
+        "clarity_score": 9,
+        "technical_coherence_score": 9,
+        "takeaway_value_score": 8,
         "source_faithfulness_score": 9,
-        "originality_score": 4
+        "originality_score": 5
       }
     },
     {
-      "candidate_id": "25df9fa68f72f18a",
-      "title": "Secure your app with network access rules in `shopify.app.toml`",
+      "candidate_id": "e16193c74cec9e6f",
+      "title": "Migrate to expiring offline access tokens before January 1, 2027",
       "reasons": [
         "Fact sentence is too long; narrow it to one source-backed capability.",
         "Editorial takeaway is too long; keep the analysis concrete and concise.",
         "Fact plus takeaway exceeds the per-link character budget.",
-        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
-        "Draft is 368 raw characters; limit is 280"
+        "Draft is 358 raw characters; limit is 280"
       ],
-      "proposed_text": "Shopify’s new [network_access] section lets you declare allowed_navigation_hosts and allowed_sources in shopify.app.toml. If your app links to external sites, list them in allowed_navigation_hosts to suppress Shopify’s external‑site warning and avoid friction for users. https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml",
-      "evidence_quote": "You can now declare your app's external hosts and servers in a new [network_access] section of shopify.app.toml . declaring your external hosts skips this warning, letting you remove friction for trusted journeys.",
+      "proposed_text": "Public apps using non‑expiring offline access tokens will be delisted from the Shopify App Store on January 1 2027. Update the OAuth flow to request expiring offline access tokens before the delisting date to keep the app listed and avoid service interruption. https://shopify.dev/changelog/posts/migrate-to-expiring-offline-access-tokens-before-january-2027",
+      "evidence_quote": "Public apps still using non‑expiring offline access tokens must migrate to use expiring offline access tokens before January 1, 2027 to remain listed in the Shopify App Store and continue accepting new installs.",
       "automatic_repair_attempt": true,
       "original_rejection_reasons": [
-        "Post restates headline facts without adding new insight; originality below threshold."
+        "Post restates the deadline without adding new insight or actionable detail beyond the source; originality below threshold."
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "25df9fa68f72f18a",
-      "title": "Secure your app with network access rules in `shopify.app.toml`",
-      "url": "https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml",
+      "id": "e16193c74cec9e6f",
+      "title": "Migrate to expiring offline access tokens before January 1, 2027",
+      "url": "https://shopify.dev/changelog/posts/migrate-to-expiring-offline-access-tokens-before-january-2027",
       "source": "Shopify Developer Changelog",
       "primary_category": "commerce_and_digital_products",
-      "priority_score": 78,
-      "hourly_adjusted_score": 78,
+      "priority_score": 72,
+      "hourly_adjusted_score": 72,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-27T16:00:00+00:00",
+      "published_at": "2026-10-27T16:40:00+00:00",
+      "days_old": 0.03,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "6c933a0a7009a87b",
+      "title": "Security update: Offline token dates, new security features",
+      "url": "https://shopify.dev/changelog/blog/app-security-updates-october-2026",
+      "source": "Shopify Developer Changelog",
+      "primary_category": "commerce_and_digital_products",
+      "priority_score": 72,
+      "hourly_adjusted_score": 72,
+      "stars_current": null,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-27T17:00:00+00:00",
       "days_old": 0.02,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "15e0c3fd4c3565bc",
-      "title": "Show HN: DocPerRow – one Word document per spreadsheet row, in the browser",
-      "url": "https://docperrow.netlify.app/",
+      "id": "2093a8e42a5b9699",
+      "title": "Ask HN: How do you handle time-series metrics at scale without a large bill?",
+      "url": "https://news.ycombinator.com/item?id=50253890",
       "source": "Hacker News",
-      "primary_category": "product_and_workflow_tools",
-      "priority_score": 68,
+      "primary_category": "data_and_growth",
+      "priority_score": 70,
       "hourly_adjusted_score": 70,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-27T16:00:07+00:00",
-      "days_old": 0.02,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "70983834ee5fe00d",
-      "title": "Show HN: Formstep, Request information from customers without the back-and-forth",
-      "url": "https://formstep.io/",
-      "source": "Hacker News",
-      "primary_category": "product_and_workflow_tools",
-      "priority_score": 68,
-      "hourly_adjusted_score": 70,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-27T16:03:31+00:00",
-      "days_old": 0.02,
+      "published_at": "2026-10-27T02:09:29+00:00",
+      "days_old": 0.64,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""

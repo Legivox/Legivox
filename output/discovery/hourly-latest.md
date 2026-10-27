@@ -1,9 +1,9 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-27T22:00:04+05:30
+- Run time (IST): 2026-10-27T22:59:28+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 183
+- Candidate pool after freshness/diversity filters: 186
 - Independent editorial review: 0 draft(s) passed / 1 rejected
 - Drafts passing local checks: 0
 - Outcome: **skip**
@@ -40,9 +40,9 @@
 | Ahrefs Blog | 4 | ok |
 | Console.dev | 12 | ok |
 | Indie Hackers (unofficial third-party feed) | 5 | ok |
-| Product Hunt | 41 | ok |
+| Product Hunt | 39 | ok |
 | Shopify Community | 30 | ok |
-| Shopify Developer Changelog | 13 | ok |
+| Shopify Developer Changelog | 15 | ok |
 | Stripe Blog | 3 | ok |
 | WooCommerce Blog | 3 | ok |
 | WordPress Plugin Directory · wp-digital-downloads | 10 | ok |
@@ -65,9 +65,9 @@
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| Secure your app with network access rules in `shopify.app.toml` | yes | 200 | https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml |
-| Show HN: DocPerRow – one Word document per spreadsheet row, in the browser | yes | 200 | https://docperrow.netlify.app/ |
-| Show HN: Formstep, Request information from customers without the back-and-forth | yes | 200 | https://formstep.io/ |
+| Migrate to expiring offline access tokens before January 1, 2027 | yes | 200 | https://shopify.dev/changelog/posts/migrate-to-expiring-offline-access-tokens-before-january-2027 |
+| Security update: Offline token dates, new security features | yes | 200 | https://shopify.dev/changelog/blog/app-security-updates-october-2026 |
+| Ask HN: How do you handle time-series metrics at scale without a large bill? | yes | 200 | https://news.ycombinator.com/item?id=50253890 |
 
 ## Selected draft candidates
 
@@ -84,17 +84,25 @@ No draft cleared the complete local and independent-editor gate. See the decisio
 
 ## Rejected draft options
 
-- Secure your app with network access rules in `shopify.app.toml`: Post restates headline facts without adding new insight; originality below threshold.
-  - Rejected text: Shopify’s network_access section lets you list allowed_navigation_hosts and allowed_sources. Check that URLs in allowed_navigation_hosts bypass Shopify’s external‑site warning. https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml
-- Secure your app with network access rules in `shopify.app.toml`: Fact sentence is too long; narrow it to one source-backed capability.; Editorial takeaway is too long; keep the analysis concrete and concise.; Fact plus takeaway exceeds the per-link character budget.; Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.; Draft is 368 raw characters; limit is 280
-  - Rejected text: Shopify’s new [network_access] section lets you declare allowed_navigation_hosts and allowed_sources in shopify.app.toml. If your app links to external sites, list them in allowed_navigation_hosts to suppress Shopify’s external‑site warning and avoid friction for users. https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml
-  - Model evidence quote: “You can now declare your app's external hosts and servers in a new [network_access] section of shopify.app.toml . declaring your external hosts skips this warning, letting you remove friction for trusted journeys.”
+- Security update: Offline token dates, new security features: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
+  - Rejected text: All public apps must migrate to expiring offline access tokens by Jan 1 2027. Enable client‑credentials access and IP restrictions to strengthen security. https://shopify.dev/changelog/blog/app-security-updates-october-2026
+  - Model evidence quote: “All public apps that call the Admin API must migrate to expiring offline access tokens by January 1, 2027”
+  - Claim support: All public apps must migrate to expiring offline access tokens by Jan 1 2027 ← “All public apps that call the Admin API must migrate to expiring offline access tokens by January 1, 2027”
+- Ask HN: How do you handle time-series metrics at scale without a large bill?: The factual opening bundles multiple features; narrow it to one capability.; Fact sentence is too long; narrow it to one source-backed capability.; Primary-source evidence quote is oversized or dominated by page navigation; use a concise source-backed excerpt.; Claim evidence quote is oversized or dominated by page navigation; use a concise source-backed excerpt.; Supporting quotes cover only 64% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: The question lists PostgreSQL, SQLite, ClickHouse, DuckDB, BigQuery, Timestream, and Cloudflare Analytics Engine as time‑series options. Benchmark write throughput and cost per GB for each before choosing. https://news.ycombinator.com/item?id=50253890
+  - Model evidence quote: “I've considered just standard PostgreSQL, SQLite on the edge (Cloudflare D1 / Turso), purpose built columnar databases (Clickhouse, DuckDB) and the ones managed by big cloud like Google BigQuery, Amazon Timestream, and Cloudflare Analytics Engine”
+  - Claim support: The question lists PostgreSQL, SQLite, ClickHouse, DuckDB, BigQuery, Timestream, and Cloudflare Analytics Engine as time‑series options ← “I've considered just standard PostgreSQL, SQLite on the edge (Cloudflare D1 / Turso), purpose built columnar databases (Clickhouse, DuckDB) and the ones managed by big cloud like Google BigQuery, Amazon Timestream, and Cloudflare Analytics Engine”
+- Migrate to expiring offline access tokens before January 1, 2027: Post restates the deadline without adding new insight or actionable detail beyond the source; originality below threshold.
+  - Rejected text: Public apps must migrate to expiring offline access tokens before Jan 1 2027. Verify token expiration handling and update OAuth flow before the deadline. https://shopify.dev/changelog/posts/migrate-to-expiring-offline-access-tokens-before-january-2027
+- Migrate to expiring offline access tokens before January 1, 2027: Fact sentence is too long; narrow it to one source-backed capability.; Editorial takeaway is too long; keep the analysis concrete and concise.; Fact plus takeaway exceeds the per-link character budget.; Draft is 358 raw characters; limit is 280
+  - Rejected text: Public apps using non‑expiring offline access tokens will be delisted from the Shopify App Store on January 1 2027. Update the OAuth flow to request expiring offline access tokens before the delisting date to keep the app listed and avoid service interruption. https://shopify.dev/changelog/posts/migrate-to-expiring-offline-access-tokens-before-january-2027
+  - Model evidence quote: “Public apps still using non‑expiring offline access tokens must migrate to use expiring offline access tokens before January 1, 2027 to remain listed in the Shopify App Store and continue accepting new installs.”
 
 ## Top discovery candidates considered
 
-- Secure your app with network access rules in `shopify.app.toml` | Shopify Developer Changelog | commerce_and_digital_products | raw 78, adjusted 78 | https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml
-- Show HN: DocPerRow – one Word document per spreadsheet row, in the browser | Hacker News | product_and_workflow_tools | raw 68, adjusted 70 | https://docperrow.netlify.app/
-- Show HN: Formstep, Request information from customers without the back-and-forth | Hacker News | product_and_workflow_tools | raw 68, adjusted 70 | https://formstep.io/
+- Migrate to expiring offline access tokens before January 1, 2027 | Shopify Developer Changelog | commerce_and_digital_products | raw 72, adjusted 72 | https://shopify.dev/changelog/posts/migrate-to-expiring-offline-access-tokens-before-january-2027
+- Security update: Offline token dates, new security features | Shopify Developer Changelog | commerce_and_digital_products | raw 72, adjusted 72 | https://shopify.dev/changelog/blog/app-security-updates-october-2026
+- Ask HN: How do you handle time-series metrics at scale without a large bill? | Hacker News | data_and_growth | raw 70, adjusted 70 | https://news.ycombinator.com/item?id=50253890
 
 ## Safety and interpretation
 
