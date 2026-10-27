@@ -1,6 +1,6 @@
 # Legivox engagement shortlist
 
-Generated: 2026-10-26 06:51:56 IST
+Generated: 2026-10-27 06:47:12 IST
 
 These are candidates to review manually. No likes, replies, reposts, or follows are automated by this workflow.
 
@@ -8,22 +8,22 @@ These are candidates to review manually. No likes, replies, reposts, or follows 
 
 Search: `feature requests`
 
-- [InductiveAuto](https://x.com/InductiveAuto/status/2114506803656499474): Git with Ignition Episode 2: https://t.co/LKwKfwXwjz TOPICS: • How to sync file system changes using UI &amp; API scans • Collaborate through feature branches and pull requests • Create formal releases using version tags
-- [dmitryrechkin](https://x.com/dmitryrechkin/status/2114464543451558121): Bug reports are way more urgent than feature requests. Fixing what's broken directly shows users you value their experience and trust. This impacts retention and satisfaction far more than adding new functionality. Prior
-- [RemyAlidarso](https://x.com/RemyAlidarso/status/2114463600664268977): Builders, do you make use of any existing feature request / feedback tool? Or how do you currently receive feature requests / feedback?
+- [shishirmehrotra](https://x.com/shishirmehrotra/status/2114875198566732123): @petersellis @X @SpaceX congrats @petersellis! will start directing all feature requests to you :)
+- [willking](https://x.com/willking/status/2114857234706375108): @vanschneider @burcs Means a lot from you Tobias My door is open anytime you have feature requests or visual feedback!
+- [yosefeliezrie](https://x.com/yosefeliezrie/status/2114854730275143787): My top from @grok @bot feature requests.
 
 ## freelance developers
 
 Search: `freelancer scope creep`
 
-- [rgenzon](https://x.com/rgenzon/status/2113903453571260832): The agency life nobody talks about: scope creep at 2am. "Can you also just quickly..." is the most dangerous sentence in client work. Scope agreements exist for a reason. Use them. Enforce them. Politely but firmly.
-- [fajritbaby](https://x.com/fajritbaby/status/2113489761507676474): When Client Requests Keep Growing, Where Does the Work End? Founders and service providers, one small client request can quickly turn into hours of unpaid work. This is called scope creep — when a project expands beyond 
-- [SamVale29](https://x.com/SamVale29/status/2112242379000582436): Scope creep isn't a client problem. It's a missing sentence in the contract.
+- [huang77481](https://x.com/huang77481/status/2114516477118468194): Scope creep isn't a client problem. It's what happens when a document never defined the work. "Reasonable revisions included" is the most expensive sentence in a freelance contract. https://t.co/t95pmRPes2
+- [fay_crypt](https://x.com/fay_crypt/status/2113376120196182349): @Laurentxdev @_MonoDesk Scope creep is a real headache for freelancers. Having AI flag requests that fall outside the agreed scope could make those client conversations much easier.
+- [Laurentxdev](https://x.com/Laurentxdev/status/2113373184212844743): AI is most useful on the admin side of freelancing monodesk knows the client and the scope, so it drafts the proposal and flags one quick addition, as out of scope Works with claude or chatgpt via MCP too Try @_MonoDesk 
 
 ## small online sellers
 
 Search: `inventory margins`
 
-- [SlowBooksPro](https://x.com/SlowBooksPro/status/2114416278924660779): Perpetual inventory: the count on this page is the count on the shelf. An inventory item carries two accounts — what it credits when sold, what it debits as cost — which is the difference between a real gross margin and 
-- [IntrinsicBrief](https://x.com/IntrinsicBrief/status/2114382300733427759): Who funds Costco’s shelves? At FY2026 year-end, payables were $22.6B against $19.3B of inventory: a $3.3B gap. Supplier credit reduces capital tied up in stock. Valuing $COST on thin retail margins alone misses that adva
-- [winepairing_ai](https://x.com/winepairing_ai/status/2114312693016371267): Wine inventory isn't just about stock—it's about velocity. AI helps your team identify which bottles to move and how to pair them on the fly, turning slow-moving stock into high-margin revenue. Smarter lists, better marg
+- [grok](https://x.com/grok/status/2114870926042968210): @Caernunnos @realElon6667 @ThorLilleaas @VeerXn Market cap reflects investor views of future profits, not cash locked in food or paper inventory that then vanishes. The drop revises expected margins lower from input cost
+- [thejefflutz](https://x.com/thejefflutz/status/2114844116144341418): @CEOinterview Maybe read the Q3 earnings deck … $45B in cash, solid gross margins, lowest inventory ever, highest demand in 4yrs, FSD, Cybercab, Optimus, and Semi trucks all ramping
+- [alexjfeigl](https://x.com/alexjfeigl/status/2114818472144404909): @NewsLambert @ResiClub_HQ Texas is the live experiment for "just build more." Supply showed up, so the fight moved from sticker price to monthly payment. Builders who can cut build cost per sq ft win. The ones leaning on
