@@ -1,43 +1,43 @@
 {
-  "generated_at_ist": "2026-10-27T19:05:11+05:30",
-  "run_at_ist": "2026-10-27T19:05:11+05:30",
+  "generated_at_ist": "2026-10-27T20:03:18+05:30",
+  "run_at_ist": "2026-10-27T20:03:18+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 292,
-  "eligible_candidate_count": 172,
+  "candidate_count_raw": 269,
+  "eligible_candidate_count": 156,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
-      "items_kept": 10,
+      "items_kept": 9,
       "status": "ok",
-      "total_count": 4742
+      "total_count": 1633
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
-      "items_kept": 10,
+      "items_kept": 2,
       "status": "ok",
-      "total_count": 943
+      "total_count": 462
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 356
+      "total_count": 357
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2892
+      "total_count": 2895
     },
     {
       "source": "GitHub Search · github-digital-product-tools",
       "kind": "github_repository",
-      "items_kept": 10,
+      "items_kept": 0,
       "status": "ok",
       "total_count": 12
     },
@@ -46,35 +46,35 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 407
+      "total_count": 410
     },
     {
       "source": "GitHub Search · github-marketing-distribution",
       "kind": "github_repository",
-      "items_kept": 10,
+      "items_kept": 4,
       "status": "ok",
-      "total_count": 225
+      "total_count": 93
     },
     {
       "source": "GitHub Search · github-mcp-servers",
       "kind": "github_repository",
-      "items_kept": 10,
+      "items_kept": 3,
       "status": "ok",
-      "total_count": 2061
+      "total_count": 743
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2321
+      "total_count": 3284
     },
     {
       "source": "GitHub Search · github-seller-operations",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 357
+      "total_count": 358
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
@@ -158,12 +158,12 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 8
+      "total_count": 10
     },
     {
       "source": "Hacker News · hn-shopify",
       "kind": "hacker_news",
-      "items_kept": 10,
+      "items_kept": 7,
       "status": "ok",
       "total_count": 10
     },
@@ -195,7 +195,7 @@
     {
       "source": "Product Hunt",
       "kind": "rss",
-      "items_kept": 41,
+      "items_kept": 40,
       "status": "ok"
     },
     {
@@ -213,13 +213,13 @@
     {
       "source": "Stripe Blog",
       "kind": "rss",
-      "items_kept": 2,
+      "items_kept": 3,
       "status": "ok"
     },
     {
       "source": "WooCommerce Blog",
       "kind": "rss",
-      "items_kept": 2,
+      "items_kept": 3,
       "status": "ok"
     },
     {
@@ -259,10 +259,10 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-27T13:35:11+00:00",
+    "observed_at_utc": "2026-10-27T14:33:18+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 107,
-    "previously_tracked_repositories_refreshed": 93,
+    "repositories_seen_in_discovery": 86,
+    "previously_tracked_repositories_refreshed": 114,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
@@ -272,182 +272,193 @@
   },
   "primary_source_checks": [
     {
-      "candidate_id": "fe106ba546c5c606",
-      "title": "Promoted Placements beta now includes Shop Campaigns",
-      "source_url": "https://shopify.dev/changelog/promoted-placements-beta-now-includes-shop-campaigns",
+      "candidate_id": "87a2e45be3dbfe9a",
+      "title": "Ask HN: How do you get new readers for your blog",
+      "source_url": "https://news.ycombinator.com/item?id=50259066",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns",
+      "final_url": "https://news.ycombinator.com/item?id=50259066",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "cc81505354253146",
-      "title": "Show HN: Markdown is 40× more token-efficient with SQLite",
-      "source_url": "https://www.withnative.ai/research-and-posts/markdown-context-benchmark",
+      "candidate_id": "02991cb041a3ff08",
+      "title": "How the fastest-growing enterprises on Stripe scale globally",
+      "source_url": "https://stripe.com/blog/how-the-fastest-growing-enterprises-on-stripe-scale-globally",
       "verified": true,
-      "final_url": "https://www.withnative.ai/research-and-posts/markdown-context-benchmark",
+      "final_url": "https://stripe.com/blog/how-the-fastest-growing-enterprises-on-stripe-scale-globally",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "a92e52ee3c14a954",
-      "title": "Show HN: Building the European Company Graph one website at a time",
-      "source_url": "https://firmendaten.researchly.at/netzwerk",
-      "verified": false,
-      "final_url": null,
-      "http_status": null,
-      "reason": "Primary page title/content does not sufficiently match the candidate headline."
+      "candidate_id": "55c557b3bc0267ca",
+      "title": "Securing your app, together",
+      "source_url": "https://shopify.dev/changelog/securing-your-app-together",
+      "verified": true,
+      "final_url": "https://shopify.dev/changelog/blog/securing-your-app-together",
+      "http_status": 200,
+      "reason": ""
     }
   ],
-  "rejected_primary_sources": [
-    {
-      "candidate_id": "a92e52ee3c14a954",
-      "title": "Show HN: Building the European Company Graph one website at a time",
-      "source": "Hacker News",
-      "url": "https://firmendaten.researchly.at/netzwerk",
-      "reasons": [
-        "Primary page title/content does not sufficiently match the candidate headline."
-      ]
-    }
-  ],
+  "rejected_primary_sources": [],
   "daily_draft_cap": 16,
   "daily_drafts_already_passed": 3,
   "outcome": "skip",
-  "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
+  "decision_reason": "No draft cleared the complete automatic quality gate; independent editorial review failed closed. Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi",
   "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "a92e52ee3c14a954",
-      "title": "Show HN: Building the European Company Graph one website at a time",
-      "source": "Hacker News",
-      "url": "https://firmendaten.researchly.at/netzwerk",
+      "candidate_id": "87a2e45be3dbfe9a",
+      "title": "Ask HN: How do you get new readers for your blog",
       "reasons": [
-        "Primary page title/content does not sufficiently match the candidate headline."
-      ]
-    },
-    {
-      "candidate_id": "fe106ba546c5c606",
-      "title": "Promoted Placements beta now includes Shop Campaigns",
-      "reasons": [
-        "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
-        "Opening sentence is too close to the source headline; add a distinct editorial framing."
+        "A supporting quote does not share enough wording with its stated claim",
+        "Factual sentence includes terms absent from the source title/summary: author, channel, largely, must, note"
       ],
-      "proposed_text": "Promoted Placements beta now includes Shop Campaigns. Verify placement.commission.percentage.value returns the combined merchant and Shopify base rates. https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns",
-      "evidence_quote": "When a search _catalog result comes from a merchant running Shop Campaigns, you earn the commission that merchant funds, added to Shopify's base rate.",
+      "proposed_text": "Ask HN notes RSS feeds are largely dead, so authors must use other channels. Test LinkedIn/X engagement; a single post is not enough. https://news.ycombinator.com/item?id=50259066",
+      "evidence_quote": "Ever since Google Reader shut down, I think the next generations of engineers and developers stopped using RSS feeds.",
       "claim_evidence": [
         {
-          "claim": "Promoted Placements beta now includes Shop Campaigns",
-          "quote": "When a search _catalog result comes from a merchant running Shop Campaigns, you earn the commission that merchant funds, added to Shopify's base rate."
+          "claim": "Ask HN notes RSS feeds are largely dead, so authors must use other channels.",
+          "quote": "Ever since Google Reader shut down, I think the next generations of engineers and developers stopped using RSS feeds."
         }
       ]
     },
     {
-      "candidate_id": null,
-      "title": "Unmapped model draft",
-      "proposed_text": "",
+      "candidate_id": "02991cb041a3ff08",
+      "title": "How the fastest-growing enterprises on Stripe scale globally",
       "reasons": [
-        "Model omitted a valid candidate ID and no exact verified source URL matched."
+        "A supporting quote does not share enough wording with its stated claim",
+        "Supporting quotes cover only 40% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ],
+      "proposed_text": "Stripe blog says fastest-growing enterprises invest in tools that speed global expansion. Prioritize payment methods with 125+ terminal options to accelerate local rollouts. https://stripe.com/blog/how-the-fastest-growing-enterprises-on-stripe-scale-globally",
+      "evidence_quote": "the fastest-growing enterprises continue to look beyond their home markets and are investing in tools and workflows that make expansion faster and more repeatable.",
+      "claim_evidence": [
+        {
+          "claim": "Stripe blog says fastest-growing enterprises invest in tools that speed global expansion.",
+          "quote": "the fastest-growing enterprises continue to look beyond their home markets and are investing in tools and workflows that make expansion faster and more repeatable."
+        }
       ]
     },
     {
-      "candidate_id": "cc81505354253146",
-      "title": "Show HN: Markdown is 40× more token-efficient with SQLite",
-      "proposed_text": "Agents using SQL through a local MCP used over 40× fewer tokens per fully correct answer. Run a 40-question benchmark to quantify token savings versus Markdown vaults. https://www.withnative.ai/research-and-posts/markdown-context-benchmark",
+      "candidate_id": "55c557b3bc0267ca",
+      "title": "Securing your app, together",
       "reasons": [
-        "Clear and technically coherent, but the takeaway is a generic suggestion and the post adds no new perspective beyond the source."
+        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.",
+        "The factual opening bundles multiple features; narrow it to one capability."
       ],
-      "editorial_review": {
-        "clarity_score": 8,
-        "technical_coherence_score": 8,
-        "takeaway_value_score": 7,
-        "source_faithfulness_score": 8,
-        "originality_score": 4
-      }
+      "proposed_text": "Shopify changelog introduces AI security scans, expiring tokens, and better log filtering. Run AI Toolkit scans before each release to catch unauthenticated routes. https://shopify.dev/changelog/blog/securing-your-app-together",
+      "evidence_quote": "We have new tools to help, including AI security scans, expiring tokens, and better log filtering.",
+      "claim_evidence": [
+        {
+          "claim": "Shopify changelog introduces AI security scans, expiring tokens, and better log filtering.",
+          "quote": "We have new tools to help, including AI security scans, expiring tokens, and better log filtering."
+        }
+      ]
     },
     {
-      "candidate_id": "cc81505354253146",
-      "title": "Show HN: Markdown is 40× more token-efficient with SQLite",
+      "candidate_id": "87a2e45be3dbfe9a",
+      "title": "Ask HN: How do you get new readers for your blog",
       "reasons": [
-        "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "Fact plus takeaway exceeds the per-link character budget.",
-        "Draft is 282 raw characters; limit is 280"
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
       ],
-      "proposed_text": "Agents using SQL through a local MCP used over 40× fewer tokens per fully correct answer. When constrained to a 1 M‑token budget, SQLite‑backed context reduces failed trials by 97 % compared to Markdown vaults. https://www.withnative.ai/research-and-posts/markdown-context-benchmark",
-      "evidence_quote": "97% fewer failed trials for a fixed 1M input-token budget",
+      "proposed_text": "RSS feeds are largely dead, as Google Reader shut down. Use analytics that capture partial referrer data, since browsers omit full URLs. https://news.ycombinator.com/item?id=50259066",
+      "evidence_quote": "browsers no longer track the full referral URL for privacy reasons.",
       "automatic_repair_attempt": true,
       "original_rejection_reasons": [
-        "Clear and technically coherent, but the takeaway is a generic suggestion and the post adds no new perspective beyond the source."
+        "A supporting quote does not share enough wording with its stated claim",
+        "Factual sentence includes terms absent from the source title/summary: author, channel, largely, must, note"
+      ]
+    },
+    {
+      "candidate_id": "55c557b3bc0267ca",
+      "title": "Securing your app, together",
+      "reasons": [
+        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.",
+        "The factual opening bundles multiple features; narrow it to one capability."
+      ],
+      "proposed_text": "Shopify introduces AI security scans, expiring tokens, and better log filtering. Run AI Toolkit scans before each release to catch unauthenticated routes. https://shopify.dev/changelog/blog/securing-your-app-together",
+      "evidence_quote": "A single prompt with AI Toolkit checks for Shopify‑specific vulnerabilities, such as unauthenticated routes, cross‑shop data access and unverified webhooks.",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.",
+        "The factual opening bundles multiple features; narrow it to one capability."
+      ]
+    },
+    {
+      "candidate_id": "02991cb041a3ff08",
+      "title": "How the fastest-growing enterprises on Stripe scale globally",
+      "proposed_text": "Fastest-growing enterprises invest in tools that make expansion faster and more repeatable. Prioritize tools that streamline cross‑border payments to support rapid global growth. https://stripe.com/blog/how-the-fastest-growing-enterprises-on-stripe-scale-globally",
+      "reasons": [
+        "Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi"
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "fe106ba546c5c606",
-      "title": "Promoted Placements beta now includes Shop Campaigns",
-      "url": "https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns",
-      "source": "Shopify Developer Changelog",
-      "primary_category": "commerce_and_digital_products",
-      "priority_score": 72,
-      "hourly_adjusted_score": 72,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-27T13:00:00+00:00",
-      "days_old": 0.02,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "cc81505354253146",
-      "title": "Show HN: Markdown is 40× more token-efficient with SQLite",
-      "url": "https://www.withnative.ai/research-and-posts/markdown-context-benchmark",
-      "source": "Hacker News",
-      "primary_category": "product_and_workflow_tools",
-      "priority_score": 66,
-      "hourly_adjusted_score": 68,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-27T13:23:49+00:00",
-      "days_old": 0.01,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "a92e52ee3c14a954",
-      "title": "Show HN: Building the European Company Graph one website at a time",
-      "url": "https://firmendaten.researchly.at/netzwerk",
+      "id": "87a2e45be3dbfe9a",
+      "title": "Ask HN: How do you get new readers for your blog",
+      "url": "https://news.ycombinator.com/item?id=50259066",
       "source": "Hacker News",
       "primary_category": "data_and_growth",
-      "priority_score": 65,
-      "hourly_adjusted_score": 67,
+      "priority_score": 66,
+      "hourly_adjusted_score": 66,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-26T13:58:24+00:00",
-      "days_old": 0.98,
-      "primary_source_verified": false,
-      "primary_source_http_status": null,
-      "primary_source_reason": "Primary page title/content does not sufficiently match the candidate headline."
+      "published_at": "2026-10-27T13:34:34+00:00",
+      "days_old": 0.04,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "02991cb041a3ff08",
+      "title": "How the fastest-growing enterprises on Stripe scale globally",
+      "url": "https://stripe.com/blog/how-the-fastest-growing-enterprises-on-stripe-scale-globally",
+      "source": "Stripe Blog",
+      "primary_category": "product_and_workflow_tools",
+      "priority_score": 63,
+      "hourly_adjusted_score": 63,
+      "stars_current": null,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-27T00:00:00+00:00",
+      "days_old": 0.61,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "55c557b3bc0267ca",
+      "title": "Securing your app, together",
+      "url": "https://shopify.dev/changelog/blog/securing-your-app-together",
+      "source": "Shopify Developer Changelog",
+      "primary_category": "commerce_and_digital_products",
+      "priority_score": 63,
+      "hourly_adjusted_score": 63,
+      "stars_current": null,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-20T19:00:00+00:00",
+      "days_old": 6.81,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
     }
   ],
   "automatic_repair": {
     "attempted": true,
-    "drafts_submitted": 1,
-    "repaired_local_passes": 0,
-    "repair_rejections": 1,
+    "drafts_submitted": 3,
+    "repaired_local_passes": 1,
+    "repair_rejections": 2,
     "repair_error": null,
-    "editorial_repair_attempted": true,
-    "editorial_repair_drafts_submitted": 1,
+    "editorial_repair_attempted": false,
+    "editorial_repair_drafts_submitted": 0,
     "editorial_repair_error": null
   },
   "editorial_review": {
@@ -456,7 +467,7 @@
     "passed_independent_review": 0,
     "rejected_by_independent_review": 1,
     "lower_ranked_not_reviewed": 0,
-    "review_error": null,
+    "review_error": "Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi",
     "automatic_gate": "fail_closed"
   },
   "state_summary": {
