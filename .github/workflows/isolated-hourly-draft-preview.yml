@@ -51,7 +51,7 @@ jobs:
           test -s "$RUNNER_TEMP/legivox-hourly-preview/hourly-state.json"
           echo "Loaded existing star-history and cooldown state into the runner's temporary directory."
 
-      - name: Run isolated WordPress Plugin Directory candidate-to-draft quality gates
+      - name: Run isolated Ahrefs Blog candidate-to-draft quality gates
         env:
           GITHUB_TOKEN: ${{ github.token }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
@@ -64,7 +64,7 @@ jobs:
             --dry-run \
             --lookback-days 14 \
             --pool-size 3 \
-            --source-filter "WordPress Plugin Directory" \
+            --source-filter "Ahrefs Blog" \
             --output-dir "$RUNNER_TEMP/legivox-hourly-preview"
 
       - name: Stage the audit report inside the runner workspace
