@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-27T17:49:56+05:30
+- Run time (IST): 2026-10-27T19:05:11+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 184
-- Independent editorial review: 0 draft(s) passed / 0 rejected
+- Candidate pool after freshness/diversity filters: 172
+- Independent editorial review: 0 draft(s) passed / 1 rejected
 - Drafts passing local checks: 0
 - Outcome: **skip**
-- Decision reason: All generated drafts failed the local evidence/editorial checks; the hour was skipped.
+- Decision reason: Every draft submitted for independent editorial review was rejected; The hour was skipped.
 
 ## Source health
 
@@ -15,7 +15,7 @@
 |---|---:|---|
 | GitHub Search · github-ai-agent-tools | 10 | ok |
 | GitHub Search · github-analytics-seo | 10 | ok |
-| GitHub Search · github-creator-infrastructure | 8 | ok |
+| GitHub Search · github-creator-infrastructure | 10 | ok |
 | GitHub Search · github-developer-tools | 10 | ok |
 | GitHub Search · github-digital-product-tools | 10 | ok |
 | GitHub Search · github-ecommerce-digital-products | 10 | ok |
@@ -35,14 +35,14 @@
 | Hacker News · hn-marketing-distribution | 0 | ok |
 | Hacker News · hn-security-selfhost | 0 | ok |
 | Hacker News · hn-seller-operations | 0 | ok |
-| Hacker News · hn-shopify | 6 | ok |
+| Hacker News · hn-shopify | 10 | ok |
 | Hacker News · hn-show-hn | 10 | ok |
 | Ahrefs Blog | 4 | ok |
 | Console.dev | 12 | ok |
 | Indie Hackers (unofficial third-party feed) | 5 | ok |
 | Product Hunt | 41 | ok |
 | Shopify Community | 30 | ok |
-| Shopify Developer Changelog | 10 | ok |
+| Shopify Developer Changelog | 11 | ok |
 | Stripe Blog | 2 | ok |
 | WooCommerce Blog | 2 | ok |
 | WordPress Plugin Directory · wp-digital-downloads | 10 | ok |
@@ -54,8 +54,8 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 112
-- Previously tracked repositories refreshed outside search results: 88
+- Repositories seen in this discovery run: 107
+- Previously tracked repositories refreshed outside search results: 93
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
 - Repositories with a 20–36 hour comparison baseline: 6
@@ -65,52 +65,42 @@
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| Show HN: flint - SSH and SFTP client built with GPUI | yes | 200 | https://github.com/mousEHEHE/flint-gpui |
-| Show HN: Kupe Cloud – the assembled Kubernetes platform | yes | 200 | https://kupe.cloud/ |
-| Trends from Money20/20 2026: The rise of “hidden” financial services | yes | 200 | https://stripe.com/blog/trends-from-money20-20-2026-the-rise-of-hidden-financial-services |
+| Promoted Placements beta now includes Shop Campaigns | yes | 200 | https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns |
+| Show HN: Markdown is 40× more token-efficient with SQLite | yes | 200 | https://www.withnative.ai/research-and-posts/markdown-context-benchmark |
+| Show HN: Building the European Company Graph one website at a time | no | — | Primary page title/content does not sufficiently match the candidate headline. |
 
 ## Selected draft candidates
 
-No candidate produced a draft that passed every local check. Skipping is intentional.
+No draft cleared the complete local and independent-editor gate. See the decision reason and rejected-draft section for locally valid drafts that were rejected, not reviewed, or blocked by a review error.
 
 ## Automatic repair attempt
 
 - Attempted: yes
-- Repaired drafts submitted: 3
+- Repaired drafts submitted: 1
 - Repaired drafts that passed local validation: 0
-- Repaired drafts rejected: 3
+- Repaired drafts rejected: 1
 - Repair error: none
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
-- Show HN: flint - SSH and SFTP client built with GPUI: Editorial takeaway is not specific enough to this candidate's technical/product details.
-  - Rejected text: Flint is an SSH and SFTP desktop client written in Rust with GPUI. Test memory usage against Termius to confirm lower RAM footprint. https://github.com/mousEHEHE/flint-gpui
-  - Model evidence quote: “SSH and SFTP client for desktop, written in Rust with GPUI”
-  - Claim support: Flint is an SSH and SFTP desktop client written in Rust with GPUI ← “SSH and SFTP client for desktop, written in Rust with GPUI”
-- Show HN: Kupe Cloud – the assembled Kubernetes platform: The factual opening bundles multiple features; narrow it to one capability.; Fact sentence is too long; narrow it to one source-backed capability.; Editorial takeaway is too long; keep the analysis concrete and concise.; Supporting quotes cover only 45% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: Kupe Cloud is a managed Kubernetes platform with GitOps, observability, security, and platform defaults wired together. Run a quick cluster create via CLI to verify auto‑configured ArgoCD and Grafana dashboards. https://kupe.cloud/
-  - Model evidence quote: “Managed Kubernetes Platform | Kupe Cloud”
-  - Claim support: Kupe Cloud is a managed Kubernetes platform with GitOps, observability, security, and platform defaults wired together ← “Managed Kubernetes Platform | Kupe Cloud”
-- Trends from Money20/20 2026: The rise of “hidden” financial services: The factual opening bundles multiple features; narrow it to one capability.
-  - Rejected text: Stripe reports three Money20/20 trends: stablecoins, agents, and always‑on money reshaping services. Add a stablecoin‑backed card to your checkout flow and monitor latency changes. https://stripe.com/blog/trends-from-money20-20-2026-the-rise-of-hidden-financial-services
-  - Model evidence quote: “Three trends from Money20/20 show stablecoins, agents, and always‑on money changing financial services”
-  - Claim support: Stripe reports three Money20/20 trends: stablecoins, agents, and always‑on money reshaping services ← “Three trends from Money20/20 show stablecoins, agents, and always‑on money changing financial services”
-- Show HN: Kupe Cloud – the assembled Kubernetes platform: The factual opening bundles multiple features; narrow it to one capability.; Editorial takeaway is too long; keep the analysis concrete and concise.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
-  - Rejected text: Kupe Cloud lets you create a Kubernetes cluster with CPU 2, memory 4Gi, and storage 10Gi via CLI. After cluster creation, ArgoCD and Grafana dashboards are automatically available for monitoring. https://kupe.cloud/
-  - Model evidence quote: “kupe cluster create hello-kupe --cpu-limit 2 --memory-limit 4Gi --storage-limit 10Gi Create a cluster from the console, the CLI or Terraform and it reports Running, with dashboards, logs, alerts and GitOps wired in”
-- Trends from Money20/20 2026: The rise of “hidden” financial services: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; Primary-source evidence quote is missing or absent from the live page (after presentation normalisation); A factual claim lacks a quote present in the live primary-source page; Supporting quotes cover only 62% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: Stripe highlights stablecoins as a Money20/20 trend reshaping financial services. Implementing a stablecoin‑backed card can extend your checkout to support crypto payments. https://stripe.com/blog/trends-from-money20-20-2026-the-rise-of-hidden-financial-services
-  - Model evidence quote: “Three trends from Money20/20 show stablecoins, agents, and always‑on money changing financial services”
-- Show HN: flint - SSH and SFTP client built with GPUI: A supporting quote does not share enough wording with its stated claim
-  - Rejected text: Flint is an experimental SSH/SFTP desktop client built in Rust using GPUI. Because it is experimental, users should test for stability before production use. https://github.com/mousEHEHE/flint-gpui
-  - Model evidence quote: “SSH and SFTP client for desktop, written in Rust with GPUI This is experimental software, primarily built with AI.”
+- Show HN: Building the European Company Graph one website at a time: Primary page title/content does not sufficiently match the candidate headline.
+- Promoted Placements beta now includes Shop Campaigns: Editorial takeaway is too long; keep the analysis concrete and concise.; Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.; Opening sentence is too close to the source headline; add a distinct editorial framing.
+  - Rejected text: Promoted Placements beta now includes Shop Campaigns. Verify placement.commission.percentage.value returns the combined merchant and Shopify base rates. https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns
+  - Model evidence quote: “When a search _catalog result comes from a merchant running Shop Campaigns, you earn the commission that merchant funds, added to Shopify's base rate.”
+  - Claim support: Promoted Placements beta now includes Shop Campaigns ← “When a search _catalog result comes from a merchant running Shop Campaigns, you earn the commission that merchant funds, added to Shopify's base rate.”
+- Unmapped model draft: Model omitted a valid candidate ID and no exact verified source URL matched.
+- Show HN: Markdown is 40× more token-efficient with SQLite: Clear and technically coherent, but the takeaway is a generic suggestion and the post adds no new perspective beyond the source.
+  - Rejected text: Agents using SQL through a local MCP used over 40× fewer tokens per fully correct answer. Run a 40-question benchmark to quantify token savings versus Markdown vaults. https://www.withnative.ai/research-and-posts/markdown-context-benchmark
+- Show HN: Markdown is 40× more token-efficient with SQLite: Editorial takeaway is too long; keep the analysis concrete and concise.; Fact plus takeaway exceeds the per-link character budget.; Draft is 282 raw characters; limit is 280
+  - Rejected text: Agents using SQL through a local MCP used over 40× fewer tokens per fully correct answer. When constrained to a 1 M‑token budget, SQLite‑backed context reduces failed trials by 97 % compared to Markdown vaults. https://www.withnative.ai/research-and-posts/markdown-context-benchmark
+  - Model evidence quote: “97% fewer failed trials for a fixed 1M input-token budget”
 
 ## Top discovery candidates considered
 
-- Show HN: flint - SSH and SFTP client built with GPUI | Hacker News | product_and_workflow_tools | raw 77, adjusted 79 | https://github.com/mousEHEHE/flint-gpui
-- Show HN: Kupe Cloud – the assembled Kubernetes platform | Hacker News | product_and_workflow_tools | raw 68, adjusted 70 | https://kupe.cloud/
-- Trends from Money20/20 2026: The rise of “hidden” financial services | Stripe Blog | commerce_and_digital_products | raw 50, adjusted 50 | https://stripe.com/blog/trends-from-money20-20-2026-the-rise-of-hidden-financial-services
+- Promoted Placements beta now includes Shop Campaigns | Shopify Developer Changelog | commerce_and_digital_products | raw 72, adjusted 72 | https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns
+- Show HN: Markdown is 40× more token-efficient with SQLite | Hacker News | product_and_workflow_tools | raw 66, adjusted 68 | https://www.withnative.ai/research-and-posts/markdown-context-benchmark
+- Show HN: Building the European Company Graph one website at a time | Hacker News | data_and_growth | raw 65, adjusted 67 | https://firmendaten.researchly.at/netzwerk
 
 ## Safety and interpretation
 

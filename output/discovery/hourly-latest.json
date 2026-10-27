@@ -1,38 +1,38 @@
 {
-  "generated_at_ist": "2026-10-27T17:49:56+05:30",
-  "run_at_ist": "2026-10-27T17:49:56+05:30",
+  "generated_at_ist": "2026-10-27T19:05:11+05:30",
+  "run_at_ist": "2026-10-27T19:05:11+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
   "candidate_count_raw": 292,
-  "eligible_candidate_count": 184,
+  "eligible_candidate_count": 172,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4731
+      "total_count": 4742
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1006
+      "total_count": 943
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
       "kind": "github_repository",
-      "items_kept": 8,
+      "items_kept": 10,
       "status": "ok",
-      "total_count": 171
+      "total_count": 356
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2885
+      "total_count": 2892
     },
     {
       "source": "GitHub Search · github-digital-product-tools",
@@ -46,28 +46,28 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 406
+      "total_count": 407
     },
     {
       "source": "GitHub Search · github-marketing-distribution",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 189
+      "total_count": 225
     },
     {
       "source": "GitHub Search · github-mcp-servers",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2057
+      "total_count": 2061
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2031
+      "total_count": 2321
     },
     {
       "source": "GitHub Search · github-seller-operations",
@@ -81,7 +81,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 123
+      "total_count": 124
     },
     {
       "source": "GitHub Search · github-workflow-automation",
@@ -116,7 +116,7 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 6
+      "total_count": 7
     },
     {
       "source": "Hacker News · hn-digital-products",
@@ -163,7 +163,7 @@
     {
       "source": "Hacker News · hn-shopify",
       "kind": "hacker_news",
-      "items_kept": 6,
+      "items_kept": 10,
       "status": "ok",
       "total_count": 10
     },
@@ -207,7 +207,7 @@
     {
       "source": "Shopify Developer Changelog",
       "kind": "rss",
-      "items_kept": 10,
+      "items_kept": 11,
       "status": "ok"
     },
     {
@@ -255,14 +255,14 @@
       "kind": "wordpress_plugin",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2183
+      "total_count": 2189
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-27T12:19:56+00:00",
+    "observed_at_utc": "2026-10-27T13:35:11+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 112,
-    "previously_tracked_repositories_refreshed": 88,
+    "repositories_seen_in_discovery": 107,
+    "previously_tracked_repositories_refreshed": 93,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
@@ -272,217 +272,196 @@
   },
   "primary_source_checks": [
     {
-      "candidate_id": "8685fd08a7dcfaf7",
-      "title": "Show HN: flint - SSH and SFTP client built with GPUI",
-      "source_url": "https://github.com/mousEHEHE/flint-gpui",
+      "candidate_id": "fe106ba546c5c606",
+      "title": "Promoted Placements beta now includes Shop Campaigns",
+      "source_url": "https://shopify.dev/changelog/promoted-placements-beta-now-includes-shop-campaigns",
       "verified": true,
-      "final_url": "https://github.com/mousEHEHE/flint-gpui",
+      "final_url": "https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "4d4984c7cb9d0c5b",
-      "title": "Show HN: Kupe Cloud – the assembled Kubernetes platform",
-      "source_url": "https://kupe.cloud/",
+      "candidate_id": "cc81505354253146",
+      "title": "Show HN: Markdown is 40× more token-efficient with SQLite",
+      "source_url": "https://www.withnative.ai/research-and-posts/markdown-context-benchmark",
       "verified": true,
-      "final_url": "https://kupe.cloud/",
+      "final_url": "https://www.withnative.ai/research-and-posts/markdown-context-benchmark",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "b00606b7d715372d",
-      "title": "Trends from Money20/20 2026: The rise of “hidden” financial services",
-      "source_url": "https://stripe.com/blog/trends-from-money20-20-2026-the-rise-of-hidden-financial-services",
-      "verified": true,
-      "final_url": "https://stripe.com/blog/trends-from-money20-20-2026-the-rise-of-hidden-financial-services",
-      "http_status": 200,
-      "reason": ""
+      "candidate_id": "a92e52ee3c14a954",
+      "title": "Show HN: Building the European Company Graph one website at a time",
+      "source_url": "https://firmendaten.researchly.at/netzwerk",
+      "verified": false,
+      "final_url": null,
+      "http_status": null,
+      "reason": "Primary page title/content does not sufficiently match the candidate headline."
     }
   ],
-  "rejected_primary_sources": [],
+  "rejected_primary_sources": [
+    {
+      "candidate_id": "a92e52ee3c14a954",
+      "title": "Show HN: Building the European Company Graph one website at a time",
+      "source": "Hacker News",
+      "url": "https://firmendaten.researchly.at/netzwerk",
+      "reasons": [
+        "Primary page title/content does not sufficiently match the candidate headline."
+      ]
+    }
+  ],
   "daily_draft_cap": 16,
   "daily_drafts_already_passed": 3,
   "outcome": "skip",
-  "decision_reason": "All generated drafts failed the local evidence/editorial checks; the hour was skipped.",
+  "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
   "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "8685fd08a7dcfaf7",
-      "title": "Show HN: flint - SSH and SFTP client built with GPUI",
+      "candidate_id": "a92e52ee3c14a954",
+      "title": "Show HN: Building the European Company Graph one website at a time",
+      "source": "Hacker News",
+      "url": "https://firmendaten.researchly.at/netzwerk",
       "reasons": [
-        "Editorial takeaway is not specific enough to this candidate's technical/product details."
+        "Primary page title/content does not sufficiently match the candidate headline."
+      ]
+    },
+    {
+      "candidate_id": "fe106ba546c5c606",
+      "title": "Promoted Placements beta now includes Shop Campaigns",
+      "reasons": [
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
+        "Opening sentence is too close to the source headline; add a distinct editorial framing."
       ],
-      "proposed_text": "Flint is an SSH and SFTP desktop client written in Rust with GPUI. Test memory usage against Termius to confirm lower RAM footprint. https://github.com/mousEHEHE/flint-gpui",
-      "evidence_quote": "SSH and SFTP client for desktop, written in Rust with GPUI",
+      "proposed_text": "Promoted Placements beta now includes Shop Campaigns. Verify placement.commission.percentage.value returns the combined merchant and Shopify base rates. https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns",
+      "evidence_quote": "When a search _catalog result comes from a merchant running Shop Campaigns, you earn the commission that merchant funds, added to Shopify's base rate.",
       "claim_evidence": [
         {
-          "claim": "Flint is an SSH and SFTP desktop client written in Rust with GPUI",
-          "quote": "SSH and SFTP client for desktop, written in Rust with GPUI"
+          "claim": "Promoted Placements beta now includes Shop Campaigns",
+          "quote": "When a search _catalog result comes from a merchant running Shop Campaigns, you earn the commission that merchant funds, added to Shopify's base rate."
         }
       ]
     },
     {
-      "candidate_id": "4d4984c7cb9d0c5b",
-      "title": "Show HN: Kupe Cloud – the assembled Kubernetes platform",
+      "candidate_id": null,
+      "title": "Unmapped model draft",
+      "proposed_text": "",
       "reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability.",
-        "Fact sentence is too long; narrow it to one source-backed capability.",
-        "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "Supporting quotes cover only 45% of factual wording; narrow the claim or provide a closer primary-source quote"
-      ],
-      "proposed_text": "Kupe Cloud is a managed Kubernetes platform with GitOps, observability, security, and platform defaults wired together. Run a quick cluster create via CLI to verify auto‑configured ArgoCD and Grafana dashboards. https://kupe.cloud/",
-      "evidence_quote": "Managed Kubernetes Platform | Kupe Cloud",
-      "claim_evidence": [
-        {
-          "claim": "Kupe Cloud is a managed Kubernetes platform with GitOps, observability, security, and platform defaults wired together",
-          "quote": "Managed Kubernetes Platform | Kupe Cloud"
-        }
+        "Model omitted a valid candidate ID and no exact verified source URL matched."
       ]
     },
     {
-      "candidate_id": "b00606b7d715372d",
-      "title": "Trends from Money20/20 2026: The rise of “hidden” financial services",
+      "candidate_id": "cc81505354253146",
+      "title": "Show HN: Markdown is 40× more token-efficient with SQLite",
+      "proposed_text": "Agents using SQL through a local MCP used over 40× fewer tokens per fully correct answer. Run a 40-question benchmark to quantify token savings versus Markdown vaults. https://www.withnative.ai/research-and-posts/markdown-context-benchmark",
       "reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability."
+        "Clear and technically coherent, but the takeaway is a generic suggestion and the post adds no new perspective beyond the source."
       ],
-      "proposed_text": "Stripe reports three Money20/20 trends: stablecoins, agents, and always‑on money reshaping services. Add a stablecoin‑backed card to your checkout flow and monitor latency changes. https://stripe.com/blog/trends-from-money20-20-2026-the-rise-of-hidden-financial-services",
-      "evidence_quote": "Three trends from Money20/20 show stablecoins, agents, and always‑on money changing financial services",
-      "claim_evidence": [
-        {
-          "claim": "Stripe reports three Money20/20 trends: stablecoins, agents, and always‑on money reshaping services",
-          "quote": "Three trends from Money20/20 show stablecoins, agents, and always‑on money changing financial services"
-        }
-      ]
+      "editorial_review": {
+        "clarity_score": 8,
+        "technical_coherence_score": 8,
+        "takeaway_value_score": 7,
+        "source_faithfulness_score": 8,
+        "originality_score": 4
+      }
     },
     {
-      "candidate_id": "4d4984c7cb9d0c5b",
-      "title": "Show HN: Kupe Cloud – the assembled Kubernetes platform",
+      "candidate_id": "cc81505354253146",
+      "title": "Show HN: Markdown is 40× more token-efficient with SQLite",
       "reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability.",
         "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
+        "Fact plus takeaway exceeds the per-link character budget.",
+        "Draft is 282 raw characters; limit is 280"
       ],
-      "proposed_text": "Kupe Cloud lets you create a Kubernetes cluster with CPU 2, memory 4Gi, and storage 10Gi via CLI. After cluster creation, ArgoCD and Grafana dashboards are automatically available for monitoring. https://kupe.cloud/",
-      "evidence_quote": "kupe cluster create hello-kupe --cpu-limit 2 --memory-limit 4Gi --storage-limit 10Gi Create a cluster from the console, the CLI or Terraform and it reports Running, with dashboards, logs, alerts and GitOps wired in",
+      "proposed_text": "Agents using SQL through a local MCP used over 40× fewer tokens per fully correct answer. When constrained to a 1 M‑token budget, SQLite‑backed context reduces failed trials by 97 % compared to Markdown vaults. https://www.withnative.ai/research-and-posts/markdown-context-benchmark",
+      "evidence_quote": "97% fewer failed trials for a fixed 1M input-token budget",
       "automatic_repair_attempt": true,
       "original_rejection_reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability.",
-        "Fact sentence is too long; narrow it to one source-backed capability.",
-        "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "Supporting quotes cover only 45% of factual wording; narrow the claim or provide a closer primary-source quote"
-      ]
-    },
-    {
-      "candidate_id": "b00606b7d715372d",
-      "title": "Trends from Money20/20 2026: The rise of “hidden” financial services",
-      "reasons": [
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
-        "Primary-source evidence quote is missing or absent from the live page (after presentation normalisation)",
-        "A factual claim lacks a quote present in the live primary-source page",
-        "Supporting quotes cover only 62% of factual wording; narrow the claim or provide a closer primary-source quote"
-      ],
-      "proposed_text": "Stripe highlights stablecoins as a Money20/20 trend reshaping financial services. Implementing a stablecoin‑backed card can extend your checkout to support crypto payments. https://stripe.com/blog/trends-from-money20-20-2026-the-rise-of-hidden-financial-services",
-      "evidence_quote": "Three trends from Money20/20 show stablecoins, agents, and always‑on money changing financial services",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability."
-      ]
-    },
-    {
-      "candidate_id": "8685fd08a7dcfaf7",
-      "title": "Show HN: flint - SSH and SFTP client built with GPUI",
-      "reasons": [
-        "A supporting quote does not share enough wording with its stated claim"
-      ],
-      "proposed_text": "Flint is an experimental SSH/SFTP desktop client built in Rust using GPUI. Because it is experimental, users should test for stability before production use. https://github.com/mousEHEHE/flint-gpui",
-      "evidence_quote": "SSH and SFTP client for desktop, written in Rust with GPUI This is experimental software, primarily built with AI.",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "Editorial takeaway is not specific enough to this candidate's technical/product details."
+        "Clear and technically coherent, but the takeaway is a generic suggestion and the post adds no new perspective beyond the source."
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "8685fd08a7dcfaf7",
-      "title": "Show HN: flint - SSH and SFTP client built with GPUI",
-      "url": "https://github.com/mousEHEHE/flint-gpui",
-      "source": "Hacker News",
-      "primary_category": "product_and_workflow_tools",
-      "priority_score": 77,
-      "hourly_adjusted_score": 79,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-27T12:05:09+00:00",
-      "days_old": 0.01,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "4d4984c7cb9d0c5b",
-      "title": "Show HN: Kupe Cloud – the assembled Kubernetes platform",
-      "url": "https://kupe.cloud/",
-      "source": "Hacker News",
-      "primary_category": "product_and_workflow_tools",
-      "priority_score": 68,
-      "hourly_adjusted_score": 70,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-27T12:07:39+00:00",
-      "days_old": 0.01,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "b00606b7d715372d",
-      "title": "Trends from Money20/20 2026: The rise of “hidden” financial services",
-      "url": "https://stripe.com/blog/trends-from-money20-20-2026-the-rise-of-hidden-financial-services",
-      "source": "Stripe Blog",
+      "id": "fe106ba546c5c606",
+      "title": "Promoted Placements beta now includes Shop Campaigns",
+      "url": "https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns",
+      "source": "Shopify Developer Changelog",
       "primary_category": "commerce_and_digital_products",
-      "priority_score": 50,
-      "hourly_adjusted_score": 50,
+      "priority_score": 72,
+      "hourly_adjusted_score": 72,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-22T00:00:00+00:00",
-      "days_old": 5.51,
+      "published_at": "2026-10-27T13:00:00+00:00",
+      "days_old": 0.02,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
+    },
+    {
+      "id": "cc81505354253146",
+      "title": "Show HN: Markdown is 40× more token-efficient with SQLite",
+      "url": "https://www.withnative.ai/research-and-posts/markdown-context-benchmark",
+      "source": "Hacker News",
+      "primary_category": "product_and_workflow_tools",
+      "priority_score": 66,
+      "hourly_adjusted_score": 68,
+      "stars_current": null,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-27T13:23:49+00:00",
+      "days_old": 0.01,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "a92e52ee3c14a954",
+      "title": "Show HN: Building the European Company Graph one website at a time",
+      "url": "https://firmendaten.researchly.at/netzwerk",
+      "source": "Hacker News",
+      "primary_category": "data_and_growth",
+      "priority_score": 65,
+      "hourly_adjusted_score": 67,
+      "stars_current": null,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-26T13:58:24+00:00",
+      "days_old": 0.98,
+      "primary_source_verified": false,
+      "primary_source_http_status": null,
+      "primary_source_reason": "Primary page title/content does not sufficiently match the candidate headline."
     }
   ],
   "automatic_repair": {
     "attempted": true,
-    "drafts_submitted": 3,
+    "drafts_submitted": 1,
     "repaired_local_passes": 0,
-    "repair_rejections": 3,
+    "repair_rejections": 1,
     "repair_error": null,
-    "editorial_repair_attempted": false,
-    "editorial_repair_drafts_submitted": 0,
+    "editorial_repair_attempted": true,
+    "editorial_repair_drafts_submitted": 1,
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 0,
-    "submitted_for_independent_review": 0,
+    "locally_valid_drafts": 1,
+    "submitted_for_independent_review": 1,
     "passed_independent_review": 0,
-    "rejected_by_independent_review": 0,
+    "rejected_by_independent_review": 1,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
   "state_summary": {
     "used_candidates_in_cooldown": 19,
-    "recently_attempted_candidates": 28,
+    "recently_attempted_candidates": 30,
     "recent_draft_passes_today": 3
   }
 }
