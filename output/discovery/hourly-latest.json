@@ -1,43 +1,43 @@
 {
-  "generated_at_ist": "2026-10-27T20:03:18+05:30",
-  "run_at_ist": "2026-10-27T20:03:18+05:30",
+  "generated_at_ist": "2026-10-27T21:01:05+05:30",
+  "run_at_ist": "2026-10-27T21:01:05+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 269,
-  "eligible_candidate_count": 156,
+  "candidate_count_raw": 288,
+  "eligible_candidate_count": 175,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
-      "items_kept": 9,
+      "items_kept": 10,
       "status": "ok",
-      "total_count": 1633
+      "total_count": 4754
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
-      "items_kept": 2,
+      "items_kept": 10,
       "status": "ok",
-      "total_count": 462
+      "total_count": 850
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 357
+      "total_count": 358
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2895
+      "total_count": 2902
     },
     {
       "source": "GitHub Search · github-digital-product-tools",
       "kind": "github_repository",
-      "items_kept": 0,
+      "items_kept": 10,
       "status": "ok",
       "total_count": 12
     },
@@ -51,23 +51,23 @@
     {
       "source": "GitHub Search · github-marketing-distribution",
       "kind": "github_repository",
-      "items_kept": 4,
+      "items_kept": 10,
       "status": "ok",
-      "total_count": 93
+      "total_count": 227
     },
     {
       "source": "GitHub Search · github-mcp-servers",
       "kind": "github_repository",
-      "items_kept": 3,
+      "items_kept": 10,
       "status": "ok",
-      "total_count": 743
+      "total_count": 2065
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3284
+      "total_count": 3287
     },
     {
       "source": "GitHub Search · github-seller-operations",
@@ -81,7 +81,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 124
+      "total_count": 125
     },
     {
       "source": "GitHub Search · github-workflow-automation",
@@ -163,7 +163,7 @@
     {
       "source": "Hacker News · hn-shopify",
       "kind": "hacker_news",
-      "items_kept": 7,
+      "items_kept": 6,
       "status": "ok",
       "total_count": 10
     },
@@ -195,7 +195,7 @@
     {
       "source": "Product Hunt",
       "kind": "rss",
-      "items_kept": 40,
+      "items_kept": 39,
       "status": "ok"
     },
     {
@@ -259,42 +259,42 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-27T14:33:18+00:00",
+    "observed_at_utc": "2026-10-27T15:31:05+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 86,
-    "previously_tracked_repositories_refreshed": 114,
+    "repositories_seen_in_discovery": 107,
+    "previously_tracked_repositories_refreshed": 93,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
-    "repositories_with_20_to_36_hour_baseline": 6,
+    "repositories_with_20_to_36_hour_baseline": 5,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "87a2e45be3dbfe9a",
-      "title": "Ask HN: How do you get new readers for your blog",
-      "source_url": "https://news.ycombinator.com/item?id=50259066",
+      "candidate_id": "106d23087d4f8d8d",
+      "title": "Show HN: Dinemic – self-hosted ingress across multiple providers (DNS, LB, TLS)",
+      "source_url": "https://dinemic.com/",
       "verified": true,
-      "final_url": "https://news.ycombinator.com/item?id=50259066",
+      "final_url": "https://dinemic.com/",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "02991cb041a3ff08",
-      "title": "How the fastest-growing enterprises on Stripe scale globally",
-      "source_url": "https://stripe.com/blog/how-the-fastest-growing-enterprises-on-stripe-scale-globally",
+      "candidate_id": "2073550217e33683",
+      "title": "Show HN: Specification First Agentic Development Plugin and Prove",
+      "source_url": "https://spec-first.dev/",
       "verified": true,
-      "final_url": "https://stripe.com/blog/how-the-fastest-growing-enterprises-on-stripe-scale-globally",
+      "final_url": "https://spec-first.dev/",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "55c557b3bc0267ca",
-      "title": "Securing your app, together",
-      "source_url": "https://shopify.dev/changelog/securing-your-app-together",
+      "candidate_id": "166c03500f695e2b",
+      "title": "Subscription churn: Turn retention insights into recurring revenue growth",
+      "source_url": "https://woocommerce.com/posts/subscription-churn-strategies/",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/blog/securing-your-app-together",
+      "final_url": "https://woocommerce.com/posts/subscription-churn-strategies/",
       "http_status": 200,
       "reason": ""
     }
@@ -303,149 +303,123 @@
   "daily_draft_cap": 16,
   "daily_drafts_already_passed": 3,
   "outcome": "skip",
-  "decision_reason": "No draft cleared the complete automatic quality gate; independent editorial review failed closed. Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi",
+  "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
   "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "87a2e45be3dbfe9a",
-      "title": "Ask HN: How do you get new readers for your blog",
+      "candidate_id": "106d23087d4f8d8d",
+      "title": "Show HN: Dinemic – self-hosted ingress across multiple providers (DNS, LB, TLS)",
       "reasons": [
-        "A supporting quote does not share enough wording with its stated claim",
-        "Factual sentence includes terms absent from the source title/summary: author, channel, largely, must, note"
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Editorial takeaway is too long; keep the analysis concrete and concise."
       ],
-      "proposed_text": "Ask HN notes RSS feeds are largely dead, so authors must use other channels. Test LinkedIn/X engagement; a single post is not enough. https://news.ycombinator.com/item?id=50259066",
-      "evidence_quote": "Ever since Google Reader shut down, I think the next generations of engineers and developers stopped using RSS feeds.",
+      "proposed_text": "Dinemic configures authoritative DNS, load balancing, and automatic TLS for your servers. Run a health check on the Dinemic API after deployment to confirm DNS propagation and TLS renewal. https://dinemic.com/",
+      "evidence_quote": "Authoritative DNS, load balancing, automatic TLS and an encrypted Dinemic Network Mesh across machines you control.",
       "claim_evidence": [
         {
-          "claim": "Ask HN notes RSS feeds are largely dead, so authors must use other channels.",
-          "quote": "Ever since Google Reader shut down, I think the next generations of engineers and developers stopped using RSS feeds."
+          "claim": "Dinemic configures authoritative DNS, load balancing, and automatic TLS for your servers.",
+          "quote": "Authoritative DNS, load balancing, automatic TLS and an encrypted Dinemic Network Mesh across machines you control."
         }
       ]
     },
     {
-      "candidate_id": "02991cb041a3ff08",
-      "title": "How the fastest-growing enterprises on Stripe scale globally",
+      "candidate_id": "2073550217e33683",
+      "title": "Show HN: Specification First Agentic Development Plugin and Prove",
       "reasons": [
-        "A supporting quote does not share enough wording with its stated claim",
-        "Supporting quotes cover only 40% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Editorial takeaway is too long; keep the analysis concrete and concise."
       ],
-      "proposed_text": "Stripe blog says fastest-growing enterprises invest in tools that speed global expansion. Prioritize payment methods with 125+ terminal options to accelerate local rollouts. https://stripe.com/blog/how-the-fastest-growing-enterprises-on-stripe-scale-globally",
-      "evidence_quote": "the fastest-growing enterprises continue to look beyond their home markets and are investing in tools and workflows that make expansion faster and more repeatable.",
+      "proposed_text": "Spec-first agentic development uses YAML/Markdown specs to create isolated worktrees and gate commits. Before merging, run the spec-first review command to ensure the spec matches the code changes. https://spec-first.dev/",
+      "evidence_quote": "Spec-first agentic development is specification-driven development for AI coding agents: reviewed specs, isolated worktrees, gated commits.",
       "claim_evidence": [
         {
-          "claim": "Stripe blog says fastest-growing enterprises invest in tools that speed global expansion.",
-          "quote": "the fastest-growing enterprises continue to look beyond their home markets and are investing in tools and workflows that make expansion faster and more repeatable."
+          "claim": "Spec-first agentic development uses YAML/Markdown specs to create isolated worktrees and gate commits.",
+          "quote": "Spec-first agentic development is specification-driven development for AI coding agents: reviewed specs, isolated worktrees, gated commits."
         }
       ]
     },
     {
-      "candidate_id": "55c557b3bc0267ca",
-      "title": "Securing your app, together",
+      "candidate_id": "166c03500f695e2b",
+      "title": "Subscription churn: Turn retention insights into recurring revenue growth",
+      "proposed_text": "WooCommerce blog shows that better churn data helps decide where to act first. Track churn by cohort and test retention tactics on the highest churn segment. https://woocommerce.com/posts/subscription-churn-strategies/",
       "reasons": [
-        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.",
-        "The factual opening bundles multiple features; narrow it to one capability."
+        "The post merely restates the source headline and a single quote without adding new insights or actionable details beyond what is already in the article. The takeaway is generic and does not provide a concrete, unique nex"
       ],
-      "proposed_text": "Shopify changelog introduces AI security scans, expiring tokens, and better log filtering. Run AI Toolkit scans before each release to catch unauthenticated routes. https://shopify.dev/changelog/blog/securing-your-app-together",
-      "evidence_quote": "We have new tools to help, including AI security scans, expiring tokens, and better log filtering.",
-      "claim_evidence": [
-        {
-          "claim": "Shopify changelog introduces AI security scans, expiring tokens, and better log filtering.",
-          "quote": "We have new tools to help, including AI security scans, expiring tokens, and better log filtering."
-        }
-      ]
+      "editorial_review": {
+        "clarity_score": 9,
+        "technical_coherence_score": 9,
+        "takeaway_value_score": 8,
+        "source_faithfulness_score": 9,
+        "originality_score": 3
+      }
     },
     {
-      "candidate_id": "87a2e45be3dbfe9a",
-      "title": "Ask HN: How do you get new readers for your blog",
+      "candidate_id": "166c03500f695e2b",
+      "title": "Subscription churn: Turn retention insights into recurring revenue growth",
       "reasons": [
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
+        "Editorial takeaway is too long; keep the analysis concrete and concise."
       ],
-      "proposed_text": "RSS feeds are largely dead, as Google Reader shut down. Use analytics that capture partial referrer data, since browsers omit full URLs. https://news.ycombinator.com/item?id=50259066",
-      "evidence_quote": "browsers no longer track the full referral URL for privacy reasons.",
+      "proposed_text": "Review churn alongside growth to see if new subscribers offset revenue loss. When recurring revenue dips, compare churn rates with new subscriber growth to identify whether fresh sign‑ups compensate for churned revenue. https://woocommerce.com/posts/subscription-churn-strategies/",
+      "evidence_quote": "New subscribers may offset some or all of the revenue impact, so reviewing churn alongside growth gives you a clearer view of retention and helps you find more opportunities to strengthen it.",
       "automatic_repair_attempt": true,
       "original_rejection_reasons": [
-        "A supporting quote does not share enough wording with its stated claim",
-        "Factual sentence includes terms absent from the source title/summary: author, channel, largely, must, note"
-      ]
-    },
-    {
-      "candidate_id": "55c557b3bc0267ca",
-      "title": "Securing your app, together",
-      "reasons": [
-        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.",
-        "The factual opening bundles multiple features; narrow it to one capability."
-      ],
-      "proposed_text": "Shopify introduces AI security scans, expiring tokens, and better log filtering. Run AI Toolkit scans before each release to catch unauthenticated routes. https://shopify.dev/changelog/blog/securing-your-app-together",
-      "evidence_quote": "A single prompt with AI Toolkit checks for Shopify‑specific vulnerabilities, such as unauthenticated routes, cross‑shop data access and unverified webhooks.",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.",
-        "The factual opening bundles multiple features; narrow it to one capability."
-      ]
-    },
-    {
-      "candidate_id": "02991cb041a3ff08",
-      "title": "How the fastest-growing enterprises on Stripe scale globally",
-      "proposed_text": "Fastest-growing enterprises invest in tools that make expansion faster and more repeatable. Prioritize tools that streamline cross‑border payments to support rapid global growth. https://stripe.com/blog/how-the-fastest-growing-enterprises-on-stripe-scale-globally",
-      "reasons": [
-        "Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi"
+        "The post merely restates the source headline and a single quote without adding new insights or actionable details beyond what is already in the article. The takeaway is generic and does not provide a concrete, unique nex"
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "87a2e45be3dbfe9a",
-      "title": "Ask HN: How do you get new readers for your blog",
-      "url": "https://news.ycombinator.com/item?id=50259066",
+      "id": "106d23087d4f8d8d",
+      "title": "Show HN: Dinemic – self-hosted ingress across multiple providers (DNS, LB, TLS)",
+      "url": "https://dinemic.com/",
       "source": "Hacker News",
-      "primary_category": "data_and_growth",
-      "priority_score": 66,
-      "hourly_adjusted_score": 66,
+      "primary_category": "product_and_workflow_tools",
+      "priority_score": 72,
+      "hourly_adjusted_score": 74,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-27T13:34:34+00:00",
+      "published_at": "2026-10-27T14:38:33+00:00",
       "days_old": 0.04,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "02991cb041a3ff08",
-      "title": "How the fastest-growing enterprises on Stripe scale globally",
-      "url": "https://stripe.com/blog/how-the-fastest-growing-enterprises-on-stripe-scale-globally",
-      "source": "Stripe Blog",
+      "id": "2073550217e33683",
+      "title": "Show HN: Specification First Agentic Development Plugin and Prove",
+      "url": "https://spec-first.dev/",
+      "source": "Hacker News",
       "primary_category": "product_and_workflow_tools",
-      "priority_score": 63,
-      "hourly_adjusted_score": 63,
+      "priority_score": 59,
+      "hourly_adjusted_score": 61,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-27T00:00:00+00:00",
-      "days_old": 0.61,
+      "published_at": "2026-10-27T15:12:20+00:00",
+      "days_old": 0.01,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "55c557b3bc0267ca",
-      "title": "Securing your app, together",
-      "url": "https://shopify.dev/changelog/blog/securing-your-app-together",
-      "source": "Shopify Developer Changelog",
+      "id": "166c03500f695e2b",
+      "title": "Subscription churn: Turn retention insights into recurring revenue growth",
+      "url": "https://woocommerce.com/posts/subscription-churn-strategies/",
+      "source": "WooCommerce Blog",
       "primary_category": "commerce_and_digital_products",
-      "priority_score": 63,
-      "hourly_adjusted_score": 63,
+      "priority_score": 56,
+      "hourly_adjusted_score": 56,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-20T19:00:00+00:00",
-      "days_old": 6.81,
+      "published_at": "2026-10-27T12:00:00+00:00",
+      "days_old": 0.15,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
@@ -453,12 +427,12 @@
   ],
   "automatic_repair": {
     "attempted": true,
-    "drafts_submitted": 3,
-    "repaired_local_passes": 1,
-    "repair_rejections": 2,
+    "drafts_submitted": 1,
+    "repaired_local_passes": 0,
+    "repair_rejections": 1,
     "repair_error": null,
-    "editorial_repair_attempted": false,
-    "editorial_repair_drafts_submitted": 0,
+    "editorial_repair_attempted": true,
+    "editorial_repair_drafts_submitted": 1,
     "editorial_repair_error": null
   },
   "editorial_review": {
@@ -467,7 +441,7 @@
     "passed_independent_review": 0,
     "rejected_by_independent_review": 1,
     "lower_ranked_not_reviewed": 0,
-    "review_error": "Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi",
+    "review_error": null,
     "automatic_gate": "fail_closed"
   },
   "state_summary": {
