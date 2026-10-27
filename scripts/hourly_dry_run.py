@@ -718,8 +718,10 @@ def groq_error_detail(body: str) -> str:
     elif isinstance(error_object, str):
         detail = clean(error_object)
 
-    # Some gateways send a non-JSON or nonstandard error body.
+    # Some gateways send non-JSON bodies containing either actual line breaks or
+    # escaped sequences (literal backslash+n/r/t). Normalize both to one line.
     if not detail and body:
+        body = re.sub(r"\\[nrt]", " ", body)
         detail = re.sub(r"\s+", " ", body).strip()
     return detail[:240]
 
