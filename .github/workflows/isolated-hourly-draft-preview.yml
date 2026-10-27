@@ -51,7 +51,7 @@ jobs:
           test -s "$RUNNER_TEMP/legivox-hourly-preview/hourly-state.json"
           echo "Loaded existing star-history and cooldown state into the runner's temporary directory."
 
-      - name: Run one real hourly dry-run with isolated output
+      - name: Run isolated Stripe Blog candidate-to-draft quality gates
         env:
           GITHUB_TOKEN: ${{ github.token }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
@@ -59,10 +59,12 @@ jobs:
           MAX_DAILY_DRAFTS: "16"
         run: |
           test -n "$GROQ_API_KEY" || { echo "GROQ_API_KEY is not configured; refusing to report an untested draft run." >&2; exit 1; }
+          # Exercise a newly added production-eligible source end-to-end without publishing.
           python scripts/hourly_dry_run.py \
             --dry-run \
             --lookback-days 14 \
             --pool-size 3 \
+            --source-filter "Stripe Blog" \
             --output-dir "$RUNNER_TEMP/legivox-hourly-preview"
 
       - name: Stage the audit report inside the runner workspace

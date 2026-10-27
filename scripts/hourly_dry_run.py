@@ -2240,11 +2240,27 @@ def split_editorial_review_queue(
     return ranked[:review_limit], ranked[review_limit:]
 
 
+def filter_source_candidates(candidates: list[dict], source_filter: str | None) -> list[dict]:
+    """Optionally limit a dry run to one source for isolated rollout validation.
+
+    No filter means normal production behavior: all discovered sources are eligible.
+    Matching is case-insensitive and uses the source label already assigned by discovery.
+    """
+    needle = clean(source_filter).casefold()
+    if not needle:
+        return list(candidates)
+    return [
+        candidate for candidate in candidates
+        if needle in clean(candidate.get("source")).casefold()
+    ]
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--lookback-days", type=int, default=DEFAULT_LOOKBACK_DAYS, choices=(1, 2, 3, 7, 14))
     parser.add_argument("--pool-size", type=int, default=CANDIDATE_POOL_SIZE, choices=(3, 5, 8, 10))
     parser.add_argument("--dry-run", action="store_true", help="Research and draft only; always enabled.")
+    parser.add_argument("--source-filter", help="Optional source name filter for isolated dry-run validation.")
     parser.add_argument("--output-dir", help="Optional output directory override for tests.")
     args = parser.parse_args(argv)
 
@@ -2261,6 +2277,7 @@ def main(argv: list[str] | None = None) -> int:
         import discover_candidates as discovery
         config = discovery.load_config()
         candidates, diagnostics = discovery.discover(config, max(args.lookback_days, 10), per_source=10)
+        candidates = filter_source_candidates(candidates, args.source_filter)
         state = load_state()
     except Exception as exc:
         print("Hourly discovery failed before candidate selection: " + type(exc).__name__, file=sys.stderr)

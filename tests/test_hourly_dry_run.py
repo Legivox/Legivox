@@ -17,6 +17,22 @@ import hourly_dry_run as hourly
 
 
 class HourlyDryRunTests(unittest.TestCase):
+    def test_source_filter_is_case_insensitive_and_optional(self):
+        candidates = [
+            {"id": "stripe-1", "source": "Stripe Blog"},
+            {"id": "ahrefs-1", "source": "Ahrefs Blog"},
+            {"id": "wp-1", "source": "WordPress Plugin Directory"},
+        ]
+        self.assertEqual(
+            ["stripe-1"],
+            [item["id"] for item in hourly.filter_source_candidates(candidates, "stripe blog")],
+        )
+        self.assertEqual(
+            ["stripe-1", "ahrefs-1", "wp-1"],
+            [item["id"] for item in hourly.filter_source_candidates(candidates, None)],
+        )
+        self.assertEqual([], hourly.filter_source_candidates(candidates, "source-does-not-exist"))
+
     def setUp(self):
         self.now = datetime(2026, 10, 21, 12, 0, tzinfo=timezone.utc)
         self.candidate = {
