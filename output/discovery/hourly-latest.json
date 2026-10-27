@@ -1,78 +1,78 @@
 {
-  "generated_at_ist": "2026-10-26T22:56:35+05:30",
-  "run_at_ist": "2026-10-26T22:56:35+05:30",
+  "generated_at_ist": "2026-10-27T07:47:31+05:30",
+  "run_at_ist": "2026-10-27T07:47:31+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 170,
-  "eligible_candidate_count": 94,
+  "candidate_count_raw": 168,
+  "eligible_candidate_count": 89,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4732
+      "total_count": 4664
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1009
+      "total_count": 987
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 358
+      "total_count": 350
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2907
+      "total_count": 2851
     },
     {
       "source": "GitHub Search · github-ecommerce-digital-products",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 415
+      "total_count": 387
     },
     {
       "source": "GitHub Search · github-mcp-servers",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2064
+      "total_count": 2026
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3250
+      "total_count": 3222
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 127
+      "total_count": 119
     },
     {
       "source": "GitHub Search · github-workflow-automation",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 272
+      "total_count": 263
     },
     {
       "source": "Hacker News · hn-analytics-growth",
       "kind": "hacker_news",
-      "items_kept": 9,
+      "items_kept": 10,
       "status": "ok",
       "total_count": 10
     },
@@ -114,7 +114,7 @@
     {
       "source": "Hacker News · hn-shopify",
       "kind": "hacker_news",
-      "items_kept": 10,
+      "items_kept": 5,
       "status": "ok",
       "total_count": 10
     },
@@ -145,169 +145,155 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-26T17:26:35+00:00",
+    "observed_at_utc": "2026-10-27T02:17:31+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 79,
-    "previously_tracked_repositories_refreshed": 121,
+    "repositories_seen_in_discovery": 80,
+    "previously_tracked_repositories_refreshed": 120,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
-    "repositories_with_20_to_36_hour_baseline": 4,
+    "repositories_with_20_to_36_hour_baseline": 6,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "e95e12447b71a006",
-      "title": "Unlink a customer's identity provider subject with the GraphQL Admin API",
-      "source_url": "https://shopify.dev/changelog/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api",
+      "candidate_id": "a5e43b1572bfaf36",
+      "title": "paperclipai/paperclip",
+      "source_url": "https://github.com/paperclipai/paperclip",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api",
+      "final_url": "https://github.com/paperclipai/paperclip",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "f803dce2f9c77322",
-      "title": "POS UI extensions now support reactive storage access",
-      "source_url": "https://shopify.dev/changelog/pos-ui-extensions-now-support-reactive-storage-access",
+      "candidate_id": "1193539a8ca88838",
+      "title": "nodaroai/app.nodaro.ai",
+      "source_url": "https://github.com/nodaroai/app.nodaro.ai",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access",
+      "final_url": "https://github.com/nodaroai/app.nodaro.ai",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "a46f1acaee2a44f1",
-      "title": "Show HN: Castellan – A real-time strategy game for agents",
-      "source_url": "https://rts.emersoftware.cl/",
+      "candidate_id": "55c557b3bc0267ca",
+      "title": "Securing your app, together",
+      "source_url": "https://shopify.dev/changelog/securing-your-app-together",
       "verified": true,
-      "final_url": "https://rts.emersoftware.cl/",
+      "final_url": "https://shopify.dev/changelog/blog/securing-your-app-together",
       "http_status": 200,
       "reason": ""
     }
   ],
   "rejected_primary_sources": [],
   "daily_draft_cap": 16,
-  "daily_drafts_already_passed": 4,
+  "daily_drafts_already_passed": 0,
   "outcome": "skip",
   "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
   "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "f803dce2f9c77322",
-      "title": "POS UI extensions now support reactive storage access",
+      "candidate_id": "55c557b3bc0267ca",
+      "title": "Securing your app, together",
       "reasons": [
-        "Supporting quotes cover only 62% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.",
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation."
       ],
-      "proposed_text": "shopify.storage.current provides reactive storage access for POS UI extensions. Test cross‑target updates by subscribing to shopify.storage.current changes. https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access",
-      "evidence_quote": "The new shopify.storage.current API lets POS UI extension developers respond automatically when stored values change across extension targets on the same POS device.",
+      "proposed_text": "Shopify added AI security scans, expiring tokens, and log filtering. Run the AI Toolkit scan on your app endpoints before release. https://shopify.dev/changelog/blog/securing-your-app-together",
+      "evidence_quote": "We have new tools to help, including AI security scans, expiring tokens, and better log filtering",
       "claim_evidence": [
         {
-          "claim": "shopify.storage.current provides reactive storage access for POS UI extensions",
-          "quote": "The new shopify.storage.current API lets POS UI extension developers respond automatically when stored values change across extension targets on the same POS device."
+          "claim": "Shopify added AI security scans, expiring tokens, and log filtering",
+          "quote": "We have new tools to help, including AI security scans, expiring tokens, and better log filtering"
         }
       ]
     },
     {
-      "candidate_id": "a46f1acaee2a44f1",
-      "title": "Show HN: Castellan – A real-time strategy game for agents",
+      "candidate_id": "a5e43b1572bfaf36",
+      "title": "paperclipai/paperclip",
+      "proposed_text": "paperclip is an open‑source app for managing agents at work. Run its agent orchestration tests before deploying to production. https://github.com/paperclipai/paperclip",
       "reasons": [
-        "Opening sentence is too close to the source headline; add a distinct editorial framing."
-      ],
-      "proposed_text": "Castellan is a real‑time strategy game where AI agents battle. Measure agent decision latency to ensure smooth gameplay. https://rts.emersoftware.cl/",
-      "evidence_quote": "Castellan A real-time strategy game whose players are AI agents. Watch their battles.",
-      "claim_evidence": [
-        {
-          "claim": "Castellan is a real‑time strategy game where AI agents battle",
-          "quote": "Castellan A real-time strategy game whose players are AI agents. Watch their battles."
-        }
-      ]
-    },
-    {
-      "candidate_id": "e95e12447b71a006",
-      "title": "Unlink a customer's identity provider subject with the GraphQL Admin API",
-      "proposed_text": "identityProviderSubjectDelete unlinks a customer from a third‑party identity provider. Verify the mutation logs a sign‑out event before re‑linking. https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api",
-      "reasons": [
-        "The post restates the changelog fact without adding new insight or a unique perspective. Originality is below the required threshold."
+        "Takeaway is generic and not directly supported by source; originality low."
       ],
       "editorial_review": {
-        "clarity_score": 9,
-        "technical_coherence_score": 9,
-        "takeaway_value_score": 8,
+        "clarity_score": 8,
+        "technical_coherence_score": 7,
+        "takeaway_value_score": 5,
         "source_faithfulness_score": 9,
-        "originality_score": 3
+        "originality_score": 4
       }
     },
     {
-      "candidate_id": "e95e12447b71a006",
-      "title": "Unlink a customer's identity provider subject with the GraphQL Admin API",
+      "candidate_id": "1193539a8ca88838",
+      "title": "nodaroai/app.nodaro.ai",
+      "proposed_text": "app.nodaro.ai chains 100+ AI media models into pipelines. Validate webhook triggers by simulating scheduled runs. https://github.com/nodaroai/app.nodaro.ai",
       "reasons": [
-        "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "Fact plus takeaway exceeds the per-link character budget.",
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
-        "Draft is 297 raw characters; limit is 280"
+        "Takeaway about webhook validation not documented; scores below threshold."
       ],
-      "proposed_text": "identityProviderSubjectDelete mutation unlinks a customer from a third‑party identity provider. Unlinking logs the customer out of all sessions, requiring re‑authentication on next sign‑in. https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api",
-      "evidence_quote": "Unlinking signs the customer out of all of their existing sessions.",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "The post restates the changelog fact without adding new insight or a unique perspective. Originality is below the required threshold."
-      ]
+      "editorial_review": {
+        "clarity_score": 8,
+        "technical_coherence_score": 6,
+        "takeaway_value_score": 4,
+        "source_faithfulness_score": 8,
+        "originality_score": 3
+      }
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "e95e12447b71a006",
-      "title": "Unlink a customer's identity provider subject with the GraphQL Admin API",
-      "url": "https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api",
-      "source": "Shopify Developer Changelog",
-      "primary_category": "developer_tools",
-      "priority_score": 63,
-      "hourly_adjusted_score": 63,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-23T13:00:00+00:00",
-      "days_old": 3.19,
+      "id": "a5e43b1572bfaf36",
+      "title": "paperclipai/paperclip",
+      "url": "https://github.com/paperclipai/paperclip",
+      "source": "GitHub Search",
+      "primary_category": "ai_and_automation",
+      "priority_score": 69,
+      "hourly_adjusted_score": 88,
+      "stars_current": 107689,
+      "stars_delta_24h": 365,
+      "stars_delta_baseline_hours": 24.0,
+      "stars_growth_percent_24h": 0.34,
+      "trend_signal": "measured_star_growth",
+      "published_at": "2026-10-27T02:13:42+00:00",
+      "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "f803dce2f9c77322",
-      "title": "POS UI extensions now support reactive storage access",
-      "url": "https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access",
+      "id": "1193539a8ca88838",
+      "title": "nodaroai/app.nodaro.ai",
+      "url": "https://github.com/nodaroai/app.nodaro.ai",
+      "source": "GitHub Search",
+      "primary_category": "ai_and_automation",
+      "priority_score": 72,
+      "hourly_adjusted_score": 76,
+      "stars_current": 12,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "insufficient_history",
+      "published_at": "2026-10-27T01:59:46+00:00",
+      "days_old": 0.01,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "55c557b3bc0267ca",
+      "title": "Securing your app, together",
+      "url": "https://shopify.dev/changelog/blog/securing-your-app-together",
       "source": "Shopify Developer Changelog",
       "primary_category": "commerce_and_digital_products",
       "priority_score": 69,
-      "hourly_adjusted_score": 61,
+      "hourly_adjusted_score": 69,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-22T16:00:00+00:00",
-      "days_old": 4.06,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "a46f1acaee2a44f1",
-      "title": "Show HN: Castellan – A real-time strategy game for agents",
-      "url": "https://rts.emersoftware.cl/",
-      "source": "Hacker News",
-      "primary_category": "product_and_workflow_tools",
-      "priority_score": 72,
-      "hourly_adjusted_score": 56,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-26T16:17:30+00:00",
-      "days_old": 0.05,
+      "published_at": "2026-10-20T19:00:00+00:00",
+      "days_old": 6.3,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
@@ -315,26 +301,26 @@
   ],
   "automatic_repair": {
     "attempted": true,
-    "drafts_submitted": 1,
+    "drafts_submitted": 0,
     "repaired_local_passes": 0,
-    "repair_rejections": 1,
+    "repair_rejections": 0,
     "repair_error": null,
     "editorial_repair_attempted": true,
-    "editorial_repair_drafts_submitted": 1,
+    "editorial_repair_drafts_submitted": 0,
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 1,
-    "submitted_for_independent_review": 1,
+    "locally_valid_drafts": 2,
+    "submitted_for_independent_review": 2,
     "passed_independent_review": 0,
-    "rejected_by_independent_review": 1,
+    "rejected_by_independent_review": 2,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
   "state_summary": {
     "used_candidates_in_cooldown": 16,
-    "recently_attempted_candidates": 26,
-    "recent_draft_passes_today": 4
+    "recently_attempted_candidates": 9,
+    "recent_draft_passes_today": 0
   }
 }

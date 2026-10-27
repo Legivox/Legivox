@@ -1,10 +1,10 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-26T22:56:35+05:30
+- Run time (IST): 2026-10-27T07:47:31+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 94
-- Independent editorial review: 0 draft(s) passed / 1 rejected
+- Candidate pool after freshness/diversity filters: 89
+- Independent editorial review: 0 draft(s) passed / 2 rejected
 - Drafts passing local checks: 0
 - Outcome: **skip**
 - Decision reason: Every draft submitted for independent editorial review was rejected; The hour was skipped.
@@ -22,13 +22,13 @@
 | GitHub Search · github-self-hosted | 10 | ok |
 | GitHub Search · github-shopify-commerce | 10 | ok |
 | GitHub Search · github-workflow-automation | 10 | ok |
-| Hacker News · hn-analytics-growth | 9 | ok |
+| Hacker News · hn-analytics-growth | 10 | ok |
 | Hacker News · hn-automation-api | 1 | ok |
 | Hacker News · hn-creator-business | 0 | ok |
 | Hacker News · hn-digital-products | 1 | ok |
 | Hacker News · hn-ecommerce-payments | 0 | ok |
 | Hacker News · hn-security-selfhost | 0 | ok |
-| Hacker News · hn-shopify | 10 | ok |
+| Hacker News · hn-shopify | 5 | ok |
 | Hacker News · hn-show-hn | 10 | ok |
 | Console.dev | 12 | ok |
 | Product Hunt | 40 | ok |
@@ -37,20 +37,20 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 79
-- Previously tracked repositories refreshed outside search results: 121
+- Repositories seen in this discovery run: 80
+- Previously tracked repositories refreshed outside search results: 120
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
-- Repositories with a 20–36 hour comparison baseline: 4
+- Repositories with a 20–36 hour comparison baseline: 6
 - First observations are baseline samples, not evidence of trending. Star velocity is reported only when a historical comparison exists.
 
 ## Primary-source verification
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| Unlink a customer's identity provider subject with the GraphQL Admin API | yes | 200 | https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api |
-| POS UI extensions now support reactive storage access | yes | 200 | https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access |
-| Show HN: Castellan – A real-time strategy game for agents | yes | 200 | https://rts.emersoftware.cl/ |
+| paperclipai/paperclip | yes | 200 | https://github.com/paperclipai/paperclip |
+| nodaroai/app.nodaro.ai | yes | 200 | https://github.com/nodaroai/app.nodaro.ai |
+| Securing your app, together | yes | 200 | https://shopify.dev/changelog/blog/securing-your-app-together |
 
 ## Selected draft candidates
 
@@ -59,33 +59,28 @@ No draft cleared the complete local and independent-editor gate. See the decisio
 ## Automatic repair attempt
 
 - Attempted: yes
-- Repaired drafts submitted: 1
+- Repaired drafts submitted: 0
 - Repaired drafts that passed local validation: 0
-- Repaired drafts rejected: 1
+- Repaired drafts rejected: 0
 - Repair error: none
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
-- POS UI extensions now support reactive storage access: Supporting quotes cover only 62% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: shopify.storage.current provides reactive storage access for POS UI extensions. Test cross‑target updates by subscribing to shopify.storage.current changes. https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access
-  - Model evidence quote: “The new shopify.storage.current API lets POS UI extension developers respond automatically when stored values change across extension targets on the same POS device.”
-  - Claim support: shopify.storage.current provides reactive storage access for POS UI extensions ← “The new shopify.storage.current API lets POS UI extension developers respond automatically when stored values change across extension targets on the same POS device.”
-- Show HN: Castellan – A real-time strategy game for agents: Opening sentence is too close to the source headline; add a distinct editorial framing.
-  - Rejected text: Castellan is a real‑time strategy game where AI agents battle. Measure agent decision latency to ensure smooth gameplay. https://rts.emersoftware.cl/
-  - Model evidence quote: “Castellan A real-time strategy game whose players are AI agents. Watch their battles.”
-  - Claim support: Castellan is a real‑time strategy game where AI agents battle ← “Castellan A real-time strategy game whose players are AI agents. Watch their battles.”
-- Unlink a customer's identity provider subject with the GraphQL Admin API: The post restates the changelog fact without adding new insight or a unique perspective. Originality is below the required threshold.
-  - Rejected text: identityProviderSubjectDelete unlinks a customer from a third‑party identity provider. Verify the mutation logs a sign‑out event before re‑linking. https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api
-- Unlink a customer's identity provider subject with the GraphQL Admin API: Editorial takeaway is too long; keep the analysis concrete and concise.; Fact plus takeaway exceeds the per-link character budget.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; Draft is 297 raw characters; limit is 280
-  - Rejected text: identityProviderSubjectDelete mutation unlinks a customer from a third‑party identity provider. Unlinking logs the customer out of all sessions, requiring re‑authentication on next sign‑in. https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api
-  - Model evidence quote: “Unlinking signs the customer out of all of their existing sessions.”
+- Securing your app, together: Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.; The factual opening bundles multiple features; narrow it to one capability.; Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.
+  - Rejected text: Shopify added AI security scans, expiring tokens, and log filtering. Run the AI Toolkit scan on your app endpoints before release. https://shopify.dev/changelog/blog/securing-your-app-together
+  - Model evidence quote: “We have new tools to help, including AI security scans, expiring tokens, and better log filtering”
+  - Claim support: Shopify added AI security scans, expiring tokens, and log filtering ← “We have new tools to help, including AI security scans, expiring tokens, and better log filtering”
+- paperclipai/paperclip: Takeaway is generic and not directly supported by source; originality low.
+  - Rejected text: paperclip is an open‑source app for managing agents at work. Run its agent orchestration tests before deploying to production. https://github.com/paperclipai/paperclip
+- nodaroai/app.nodaro.ai: Takeaway about webhook validation not documented; scores below threshold.
+  - Rejected text: app.nodaro.ai chains 100+ AI media models into pipelines. Validate webhook triggers by simulating scheduled runs. https://github.com/nodaroai/app.nodaro.ai
 
 ## Top discovery candidates considered
 
-- Unlink a customer's identity provider subject with the GraphQL Admin API | Shopify Developer Changelog | developer_tools | raw 63, adjusted 63 | https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api
-- POS UI extensions now support reactive storage access | Shopify Developer Changelog | commerce_and_digital_products | raw 69, adjusted 61 | https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access
-- Show HN: Castellan – A real-time strategy game for agents | Hacker News | product_and_workflow_tools | raw 72, adjusted 56 | https://rts.emersoftware.cl/
+- paperclipai/paperclip | GitHub Search | ai_and_automation | raw 69, adjusted 88 | current stars 107689 | GitHub stars +365 over about 24.0h | https://github.com/paperclipai/paperclip
+- nodaroai/app.nodaro.ai | GitHub Search | ai_and_automation | raw 72, adjusted 76 | current stars 12 | GitHub star trend: building baseline | https://github.com/nodaroai/app.nodaro.ai
+- Securing your app, together | Shopify Developer Changelog | commerce_and_digital_products | raw 69, adjusted 69 | https://shopify.dev/changelog/blog/securing-your-app-together
 
 ## Safety and interpretation
 
