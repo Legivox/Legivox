@@ -1,38 +1,38 @@
 {
-  "generated_at_ist": "2026-10-27T15:53:18+05:30",
-  "run_at_ist": "2026-10-27T15:53:18+05:30",
+  "generated_at_ist": "2026-10-27T16:51:27+05:30",
+  "run_at_ist": "2026-10-27T16:51:27+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 288,
-  "eligible_candidate_count": 176,
+  "candidate_count_raw": 283,
+  "eligible_candidate_count": 174,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4719
+      "total_count": 4724
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1001
+      "total_count": 1003
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 351
+      "total_count": 352
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2879
+      "total_count": 2883
     },
     {
       "source": "GitHub Search · github-digital-product-tools",
@@ -44,9 +44,9 @@
     {
       "source": "GitHub Search · github-ecommerce-digital-products",
       "kind": "github_repository",
-      "items_kept": 2,
+      "items_kept": 10,
       "status": "ok",
-      "total_count": 192
+      "total_count": 404
     },
     {
       "source": "GitHub Search · github-marketing-distribution",
@@ -60,21 +60,21 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2054
+      "total_count": 2056
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3259
+      "total_count": 3266
     },
     {
       "source": "GitHub Search · github-seller-operations",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 353
+      "total_count": 355
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
@@ -88,7 +88,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 265
+      "total_count": 266
     },
     {
       "source": "Hacker News · hn-analytics-growth",
@@ -116,7 +116,7 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 7
+      "total_count": 6
     },
     {
       "source": "Hacker News · hn-digital-products",
@@ -158,12 +158,12 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 10
+      "total_count": 8
     },
     {
       "source": "Hacker News · hn-shopify",
       "kind": "hacker_news",
-      "items_kept": 10,
+      "items_kept": 5,
       "status": "ok",
       "total_count": 10
     },
@@ -195,7 +195,7 @@
     {
       "source": "Product Hunt",
       "kind": "rss",
-      "items_kept": 40,
+      "items_kept": 39,
       "status": "ok"
     },
     {
@@ -259,10 +259,10 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-27T10:23:18+00:00",
+    "observed_at_utc": "2026-10-27T11:21:27+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 105,
-    "previously_tracked_repositories_refreshed": 95,
+    "repositories_seen_in_discovery": 106,
+    "previously_tracked_repositories_refreshed": 94,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
@@ -271,15 +271,6 @@
     "watchlist_limit": 200
   },
   "primary_source_checks": [
-    {
-      "candidate_id": "5b7aef4519e9bf2e",
-      "title": "Search brands that don't sell on Shopify in the Catalog API (beta)",
-      "source_url": "https://shopify.dev/changelog/search-brands-that-don-t-sell-on-shopify-in-the-catalog-api-beta",
-      "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/search-brands-that-don-t-sell-on-shopify-in-the-catalog-api-beta",
-      "http_status": 200,
-      "reason": ""
-    },
     {
       "candidate_id": "a92e52ee3c14a954",
       "title": "Show HN: Building the European Company Graph one website at a time",
@@ -290,11 +281,20 @@
       "reason": "Primary page title/content does not sufficiently match the candidate headline."
     },
     {
-      "candidate_id": "04e17b0deed20fba",
-      "title": "Show HN: Minebender – Minesweeper in Bend2 with proven no-guess assist",
-      "source_url": "https://github.com/luiscleto/minebender",
+      "candidate_id": "0e4d80d89275f877",
+      "title": "Show HN: PrettyUp – Free portrait editing for photos and videos in the browser",
+      "source_url": "https://www.prettyupapp.com/",
       "verified": true,
-      "final_url": "https://github.com/luiscleto/minebender",
+      "final_url": "https://www.prettyupapp.com/",
+      "http_status": 200,
+      "reason": ""
+    },
+    {
+      "candidate_id": "940481980f8e9746",
+      "title": "fenjo26/OpenGSC",
+      "source_url": "https://github.com/fenjo26/OpenGSC",
+      "verified": true,
+      "final_url": "https://github.com/fenjo26/OpenGSC",
       "http_status": 200,
       "reason": ""
     }
@@ -312,9 +312,58 @@
   ],
   "daily_draft_cap": 16,
   "daily_drafts_already_passed": 2,
-  "outcome": "skip",
-  "decision_reason": "All generated drafts failed the local evidence/editorial checks; the hour was skipped.",
-  "passing_drafts": [],
+  "outcome": "dry_run_passed",
+  "decision_reason": "At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.",
+  "passing_drafts": [
+    {
+      "candidate_id": "940481980f8e9746",
+      "title": "fenjo26/OpenGSC",
+      "source": "GitHub Search",
+      "source_kind": "github_repository",
+      "url": "https://github.com/fenjo26/OpenGSC",
+      "primary_source_verified": true,
+      "primary_source_title": "GitHub - fenjo26/OpenGSC: Self-hosted Google Search Console dashboard — rank tracking, keyword research, AI-visibility audits and an AI SEO content suite. Includes a 94-tool MCP server, so Claude Code or Cursor works with your SEO data directly. No subscription: your VPS, your API keys.",
+      "primary_source_final_url": "https://github.com/fenjo26/OpenGSC",
+      "primary_source_http_status": 200,
+      "category": "marketing_and_distribution",
+      "priority_score": 71,
+      "hourly_adjusted_score": 55,
+      "post_text": "OpenGSC is a self‑hosted Google Search Console dashboard with rank tracking and AI SEO tools. Verify that your VPS meets the 94‑tool MCP server requirement before deployment. https://github.com/fenjo26/OpenGSC",
+      "fact_sentence": "OpenGSC is a self‑hosted Google Search Console dashboard with rank tracking and AI SEO tools.",
+      "format": "tool_discovery",
+      "audience": "developers",
+      "angle": "SEO",
+      "rationale": "The primary source lists the dashboard’s core features and the 94‑tool MCP server, justifying the deployment check.",
+      "evidence_quote": "Self-hosted Google Search Console dashboard — rank tracking, keyword research, AI-visibility audits and an AI SEO content suite.",
+      "editorial_takeaway": "Verify that your VPS meets the 94‑tool MCP server requirement before deployment.",
+      "claim_evidence": [
+        {
+          "claim": "OpenGSC is a self‑hosted Google Search Console dashboard with rank tracking and AI SEO tools.",
+          "quote": "Self-hosted Google Search Console dashboard — rank tracking, keyword research, AI-visibility audits and an AI SEO content suite."
+        }
+      ],
+      "scores": {
+        "timeliness": 10,
+        "usefulness": 8,
+        "novelty": 7,
+        "evidence": 9,
+        "insight": 8
+      },
+      "editorial_score": 8.4,
+      "character_count": 209,
+      "status": "dry_run_passed_not_published",
+      "published_to_x": false,
+      "editorial_review": {
+        "clarity_score": 9,
+        "technical_coherence_score": 9,
+        "takeaway_value_score": 8,
+        "source_faithfulness_score": 9,
+        "originality_score": 8,
+        "reason": "All claims are directly supported and the takeaway is a useful, source‑backed next step.",
+        "passed": true
+      }
+    }
+  ],
   "rejected_drafts": [
     {
       "candidate_id": "a92e52ee3c14a954",
@@ -326,99 +375,22 @@
       ]
     },
     {
-      "candidate_id": "5b7aef4519e9bf2e",
-      "title": "Search brands that don't sell on Shopify in the Catalog API (beta)",
+      "candidate_id": "0e4d80d89275f877",
+      "title": "Show HN: PrettyUp – Free portrait editing for photos and videos in the browser",
+      "proposed_text": "PrettyUp offers free online face and body editing for photos and videos. Test edge‑case body proportions before publishing to avoid distortion. https://www.prettyupapp.com/",
       "reasons": [
-        "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "Fact plus takeaway exceeds the per-link character budget.",
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
-        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
-        "Draft is 308 raw characters; limit is 280"
+        "Takeaway about edge‑case body proportions isn’t directly supported by the source."
       ],
-      "proposed_text": "Shopify Catalog API beta adds a `sources` parameter to search_catalog. Set `sources` to `[\"shopify\",\"external\"]` to include external brands, but remember external items have `eligible.native_checkout:false`. https://shopify.dev/changelog/posts/search-brands-that-don-t-sell-on-shopify-in-the-catalog-api-beta",
-      "evidence_quote": "The Catalog API beta now supports a `sources` parameter on `search_catalog` that controls which products you return",
-      "claim_evidence": [
-        {
-          "claim": "The source says capability X",
-          "quote": "The Catalog API beta now supports a `sources` parameter on `search_catalog` that controls which products you return"
-        }
-      ]
-    },
-    {
-      "candidate_id": "04e17b0deed20fba",
-      "title": "Show HN: Minebender – Minesweeper in Bend2 with proven no-guess assist",
-      "reasons": [
-        "Opening sentence is too close to the source headline; add a distinct editorial framing."
-      ],
-      "proposed_text": "Minebender is a Minesweeper game in Bend2 with a no‑guess assist. Use the provided laws to test edge cases where the assist reveals hidden mines. https://github.com/luiscleto/minebender",
-      "evidence_quote": "Minesweeper with a no-guess assist, specified as laws and proven in Bend 2",
-      "claim_evidence": [
-        {
-          "claim": "The source says capability X",
-          "quote": "Minesweeper with a no-guess assist, specified as laws and proven in Bend 2"
-        }
-      ]
-    },
-    {
-      "candidate_id": "5b7aef4519e9bf2e",
-      "title": "Search brands that don't sell on Shopify in the Catalog API (beta)",
-      "reasons": [
-        "Fact sentence is too long; narrow it to one source-backed capability.",
-        "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "Fact plus takeaway exceeds the per-link character budget.",
-        "Editorial takeaway is too long to be a useful concise second sentence.",
-        "Draft is 466 raw characters; limit is 280",
-        "No claim-by-claim supporting evidence was provided",
-        "Supporting quotes cover only 55% of factual wording; narrow the claim or provide a closer primary-source quote"
-      ],
-      "proposed_text": "External products returned by the Catalog API have `eligible.native_checkout:false` and cannot be bought through Shopify checkout. When filtering for Shopify‑only products, simply omit the `sources` parameter; to include external brands, set `sources` to `[\"shopify\",\"external\"]` and verify the `eligible.native_checkout` flag is false before attempting a checkout. https://shopify.dev/changelog/posts/search-brands-that-don-t-sell-on-shopify-in-the-catalog-api-beta",
-      "evidence_quote": "External products always return `eligible.native_checkout: false`, so shoppers can't buy them through Shopify checkout and these products don't earn Promoted Placements commission.",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "Fact plus takeaway exceeds the per-link character budget.",
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
-        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
-        "Draft is 308 raw characters; limit is 280"
-      ]
-    },
-    {
-      "candidate_id": "04e17b0deed20fba",
-      "title": "Show HN: Minebender – Minesweeper in Bend2 with proven no-guess assist",
-      "reasons": [
-        "Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.",
-        "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "No claim-by-claim supporting evidence was provided",
-        "Supporting quotes cover only 43% of factual wording; narrow the claim or provide a closer primary-source quote"
-      ],
-      "proposed_text": "Minebender is a Bend2 implementation of Minesweeper that includes a no‑guess assist feature. Use the provided laws to write tests that trigger the assist, ensuring it correctly reveals hidden mines without guessing. https://github.com/luiscleto/minebender",
-      "evidence_quote": "Minesweeper with a no‑guess assist, specified as laws and proven in Bend 2",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "Opening sentence is too close to the source headline; add a distinct editorial framing."
-      ]
+      "editorial_review": {
+        "clarity_score": 8,
+        "technical_coherence_score": 7,
+        "takeaway_value_score": 6,
+        "source_faithfulness_score": 8,
+        "originality_score": 7
+      }
     }
   ],
   "candidate_shortlist": [
-    {
-      "id": "5b7aef4519e9bf2e",
-      "title": "Search brands that don't sell on Shopify in the Catalog API (beta)",
-      "url": "https://shopify.dev/changelog/posts/search-brands-that-don-t-sell-on-shopify-in-the-catalog-api-beta",
-      "source": "Shopify Developer Changelog",
-      "primary_category": "commerce_and_digital_products",
-      "priority_score": 72,
-      "hourly_adjusted_score": 72,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-27T10:00:00+00:00",
-      "days_old": 0.02,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
     {
       "id": "a92e52ee3c14a954",
       "title": "Show HN: Building the European Company Graph one website at a time",
@@ -433,25 +405,44 @@
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
       "published_at": "2026-10-26T13:58:24+00:00",
-      "days_old": 0.85,
+      "days_old": 0.89,
       "primary_source_verified": false,
       "primary_source_http_status": null,
       "primary_source_reason": "Primary page title/content does not sufficiently match the candidate headline."
     },
     {
-      "id": "04e17b0deed20fba",
-      "title": "Show HN: Minebender – Minesweeper in Bend2 with proven no-guess assist",
-      "url": "https://github.com/luiscleto/minebender",
+      "id": "0e4d80d89275f877",
+      "title": "Show HN: PrettyUp – Free portrait editing for photos and videos in the browser",
+      "url": "https://www.prettyupapp.com/",
       "source": "Hacker News",
       "primary_category": "product_and_workflow_tools",
-      "priority_score": 61,
-      "hourly_adjusted_score": 63,
+      "priority_score": 56,
+      "hourly_adjusted_score": 58,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-27T09:53:23+00:00",
+      "published_at": "2026-10-27T09:49:40+00:00",
+      "days_old": 0.06,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "940481980f8e9746",
+      "title": "fenjo26/OpenGSC",
+      "url": "https://github.com/fenjo26/OpenGSC",
+      "source": "GitHub Search",
+      "primary_category": "marketing_and_distribution",
+      "priority_score": 71,
+      "hourly_adjusted_score": 55,
+      "stars_current": 51,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "insufficient_history",
+      "published_at": "2026-10-27T10:47:46+00:00",
       "days_old": 0.02,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
@@ -459,27 +450,75 @@
     }
   ],
   "automatic_repair": {
-    "attempted": true,
-    "drafts_submitted": 2,
+    "attempted": false,
+    "drafts_submitted": 0,
     "repaired_local_passes": 0,
-    "repair_rejections": 2,
+    "repair_rejections": 0,
     "repair_error": null,
     "editorial_repair_attempted": false,
     "editorial_repair_drafts_submitted": 0,
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 0,
-    "submitted_for_independent_review": 0,
-    "passed_independent_review": 0,
-    "rejected_by_independent_review": 0,
+    "locally_valid_drafts": 2,
+    "submitted_for_independent_review": 2,
+    "passed_independent_review": 1,
+    "rejected_by_independent_review": 1,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
+  "recommended_draft": {
+    "candidate_id": "940481980f8e9746",
+    "title": "fenjo26/OpenGSC",
+    "source": "GitHub Search",
+    "source_kind": "github_repository",
+    "url": "https://github.com/fenjo26/OpenGSC",
+    "primary_source_verified": true,
+    "primary_source_title": "GitHub - fenjo26/OpenGSC: Self-hosted Google Search Console dashboard — rank tracking, keyword research, AI-visibility audits and an AI SEO content suite. Includes a 94-tool MCP server, so Claude Code or Cursor works with your SEO data directly. No subscription: your VPS, your API keys.",
+    "primary_source_final_url": "https://github.com/fenjo26/OpenGSC",
+    "primary_source_http_status": 200,
+    "category": "marketing_and_distribution",
+    "priority_score": 71,
+    "hourly_adjusted_score": 55,
+    "post_text": "OpenGSC is a self‑hosted Google Search Console dashboard with rank tracking and AI SEO tools. Verify that your VPS meets the 94‑tool MCP server requirement before deployment. https://github.com/fenjo26/OpenGSC",
+    "fact_sentence": "OpenGSC is a self‑hosted Google Search Console dashboard with rank tracking and AI SEO tools.",
+    "format": "tool_discovery",
+    "audience": "developers",
+    "angle": "SEO",
+    "rationale": "The primary source lists the dashboard’s core features and the 94‑tool MCP server, justifying the deployment check.",
+    "evidence_quote": "Self-hosted Google Search Console dashboard — rank tracking, keyword research, AI-visibility audits and an AI SEO content suite.",
+    "editorial_takeaway": "Verify that your VPS meets the 94‑tool MCP server requirement before deployment.",
+    "claim_evidence": [
+      {
+        "claim": "OpenGSC is a self‑hosted Google Search Console dashboard with rank tracking and AI SEO tools.",
+        "quote": "Self-hosted Google Search Console dashboard — rank tracking, keyword research, AI-visibility audits and an AI SEO content suite."
+      }
+    ],
+    "scores": {
+      "timeliness": 10,
+      "usefulness": 8,
+      "novelty": 7,
+      "evidence": 9,
+      "insight": 8
+    },
+    "editorial_score": 8.4,
+    "character_count": 209,
+    "status": "dry_run_passed_not_published",
+    "published_to_x": false,
+    "editorial_review": {
+      "clarity_score": 9,
+      "technical_coherence_score": 9,
+      "takeaway_value_score": 8,
+      "source_faithfulness_score": 9,
+      "originality_score": 8,
+      "reason": "All claims are directly supported and the takeaway is a useful, source‑backed next step.",
+      "passed": true
+    }
+  },
   "state_summary": {
-    "used_candidates_in_cooldown": 18,
-    "recently_attempted_candidates": 23,
-    "recent_draft_passes_today": 2
+    "used_candidates_in_cooldown": 19,
+    "recently_attempted_candidates": 25,
+    "recent_draft_passes_today": 3
   }
 }
