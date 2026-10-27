@@ -1,0 +1,61 @@
+{
+  "date_ist": "2026-10-27",
+  "prepared_at_ist": "2026-10-27 13:42:26 IST",
+  "research_window_days": 1,
+  "research_source": "Multidomain discovery + independent editorial review",
+  "source_report_generated_at_ist": "2026-10-27T13:02:41+05:30",
+  "source_report_age_minutes": 39,
+  "star_baseline_repositories": 9,
+  "posts": [
+    {
+      "idea_id": "multidomain-c25a1f0e4b4ff7cd",
+      "niche": "creator_and_indie_business",
+      "problem": "JasonColapietro/suede-creator-skills",
+      "evidence": "Primary source verified (HTTP 200): https://github.com/JasonColapietro/suede-creator-skills. Exact evidence: Open‑source skills for Claude Code and Codex, with an MCP server, a PyPI package and Suede Awesome Everything, a directory that scores AI agent skills 0 to 99.",
+      "solution_hypothesis": "Run a sample skill to confirm its 0‑99 score; mismatches flag integration bugs.",
+      "text": "Suede‑Creator‑Skills provides a PyPI package and MCP server for Claude Code and Codex skills. Run a sample skill to confirm its 0‑99 score; mismatches flag integration bugs. https://github.com/JasonColapietro/suede-creator-skills",
+      "text_hash": "86e4ce80f0a1151a63da89ef84ff95463cf51655de78f4e094109eef672b71e6",
+      "image_query": "",
+      "research": {
+        "query": "Multidomain primary-source discovery and independent editorial review",
+        "score": 8.25,
+        "hits": [
+          {
+            "title": "JasonColapietro/suede-creator-skills",
+            "url": "https://github.com/JasonColapietro/suede-creator-skills",
+            "external_url": "https://github.com/JasonColapietro/suede-creator-skills",
+            "points": 0,
+            "comments": 0,
+            "created_at": "2026-10-27T13:02:41+05:30",
+            "matched_terms": []
+          }
+        ],
+        "error": null
+      },
+      "status": "published: https://x.com/i/status/2114993652124787069",
+      "slot": 2,
+      "editorial_scores": {
+        "model": {
+          "timeliness": 9,
+          "usefulness": 8,
+          "novelty": 7,
+          "evidence": 9,
+          "insight": 8
+        },
+        "overall": 8.25,
+        "independent_review": {
+          "clarity_score": 9,
+          "technical_coherence_score": 9,
+          "takeaway_value_score": 9,
+          "source_faithfulness_score": 9,
+          "originality_score": 9,
+          "reason": "Clear, technically accurate, source-backed, and offers a practical next step.",
+          "passed": true
+        }
+      },
+      "published_at_ist": "2026-10-27T13:42:36+05:30",
+      "published_url": "https://x.com/i/status/2114993652124787069",
+      "image": null
+    }
+  ]
+}
