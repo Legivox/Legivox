@@ -1,10 +1,10 @@
 {
-  "generated_at_ist": "2026-10-27T12:38:03+05:30",
-  "run_at_ist": "2026-10-27T12:38:03+05:30",
+  "generated_at_ist": "2026-10-27T13:02:41+05:30",
+  "run_at_ist": "2026-10-27T13:02:41+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 274,
-  "eligible_candidate_count": 171,
+  "candidate_count_raw": 287,
+  "eligible_candidate_count": 178,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
@@ -18,7 +18,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 995
+      "total_count": 996
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
@@ -32,12 +32,12 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2865
+      "total_count": 2867
     },
     {
       "source": "GitHub Search · github-digital-product-tools",
       "kind": "github_repository",
-      "items_kept": 2,
+      "items_kept": 10,
       "status": "ok",
       "total_count": 12
     },
@@ -60,21 +60,21 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2037
+      "total_count": 2038
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3240
+      "total_count": 3241
     },
     {
       "source": "GitHub Search · github-seller-operations",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 350
+      "total_count": 351
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
@@ -116,7 +116,7 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 7
+      "total_count": 6
     },
     {
       "source": "Hacker News · hn-digital-products",
@@ -158,12 +158,12 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 10
+      "total_count": 8
     },
     {
       "source": "Hacker News · hn-shopify",
       "kind": "hacker_news",
-      "items_kept": 5,
+      "items_kept": 6,
       "status": "ok",
       "total_count": 10
     },
@@ -195,7 +195,7 @@
     {
       "source": "Product Hunt",
       "kind": "rss",
-      "items_kept": 41,
+      "items_kept": 40,
       "status": "ok"
     },
     {
@@ -259,14 +259,14 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-27T07:08:03+00:00",
+    "observed_at_utc": "2026-10-27T07:32:41+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 97,
-    "previously_tracked_repositories_refreshed": 103,
+    "repositories_seen_in_discovery": 110,
+    "previously_tracked_repositories_refreshed": 90,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
-    "snapshots_added_this_run": 200,
-    "repositories_with_20_to_36_hour_baseline": 10,
+    "snapshots_added_this_run": 60,
+    "repositories_with_20_to_36_hour_baseline": 9,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
@@ -281,20 +281,20 @@
       "reason": "Primary page title/content does not sufficiently match the candidate headline."
     },
     {
-      "candidate_id": "f803dce2f9c77322",
-      "title": "POS UI extensions now support reactive storage access",
-      "source_url": "https://shopify.dev/changelog/pos-ui-extensions-now-support-reactive-storage-access",
+      "candidate_id": "5564688c3f886a84",
+      "title": "enapt/SwarmLLM",
+      "source_url": "https://github.com/enapt/SwarmLLM",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access",
+      "final_url": "https://github.com/enapt/SwarmLLM",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "aaae725ea5c245bd",
-      "title": "indranilbanerjee/digital-marketing-pro",
-      "source_url": "https://github.com/indranilbanerjee/digital-marketing-pro",
+      "candidate_id": "c25a1f0e4b4ff7cd",
+      "title": "JasonColapietro/suede-creator-skills",
+      "source_url": "https://github.com/JasonColapietro/suede-creator-skills",
       "verified": true,
-      "final_url": "https://github.com/indranilbanerjee/digital-marketing-pro",
+      "final_url": "https://github.com/JasonColapietro/suede-creator-skills",
       "http_status": 200,
       "reason": ""
     }
@@ -312,9 +312,58 @@
   ],
   "daily_draft_cap": 16,
   "daily_drafts_already_passed": 1,
-  "outcome": "skip",
-  "decision_reason": "All generated drafts failed the local evidence/editorial checks; the hour was skipped.",
-  "passing_drafts": [],
+  "outcome": "dry_run_passed",
+  "decision_reason": "At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.",
+  "passing_drafts": [
+    {
+      "candidate_id": "c25a1f0e4b4ff7cd",
+      "title": "JasonColapietro/suede-creator-skills",
+      "source": "GitHub Search",
+      "source_kind": "github_repository",
+      "url": "https://github.com/JasonColapietro/suede-creator-skills",
+      "primary_source_verified": true,
+      "primary_source_title": "GitHub - JasonColapietro/suede-creator-skills: Open-source skills for Claude Code and Codex, with an MCP server, a PyPI package and Suede Awesome Everything, a directory that scores AI agent skills 0 to 99. Created by Jason Colapietro, founder and CEO of Suede AI.",
+      "primary_source_final_url": "https://github.com/JasonColapietro/suede-creator-skills",
+      "primary_source_http_status": 200,
+      "category": "creator_and_indie_business",
+      "priority_score": 67,
+      "hourly_adjusted_score": 61,
+      "post_text": "Suede‑Creator‑Skills provides a PyPI package and MCP server for Claude Code and Codex skills. Run a sample skill to confirm its 0‑99 score; mismatches flag integration bugs. https://github.com/JasonColapietro/suede-creator-skills",
+      "fact_sentence": "Suede‑Creator‑Skills provides a PyPI package and MCP server for Claude Code and Codex skills.",
+      "format": "tool_discovery",
+      "audience": "AI creators",
+      "angle": "skill orchestration",
+      "rationale": "Fact highlights key components; takeaway offers a validation step.",
+      "evidence_quote": "Open‑source skills for Claude Code and Codex, with an MCP server, a PyPI package and Suede Awesome Everything, a directory that scores AI agent skills 0 to 99.",
+      "editorial_takeaway": "Run a sample skill to confirm its 0‑99 score; mismatches flag integration bugs.",
+      "claim_evidence": [
+        {
+          "claim": "Suede‑Creator‑Skills provides a PyPI package and MCP server for Claude Code and Codex skills.",
+          "quote": "Open‑source skills for Claude Code and Codex, with an MCP server, a PyPI package and Suede Awesome Everything, a directory that scores AI agent skills 0 to 99."
+        }
+      ],
+      "scores": {
+        "timeliness": 9,
+        "usefulness": 8,
+        "novelty": 7,
+        "evidence": 9,
+        "insight": 8
+      },
+      "editorial_score": 8.25,
+      "character_count": 229,
+      "status": "dry_run_passed_not_published",
+      "published_to_x": false,
+      "editorial_review": {
+        "clarity_score": 9,
+        "technical_coherence_score": 9,
+        "takeaway_value_score": 9,
+        "source_faithfulness_score": 9,
+        "originality_score": 9,
+        "reason": "Clear, technically accurate, source-backed, and offers a practical next step.",
+        "passed": true
+      }
+    }
+  ],
   "rejected_drafts": [
     {
       "candidate_id": "a92e52ee3c14a954",
@@ -326,49 +375,18 @@
       ]
     },
     {
-      "candidate_id": "f803dce2f9c77322",
-      "title": "POS UI extensions now support reactive storage access",
+      "candidate_id": "5564688c3f886a84",
+      "title": "enapt/SwarmLLM",
       "reasons": [
-        "Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.",
-        "timeliness score is below the minimum 6/10"
+        "Editorial takeaway is not specific enough to this candidate's technical/product details."
       ],
-      "proposed_text": "shopify.storage.current lets POS UI extensions react to storage changes across targets. Test that a UI update fires when another target writes the same key. https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access",
-      "evidence_quote": "The new `shopify.storage.current` API lets POS UI extension developers respond automatically when stored values change across extension targets on the same POS device.",
+      "proposed_text": "SwarmLLM runs OpenAI‑compatible chat models locally and can shard across machines. Run two nodes to benchmark latency; a single node may mask scaling limits. https://github.com/enapt/SwarmLLM",
+      "evidence_quote": "Free, open‑source app that runs AI chat models on your own computer — and lets computers team up over the internet to run models too big for one machine. No account, no crypto. OpenAI‑ and Anthropic‑compatible API.",
       "claim_evidence": [
         {
-          "claim": "shopify.storage.current lets POS UI extensions react to storage changes across targets.",
-          "quote": "The new `shopify.storage.current` API lets POS UI extension developers respond automatically when stored values change across extension targets on the same POS device."
+          "claim": "SwarmLLM runs OpenAI‑compatible chat models locally and can shard across machines.",
+          "quote": "Free, open‑source app that runs AI chat models on your own computer — and lets computers team up over the internet to run models too big for one machine. No account, no crypto. OpenAI‑ and Anthropic‑compatible API."
         }
-      ]
-    },
-    {
-      "candidate_id": "aaae725ea5c245bd",
-      "title": "indranilbanerjee/digital-marketing-pro",
-      "reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability.",
-        "timeliness score is below the minimum 6/10"
-      ],
-      "proposed_text": "digital-marketing-pro is an AI marketing OS for strategy, SEO, and paid media. Generate a campaign plan and check it lists audience segments. https://github.com/indranilbanerjee/digital-marketing-pro",
-      "evidence_quote": "An open-source AI based digital marketing operating system for strategy, SEO, AEO/GEO, paid media, content, CRM, and analytics - grounded in brand context, human approval, and verifiable outputs.",
-      "claim_evidence": [
-        {
-          "claim": "digital-marketing-pro is an AI marketing OS for strategy, SEO, and paid media.",
-          "quote": "An open-source AI based digital marketing operating system for strategy, SEO, AEO/GEO, paid media, content, CRM, and analytics - grounded in brand context, human approval, and verifiable outputs."
-        }
-      ]
-    },
-    {
-      "candidate_id": "f803dce2f9c77322",
-      "title": "POS UI extensions now support reactive storage access",
-      "reasons": [
-        "Opening sentence is too close to the source headline; add a distinct editorial framing."
-      ],
-      "proposed_text": "shopify.storage.current supports reactive storage access in POS UI extensions. Verify that a signal’s value remains undefined until the key finishes loading. https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access",
-      "evidence_quote": "Stored values load asynchronously, so a signal’s value is initially `undefined` until its key finishes loading.",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.",
-        "timeliness score is below the minimum 6/10"
       ]
     }
   ],
@@ -387,72 +405,120 @@
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
       "published_at": "2026-10-26T13:58:24+00:00",
-      "days_old": 0.72,
+      "days_old": 0.73,
       "primary_source_verified": false,
       "primary_source_http_status": null,
       "primary_source_reason": "Primary page title/content does not sufficiently match the candidate headline."
     },
     {
-      "id": "f803dce2f9c77322",
-      "title": "POS UI extensions now support reactive storage access",
-      "url": "https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access",
-      "source": "Shopify Developer Changelog",
-      "primary_category": "commerce_and_digital_products",
-      "priority_score": 63,
-      "hourly_adjusted_score": 63,
-      "stars_current": null,
+      "id": "5564688c3f886a84",
+      "title": "enapt/SwarmLLM",
+      "url": "https://github.com/enapt/SwarmLLM",
+      "source": "GitHub Search",
+      "primary_category": "security_and_self_hosting",
+      "priority_score": 67,
+      "hourly_adjusted_score": 61,
+      "stars_current": 65,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-22T16:00:00+00:00",
-      "days_old": 4.63,
+      "trend_signal": "insufficient_history",
+      "published_at": "2026-10-27T07:32:39+00:00",
+      "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "aaae725ea5c245bd",
-      "title": "indranilbanerjee/digital-marketing-pro",
-      "url": "https://github.com/indranilbanerjee/digital-marketing-pro",
+      "id": "c25a1f0e4b4ff7cd",
+      "title": "JasonColapietro/suede-creator-skills",
+      "url": "https://github.com/JasonColapietro/suede-creator-skills",
       "source": "GitHub Search",
-      "primary_category": "marketing_and_distribution",
-      "priority_score": 68,
-      "hourly_adjusted_score": 62,
-      "stars_current": 910,
+      "primary_category": "creator_and_indie_business",
+      "priority_score": 67,
+      "hourly_adjusted_score": 61,
+      "stars_current": 126,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "insufficient_history",
-      "published_at": "2026-10-27T06:43:59+00:00",
-      "days_old": 0.02,
+      "published_at": "2026-10-27T06:48:07+00:00",
+      "days_old": 0.03,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     }
   ],
   "automatic_repair": {
-    "attempted": true,
-    "drafts_submitted": 1,
+    "attempted": false,
+    "drafts_submitted": 0,
     "repaired_local_passes": 0,
-    "repair_rejections": 1,
+    "repair_rejections": 0,
     "repair_error": null,
     "editorial_repair_attempted": false,
     "editorial_repair_drafts_submitted": 0,
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 0,
-    "submitted_for_independent_review": 0,
-    "passed_independent_review": 0,
+    "locally_valid_drafts": 1,
+    "submitted_for_independent_review": 1,
+    "passed_independent_review": 1,
     "rejected_by_independent_review": 0,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
+  "recommended_draft": {
+    "candidate_id": "c25a1f0e4b4ff7cd",
+    "title": "JasonColapietro/suede-creator-skills",
+    "source": "GitHub Search",
+    "source_kind": "github_repository",
+    "url": "https://github.com/JasonColapietro/suede-creator-skills",
+    "primary_source_verified": true,
+    "primary_source_title": "GitHub - JasonColapietro/suede-creator-skills: Open-source skills for Claude Code and Codex, with an MCP server, a PyPI package and Suede Awesome Everything, a directory that scores AI agent skills 0 to 99. Created by Jason Colapietro, founder and CEO of Suede AI.",
+    "primary_source_final_url": "https://github.com/JasonColapietro/suede-creator-skills",
+    "primary_source_http_status": 200,
+    "category": "creator_and_indie_business",
+    "priority_score": 67,
+    "hourly_adjusted_score": 61,
+    "post_text": "Suede‑Creator‑Skills provides a PyPI package and MCP server for Claude Code and Codex skills. Run a sample skill to confirm its 0‑99 score; mismatches flag integration bugs. https://github.com/JasonColapietro/suede-creator-skills",
+    "fact_sentence": "Suede‑Creator‑Skills provides a PyPI package and MCP server for Claude Code and Codex skills.",
+    "format": "tool_discovery",
+    "audience": "AI creators",
+    "angle": "skill orchestration",
+    "rationale": "Fact highlights key components; takeaway offers a validation step.",
+    "evidence_quote": "Open‑source skills for Claude Code and Codex, with an MCP server, a PyPI package and Suede Awesome Everything, a directory that scores AI agent skills 0 to 99.",
+    "editorial_takeaway": "Run a sample skill to confirm its 0‑99 score; mismatches flag integration bugs.",
+    "claim_evidence": [
+      {
+        "claim": "Suede‑Creator‑Skills provides a PyPI package and MCP server for Claude Code and Codex skills.",
+        "quote": "Open‑source skills for Claude Code and Codex, with an MCP server, a PyPI package and Suede Awesome Everything, a directory that scores AI agent skills 0 to 99."
+      }
+    ],
+    "scores": {
+      "timeliness": 9,
+      "usefulness": 8,
+      "novelty": 7,
+      "evidence": 9,
+      "insight": 8
+    },
+    "editorial_score": 8.25,
+    "character_count": 229,
+    "status": "dry_run_passed_not_published",
+    "published_to_x": false,
+    "editorial_review": {
+      "clarity_score": 9,
+      "technical_coherence_score": 9,
+      "takeaway_value_score": 9,
+      "source_faithfulness_score": 9,
+      "originality_score": 9,
+      "reason": "Clear, technically accurate, source-backed, and offers a practical next step.",
+      "passed": true
+    }
+  },
   "state_summary": {
-    "used_candidates_in_cooldown": 17,
-    "recently_attempted_candidates": 16,
-    "recent_draft_passes_today": 1
+    "used_candidates_in_cooldown": 18,
+    "recently_attempted_candidates": 18,
+    "recent_draft_passes_today": 2
   }
 }

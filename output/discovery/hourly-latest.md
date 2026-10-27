@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-27T12:38:03+05:30
+- Run time (IST): 2026-10-27T13:02:41+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 171
-- Independent editorial review: 0 draft(s) passed / 0 rejected
-- Drafts passing local checks: 0
-- Outcome: **skip**
-- Decision reason: All generated drafts failed the local evidence/editorial checks; the hour was skipped.
+- Candidate pool after freshness/diversity filters: 178
+- Independent editorial review: 1 draft(s) passed / 0 rejected
+- Drafts passing local checks: 1
+- Outcome: **dry_run_passed**
+- Decision reason: At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.
 
 ## Source health
 
@@ -17,7 +17,7 @@
 | GitHub Search · github-analytics-seo | 10 | ok |
 | GitHub Search · github-creator-infrastructure | 10 | ok |
 | GitHub Search · github-developer-tools | 10 | ok |
-| GitHub Search · github-digital-product-tools | 2 | ok |
+| GitHub Search · github-digital-product-tools | 10 | ok |
 | GitHub Search · github-ecommerce-digital-products | 10 | ok |
 | GitHub Search · github-marketing-distribution | 10 | ok |
 | GitHub Search · github-mcp-servers | 10 | ok |
@@ -35,12 +35,12 @@
 | Hacker News · hn-marketing-distribution | 0 | ok |
 | Hacker News · hn-security-selfhost | 0 | ok |
 | Hacker News · hn-seller-operations | 0 | ok |
-| Hacker News · hn-shopify | 5 | ok |
+| Hacker News · hn-shopify | 6 | ok |
 | Hacker News · hn-show-hn | 10 | ok |
 | Ahrefs Blog | 4 | ok |
 | Console.dev | 12 | ok |
 | Indie Hackers (unofficial third-party feed) | 5 | ok |
-| Product Hunt | 41 | ok |
+| Product Hunt | 40 | ok |
 | Shopify Community | 30 | ok |
 | Shopify Developer Changelog | 9 | ok |
 | Stripe Blog | 2 | ok |
@@ -54,11 +54,11 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 97
-- Previously tracked repositories refreshed outside search results: 103
+- Repositories seen in this discovery run: 110
+- Previously tracked repositories refreshed outside search results: 90
 - Refresh failures: 0
-- Star snapshots recorded this run: 200
-- Repositories with a 20–36 hour comparison baseline: 10
+- Star snapshots recorded this run: 60
+- Repositories with a 20–36 hour comparison baseline: 9
 - First observations are baseline samples, not evidence of trending. Star velocity is reported only when a historical comparison exists.
 
 ## Primary-source verification
@@ -66,46 +66,62 @@
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
 | Show HN: Building the European Company Graph one website at a time | no | — | Primary page title/content does not sufficiently match the candidate headline. |
-| POS UI extensions now support reactive storage access | yes | 200 | https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access |
-| indranilbanerjee/digital-marketing-pro | yes | 200 | https://github.com/indranilbanerjee/digital-marketing-pro |
+| enapt/SwarmLLM | yes | 200 | https://github.com/enapt/SwarmLLM |
+| JasonColapietro/suede-creator-skills | yes | 200 | https://github.com/JasonColapietro/suede-creator-skills |
 
 ## Selected draft candidates
 
-No candidate produced a draft that passed every local check. Skipping is intentional.
+### Draft option 1: JasonColapietro/suede-creator-skills
+
+- Category: creator_and_indie_business
+- Source: GitHub Search
+- Format: tool_discovery
+- Editorial score: 8.25/10
+- Model scores: timeliness 9/10, usefulness 8/10, novelty 7/10, evidence 9/10, insight 8/10
+- Independent editor scores: {"clarity_score": 9, "technical_coherence_score": 9, "takeaway_value_score": 9, "source_faithfulness_score": 9, "originality_score": 9, "reason": "Clear, technically accurate, source-backed, and offers a practical next step.", "passed": true}
+- Live primary page: https://github.com/JasonColapietro/suede-creator-skills (HTTP 200)
+- Exact source evidence: “Open‑source skills for Claude Code and Codex, with an MCP server, a PyPI package and Suede Awesome Everything, a directory that scores AI agent skills 0 to 99.”
+- Why this angle: Fact highlights key components; takeaway offers a validation step.
+- Editorial takeaway: Run a sample skill to confirm its 0‑99 score; mismatches flag integration bugs.
+- Source: https://github.com/JasonColapietro/suede-creator-skills
+
+**Claim-by-claim source quotes:**
+
+- Suede‑Creator‑Skills provides a PyPI package and MCP server for Claude Code and Codex skills. ← “Open‑source skills for Claude Code and Codex, with an MCP server, a PyPI package and Suede Awesome Everything, a directory that scores AI agent skills 0 to 99.”
+
+Proposed post (not published):
+
+> Suede‑Creator‑Skills provides a PyPI package and MCP server for Claude Code and Codex skills. Run a sample skill to confirm its 0‑99 score; mismatches flag integration bugs. https://github.com/JasonColapietro/suede-creator-skills
+
+- Length: 229/280 raw characters
+- Automated gate: passed live source, evidence, originality, URL and length checks; live publishing is disabled in dry-run mode.
 
 ## Automatic repair attempt
 
-- Attempted: yes
-- Repaired drafts submitted: 1
+- Attempted: no
+- Repaired drafts submitted: 0
 - Repaired drafts that passed local validation: 0
-- Repaired drafts rejected: 1
+- Repaired drafts rejected: 0
 - Repair error: none
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
 - Show HN: Building the European Company Graph one website at a time: Primary page title/content does not sufficiently match the candidate headline.
-- POS UI extensions now support reactive storage access: Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.; timeliness score is below the minimum 6/10
-  - Rejected text: shopify.storage.current lets POS UI extensions react to storage changes across targets. Test that a UI update fires when another target writes the same key. https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access
-  - Model evidence quote: “The new `shopify.storage.current` API lets POS UI extension developers respond automatically when stored values change across extension targets on the same POS device.”
-  - Claim support: shopify.storage.current lets POS UI extensions react to storage changes across targets. ← “The new `shopify.storage.current` API lets POS UI extension developers respond automatically when stored values change across extension targets on the same POS device.”
-- indranilbanerjee/digital-marketing-pro: The factual opening bundles multiple features; narrow it to one capability.; timeliness score is below the minimum 6/10
-  - Rejected text: digital-marketing-pro is an AI marketing OS for strategy, SEO, and paid media. Generate a campaign plan and check it lists audience segments. https://github.com/indranilbanerjee/digital-marketing-pro
-  - Model evidence quote: “An open-source AI based digital marketing operating system for strategy, SEO, AEO/GEO, paid media, content, CRM, and analytics - grounded in brand context, human approval, and verifiable outputs.”
-  - Claim support: digital-marketing-pro is an AI marketing OS for strategy, SEO, and paid media. ← “An open-source AI based digital marketing operating system for strategy, SEO, AEO/GEO, paid media, content, CRM, and analytics - grounded in brand context, human approval, and verifiable outputs.”
-- POS UI extensions now support reactive storage access: Opening sentence is too close to the source headline; add a distinct editorial framing.
-  - Rejected text: shopify.storage.current supports reactive storage access in POS UI extensions. Verify that a signal’s value remains undefined until the key finishes loading. https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access
-  - Model evidence quote: “Stored values load asynchronously, so a signal’s value is initially `undefined` until its key finishes loading.”
+- enapt/SwarmLLM: Editorial takeaway is not specific enough to this candidate's technical/product details.
+  - Rejected text: SwarmLLM runs OpenAI‑compatible chat models locally and can shard across machines. Run two nodes to benchmark latency; a single node may mask scaling limits. https://github.com/enapt/SwarmLLM
+  - Model evidence quote: “Free, open‑source app that runs AI chat models on your own computer — and lets computers team up over the internet to run models too big for one machine. No account, no crypto. OpenAI‑ and Anthropic‑compatible API.”
+  - Claim support: SwarmLLM runs OpenAI‑compatible chat models locally and can shard across machines. ← “Free, open‑source app that runs AI chat models on your own computer — and lets computers team up over the internet to run models too big for one machine. No account, no crypto. OpenAI‑ and Anthropic‑compatible API.”
 
 ## Top discovery candidates considered
 
 - Show HN: Building the European Company Graph one website at a time | Hacker News | data_and_growth | raw 65, adjusted 67 | https://firmendaten.researchly.at/netzwerk
-- POS UI extensions now support reactive storage access | Shopify Developer Changelog | commerce_and_digital_products | raw 63, adjusted 63 | https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access
-- indranilbanerjee/digital-marketing-pro | GitHub Search | marketing_and_distribution | raw 68, adjusted 62 | current stars 910 | GitHub star trend: building baseline | https://github.com/indranilbanerjee/digital-marketing-pro
+- enapt/SwarmLLM | GitHub Search | security_and_self_hosting | raw 67, adjusted 61 | current stars 65 | GitHub star trend: building baseline | https://github.com/enapt/SwarmLLM
+- JasonColapietro/suede-creator-skills | GitHub Search | creator_and_indie_business | raw 67, adjusted 61 | current stars 126 | GitHub star trend: building baseline | https://github.com/JasonColapietro/suede-creator-skills
 
 ## Safety and interpretation
 
-- This run did not produce a publishable draft; no post was published to X.
+- At least one draft passed the automated quality gates; this dry-run workflow itself never publishes to X.
 - Model scores are editorial estimates; they are not verified popularity or market demand.
 - Candidate content and metadata are untrusted input. Factual copy must be supported by the fetched primary page.
 - A skip can mean no fresh candidates, a daily diversity/cap limit, a model/API problem or weak drafts. Check the reason above.
