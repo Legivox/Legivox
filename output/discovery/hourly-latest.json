@@ -1,9 +1,9 @@
 {
-  "generated_at_ist": "2026-10-27T09:49:14+05:30",
-  "run_at_ist": "2026-10-27T09:49:14+05:30",
+  "generated_at_ist": "2026-10-27T10:47:48+05:30",
+  "run_at_ist": "2026-10-27T10:47:48+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 170,
+  "candidate_count_raw": 167,
   "eligible_candidate_count": 87,
   "source_diagnostics": [
     {
@@ -11,14 +11,14 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4678
+      "total_count": 4680
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 989
+      "total_count": 991
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
@@ -32,35 +32,35 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2857
+      "total_count": 2858
     },
     {
       "source": "GitHub Search · github-ecommerce-digital-products",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 392
+      "total_count": 394
     },
     {
       "source": "GitHub Search · github-mcp-servers",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2030
+      "total_count": 2031
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3225
+      "total_count": 3228
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 120
+      "total_count": 121
     },
     {
       "source": "GitHub Search · github-workflow-automation",
@@ -114,7 +114,7 @@
     {
       "source": "Hacker News · hn-shopify",
       "kind": "hacker_news",
-      "items_kept": 10,
+      "items_kept": 6,
       "status": "ok",
       "total_count": 10
     },
@@ -145,33 +145,33 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-27T04:19:14+00:00",
+    "observed_at_utc": "2026-10-27T05:17:48+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 77,
-    "previously_tracked_repositories_refreshed": 123,
+    "repositories_seen_in_discovery": 78,
+    "previously_tracked_repositories_refreshed": 122,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
-    "repositories_with_20_to_36_hour_baseline": 11,
+    "repositories_with_20_to_36_hour_baseline": 9,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "fbfdec28cfffc04c",
-      "title": "PostHog/posthog",
-      "source_url": "https://github.com/PostHog/posthog",
+      "candidate_id": "638846f7379e6538",
+      "title": "HKUDS/nanobot",
+      "source_url": "https://github.com/HKUDS/nanobot",
       "verified": true,
-      "final_url": "https://github.com/PostHog/posthog",
+      "final_url": "https://github.com/HKUDS/nanobot",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "db1523a8fa7fdf81",
-      "title": "HBAI-Ltd/Toonflow-app",
-      "source_url": "https://github.com/HBAI-Ltd/Toonflow-app",
+      "candidate_id": "769635c4c0589719",
+      "title": "IHUI-INF-AI/IHUI-AI",
+      "source_url": "https://github.com/IHUI-INF-AI/IHUI-AI",
       "verified": true,
-      "final_url": "https://github.com/HBAI-Ltd/Toonflow-app",
+      "final_url": "https://github.com/IHUI-INF-AI/IHUI-AI",
       "http_status": 200,
       "reason": ""
     },
@@ -179,135 +179,136 @@
       "candidate_id": "2093a8e42a5b9699",
       "title": "Ask HN: How do you handle time-series metrics at scale without a large bill?",
       "source_url": "https://news.ycombinator.com/item?id=50253890",
-      "verified": false,
-      "final_url": null,
-      "http_status": null,
-      "reason": "Primary source returned HTTP 429."
+      "verified": true,
+      "final_url": "https://news.ycombinator.com/item?id=50253890",
+      "http_status": 200,
+      "reason": ""
     }
   ],
-  "rejected_primary_sources": [
-    {
-      "candidate_id": "2093a8e42a5b9699",
-      "title": "Ask HN: How do you handle time-series metrics at scale without a large bill?",
-      "source": "Hacker News",
-      "url": "https://news.ycombinator.com/item?id=50253890",
-      "reasons": [
-        "Primary source returned HTTP 429."
-      ]
-    }
-  ],
+  "rejected_primary_sources": [],
   "daily_draft_cap": 16,
   "daily_drafts_already_passed": 0,
-  "outcome": "skip",
-  "decision_reason": "All generated drafts failed the local evidence/editorial checks; the hour was skipped.",
-  "passing_drafts": [],
+  "outcome": "dry_run_passed",
+  "decision_reason": "At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.",
+  "passing_drafts": [
+    {
+      "candidate_id": "638846f7379e6538",
+      "title": "HKUDS/nanobot",
+      "source": "GitHub Search",
+      "source_kind": "github_repository",
+      "url": "https://github.com/HKUDS/nanobot",
+      "primary_source_verified": true,
+      "primary_source_title": "GitHub - HKUDS/nanobot: Ultra-lightweight, open-source, self-hosted personal AI agent framework in Python with WebUI, tools, memory, MCP, multi-agent workflows, automation, and chat apps",
+      "primary_source_final_url": "https://github.com/HKUDS/nanobot",
+      "primary_source_http_status": 200,
+      "category": "ai_and_automation",
+      "priority_score": 71,
+      "hourly_adjusted_score": 75,
+      "post_text": "Nanobot is an ultra‑lightweight Python framework for self‑hosted AI agents with a WebUI. Validate that the WebUI correctly renders agent state before deploying to production. https://github.com/HKUDS/nanobot",
+      "fact_sentence": "Nanobot is an ultra‑lightweight Python framework for self‑hosted AI agents with a WebUI.",
+      "format": "tool_discovery",
+      "audience": "developers",
+      "angle": "architecture",
+      "rationale": "The primary source explicitly describes Nanobot’s lightweight, self‑hosted nature and WebUI support, enabling a focused implementation test of the UI rendering.",
+      "evidence_quote": "Ultra-lightweight, open-source, self-hosted personal AI agent framework in Python with WebUI, tools, memory, MCP, multi-agent workflows, automation, and chat apps",
+      "editorial_takeaway": "Validate that the WebUI correctly renders agent state before deploying to production.",
+      "claim_evidence": [
+        {
+          "claim": "Nanobot is an ultra‑lightweight Python framework for self‑hosted AI agents with a WebUI.",
+          "quote": "Ultra-lightweight, open-source, self-hosted personal AI agent framework in Python with WebUI, tools, memory, MCP, multi-agent workflows, automation, and chat apps"
+        }
+      ],
+      "scores": {
+        "timeliness": 10,
+        "usefulness": 8,
+        "novelty": 7,
+        "evidence": 10,
+        "insight": 8
+      },
+      "editorial_score": 8.65,
+      "character_count": 207,
+      "status": "dry_run_passed_not_published",
+      "published_to_x": false,
+      "editorial_review": {
+        "clarity_score": 9,
+        "technical_coherence_score": 9,
+        "takeaway_value_score": 7,
+        "source_faithfulness_score": 9,
+        "originality_score": 7,
+        "reason": "Clear, accurate claim with source support; takeaway adds a practical validation step.",
+        "passed": true
+      }
+    }
+  ],
   "rejected_drafts": [
+    {
+      "candidate_id": "769635c4c0589719",
+      "title": "IHUI-INF-AI/IHUI-AI",
+      "reasons": [
+        "The factual opening bundles multiple features; narrow it to one capability."
+      ],
+      "proposed_text": "IHUI‑AI is an AI operating system that unifies 176 LLMs via LangGraph, MCP, and A2A. Test multi‑tenant RLS by attempting cross‑table access with a non‑owner role. https://github.com/IHUI-INF-AI/IHUI-AI",
+      "evidence_quote": "Eight-platform full-stack AI operating system - unifies 176 LLMs via LangGraph + MCP + A2A. Multi-tenant RLS over 340 tables, RAG knowledge base, agent marketplace.",
+      "claim_evidence": [
+        {
+          "claim": "IHUI‑AI is an AI operating system that unifies 176 LLMs via LangGraph, MCP, and A2A.",
+          "quote": "Eight-platform full-stack AI operating system - unifies 176 LLMs via LangGraph + MCP + A2A. Multi-tenant RLS over 340 tables, RAG knowledge base, agent marketplace."
+        }
+      ]
+    },
     {
       "candidate_id": "2093a8e42a5b9699",
       "title": "Ask HN: How do you handle time-series metrics at scale without a large bill?",
-      "source": "Hacker News",
-      "url": "https://news.ycombinator.com/item?id=50253890",
       "reasons": [
-        "Primary source returned HTTP 429."
-      ]
-    },
-    {
-      "candidate_id": "fbfdec28cfffc04c",
-      "title": "PostHog/posthog",
-      "reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability."
+        "Primary-source evidence quote is oversized or dominated by page navigation; use a concise source-backed excerpt.",
+        "Claim evidence quote is oversized or dominated by page navigation; use a concise source-backed excerpt.",
+        "Factual sentence includes terms absent from the source title/summary: asks, effective, pick, thread"
       ],
-      "proposed_text": "PostHog provides AI observability, analytics, session replay, flags, experiments. Validate that session replay captures user actions before enabling production flags. https://github.com/PostHog/posthog",
-      "evidence_quote": "Our developer tools – AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more – capture all the context agents need to diagnose problems, uncover opportunities, and ship fixes.",
+      "proposed_text": "Ask HN thread asks how to pick a cost‑effective time‑series database for analytics. Benchmark query latency on PostgreSQL vs ClickHouse for your typical write‑heavy workload. https://news.ycombinator.com/item?id=50253890",
+      "evidence_quote": "I've considered just standard PostgreSQL, SQLite on the edge (Cloudflare D1 / Turso), purpose built columnar databases (Clickhouse, DuckDB) and the ones managed by big cloud like Google BigQuery, Amazon Timestream, and Cloudflare Analytics Engine.",
       "claim_evidence": [
         {
-          "claim": "PostHog provides AI observability, analytics, session replay, flags, experiments.",
-          "quote": "Our developer tools – AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more – capture all the context agents need to diagnose problems, uncover opportunities, and ship fixes."
+          "claim": "Ask HN thread asks how to pick a cost‑effective time‑series database for analytics.",
+          "quote": "I've considered just standard PostgreSQL, SQLite on the edge (Cloudflare D1 / Turso), purpose built columnar databases (Clickhouse, DuckDB) and the ones managed by big cloud like Google BigQuery, Amazon Timestream, and Cloudflare Analytics Engine."
         }
-      ]
-    },
-    {
-      "candidate_id": "db1523a8fa7fdf81",
-      "title": "HBAI-Ltd/Toonflow-app",
-      "reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability.",
-        "Takeaway implies an undocumented product capability: sync. Reframe as a check of documented behavior."
-      ],
-      "proposed_text": "Toonflow is a video platform with infinite canvas, agents, and storyboarding. Test local deployment by running the MCP plugin to ensure cross‑platform client sync. https://github.com/HBAI-Ltd/Toonflow-app",
-      "evidence_quote": "融合无限画布、AI Agent 与可视化工作流，支持本地部署、自选模型、跨平台客户端、MCP 与插件扩展。",
-      "claim_evidence": [
-        {
-          "claim": "Toonflow is a video platform with infinite canvas, agents, and storyboarding.",
-          "quote": "融合无限画布、AI Agent 与可视化工作流，支持本地部署、自选模型、跨平台客户端、MCP 与插件扩展。"
-        }
-      ]
-    },
-    {
-      "candidate_id": "db1523a8fa7fdf81",
-      "title": "HBAI-Ltd/Toonflow-app",
-      "reasons": [
-        "No claim-by-claim supporting evidence was provided",
-        "Supporting quotes cover only 0% of factual wording; narrow the claim or provide a closer primary-source quote"
-      ],
-      "proposed_text": "Toonflow supports self‑hosted deployment. Run the local Docker compose to verify the MCP plugin starts correctly. https://github.com/HBAI-Ltd/Toonflow-app",
-      "evidence_quote": "支持本地部署",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability.",
-        "Takeaway implies an undocumented product capability: sync. Reframe as a check of documented behavior."
-      ]
-    },
-    {
-      "candidate_id": "fbfdec28cfffc04c",
-      "title": "PostHog/posthog",
-      "reasons": [
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
-        "No claim-by-claim supporting evidence was provided",
-        "Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote"
-      ],
-      "proposed_text": "PostHog offers session replay. Capture a user session and confirm replay records all page views before flag activation. https://github.com/PostHog/posthog",
-      "evidence_quote": "session replay",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability."
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "fbfdec28cfffc04c",
-      "title": "PostHog/posthog",
-      "url": "https://github.com/PostHog/posthog",
+      "id": "638846f7379e6538",
+      "title": "HKUDS/nanobot",
+      "url": "https://github.com/HKUDS/nanobot",
       "source": "GitHub Search",
-      "primary_category": "data_and_growth",
-      "priority_score": 66,
-      "hourly_adjusted_score": 85,
-      "stars_current": 40460,
-      "stars_delta_24h": 15,
-      "stars_delta_baseline_hours": 20.7,
-      "stars_growth_percent_24h": 0.04,
-      "trend_signal": "measured_star_growth",
-      "published_at": "2026-10-27T04:19:26+00:00",
+      "primary_category": "ai_and_automation",
+      "priority_score": 71,
+      "hourly_adjusted_score": 75,
+      "stars_current": 49440,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "insufficient_history",
+      "published_at": "2026-10-27T05:17:43+00:00",
       "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "db1523a8fa7fdf81",
-      "title": "HBAI-Ltd/Toonflow-app",
-      "url": "https://github.com/HBAI-Ltd/Toonflow-app",
+      "id": "769635c4c0589719",
+      "title": "IHUI-INF-AI/IHUI-AI",
+      "url": "https://github.com/IHUI-INF-AI/IHUI-AI",
       "source": "GitHub Search",
-      "primary_category": "ai_and_automation",
-      "priority_score": 75,
-      "hourly_adjusted_score": 79,
-      "stars_current": 19540,
+      "primary_category": "security_and_self_hosting",
+      "priority_score": 71,
+      "hourly_adjusted_score": 75,
+      "stars_current": 31,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "insufficient_history",
-      "published_at": "2026-10-27T04:10:59+00:00",
-      "days_old": 0.01,
+      "published_at": "2026-10-27T05:18:27+00:00",
+      "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
@@ -326,34 +327,82 @@
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
       "published_at": "2026-10-27T02:09:29+00:00",
-      "days_old": 0.09,
-      "primary_source_verified": false,
-      "primary_source_http_status": null,
-      "primary_source_reason": "Primary source returned HTTP 429."
+      "days_old": 0.13,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
     }
   ],
   "automatic_repair": {
-    "attempted": true,
-    "drafts_submitted": 2,
+    "attempted": false,
+    "drafts_submitted": 0,
     "repaired_local_passes": 0,
-    "repair_rejections": 2,
+    "repair_rejections": 0,
     "repair_error": null,
     "editorial_repair_attempted": false,
     "editorial_repair_drafts_submitted": 0,
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 0,
-    "submitted_for_independent_review": 0,
-    "passed_independent_review": 0,
+    "locally_valid_drafts": 1,
+    "submitted_for_independent_review": 1,
+    "passed_independent_review": 1,
     "rejected_by_independent_review": 0,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
+  "recommended_draft": {
+    "candidate_id": "638846f7379e6538",
+    "title": "HKUDS/nanobot",
+    "source": "GitHub Search",
+    "source_kind": "github_repository",
+    "url": "https://github.com/HKUDS/nanobot",
+    "primary_source_verified": true,
+    "primary_source_title": "GitHub - HKUDS/nanobot: Ultra-lightweight, open-source, self-hosted personal AI agent framework in Python with WebUI, tools, memory, MCP, multi-agent workflows, automation, and chat apps",
+    "primary_source_final_url": "https://github.com/HKUDS/nanobot",
+    "primary_source_http_status": 200,
+    "category": "ai_and_automation",
+    "priority_score": 71,
+    "hourly_adjusted_score": 75,
+    "post_text": "Nanobot is an ultra‑lightweight Python framework for self‑hosted AI agents with a WebUI. Validate that the WebUI correctly renders agent state before deploying to production. https://github.com/HKUDS/nanobot",
+    "fact_sentence": "Nanobot is an ultra‑lightweight Python framework for self‑hosted AI agents with a WebUI.",
+    "format": "tool_discovery",
+    "audience": "developers",
+    "angle": "architecture",
+    "rationale": "The primary source explicitly describes Nanobot’s lightweight, self‑hosted nature and WebUI support, enabling a focused implementation test of the UI rendering.",
+    "evidence_quote": "Ultra-lightweight, open-source, self-hosted personal AI agent framework in Python with WebUI, tools, memory, MCP, multi-agent workflows, automation, and chat apps",
+    "editorial_takeaway": "Validate that the WebUI correctly renders agent state before deploying to production.",
+    "claim_evidence": [
+      {
+        "claim": "Nanobot is an ultra‑lightweight Python framework for self‑hosted AI agents with a WebUI.",
+        "quote": "Ultra-lightweight, open-source, self-hosted personal AI agent framework in Python with WebUI, tools, memory, MCP, multi-agent workflows, automation, and chat apps"
+      }
+    ],
+    "scores": {
+      "timeliness": 10,
+      "usefulness": 8,
+      "novelty": 7,
+      "evidence": 10,
+      "insight": 8
+    },
+    "editorial_score": 8.65,
+    "character_count": 207,
+    "status": "dry_run_passed_not_published",
+    "published_to_x": false,
+    "editorial_review": {
+      "clarity_score": 9,
+      "technical_coherence_score": 9,
+      "takeaway_value_score": 7,
+      "source_faithfulness_score": 9,
+      "originality_score": 7,
+      "reason": "Clear, accurate claim with source support; takeaway adds a practical validation step.",
+      "passed": true
+    }
+  },
   "state_summary": {
-    "used_candidates_in_cooldown": 16,
-    "recently_attempted_candidates": 11,
-    "recent_draft_passes_today": 0
+    "used_candidates_in_cooldown": 17,
+    "recently_attempted_candidates": 14,
+    "recent_draft_passes_today": 1
   }
 }
