@@ -1,6 +1,6 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-27T07:47:31+05:30
+- Run time (IST): 2026-10-27T08:46:56+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
 - Candidate pool after freshness/diversity filters: 89
@@ -37,20 +37,20 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 80
-- Previously tracked repositories refreshed outside search results: 120
+- Repositories seen in this discovery run: 81
+- Previously tracked repositories refreshed outside search results: 119
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
-- Repositories with a 20–36 hour comparison baseline: 6
+- Repositories with a 20–36 hour comparison baseline: 9
 - First observations are baseline samples, not evidence of trending. Star velocity is reported only when a historical comparison exists.
 
 ## Primary-source verification
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| paperclipai/paperclip | yes | 200 | https://github.com/paperclipai/paperclip |
-| nodaroai/app.nodaro.ai | yes | 200 | https://github.com/nodaroai/app.nodaro.ai |
-| Securing your app, together | yes | 200 | https://shopify.dev/changelog/blog/securing-your-app-together |
+| amplifthq/openmeld | yes | 200 | https://github.com/amplifthq/openmeld |
+| oomol-lab/open-flow | yes | 200 | https://github.com/oomol-lab/open-flow |
+| Show HN: Limma – MCP for total recall and precision in data retrieval for agents | yes | 200 | https://limma.ai |
 
 ## Selected draft candidates
 
@@ -59,28 +59,42 @@ No draft cleared the complete local and independent-editor gate. See the decisio
 ## Automatic repair attempt
 
 - Attempted: yes
-- Repaired drafts submitted: 0
-- Repaired drafts that passed local validation: 0
-- Repaired drafts rejected: 0
-- Repair error: none
+- Repaired drafts submitted: 4
+- Repaired drafts that passed local validation: 2
+- Repaired drafts rejected: 3
+- Repair error: Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
-- Securing your app, together: Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.; The factual opening bundles multiple features; narrow it to one capability.; Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.
-  - Rejected text: Shopify added AI security scans, expiring tokens, and log filtering. Run the AI Toolkit scan on your app endpoints before release. https://shopify.dev/changelog/blog/securing-your-app-together
-  - Model evidence quote: “We have new tools to help, including AI security scans, expiring tokens, and better log filtering”
-  - Claim support: Shopify added AI security scans, expiring tokens, and log filtering ← “We have new tools to help, including AI security scans, expiring tokens, and better log filtering”
-- paperclipai/paperclip: Takeaway is generic and not directly supported by source; originality low.
-  - Rejected text: paperclip is an open‑source app for managing agents at work. Run its agent orchestration tests before deploying to production. https://github.com/paperclipai/paperclip
-- nodaroai/app.nodaro.ai: Takeaway about webhook validation not documented; scores below threshold.
-  - Rejected text: app.nodaro.ai chains 100+ AI media models into pipelines. Validate webhook triggers by simulating scheduled runs. https://github.com/nodaroai/app.nodaro.ai
+- amplifthq/openmeld: Supporting quotes cover only 57% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: Openmeld lets people and AI agents share context and coordinate tasks. Verify a bot‑created task shows up in shared context. https://github.com/amplifthq/openmeld
+  - Model evidence quote: “Share context, coordinate tasks”
+  - Claim support: Openmeld lets people and AI agents share context and coordinate tasks ← “Share context, coordinate tasks”
+- oomol-lab/open-flow: A supporting quote does not share enough wording with its stated claim; Supporting quotes cover only 25% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: Open‑Flow is a visual workflow engine that runs TypeScript code in isolated containers. Run a sample workflow locally to confirm isolated execution. https://github.com/oomol-lab/open-flow
+  - Model evidence quote: “real TypeScript, isolated execution”
+  - Claim support: Open‑Flow is a visual workflow engine that runs TypeScript code in isolated containers ← “real TypeScript, isolated execution”
+- Show HN: Limma – MCP for total recall and precision in data retrieval for agents: Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.; Supporting quotes cover only 60% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: Limma is a single MCP server that reads all company data and returns exact answers. Check that Limma reports gaps when a document cannot be read. https://limma.ai
+  - Model evidence quote: “One MCP server that reads your company's data in full, so your agents answer from every part of it.”
+  - Claim support: Limma is a single MCP server that reads all company data and returns exact answers ← “One MCP server that reads your company's data in full, so your agents answer from every part of it”
+- oomol-lab/open-flow: No claim-by-claim supporting evidence was provided; Factual sentence includes terms absent from the source title/summary: container, runs
+  - Rejected text: Open‑Flow runs TypeScript in isolated containers. Run a sample workflow locally to confirm isolation. https://github.com/oomol-lab/open-flow
+  - Model evidence quote: “real TypeScript, isolated execution”
+- Show HN: Limma – MCP for total recall and precision in data retrieval for agents: Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.
+  - Rejected text: Limma reads all company data into a single MCP server. Check Limma reports gaps when a document cannot be read. https://limma.ai
+  - Model evidence quote: “Honest about gaps If something is not on the map, a document could not be read”
+- amplifthq/openmeld: Takeaway claims bot‑created task visibility, but source only states general context sharing; no evidence of bot tasks or verification steps.
+  - Rejected text: Openmeld lets teams share context and coordinate tasks. Verify a bot‑created task appears in shared context. https://github.com/amplifthq/openmeld
+- amplifthq/openmeld: Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi
+  - Rejected text: Openmeld is an open‑source collaboration system that lets teams share context and coordinate tasks. Leverage Openmeld’s parallel work feature to avoid task duplication. https://github.com/amplifthq/openmeld
 
 ## Top discovery candidates considered
 
-- paperclipai/paperclip | GitHub Search | ai_and_automation | raw 69, adjusted 88 | current stars 107689 | GitHub stars +365 over about 24.0h | https://github.com/paperclipai/paperclip
-- nodaroai/app.nodaro.ai | GitHub Search | ai_and_automation | raw 72, adjusted 76 | current stars 12 | GitHub star trend: building baseline | https://github.com/nodaroai/app.nodaro.ai
-- Securing your app, together | Shopify Developer Changelog | commerce_and_digital_products | raw 69, adjusted 69 | https://shopify.dev/changelog/blog/securing-your-app-together
+- amplifthq/openmeld | GitHub Search | ai_and_automation | raw 72, adjusted 76 | current stars 1397 | GitHub star trend: building baseline | https://github.com/amplifthq/openmeld
+- oomol-lab/open-flow | GitHub Search | ai_and_automation | raw 71, adjusted 75 | current stars 277 | GitHub star trend: building baseline | https://github.com/oomol-lab/open-flow
+- Show HN: Limma – MCP for total recall and precision in data retrieval for agents | Hacker News | product_and_workflow_tools | raw 69, adjusted 71 | https://limma.ai
 
 ## Safety and interpretation
 

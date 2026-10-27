@@ -1,9 +1,9 @@
 {
-  "generated_at_ist": "2026-10-27T07:47:31+05:30",
-  "run_at_ist": "2026-10-27T07:47:31+05:30",
+  "generated_at_ist": "2026-10-27T08:46:56+05:30",
+  "run_at_ist": "2026-10-27T08:46:56+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 168,
+  "candidate_count_raw": 169,
   "eligible_candidate_count": 89,
   "source_diagnostics": [
     {
@@ -11,14 +11,14 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4664
+      "total_count": 4669
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 987
+      "total_count": 988
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
@@ -32,35 +32,35 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2851
+      "total_count": 2853
     },
     {
       "source": "GitHub Search · github-ecommerce-digital-products",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 387
+      "total_count": 389
     },
     {
       "source": "GitHub Search · github-mcp-servers",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2026
+      "total_count": 2028
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3222
+      "total_count": 3224
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 119
+      "total_count": 120
     },
     {
       "source": "GitHub Search · github-workflow-automation",
@@ -145,42 +145,42 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-27T02:17:31+00:00",
+    "observed_at_utc": "2026-10-27T03:16:56+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 80,
-    "previously_tracked_repositories_refreshed": 120,
+    "repositories_seen_in_discovery": 81,
+    "previously_tracked_repositories_refreshed": 119,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
-    "repositories_with_20_to_36_hour_baseline": 6,
+    "repositories_with_20_to_36_hour_baseline": 9,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "a5e43b1572bfaf36",
-      "title": "paperclipai/paperclip",
-      "source_url": "https://github.com/paperclipai/paperclip",
+      "candidate_id": "71d4fa150d1a6d81",
+      "title": "amplifthq/openmeld",
+      "source_url": "https://github.com/amplifthq/openmeld",
       "verified": true,
-      "final_url": "https://github.com/paperclipai/paperclip",
+      "final_url": "https://github.com/amplifthq/openmeld",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "1193539a8ca88838",
-      "title": "nodaroai/app.nodaro.ai",
-      "source_url": "https://github.com/nodaroai/app.nodaro.ai",
+      "candidate_id": "36be873f79a8140f",
+      "title": "oomol-lab/open-flow",
+      "source_url": "https://github.com/oomol-lab/open-flow",
       "verified": true,
-      "final_url": "https://github.com/nodaroai/app.nodaro.ai",
+      "final_url": "https://github.com/oomol-lab/open-flow",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "55c557b3bc0267ca",
-      "title": "Securing your app, together",
-      "source_url": "https://shopify.dev/changelog/securing-your-app-together",
+      "candidate_id": "f753208543d495ee",
+      "title": "Show HN: Limma – MCP for total recall and precision in data retrieval for agents",
+      "source_url": "https://limma.ai",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/blog/securing-your-app-together",
+      "final_url": "https://limma.ai",
       "http_status": 200,
       "reason": ""
     }
@@ -193,107 +193,159 @@
   "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "55c557b3bc0267ca",
-      "title": "Securing your app, together",
+      "candidate_id": "71d4fa150d1a6d81",
+      "title": "amplifthq/openmeld",
       "reasons": [
-        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.",
-        "The factual opening bundles multiple features; narrow it to one capability.",
-        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation."
+        "Supporting quotes cover only 57% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "Shopify added AI security scans, expiring tokens, and log filtering. Run the AI Toolkit scan on your app endpoints before release. https://shopify.dev/changelog/blog/securing-your-app-together",
-      "evidence_quote": "We have new tools to help, including AI security scans, expiring tokens, and better log filtering",
+      "proposed_text": "Openmeld lets people and AI agents share context and coordinate tasks. Verify a bot‑created task shows up in shared context. https://github.com/amplifthq/openmeld",
+      "evidence_quote": "Share context, coordinate tasks",
       "claim_evidence": [
         {
-          "claim": "Shopify added AI security scans, expiring tokens, and log filtering",
-          "quote": "We have new tools to help, including AI security scans, expiring tokens, and better log filtering"
+          "claim": "Openmeld lets people and AI agents share context and coordinate tasks",
+          "quote": "Share context, coordinate tasks"
         }
       ]
     },
     {
-      "candidate_id": "a5e43b1572bfaf36",
-      "title": "paperclipai/paperclip",
-      "proposed_text": "paperclip is an open‑source app for managing agents at work. Run its agent orchestration tests before deploying to production. https://github.com/paperclipai/paperclip",
+      "candidate_id": "36be873f79a8140f",
+      "title": "oomol-lab/open-flow",
       "reasons": [
-        "Takeaway is generic and not directly supported by source; originality low."
+        "A supporting quote does not share enough wording with its stated claim",
+        "Supporting quotes cover only 25% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ],
+      "proposed_text": "Open‑Flow is a visual workflow engine that runs TypeScript code in isolated containers. Run a sample workflow locally to confirm isolated execution. https://github.com/oomol-lab/open-flow",
+      "evidence_quote": "real TypeScript, isolated execution",
+      "claim_evidence": [
+        {
+          "claim": "Open‑Flow is a visual workflow engine that runs TypeScript code in isolated containers",
+          "quote": "real TypeScript, isolated execution"
+        }
+      ]
+    },
+    {
+      "candidate_id": "f753208543d495ee",
+      "title": "Show HN: Limma – MCP for total recall and precision in data retrieval for agents",
+      "reasons": [
+        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
+        "Supporting quotes cover only 60% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ],
+      "proposed_text": "Limma is a single MCP server that reads all company data and returns exact answers. Check that Limma reports gaps when a document cannot be read. https://limma.ai",
+      "evidence_quote": "One MCP server that reads your company's data in full, so your agents answer from every part of it.",
+      "claim_evidence": [
+        {
+          "claim": "Limma is a single MCP server that reads all company data and returns exact answers",
+          "quote": "One MCP server that reads your company's data in full, so your agents answer from every part of it"
+        }
+      ]
+    },
+    {
+      "candidate_id": "36be873f79a8140f",
+      "title": "oomol-lab/open-flow",
+      "reasons": [
+        "No claim-by-claim supporting evidence was provided",
+        "Factual sentence includes terms absent from the source title/summary: container, runs"
+      ],
+      "proposed_text": "Open‑Flow runs TypeScript in isolated containers. Run a sample workflow locally to confirm isolation. https://github.com/oomol-lab/open-flow",
+      "evidence_quote": "real TypeScript, isolated execution",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "A supporting quote does not share enough wording with its stated claim",
+        "Supporting quotes cover only 25% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ]
+    },
+    {
+      "candidate_id": "f753208543d495ee",
+      "title": "Show HN: Limma – MCP for total recall and precision in data retrieval for agents",
+      "reasons": [
+        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation."
+      ],
+      "proposed_text": "Limma reads all company data into a single MCP server. Check Limma reports gaps when a document cannot be read. https://limma.ai",
+      "evidence_quote": "Honest about gaps If something is not on the map, a document could not be read",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
+        "Supporting quotes cover only 60% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ]
+    },
+    {
+      "candidate_id": "71d4fa150d1a6d81",
+      "title": "amplifthq/openmeld",
+      "proposed_text": "Openmeld lets teams share context and coordinate tasks. Verify a bot‑created task appears in shared context. https://github.com/amplifthq/openmeld",
+      "reasons": [
+        "Takeaway claims bot‑created task visibility, but source only states general context sharing; no evidence of bot tasks or verification steps."
       ],
       "editorial_review": {
         "clarity_score": 8,
         "technical_coherence_score": 7,
-        "takeaway_value_score": 5,
-        "source_faithfulness_score": 9,
-        "originality_score": 4
+        "takeaway_value_score": 4,
+        "source_faithfulness_score": 5,
+        "originality_score": 3
       }
     },
     {
-      "candidate_id": "1193539a8ca88838",
-      "title": "nodaroai/app.nodaro.ai",
-      "proposed_text": "app.nodaro.ai chains 100+ AI media models into pipelines. Validate webhook triggers by simulating scheduled runs. https://github.com/nodaroai/app.nodaro.ai",
+      "candidate_id": "71d4fa150d1a6d81",
+      "title": "amplifthq/openmeld",
+      "proposed_text": "Openmeld is an open‑source collaboration system that lets teams share context and coordinate tasks. Leverage Openmeld’s parallel work feature to avoid task duplication. https://github.com/amplifthq/openmeld",
       "reasons": [
-        "Takeaway about webhook validation not documented; scores below threshold."
-      ],
-      "editorial_review": {
-        "clarity_score": 8,
-        "technical_coherence_score": 6,
-        "takeaway_value_score": 4,
-        "source_faithfulness_score": 8,
-        "originality_score": 3
-      }
+        "Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi"
+      ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "a5e43b1572bfaf36",
-      "title": "paperclipai/paperclip",
-      "url": "https://github.com/paperclipai/paperclip",
-      "source": "GitHub Search",
-      "primary_category": "ai_and_automation",
-      "priority_score": 69,
-      "hourly_adjusted_score": 88,
-      "stars_current": 107689,
-      "stars_delta_24h": 365,
-      "stars_delta_baseline_hours": 24.0,
-      "stars_growth_percent_24h": 0.34,
-      "trend_signal": "measured_star_growth",
-      "published_at": "2026-10-27T02:13:42+00:00",
-      "days_old": 0.0,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "1193539a8ca88838",
-      "title": "nodaroai/app.nodaro.ai",
-      "url": "https://github.com/nodaroai/app.nodaro.ai",
+      "id": "71d4fa150d1a6d81",
+      "title": "amplifthq/openmeld",
+      "url": "https://github.com/amplifthq/openmeld",
       "source": "GitHub Search",
       "primary_category": "ai_and_automation",
       "priority_score": 72,
       "hourly_adjusted_score": 76,
-      "stars_current": 12,
+      "stars_current": 1397,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "insufficient_history",
-      "published_at": "2026-10-27T01:59:46+00:00",
+      "published_at": "2026-10-27T03:09:35+00:00",
       "days_old": 0.01,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "55c557b3bc0267ca",
-      "title": "Securing your app, together",
-      "url": "https://shopify.dev/changelog/blog/securing-your-app-together",
-      "source": "Shopify Developer Changelog",
-      "primary_category": "commerce_and_digital_products",
+      "id": "36be873f79a8140f",
+      "title": "oomol-lab/open-flow",
+      "url": "https://github.com/oomol-lab/open-flow",
+      "source": "GitHub Search",
+      "primary_category": "ai_and_automation",
+      "priority_score": 71,
+      "hourly_adjusted_score": 75,
+      "stars_current": 277,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "insufficient_history",
+      "published_at": "2026-10-27T03:08:15+00:00",
+      "days_old": 0.01,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "f753208543d495ee",
+      "title": "Show HN: Limma – MCP for total recall and precision in data retrieval for agents",
+      "url": "https://limma.ai",
+      "source": "Hacker News",
+      "primary_category": "product_and_workflow_tools",
       "priority_score": 69,
-      "hourly_adjusted_score": 69,
+      "hourly_adjusted_score": 71,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-20T19:00:00+00:00",
-      "days_old": 6.3,
+      "published_at": "2026-10-27T02:50:43+00:00",
+      "days_old": 0.02,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
@@ -301,12 +353,12 @@
   ],
   "automatic_repair": {
     "attempted": true,
-    "drafts_submitted": 0,
-    "repaired_local_passes": 0,
-    "repair_rejections": 0,
-    "repair_error": null,
+    "drafts_submitted": 4,
+    "repaired_local_passes": 2,
+    "repair_rejections": 3,
+    "repair_error": "Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi",
     "editorial_repair_attempted": true,
-    "editorial_repair_drafts_submitted": 0,
+    "editorial_repair_drafts_submitted": 1,
     "editorial_repair_error": null
   },
   "editorial_review": {
@@ -315,12 +367,12 @@
     "passed_independent_review": 0,
     "rejected_by_independent_review": 2,
     "lower_ranked_not_reviewed": 0,
-    "review_error": null,
+    "review_error": "Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi",
     "automatic_gate": "fail_closed"
   },
   "state_summary": {
     "used_candidates_in_cooldown": 16,
-    "recently_attempted_candidates": 9,
+    "recently_attempted_candidates": 12,
     "recent_draft_passes_today": 0
   }
 }
