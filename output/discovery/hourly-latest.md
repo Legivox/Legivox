@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-27T16:51:27+05:30
+- Run time (IST): 2026-10-27T17:49:56+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 174
-- Independent editorial review: 1 draft(s) passed / 1 rejected
-- Drafts passing local checks: 1
-- Outcome: **dry_run_passed**
-- Decision reason: At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.
+- Candidate pool after freshness/diversity filters: 184
+- Independent editorial review: 0 draft(s) passed / 0 rejected
+- Drafts passing local checks: 0
+- Outcome: **skip**
+- Decision reason: All generated drafts failed the local evidence/editorial checks; the hour was skipped.
 
 ## Source health
 
@@ -15,7 +15,7 @@
 |---|---:|---|
 | GitHub Search · github-ai-agent-tools | 10 | ok |
 | GitHub Search · github-analytics-seo | 10 | ok |
-| GitHub Search · github-creator-infrastructure | 10 | ok |
+| GitHub Search · github-creator-infrastructure | 8 | ok |
 | GitHub Search · github-developer-tools | 10 | ok |
 | GitHub Search · github-digital-product-tools | 10 | ok |
 | GitHub Search · github-ecommerce-digital-products | 10 | ok |
@@ -35,12 +35,12 @@
 | Hacker News · hn-marketing-distribution | 0 | ok |
 | Hacker News · hn-security-selfhost | 0 | ok |
 | Hacker News · hn-seller-operations | 0 | ok |
-| Hacker News · hn-shopify | 5 | ok |
+| Hacker News · hn-shopify | 6 | ok |
 | Hacker News · hn-show-hn | 10 | ok |
 | Ahrefs Blog | 4 | ok |
 | Console.dev | 12 | ok |
 | Indie Hackers (unofficial third-party feed) | 5 | ok |
-| Product Hunt | 39 | ok |
+| Product Hunt | 41 | ok |
 | Shopify Community | 30 | ok |
 | Shopify Developer Changelog | 10 | ok |
 | Stripe Blog | 2 | ok |
@@ -54,72 +54,67 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 106
-- Previously tracked repositories refreshed outside search results: 94
+- Repositories seen in this discovery run: 112
+- Previously tracked repositories refreshed outside search results: 88
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
-- Repositories with a 20–36 hour comparison baseline: 5
+- Repositories with a 20–36 hour comparison baseline: 6
 - First observations are baseline samples, not evidence of trending. Star velocity is reported only when a historical comparison exists.
 
 ## Primary-source verification
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| Show HN: Building the European Company Graph one website at a time | no | — | Primary page title/content does not sufficiently match the candidate headline. |
-| Show HN: PrettyUp – Free portrait editing for photos and videos in the browser | yes | 200 | https://www.prettyupapp.com/ |
-| fenjo26/OpenGSC | yes | 200 | https://github.com/fenjo26/OpenGSC |
+| Show HN: flint - SSH and SFTP client built with GPUI | yes | 200 | https://github.com/mousEHEHE/flint-gpui |
+| Show HN: Kupe Cloud – the assembled Kubernetes platform | yes | 200 | https://kupe.cloud/ |
+| Trends from Money20/20 2026: The rise of “hidden” financial services | yes | 200 | https://stripe.com/blog/trends-from-money20-20-2026-the-rise-of-hidden-financial-services |
 
 ## Selected draft candidates
 
-### Draft option 1: fenjo26/OpenGSC
-
-- Category: marketing_and_distribution
-- Source: GitHub Search
-- Format: tool_discovery
-- Editorial score: 8.4/10
-- Model scores: timeliness 10/10, usefulness 8/10, novelty 7/10, evidence 9/10, insight 8/10
-- Independent editor scores: {"clarity_score": 9, "technical_coherence_score": 9, "takeaway_value_score": 8, "source_faithfulness_score": 9, "originality_score": 8, "reason": "All claims are directly supported and the takeaway is a useful, source‑backed next step.", "passed": true}
-- Live primary page: https://github.com/fenjo26/OpenGSC (HTTP 200)
-- Exact source evidence: “Self-hosted Google Search Console dashboard — rank tracking, keyword research, AI-visibility audits and an AI SEO content suite.”
-- Why this angle: The primary source lists the dashboard’s core features and the 94‑tool MCP server, justifying the deployment check.
-- Editorial takeaway: Verify that your VPS meets the 94‑tool MCP server requirement before deployment.
-- Source: https://github.com/fenjo26/OpenGSC
-
-**Claim-by-claim source quotes:**
-
-- OpenGSC is a self‑hosted Google Search Console dashboard with rank tracking and AI SEO tools. ← “Self-hosted Google Search Console dashboard — rank tracking, keyword research, AI-visibility audits and an AI SEO content suite.”
-
-Proposed post (not published):
-
-> OpenGSC is a self‑hosted Google Search Console dashboard with rank tracking and AI SEO tools. Verify that your VPS meets the 94‑tool MCP server requirement before deployment. https://github.com/fenjo26/OpenGSC
-
-- Length: 209/280 raw characters
-- Automated gate: passed live source, evidence, originality, URL and length checks; live publishing is disabled in dry-run mode.
+No candidate produced a draft that passed every local check. Skipping is intentional.
 
 ## Automatic repair attempt
 
-- Attempted: no
-- Repaired drafts submitted: 0
+- Attempted: yes
+- Repaired drafts submitted: 3
 - Repaired drafts that passed local validation: 0
-- Repaired drafts rejected: 0
+- Repaired drafts rejected: 3
 - Repair error: none
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
-- Show HN: Building the European Company Graph one website at a time: Primary page title/content does not sufficiently match the candidate headline.
-- Show HN: PrettyUp – Free portrait editing for photos and videos in the browser: Takeaway about edge‑case body proportions isn’t directly supported by the source.
-  - Rejected text: PrettyUp offers free online face and body editing for photos and videos. Test edge‑case body proportions before publishing to avoid distortion. https://www.prettyupapp.com/
+- Show HN: flint - SSH and SFTP client built with GPUI: Editorial takeaway is not specific enough to this candidate's technical/product details.
+  - Rejected text: Flint is an SSH and SFTP desktop client written in Rust with GPUI. Test memory usage against Termius to confirm lower RAM footprint. https://github.com/mousEHEHE/flint-gpui
+  - Model evidence quote: “SSH and SFTP client for desktop, written in Rust with GPUI”
+  - Claim support: Flint is an SSH and SFTP desktop client written in Rust with GPUI ← “SSH and SFTP client for desktop, written in Rust with GPUI”
+- Show HN: Kupe Cloud – the assembled Kubernetes platform: The factual opening bundles multiple features; narrow it to one capability.; Fact sentence is too long; narrow it to one source-backed capability.; Editorial takeaway is too long; keep the analysis concrete and concise.; Supporting quotes cover only 45% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: Kupe Cloud is a managed Kubernetes platform with GitOps, observability, security, and platform defaults wired together. Run a quick cluster create via CLI to verify auto‑configured ArgoCD and Grafana dashboards. https://kupe.cloud/
+  - Model evidence quote: “Managed Kubernetes Platform | Kupe Cloud”
+  - Claim support: Kupe Cloud is a managed Kubernetes platform with GitOps, observability, security, and platform defaults wired together ← “Managed Kubernetes Platform | Kupe Cloud”
+- Trends from Money20/20 2026: The rise of “hidden” financial services: The factual opening bundles multiple features; narrow it to one capability.
+  - Rejected text: Stripe reports three Money20/20 trends: stablecoins, agents, and always‑on money reshaping services. Add a stablecoin‑backed card to your checkout flow and monitor latency changes. https://stripe.com/blog/trends-from-money20-20-2026-the-rise-of-hidden-financial-services
+  - Model evidence quote: “Three trends from Money20/20 show stablecoins, agents, and always‑on money changing financial services”
+  - Claim support: Stripe reports three Money20/20 trends: stablecoins, agents, and always‑on money reshaping services ← “Three trends from Money20/20 show stablecoins, agents, and always‑on money changing financial services”
+- Show HN: Kupe Cloud – the assembled Kubernetes platform: The factual opening bundles multiple features; narrow it to one capability.; Editorial takeaway is too long; keep the analysis concrete and concise.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
+  - Rejected text: Kupe Cloud lets you create a Kubernetes cluster with CPU 2, memory 4Gi, and storage 10Gi via CLI. After cluster creation, ArgoCD and Grafana dashboards are automatically available for monitoring. https://kupe.cloud/
+  - Model evidence quote: “kupe cluster create hello-kupe --cpu-limit 2 --memory-limit 4Gi --storage-limit 10Gi Create a cluster from the console, the CLI or Terraform and it reports Running, with dashboards, logs, alerts and GitOps wired in”
+- Trends from Money20/20 2026: The rise of “hidden” financial services: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; Primary-source evidence quote is missing or absent from the live page (after presentation normalisation); A factual claim lacks a quote present in the live primary-source page; Supporting quotes cover only 62% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: Stripe highlights stablecoins as a Money20/20 trend reshaping financial services. Implementing a stablecoin‑backed card can extend your checkout to support crypto payments. https://stripe.com/blog/trends-from-money20-20-2026-the-rise-of-hidden-financial-services
+  - Model evidence quote: “Three trends from Money20/20 show stablecoins, agents, and always‑on money changing financial services”
+- Show HN: flint - SSH and SFTP client built with GPUI: A supporting quote does not share enough wording with its stated claim
+  - Rejected text: Flint is an experimental SSH/SFTP desktop client built in Rust using GPUI. Because it is experimental, users should test for stability before production use. https://github.com/mousEHEHE/flint-gpui
+  - Model evidence quote: “SSH and SFTP client for desktop, written in Rust with GPUI This is experimental software, primarily built with AI.”
 
 ## Top discovery candidates considered
 
-- Show HN: Building the European Company Graph one website at a time | Hacker News | data_and_growth | raw 65, adjusted 67 | https://firmendaten.researchly.at/netzwerk
-- Show HN: PrettyUp – Free portrait editing for photos and videos in the browser | Hacker News | product_and_workflow_tools | raw 56, adjusted 58 | https://www.prettyupapp.com/
-- fenjo26/OpenGSC | GitHub Search | marketing_and_distribution | raw 71, adjusted 55 | current stars 51 | GitHub star trend: building baseline | https://github.com/fenjo26/OpenGSC
+- Show HN: flint - SSH and SFTP client built with GPUI | Hacker News | product_and_workflow_tools | raw 77, adjusted 79 | https://github.com/mousEHEHE/flint-gpui
+- Show HN: Kupe Cloud – the assembled Kubernetes platform | Hacker News | product_and_workflow_tools | raw 68, adjusted 70 | https://kupe.cloud/
+- Trends from Money20/20 2026: The rise of “hidden” financial services | Stripe Blog | commerce_and_digital_products | raw 50, adjusted 50 | https://stripe.com/blog/trends-from-money20-20-2026-the-rise-of-hidden-financial-services
 
 ## Safety and interpretation
 
-- At least one draft passed the automated quality gates; this dry-run workflow itself never publishes to X.
+- This run did not produce a publishable draft; no post was published to X.
 - Model scores are editorial estimates; they are not verified popularity or market demand.
 - Candidate content and metadata are untrusted input. Factual copy must be supported by the fetched primary page.
 - A skip can mean no fresh candidates, a daily diversity/cap limit, a model/API problem or weak drafts. Check the reason above.
