@@ -1,4 +1,5 @@
 import sys
+import collections
 import tempfile
 import unittest
 from datetime import datetime, timedelta, timezone
@@ -44,6 +45,186 @@ class DiscoveryHelpersTests(unittest.TestCase):
             self.config,
         )
         self.assertEqual(categories[0], "developer_tools")
+
+    def test_digital_product_and_seller_operations_have_distinct_lanes(self):
+        categories = discovery.category_matches(
+            "A Notion template and spreadsheet for Etsy digital download sellers to track inventory, fees and profit margin",
+            self.config,
+        )
+        self.assertIn("digital_product_business", categories)
+        self.assertIn("online_seller_operations", categories)
+
+    def test_expanded_registry_includes_creator_commerce_and_business_sources(self):
+        feed_names = {feed["name"] for feed in self.config["feeds"]}
+        self.assertIn("Shopify Community", feed_names)
+        self.assertIn("Stripe Blog", feed_names)
+        self.assertIn("Ahrefs Blog", feed_names)
+        self.assertIn("Indie Hackers (unofficial third-party feed)", feed_names)
+        self.assertGreaterEqual(len(self.config["wordpress_searches"]), 4)
+
+    def test_new_editorial_feeds_have_competitive_source_weights(self):
+        weights = self.config["source_weights"]
+        # The expanded feeds must be capable of surfacing in discovery; they should
+        # not be structurally buried beneath activity-driven GitHub/ HN candidates.
+        editorial_sources = (
+            "Console.dev",
+            "Product Hunt",
+            "Shopify Developer Changelog",
+            "Stripe Blog",
+            "Ahrefs Blog",
+            "Indie Hackers",
+            "WooCommerce Blog",
+        )
+        self.assertTrue(all(weights[name] >= 16 for name in editorial_sources))
+        self.assertGreaterEqual(weights["Shopify Community"], 12)
+        self.assertLessEqual(weights["GitHub Search"], 12)
+
+    def test_wordpress_directory_counts_are_capped_as_weak_signals(self):
+        candidate = discovery.normalize_candidate(
+            source="WordPress Plugin Directory",
+            source_kind="wordpress_plugin",
+            title="Popular digital download and ecommerce plugin",
+            url="https://wordpress.org/plugins/example-plugin/",
+            summary="A plugin with API integrations and automation for online commerce workflows.",
+            published_at=self.now,
+            signals={
+                "active_installs": 1000000,
+                "num_ratings": 100000,
+                "downloaded": 10000000,
+            },
+            config=self.config,
+            now=self.now,
+        )
+        self.assertIsNotNone(candidate)
+        self.assertLessEqual(candidate["score_components"]["public_signal"], 4)
+        self.assertEqual(candidate["score_components"]["recency"], 8)
+
+    def test_shopify_support_ticket_ids_are_excluded_from_candidates(self):
+        candidate = discovery.normalize_candidate(
+            source="Shopify Community",
+            source_kind="rss",
+            title="Payments held, support ticket 70982518 open for 12 days",
+            url="https://community.shopify.com/t/example/123",
+            summary="A store owner asks for help with an individual case.",
+            published_at=self.now,
+            config=self.config,
+            now=self.now,
+        )
+        self.assertIsNone(candidate)
+
+    def test_wordpress_datetime_parses_official_api_timestamp(self):
+        parsed = discovery.parse_wordpress_datetime("2026-10-20 4:15pm GMT")
+        self.assertEqual(parsed, "2026-10-20T16:15:00+00:00")
+
+    def test_wordpress_plugin_response_records_adoption_and_feedback_signals(self):
+        payload = {
+            "plugins": [{
+                "name": "Easy Digital Downloads",
+                "slug": "easy-digital-downloads",
+                "url": "https://wordpress.org/plugins/easy-digital-downloads/",
+                "homepage": "https://easydigitaldownloads.com/",
+                "short_description": "Sell digital downloads, ebooks, templates and software from WordPress.",
+                "last_updated": "2026-10-20 4:15pm GMT",
+                "active_installs": 40000,
+                "rating": 94,
+                "num_ratings": 587,
+                "downloaded": 1234567,
+                "tags": {"digital-downloads": "Digital Downloads"},
+            }]
+        }
+        search = {
+            "id": "wp-digital-downloads",
+            "query": "digital downloads",
+            "category": "digital_product_business",
+        }
+        candidates = discovery.parse_wordpress_plugin_response(
+            payload, search, self.config, self.now
+        )
+        self.assertEqual(len(candidates), 1)
+        candidate = candidates[0]
+        self.assertEqual(candidate["source"], "WordPress Plugin Directory")
+        self.assertEqual(candidate["source_kind"], "wordpress_plugin")
+        self.assertEqual(candidate["url"], "https://wordpress.org/plugins/easy-digital-downloads/")
+        self.assertIn("digital_product_business", candidate["categories"])
+        self.assertEqual(candidate["signals"]["active_installs"], 40000)
+        self.assertEqual(candidate["signals"]["num_ratings"], 587)
+        self.assertEqual(candidate["signals"]["rating_percent"], 94.0)
+        self.assertIn("not paid-revenue evidence", candidate["signals"]["signal_interpretation"])
+
+    def test_preview_selection_prioritizes_one_candidate_per_source(self):
+        sources = [
+            "GitHub Search", "Hacker News", "Shopify Community",
+            "Shopify Developer Changelog", "WordPress Plugin Directory",
+            "Indie Hackers (unofficial third-party feed)", "Product Hunt",
+            "Console.dev", "Ahrefs Blog", "Stripe Blog", "WooCommerce Blog",
+        ]
+        candidates = []
+        for index, source in enumerate(sources):
+            candidates.append({
+                "id": f"source-{index}",
+                "url": f"https://example.com/source-{index}",
+                "source": source,
+                "primary_category": (
+                    "commerce_and_digital_products"
+                    if index in (0, 2, 3, 10)
+                    else f"category-{index}"
+                ),
+                "priority_score": 100 - index,
+            })
+        # Extra high-ranked GitHub items must not crowd the other sources out.
+        for index in range(20):
+            candidates.insert(0, {
+                "id": f"github-extra-{index}",
+                "url": f"https://example.com/github-extra-{index}",
+                "source": "GitHub Search",
+                "primary_category": "commerce_and_digital_products",
+                "priority_score": 200 - index,
+            })
+
+        selected = discovery.select_preview_candidates(candidates, 11)
+        selected_sources = {
+            "GitHub Search" if row["source"].startswith("GitHub Search")
+            else "Hacker News" if row["source"].startswith("Hacker News")
+            else row["source"]
+            for row in selected
+        }
+        self.assertEqual(len(selected), 11)
+        self.assertTrue(set(sources).issubset(selected_sources))
+
+    def test_preview_selection_limits_source_and_category_concentration(self):
+        candidates = []
+        sources = (
+            "GitHub Search",
+            "Hacker News · hn-show-hn",
+            "Shopify Community",
+            "Ahrefs Blog",
+            "Stripe Blog",
+            "WooCommerce Blog",
+        )
+        categories = ("ai_and_automation", "commerce_and_digital_products")
+        for index in range(30):
+            candidates.append({
+                "id": f"candidate-{index}",
+                "url": f"https://example.com/{index}",
+                "source": sources[index % len(sources)],
+                "primary_category": categories[index % len(categories)],
+                "priority_score": 100 - index,
+            })
+
+        selected = discovery.select_preview_candidates(candidates, 12)
+        source_groups = collections.Counter(
+            "GitHub Search" if row["source"].startswith("GitHub Search")
+            else "Hacker News" if row["source"].startswith("Hacker News")
+            else row["source"]
+            for row in selected
+        )
+        category_counts = collections.Counter(row["primary_category"] for row in selected)
+        self.assertEqual(len(selected), 12)
+        self.assertLessEqual(max(source_groups.values()), 3)
+        self.assertLessEqual(max(category_counts.values()), 8)
+        self.assertGreaterEqual(len(source_groups), 4)
+        scores = [row["priority_score"] for row in selected]
+        self.assertEqual(scores, sorted(scores, reverse=True))
 
     def test_rss_parser_preserves_primary_link_and_source_date(self):
         xml = """<?xml version="1.0"?>

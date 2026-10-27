@@ -133,7 +133,7 @@ def load_config() -> dict:
         config = json.loads(CONFIG_PATH.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError) as exc:
         raise RuntimeError("Could not load data/discovery_sources.json: " + type(exc).__name__) from exc
-    for key in ("feeds", "github_searches", "hn_searches", "categories", "source_weights"):
+    for key in ("feeds", "github_searches", "hn_searches", "wordpress_searches", "categories", "source_weights"):
         if key not in config:
             raise RuntimeError("Discovery source registry is missing key: " + key)
     return config
@@ -191,6 +191,15 @@ def normalize_candidate(
         return None
 
     summary_text = clean_text(summary)[:MAX_DESCRIPTION]
+    # Do not promote an individual's support case as general audience content.
+    # Support-ticket IDs are not useful editorial evidence and can unnecessarily
+    # amplify a user-specific dispute when the forum page is publicly indexed.
+    if source == "Shopify Community" and re.search(
+        r"\b(?:support\s+)?ticket\b[^\d]{0,20}\d{4,}\b",
+        clean_title + " " + summary_text,
+        flags=re.I,
+    ):
+        return None
     pub_dt = parse_datetime(published_at)
     search_text = " ".join([clean_title, summary_text, clean_text(extra_text)])
     categories = category_matches(search_text, config, category_hint)
@@ -200,7 +209,11 @@ def normalize_candidate(
     if pub_dt:
         days_old = max(0.0, (now.astimezone(timezone.utc) - pub_dt).total_seconds() / 86400.0)
 
-    if days_old is None:
+    if source == "WordPress Plugin Directory":
+        # Plugin listing "last updated" is not a news publication date. Keep the
+        # date for freshness eligibility, but do not award breaking-news recency.
+        recency_points = 8
+    elif days_old is None:
         recency_points = 8
     elif days_old <= 1:
         recency_points = 30
@@ -230,6 +243,18 @@ def normalize_candidate(
         traction_points += min(10, round(2.5 * math.log1p(points)))
     if comments:
         traction_points += min(4, round(1.2 * math.log1p(comments)))
+    # Directory adoption counts are weak context, not editorial quality or recency.
+    # Cap the combined effect so popular plugin listings cannot dominate timely,
+    # independently useful articles and release notes on popularity alone.
+    active_installs = max(0, int(signal_values.get("active_installs") or 0))
+    num_ratings = max(0, int(signal_values.get("num_ratings") or 0))
+    downloaded = max(0, int(signal_values.get("downloaded") or 0))
+    if active_installs:
+        traction_points += min(2, round(0.5 * math.log10(active_installs + 1)))
+    if num_ratings:
+        traction_points += min(1, round(0.25 * math.log1p(num_ratings)))
+    if downloaded:
+        traction_points += min(1, round(0.25 * math.log10(downloaded + 1)))
     traction_points = min(12, traction_points)
 
     technical_markers = (
@@ -507,6 +532,149 @@ def discover_hn_search(
         }
 
 
+
+def parse_wordpress_datetime(value: object) -> str | None:
+    """Normalize the WordPress.org Plugin API's human-readable last-updated timestamp."""
+    raw = str(value or "").strip()
+    parsed = parse_datetime(raw)
+    if parsed:
+        return iso_utc(parsed)
+    match = re.fullmatch(
+        r"(\d{4}-\d{2}-\d{2})\s+(\d{1,2}):(\d{2})\s*(am|pm)\s+GMT",
+        raw,
+        flags=re.I,
+    )
+    if not match:
+        return None
+    try:
+        hour = int(match.group(2)) % 12
+        if match.group(4).casefold() == "pm":
+            hour += 12
+        parsed_dt = datetime.fromisoformat(
+            f"{match.group(1)}T{hour:02d}:{int(match.group(3)):02d}:00+00:00"
+        )
+        return iso_utc(parsed_dt)
+    except ValueError:
+        return None
+
+
+def parse_wordpress_plugin_response(
+    payload: dict,
+    search: dict,
+    config: dict,
+    now: datetime,
+) -> list[dict]:
+    """Convert official WordPress.org Plugin Directory API results into discovery candidates."""
+    results: list[dict] = []
+    for plugin in payload.get("plugins", []):
+        slug = clean_text(plugin.get("slug") or "")
+        title = clean_text(plugin.get("name") or "")
+        if not slug or not title:
+            continue
+        # Keep the official directory page as the primary URL; the vendor homepage
+        # is a secondary evidence link, not a substitute for independent metadata.
+        url = f"https://wordpress.org/plugins/{urllib.parse.quote(slug)}/"
+        description = clean_text(
+            plugin.get("short_description") or plugin.get("description") or ""
+        )
+        try:
+            active_installs = max(0, int(plugin.get("active_installs") or 0))
+        except (TypeError, ValueError):
+            active_installs = 0
+        try:
+            num_ratings = max(0, int(plugin.get("num_ratings") or 0))
+        except (TypeError, ValueError):
+            num_ratings = 0
+        try:
+            rating_percent = max(0.0, min(100.0, float(plugin.get("rating") or 0)))
+        except (TypeError, ValueError):
+            rating_percent = 0.0
+        try:
+            downloaded = max(0, int(plugin.get("downloaded") or 0))
+        except (TypeError, ValueError):
+            downloaded = 0
+        last_updated = parse_wordpress_datetime(plugin.get("last_updated"))
+        signals = {
+            "wordpress_slug": slug,
+            "active_installs": active_installs,
+            "rating_percent": rating_percent,
+            "num_ratings": num_ratings,
+            "downloaded": downloaded,
+            "last_updated": str(plugin.get("last_updated") or ""),
+            "query_id": search.get("id", ""),
+            "signal_interpretation": "free-plugin adoption and review activity; not paid-revenue evidence",
+        }
+        candidate = normalize_candidate(
+            source="WordPress Plugin Directory",
+            source_kind="wordpress_plugin",
+            title=title,
+            url=url,
+            summary=description,
+            published_at=last_updated,
+            category_hint=search.get("category"),
+            signals=signals,
+            evidence_urls=[url, str(plugin.get("homepage") or "")],
+            extra_text=" ".join((slug, " ".join((plugin.get("tags") or {}).keys()))),
+            config=config,
+            now=now,
+        )
+        if candidate:
+            results.append(candidate)
+    return results
+
+
+def discover_wordpress_search(
+    search: dict,
+    config: dict,
+    now: datetime,
+    lookback_days: int,
+    per_source: int,
+) -> tuple[list[dict], dict]:
+    """Search the official WordPress.org plugin directory for product/use-case signals."""
+    params = {
+        "action": "query_plugins",
+        "request[search]": str(search.get("query") or ""),
+        "request[per_page]": str(min(50, per_source)),
+        "request[fields][active_installs]": "1",
+        "request[fields][rating]": "1",
+        "request[fields][num_ratings]": "1",
+        "request[fields][downloaded]": "1",
+        "request[fields][last_updated]": "1",
+        "request[fields][homepage]": "1",
+        "request[fields][short_description]": "1",
+        "request[fields][tags]": "1",
+    }
+    url = "https://api.wordpress.org/plugins/info/1.2/?" + urllib.parse.urlencode(params)
+    try:
+        payload = json.loads(fetch_bytes(url, headers={"Accept": "application/json"}).decode("utf-8"))
+        candidates = parse_wordpress_plugin_response(payload, search, config, now)
+        # Do not apply the release-news freshness cutoff to established plugins:
+        # their current install/review footprint can be useful even between updates.
+        return candidates, {
+            "source": "WordPress Plugin Directory · " + str(search.get("id") or ""),
+            "kind": "wordpress_plugin",
+            "items_kept": len(candidates),
+            "status": "ok",
+            "total_count": int((payload.get("info") or {}).get("results") or len(payload.get("plugins") or [])),
+        }
+    except urllib.error.HTTPError as exc:
+        return [], {
+            "source": "WordPress Plugin Directory · " + str(search.get("id") or ""),
+            "kind": "wordpress_plugin",
+            "items_kept": 0,
+            "status": "error",
+            "error": "HTTP " + str(exc.code),
+        }
+    except Exception as exc:
+        return [], {
+            "source": "WordPress Plugin Directory · " + str(search.get("id") or ""),
+            "kind": "wordpress_plugin",
+            "items_kept": 0,
+            "status": "error",
+            "error": type(exc).__name__,
+        }
+
+
 def merge_duplicates(candidates: list[dict]) -> list[dict]:
     merged: dict[str, dict] = {}
     for candidate in candidates:
@@ -552,6 +720,8 @@ def discover(config: dict, lookback_days: int = 14, per_source: int = 15) -> tup
             jobs.append(pool.submit(discover_github_search, search, config, now, lookback_days, per_source))
         for search in config["hn_searches"]:
             jobs.append(pool.submit(discover_hn_search, search, config, now, lookback_days, per_source))
+        for search in config.get("wordpress_searches", []):
+            jobs.append(pool.submit(discover_wordpress_search, search, config, now, lookback_days, per_source))
         for future in as_completed(jobs):
             found, diagnostic = future.result()
             candidates.extend(found)
@@ -561,6 +731,88 @@ def discover(config: dict, lookback_days: int = 14, per_source: int = 15) -> tup
     unique = [item for item in unique if item.get("priority_score", 0) > 0]
     diagnostics.sort(key=lambda row: (row["kind"], row["source"]))
     return unique, diagnostics
+
+
+def select_preview_candidates(candidates: list[dict], limit: int) -> list[dict]:
+    """Return a priority-ranked preview with representation from healthy sources.
+
+    This selection affects only the read-only review report. The hourly publishing
+    selector has its own ranking/diversity rules and never consumes this preview.
+    """
+    if limit <= 0:
+        return []
+
+    def source_group(item: dict) -> str:
+        source = str(item.get("source") or "Unknown source")
+        if source.startswith("GitHub Search"):
+            return "GitHub Search"
+        if source.startswith("Hacker News"):
+            return "Hacker News"
+        if source.startswith("WordPress Plugin Directory"):
+            return "WordPress Plugin Directory"
+        return source
+
+    def identity(item: dict) -> str:
+        return str(item.get("id") or item.get("canonical_url") or item.get("url") or id(item))
+
+    # Preserve the original priority order within each source.
+    grouped: dict[str, list[dict]] = {}
+    for item in candidates:
+        grouped.setdefault(source_group(item), []).append(item)
+
+    selected_ids: set[str] = set()
+    selected: list[dict] = []
+    source_counts: dict[str, int] = {}
+    category_counts: dict[str, int] = {}
+    max_per_source_group = 3
+    max_per_category = 8
+
+    # Reserve one slot per source before applying category caps. Coverage of
+    # configured sources is the primary purpose of this report.
+    for source, items in grouped.items():
+        if len(selected) >= limit:
+            break
+        item = next((candidate for candidate in items if identity(candidate) not in selected_ids), None)
+        if item is None:
+            continue
+        key = identity(item)
+        category = str(item.get("primary_category") or "unknown")
+        selected.append(item)
+        selected_ids.add(key)
+        source_counts[source] = 1
+        category_counts[category] = category_counts.get(category, 0) + 1
+
+    # Fill the remaining slots by priority, applying soft caps to limit source
+    # concentration without dropping the reserved representation.
+    for item in candidates:
+        if len(selected) >= limit:
+            break
+        key = identity(item)
+        if key in selected_ids:
+            continue
+        source = source_group(item)
+        category = str(item.get("primary_category") or "unknown")
+        if source_counts.get(source, 0) >= max_per_source_group:
+            continue
+        if category_counts.get(category, 0) >= max_per_category:
+            continue
+        selected.append(item)
+        selected_ids.add(key)
+        source_counts[source] = source_counts.get(source, 0) + 1
+        category_counts[category] = category_counts.get(category, 0) + 1
+
+    # Keep the rendered report ordered by the original priority sort.
+    selected_set = {identity(item) for item in selected}
+    ordered: list[dict] = []
+    emitted: set[str] = set()
+    for item in candidates:
+        key = identity(item)
+        if key in selected_set and key not in emitted:
+            ordered.append(item)
+            emitted.add(key)
+        if len(ordered) >= limit:
+            break
+    return ordered
 
 
 def write_report(
@@ -573,7 +825,7 @@ def write_report(
 ) -> tuple[Path, Path]:
     output_dir.mkdir(parents=True, exist_ok=True)
     now_ist = datetime.now(IST).isoformat(timespec="seconds")
-    visible = candidates[:limit]
+    visible = select_preview_candidates(candidates, limit)
     payload = {
         "generated_at_ist": now_ist,
         "mode": "research_only_dry_run",
@@ -581,13 +833,19 @@ def write_report(
         "lookback_days": lookback_days,
         "candidate_count_total": len(candidates),
         "candidate_count_shown": len(visible),
+        "preview_selection": {
+            "policy": "priority-ranked source/category-diverse sample; preview-only, not used by the publisher",
+            "max_per_source_group": 3,
+            "max_per_category": 8,
+        },
         "source_diagnostics": diagnostics,
         "candidates": visible,
         "editorial_safety": [
             "No candidate has been published or automatically drafted into a post.",
-            "Priority score is a queue-ordering heuristic, not a quality, safety, market-demand or popularity verdict.",
-            "Public stars, votes and comments are weak signals and can be gamed; never present them as proof of demand.",
+            "Priority score is a queue-ordering heuristic, not a quality or factual-accuracy verdict.",
+            "Stars, votes and comments are weak activity signals and can be gamed; do not present them as proof of quality or sustained use.",
             "Review the product/project's own page, documentation, price, licence, target user, privacy implications and last update.",
+            "WordPress active installs, downloads and ratings are directory metadata and feedback, not independent verification of quality, compatibility, maintenance or security.",
             "For news or platform changes, confirm the effective date and affected versions against the primary source.",
         ],
     }
@@ -605,7 +863,9 @@ def write_report(
         f"- Candidates shown: {len(visible)}",
         f"- Source checks successful: {okay}/{len(diagnostics)}",
         "",
-        "This account is designed to find useful technology people can **build with, automate, use to launch, or use to sell online**. The ranking helps sort a review queue. It does not certify claims or infer willingness to pay.",
+        "Legivox discovers useful developer tools, AI and automation projects, creator tools, digital-product platforms, commerce workflows, marketing tactics and technology. The priority score ranks candidates, but this report applies source/category caps to show a more representative review sample.",
+        "",
+        "The preview diversity caps affect only this report. The hourly publishing selector uses its own ranking and diversity rules; this file is not consumed by the publisher.",
         "",
         "## Source health",
         "",
@@ -637,7 +897,7 @@ def write_report(
         ]
         signals = item.get("signals", {})
         signal_bits = []
-        for key in ("stars", "forks", "points", "comments", "language", "license_spdx", "pushed_at"):
+        for key in ("stars", "forks", "points", "comments", "language", "license_spdx", "pushed_at", "active_installs", "rating_percent", "num_ratings", "downloaded", "last_updated"):
             value = signals.get(key)
             if value not in (None, "", 0):
                 signal_bits.append(f"{key}={value}")

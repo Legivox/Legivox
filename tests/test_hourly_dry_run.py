@@ -17,6 +17,22 @@ import hourly_dry_run as hourly
 
 
 class HourlyDryRunTests(unittest.TestCase):
+    def test_source_filter_is_case_insensitive_and_optional(self):
+        candidates = [
+            {"id": "stripe-1", "source": "Stripe Blog"},
+            {"id": "ahrefs-1", "source": "Ahrefs Blog"},
+            {"id": "wp-1", "source": "WordPress Plugin Directory"},
+        ]
+        self.assertEqual(
+            ["stripe-1"],
+            [item["id"] for item in hourly.filter_source_candidates(candidates, "stripe blog")],
+        )
+        self.assertEqual(
+            ["stripe-1", "ahrefs-1", "wp-1"],
+            [item["id"] for item in hourly.filter_source_candidates(candidates, None)],
+        )
+        self.assertEqual([], hourly.filter_source_candidates(candidates, "source-does-not-exist"))
+
     def setUp(self):
         self.now = datetime(2026, 10, 21, 12, 0, tzinfo=timezone.utc)
         self.candidate = {
@@ -1258,6 +1274,53 @@ class HourlyDryRunTests(unittest.TestCase):
         self.assertFalse(hourly.is_fresh(stale_repo, 3))
         self.assertTrue(hourly.is_fresh(weekly, 14))
         self.assertTrue(hourly.is_fresh(weekly, 7))
+
+    def test_groq_error_details_are_sanitized_and_bounded(self):
+        error = hourly.groq_error_detail(
+            '{"error":{"message":"maximum context length exceeded","type":"invalid_request_error"}}'
+        )
+        self.assertEqual(error, "maximum context length exceeded")
+        fallback = hourly.groq_error_detail("Gateway rejected request\\ncontext length exceeded")
+        self.assertLessEqual(len(fallback), 240)
+        self.assertNotIn("\\n", fallback)
+        self.assertIn("context length", fallback)
+
+    def test_groq_context_limit_error_is_recognized_for_pool_reduction(self):
+        self.assertTrue(hourly.is_groq_request_size_error("Groq returned HTTP 400: maximum context length exceeded"))
+        self.assertTrue(hourly.is_groq_request_size_error("Groq returned HTTP 413"))
+        self.assertFalse(hourly.is_groq_request_size_error("Groq returned HTTP 400: invalid model parameter"))
+
+    def test_expanded_content_sources_have_reasonable_freshness_windows(self):
+        cases = [
+            ("Shopify Community", 2.5, True),
+            ("Shopify Community", 3.5, False),
+            ("Product Hunt", 2.5, True),
+            ("Product Hunt", 3.5, False),
+            ("Stripe Blog", 6.5, True),
+            ("Stripe Blog", 7.5, False),
+            ("Indie Hackers (unofficial third-party feed)", 6.5, True),
+            ("Indie Hackers (unofficial third-party feed)", 7.5, False),
+            ("WooCommerce Blog", 6.5, True),
+            ("WooCommerce Blog", 7.5, False),
+            ("Ahrefs Blog", 9.5, True),
+            ("Ahrefs Blog", 10.5, False),
+        ]
+        for source, days_old, expected in cases:
+            with self.subTest(source=source, days_old=days_old):
+                candidate = dict(self.candidate, source=source, days_old=days_old)
+                self.assertEqual(hourly.is_fresh(candidate, 1), expected)
+
+    def test_unverifiable_community_feeds_are_discovery_only_until_primary_pages_verify(self):
+        blocked_sources = (
+            "Shopify Community",
+            "Indie Hackers (unofficial third-party feed)",
+        )
+        for source in blocked_sources:
+            with self.subTest(source=source):
+                candidate = dict(self.candidate, source=source)
+                self.assertFalse(hourly.source_is_enabled_for_automated_draft(candidate))
+        eligible = dict(self.candidate, source="Stripe Blog")
+        self.assertTrue(hourly.source_is_enabled_for_automated_draft(eligible))
 
     def test_github_star_velocity_requires_persisted_20_to_36_hour_baseline(self):
         state = hourly.empty_state()
