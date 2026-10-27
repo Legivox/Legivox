@@ -1,24 +1,24 @@
 {
-  "generated_at_ist": "2026-10-27T14:52:17+05:30",
-  "run_at_ist": "2026-10-27T14:52:17+05:30",
+  "generated_at_ist": "2026-10-27T15:53:18+05:30",
+  "run_at_ist": "2026-10-27T15:53:18+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 287,
-  "eligible_candidate_count": 177,
+  "candidate_count_raw": 288,
+  "eligible_candidate_count": 176,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4703
+      "total_count": 4719
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1000
+      "total_count": 1001
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
@@ -32,7 +32,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2873
+      "total_count": 2879
     },
     {
       "source": "GitHub Search · github-digital-product-tools",
@@ -44,9 +44,9 @@
     {
       "source": "GitHub Search · github-ecommerce-digital-products",
       "kind": "github_repository",
-      "items_kept": 10,
+      "items_kept": 2,
       "status": "ok",
-      "total_count": 400
+      "total_count": 192
     },
     {
       "source": "GitHub Search · github-marketing-distribution",
@@ -60,28 +60,28 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2048
+      "total_count": 2054
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3251
+      "total_count": 3259
     },
     {
       "source": "GitHub Search · github-seller-operations",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 351
+      "total_count": 353
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 122
+      "total_count": 123
     },
     {
       "source": "GitHub Search · github-workflow-automation",
@@ -116,7 +116,7 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 6
+      "total_count": 7
     },
     {
       "source": "Hacker News · hn-digital-products",
@@ -163,7 +163,7 @@
     {
       "source": "Hacker News · hn-shopify",
       "kind": "hacker_news",
-      "items_kept": 5,
+      "items_kept": 10,
       "status": "ok",
       "total_count": 10
     },
@@ -207,7 +207,7 @@
     {
       "source": "Shopify Developer Changelog",
       "kind": "rss",
-      "items_kept": 9,
+      "items_kept": 10,
       "status": "ok"
     },
     {
@@ -259,10 +259,10 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-27T09:22:17+00:00",
+    "observed_at_utc": "2026-10-27T10:23:18+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 110,
-    "previously_tracked_repositories_refreshed": 90,
+    "repositories_seen_in_discovery": 105,
+    "previously_tracked_repositories_refreshed": 95,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
@@ -271,6 +271,15 @@
     "watchlist_limit": 200
   },
   "primary_source_checks": [
+    {
+      "candidate_id": "5b7aef4519e9bf2e",
+      "title": "Search brands that don't sell on Shopify in the Catalog API (beta)",
+      "source_url": "https://shopify.dev/changelog/search-brands-that-don-t-sell-on-shopify-in-the-catalog-api-beta",
+      "verified": true,
+      "final_url": "https://shopify.dev/changelog/posts/search-brands-that-don-t-sell-on-shopify-in-the-catalog-api-beta",
+      "http_status": 200,
+      "reason": ""
+    },
     {
       "candidate_id": "a92e52ee3c14a954",
       "title": "Show HN: Building the European Company Graph one website at a time",
@@ -281,22 +290,13 @@
       "reason": "Primary page title/content does not sufficiently match the candidate headline."
     },
     {
-      "candidate_id": "b0173e082ad916f9",
-      "title": "Show HN: AMD EPYC Windows developer rigs in the UK/EU in ~10 minutes",
-      "source_url": "https://news.ycombinator.com/item?id=50256259",
+      "candidate_id": "04e17b0deed20fba",
+      "title": "Show HN: Minebender – Minesweeper in Bend2 with proven no-guess assist",
+      "source_url": "https://github.com/luiscleto/minebender",
       "verified": true,
-      "final_url": "https://news.ycombinator.com/item?id=50256259",
+      "final_url": "https://github.com/luiscleto/minebender",
       "http_status": 200,
       "reason": ""
-    },
-    {
-      "candidate_id": "f4c384acde8e9fca",
-      "title": "OpenRadView",
-      "source_url": "https://www.producthunt.com/products/openradview",
-      "verified": false,
-      "final_url": null,
-      "http_status": null,
-      "reason": "Primary source returned HTTP 403."
     }
   ],
   "rejected_primary_sources": [
@@ -308,21 +308,12 @@
       "reasons": [
         "Primary page title/content does not sufficiently match the candidate headline."
       ]
-    },
-    {
-      "candidate_id": "f4c384acde8e9fca",
-      "title": "OpenRadView",
-      "source": "Product Hunt",
-      "url": "https://www.producthunt.com/products/openradview",
-      "reasons": [
-        "Primary source returned HTTP 403."
-      ]
     }
   ],
   "daily_draft_cap": 16,
   "daily_drafts_already_passed": 2,
   "outcome": "skip",
-  "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
+  "decision_reason": "All generated drafts failed the local evidence/editorial checks; the hour was skipped.",
   "passing_drafts": [],
   "rejected_drafts": [
     {
@@ -335,51 +326,99 @@
       ]
     },
     {
-      "candidate_id": "f4c384acde8e9fca",
-      "title": "OpenRadView",
-      "source": "Product Hunt",
-      "url": "https://www.producthunt.com/products/openradview",
+      "candidate_id": "5b7aef4519e9bf2e",
+      "title": "Search brands that don't sell on Shopify in the Catalog API (beta)",
       "reasons": [
-        "Primary source returned HTTP 403."
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "Fact plus takeaway exceeds the per-link character budget.",
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
+        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
+        "Draft is 308 raw characters; limit is 280"
+      ],
+      "proposed_text": "Shopify Catalog API beta adds a `sources` parameter to search_catalog. Set `sources` to `[\"shopify\",\"external\"]` to include external brands, but remember external items have `eligible.native_checkout:false`. https://shopify.dev/changelog/posts/search-brands-that-don-t-sell-on-shopify-in-the-catalog-api-beta",
+      "evidence_quote": "The Catalog API beta now supports a `sources` parameter on `search_catalog` that controls which products you return",
+      "claim_evidence": [
+        {
+          "claim": "The source says capability X",
+          "quote": "The Catalog API beta now supports a `sources` parameter on `search_catalog` that controls which products you return"
+        }
       ]
     },
     {
-      "candidate_id": "b0173e082ad916f9",
-      "title": "Show HN: AMD EPYC Windows developer rigs in the UK/EU in ~10 minutes",
-      "proposed_text": "Whitehirst spins up a UK/EU Windows workstation in ~10 minutes. Verify the £12/8‑hour price and that the VM self‑destructs after the allotted time. https://news.ycombinator.com/item?id=50256259",
+      "candidate_id": "04e17b0deed20fba",
+      "title": "Show HN: Minebender – Minesweeper in Bend2 with proven no-guess assist",
       "reasons": [
-        "Post merely repeats headline facts without adding new insight or actionable detail."
+        "Opening sentence is too close to the source headline; add a distinct editorial framing."
       ],
-      "editorial_review": {
-        "clarity_score": 9,
-        "technical_coherence_score": 9,
-        "takeaway_value_score": 8,
-        "source_faithfulness_score": 9,
-        "originality_score": 3
-      }
+      "proposed_text": "Minebender is a Minesweeper game in Bend2 with a no‑guess assist. Use the provided laws to test edge cases where the assist reveals hidden mines. https://github.com/luiscleto/minebender",
+      "evidence_quote": "Minesweeper with a no-guess assist, specified as laws and proven in Bend 2",
+      "claim_evidence": [
+        {
+          "claim": "The source says capability X",
+          "quote": "Minesweeper with a no-guess assist, specified as laws and proven in Bend 2"
+        }
+      ]
     },
     {
-      "candidate_id": "b0173e082ad916f9",
-      "title": "Show HN: AMD EPYC Windows developer rigs in the UK/EU in ~10 minutes",
+      "candidate_id": "5b7aef4519e9bf2e",
+      "title": "Search brands that don't sell on Shopify in the Catalog API (beta)",
       "reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability.",
         "Fact sentence is too long; narrow it to one source-backed capability.",
         "Editorial takeaway is too long; keep the analysis concrete and concise.",
         "Fact plus takeaway exceeds the per-link character budget.",
-        "Draft is 356 raw characters; limit is 280",
-        "Primary-source evidence quote is missing or absent from the live page (after presentation normalisation)",
+        "Editorial takeaway is too long to be a useful concise second sentence.",
+        "Draft is 466 raw characters; limit is 280",
         "No claim-by-claim supporting evidence was provided",
-        "Unsupported numeric claim(s): 24"
+        "Supporting quotes cover only 55% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "Whitehirst offers a UK/EU Windows workstation with 8 AMD EPYC vCPUs, 32 GB RAM, 200 GB NVMe, and a 2 Gbps NIC that spins up in ~10 minutes. Because the machine self‑destructs after the paid period, you must schedule any long‑running builds to finish within the 8‑ or 24‑hour window to avoid unexpected charges. https://news.ycombinator.com/item?id=50256259",
-      "evidence_quote": "You can spin up a Sovereign UK/EU Windows Workstation in ~10 minutes that's fully configured… 8 AMD EPYC vCPUs, 32GB ECC RAM, 200GB NVMe storage and a 2Gbps nic – I intend to offer other specs later on… every workstation is strictly ephemeral and automatically self‑destructs when time's up",
+      "proposed_text": "External products returned by the Catalog API have `eligible.native_checkout:false` and cannot be bought through Shopify checkout. When filtering for Shopify‑only products, simply omit the `sources` parameter; to include external brands, set `sources` to `[\"shopify\",\"external\"]` and verify the `eligible.native_checkout` flag is false before attempting a checkout. https://shopify.dev/changelog/posts/search-brands-that-don-t-sell-on-shopify-in-the-catalog-api-beta",
+      "evidence_quote": "External products always return `eligible.native_checkout: false`, so shoppers can't buy them through Shopify checkout and these products don't earn Promoted Placements commission.",
       "automatic_repair_attempt": true,
       "original_rejection_reasons": [
-        "Post merely repeats headline facts without adding new insight or actionable detail."
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "Fact plus takeaway exceeds the per-link character budget.",
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
+        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
+        "Draft is 308 raw characters; limit is 280"
+      ]
+    },
+    {
+      "candidate_id": "04e17b0deed20fba",
+      "title": "Show HN: Minebender – Minesweeper in Bend2 with proven no-guess assist",
+      "reasons": [
+        "Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.",
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "No claim-by-claim supporting evidence was provided",
+        "Supporting quotes cover only 43% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ],
+      "proposed_text": "Minebender is a Bend2 implementation of Minesweeper that includes a no‑guess assist feature. Use the provided laws to write tests that trigger the assist, ensuring it correctly reveals hidden mines without guessing. https://github.com/luiscleto/minebender",
+      "evidence_quote": "Minesweeper with a no‑guess assist, specified as laws and proven in Bend 2",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "Opening sentence is too close to the source headline; add a distinct editorial framing."
       ]
     }
   ],
   "candidate_shortlist": [
+    {
+      "id": "5b7aef4519e9bf2e",
+      "title": "Search brands that don't sell on Shopify in the Catalog API (beta)",
+      "url": "https://shopify.dev/changelog/posts/search-brands-that-don-t-sell-on-shopify-in-the-catalog-api-beta",
+      "source": "Shopify Developer Changelog",
+      "primary_category": "commerce_and_digital_products",
+      "priority_score": 72,
+      "hourly_adjusted_score": 72,
+      "stars_current": null,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-27T10:00:00+00:00",
+      "days_old": 0.02,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
     {
       "id": "a92e52ee3c14a954",
       "title": "Show HN: Building the European Company Graph one website at a time",
@@ -394,72 +433,53 @@
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
       "published_at": "2026-10-26T13:58:24+00:00",
-      "days_old": 0.81,
+      "days_old": 0.85,
       "primary_source_verified": false,
       "primary_source_http_status": null,
       "primary_source_reason": "Primary page title/content does not sufficiently match the candidate headline."
     },
     {
-      "id": "b0173e082ad916f9",
-      "title": "Show HN: AMD EPYC Windows developer rigs in the UK/EU in ~10 minutes",
-      "url": "https://news.ycombinator.com/item?id=50256259",
+      "id": "04e17b0deed20fba",
+      "title": "Show HN: Minebender – Minesweeper in Bend2 with proven no-guess assist",
+      "url": "https://github.com/luiscleto/minebender",
       "source": "Hacker News",
       "primary_category": "product_and_workflow_tools",
-      "priority_score": 65,
-      "hourly_adjusted_score": 65,
+      "priority_score": 61,
+      "hourly_adjusted_score": 63,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-27T08:53:52+00:00",
+      "published_at": "2026-10-27T09:53:23+00:00",
       "days_old": 0.02,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
-    },
-    {
-      "id": "f4c384acde8e9fca",
-      "title": "OpenRadView",
-      "url": "https://www.producthunt.com/products/openradview",
-      "source": "Product Hunt",
-      "primary_category": "product_and_workflow_tools",
-      "priority_score": 55,
-      "hourly_adjusted_score": 55,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-26T17:57:31+00:00",
-      "days_old": 0.64,
-      "primary_source_verified": false,
-      "primary_source_http_status": null,
-      "primary_source_reason": "Primary source returned HTTP 403."
     }
   ],
   "automatic_repair": {
     "attempted": true,
-    "drafts_submitted": 1,
+    "drafts_submitted": 2,
     "repaired_local_passes": 0,
-    "repair_rejections": 1,
+    "repair_rejections": 2,
     "repair_error": null,
-    "editorial_repair_attempted": true,
-    "editorial_repair_drafts_submitted": 1,
+    "editorial_repair_attempted": false,
+    "editorial_repair_drafts_submitted": 0,
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 1,
-    "submitted_for_independent_review": 1,
+    "locally_valid_drafts": 0,
+    "submitted_for_independent_review": 0,
     "passed_independent_review": 0,
-    "rejected_by_independent_review": 1,
+    "rejected_by_independent_review": 0,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
   "state_summary": {
     "used_candidates_in_cooldown": 18,
-    "recently_attempted_candidates": 21,
+    "recently_attempted_candidates": 23,
     "recent_draft_passes_today": 2
   }
 }
