@@ -1,17 +1,17 @@
 {
-  "generated_at_ist": "2026-10-27T11:48:24+05:30",
-  "run_at_ist": "2026-10-27T11:48:24+05:30",
+  "generated_at_ist": "2026-10-27T12:38:03+05:30",
+  "run_at_ist": "2026-10-27T12:38:03+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 168,
-  "eligible_candidate_count": 86,
+  "candidate_count_raw": 274,
+  "eligible_candidate_count": 171,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4687
+      "total_count": 4689
     },
     {
       "source": "GitHub Search · github-analytics-seo",
@@ -32,7 +32,14 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2862
+      "total_count": 2865
+    },
+    {
+      "source": "GitHub Search · github-digital-product-tools",
+      "kind": "github_repository",
+      "items_kept": 2,
+      "status": "ok",
+      "total_count": 12
     },
     {
       "source": "GitHub Search · github-ecommerce-digital-products",
@@ -42,18 +49,32 @@
       "total_count": 396
     },
     {
+      "source": "GitHub Search · github-marketing-distribution",
+      "kind": "github_repository",
+      "items_kept": 10,
+      "status": "ok",
+      "total_count": 223
+    },
+    {
       "source": "GitHub Search · github-mcp-servers",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2035
+      "total_count": 2037
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2623
+      "total_count": 3240
+    },
+    {
+      "source": "GitHub Search · github-seller-operations",
+      "kind": "github_repository",
+      "items_kept": 10,
+      "status": "ok",
+      "total_count": 350
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
@@ -91,6 +112,13 @@
       "total_count": 10
     },
     {
+      "source": "Hacker News · hn-digital-downloads-templates",
+      "kind": "hacker_news",
+      "items_kept": 0,
+      "status": "ok",
+      "total_count": 7
+    },
+    {
       "source": "Hacker News · hn-digital-products",
       "kind": "hacker_news",
       "items_kept": 1,
@@ -105,7 +133,28 @@
       "total_count": 10
     },
     {
+      "source": "Hacker News · hn-indie-business-revenue",
+      "kind": "hacker_news",
+      "items_kept": 0,
+      "status": "ok",
+      "total_count": 10
+    },
+    {
+      "source": "Hacker News · hn-marketing-distribution",
+      "kind": "hacker_news",
+      "items_kept": 0,
+      "status": "ok",
+      "total_count": 10
+    },
+    {
       "source": "Hacker News · hn-security-selfhost",
+      "kind": "hacker_news",
+      "items_kept": 0,
+      "status": "ok",
+      "total_count": 10
+    },
+    {
+      "source": "Hacker News · hn-seller-operations",
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
@@ -126,15 +175,33 @@
       "total_count": 10
     },
     {
+      "source": "Ahrefs Blog",
+      "kind": "rss",
+      "items_kept": 4,
+      "status": "ok"
+    },
+    {
       "source": "Console.dev",
       "kind": "rss",
       "items_kept": 12,
       "status": "ok"
     },
     {
+      "source": "Indie Hackers (unofficial third-party feed)",
+      "kind": "rss",
+      "items_kept": 5,
+      "status": "ok"
+    },
+    {
       "source": "Product Hunt",
       "kind": "rss",
-      "items_kept": 40,
+      "items_kept": 41,
+      "status": "ok"
+    },
+    {
+      "source": "Shopify Community",
+      "kind": "rss",
+      "items_kept": 30,
       "status": "ok"
     },
     {
@@ -142,172 +209,223 @@
       "kind": "rss",
       "items_kept": 9,
       "status": "ok"
+    },
+    {
+      "source": "Stripe Blog",
+      "kind": "rss",
+      "items_kept": 2,
+      "status": "ok"
+    },
+    {
+      "source": "WooCommerce Blog",
+      "kind": "rss",
+      "items_kept": 2,
+      "status": "ok"
+    },
+    {
+      "source": "WordPress Plugin Directory · wp-digital-downloads",
+      "kind": "wordpress_plugin",
+      "items_kept": 10,
+      "status": "ok",
+      "total_count": 2008
+    },
+    {
+      "source": "WordPress Plugin Directory · wp-ecommerce",
+      "kind": "wordpress_plugin",
+      "items_kept": 10,
+      "status": "ok",
+      "total_count": 2984
+    },
+    {
+      "source": "WordPress Plugin Directory · wp-inventory-management",
+      "kind": "wordpress_plugin",
+      "items_kept": 10,
+      "status": "ok",
+      "total_count": 954
+    },
+    {
+      "source": "WordPress Plugin Directory · wp-marketing-analytics",
+      "kind": "wordpress_plugin",
+      "items_kept": 10,
+      "status": "ok",
+      "total_count": 1768
+    },
+    {
+      "source": "WordPress Plugin Directory · wp-membership-creators",
+      "kind": "wordpress_plugin",
+      "items_kept": 10,
+      "status": "ok",
+      "total_count": 2183
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-27T06:18:24+00:00",
+    "observed_at_utc": "2026-10-27T07:08:03+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 80,
-    "previously_tracked_repositories_refreshed": 120,
+    "repositories_seen_in_discovery": 97,
+    "previously_tracked_repositories_refreshed": 103,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
-    "repositories_with_20_to_36_hour_baseline": 9,
+    "repositories_with_20_to_36_hour_baseline": 10,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "a12efc0e7dac2812",
-      "title": "Enable the analytics queryable capability on metafield and metaobject definitions from your app's TOML",
-      "source_url": "https://shopify.dev/changelog/make-metafield-definitions-analytics-queryable-from-app-s-toml",
+      "candidate_id": "a92e52ee3c14a954",
+      "title": "Show HN: Building the European Company Graph one website at a time",
+      "source_url": "https://firmendaten.researchly.at/netzwerk",
+      "verified": false,
+      "final_url": null,
+      "http_status": null,
+      "reason": "Primary page title/content does not sufficiently match the candidate headline."
+    },
+    {
+      "candidate_id": "f803dce2f9c77322",
+      "title": "POS UI extensions now support reactive storage access",
+      "source_url": "https://shopify.dev/changelog/pos-ui-extensions-now-support-reactive-storage-access",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/make-metafield-definitions-analytics-queryable-from-app-s-toml",
+      "final_url": "https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "01b44b612fda8613",
-      "title": "POS UI extensions 2026-10 adds s-pos-list, a virtualized list with custom row templates",
-      "source_url": "https://shopify.dev/changelog/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates",
+      "candidate_id": "aaae725ea5c245bd",
+      "title": "indranilbanerjee/digital-marketing-pro",
+      "source_url": "https://github.com/indranilbanerjee/digital-marketing-pro",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates",
-      "http_status": 200,
-      "reason": ""
-    },
-    {
-      "candidate_id": "3dc6deed3bb3eb14",
-      "title": "Show HN: Handcrafted HTML-first framework that outperforms React",
-      "source_url": "https://codeberg.org/createthirdplaces/places-js",
-      "verified": true,
-      "final_url": "https://codeberg.org/createthirdplaces/places-js",
+      "final_url": "https://github.com/indranilbanerjee/digital-marketing-pro",
       "http_status": 200,
       "reason": ""
     }
   ],
-  "rejected_primary_sources": [],
+  "rejected_primary_sources": [
+    {
+      "candidate_id": "a92e52ee3c14a954",
+      "title": "Show HN: Building the European Company Graph one website at a time",
+      "source": "Hacker News",
+      "url": "https://firmendaten.researchly.at/netzwerk",
+      "reasons": [
+        "Primary page title/content does not sufficiently match the candidate headline."
+      ]
+    }
+  ],
   "daily_draft_cap": 16,
   "daily_drafts_already_passed": 1,
   "outcome": "skip",
-  "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
+  "decision_reason": "All generated drafts failed the local evidence/editorial checks; the hour was skipped.",
   "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "01b44b612fda8613",
-      "title": "POS UI extensions 2026-10 adds s-pos-list, a virtualized list with custom row templates",
+      "candidate_id": "a92e52ee3c14a954",
+      "title": "Show HN: Building the European Company Graph one website at a time",
+      "source": "Hacker News",
+      "url": "https://firmendaten.researchly.at/netzwerk",
+      "reasons": [
+        "Primary page title/content does not sufficiently match the candidate headline."
+      ]
+    },
+    {
+      "candidate_id": "f803dce2f9c77322",
+      "title": "POS UI extensions now support reactive storage access",
+      "reasons": [
+        "Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.",
+        "timeliness score is below the minimum 6/10"
+      ],
+      "proposed_text": "shopify.storage.current lets POS UI extensions react to storage changes across targets. Test that a UI update fires when another target writes the same key. https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access",
+      "evidence_quote": "The new `shopify.storage.current` API lets POS UI extension developers respond automatically when stored values change across extension targets on the same POS device.",
+      "claim_evidence": [
+        {
+          "claim": "shopify.storage.current lets POS UI extensions react to storage changes across targets.",
+          "quote": "The new `shopify.storage.current` API lets POS UI extension developers respond automatically when stored values change across extension targets on the same POS device."
+        }
+      ]
+    },
+    {
+      "candidate_id": "aaae725ea5c245bd",
+      "title": "indranilbanerjee/digital-marketing-pro",
+      "reasons": [
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "timeliness score is below the minimum 6/10"
+      ],
+      "proposed_text": "digital-marketing-pro is an AI marketing OS for strategy, SEO, and paid media. Generate a campaign plan and check it lists audience segments. https://github.com/indranilbanerjee/digital-marketing-pro",
+      "evidence_quote": "An open-source AI based digital marketing operating system for strategy, SEO, AEO/GEO, paid media, content, CRM, and analytics - grounded in brand context, human approval, and verifiable outputs.",
+      "claim_evidence": [
+        {
+          "claim": "digital-marketing-pro is an AI marketing OS for strategy, SEO, and paid media.",
+          "quote": "An open-source AI based digital marketing operating system for strategy, SEO, AEO/GEO, paid media, content, CRM, and analytics - grounded in brand context, human approval, and verifiable outputs."
+        }
+      ]
+    },
+    {
+      "candidate_id": "f803dce2f9c77322",
+      "title": "POS UI extensions now support reactive storage access",
       "reasons": [
         "Opening sentence is too close to the source headline; add a distinct editorial framing."
       ],
-      "proposed_text": "s-pos-list is a virtualized list component in POS UI extensions 2026‑10. Replace older List component and test row template rendering for performance. https://shopify.dev/changelog/posts/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates",
-      "evidence_quote": "s-pos-list, a virtualized list component",
-      "claim_evidence": [
-        {
-          "claim": "s-pos-list is a virtualized list component in POS UI extensions 2026‑10",
-          "quote": "s-pos-list, a virtualized list component"
-        }
-      ]
-    },
-    {
-      "candidate_id": "3dc6deed3bb3eb14",
-      "title": "Show HN: Handcrafted HTML-first framework that outperforms React",
-      "reasons": [
-        "A supporting quote does not share enough wording with its stated claim",
-        "Supporting quotes cover only 43% of factual wording; narrow the claim or provide a closer primary-source quote"
-      ],
-      "proposed_text": "Places.js is an HTML‑first framework that claims to outperform React. Benchmark rendering 1,000 rows against React to validate the claim. https://codeberg.org/createthirdplaces/places-js",
-      "evidence_quote": "HTML-first progressive‑enhancement framework",
-      "claim_evidence": [
-        {
-          "claim": "Places.js is an HTML‑first framework that claims to outperform React",
-          "quote": "HTML-first progressive‑enhancement framework"
-        }
-      ]
-    },
-    {
-      "candidate_id": "a12efc0e7dac2812",
-      "title": "Enable the analytics queryable capability on metafield and metaobject definitions from your app's TOML",
-      "proposed_text": "Shopify lets you set analytics_queryable on metafield definitions in shopify.app.toml. Deploy the TOML change and verify the field appears in Analytics dimensions. https://shopify.dev/changelog/posts/make-metafield-definitions-analytics-queryable-from-app-s-toml",
-      "reasons": [
-        "Post restates headline without adding new insight; originality below threshold."
-      ],
-      "editorial_review": {
-        "clarity_score": 8,
-        "technical_coherence_score": 8,
-        "takeaway_value_score": 8,
-        "source_faithfulness_score": 9,
-        "originality_score": 4
-      }
-    },
-    {
-      "candidate_id": "a12efc0e7dac2812",
-      "title": "Enable the analytics queryable capability on metafield and metaobject definitions from your app's TOML",
-      "reasons": [
-        "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "Fact plus takeaway exceeds the per-link character budget.",
-        "Draft is 381 raw characters; limit is 280"
-      ],
-      "proposed_text": "A metaobject definition can enable analytics_queryable only if it has at least one analytics‑compatible field. Before setting analytics_queryable to true, verify that the metaobject contains a field with an analytics‑compatible type such as single_line_text_field or number_integer. https://shopify.dev/changelog/posts/make-metafield-definitions-analytics-queryable-from-app-s-toml",
-      "evidence_quote": "A metaobject definition can use the capability only if at least one of its fields has an analytics-compatible type.",
+      "proposed_text": "shopify.storage.current supports reactive storage access in POS UI extensions. Verify that a signal’s value remains undefined until the key finishes loading. https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access",
+      "evidence_quote": "Stored values load asynchronously, so a signal’s value is initially `undefined` until its key finishes loading.",
       "automatic_repair_attempt": true,
       "original_rejection_reasons": [
-        "Post restates headline without adding new insight; originality below threshold."
+        "Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.",
+        "timeliness score is below the minimum 6/10"
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "a12efc0e7dac2812",
-      "title": "Enable the analytics queryable capability on metafield and metaobject definitions from your app's TOML",
-      "url": "https://shopify.dev/changelog/posts/make-metafield-definitions-analytics-queryable-from-app-s-toml",
-      "source": "Shopify Developer Changelog",
-      "primary_category": "commerce_and_digital_products",
-      "priority_score": 69,
-      "hourly_adjusted_score": 69,
+      "id": "a92e52ee3c14a954",
+      "title": "Show HN: Building the European Company Graph one website at a time",
+      "url": "https://firmendaten.researchly.at/netzwerk",
+      "source": "Hacker News",
+      "primary_category": "data_and_growth",
+      "priority_score": 65,
+      "hourly_adjusted_score": 67,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-20T16:00:00+00:00",
-      "days_old": 6.6,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
+      "published_at": "2026-10-26T13:58:24+00:00",
+      "days_old": 0.72,
+      "primary_source_verified": false,
+      "primary_source_http_status": null,
+      "primary_source_reason": "Primary page title/content does not sufficiently match the candidate headline."
     },
     {
-      "id": "01b44b612fda8613",
-      "title": "POS UI extensions 2026-10 adds s-pos-list, a virtualized list with custom row templates",
-      "url": "https://shopify.dev/changelog/posts/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates",
+      "id": "f803dce2f9c77322",
+      "title": "POS UI extensions now support reactive storage access",
+      "url": "https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access",
       "source": "Shopify Developer Changelog",
       "primary_category": "commerce_and_digital_products",
-      "priority_score": 69,
-      "hourly_adjusted_score": 69,
+      "priority_score": 63,
+      "hourly_adjusted_score": 63,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
       "published_at": "2026-10-22T16:00:00+00:00",
-      "days_old": 4.6,
+      "days_old": 4.63,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "3dc6deed3bb3eb14",
-      "title": "Show HN: Handcrafted HTML-first framework that outperforms React",
-      "url": "https://codeberg.org/createthirdplaces/places-js",
-      "source": "Hacker News",
-      "primary_category": "product_and_workflow_tools",
-      "priority_score": 66,
-      "hourly_adjusted_score": 68,
-      "stars_current": null,
+      "id": "aaae725ea5c245bd",
+      "title": "indranilbanerjee/digital-marketing-pro",
+      "url": "https://github.com/indranilbanerjee/digital-marketing-pro",
+      "source": "GitHub Search",
+      "primary_category": "marketing_and_distribution",
+      "priority_score": 68,
+      "hourly_adjusted_score": 62,
+      "stars_current": 910,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-27T03:13:04+00:00",
-      "days_old": 0.13,
+      "trend_signal": "insufficient_history",
+      "published_at": "2026-10-27T06:43:59+00:00",
+      "days_old": 0.02,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
@@ -319,22 +437,22 @@
     "repaired_local_passes": 0,
     "repair_rejections": 1,
     "repair_error": null,
-    "editorial_repair_attempted": true,
-    "editorial_repair_drafts_submitted": 1,
+    "editorial_repair_attempted": false,
+    "editorial_repair_drafts_submitted": 0,
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 1,
-    "submitted_for_independent_review": 1,
+    "locally_valid_drafts": 0,
+    "submitted_for_independent_review": 0,
     "passed_independent_review": 0,
-    "rejected_by_independent_review": 1,
+    "rejected_by_independent_review": 0,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
   "state_summary": {
     "used_candidates_in_cooldown": 17,
-    "recently_attempted_candidates": 14,
+    "recently_attempted_candidates": 16,
     "recent_draft_passes_today": 1
   }
 }

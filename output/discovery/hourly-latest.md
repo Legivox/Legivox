@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-27T11:48:24+05:30
+- Run time (IST): 2026-10-27T12:38:03+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 86
-- Independent editorial review: 0 draft(s) passed / 1 rejected
+- Candidate pool after freshness/diversity filters: 171
+- Independent editorial review: 0 draft(s) passed / 0 rejected
 - Drafts passing local checks: 0
 - Outcome: **skip**
-- Decision reason: Every draft submitted for independent editorial review was rejected; The hour was skipped.
+- Decision reason: All generated drafts failed the local evidence/editorial checks; the hour was skipped.
 
 ## Source health
 
@@ -17,44 +17,61 @@
 | GitHub Search · github-analytics-seo | 10 | ok |
 | GitHub Search · github-creator-infrastructure | 10 | ok |
 | GitHub Search · github-developer-tools | 10 | ok |
+| GitHub Search · github-digital-product-tools | 2 | ok |
 | GitHub Search · github-ecommerce-digital-products | 10 | ok |
+| GitHub Search · github-marketing-distribution | 10 | ok |
 | GitHub Search · github-mcp-servers | 10 | ok |
 | GitHub Search · github-self-hosted | 10 | ok |
+| GitHub Search · github-seller-operations | 10 | ok |
 | GitHub Search · github-shopify-commerce | 10 | ok |
 | GitHub Search · github-workflow-automation | 10 | ok |
 | Hacker News · hn-analytics-growth | 10 | ok |
 | Hacker News · hn-automation-api | 1 | ok |
 | Hacker News · hn-creator-business | 0 | ok |
+| Hacker News · hn-digital-downloads-templates | 0 | ok |
 | Hacker News · hn-digital-products | 1 | ok |
 | Hacker News · hn-ecommerce-payments | 0 | ok |
+| Hacker News · hn-indie-business-revenue | 0 | ok |
+| Hacker News · hn-marketing-distribution | 0 | ok |
 | Hacker News · hn-security-selfhost | 0 | ok |
+| Hacker News · hn-seller-operations | 0 | ok |
 | Hacker News · hn-shopify | 5 | ok |
 | Hacker News · hn-show-hn | 10 | ok |
+| Ahrefs Blog | 4 | ok |
 | Console.dev | 12 | ok |
-| Product Hunt | 40 | ok |
+| Indie Hackers (unofficial third-party feed) | 5 | ok |
+| Product Hunt | 41 | ok |
+| Shopify Community | 30 | ok |
 | Shopify Developer Changelog | 9 | ok |
+| Stripe Blog | 2 | ok |
+| WooCommerce Blog | 2 | ok |
+| WordPress Plugin Directory · wp-digital-downloads | 10 | ok |
+| WordPress Plugin Directory · wp-ecommerce | 10 | ok |
+| WordPress Plugin Directory · wp-inventory-management | 10 | ok |
+| WordPress Plugin Directory · wp-marketing-analytics | 10 | ok |
+| WordPress Plugin Directory · wp-membership-creators | 10 | ok |
 
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 80
-- Previously tracked repositories refreshed outside search results: 120
+- Repositories seen in this discovery run: 97
+- Previously tracked repositories refreshed outside search results: 103
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
-- Repositories with a 20–36 hour comparison baseline: 9
+- Repositories with a 20–36 hour comparison baseline: 10
 - First observations are baseline samples, not evidence of trending. Star velocity is reported only when a historical comparison exists.
 
 ## Primary-source verification
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| Enable the analytics queryable capability on metafield and metaobject definitions from your app's TOML | yes | 200 | https://shopify.dev/changelog/posts/make-metafield-definitions-analytics-queryable-from-app-s-toml |
-| POS UI extensions 2026-10 adds s-pos-list, a virtualized list with custom row templates | yes | 200 | https://shopify.dev/changelog/posts/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates |
-| Show HN: Handcrafted HTML-first framework that outperforms React | yes | 200 | https://codeberg.org/createthirdplaces/places-js |
+| Show HN: Building the European Company Graph one website at a time | no | — | Primary page title/content does not sufficiently match the candidate headline. |
+| POS UI extensions now support reactive storage access | yes | 200 | https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access |
+| indranilbanerjee/digital-marketing-pro | yes | 200 | https://github.com/indranilbanerjee/digital-marketing-pro |
 
 ## Selected draft candidates
 
-No draft cleared the complete local and independent-editor gate. See the decision reason and rejected-draft section for locally valid drafts that were rejected, not reviewed, or blocked by a review error.
+No candidate produced a draft that passed every local check. Skipping is intentional.
 
 ## Automatic repair attempt
 
@@ -67,25 +84,24 @@ No draft cleared the complete local and independent-editor gate. See the decisio
 
 ## Rejected draft options
 
-- POS UI extensions 2026-10 adds s-pos-list, a virtualized list with custom row templates: Opening sentence is too close to the source headline; add a distinct editorial framing.
-  - Rejected text: s-pos-list is a virtualized list component in POS UI extensions 2026‑10. Replace older List component and test row template rendering for performance. https://shopify.dev/changelog/posts/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates
-  - Model evidence quote: “s-pos-list, a virtualized list component”
-  - Claim support: s-pos-list is a virtualized list component in POS UI extensions 2026‑10 ← “s-pos-list, a virtualized list component”
-- Show HN: Handcrafted HTML-first framework that outperforms React: A supporting quote does not share enough wording with its stated claim; Supporting quotes cover only 43% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: Places.js is an HTML‑first framework that claims to outperform React. Benchmark rendering 1,000 rows against React to validate the claim. https://codeberg.org/createthirdplaces/places-js
-  - Model evidence quote: “HTML-first progressive‑enhancement framework”
-  - Claim support: Places.js is an HTML‑first framework that claims to outperform React ← “HTML-first progressive‑enhancement framework”
-- Enable the analytics queryable capability on metafield and metaobject definitions from your app's TOML: Post restates headline without adding new insight; originality below threshold.
-  - Rejected text: Shopify lets you set analytics_queryable on metafield definitions in shopify.app.toml. Deploy the TOML change and verify the field appears in Analytics dimensions. https://shopify.dev/changelog/posts/make-metafield-definitions-analytics-queryable-from-app-s-toml
-- Enable the analytics queryable capability on metafield and metaobject definitions from your app's TOML: Editorial takeaway is too long; keep the analysis concrete and concise.; Fact plus takeaway exceeds the per-link character budget.; Draft is 381 raw characters; limit is 280
-  - Rejected text: A metaobject definition can enable analytics_queryable only if it has at least one analytics‑compatible field. Before setting analytics_queryable to true, verify that the metaobject contains a field with an analytics‑compatible type such as single_line_text_field or number_integer. https://shopify.dev/changelog/posts/make-metafield-definitions-analytics-queryable-from-app-s-toml
-  - Model evidence quote: “A metaobject definition can use the capability only if at least one of its fields has an analytics-compatible type.”
+- Show HN: Building the European Company Graph one website at a time: Primary page title/content does not sufficiently match the candidate headline.
+- POS UI extensions now support reactive storage access: Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.; timeliness score is below the minimum 6/10
+  - Rejected text: shopify.storage.current lets POS UI extensions react to storage changes across targets. Test that a UI update fires when another target writes the same key. https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access
+  - Model evidence quote: “The new `shopify.storage.current` API lets POS UI extension developers respond automatically when stored values change across extension targets on the same POS device.”
+  - Claim support: shopify.storage.current lets POS UI extensions react to storage changes across targets. ← “The new `shopify.storage.current` API lets POS UI extension developers respond automatically when stored values change across extension targets on the same POS device.”
+- indranilbanerjee/digital-marketing-pro: The factual opening bundles multiple features; narrow it to one capability.; timeliness score is below the minimum 6/10
+  - Rejected text: digital-marketing-pro is an AI marketing OS for strategy, SEO, and paid media. Generate a campaign plan and check it lists audience segments. https://github.com/indranilbanerjee/digital-marketing-pro
+  - Model evidence quote: “An open-source AI based digital marketing operating system for strategy, SEO, AEO/GEO, paid media, content, CRM, and analytics - grounded in brand context, human approval, and verifiable outputs.”
+  - Claim support: digital-marketing-pro is an AI marketing OS for strategy, SEO, and paid media. ← “An open-source AI based digital marketing operating system for strategy, SEO, AEO/GEO, paid media, content, CRM, and analytics - grounded in brand context, human approval, and verifiable outputs.”
+- POS UI extensions now support reactive storage access: Opening sentence is too close to the source headline; add a distinct editorial framing.
+  - Rejected text: shopify.storage.current supports reactive storage access in POS UI extensions. Verify that a signal’s value remains undefined until the key finishes loading. https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access
+  - Model evidence quote: “Stored values load asynchronously, so a signal’s value is initially `undefined` until its key finishes loading.”
 
 ## Top discovery candidates considered
 
-- Enable the analytics queryable capability on metafield and metaobject definitions from your app's TOML | Shopify Developer Changelog | commerce_and_digital_products | raw 69, adjusted 69 | https://shopify.dev/changelog/posts/make-metafield-definitions-analytics-queryable-from-app-s-toml
-- POS UI extensions 2026-10 adds s-pos-list, a virtualized list with custom row templates | Shopify Developer Changelog | commerce_and_digital_products | raw 69, adjusted 69 | https://shopify.dev/changelog/posts/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates
-- Show HN: Handcrafted HTML-first framework that outperforms React | Hacker News | product_and_workflow_tools | raw 66, adjusted 68 | https://codeberg.org/createthirdplaces/places-js
+- Show HN: Building the European Company Graph one website at a time | Hacker News | data_and_growth | raw 65, adjusted 67 | https://firmendaten.researchly.at/netzwerk
+- POS UI extensions now support reactive storage access | Shopify Developer Changelog | commerce_and_digital_products | raw 63, adjusted 63 | https://shopify.dev/changelog/posts/pos-ui-extensions-now-support-reactive-storage-access
+- indranilbanerjee/digital-marketing-pro | GitHub Search | marketing_and_distribution | raw 68, adjusted 62 | current stars 910 | GitHub star trend: building baseline | https://github.com/indranilbanerjee/digital-marketing-pro
 
 ## Safety and interpretation
 
