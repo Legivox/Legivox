@@ -1259,6 +1259,21 @@ class HourlyDryRunTests(unittest.TestCase):
         self.assertTrue(hourly.is_fresh(weekly, 14))
         self.assertTrue(hourly.is_fresh(weekly, 7))
 
+    def test_groq_error_details_are_sanitized_and_bounded(self):
+        error = hourly.groq_error_detail(
+            '{"error":{"message":"maximum context length exceeded","type":"invalid_request_error"}}'
+        )
+        self.assertEqual(error, "maximum context length exceeded")
+        fallback = hourly.groq_error_detail("Gateway rejected request\\ncontext length exceeded")
+        self.assertLessEqual(len(fallback), 240)
+        self.assertNotIn("\\n", fallback)
+        self.assertIn("context length", fallback)
+
+    def test_groq_context_limit_error_is_recognized_for_pool_reduction(self):
+        self.assertTrue(hourly.is_groq_request_size_error("Groq returned HTTP 400: maximum context length exceeded"))
+        self.assertTrue(hourly.is_groq_request_size_error("Groq returned HTTP 413"))
+        self.assertFalse(hourly.is_groq_request_size_error("Groq returned HTTP 400: invalid model parameter"))
+
     def test_expanded_content_sources_have_reasonable_freshness_windows(self):
         cases = [
             ("Shopify Community", 2.5, True),
