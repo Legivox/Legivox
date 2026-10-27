@@ -1,73 +1,73 @@
 {
-  "generated_at_ist": "2026-10-27T13:54:35+05:30",
-  "run_at_ist": "2026-10-27T13:54:35+05:30",
+  "generated_at_ist": "2026-10-27T14:52:17+05:30",
+  "run_at_ist": "2026-10-27T14:52:17+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 283,
-  "eligible_candidate_count": 175,
+  "candidate_count_raw": 287,
+  "eligible_candidate_count": 177,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4695
+      "total_count": 4703
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 997
+      "total_count": 1000
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 350
+      "total_count": 351
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2870
+      "total_count": 2873
     },
     {
       "source": "GitHub Search · github-digital-product-tools",
       "kind": "github_repository",
-      "items_kept": 5,
+      "items_kept": 10,
       "status": "ok",
-      "total_count": 5
+      "total_count": 12
     },
     {
       "source": "GitHub Search · github-ecommerce-digital-products",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 398
+      "total_count": 400
     },
     {
       "source": "GitHub Search · github-marketing-distribution",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 223
+      "total_count": 225
     },
     {
       "source": "GitHub Search · github-mcp-servers",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2040
+      "total_count": 2048
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3246
+      "total_count": 3251
     },
     {
       "source": "GitHub Search · github-seller-operations",
@@ -116,7 +116,7 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 7
+      "total_count": 6
     },
     {
       "source": "Hacker News · hn-digital-products",
@@ -195,7 +195,7 @@
     {
       "source": "Product Hunt",
       "kind": "rss",
-      "items_kept": 39,
+      "items_kept": 40,
       "status": "ok"
     },
     {
@@ -259,14 +259,14 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-27T08:24:35+00:00",
+    "observed_at_utc": "2026-10-27T09:22:17+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 108,
-    "previously_tracked_repositories_refreshed": 92,
+    "repositories_seen_in_discovery": 110,
+    "previously_tracked_repositories_refreshed": 90,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
-    "repositories_with_20_to_36_hour_baseline": 8,
+    "repositories_with_20_to_36_hour_baseline": 5,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
@@ -281,22 +281,22 @@
       "reason": "Primary page title/content does not sufficiently match the candidate headline."
     },
     {
-      "candidate_id": "c73035904f5641a3",
-      "title": "Scaling ecommerce: Growing sales without losing margin",
-      "source_url": "https://woocommerce.com/posts/how-to-scale-small-business/",
+      "candidate_id": "b0173e082ad916f9",
+      "title": "Show HN: AMD EPYC Windows developer rigs in the UK/EU in ~10 minutes",
+      "source_url": "https://news.ycombinator.com/item?id=50256259",
       "verified": true,
-      "final_url": "https://woocommerce.com/posts/how-to-scale-small-business/",
+      "final_url": "https://news.ycombinator.com/item?id=50256259",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "e95e12447b71a006",
-      "title": "Unlink a customer's identity provider subject with the GraphQL Admin API",
-      "source_url": "https://shopify.dev/changelog/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api",
-      "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api",
-      "http_status": 200,
-      "reason": ""
+      "candidate_id": "f4c384acde8e9fca",
+      "title": "OpenRadView",
+      "source_url": "https://www.producthunt.com/products/openradview",
+      "verified": false,
+      "final_url": null,
+      "http_status": null,
+      "reason": "Primary source returned HTTP 403."
     }
   ],
   "rejected_primary_sources": [
@@ -308,12 +308,21 @@
       "reasons": [
         "Primary page title/content does not sufficiently match the candidate headline."
       ]
+    },
+    {
+      "candidate_id": "f4c384acde8e9fca",
+      "title": "OpenRadView",
+      "source": "Product Hunt",
+      "url": "https://www.producthunt.com/products/openradview",
+      "reasons": [
+        "Primary source returned HTTP 403."
+      ]
     }
   ],
   "daily_draft_cap": 16,
   "daily_drafts_already_passed": 2,
   "outcome": "skip",
-  "decision_reason": "All generated drafts failed the local evidence/editorial checks; the hour was skipped.",
+  "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
   "passing_drafts": [],
   "rejected_drafts": [
     {
@@ -326,64 +335,47 @@
       ]
     },
     {
-      "candidate_id": "c73035904f5641a3",
-      "title": "Scaling ecommerce: Growing sales without losing margin",
+      "candidate_id": "f4c384acde8e9fca",
+      "title": "OpenRadView",
+      "source": "Product Hunt",
+      "url": "https://www.producthunt.com/products/openradview",
       "reasons": [
-        "Supporting quotes cover only 57% of factual wording; narrow the claim or provide a closer primary-source quote"
-      ],
-      "proposed_text": "WooCommerce shows how to measure cost per order to keep margins. Test cost per order against target margin before scaling. https://woocommerce.com/posts/how-to-scale-small-business/",
-      "evidence_quote": "Learn how to measure your cost per order",
-      "claim_evidence": [
-        {
-          "claim": "WooCommerce shows how to measure cost per order to keep margins.",
-          "quote": "Learn how to measure your cost per order"
-        }
+        "Primary source returned HTTP 403."
       ]
     },
     {
-      "candidate_id": "e95e12447b71a006",
-      "title": "Unlink a customer's identity provider subject with the GraphQL Admin API",
+      "candidate_id": "b0173e082ad916f9",
+      "title": "Show HN: AMD EPYC Windows developer rigs in the UK/EU in ~10 minutes",
+      "proposed_text": "Whitehirst spins up a UK/EU Windows workstation in ~10 minutes. Verify the £12/8‑hour price and that the VM self‑destructs after the allotted time. https://news.ycombinator.com/item?id=50256259",
       "reasons": [
-        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.",
-        "A supporting quote does not share enough wording with its stated claim",
-        "Supporting quotes cover only 33% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Post merely repeats headline facts without adding new insight or actionable detail."
       ],
-      "proposed_text": "Shopify added identityProviderSubjectDelete mutation in API v2027-01. Verify session logout after unlinking to ensure no stale sessions. https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api",
-      "evidence_quote": "identityProviderSubjectDelete mutation to unlink a customer",
-      "claim_evidence": [
-        {
-          "claim": "Shopify added identityProviderSubjectDelete mutation in API v2027-01.",
-          "quote": "identityProviderSubjectDelete mutation to unlink a customer"
-        }
-      ]
+      "editorial_review": {
+        "clarity_score": 9,
+        "technical_coherence_score": 9,
+        "takeaway_value_score": 8,
+        "source_faithfulness_score": 9,
+        "originality_score": 3
+      }
     },
     {
-      "candidate_id": "c73035904f5641a3",
-      "title": "Scaling ecommerce: Growing sales without losing margin",
+      "candidate_id": "b0173e082ad916f9",
+      "title": "Show HN: AMD EPYC Windows developer rigs in the UK/EU in ~10 minutes",
       "reasons": [
-        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about."
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Fact sentence is too long; narrow it to one source-backed capability.",
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "Fact plus takeaway exceeds the per-link character budget.",
+        "Draft is 356 raw characters; limit is 280",
+        "Primary-source evidence quote is missing or absent from the live page (after presentation normalisation)",
+        "No claim-by-claim supporting evidence was provided",
+        "Unsupported numeric claim(s): 24"
       ],
-      "proposed_text": "WooCommerce teaches how to measure cost per order. Use the cost‑per‑order metric to decide when to scale. https://woocommerce.com/posts/how-to-scale-small-business/",
-      "evidence_quote": "Learn how to measure your cost per order",
+      "proposed_text": "Whitehirst offers a UK/EU Windows workstation with 8 AMD EPYC vCPUs, 32 GB RAM, 200 GB NVMe, and a 2 Gbps NIC that spins up in ~10 minutes. Because the machine self‑destructs after the paid period, you must schedule any long‑running builds to finish within the 8‑ or 24‑hour window to avoid unexpected charges. https://news.ycombinator.com/item?id=50256259",
+      "evidence_quote": "You can spin up a Sovereign UK/EU Windows Workstation in ~10 minutes that's fully configured… 8 AMD EPYC vCPUs, 32GB ECC RAM, 200GB NVMe storage and a 2Gbps nic – I intend to offer other specs later on… every workstation is strictly ephemeral and automatically self‑destructs when time's up",
       "automatic_repair_attempt": true,
       "original_rejection_reasons": [
-        "Supporting quotes cover only 57% of factual wording; narrow the claim or provide a closer primary-source quote"
-      ]
-    },
-    {
-      "candidate_id": "e95e12447b71a006",
-      "title": "Unlink a customer's identity provider subject with the GraphQL Admin API",
-      "reasons": [
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
-        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation."
-      ],
-      "proposed_text": "Shopify’s identityProviderSubjectDelete mutation unlinks a customer. After unlinking, the customer is logged out of all sessions. https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api",
-      "evidence_quote": "Unlinking signs the customer out of all of their existing sessions.",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.",
-        "A supporting quote does not share enough wording with its stated claim",
-        "Supporting quotes cover only 33% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Post merely repeats headline facts without adding new insight or actionable detail."
       ]
     }
   ],
@@ -402,72 +394,72 @@
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
       "published_at": "2026-10-26T13:58:24+00:00",
-      "days_old": 0.77,
+      "days_old": 0.81,
       "primary_source_verified": false,
       "primary_source_http_status": null,
       "primary_source_reason": "Primary page title/content does not sufficiently match the candidate headline."
     },
     {
-      "id": "c73035904f5641a3",
-      "title": "Scaling ecommerce: Growing sales without losing margin",
-      "url": "https://woocommerce.com/posts/how-to-scale-small-business/",
-      "source": "WooCommerce Blog",
-      "primary_category": "commerce_and_digital_products",
-      "priority_score": 57,
-      "hourly_adjusted_score": 57,
+      "id": "b0173e082ad916f9",
+      "title": "Show HN: AMD EPYC Windows developer rigs in the UK/EU in ~10 minutes",
+      "url": "https://news.ycombinator.com/item?id=50256259",
+      "source": "Hacker News",
+      "primary_category": "product_and_workflow_tools",
+      "priority_score": 65,
+      "hourly_adjusted_score": 65,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-26T13:31:28+00:00",
-      "days_old": 0.79,
+      "published_at": "2026-10-27T08:53:52+00:00",
+      "days_old": 0.02,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "e95e12447b71a006",
-      "title": "Unlink a customer's identity provider subject with the GraphQL Admin API",
-      "url": "https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api",
-      "source": "Shopify Developer Changelog",
-      "primary_category": "developer_tools",
-      "priority_score": 57,
-      "hourly_adjusted_score": 57,
+      "id": "f4c384acde8e9fca",
+      "title": "OpenRadView",
+      "url": "https://www.producthunt.com/products/openradview",
+      "source": "Product Hunt",
+      "primary_category": "product_and_workflow_tools",
+      "priority_score": 55,
+      "hourly_adjusted_score": 55,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-23T13:00:00+00:00",
-      "days_old": 3.81,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
+      "published_at": "2026-10-26T17:57:31+00:00",
+      "days_old": 0.64,
+      "primary_source_verified": false,
+      "primary_source_http_status": null,
+      "primary_source_reason": "Primary source returned HTTP 403."
     }
   ],
   "automatic_repair": {
     "attempted": true,
-    "drafts_submitted": 2,
+    "drafts_submitted": 1,
     "repaired_local_passes": 0,
-    "repair_rejections": 2,
+    "repair_rejections": 1,
     "repair_error": null,
-    "editorial_repair_attempted": false,
-    "editorial_repair_drafts_submitted": 0,
+    "editorial_repair_attempted": true,
+    "editorial_repair_drafts_submitted": 1,
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 0,
-    "submitted_for_independent_review": 0,
+    "locally_valid_drafts": 1,
+    "submitted_for_independent_review": 1,
     "passed_independent_review": 0,
-    "rejected_by_independent_review": 0,
+    "rejected_by_independent_review": 1,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
   "state_summary": {
     "used_candidates_in_cooldown": 18,
-    "recently_attempted_candidates": 20,
+    "recently_attempted_candidates": 21,
     "recent_draft_passes_today": 2
   }
 }
