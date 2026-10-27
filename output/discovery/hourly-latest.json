@@ -1,24 +1,24 @@
 {
-  "generated_at_ist": "2026-10-27T13:02:41+05:30",
-  "run_at_ist": "2026-10-27T13:02:41+05:30",
+  "generated_at_ist": "2026-10-27T13:54:35+05:30",
+  "run_at_ist": "2026-10-27T13:54:35+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 287,
-  "eligible_candidate_count": 178,
+  "candidate_count_raw": 283,
+  "eligible_candidate_count": 175,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4689
+      "total_count": 4695
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 996
+      "total_count": 997
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
@@ -32,21 +32,21 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2867
+      "total_count": 2870
     },
     {
       "source": "GitHub Search · github-digital-product-tools",
       "kind": "github_repository",
-      "items_kept": 10,
+      "items_kept": 5,
       "status": "ok",
-      "total_count": 12
+      "total_count": 5
     },
     {
       "source": "GitHub Search · github-ecommerce-digital-products",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 396
+      "total_count": 398
     },
     {
       "source": "GitHub Search · github-marketing-distribution",
@@ -60,14 +60,14 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2038
+      "total_count": 2040
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3241
+      "total_count": 3246
     },
     {
       "source": "GitHub Search · github-seller-operations",
@@ -81,7 +81,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 121
+      "total_count": 122
     },
     {
       "source": "GitHub Search · github-workflow-automation",
@@ -116,7 +116,7 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 6
+      "total_count": 7
     },
     {
       "source": "Hacker News · hn-digital-products",
@@ -158,12 +158,12 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 8
+      "total_count": 10
     },
     {
       "source": "Hacker News · hn-shopify",
       "kind": "hacker_news",
-      "items_kept": 6,
+      "items_kept": 5,
       "status": "ok",
       "total_count": 10
     },
@@ -195,7 +195,7 @@
     {
       "source": "Product Hunt",
       "kind": "rss",
-      "items_kept": 40,
+      "items_kept": 39,
       "status": "ok"
     },
     {
@@ -259,14 +259,14 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-27T07:32:41+00:00",
+    "observed_at_utc": "2026-10-27T08:24:35+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 110,
-    "previously_tracked_repositories_refreshed": 90,
+    "repositories_seen_in_discovery": 108,
+    "previously_tracked_repositories_refreshed": 92,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
-    "snapshots_added_this_run": 60,
-    "repositories_with_20_to_36_hour_baseline": 9,
+    "snapshots_added_this_run": 200,
+    "repositories_with_20_to_36_hour_baseline": 8,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
@@ -281,20 +281,20 @@
       "reason": "Primary page title/content does not sufficiently match the candidate headline."
     },
     {
-      "candidate_id": "5564688c3f886a84",
-      "title": "enapt/SwarmLLM",
-      "source_url": "https://github.com/enapt/SwarmLLM",
+      "candidate_id": "c73035904f5641a3",
+      "title": "Scaling ecommerce: Growing sales without losing margin",
+      "source_url": "https://woocommerce.com/posts/how-to-scale-small-business/",
       "verified": true,
-      "final_url": "https://github.com/enapt/SwarmLLM",
+      "final_url": "https://woocommerce.com/posts/how-to-scale-small-business/",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "c25a1f0e4b4ff7cd",
-      "title": "JasonColapietro/suede-creator-skills",
-      "source_url": "https://github.com/JasonColapietro/suede-creator-skills",
+      "candidate_id": "e95e12447b71a006",
+      "title": "Unlink a customer's identity provider subject with the GraphQL Admin API",
+      "source_url": "https://shopify.dev/changelog/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api",
       "verified": true,
-      "final_url": "https://github.com/JasonColapietro/suede-creator-skills",
+      "final_url": "https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api",
       "http_status": 200,
       "reason": ""
     }
@@ -311,59 +311,10 @@
     }
   ],
   "daily_draft_cap": 16,
-  "daily_drafts_already_passed": 1,
-  "outcome": "dry_run_passed",
-  "decision_reason": "At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.",
-  "passing_drafts": [
-    {
-      "candidate_id": "c25a1f0e4b4ff7cd",
-      "title": "JasonColapietro/suede-creator-skills",
-      "source": "GitHub Search",
-      "source_kind": "github_repository",
-      "url": "https://github.com/JasonColapietro/suede-creator-skills",
-      "primary_source_verified": true,
-      "primary_source_title": "GitHub - JasonColapietro/suede-creator-skills: Open-source skills for Claude Code and Codex, with an MCP server, a PyPI package and Suede Awesome Everything, a directory that scores AI agent skills 0 to 99. Created by Jason Colapietro, founder and CEO of Suede AI.",
-      "primary_source_final_url": "https://github.com/JasonColapietro/suede-creator-skills",
-      "primary_source_http_status": 200,
-      "category": "creator_and_indie_business",
-      "priority_score": 67,
-      "hourly_adjusted_score": 61,
-      "post_text": "Suede‑Creator‑Skills provides a PyPI package and MCP server for Claude Code and Codex skills. Run a sample skill to confirm its 0‑99 score; mismatches flag integration bugs. https://github.com/JasonColapietro/suede-creator-skills",
-      "fact_sentence": "Suede‑Creator‑Skills provides a PyPI package and MCP server for Claude Code and Codex skills.",
-      "format": "tool_discovery",
-      "audience": "AI creators",
-      "angle": "skill orchestration",
-      "rationale": "Fact highlights key components; takeaway offers a validation step.",
-      "evidence_quote": "Open‑source skills for Claude Code and Codex, with an MCP server, a PyPI package and Suede Awesome Everything, a directory that scores AI agent skills 0 to 99.",
-      "editorial_takeaway": "Run a sample skill to confirm its 0‑99 score; mismatches flag integration bugs.",
-      "claim_evidence": [
-        {
-          "claim": "Suede‑Creator‑Skills provides a PyPI package and MCP server for Claude Code and Codex skills.",
-          "quote": "Open‑source skills for Claude Code and Codex, with an MCP server, a PyPI package and Suede Awesome Everything, a directory that scores AI agent skills 0 to 99."
-        }
-      ],
-      "scores": {
-        "timeliness": 9,
-        "usefulness": 8,
-        "novelty": 7,
-        "evidence": 9,
-        "insight": 8
-      },
-      "editorial_score": 8.25,
-      "character_count": 229,
-      "status": "dry_run_passed_not_published",
-      "published_to_x": false,
-      "editorial_review": {
-        "clarity_score": 9,
-        "technical_coherence_score": 9,
-        "takeaway_value_score": 9,
-        "source_faithfulness_score": 9,
-        "originality_score": 9,
-        "reason": "Clear, technically accurate, source-backed, and offers a practical next step.",
-        "passed": true
-      }
-    }
-  ],
+  "daily_drafts_already_passed": 2,
+  "outcome": "skip",
+  "decision_reason": "All generated drafts failed the local evidence/editorial checks; the hour was skipped.",
+  "passing_drafts": [],
   "rejected_drafts": [
     {
       "candidate_id": "a92e52ee3c14a954",
@@ -375,18 +326,64 @@
       ]
     },
     {
-      "candidate_id": "5564688c3f886a84",
-      "title": "enapt/SwarmLLM",
+      "candidate_id": "c73035904f5641a3",
+      "title": "Scaling ecommerce: Growing sales without losing margin",
       "reasons": [
-        "Editorial takeaway is not specific enough to this candidate's technical/product details."
+        "Supporting quotes cover only 57% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "SwarmLLM runs OpenAI‑compatible chat models locally and can shard across machines. Run two nodes to benchmark latency; a single node may mask scaling limits. https://github.com/enapt/SwarmLLM",
-      "evidence_quote": "Free, open‑source app that runs AI chat models on your own computer — and lets computers team up over the internet to run models too big for one machine. No account, no crypto. OpenAI‑ and Anthropic‑compatible API.",
+      "proposed_text": "WooCommerce shows how to measure cost per order to keep margins. Test cost per order against target margin before scaling. https://woocommerce.com/posts/how-to-scale-small-business/",
+      "evidence_quote": "Learn how to measure your cost per order",
       "claim_evidence": [
         {
-          "claim": "SwarmLLM runs OpenAI‑compatible chat models locally and can shard across machines.",
-          "quote": "Free, open‑source app that runs AI chat models on your own computer — and lets computers team up over the internet to run models too big for one machine. No account, no crypto. OpenAI‑ and Anthropic‑compatible API."
+          "claim": "WooCommerce shows how to measure cost per order to keep margins.",
+          "quote": "Learn how to measure your cost per order"
         }
+      ]
+    },
+    {
+      "candidate_id": "e95e12447b71a006",
+      "title": "Unlink a customer's identity provider subject with the GraphQL Admin API",
+      "reasons": [
+        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.",
+        "A supporting quote does not share enough wording with its stated claim",
+        "Supporting quotes cover only 33% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ],
+      "proposed_text": "Shopify added identityProviderSubjectDelete mutation in API v2027-01. Verify session logout after unlinking to ensure no stale sessions. https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api",
+      "evidence_quote": "identityProviderSubjectDelete mutation to unlink a customer",
+      "claim_evidence": [
+        {
+          "claim": "Shopify added identityProviderSubjectDelete mutation in API v2027-01.",
+          "quote": "identityProviderSubjectDelete mutation to unlink a customer"
+        }
+      ]
+    },
+    {
+      "candidate_id": "c73035904f5641a3",
+      "title": "Scaling ecommerce: Growing sales without losing margin",
+      "reasons": [
+        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about."
+      ],
+      "proposed_text": "WooCommerce teaches how to measure cost per order. Use the cost‑per‑order metric to decide when to scale. https://woocommerce.com/posts/how-to-scale-small-business/",
+      "evidence_quote": "Learn how to measure your cost per order",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "Supporting quotes cover only 57% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ]
+    },
+    {
+      "candidate_id": "e95e12447b71a006",
+      "title": "Unlink a customer's identity provider subject with the GraphQL Admin API",
+      "reasons": [
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
+        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation."
+      ],
+      "proposed_text": "Shopify’s identityProviderSubjectDelete mutation unlinks a customer. After unlinking, the customer is logged out of all sessions. https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api",
+      "evidence_quote": "Unlinking signs the customer out of all of their existing sessions.",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.",
+        "A supporting quote does not share enough wording with its stated claim",
+        "Supporting quotes cover only 33% of factual wording; narrow the claim or provide a closer primary-source quote"
       ]
     }
   ],
@@ -405,120 +402,72 @@
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
       "published_at": "2026-10-26T13:58:24+00:00",
-      "days_old": 0.73,
+      "days_old": 0.77,
       "primary_source_verified": false,
       "primary_source_http_status": null,
       "primary_source_reason": "Primary page title/content does not sufficiently match the candidate headline."
     },
     {
-      "id": "5564688c3f886a84",
-      "title": "enapt/SwarmLLM",
-      "url": "https://github.com/enapt/SwarmLLM",
-      "source": "GitHub Search",
-      "primary_category": "security_and_self_hosting",
-      "priority_score": 67,
-      "hourly_adjusted_score": 61,
-      "stars_current": 65,
+      "id": "c73035904f5641a3",
+      "title": "Scaling ecommerce: Growing sales without losing margin",
+      "url": "https://woocommerce.com/posts/how-to-scale-small-business/",
+      "source": "WooCommerce Blog",
+      "primary_category": "commerce_and_digital_products",
+      "priority_score": 57,
+      "hourly_adjusted_score": 57,
+      "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
-      "trend_signal": "insufficient_history",
-      "published_at": "2026-10-27T07:32:39+00:00",
-      "days_old": 0.0,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-26T13:31:28+00:00",
+      "days_old": 0.79,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "c25a1f0e4b4ff7cd",
-      "title": "JasonColapietro/suede-creator-skills",
-      "url": "https://github.com/JasonColapietro/suede-creator-skills",
-      "source": "GitHub Search",
-      "primary_category": "creator_and_indie_business",
-      "priority_score": 67,
-      "hourly_adjusted_score": 61,
-      "stars_current": 126,
+      "id": "e95e12447b71a006",
+      "title": "Unlink a customer's identity provider subject with the GraphQL Admin API",
+      "url": "https://shopify.dev/changelog/posts/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api",
+      "source": "Shopify Developer Changelog",
+      "primary_category": "developer_tools",
+      "priority_score": 57,
+      "hourly_adjusted_score": 57,
+      "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
-      "trend_signal": "insufficient_history",
-      "published_at": "2026-10-27T06:48:07+00:00",
-      "days_old": 0.03,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-23T13:00:00+00:00",
+      "days_old": 3.81,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     }
   ],
   "automatic_repair": {
-    "attempted": false,
-    "drafts_submitted": 0,
+    "attempted": true,
+    "drafts_submitted": 2,
     "repaired_local_passes": 0,
-    "repair_rejections": 0,
+    "repair_rejections": 2,
     "repair_error": null,
     "editorial_repair_attempted": false,
     "editorial_repair_drafts_submitted": 0,
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 1,
-    "submitted_for_independent_review": 1,
-    "passed_independent_review": 1,
+    "locally_valid_drafts": 0,
+    "submitted_for_independent_review": 0,
+    "passed_independent_review": 0,
     "rejected_by_independent_review": 0,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
-  "recommended_draft": {
-    "candidate_id": "c25a1f0e4b4ff7cd",
-    "title": "JasonColapietro/suede-creator-skills",
-    "source": "GitHub Search",
-    "source_kind": "github_repository",
-    "url": "https://github.com/JasonColapietro/suede-creator-skills",
-    "primary_source_verified": true,
-    "primary_source_title": "GitHub - JasonColapietro/suede-creator-skills: Open-source skills for Claude Code and Codex, with an MCP server, a PyPI package and Suede Awesome Everything, a directory that scores AI agent skills 0 to 99. Created by Jason Colapietro, founder and CEO of Suede AI.",
-    "primary_source_final_url": "https://github.com/JasonColapietro/suede-creator-skills",
-    "primary_source_http_status": 200,
-    "category": "creator_and_indie_business",
-    "priority_score": 67,
-    "hourly_adjusted_score": 61,
-    "post_text": "Suede‑Creator‑Skills provides a PyPI package and MCP server for Claude Code and Codex skills. Run a sample skill to confirm its 0‑99 score; mismatches flag integration bugs. https://github.com/JasonColapietro/suede-creator-skills",
-    "fact_sentence": "Suede‑Creator‑Skills provides a PyPI package and MCP server for Claude Code and Codex skills.",
-    "format": "tool_discovery",
-    "audience": "AI creators",
-    "angle": "skill orchestration",
-    "rationale": "Fact highlights key components; takeaway offers a validation step.",
-    "evidence_quote": "Open‑source skills for Claude Code and Codex, with an MCP server, a PyPI package and Suede Awesome Everything, a directory that scores AI agent skills 0 to 99.",
-    "editorial_takeaway": "Run a sample skill to confirm its 0‑99 score; mismatches flag integration bugs.",
-    "claim_evidence": [
-      {
-        "claim": "Suede‑Creator‑Skills provides a PyPI package and MCP server for Claude Code and Codex skills.",
-        "quote": "Open‑source skills for Claude Code and Codex, with an MCP server, a PyPI package and Suede Awesome Everything, a directory that scores AI agent skills 0 to 99."
-      }
-    ],
-    "scores": {
-      "timeliness": 9,
-      "usefulness": 8,
-      "novelty": 7,
-      "evidence": 9,
-      "insight": 8
-    },
-    "editorial_score": 8.25,
-    "character_count": 229,
-    "status": "dry_run_passed_not_published",
-    "published_to_x": false,
-    "editorial_review": {
-      "clarity_score": 9,
-      "technical_coherence_score": 9,
-      "takeaway_value_score": 9,
-      "source_faithfulness_score": 9,
-      "originality_score": 9,
-      "reason": "Clear, technically accurate, source-backed, and offers a practical next step.",
-      "passed": true
-    }
-  },
   "state_summary": {
     "used_candidates_in_cooldown": 18,
-    "recently_attempted_candidates": 18,
+    "recently_attempted_candidates": 20,
     "recent_draft_passes_today": 2
   }
 }
