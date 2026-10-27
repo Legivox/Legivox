@@ -1,0 +1,61 @@
+{
+  "date_ist": "2026-10-27",
+  "prepared_at_ist": "2026-10-27 11:27:14 IST",
+  "research_window_days": 1,
+  "research_source": "Multidomain discovery + independent editorial review",
+  "source_report_generated_at_ist": "2026-10-27T10:47:48+05:30",
+  "source_report_age_minutes": 39,
+  "star_baseline_repositories": 9,
+  "posts": [
+    {
+      "idea_id": "multidomain-638846f7379e6538",
+      "niche": "ai_and_automation",
+      "problem": "HKUDS/nanobot",
+      "evidence": "Primary source verified (HTTP 200): https://github.com/HKUDS/nanobot. Exact evidence: Ultra-lightweight, open-source, self-hosted personal AI agent framework in Python with WebUI, tools, memory, MCP, multi-agent workflows, automation, and chat apps",
+      "solution_hypothesis": "Validate that the WebUI correctly renders agent state before deploying to production.",
+      "text": "Nanobot is an ultra‑lightweight Python framework for self‑hosted AI agents with a WebUI. Validate that the WebUI correctly renders agent state before deploying to production. https://github.com/HKUDS/nanobot",
+      "text_hash": "442f790f6d3dbe64c7f4e653c0e859b65d030f6dd82a922ae6bf6f1f2a38a383",
+      "image_query": "",
+      "research": {
+        "query": "Multidomain primary-source discovery and independent editorial review",
+        "score": 8.65,
+        "hits": [
+          {
+            "title": "HKUDS/nanobot",
+            "url": "https://github.com/HKUDS/nanobot",
+            "external_url": "https://github.com/HKUDS/nanobot",
+            "points": 0,
+            "comments": 0,
+            "created_at": "2026-10-27T10:47:48+05:30",
+            "matched_terms": []
+          }
+        ],
+        "error": null
+      },
+      "status": "published: https://x.com/i/status/2114963906338959679",
+      "slot": 0,
+      "editorial_scores": {
+        "model": {
+          "timeliness": 10,
+          "usefulness": 8,
+          "novelty": 7,
+          "evidence": 10,
+          "insight": 8
+        },
+        "overall": 8.65,
+        "independent_review": {
+          "clarity_score": 9,
+          "technical_coherence_score": 9,
+          "takeaway_value_score": 7,
+          "source_faithfulness_score": 9,
+          "originality_score": 7,
+          "reason": "Clear, accurate claim with source support; takeaway adds a practical validation step.",
+          "passed": true
+        }
+      },
+      "published_at_ist": "2026-10-27T11:44:24+05:30",
+      "published_url": "https://x.com/i/status/2114963906338959679",
+      "image": null
+    }
+  ]
+}
