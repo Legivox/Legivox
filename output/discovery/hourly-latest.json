@@ -1,38 +1,38 @@
 {
-  "generated_at_ist": "2026-10-27T21:01:05+05:30",
-  "run_at_ist": "2026-10-27T21:01:05+05:30",
+  "generated_at_ist": "2026-10-27T22:00:04+05:30",
+  "run_at_ist": "2026-10-27T22:00:04+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 288,
-  "eligible_candidate_count": 175,
+  "candidate_count_raw": 297,
+  "eligible_candidate_count": 183,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4754
+      "total_count": 4764
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 850
+      "total_count": 1017
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 358
+      "total_count": 360
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2902
+      "total_count": 2908
     },
     {
       "source": "GitHub Search · github-digital-product-tools",
@@ -60,14 +60,14 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2065
+      "total_count": 2072
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3287
+      "total_count": 3296
     },
     {
       "source": "GitHub Search · github-seller-operations",
@@ -81,7 +81,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 125
+      "total_count": 126
     },
     {
       "source": "GitHub Search · github-workflow-automation",
@@ -100,7 +100,7 @@
     {
       "source": "Hacker News · hn-automation-api",
       "kind": "hacker_news",
-      "items_kept": 1,
+      "items_kept": 2,
       "status": "ok",
       "total_count": 10
     },
@@ -195,7 +195,7 @@
     {
       "source": "Product Hunt",
       "kind": "rss",
-      "items_kept": 39,
+      "items_kept": 41,
       "status": "ok"
     },
     {
@@ -207,7 +207,7 @@
     {
       "source": "Shopify Developer Changelog",
       "kind": "rss",
-      "items_kept": 11,
+      "items_kept": 13,
       "status": "ok"
     },
     {
@@ -259,10 +259,10 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-27T15:31:05+00:00",
+    "observed_at_utc": "2026-10-27T16:30:04+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 107,
-    "previously_tracked_repositories_refreshed": 93,
+    "repositories_seen_in_discovery": 113,
+    "previously_tracked_repositories_refreshed": 87,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
@@ -272,29 +272,29 @@
   },
   "primary_source_checks": [
     {
-      "candidate_id": "106d23087d4f8d8d",
-      "title": "Show HN: Dinemic – self-hosted ingress across multiple providers (DNS, LB, TLS)",
-      "source_url": "https://dinemic.com/",
+      "candidate_id": "25df9fa68f72f18a",
+      "title": "Secure your app with network access rules in `shopify.app.toml`",
+      "source_url": "https://shopify.dev/changelog/secure-your-app-with-network-access-hosts-in-shopify-app-toml",
       "verified": true,
-      "final_url": "https://dinemic.com/",
+      "final_url": "https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "2073550217e33683",
-      "title": "Show HN: Specification First Agentic Development Plugin and Prove",
-      "source_url": "https://spec-first.dev/",
+      "candidate_id": "15e0c3fd4c3565bc",
+      "title": "Show HN: DocPerRow – one Word document per spreadsheet row, in the browser",
+      "source_url": "https://docperrow.netlify.app/",
       "verified": true,
-      "final_url": "https://spec-first.dev/",
+      "final_url": "https://docperrow.netlify.app/",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "166c03500f695e2b",
-      "title": "Subscription churn: Turn retention insights into recurring revenue growth",
-      "source_url": "https://woocommerce.com/posts/subscription-churn-strategies/",
+      "candidate_id": "70983834ee5fe00d",
+      "title": "Show HN: Formstep, Request information from customers without the back-and-forth",
+      "source_url": "https://formstep.io/",
       "verified": true,
-      "final_url": "https://woocommerce.com/posts/subscription-churn-strategies/",
+      "final_url": "https://formstep.io/",
       "http_status": 200,
       "reason": ""
     }
@@ -307,119 +307,92 @@
   "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "106d23087d4f8d8d",
-      "title": "Show HN: Dinemic – self-hosted ingress across multiple providers (DNS, LB, TLS)",
+      "candidate_id": "25df9fa68f72f18a",
+      "title": "Secure your app with network access rules in `shopify.app.toml`",
+      "proposed_text": "Shopify’s network_access section lets you list allowed_navigation_hosts and allowed_sources. Check that URLs in allowed_navigation_hosts bypass Shopify’s external‑site warning. https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml",
       "reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability.",
-        "Editorial takeaway is too long; keep the analysis concrete and concise."
-      ],
-      "proposed_text": "Dinemic configures authoritative DNS, load balancing, and automatic TLS for your servers. Run a health check on the Dinemic API after deployment to confirm DNS propagation and TLS renewal. https://dinemic.com/",
-      "evidence_quote": "Authoritative DNS, load balancing, automatic TLS and an encrypted Dinemic Network Mesh across machines you control.",
-      "claim_evidence": [
-        {
-          "claim": "Dinemic configures authoritative DNS, load balancing, and automatic TLS for your servers.",
-          "quote": "Authoritative DNS, load balancing, automatic TLS and an encrypted Dinemic Network Mesh across machines you control."
-        }
-      ]
-    },
-    {
-      "candidate_id": "2073550217e33683",
-      "title": "Show HN: Specification First Agentic Development Plugin and Prove",
-      "reasons": [
-        "Editorial takeaway is too long; keep the analysis concrete and concise."
-      ],
-      "proposed_text": "Spec-first agentic development uses YAML/Markdown specs to create isolated worktrees and gate commits. Before merging, run the spec-first review command to ensure the spec matches the code changes. https://spec-first.dev/",
-      "evidence_quote": "Spec-first agentic development is specification-driven development for AI coding agents: reviewed specs, isolated worktrees, gated commits.",
-      "claim_evidence": [
-        {
-          "claim": "Spec-first agentic development uses YAML/Markdown specs to create isolated worktrees and gate commits.",
-          "quote": "Spec-first agentic development is specification-driven development for AI coding agents: reviewed specs, isolated worktrees, gated commits."
-        }
-      ]
-    },
-    {
-      "candidate_id": "166c03500f695e2b",
-      "title": "Subscription churn: Turn retention insights into recurring revenue growth",
-      "proposed_text": "WooCommerce blog shows that better churn data helps decide where to act first. Track churn by cohort and test retention tactics on the highest churn segment. https://woocommerce.com/posts/subscription-churn-strategies/",
-      "reasons": [
-        "The post merely restates the source headline and a single quote without adding new insights or actionable details beyond what is already in the article. The takeaway is generic and does not provide a concrete, unique nex"
+        "Post restates headline facts without adding new insight; originality below threshold."
       ],
       "editorial_review": {
-        "clarity_score": 9,
-        "technical_coherence_score": 9,
-        "takeaway_value_score": 8,
+        "clarity_score": 8,
+        "technical_coherence_score": 8,
+        "takeaway_value_score": 7,
         "source_faithfulness_score": 9,
-        "originality_score": 3
+        "originality_score": 4
       }
     },
     {
-      "candidate_id": "166c03500f695e2b",
-      "title": "Subscription churn: Turn retention insights into recurring revenue growth",
+      "candidate_id": "25df9fa68f72f18a",
+      "title": "Secure your app with network access rules in `shopify.app.toml`",
       "reasons": [
-        "Editorial takeaway is too long; keep the analysis concrete and concise."
+        "Fact sentence is too long; narrow it to one source-backed capability.",
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "Fact plus takeaway exceeds the per-link character budget.",
+        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
+        "Draft is 368 raw characters; limit is 280"
       ],
-      "proposed_text": "Review churn alongside growth to see if new subscribers offset revenue loss. When recurring revenue dips, compare churn rates with new subscriber growth to identify whether fresh sign‑ups compensate for churned revenue. https://woocommerce.com/posts/subscription-churn-strategies/",
-      "evidence_quote": "New subscribers may offset some or all of the revenue impact, so reviewing churn alongside growth gives you a clearer view of retention and helps you find more opportunities to strengthen it.",
+      "proposed_text": "Shopify’s new [network_access] section lets you declare allowed_navigation_hosts and allowed_sources in shopify.app.toml. If your app links to external sites, list them in allowed_navigation_hosts to suppress Shopify’s external‑site warning and avoid friction for users. https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml",
+      "evidence_quote": "You can now declare your app's external hosts and servers in a new [network_access] section of shopify.app.toml . declaring your external hosts skips this warning, letting you remove friction for trusted journeys.",
       "automatic_repair_attempt": true,
       "original_rejection_reasons": [
-        "The post merely restates the source headline and a single quote without adding new insights or actionable details beyond what is already in the article. The takeaway is generic and does not provide a concrete, unique nex"
+        "Post restates headline facts without adding new insight; originality below threshold."
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "106d23087d4f8d8d",
-      "title": "Show HN: Dinemic – self-hosted ingress across multiple providers (DNS, LB, TLS)",
-      "url": "https://dinemic.com/",
-      "source": "Hacker News",
-      "primary_category": "product_and_workflow_tools",
-      "priority_score": 72,
-      "hourly_adjusted_score": 74,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-27T14:38:33+00:00",
-      "days_old": 0.04,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "2073550217e33683",
-      "title": "Show HN: Specification First Agentic Development Plugin and Prove",
-      "url": "https://spec-first.dev/",
-      "source": "Hacker News",
-      "primary_category": "product_and_workflow_tools",
-      "priority_score": 59,
-      "hourly_adjusted_score": 61,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-27T15:12:20+00:00",
-      "days_old": 0.01,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "166c03500f695e2b",
-      "title": "Subscription churn: Turn retention insights into recurring revenue growth",
-      "url": "https://woocommerce.com/posts/subscription-churn-strategies/",
-      "source": "WooCommerce Blog",
+      "id": "25df9fa68f72f18a",
+      "title": "Secure your app with network access rules in `shopify.app.toml`",
+      "url": "https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml",
+      "source": "Shopify Developer Changelog",
       "primary_category": "commerce_and_digital_products",
-      "priority_score": 56,
-      "hourly_adjusted_score": 56,
+      "priority_score": 78,
+      "hourly_adjusted_score": 78,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-27T12:00:00+00:00",
-      "days_old": 0.15,
+      "published_at": "2026-10-27T16:00:00+00:00",
+      "days_old": 0.02,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "15e0c3fd4c3565bc",
+      "title": "Show HN: DocPerRow – one Word document per spreadsheet row, in the browser",
+      "url": "https://docperrow.netlify.app/",
+      "source": "Hacker News",
+      "primary_category": "product_and_workflow_tools",
+      "priority_score": 68,
+      "hourly_adjusted_score": 70,
+      "stars_current": null,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-27T16:00:07+00:00",
+      "days_old": 0.02,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "70983834ee5fe00d",
+      "title": "Show HN: Formstep, Request information from customers without the back-and-forth",
+      "url": "https://formstep.io/",
+      "source": "Hacker News",
+      "primary_category": "product_and_workflow_tools",
+      "priority_score": 68,
+      "hourly_adjusted_score": 70,
+      "stars_current": null,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-27T16:03:31+00:00",
+      "days_old": 0.02,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
@@ -446,7 +419,7 @@
   },
   "state_summary": {
     "used_candidates_in_cooldown": 19,
-    "recently_attempted_candidates": 30,
+    "recently_attempted_candidates": 31,
     "recent_draft_passes_today": 3
   }
 }

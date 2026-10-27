@@ -1,9 +1,9 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-27T21:01:05+05:30
+- Run time (IST): 2026-10-27T22:00:04+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 175
+- Candidate pool after freshness/diversity filters: 183
 - Independent editorial review: 0 draft(s) passed / 1 rejected
 - Drafts passing local checks: 0
 - Outcome: **skip**
@@ -26,7 +26,7 @@
 | GitHub Search · github-shopify-commerce | 10 | ok |
 | GitHub Search · github-workflow-automation | 10 | ok |
 | Hacker News · hn-analytics-growth | 10 | ok |
-| Hacker News · hn-automation-api | 1 | ok |
+| Hacker News · hn-automation-api | 2 | ok |
 | Hacker News · hn-creator-business | 0 | ok |
 | Hacker News · hn-digital-downloads-templates | 0 | ok |
 | Hacker News · hn-digital-products | 1 | ok |
@@ -40,9 +40,9 @@
 | Ahrefs Blog | 4 | ok |
 | Console.dev | 12 | ok |
 | Indie Hackers (unofficial third-party feed) | 5 | ok |
-| Product Hunt | 39 | ok |
+| Product Hunt | 41 | ok |
 | Shopify Community | 30 | ok |
-| Shopify Developer Changelog | 11 | ok |
+| Shopify Developer Changelog | 13 | ok |
 | Stripe Blog | 3 | ok |
 | WooCommerce Blog | 3 | ok |
 | WordPress Plugin Directory · wp-digital-downloads | 10 | ok |
@@ -54,8 +54,8 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 107
-- Previously tracked repositories refreshed outside search results: 93
+- Repositories seen in this discovery run: 113
+- Previously tracked repositories refreshed outside search results: 87
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
 - Repositories with a 20–36 hour comparison baseline: 5
@@ -65,9 +65,9 @@
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| Show HN: Dinemic – self-hosted ingress across multiple providers (DNS, LB, TLS) | yes | 200 | https://dinemic.com/ |
-| Show HN: Specification First Agentic Development Plugin and Prove | yes | 200 | https://spec-first.dev/ |
-| Subscription churn: Turn retention insights into recurring revenue growth | yes | 200 | https://woocommerce.com/posts/subscription-churn-strategies/ |
+| Secure your app with network access rules in `shopify.app.toml` | yes | 200 | https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml |
+| Show HN: DocPerRow – one Word document per spreadsheet row, in the browser | yes | 200 | https://docperrow.netlify.app/ |
+| Show HN: Formstep, Request information from customers without the back-and-forth | yes | 200 | https://formstep.io/ |
 
 ## Selected draft candidates
 
@@ -84,25 +84,17 @@ No draft cleared the complete local and independent-editor gate. See the decisio
 
 ## Rejected draft options
 
-- Show HN: Dinemic – self-hosted ingress across multiple providers (DNS, LB, TLS): The factual opening bundles multiple features; narrow it to one capability.; Editorial takeaway is too long; keep the analysis concrete and concise.
-  - Rejected text: Dinemic configures authoritative DNS, load balancing, and automatic TLS for your servers. Run a health check on the Dinemic API after deployment to confirm DNS propagation and TLS renewal. https://dinemic.com/
-  - Model evidence quote: “Authoritative DNS, load balancing, automatic TLS and an encrypted Dinemic Network Mesh across machines you control.”
-  - Claim support: Dinemic configures authoritative DNS, load balancing, and automatic TLS for your servers. ← “Authoritative DNS, load balancing, automatic TLS and an encrypted Dinemic Network Mesh across machines you control.”
-- Show HN: Specification First Agentic Development Plugin and Prove: Editorial takeaway is too long; keep the analysis concrete and concise.
-  - Rejected text: Spec-first agentic development uses YAML/Markdown specs to create isolated worktrees and gate commits. Before merging, run the spec-first review command to ensure the spec matches the code changes. https://spec-first.dev/
-  - Model evidence quote: “Spec-first agentic development is specification-driven development for AI coding agents: reviewed specs, isolated worktrees, gated commits.”
-  - Claim support: Spec-first agentic development uses YAML/Markdown specs to create isolated worktrees and gate commits. ← “Spec-first agentic development is specification-driven development for AI coding agents: reviewed specs, isolated worktrees, gated commits.”
-- Subscription churn: Turn retention insights into recurring revenue growth: The post merely restates the source headline and a single quote without adding new insights or actionable details beyond what is already in the article. The takeaway is generic and does not provide a concrete, unique nex
-  - Rejected text: WooCommerce blog shows that better churn data helps decide where to act first. Track churn by cohort and test retention tactics on the highest churn segment. https://woocommerce.com/posts/subscription-churn-strategies/
-- Subscription churn: Turn retention insights into recurring revenue growth: Editorial takeaway is too long; keep the analysis concrete and concise.
-  - Rejected text: Review churn alongside growth to see if new subscribers offset revenue loss. When recurring revenue dips, compare churn rates with new subscriber growth to identify whether fresh sign‑ups compensate for churned revenue. https://woocommerce.com/posts/subscription-churn-strategies/
-  - Model evidence quote: “New subscribers may offset some or all of the revenue impact, so reviewing churn alongside growth gives you a clearer view of retention and helps you find more opportunities to strengthen it.”
+- Secure your app with network access rules in `shopify.app.toml`: Post restates headline facts without adding new insight; originality below threshold.
+  - Rejected text: Shopify’s network_access section lets you list allowed_navigation_hosts and allowed_sources. Check that URLs in allowed_navigation_hosts bypass Shopify’s external‑site warning. https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml
+- Secure your app with network access rules in `shopify.app.toml`: Fact sentence is too long; narrow it to one source-backed capability.; Editorial takeaway is too long; keep the analysis concrete and concise.; Fact plus takeaway exceeds the per-link character budget.; Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.; Draft is 368 raw characters; limit is 280
+  - Rejected text: Shopify’s new [network_access] section lets you declare allowed_navigation_hosts and allowed_sources in shopify.app.toml. If your app links to external sites, list them in allowed_navigation_hosts to suppress Shopify’s external‑site warning and avoid friction for users. https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml
+  - Model evidence quote: “You can now declare your app's external hosts and servers in a new [network_access] section of shopify.app.toml . declaring your external hosts skips this warning, letting you remove friction for trusted journeys.”
 
 ## Top discovery candidates considered
 
-- Show HN: Dinemic – self-hosted ingress across multiple providers (DNS, LB, TLS) | Hacker News | product_and_workflow_tools | raw 72, adjusted 74 | https://dinemic.com/
-- Show HN: Specification First Agentic Development Plugin and Prove | Hacker News | product_and_workflow_tools | raw 59, adjusted 61 | https://spec-first.dev/
-- Subscription churn: Turn retention insights into recurring revenue growth | WooCommerce Blog | commerce_and_digital_products | raw 56, adjusted 56 | https://woocommerce.com/posts/subscription-churn-strategies/
+- Secure your app with network access rules in `shopify.app.toml` | Shopify Developer Changelog | commerce_and_digital_products | raw 78, adjusted 78 | https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml
+- Show HN: DocPerRow – one Word document per spreadsheet row, in the browser | Hacker News | product_and_workflow_tools | raw 68, adjusted 70 | https://docperrow.netlify.app/
+- Show HN: Formstep, Request information from customers without the back-and-forth | Hacker News | product_and_workflow_tools | raw 68, adjusted 70 | https://formstep.io/
 
 ## Safety and interpretation
 
