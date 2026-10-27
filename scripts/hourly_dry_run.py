@@ -720,7 +720,7 @@ def groq_error_detail(body: str) -> str:
 
     # Some gateways send a non-JSON or nonstandard error body.
     if not detail and body:
-        detail = re.sub(r"\\s+", " ", body).strip()
+        detail = re.sub(r"\s+", " ", body).strip()
     return detail[:240]
 
 
