@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-28T09:54:49+05:30
+- Run time (IST): 2026-10-28T10:53:24+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
 - Candidate pool after freshness/diversity filters: 188
-- Independent editorial review: 0 draft(s) passed / 1 rejected
+- Independent editorial review: 0 draft(s) passed / 0 rejected
 - Drafts passing local checks: 0
 - Outcome: **skip**
-- Decision reason: Every draft submitted for independent editorial review was rejected; The hour was skipped.
+- Decision reason: All generated drafts failed the local evidence/editorial checks; the hour was skipped.
 
 ## Source health
 
@@ -40,7 +40,7 @@
 | Ahrefs Blog | 4 | ok |
 | Console.dev | 12 | ok |
 | Indie Hackers (unofficial third-party feed) | 5 | ok |
-| Product Hunt | 37 | ok |
+| Product Hunt | 38 | ok |
 | Shopify Community | 30 | ok |
 | Shopify Developer Changelog | 18 | ok |
 | Stripe Blog | 3 | ok |
@@ -54,52 +54,63 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 108
-- Previously tracked repositories refreshed outside search results: 92
+- Repositories seen in this discovery run: 109
+- Previously tracked repositories refreshed outside search results: 91
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
-- Repositories with a 20–36 hour comparison baseline: 17
+- Repositories with a 20–36 hour comparison baseline: 18
 - First observations are baseline samples, not evidence of trending. Star velocity is reported only when a historical comparison exists.
 
 ## Primary-source verification
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| Show HN: Dinemic – self-hosted ingress across multiple providers (DNS, LB, TLS) | yes | 200 | https://dinemic.com/ |
-| ragleap/ragleap-core | yes | 200 | https://github.com/ragleap/ragleap-core |
-| 3441293738/creatorhub | yes | 200 | https://github.com/3441293738/creatorhub |
+| paperclipai/paperclip | yes | 200 | https://github.com/paperclipai/paperclip |
+| Secure your app with network access rules in `shopify.app.toml` | yes | 200 | https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml |
+| surendranb/google-analytics-mcp | yes | 200 | https://github.com/surendranb/google-analytics-mcp |
 
 ## Selected draft candidates
 
-No draft cleared the complete local and independent-editor gate. See the decision reason and rejected-draft section for locally valid drafts that were rejected, not reviewed, or blocked by a review error.
+No candidate produced a draft that passed every local check. Skipping is intentional.
 
 ## Automatic repair attempt
 
 - Attempted: yes
-- Repaired drafts submitted: 0
+- Repaired drafts submitted: 3
 - Repaired drafts that passed local validation: 0
-- Repaired drafts rejected: 0
+- Repaired drafts rejected: 3
 - Repair error: none
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
-- Show HN: Dinemic – self-hosted ingress across multiple providers (DNS, LB, TLS): The factual opening bundles multiple features; narrow it to one capability.
-  - Rejected text: Dinemic configures DNS, load balancing, TLS, and an encrypted mesh across your servers. Run one agent per host and confirm mesh traffic is encrypted by inspecting packet headers. https://dinemic.com/
-  - Model evidence quote: “Authoritative DNS, load balancing, automatic TLS and an encrypted Dinemic Network Mesh across machines you control.”
-  - Claim support: Dinemic configures DNS, load balancing, TLS, and an encrypted mesh across your servers. ← “Authoritative DNS, load balancing, automatic TLS and an encrypted Dinemic Network Mesh across machines you control.”
-- 3441293738/creatorhub: The factual opening bundles multiple features; narrow it to one capability.; Fact sentence is too long; narrow it to one source-backed capability.; A supporting quote does not share enough wording with its stated claim; Supporting quotes cover only 9% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: creatorhub is a Python web panel that monitors, collects, and migrates content from Douyin, Xiaohongshu, and Kuaishou. Schedule a scrape of a test account and check that data is stored without duplication. https://github.com/3441293738/creatorhub
-  - Model evidence quote: “多平台内容监控·采集·搬运 一个 Web 面板管起抖音 / 小红书 / 快手”
-  - Claim support: creatorhub is a Python web panel that monitors, collects, and migrates content from Douyin, Xiaohongshu, and Kuaishou. ← “多平台内容监控·采集·搬运 一个 Web 面板管起抖音 / 小红书 / 快手”
-- ragleap/ragleap-core: Takeaway claims approval gate blocks execution, but source does not demonstrate this behavior; insufficient evidence for that specific test.
-  - Rejected text: ragleap-core offers 46 business roles with approval‑gated autonomy and sandboxed code. Create a dummy task and verify the approval gate blocks execution until approved. https://github.com/ragleap/ragleap-core
+- paperclipai/paperclip: Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: paperclip is an open‑source app for managing agents at work. Run a sample agent workflow to confirm state transitions work. https://github.com/paperclipai/paperclip
+  - Model evidence quote: “The open-source app everyone uses to manage agents at work”
+  - Claim support: paperclip is an open‑source app for managing agents at work ← “The open-source app everyone uses to manage agents at work”
+- Secure your app with network access rules in `shopify.app.toml`: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.
+  - Rejected text: Shopify added a network_access section to shopify.app.toml. Declare allowed_navigation_hosts to silence external‑site warnings. https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml
+  - Model evidence quote: “The new [`network_access`](https://shopify.dev/docs/apps/build/cli-for-apps/app-configuration#network_access) section”
+  - Claim support: Shopify added a network_access section to shopify.app.toml ← “The new [`network_access`](https://shopify.dev/docs/apps/build/cli-for-apps/app-configuration#network_access) section”
+- surendranb/google-analytics-mcp: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.; Supporting quotes cover only 56% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: google-analytics-mcp provides GA4 data to AI agents via schema discovery. Use server‑side aggregation to reduce data wrangling before feeding agents. https://github.com/surendranb/google-analytics-mcp
+  - Model evidence quote: “Google Analytics 4 data to AI agents, agentic workflows, and MCP clients”
+  - Claim support: google-analytics-mcp provides GA4 data to AI agents via schema discovery ← “Google Analytics 4 data to AI agents, agentic workflows, and MCP clients”
+- paperclipai/paperclip: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
+  - Rejected text: paperclip is an open‑source app for managing agents at work. Confirm the MIT license to ensure permissive use. https://github.com/paperclipai/paperclip
+  - Model evidence quote: “MIT license”
+- surendranb/google-analytics-mcp: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.
+  - Rejected text: google-analytics-mcp provides GA4 data to AI agents via schema discovery. Use server‑side aggregation to reduce data wrangling before feeding agents. https://github.com/surendranb/google-analytics-mcp
+  - Model evidence quote: “server‑side aggregation”
+- Secure your app with network access rules in `shopify.app.toml`: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.
+  - Rejected text: Shopify added a network_access section to shopify.app.toml. Declare allowed_navigation_hosts to silence external‑site warnings. https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml
+  - Model evidence quote: “allowed_navigation_hosts”
 
 ## Top discovery candidates considered
 
-- Show HN: Dinemic – self-hosted ingress across multiple providers (DNS, LB, TLS) | Hacker News | product_and_workflow_tools | raw 72, adjusted 74 | https://dinemic.com/
-- ragleap/ragleap-core | GitHub Search | ai_and_automation | raw 70, adjusted 74 | current stars 19 | GitHub star trend: building baseline | https://github.com/ragleap/ragleap-core
-- 3441293738/creatorhub | GitHub Search | creator_and_indie_business | raw 57, adjusted 74 | current stars 2654 | GitHub stars +79 over about 20.9h | https://github.com/3441293738/creatorhub
+- paperclipai/paperclip | GitHub Search | ai_and_automation | raw 67, adjusted 86 | current stars 108083 | GitHub stars +282 over about 20.0h | https://github.com/paperclipai/paperclip
+- Secure your app with network access rules in `shopify.app.toml` | Shopify Developer Changelog | commerce_and_digital_products | raw 78, adjusted 78 | https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml
+- surendranb/google-analytics-mcp | GitHub Search | data_and_growth | raw 71, adjusted 75 | current stars 243 | GitHub star trend: building baseline | https://github.com/surendranb/google-analytics-mcp
 
 ## Safety and interpretation
 
