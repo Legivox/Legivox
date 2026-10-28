@@ -1,9 +1,9 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-28T20:06:21+05:30
+- Run time (IST): 2026-10-28T21:04:47+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 190
+- Candidate pool after freshness/diversity filters: 187
 - Independent editorial review: 0 draft(s) passed / 0 rejected
 - Drafts passing local checks: 0
 - Outcome: **skip**
@@ -35,7 +35,7 @@
 | Hacker News · hn-marketing-distribution | 0 | ok |
 | Hacker News · hn-security-selfhost | 0 | ok |
 | Hacker News · hn-seller-operations | 0 | ok |
-| Hacker News · hn-shopify | 7 | ok |
+| Hacker News · hn-shopify | 10 | ok |
 | Hacker News · hn-show-hn | 10 | ok |
 | Ahrefs Blog | 6 | ok |
 | Console.dev | 12 | ok |
@@ -54,8 +54,8 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 113
-- Previously tracked repositories refreshed outside search results: 86
+- Repositories seen in this discovery run: 111
+- Previously tracked repositories refreshed outside search results: 88
 - Refresh failures: 1
 - Star snapshots recorded this run: 199
 - Repositories with a 20–36 hour comparison baseline: 16
@@ -65,9 +65,9 @@
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| Show HN: Shop via CLI; for agents and software engineers | yes | 200 | https://storerouter.ai/playground |
-| Show HN: Interview your analysts instead of auto-generating a semantic layer | yes | 200 | https://github.com/nodal-data/nodal-context |
-| Google AI Mode: All You Need to Know | yes | 200 | https://ahrefs.com/blog/google-ai-mode/ |
+| Show HN: Coding agent spots your AI practices and the ones you're missing | yes | 200 | https://app.userrank.ai/ |
+| Show HN: Algeon – Compose GPU graph, vector, and ML algorithms in SQL | yes | 200 | https://github.com/algeon-dev/algeon |
+| Promoted Placements beta now includes Shop Campaigns | yes | 200 | https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns |
 
 ## Selected draft candidates
 
@@ -84,33 +84,33 @@ No candidate produced a draft that passed every local check. Skipping is intenti
 
 ## Rejected draft options
 
-- Show HN: Shop via CLI; for agents and software engineers: Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.
-  - Rejected text: StoreRouter CLI lets you search all covered e‑commerce stores from the browser. Pipe results through jq to filter by price before adding to cart. https://storerouter.ai/playground
-  - Model evidence quote: “Run the StoreRouter CLI in your browser: search covered stores”
-  - Claim support: StoreRouter CLI lets you search all covered e‑commerce stores from the browser. ← “Run the StoreRouter CLI in your browser: search covered stores”
-- Show HN: Interview your analysts instead of auto-generating a semantic layer: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
-  - Rejected text: Nodal Context provides open‑source business context for AI analytics. Use it to seed Claude prompts with company KPIs before querying. https://github.com/nodal-data/nodal-context
-  - Model evidence quote: “Nodal Context Repo - Open source business context for your data analytics”
-  - Claim support: Nodal Context provides open‑source business context for AI analytics. ← “Nodal Context Repo - Open source business context for your data analytics”
-- Google AI Mode: All You Need to Know: Editorial takeaway is too long; keep the analysis concrete and concise.
-  - Rejected text: Google AI Mode uses Gemini 2.5 to turn search into a conversational experience. Add an opt‑out toggle in your site’s privacy settings to comply with the new console report. https://ahrefs.com/blog/google-ai-mode/
-  - Model evidence quote: “Google’s AI Mode is transforming search into a conversational experience powered by Gemini 2.5.”
-  - Claim support: Google AI Mode uses Gemini 2.5 to turn search into a conversational experience. ← “Google’s AI Mode is transforming search into a conversational experience powered by Gemini 2.5.”
-- Google AI Mode: All You Need to Know: Editorial takeaway is too long; keep the analysis concrete and concise.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
-  - Rejected text: Google AI Mode uses Gemini 2.5 to power conversational search. Disable AI Mode in Search Console by toggling the opt‑out setting to stop reporting on AI‑mode queries. https://ahrefs.com/blog/google-ai-mode/
-  - Model evidence quote: “Google’s AI Mode is transforming search into a conversational experience powered by Gemini 2.5.”
-- Show HN: Shop via CLI; for agents and software engineers: Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.; Editorial takeaway is too long; keep the analysis concrete and concise.; Unsupported strong claim: the first
-  - Rejected text: StoreRouter CLI lets you search all covered e‑commerce stores from the browser. Use the --limit flag to cap results, e.g., run `search 'linen dress' --limit 12` to retrieve only the first dozen items. https://storerouter.ai/playground
-  - Model evidence quote: “search 'linen dress' --limit 12”
-- Show HN: Interview your analysts instead of auto-generating a semantic layer: Editorial takeaway is too long; keep the analysis concrete and concise.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
-  - Rejected text: Nodal Context is an open‑source repository for business context data. Clone the repo and load the `skills` folder to seed Claude prompts with company KPIs before querying. https://github.com/nodal-data/nodal-context
-  - Model evidence quote: “skills”
+- Show HN: Coding agent spots your AI practices and the ones you're missing: Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.
+  - Rejected text: UserRank scans your Claude or ChatGPT locally and sends only names and counts. Verify that your prompt only includes non‑sensitive names before sending to UserRank. https://app.userrank.ai/
+  - Model evidence quote: “Your own Claude or ChatGPT scans locally; only names and counts reach UserRank.”
+  - Claim support: UserRank scans your Claude or ChatGPT locally and sends only names and counts. ← “Your own Claude or ChatGPT scans locally; only names and counts reach UserRank.”
+- Show HN: Algeon – Compose GPU graph, vector, and ML algorithms in SQL: The factual opening bundles multiple features; narrow it to one capability.
+  - Rejected text: Algeon exposes NVIDIA cuGraph, cuVS, and cuML as SQL table functions via DataFusion. Run a simple SELECT on a cuGraph function to confirm GPU acceleration. https://github.com/algeon-dev/algeon
+  - Model evidence quote: “exposes NVIDIA's cuGraph, cuVS, and cuML as SQL table functions.”
+  - Claim support: Algeon exposes NVIDIA cuGraph, cuVS, and cuML as SQL table functions via DataFusion. ← “exposes NVIDIA's cuGraph, cuVS, and cuML as SQL table functions.”
+- Promoted Placements beta now includes Shop Campaigns: Primary-source evidence quote is missing or absent from the live page (after presentation normalisation); A factual claim lacks a quote present in the live primary-source page; Supporting quotes cover only 64% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: Promoted Placements beta now includes Shop Campaigns, adding merchant commission to base rate. Check placement.commission.percentage.value to verify combined rate. https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns
+  - Model evidence quote: “When a search_catalog result comes from a merchant running Shop Campaigns, you earn the commission that merchant funds, added to Shopify's base rate.”
+  - Claim support: Promoted Placements beta now includes Shop Campaigns, adding merchant commission to base rate. ← “When a search_catalog result comes from a merchant running Shop Campaigns, you earn the commission that merchant funds, added to Shopify's base rate.”
+- Promoted Placements beta now includes Shop Campaigns: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; Primary-source evidence quote is missing or absent from the live page (after presentation normalisation); No claim-by-claim supporting evidence was provided; Supporting quotes cover only 64% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: Promoted Placements beta now includes Shop Campaigns, adding merchant commission to base rate. Use placement.commission.percentage.value to read the combined rate per product. https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns
+  - Model evidence quote: “When a search_catalog result comes from a merchant running Shop Campaigns, you earn the commission that merchant funds, added to Shopify's base rate.”
+- Show HN: Algeon – Compose GPU graph, vector, and ML algorithms in SQL: Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.; Primary-source evidence quote is missing or absent from the live page (after presentation normalisation); No claim-by-claim supporting evidence was provided
+  - Rejected text: Algeon exposes NVIDIA cuGraph as a SQL table function via DataFusion. Run SELECT * FROM cuGraph.some_function to trigger GPU acceleration. https://github.com/algeon-dev/algeon
+  - Model evidence quote: “exposes NVIDIA's cuGraph, cuVS, and cuML as SQL table functions.”
+- Show HN: Coding agent spots your AI practices and the ones you're missing: Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; No claim-by-claim supporting evidence was provided
+  - Rejected text: UserRank scans your Claude or ChatGPT locally and sends only names and counts. Ensure prompts contain no sensitive data before sending to UserRank. https://app.userrank.ai/
+  - Model evidence quote: “Your own Claude or ChatGPT scans locally; only names and counts reach UserRank.”
 
 ## Top discovery candidates considered
 
-- Show HN: Shop via CLI; for agents and software engineers | Hacker News | commerce_and_digital_products | raw 73, adjusted 67 | https://storerouter.ai/playground
-- Show HN: Interview your analysts instead of auto-generating a semantic layer | Hacker News | product_and_workflow_tools | raw 65, adjusted 67 | https://github.com/nodal-data/nodal-context
-- Google AI Mode: All You Need to Know | Ahrefs Blog | marketing_and_distribution | raw 59, adjusted 59 | https://ahrefs.com/blog/google-ai-mode/
+- Show HN: Coding agent spots your AI practices and the ones you're missing | Hacker News | product_and_workflow_tools | raw 73, adjusted 75 | https://app.userrank.ai/
+- Show HN: Algeon – Compose GPU graph, vector, and ML algorithms in SQL | Hacker News | data_and_growth | raw 69, adjusted 71 | https://github.com/algeon-dev/algeon
+- Promoted Placements beta now includes Shop Campaigns | Shopify Developer Changelog | commerce_and_digital_products | raw 68, adjusted 60 | https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns
 
 ## Safety and interpretation
 
