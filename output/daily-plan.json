@@ -1,0 +1,61 @@
+{
+  "date_ist": "2026-10-28",
+  "prepared_at_ist": "2026-10-28 22:50:11 IST",
+  "research_window_days": 1,
+  "research_source": "Multidomain discovery + independent editorial review",
+  "source_report_generated_at_ist": "2026-10-28T22:03:31+05:30",
+  "source_report_age_minutes": 46,
+  "star_baseline_repositories": 16,
+  "posts": [
+    {
+      "idea_id": "multidomain-d305f31b453064d9",
+      "niche": "commerce_and_digital_products",
+      "problem": "Make your app's activity reportable in Shopify Analytics with App Events",
+      "evidence": "Primary source verified (HTTP 200): https://shopify.dev/changelog/posts/app-events-in-analytics. Exact evidence: What changed Apps can now declare events in an analytics _app _events extension .",
+      "solution_hypothesis": "Deploy the extension and send a test event to confirm visibility in Analytics.",
+      "text": "Apps can declare analytics events in an analytics_app_events extension. Deploy the extension and send a test event to confirm visibility in Analytics. https://shopify.dev/changelog/posts/app-events-in-analytics",
+      "text_hash": "35bfc02bdacb2d8bf0e4b6ef70af296d2f989b2f3a382232cc04c4fe04b2aa42",
+      "image_query": "",
+      "research": {
+        "query": "Multidomain primary-source discovery and independent editorial review",
+        "score": 8.4,
+        "hits": [
+          {
+            "title": "Make your app's activity reportable in Shopify Analytics with App Events",
+            "url": "https://shopify.dev/changelog/posts/app-events-in-analytics",
+            "external_url": "https://shopify.dev/changelog/posts/app-events-in-analytics",
+            "points": 0,
+            "comments": 0,
+            "created_at": "2026-10-28T22:03:31+05:30",
+            "matched_terms": []
+          }
+        ],
+        "error": null
+      },
+      "status": "published: https://x.com/i/status/2115493853851787679",
+      "slot": 2,
+      "editorial_scores": {
+        "model": {
+          "timeliness": 10,
+          "usefulness": 8,
+          "novelty": 7,
+          "evidence": 9,
+          "insight": 8
+        },
+        "overall": 8.4,
+        "independent_review": {
+          "clarity_score": 8,
+          "technical_coherence_score": 8,
+          "takeaway_value_score": 8,
+          "source_faithfulness_score": 8,
+          "originality_score": 8,
+          "reason": "Clear, technically coherent, source-backed, and adds a useful next‑step.",
+          "passed": true
+        }
+      },
+      "published_at_ist": "2026-10-28T22:50:13+05:30",
+      "published_url": "https://x.com/i/status/2115493853851787679",
+      "image": null
+    }
+  ]
+}
