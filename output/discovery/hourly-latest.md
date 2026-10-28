@@ -1,9 +1,9 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-28T07:57:49+05:30
+- Run time (IST): 2026-10-28T08:54:43+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 184
+- Candidate pool after freshness/diversity filters: 189
 - Independent editorial review: 0 draft(s) passed / 0 rejected
 - Drafts passing local checks: 0
 - Outcome: **skip**
@@ -29,7 +29,7 @@
 | Hacker News · hn-automation-api | 2 | ok |
 | Hacker News · hn-creator-business | 0 | ok |
 | Hacker News · hn-digital-downloads-templates | 0 | ok |
-| Hacker News · hn-digital-products | 1 | ok |
+| Hacker News · hn-digital-products | 2 | ok |
 | Hacker News · hn-ecommerce-payments | 0 | ok |
 | Hacker News · hn-indie-business-revenue | 0 | ok |
 | Hacker News · hn-marketing-distribution | 0 | ok |
@@ -54,20 +54,20 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 111
-- Previously tracked repositories refreshed outside search results: 89
+- Repositories seen in this discovery run: 112
+- Previously tracked repositories refreshed outside search results: 88
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
-- Repositories with a 20–36 hour comparison baseline: 6
+- Repositories with a 20–36 hour comparison baseline: 9
 - First observations are baseline samples, not evidence of trending. Star velocity is reported only when a historical comparison exists.
 
 ## Primary-source verification
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| Show HN: Shop via CLI; for agents and software engineers | yes | 200 | https://storerouter.ai/playground |
-| Lifecycle-Innovations-Limited/claude-ops | yes | 200 | https://github.com/Lifecycle-Innovations-Limited/claude-ops |
-| oomol-lab/open-flow | yes | 200 | https://github.com/oomol-lab/open-flow |
+| ldbumble/taskuary | yes | 200 | https://github.com/ldbumble/taskuary |
+| Promoted Placements beta now includes Shop Campaigns | yes | 200 | https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns |
+| Search brands that don't sell on Shopify in the Catalog API (beta) | yes | 200 | https://shopify.dev/changelog/posts/search-brands-that-don-t-sell-on-shopify-in-the-catalog-api-beta |
 
 ## Selected draft candidates
 
@@ -76,35 +76,43 @@ No candidate produced a draft that passed every local check. Skipping is intenti
 ## Automatic repair attempt
 
 - Attempted: yes
-- Repaired drafts submitted: 1
+- Repaired drafts submitted: 3
 - Repaired drafts that passed local validation: 0
-- Repaired drafts rejected: 1
+- Repaired drafts rejected: 3
 - Repair error: none
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
-- Show HN: Shop via CLI; for agents and software engineers: Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
-  - Rejected text: StoreRouter CLI Playground runs the CLI in a browser to search products. Pipe the JSON output through jq and assert the expected product fields. https://storerouter.ai/playground
-  - Model evidence quote: “Run the StoreRouter CLI in your browser: search covered stores, filter, look up product URLs, find similar products, and pipe the JSON through jq.”
-  - Claim support: The source says capability X ← “Run the StoreRouter CLI in your browser: search covered stores, filter, look up product URLs, find similar products, and pipe the JSON through jq.”
-- Lifecycle-Innovations-Limited/claude-ops: The factual opening bundles multiple features; narrow it to one capability.
-  - Rejected text: Claude‑ops offers a unified inbox for WhatsApp, Email, Slack and Telegram. Verify that a message sent to one channel appears in the others via the inbox API. https://github.com/Lifecycle-Innovations-Limited/claude-ops
-  - Model evidence quote: “Unified inbox (WhatsApp/Email/Slack/Telegram)”
-  - Claim support: The source says capability X ← “Unified inbox (WhatsApp/Email/Slack/Telegram)”
-- oomol-lab/open-flow: Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.; Supporting quotes cover only 57% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: Open‑flow provides a self‑hosted Control API for workflow orchestration. Test the API’s idempotency by re‑issuing the same workflow trigger. https://github.com/oomol-lab/open-flow
-  - Model evidence quote: “self-hosted Control API”
-  - Claim support: The source says capability X ← “self-hosted Control API”
-- Show HN: Shop via CLI; for agents and software engineers: Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.; Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.; Editorial takeaway is too long; keep the analysis concrete and concise.; Fact plus takeaway exceeds the per-link character budget.; Draft is 285 raw characters; limit is 280
-  - Rejected text: StoreRouter CLI Playground lets you run the StoreRouter CLI directly in a browser. Execute a `search` command with a limit of 12 in the playground, pipe the JSON output to jq, and verify that the returned `products` array contains the expected fields. https://storerouter.ai/playground
-  - Model evidence quote: “Run the StoreRouter CLI in your browser: search covered stores, filter, look up product URLs, find similar products, and pipe the JSON through jq.”
+- ldbumble/taskuary: The factual opening bundles multiple features; narrow it to one capability.
+  - Rejected text: taskuary turns mail, chats and tickets into tasks via Claude, Codex, Gemini agents. Verify that agent approvals are required before any outbound action. https://github.com/ldbumble/taskuary
+  - Model evidence quote: “mail, chats and tickets become tasks, the agents you already use (Claude Code, Codex, Gemini) do the work”
+  - Claim support: taskuary turns mail, chats and tickets into tasks via Claude, Codex, Gemini agents. ← “mail, chats and tickets become tasks, the agents you already use (Claude Code, Codex, Gemini) do the work”
+- Unmapped model draft: Model omitted a valid candidate ID and no exact verified source URL matched.
+- Promoted Placements beta now includes Shop Campaigns: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
+  - Rejected text: search_catalog results from Shop Campaign merchants return combined commission rate. Read placement.commission.percentage.value for accurate per‑product commission. https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns
+  - Model evidence quote: “placement.commission.percentage.value returns the total rate, combining the merchant's commission and Shopify's base rate”
+  - Claim support: search_catalog results from Shop Campaign merchants return combined commission rate. ← “placement.commission.percentage.value returns the total rate, combining the merchant's commission and Shopify's base rate”
+- Unmapped model draft: Model omitted a valid candidate ID and no exact verified source URL matched.
+- Search brands that don't sell on Shopify in the Catalog API (beta): Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.
+  - Rejected text: Catalog API beta adds a `sources` parameter to search_catalog. Set sources to ['shopify','external'] to return both Shopify and external items. https://shopify.dev/changelog/posts/search-brands-that-don-t-sell-on-shopify-in-the-catalog-api-beta
+  - Model evidence quote: “The Catalog API beta now supports a `sources` parameter on `search_catalog` that controls which products you return”
+  - Claim support: Catalog API beta adds a `sources` parameter to search_catalog. ← “The Catalog API beta now supports a `sources` parameter on `search_catalog` that controls which products you return”
+- ldbumble/taskuary: The factual opening bundles multiple features; narrow it to one capability.
+  - Rejected text: taskuary turns mail, chats and tickets into tasks via Claude, Codex, Gemini agents. Run taskuary locally to keep all outbound actions under your control. https://github.com/ldbumble/taskuary
+  - Model evidence quote: “Open source, runs on your machine.”
+- Promoted Placements beta now includes Shop Campaigns: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
+  - Rejected text: search_catalog results from Shop Campaign merchants return combined commission rate. Report commission per product by reading placement.commission.percentage.value. https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns
+  - Model evidence quote: “placement.commission.percentage.value returns the total rate, combining the merchant's commission and Shopify's base rate”
+- Search brands that don't sell on Shopify in the Catalog API (beta): Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.
+  - Rejected text: Catalog API beta adds a `sources` parameter to search_catalog. Set sources to ['external'] to return only brands that don't sell on Shopify. https://shopify.dev/changelog/posts/search-brands-that-don-t-sell-on-shopify-in-the-catalog-api-beta
+  - Model evidence quote: “Brands that don't sell on Shopify only: ['external']”
 
 ## Top discovery candidates considered
 
-- Show HN: Shop via CLI; for agents and software engineers | Hacker News | commerce_and_digital_products | raw 73, adjusted 75 | https://storerouter.ai/playground
-- Lifecycle-Innovations-Limited/claude-ops | GitHub Search | commerce_and_digital_products | raw 70, adjusted 74 | current stars 547 | GitHub star trend: building baseline | https://github.com/Lifecycle-Innovations-Limited/claude-ops
-- oomol-lab/open-flow | GitHub Search | ai_and_automation | raw 69, adjusted 73 | current stars 280 | GitHub star trend: building baseline | https://github.com/oomol-lab/open-flow
+- ldbumble/taskuary | GitHub Search | ai_and_automation | raw 71, adjusted 75 | current stars 143 | GitHub star trend: building baseline | https://github.com/ldbumble/taskuary
+- Promoted Placements beta now includes Shop Campaigns | Shopify Developer Changelog | commerce_and_digital_products | raw 72, adjusted 72 | https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns
+- Search brands that don't sell on Shopify in the Catalog API (beta) | Shopify Developer Changelog | commerce_and_digital_products | raw 72, adjusted 72 | https://shopify.dev/changelog/posts/search-brands-that-don-t-sell-on-shopify-in-the-catalog-api-beta
 
 ## Safety and interpretation
 

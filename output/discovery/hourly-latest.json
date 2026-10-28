@@ -1,17 +1,17 @@
 {
-  "generated_at_ist": "2026-10-28T07:57:49+05:30",
-  "run_at_ist": "2026-10-28T07:57:49+05:30",
+  "generated_at_ist": "2026-10-28T08:54:43+05:30",
+  "run_at_ist": "2026-10-28T08:54:43+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 300,
-  "eligible_candidate_count": 184,
+  "candidate_count_raw": 301,
+  "eligible_candidate_count": 189,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4713
+      "total_count": 4718
     },
     {
       "source": "GitHub Search · github-analytics-seo",
@@ -25,14 +25,14 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 351
+      "total_count": 352
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2866
+      "total_count": 2872
     },
     {
       "source": "GitHub Search · github-digital-product-tools",
@@ -46,7 +46,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 412
+      "total_count": 414
     },
     {
       "source": "GitHub Search · github-marketing-distribution",
@@ -60,14 +60,14 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2053
+      "total_count": 2055
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3286
+      "total_count": 3289
     },
     {
       "source": "GitHub Search · github-seller-operations",
@@ -116,12 +116,12 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 6
+      "total_count": 7
     },
     {
       "source": "Hacker News · hn-digital-products",
       "kind": "hacker_news",
-      "items_kept": 1,
+      "items_kept": 2,
       "status": "ok",
       "total_count": 10
     },
@@ -259,42 +259,42 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-28T02:27:49+00:00",
+    "observed_at_utc": "2026-10-28T03:24:43+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 111,
-    "previously_tracked_repositories_refreshed": 89,
+    "repositories_seen_in_discovery": 112,
+    "previously_tracked_repositories_refreshed": 88,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
-    "repositories_with_20_to_36_hour_baseline": 6,
+    "repositories_with_20_to_36_hour_baseline": 9,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "33a5c9931e59489b",
-      "title": "Show HN: Shop via CLI; for agents and software engineers",
-      "source_url": "https://storerouter.ai/playground",
+      "candidate_id": "aaac4c73f6063b6f",
+      "title": "ldbumble/taskuary",
+      "source_url": "https://github.com/ldbumble/taskuary",
       "verified": true,
-      "final_url": "https://storerouter.ai/playground",
+      "final_url": "https://github.com/ldbumble/taskuary",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "fe11cc6566e35c2b",
-      "title": "Lifecycle-Innovations-Limited/claude-ops",
-      "source_url": "https://github.com/Lifecycle-Innovations-Limited/claude-ops",
+      "candidate_id": "fe106ba546c5c606",
+      "title": "Promoted Placements beta now includes Shop Campaigns",
+      "source_url": "https://shopify.dev/changelog/promoted-placements-beta-now-includes-shop-campaigns",
       "verified": true,
-      "final_url": "https://github.com/Lifecycle-Innovations-Limited/claude-ops",
+      "final_url": "https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "36be873f79a8140f",
-      "title": "oomol-lab/open-flow",
-      "source_url": "https://github.com/oomol-lab/open-flow",
+      "candidate_id": "5b7aef4519e9bf2e",
+      "title": "Search brands that don't sell on Shopify in the Catalog API (beta)",
+      "source_url": "https://shopify.dev/changelog/search-brands-that-don-t-sell-on-shopify-in-the-catalog-api-beta",
       "verified": true,
-      "final_url": "https://github.com/oomol-lab/open-flow",
+      "final_url": "https://shopify.dev/changelog/posts/search-brands-that-don-t-sell-on-shopify-in-the-catalog-api-beta",
       "http_status": 200,
       "reason": ""
     }
@@ -307,125 +307,163 @@
   "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "33a5c9931e59489b",
-      "title": "Show HN: Shop via CLI; for agents and software engineers",
-      "reasons": [
-        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.",
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
-      ],
-      "proposed_text": "StoreRouter CLI Playground runs the CLI in a browser to search products. Pipe the JSON output through jq and assert the expected product fields. https://storerouter.ai/playground",
-      "evidence_quote": "Run the StoreRouter CLI in your browser: search covered stores, filter, look up product URLs, find similar products, and pipe the JSON through jq.",
-      "claim_evidence": [
-        {
-          "claim": "The source says capability X",
-          "quote": "Run the StoreRouter CLI in your browser: search covered stores, filter, look up product URLs, find similar products, and pipe the JSON through jq."
-        }
-      ]
-    },
-    {
-      "candidate_id": "fe11cc6566e35c2b",
-      "title": "Lifecycle-Innovations-Limited/claude-ops",
+      "candidate_id": "aaac4c73f6063b6f",
+      "title": "ldbumble/taskuary",
       "reasons": [
         "The factual opening bundles multiple features; narrow it to one capability."
       ],
-      "proposed_text": "Claude‑ops offers a unified inbox for WhatsApp, Email, Slack and Telegram. Verify that a message sent to one channel appears in the others via the inbox API. https://github.com/Lifecycle-Innovations-Limited/claude-ops",
-      "evidence_quote": "Unified inbox (WhatsApp/Email/Slack/Telegram)",
+      "proposed_text": "taskuary turns mail, chats and tickets into tasks via Claude, Codex, Gemini agents. Verify that agent approvals are required before any outbound action. https://github.com/ldbumble/taskuary",
+      "evidence_quote": "mail, chats and tickets become tasks, the agents you already use (Claude Code, Codex, Gemini) do the work",
       "claim_evidence": [
         {
-          "claim": "The source says capability X",
-          "quote": "Unified inbox (WhatsApp/Email/Slack/Telegram)"
+          "claim": "taskuary turns mail, chats and tickets into tasks via Claude, Codex, Gemini agents.",
+          "quote": "mail, chats and tickets become tasks, the agents you already use (Claude Code, Codex, Gemini) do the work"
         }
       ]
     },
     {
-      "candidate_id": "36be873f79a8140f",
-      "title": "oomol-lab/open-flow",
+      "candidate_id": null,
+      "title": "Unmapped model draft",
+      "proposed_text": "",
       "reasons": [
-        "Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.",
-        "Supporting quotes cover only 57% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Model omitted a valid candidate ID and no exact verified source URL matched."
+      ]
+    },
+    {
+      "candidate_id": "fe106ba546c5c606",
+      "title": "Promoted Placements beta now includes Shop Campaigns",
+      "reasons": [
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
       ],
-      "proposed_text": "Open‑flow provides a self‑hosted Control API for workflow orchestration. Test the API’s idempotency by re‑issuing the same workflow trigger. https://github.com/oomol-lab/open-flow",
-      "evidence_quote": "self-hosted Control API",
+      "proposed_text": "search_catalog results from Shop Campaign merchants return combined commission rate. Read placement.commission.percentage.value for accurate per‑product commission. https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns",
+      "evidence_quote": "placement.commission.percentage.value returns the total rate, combining the merchant's commission and Shopify's base rate",
       "claim_evidence": [
         {
-          "claim": "The source says capability X",
-          "quote": "self-hosted Control API"
+          "claim": "search_catalog results from Shop Campaign merchants return combined commission rate.",
+          "quote": "placement.commission.percentage.value returns the total rate, combining the merchant's commission and Shopify's base rate"
         }
       ]
     },
     {
-      "candidate_id": "33a5c9931e59489b",
-      "title": "Show HN: Shop via CLI; for agents and software engineers",
+      "candidate_id": null,
+      "title": "Unmapped model draft",
+      "proposed_text": "",
       "reasons": [
-        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.",
-        "Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.",
-        "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "Fact plus takeaway exceeds the per-link character budget.",
-        "Draft is 285 raw characters; limit is 280"
+        "Model omitted a valid candidate ID and no exact verified source URL matched."
+      ]
+    },
+    {
+      "candidate_id": "5b7aef4519e9bf2e",
+      "title": "Search brands that don't sell on Shopify in the Catalog API (beta)",
+      "reasons": [
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
+        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation."
       ],
-      "proposed_text": "StoreRouter CLI Playground lets you run the StoreRouter CLI directly in a browser. Execute a `search` command with a limit of 12 in the playground, pipe the JSON output to jq, and verify that the returned `products` array contains the expected fields. https://storerouter.ai/playground",
-      "evidence_quote": "Run the StoreRouter CLI in your browser: search covered stores, filter, look up product URLs, find similar products, and pipe the JSON through jq.",
+      "proposed_text": "Catalog API beta adds a `sources` parameter to search_catalog. Set sources to ['shopify','external'] to return both Shopify and external items. https://shopify.dev/changelog/posts/search-brands-that-don-t-sell-on-shopify-in-the-catalog-api-beta",
+      "evidence_quote": "The Catalog API beta now supports a `sources` parameter on `search_catalog` that controls which products you return",
+      "claim_evidence": [
+        {
+          "claim": "Catalog API beta adds a `sources` parameter to search_catalog.",
+          "quote": "The Catalog API beta now supports a `sources` parameter on `search_catalog` that controls which products you return"
+        }
+      ]
+    },
+    {
+      "candidate_id": "aaac4c73f6063b6f",
+      "title": "ldbumble/taskuary",
+      "reasons": [
+        "The factual opening bundles multiple features; narrow it to one capability."
+      ],
+      "proposed_text": "taskuary turns mail, chats and tickets into tasks via Claude, Codex, Gemini agents. Run taskuary locally to keep all outbound actions under your control. https://github.com/ldbumble/taskuary",
+      "evidence_quote": "Open source, runs on your machine.",
       "automatic_repair_attempt": true,
       "original_rejection_reasons": [
-        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.",
+        "The factual opening bundles multiple features; narrow it to one capability."
+      ]
+    },
+    {
+      "candidate_id": "fe106ba546c5c606",
+      "title": "Promoted Placements beta now includes Shop Campaigns",
+      "reasons": [
         "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
+      ],
+      "proposed_text": "search_catalog results from Shop Campaign merchants return combined commission rate. Report commission per product by reading placement.commission.percentage.value. https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns",
+      "evidence_quote": "placement.commission.percentage.value returns the total rate, combining the merchant's commission and Shopify's base rate",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
+      ]
+    },
+    {
+      "candidate_id": "5b7aef4519e9bf2e",
+      "title": "Search brands that don't sell on Shopify in the Catalog API (beta)",
+      "reasons": [
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
+        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation."
+      ],
+      "proposed_text": "Catalog API beta adds a `sources` parameter to search_catalog. Set sources to ['external'] to return only brands that don't sell on Shopify. https://shopify.dev/changelog/posts/search-brands-that-don-t-sell-on-shopify-in-the-catalog-api-beta",
+      "evidence_quote": "Brands that don't sell on Shopify only: ['external']",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
+        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation."
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "33a5c9931e59489b",
-      "title": "Show HN: Shop via CLI; for agents and software engineers",
-      "url": "https://storerouter.ai/playground",
-      "source": "Hacker News",
-      "primary_category": "commerce_and_digital_products",
-      "priority_score": 73,
+      "id": "aaac4c73f6063b6f",
+      "title": "ldbumble/taskuary",
+      "url": "https://github.com/ldbumble/taskuary",
+      "source": "GitHub Search",
+      "primary_category": "ai_and_automation",
+      "priority_score": 71,
       "hourly_adjusted_score": 75,
+      "stars_current": 143,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "insufficient_history",
+      "published_at": "2026-10-28T03:24:38+00:00",
+      "days_old": 0.0,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "fe106ba546c5c606",
+      "title": "Promoted Placements beta now includes Shop Campaigns",
+      "url": "https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns",
+      "source": "Shopify Developer Changelog",
+      "primary_category": "commerce_and_digital_products",
+      "priority_score": 72,
+      "hourly_adjusted_score": 72,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-27T19:12:20+00:00",
-      "days_old": 0.3,
+      "published_at": "2026-10-27T13:00:00+00:00",
+      "days_old": 0.6,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "fe11cc6566e35c2b",
-      "title": "Lifecycle-Innovations-Limited/claude-ops",
-      "url": "https://github.com/Lifecycle-Innovations-Limited/claude-ops",
-      "source": "GitHub Search",
+      "id": "5b7aef4519e9bf2e",
+      "title": "Search brands that don't sell on Shopify in the Catalog API (beta)",
+      "url": "https://shopify.dev/changelog/posts/search-brands-that-don-t-sell-on-shopify-in-the-catalog-api-beta",
+      "source": "Shopify Developer Changelog",
       "primary_category": "commerce_and_digital_products",
-      "priority_score": 70,
-      "hourly_adjusted_score": 74,
-      "stars_current": 547,
+      "priority_score": 72,
+      "hourly_adjusted_score": 72,
+      "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
-      "trend_signal": "insufficient_history",
-      "published_at": "2026-10-28T01:54:59+00:00",
-      "days_old": 0.02,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "36be873f79a8140f",
-      "title": "oomol-lab/open-flow",
-      "url": "https://github.com/oomol-lab/open-flow",
-      "source": "GitHub Search",
-      "primary_category": "ai_and_automation",
-      "priority_score": 69,
-      "hourly_adjusted_score": 73,
-      "stars_current": 280,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "insufficient_history",
-      "published_at": "2026-10-28T02:15:41+00:00",
-      "days_old": 0.01,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-27T10:00:00+00:00",
+      "days_old": 0.73,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
@@ -433,9 +471,9 @@
   ],
   "automatic_repair": {
     "attempted": true,
-    "drafts_submitted": 1,
+    "drafts_submitted": 3,
     "repaired_local_passes": 0,
-    "repair_rejections": 1,
+    "repair_rejections": 3,
     "repair_error": null,
     "editorial_repair_attempted": false,
     "editorial_repair_drafts_submitted": 0,
