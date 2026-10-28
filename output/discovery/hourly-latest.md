@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-28T14:01:31+05:30
+- Run time (IST): 2026-10-28T14:59:54+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 191
-- Independent editorial review: 0 draft(s) passed / 1 rejected
+- Candidate pool after freshness/diversity filters: 186
+- Independent editorial review: 0 draft(s) passed / 0 rejected
 - Drafts passing local checks: 0
 - Outcome: **skip**
-- Decision reason: Every draft submitted for independent editorial review was rejected; The hour was skipped.
+- Decision reason: All generated drafts failed the local evidence/editorial checks; the hour was skipped.
 
 ## Source health
 
@@ -25,7 +25,7 @@
 | GitHub Search · github-seller-operations | 10 | ok |
 | GitHub Search · github-shopify-commerce | 10 | ok |
 | GitHub Search · github-workflow-automation | 10 | ok |
-| Hacker News · hn-analytics-growth | 8 | ok |
+| Hacker News · hn-analytics-growth | 1 | ok |
 | Hacker News · hn-automation-api | 1 | ok |
 | Hacker News · hn-creator-business | 0 | ok |
 | Hacker News · hn-digital-downloads-templates | 0 | ok |
@@ -35,12 +35,12 @@
 | Hacker News · hn-marketing-distribution | 0 | ok |
 | Hacker News · hn-security-selfhost | 0 | ok |
 | Hacker News · hn-seller-operations | 0 | ok |
-| Hacker News · hn-shopify | 10 | ok |
+| Hacker News · hn-shopify | 6 | ok |
 | Hacker News · hn-show-hn | 10 | ok |
-| Ahrefs Blog | 4 | ok |
+| Ahrefs Blog | 5 | ok |
 | Console.dev | 12 | ok |
 | Indie Hackers (unofficial third-party feed) | 5 | ok |
-| Product Hunt | 39 | ok |
+| Product Hunt | 38 | ok |
 | Shopify Community | 30 | ok |
 | Shopify Developer Changelog | 18 | ok |
 | Stripe Blog | 3 | ok |
@@ -54,55 +54,63 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 107
-- Previously tracked repositories refreshed outside search results: 93
+- Repositories seen in this discovery run: 108
+- Previously tracked repositories refreshed outside search results: 92
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
-- Repositories with a 20–36 hour comparison baseline: 19
+- Repositories with a 20–36 hour comparison baseline: 17
 - First observations are baseline samples, not evidence of trending. Star velocity is reported only when a historical comparison exists.
 
 ## Primary-source verification
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| Show HN: DocPerRow – one Word document per spreadsheet row, in the browser | yes | 200 | https://docperrow.netlify.app/ |
-| Manage payouts, billing, and settings in Dev Dashboard | yes | 200 | https://shopify.dev/changelog/posts/manage-partner-payouts-billing-and-settings-from-organization-settings |
-| Restrict Admin API access with an IP allowlist | yes | 200 | https://shopify.dev/changelog/posts/restrict-admin-api-access-to-your-app-with-an-ip-allowlist |
+| Ask HN: How do you get new readers for your blog | yes | 200 | https://news.ycombinator.com/item?id=50259066 |
+| Show HN: FreeApply Free Job Application MCP, runs locally with your existing LLM | yes | 200 | https://www.mybotsai.com/ |
+| Shudesu/x-harness-oss | yes | 200 | https://github.com/Shudesu/x-harness-oss |
 
 ## Selected draft candidates
 
-No draft cleared the complete local and independent-editor gate. See the decision reason and rejected-draft section for locally valid drafts that were rejected, not reviewed, or blocked by a review error.
+No candidate produced a draft that passed every local check. Skipping is intentional.
 
 ## Automatic repair attempt
 
 - Attempted: yes
-- Repaired drafts submitted: 1
+- Repaired drafts submitted: 3
 - Repaired drafts that passed local validation: 0
-- Repaired drafts rejected: 1
+- Repaired drafts rejected: 3
 - Repair error: none
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
-- Show HN: DocPerRow – one Word document per spreadsheet row, in the browser: Supporting quotes cover only 60% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: DocPerRow turns each Excel or CSV row into a separate Word document in the browser. Verify the column used for filenames before running to avoid mis‑named files. https://docperrow.netlify.app/
-  - Model evidence quote: “Turn every row of an Excel or CSV file into its own Word document”
-  - Claim support: DocPerRow turns each Excel or CSV row into a separate Word document in the browser ← “Turn every row of an Excel or CSV file into its own Word document”
-- Manage payouts, billing, and settings in Dev Dashboard: The factual opening bundles multiple features; narrow it to one capability.
-  - Rejected text: Shopify Dev Dashboard now manages payouts, billing, and partner details in Organization settings. Check that existing payout history appears unchanged after migration. https://shopify.dev/changelog/posts/manage-partner-payouts-billing-and-settings-from-organization-settings
-  - Model evidence quote: “From Organization settings , you can manage: Organization details : business and contact details, emergency contact, App Store registration, and Partner ID Payouts : payout setup, history, transactions, and payout methods Partner billing : bills, ad invoices, payment methods, invoice notes, and ad c”
-  - Claim support: Shopify Dev Dashboard now manages payouts, billing, and partner details in Organization settings ← “From Organization settings , you can manage: Organization details : business and contact details, emergency contact, App Store registration, and Partner ID Payouts : payout setup, history, transactions, and payout methods Partner billing : bills, ad invoices, payment methods, invoice notes, and ad credits”
-- Restrict Admin API access with an IP allowlist: Post restates headline and basic instruction; lacks novel insight or deeper context.
-  - Rejected text: Shopify lets you restrict Admin API tokens to an IP allowlist via Dev Dashboard. Send a test request from a non‑listed IP to confirm it is rejected. https://shopify.dev/changelog/posts/restrict-admin-api-access-to-your-app-with-an-ip-allowlist
-- Restrict Admin API access with an IP allowlist: Editorial takeaway is too long; keep the analysis concrete and concise.
-  - Rejected text: Shopify now rejects Admin API requests that use app tokens from IPs not on the allowlist. Add your server IPs to the Dev Dashboard allowlist to block any API traffic from other IPs. https://shopify.dev/changelog/posts/restrict-admin-api-access-to-your-app-with-an-ip-allowlist
-  - Model evidence quote: “When you add your servers' IP addresses to an IP allowlist in the Dev Dashboard, Shopify rejects GraphQL Admin API and REST Admin API requests that use your app's tokens from anywhere else.”
+- Ask HN: How do you get new readers for your blog: Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.
+  - Rejected text: Browsers no longer track full referral URLs for privacy. Test analytics to confirm referrer truncation before relying on traffic attribution. https://news.ycombinator.com/item?id=50259066
+  - Model evidence quote: “browsers no longer track the full referral URL for privacy reasons.”
+  - Claim support: Browsers no longer track full referral URLs for privacy. ← “browsers no longer track the full referral URL for privacy reasons.”
+- Show HN: FreeApply Free Job Application MCP, runs locally with your existing LLM: The factual opening bundles multiple features; narrow it to one capability.; Supporting quotes cover only 57% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: FreeApply stores résumé, settings, and applications locally on your computer. Verify local storage encryption before enabling auto‑apply to protect sensitive data. https://www.mybotsai.com/
+  - Model evidence quote: “Your résumé, settings, applications and emails are stored on your computer.”
+  - Claim support: FreeApply stores résumé, settings, and applications locally on your computer. ← “Your résumé, settings, applications and emails are stored on your computer.”
+- Shudesu/x-harness-oss: The factual opening bundles multiple features; narrow it to one capability.
+  - Rejected text: X Harness runs self‑hosted X scheduling, DM, and analytics on Cloudflare Workers. Run a worker health check to ensure DM delivery before scaling. https://github.com/Shudesu/x-harness-oss
+  - Model evidence quote: “X Harness — self-hosted X (Twitter) scheduling, DM and analytics on Cloudflare Workers, with MCP and TypeScript SDK.”
+  - Claim support: X Harness runs self‑hosted X scheduling, DM, and analytics on Cloudflare Workers. ← “X Harness — self-hosted X (Twitter) scheduling, DM and analytics on Cloudflare Workers, with MCP and TypeScript SDK.”
+- Show HN: FreeApply Free Job Application MCP, runs locally with your existing LLM: The factual opening bundles multiple features; narrow it to one capability.; Editorial takeaway is too long; keep the analysis concrete and concise.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.; No claim-by-claim supporting evidence was provided; Supporting quotes cover only 0% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: FreeApply stores résumé, settings, applications, and emails locally on your computer. If you join the optional Recruiter Talent Pool, your contact details will be sent to the server; otherwise they remain local. https://www.mybotsai.com/
+  - Model evidence quote: “Our server never receives your contact details unless you join the optional Recruiter Talent Pool.”
+- Shudesu/x-harness-oss: The factual opening bundles multiple features; narrow it to one capability.; Editorial takeaway is too long; keep the analysis concrete and concise.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
+  - Rejected text: X Harness runs self‑hosted X scheduling, DM, and analytics on Cloudflare Workers. Use the TypeScript SDK to programmatically schedule X posts directly from Cloudflare Workers. https://github.com/Shudesu/x-harness-oss
+  - Model evidence quote: “X Harness — self‑hosted X (Twitter) scheduling, DM and analytics on Cloudflare Workers, with MCP and TypeScript SDK.”
+- Ask HN: How do you get new readers for your blog: Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.; Editorial takeaway is too long; keep the analysis concrete and concise.
+  - Rejected text: Browsers no longer track full referral URLs for privacy. When using Umami, note that referrer data may be truncated, so plan attribution accordingly. https://news.ycombinator.com/item?id=50259066
+  - Model evidence quote: “browsers no longer track the full referral URL for privacy reasons.”
 
 ## Top discovery candidates considered
 
-- Show HN: DocPerRow – one Word document per spreadsheet row, in the browser | Hacker News | data_and_growth | raw 68, adjusted 70 | https://docperrow.netlify.app/
-- Manage payouts, billing, and settings in Dev Dashboard | Shopify Developer Changelog | commerce_and_digital_products | raw 69, adjusted 69 | https://shopify.dev/changelog/posts/manage-partner-payouts-billing-and-settings-from-organization-settings
-- Restrict Admin API access with an IP allowlist | Shopify Developer Changelog | commerce_and_digital_products | raw 69, adjusted 69 | https://shopify.dev/changelog/posts/restrict-admin-api-access-to-your-app-with-an-ip-allowlist
+- Ask HN: How do you get new readers for your blog | Hacker News | data_and_growth | raw 67, adjusted 67 | https://news.ycombinator.com/item?id=50259066
+- Show HN: FreeApply Free Job Application MCP, runs locally with your existing LLM | Hacker News | product_and_workflow_tools | raw 65, adjusted 67 | https://www.mybotsai.com/
+- Shudesu/x-harness-oss | GitHub Search | data_and_growth | raw 69, adjusted 63 | current stars 102 | GitHub star trend: building baseline | https://github.com/Shudesu/x-harness-oss
 
 ## Safety and interpretation
 

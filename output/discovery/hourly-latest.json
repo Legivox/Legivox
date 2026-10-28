@@ -1,24 +1,24 @@
 {
-  "generated_at_ist": "2026-10-28T14:01:31+05:30",
-  "run_at_ist": "2026-10-28T14:01:31+05:30",
+  "generated_at_ist": "2026-10-28T14:59:54+05:30",
+  "run_at_ist": "2026-10-28T14:59:54+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 298,
-  "eligible_candidate_count": 191,
+  "candidate_count_raw": 288,
+  "eligible_candidate_count": 186,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4757
+      "total_count": 4766
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1030
+      "total_count": 1032
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
@@ -32,7 +32,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2882
+      "total_count": 2889
     },
     {
       "source": "GitHub Search · github-digital-product-tools",
@@ -60,14 +60,14 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2073
+      "total_count": 2079
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3308
+      "total_count": 3315
     },
     {
       "source": "GitHub Search · github-seller-operations",
@@ -93,7 +93,7 @@
     {
       "source": "Hacker News · hn-analytics-growth",
       "kind": "hacker_news",
-      "items_kept": 8,
+      "items_kept": 1,
       "status": "ok",
       "total_count": 10
     },
@@ -158,12 +158,12 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 10
+      "total_count": 8
     },
     {
       "source": "Hacker News · hn-shopify",
       "kind": "hacker_news",
-      "items_kept": 10,
+      "items_kept": 6,
       "status": "ok",
       "total_count": 10
     },
@@ -177,7 +177,7 @@
     {
       "source": "Ahrefs Blog",
       "kind": "rss",
-      "items_kept": 4,
+      "items_kept": 5,
       "status": "ok"
     },
     {
@@ -195,7 +195,7 @@
     {
       "source": "Product Hunt",
       "kind": "rss",
-      "items_kept": 39,
+      "items_kept": 38,
       "status": "ok"
     },
     {
@@ -241,7 +241,7 @@
       "kind": "wordpress_plugin",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 959
+      "total_count": 961
     },
     {
       "source": "WordPress Plugin Directory · wp-marketing-analytics",
@@ -259,42 +259,42 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-28T08:31:31+00:00",
+    "observed_at_utc": "2026-10-28T09:29:54+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 107,
-    "previously_tracked_repositories_refreshed": 93,
+    "repositories_seen_in_discovery": 108,
+    "previously_tracked_repositories_refreshed": 92,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
-    "repositories_with_20_to_36_hour_baseline": 19,
+    "repositories_with_20_to_36_hour_baseline": 17,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "15e0c3fd4c3565bc",
-      "title": "Show HN: DocPerRow – one Word document per spreadsheet row, in the browser",
-      "source_url": "https://docperrow.netlify.app/",
+      "candidate_id": "87a2e45be3dbfe9a",
+      "title": "Ask HN: How do you get new readers for your blog",
+      "source_url": "https://news.ycombinator.com/item?id=50259066",
       "verified": true,
-      "final_url": "https://docperrow.netlify.app/",
+      "final_url": "https://news.ycombinator.com/item?id=50259066",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "c966fb913f8d63e4",
-      "title": "Manage payouts, billing, and settings in Dev Dashboard",
-      "source_url": "https://shopify.dev/changelog/manage-partner-payouts-billing-and-settings-from-organization-settings",
+      "candidate_id": "e85810a57b711f15",
+      "title": "Show HN: FreeApply Free Job Application MCP, runs locally with your existing LLM",
+      "source_url": "https://www.mybotsai.com/",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/manage-partner-payouts-billing-and-settings-from-organization-settings",
+      "final_url": "https://www.mybotsai.com/",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "a677374664d346cc",
-      "title": "Restrict Admin API access with an IP allowlist",
-      "source_url": "https://shopify.dev/changelog/restrict-admin-api-access-to-your-app-with-an-ip-allowlist",
+      "candidate_id": "9ffeb54e86a5f7cb",
+      "title": "Shudesu/x-harness-oss",
+      "source_url": "https://github.com/Shudesu/x-harness-oss",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/restrict-admin-api-access-to-your-app-with-an-ip-allowlist",
+      "final_url": "https://github.com/Shudesu/x-harness-oss",
       "http_status": 200,
       "reason": ""
     }
@@ -303,122 +303,158 @@
   "daily_draft_cap": 16,
   "daily_drafts_already_passed": 1,
   "outcome": "skip",
-  "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
+  "decision_reason": "All generated drafts failed the local evidence/editorial checks; the hour was skipped.",
   "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "15e0c3fd4c3565bc",
-      "title": "Show HN: DocPerRow – one Word document per spreadsheet row, in the browser",
+      "candidate_id": "87a2e45be3dbfe9a",
+      "title": "Ask HN: How do you get new readers for your blog",
       "reasons": [
-        "Supporting quotes cover only 60% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about."
       ],
-      "proposed_text": "DocPerRow turns each Excel or CSV row into a separate Word document in the browser. Verify the column used for filenames before running to avoid mis‑named files. https://docperrow.netlify.app/",
-      "evidence_quote": "Turn every row of an Excel or CSV file into its own Word document",
+      "proposed_text": "Browsers no longer track full referral URLs for privacy. Test analytics to confirm referrer truncation before relying on traffic attribution. https://news.ycombinator.com/item?id=50259066",
+      "evidence_quote": "browsers no longer track the full referral URL for privacy reasons.",
       "claim_evidence": [
         {
-          "claim": "DocPerRow turns each Excel or CSV row into a separate Word document in the browser",
-          "quote": "Turn every row of an Excel or CSV file into its own Word document"
+          "claim": "Browsers no longer track full referral URLs for privacy.",
+          "quote": "browsers no longer track the full referral URL for privacy reasons."
         }
       ]
     },
     {
-      "candidate_id": "c966fb913f8d63e4",
-      "title": "Manage payouts, billing, and settings in Dev Dashboard",
+      "candidate_id": "e85810a57b711f15",
+      "title": "Show HN: FreeApply Free Job Application MCP, runs locally with your existing LLM",
+      "reasons": [
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Supporting quotes cover only 57% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ],
+      "proposed_text": "FreeApply stores résumé, settings, and applications locally on your computer. Verify local storage encryption before enabling auto‑apply to protect sensitive data. https://www.mybotsai.com/",
+      "evidence_quote": "Your résumé, settings, applications and emails are stored on your computer.",
+      "claim_evidence": [
+        {
+          "claim": "FreeApply stores résumé, settings, and applications locally on your computer.",
+          "quote": "Your résumé, settings, applications and emails are stored on your computer."
+        }
+      ]
+    },
+    {
+      "candidate_id": "9ffeb54e86a5f7cb",
+      "title": "Shudesu/x-harness-oss",
       "reasons": [
         "The factual opening bundles multiple features; narrow it to one capability."
       ],
-      "proposed_text": "Shopify Dev Dashboard now manages payouts, billing, and partner details in Organization settings. Check that existing payout history appears unchanged after migration. https://shopify.dev/changelog/posts/manage-partner-payouts-billing-and-settings-from-organization-settings",
-      "evidence_quote": "From Organization settings , you can manage: Organization details : business and contact details, emergency contact, App Store registration, and Partner ID Payouts : payout setup, history, transactions, and payout methods Partner billing : bills, ad invoices, payment methods, invoice notes, and ad c",
+      "proposed_text": "X Harness runs self‑hosted X scheduling, DM, and analytics on Cloudflare Workers. Run a worker health check to ensure DM delivery before scaling. https://github.com/Shudesu/x-harness-oss",
+      "evidence_quote": "X Harness — self-hosted X (Twitter) scheduling, DM and analytics on Cloudflare Workers, with MCP and TypeScript SDK.",
       "claim_evidence": [
         {
-          "claim": "Shopify Dev Dashboard now manages payouts, billing, and partner details in Organization settings",
-          "quote": "From Organization settings , you can manage: Organization details : business and contact details, emergency contact, App Store registration, and Partner ID Payouts : payout setup, history, transactions, and payout methods Partner billing : bills, ad invoices, payment methods, invoice notes, and ad credits"
+          "claim": "X Harness runs self‑hosted X scheduling, DM, and analytics on Cloudflare Workers.",
+          "quote": "X Harness — self-hosted X (Twitter) scheduling, DM and analytics on Cloudflare Workers, with MCP and TypeScript SDK."
         }
       ]
     },
     {
-      "candidate_id": "a677374664d346cc",
-      "title": "Restrict Admin API access with an IP allowlist",
-      "proposed_text": "Shopify lets you restrict Admin API tokens to an IP allowlist via Dev Dashboard. Send a test request from a non‑listed IP to confirm it is rejected. https://shopify.dev/changelog/posts/restrict-admin-api-access-to-your-app-with-an-ip-allowlist",
+      "candidate_id": "e85810a57b711f15",
+      "title": "Show HN: FreeApply Free Job Application MCP, runs locally with your existing LLM",
       "reasons": [
-        "Post restates headline and basic instruction; lacks novel insight or deeper context."
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
+        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
+        "No claim-by-claim supporting evidence was provided",
+        "Supporting quotes cover only 0% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "editorial_review": {
-        "clarity_score": 9,
-        "technical_coherence_score": 9,
-        "takeaway_value_score": 8,
-        "source_faithfulness_score": 9,
-        "originality_score": 4
-      }
-    },
-    {
-      "candidate_id": "a677374664d346cc",
-      "title": "Restrict Admin API access with an IP allowlist",
-      "reasons": [
-        "Editorial takeaway is too long; keep the analysis concrete and concise."
-      ],
-      "proposed_text": "Shopify now rejects Admin API requests that use app tokens from IPs not on the allowlist. Add your server IPs to the Dev Dashboard allowlist to block any API traffic from other IPs. https://shopify.dev/changelog/posts/restrict-admin-api-access-to-your-app-with-an-ip-allowlist",
-      "evidence_quote": "When you add your servers' IP addresses to an IP allowlist in the Dev Dashboard, Shopify rejects GraphQL Admin API and REST Admin API requests that use your app's tokens from anywhere else.",
+      "proposed_text": "FreeApply stores résumé, settings, applications, and emails locally on your computer. If you join the optional Recruiter Talent Pool, your contact details will be sent to the server; otherwise they remain local. https://www.mybotsai.com/",
+      "evidence_quote": "Our server never receives your contact details unless you join the optional Recruiter Talent Pool.",
       "automatic_repair_attempt": true,
       "original_rejection_reasons": [
-        "Post restates headline and basic instruction; lacks novel insight or deeper context."
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Supporting quotes cover only 57% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ]
+    },
+    {
+      "candidate_id": "9ffeb54e86a5f7cb",
+      "title": "Shudesu/x-harness-oss",
+      "reasons": [
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
+      ],
+      "proposed_text": "X Harness runs self‑hosted X scheduling, DM, and analytics on Cloudflare Workers. Use the TypeScript SDK to programmatically schedule X posts directly from Cloudflare Workers. https://github.com/Shudesu/x-harness-oss",
+      "evidence_quote": "X Harness — self‑hosted X (Twitter) scheduling, DM and analytics on Cloudflare Workers, with MCP and TypeScript SDK.",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "The factual opening bundles multiple features; narrow it to one capability."
+      ]
+    },
+    {
+      "candidate_id": "87a2e45be3dbfe9a",
+      "title": "Ask HN: How do you get new readers for your blog",
+      "reasons": [
+        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.",
+        "Editorial takeaway is too long; keep the analysis concrete and concise."
+      ],
+      "proposed_text": "Browsers no longer track full referral URLs for privacy. When using Umami, note that referrer data may be truncated, so plan attribution accordingly. https://news.ycombinator.com/item?id=50259066",
+      "evidence_quote": "browsers no longer track the full referral URL for privacy reasons.",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about."
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "15e0c3fd4c3565bc",
-      "title": "Show HN: DocPerRow – one Word document per spreadsheet row, in the browser",
-      "url": "https://docperrow.netlify.app/",
+      "id": "87a2e45be3dbfe9a",
+      "title": "Ask HN: How do you get new readers for your blog",
+      "url": "https://news.ycombinator.com/item?id=50259066",
       "source": "Hacker News",
       "primary_category": "data_and_growth",
-      "priority_score": 68,
-      "hourly_adjusted_score": 70,
+      "priority_score": 67,
+      "hourly_adjusted_score": 67,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-27T16:00:07+00:00",
-      "days_old": 0.69,
+      "published_at": "2026-10-27T13:34:34+00:00",
+      "days_old": 0.83,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "c966fb913f8d63e4",
-      "title": "Manage payouts, billing, and settings in Dev Dashboard",
-      "url": "https://shopify.dev/changelog/posts/manage-partner-payouts-billing-and-settings-from-organization-settings",
-      "source": "Shopify Developer Changelog",
-      "primary_category": "commerce_and_digital_products",
-      "priority_score": 69,
-      "hourly_adjusted_score": 69,
+      "id": "e85810a57b711f15",
+      "title": "Show HN: FreeApply Free Job Application MCP, runs locally with your existing LLM",
+      "url": "https://www.mybotsai.com/",
+      "source": "Hacker News",
+      "primary_category": "product_and_workflow_tools",
+      "priority_score": 65,
+      "hourly_adjusted_score": 67,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-27T23:30:00+00:00",
-      "days_old": 0.38,
+      "published_at": "2026-10-28T08:18:29+00:00",
+      "days_old": 0.05,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "a677374664d346cc",
-      "title": "Restrict Admin API access with an IP allowlist",
-      "url": "https://shopify.dev/changelog/posts/restrict-admin-api-access-to-your-app-with-an-ip-allowlist",
-      "source": "Shopify Developer Changelog",
-      "primary_category": "commerce_and_digital_products",
+      "id": "9ffeb54e86a5f7cb",
+      "title": "Shudesu/x-harness-oss",
+      "url": "https://github.com/Shudesu/x-harness-oss",
+      "source": "GitHub Search",
+      "primary_category": "data_and_growth",
       "priority_score": 69,
-      "hourly_adjusted_score": 69,
-      "stars_current": null,
+      "hourly_adjusted_score": 63,
+      "stars_current": 102,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-27T16:00:00+00:00",
-      "days_old": 0.69,
+      "trend_signal": "insufficient_history",
+      "published_at": "2026-10-28T09:30:09+00:00",
+      "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
@@ -426,26 +462,26 @@
   ],
   "automatic_repair": {
     "attempted": true,
-    "drafts_submitted": 1,
+    "drafts_submitted": 3,
     "repaired_local_passes": 0,
-    "repair_rejections": 1,
+    "repair_rejections": 3,
     "repair_error": null,
-    "editorial_repair_attempted": true,
-    "editorial_repair_drafts_submitted": 1,
+    "editorial_repair_attempted": false,
+    "editorial_repair_drafts_submitted": 0,
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 1,
-    "submitted_for_independent_review": 1,
+    "locally_valid_drafts": 0,
+    "submitted_for_independent_review": 0,
     "passed_independent_review": 0,
-    "rejected_by_independent_review": 1,
+    "rejected_by_independent_review": 0,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
   "state_summary": {
     "used_candidates_in_cooldown": 20,
-    "recently_attempted_candidates": 21,
+    "recently_attempted_candidates": 24,
     "recent_draft_passes_today": 1
   }
 }
