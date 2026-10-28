@@ -1,38 +1,38 @@
 {
-  "generated_at_ist": "2026-10-28T21:04:47+05:30",
-  "run_at_ist": "2026-10-28T21:04:47+05:30",
+  "generated_at_ist": "2026-10-28T22:03:31+05:30",
+  "run_at_ist": "2026-10-28T22:03:31+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 305,
-  "eligible_candidate_count": 187,
+  "candidate_count_raw": 315,
+  "eligible_candidate_count": 197,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4834
+      "total_count": 4842
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1044
+      "total_count": 1048
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 358
+      "total_count": 360
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2920
+      "total_count": 2922
     },
     {
       "source": "GitHub Search · github-digital-product-tools",
@@ -60,14 +60,14 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2110
+      "total_count": 2112
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3348
+      "total_count": 3355
     },
     {
       "source": "GitHub Search · github-seller-operations",
@@ -81,7 +81,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 130
+      "total_count": 131
     },
     {
       "source": "GitHub Search · github-workflow-automation",
@@ -116,7 +116,7 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 7
+      "total_count": 6
     },
     {
       "source": "Hacker News · hn-digital-products",
@@ -158,7 +158,7 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 10
+      "total_count": 8
     },
     {
       "source": "Hacker News · hn-shopify",
@@ -207,7 +207,7 @@
     {
       "source": "Shopify Developer Changelog",
       "kind": "rss",
-      "items_kept": 18,
+      "items_kept": 30,
       "status": "ok"
     },
     {
@@ -241,28 +241,28 @@
       "kind": "wordpress_plugin",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 961
+      "total_count": 963
     },
     {
       "source": "WordPress Plugin Directory · wp-marketing-analytics",
       "kind": "wordpress_plugin",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1780
+      "total_count": 1783
     },
     {
       "source": "WordPress Plugin Directory · wp-membership-creators",
       "kind": "wordpress_plugin",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2193
+      "total_count": 2197
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-28T15:34:47+00:00",
+    "observed_at_utc": "2026-10-28T16:33:31+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 111,
-    "previously_tracked_repositories_refreshed": 88,
+    "repositories_seen_in_discovery": 109,
+    "previously_tracked_repositories_refreshed": 90,
     "refresh_failures": 1,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 199,
@@ -272,29 +272,29 @@
   },
   "primary_source_checks": [
     {
-      "candidate_id": "d842cb3feb90bc0d",
-      "title": "Show HN: Coding agent spots your AI practices and the ones you're missing",
-      "source_url": "https://app.userrank.ai/",
+      "candidate_id": "3bb0a0d47f49f0e4",
+      "title": "App Events: Send events from Checkout and Customer Account UI extensions",
+      "source_url": "https://shopify.dev/changelog/app-events-send-events-from-checkout-and-customer-account-ui-extensions",
       "verified": true,
-      "final_url": "https://app.userrank.ai/",
+      "final_url": "https://shopify.dev/changelog/posts/app-events-send-events-from-checkout-and-customer-account-ui-extensions",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "f22b2f89826fe9db",
-      "title": "Show HN: Algeon – Compose GPU graph, vector, and ML algorithms in SQL",
-      "source_url": "https://github.com/algeon-dev/algeon",
+      "candidate_id": "d305f31b453064d9",
+      "title": "Make your app's activity reportable in Shopify Analytics with App Events",
+      "source_url": "https://shopify.dev/changelog/app-events-in-analytics",
       "verified": true,
-      "final_url": "https://github.com/algeon-dev/algeon",
+      "final_url": "https://shopify.dev/changelog/posts/app-events-in-analytics",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "fe106ba546c5c606",
-      "title": "Promoted Placements beta now includes Shop Campaigns",
-      "source_url": "https://shopify.dev/changelog/promoted-placements-beta-now-includes-shop-campaigns",
+      "candidate_id": "d44dc6a912a5de1f",
+      "title": "Breaking changes in third-party APIs are turning into a full-time job",
+      "source_url": "https://news.ycombinator.com/item?id=50273438",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns",
+      "final_url": "https://news.ycombinator.com/item?id=50273438",
       "http_status": 200,
       "reason": ""
     }
@@ -302,187 +302,219 @@
   "rejected_primary_sources": [],
   "daily_draft_cap": 16,
   "daily_drafts_already_passed": 2,
-  "outcome": "skip",
-  "decision_reason": "All generated drafts failed the local evidence/editorial checks; the hour was skipped.",
-  "passing_drafts": [],
+  "outcome": "dry_run_passed",
+  "decision_reason": "At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.",
+  "passing_drafts": [
+    {
+      "candidate_id": "d305f31b453064d9",
+      "title": "Make your app's activity reportable in Shopify Analytics with App Events",
+      "source": "Shopify Developer Changelog",
+      "source_kind": "official_changelog",
+      "url": "https://shopify.dev/changelog/posts/app-events-in-analytics",
+      "primary_source_verified": true,
+      "primary_source_title": "Make your app's activity reportable in Shopify Analytics with App Events - Shopify developer changelog",
+      "primary_source_final_url": "https://shopify.dev/changelog/posts/app-events-in-analytics",
+      "primary_source_http_status": 200,
+      "category": "commerce_and_digital_products",
+      "priority_score": 78,
+      "hourly_adjusted_score": 70,
+      "post_text": "Apps can declare analytics events in an analytics_app_events extension. Deploy the extension and send a test event to confirm visibility in Analytics. https://shopify.dev/changelog/posts/app-events-in-analytics",
+      "fact_sentence": "Apps can declare analytics events in an analytics_app_events extension.",
+      "format": "tool_discovery",
+      "audience": "developers",
+      "angle": "Analytics integration",
+      "rationale": "Highlights new analytics feature and a practical deployment check.",
+      "evidence_quote": "What changed Apps can now declare events in an analytics _app _events extension .",
+      "editorial_takeaway": "Deploy the extension and send a test event to confirm visibility in Analytics.",
+      "claim_evidence": [
+        {
+          "claim": "Apps can declare analytics events in an analytics_app_events extension.",
+          "quote": "What changed Apps can now declare events in an analytics _app _events extension ."
+        }
+      ],
+      "scores": {
+        "timeliness": 10,
+        "usefulness": 8,
+        "novelty": 7,
+        "evidence": 9,
+        "insight": 8
+      },
+      "editorial_score": 8.4,
+      "character_count": 210,
+      "status": "dry_run_passed_not_published",
+      "published_to_x": false,
+      "editorial_review": {
+        "clarity_score": 8,
+        "technical_coherence_score": 8,
+        "takeaway_value_score": 8,
+        "source_faithfulness_score": 8,
+        "originality_score": 8,
+        "reason": "Clear, technically coherent, source-backed, and adds a useful next‑step.",
+        "passed": true
+      }
+    }
+  ],
   "rejected_drafts": [
     {
-      "candidate_id": "d842cb3feb90bc0d",
-      "title": "Show HN: Coding agent spots your AI practices and the ones you're missing",
+      "candidate_id": "3bb0a0d47f49f0e4",
+      "title": "App Events: Send events from Checkout and Customer Account UI extensions",
       "reasons": [
-        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about."
+        "Unsupported numeric claim(s): 200"
       ],
-      "proposed_text": "UserRank scans your Claude or ChatGPT locally and sends only names and counts. Verify that your prompt only includes non‑sensitive names before sending to UserRank. https://app.userrank.ai/",
-      "evidence_quote": "Your own Claude or ChatGPT scans locally; only names and counts reach UserRank.",
+      "proposed_text": "Shopify Checkout UI extensions can emit App Events via shopify.appEvents.emit(). Add a unit test that verifies emit() returns a 200 status. https://shopify.dev/changelog/posts/app-events-send-events-from-checkout-and-customer-account-ui-extensions",
+      "evidence_quote": "Starting with API version 2027-01 , Checkout and Customer Account UI extensions can send App Events to Shopify with shopify.app Events.emit() .",
       "claim_evidence": [
         {
-          "claim": "UserRank scans your Claude or ChatGPT locally and sends only names and counts.",
-          "quote": "Your own Claude or ChatGPT scans locally; only names and counts reach UserRank."
+          "claim": "Shopify Checkout UI extensions can emit App Events via shopify.appEvents.emit().",
+          "quote": "Starting with API version 2027-01 , Checkout and Customer Account UI extensions can send App Events to Shopify with shopify.app Events.emit() ."
         }
       ]
     },
     {
-      "candidate_id": "f22b2f89826fe9db",
-      "title": "Show HN: Algeon – Compose GPU graph, vector, and ML algorithms in SQL",
+      "candidate_id": "d44dc6a912a5de1f",
+      "title": "Breaking changes in third-party APIs are turning into a full-time job",
       "reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability."
+        "Opening sentence is too close to the source headline; add a distinct editorial framing."
       ],
-      "proposed_text": "Algeon exposes NVIDIA cuGraph, cuVS, and cuML as SQL table functions via DataFusion. Run a simple SELECT on a cuGraph function to confirm GPU acceleration. https://github.com/algeon-dev/algeon",
-      "evidence_quote": "exposes NVIDIA's cuGraph, cuVS, and cuML as SQL table functions.",
+      "proposed_text": "Breaking changes in third‑party APIs are becoming a full‑time job. Set up a changelog monitor for each vendor API to catch breaking updates. https://news.ycombinator.com/item?id=50273438",
+      "evidence_quote": "Breaking changes in third‑party APIs are turning into a full‑time job",
       "claim_evidence": [
         {
-          "claim": "Algeon exposes NVIDIA cuGraph, cuVS, and cuML as SQL table functions via DataFusion.",
-          "quote": "exposes NVIDIA's cuGraph, cuVS, and cuML as SQL table functions."
+          "claim": "Breaking changes in third‑party APIs are becoming a full‑time job.",
+          "quote": "Breaking changes in third‑party APIs are turning into a full‑time job"
         }
-      ]
-    },
-    {
-      "candidate_id": "fe106ba546c5c606",
-      "title": "Promoted Placements beta now includes Shop Campaigns",
-      "reasons": [
-        "Primary-source evidence quote is missing or absent from the live page (after presentation normalisation)",
-        "A factual claim lacks a quote present in the live primary-source page",
-        "Supporting quotes cover only 64% of factual wording; narrow the claim or provide a closer primary-source quote"
-      ],
-      "proposed_text": "Promoted Placements beta now includes Shop Campaigns, adding merchant commission to base rate. Check placement.commission.percentage.value to verify combined rate. https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns",
-      "evidence_quote": "When a search_catalog result comes from a merchant running Shop Campaigns, you earn the commission that merchant funds, added to Shopify's base rate.",
-      "claim_evidence": [
-        {
-          "claim": "Promoted Placements beta now includes Shop Campaigns, adding merchant commission to base rate.",
-          "quote": "When a search_catalog result comes from a merchant running Shop Campaigns, you earn the commission that merchant funds, added to Shopify's base rate."
-        }
-      ]
-    },
-    {
-      "candidate_id": "fe106ba546c5c606",
-      "title": "Promoted Placements beta now includes Shop Campaigns",
-      "reasons": [
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
-        "Primary-source evidence quote is missing or absent from the live page (after presentation normalisation)",
-        "No claim-by-claim supporting evidence was provided",
-        "Supporting quotes cover only 64% of factual wording; narrow the claim or provide a closer primary-source quote"
-      ],
-      "proposed_text": "Promoted Placements beta now includes Shop Campaigns, adding merchant commission to base rate. Use placement.commission.percentage.value to read the combined rate per product. https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns",
-      "evidence_quote": "When a search_catalog result comes from a merchant running Shop Campaigns, you earn the commission that merchant funds, added to Shopify's base rate.",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "Primary-source evidence quote is missing or absent from the live page (after presentation normalisation)",
-        "A factual claim lacks a quote present in the live primary-source page",
-        "Supporting quotes cover only 64% of factual wording; narrow the claim or provide a closer primary-source quote"
-      ]
-    },
-    {
-      "candidate_id": "f22b2f89826fe9db",
-      "title": "Show HN: Algeon – Compose GPU graph, vector, and ML algorithms in SQL",
-      "reasons": [
-        "Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.",
-        "Primary-source evidence quote is missing or absent from the live page (after presentation normalisation)",
-        "No claim-by-claim supporting evidence was provided"
-      ],
-      "proposed_text": "Algeon exposes NVIDIA cuGraph as a SQL table function via DataFusion. Run SELECT * FROM cuGraph.some_function to trigger GPU acceleration. https://github.com/algeon-dev/algeon",
-      "evidence_quote": "exposes NVIDIA's cuGraph, cuVS, and cuML as SQL table functions.",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability."
-      ]
-    },
-    {
-      "candidate_id": "d842cb3feb90bc0d",
-      "title": "Show HN: Coding agent spots your AI practices and the ones you're missing",
-      "reasons": [
-        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.",
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
-        "No claim-by-claim supporting evidence was provided"
-      ],
-      "proposed_text": "UserRank scans your Claude or ChatGPT locally and sends only names and counts. Ensure prompts contain no sensitive data before sending to UserRank. https://app.userrank.ai/",
-      "evidence_quote": "Your own Claude or ChatGPT scans locally; only names and counts reach UserRank.",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about."
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "d842cb3feb90bc0d",
-      "title": "Show HN: Coding agent spots your AI practices and the ones you're missing",
-      "url": "https://app.userrank.ai/",
-      "source": "Hacker News",
-      "primary_category": "product_and_workflow_tools",
-      "priority_score": 73,
-      "hourly_adjusted_score": 75,
+      "id": "3bb0a0d47f49f0e4",
+      "title": "App Events: Send events from Checkout and Customer Account UI extensions",
+      "url": "https://shopify.dev/changelog/posts/app-events-send-events-from-checkout-and-customer-account-ui-extensions",
+      "source": "Shopify Developer Changelog",
+      "primary_category": "commerce_and_digital_products",
+      "priority_score": 78,
+      "hourly_adjusted_score": 70,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-28T15:26:16+00:00",
-      "days_old": 0.01,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "f22b2f89826fe9db",
-      "title": "Show HN: Algeon – Compose GPU graph, vector, and ML algorithms in SQL",
-      "url": "https://github.com/algeon-dev/algeon",
-      "source": "Hacker News",
-      "primary_category": "data_and_growth",
-      "priority_score": 69,
-      "hourly_adjusted_score": 71,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-28T14:47:23+00:00",
+      "published_at": "2026-10-28T15:50:00+00:00",
       "days_old": 0.03,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "fe106ba546c5c606",
-      "title": "Promoted Placements beta now includes Shop Campaigns",
-      "url": "https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns",
+      "id": "d305f31b453064d9",
+      "title": "Make your app's activity reportable in Shopify Analytics with App Events",
+      "url": "https://shopify.dev/changelog/posts/app-events-in-analytics",
       "source": "Shopify Developer Changelog",
       "primary_category": "commerce_and_digital_products",
-      "priority_score": 68,
-      "hourly_adjusted_score": 60,
+      "priority_score": 78,
+      "hourly_adjusted_score": 70,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-27T13:00:00+00:00",
-      "days_old": 1.11,
+      "published_at": "2026-10-28T15:50:00+00:00",
+      "days_old": 0.03,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "d44dc6a912a5de1f",
+      "title": "Breaking changes in third-party APIs are turning into a full-time job",
+      "url": "https://news.ycombinator.com/item?id=50273438",
+      "source": "Hacker News",
+      "primary_category": "product_and_workflow_tools",
+      "priority_score": 65,
+      "hourly_adjusted_score": 65,
+      "stars_current": null,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-28T13:44:48+00:00",
+      "days_old": 0.12,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     }
   ],
   "automatic_repair": {
-    "attempted": true,
-    "drafts_submitted": 3,
+    "attempted": false,
+    "drafts_submitted": 0,
     "repaired_local_passes": 0,
-    "repair_rejections": 3,
+    "repair_rejections": 0,
     "repair_error": null,
     "editorial_repair_attempted": false,
     "editorial_repair_drafts_submitted": 0,
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 0,
-    "submitted_for_independent_review": 0,
-    "passed_independent_review": 0,
+    "locally_valid_drafts": 1,
+    "submitted_for_independent_review": 1,
+    "passed_independent_review": 1,
     "rejected_by_independent_review": 0,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
+  "recommended_draft": {
+    "candidate_id": "d305f31b453064d9",
+    "title": "Make your app's activity reportable in Shopify Analytics with App Events",
+    "source": "Shopify Developer Changelog",
+    "source_kind": "official_changelog",
+    "url": "https://shopify.dev/changelog/posts/app-events-in-analytics",
+    "primary_source_verified": true,
+    "primary_source_title": "Make your app's activity reportable in Shopify Analytics with App Events - Shopify developer changelog",
+    "primary_source_final_url": "https://shopify.dev/changelog/posts/app-events-in-analytics",
+    "primary_source_http_status": 200,
+    "category": "commerce_and_digital_products",
+    "priority_score": 78,
+    "hourly_adjusted_score": 70,
+    "post_text": "Apps can declare analytics events in an analytics_app_events extension. Deploy the extension and send a test event to confirm visibility in Analytics. https://shopify.dev/changelog/posts/app-events-in-analytics",
+    "fact_sentence": "Apps can declare analytics events in an analytics_app_events extension.",
+    "format": "tool_discovery",
+    "audience": "developers",
+    "angle": "Analytics integration",
+    "rationale": "Highlights new analytics feature and a practical deployment check.",
+    "evidence_quote": "What changed Apps can now declare events in an analytics _app _events extension .",
+    "editorial_takeaway": "Deploy the extension and send a test event to confirm visibility in Analytics.",
+    "claim_evidence": [
+      {
+        "claim": "Apps can declare analytics events in an analytics_app_events extension.",
+        "quote": "What changed Apps can now declare events in an analytics _app _events extension ."
+      }
+    ],
+    "scores": {
+      "timeliness": 10,
+      "usefulness": 8,
+      "novelty": 7,
+      "evidence": 9,
+      "insight": 8
+    },
+    "editorial_score": 8.4,
+    "character_count": 210,
+    "status": "dry_run_passed_not_published",
+    "published_to_x": false,
+    "editorial_review": {
+      "clarity_score": 8,
+      "technical_coherence_score": 8,
+      "takeaway_value_score": 8,
+      "source_faithfulness_score": 8,
+      "originality_score": 8,
+      "reason": "Clear, technically coherent, source-backed, and adds a useful next‑step.",
+      "passed": true
+    }
+  },
   "state_summary": {
-    "used_candidates_in_cooldown": 21,
+    "used_candidates_in_cooldown": 22,
     "recently_attempted_candidates": 35,
-    "recent_draft_passes_today": 2
+    "recent_draft_passes_today": 3
   }
 }
