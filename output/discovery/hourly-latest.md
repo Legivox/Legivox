@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-28T08:54:43+05:30
+- Run time (IST): 2026-10-28T09:54:49+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 189
-- Independent editorial review: 0 draft(s) passed / 0 rejected
+- Candidate pool after freshness/diversity filters: 188
+- Independent editorial review: 0 draft(s) passed / 1 rejected
 - Drafts passing local checks: 0
 - Outcome: **skip**
-- Decision reason: All generated drafts failed the local evidence/editorial checks; the hour was skipped.
+- Decision reason: Every draft submitted for independent editorial review was rejected; The hour was skipped.
 
 ## Source health
 
@@ -35,12 +35,12 @@
 | Hacker News · hn-marketing-distribution | 0 | ok |
 | Hacker News · hn-security-selfhost | 0 | ok |
 | Hacker News · hn-seller-operations | 0 | ok |
-| Hacker News · hn-shopify | 7 | ok |
+| Hacker News · hn-shopify | 10 | ok |
 | Hacker News · hn-show-hn | 10 | ok |
 | Ahrefs Blog | 4 | ok |
 | Console.dev | 12 | ok |
 | Indie Hackers (unofficial third-party feed) | 5 | ok |
-| Product Hunt | 38 | ok |
+| Product Hunt | 37 | ok |
 | Shopify Community | 30 | ok |
 | Shopify Developer Changelog | 18 | ok |
 | Stripe Blog | 3 | ok |
@@ -54,65 +54,52 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 112
-- Previously tracked repositories refreshed outside search results: 88
+- Repositories seen in this discovery run: 108
+- Previously tracked repositories refreshed outside search results: 92
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
-- Repositories with a 20–36 hour comparison baseline: 9
+- Repositories with a 20–36 hour comparison baseline: 17
 - First observations are baseline samples, not evidence of trending. Star velocity is reported only when a historical comparison exists.
 
 ## Primary-source verification
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| ldbumble/taskuary | yes | 200 | https://github.com/ldbumble/taskuary |
-| Promoted Placements beta now includes Shop Campaigns | yes | 200 | https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns |
-| Search brands that don't sell on Shopify in the Catalog API (beta) | yes | 200 | https://shopify.dev/changelog/posts/search-brands-that-don-t-sell-on-shopify-in-the-catalog-api-beta |
+| Show HN: Dinemic – self-hosted ingress across multiple providers (DNS, LB, TLS) | yes | 200 | https://dinemic.com/ |
+| ragleap/ragleap-core | yes | 200 | https://github.com/ragleap/ragleap-core |
+| 3441293738/creatorhub | yes | 200 | https://github.com/3441293738/creatorhub |
 
 ## Selected draft candidates
 
-No candidate produced a draft that passed every local check. Skipping is intentional.
+No draft cleared the complete local and independent-editor gate. See the decision reason and rejected-draft section for locally valid drafts that were rejected, not reviewed, or blocked by a review error.
 
 ## Automatic repair attempt
 
 - Attempted: yes
-- Repaired drafts submitted: 3
+- Repaired drafts submitted: 0
 - Repaired drafts that passed local validation: 0
-- Repaired drafts rejected: 3
+- Repaired drafts rejected: 0
 - Repair error: none
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
-- ldbumble/taskuary: The factual opening bundles multiple features; narrow it to one capability.
-  - Rejected text: taskuary turns mail, chats and tickets into tasks via Claude, Codex, Gemini agents. Verify that agent approvals are required before any outbound action. https://github.com/ldbumble/taskuary
-  - Model evidence quote: “mail, chats and tickets become tasks, the agents you already use (Claude Code, Codex, Gemini) do the work”
-  - Claim support: taskuary turns mail, chats and tickets into tasks via Claude, Codex, Gemini agents. ← “mail, chats and tickets become tasks, the agents you already use (Claude Code, Codex, Gemini) do the work”
-- Unmapped model draft: Model omitted a valid candidate ID and no exact verified source URL matched.
-- Promoted Placements beta now includes Shop Campaigns: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
-  - Rejected text: search_catalog results from Shop Campaign merchants return combined commission rate. Read placement.commission.percentage.value for accurate per‑product commission. https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns
-  - Model evidence quote: “placement.commission.percentage.value returns the total rate, combining the merchant's commission and Shopify's base rate”
-  - Claim support: search_catalog results from Shop Campaign merchants return combined commission rate. ← “placement.commission.percentage.value returns the total rate, combining the merchant's commission and Shopify's base rate”
-- Unmapped model draft: Model omitted a valid candidate ID and no exact verified source URL matched.
-- Search brands that don't sell on Shopify in the Catalog API (beta): Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.
-  - Rejected text: Catalog API beta adds a `sources` parameter to search_catalog. Set sources to ['shopify','external'] to return both Shopify and external items. https://shopify.dev/changelog/posts/search-brands-that-don-t-sell-on-shopify-in-the-catalog-api-beta
-  - Model evidence quote: “The Catalog API beta now supports a `sources` parameter on `search_catalog` that controls which products you return”
-  - Claim support: Catalog API beta adds a `sources` parameter to search_catalog. ← “The Catalog API beta now supports a `sources` parameter on `search_catalog` that controls which products you return”
-- ldbumble/taskuary: The factual opening bundles multiple features; narrow it to one capability.
-  - Rejected text: taskuary turns mail, chats and tickets into tasks via Claude, Codex, Gemini agents. Run taskuary locally to keep all outbound actions under your control. https://github.com/ldbumble/taskuary
-  - Model evidence quote: “Open source, runs on your machine.”
-- Promoted Placements beta now includes Shop Campaigns: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
-  - Rejected text: search_catalog results from Shop Campaign merchants return combined commission rate. Report commission per product by reading placement.commission.percentage.value. https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns
-  - Model evidence quote: “placement.commission.percentage.value returns the total rate, combining the merchant's commission and Shopify's base rate”
-- Search brands that don't sell on Shopify in the Catalog API (beta): Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.
-  - Rejected text: Catalog API beta adds a `sources` parameter to search_catalog. Set sources to ['external'] to return only brands that don't sell on Shopify. https://shopify.dev/changelog/posts/search-brands-that-don-t-sell-on-shopify-in-the-catalog-api-beta
-  - Model evidence quote: “Brands that don't sell on Shopify only: ['external']”
+- Show HN: Dinemic – self-hosted ingress across multiple providers (DNS, LB, TLS): The factual opening bundles multiple features; narrow it to one capability.
+  - Rejected text: Dinemic configures DNS, load balancing, TLS, and an encrypted mesh across your servers. Run one agent per host and confirm mesh traffic is encrypted by inspecting packet headers. https://dinemic.com/
+  - Model evidence quote: “Authoritative DNS, load balancing, automatic TLS and an encrypted Dinemic Network Mesh across machines you control.”
+  - Claim support: Dinemic configures DNS, load balancing, TLS, and an encrypted mesh across your servers. ← “Authoritative DNS, load balancing, automatic TLS and an encrypted Dinemic Network Mesh across machines you control.”
+- 3441293738/creatorhub: The factual opening bundles multiple features; narrow it to one capability.; Fact sentence is too long; narrow it to one source-backed capability.; A supporting quote does not share enough wording with its stated claim; Supporting quotes cover only 9% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: creatorhub is a Python web panel that monitors, collects, and migrates content from Douyin, Xiaohongshu, and Kuaishou. Schedule a scrape of a test account and check that data is stored without duplication. https://github.com/3441293738/creatorhub
+  - Model evidence quote: “多平台内容监控·采集·搬运 一个 Web 面板管起抖音 / 小红书 / 快手”
+  - Claim support: creatorhub is a Python web panel that monitors, collects, and migrates content from Douyin, Xiaohongshu, and Kuaishou. ← “多平台内容监控·采集·搬运 一个 Web 面板管起抖音 / 小红书 / 快手”
+- ragleap/ragleap-core: Takeaway claims approval gate blocks execution, but source does not demonstrate this behavior; insufficient evidence for that specific test.
+  - Rejected text: ragleap-core offers 46 business roles with approval‑gated autonomy and sandboxed code. Create a dummy task and verify the approval gate blocks execution until approved. https://github.com/ragleap/ragleap-core
 
 ## Top discovery candidates considered
 
-- ldbumble/taskuary | GitHub Search | ai_and_automation | raw 71, adjusted 75 | current stars 143 | GitHub star trend: building baseline | https://github.com/ldbumble/taskuary
-- Promoted Placements beta now includes Shop Campaigns | Shopify Developer Changelog | commerce_and_digital_products | raw 72, adjusted 72 | https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns
-- Search brands that don't sell on Shopify in the Catalog API (beta) | Shopify Developer Changelog | commerce_and_digital_products | raw 72, adjusted 72 | https://shopify.dev/changelog/posts/search-brands-that-don-t-sell-on-shopify-in-the-catalog-api-beta
+- Show HN: Dinemic – self-hosted ingress across multiple providers (DNS, LB, TLS) | Hacker News | product_and_workflow_tools | raw 72, adjusted 74 | https://dinemic.com/
+- ragleap/ragleap-core | GitHub Search | ai_and_automation | raw 70, adjusted 74 | current stars 19 | GitHub star trend: building baseline | https://github.com/ragleap/ragleap-core
+- 3441293738/creatorhub | GitHub Search | creator_and_indie_business | raw 57, adjusted 74 | current stars 2654 | GitHub stars +79 over about 20.9h | https://github.com/3441293738/creatorhub
 
 ## Safety and interpretation
 

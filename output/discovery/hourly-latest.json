@@ -1,17 +1,17 @@
 {
-  "generated_at_ist": "2026-10-28T08:54:43+05:30",
-  "run_at_ist": "2026-10-28T08:54:43+05:30",
+  "generated_at_ist": "2026-10-28T09:54:49+05:30",
+  "run_at_ist": "2026-10-28T09:54:49+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 301,
-  "eligible_candidate_count": 189,
+  "candidate_count_raw": 299,
+  "eligible_candidate_count": 188,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4718
+      "total_count": 4721
     },
     {
       "source": "GitHub Search · github-analytics-seo",
@@ -25,14 +25,14 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 352
+      "total_count": 353
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2872
+      "total_count": 2874
     },
     {
       "source": "GitHub Search · github-digital-product-tools",
@@ -60,14 +60,14 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2055
+      "total_count": 2058
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3289
+      "total_count": 3290
     },
     {
       "source": "GitHub Search · github-seller-operations",
@@ -88,7 +88,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 264
+      "total_count": 265
     },
     {
       "source": "Hacker News · hn-analytics-growth",
@@ -158,12 +158,12 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 9
+      "total_count": 8
     },
     {
       "source": "Hacker News · hn-shopify",
       "kind": "hacker_news",
-      "items_kept": 7,
+      "items_kept": 10,
       "status": "ok",
       "total_count": 10
     },
@@ -195,7 +195,7 @@
     {
       "source": "Product Hunt",
       "kind": "rss",
-      "items_kept": 38,
+      "items_kept": 37,
       "status": "ok"
     },
     {
@@ -259,42 +259,42 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-28T03:24:43+00:00",
+    "observed_at_utc": "2026-10-28T04:24:49+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 112,
-    "previously_tracked_repositories_refreshed": 88,
+    "repositories_seen_in_discovery": 108,
+    "previously_tracked_repositories_refreshed": 92,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
-    "repositories_with_20_to_36_hour_baseline": 9,
+    "repositories_with_20_to_36_hour_baseline": 17,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "aaac4c73f6063b6f",
-      "title": "ldbumble/taskuary",
-      "source_url": "https://github.com/ldbumble/taskuary",
+      "candidate_id": "106d23087d4f8d8d",
+      "title": "Show HN: Dinemic – self-hosted ingress across multiple providers (DNS, LB, TLS)",
+      "source_url": "https://dinemic.com/",
       "verified": true,
-      "final_url": "https://github.com/ldbumble/taskuary",
+      "final_url": "https://dinemic.com/",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "fe106ba546c5c606",
-      "title": "Promoted Placements beta now includes Shop Campaigns",
-      "source_url": "https://shopify.dev/changelog/promoted-placements-beta-now-includes-shop-campaigns",
+      "candidate_id": "b7a73b63f116b571",
+      "title": "ragleap/ragleap-core",
+      "source_url": "https://github.com/ragleap/ragleap-core",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns",
+      "final_url": "https://github.com/ragleap/ragleap-core",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "5b7aef4519e9bf2e",
-      "title": "Search brands that don't sell on Shopify in the Catalog API (beta)",
-      "source_url": "https://shopify.dev/changelog/search-brands-that-don-t-sell-on-shopify-in-the-catalog-api-beta",
+      "candidate_id": "6b341b48dc38bcfe",
+      "title": "3441293738/creatorhub",
+      "source_url": "https://github.com/3441293738/creatorhub",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/search-brands-that-don-t-sell-on-shopify-in-the-catalog-api-beta",
+      "final_url": "https://github.com/3441293738/creatorhub",
       "http_status": 200,
       "reason": ""
     }
@@ -303,167 +303,112 @@
   "daily_draft_cap": 16,
   "daily_drafts_already_passed": 0,
   "outcome": "skip",
-  "decision_reason": "All generated drafts failed the local evidence/editorial checks; the hour was skipped.",
+  "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
   "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "aaac4c73f6063b6f",
-      "title": "ldbumble/taskuary",
+      "candidate_id": "106d23087d4f8d8d",
+      "title": "Show HN: Dinemic – self-hosted ingress across multiple providers (DNS, LB, TLS)",
       "reasons": [
         "The factual opening bundles multiple features; narrow it to one capability."
       ],
-      "proposed_text": "taskuary turns mail, chats and tickets into tasks via Claude, Codex, Gemini agents. Verify that agent approvals are required before any outbound action. https://github.com/ldbumble/taskuary",
-      "evidence_quote": "mail, chats and tickets become tasks, the agents you already use (Claude Code, Codex, Gemini) do the work",
+      "proposed_text": "Dinemic configures DNS, load balancing, TLS, and an encrypted mesh across your servers. Run one agent per host and confirm mesh traffic is encrypted by inspecting packet headers. https://dinemic.com/",
+      "evidence_quote": "Authoritative DNS, load balancing, automatic TLS and an encrypted Dinemic Network Mesh across machines you control.",
       "claim_evidence": [
         {
-          "claim": "taskuary turns mail, chats and tickets into tasks via Claude, Codex, Gemini agents.",
-          "quote": "mail, chats and tickets become tasks, the agents you already use (Claude Code, Codex, Gemini) do the work"
+          "claim": "Dinemic configures DNS, load balancing, TLS, and an encrypted mesh across your servers.",
+          "quote": "Authoritative DNS, load balancing, automatic TLS and an encrypted Dinemic Network Mesh across machines you control."
         }
       ]
     },
     {
-      "candidate_id": null,
-      "title": "Unmapped model draft",
-      "proposed_text": "",
+      "candidate_id": "6b341b48dc38bcfe",
+      "title": "3441293738/creatorhub",
       "reasons": [
-        "Model omitted a valid candidate ID and no exact verified source URL matched."
-      ]
-    },
-    {
-      "candidate_id": "fe106ba546c5c606",
-      "title": "Promoted Placements beta now includes Shop Campaigns",
-      "reasons": [
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Fact sentence is too long; narrow it to one source-backed capability.",
+        "A supporting quote does not share enough wording with its stated claim",
+        "Supporting quotes cover only 9% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "search_catalog results from Shop Campaign merchants return combined commission rate. Read placement.commission.percentage.value for accurate per‑product commission. https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns",
-      "evidence_quote": "placement.commission.percentage.value returns the total rate, combining the merchant's commission and Shopify's base rate",
+      "proposed_text": "creatorhub is a Python web panel that monitors, collects, and migrates content from Douyin, Xiaohongshu, and Kuaishou. Schedule a scrape of a test account and check that data is stored without duplication. https://github.com/3441293738/creatorhub",
+      "evidence_quote": "多平台内容监控·采集·搬运 一个 Web 面板管起抖音 / 小红书 / 快手",
       "claim_evidence": [
         {
-          "claim": "search_catalog results from Shop Campaign merchants return combined commission rate.",
-          "quote": "placement.commission.percentage.value returns the total rate, combining the merchant's commission and Shopify's base rate"
+          "claim": "creatorhub is a Python web panel that monitors, collects, and migrates content from Douyin, Xiaohongshu, and Kuaishou.",
+          "quote": "多平台内容监控·采集·搬运 一个 Web 面板管起抖音 / 小红书 / 快手"
         }
       ]
     },
     {
-      "candidate_id": null,
-      "title": "Unmapped model draft",
-      "proposed_text": "",
+      "candidate_id": "b7a73b63f116b571",
+      "title": "ragleap/ragleap-core",
+      "proposed_text": "ragleap-core offers 46 business roles with approval‑gated autonomy and sandboxed code. Create a dummy task and verify the approval gate blocks execution until approved. https://github.com/ragleap/ragleap-core",
       "reasons": [
-        "Model omitted a valid candidate ID and no exact verified source URL matched."
-      ]
-    },
-    {
-      "candidate_id": "5b7aef4519e9bf2e",
-      "title": "Search brands that don't sell on Shopify in the Catalog API (beta)",
-      "reasons": [
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
-        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation."
+        "Takeaway claims approval gate blocks execution, but source does not demonstrate this behavior; insufficient evidence for that specific test."
       ],
-      "proposed_text": "Catalog API beta adds a `sources` parameter to search_catalog. Set sources to ['shopify','external'] to return both Shopify and external items. https://shopify.dev/changelog/posts/search-brands-that-don-t-sell-on-shopify-in-the-catalog-api-beta",
-      "evidence_quote": "The Catalog API beta now supports a `sources` parameter on `search_catalog` that controls which products you return",
-      "claim_evidence": [
-        {
-          "claim": "Catalog API beta adds a `sources` parameter to search_catalog.",
-          "quote": "The Catalog API beta now supports a `sources` parameter on `search_catalog` that controls which products you return"
-        }
-      ]
-    },
-    {
-      "candidate_id": "aaac4c73f6063b6f",
-      "title": "ldbumble/taskuary",
-      "reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability."
-      ],
-      "proposed_text": "taskuary turns mail, chats and tickets into tasks via Claude, Codex, Gemini agents. Run taskuary locally to keep all outbound actions under your control. https://github.com/ldbumble/taskuary",
-      "evidence_quote": "Open source, runs on your machine.",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability."
-      ]
-    },
-    {
-      "candidate_id": "fe106ba546c5c606",
-      "title": "Promoted Placements beta now includes Shop Campaigns",
-      "reasons": [
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
-      ],
-      "proposed_text": "search_catalog results from Shop Campaign merchants return combined commission rate. Report commission per product by reading placement.commission.percentage.value. https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns",
-      "evidence_quote": "placement.commission.percentage.value returns the total rate, combining the merchant's commission and Shopify's base rate",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
-      ]
-    },
-    {
-      "candidate_id": "5b7aef4519e9bf2e",
-      "title": "Search brands that don't sell on Shopify in the Catalog API (beta)",
-      "reasons": [
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
-        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation."
-      ],
-      "proposed_text": "Catalog API beta adds a `sources` parameter to search_catalog. Set sources to ['external'] to return only brands that don't sell on Shopify. https://shopify.dev/changelog/posts/search-brands-that-don-t-sell-on-shopify-in-the-catalog-api-beta",
-      "evidence_quote": "Brands that don't sell on Shopify only: ['external']",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
-        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation."
-      ]
+      "editorial_review": {
+        "clarity_score": 8,
+        "technical_coherence_score": 8,
+        "takeaway_value_score": 5,
+        "source_faithfulness_score": 8,
+        "originality_score": 7
+      }
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "aaac4c73f6063b6f",
-      "title": "ldbumble/taskuary",
-      "url": "https://github.com/ldbumble/taskuary",
+      "id": "106d23087d4f8d8d",
+      "title": "Show HN: Dinemic – self-hosted ingress across multiple providers (DNS, LB, TLS)",
+      "url": "https://dinemic.com/",
+      "source": "Hacker News",
+      "primary_category": "product_and_workflow_tools",
+      "priority_score": 72,
+      "hourly_adjusted_score": 74,
+      "stars_current": null,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-27T14:38:33+00:00",
+      "days_old": 0.57,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "b7a73b63f116b571",
+      "title": "ragleap/ragleap-core",
+      "url": "https://github.com/ragleap/ragleap-core",
       "source": "GitHub Search",
       "primary_category": "ai_and_automation",
-      "priority_score": 71,
-      "hourly_adjusted_score": 75,
-      "stars_current": 143,
+      "priority_score": 70,
+      "hourly_adjusted_score": 74,
+      "stars_current": 19,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "insufficient_history",
-      "published_at": "2026-10-28T03:24:38+00:00",
+      "published_at": "2026-10-28T04:22:11+00:00",
       "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "fe106ba546c5c606",
-      "title": "Promoted Placements beta now includes Shop Campaigns",
-      "url": "https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns",
-      "source": "Shopify Developer Changelog",
-      "primary_category": "commerce_and_digital_products",
-      "priority_score": 72,
-      "hourly_adjusted_score": 72,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-27T13:00:00+00:00",
-      "days_old": 0.6,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "5b7aef4519e9bf2e",
-      "title": "Search brands that don't sell on Shopify in the Catalog API (beta)",
-      "url": "https://shopify.dev/changelog/posts/search-brands-that-don-t-sell-on-shopify-in-the-catalog-api-beta",
-      "source": "Shopify Developer Changelog",
-      "primary_category": "commerce_and_digital_products",
-      "priority_score": 72,
-      "hourly_adjusted_score": 72,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-27T10:00:00+00:00",
-      "days_old": 0.73,
+      "id": "6b341b48dc38bcfe",
+      "title": "3441293738/creatorhub",
+      "url": "https://github.com/3441293738/creatorhub",
+      "source": "GitHub Search",
+      "primary_category": "creator_and_indie_business",
+      "priority_score": 57,
+      "hourly_adjusted_score": 74,
+      "stars_current": 2654,
+      "stars_delta_24h": 79,
+      "stars_delta_baseline_hours": 20.9,
+      "stars_growth_percent_24h": 3.07,
+      "trend_signal": "measured_star_growth",
+      "published_at": "2026-10-28T04:17:59+00:00",
+      "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
@@ -471,19 +416,19 @@
   ],
   "automatic_repair": {
     "attempted": true,
-    "drafts_submitted": 3,
+    "drafts_submitted": 0,
     "repaired_local_passes": 0,
-    "repair_rejections": 3,
+    "repair_rejections": 0,
     "repair_error": null,
-    "editorial_repair_attempted": false,
+    "editorial_repair_attempted": true,
     "editorial_repair_drafts_submitted": 0,
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 0,
-    "submitted_for_independent_review": 0,
+    "locally_valid_drafts": 1,
+    "submitted_for_independent_review": 1,
     "passed_independent_review": 0,
-    "rejected_by_independent_review": 0,
+    "rejected_by_independent_review": 1,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
