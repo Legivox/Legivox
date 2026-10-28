@@ -1,17 +1,17 @@
 {
-  "generated_at_ist": "2026-10-28T19:10:33+05:30",
-  "run_at_ist": "2026-10-28T19:10:33+05:30",
+  "generated_at_ist": "2026-10-28T20:06:21+05:30",
+  "run_at_ist": "2026-10-28T20:06:21+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 295,
-  "eligible_candidate_count": 185,
+  "candidate_count_raw": 304,
+  "eligible_candidate_count": 190,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4805
+      "total_count": 4816
     },
     {
       "source": "GitHub Search · github-analytics-seo",
@@ -25,14 +25,14 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 358
+      "total_count": 359
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2908
+      "total_count": 2914
     },
     {
       "source": "GitHub Search · github-digital-product-tools",
@@ -53,21 +53,21 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 226
+      "total_count": 227
     },
     {
       "source": "GitHub Search · github-mcp-servers",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2095
+      "total_count": 2101
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3336
+      "total_count": 3342
     },
     {
       "source": "GitHub Search · github-seller-operations",
@@ -93,7 +93,7 @@
     {
       "source": "Hacker News · hn-analytics-growth",
       "kind": "hacker_news",
-      "items_kept": 8,
+      "items_kept": 10,
       "status": "ok",
       "total_count": 10
     },
@@ -116,7 +116,7 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 7
+      "total_count": 6
     },
     {
       "source": "Hacker News · hn-digital-products",
@@ -163,7 +163,7 @@
     {
       "source": "Hacker News · hn-shopify",
       "kind": "hacker_news",
-      "items_kept": 6,
+      "items_kept": 7,
       "status": "ok",
       "total_count": 10
     },
@@ -195,7 +195,7 @@
     {
       "source": "Product Hunt",
       "kind": "rss",
-      "items_kept": 38,
+      "items_kept": 39,
       "status": "ok"
     },
     {
@@ -259,42 +259,42 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-28T13:40:33+00:00",
+    "observed_at_utc": "2026-10-28T14:36:21+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 107,
-    "previously_tracked_repositories_refreshed": 93,
-    "refresh_failures": 0,
+    "repositories_seen_in_discovery": 113,
+    "previously_tracked_repositories_refreshed": 86,
+    "refresh_failures": 1,
     "missing_github_token_for_watchlist_refresh": false,
-    "snapshots_added_this_run": 200,
+    "snapshots_added_this_run": 199,
     "repositories_with_20_to_36_hour_baseline": 16,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "347bfccdd934edf4",
-      "title": "Show HN: Pando, what to do with vibe coded apps at work",
-      "source_url": "https://github.com/trypando/pando",
+      "candidate_id": "33a5c9931e59489b",
+      "title": "Show HN: Shop via CLI; for agents and software engineers",
+      "source_url": "https://storerouter.ai/playground",
       "verified": true,
-      "final_url": "https://github.com/trypando/pando",
+      "final_url": "https://storerouter.ai/playground",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "f979d1bfbb7ea834",
-      "title": "Show HN: QuickRef – client-side developer tools",
-      "source_url": "https://quickref.io/",
+      "candidate_id": "b19713309e25f0de",
+      "title": "Show HN: Interview your analysts instead of auto-generating a semantic layer",
+      "source_url": "https://github.com/nodal-data/nodal-context",
       "verified": true,
-      "final_url": "https://quickref.io/",
+      "final_url": "https://github.com/nodal-data/nodal-context",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "6adfbf8f6ccf1e05",
-      "title": "AI Discoverability, Page types, and more (September 2026)",
-      "source_url": "https://ahrefs.com/blog/new-features-september-2026/",
+      "candidate_id": "55e7d6a1d51f97d5",
+      "title": "Google AI Mode: All You Need to Know",
+      "source_url": "https://ahrefs.com/blog/google-ai-mode/",
       "verified": true,
-      "final_url": "https://ahrefs.com/blog/new-features-september-2026/",
+      "final_url": "https://ahrefs.com/blog/google-ai-mode/",
       "http_status": 200,
       "reason": ""
     }
@@ -307,119 +307,148 @@
   "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "347bfccdd934edf4",
-      "title": "Show HN: Pando, what to do with vibe coded apps at work",
+      "candidate_id": "33a5c9931e59489b",
+      "title": "Show HN: Shop via CLI; for agents and software engineers",
       "reasons": [
-        "Supporting quotes cover only 60% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about."
       ],
-      "proposed_text": "Pando is a platform that lets you deploy and share apps. Run a CI test that deploys to Pando and checks shared URL accessibility. https://github.com/trypando/pando",
-      "evidence_quote": "Deploy and share apps.",
+      "proposed_text": "StoreRouter CLI lets you search all covered e‑commerce stores from the browser. Pipe results through jq to filter by price before adding to cart. https://storerouter.ai/playground",
+      "evidence_quote": "Run the StoreRouter CLI in your browser: search covered stores",
       "claim_evidence": [
         {
-          "claim": "Pando is a platform that lets you deploy and share apps.",
-          "quote": "Deploy and share apps."
+          "claim": "StoreRouter CLI lets you search all covered e‑commerce stores from the browser.",
+          "quote": "Run the StoreRouter CLI in your browser: search covered stores"
         }
       ]
     },
     {
-      "candidate_id": "f979d1bfbb7ea834",
-      "title": "Show HN: QuickRef – client-side developer tools",
+      "candidate_id": "b19713309e25f0de",
+      "title": "Show HN: Interview your analysts instead of auto-generating a semantic layer",
       "reasons": [
-        "Supporting quotes cover only 40% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
       ],
-      "proposed_text": "QuickRef offers 100% browser‑based developer tools with no login. Use QuickRef for local token decoding to avoid sending secrets to servers. https://quickref.io/",
-      "evidence_quote": "100% browser-based. No login.",
+      "proposed_text": "Nodal Context provides open‑source business context for AI analytics. Use it to seed Claude prompts with company KPIs before querying. https://github.com/nodal-data/nodal-context",
+      "evidence_quote": "Nodal Context Repo - Open source business context for your data analytics",
       "claim_evidence": [
         {
-          "claim": "QuickRef offers 100% browser‑based developer tools with no login.",
-          "quote": "100% browser-based. No login."
+          "claim": "Nodal Context provides open‑source business context for AI analytics.",
+          "quote": "Nodal Context Repo - Open source business context for your data analytics"
         }
       ]
     },
     {
-      "candidate_id": "6adfbf8f6ccf1e05",
-      "title": "AI Discoverability, Page types, and more (September 2026)",
+      "candidate_id": "55e7d6a1d51f97d5",
+      "title": "Google AI Mode: All You Need to Know",
       "reasons": [
-        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation."
+        "Editorial takeaway is too long; keep the analysis concrete and concise."
       ],
-      "proposed_text": "Ahrefs added an AI Discoverability issue category in Site Audit. Run Site Audit to catch pages blocked from AI bots in robots.txt. https://ahrefs.com/blog/new-features-september-2026/",
-      "evidence_quote": "AI Discoverability is a new issue category in Site Audit.",
+      "proposed_text": "Google AI Mode uses Gemini 2.5 to turn search into a conversational experience. Add an opt‑out toggle in your site’s privacy settings to comply with the new console report. https://ahrefs.com/blog/google-ai-mode/",
+      "evidence_quote": "Google’s AI Mode is transforming search into a conversational experience powered by Gemini 2.5.",
       "claim_evidence": [
         {
-          "claim": "Ahrefs added an AI Discoverability issue category in Site Audit.",
-          "quote": "AI Discoverability is a new issue category in Site Audit."
+          "claim": "Google AI Mode uses Gemini 2.5 to turn search into a conversational experience.",
+          "quote": "Google’s AI Mode is transforming search into a conversational experience powered by Gemini 2.5."
         }
       ]
     },
     {
-      "candidate_id": "f979d1bfbb7ea834",
-      "title": "Show HN: QuickRef – client-side developer tools",
+      "candidate_id": "55e7d6a1d51f97d5",
+      "title": "Google AI Mode: All You Need to Know",
       "reasons": [
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
-        "No claim-by-claim supporting evidence was provided"
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
       ],
-      "proposed_text": "QuickRef.io is 100% browser‑based with no login. Use QuickRef's QR code generator to download PNGs directly. https://quickref.io/",
-      "evidence_quote": "100% browser-based. No login.",
+      "proposed_text": "Google AI Mode uses Gemini 2.5 to power conversational search. Disable AI Mode in Search Console by toggling the opt‑out setting to stop reporting on AI‑mode queries. https://ahrefs.com/blog/google-ai-mode/",
+      "evidence_quote": "Google’s AI Mode is transforming search into a conversational experience powered by Gemini 2.5.",
       "automatic_repair_attempt": true,
       "original_rejection_reasons": [
-        "Supporting quotes cover only 40% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Editorial takeaway is too long; keep the analysis concrete and concise."
+      ]
+    },
+    {
+      "candidate_id": "33a5c9931e59489b",
+      "title": "Show HN: Shop via CLI; for agents and software engineers",
+      "reasons": [
+        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.",
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "Unsupported strong claim: the first"
+      ],
+      "proposed_text": "StoreRouter CLI lets you search all covered e‑commerce stores from the browser. Use the --limit flag to cap results, e.g., run `search 'linen dress' --limit 12` to retrieve only the first dozen items. https://storerouter.ai/playground",
+      "evidence_quote": "search 'linen dress' --limit 12",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about."
+      ]
+    },
+    {
+      "candidate_id": "b19713309e25f0de",
+      "title": "Show HN: Interview your analysts instead of auto-generating a semantic layer",
+      "reasons": [
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
+      ],
+      "proposed_text": "Nodal Context is an open‑source repository for business context data. Clone the repo and load the `skills` folder to seed Claude prompts with company KPIs before querying. https://github.com/nodal-data/nodal-context",
+      "evidence_quote": "skills",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "347bfccdd934edf4",
-      "title": "Show HN: Pando, what to do with vibe coded apps at work",
-      "url": "https://github.com/trypando/pando",
+      "id": "33a5c9931e59489b",
+      "title": "Show HN: Shop via CLI; for agents and software engineers",
+      "url": "https://storerouter.ai/playground",
       "source": "Hacker News",
-      "primary_category": "product_and_workflow_tools",
-      "priority_score": 74,
-      "hourly_adjusted_score": 76,
+      "primary_category": "commerce_and_digital_products",
+      "priority_score": 73,
+      "hourly_adjusted_score": 67,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-28T13:29:37+00:00",
-      "days_old": 0.01,
+      "published_at": "2026-10-27T19:12:20+00:00",
+      "days_old": 0.81,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "f979d1bfbb7ea834",
-      "title": "Show HN: QuickRef – client-side developer tools",
-      "url": "https://quickref.io/",
+      "id": "b19713309e25f0de",
+      "title": "Show HN: Interview your analysts instead of auto-generating a semantic layer",
+      "url": "https://github.com/nodal-data/nodal-context",
       "source": "Hacker News",
       "primary_category": "product_and_workflow_tools",
-      "priority_score": 64,
-      "hourly_adjusted_score": 66,
+      "priority_score": 65,
+      "hourly_adjusted_score": 67,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-28T13:40:14+00:00",
+      "published_at": "2026-10-28T14:35:23+00:00",
       "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "6adfbf8f6ccf1e05",
-      "title": "AI Discoverability, Page types, and more (September 2026)",
-      "url": "https://ahrefs.com/blog/new-features-september-2026/",
+      "id": "55e7d6a1d51f97d5",
+      "title": "Google AI Mode: All You Need to Know",
+      "url": "https://ahrefs.com/blog/google-ai-mode/",
       "source": "Ahrefs Blog",
       "primary_category": "marketing_and_distribution",
-      "priority_score": 60,
-      "hourly_adjusted_score": 60,
+      "priority_score": 59,
+      "hourly_adjusted_score": 59,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-28T08:34:28+00:00",
-      "days_old": 0.21,
+      "published_at": "2026-10-28T10:41:46+00:00",
+      "days_old": 0.16,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
@@ -427,9 +456,9 @@
   ],
   "automatic_repair": {
     "attempted": true,
-    "drafts_submitted": 1,
+    "drafts_submitted": 3,
     "repaired_local_passes": 0,
-    "repair_rejections": 1,
+    "repair_rejections": 3,
     "repair_error": null,
     "editorial_repair_attempted": false,
     "editorial_repair_drafts_submitted": 0,

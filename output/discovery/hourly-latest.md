@@ -1,9 +1,9 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-28T19:10:33+05:30
+- Run time (IST): 2026-10-28T20:06:21+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 185
+- Candidate pool after freshness/diversity filters: 190
 - Independent editorial review: 0 draft(s) passed / 0 rejected
 - Drafts passing local checks: 0
 - Outcome: **skip**
@@ -25,7 +25,7 @@
 | GitHub Search · github-seller-operations | 10 | ok |
 | GitHub Search · github-shopify-commerce | 10 | ok |
 | GitHub Search · github-workflow-automation | 10 | ok |
-| Hacker News · hn-analytics-growth | 8 | ok |
+| Hacker News · hn-analytics-growth | 10 | ok |
 | Hacker News · hn-automation-api | 1 | ok |
 | Hacker News · hn-creator-business | 0 | ok |
 | Hacker News · hn-digital-downloads-templates | 0 | ok |
@@ -35,12 +35,12 @@
 | Hacker News · hn-marketing-distribution | 0 | ok |
 | Hacker News · hn-security-selfhost | 0 | ok |
 | Hacker News · hn-seller-operations | 0 | ok |
-| Hacker News · hn-shopify | 6 | ok |
+| Hacker News · hn-shopify | 7 | ok |
 | Hacker News · hn-show-hn | 10 | ok |
 | Ahrefs Blog | 6 | ok |
 | Console.dev | 12 | ok |
 | Indie Hackers (unofficial third-party feed) | 5 | ok |
-| Product Hunt | 38 | ok |
+| Product Hunt | 39 | ok |
 | Shopify Community | 30 | ok |
 | Shopify Developer Changelog | 18 | ok |
 | Stripe Blog | 3 | ok |
@@ -54,10 +54,10 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 107
-- Previously tracked repositories refreshed outside search results: 93
-- Refresh failures: 0
-- Star snapshots recorded this run: 200
+- Repositories seen in this discovery run: 113
+- Previously tracked repositories refreshed outside search results: 86
+- Refresh failures: 1
+- Star snapshots recorded this run: 199
 - Repositories with a 20–36 hour comparison baseline: 16
 - First observations are baseline samples, not evidence of trending. Star velocity is reported only when a historical comparison exists.
 
@@ -65,9 +65,9 @@
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| Show HN: Pando, what to do with vibe coded apps at work | yes | 200 | https://github.com/trypando/pando |
-| Show HN: QuickRef – client-side developer tools | yes | 200 | https://quickref.io/ |
-| AI Discoverability, Page types, and more (September 2026) | yes | 200 | https://ahrefs.com/blog/new-features-september-2026/ |
+| Show HN: Shop via CLI; for agents and software engineers | yes | 200 | https://storerouter.ai/playground |
+| Show HN: Interview your analysts instead of auto-generating a semantic layer | yes | 200 | https://github.com/nodal-data/nodal-context |
+| Google AI Mode: All You Need to Know | yes | 200 | https://ahrefs.com/blog/google-ai-mode/ |
 
 ## Selected draft candidates
 
@@ -76,35 +76,41 @@ No candidate produced a draft that passed every local check. Skipping is intenti
 ## Automatic repair attempt
 
 - Attempted: yes
-- Repaired drafts submitted: 1
+- Repaired drafts submitted: 3
 - Repaired drafts that passed local validation: 0
-- Repaired drafts rejected: 1
+- Repaired drafts rejected: 3
 - Repair error: none
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
-- Show HN: Pando, what to do with vibe coded apps at work: Supporting quotes cover only 60% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: Pando is a platform that lets you deploy and share apps. Run a CI test that deploys to Pando and checks shared URL accessibility. https://github.com/trypando/pando
-  - Model evidence quote: “Deploy and share apps.”
-  - Claim support: Pando is a platform that lets you deploy and share apps. ← “Deploy and share apps.”
-- Show HN: QuickRef – client-side developer tools: Supporting quotes cover only 40% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: QuickRef offers 100% browser‑based developer tools with no login. Use QuickRef for local token decoding to avoid sending secrets to servers. https://quickref.io/
-  - Model evidence quote: “100% browser-based. No login.”
-  - Claim support: QuickRef offers 100% browser‑based developer tools with no login. ← “100% browser-based. No login.”
-- AI Discoverability, Page types, and more (September 2026): Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.
-  - Rejected text: Ahrefs added an AI Discoverability issue category in Site Audit. Run Site Audit to catch pages blocked from AI bots in robots.txt. https://ahrefs.com/blog/new-features-september-2026/
-  - Model evidence quote: “AI Discoverability is a new issue category in Site Audit.”
-  - Claim support: Ahrefs added an AI Discoverability issue category in Site Audit. ← “AI Discoverability is a new issue category in Site Audit.”
-- Show HN: QuickRef – client-side developer tools: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; No claim-by-claim supporting evidence was provided
-  - Rejected text: QuickRef.io is 100% browser‑based with no login. Use QuickRef's QR code generator to download PNGs directly. https://quickref.io/
-  - Model evidence quote: “100% browser-based. No login.”
+- Show HN: Shop via CLI; for agents and software engineers: Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.
+  - Rejected text: StoreRouter CLI lets you search all covered e‑commerce stores from the browser. Pipe results through jq to filter by price before adding to cart. https://storerouter.ai/playground
+  - Model evidence quote: “Run the StoreRouter CLI in your browser: search covered stores”
+  - Claim support: StoreRouter CLI lets you search all covered e‑commerce stores from the browser. ← “Run the StoreRouter CLI in your browser: search covered stores”
+- Show HN: Interview your analysts instead of auto-generating a semantic layer: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
+  - Rejected text: Nodal Context provides open‑source business context for AI analytics. Use it to seed Claude prompts with company KPIs before querying. https://github.com/nodal-data/nodal-context
+  - Model evidence quote: “Nodal Context Repo - Open source business context for your data analytics”
+  - Claim support: Nodal Context provides open‑source business context for AI analytics. ← “Nodal Context Repo - Open source business context for your data analytics”
+- Google AI Mode: All You Need to Know: Editorial takeaway is too long; keep the analysis concrete and concise.
+  - Rejected text: Google AI Mode uses Gemini 2.5 to turn search into a conversational experience. Add an opt‑out toggle in your site’s privacy settings to comply with the new console report. https://ahrefs.com/blog/google-ai-mode/
+  - Model evidence quote: “Google’s AI Mode is transforming search into a conversational experience powered by Gemini 2.5.”
+  - Claim support: Google AI Mode uses Gemini 2.5 to turn search into a conversational experience. ← “Google’s AI Mode is transforming search into a conversational experience powered by Gemini 2.5.”
+- Google AI Mode: All You Need to Know: Editorial takeaway is too long; keep the analysis concrete and concise.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
+  - Rejected text: Google AI Mode uses Gemini 2.5 to power conversational search. Disable AI Mode in Search Console by toggling the opt‑out setting to stop reporting on AI‑mode queries. https://ahrefs.com/blog/google-ai-mode/
+  - Model evidence quote: “Google’s AI Mode is transforming search into a conversational experience powered by Gemini 2.5.”
+- Show HN: Shop via CLI; for agents and software engineers: Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.; Editorial takeaway is too long; keep the analysis concrete and concise.; Unsupported strong claim: the first
+  - Rejected text: StoreRouter CLI lets you search all covered e‑commerce stores from the browser. Use the --limit flag to cap results, e.g., run `search 'linen dress' --limit 12` to retrieve only the first dozen items. https://storerouter.ai/playground
+  - Model evidence quote: “search 'linen dress' --limit 12”
+- Show HN: Interview your analysts instead of auto-generating a semantic layer: Editorial takeaway is too long; keep the analysis concrete and concise.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
+  - Rejected text: Nodal Context is an open‑source repository for business context data. Clone the repo and load the `skills` folder to seed Claude prompts with company KPIs before querying. https://github.com/nodal-data/nodal-context
+  - Model evidence quote: “skills”
 
 ## Top discovery candidates considered
 
-- Show HN: Pando, what to do with vibe coded apps at work | Hacker News | product_and_workflow_tools | raw 74, adjusted 76 | https://github.com/trypando/pando
-- Show HN: QuickRef – client-side developer tools | Hacker News | product_and_workflow_tools | raw 64, adjusted 66 | https://quickref.io/
-- AI Discoverability, Page types, and more (September 2026) | Ahrefs Blog | marketing_and_distribution | raw 60, adjusted 60 | https://ahrefs.com/blog/new-features-september-2026/
+- Show HN: Shop via CLI; for agents and software engineers | Hacker News | commerce_and_digital_products | raw 73, adjusted 67 | https://storerouter.ai/playground
+- Show HN: Interview your analysts instead of auto-generating a semantic layer | Hacker News | product_and_workflow_tools | raw 65, adjusted 67 | https://github.com/nodal-data/nodal-context
+- Google AI Mode: All You Need to Know | Ahrefs Blog | marketing_and_distribution | raw 59, adjusted 59 | https://ahrefs.com/blog/google-ai-mode/
 
 ## Safety and interpretation
 
