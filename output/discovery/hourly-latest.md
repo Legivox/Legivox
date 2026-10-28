@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-28T13:11:31+05:30
+- Run time (IST): 2026-10-28T14:01:31+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 199
-- Independent editorial review: 2 draft(s) passed / 0 rejected
-- Drafts passing local checks: 2
-- Outcome: **dry_run_passed**
-- Decision reason: At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.
+- Candidate pool after freshness/diversity filters: 191
+- Independent editorial review: 0 draft(s) passed / 1 rejected
+- Drafts passing local checks: 0
+- Outcome: **skip**
+- Decision reason: Every draft submitted for independent editorial review was rejected; The hour was skipped.
 
 ## Source health
 
@@ -25,7 +25,7 @@
 | GitHub Search · github-seller-operations | 10 | ok |
 | GitHub Search · github-shopify-commerce | 10 | ok |
 | GitHub Search · github-workflow-automation | 10 | ok |
-| Hacker News · hn-analytics-growth | 6 | ok |
+| Hacker News · hn-analytics-growth | 8 | ok |
 | Hacker News · hn-automation-api | 1 | ok |
 | Hacker News · hn-creator-business | 0 | ok |
 | Hacker News · hn-digital-downloads-templates | 0 | ok |
@@ -54,8 +54,8 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 113
-- Previously tracked repositories refreshed outside search results: 87
+- Repositories seen in this discovery run: 107
+- Previously tracked repositories refreshed outside search results: 93
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
 - Repositories with a 20–36 hour comparison baseline: 19
@@ -65,87 +65,48 @@
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| taskade/mcp | yes | 200 | https://github.com/taskade/mcp |
-| Security update: Offline token dates, new security features | yes | 200 | https://shopify.dev/changelog/blog/app-security-updates-october-2026 |
-| indranilbanerjee/digital-marketing-pro | yes | 200 | https://github.com/indranilbanerjee/digital-marketing-pro |
+| Show HN: DocPerRow – one Word document per spreadsheet row, in the browser | yes | 200 | https://docperrow.netlify.app/ |
+| Manage payouts, billing, and settings in Dev Dashboard | yes | 200 | https://shopify.dev/changelog/posts/manage-partner-payouts-billing-and-settings-from-organization-settings |
+| Restrict Admin API access with an IP allowlist | yes | 200 | https://shopify.dev/changelog/posts/restrict-admin-api-access-to-your-app-with-an-ip-allowlist |
 
 ## Selected draft candidates
 
-### Draft option 1: taskade/mcp
-
-- Category: ai_and_automation
-- Source: GitHub Search
-- Format: tool_discovery
-- Editorial score: 8.1/10
-- Model scores: timeliness 8/10, usefulness 8/10, novelty 7/10, evidence 9/10, insight 8/10
-- Independent editor scores: {"clarity_score": 9, "technical_coherence_score": 9, "takeaway_value_score": 8, "source_faithfulness_score": 9, "originality_score": 8, "reason": "Clear, well-supported claim with a practical unit‑test tip.", "passed": true}
-- Live primary page: https://github.com/taskade/mcp (HTTP 200)
-- Exact source evidence: “OpenAPI Codegen : generate MCP tools from any OpenAPI spec, not only Taskade.”
-- Why this angle: The repository title and description state MCP codegen from OpenAPI. The takeaway suggests a concrete test.
-- Editorial takeaway: Run a unit test to confirm generated MCP matches the OpenAPI contract.
-- Source: https://github.com/taskade/mcp
-
-**Claim-by-claim source quotes:**
-
-- Taskade MCP generates MCP code from OpenAPI specs. ← “OpenAPI Codegen : generate MCP tools from any OpenAPI spec, not only Taskade.”
-
-Proposed post (not published):
-
-> Taskade MCP generates MCP code from OpenAPI specs. Run a unit test to confirm generated MCP matches the OpenAPI contract. https://github.com/taskade/mcp
-
-- Length: 152/280 raw characters
-- Automated gate: passed live source, evidence, originality, URL and length checks; live publishing is disabled in dry-run mode.
-
-### Draft option 2: Security update: Offline token dates, new security features
-
-- Category: commerce_and_digital_products
-- Source: Shopify Developer Changelog
-- Format: release
-- Editorial score: 8.1/10
-- Model scores: timeliness 8/10, usefulness 8/10, novelty 7/10, evidence 9/10, insight 8/10
-- Independent editor scores: {"clarity_score": 9, "technical_coherence_score": 9, "takeaway_value_score": 8, "source_faithfulness_score": 9, "originality_score": 8, "reason": "Directly cites migration deadline and offers a useful pre‑deployment check.", "passed": true}
-- Live primary page: https://shopify.dev/changelog/blog/app-security-updates-october-2026 (HTTP 200)
-- Exact source evidence: “All public apps that call the Admin API must migrate to expiring offline access tokens by January 1, 2027.”
-- Why this angle: The changelog explicitly states the migration deadline. The takeaway advises a verification step.
-- Editorial takeaway: Check token expiration logic before deploying new app versions.
-- Source: https://shopify.dev/changelog/blog/app-security-updates-october-2026
-
-**Claim-by-claim source quotes:**
-
-- All public apps must migrate to expiring offline access tokens by Jan 1, 2027 ← “All public apps that call the Admin API must migrate to expiring offline access tokens by January 1, 2027.”
-
-Proposed post (not published):
-
-> All public apps must migrate to expiring offline access tokens by Jan 1, 2027. Check token expiration logic before deploying new app versions. https://shopify.dev/changelog/blog/app-security-updates-october-2026
-
-- Length: 211/280 raw characters
-- Automated gate: passed live source, evidence, originality, URL and length checks; live publishing is disabled in dry-run mode.
+No draft cleared the complete local and independent-editor gate. See the decision reason and rejected-draft section for locally valid drafts that were rejected, not reviewed, or blocked by a review error.
 
 ## Automatic repair attempt
 
-- Attempted: no
-- Repaired drafts submitted: 0
+- Attempted: yes
+- Repaired drafts submitted: 1
 - Repaired drafts that passed local validation: 0
-- Repaired drafts rejected: 0
+- Repaired drafts rejected: 1
 - Repair error: none
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
-- indranilbanerjee/digital-marketing-pro: The factual opening bundles multiple features; narrow it to one capability.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
-  - Rejected text: Digital‑Marketing‑Pro is an open‑source AI OS for strategy, SEO, paid media, and CRM. Pilot a small campaign to evaluate AI‑generated content quality. https://github.com/indranilbanerjee/digital-marketing-pro
-  - Model evidence quote: “An open‑source AI based digital marketing operating system for strategy, SEO, AEO/GEO, paid media, content, CRM, and analytics”
-  - Claim support: Digital‑Marketing‑Pro is an open‑source AI OS for strategy, SEO, paid media, and CRM ← “An open‑source AI based digital marketing operating system for strategy, SEO, AEO/GEO, paid media, content, CRM, and analytics”
+- Show HN: DocPerRow – one Word document per spreadsheet row, in the browser: Supporting quotes cover only 60% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: DocPerRow turns each Excel or CSV row into a separate Word document in the browser. Verify the column used for filenames before running to avoid mis‑named files. https://docperrow.netlify.app/
+  - Model evidence quote: “Turn every row of an Excel or CSV file into its own Word document”
+  - Claim support: DocPerRow turns each Excel or CSV row into a separate Word document in the browser ← “Turn every row of an Excel or CSV file into its own Word document”
+- Manage payouts, billing, and settings in Dev Dashboard: The factual opening bundles multiple features; narrow it to one capability.
+  - Rejected text: Shopify Dev Dashboard now manages payouts, billing, and partner details in Organization settings. Check that existing payout history appears unchanged after migration. https://shopify.dev/changelog/posts/manage-partner-payouts-billing-and-settings-from-organization-settings
+  - Model evidence quote: “From Organization settings , you can manage: Organization details : business and contact details, emergency contact, App Store registration, and Partner ID Payouts : payout setup, history, transactions, and payout methods Partner billing : bills, ad invoices, payment methods, invoice notes, and ad c”
+  - Claim support: Shopify Dev Dashboard now manages payouts, billing, and partner details in Organization settings ← “From Organization settings , you can manage: Organization details : business and contact details, emergency contact, App Store registration, and Partner ID Payouts : payout setup, history, transactions, and payout methods Partner billing : bills, ad invoices, payment methods, invoice notes, and ad credits”
+- Restrict Admin API access with an IP allowlist: Post restates headline and basic instruction; lacks novel insight or deeper context.
+  - Rejected text: Shopify lets you restrict Admin API tokens to an IP allowlist via Dev Dashboard. Send a test request from a non‑listed IP to confirm it is rejected. https://shopify.dev/changelog/posts/restrict-admin-api-access-to-your-app-with-an-ip-allowlist
+- Restrict Admin API access with an IP allowlist: Editorial takeaway is too long; keep the analysis concrete and concise.
+  - Rejected text: Shopify now rejects Admin API requests that use app tokens from IPs not on the allowlist. Add your server IPs to the Dev Dashboard allowlist to block any API traffic from other IPs. https://shopify.dev/changelog/posts/restrict-admin-api-access-to-your-app-with-an-ip-allowlist
+  - Model evidence quote: “When you add your servers' IP addresses to an IP allowlist in the Dev Dashboard, Shopify rejects GraphQL Admin API and REST Admin API requests that use your app's tokens from anywhere else.”
 
 ## Top discovery candidates considered
 
-- taskade/mcp | GitHub Search | ai_and_automation | raw 69, adjusted 73 | current stars 170 | GitHub star trend: building baseline | https://github.com/taskade/mcp
-- Security update: Offline token dates, new security features | Shopify Developer Changelog | commerce_and_digital_products | raw 72, adjusted 72 | https://shopify.dev/changelog/blog/app-security-updates-october-2026
-- indranilbanerjee/digital-marketing-pro | GitHub Search | marketing_and_distribution | raw 68, adjusted 72 | current stars 913 | GitHub star trend: building baseline | https://github.com/indranilbanerjee/digital-marketing-pro
+- Show HN: DocPerRow – one Word document per spreadsheet row, in the browser | Hacker News | data_and_growth | raw 68, adjusted 70 | https://docperrow.netlify.app/
+- Manage payouts, billing, and settings in Dev Dashboard | Shopify Developer Changelog | commerce_and_digital_products | raw 69, adjusted 69 | https://shopify.dev/changelog/posts/manage-partner-payouts-billing-and-settings-from-organization-settings
+- Restrict Admin API access with an IP allowlist | Shopify Developer Changelog | commerce_and_digital_products | raw 69, adjusted 69 | https://shopify.dev/changelog/posts/restrict-admin-api-access-to-your-app-with-an-ip-allowlist
 
 ## Safety and interpretation
 
-- At least one draft passed the automated quality gates; this dry-run workflow itself never publishes to X.
+- This run did not produce a publishable draft; no post was published to X.
 - Model scores are editorial estimates; they are not verified popularity or market demand.
 - Candidate content and metadata are untrusted input. Factual copy must be supported by the fetched primary page.
 - A skip can mean no fresh candidates, a daily diversity/cap limit, a model/API problem or weak drafts. Check the reason above.
