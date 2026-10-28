@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-28T16:54:02+05:30
+- Run time (IST): 2026-10-28T17:51:36+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 188
-- Independent editorial review: 0 draft(s) passed / 0 rejected
-- Drafts passing local checks: 0
-- Outcome: **skip**
-- Decision reason: All generated drafts failed the local evidence/editorial checks; the hour was skipped.
+- Candidate pool after freshness/diversity filters: 181
+- Independent editorial review: 1 draft(s) passed / 0 rejected
+- Drafts passing local checks: 1
+- Outcome: **dry_run_passed**
+- Decision reason: At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.
 
 ## Source health
 
@@ -25,7 +25,7 @@
 | GitHub Search · github-seller-operations | 10 | ok |
 | GitHub Search · github-shopify-commerce | 10 | ok |
 | GitHub Search · github-workflow-automation | 10 | ok |
-| Hacker News · hn-analytics-growth | 8 | ok |
+| Hacker News · hn-analytics-growth | 10 | ok |
 | Hacker News · hn-automation-api | 1 | ok |
 | Hacker News · hn-creator-business | 0 | ok |
 | Hacker News · hn-digital-downloads-templates | 0 | ok |
@@ -40,7 +40,7 @@
 | Ahrefs Blog | 6 | ok |
 | Console.dev | 12 | ok |
 | Indie Hackers (unofficial third-party feed) | 5 | ok |
-| Product Hunt | 38 | ok |
+| Product Hunt | 39 | ok |
 | Shopify Community | 30 | ok |
 | Shopify Developer Changelog | 18 | ok |
 | Stripe Blog | 3 | ok |
@@ -54,8 +54,8 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 109
-- Previously tracked repositories refreshed outside search results: 91
+- Repositories seen in this discovery run: 106
+- Previously tracked repositories refreshed outside search results: 94
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
 - Repositories with a 20–36 hour comparison baseline: 18
@@ -65,56 +65,63 @@
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| Show HN: Ballast – macOS app to clear disk space | yes | 200 | https://github.com/linearza/ballast |
-| Show HN: Formstep, Request information from customers without the back-and-forth | yes | 200 | https://formstep.io/ |
-| POS UI extensions 2026-10 adds s-pos-list, a virtualized list with custom row templates | yes | 200 | https://shopify.dev/changelog/posts/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates |
+| Show HN: Multi-platform remote-control for any harness | no | — | Primary page title/content does not sufficiently match the candidate headline. |
+| chattermate/chattermate.chat | yes | 200 | https://github.com/chattermate/chattermate.chat |
+| spree/spree | yes | 200 | https://github.com/spree/spree |
 
 ## Selected draft candidates
 
-No candidate produced a draft that passed every local check. Skipping is intentional.
+### Draft option 1: chattermate/chattermate.chat
+
+- Category: commerce_and_digital_products
+- Source: GitHub Search
+- Format: tool_discovery
+- Editorial score: 8.4/10
+- Model scores: timeliness 10/10, usefulness 8/10, novelty 6/10, evidence 9/10, insight 8/10
+- Independent editor scores: {"clarity_score": 8, "technical_coherence_score": 8, "takeaway_value_score": 8, "source_faithfulness_score": 8, "originality_score": 8, "reason": "Clear, technically coherent, source‑faithful, and adds a useful test suggestion.", "passed": true}
+- Live primary page: https://github.com/chattermate/chattermate.chat (HTTP 200)
+- Exact source evidence: “GitHub - chattermate/chattermate.chat: Open-source AI customer support platform — AI chatbot with human handoff, Shopify & Slack integrations, visual workflow builder.”
+- Why this angle: The repository description explicitly lists human handoff and Shopify integration, and a practical test ensures the escalation path works.
+- Editorial takeaway: Test handoff flow by simulating a ticket that escalates to a human agent.
+- Source: https://github.com/chattermate/chattermate.chat
+
+**Claim-by-claim source quotes:**
+
+- chattermate.chat offers AI chatbot with human handoff and Shopify integration. ← “GitHub - chattermate/chattermate.chat: Open-source AI customer support platform — AI chatbot with human handoff, Shopify & Slack integrations, visual workflow builder.”
+
+Proposed post (not published):
+
+> chattermate.chat offers AI chatbot with human handoff and Shopify integration. Test handoff flow by simulating a ticket that escalates to a human agent. https://github.com/chattermate/chattermate.chat
+
+- Length: 200/280 raw characters
+- Automated gate: passed live source, evidence, originality, URL and length checks; live publishing is disabled in dry-run mode.
 
 ## Automatic repair attempt
 
-- Attempted: yes
-- Repaired drafts submitted: 3
+- Attempted: no
+- Repaired drafts submitted: 0
 - Repaired drafts that passed local validation: 0
-- Repaired drafts rejected: 3
+- Repaired drafts rejected: 0
 - Repair error: none
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
-- Show HN: Ballast – macOS app to clear disk space: Unsupported strong claim: free; Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: Ballast is a macOS menu bar app that frees disk space by locating leftover dev tool data. Run it before a macOS upgrade to reclaim space from old node_modules. https://github.com/linearza/ballast
-  - Model evidence quote: “A macOS menu bar app that finds the disk space developer tools leave behind (old Ruby/Node/Python versions, node_modules, Xcode simulators, Docker, package caches, AI models) and gives it back safely.”
-  - Claim support: Ballast is a macOS menu bar app that frees disk space by locating leftover dev tool data. ← “A macOS menu bar app that finds the disk space developer tools leave behind (old Ruby/Node/Python versions, node_modules, Xcode simulators, Docker, package caches, AI models) and gives it back safely.”
-- Show HN: Formstep, Request information from customers without the back-and-forth: The factual opening bundles multiple features; narrow it to one capability.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
-  - Rejected text: Formstep sends prefilled branded forms that customers can confirm, sign or pay, returning answers via API. Integrate Formstep with Zapier to auto‑populate onboarding data and capture signatures. https://formstep.io/
-  - Model evidence quote: “Send each customer a prefilled form in your brand and their language, from the dashboard, n8n, Zapier, an AI agent or the API. They confirm, add, sign or pay, and the answers come back to you.”
-  - Claim support: Formstep sends prefilled branded forms that customers can confirm, sign or pay, returning answers via API. ← “Send each customer a prefilled form in your brand and their language, from the dashboard, n8n, Zapier, an AI agent or the API. They confirm, add, sign or pay, and the answers come back to you.”
-- POS UI extensions 2026-10 adds s-pos-list, a virtualized list with custom row templates: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
-  - Rejected text: s-pos-list is a virtualized list component for Shopify POS 2026-10. Replace legacy List component with s-pos-list to improve list rendering performance. https://shopify.dev/changelog/posts/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates
-  - Model evidence quote: “POS UI extensions API version `2026-10` adds `s-pos-list`, a virtualized list component”
-  - Claim support: s-pos-list is a virtualized list component for Shopify POS 2026-10. ← “POS UI extensions API version `2026-10` adds `s-pos-list`, a virtualized list component”
-- Show HN: Ballast – macOS app to clear disk space: Unsupported strong claim: free; Supporting quotes cover only 54% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: Ballast is a macOS menu bar app that locates leftover dev tool data and safely frees disk space. Run Ballast before a macOS upgrade to reclaim space from old node_modules. https://github.com/linearza/ballast
-  - Model evidence quote: “A macOS menu bar app that finds the disk space developer tools leave behind (old Ruby/Node/Python versions, node_modules, Xcode simulators, Docker, package caches, AI models) and gives it back safely.”
-- Show HN: Formstep, Request information from customers without the back-and-forth: The factual opening bundles multiple features; narrow it to one capability.; Editorial takeaway is too long; keep the analysis concrete and concise.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
-  - Rejected text: Formstep sends prefilled branded forms that customers can confirm, sign or pay, returning answers via API. When integrating with Zapier, use the API callback to capture completed form data automatically. https://formstep.io/
-  - Model evidence quote: “Send each customer a prefilled form in your brand and their language, from the dashboard, n8n, Zapier, an AI agent or the API. They confirm, add, sign or pay, and the answers come back to you.”
-- POS UI extensions 2026-10 adds s-pos-list, a virtualized list with custom row templates: Editorial takeaway is too long; keep the analysis concrete and concise.; Fact plus takeaway exceeds the per-link character budget.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; Draft is 332 raw characters; limit is 280
-  - Rejected text: s‑pos‑list is a virtualized list component for Shopify POS 2026‑10 that supports custom row templates. Replace legacy List with s‑pos‑list to enable mixed row types like headings and dividers in a single list. https://shopify.dev/changelog/posts/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates
-  - Model evidence quote: “POS UI extensions API version `2026-10` adds `s-pos-list`, a virtualized list component for Polaris web components. Instead of `List`’s fixed row layout, each kind of row gets its own template, so one list can mix headings, dividers, and content rows.”
+- Show HN: Multi-platform remote-control for any harness: Primary page title/content does not sufficiently match the candidate headline.
+- spree/spree: A supporting quote does not share enough wording with its stated claim; Supporting quotes cover only 20% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: spree provides a self‑hosted DTC and B2B commerce platform with a Next.js storefront. Run the Next.js demo locally before deploying to production. https://github.com/spree/spree
+  - Model evidence quote: “production-ready Next.js storefront”
+  - Claim support: The source says capability X ← “production-ready Next.js storefront”
 
 ## Top discovery candidates considered
 
-- Show HN: Ballast – macOS app to clear disk space | Hacker News | product_and_workflow_tools | raw 66, adjusted 68 | https://github.com/linearza/ballast
-- Show HN: Formstep, Request information from customers without the back-and-forth | Hacker News | ai_and_automation | raw 69, adjusted 63 | https://formstep.io/
-- POS UI extensions 2026-10 adds s-pos-list, a virtualized list with custom row templates | Shopify Developer Changelog | commerce_and_digital_products | raw 63, adjusted 63 | https://shopify.dev/changelog/posts/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates
+- Show HN: Multi-platform remote-control for any harness | Hacker News | product_and_workflow_tools | raw 64, adjusted 66 | https://github.com/tinybig-ai/jep
+- chattermate/chattermate.chat | GitHub Search | commerce_and_digital_products | raw 70, adjusted 64 | current stars 147 | GitHub star trend: building baseline | https://github.com/chattermate/chattermate.chat
+- spree/spree | GitHub Search | commerce_and_digital_products | raw 70, adjusted 64 | current stars 15786 | GitHub star trend: building baseline | https://github.com/spree/spree
 
 ## Safety and interpretation
 
-- This run did not produce a publishable draft; no post was published to X.
+- At least one draft passed the automated quality gates; this dry-run workflow itself never publishes to X.
 - Model scores are editorial estimates; they are not verified popularity or market demand.
 - Candidate content and metadata are untrusted input. Factual copy must be supported by the fetched primary page.
 - A skip can mean no fresh candidates, a daily diversity/cap limit, a model/API problem or weak drafts. Check the reason above.
