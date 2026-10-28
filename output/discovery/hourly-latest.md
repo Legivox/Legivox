@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-28T14:59:54+05:30
+- Run time (IST): 2026-10-28T15:57:23+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 186
-- Independent editorial review: 0 draft(s) passed / 0 rejected
+- Candidate pool after freshness/diversity filters: 185
+- Independent editorial review: 0 draft(s) passed / 1 rejected
 - Drafts passing local checks: 0
 - Outcome: **skip**
-- Decision reason: All generated drafts failed the local evidence/editorial checks; the hour was skipped.
+- Decision reason: Every draft submitted for independent editorial review was rejected; The hour was skipped.
 
 ## Source health
 
@@ -25,7 +25,7 @@
 | GitHub Search · github-seller-operations | 10 | ok |
 | GitHub Search · github-shopify-commerce | 10 | ok |
 | GitHub Search · github-workflow-automation | 10 | ok |
-| Hacker News · hn-analytics-growth | 1 | ok |
+| Hacker News · hn-analytics-growth | 10 | ok |
 | Hacker News · hn-automation-api | 1 | ok |
 | Hacker News · hn-creator-business | 0 | ok |
 | Hacker News · hn-digital-downloads-templates | 0 | ok |
@@ -35,7 +35,7 @@
 | Hacker News · hn-marketing-distribution | 0 | ok |
 | Hacker News · hn-security-selfhost | 0 | ok |
 | Hacker News · hn-seller-operations | 0 | ok |
-| Hacker News · hn-shopify | 6 | ok |
+| Hacker News · hn-shopify | 10 | ok |
 | Hacker News · hn-show-hn | 10 | ok |
 | Ahrefs Blog | 5 | ok |
 | Console.dev | 12 | ok |
@@ -54,63 +54,55 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 108
-- Previously tracked repositories refreshed outside search results: 92
+- Repositories seen in this discovery run: 109
+- Previously tracked repositories refreshed outside search results: 91
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
-- Repositories with a 20–36 hour comparison baseline: 17
+- Repositories with a 20–36 hour comparison baseline: 18
 - First observations are baseline samples, not evidence of trending. Star velocity is reported only when a historical comparison exists.
 
 ## Primary-source verification
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| Ask HN: How do you get new readers for your blog | yes | 200 | https://news.ycombinator.com/item?id=50259066 |
-| Show HN: FreeApply Free Job Application MCP, runs locally with your existing LLM | yes | 200 | https://www.mybotsai.com/ |
-| Shudesu/x-harness-oss | yes | 200 | https://github.com/Shudesu/x-harness-oss |
+| Show HN: The New Way to Make AI UGC Ads in 2026 | yes | 200 | https://www.aivideosugc.com/ai-video-generation |
+| Show HN: NoVul – Open-source Mac app to Find and fix vulnerabilities on your Mac | yes | 200 | https://github.com/misbahsy/novul |
+| Analytics queryable capability is configurable in shopify.app.toml for metaobject definitions | yes | 200 | https://shopify.dev/changelog/posts/analytics-queryable-capability-is-configurable-in-shopify-app-toml-for-metaobject-definitions |
 
 ## Selected draft candidates
 
-No candidate produced a draft that passed every local check. Skipping is intentional.
+No draft cleared the complete local and independent-editor gate. See the decision reason and rejected-draft section for locally valid drafts that were rejected, not reviewed, or blocked by a review error.
 
 ## Automatic repair attempt
 
 - Attempted: yes
-- Repaired drafts submitted: 3
+- Repaired drafts submitted: 1
 - Repaired drafts that passed local validation: 0
-- Repaired drafts rejected: 3
+- Repaired drafts rejected: 1
 - Repair error: none
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
-- Ask HN: How do you get new readers for your blog: Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.
-  - Rejected text: Browsers no longer track full referral URLs for privacy. Test analytics to confirm referrer truncation before relying on traffic attribution. https://news.ycombinator.com/item?id=50259066
-  - Model evidence quote: “browsers no longer track the full referral URL for privacy reasons.”
-  - Claim support: Browsers no longer track full referral URLs for privacy. ← “browsers no longer track the full referral URL for privacy reasons.”
-- Show HN: FreeApply Free Job Application MCP, runs locally with your existing LLM: The factual opening bundles multiple features; narrow it to one capability.; Supporting quotes cover only 57% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: FreeApply stores résumé, settings, and applications locally on your computer. Verify local storage encryption before enabling auto‑apply to protect sensitive data. https://www.mybotsai.com/
-  - Model evidence quote: “Your résumé, settings, applications and emails are stored on your computer.”
-  - Claim support: FreeApply stores résumé, settings, and applications locally on your computer. ← “Your résumé, settings, applications and emails are stored on your computer.”
-- Shudesu/x-harness-oss: The factual opening bundles multiple features; narrow it to one capability.
-  - Rejected text: X Harness runs self‑hosted X scheduling, DM, and analytics on Cloudflare Workers. Run a worker health check to ensure DM delivery before scaling. https://github.com/Shudesu/x-harness-oss
-  - Model evidence quote: “X Harness — self-hosted X (Twitter) scheduling, DM and analytics on Cloudflare Workers, with MCP and TypeScript SDK.”
-  - Claim support: X Harness runs self‑hosted X scheduling, DM, and analytics on Cloudflare Workers. ← “X Harness — self-hosted X (Twitter) scheduling, DM and analytics on Cloudflare Workers, with MCP and TypeScript SDK.”
-- Show HN: FreeApply Free Job Application MCP, runs locally with your existing LLM: The factual opening bundles multiple features; narrow it to one capability.; Editorial takeaway is too long; keep the analysis concrete and concise.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.; No claim-by-claim supporting evidence was provided; Supporting quotes cover only 0% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: FreeApply stores résumé, settings, applications, and emails locally on your computer. If you join the optional Recruiter Talent Pool, your contact details will be sent to the server; otherwise they remain local. https://www.mybotsai.com/
-  - Model evidence quote: “Our server never receives your contact details unless you join the optional Recruiter Talent Pool.”
-- Shudesu/x-harness-oss: The factual opening bundles multiple features; narrow it to one capability.; Editorial takeaway is too long; keep the analysis concrete and concise.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
-  - Rejected text: X Harness runs self‑hosted X scheduling, DM, and analytics on Cloudflare Workers. Use the TypeScript SDK to programmatically schedule X posts directly from Cloudflare Workers. https://github.com/Shudesu/x-harness-oss
-  - Model evidence quote: “X Harness — self‑hosted X (Twitter) scheduling, DM and analytics on Cloudflare Workers, with MCP and TypeScript SDK.”
-- Ask HN: How do you get new readers for your blog: Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.; Editorial takeaway is too long; keep the analysis concrete and concise.
-  - Rejected text: Browsers no longer track full referral URLs for privacy. When using Umami, note that referrer data may be truncated, so plan attribution accordingly. https://news.ycombinator.com/item?id=50259066
-  - Model evidence quote: “browsers no longer track the full referral URL for privacy reasons.”
+- Show HN: The New Way to Make AI UGC Ads in 2026: Editorial takeaway is too long; keep the analysis concrete and concise.; Unsupported strong claim: free
+  - Rejected text: AivideosUGC lets you publish ads faster and download watermark‑free files for Meta or TikTok. Run a test upload to Meta to confirm the file contains no watermark before campaign launch. https://www.aivideosugc.com/ai-video-generation
+  - Model evidence quote: “Publish ads faster, spend less on production, and download a file for Meta or TikTok with no watermark.”
+  - Claim support: The source says capability X ← “Publish ads faster, spend less on production, and download a file for Meta or TikTok with no watermark.”
+- Analytics queryable capability is configurable in shopify.app.toml for metaobject definitions: Fact sentence is too long; narrow it to one source-backed capability.; Editorial takeaway is too long; keep the analysis concrete and concise.; Fact plus takeaway exceeds the per-link character budget.; Draft is 370 raw characters; limit is 280; Primary-source evidence quote is missing or absent from the live page (after presentation normalisation); A factual claim lacks a quote present in the live primary-source page; Supporting quotes cover only 38% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: Setting capabilities.analytics_queryable to true in shopify.app.toml exposes metaobject fields in analytics reports and ShopifyQL. Verify the field appears in ShopifyQL after enabling the capability to ensure data is available for analysis. https://shopify.dev/changelog/posts/analytics-queryable-capability-is-configurable-in-shopify-app-toml-for-metaobject-definitions
+  - Model evidence quote: “When you set it to `true`, any field on the definition with an analytics‑compatible type becomes available as a dimension and filter in analytics reports and ShopifyQL.”
+  - Claim support: The source says capability X ← “When you set it to `true`, any field on the definition with an analytics‑compatible type becomes available as a dimension and filter in analytics reports and ShopifyQL.”
+- Show HN: NoVul – Open-source Mac app to Find and fix vulnerabilities on your Mac: Post restates headline without adding new insight; originality below threshold.
+  - Rejected text: Novul scans all installed Mac apps for known vulnerabilities and exposed secrets. Run Novul after installing new software to catch missing patches before deployment. https://github.com/misbahsy/novul
+- Show HN: NoVul – Open-source Mac app to Find and fix vulnerabilities on your Mac: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
+  - Rejected text: Novul is a menu bar app that scans all installed Mac apps for known vulnerabilities and exposed secrets. After scanning, Novul lists specific fixes for each vulnerability found. https://github.com/misbahsy/novul
+  - Model evidence quote: “Menu bar app that checks everything installed on your Mac for known vulnerabilities and exposed secrets, and tells you what to fix.”
 
 ## Top discovery candidates considered
 
-- Ask HN: How do you get new readers for your blog | Hacker News | data_and_growth | raw 67, adjusted 67 | https://news.ycombinator.com/item?id=50259066
-- Show HN: FreeApply Free Job Application MCP, runs locally with your existing LLM | Hacker News | product_and_workflow_tools | raw 65, adjusted 67 | https://www.mybotsai.com/
-- Shudesu/x-harness-oss | GitHub Search | data_and_growth | raw 69, adjusted 63 | current stars 102 | GitHub star trend: building baseline | https://github.com/Shudesu/x-harness-oss
+- Show HN: The New Way to Make AI UGC Ads in 2026 | Hacker News | commerce_and_digital_products | raw 65, adjusted 67 | https://www.aivideosugc.com/ai-video-generation
+- Show HN: NoVul – Open-source Mac app to Find and fix vulnerabilities on your Mac | Hacker News | product_and_workflow_tools | raw 64, adjusted 66 | https://github.com/misbahsy/novul
+- Analytics queryable capability is configurable in shopify.app.toml for metaobject definitions | Shopify Developer Changelog | commerce_and_digital_products | raw 63, adjusted 63 | https://shopify.dev/changelog/posts/analytics-queryable-capability-is-configurable-in-shopify-app-toml-for-metaobject-definitions
 
 ## Safety and interpretation
 

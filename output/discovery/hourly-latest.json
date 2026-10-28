@@ -1,38 +1,38 @@
 {
-  "generated_at_ist": "2026-10-28T14:59:54+05:30",
-  "run_at_ist": "2026-10-28T14:59:54+05:30",
+  "generated_at_ist": "2026-10-28T15:57:23+05:30",
+  "run_at_ist": "2026-10-28T15:57:23+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 288,
-  "eligible_candidate_count": 186,
+  "candidate_count_raw": 302,
+  "eligible_candidate_count": 185,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4766
+      "total_count": 4775
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1032
+      "total_count": 1033
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 355
+      "total_count": 356
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2889
+      "total_count": 2894
     },
     {
       "source": "GitHub Search · github-digital-product-tools",
@@ -46,7 +46,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 415
+      "total_count": 417
     },
     {
       "source": "GitHub Search · github-marketing-distribution",
@@ -60,40 +60,40 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2079
+      "total_count": 2082
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3315
+      "total_count": 3321
     },
     {
       "source": "GitHub Search · github-seller-operations",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 356
+      "total_count": 357
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 128
+      "total_count": 129
     },
     {
       "source": "GitHub Search · github-workflow-automation",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 266
+      "total_count": 267
     },
     {
       "source": "Hacker News · hn-analytics-growth",
       "kind": "hacker_news",
-      "items_kept": 1,
+      "items_kept": 10,
       "status": "ok",
       "total_count": 10
     },
@@ -158,12 +158,12 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 8
+      "total_count": 10
     },
     {
       "source": "Hacker News · hn-shopify",
       "kind": "hacker_news",
-      "items_kept": 6,
+      "items_kept": 10,
       "status": "ok",
       "total_count": 10
     },
@@ -227,7 +227,7 @@
       "kind": "wordpress_plugin",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2010
+      "total_count": 2008
     },
     {
       "source": "WordPress Plugin Directory · wp-ecommerce",
@@ -259,42 +259,42 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-28T09:29:54+00:00",
+    "observed_at_utc": "2026-10-28T10:27:23+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 108,
-    "previously_tracked_repositories_refreshed": 92,
+    "repositories_seen_in_discovery": 109,
+    "previously_tracked_repositories_refreshed": 91,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
-    "repositories_with_20_to_36_hour_baseline": 17,
+    "repositories_with_20_to_36_hour_baseline": 18,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "87a2e45be3dbfe9a",
-      "title": "Ask HN: How do you get new readers for your blog",
-      "source_url": "https://news.ycombinator.com/item?id=50259066",
+      "candidate_id": "75f520315176dd36",
+      "title": "Show HN: The New Way to Make AI UGC Ads in 2026",
+      "source_url": "https://www.aivideosugc.com/ai-video-generation",
       "verified": true,
-      "final_url": "https://news.ycombinator.com/item?id=50259066",
+      "final_url": "https://www.aivideosugc.com/ai-video-generation",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "e85810a57b711f15",
-      "title": "Show HN: FreeApply Free Job Application MCP, runs locally with your existing LLM",
-      "source_url": "https://www.mybotsai.com/",
+      "candidate_id": "bb7e5a4161fa3cc6",
+      "title": "Show HN: NoVul – Open-source Mac app to Find and fix vulnerabilities on your Mac",
+      "source_url": "https://github.com/misbahsy/novul",
       "verified": true,
-      "final_url": "https://www.mybotsai.com/",
+      "final_url": "https://github.com/misbahsy/novul",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "9ffeb54e86a5f7cb",
-      "title": "Shudesu/x-harness-oss",
-      "source_url": "https://github.com/Shudesu/x-harness-oss",
+      "candidate_id": "7eef5e7380c2dffb",
+      "title": "Analytics queryable capability is configurable in shopify.app.toml for metaobject definitions",
+      "source_url": "https://shopify.dev/changelog/analytics-queryable-capability-is-configurable-in-shopify-app-toml-for-metaobject-definitions",
       "verified": true,
-      "final_url": "https://github.com/Shudesu/x-harness-oss",
+      "final_url": "https://shopify.dev/changelog/posts/analytics-queryable-capability-is-configurable-in-shopify-app-toml-for-metaobject-definitions",
       "http_status": 200,
       "reason": ""
     }
@@ -303,130 +303,82 @@
   "daily_draft_cap": 16,
   "daily_drafts_already_passed": 1,
   "outcome": "skip",
-  "decision_reason": "All generated drafts failed the local evidence/editorial checks; the hour was skipped.",
+  "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
   "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "87a2e45be3dbfe9a",
-      "title": "Ask HN: How do you get new readers for your blog",
+      "candidate_id": "75f520315176dd36",
+      "title": "Show HN: The New Way to Make AI UGC Ads in 2026",
       "reasons": [
-        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about."
-      ],
-      "proposed_text": "Browsers no longer track full referral URLs for privacy. Test analytics to confirm referrer truncation before relying on traffic attribution. https://news.ycombinator.com/item?id=50259066",
-      "evidence_quote": "browsers no longer track the full referral URL for privacy reasons.",
-      "claim_evidence": [
-        {
-          "claim": "Browsers no longer track full referral URLs for privacy.",
-          "quote": "browsers no longer track the full referral URL for privacy reasons."
-        }
-      ]
-    },
-    {
-      "candidate_id": "e85810a57b711f15",
-      "title": "Show HN: FreeApply Free Job Application MCP, runs locally with your existing LLM",
-      "reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability.",
-        "Supporting quotes cover only 57% of factual wording; narrow the claim or provide a closer primary-source quote"
-      ],
-      "proposed_text": "FreeApply stores résumé, settings, and applications locally on your computer. Verify local storage encryption before enabling auto‑apply to protect sensitive data. https://www.mybotsai.com/",
-      "evidence_quote": "Your résumé, settings, applications and emails are stored on your computer.",
-      "claim_evidence": [
-        {
-          "claim": "FreeApply stores résumé, settings, and applications locally on your computer.",
-          "quote": "Your résumé, settings, applications and emails are stored on your computer."
-        }
-      ]
-    },
-    {
-      "candidate_id": "9ffeb54e86a5f7cb",
-      "title": "Shudesu/x-harness-oss",
-      "reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability."
-      ],
-      "proposed_text": "X Harness runs self‑hosted X scheduling, DM, and analytics on Cloudflare Workers. Run a worker health check to ensure DM delivery before scaling. https://github.com/Shudesu/x-harness-oss",
-      "evidence_quote": "X Harness — self-hosted X (Twitter) scheduling, DM and analytics on Cloudflare Workers, with MCP and TypeScript SDK.",
-      "claim_evidence": [
-        {
-          "claim": "X Harness runs self‑hosted X scheduling, DM, and analytics on Cloudflare Workers.",
-          "quote": "X Harness — self-hosted X (Twitter) scheduling, DM and analytics on Cloudflare Workers, with MCP and TypeScript SDK."
-        }
-      ]
-    },
-    {
-      "candidate_id": "e85810a57b711f15",
-      "title": "Show HN: FreeApply Free Job Application MCP, runs locally with your existing LLM",
-      "reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability.",
         "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
-        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
-        "No claim-by-claim supporting evidence was provided",
-        "Supporting quotes cover only 0% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Unsupported strong claim: free"
       ],
-      "proposed_text": "FreeApply stores résumé, settings, applications, and emails locally on your computer. If you join the optional Recruiter Talent Pool, your contact details will be sent to the server; otherwise they remain local. https://www.mybotsai.com/",
-      "evidence_quote": "Our server never receives your contact details unless you join the optional Recruiter Talent Pool.",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability.",
-        "Supporting quotes cover only 57% of factual wording; narrow the claim or provide a closer primary-source quote"
+      "proposed_text": "AivideosUGC lets you publish ads faster and download watermark‑free files for Meta or TikTok. Run a test upload to Meta to confirm the file contains no watermark before campaign launch. https://www.aivideosugc.com/ai-video-generation",
+      "evidence_quote": "Publish ads faster, spend less on production, and download a file for Meta or TikTok with no watermark.",
+      "claim_evidence": [
+        {
+          "claim": "The source says capability X",
+          "quote": "Publish ads faster, spend less on production, and download a file for Meta or TikTok with no watermark."
+        }
       ]
     },
     {
-      "candidate_id": "9ffeb54e86a5f7cb",
-      "title": "Shudesu/x-harness-oss",
+      "candidate_id": "7eef5e7380c2dffb",
+      "title": "Analytics queryable capability is configurable in shopify.app.toml for metaobject definitions",
       "reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Fact sentence is too long; narrow it to one source-backed capability.",
         "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "Fact plus takeaway exceeds the per-link character budget.",
+        "Draft is 370 raw characters; limit is 280",
+        "Primary-source evidence quote is missing or absent from the live page (after presentation normalisation)",
+        "A factual claim lacks a quote present in the live primary-source page",
+        "Supporting quotes cover only 38% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ],
+      "proposed_text": "Setting capabilities.analytics_queryable to true in shopify.app.toml exposes metaobject fields in analytics reports and ShopifyQL. Verify the field appears in ShopifyQL after enabling the capability to ensure data is available for analysis. https://shopify.dev/changelog/posts/analytics-queryable-capability-is-configurable-in-shopify-app-toml-for-metaobject-definitions",
+      "evidence_quote": "When you set it to `true`, any field on the definition with an analytics‑compatible type becomes available as a dimension and filter in analytics reports and ShopifyQL.",
+      "claim_evidence": [
+        {
+          "claim": "The source says capability X",
+          "quote": "When you set it to `true`, any field on the definition with an analytics‑compatible type becomes available as a dimension and filter in analytics reports and ShopifyQL."
+        }
+      ]
+    },
+    {
+      "candidate_id": "bb7e5a4161fa3cc6",
+      "title": "Show HN: NoVul – Open-source Mac app to Find and fix vulnerabilities on your Mac",
+      "proposed_text": "Novul scans all installed Mac apps for known vulnerabilities and exposed secrets. Run Novul after installing new software to catch missing patches before deployment. https://github.com/misbahsy/novul",
+      "reasons": [
+        "Post restates headline without adding new insight; originality below threshold."
+      ],
+      "editorial_review": {
+        "clarity_score": 9,
+        "technical_coherence_score": 9,
+        "takeaway_value_score": 8,
+        "source_faithfulness_score": 9,
+        "originality_score": 4
+      }
+    },
+    {
+      "candidate_id": "bb7e5a4161fa3cc6",
+      "title": "Show HN: NoVul – Open-source Mac app to Find and fix vulnerabilities on your Mac",
+      "reasons": [
         "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
       ],
-      "proposed_text": "X Harness runs self‑hosted X scheduling, DM, and analytics on Cloudflare Workers. Use the TypeScript SDK to programmatically schedule X posts directly from Cloudflare Workers. https://github.com/Shudesu/x-harness-oss",
-      "evidence_quote": "X Harness — self‑hosted X (Twitter) scheduling, DM and analytics on Cloudflare Workers, with MCP and TypeScript SDK.",
+      "proposed_text": "Novul is a menu bar app that scans all installed Mac apps for known vulnerabilities and exposed secrets. After scanning, Novul lists specific fixes for each vulnerability found. https://github.com/misbahsy/novul",
+      "evidence_quote": "Menu bar app that checks everything installed on your Mac for known vulnerabilities and exposed secrets, and tells you what to fix.",
       "automatic_repair_attempt": true,
       "original_rejection_reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability."
-      ]
-    },
-    {
-      "candidate_id": "87a2e45be3dbfe9a",
-      "title": "Ask HN: How do you get new readers for your blog",
-      "reasons": [
-        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.",
-        "Editorial takeaway is too long; keep the analysis concrete and concise."
-      ],
-      "proposed_text": "Browsers no longer track full referral URLs for privacy. When using Umami, note that referrer data may be truncated, so plan attribution accordingly. https://news.ycombinator.com/item?id=50259066",
-      "evidence_quote": "browsers no longer track the full referral URL for privacy reasons.",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about."
+        "Post restates headline without adding new insight; originality below threshold."
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "87a2e45be3dbfe9a",
-      "title": "Ask HN: How do you get new readers for your blog",
-      "url": "https://news.ycombinator.com/item?id=50259066",
+      "id": "75f520315176dd36",
+      "title": "Show HN: The New Way to Make AI UGC Ads in 2026",
+      "url": "https://www.aivideosugc.com/ai-video-generation",
       "source": "Hacker News",
-      "primary_category": "data_and_growth",
-      "priority_score": 67,
-      "hourly_adjusted_score": 67,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-27T13:34:34+00:00",
-      "days_old": 0.83,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "e85810a57b711f15",
-      "title": "Show HN: FreeApply Free Job Application MCP, runs locally with your existing LLM",
-      "url": "https://www.mybotsai.com/",
-      "source": "Hacker News",
-      "primary_category": "product_and_workflow_tools",
+      "primary_category": "commerce_and_digital_products",
       "priority_score": 65,
       "hourly_adjusted_score": 67,
       "stars_current": null,
@@ -434,27 +386,46 @@
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-28T08:18:29+00:00",
-      "days_old": 0.05,
+      "published_at": "2026-10-28T03:14:26+00:00",
+      "days_old": 0.3,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "9ffeb54e86a5f7cb",
-      "title": "Shudesu/x-harness-oss",
-      "url": "https://github.com/Shudesu/x-harness-oss",
-      "source": "GitHub Search",
-      "primary_category": "data_and_growth",
-      "priority_score": 69,
-      "hourly_adjusted_score": 63,
-      "stars_current": 102,
+      "id": "bb7e5a4161fa3cc6",
+      "title": "Show HN: NoVul – Open-source Mac app to Find and fix vulnerabilities on your Mac",
+      "url": "https://github.com/misbahsy/novul",
+      "source": "Hacker News",
+      "primary_category": "product_and_workflow_tools",
+      "priority_score": 64,
+      "hourly_adjusted_score": 66,
+      "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
-      "trend_signal": "insufficient_history",
-      "published_at": "2026-10-28T09:30:09+00:00",
-      "days_old": 0.0,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-28T07:32:53+00:00",
+      "days_old": 0.12,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "7eef5e7380c2dffb",
+      "title": "Analytics queryable capability is configurable in shopify.app.toml for metaobject definitions",
+      "url": "https://shopify.dev/changelog/posts/analytics-queryable-capability-is-configurable-in-shopify-app-toml-for-metaobject-definitions",
+      "source": "Shopify Developer Changelog",
+      "primary_category": "commerce_and_digital_products",
+      "priority_score": 63,
+      "hourly_adjusted_score": 63,
+      "stars_current": null,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-23T16:00:00+00:00",
+      "days_old": 4.77,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
@@ -462,26 +433,26 @@
   ],
   "automatic_repair": {
     "attempted": true,
-    "drafts_submitted": 3,
+    "drafts_submitted": 1,
     "repaired_local_passes": 0,
-    "repair_rejections": 3,
+    "repair_rejections": 1,
     "repair_error": null,
-    "editorial_repair_attempted": false,
-    "editorial_repair_drafts_submitted": 0,
+    "editorial_repair_attempted": true,
+    "editorial_repair_drafts_submitted": 1,
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 0,
-    "submitted_for_independent_review": 0,
+    "locally_valid_drafts": 1,
+    "submitted_for_independent_review": 1,
     "passed_independent_review": 0,
-    "rejected_by_independent_review": 0,
+    "rejected_by_independent_review": 1,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
   "state_summary": {
     "used_candidates_in_cooldown": 20,
-    "recently_attempted_candidates": 24,
+    "recently_attempted_candidates": 27,
     "recent_draft_passes_today": 1
   }
 }
