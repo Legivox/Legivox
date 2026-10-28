@@ -1,38 +1,38 @@
 {
-  "generated_at_ist": "2026-10-27T22:59:28+05:30",
-  "run_at_ist": "2026-10-27T22:59:28+05:30",
+  "generated_at_ist": "2026-10-28T07:57:49+05:30",
+  "run_at_ist": "2026-10-28T07:57:49+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 299,
-  "eligible_candidate_count": 186,
+  "candidate_count_raw": 300,
+  "eligible_candidate_count": 184,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4770
+      "total_count": 4713
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1021
+      "total_count": 1025
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 360
+      "total_count": 351
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2910
+      "total_count": 2866
     },
     {
       "source": "GitHub Search · github-digital-product-tools",
@@ -46,49 +46,49 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 411
+      "total_count": 412
     },
     {
       "source": "GitHub Search · github-marketing-distribution",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 228
+      "total_count": 223
     },
     {
       "source": "GitHub Search · github-mcp-servers",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2075
+      "total_count": 2053
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3301
+      "total_count": 3286
     },
     {
       "source": "GitHub Search · github-seller-operations",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 362
+      "total_count": 354
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 127
+      "total_count": 128
     },
     {
       "source": "GitHub Search · github-workflow-automation",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 268
+      "total_count": 264
     },
     {
       "source": "Hacker News · hn-analytics-growth",
@@ -116,7 +116,7 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 7
+      "total_count": 6
     },
     {
       "source": "Hacker News · hn-digital-products",
@@ -158,12 +158,12 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 10
+      "total_count": 9
     },
     {
       "source": "Hacker News · hn-shopify",
       "kind": "hacker_news",
-      "items_kept": 6,
+      "items_kept": 7,
       "status": "ok",
       "total_count": 10
     },
@@ -195,7 +195,7 @@
     {
       "source": "Product Hunt",
       "kind": "rss",
-      "items_kept": 39,
+      "items_kept": 38,
       "status": "ok"
     },
     {
@@ -207,7 +207,7 @@
     {
       "source": "Shopify Developer Changelog",
       "kind": "rss",
-      "items_kept": 15,
+      "items_kept": 18,
       "status": "ok"
     },
     {
@@ -227,205 +227,205 @@
       "kind": "wordpress_plugin",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2008
+      "total_count": 2010
     },
     {
       "source": "WordPress Plugin Directory · wp-ecommerce",
       "kind": "wordpress_plugin",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2982
+      "total_count": 2983
     },
     {
       "source": "WordPress Plugin Directory · wp-inventory-management",
       "kind": "wordpress_plugin",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 956
+      "total_count": 959
     },
     {
       "source": "WordPress Plugin Directory · wp-marketing-analytics",
       "kind": "wordpress_plugin",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1772
+      "total_count": 1780
     },
     {
       "source": "WordPress Plugin Directory · wp-membership-creators",
       "kind": "wordpress_plugin",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2189
+      "total_count": 2193
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-27T17:29:28+00:00",
+    "observed_at_utc": "2026-10-28T02:27:49+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 113,
-    "previously_tracked_repositories_refreshed": 87,
+    "repositories_seen_in_discovery": 111,
+    "previously_tracked_repositories_refreshed": 89,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
-    "repositories_with_20_to_36_hour_baseline": 5,
+    "repositories_with_20_to_36_hour_baseline": 6,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "e16193c74cec9e6f",
-      "title": "Migrate to expiring offline access tokens before January 1, 2027",
-      "source_url": "https://shopify.dev/changelog/migrate-to-expiring-offline-access-tokens-before-january-2027",
+      "candidate_id": "33a5c9931e59489b",
+      "title": "Show HN: Shop via CLI; for agents and software engineers",
+      "source_url": "https://storerouter.ai/playground",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/migrate-to-expiring-offline-access-tokens-before-january-2027",
+      "final_url": "https://storerouter.ai/playground",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "6c933a0a7009a87b",
-      "title": "Security update: Offline token dates, new security features",
-      "source_url": "https://shopify.dev/changelog/app-security-updates-october-2026",
+      "candidate_id": "fe11cc6566e35c2b",
+      "title": "Lifecycle-Innovations-Limited/claude-ops",
+      "source_url": "https://github.com/Lifecycle-Innovations-Limited/claude-ops",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/blog/app-security-updates-october-2026",
+      "final_url": "https://github.com/Lifecycle-Innovations-Limited/claude-ops",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "2093a8e42a5b9699",
-      "title": "Ask HN: How do you handle time-series metrics at scale without a large bill?",
-      "source_url": "https://news.ycombinator.com/item?id=50253890",
+      "candidate_id": "36be873f79a8140f",
+      "title": "oomol-lab/open-flow",
+      "source_url": "https://github.com/oomol-lab/open-flow",
       "verified": true,
-      "final_url": "https://news.ycombinator.com/item?id=50253890",
+      "final_url": "https://github.com/oomol-lab/open-flow",
       "http_status": 200,
       "reason": ""
     }
   ],
   "rejected_primary_sources": [],
   "daily_draft_cap": 16,
-  "daily_drafts_already_passed": 3,
+  "daily_drafts_already_passed": 0,
   "outcome": "skip",
-  "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
+  "decision_reason": "All generated drafts failed the local evidence/editorial checks; the hour was skipped.",
   "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "6c933a0a7009a87b",
-      "title": "Security update: Offline token dates, new security features",
+      "candidate_id": "33a5c9931e59489b",
+      "title": "Show HN: Shop via CLI; for agents and software engineers",
       "reasons": [
+        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.",
         "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
       ],
-      "proposed_text": "All public apps must migrate to expiring offline access tokens by Jan 1 2027. Enable client‑credentials access and IP restrictions to strengthen security. https://shopify.dev/changelog/blog/app-security-updates-october-2026",
-      "evidence_quote": "All public apps that call the Admin API must migrate to expiring offline access tokens by January 1, 2027",
+      "proposed_text": "StoreRouter CLI Playground runs the CLI in a browser to search products. Pipe the JSON output through jq and assert the expected product fields. https://storerouter.ai/playground",
+      "evidence_quote": "Run the StoreRouter CLI in your browser: search covered stores, filter, look up product URLs, find similar products, and pipe the JSON through jq.",
       "claim_evidence": [
         {
-          "claim": "All public apps must migrate to expiring offline access tokens by Jan 1 2027",
-          "quote": "All public apps that call the Admin API must migrate to expiring offline access tokens by January 1, 2027"
+          "claim": "The source says capability X",
+          "quote": "Run the StoreRouter CLI in your browser: search covered stores, filter, look up product URLs, find similar products, and pipe the JSON through jq."
         }
       ]
     },
     {
-      "candidate_id": "2093a8e42a5b9699",
-      "title": "Ask HN: How do you handle time-series metrics at scale without a large bill?",
+      "candidate_id": "fe11cc6566e35c2b",
+      "title": "Lifecycle-Innovations-Limited/claude-ops",
       "reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability.",
-        "Fact sentence is too long; narrow it to one source-backed capability.",
-        "Primary-source evidence quote is oversized or dominated by page navigation; use a concise source-backed excerpt.",
-        "Claim evidence quote is oversized or dominated by page navigation; use a concise source-backed excerpt.",
-        "Supporting quotes cover only 64% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "The factual opening bundles multiple features; narrow it to one capability."
       ],
-      "proposed_text": "The question lists PostgreSQL, SQLite, ClickHouse, DuckDB, BigQuery, Timestream, and Cloudflare Analytics Engine as time‑series options. Benchmark write throughput and cost per GB for each before choosing. https://news.ycombinator.com/item?id=50253890",
-      "evidence_quote": "I've considered just standard PostgreSQL, SQLite on the edge (Cloudflare D1 / Turso), purpose built columnar databases (Clickhouse, DuckDB) and the ones managed by big cloud like Google BigQuery, Amazon Timestream, and Cloudflare Analytics Engine",
+      "proposed_text": "Claude‑ops offers a unified inbox for WhatsApp, Email, Slack and Telegram. Verify that a message sent to one channel appears in the others via the inbox API. https://github.com/Lifecycle-Innovations-Limited/claude-ops",
+      "evidence_quote": "Unified inbox (WhatsApp/Email/Slack/Telegram)",
       "claim_evidence": [
         {
-          "claim": "The question lists PostgreSQL, SQLite, ClickHouse, DuckDB, BigQuery, Timestream, and Cloudflare Analytics Engine as time‑series options",
-          "quote": "I've considered just standard PostgreSQL, SQLite on the edge (Cloudflare D1 / Turso), purpose built columnar databases (Clickhouse, DuckDB) and the ones managed by big cloud like Google BigQuery, Amazon Timestream, and Cloudflare Analytics Engine"
+          "claim": "The source says capability X",
+          "quote": "Unified inbox (WhatsApp/Email/Slack/Telegram)"
         }
       ]
     },
     {
-      "candidate_id": "e16193c74cec9e6f",
-      "title": "Migrate to expiring offline access tokens before January 1, 2027",
-      "proposed_text": "Public apps must migrate to expiring offline access tokens before Jan 1 2027. Verify token expiration handling and update OAuth flow before the deadline. https://shopify.dev/changelog/posts/migrate-to-expiring-offline-access-tokens-before-january-2027",
+      "candidate_id": "36be873f79a8140f",
+      "title": "oomol-lab/open-flow",
       "reasons": [
-        "Post restates the deadline without adding new insight or actionable detail beyond the source; originality below threshold."
+        "Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.",
+        "Supporting quotes cover only 57% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "editorial_review": {
-        "clarity_score": 9,
-        "technical_coherence_score": 9,
-        "takeaway_value_score": 8,
-        "source_faithfulness_score": 9,
-        "originality_score": 5
-      }
+      "proposed_text": "Open‑flow provides a self‑hosted Control API for workflow orchestration. Test the API’s idempotency by re‑issuing the same workflow trigger. https://github.com/oomol-lab/open-flow",
+      "evidence_quote": "self-hosted Control API",
+      "claim_evidence": [
+        {
+          "claim": "The source says capability X",
+          "quote": "self-hosted Control API"
+        }
+      ]
     },
     {
-      "candidate_id": "e16193c74cec9e6f",
-      "title": "Migrate to expiring offline access tokens before January 1, 2027",
+      "candidate_id": "33a5c9931e59489b",
+      "title": "Show HN: Shop via CLI; for agents and software engineers",
       "reasons": [
-        "Fact sentence is too long; narrow it to one source-backed capability.",
+        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.",
+        "Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.",
         "Editorial takeaway is too long; keep the analysis concrete and concise.",
         "Fact plus takeaway exceeds the per-link character budget.",
-        "Draft is 358 raw characters; limit is 280"
+        "Draft is 285 raw characters; limit is 280"
       ],
-      "proposed_text": "Public apps using non‑expiring offline access tokens will be delisted from the Shopify App Store on January 1 2027. Update the OAuth flow to request expiring offline access tokens before the delisting date to keep the app listed and avoid service interruption. https://shopify.dev/changelog/posts/migrate-to-expiring-offline-access-tokens-before-january-2027",
-      "evidence_quote": "Public apps still using non‑expiring offline access tokens must migrate to use expiring offline access tokens before January 1, 2027 to remain listed in the Shopify App Store and continue accepting new installs.",
+      "proposed_text": "StoreRouter CLI Playground lets you run the StoreRouter CLI directly in a browser. Execute a `search` command with a limit of 12 in the playground, pipe the JSON output to jq, and verify that the returned `products` array contains the expected fields. https://storerouter.ai/playground",
+      "evidence_quote": "Run the StoreRouter CLI in your browser: search covered stores, filter, look up product URLs, find similar products, and pipe the JSON through jq.",
       "automatic_repair_attempt": true,
       "original_rejection_reasons": [
-        "Post restates the deadline without adding new insight or actionable detail beyond the source; originality below threshold."
+        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.",
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "e16193c74cec9e6f",
-      "title": "Migrate to expiring offline access tokens before January 1, 2027",
-      "url": "https://shopify.dev/changelog/posts/migrate-to-expiring-offline-access-tokens-before-january-2027",
-      "source": "Shopify Developer Changelog",
+      "id": "33a5c9931e59489b",
+      "title": "Show HN: Shop via CLI; for agents and software engineers",
+      "url": "https://storerouter.ai/playground",
+      "source": "Hacker News",
       "primary_category": "commerce_and_digital_products",
-      "priority_score": 72,
-      "hourly_adjusted_score": 72,
+      "priority_score": 73,
+      "hourly_adjusted_score": 75,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-27T16:40:00+00:00",
-      "days_old": 0.03,
+      "published_at": "2026-10-27T19:12:20+00:00",
+      "days_old": 0.3,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "6c933a0a7009a87b",
-      "title": "Security update: Offline token dates, new security features",
-      "url": "https://shopify.dev/changelog/blog/app-security-updates-october-2026",
-      "source": "Shopify Developer Changelog",
+      "id": "fe11cc6566e35c2b",
+      "title": "Lifecycle-Innovations-Limited/claude-ops",
+      "url": "https://github.com/Lifecycle-Innovations-Limited/claude-ops",
+      "source": "GitHub Search",
       "primary_category": "commerce_and_digital_products",
-      "priority_score": 72,
-      "hourly_adjusted_score": 72,
-      "stars_current": null,
+      "priority_score": 70,
+      "hourly_adjusted_score": 74,
+      "stars_current": 547,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-27T17:00:00+00:00",
+      "trend_signal": "insufficient_history",
+      "published_at": "2026-10-28T01:54:59+00:00",
       "days_old": 0.02,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "2093a8e42a5b9699",
-      "title": "Ask HN: How do you handle time-series metrics at scale without a large bill?",
-      "url": "https://news.ycombinator.com/item?id=50253890",
-      "source": "Hacker News",
-      "primary_category": "data_and_growth",
-      "priority_score": 70,
-      "hourly_adjusted_score": 70,
-      "stars_current": null,
+      "id": "36be873f79a8140f",
+      "title": "oomol-lab/open-flow",
+      "url": "https://github.com/oomol-lab/open-flow",
+      "source": "GitHub Search",
+      "primary_category": "ai_and_automation",
+      "priority_score": 69,
+      "hourly_adjusted_score": 73,
+      "stars_current": 280,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-27T02:09:29+00:00",
-      "days_old": 0.64,
+      "trend_signal": "insufficient_history",
+      "published_at": "2026-10-28T02:15:41+00:00",
+      "days_old": 0.01,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
@@ -437,22 +437,22 @@
     "repaired_local_passes": 0,
     "repair_rejections": 1,
     "repair_error": null,
-    "editorial_repair_attempted": true,
-    "editorial_repair_drafts_submitted": 1,
+    "editorial_repair_attempted": false,
+    "editorial_repair_drafts_submitted": 0,
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 1,
-    "submitted_for_independent_review": 1,
+    "locally_valid_drafts": 0,
+    "submitted_for_independent_review": 0,
     "passed_independent_review": 0,
-    "rejected_by_independent_review": 1,
+    "rejected_by_independent_review": 0,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
   "state_summary": {
     "used_candidates_in_cooldown": 19,
-    "recently_attempted_candidates": 31,
-    "recent_draft_passes_today": 3
+    "recently_attempted_candidates": 15,
+    "recent_draft_passes_today": 0
   }
 }

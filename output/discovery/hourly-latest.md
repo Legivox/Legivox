@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-27T22:59:28+05:30
+- Run time (IST): 2026-10-28T07:57:49+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 186
-- Independent editorial review: 0 draft(s) passed / 1 rejected
+- Candidate pool after freshness/diversity filters: 184
+- Independent editorial review: 0 draft(s) passed / 0 rejected
 - Drafts passing local checks: 0
 - Outcome: **skip**
-- Decision reason: Every draft submitted for independent editorial review was rejected; The hour was skipped.
+- Decision reason: All generated drafts failed the local evidence/editorial checks; the hour was skipped.
 
 ## Source health
 
@@ -35,14 +35,14 @@
 | Hacker News · hn-marketing-distribution | 0 | ok |
 | Hacker News · hn-security-selfhost | 0 | ok |
 | Hacker News · hn-seller-operations | 0 | ok |
-| Hacker News · hn-shopify | 6 | ok |
+| Hacker News · hn-shopify | 7 | ok |
 | Hacker News · hn-show-hn | 10 | ok |
 | Ahrefs Blog | 4 | ok |
 | Console.dev | 12 | ok |
 | Indie Hackers (unofficial third-party feed) | 5 | ok |
-| Product Hunt | 39 | ok |
+| Product Hunt | 38 | ok |
 | Shopify Community | 30 | ok |
-| Shopify Developer Changelog | 15 | ok |
+| Shopify Developer Changelog | 18 | ok |
 | Stripe Blog | 3 | ok |
 | WooCommerce Blog | 3 | ok |
 | WordPress Plugin Directory · wp-digital-downloads | 10 | ok |
@@ -54,24 +54,24 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 113
-- Previously tracked repositories refreshed outside search results: 87
+- Repositories seen in this discovery run: 111
+- Previously tracked repositories refreshed outside search results: 89
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
-- Repositories with a 20–36 hour comparison baseline: 5
+- Repositories with a 20–36 hour comparison baseline: 6
 - First observations are baseline samples, not evidence of trending. Star velocity is reported only when a historical comparison exists.
 
 ## Primary-source verification
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| Migrate to expiring offline access tokens before January 1, 2027 | yes | 200 | https://shopify.dev/changelog/posts/migrate-to-expiring-offline-access-tokens-before-january-2027 |
-| Security update: Offline token dates, new security features | yes | 200 | https://shopify.dev/changelog/blog/app-security-updates-october-2026 |
-| Ask HN: How do you handle time-series metrics at scale without a large bill? | yes | 200 | https://news.ycombinator.com/item?id=50253890 |
+| Show HN: Shop via CLI; for agents and software engineers | yes | 200 | https://storerouter.ai/playground |
+| Lifecycle-Innovations-Limited/claude-ops | yes | 200 | https://github.com/Lifecycle-Innovations-Limited/claude-ops |
+| oomol-lab/open-flow | yes | 200 | https://github.com/oomol-lab/open-flow |
 
 ## Selected draft candidates
 
-No draft cleared the complete local and independent-editor gate. See the decision reason and rejected-draft section for locally valid drafts that were rejected, not reviewed, or blocked by a review error.
+No candidate produced a draft that passed every local check. Skipping is intentional.
 
 ## Automatic repair attempt
 
@@ -84,25 +84,27 @@ No draft cleared the complete local and independent-editor gate. See the decisio
 
 ## Rejected draft options
 
-- Security update: Offline token dates, new security features: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
-  - Rejected text: All public apps must migrate to expiring offline access tokens by Jan 1 2027. Enable client‑credentials access and IP restrictions to strengthen security. https://shopify.dev/changelog/blog/app-security-updates-october-2026
-  - Model evidence quote: “All public apps that call the Admin API must migrate to expiring offline access tokens by January 1, 2027”
-  - Claim support: All public apps must migrate to expiring offline access tokens by Jan 1 2027 ← “All public apps that call the Admin API must migrate to expiring offline access tokens by January 1, 2027”
-- Ask HN: How do you handle time-series metrics at scale without a large bill?: The factual opening bundles multiple features; narrow it to one capability.; Fact sentence is too long; narrow it to one source-backed capability.; Primary-source evidence quote is oversized or dominated by page navigation; use a concise source-backed excerpt.; Claim evidence quote is oversized or dominated by page navigation; use a concise source-backed excerpt.; Supporting quotes cover only 64% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: The question lists PostgreSQL, SQLite, ClickHouse, DuckDB, BigQuery, Timestream, and Cloudflare Analytics Engine as time‑series options. Benchmark write throughput and cost per GB for each before choosing. https://news.ycombinator.com/item?id=50253890
-  - Model evidence quote: “I've considered just standard PostgreSQL, SQLite on the edge (Cloudflare D1 / Turso), purpose built columnar databases (Clickhouse, DuckDB) and the ones managed by big cloud like Google BigQuery, Amazon Timestream, and Cloudflare Analytics Engine”
-  - Claim support: The question lists PostgreSQL, SQLite, ClickHouse, DuckDB, BigQuery, Timestream, and Cloudflare Analytics Engine as time‑series options ← “I've considered just standard PostgreSQL, SQLite on the edge (Cloudflare D1 / Turso), purpose built columnar databases (Clickhouse, DuckDB) and the ones managed by big cloud like Google BigQuery, Amazon Timestream, and Cloudflare Analytics Engine”
-- Migrate to expiring offline access tokens before January 1, 2027: Post restates the deadline without adding new insight or actionable detail beyond the source; originality below threshold.
-  - Rejected text: Public apps must migrate to expiring offline access tokens before Jan 1 2027. Verify token expiration handling and update OAuth flow before the deadline. https://shopify.dev/changelog/posts/migrate-to-expiring-offline-access-tokens-before-january-2027
-- Migrate to expiring offline access tokens before January 1, 2027: Fact sentence is too long; narrow it to one source-backed capability.; Editorial takeaway is too long; keep the analysis concrete and concise.; Fact plus takeaway exceeds the per-link character budget.; Draft is 358 raw characters; limit is 280
-  - Rejected text: Public apps using non‑expiring offline access tokens will be delisted from the Shopify App Store on January 1 2027. Update the OAuth flow to request expiring offline access tokens before the delisting date to keep the app listed and avoid service interruption. https://shopify.dev/changelog/posts/migrate-to-expiring-offline-access-tokens-before-january-2027
-  - Model evidence quote: “Public apps still using non‑expiring offline access tokens must migrate to use expiring offline access tokens before January 1, 2027 to remain listed in the Shopify App Store and continue accepting new installs.”
+- Show HN: Shop via CLI; for agents and software engineers: Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
+  - Rejected text: StoreRouter CLI Playground runs the CLI in a browser to search products. Pipe the JSON output through jq and assert the expected product fields. https://storerouter.ai/playground
+  - Model evidence quote: “Run the StoreRouter CLI in your browser: search covered stores, filter, look up product URLs, find similar products, and pipe the JSON through jq.”
+  - Claim support: The source says capability X ← “Run the StoreRouter CLI in your browser: search covered stores, filter, look up product URLs, find similar products, and pipe the JSON through jq.”
+- Lifecycle-Innovations-Limited/claude-ops: The factual opening bundles multiple features; narrow it to one capability.
+  - Rejected text: Claude‑ops offers a unified inbox for WhatsApp, Email, Slack and Telegram. Verify that a message sent to one channel appears in the others via the inbox API. https://github.com/Lifecycle-Innovations-Limited/claude-ops
+  - Model evidence quote: “Unified inbox (WhatsApp/Email/Slack/Telegram)”
+  - Claim support: The source says capability X ← “Unified inbox (WhatsApp/Email/Slack/Telegram)”
+- oomol-lab/open-flow: Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.; Supporting quotes cover only 57% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: Open‑flow provides a self‑hosted Control API for workflow orchestration. Test the API’s idempotency by re‑issuing the same workflow trigger. https://github.com/oomol-lab/open-flow
+  - Model evidence quote: “self-hosted Control API”
+  - Claim support: The source says capability X ← “self-hosted Control API”
+- Show HN: Shop via CLI; for agents and software engineers: Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.; Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.; Editorial takeaway is too long; keep the analysis concrete and concise.; Fact plus takeaway exceeds the per-link character budget.; Draft is 285 raw characters; limit is 280
+  - Rejected text: StoreRouter CLI Playground lets you run the StoreRouter CLI directly in a browser. Execute a `search` command with a limit of 12 in the playground, pipe the JSON output to jq, and verify that the returned `products` array contains the expected fields. https://storerouter.ai/playground
+  - Model evidence quote: “Run the StoreRouter CLI in your browser: search covered stores, filter, look up product URLs, find similar products, and pipe the JSON through jq.”
 
 ## Top discovery candidates considered
 
-- Migrate to expiring offline access tokens before January 1, 2027 | Shopify Developer Changelog | commerce_and_digital_products | raw 72, adjusted 72 | https://shopify.dev/changelog/posts/migrate-to-expiring-offline-access-tokens-before-january-2027
-- Security update: Offline token dates, new security features | Shopify Developer Changelog | commerce_and_digital_products | raw 72, adjusted 72 | https://shopify.dev/changelog/blog/app-security-updates-october-2026
-- Ask HN: How do you handle time-series metrics at scale without a large bill? | Hacker News | data_and_growth | raw 70, adjusted 70 | https://news.ycombinator.com/item?id=50253890
+- Show HN: Shop via CLI; for agents and software engineers | Hacker News | commerce_and_digital_products | raw 73, adjusted 75 | https://storerouter.ai/playground
+- Lifecycle-Innovations-Limited/claude-ops | GitHub Search | commerce_and_digital_products | raw 70, adjusted 74 | current stars 547 | GitHub star trend: building baseline | https://github.com/Lifecycle-Innovations-Limited/claude-ops
+- oomol-lab/open-flow | GitHub Search | ai_and_automation | raw 69, adjusted 73 | current stars 280 | GitHub star trend: building baseline | https://github.com/oomol-lab/open-flow
 
 ## Safety and interpretation
 
