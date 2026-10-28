@@ -1,38 +1,38 @@
 {
-  "generated_at_ist": "2026-10-28T15:57:23+05:30",
-  "run_at_ist": "2026-10-28T15:57:23+05:30",
+  "generated_at_ist": "2026-10-28T16:54:02+05:30",
+  "run_at_ist": "2026-10-28T16:54:02+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 302,
-  "eligible_candidate_count": 185,
+  "candidate_count_raw": 297,
+  "eligible_candidate_count": 188,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4775
+      "total_count": 4782
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1033
+      "total_count": 1035
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 356
+      "total_count": 357
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2894
+      "total_count": 2897
     },
     {
       "source": "GitHub Search · github-digital-product-tools",
@@ -46,7 +46,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 417
+      "total_count": 418
     },
     {
       "source": "GitHub Search · github-marketing-distribution",
@@ -60,21 +60,21 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2082
+      "total_count": 2084
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3321
+      "total_count": 3324
     },
     {
       "source": "GitHub Search · github-seller-operations",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 357
+      "total_count": 359
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
@@ -93,7 +93,7 @@
     {
       "source": "Hacker News · hn-analytics-growth",
       "kind": "hacker_news",
-      "items_kept": 10,
+      "items_kept": 8,
       "status": "ok",
       "total_count": 10
     },
@@ -116,7 +116,7 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 6
+      "total_count": 7
     },
     {
       "source": "Hacker News · hn-digital-products",
@@ -163,7 +163,7 @@
     {
       "source": "Hacker News · hn-shopify",
       "kind": "hacker_news",
-      "items_kept": 10,
+      "items_kept": 6,
       "status": "ok",
       "total_count": 10
     },
@@ -177,7 +177,7 @@
     {
       "source": "Ahrefs Blog",
       "kind": "rss",
-      "items_kept": 5,
+      "items_kept": 6,
       "status": "ok"
     },
     {
@@ -259,7 +259,7 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-28T10:27:23+00:00",
+    "observed_at_utc": "2026-10-28T11:24:02+00:00",
     "tracked_repositories": 200,
     "repositories_seen_in_discovery": 109,
     "previously_tracked_repositories_refreshed": 91,
@@ -272,29 +272,29 @@
   },
   "primary_source_checks": [
     {
-      "candidate_id": "75f520315176dd36",
-      "title": "Show HN: The New Way to Make AI UGC Ads in 2026",
-      "source_url": "https://www.aivideosugc.com/ai-video-generation",
+      "candidate_id": "c12356d553daeed4",
+      "title": "Show HN: Ballast – macOS app to clear disk space",
+      "source_url": "https://github.com/linearza/ballast",
       "verified": true,
-      "final_url": "https://www.aivideosugc.com/ai-video-generation",
+      "final_url": "https://github.com/linearza/ballast",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "bb7e5a4161fa3cc6",
-      "title": "Show HN: NoVul – Open-source Mac app to Find and fix vulnerabilities on your Mac",
-      "source_url": "https://github.com/misbahsy/novul",
+      "candidate_id": "70983834ee5fe00d",
+      "title": "Show HN: Formstep, Request information from customers without the back-and-forth",
+      "source_url": "https://formstep.io/",
       "verified": true,
-      "final_url": "https://github.com/misbahsy/novul",
+      "final_url": "https://formstep.io/",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "7eef5e7380c2dffb",
-      "title": "Analytics queryable capability is configurable in shopify.app.toml for metaobject definitions",
-      "source_url": "https://shopify.dev/changelog/analytics-queryable-capability-is-configurable-in-shopify-app-toml-for-metaobject-definitions",
+      "candidate_id": "01b44b612fda8613",
+      "title": "POS UI extensions 2026-10 adds s-pos-list, a virtualized list with custom row templates",
+      "source_url": "https://shopify.dev/changelog/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/analytics-queryable-capability-is-configurable-in-shopify-app-toml-for-metaobject-definitions",
+      "final_url": "https://shopify.dev/changelog/posts/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates",
       "http_status": 200,
       "reason": ""
     }
@@ -303,118 +303,147 @@
   "daily_draft_cap": 16,
   "daily_drafts_already_passed": 1,
   "outcome": "skip",
-  "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
+  "decision_reason": "All generated drafts failed the local evidence/editorial checks; the hour was skipped.",
   "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "75f520315176dd36",
-      "title": "Show HN: The New Way to Make AI UGC Ads in 2026",
+      "candidate_id": "c12356d553daeed4",
+      "title": "Show HN: Ballast – macOS app to clear disk space",
       "reasons": [
-        "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "Unsupported strong claim: free"
+        "Unsupported strong claim: free",
+        "Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "AivideosUGC lets you publish ads faster and download watermark‑free files for Meta or TikTok. Run a test upload to Meta to confirm the file contains no watermark before campaign launch. https://www.aivideosugc.com/ai-video-generation",
-      "evidence_quote": "Publish ads faster, spend less on production, and download a file for Meta or TikTok with no watermark.",
+      "proposed_text": "Ballast is a macOS menu bar app that frees disk space by locating leftover dev tool data. Run it before a macOS upgrade to reclaim space from old node_modules. https://github.com/linearza/ballast",
+      "evidence_quote": "A macOS menu bar app that finds the disk space developer tools leave behind (old Ruby/Node/Python versions, node_modules, Xcode simulators, Docker, package caches, AI models) and gives it back safely.",
       "claim_evidence": [
         {
-          "claim": "The source says capability X",
-          "quote": "Publish ads faster, spend less on production, and download a file for Meta or TikTok with no watermark."
+          "claim": "Ballast is a macOS menu bar app that frees disk space by locating leftover dev tool data.",
+          "quote": "A macOS menu bar app that finds the disk space developer tools leave behind (old Ruby/Node/Python versions, node_modules, Xcode simulators, Docker, package caches, AI models) and gives it back safely."
         }
       ]
     },
     {
-      "candidate_id": "7eef5e7380c2dffb",
-      "title": "Analytics queryable capability is configurable in shopify.app.toml for metaobject definitions",
+      "candidate_id": "70983834ee5fe00d",
+      "title": "Show HN: Formstep, Request information from customers without the back-and-forth",
       "reasons": [
-        "Fact sentence is too long; narrow it to one source-backed capability.",
-        "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "Fact plus takeaway exceeds the per-link character budget.",
-        "Draft is 370 raw characters; limit is 280",
-        "Primary-source evidence quote is missing or absent from the live page (after presentation normalisation)",
-        "A factual claim lacks a quote present in the live primary-source page",
-        "Supporting quotes cover only 38% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
       ],
-      "proposed_text": "Setting capabilities.analytics_queryable to true in shopify.app.toml exposes metaobject fields in analytics reports and ShopifyQL. Verify the field appears in ShopifyQL after enabling the capability to ensure data is available for analysis. https://shopify.dev/changelog/posts/analytics-queryable-capability-is-configurable-in-shopify-app-toml-for-metaobject-definitions",
-      "evidence_quote": "When you set it to `true`, any field on the definition with an analytics‑compatible type becomes available as a dimension and filter in analytics reports and ShopifyQL.",
+      "proposed_text": "Formstep sends prefilled branded forms that customers can confirm, sign or pay, returning answers via API. Integrate Formstep with Zapier to auto‑populate onboarding data and capture signatures. https://formstep.io/",
+      "evidence_quote": "Send each customer a prefilled form in your brand and their language, from the dashboard, n8n, Zapier, an AI agent or the API. They confirm, add, sign or pay, and the answers come back to you.",
       "claim_evidence": [
         {
-          "claim": "The source says capability X",
-          "quote": "When you set it to `true`, any field on the definition with an analytics‑compatible type becomes available as a dimension and filter in analytics reports and ShopifyQL."
+          "claim": "Formstep sends prefilled branded forms that customers can confirm, sign or pay, returning answers via API.",
+          "quote": "Send each customer a prefilled form in your brand and their language, from the dashboard, n8n, Zapier, an AI agent or the API. They confirm, add, sign or pay, and the answers come back to you."
         }
       ]
     },
     {
-      "candidate_id": "bb7e5a4161fa3cc6",
-      "title": "Show HN: NoVul – Open-source Mac app to Find and fix vulnerabilities on your Mac",
-      "proposed_text": "Novul scans all installed Mac apps for known vulnerabilities and exposed secrets. Run Novul after installing new software to catch missing patches before deployment. https://github.com/misbahsy/novul",
-      "reasons": [
-        "Post restates headline without adding new insight; originality below threshold."
-      ],
-      "editorial_review": {
-        "clarity_score": 9,
-        "technical_coherence_score": 9,
-        "takeaway_value_score": 8,
-        "source_faithfulness_score": 9,
-        "originality_score": 4
-      }
-    },
-    {
-      "candidate_id": "bb7e5a4161fa3cc6",
-      "title": "Show HN: NoVul – Open-source Mac app to Find and fix vulnerabilities on your Mac",
+      "candidate_id": "01b44b612fda8613",
+      "title": "POS UI extensions 2026-10 adds s-pos-list, a virtualized list with custom row templates",
       "reasons": [
         "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
       ],
-      "proposed_text": "Novul is a menu bar app that scans all installed Mac apps for known vulnerabilities and exposed secrets. After scanning, Novul lists specific fixes for each vulnerability found. https://github.com/misbahsy/novul",
-      "evidence_quote": "Menu bar app that checks everything installed on your Mac for known vulnerabilities and exposed secrets, and tells you what to fix.",
+      "proposed_text": "s-pos-list is a virtualized list component for Shopify POS 2026-10. Replace legacy List component with s-pos-list to improve list rendering performance. https://shopify.dev/changelog/posts/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates",
+      "evidence_quote": "POS UI extensions API version `2026-10` adds `s-pos-list`, a virtualized list component",
+      "claim_evidence": [
+        {
+          "claim": "s-pos-list is a virtualized list component for Shopify POS 2026-10.",
+          "quote": "POS UI extensions API version `2026-10` adds `s-pos-list`, a virtualized list component"
+        }
+      ]
+    },
+    {
+      "candidate_id": "c12356d553daeed4",
+      "title": "Show HN: Ballast – macOS app to clear disk space",
+      "reasons": [
+        "Unsupported strong claim: free",
+        "Supporting quotes cover only 54% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ],
+      "proposed_text": "Ballast is a macOS menu bar app that locates leftover dev tool data and safely frees disk space. Run Ballast before a macOS upgrade to reclaim space from old node_modules. https://github.com/linearza/ballast",
+      "evidence_quote": "A macOS menu bar app that finds the disk space developer tools leave behind (old Ruby/Node/Python versions, node_modules, Xcode simulators, Docker, package caches, AI models) and gives it back safely.",
       "automatic_repair_attempt": true,
       "original_rejection_reasons": [
-        "Post restates headline without adding new insight; originality below threshold."
+        "Unsupported strong claim: free",
+        "Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ]
+    },
+    {
+      "candidate_id": "70983834ee5fe00d",
+      "title": "Show HN: Formstep, Request information from customers without the back-and-forth",
+      "reasons": [
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
+      ],
+      "proposed_text": "Formstep sends prefilled branded forms that customers can confirm, sign or pay, returning answers via API. When integrating with Zapier, use the API callback to capture completed form data automatically. https://formstep.io/",
+      "evidence_quote": "Send each customer a prefilled form in your brand and their language, from the dashboard, n8n, Zapier, an AI agent or the API. They confirm, add, sign or pay, and the answers come back to you.",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
+      ]
+    },
+    {
+      "candidate_id": "01b44b612fda8613",
+      "title": "POS UI extensions 2026-10 adds s-pos-list, a virtualized list with custom row templates",
+      "reasons": [
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "Fact plus takeaway exceeds the per-link character budget.",
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
+        "Draft is 332 raw characters; limit is 280"
+      ],
+      "proposed_text": "s‑pos‑list is a virtualized list component for Shopify POS 2026‑10 that supports custom row templates. Replace legacy List with s‑pos‑list to enable mixed row types like headings and dividers in a single list. https://shopify.dev/changelog/posts/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates",
+      "evidence_quote": "POS UI extensions API version `2026-10` adds `s-pos-list`, a virtualized list component for Polaris web components. Instead of `List`’s fixed row layout, each kind of row gets its own template, so one list can mix headings, dividers, and content rows.",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "75f520315176dd36",
-      "title": "Show HN: The New Way to Make AI UGC Ads in 2026",
-      "url": "https://www.aivideosugc.com/ai-video-generation",
-      "source": "Hacker News",
-      "primary_category": "commerce_and_digital_products",
-      "priority_score": 65,
-      "hourly_adjusted_score": 67,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-28T03:14:26+00:00",
-      "days_old": 0.3,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "bb7e5a4161fa3cc6",
-      "title": "Show HN: NoVul – Open-source Mac app to Find and fix vulnerabilities on your Mac",
-      "url": "https://github.com/misbahsy/novul",
+      "id": "c12356d553daeed4",
+      "title": "Show HN: Ballast – macOS app to clear disk space",
+      "url": "https://github.com/linearza/ballast",
       "source": "Hacker News",
       "primary_category": "product_and_workflow_tools",
-      "priority_score": 64,
-      "hourly_adjusted_score": 66,
+      "priority_score": 66,
+      "hourly_adjusted_score": 68,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-28T07:32:53+00:00",
-      "days_old": 0.12,
+      "published_at": "2026-10-28T10:36:15+00:00",
+      "days_old": 0.03,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "7eef5e7380c2dffb",
-      "title": "Analytics queryable capability is configurable in shopify.app.toml for metaobject definitions",
-      "url": "https://shopify.dev/changelog/posts/analytics-queryable-capability-is-configurable-in-shopify-app-toml-for-metaobject-definitions",
+      "id": "70983834ee5fe00d",
+      "title": "Show HN: Formstep, Request information from customers without the back-and-forth",
+      "url": "https://formstep.io/",
+      "source": "Hacker News",
+      "primary_category": "ai_and_automation",
+      "priority_score": 69,
+      "hourly_adjusted_score": 63,
+      "stars_current": null,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-27T16:03:31+00:00",
+      "days_old": 0.81,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "01b44b612fda8613",
+      "title": "POS UI extensions 2026-10 adds s-pos-list, a virtualized list with custom row templates",
+      "url": "https://shopify.dev/changelog/posts/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates",
       "source": "Shopify Developer Changelog",
       "primary_category": "commerce_and_digital_products",
       "priority_score": 63,
@@ -424,8 +453,8 @@
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-23T16:00:00+00:00",
-      "days_old": 4.77,
+      "published_at": "2026-10-22T16:00:00+00:00",
+      "days_old": 5.81,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
@@ -433,26 +462,26 @@
   ],
   "automatic_repair": {
     "attempted": true,
-    "drafts_submitted": 1,
+    "drafts_submitted": 3,
     "repaired_local_passes": 0,
-    "repair_rejections": 1,
+    "repair_rejections": 3,
     "repair_error": null,
-    "editorial_repair_attempted": true,
-    "editorial_repair_drafts_submitted": 1,
+    "editorial_repair_attempted": false,
+    "editorial_repair_drafts_submitted": 0,
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 1,
-    "submitted_for_independent_review": 1,
+    "locally_valid_drafts": 0,
+    "submitted_for_independent_review": 0,
     "passed_independent_review": 0,
-    "rejected_by_independent_review": 1,
+    "rejected_by_independent_review": 0,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
   "state_summary": {
     "used_candidates_in_cooldown": 20,
-    "recently_attempted_candidates": 27,
+    "recently_attempted_candidates": 30,
     "recent_draft_passes_today": 1
   }
 }

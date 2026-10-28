@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-28T15:57:23+05:30
+- Run time (IST): 2026-10-28T16:54:02+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 185
-- Independent editorial review: 0 draft(s) passed / 1 rejected
+- Candidate pool after freshness/diversity filters: 188
+- Independent editorial review: 0 draft(s) passed / 0 rejected
 - Drafts passing local checks: 0
 - Outcome: **skip**
-- Decision reason: Every draft submitted for independent editorial review was rejected; The hour was skipped.
+- Decision reason: All generated drafts failed the local evidence/editorial checks; the hour was skipped.
 
 ## Source health
 
@@ -25,7 +25,7 @@
 | GitHub Search · github-seller-operations | 10 | ok |
 | GitHub Search · github-shopify-commerce | 10 | ok |
 | GitHub Search · github-workflow-automation | 10 | ok |
-| Hacker News · hn-analytics-growth | 10 | ok |
+| Hacker News · hn-analytics-growth | 8 | ok |
 | Hacker News · hn-automation-api | 1 | ok |
 | Hacker News · hn-creator-business | 0 | ok |
 | Hacker News · hn-digital-downloads-templates | 0 | ok |
@@ -35,9 +35,9 @@
 | Hacker News · hn-marketing-distribution | 0 | ok |
 | Hacker News · hn-security-selfhost | 0 | ok |
 | Hacker News · hn-seller-operations | 0 | ok |
-| Hacker News · hn-shopify | 10 | ok |
+| Hacker News · hn-shopify | 6 | ok |
 | Hacker News · hn-show-hn | 10 | ok |
-| Ahrefs Blog | 5 | ok |
+| Ahrefs Blog | 6 | ok |
 | Console.dev | 12 | ok |
 | Indie Hackers (unofficial third-party feed) | 5 | ok |
 | Product Hunt | 38 | ok |
@@ -65,44 +65,52 @@
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| Show HN: The New Way to Make AI UGC Ads in 2026 | yes | 200 | https://www.aivideosugc.com/ai-video-generation |
-| Show HN: NoVul – Open-source Mac app to Find and fix vulnerabilities on your Mac | yes | 200 | https://github.com/misbahsy/novul |
-| Analytics queryable capability is configurable in shopify.app.toml for metaobject definitions | yes | 200 | https://shopify.dev/changelog/posts/analytics-queryable-capability-is-configurable-in-shopify-app-toml-for-metaobject-definitions |
+| Show HN: Ballast – macOS app to clear disk space | yes | 200 | https://github.com/linearza/ballast |
+| Show HN: Formstep, Request information from customers without the back-and-forth | yes | 200 | https://formstep.io/ |
+| POS UI extensions 2026-10 adds s-pos-list, a virtualized list with custom row templates | yes | 200 | https://shopify.dev/changelog/posts/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates |
 
 ## Selected draft candidates
 
-No draft cleared the complete local and independent-editor gate. See the decision reason and rejected-draft section for locally valid drafts that were rejected, not reviewed, or blocked by a review error.
+No candidate produced a draft that passed every local check. Skipping is intentional.
 
 ## Automatic repair attempt
 
 - Attempted: yes
-- Repaired drafts submitted: 1
+- Repaired drafts submitted: 3
 - Repaired drafts that passed local validation: 0
-- Repaired drafts rejected: 1
+- Repaired drafts rejected: 3
 - Repair error: none
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
-- Show HN: The New Way to Make AI UGC Ads in 2026: Editorial takeaway is too long; keep the analysis concrete and concise.; Unsupported strong claim: free
-  - Rejected text: AivideosUGC lets you publish ads faster and download watermark‑free files for Meta or TikTok. Run a test upload to Meta to confirm the file contains no watermark before campaign launch. https://www.aivideosugc.com/ai-video-generation
-  - Model evidence quote: “Publish ads faster, spend less on production, and download a file for Meta or TikTok with no watermark.”
-  - Claim support: The source says capability X ← “Publish ads faster, spend less on production, and download a file for Meta or TikTok with no watermark.”
-- Analytics queryable capability is configurable in shopify.app.toml for metaobject definitions: Fact sentence is too long; narrow it to one source-backed capability.; Editorial takeaway is too long; keep the analysis concrete and concise.; Fact plus takeaway exceeds the per-link character budget.; Draft is 370 raw characters; limit is 280; Primary-source evidence quote is missing or absent from the live page (after presentation normalisation); A factual claim lacks a quote present in the live primary-source page; Supporting quotes cover only 38% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: Setting capabilities.analytics_queryable to true in shopify.app.toml exposes metaobject fields in analytics reports and ShopifyQL. Verify the field appears in ShopifyQL after enabling the capability to ensure data is available for analysis. https://shopify.dev/changelog/posts/analytics-queryable-capability-is-configurable-in-shopify-app-toml-for-metaobject-definitions
-  - Model evidence quote: “When you set it to `true`, any field on the definition with an analytics‑compatible type becomes available as a dimension and filter in analytics reports and ShopifyQL.”
-  - Claim support: The source says capability X ← “When you set it to `true`, any field on the definition with an analytics‑compatible type becomes available as a dimension and filter in analytics reports and ShopifyQL.”
-- Show HN: NoVul – Open-source Mac app to Find and fix vulnerabilities on your Mac: Post restates headline without adding new insight; originality below threshold.
-  - Rejected text: Novul scans all installed Mac apps for known vulnerabilities and exposed secrets. Run Novul after installing new software to catch missing patches before deployment. https://github.com/misbahsy/novul
-- Show HN: NoVul – Open-source Mac app to Find and fix vulnerabilities on your Mac: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
-  - Rejected text: Novul is a menu bar app that scans all installed Mac apps for known vulnerabilities and exposed secrets. After scanning, Novul lists specific fixes for each vulnerability found. https://github.com/misbahsy/novul
-  - Model evidence quote: “Menu bar app that checks everything installed on your Mac for known vulnerabilities and exposed secrets, and tells you what to fix.”
+- Show HN: Ballast – macOS app to clear disk space: Unsupported strong claim: free; Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: Ballast is a macOS menu bar app that frees disk space by locating leftover dev tool data. Run it before a macOS upgrade to reclaim space from old node_modules. https://github.com/linearza/ballast
+  - Model evidence quote: “A macOS menu bar app that finds the disk space developer tools leave behind (old Ruby/Node/Python versions, node_modules, Xcode simulators, Docker, package caches, AI models) and gives it back safely.”
+  - Claim support: Ballast is a macOS menu bar app that frees disk space by locating leftover dev tool data. ← “A macOS menu bar app that finds the disk space developer tools leave behind (old Ruby/Node/Python versions, node_modules, Xcode simulators, Docker, package caches, AI models) and gives it back safely.”
+- Show HN: Formstep, Request information from customers without the back-and-forth: The factual opening bundles multiple features; narrow it to one capability.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
+  - Rejected text: Formstep sends prefilled branded forms that customers can confirm, sign or pay, returning answers via API. Integrate Formstep with Zapier to auto‑populate onboarding data and capture signatures. https://formstep.io/
+  - Model evidence quote: “Send each customer a prefilled form in your brand and their language, from the dashboard, n8n, Zapier, an AI agent or the API. They confirm, add, sign or pay, and the answers come back to you.”
+  - Claim support: Formstep sends prefilled branded forms that customers can confirm, sign or pay, returning answers via API. ← “Send each customer a prefilled form in your brand and their language, from the dashboard, n8n, Zapier, an AI agent or the API. They confirm, add, sign or pay, and the answers come back to you.”
+- POS UI extensions 2026-10 adds s-pos-list, a virtualized list with custom row templates: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
+  - Rejected text: s-pos-list is a virtualized list component for Shopify POS 2026-10. Replace legacy List component with s-pos-list to improve list rendering performance. https://shopify.dev/changelog/posts/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates
+  - Model evidence quote: “POS UI extensions API version `2026-10` adds `s-pos-list`, a virtualized list component”
+  - Claim support: s-pos-list is a virtualized list component for Shopify POS 2026-10. ← “POS UI extensions API version `2026-10` adds `s-pos-list`, a virtualized list component”
+- Show HN: Ballast – macOS app to clear disk space: Unsupported strong claim: free; Supporting quotes cover only 54% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: Ballast is a macOS menu bar app that locates leftover dev tool data and safely frees disk space. Run Ballast before a macOS upgrade to reclaim space from old node_modules. https://github.com/linearza/ballast
+  - Model evidence quote: “A macOS menu bar app that finds the disk space developer tools leave behind (old Ruby/Node/Python versions, node_modules, Xcode simulators, Docker, package caches, AI models) and gives it back safely.”
+- Show HN: Formstep, Request information from customers without the back-and-forth: The factual opening bundles multiple features; narrow it to one capability.; Editorial takeaway is too long; keep the analysis concrete and concise.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
+  - Rejected text: Formstep sends prefilled branded forms that customers can confirm, sign or pay, returning answers via API. When integrating with Zapier, use the API callback to capture completed form data automatically. https://formstep.io/
+  - Model evidence quote: “Send each customer a prefilled form in your brand and their language, from the dashboard, n8n, Zapier, an AI agent or the API. They confirm, add, sign or pay, and the answers come back to you.”
+- POS UI extensions 2026-10 adds s-pos-list, a virtualized list with custom row templates: Editorial takeaway is too long; keep the analysis concrete and concise.; Fact plus takeaway exceeds the per-link character budget.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; Draft is 332 raw characters; limit is 280
+  - Rejected text: s‑pos‑list is a virtualized list component for Shopify POS 2026‑10 that supports custom row templates. Replace legacy List with s‑pos‑list to enable mixed row types like headings and dividers in a single list. https://shopify.dev/changelog/posts/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates
+  - Model evidence quote: “POS UI extensions API version `2026-10` adds `s-pos-list`, a virtualized list component for Polaris web components. Instead of `List`’s fixed row layout, each kind of row gets its own template, so one list can mix headings, dividers, and content rows.”
 
 ## Top discovery candidates considered
 
-- Show HN: The New Way to Make AI UGC Ads in 2026 | Hacker News | commerce_and_digital_products | raw 65, adjusted 67 | https://www.aivideosugc.com/ai-video-generation
-- Show HN: NoVul – Open-source Mac app to Find and fix vulnerabilities on your Mac | Hacker News | product_and_workflow_tools | raw 64, adjusted 66 | https://github.com/misbahsy/novul
-- Analytics queryable capability is configurable in shopify.app.toml for metaobject definitions | Shopify Developer Changelog | commerce_and_digital_products | raw 63, adjusted 63 | https://shopify.dev/changelog/posts/analytics-queryable-capability-is-configurable-in-shopify-app-toml-for-metaobject-definitions
+- Show HN: Ballast – macOS app to clear disk space | Hacker News | product_and_workflow_tools | raw 66, adjusted 68 | https://github.com/linearza/ballast
+- Show HN: Formstep, Request information from customers without the back-and-forth | Hacker News | ai_and_automation | raw 69, adjusted 63 | https://formstep.io/
+- POS UI extensions 2026-10 adds s-pos-list, a virtualized list with custom row templates | Shopify Developer Changelog | commerce_and_digital_products | raw 63, adjusted 63 | https://shopify.dev/changelog/posts/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates
 
 ## Safety and interpretation
 
