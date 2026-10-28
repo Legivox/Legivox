@@ -1,24 +1,24 @@
 {
-  "generated_at_ist": "2026-10-28T10:53:24+05:30",
-  "run_at_ist": "2026-10-28T10:53:24+05:30",
+  "generated_at_ist": "2026-10-28T11:51:04+05:30",
+  "run_at_ist": "2026-10-28T11:51:04+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 301,
-  "eligible_candidate_count": 188,
+  "candidate_count_raw": 303,
+  "eligible_candidate_count": 194,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4726
+      "total_count": 4733
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1026
+      "total_count": 1027
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
@@ -32,7 +32,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2874
+      "total_count": 2875
     },
     {
       "source": "GitHub Search · github-digital-product-tools",
@@ -46,28 +46,28 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 414
+      "total_count": 415
     },
     {
       "source": "GitHub Search · github-marketing-distribution",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 223
+      "total_count": 224
     },
     {
       "source": "GitHub Search · github-mcp-servers",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2060
+      "total_count": 2065
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3293
+      "total_count": 3299
     },
     {
       "source": "GitHub Search · github-seller-operations",
@@ -158,12 +158,12 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 10
+      "total_count": 8
     },
     {
       "source": "Hacker News · hn-shopify",
       "kind": "hacker_news",
-      "items_kept": 10,
+      "items_kept": 9,
       "status": "ok",
       "total_count": 10
     },
@@ -259,10 +259,10 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-28T05:23:24+00:00",
+    "observed_at_utc": "2026-10-28T06:21:04+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 109,
-    "previously_tracked_repositories_refreshed": 91,
+    "repositories_seen_in_discovery": 112,
+    "previously_tracked_repositories_refreshed": 88,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
@@ -272,29 +272,29 @@
   },
   "primary_source_checks": [
     {
-      "candidate_id": "a5e43b1572bfaf36",
-      "title": "paperclipai/paperclip",
-      "source_url": "https://github.com/paperclipai/paperclip",
+      "candidate_id": "176426a27e3a6963",
+      "title": "lemma-work/lemma-platform",
+      "source_url": "https://github.com/lemma-work/lemma-platform",
       "verified": true,
-      "final_url": "https://github.com/paperclipai/paperclip",
+      "final_url": "https://github.com/lemma-work/lemma-platform",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "25df9fa68f72f18a",
-      "title": "Secure your app with network access rules in `shopify.app.toml`",
-      "source_url": "https://shopify.dev/changelog/secure-your-app-with-network-access-hosts-in-shopify-app-toml",
+      "candidate_id": "c37165a31cd3fc39",
+      "title": "n8n-io/n8n",
+      "source_url": "https://github.com/n8n-io/n8n",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml",
+      "final_url": "https://github.com/n8n-io/n8n",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "5d6e8dd379506cf6",
-      "title": "surendranb/google-analytics-mcp",
-      "source_url": "https://github.com/surendranb/google-analytics-mcp",
+      "candidate_id": "e16193c74cec9e6f",
+      "title": "Migrate to expiring offline access tokens before January 1, 2027",
+      "source_url": "https://shopify.dev/changelog/migrate-to-expiring-offline-access-tokens-before-january-2027",
       "verified": true,
-      "final_url": "https://github.com/surendranb/google-analytics-mcp",
+      "final_url": "https://shopify.dev/changelog/posts/migrate-to-expiring-offline-access-tokens-before-january-2027",
       "http_status": 200,
       "reason": ""
     }
@@ -307,152 +307,127 @@
   "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "a5e43b1572bfaf36",
-      "title": "paperclipai/paperclip",
+      "candidate_id": "176426a27e3a6963",
+      "title": "lemma-work/lemma-platform",
       "reasons": [
-        "Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "The factual opening bundles multiple features; narrow it to one capability."
       ],
-      "proposed_text": "paperclip is an open‑source app for managing agents at work. Run a sample agent workflow to confirm state transitions work. https://github.com/paperclipai/paperclip",
-      "evidence_quote": "The open-source app everyone uses to manage agents at work",
+      "proposed_text": "lemma-platform is a harness that shares agents, apps and workflows across Slack, WhatsApp, Teams. Send a trigger from each channel to a shared workflow to verify routing. https://github.com/lemma-work/lemma-platform",
+      "evidence_quote": "GitHub - lemma-work/lemma-platform: Multiplayer harness that shapes around your work. Agents, apps and workflows your team shares, used from Slack, Telegram, WhatsApp, Teams, Email",
       "claim_evidence": [
         {
-          "claim": "paperclip is an open‑source app for managing agents at work",
-          "quote": "The open-source app everyone uses to manage agents at work"
+          "claim": "lemma-platform is a harness that shares agents, apps and workflows across Slack, Telegram, WhatsApp, Teams, Email, Web or custom AI agents.",
+          "quote": "GitHub - lemma-work/lemma-platform: Multiplayer harness that shapes around your work. Agents, apps and workflows your team shares, used from Slack, Telegram, WhatsApp, Teams, Email"
         }
       ]
     },
     {
-      "candidate_id": "25df9fa68f72f18a",
-      "title": "Secure your app with network access rules in `shopify.app.toml`",
+      "candidate_id": null,
+      "title": "Unmapped model draft",
+      "proposed_text": "",
+      "reasons": [
+        "Model omitted a valid candidate ID and no exact verified source URL matched."
+      ]
+    },
+    {
+      "candidate_id": "e16193c74cec9e6f",
+      "title": "Migrate to expiring offline access tokens before January 1, 2027",
+      "reasons": [
+        "Unsupported numeric claim(s): 90days"
+      ],
+      "proposed_text": "Shopify requires apps with non‑expiring offline tokens to use expiring tokens by Jan 1 2027. Add a cron job to rotate tokens every 90 days to stay compliant. https://shopify.dev/changelog/posts/migrate-to-expiring-offline-access-tokens-before-january-2027",
+      "evidence_quote": "",
+      "claim_evidence": [
+        {
+          "claim": "Shopify requires apps with non‑expiring offline tokens to use expiring tokens by Jan 1 2027.",
+          "quote": "Public apps still using non‑expiring offline access tokens must migrate to use expiring offline access tokens before January 1 2027 to remain listed in the Shopify App Store and continue accepting new installs."
+        }
+      ]
+    },
+    {
+      "candidate_id": "e16193c74cec9e6f",
+      "title": "Migrate to expiring offline access tokens before January 1, 2027",
       "reasons": [
         "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
         "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation."
       ],
-      "proposed_text": "Shopify added a network_access section to shopify.app.toml. Declare allowed_navigation_hosts to silence external‑site warnings. https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml",
-      "evidence_quote": "The new [`network_access`](https://shopify.dev/docs/apps/build/cli-for-apps/app-configuration#network_access) section",
-      "claim_evidence": [
-        {
-          "claim": "Shopify added a network_access section to shopify.app.toml",
-          "quote": "The new [`network_access`](https://shopify.dev/docs/apps/build/cli-for-apps/app-configuration#network_access) section"
-        }
+      "proposed_text": "Shopify apps must migrate to expiring offline access tokens before Jan 1 2027 to stay listed. Non‑compliant apps will be delisted on Jan 1 2027 and blocked from new installs. https://shopify.dev/changelog/posts/migrate-to-expiring-offline-access-tokens-before-january-2027",
+      "evidence_quote": "Public apps still using non‑expiring offline access tokens must migrate to use expiring offline access tokens before January 1 2027 to remain listed in the Shopify App Store and continue accepting new installs.",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "Unsupported numeric claim(s): 90days"
       ]
     },
     {
-      "candidate_id": "5d6e8dd379506cf6",
-      "title": "surendranb/google-analytics-mcp",
+      "candidate_id": "176426a27e3a6963",
+      "title": "lemma-work/lemma-platform",
       "reasons": [
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
-        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
-        "Supporting quotes cover only 56% of factual wording; narrow the claim or provide a closer primary-source quote"
-      ],
-      "proposed_text": "google-analytics-mcp provides GA4 data to AI agents via schema discovery. Use server‑side aggregation to reduce data wrangling before feeding agents. https://github.com/surendranb/google-analytics-mcp",
-      "evidence_quote": "Google Analytics 4 data to AI agents, agentic workflows, and MCP clients",
-      "claim_evidence": [
-        {
-          "claim": "google-analytics-mcp provides GA4 data to AI agents via schema discovery",
-          "quote": "Google Analytics 4 data to AI agents, agentic workflows, and MCP clients"
-        }
-      ]
-    },
-    {
-      "candidate_id": "a5e43b1572bfaf36",
-      "title": "paperclipai/paperclip",
-      "reasons": [
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.",
         "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
       ],
-      "proposed_text": "paperclip is an open‑source app for managing agents at work. Confirm the MIT license to ensure permissive use. https://github.com/paperclipai/paperclip",
-      "evidence_quote": "MIT license",
+      "proposed_text": "lemma‑platform shares agents, apps and workflows across Slack, Telegram, WhatsApp, Teams, Email, Web. Use lemma‑platform to trigger a shared workflow from any channel. https://github.com/lemma-work/lemma-platform",
+      "evidence_quote": "Agents, apps and workflows your team shares, used from Slack, Telegram, WhatsApp, Teams, Email, Web or your own AI agent.",
       "automatic_repair_attempt": true,
       "original_rejection_reasons": [
-        "Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote"
-      ]
-    },
-    {
-      "candidate_id": "5d6e8dd379506cf6",
-      "title": "surendranb/google-analytics-mcp",
-      "reasons": [
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
-        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation."
-      ],
-      "proposed_text": "google-analytics-mcp provides GA4 data to AI agents via schema discovery. Use server‑side aggregation to reduce data wrangling before feeding agents. https://github.com/surendranb/google-analytics-mcp",
-      "evidence_quote": "server‑side aggregation",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
-        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
-        "Supporting quotes cover only 56% of factual wording; narrow the claim or provide a closer primary-source quote"
-      ]
-    },
-    {
-      "candidate_id": "25df9fa68f72f18a",
-      "title": "Secure your app with network access rules in `shopify.app.toml`",
-      "reasons": [
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
-        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation."
-      ],
-      "proposed_text": "Shopify added a network_access section to shopify.app.toml. Declare allowed_navigation_hosts to silence external‑site warnings. https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml",
-      "evidence_quote": "allowed_navigation_hosts",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
-        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation."
+        "The factual opening bundles multiple features; narrow it to one capability."
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "a5e43b1572bfaf36",
-      "title": "paperclipai/paperclip",
-      "url": "https://github.com/paperclipai/paperclip",
+      "id": "176426a27e3a6963",
+      "title": "lemma-work/lemma-platform",
+      "url": "https://github.com/lemma-work/lemma-platform",
       "source": "GitHub Search",
       "primary_category": "ai_and_automation",
-      "priority_score": 67,
-      "hourly_adjusted_score": 86,
-      "stars_current": 108083,
-      "stars_delta_24h": 282,
-      "stars_delta_baseline_hours": 20.0,
-      "stars_growth_percent_24h": 0.26,
-      "trend_signal": "measured_star_growth",
-      "published_at": "2026-10-28T05:22:23+00:00",
+      "priority_score": 69,
+      "hourly_adjusted_score": 73,
+      "stars_current": 635,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "insufficient_history",
+      "published_at": "2026-10-28T06:17:08+00:00",
       "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "25df9fa68f72f18a",
-      "title": "Secure your app with network access rules in `shopify.app.toml`",
-      "url": "https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml",
+      "id": "c37165a31cd3fc39",
+      "title": "n8n-io/n8n",
+      "url": "https://github.com/n8n-io/n8n",
+      "source": "GitHub Search",
+      "primary_category": "ai_and_automation",
+      "priority_score": 69,
+      "hourly_adjusted_score": 73,
+      "stars_current": 208827,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "insufficient_history",
+      "published_at": "2026-10-28T06:18:11+00:00",
+      "days_old": 0.0,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "e16193c74cec9e6f",
+      "title": "Migrate to expiring offline access tokens before January 1, 2027",
+      "url": "https://shopify.dev/changelog/posts/migrate-to-expiring-offline-access-tokens-before-january-2027",
       "source": "Shopify Developer Changelog",
       "primary_category": "commerce_and_digital_products",
-      "priority_score": 78,
-      "hourly_adjusted_score": 78,
+      "priority_score": 72,
+      "hourly_adjusted_score": 72,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-27T16:00:00+00:00",
-      "days_old": 0.56,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "5d6e8dd379506cf6",
-      "title": "surendranb/google-analytics-mcp",
-      "url": "https://github.com/surendranb/google-analytics-mcp",
-      "source": "GitHub Search",
-      "primary_category": "data_and_growth",
-      "priority_score": 71,
-      "hourly_adjusted_score": 75,
-      "stars_current": 243,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "insufficient_history",
-      "published_at": "2026-10-28T05:18:42+00:00",
-      "days_old": 0.0,
+      "published_at": "2026-10-27T16:40:00+00:00",
+      "days_old": 0.57,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
@@ -460,9 +435,9 @@
   ],
   "automatic_repair": {
     "attempted": true,
-    "drafts_submitted": 3,
+    "drafts_submitted": 2,
     "repaired_local_passes": 0,
-    "repair_rejections": 3,
+    "repair_rejections": 2,
     "repair_error": null,
     "editorial_repair_attempted": false,
     "editorial_repair_drafts_submitted": 0,
