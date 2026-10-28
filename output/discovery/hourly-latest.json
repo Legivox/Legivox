@@ -1,38 +1,38 @@
 {
-  "generated_at_ist": "2026-10-28T17:51:36+05:30",
-  "run_at_ist": "2026-10-28T17:51:36+05:30",
+  "generated_at_ist": "2026-10-28T19:10:33+05:30",
+  "run_at_ist": "2026-10-28T19:10:33+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 297,
-  "eligible_candidate_count": 181,
+  "candidate_count_raw": 295,
+  "eligible_candidate_count": 185,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4790
+      "total_count": 4805
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1038
+      "total_count": 1039
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 357
+      "total_count": 358
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2901
+      "total_count": 2908
     },
     {
       "source": "GitHub Search · github-digital-product-tools",
@@ -60,14 +60,14 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2089
+      "total_count": 2095
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3332
+      "total_count": 3336
     },
     {
       "source": "GitHub Search · github-seller-operations",
@@ -88,12 +88,12 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 267
+      "total_count": 268
     },
     {
       "source": "Hacker News · hn-analytics-growth",
       "kind": "hacker_news",
-      "items_kept": 10,
+      "items_kept": 8,
       "status": "ok",
       "total_count": 10
     },
@@ -195,7 +195,7 @@
     {
       "source": "Product Hunt",
       "kind": "rss",
-      "items_kept": 39,
+      "items_kept": 38,
       "status": "ok"
     },
     {
@@ -259,143 +259,137 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-28T12:21:36+00:00",
+    "observed_at_utc": "2026-10-28T13:40:33+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 106,
-    "previously_tracked_repositories_refreshed": 94,
+    "repositories_seen_in_discovery": 107,
+    "previously_tracked_repositories_refreshed": 93,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
-    "repositories_with_20_to_36_hour_baseline": 18,
+    "repositories_with_20_to_36_hour_baseline": 16,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "2a6c94bfbcc4f868",
-      "title": "Show HN: Multi-platform remote-control for any harness",
-      "source_url": "https://github.com/tinybig-ai/jep",
-      "verified": false,
-      "final_url": null,
-      "http_status": null,
-      "reason": "Primary page title/content does not sufficiently match the candidate headline."
-    },
-    {
-      "candidate_id": "5113f4600cf59250",
-      "title": "chattermate/chattermate.chat",
-      "source_url": "https://github.com/chattermate/chattermate.chat",
+      "candidate_id": "347bfccdd934edf4",
+      "title": "Show HN: Pando, what to do with vibe coded apps at work",
+      "source_url": "https://github.com/trypando/pando",
       "verified": true,
-      "final_url": "https://github.com/chattermate/chattermate.chat",
+      "final_url": "https://github.com/trypando/pando",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "26795b8d8c6fd254",
-      "title": "spree/spree",
-      "source_url": "https://github.com/spree/spree",
+      "candidate_id": "f979d1bfbb7ea834",
+      "title": "Show HN: QuickRef – client-side developer tools",
+      "source_url": "https://quickref.io/",
       "verified": true,
-      "final_url": "https://github.com/spree/spree",
+      "final_url": "https://quickref.io/",
+      "http_status": 200,
+      "reason": ""
+    },
+    {
+      "candidate_id": "6adfbf8f6ccf1e05",
+      "title": "AI Discoverability, Page types, and more (September 2026)",
+      "source_url": "https://ahrefs.com/blog/new-features-september-2026/",
+      "verified": true,
+      "final_url": "https://ahrefs.com/blog/new-features-september-2026/",
       "http_status": 200,
       "reason": ""
     }
   ],
-  "rejected_primary_sources": [
-    {
-      "candidate_id": "2a6c94bfbcc4f868",
-      "title": "Show HN: Multi-platform remote-control for any harness",
-      "source": "Hacker News",
-      "url": "https://github.com/tinybig-ai/jep",
-      "reasons": [
-        "Primary page title/content does not sufficiently match the candidate headline."
-      ]
-    }
-  ],
+  "rejected_primary_sources": [],
   "daily_draft_cap": 16,
-  "daily_drafts_already_passed": 1,
-  "outcome": "dry_run_passed",
-  "decision_reason": "At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.",
-  "passing_drafts": [
-    {
-      "candidate_id": "5113f4600cf59250",
-      "title": "chattermate/chattermate.chat",
-      "source": "GitHub Search",
-      "source_kind": "github_repository",
-      "url": "https://github.com/chattermate/chattermate.chat",
-      "primary_source_verified": true,
-      "primary_source_title": "GitHub - chattermate/chattermate.chat: Open-source AI customer support platform — AI chatbot with human handoff, Shopify & Slack integrations, visual workflow builder. Self-hosted alternative to Intercom & Zendesk. Apache-2.0.",
-      "primary_source_final_url": "https://github.com/chattermate/chattermate.chat",
-      "primary_source_http_status": 200,
-      "category": "commerce_and_digital_products",
-      "priority_score": 70,
-      "hourly_adjusted_score": 64,
-      "post_text": "chattermate.chat offers AI chatbot with human handoff and Shopify integration. Test handoff flow by simulating a ticket that escalates to a human agent. https://github.com/chattermate/chattermate.chat",
-      "fact_sentence": "chattermate.chat offers AI chatbot with human handoff and Shopify integration.",
-      "format": "tool_discovery",
-      "audience": "developers",
-      "angle": "ecommerce",
-      "rationale": "The repository description explicitly lists human handoff and Shopify integration, and a practical test ensures the escalation path works.",
-      "evidence_quote": "GitHub - chattermate/chattermate.chat: Open-source AI customer support platform — AI chatbot with human handoff, Shopify & Slack integrations, visual workflow builder.",
-      "editorial_takeaway": "Test handoff flow by simulating a ticket that escalates to a human agent.",
-      "claim_evidence": [
-        {
-          "claim": "chattermate.chat offers AI chatbot with human handoff and Shopify integration.",
-          "quote": "GitHub - chattermate/chattermate.chat: Open-source AI customer support platform — AI chatbot with human handoff, Shopify & Slack integrations, visual workflow builder."
-        }
-      ],
-      "scores": {
-        "timeliness": 10,
-        "usefulness": 8,
-        "novelty": 6,
-        "evidence": 9,
-        "insight": 8
-      },
-      "editorial_score": 8.4,
-      "character_count": 200,
-      "status": "dry_run_passed_not_published",
-      "published_to_x": false,
-      "editorial_review": {
-        "clarity_score": 8,
-        "technical_coherence_score": 8,
-        "takeaway_value_score": 8,
-        "source_faithfulness_score": 8,
-        "originality_score": 8,
-        "reason": "Clear, technically coherent, source‑faithful, and adds a useful test suggestion.",
-        "passed": true
-      }
-    }
-  ],
+  "daily_drafts_already_passed": 2,
+  "outcome": "skip",
+  "decision_reason": "All generated drafts failed the local evidence/editorial checks; the hour was skipped.",
+  "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "2a6c94bfbcc4f868",
-      "title": "Show HN: Multi-platform remote-control for any harness",
-      "source": "Hacker News",
-      "url": "https://github.com/tinybig-ai/jep",
+      "candidate_id": "347bfccdd934edf4",
+      "title": "Show HN: Pando, what to do with vibe coded apps at work",
       "reasons": [
-        "Primary page title/content does not sufficiently match the candidate headline."
+        "Supporting quotes cover only 60% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ],
+      "proposed_text": "Pando is a platform that lets you deploy and share apps. Run a CI test that deploys to Pando and checks shared URL accessibility. https://github.com/trypando/pando",
+      "evidence_quote": "Deploy and share apps.",
+      "claim_evidence": [
+        {
+          "claim": "Pando is a platform that lets you deploy and share apps.",
+          "quote": "Deploy and share apps."
+        }
       ]
     },
     {
-      "candidate_id": "26795b8d8c6fd254",
-      "title": "spree/spree",
+      "candidate_id": "f979d1bfbb7ea834",
+      "title": "Show HN: QuickRef – client-side developer tools",
       "reasons": [
-        "A supporting quote does not share enough wording with its stated claim",
-        "Supporting quotes cover only 20% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Supporting quotes cover only 40% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "spree provides a self‑hosted DTC and B2B commerce platform with a Next.js storefront. Run the Next.js demo locally before deploying to production. https://github.com/spree/spree",
-      "evidence_quote": "production-ready Next.js storefront",
+      "proposed_text": "QuickRef offers 100% browser‑based developer tools with no login. Use QuickRef for local token decoding to avoid sending secrets to servers. https://quickref.io/",
+      "evidence_quote": "100% browser-based. No login.",
       "claim_evidence": [
         {
-          "claim": "The source says capability X",
-          "quote": "production-ready Next.js storefront"
+          "claim": "QuickRef offers 100% browser‑based developer tools with no login.",
+          "quote": "100% browser-based. No login."
         }
+      ]
+    },
+    {
+      "candidate_id": "6adfbf8f6ccf1e05",
+      "title": "AI Discoverability, Page types, and more (September 2026)",
+      "reasons": [
+        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation."
+      ],
+      "proposed_text": "Ahrefs added an AI Discoverability issue category in Site Audit. Run Site Audit to catch pages blocked from AI bots in robots.txt. https://ahrefs.com/blog/new-features-september-2026/",
+      "evidence_quote": "AI Discoverability is a new issue category in Site Audit.",
+      "claim_evidence": [
+        {
+          "claim": "Ahrefs added an AI Discoverability issue category in Site Audit.",
+          "quote": "AI Discoverability is a new issue category in Site Audit."
+        }
+      ]
+    },
+    {
+      "candidate_id": "f979d1bfbb7ea834",
+      "title": "Show HN: QuickRef – client-side developer tools",
+      "reasons": [
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
+        "No claim-by-claim supporting evidence was provided"
+      ],
+      "proposed_text": "QuickRef.io is 100% browser‑based with no login. Use QuickRef's QR code generator to download PNGs directly. https://quickref.io/",
+      "evidence_quote": "100% browser-based. No login.",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "Supporting quotes cover only 40% of factual wording; narrow the claim or provide a closer primary-source quote"
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "2a6c94bfbcc4f868",
-      "title": "Show HN: Multi-platform remote-control for any harness",
-      "url": "https://github.com/tinybig-ai/jep",
+      "id": "347bfccdd934edf4",
+      "title": "Show HN: Pando, what to do with vibe coded apps at work",
+      "url": "https://github.com/trypando/pando",
+      "source": "Hacker News",
+      "primary_category": "product_and_workflow_tools",
+      "priority_score": 74,
+      "hourly_adjusted_score": 76,
+      "stars_current": null,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-28T13:29:37+00:00",
+      "days_old": 0.01,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "f979d1bfbb7ea834",
+      "title": "Show HN: QuickRef – client-side developer tools",
+      "url": "https://quickref.io/",
       "source": "Hacker News",
       "primary_category": "product_and_workflow_tools",
       "priority_score": 64,
@@ -405,121 +399,54 @@
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-28T12:10:43+00:00",
-      "days_old": 0.01,
-      "primary_source_verified": false,
-      "primary_source_http_status": null,
-      "primary_source_reason": "Primary page title/content does not sufficiently match the candidate headline."
-    },
-    {
-      "id": "5113f4600cf59250",
-      "title": "chattermate/chattermate.chat",
-      "url": "https://github.com/chattermate/chattermate.chat",
-      "source": "GitHub Search",
-      "primary_category": "commerce_and_digital_products",
-      "priority_score": 70,
-      "hourly_adjusted_score": 64,
-      "stars_current": 147,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "insufficient_history",
-      "published_at": "2026-10-28T12:19:38+00:00",
+      "published_at": "2026-10-28T13:40:14+00:00",
       "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "26795b8d8c6fd254",
-      "title": "spree/spree",
-      "url": "https://github.com/spree/spree",
-      "source": "GitHub Search",
-      "primary_category": "commerce_and_digital_products",
-      "priority_score": 70,
-      "hourly_adjusted_score": 64,
-      "stars_current": 15786,
+      "id": "6adfbf8f6ccf1e05",
+      "title": "AI Discoverability, Page types, and more (September 2026)",
+      "url": "https://ahrefs.com/blog/new-features-september-2026/",
+      "source": "Ahrefs Blog",
+      "primary_category": "marketing_and_distribution",
+      "priority_score": 60,
+      "hourly_adjusted_score": 60,
+      "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
-      "trend_signal": "insufficient_history",
-      "published_at": "2026-10-28T12:19:51+00:00",
-      "days_old": 0.0,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-28T08:34:28+00:00",
+      "days_old": 0.21,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     }
   ],
   "automatic_repair": {
-    "attempted": false,
-    "drafts_submitted": 0,
+    "attempted": true,
+    "drafts_submitted": 1,
     "repaired_local_passes": 0,
-    "repair_rejections": 0,
+    "repair_rejections": 1,
     "repair_error": null,
     "editorial_repair_attempted": false,
     "editorial_repair_drafts_submitted": 0,
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 1,
-    "submitted_for_independent_review": 1,
-    "passed_independent_review": 1,
+    "locally_valid_drafts": 0,
+    "submitted_for_independent_review": 0,
+    "passed_independent_review": 0,
     "rejected_by_independent_review": 0,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
-  "recommended_draft": {
-    "candidate_id": "5113f4600cf59250",
-    "title": "chattermate/chattermate.chat",
-    "source": "GitHub Search",
-    "source_kind": "github_repository",
-    "url": "https://github.com/chattermate/chattermate.chat",
-    "primary_source_verified": true,
-    "primary_source_title": "GitHub - chattermate/chattermate.chat: Open-source AI customer support platform — AI chatbot with human handoff, Shopify & Slack integrations, visual workflow builder. Self-hosted alternative to Intercom & Zendesk. Apache-2.0.",
-    "primary_source_final_url": "https://github.com/chattermate/chattermate.chat",
-    "primary_source_http_status": 200,
-    "category": "commerce_and_digital_products",
-    "priority_score": 70,
-    "hourly_adjusted_score": 64,
-    "post_text": "chattermate.chat offers AI chatbot with human handoff and Shopify integration. Test handoff flow by simulating a ticket that escalates to a human agent. https://github.com/chattermate/chattermate.chat",
-    "fact_sentence": "chattermate.chat offers AI chatbot with human handoff and Shopify integration.",
-    "format": "tool_discovery",
-    "audience": "developers",
-    "angle": "ecommerce",
-    "rationale": "The repository description explicitly lists human handoff and Shopify integration, and a practical test ensures the escalation path works.",
-    "evidence_quote": "GitHub - chattermate/chattermate.chat: Open-source AI customer support platform — AI chatbot with human handoff, Shopify & Slack integrations, visual workflow builder.",
-    "editorial_takeaway": "Test handoff flow by simulating a ticket that escalates to a human agent.",
-    "claim_evidence": [
-      {
-        "claim": "chattermate.chat offers AI chatbot with human handoff and Shopify integration.",
-        "quote": "GitHub - chattermate/chattermate.chat: Open-source AI customer support platform — AI chatbot with human handoff, Shopify & Slack integrations, visual workflow builder."
-      }
-    ],
-    "scores": {
-      "timeliness": 10,
-      "usefulness": 8,
-      "novelty": 6,
-      "evidence": 9,
-      "insight": 8
-    },
-    "editorial_score": 8.4,
-    "character_count": 200,
-    "status": "dry_run_passed_not_published",
-    "published_to_x": false,
-    "editorial_review": {
-      "clarity_score": 8,
-      "technical_coherence_score": 8,
-      "takeaway_value_score": 8,
-      "source_faithfulness_score": 8,
-      "originality_score": 8,
-      "reason": "Clear, technically coherent, source‑faithful, and adds a useful test suggestion.",
-      "passed": true
-    }
-  },
   "state_summary": {
     "used_candidates_in_cooldown": 21,
-    "recently_attempted_candidates": 32,
+    "recently_attempted_candidates": 35,
     "recent_draft_passes_today": 2
   }
 }

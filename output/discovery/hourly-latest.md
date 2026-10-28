@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-28T17:51:36+05:30
+- Run time (IST): 2026-10-28T19:10:33+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 181
-- Independent editorial review: 1 draft(s) passed / 0 rejected
-- Drafts passing local checks: 1
-- Outcome: **dry_run_passed**
-- Decision reason: At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.
+- Candidate pool after freshness/diversity filters: 185
+- Independent editorial review: 0 draft(s) passed / 0 rejected
+- Drafts passing local checks: 0
+- Outcome: **skip**
+- Decision reason: All generated drafts failed the local evidence/editorial checks; the hour was skipped.
 
 ## Source health
 
@@ -25,7 +25,7 @@
 | GitHub Search · github-seller-operations | 10 | ok |
 | GitHub Search · github-shopify-commerce | 10 | ok |
 | GitHub Search · github-workflow-automation | 10 | ok |
-| Hacker News · hn-analytics-growth | 10 | ok |
+| Hacker News · hn-analytics-growth | 8 | ok |
 | Hacker News · hn-automation-api | 1 | ok |
 | Hacker News · hn-creator-business | 0 | ok |
 | Hacker News · hn-digital-downloads-templates | 0 | ok |
@@ -40,7 +40,7 @@
 | Ahrefs Blog | 6 | ok |
 | Console.dev | 12 | ok |
 | Indie Hackers (unofficial third-party feed) | 5 | ok |
-| Product Hunt | 39 | ok |
+| Product Hunt | 38 | ok |
 | Shopify Community | 30 | ok |
 | Shopify Developer Changelog | 18 | ok |
 | Stripe Blog | 3 | ok |
@@ -54,74 +54,61 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 106
-- Previously tracked repositories refreshed outside search results: 94
+- Repositories seen in this discovery run: 107
+- Previously tracked repositories refreshed outside search results: 93
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
-- Repositories with a 20–36 hour comparison baseline: 18
+- Repositories with a 20–36 hour comparison baseline: 16
 - First observations are baseline samples, not evidence of trending. Star velocity is reported only when a historical comparison exists.
 
 ## Primary-source verification
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| Show HN: Multi-platform remote-control for any harness | no | — | Primary page title/content does not sufficiently match the candidate headline. |
-| chattermate/chattermate.chat | yes | 200 | https://github.com/chattermate/chattermate.chat |
-| spree/spree | yes | 200 | https://github.com/spree/spree |
+| Show HN: Pando, what to do with vibe coded apps at work | yes | 200 | https://github.com/trypando/pando |
+| Show HN: QuickRef – client-side developer tools | yes | 200 | https://quickref.io/ |
+| AI Discoverability, Page types, and more (September 2026) | yes | 200 | https://ahrefs.com/blog/new-features-september-2026/ |
 
 ## Selected draft candidates
 
-### Draft option 1: chattermate/chattermate.chat
-
-- Category: commerce_and_digital_products
-- Source: GitHub Search
-- Format: tool_discovery
-- Editorial score: 8.4/10
-- Model scores: timeliness 10/10, usefulness 8/10, novelty 6/10, evidence 9/10, insight 8/10
-- Independent editor scores: {"clarity_score": 8, "technical_coherence_score": 8, "takeaway_value_score": 8, "source_faithfulness_score": 8, "originality_score": 8, "reason": "Clear, technically coherent, source‑faithful, and adds a useful test suggestion.", "passed": true}
-- Live primary page: https://github.com/chattermate/chattermate.chat (HTTP 200)
-- Exact source evidence: “GitHub - chattermate/chattermate.chat: Open-source AI customer support platform — AI chatbot with human handoff, Shopify & Slack integrations, visual workflow builder.”
-- Why this angle: The repository description explicitly lists human handoff and Shopify integration, and a practical test ensures the escalation path works.
-- Editorial takeaway: Test handoff flow by simulating a ticket that escalates to a human agent.
-- Source: https://github.com/chattermate/chattermate.chat
-
-**Claim-by-claim source quotes:**
-
-- chattermate.chat offers AI chatbot with human handoff and Shopify integration. ← “GitHub - chattermate/chattermate.chat: Open-source AI customer support platform — AI chatbot with human handoff, Shopify & Slack integrations, visual workflow builder.”
-
-Proposed post (not published):
-
-> chattermate.chat offers AI chatbot with human handoff and Shopify integration. Test handoff flow by simulating a ticket that escalates to a human agent. https://github.com/chattermate/chattermate.chat
-
-- Length: 200/280 raw characters
-- Automated gate: passed live source, evidence, originality, URL and length checks; live publishing is disabled in dry-run mode.
+No candidate produced a draft that passed every local check. Skipping is intentional.
 
 ## Automatic repair attempt
 
-- Attempted: no
-- Repaired drafts submitted: 0
+- Attempted: yes
+- Repaired drafts submitted: 1
 - Repaired drafts that passed local validation: 0
-- Repaired drafts rejected: 0
+- Repaired drafts rejected: 1
 - Repair error: none
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
-- Show HN: Multi-platform remote-control for any harness: Primary page title/content does not sufficiently match the candidate headline.
-- spree/spree: A supporting quote does not share enough wording with its stated claim; Supporting quotes cover only 20% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: spree provides a self‑hosted DTC and B2B commerce platform with a Next.js storefront. Run the Next.js demo locally before deploying to production. https://github.com/spree/spree
-  - Model evidence quote: “production-ready Next.js storefront”
-  - Claim support: The source says capability X ← “production-ready Next.js storefront”
+- Show HN: Pando, what to do with vibe coded apps at work: Supporting quotes cover only 60% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: Pando is a platform that lets you deploy and share apps. Run a CI test that deploys to Pando and checks shared URL accessibility. https://github.com/trypando/pando
+  - Model evidence quote: “Deploy and share apps.”
+  - Claim support: Pando is a platform that lets you deploy and share apps. ← “Deploy and share apps.”
+- Show HN: QuickRef – client-side developer tools: Supporting quotes cover only 40% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: QuickRef offers 100% browser‑based developer tools with no login. Use QuickRef for local token decoding to avoid sending secrets to servers. https://quickref.io/
+  - Model evidence quote: “100% browser-based. No login.”
+  - Claim support: QuickRef offers 100% browser‑based developer tools with no login. ← “100% browser-based. No login.”
+- AI Discoverability, Page types, and more (September 2026): Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.
+  - Rejected text: Ahrefs added an AI Discoverability issue category in Site Audit. Run Site Audit to catch pages blocked from AI bots in robots.txt. https://ahrefs.com/blog/new-features-september-2026/
+  - Model evidence quote: “AI Discoverability is a new issue category in Site Audit.”
+  - Claim support: Ahrefs added an AI Discoverability issue category in Site Audit. ← “AI Discoverability is a new issue category in Site Audit.”
+- Show HN: QuickRef – client-side developer tools: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; No claim-by-claim supporting evidence was provided
+  - Rejected text: QuickRef.io is 100% browser‑based with no login. Use QuickRef's QR code generator to download PNGs directly. https://quickref.io/
+  - Model evidence quote: “100% browser-based. No login.”
 
 ## Top discovery candidates considered
 
-- Show HN: Multi-platform remote-control for any harness | Hacker News | product_and_workflow_tools | raw 64, adjusted 66 | https://github.com/tinybig-ai/jep
-- chattermate/chattermate.chat | GitHub Search | commerce_and_digital_products | raw 70, adjusted 64 | current stars 147 | GitHub star trend: building baseline | https://github.com/chattermate/chattermate.chat
-- spree/spree | GitHub Search | commerce_and_digital_products | raw 70, adjusted 64 | current stars 15786 | GitHub star trend: building baseline | https://github.com/spree/spree
+- Show HN: Pando, what to do with vibe coded apps at work | Hacker News | product_and_workflow_tools | raw 74, adjusted 76 | https://github.com/trypando/pando
+- Show HN: QuickRef – client-side developer tools | Hacker News | product_and_workflow_tools | raw 64, adjusted 66 | https://quickref.io/
+- AI Discoverability, Page types, and more (September 2026) | Ahrefs Blog | marketing_and_distribution | raw 60, adjusted 60 | https://ahrefs.com/blog/new-features-september-2026/
 
 ## Safety and interpretation
 
-- At least one draft passed the automated quality gates; this dry-run workflow itself never publishes to X.
+- This run did not produce a publishable draft; no post was published to X.
 - Model scores are editorial estimates; they are not verified popularity or market demand.
 - Candidate content and metadata are untrusted input. Factual copy must be supported by the fetched primary page.
 - A skip can mean no fresh candidates, a daily diversity/cap limit, a model/API problem or weak drafts. Check the reason above.
