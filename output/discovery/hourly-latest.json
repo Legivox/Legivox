@@ -1,24 +1,24 @@
 {
-  "generated_at_ist": "2026-10-29T17:52:18+05:30",
-  "run_at_ist": "2026-10-29T17:52:18+05:30",
+  "generated_at_ist": "2026-10-29T19:13:09+05:30",
+  "run_at_ist": "2026-10-29T19:13:09+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 319,
-  "eligible_candidate_count": 212,
+  "candidate_count_raw": 314,
+  "eligible_candidate_count": 205,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4831
+      "total_count": 4839
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1056
+      "total_count": 1062
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
@@ -32,7 +32,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2922
+      "total_count": 2932
     },
     {
       "source": "GitHub Search · github-digital-product-tools",
@@ -46,35 +46,35 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 425
+      "total_count": 427
     },
     {
       "source": "GitHub Search · github-marketing-distribution",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 230
+      "total_count": 212
     },
     {
       "source": "GitHub Search · github-mcp-servers",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2114
+      "total_count": 2116
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3372
+      "total_count": 3380
     },
     {
       "source": "GitHub Search · github-seller-operations",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 357
+      "total_count": 358
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
@@ -116,7 +116,7 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 7
+      "total_count": 6
     },
     {
       "source": "Hacker News · hn-digital-products",
@@ -163,7 +163,7 @@
     {
       "source": "Hacker News · hn-shopify",
       "kind": "hacker_news",
-      "items_kept": 10,
+      "items_kept": 9,
       "status": "ok",
       "total_count": 10
     },
@@ -177,7 +177,7 @@
     {
       "source": "Ahrefs Blog",
       "kind": "rss",
-      "items_kept": 6,
+      "items_kept": 7,
       "status": "ok"
     },
     {
@@ -195,7 +195,7 @@
     {
       "source": "Product Hunt",
       "kind": "rss",
-      "items_kept": 41,
+      "items_kept": 40,
       "status": "ok"
     },
     {
@@ -259,10 +259,10 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-29T12:22:18+00:00",
+    "observed_at_utc": "2026-10-29T13:43:09+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 111,
-    "previously_tracked_repositories_refreshed": 89,
+    "repositories_seen_in_discovery": 106,
+    "previously_tracked_repositories_refreshed": 94,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
@@ -272,252 +272,217 @@
   },
   "primary_source_checks": [
     {
-      "candidate_id": "3dc97aed989cf3fe",
-      "title": "Show HN: Google translate replacement for language learners",
-      "source_url": "https://manalect.com/",
+      "candidate_id": "795f3555103d4faf",
+      "title": "Show HN: MyPrintables, a simple, small, and fast 3D assets manager",
+      "source_url": "https://news.ycombinator.com/item?id=50288599",
       "verified": true,
-      "final_url": "https://manalect.com/",
+      "final_url": "https://news.ycombinator.com/item?id=50288599",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "ba5e67e9957b8564",
-      "title": "Show HN: Skipper, a Ship's Logbook App for iPhone and iPad",
-      "source_url": "https://skipper.alpennec.com/",
+      "candidate_id": "f388121f4c7d6f70",
+      "title": "Show HN: A tool to capture eye blinks, a fatigue checker for eyes",
+      "source_url": "https://blinkwell.netlify.app/",
       "verified": true,
-      "final_url": "https://skipper.alpennec.com/",
+      "final_url": "https://blinkwell.netlify.app/",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "3bb0a0d47f49f0e4",
-      "title": "App Events: Send events from Checkout and Customer Account UI extensions",
-      "source_url": "https://shopify.dev/changelog/app-events-send-events-from-checkout-and-customer-account-ui-extensions",
+      "candidate_id": "0be4354dc15b120f",
+      "title": "kychee-com/run402",
+      "source_url": "https://github.com/kychee-com/run402",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/app-events-send-events-from-checkout-and-customer-account-ui-extensions",
+      "final_url": "https://github.com/kychee-com/run402",
       "http_status": 200,
       "reason": ""
     }
   ],
   "rejected_primary_sources": [],
   "daily_draft_cap": 16,
-  "daily_drafts_already_passed": 2,
-  "outcome": "dry_run_passed",
-  "decision_reason": "At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.",
-  "passing_drafts": [
-    {
-      "candidate_id": "3bb0a0d47f49f0e4",
-      "title": "App Events: Send events from Checkout and Customer Account UI extensions",
-      "source": "Shopify Developer Changelog",
-      "source_kind": "official_changelog",
-      "url": "https://shopify.dev/changelog/posts/app-events-send-events-from-checkout-and-customer-account-ui-extensions",
-      "primary_source_verified": true,
-      "primary_source_title": "",
-      "primary_source_final_url": "https://shopify.dev/changelog/posts/app-events-send-events-from-checkout-and-customer-account-ui-extensions",
-      "primary_source_http_status": 200,
-      "category": "commerce_and_digital_products",
-      "priority_score": 78,
-      "hourly_adjusted_score": 60,
-      "post_text": "Shopify UI extensions can emit App Events via shopify.appEvents.emit() without a backend. Add a unit test that the emitted event payload matches the schema before sending. https://shopify.dev/changelog/posts/app-events-send-events-from-checkout-and-customer-account-ui-extensions",
-      "fact_sentence": "Shopify UI extensions can emit App Events via shopify.appEvents.emit() without a backend.",
-      "format": "practical_workflow",
-      "audience": "developers",
-      "angle": "API",
-      "rationale": "The changelog explicitly states the new emit API and its independence from a backend.",
-      "evidence_quote": "27-01`, Checkout and Customer Account UI extensions can send [App Events](https://shopify.dev/docs/apps/build/app-events) to Shopify with `shopify.appEvents.emit()`.",
-      "editorial_takeaway": "Add a unit test that the emitted event payload matches the schema before sending.",
-      "claim_evidence": [
-        {
-          "claim": "Shopify UI extensions can emit App Events via shopify.appEvents.emit() without a backend.",
-          "quote": "27-01`, Checkout and Customer Account UI extensions can send [App Events](https://shopify.dev/docs/apps/build/app-events) to Shopify with `shopify.appEvents.emit()`."
-        }
-      ],
-      "scores": {
-        "timeliness": 9,
-        "usefulness": 8,
-        "novelty": 7,
-        "evidence": 9,
-        "insight": 8
-      },
-      "editorial_score": 8.25,
-      "character_count": 279,
-      "status": "dry_run_passed_not_published",
-      "published_to_x": false,
-      "editorial_review": {
-        "clarity_score": 8,
-        "technical_coherence_score": 8,
-        "takeaway_value_score": 8,
-        "source_faithfulness_score": 8,
-        "originality_score": 8,
-        "reason": "Clear, technically accurate, source-backed, and adds a useful unit‑testing suggestion.",
-        "passed": true
-      }
-    }
-  ],
+  "daily_drafts_already_passed": 3,
+  "outcome": "skip",
+  "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
+  "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "3dc97aed989cf3fe",
-      "title": "Show HN: Google translate replacement for language learners",
+      "candidate_id": "795f3555103d4faf",
+      "title": "Show HN: MyPrintables, a simple, small, and fast 3D assets manager",
       "reasons": [
-        "A supporting quote does not share enough wording with its stated claim",
-        "Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Primary-source evidence quote is missing or absent from the live page (after presentation normalisation)",
+        "A factual claim lacks a quote present in the live primary-source page",
+        "Supporting quotes cover only 12% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "Manalect lets you translate words and immediately review them in your browser. Test that the review interval matches your spaced repetition schedule. https://manalect.com/",
-      "evidence_quote": "Stop forgetting the words you translate. Free to start in your browser, no account needed.",
+      "proposed_text": "MyPrintables is a self‑hosted 3D model library that ships as a single <30 MB Go binary. Run it on a NAS to keep models versioned; verify migration scripts before first deploy. https://news.ycombinator.com/item?id=50288599",
+      "evidence_quote": "One Go binary embeds the API, React SPA, migrations, and the administrative CLI. It is pretty small, even with docker image is <30MB.",
       "claim_evidence": [
         {
-          "claim": "Manalect lets you translate words and immediately review them in your browser.",
-          "quote": "Stop forgetting the words you translate. Free to start in your browser, no account needed."
+          "claim": "The source says MyPrintables ships as a single <30 MB Go binary",
+          "quote": "One Go binary embeds the API, React SPA, migrations, and the administrative CLI. It is pretty small, even with docker image is <30MB."
         }
       ]
     },
     {
-      "candidate_id": "ba5e67e9957b8564",
-      "title": "Show HN: Skipper, a Ship's Logbook App for iPhone and iPad",
+      "candidate_id": "f388121f4c7d6f70",
+      "title": "Show HN: A tool to capture eye blinks, a fatigue checker for eyes",
       "reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
         "A supporting quote does not share enough wording with its stated claim",
-        "Supporting quotes cover only 30% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Supporting quotes cover only 27% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "Skipper auto‑starts a trip when the boat leaves the berth, recording GPS, weather and crew. Verify that the app correctly detects the initial position before starting a log. https://skipper.alpennec.com/",
-      "evidence_quote": "Skipper notices the boat has moved and starts recording the track on its own.",
+      "proposed_text": "blinkwell captures 60‑second webcam windows every ~10 min to compute a fatigue score on‑device. Schedule a daily check to confirm the 10‑min interval; log the score to a file for trend analysis. https://blinkwell.netlify.app/",
+      "evidence_quote": "Periodic 60-second camera windows analyze your blinks and eyelids on-device, then nudge you to break.",
       "claim_evidence": [
         {
-          "claim": "Skipper auto‑starts a trip when the boat leaves the berth, recording GPS, weather and crew.",
-          "quote": "Skipper notices the boat has moved and starts recording the track on its own."
+          "claim": "The source says blinkwell uses 60‑second camera windows on‑device",
+          "quote": "Periodic 60-second camera windows analyze your blinks and eyelids on-device, then nudge you to break."
         }
+      ]
+    },
+    {
+      "candidate_id": "0be4354dc15b120f",
+      "title": "kychee-com/run402",
+      "reasons": [
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Editorial takeaway is too long; keep the analysis concrete and concise."
+      ],
+      "proposed_text": "run402 offers a full‑stack backend for AI agents with Postgres, auth, storage, and serverless functions. Use the TypeScript SDK to prototype an agent; test auth flow with a mock user before deploying. https://github.com/kychee-com/run402",
+      "evidence_quote": "Full-stack backend infrastructure for AI agents: Postgres, auth, storage, serverless functions and atomic deploys.",
+      "claim_evidence": [
+        {
+          "claim": "The source says run402 provides Postgres, auth, storage, and serverless functions",
+          "quote": "Full-stack backend infrastructure for AI agents: Postgres, auth, storage, serverless functions and atomic deploys."
+        }
+      ]
+    },
+    {
+      "candidate_id": "795f3555103d4faf",
+      "title": "Show HN: MyPrintables, a simple, small, and fast 3D assets manager",
+      "reasons": [
+        "Primary-source evidence quote is missing or absent from the live page (after presentation normalisation)",
+        "No claim-by-claim supporting evidence was provided",
+        "Factual sentence includes terms absent from the source title/summary: ship, single"
+      ],
+      "proposed_text": "MyPrintables ships as a single <30 MB Go binary. Verify migration scripts before first deploy to avoid runtime errors. https://news.ycombinator.com/item?id=50288599",
+      "evidence_quote": "One Go binary embeds the API, React SPA, migrations, and the administrative CLI. It is pretty small, even with docker image is <30MB.",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "Primary-source evidence quote is missing or absent from the live page (after presentation normalisation)",
+        "A factual claim lacks a quote present in the live primary-source page",
+        "Supporting quotes cover only 12% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ]
+    },
+    {
+      "candidate_id": "0be4354dc15b120f",
+      "title": "kychee-com/run402",
+      "proposed_text": "run402 provides Postgres as a backend. Test the Postgres connection string before deploying an agent. https://github.com/kychee-com/run402",
+      "reasons": [
+        "Post is clear and factually supported, but the takeaway is generic and adds no new perspective beyond the source."
+      ],
+      "editorial_review": {
+        "clarity_score": 8,
+        "technical_coherence_score": 8,
+        "takeaway_value_score": 7,
+        "source_faithfulness_score": 8,
+        "originality_score": 5
+      }
+    },
+    {
+      "candidate_id": "0be4354dc15b120f",
+      "title": "kychee-com/run402",
+      "reasons": [
+        "Editorial takeaway is too long; keep the analysis concrete and concise."
+      ],
+      "proposed_text": "run402 offers a Postgres backend for AI agents. Validate the Postgres connection string before deploying an agent to prevent runtime failures. https://github.com/kychee-com/run402",
+      "evidence_quote": "Full-stack backend infrastructure for AI agents: Postgres, auth, storage, serverless functions and atomic deploys.",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "Post is clear and factually supported, but the takeaway is generic and adds no new perspective beyond the source."
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "3dc97aed989cf3fe",
-      "title": "Show HN: Google translate replacement for language learners",
-      "url": "https://manalect.com/",
+      "id": "795f3555103d4faf",
+      "title": "Show HN: MyPrintables, a simple, small, and fast 3D assets manager",
+      "url": "https://news.ycombinator.com/item?id=50288599",
       "source": "Hacker News",
       "primary_category": "product_and_workflow_tools",
-      "priority_score": 62,
-      "hourly_adjusted_score": 64,
+      "priority_score": 73,
+      "hourly_adjusted_score": 73,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-29T11:16:08+00:00",
-      "days_old": 0.05,
+      "published_at": "2026-10-29T13:20:43+00:00",
+      "days_old": 0.02,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "ba5e67e9957b8564",
-      "title": "Show HN: Skipper, a Ship's Logbook App for iPhone and iPad",
-      "url": "https://skipper.alpennec.com/",
+      "id": "f388121f4c7d6f70",
+      "title": "Show HN: A tool to capture eye blinks, a fatigue checker for eyes",
+      "url": "https://blinkwell.netlify.app/",
       "source": "Hacker News",
       "primary_category": "product_and_workflow_tools",
-      "priority_score": 59,
-      "hourly_adjusted_score": 61,
+      "priority_score": 67,
+      "hourly_adjusted_score": 69,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-29T11:11:55+00:00",
-      "days_old": 0.05,
+      "published_at": "2026-10-29T13:05:51+00:00",
+      "days_old": 0.03,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "3bb0a0d47f49f0e4",
-      "title": "App Events: Send events from Checkout and Customer Account UI extensions",
-      "url": "https://shopify.dev/changelog/posts/app-events-send-events-from-checkout-and-customer-account-ui-extensions",
-      "source": "Shopify Developer Changelog",
-      "primary_category": "commerce_and_digital_products",
-      "priority_score": 78,
-      "hourly_adjusted_score": 60,
-      "stars_current": null,
+      "id": "0be4354dc15b120f",
+      "title": "kychee-com/run402",
+      "url": "https://github.com/kychee-com/run402",
+      "source": "GitHub Search",
+      "primary_category": "developer_tools",
+      "priority_score": 68,
+      "hourly_adjusted_score": 62,
+      "stars_current": 24,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-28T15:50:00+00:00",
-      "days_old": 0.86,
+      "trend_signal": "insufficient_history",
+      "published_at": "2026-10-29T13:42:43+00:00",
+      "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     }
   ],
   "automatic_repair": {
-    "attempted": false,
-    "drafts_submitted": 0,
-    "repaired_local_passes": 0,
-    "repair_rejections": 0,
+    "attempted": true,
+    "drafts_submitted": 3,
+    "repaired_local_passes": 1,
+    "repair_rejections": 2,
     "repair_error": null,
-    "editorial_repair_attempted": false,
-    "editorial_repair_drafts_submitted": 0,
+    "editorial_repair_attempted": true,
+    "editorial_repair_drafts_submitted": 1,
     "editorial_repair_error": null
   },
   "editorial_review": {
     "locally_valid_drafts": 1,
     "submitted_for_independent_review": 1,
-    "passed_independent_review": 1,
-    "rejected_by_independent_review": 0,
+    "passed_independent_review": 0,
+    "rejected_by_independent_review": 1,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
-  "recommended_draft": {
-    "candidate_id": "3bb0a0d47f49f0e4",
-    "title": "App Events: Send events from Checkout and Customer Account UI extensions",
-    "source": "Shopify Developer Changelog",
-    "source_kind": "official_changelog",
-    "url": "https://shopify.dev/changelog/posts/app-events-send-events-from-checkout-and-customer-account-ui-extensions",
-    "primary_source_verified": true,
-    "primary_source_title": "",
-    "primary_source_final_url": "https://shopify.dev/changelog/posts/app-events-send-events-from-checkout-and-customer-account-ui-extensions",
-    "primary_source_http_status": 200,
-    "category": "commerce_and_digital_products",
-    "priority_score": 78,
-    "hourly_adjusted_score": 60,
-    "post_text": "Shopify UI extensions can emit App Events via shopify.appEvents.emit() without a backend. Add a unit test that the emitted event payload matches the schema before sending. https://shopify.dev/changelog/posts/app-events-send-events-from-checkout-and-customer-account-ui-extensions",
-    "fact_sentence": "Shopify UI extensions can emit App Events via shopify.appEvents.emit() without a backend.",
-    "format": "practical_workflow",
-    "audience": "developers",
-    "angle": "API",
-    "rationale": "The changelog explicitly states the new emit API and its independence from a backend.",
-    "evidence_quote": "27-01`, Checkout and Customer Account UI extensions can send [App Events](https://shopify.dev/docs/apps/build/app-events) to Shopify with `shopify.appEvents.emit()`.",
-    "editorial_takeaway": "Add a unit test that the emitted event payload matches the schema before sending.",
-    "claim_evidence": [
-      {
-        "claim": "Shopify UI extensions can emit App Events via shopify.appEvents.emit() without a backend.",
-        "quote": "27-01`, Checkout and Customer Account UI extensions can send [App Events](https://shopify.dev/docs/apps/build/app-events) to Shopify with `shopify.appEvents.emit()`."
-      }
-    ],
-    "scores": {
-      "timeliness": 9,
-      "usefulness": 8,
-      "novelty": 7,
-      "evidence": 9,
-      "insight": 8
-    },
-    "editorial_score": 8.25,
-    "character_count": 279,
-    "status": "dry_run_passed_not_published",
-    "published_to_x": false,
-    "editorial_review": {
-      "clarity_score": 8,
-      "technical_coherence_score": 8,
-      "takeaway_value_score": 8,
-      "source_faithfulness_score": 8,
-      "originality_score": 8,
-      "reason": "Clear, technically accurate, source-backed, and adds a useful unit‑testing suggestion.",
-      "passed": true
-    }
-  },
   "state_summary": {
     "used_candidates_in_cooldown": 25,
-    "recently_attempted_candidates": 29,
+    "recently_attempted_candidates": 32,
     "recent_draft_passes_today": 3
   }
 }
