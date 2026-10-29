@@ -1,38 +1,38 @@
 {
-  "generated_at_ist": "2026-10-29T14:03:57+05:30",
-  "run_at_ist": "2026-10-29T14:03:57+05:30",
+  "generated_at_ist": "2026-10-29T15:02:52+05:30",
+  "run_at_ist": "2026-10-29T15:02:52+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 322,
-  "eligible_candidate_count": 220,
+  "candidate_count_raw": 314,
+  "eligible_candidate_count": 212,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4797
+      "total_count": 4801
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1041
+      "total_count": 1044
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 361
+      "total_count": 363
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2897
+      "total_count": 2899
     },
     {
       "source": "GitHub Search · github-digital-product-tools",
@@ -46,28 +46,28 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 415
+      "total_count": 417
     },
     {
       "source": "GitHub Search · github-marketing-distribution",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 223
+      "total_count": 224
     },
     {
       "source": "GitHub Search · github-mcp-servers",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2105
+      "total_count": 2107
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3344
+      "total_count": 3353
     },
     {
       "source": "GitHub Search · github-seller-operations",
@@ -81,14 +81,14 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 132
+      "total_count": 134
     },
     {
       "source": "GitHub Search · github-workflow-automation",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 269
+      "total_count": 268
     },
     {
       "source": "Hacker News · hn-analytics-growth",
@@ -158,7 +158,7 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 10
+      "total_count": 9
     },
     {
       "source": "Hacker News · hn-shopify",
@@ -195,7 +195,7 @@
     {
       "source": "Product Hunt",
       "kind": "rss",
-      "items_kept": 45,
+      "items_kept": 43,
       "status": "ok"
     },
     {
@@ -227,7 +227,7 @@
       "kind": "wordpress_plugin",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2010
+      "total_count": 2011
     },
     {
       "source": "WordPress Plugin Directory · wp-ecommerce",
@@ -259,10 +259,10 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-29T08:33:57+00:00",
+    "observed_at_utc": "2026-10-29T09:32:52+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 112,
-    "previously_tracked_repositories_refreshed": 88,
+    "repositories_seen_in_discovery": 107,
+    "previously_tracked_repositories_refreshed": 93,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
@@ -272,29 +272,29 @@
   },
   "primary_source_checks": [
     {
-      "candidate_id": "fbfdec28cfffc04c",
-      "title": "PostHog/posthog",
-      "source_url": "https://github.com/PostHog/posthog",
+      "candidate_id": "b0371d8195b41df4",
+      "title": "IamRamgarhia/All-In-One-Free-SEO-Tool",
+      "source_url": "https://github.com/IamRamgarhia/All-In-One-Free-SEO-Tool",
       "verified": true,
-      "final_url": "https://github.com/PostHog/posthog",
+      "final_url": "https://github.com/IamRamgarhia/All-In-One-Free-SEO-Tool",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "a1dbde18ac15df21",
-      "title": "Tool: Namespace Devbox",
-      "source_url": "https://namespace.so/?ref=console.dev",
+      "candidate_id": "d44dc6a912a5de1f",
+      "title": "Breaking changes in third-party APIs are turning into a full-time job",
+      "source_url": "https://news.ycombinator.com/item?id=50273438",
       "verified": true,
-      "final_url": "https://namespace.so/?ref=console.dev",
+      "final_url": "https://news.ycombinator.com/item?id=50273438",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "a5e43b1572bfaf36",
-      "title": "paperclipai/paperclip",
-      "source_url": "https://github.com/paperclipai/paperclip",
+      "candidate_id": "f6b4870412a7c624",
+      "title": "Tool: Atuin Threads",
+      "source_url": "https://blog.atuin.sh/threads-agent-sessions/?ref=console.dev",
       "verified": true,
-      "final_url": "https://github.com/paperclipai/paperclip",
+      "final_url": "https://blog.atuin.sh/threads-agent-sessions/?ref=console.dev",
       "http_status": 200,
       "reason": ""
     }
@@ -307,164 +307,123 @@
   "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "fbfdec28cfffc04c",
-      "title": "PostHog/posthog",
+      "candidate_id": "b0371d8195b41df4",
+      "title": "IamRamgarhia/All-In-One-Free-SEO-Tool",
       "reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability."
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Supporting quotes cover only 62% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "PostHog offers AI observability, analytics, session replay, flags, experiments, error tracking, and logs. Run session replay tests before deploying new UI changes to catch regressions. https://github.com/PostHog/posthog",
-      "evidence_quote": "PostHog is the leading platform for building self-driving products. Our developer tools – AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more – capture all the context agents need to diagnose problems, uncover opportunities, and ship fixes.",
+      "proposed_text": "All-In-One-Free-SEO-Tool offers 99 SEO tools including site audits and rank tracking. Run a site audit before launching new pages to catch crawl errors. https://github.com/IamRamgarhia/All-In-One-Free-SEO-Tool",
+      "evidence_quote": "99 tools: site audits, rank tracking, keyword research, AI search visibility (ChatGPT, Perplexity, Gemini, AI Overviews), content briefs, backlinks, local SEO, white-label reports, and an agent that applies fixes.",
       "claim_evidence": [
         {
-          "claim": "PostHog offers AI observability, analytics, session replay, flags, experiments, error tracking, and logs.",
-          "quote": "PostHog is the leading platform for building self-driving products. Our developer tools – AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more – capture all the context agents need to diagnose problems, uncover opportunities, and ship fixes."
+          "claim": "All-In-One-Free-SEO-Tool offers 99 SEO tools including site audits and rank tracking.",
+          "quote": "99 tools: site audits, rank tracking, keyword research, AI search visibility (ChatGPT, Perplexity, Gemini, AI Overviews), content briefs, backlinks, local SEO, white-label reports, and an agent that applies fixes."
         }
       ]
     },
     {
-      "candidate_id": "a1dbde18ac15df21",
-      "title": "Tool: Namespace Devbox",
+      "candidate_id": null,
+      "title": "Unmapped model draft",
+      "proposed_text": "",
       "reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability.",
-        "Fact sentence is too long; narrow it to one source-backed capability.",
-        "Editorial takeaway is not specific enough to this candidate's technical/product details.",
-        "A supporting quote does not share enough wording with its stated claim",
-        "Supporting quotes cover only 31% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Model omitted a valid candidate ID and no exact verified source URL matched."
+      ]
+    },
+    {
+      "candidate_id": "d44dc6a912a5de1f",
+      "title": "Breaking changes in third-party APIs are turning into a full-time job",
+      "reasons": [
+        "Supporting quotes cover only 56% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "Namespace Devbox provides cloud dev environments with SSH, RDP, and persistent services across macOS, Windows, and Linux. Validate SSH key rotation in Devbox before sharing workspaces to avoid credential leaks. https://namespace.so/?ref=console.dev",
-      "evidence_quote": "Cloud agents on Devboxes, fast GitHub Actions runners, and remote execution for Bazel on Linux, macOS, and Windows. The developer platform for agent scale.",
+      "proposed_text": "Okapi opens pull requests to keep connectors up to date when vendors change APIs. Set up CI to run Okapi PRs nightly to catch breaking changes early. https://news.ycombinator.com/item?id=50273438",
+      "evidence_quote": "Okapi opens pull requests that keep those connections up to date.",
       "claim_evidence": [
         {
-          "claim": "Namespace Devbox provides cloud dev environments with SSH, RDP, and persistent services across macOS, Windows, and Linux.",
-          "quote": "Cloud agents on Devboxes, fast GitHub Actions runners, and remote execution for Bazel on Linux, macOS, and Windows. The developer platform for agent scale."
+          "claim": "Okapi opens pull requests to keep connectors up to date when vendors change APIs.",
+          "quote": "Okapi opens pull requests that keep those connections up to date."
         }
       ]
     },
     {
-      "candidate_id": "a5e43b1572bfaf36",
-      "title": "paperclipai/paperclip",
+      "candidate_id": null,
+      "title": "Unmapped model draft",
+      "proposed_text": "",
       "reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability.",
-        "Fact sentence is too long; narrow it to one source-backed capability.",
-        "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "A supporting quote does not share enough wording with its stated claim",
-        "Supporting quotes cover only 43% of factual wording; narrow the claim or provide a closer primary-source quote"
-      ],
-      "proposed_text": "Paperclip is an open‑source app for orchestrating AI agents, supporting skills, workflows, and multi‑agent projects. Test agent skill isolation by running conflicting skills in parallel to ensure no state bleed. https://github.com/paperclipai/paperclip",
-      "evidence_quote": "The open‑source app everyone uses to manage agents at work paperclip.ing",
-      "claim_evidence": [
-        {
-          "claim": "Paperclip is an open‑source app for orchestrating AI agents, supporting skills, workflows, and multi‑agent projects.",
-          "quote": "The open‑source app everyone uses to manage agents at work paperclip.ing"
-        }
+        "Model omitted a valid candidate ID and no exact verified source URL matched."
       ]
     },
     {
-      "candidate_id": "a1dbde18ac15df21",
-      "title": "Tool: Namespace Devbox",
+      "candidate_id": "f6b4870412a7c624",
+      "title": "Tool: Atuin Threads",
       "reasons": [
-        "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "No claim-by-claim supporting evidence was provided",
-        "Supporting quotes cover only 38% of factual wording; narrow the claim or provide a closer primary-source quote"
-      ],
-      "proposed_text": "Namespace Devbox offers remote desktop via RDP on Windows instances. When provisioning a Windows Devbox, enable RDP to allow remote desktop access for debugging and GUI testing. https://namespace.so/?ref=console.dev",
-      "evidence_quote": "Access Remote desktop over RDP",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability.",
-        "Fact sentence is too long; narrow it to one source-backed capability.",
-        "Editorial takeaway is not specific enough to this candidate's technical/product details.",
         "A supporting quote does not share enough wording with its stated claim",
-        "Supporting quotes cover only 31% of factual wording; narrow the claim or provide a closer primary-source quote"
-      ]
-    },
-    {
-      "candidate_id": "a5e43b1572bfaf36",
-      "title": "paperclipai/paperclip",
-      "reasons": [
-        "Editorial takeaway is too long; keep the analysis concrete and concise."
-      ],
-      "proposed_text": "Paperclip’s CLI supports running agent skill tests. Use the `paperclip test` command to validate that a skill’s state does not leak between executions. https://github.com/paperclipai/paperclip",
-      "evidence_quote": "cli",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability.",
-        "Fact sentence is too long; narrow it to one source-backed capability.",
-        "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "A supporting quote does not share enough wording with its stated claim",
-        "Supporting quotes cover only 43% of factual wording; narrow the claim or provide a closer primary-source quote"
-      ]
-    },
-    {
-      "candidate_id": "fbfdec28cfffc04c",
-      "title": "PostHog/posthog",
-      "reasons": [
-        "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "No claim-by-claim supporting evidence was provided",
         "Supporting quotes cover only 33% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "PostHog provides session replay for web applications. Enable session replay in the PostHog dashboard to capture user interactions before deploying UI changes. https://github.com/PostHog/posthog",
-      "evidence_quote": "session replay",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability."
+      "proposed_text": "Atuin Threads syncs agent session history across machines with end‑to‑end encryption. Verify session integrity by replaying a synced session on a new machine. https://blog.atuin.sh/threads-agent-sessions/?ref=console.dev",
+      "evidence_quote": "Threads is end‑to‑end encrypted when synced, so we can't read your sessions.",
+      "claim_evidence": [
+        {
+          "claim": "Atuin Threads syncs agent session history across machines with end‑to‑end encryption.",
+          "quote": "Threads is end‑to‑end encrypted when synced, so we can't read your sessions."
+        }
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "fbfdec28cfffc04c",
-      "title": "PostHog/posthog",
-      "url": "https://github.com/PostHog/posthog",
+      "id": "b0371d8195b41df4",
+      "title": "IamRamgarhia/All-In-One-Free-SEO-Tool",
+      "url": "https://github.com/IamRamgarhia/All-In-One-Free-SEO-Tool",
       "source": "GitHub Search",
-      "primary_category": "data_and_growth",
-      "priority_score": 64,
-      "hourly_adjusted_score": 73,
-      "stars_current": 40503,
-      "stars_delta_24h": 16,
-      "stars_delta_baseline_hours": 20.2,
-      "stars_growth_percent_24h": 0.04,
-      "trend_signal": "measured_star_growth",
-      "published_at": "2026-10-29T08:34:22+00:00",
-      "days_old": 0.0,
+      "primary_category": "marketing_and_distribution",
+      "priority_score": 73,
+      "hourly_adjusted_score": 67,
+      "stars_current": 97,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "insufficient_history",
+      "published_at": "2026-10-29T09:12:17+00:00",
+      "days_old": 0.01,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "a1dbde18ac15df21",
-      "title": "Tool: Namespace Devbox",
-      "url": "https://namespace.so/?ref=console.dev",
+      "id": "d44dc6a912a5de1f",
+      "title": "Breaking changes in third-party APIs are turning into a full-time job",
+      "url": "https://news.ycombinator.com/item?id=50273438",
+      "source": "Hacker News",
+      "primary_category": "product_and_workflow_tools",
+      "priority_score": 66,
+      "hourly_adjusted_score": 66,
+      "stars_current": null,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-28T13:44:48+00:00",
+      "days_old": 0.83,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "f6b4870412a7c624",
+      "title": "Tool: Atuin Threads",
+      "url": "https://blog.atuin.sh/threads-agent-sessions/?ref=console.dev",
       "source": "Console.dev",
       "primary_category": "developer_tools",
-      "priority_score": 68,
-      "hourly_adjusted_score": 68,
+      "priority_score": 66,
+      "hourly_adjusted_score": 66,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
       "published_at": "2026-10-29T08:00:00+00:00",
-      "days_old": 0.02,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "a5e43b1572bfaf36",
-      "title": "paperclipai/paperclip",
-      "url": "https://github.com/paperclipai/paperclip",
-      "source": "GitHub Search",
-      "primary_category": "ai_and_automation",
-      "priority_score": 67,
-      "hourly_adjusted_score": 68,
-      "stars_current": 108399,
-      "stars_delta_24h": 232,
-      "stars_delta_baseline_hours": 20.2,
-      "stars_growth_percent_24h": 0.21,
-      "trend_signal": "measured_star_growth",
-      "published_at": "2026-10-29T08:29:26+00:00",
-      "days_old": 0.0,
+      "days_old": 0.06,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
@@ -472,9 +431,9 @@
   ],
   "automatic_repair": {
     "attempted": true,
-    "drafts_submitted": 3,
+    "drafts_submitted": 0,
     "repaired_local_passes": 0,
-    "repair_rejections": 3,
+    "repair_rejections": 0,
     "repair_error": null,
     "editorial_repair_attempted": false,
     "editorial_repair_drafts_submitted": 0,
@@ -491,7 +450,7 @@
   },
   "state_summary": {
     "used_candidates_in_cooldown": 24,
-    "recently_attempted_candidates": 18,
+    "recently_attempted_candidates": 21,
     "recent_draft_passes_today": 2
   }
 }

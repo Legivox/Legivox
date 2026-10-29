@@ -1,9 +1,9 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-29T14:03:57+05:30
+- Run time (IST): 2026-10-29T15:02:52+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 220
+- Candidate pool after freshness/diversity filters: 212
 - Independent editorial review: 0 draft(s) passed / 0 rejected
 - Drafts passing local checks: 0
 - Outcome: **skip**
@@ -40,7 +40,7 @@
 | Ahrefs Blog | 6 | ok |
 | Console.dev | 11 | ok |
 | Indie Hackers (unofficial third-party feed) | 5 | ok |
-| Product Hunt | 45 | ok |
+| Product Hunt | 43 | ok |
 | Shopify Community | 30 | ok |
 | Shopify Developer Changelog | 31 | ok |
 | Stripe Blog | 2 | ok |
@@ -54,8 +54,8 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 112
-- Previously tracked repositories refreshed outside search results: 88
+- Repositories seen in this discovery run: 107
+- Previously tracked repositories refreshed outside search results: 93
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
 - Repositories with a 20–36 hour comparison baseline: 19
@@ -65,9 +65,9 @@
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| PostHog/posthog | yes | 200 | https://github.com/PostHog/posthog |
-| Tool: Namespace Devbox | yes | 200 | https://namespace.so/?ref=console.dev |
-| paperclipai/paperclip | yes | 200 | https://github.com/paperclipai/paperclip |
+| IamRamgarhia/All-In-One-Free-SEO-Tool | yes | 200 | https://github.com/IamRamgarhia/All-In-One-Free-SEO-Tool |
+| Breaking changes in third-party APIs are turning into a full-time job | yes | 200 | https://news.ycombinator.com/item?id=50273438 |
+| Tool: Atuin Threads | yes | 200 | https://blog.atuin.sh/threads-agent-sessions/?ref=console.dev |
 
 ## Selected draft candidates
 
@@ -76,41 +76,34 @@ No candidate produced a draft that passed every local check. Skipping is intenti
 ## Automatic repair attempt
 
 - Attempted: yes
-- Repaired drafts submitted: 3
+- Repaired drafts submitted: 0
 - Repaired drafts that passed local validation: 0
-- Repaired drafts rejected: 3
+- Repaired drafts rejected: 0
 - Repair error: none
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
-- PostHog/posthog: The factual opening bundles multiple features; narrow it to one capability.
-  - Rejected text: PostHog offers AI observability, analytics, session replay, flags, experiments, error tracking, and logs. Run session replay tests before deploying new UI changes to catch regressions. https://github.com/PostHog/posthog
-  - Model evidence quote: “PostHog is the leading platform for building self-driving products. Our developer tools – AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more – capture all the context agents need to diagnose problems, uncover opportunities, and ship fixes.”
-  - Claim support: PostHog offers AI observability, analytics, session replay, flags, experiments, error tracking, and logs. ← “PostHog is the leading platform for building self-driving products. Our developer tools – AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more – capture all the context agents need to diagnose problems, uncover opportunities, and ship fixes.”
-- Tool: Namespace Devbox: The factual opening bundles multiple features; narrow it to one capability.; Fact sentence is too long; narrow it to one source-backed capability.; Editorial takeaway is not specific enough to this candidate's technical/product details.; A supporting quote does not share enough wording with its stated claim; Supporting quotes cover only 31% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: Namespace Devbox provides cloud dev environments with SSH, RDP, and persistent services across macOS, Windows, and Linux. Validate SSH key rotation in Devbox before sharing workspaces to avoid credential leaks. https://namespace.so/?ref=console.dev
-  - Model evidence quote: “Cloud agents on Devboxes, fast GitHub Actions runners, and remote execution for Bazel on Linux, macOS, and Windows. The developer platform for agent scale.”
-  - Claim support: Namespace Devbox provides cloud dev environments with SSH, RDP, and persistent services across macOS, Windows, and Linux. ← “Cloud agents on Devboxes, fast GitHub Actions runners, and remote execution for Bazel on Linux, macOS, and Windows. The developer platform for agent scale.”
-- paperclipai/paperclip: The factual opening bundles multiple features; narrow it to one capability.; Fact sentence is too long; narrow it to one source-backed capability.; Editorial takeaway is too long; keep the analysis concrete and concise.; A supporting quote does not share enough wording with its stated claim; Supporting quotes cover only 43% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: Paperclip is an open‑source app for orchestrating AI agents, supporting skills, workflows, and multi‑agent projects. Test agent skill isolation by running conflicting skills in parallel to ensure no state bleed. https://github.com/paperclipai/paperclip
-  - Model evidence quote: “The open‑source app everyone uses to manage agents at work paperclip.ing”
-  - Claim support: Paperclip is an open‑source app for orchestrating AI agents, supporting skills, workflows, and multi‑agent projects. ← “The open‑source app everyone uses to manage agents at work paperclip.ing”
-- Tool: Namespace Devbox: Editorial takeaway is too long; keep the analysis concrete and concise.; No claim-by-claim supporting evidence was provided; Supporting quotes cover only 38% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: Namespace Devbox offers remote desktop via RDP on Windows instances. When provisioning a Windows Devbox, enable RDP to allow remote desktop access for debugging and GUI testing. https://namespace.so/?ref=console.dev
-  - Model evidence quote: “Access Remote desktop over RDP”
-- paperclipai/paperclip: Editorial takeaway is too long; keep the analysis concrete and concise.
-  - Rejected text: Paperclip’s CLI supports running agent skill tests. Use the `paperclip test` command to validate that a skill’s state does not leak between executions. https://github.com/paperclipai/paperclip
-  - Model evidence quote: “cli”
-- PostHog/posthog: Editorial takeaway is too long; keep the analysis concrete and concise.; No claim-by-claim supporting evidence was provided; Supporting quotes cover only 33% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: PostHog provides session replay for web applications. Enable session replay in the PostHog dashboard to capture user interactions before deploying UI changes. https://github.com/PostHog/posthog
-  - Model evidence quote: “session replay”
+- IamRamgarhia/All-In-One-Free-SEO-Tool: The factual opening bundles multiple features; narrow it to one capability.; Supporting quotes cover only 62% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: All-In-One-Free-SEO-Tool offers 99 SEO tools including site audits and rank tracking. Run a site audit before launching new pages to catch crawl errors. https://github.com/IamRamgarhia/All-In-One-Free-SEO-Tool
+  - Model evidence quote: “99 tools: site audits, rank tracking, keyword research, AI search visibility (ChatGPT, Perplexity, Gemini, AI Overviews), content briefs, backlinks, local SEO, white-label reports, and an agent that applies fixes.”
+  - Claim support: All-In-One-Free-SEO-Tool offers 99 SEO tools including site audits and rank tracking. ← “99 tools: site audits, rank tracking, keyword research, AI search visibility (ChatGPT, Perplexity, Gemini, AI Overviews), content briefs, backlinks, local SEO, white-label reports, and an agent that applies fixes.”
+- Unmapped model draft: Model omitted a valid candidate ID and no exact verified source URL matched.
+- Breaking changes in third-party APIs are turning into a full-time job: Supporting quotes cover only 56% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: Okapi opens pull requests to keep connectors up to date when vendors change APIs. Set up CI to run Okapi PRs nightly to catch breaking changes early. https://news.ycombinator.com/item?id=50273438
+  - Model evidence quote: “Okapi opens pull requests that keep those connections up to date.”
+  - Claim support: Okapi opens pull requests to keep connectors up to date when vendors change APIs. ← “Okapi opens pull requests that keep those connections up to date.”
+- Unmapped model draft: Model omitted a valid candidate ID and no exact verified source URL matched.
+- Tool: Atuin Threads: A supporting quote does not share enough wording with its stated claim; Supporting quotes cover only 33% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: Atuin Threads syncs agent session history across machines with end‑to‑end encryption. Verify session integrity by replaying a synced session on a new machine. https://blog.atuin.sh/threads-agent-sessions/?ref=console.dev
+  - Model evidence quote: “Threads is end‑to‑end encrypted when synced, so we can't read your sessions.”
+  - Claim support: Atuin Threads syncs agent session history across machines with end‑to‑end encryption. ← “Threads is end‑to‑end encrypted when synced, so we can't read your sessions.”
 
 ## Top discovery candidates considered
 
-- PostHog/posthog | GitHub Search | data_and_growth | raw 64, adjusted 73 | current stars 40503 | GitHub stars +16 over about 20.2h | https://github.com/PostHog/posthog
-- Tool: Namespace Devbox | Console.dev | developer_tools | raw 68, adjusted 68 | https://namespace.so/?ref=console.dev
-- paperclipai/paperclip | GitHub Search | ai_and_automation | raw 67, adjusted 68 | current stars 108399 | GitHub stars +232 over about 20.2h | https://github.com/paperclipai/paperclip
+- IamRamgarhia/All-In-One-Free-SEO-Tool | GitHub Search | marketing_and_distribution | raw 73, adjusted 67 | current stars 97 | GitHub star trend: building baseline | https://github.com/IamRamgarhia/All-In-One-Free-SEO-Tool
+- Breaking changes in third-party APIs are turning into a full-time job | Hacker News | product_and_workflow_tools | raw 66, adjusted 66 | https://news.ycombinator.com/item?id=50273438
+- Tool: Atuin Threads | Console.dev | developer_tools | raw 66, adjusted 66 | https://blog.atuin.sh/threads-agent-sessions/?ref=console.dev
 
 ## Safety and interpretation
 
