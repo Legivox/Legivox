@@ -1,9 +1,9 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-29T19:13:09+05:30
+- Run time (IST): 2026-10-29T20:08:36+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 205
+- Candidate pool after freshness/diversity filters: 212
 - Independent editorial review: 0 draft(s) passed / 1 rejected
 - Drafts passing local checks: 0
 - Outcome: **skip**
@@ -40,7 +40,7 @@
 | Ahrefs Blog | 7 | ok |
 | Console.dev | 11 | ok |
 | Indie Hackers (unofficial third-party feed) | 5 | ok |
-| Product Hunt | 40 | ok |
+| Product Hunt | 44 | ok |
 | Shopify Community | 30 | ok |
 | Shopify Developer Changelog | 31 | ok |
 | Stripe Blog | 2 | ok |
@@ -54,20 +54,20 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 106
-- Previously tracked repositories refreshed outside search results: 94
+- Repositories seen in this discovery run: 111
+- Previously tracked repositories refreshed outside search results: 89
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
-- Repositories with a 20–36 hour comparison baseline: 20
+- Repositories with a 20–36 hour comparison baseline: 19
 - First observations are baseline samples, not evidence of trending. Star velocity is reported only when a historical comparison exists.
 
 ## Primary-source verification
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| Show HN: MyPrintables, a simple, small, and fast 3D assets manager | yes | 200 | https://news.ycombinator.com/item?id=50288599 |
-| Show HN: A tool to capture eye blinks, a fatigue checker for eyes | yes | 200 | https://blinkwell.netlify.app/ |
-| kychee-com/run402 | yes | 200 | https://github.com/kychee-com/run402 |
+| n8n-io/n8n | yes | 200 | https://github.com/n8n-io/n8n |
+| Show HN: LayerShop – a love child of ComfyUI and PhotoCraft | yes | 200 | https://github.com/SlavomirDurej/layershop |
+| Show HN: A browser app that controls my bike trainer over Bluetooth | yes | 200 | https://freebikeworkout.com/ |
 
 ## Selected draft candidates
 
@@ -76,40 +76,33 @@ No draft cleared the complete local and independent-editor gate. See the decisio
 ## Automatic repair attempt
 
 - Attempted: yes
-- Repaired drafts submitted: 3
-- Repaired drafts that passed local validation: 1
-- Repaired drafts rejected: 2
+- Repaired drafts submitted: 1
+- Repaired drafts that passed local validation: 0
+- Repaired drafts rejected: 1
 - Repair error: none
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
-- Show HN: MyPrintables, a simple, small, and fast 3D assets manager: Primary-source evidence quote is missing or absent from the live page (after presentation normalisation); A factual claim lacks a quote present in the live primary-source page; Supporting quotes cover only 12% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: MyPrintables is a self‑hosted 3D model library that ships as a single <30 MB Go binary. Run it on a NAS to keep models versioned; verify migration scripts before first deploy. https://news.ycombinator.com/item?id=50288599
-  - Model evidence quote: “One Go binary embeds the API, React SPA, migrations, and the administrative CLI. It is pretty small, even with docker image is <30MB.”
-  - Claim support: The source says MyPrintables ships as a single <30 MB Go binary ← “One Go binary embeds the API, React SPA, migrations, and the administrative CLI. It is pretty small, even with docker image is <30MB.”
-- Show HN: A tool to capture eye blinks, a fatigue checker for eyes: Editorial takeaway is too long; keep the analysis concrete and concise.; A supporting quote does not share enough wording with its stated claim; Supporting quotes cover only 27% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: blinkwell captures 60‑second webcam windows every ~10 min to compute a fatigue score on‑device. Schedule a daily check to confirm the 10‑min interval; log the score to a file for trend analysis. https://blinkwell.netlify.app/
-  - Model evidence quote: “Periodic 60-second camera windows analyze your blinks and eyelids on-device, then nudge you to break.”
-  - Claim support: The source says blinkwell uses 60‑second camera windows on‑device ← “Periodic 60-second camera windows analyze your blinks and eyelids on-device, then nudge you to break.”
-- kychee-com/run402: The factual opening bundles multiple features; narrow it to one capability.; Editorial takeaway is too long; keep the analysis concrete and concise.
-  - Rejected text: run402 offers a full‑stack backend for AI agents with Postgres, auth, storage, and serverless functions. Use the TypeScript SDK to prototype an agent; test auth flow with a mock user before deploying. https://github.com/kychee-com/run402
-  - Model evidence quote: “Full-stack backend infrastructure for AI agents: Postgres, auth, storage, serverless functions and atomic deploys.”
-  - Claim support: The source says run402 provides Postgres, auth, storage, and serverless functions ← “Full-stack backend infrastructure for AI agents: Postgres, auth, storage, serverless functions and atomic deploys.”
-- Show HN: MyPrintables, a simple, small, and fast 3D assets manager: Primary-source evidence quote is missing or absent from the live page (after presentation normalisation); No claim-by-claim supporting evidence was provided; Factual sentence includes terms absent from the source title/summary: ship, single
-  - Rejected text: MyPrintables ships as a single <30 MB Go binary. Verify migration scripts before first deploy to avoid runtime errors. https://news.ycombinator.com/item?id=50288599
-  - Model evidence quote: “One Go binary embeds the API, React SPA, migrations, and the administrative CLI. It is pretty small, even with docker image is <30MB.”
-- kychee-com/run402: Post is clear and factually supported, but the takeaway is generic and adds no new perspective beyond the source.
-  - Rejected text: run402 provides Postgres as a backend. Test the Postgres connection string before deploying an agent. https://github.com/kychee-com/run402
-- kychee-com/run402: Editorial takeaway is too long; keep the analysis concrete and concise.
-  - Rejected text: run402 offers a Postgres backend for AI agents. Validate the Postgres connection string before deploying an agent to prevent runtime failures. https://github.com/kychee-com/run402
-  - Model evidence quote: “Full-stack backend infrastructure for AI agents: Postgres, auth, storage, serverless functions and atomic deploys.”
+- Show HN: LayerShop – a love child of ComfyUI and PhotoCraft: Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: LayerShop is an open‑source Photoshop‑style editor with free AI inside. Validate local GPU inference by running a ComfyUI model on a test image. https://github.com/SlavomirDurej/layershop
+  - Model evidence quote: “The editor you already know. With free AI inside.”
+  - Claim support: LayerShop is an open‑source Photoshop‑style editor with free AI inside. ← “The editor you already know. With free AI inside.”
+- Show HN: A browser app that controls my bike trainer over Bluetooth: Editorial takeaway is not specific enough to this candidate's technical/product details.; Unsupported numeric claim(s): 5minutes
+  - Rejected text: Free Bike Workout offers structured smart‑trainer workouts in the browser without download. Check Bluetooth pairing stability by cycling for 5 minutes after page load. https://freebikeworkout.com/
+  - Model evidence quote: “Free structured smart‑trainer workouts in your browser. No download, no sign‑up.”
+  - Claim support: Free Bike Workout offers structured smart‑trainer workouts in the browser without download. ← “Free structured smart‑trainer workouts in your browser. No download, no sign‑up.”
+- n8n-io/n8n: The post claims running a sample AI node flow verifies model inference, but the source does not document such a workflow or verification step. The claim lacks evidence and the takeaway is not supported by the primary pag
+  - Rejected text: n8n is a fair‑code workflow automation platform with native AI capabilities. Run a sample AI node flow to verify model inference before production. https://github.com/n8n-io/n8n
+- n8n-io/n8n: Primary source has conflicting counts for integrations (1500+, 400+); omit this number unless a single current value can be verified.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
+  - Rejected text: n8n is a fair‑code workflow automation platform with native AI capabilities. n8n supports over 400 integrations, enabling broad connectivity. https://github.com/n8n-io/n8n
+  - Model evidence quote: “Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.”
 
 ## Top discovery candidates considered
 
-- Show HN: MyPrintables, a simple, small, and fast 3D assets manager | Hacker News | product_and_workflow_tools | raw 73, adjusted 73 | https://news.ycombinator.com/item?id=50288599
-- Show HN: A tool to capture eye blinks, a fatigue checker for eyes | Hacker News | product_and_workflow_tools | raw 67, adjusted 69 | https://blinkwell.netlify.app/
-- kychee-com/run402 | GitHub Search | developer_tools | raw 68, adjusted 62 | current stars 24 | GitHub star trend: building baseline | https://github.com/kychee-com/run402
+- n8n-io/n8n | GitHub Search | ai_and_automation | raw 69, adjusted 70 | current stars 208992 | GitHub stars +122 over about 24.0h | https://github.com/n8n-io/n8n
+- Show HN: LayerShop – a love child of ComfyUI and PhotoCraft | Hacker News | product_and_workflow_tools | raw 65, adjusted 67 | https://github.com/SlavomirDurej/layershop
+- Show HN: A browser app that controls my bike trainer over Bluetooth | Hacker News | product_and_workflow_tools | raw 63, adjusted 65 | https://freebikeworkout.com/
 
 ## Safety and interpretation
 
