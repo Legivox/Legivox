@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-29T09:57:56+05:30
+- Run time (IST): 2026-10-29T10:56:11+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 205
-- Independent editorial review: 0 draft(s) passed / 0 rejected
-- Drafts passing local checks: 0
-- Outcome: **skip**
-- Decision reason: All generated drafts failed the local evidence/editorial checks; the hour was skipped.
+- Candidate pool after freshness/diversity filters: 206
+- Independent editorial review: 1 draft(s) passed / 0 rejected
+- Drafts passing local checks: 1
+- Outcome: **dry_run_passed**
+- Decision reason: At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.
 
 ## Source health
 
@@ -54,8 +54,8 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 109
-- Previously tracked repositories refreshed outside search results: 91
+- Repositories seen in this discovery run: 112
+- Previously tracked repositories refreshed outside search results: 88
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
 - Repositories with a 20–36 hour comparison baseline: 17
@@ -65,56 +65,66 @@
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| ldbumble/taskuary | yes | 200 | https://github.com/ldbumble/taskuary |
-| tale-project/tale | yes | 200 | https://github.com/tale-project/tale |
-| Show HN: Algeon – Compose GPU graph, vector, and ML algorithms in SQL | yes | 200 | https://github.com/algeon-dev/algeon |
+| obsei/obsei | yes | 200 | https://github.com/obsei/obsei |
+| ChronoAIProject/NyxID | yes | 200 | https://github.com/ChronoAIProject/NyxID |
+| Show HN: Interview your analysts instead of auto-generating a semantic layer | yes | 200 | https://github.com/nodal-data/nodal-context |
 
 ## Selected draft candidates
 
-No candidate produced a draft that passed every local check. Skipping is intentional.
+### Draft option 1: obsei/obsei
+
+- Category: ai_and_automation
+- Source: GitHub Search
+- Format: tool_discovery
+- Editorial score: 8.25/10
+- Model scores: timeliness 9/10, usefulness 8/10, novelty 7/10, evidence 9/10, insight 8/10
+- Independent editor scores: {"clarity_score": 9, "technical_coherence_score": 9, "takeaway_value_score": 8, "source_faithfulness_score": 9, "originality_score": 8, "reason": "Clear, technically accurate, and adds a useful verification step.", "passed": true}
+- Live primary page: https://github.com/obsei/obsei (HTTP 200)
+- Exact source evidence: “strips PII from feedback before any LLM sees it”
+- Why this angle: Shows privacy‑first design and a concrete test for redaction.
+- Editorial takeaway: Verify redaction by inspecting sample logs before training.
+- Source: https://github.com/obsei/obsei
+
+**Claim-by-claim source quotes:**
+
+- obsei strips PII from feedback before any LLM sees it ← “strips PII from feedback before any LLM sees it”
+
+Proposed post (not published):
+
+> obsei strips PII from feedback before any LLM sees it. Verify redaction by inspecting sample logs before training. https://github.com/obsei/obsei
+
+- Length: 145/280 raw characters
+- Automated gate: passed live source, evidence, originality, URL and length checks; live publishing is disabled in dry-run mode.
 
 ## Automatic repair attempt
 
-- Attempted: yes
-- Repaired drafts submitted: 3
+- Attempted: no
+- Repaired drafts submitted: 0
 - Repaired drafts that passed local validation: 0
-- Repaired drafts rejected: 3
+- Repaired drafts rejected: 0
 - Repair error: none
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
-- ldbumble/taskuary: Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.; The factual opening bundles multiple features; narrow it to one capability.
-  - Rejected text: mail, chats and tickets become tasks, agents like Claude, Codex, Gemini do the work. Verify that outgoing messages pause for your approval before sending. https://github.com/ldbumble/taskuary
-  - Model evidence quote: “mail, chats and tickets become tasks, the agents you already use (Claude Code, Codex, Gemini) do the work”
-  - Claim support: taskuary turns mail, chats and tickets into tasks using Claude, Codex, Gemini agents ← “mail, chats and tickets become tasks, the agents you already use (Claude Code, Codex, Gemini) do the work”
-- tale-project/tale: Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.; The factual opening bundles multiple features; narrow it to one capability.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
-  - Rejected text: Assign tasks, coordinate agents in persistent sandboxes, and review results together. Restart the agent to confirm sandbox state persists. https://github.com/tale-project/tale
-  - Model evidence quote: “Assign tasks, coordinate agents in persistent sandboxes, and review results together”
-  - Claim support: tale lets teams assign tasks and coordinate agents in persistent sandboxes ← “Assign tasks, coordinate agents in persistent sandboxes, and review results together”
-- Show HN: Algeon – Compose GPU graph, vector, and ML algorithms in SQL: The factual opening bundles multiple features; narrow it to one capability.
-  - Rejected text: Algeon exposes NVIDIA cuGraph, cuVS, and cuML as SQL table functions via DataFusion. Run cuGraph functions on a sample graph to confirm correct output. https://github.com/algeon-dev/algeon
-  - Model evidence quote: “Algeon is a query engine built on Apache DataFusion that exposes NVIDIA's cuGraph, cuVS, and cuML as SQL table functions”
-  - Claim support: Algeon exposes NVIDIA cuGraph, cuVS, cuML as SQL table functions ← “Algeon is a query engine built on Apache DataFusion that exposes NVIDIA's cuGraph, cuVS, and cuML as SQL table functions”
-- ldbumble/taskuary: The factual opening bundles multiple features; narrow it to one capability.
-  - Rejected text: Taskuary turns mail into tasks using Claude, Codex, Gemini agents. Verify that outgoing messages pause for your approval before sending. https://github.com/ldbumble/taskuary
-  - Model evidence quote: “mail, chats and tickets become tasks, the agents you already use (Claude Code, Codex, Gemini) do the work”
-- tale-project/tale: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
-  - Rejected text: Tale assigns tasks to teams and coordinates agents in persistent sandboxes. Restart an agent to confirm that the sandbox state persists across sessions. https://github.com/tale-project/tale
-  - Model evidence quote: “Assign tasks, coordinate agents in persistent sandboxes, and review results together”
-- Show HN: Algeon – Compose GPU graph, vector, and ML algorithms in SQL: Primary-source evidence quote is missing or absent from the live page (after presentation normalisation); No claim-by-claim supporting evidence was provided
-  - Rejected text: Algeon exposes NVIDIA cuGraph as a SQL table function via DataFusion. Run cuGraph's triangle count on a sample graph to confirm correct output. https://github.com/algeon-dev/algeon
-  - Model evidence quote: “Algeon is a query engine built on Apache DataFusion that exposes NVIDIA's cuGraph, cuVS, and cuML as SQL table functions”
+- ChronoAIProject/NyxID: Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.; A supporting quote does not share enough wording with its stated claim; Supporting quotes cover only 43% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: NyxID injects credentials automatically into proxied API requests. Test that no raw keys appear in request headers during agent calls. https://github.com/ChronoAIProject/NyxID
+  - Model evidence quote: “injects credentials automatically”
+  - Claim support: NyxID injects credentials automatically into proxied API requests ← “injects credentials automatically”
+- Show HN: Interview your analysts instead of auto-generating a semantic layer: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
+  - Rejected text: nodal-context provides open‑source business context for data analytics. Ensure context tables match your semantic layer before use. https://github.com/nodal-data/nodal-context
+  - Model evidence quote: “Open source business context for your data analytics”
+  - Claim support: nodal-context provides open‑source business context for data analytics ← “Open source business context for your data analytics”
 
 ## Top discovery candidates considered
 
-- ldbumble/taskuary | GitHub Search | ai_and_automation | raw 71, adjusted 75 | current stars 144 | GitHub star trend: building baseline | https://github.com/ldbumble/taskuary
-- tale-project/tale | GitHub Search | ai_and_automation | raw 69, adjusted 73 | current stars 36 | GitHub star trend: building baseline | https://github.com/tale-project/tale
-- Show HN: Algeon – Compose GPU graph, vector, and ML algorithms in SQL | Hacker News | data_and_growth | raw 69, adjusted 71 | https://github.com/algeon-dev/algeon
+- obsei/obsei | GitHub Search | ai_and_automation | raw 69, adjusted 73 | current stars 1441 | GitHub star trend: building baseline | https://github.com/obsei/obsei
+- ChronoAIProject/NyxID | GitHub Search | ai_and_automation | raw 68, adjusted 72 | current stars 40 | GitHub star trend: building baseline | https://github.com/ChronoAIProject/NyxID
+- Show HN: Interview your analysts instead of auto-generating a semantic layer | Hacker News | product_and_workflow_tools | raw 69, adjusted 71 | https://github.com/nodal-data/nodal-context
 
 ## Safety and interpretation
 
-- This run did not produce a publishable draft; no post was published to X.
+- At least one draft passed the automated quality gates; this dry-run workflow itself never publishes to X.
 - Model scores are editorial estimates; they are not verified popularity or market demand.
 - Candidate content and metadata are untrusted input. Factual copy must be supported by the fetched primary page.
 - A skip can mean no fresh candidates, a daily diversity/cap limit, a model/API problem or weak drafts. Check the reason above.
