@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-28T23:00:00+05:30
+- Run time (IST): 2026-10-29T08:00:46+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 201
-- Independent editorial review: 0 draft(s) passed / 0 rejected
-- Drafts passing local checks: 0
-- Outcome: **skip**
-- Decision reason: All generated drafts failed the local evidence/editorial checks; the hour was skipped.
+- Candidate pool after freshness/diversity filters: 205
+- Independent editorial review: 2 draft(s) passed / 0 rejected
+- Drafts passing local checks: 2
+- Outcome: **dry_run_passed**
+- Decision reason: At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.
 
 ## Source health
 
@@ -26,7 +26,7 @@
 | GitHub Search · github-shopify-commerce | 10 | ok |
 | GitHub Search · github-workflow-automation | 10 | ok |
 | Hacker News · hn-analytics-growth | 10 | ok |
-| Hacker News · hn-automation-api | 1 | ok |
+| Hacker News · hn-automation-api | 2 | ok |
 | Hacker News · hn-creator-business | 0 | ok |
 | Hacker News · hn-digital-downloads-templates | 0 | ok |
 | Hacker News · hn-digital-products | 2 | ok |
@@ -40,10 +40,10 @@
 | Ahrefs Blog | 6 | ok |
 | Console.dev | 12 | ok |
 | Indie Hackers (unofficial third-party feed) | 5 | ok |
-| Product Hunt | 39 | ok |
+| Product Hunt | 38 | ok |
 | Shopify Community | 30 | ok |
 | Shopify Developer Changelog | 31 | ok |
-| Stripe Blog | 3 | ok |
+| Stripe Blog | 2 | ok |
 | WooCommerce Blog | 3 | ok |
 | WordPress Plugin Directory · wp-digital-downloads | 10 | ok |
 | WordPress Plugin Directory · wp-ecommerce | 10 | ok |
@@ -54,67 +54,95 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 111
-- Previously tracked repositories refreshed outside search results: 89
+- Repositories seen in this discovery run: 110
+- Previously tracked repositories refreshed outside search results: 90
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
-- Repositories with a 20–36 hour comparison baseline: 15
+- Repositories with a 20–36 hour comparison baseline: 17
 - First observations are baseline samples, not evidence of trending. Star velocity is reported only when a historical comparison exists.
 
 ## Primary-source verification
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| Show HN: X402 integrations for an AI-agent data API, checked in a clean room | yes | 200 | https://www.blockchainiq.co/blog/x402-integrations-from-the-build-bounty |
-| Show HN: See MindForger features – outlining/autolinking/Eisenhower as comic:) | yes | 200 | https://mindforger.com/docs/assets/comics/index.html |
-| IamRamgarhia/All-In-One-Free-SEO-Tool | yes | 200 | https://github.com/IamRamgarhia/All-In-One-Free-SEO-Tool |
+| n8n-io/n8n | yes | 200 | https://github.com/n8n-io/n8n |
+| Show HN: Simple DeepSeek web search CLI written in TypeScript (fast/cheap) | no | — | Primary source returned HTTP 403. |
+| Shopify Flow: manage automations through AI Toolkit | yes | 200 | https://shopify.dev/changelog/posts/shopify-flow-manage-automations-through-admin-api |
 
 ## Selected draft candidates
 
-No candidate produced a draft that passed every local check. Skipping is intentional.
+### Draft option 1: Shopify Flow: manage automations through AI Toolkit
+
+- Category: commerce_and_digital_products
+- Source: Shopify Developer Changelog
+- Format: practical_workflow
+- Editorial score: 9.1/10
+- Model scores: timeliness 10/10, usefulness 9/10, novelty 8/10, evidence 10/10, insight 9/10
+- Independent editor scores: {"clarity_score": 9, "technical_coherence_score": 9, "takeaway_value_score": 8, "source_faithfulness_score": 9, "originality_score": 8, "reason": "Clear, technically accurate, and adds a useful permission check.", "passed": true}
+- Live primary page: https://shopify.dev/changelog/posts/shopify-flow-manage-automations-through-admin-api (HTTP 200)
+- Exact source evidence: “You can now use an external agent to manage your Shopify Flow workflows through AI Toolkit.”
+- Why this angle: The changelog confirms the new agent‑based management feature, and the takeaway advises a security‑focused validation step.
+- Editorial takeaway: Check agent permissions are limited to your store before enabling automation.
+- Source: https://shopify.dev/changelog/posts/shopify-flow-manage-automations-through-admin-api
+
+**Claim-by-claim source quotes:**
+
+- Shopify Flow now lets external agents manage workflows via the AI Toolkit. ← “You can now use an external agent to manage your Shopify Flow workflows through AI Toolkit.”
+
+Proposed post (not published):
+
+> Shopify Flow now lets external agents manage workflows via the AI Toolkit. Check agent permissions are limited to your store before enabling automation. https://shopify.dev/changelog/posts/shopify-flow-manage-automations-through-admin-api
+
+- Length: 238/280 raw characters
+- Automated gate: passed live source, evidence, originality, URL and length checks; live publishing is disabled in dry-run mode.
+
+### Draft option 2: n8n-io/n8n
+
+- Category: ai_and_automation
+- Source: GitHub Search
+- Format: tool_discovery
+- Editorial score: 8.65/10
+- Model scores: timeliness 10/10, usefulness 8/10, novelty 7/10, evidence 10/10, insight 8/10
+- Independent editor scores: {"clarity_score": 9, "technical_coherence_score": 9, "takeaway_value_score": 8, "source_faithfulness_score": 9, "originality_score": 8, "reason": "Clear, accurate, and provides a practical next step.", "passed": true}
+- Live primary page: https://github.com/n8n-io/n8n (HTTP 200)
+- Exact source evidence: “Fair-code workflow automation platform with native AI capabilities.”
+- Why this angle: The primary source explicitly states the platform’s AI feature and fair‑code model, enabling a concrete test of AI node integration.
+- Editorial takeaway: Run a sample AI node flow to confirm integration before production.
+- Source: https://github.com/n8n-io/n8n
+
+**Claim-by-claim source quotes:**
+
+- n8n is a fair‑code workflow automation platform with native AI capabilities. ← “Fair-code workflow automation platform with native AI capabilities.”
+
+Proposed post (not published):
+
+> n8n is a fair‑code workflow automation platform with native AI capabilities. Run a sample AI node flow to confirm integration before production. https://github.com/n8n-io/n8n
+
+- Length: 174/280 raw characters
+- Automated gate: passed live source, evidence, originality, URL and length checks; live publishing is disabled in dry-run mode.
 
 ## Automatic repair attempt
 
-- Attempted: yes
-- Repaired drafts submitted: 3
+- Attempted: no
+- Repaired drafts submitted: 0
 - Repaired drafts that passed local validation: 0
-- Repaired drafts rejected: 3
+- Repaired drafts rejected: 0
 - Repair error: none
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
-- Show HN: X402 integrations for an AI-agent data API, checked in a clean room: Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: X402 integrations were verified by matching settlement hash to purchase log. Run a hash‑match test before deploying each integration to catch mismatches. https://www.blockchainiq.co/blog/x402-integrations-from-the-build-bounty
-  - Model evidence quote: “we matched each settlement hash and paying wallet to our purchase log”
-  - Claim support: X402 integrations were verified by matching settlement hash to purchase log ← “we matched each settlement hash and paying wallet to our purchase log”
-- Show HN: See MindForger features – outlining/autolinking/Eisenhower as comic:): The factual opening bundles multiple features; narrow it to one capability.; Unsupported strong claim: free; Supporting quotes cover only 60% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: MindForger is a no‑cloud, no‑account, no‑telemetry notebook. Test local sync by moving notes between devices; cloud‑free means manual export. https://mindforger.com/docs/assets/comics/index.html
-  - Model evidence quote: “no cloud · no account · no telemetry · no lock‑in”
-  - Claim support: MindForger is a no‑cloud, no‑account, no‑telemetry notebook ← “no cloud · no account · no telemetry · no lock‑in”
-- IamRamgarhia/All-In-One-Free-SEO-Tool: The factual opening bundles multiple features; narrow it to one capability.; Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: Tool offers 99 SEO utilities including site audits and AI search visibility. Run a baseline audit before adding AI fixes to avoid false positives. https://github.com/IamRamgarhia/All-In-One-Free-SEO-Tool
-  - Model evidence quote: “99 tools: site audits, rank tracking, keyword research, AI search visibility”
-  - Claim support: Tool offers 99 SEO utilities including site audits and AI search visibility ← “99 tools: site audits, rank tracking, keyword research, AI search visibility”
-- Show HN: X402 integrations for an AI-agent data API, checked in a clean room: No claim-by-claim supporting evidence was provided; Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: X402 integrations were verified by matching settlement hash to purchase log. Ensure only a single payment attempt is made; retries will not be processed automatically. https://www.blockchainiq.co/blog/x402-integrations-from-the-build-bounty
-  - Model evidence quote: “we matched each settlement hash and paying wallet to our purchase log”
-- Show HN: See MindForger features – outlining/autolinking/Eisenhower as comic:): The factual opening bundles multiple features; narrow it to one capability.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
-  - Rejected text: MindForger is a no‑cloud, no‑account, no‑telemetry notebook. Because it has no cloud sync, export notes manually to share between devices. https://mindforger.com/docs/assets/comics/index.html
-  - Model evidence quote: “no cloud · no account · no telemetry · no lock‑in”
-- IamRamgarhia/All-In-One-Free-SEO-Tool: No claim-by-claim supporting evidence was provided; Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: All‑In‑One‑Free‑SEO‑Tool includes 99 tools such as site audits and AI search visibility. Run a site audit first to identify issues before applying AI‑generated fixes. https://github.com/IamRamgarhia/All-In-One-Free-SEO-Tool
-  - Model evidence quote: “99 tools: site audits, rank tracking, keyword research, AI search visibility”
+- Show HN: Simple DeepSeek web search CLI written in TypeScript (fast/cheap): Primary source returned HTTP 403.
 
 ## Top discovery candidates considered
 
-- Show HN: X402 integrations for an AI-agent data API, checked in a clean room | Hacker News | product_and_workflow_tools | raw 68, adjusted 70 | https://www.blockchainiq.co/blog/x402-integrations-from-the-build-bounty
-- Show HN: See MindForger features – outlining/autolinking/Eisenhower as comic:) | Hacker News | product_and_workflow_tools | raw 62, adjusted 64 | https://mindforger.com/docs/assets/comics/index.html
-- IamRamgarhia/All-In-One-Free-SEO-Tool | GitHub Search | marketing_and_distribution | raw 73, adjusted 57 | current stars 92 | GitHub star trend: building baseline | https://github.com/IamRamgarhia/All-In-One-Free-SEO-Tool
+- n8n-io/n8n | GitHub Search | ai_and_automation | raw 69, adjusted 88 | current stars 208923 | GitHub stars +99 over about 21.1h | https://github.com/n8n-io/n8n
+- Show HN: Simple DeepSeek web search CLI written in TypeScript (fast/cheap) | Hacker News | product_and_workflow_tools | raw 77, adjusted 79 | https://www.npmjs.com/package/deepseek-search-cli
+- Shopify Flow: manage automations through AI Toolkit | Shopify Developer Changelog | commerce_and_digital_products | raw 78, adjusted 78 | https://shopify.dev/changelog/posts/shopify-flow-manage-automations-through-admin-api
 
 ## Safety and interpretation
 
-- This run did not produce a publishable draft; no post was published to X.
+- At least one draft passed the automated quality gates; this dry-run workflow itself never publishes to X.
 - Model scores are editorial estimates; they are not verified popularity or market demand.
 - Candidate content and metadata are untrusted input. Factual copy must be supported by the fetched primary page.
 - A skip can mean no fresh candidates, a daily diversity/cap limit, a model/API problem or weak drafts. Check the reason above.
