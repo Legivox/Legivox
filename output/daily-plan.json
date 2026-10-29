@@ -1,59 +1,61 @@
 {
   "date_ist": "2026-10-29",
-  "prepared_at_ist": "2026-10-29 06:59:16 IST",
-  "research_window_days": 30,
-  "research_source": "Hacker News Algolia Search API",
+  "prepared_at_ist": "2026-10-29 08:39:17 IST",
+  "research_window_days": 1,
+  "research_source": "Multidomain discovery + independent editorial review",
+  "source_report_generated_at_ist": "2026-10-29T08:00:46+05:30",
+  "source_report_age_minutes": 38,
+  "star_baseline_repositories": 17,
   "posts": [
     {
-      "idea_id": "creator-feedback",
-      "niche": "independent digital creators",
-      "problem": "Feedback and feature requests are scattered across channels.",
-      "evidence": "Unverified hypothesis. Research complaints and willingness to pay before treating this as demand.",
-      "solution_hypothesis": "a lightweight inbox that groups repeated requests into a prioritized backlog",
-      "text": "A creator can get the same feature request in a DM, a comment, an email and a community thread. The hard part isn't collecting feedback. It's noticing what's being asked for repeatedly. How do you track that today?",
-      "text_hash": "4aa762dbbf29743b39688dda0d986d5f86c91512bc88a959bb3ee141545ffb08",
-      "image_query": "creative workspace",
+      "idea_id": "multidomain-e117814202412ffa",
+      "niche": "commerce_and_digital_products",
+      "problem": "Shopify Flow: manage automations through AI Toolkit",
+      "evidence": "Primary source verified (HTTP 200): https://shopify.dev/changelog/posts/shopify-flow-manage-automations-through-admin-api. Exact evidence: You can now use an external agent to manage your Shopify Flow workflows through AI Toolkit.",
+      "solution_hypothesis": "Check agent permissions are limited to your store before enabling automation.",
+      "text": "Shopify Flow now lets external agents manage workflows via the AI Toolkit. Check agent permissions are limited to your store before enabling automation. https://shopify.dev/changelog/posts/shopify-flow-manage-automations-through-admin-api",
+      "text_hash": "e9e14cbfc150d58216c0545df89331c7f51a854088d71d610a8b52985ba20c2c",
+      "image_query": "",
       "research": {
-        "query": "feature requests",
-        "score": 0.0,
-        "hits": [],
+        "query": "Multidomain primary-source discovery and independent editorial review",
+        "score": 9.1,
+        "hits": [
+          {
+            "title": "Shopify Flow: manage automations through AI Toolkit",
+            "url": "https://shopify.dev/changelog/posts/shopify-flow-manage-automations-through-admin-api",
+            "external_url": "https://shopify.dev/changelog/posts/shopify-flow-manage-automations-through-admin-api",
+            "points": 0,
+            "comments": 0,
+            "created_at": "2026-10-29T08:00:46+05:30",
+            "matched_terms": []
+          }
+        ],
         "error": null
       },
-      "status": "planned"
-    },
-    {
-      "idea_id": "freelancer-scope",
-      "niche": "freelance developers",
-      "problem": "Scope changes and assumptions can quietly erode project margins.",
-      "evidence": "Unverified hypothesis. Validate with public discussions and paid competitor products.",
-      "solution_hypothesis": "a project scoping workbook with explicit assumptions and change approvals",
-      "text": "Scope creep rarely arrives as one dramatic request. It's a handful of tiny “while you're in there…” changes. Freelancers, how do you document assumptions and approve extra work without making every project feel bureaucratic?",
-      "text_hash": "2c016ad5c1e84443623ffa74649e68df4a88b33c42ace2973ff278e1a79d077c",
-      "image_query": "freelancer laptop",
-      "research": {
-        "query": "freelancer scope creep",
-        "score": 0.0,
-        "hits": [],
-        "error": null
+      "status": "published: https://x.com/i/status/2115642119251734578",
+      "slot": 0,
+      "editorial_scores": {
+        "model": {
+          "timeliness": 10,
+          "usefulness": 9,
+          "novelty": 8,
+          "evidence": 10,
+          "insight": 9
+        },
+        "overall": 9.1,
+        "independent_review": {
+          "clarity_score": 9,
+          "technical_coherence_score": 9,
+          "takeaway_value_score": 8,
+          "source_faithfulness_score": 9,
+          "originality_score": 8,
+          "reason": "Clear, technically accurate, and adds a useful permission check.",
+          "passed": true
+        }
       },
-      "status": "planned"
-    },
-    {
-      "idea_id": "seller-stock",
-      "niche": "small online sellers",
-      "problem": "Stock, fees, reorder levels and margins often live in disconnected sheets.",
-      "evidence": "Unverified hypothesis. Check competing templates and seller complaints.",
-      "solution_hypothesis": "an inventory workbook that combines reorder signals with per-item margins",
-      "text": "A product can look profitable until marketplace fees, packaging, shipping and restocking time are counted. For small sellers, which number is easiest to lose track of: true margin, stock on hand, or reorder timing?",
-      "text_hash": "6d8b8d393e2389d0225a27c181f4602c42710ef7e499154d0ea677d920391c68",
-      "image_query": "inventory boxes",
-      "research": {
-        "query": "inventory margins",
-        "score": 0.0,
-        "hits": [],
-        "error": null
-      },
-      "status": "planned"
+      "published_at_ist": "2026-10-29T08:39:22+05:30",
+      "published_url": "https://x.com/i/status/2115642119251734578",
+      "image": null
     }
   ]
 }
