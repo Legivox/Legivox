@@ -1,9 +1,9 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-29T21:05:53+05:30
+- Run time (IST): 2026-10-29T22:05:27+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 208
+- Candidate pool after freshness/diversity filters: 197
 - Independent editorial review: 0 draft(s) passed / 1 rejected
 - Drafts passing local checks: 0
 - Outcome: **skip**
@@ -26,7 +26,7 @@
 | GitHub Search · github-shopify-commerce | 10 | ok |
 | GitHub Search · github-workflow-automation | 10 | ok |
 | Hacker News · hn-analytics-growth | 10 | ok |
-| Hacker News · hn-automation-api | 2 | ok |
+| Hacker News · hn-automation-api | 1 | ok |
 | Hacker News · hn-creator-business | 0 | ok |
 | Hacker News · hn-digital-downloads-templates | 0 | ok |
 | Hacker News · hn-digital-products | 2 | ok |
@@ -35,7 +35,7 @@
 | Hacker News · hn-marketing-distribution | 0 | ok |
 | Hacker News · hn-security-selfhost | 0 | ok |
 | Hacker News · hn-seller-operations | 0 | ok |
-| Hacker News · hn-shopify | 10 | ok |
+| Hacker News · hn-shopify | 9 | ok |
 | Hacker News · hn-show-hn | 10 | ok |
 | Ahrefs Blog | 7 | ok |
 | Console.dev | 11 | ok |
@@ -54,8 +54,8 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 108
-- Previously tracked repositories refreshed outside search results: 92
+- Repositories seen in this discovery run: 109
+- Previously tracked repositories refreshed outside search results: 91
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
 - Repositories with a 20–36 hour comparison baseline: 19
@@ -65,9 +65,9 @@
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| Show HN: StrictLLM – For when you need human-in-the-loop | yes | 200 | https://strictllm.com |
-| Show HN: Backend for Agents and Builders who don't need one yet – Statebase | yes | 200 | https://statebase.dev |
-| coddy-project/coddy-agent | yes | 200 | https://github.com/coddy-project/coddy-agent |
+| Show HN: Fast agentic video editing in the browser (Tella) | yes | 200 | https://www.tella.com |
+| Show HN: Panta – Open Swiss job market data | yes | 200 | https://withpanta.com/ |
+| indranilbanerjee/digital-marketing-pro | yes | 200 | https://github.com/indranilbanerjee/digital-marketing-pro |
 
 ## Selected draft candidates
 
@@ -84,25 +84,25 @@ No draft cleared the complete local and independent-editor gate. See the decisio
 
 ## Rejected draft options
 
-- Show HN: Backend for Agents and Builders who don't need one yet – Statebase: Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.; Editorial takeaway is too long; keep the analysis concrete and concise.
-  - Rejected text: Statebase lets you save JSON data and run server‑side rules with scoped permissions. Test that rule execution respects the defined permission scopes by attempting a write from an unauthorized client. https://statebase.dev
-  - Model evidence quote: “Save JSON data and run server‑side rules with scoped permissions.”
-  - Claim support: Statebase lets you save JSON data and run server‑side rules with scoped permissions. ← “Save JSON data and run server‑side rules with scoped permissions.”
-- coddy-project/coddy-agent: Editorial takeaway is too long; keep the analysis concrete and concise.
-  - Rejected text: coddy-agent ships as a single static Go binary that includes an OpenAI‑compatible API and a Telegram gateway. Run a quick integration test to confirm the API responds to a simple prompt before deploying. https://github.com/coddy-project/coddy-agent
-  - Model evidence quote: “General-purpose agent in one static Go binary: console TUI, ACP server for editors, OpenAI‑compatible API with embedded web UI, Telegram gateway”
-  - Claim support: coddy-agent ships as a single static Go binary that includes an OpenAI‑compatible API and a Telegram gateway. ← “General-purpose agent in one static Go binary: console TUI, ACP server for editors, OpenAI‑compatible API with embedded web UI, Telegram gateway”
-- Show HN: StrictLLM – For when you need human-in-the-loop: Post restates headline facts without adding new insight; originality below threshold.
-  - Rejected text: StrictLLM is a desktop LLM client that enforces fine‑grained permission controls. Verify that each persona’s permissions match the intended scope before enabling chat. https://strictllm.com
-- Show HN: StrictLLM – For when you need human-in-the-loop: The factual opening bundles multiple features; narrow it to one capability.; Editorial takeaway is too long; keep the analysis concrete and concise.
-  - Rejected text: StrictLLM lets you set persona tool permissions to Always Allow, Always Ask, or Always Deny. Verify each persona’s tool permission before enabling chat to ensure the intended scope is enforced. https://strictllm.com
-  - Model evidence quote: “Tool Level Permissions Define exactly how each persona uses tools with flexible permissions: set actions to Always Allow, Always Ask, or Always Deny, giving you complete control...”
+- Show HN: Panta – Open Swiss job market data: Supporting quotes cover only 57% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: Panta provides an API for Swiss job index data. Check that returned job records include a Swiss‑eligible flag before use. https://withpanta.com/
+  - Model evidence quote: “Find your next role in Panta’s Swiss job index.”
+  - Claim support: Panta provides an API for Swiss job index data ← “Find your next role in Panta’s Swiss job index.”
+- indranilbanerjee/digital-marketing-pro: Opening sentence is too close to the source headline; add a distinct editorial framing.
+  - Rejected text: digital‑marketing‑pro is an open‑source AI digital marketing OS. Run a test to ensure outputs include a human approval flag. https://github.com/indranilbanerjee/digital-marketing-pro
+  - Model evidence quote: “An open‑source AI based digital marketing operating system for strategy, SEO, AEO/GEO, paid media, content, CRM, and analytics - grounded in brand context, human approval, and verifiable outputs.”
+  - Claim support: digital‑marketing‑pro is an open‑source AI digital marketing OS ← “An open‑source AI based digital marketing operating system for strategy, SEO, AEO/GEO, paid media, content, CRM, and analytics - grounded in brand context, human approval, and verifiable outputs.”
+- Show HN: Fast agentic video editing in the browser (Tella): Post repeats headline facts without adding new insight or actionable detail beyond a generic test; originality score below threshold.
+  - Rejected text: Tella offers native screen recording with AI editing and 4K export. Run a 4K export test to confirm quality and file size limits. https://www.tella.com
+- Show HN: Fast agentic video editing in the browser (Tella): The factual opening bundles multiple features; narrow it to one capability.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.; No claim-by-claim supporting evidence was provided; Unsupported numeric claim(s): 60; Supporting quotes cover only 11% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: Tella is AI video editing software that records screen, camera, and audio natively. Export videos in up to 4K at 60 FPS directly to platforms or download. https://www.tella.com
+  - Model evidence quote: “Export in 4K Publish directly to your favorite platforms or download your video in up to 4K 60FPS.”
 
 ## Top discovery candidates considered
 
-- Show HN: StrictLLM – For when you need human-in-the-loop | Hacker News | product_and_workflow_tools | raw 65, adjusted 67 | https://strictllm.com
-- Show HN: Backend for Agents and Builders who don't need one yet – Statebase | Hacker News | product_and_workflow_tools | raw 63, adjusted 65 | https://statebase.dev
-- coddy-project/coddy-agent | GitHub Search | security_and_self_hosting | raw 70, adjusted 64 | current stars 186 | GitHub star trend: building baseline | https://github.com/coddy-project/coddy-agent
+- Show HN: Fast agentic video editing in the browser (Tella) | Hacker News | product_and_workflow_tools | raw 67, adjusted 69 | https://www.tella.com
+- Show HN: Panta – Open Swiss job market data | Hacker News | product_and_workflow_tools | raw 62, adjusted 64 | https://withpanta.com/
+- indranilbanerjee/digital-marketing-pro | GitHub Search | marketing_and_distribution | raw 68, adjusted 62 | current stars 914 | GitHub star trend: building baseline | https://github.com/indranilbanerjee/digital-marketing-pro
 
 ## Safety and interpretation
 

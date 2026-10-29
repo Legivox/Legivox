@@ -1,24 +1,24 @@
 {
-  "generated_at_ist": "2026-10-29T21:05:53+05:30",
-  "run_at_ist": "2026-10-29T21:05:53+05:30",
+  "generated_at_ist": "2026-10-29T22:05:27+05:30",
+  "run_at_ist": "2026-10-29T22:05:27+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 318,
-  "eligible_candidate_count": 208,
+  "candidate_count_raw": 317,
+  "eligible_candidate_count": 197,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4861
+      "total_count": 4878
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1067
+      "total_count": 1068
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
@@ -32,7 +32,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2928
+      "total_count": 2934
     },
     {
       "source": "GitHub Search · github-digital-product-tools",
@@ -46,7 +46,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 430
+      "total_count": 433
     },
     {
       "source": "GitHub Search · github-marketing-distribution",
@@ -60,14 +60,14 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2125
+      "total_count": 2143
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3396
+      "total_count": 3400
     },
     {
       "source": "GitHub Search · github-seller-operations",
@@ -81,14 +81,14 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 136
+      "total_count": 137
     },
     {
       "source": "GitHub Search · github-workflow-automation",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 277
+      "total_count": 278
     },
     {
       "source": "Hacker News · hn-analytics-growth",
@@ -100,7 +100,7 @@
     {
       "source": "Hacker News · hn-automation-api",
       "kind": "hacker_news",
-      "items_kept": 2,
+      "items_kept": 1,
       "status": "ok",
       "total_count": 10
     },
@@ -163,7 +163,7 @@
     {
       "source": "Hacker News · hn-shopify",
       "kind": "hacker_news",
-      "items_kept": 10,
+      "items_kept": 9,
       "status": "ok",
       "total_count": 10
     },
@@ -227,7 +227,7 @@
       "kind": "wordpress_plugin",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2011
+      "total_count": 2014
     },
     {
       "source": "WordPress Plugin Directory · wp-ecommerce",
@@ -255,14 +255,14 @@
       "kind": "wordpress_plugin",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2197
+      "total_count": 2196
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-29T15:35:53+00:00",
+    "observed_at_utc": "2026-10-29T16:35:27+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 108,
-    "previously_tracked_repositories_refreshed": 92,
+    "repositories_seen_in_discovery": 109,
+    "previously_tracked_repositories_refreshed": 91,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
@@ -272,29 +272,29 @@
   },
   "primary_source_checks": [
     {
-      "candidate_id": "cf8745a690f88e61",
-      "title": "Show HN: StrictLLM – For when you need human-in-the-loop",
-      "source_url": "https://strictllm.com",
+      "candidate_id": "3dd1fecdea603fad",
+      "title": "Show HN: Fast agentic video editing in the browser (Tella)",
+      "source_url": "https://www.tella.com",
       "verified": true,
-      "final_url": "https://strictllm.com",
+      "final_url": "https://www.tella.com",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "d16eb7f8c20e6608",
-      "title": "Show HN: Backend for Agents and Builders who don't need one yet – Statebase",
-      "source_url": "https://statebase.dev",
+      "candidate_id": "a9ebc932c326af49",
+      "title": "Show HN: Panta – Open Swiss job market data",
+      "source_url": "https://withpanta.com/",
       "verified": true,
-      "final_url": "https://statebase.dev",
+      "final_url": "https://withpanta.com/",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "6aa85eb2cdb35630",
-      "title": "coddy-project/coddy-agent",
-      "source_url": "https://github.com/coddy-project/coddy-agent",
+      "candidate_id": "aaae725ea5c245bd",
+      "title": "indranilbanerjee/digital-marketing-pro",
+      "source_url": "https://github.com/indranilbanerjee/digital-marketing-pro",
       "verified": true,
-      "final_url": "https://github.com/coddy-project/coddy-agent",
+      "final_url": "https://github.com/indranilbanerjee/digital-marketing-pro",
       "http_status": 200,
       "reason": ""
     }
@@ -307,120 +307,123 @@
   "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "d16eb7f8c20e6608",
-      "title": "Show HN: Backend for Agents and Builders who don't need one yet – Statebase",
+      "candidate_id": "a9ebc932c326af49",
+      "title": "Show HN: Panta – Open Swiss job market data",
       "reasons": [
-        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.",
-        "Editorial takeaway is too long; keep the analysis concrete and concise."
+        "Supporting quotes cover only 57% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "Statebase lets you save JSON data and run server‑side rules with scoped permissions. Test that rule execution respects the defined permission scopes by attempting a write from an unauthorized client. https://statebase.dev",
-      "evidence_quote": "Save JSON data and run server‑side rules with scoped permissions.",
+      "proposed_text": "Panta provides an API for Swiss job index data. Check that returned job records include a Swiss‑eligible flag before use. https://withpanta.com/",
+      "evidence_quote": "Find your next role in Panta’s Swiss job index.",
       "claim_evidence": [
         {
-          "claim": "Statebase lets you save JSON data and run server‑side rules with scoped permissions.",
-          "quote": "Save JSON data and run server‑side rules with scoped permissions."
+          "claim": "Panta provides an API for Swiss job index data",
+          "quote": "Find your next role in Panta’s Swiss job index."
         }
       ]
     },
     {
-      "candidate_id": "6aa85eb2cdb35630",
-      "title": "coddy-project/coddy-agent",
+      "candidate_id": "aaae725ea5c245bd",
+      "title": "indranilbanerjee/digital-marketing-pro",
       "reasons": [
-        "Editorial takeaway is too long; keep the analysis concrete and concise."
+        "Opening sentence is too close to the source headline; add a distinct editorial framing."
       ],
-      "proposed_text": "coddy-agent ships as a single static Go binary that includes an OpenAI‑compatible API and a Telegram gateway. Run a quick integration test to confirm the API responds to a simple prompt before deploying. https://github.com/coddy-project/coddy-agent",
-      "evidence_quote": "General-purpose agent in one static Go binary: console TUI, ACP server for editors, OpenAI‑compatible API with embedded web UI, Telegram gateway",
+      "proposed_text": "digital‑marketing‑pro is an open‑source AI digital marketing OS. Run a test to ensure outputs include a human approval flag. https://github.com/indranilbanerjee/digital-marketing-pro",
+      "evidence_quote": "An open‑source AI based digital marketing operating system for strategy, SEO, AEO/GEO, paid media, content, CRM, and analytics - grounded in brand context, human approval, and verifiable outputs.",
       "claim_evidence": [
         {
-          "claim": "coddy-agent ships as a single static Go binary that includes an OpenAI‑compatible API and a Telegram gateway.",
-          "quote": "General-purpose agent in one static Go binary: console TUI, ACP server for editors, OpenAI‑compatible API with embedded web UI, Telegram gateway"
+          "claim": "digital‑marketing‑pro is an open‑source AI digital marketing OS",
+          "quote": "An open‑source AI based digital marketing operating system for strategy, SEO, AEO/GEO, paid media, content, CRM, and analytics - grounded in brand context, human approval, and verifiable outputs."
         }
       ]
     },
     {
-      "candidate_id": "cf8745a690f88e61",
-      "title": "Show HN: StrictLLM – For when you need human-in-the-loop",
-      "proposed_text": "StrictLLM is a desktop LLM client that enforces fine‑grained permission controls. Verify that each persona’s permissions match the intended scope before enabling chat. https://strictllm.com",
+      "candidate_id": "3dd1fecdea603fad",
+      "title": "Show HN: Fast agentic video editing in the browser (Tella)",
+      "proposed_text": "Tella offers native screen recording with AI editing and 4K export. Run a 4K export test to confirm quality and file size limits. https://www.tella.com",
       "reasons": [
-        "Post restates headline facts without adding new insight; originality below threshold."
+        "Post repeats headline facts without adding new insight or actionable detail beyond a generic test; originality score below threshold."
       ],
       "editorial_review": {
-        "clarity_score": 8,
-        "technical_coherence_score": 8,
+        "clarity_score": 9,
+        "technical_coherence_score": 9,
         "takeaway_value_score": 8,
-        "source_faithfulness_score": 8,
-        "originality_score": 3
+        "source_faithfulness_score": 9,
+        "originality_score": 4
       }
     },
     {
-      "candidate_id": "cf8745a690f88e61",
-      "title": "Show HN: StrictLLM – For when you need human-in-the-loop",
+      "candidate_id": "3dd1fecdea603fad",
+      "title": "Show HN: Fast agentic video editing in the browser (Tella)",
       "reasons": [
         "The factual opening bundles multiple features; narrow it to one capability.",
-        "Editorial takeaway is too long; keep the analysis concrete and concise."
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
+        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
+        "No claim-by-claim supporting evidence was provided",
+        "Unsupported numeric claim(s): 60",
+        "Supporting quotes cover only 11% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "StrictLLM lets you set persona tool permissions to Always Allow, Always Ask, or Always Deny. Verify each persona’s tool permission before enabling chat to ensure the intended scope is enforced. https://strictllm.com",
-      "evidence_quote": "Tool Level Permissions Define exactly how each persona uses tools with flexible permissions: set actions to Always Allow, Always Ask, or Always Deny, giving you complete control...",
+      "proposed_text": "Tella is AI video editing software that records screen, camera, and audio natively. Export videos in up to 4K at 60 FPS directly to platforms or download. https://www.tella.com",
+      "evidence_quote": "Export in 4K Publish directly to your favorite platforms or download your video in up to 4K 60FPS.",
       "automatic_repair_attempt": true,
       "original_rejection_reasons": [
-        "Post restates headline facts without adding new insight; originality below threshold."
+        "Post repeats headline facts without adding new insight or actionable detail beyond a generic test; originality score below threshold."
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "cf8745a690f88e61",
-      "title": "Show HN: StrictLLM – For when you need human-in-the-loop",
-      "url": "https://strictllm.com",
+      "id": "3dd1fecdea603fad",
+      "title": "Show HN: Fast agentic video editing in the browser (Tella)",
+      "url": "https://www.tella.com",
       "source": "Hacker News",
       "primary_category": "product_and_workflow_tools",
-      "priority_score": 65,
-      "hourly_adjusted_score": 67,
+      "priority_score": 67,
+      "hourly_adjusted_score": 69,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-29T15:35:07+00:00",
-      "days_old": 0.0,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "d16eb7f8c20e6608",
-      "title": "Show HN: Backend for Agents and Builders who don't need one yet – Statebase",
-      "url": "https://statebase.dev",
-      "source": "Hacker News",
-      "primary_category": "product_and_workflow_tools",
-      "priority_score": 63,
-      "hourly_adjusted_score": 65,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-29T15:19:01+00:00",
+      "published_at": "2026-10-29T16:14:33+00:00",
       "days_old": 0.01,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "6aa85eb2cdb35630",
-      "title": "coddy-project/coddy-agent",
-      "url": "https://github.com/coddy-project/coddy-agent",
-      "source": "GitHub Search",
-      "primary_category": "security_and_self_hosting",
-      "priority_score": 70,
+      "id": "a9ebc932c326af49",
+      "title": "Show HN: Panta – Open Swiss job market data",
+      "url": "https://withpanta.com/",
+      "source": "Hacker News",
+      "primary_category": "product_and_workflow_tools",
+      "priority_score": 62,
       "hourly_adjusted_score": 64,
-      "stars_current": 186,
+      "stars_current": null,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-29T16:02:30+00:00",
+      "days_old": 0.02,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "aaae725ea5c245bd",
+      "title": "indranilbanerjee/digital-marketing-pro",
+      "url": "https://github.com/indranilbanerjee/digital-marketing-pro",
+      "source": "GitHub Search",
+      "primary_category": "marketing_and_distribution",
+      "priority_score": 68,
+      "hourly_adjusted_score": 62,
+      "stars_current": 914,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "insufficient_history",
-      "published_at": "2026-10-29T15:36:34+00:00",
-      "days_old": 0.0,
+      "published_at": "2026-10-29T15:58:27+00:00",
+      "days_old": 0.03,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
