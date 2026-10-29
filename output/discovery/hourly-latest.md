@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-29T10:56:11+05:30
+- Run time (IST): 2026-10-29T11:53:18+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 206
-- Independent editorial review: 1 draft(s) passed / 0 rejected
-- Drafts passing local checks: 1
-- Outcome: **dry_run_passed**
-- Decision reason: At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.
+- Candidate pool after freshness/diversity filters: 208
+- Independent editorial review: 0 draft(s) passed / 1 rejected
+- Drafts passing local checks: 0
+- Outcome: **skip**
+- Decision reason: No draft cleared the complete automatic quality gate; independent editorial review failed closed. Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi
 
 ## Source health
 
@@ -35,7 +35,7 @@
 | Hacker News · hn-marketing-distribution | 0 | ok |
 | Hacker News · hn-security-selfhost | 0 | ok |
 | Hacker News · hn-seller-operations | 0 | ok |
-| Hacker News · hn-shopify | 9 | ok |
+| Hacker News · hn-shopify | 10 | ok |
 | Hacker News · hn-show-hn | 10 | ok |
 | Ahrefs Blog | 6 | ok |
 | Console.dev | 12 | ok |
@@ -54,8 +54,8 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 112
-- Previously tracked repositories refreshed outside search results: 88
+- Repositories seen in this discovery run: 110
+- Previously tracked repositories refreshed outside search results: 90
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
 - Repositories with a 20–36 hour comparison baseline: 17
@@ -65,66 +65,55 @@
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| obsei/obsei | yes | 200 | https://github.com/obsei/obsei |
-| ChronoAIProject/NyxID | yes | 200 | https://github.com/ChronoAIProject/NyxID |
-| Show HN: Interview your analysts instead of auto-generating a semantic layer | yes | 200 | https://github.com/nodal-data/nodal-context |
+| Show HN: Startica Open-source app for SEO, marketing, accessibility and security | yes | 200 | https://github.com/chriscasper/startica |
+| Show HN: Fabivo – Furniture design from a photo to a numbered cut list | yes | 200 | https://www.fabivo.app/en |
+| rapiddweller/datamimic | yes | 200 | https://github.com/rapiddweller/datamimic |
 
 ## Selected draft candidates
 
-### Draft option 1: obsei/obsei
-
-- Category: ai_and_automation
-- Source: GitHub Search
-- Format: tool_discovery
-- Editorial score: 8.25/10
-- Model scores: timeliness 9/10, usefulness 8/10, novelty 7/10, evidence 9/10, insight 8/10
-- Independent editor scores: {"clarity_score": 9, "technical_coherence_score": 9, "takeaway_value_score": 8, "source_faithfulness_score": 9, "originality_score": 8, "reason": "Clear, technically accurate, and adds a useful verification step.", "passed": true}
-- Live primary page: https://github.com/obsei/obsei (HTTP 200)
-- Exact source evidence: “strips PII from feedback before any LLM sees it”
-- Why this angle: Shows privacy‑first design and a concrete test for redaction.
-- Editorial takeaway: Verify redaction by inspecting sample logs before training.
-- Source: https://github.com/obsei/obsei
-
-**Claim-by-claim source quotes:**
-
-- obsei strips PII from feedback before any LLM sees it ← “strips PII from feedback before any LLM sees it”
-
-Proposed post (not published):
-
-> obsei strips PII from feedback before any LLM sees it. Verify redaction by inspecting sample logs before training. https://github.com/obsei/obsei
-
-- Length: 145/280 raw characters
-- Automated gate: passed live source, evidence, originality, URL and length checks; live publishing is disabled in dry-run mode.
+No draft cleared the complete local and independent-editor gate. See the decision reason and rejected-draft section for locally valid drafts that were rejected, not reviewed, or blocked by a review error.
 
 ## Automatic repair attempt
 
-- Attempted: no
-- Repaired drafts submitted: 0
-- Repaired drafts that passed local validation: 0
-- Repaired drafts rejected: 0
+- Attempted: yes
+- Repaired drafts submitted: 3
+- Repaired drafts that passed local validation: 1
+- Repaired drafts rejected: 2
 - Repair error: none
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
-- ChronoAIProject/NyxID: Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.; A supporting quote does not share enough wording with its stated claim; Supporting quotes cover only 43% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: NyxID injects credentials automatically into proxied API requests. Test that no raw keys appear in request headers during agent calls. https://github.com/ChronoAIProject/NyxID
-  - Model evidence quote: “injects credentials automatically”
-  - Claim support: NyxID injects credentials automatically into proxied API requests ← “injects credentials automatically”
-- Show HN: Interview your analysts instead of auto-generating a semantic layer: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
-  - Rejected text: nodal-context provides open‑source business context for data analytics. Ensure context tables match your semantic layer before use. https://github.com/nodal-data/nodal-context
-  - Model evidence quote: “Open source business context for your data analytics”
-  - Claim support: nodal-context provides open‑source business context for data analytics ← “Open source business context for your data analytics”
+- Show HN: Startica Open-source app for SEO, marketing, accessibility and security: Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: Startica is a local‑first desktop app that acts as an AI co‑founder for post‑deployment tasks. Run its SEO and security scans before launch, then manually verify any false positives. https://github.com/chriscasper/startica
+  - Model evidence quote: “Your AI co‑founder for everything after you ship. Open‑source, local‑first desktop app.”
+  - Claim support: Startica is a local‑first desktop app that acts as an AI co‑founder for post‑deployment tasks. ← “Your AI co‑founder for everything after you ship. Open‑source, local‑first desktop app.”
+- Show HN: Fabivo – Furniture design from a photo to a numbered cut list: A supporting quote does not share enough wording with its stated claim; Supporting quotes cover only 33% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: Fabivo is a browser‑based, offline furniture planner that generates a numbered cut list. Test the cut‑optimizer on a sample sheet to ensure kerf is correctly subtracted. https://www.fabivo.app/en
+  - Model evidence quote: “Fabivo runs in the browser, offline, with no account.”
+  - Claim support: Fabivo is a browser‑based, offline furniture planner that generates a numbered cut list. ← “Fabivo runs in the browser, offline, with no account.”
+- rapiddweller/datamimic: Editorial takeaway is not specific enough to this candidate's technical/product details.; Primary-source evidence quote is missing or absent from the live page (after presentation normalisation); A factual claim lacks a quote present in the live primary-source page
+  - Rejected text: Datamimic provides deterministic, privacy‑preserving synthetic data via Python APIs and XML pipelines. Validate that generated data respects field constraints by comparing schema stats. https://github.com/rapiddweller/datamimic
+  - Model evidence quote: “Model‑driven synthetic test data for CI/CD and analytics - deterministic, privacy‑preserving, and domain‑aware. Includes Python APIs, XML pipelines.”
+  - Claim support: Datamimic provides deterministic, privacy‑preserving synthetic data via Python APIs and XML pipelines. ← “Model‑driven synthetic test data for CI/CD and analytics - deterministic, privacy‑preserving, and domain‑aware. Includes Python APIs, XML pipelines.”
+- Show HN: Fabivo – Furniture design from a photo to a numbered cut list: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.
+  - Rejected text: Fabivo runs in the browser offline with no account. Use Fabivo’s cut‑optimizer to account for saw kerf and grain direction. https://www.fabivo.app/en
+  - Model evidence quote: “Fabivo runs in the browser, offline, with no account.”
+- rapiddweller/datamimic: Editorial takeaway is not specific enough to this candidate's technical/product details.; Primary-source evidence quote is missing or absent from the live page (after presentation normalisation); No claim-by-claim supporting evidence was provided
+  - Rejected text: Datamimic provides deterministic, privacy‑preserving synthetic data via Python APIs and XML pipelines. Validate generated data against the original schema to ensure field constraints are met. https://github.com/rapiddweller/datamimic
+  - Model evidence quote: “Model‑driven synthetic test data for CI/CD and analytics - deterministic, privacy‑preserving, and domain‑aware. Includes Python APIs, XML pipelines.”
+- Show HN: Startica Open-source app for SEO, marketing, accessibility and security: Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi
+  - Rejected text: Startica is an open‑source, local‑first desktop app that acts as an AI co‑founder. Run Startica offline; no account or internet required. https://github.com/chriscasper/startica
 
 ## Top discovery candidates considered
 
-- obsei/obsei | GitHub Search | ai_and_automation | raw 69, adjusted 73 | current stars 1441 | GitHub star trend: building baseline | https://github.com/obsei/obsei
-- ChronoAIProject/NyxID | GitHub Search | ai_and_automation | raw 68, adjusted 72 | current stars 40 | GitHub star trend: building baseline | https://github.com/ChronoAIProject/NyxID
-- Show HN: Interview your analysts instead of auto-generating a semantic layer | Hacker News | product_and_workflow_tools | raw 69, adjusted 71 | https://github.com/nodal-data/nodal-context
+- Show HN: Startica Open-source app for SEO, marketing, accessibility and security | Hacker News | product_and_workflow_tools | raw 67, adjusted 69 | https://github.com/chriscasper/startica
+- Show HN: Fabivo – Furniture design from a photo to a numbered cut list | Hacker News | product_and_workflow_tools | raw 65, adjusted 67 | https://www.fabivo.app/en
+- rapiddweller/datamimic | GitHub Search | data_and_growth | raw 70, adjusted 64 | current stars 116 | GitHub star trend: building baseline | https://github.com/rapiddweller/datamimic
 
 ## Safety and interpretation
 
-- At least one draft passed the automated quality gates; this dry-run workflow itself never publishes to X.
+- This run did not produce a publishable draft; no post was published to X.
 - Model scores are editorial estimates; they are not verified popularity or market demand.
 - Candidate content and metadata are untrusted input. Factual copy must be supported by the fetched primary page.
 - A skip can mean no fresh candidates, a daily diversity/cap limit, a model/API problem or weak drafts. Check the reason above.
