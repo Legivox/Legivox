@@ -1,9 +1,9 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-29T15:02:52+05:30
+- Run time (IST): 2026-10-29T15:59:25+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 212
+- Candidate pool after freshness/diversity filters: 207
 - Independent editorial review: 0 draft(s) passed / 0 rejected
 - Drafts passing local checks: 0
 - Outcome: **skip**
@@ -40,7 +40,7 @@
 | Ahrefs Blog | 6 | ok |
 | Console.dev | 11 | ok |
 | Indie Hackers (unofficial third-party feed) | 5 | ok |
-| Product Hunt | 43 | ok |
+| Product Hunt | 42 | ok |
 | Shopify Community | 30 | ok |
 | Shopify Developer Changelog | 31 | ok |
 | Stripe Blog | 2 | ok |
@@ -54,8 +54,8 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 107
-- Previously tracked repositories refreshed outside search results: 93
+- Repositories seen in this discovery run: 106
+- Previously tracked repositories refreshed outside search results: 94
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
 - Repositories with a 20–36 hour comparison baseline: 19
@@ -65,9 +65,9 @@
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| IamRamgarhia/All-In-One-Free-SEO-Tool | yes | 200 | https://github.com/IamRamgarhia/All-In-One-Free-SEO-Tool |
-| Breaking changes in third-party APIs are turning into a full-time job | yes | 200 | https://news.ycombinator.com/item?id=50273438 |
-| Tool: Atuin Threads | yes | 200 | https://blog.atuin.sh/threads-agent-sessions/?ref=console.dev |
+| Show HN: Pure Particles, an open source art particle toy built with Three.js | yes | 200 | https://pureart-xyz.vercel.app/ |
+| Show HN: MealWords – Show waiters what you can't eat, in their language | yes | 200 | https://mealwords.com/ |
+| yanstd888/yanstd888 | yes | 200 | https://github.com/yanstd888/yanstd888 |
 
 ## Selected draft candidates
 
@@ -76,34 +76,38 @@ No candidate produced a draft that passed every local check. Skipping is intenti
 ## Automatic repair attempt
 
 - Attempted: yes
-- Repaired drafts submitted: 0
+- Repaired drafts submitted: 2
 - Repaired drafts that passed local validation: 0
-- Repaired drafts rejected: 0
+- Repaired drafts rejected: 2
 - Repair error: none
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
-- IamRamgarhia/All-In-One-Free-SEO-Tool: The factual opening bundles multiple features; narrow it to one capability.; Supporting quotes cover only 62% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: All-In-One-Free-SEO-Tool offers 99 SEO tools including site audits and rank tracking. Run a site audit before launching new pages to catch crawl errors. https://github.com/IamRamgarhia/All-In-One-Free-SEO-Tool
-  - Model evidence quote: “99 tools: site audits, rank tracking, keyword research, AI search visibility (ChatGPT, Perplexity, Gemini, AI Overviews), content briefs, backlinks, local SEO, white-label reports, and an agent that applies fixes.”
-  - Claim support: All-In-One-Free-SEO-Tool offers 99 SEO tools including site audits and rank tracking. ← “99 tools: site audits, rank tracking, keyword research, AI search visibility (ChatGPT, Perplexity, Gemini, AI Overviews), content briefs, backlinks, local SEO, white-label reports, and an agent that applies fixes.”
-- Unmapped model draft: Model omitted a valid candidate ID and no exact verified source URL matched.
-- Breaking changes in third-party APIs are turning into a full-time job: Supporting quotes cover only 56% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: Okapi opens pull requests to keep connectors up to date when vendors change APIs. Set up CI to run Okapi PRs nightly to catch breaking changes early. https://news.ycombinator.com/item?id=50273438
-  - Model evidence quote: “Okapi opens pull requests that keep those connections up to date.”
-  - Claim support: Okapi opens pull requests to keep connectors up to date when vendors change APIs. ← “Okapi opens pull requests that keep those connections up to date.”
-- Unmapped model draft: Model omitted a valid candidate ID and no exact verified source URL matched.
-- Tool: Atuin Threads: A supporting quote does not share enough wording with its stated claim; Supporting quotes cover only 33% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: Atuin Threads syncs agent session history across machines with end‑to‑end encryption. Verify session integrity by replaying a synced session on a new machine. https://blog.atuin.sh/threads-agent-sessions/?ref=console.dev
-  - Model evidence quote: “Threads is end‑to‑end encrypted when synced, so we can't read your sessions.”
-  - Claim support: Atuin Threads syncs agent session history across machines with end‑to‑end encryption. ← “Threads is end‑to‑end encrypted when synced, so we can't read your sessions.”
+- Show HN: Pure Particles, an open source art particle toy built with Three.js: Editorial takeaway is not specific enough to this candidate's technical/product details.; A supporting quote does not share enough wording with its stated claim; Supporting quotes cover only 25% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: Pure Art renders particle smoke from an uploaded image using Three.js. Test WebGL2 support before deployment; older browsers will fail. https://pureart-xyz.vercel.app/
+  - Model evidence quote: “Drop an image to colour the smoke”
+  - Claim support: Pure Art renders particle smoke from an uploaded image using Three.js. ← “Drop an image to colour the smoke”
+- Show HN: MealWords – Show waiters what you can't eat, in their language: A supporting quote does not share enough wording with its stated claim; Supporting quotes cover only 43% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: MealWords lets waiters read allergy cards in their language via a tap. Verify language fallback works for non‑Latin scripts before launch. https://mealwords.com/
+  - Model evidence quote: “The waiter reads your requests in their language and taps any they cannot meet.”
+  - Claim support: MealWords lets waiters read allergy cards in their language via a tap. ← “The waiter reads your requests in their language and taps any they cannot meet”
+- yanstd888/yanstd888: The factual opening bundles multiple features; narrow it to one capability.; Supporting quotes cover only 60% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: yanstd888/yanstd888 lists AI, full‑stack, and automation projects. Check the repo's README for updated project links before citing. https://github.com/yanstd888/yanstd888
+  - Model evidence quote: “Personal profile and project index for Yanstd — AI products, full-stack web development, automation, developer tooling, and digital products.”
+  - Claim support: yanstd888/yanstd888 lists AI, full‑stack, and automation projects. ← “Personal profile and project index for Yanstd — AI products, full-stack web development, automation, developer tooling, and digital products”
+- Show HN: Pure Particles, an open source art particle toy built with Three.js: Editorial takeaway is too long; keep the analysis concrete and concise.
+  - Rejected text: Pure Art lets you drop an image to color the smoke. Verify WebGL 2 support before deployment; older browsers will fail to render the particle smoke. https://pureart-xyz.vercel.app/
+  - Model evidence quote: “Drop an image to colour the smoke”
+- yanstd888/yanstd888: Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.
+  - Rejected text: Yanstd’s profile lists AI products. Check the repo’s README for updated project links before citing. https://github.com/yanstd888/yanstd888
+  - Model evidence quote: “Personal profile and project index for Yanstd — AI products, full-stack web development, automation, developer tooling, and digital products.”
 
 ## Top discovery candidates considered
 
-- IamRamgarhia/All-In-One-Free-SEO-Tool | GitHub Search | marketing_and_distribution | raw 73, adjusted 67 | current stars 97 | GitHub star trend: building baseline | https://github.com/IamRamgarhia/All-In-One-Free-SEO-Tool
-- Breaking changes in third-party APIs are turning into a full-time job | Hacker News | product_and_workflow_tools | raw 66, adjusted 66 | https://news.ycombinator.com/item?id=50273438
-- Tool: Atuin Threads | Console.dev | developer_tools | raw 66, adjusted 66 | https://blog.atuin.sh/threads-agent-sessions/?ref=console.dev
+- Show HN: Pure Particles, an open source art particle toy built with Three.js | Hacker News | product_and_workflow_tools | raw 65, adjusted 67 | https://pureart-xyz.vercel.app/
+- Show HN: MealWords – Show waiters what you can't eat, in their language | Hacker News | product_and_workflow_tools | raw 63, adjusted 65 | https://mealwords.com/
+- yanstd888/yanstd888 | GitHub Search | digital_product_business | raw 58, adjusted 65 | current stars 21 | GitHub stars +15 over about 24.0h | https://github.com/yanstd888/yanstd888
 
 ## Safety and interpretation
 

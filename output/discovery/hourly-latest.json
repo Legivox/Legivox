@@ -1,24 +1,24 @@
 {
-  "generated_at_ist": "2026-10-29T15:02:52+05:30",
-  "run_at_ist": "2026-10-29T15:02:52+05:30",
+  "generated_at_ist": "2026-10-29T15:59:25+05:30",
+  "run_at_ist": "2026-10-29T15:59:25+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 314,
-  "eligible_candidate_count": 212,
+  "candidate_count_raw": 312,
+  "eligible_candidate_count": 207,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4801
+      "total_count": 4814
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1044
+      "total_count": 1050
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
@@ -32,7 +32,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2899
+      "total_count": 2904
     },
     {
       "source": "GitHub Search · github-digital-product-tools",
@@ -53,21 +53,21 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 224
+      "total_count": 226
     },
     {
       "source": "GitHub Search · github-mcp-servers",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2107
+      "total_count": 2111
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3353
+      "total_count": 3362
     },
     {
       "source": "GitHub Search · github-seller-operations",
@@ -158,7 +158,7 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 9
+      "total_count": 10
     },
     {
       "source": "Hacker News · hn-shopify",
@@ -195,7 +195,7 @@
     {
       "source": "Product Hunt",
       "kind": "rss",
-      "items_kept": 43,
+      "items_kept": 42,
       "status": "ok"
     },
     {
@@ -259,10 +259,10 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-29T09:32:52+00:00",
+    "observed_at_utc": "2026-10-29T10:29:25+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 107,
-    "previously_tracked_repositories_refreshed": 93,
+    "repositories_seen_in_discovery": 106,
+    "previously_tracked_repositories_refreshed": 94,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
@@ -272,29 +272,29 @@
   },
   "primary_source_checks": [
     {
-      "candidate_id": "b0371d8195b41df4",
-      "title": "IamRamgarhia/All-In-One-Free-SEO-Tool",
-      "source_url": "https://github.com/IamRamgarhia/All-In-One-Free-SEO-Tool",
+      "candidate_id": "33f140a3e66c58b4",
+      "title": "Show HN: Pure Particles, an open source art particle toy built with Three.js",
+      "source_url": "https://pureart-xyz.vercel.app/",
       "verified": true,
-      "final_url": "https://github.com/IamRamgarhia/All-In-One-Free-SEO-Tool",
+      "final_url": "https://pureart-xyz.vercel.app/",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "d44dc6a912a5de1f",
-      "title": "Breaking changes in third-party APIs are turning into a full-time job",
-      "source_url": "https://news.ycombinator.com/item?id=50273438",
+      "candidate_id": "cff1a1e27d1e6010",
+      "title": "Show HN: MealWords – Show waiters what you can't eat, in their language",
+      "source_url": "https://mealwords.com/",
       "verified": true,
-      "final_url": "https://news.ycombinator.com/item?id=50273438",
+      "final_url": "https://mealwords.com/",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "f6b4870412a7c624",
-      "title": "Tool: Atuin Threads",
-      "source_url": "https://blog.atuin.sh/threads-agent-sessions/?ref=console.dev",
+      "candidate_id": "edd008c1f318211c",
+      "title": "yanstd888/yanstd888",
+      "source_url": "https://github.com/yanstd888/yanstd888",
       "verified": true,
-      "final_url": "https://blog.atuin.sh/threads-agent-sessions/?ref=console.dev",
+      "final_url": "https://github.com/yanstd888/yanstd888",
       "http_status": 200,
       "reason": ""
     }
@@ -307,123 +307,138 @@
   "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "b0371d8195b41df4",
-      "title": "IamRamgarhia/All-In-One-Free-SEO-Tool",
+      "candidate_id": "33f140a3e66c58b4",
+      "title": "Show HN: Pure Particles, an open source art particle toy built with Three.js",
       "reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability.",
-        "Supporting quotes cover only 62% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Editorial takeaway is not specific enough to this candidate's technical/product details.",
+        "A supporting quote does not share enough wording with its stated claim",
+        "Supporting quotes cover only 25% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "All-In-One-Free-SEO-Tool offers 99 SEO tools including site audits and rank tracking. Run a site audit before launching new pages to catch crawl errors. https://github.com/IamRamgarhia/All-In-One-Free-SEO-Tool",
-      "evidence_quote": "99 tools: site audits, rank tracking, keyword research, AI search visibility (ChatGPT, Perplexity, Gemini, AI Overviews), content briefs, backlinks, local SEO, white-label reports, and an agent that applies fixes.",
+      "proposed_text": "Pure Art renders particle smoke from an uploaded image using Three.js. Test WebGL2 support before deployment; older browsers will fail. https://pureart-xyz.vercel.app/",
+      "evidence_quote": "Drop an image to colour the smoke",
       "claim_evidence": [
         {
-          "claim": "All-In-One-Free-SEO-Tool offers 99 SEO tools including site audits and rank tracking.",
-          "quote": "99 tools: site audits, rank tracking, keyword research, AI search visibility (ChatGPT, Perplexity, Gemini, AI Overviews), content briefs, backlinks, local SEO, white-label reports, and an agent that applies fixes."
+          "claim": "Pure Art renders particle smoke from an uploaded image using Three.js.",
+          "quote": "Drop an image to colour the smoke"
         }
       ]
     },
     {
-      "candidate_id": null,
-      "title": "Unmapped model draft",
-      "proposed_text": "",
-      "reasons": [
-        "Model omitted a valid candidate ID and no exact verified source URL matched."
-      ]
-    },
-    {
-      "candidate_id": "d44dc6a912a5de1f",
-      "title": "Breaking changes in third-party APIs are turning into a full-time job",
-      "reasons": [
-        "Supporting quotes cover only 56% of factual wording; narrow the claim or provide a closer primary-source quote"
-      ],
-      "proposed_text": "Okapi opens pull requests to keep connectors up to date when vendors change APIs. Set up CI to run Okapi PRs nightly to catch breaking changes early. https://news.ycombinator.com/item?id=50273438",
-      "evidence_quote": "Okapi opens pull requests that keep those connections up to date.",
-      "claim_evidence": [
-        {
-          "claim": "Okapi opens pull requests to keep connectors up to date when vendors change APIs.",
-          "quote": "Okapi opens pull requests that keep those connections up to date."
-        }
-      ]
-    },
-    {
-      "candidate_id": null,
-      "title": "Unmapped model draft",
-      "proposed_text": "",
-      "reasons": [
-        "Model omitted a valid candidate ID and no exact verified source URL matched."
-      ]
-    },
-    {
-      "candidate_id": "f6b4870412a7c624",
-      "title": "Tool: Atuin Threads",
+      "candidate_id": "cff1a1e27d1e6010",
+      "title": "Show HN: MealWords – Show waiters what you can't eat, in their language",
       "reasons": [
         "A supporting quote does not share enough wording with its stated claim",
-        "Supporting quotes cover only 33% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Supporting quotes cover only 43% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "Atuin Threads syncs agent session history across machines with end‑to‑end encryption. Verify session integrity by replaying a synced session on a new machine. https://blog.atuin.sh/threads-agent-sessions/?ref=console.dev",
-      "evidence_quote": "Threads is end‑to‑end encrypted when synced, so we can't read your sessions.",
+      "proposed_text": "MealWords lets waiters read allergy cards in their language via a tap. Verify language fallback works for non‑Latin scripts before launch. https://mealwords.com/",
+      "evidence_quote": "The waiter reads your requests in their language and taps any they cannot meet.",
       "claim_evidence": [
         {
-          "claim": "Atuin Threads syncs agent session history across machines with end‑to‑end encryption.",
-          "quote": "Threads is end‑to‑end encrypted when synced, so we can't read your sessions."
+          "claim": "MealWords lets waiters read allergy cards in their language via a tap.",
+          "quote": "The waiter reads your requests in their language and taps any they cannot meet"
         }
+      ]
+    },
+    {
+      "candidate_id": "edd008c1f318211c",
+      "title": "yanstd888/yanstd888",
+      "reasons": [
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Supporting quotes cover only 60% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ],
+      "proposed_text": "yanstd888/yanstd888 lists AI, full‑stack, and automation projects. Check the repo's README for updated project links before citing. https://github.com/yanstd888/yanstd888",
+      "evidence_quote": "Personal profile and project index for Yanstd — AI products, full-stack web development, automation, developer tooling, and digital products.",
+      "claim_evidence": [
+        {
+          "claim": "yanstd888/yanstd888 lists AI, full‑stack, and automation projects.",
+          "quote": "Personal profile and project index for Yanstd — AI products, full-stack web development, automation, developer tooling, and digital products"
+        }
+      ]
+    },
+    {
+      "candidate_id": "33f140a3e66c58b4",
+      "title": "Show HN: Pure Particles, an open source art particle toy built with Three.js",
+      "reasons": [
+        "Editorial takeaway is too long; keep the analysis concrete and concise."
+      ],
+      "proposed_text": "Pure Art lets you drop an image to color the smoke. Verify WebGL 2 support before deployment; older browsers will fail to render the particle smoke. https://pureart-xyz.vercel.app/",
+      "evidence_quote": "Drop an image to colour the smoke",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "Editorial takeaway is not specific enough to this candidate's technical/product details.",
+        "A supporting quote does not share enough wording with its stated claim",
+        "Supporting quotes cover only 25% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ]
+    },
+    {
+      "candidate_id": "edd008c1f318211c",
+      "title": "yanstd888/yanstd888",
+      "reasons": [
+        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about."
+      ],
+      "proposed_text": "Yanstd’s profile lists AI products. Check the repo’s README for updated project links before citing. https://github.com/yanstd888/yanstd888",
+      "evidence_quote": "Personal profile and project index for Yanstd — AI products, full-stack web development, automation, developer tooling, and digital products.",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Supporting quotes cover only 60% of factual wording; narrow the claim or provide a closer primary-source quote"
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "b0371d8195b41df4",
-      "title": "IamRamgarhia/All-In-One-Free-SEO-Tool",
-      "url": "https://github.com/IamRamgarhia/All-In-One-Free-SEO-Tool",
-      "source": "GitHub Search",
-      "primary_category": "marketing_and_distribution",
-      "priority_score": 73,
-      "hourly_adjusted_score": 67,
-      "stars_current": 97,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "insufficient_history",
-      "published_at": "2026-10-29T09:12:17+00:00",
-      "days_old": 0.01,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "d44dc6a912a5de1f",
-      "title": "Breaking changes in third-party APIs are turning into a full-time job",
-      "url": "https://news.ycombinator.com/item?id=50273438",
+      "id": "33f140a3e66c58b4",
+      "title": "Show HN: Pure Particles, an open source art particle toy built with Three.js",
+      "url": "https://pureart-xyz.vercel.app/",
       "source": "Hacker News",
       "primary_category": "product_and_workflow_tools",
-      "priority_score": 66,
-      "hourly_adjusted_score": 66,
+      "priority_score": 65,
+      "hourly_adjusted_score": 67,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-28T13:44:48+00:00",
-      "days_old": 0.83,
+      "published_at": "2026-10-29T06:57:17+00:00",
+      "days_old": 0.15,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "f6b4870412a7c624",
-      "title": "Tool: Atuin Threads",
-      "url": "https://blog.atuin.sh/threads-agent-sessions/?ref=console.dev",
-      "source": "Console.dev",
-      "primary_category": "developer_tools",
-      "priority_score": 66,
-      "hourly_adjusted_score": 66,
+      "id": "cff1a1e27d1e6010",
+      "title": "Show HN: MealWords – Show waiters what you can't eat, in their language",
+      "url": "https://mealwords.com/",
+      "source": "Hacker News",
+      "primary_category": "product_and_workflow_tools",
+      "priority_score": 63,
+      "hourly_adjusted_score": 65,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-29T08:00:00+00:00",
-      "days_old": 0.06,
+      "published_at": "2026-10-29T08:43:50+00:00",
+      "days_old": 0.07,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "edd008c1f318211c",
+      "title": "yanstd888/yanstd888",
+      "url": "https://github.com/yanstd888/yanstd888",
+      "source": "GitHub Search",
+      "primary_category": "digital_product_business",
+      "priority_score": 58,
+      "hourly_adjusted_score": 65,
+      "stars_current": 21,
+      "stars_delta_24h": 15,
+      "stars_delta_baseline_hours": 24.0,
+      "stars_growth_percent_24h": 250.0,
+      "trend_signal": "measured_star_growth",
+      "published_at": "2026-10-28T23:38:13+00:00",
+      "days_old": 0.45,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
@@ -431,9 +446,9 @@
   ],
   "automatic_repair": {
     "attempted": true,
-    "drafts_submitted": 0,
+    "drafts_submitted": 2,
     "repaired_local_passes": 0,
-    "repair_rejections": 0,
+    "repair_rejections": 2,
     "repair_error": null,
     "editorial_repair_attempted": false,
     "editorial_repair_drafts_submitted": 0,
@@ -450,7 +465,7 @@
   },
   "state_summary": {
     "used_candidates_in_cooldown": 24,
-    "recently_attempted_candidates": 21,
+    "recently_attempted_candidates": 24,
     "recent_draft_passes_today": 2
   }
 }
