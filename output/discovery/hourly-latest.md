@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-29T08:56:41+05:30
+- Run time (IST): 2026-10-29T09:57:56+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
 - Candidate pool after freshness/diversity filters: 205
-- Independent editorial review: 0 draft(s) passed / 1 rejected
+- Independent editorial review: 0 draft(s) passed / 0 rejected
 - Drafts passing local checks: 0
 - Outcome: **skip**
-- Decision reason: Every draft submitted for independent editorial review was rejected; The hour was skipped.
+- Decision reason: All generated drafts failed the local evidence/editorial checks; the hour was skipped.
 
 ## Source health
 
@@ -65,41 +65,52 @@
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| Show HN: Simple DeepSeek web search CLI written in TypeScript (fast/cheap) | no | — | Primary source returned HTTP 403. |
-| oomol-lab/open-flow | yes | 200 | https://github.com/oomol-lab/open-flow |
-| OpenAdaptAI/OpenAdapt | yes | 200 | https://github.com/OpenAdaptAI/OpenAdapt |
+| ldbumble/taskuary | yes | 200 | https://github.com/ldbumble/taskuary |
+| tale-project/tale | yes | 200 | https://github.com/tale-project/tale |
+| Show HN: Algeon – Compose GPU graph, vector, and ML algorithms in SQL | yes | 200 | https://github.com/algeon-dev/algeon |
 
 ## Selected draft candidates
 
-No draft cleared the complete local and independent-editor gate. See the decision reason and rejected-draft section for locally valid drafts that were rejected, not reviewed, or blocked by a review error.
+No candidate produced a draft that passed every local check. Skipping is intentional.
 
 ## Automatic repair attempt
 
 - Attempted: yes
-- Repaired drafts submitted: 1
+- Repaired drafts submitted: 3
 - Repaired drafts that passed local validation: 0
-- Repaired drafts rejected: 1
+- Repaired drafts rejected: 3
 - Repair error: none
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
-- Show HN: Simple DeepSeek web search CLI written in TypeScript (fast/cheap): Primary source returned HTTP 403.
-- OpenAdaptAI/OpenAdapt: Supporting quotes cover only 64% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: OpenAdapt records user actions to create a local program that repeats steps without model calls. Validate the stop condition by simulating a mismatched save during a test run. https://github.com/OpenAdaptAI/OpenAdapt
-  - Model evidence quote: “OpenAdapt turns it into a local program that repeats the steps with no model calls, checks each save, and stops when something doesn't match.”
-  - Claim support: OpenAdapt records user actions to create a local program that repeats steps without model calls. ← “OpenAdapt turns it into a local program that repeats the steps with no model calls, checks each save, and stops when something doesn't match.”
-- oomol-lab/open-flow: Takeaway about unit tests is not supported by the source and adds no new insight.
-  - Rejected text: Open-flow lets you build visual workflows in TypeScript with isolated execution. Run unit tests on each node to catch runtime errors before deployment. https://github.com/oomol-lab/open-flow
-- oomol-lab/open-flow: Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; Supporting quotes cover only 60% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: Open-flow is an open‑source visual workflow automation tool written in TypeScript. Trigger workflows programmatically through the self‑hosted Control API. https://github.com/oomol-lab/open-flow
-  - Model evidence quote: “Open-source visual workflow automation with real TypeScript, isolated execution, and a self-hosted Control API.”
+- ldbumble/taskuary: Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.; The factual opening bundles multiple features; narrow it to one capability.
+  - Rejected text: mail, chats and tickets become tasks, agents like Claude, Codex, Gemini do the work. Verify that outgoing messages pause for your approval before sending. https://github.com/ldbumble/taskuary
+  - Model evidence quote: “mail, chats and tickets become tasks, the agents you already use (Claude Code, Codex, Gemini) do the work”
+  - Claim support: taskuary turns mail, chats and tickets into tasks using Claude, Codex, Gemini agents ← “mail, chats and tickets become tasks, the agents you already use (Claude Code, Codex, Gemini) do the work”
+- tale-project/tale: Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.; The factual opening bundles multiple features; narrow it to one capability.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
+  - Rejected text: Assign tasks, coordinate agents in persistent sandboxes, and review results together. Restart the agent to confirm sandbox state persists. https://github.com/tale-project/tale
+  - Model evidence quote: “Assign tasks, coordinate agents in persistent sandboxes, and review results together”
+  - Claim support: tale lets teams assign tasks and coordinate agents in persistent sandboxes ← “Assign tasks, coordinate agents in persistent sandboxes, and review results together”
+- Show HN: Algeon – Compose GPU graph, vector, and ML algorithms in SQL: The factual opening bundles multiple features; narrow it to one capability.
+  - Rejected text: Algeon exposes NVIDIA cuGraph, cuVS, and cuML as SQL table functions via DataFusion. Run cuGraph functions on a sample graph to confirm correct output. https://github.com/algeon-dev/algeon
+  - Model evidence quote: “Algeon is a query engine built on Apache DataFusion that exposes NVIDIA's cuGraph, cuVS, and cuML as SQL table functions”
+  - Claim support: Algeon exposes NVIDIA cuGraph, cuVS, cuML as SQL table functions ← “Algeon is a query engine built on Apache DataFusion that exposes NVIDIA's cuGraph, cuVS, and cuML as SQL table functions”
+- ldbumble/taskuary: The factual opening bundles multiple features; narrow it to one capability.
+  - Rejected text: Taskuary turns mail into tasks using Claude, Codex, Gemini agents. Verify that outgoing messages pause for your approval before sending. https://github.com/ldbumble/taskuary
+  - Model evidence quote: “mail, chats and tickets become tasks, the agents you already use (Claude Code, Codex, Gemini) do the work”
+- tale-project/tale: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
+  - Rejected text: Tale assigns tasks to teams and coordinates agents in persistent sandboxes. Restart an agent to confirm that the sandbox state persists across sessions. https://github.com/tale-project/tale
+  - Model evidence quote: “Assign tasks, coordinate agents in persistent sandboxes, and review results together”
+- Show HN: Algeon – Compose GPU graph, vector, and ML algorithms in SQL: Primary-source evidence quote is missing or absent from the live page (after presentation normalisation); No claim-by-claim supporting evidence was provided
+  - Rejected text: Algeon exposes NVIDIA cuGraph as a SQL table function via DataFusion. Run cuGraph's triangle count on a sample graph to confirm correct output. https://github.com/algeon-dev/algeon
+  - Model evidence quote: “Algeon is a query engine built on Apache DataFusion that exposes NVIDIA's cuGraph, cuVS, and cuML as SQL table functions”
 
 ## Top discovery candidates considered
 
-- Show HN: Simple DeepSeek web search CLI written in TypeScript (fast/cheap) | Hacker News | product_and_workflow_tools | raw 77, adjusted 79 | https://www.npmjs.com/package/deepseek-search-cli
-- oomol-lab/open-flow | GitHub Search | ai_and_automation | raw 69, adjusted 73 | current stars 280 | GitHub star trend: building baseline | https://github.com/oomol-lab/open-flow
-- OpenAdaptAI/OpenAdapt | GitHub Search | ai_and_automation | raw 68, adjusted 72 | current stars 1845 | GitHub star trend: building baseline | https://github.com/OpenAdaptAI/OpenAdapt
+- ldbumble/taskuary | GitHub Search | ai_and_automation | raw 71, adjusted 75 | current stars 144 | GitHub star trend: building baseline | https://github.com/ldbumble/taskuary
+- tale-project/tale | GitHub Search | ai_and_automation | raw 69, adjusted 73 | current stars 36 | GitHub star trend: building baseline | https://github.com/tale-project/tale
+- Show HN: Algeon – Compose GPU graph, vector, and ML algorithms in SQL | Hacker News | data_and_growth | raw 69, adjusted 71 | https://github.com/algeon-dev/algeon
 
 ## Safety and interpretation
 

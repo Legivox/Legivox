@@ -1,6 +1,6 @@
 {
-  "generated_at_ist": "2026-10-29T08:56:41+05:30",
-  "run_at_ist": "2026-10-29T08:56:41+05:30",
+  "generated_at_ist": "2026-10-29T09:57:56+05:30",
+  "run_at_ist": "2026-10-29T09:57:56+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
   "candidate_count_raw": 314,
@@ -11,7 +11,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4762
+      "total_count": 4769
     },
     {
       "source": "GitHub Search · github-analytics-seo",
@@ -25,14 +25,14 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 354
+      "total_count": 357
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2882
+      "total_count": 2885
     },
     {
       "source": "GitHub Search · github-digital-product-tools",
@@ -46,7 +46,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 412
+      "total_count": 414
     },
     {
       "source": "GitHub Search · github-marketing-distribution",
@@ -60,14 +60,14 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2093
+      "total_count": 2096
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3323
+      "total_count": 3328
     },
     {
       "source": "GitHub Search · github-seller-operations",
@@ -88,7 +88,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 266
+      "total_count": 267
     },
     {
       "source": "Hacker News · hn-analytics-growth",
@@ -259,7 +259,7 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-29T03:26:41+00:00",
+    "observed_at_utc": "2026-10-29T04:27:56+00:00",
     "tracked_repositories": 200,
     "repositories_seen_in_discovery": 109,
     "previously_tracked_repositories_refreshed": 91,
@@ -272,159 +272,186 @@
   },
   "primary_source_checks": [
     {
-      "candidate_id": "d799995273e0d7dd",
-      "title": "Show HN: Simple DeepSeek web search CLI written in TypeScript (fast/cheap)",
-      "source_url": "https://www.npmjs.com/package/deepseek-search-cli",
-      "verified": false,
-      "final_url": null,
-      "http_status": null,
-      "reason": "Primary source returned HTTP 403."
-    },
-    {
-      "candidate_id": "36be873f79a8140f",
-      "title": "oomol-lab/open-flow",
-      "source_url": "https://github.com/oomol-lab/open-flow",
+      "candidate_id": "aaac4c73f6063b6f",
+      "title": "ldbumble/taskuary",
+      "source_url": "https://github.com/ldbumble/taskuary",
       "verified": true,
-      "final_url": "https://github.com/oomol-lab/open-flow",
+      "final_url": "https://github.com/ldbumble/taskuary",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "c70677727b6951d8",
-      "title": "OpenAdaptAI/OpenAdapt",
-      "source_url": "https://github.com/OpenAdaptAI/OpenAdapt",
+      "candidate_id": "1749caf6c35a8a0b",
+      "title": "tale-project/tale",
+      "source_url": "https://github.com/tale-project/tale",
       "verified": true,
-      "final_url": "https://github.com/OpenAdaptAI/OpenAdapt",
+      "final_url": "https://github.com/tale-project/tale",
+      "http_status": 200,
+      "reason": ""
+    },
+    {
+      "candidate_id": "f22b2f89826fe9db",
+      "title": "Show HN: Algeon – Compose GPU graph, vector, and ML algorithms in SQL",
+      "source_url": "https://github.com/algeon-dev/algeon",
+      "verified": true,
+      "final_url": "https://github.com/algeon-dev/algeon",
       "http_status": 200,
       "reason": ""
     }
   ],
-  "rejected_primary_sources": [
-    {
-      "candidate_id": "d799995273e0d7dd",
-      "title": "Show HN: Simple DeepSeek web search CLI written in TypeScript (fast/cheap)",
-      "source": "Hacker News",
-      "url": "https://www.npmjs.com/package/deepseek-search-cli",
-      "reasons": [
-        "Primary source returned HTTP 403."
-      ]
-    }
-  ],
+  "rejected_primary_sources": [],
   "daily_draft_cap": 16,
   "daily_drafts_already_passed": 1,
   "outcome": "skip",
-  "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
+  "decision_reason": "All generated drafts failed the local evidence/editorial checks; the hour was skipped.",
   "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "d799995273e0d7dd",
-      "title": "Show HN: Simple DeepSeek web search CLI written in TypeScript (fast/cheap)",
-      "source": "Hacker News",
-      "url": "https://www.npmjs.com/package/deepseek-search-cli",
+      "candidate_id": "aaac4c73f6063b6f",
+      "title": "ldbumble/taskuary",
       "reasons": [
-        "Primary source returned HTTP 403."
-      ]
-    },
-    {
-      "candidate_id": "c70677727b6951d8",
-      "title": "OpenAdaptAI/OpenAdapt",
-      "reasons": [
-        "Supporting quotes cover only 64% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.",
+        "The factual opening bundles multiple features; narrow it to one capability."
       ],
-      "proposed_text": "OpenAdapt records user actions to create a local program that repeats steps without model calls. Validate the stop condition by simulating a mismatched save during a test run. https://github.com/OpenAdaptAI/OpenAdapt",
-      "evidence_quote": "OpenAdapt turns it into a local program that repeats the steps with no model calls, checks each save, and stops when something doesn't match.",
+      "proposed_text": "mail, chats and tickets become tasks, agents like Claude, Codex, Gemini do the work. Verify that outgoing messages pause for your approval before sending. https://github.com/ldbumble/taskuary",
+      "evidence_quote": "mail, chats and tickets become tasks, the agents you already use (Claude Code, Codex, Gemini) do the work",
       "claim_evidence": [
         {
-          "claim": "OpenAdapt records user actions to create a local program that repeats steps without model calls.",
-          "quote": "OpenAdapt turns it into a local program that repeats the steps with no model calls, checks each save, and stops when something doesn't match."
+          "claim": "taskuary turns mail, chats and tickets into tasks using Claude, Codex, Gemini agents",
+          "quote": "mail, chats and tickets become tasks, the agents you already use (Claude Code, Codex, Gemini) do the work"
         }
       ]
     },
     {
-      "candidate_id": "36be873f79a8140f",
-      "title": "oomol-lab/open-flow",
-      "proposed_text": "Open-flow lets you build visual workflows in TypeScript with isolated execution. Run unit tests on each node to catch runtime errors before deployment. https://github.com/oomol-lab/open-flow",
+      "candidate_id": "1749caf6c35a8a0b",
+      "title": "tale-project/tale",
       "reasons": [
-        "Takeaway about unit tests is not supported by the source and adds no new insight."
+        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.",
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
       ],
-      "editorial_review": {
-        "clarity_score": 8,
-        "technical_coherence_score": 8,
-        "takeaway_value_score": 4,
-        "source_faithfulness_score": 8,
-        "originality_score": 6
-      }
+      "proposed_text": "Assign tasks, coordinate agents in persistent sandboxes, and review results together. Restart the agent to confirm sandbox state persists. https://github.com/tale-project/tale",
+      "evidence_quote": "Assign tasks, coordinate agents in persistent sandboxes, and review results together",
+      "claim_evidence": [
+        {
+          "claim": "tale lets teams assign tasks and coordinate agents in persistent sandboxes",
+          "quote": "Assign tasks, coordinate agents in persistent sandboxes, and review results together"
+        }
+      ]
     },
     {
-      "candidate_id": "36be873f79a8140f",
-      "title": "oomol-lab/open-flow",
+      "candidate_id": "f22b2f89826fe9db",
+      "title": "Show HN: Algeon – Compose GPU graph, vector, and ML algorithms in SQL",
       "reasons": [
-        "Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.",
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
-        "Supporting quotes cover only 60% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "The factual opening bundles multiple features; narrow it to one capability."
       ],
-      "proposed_text": "Open-flow is an open‑source visual workflow automation tool written in TypeScript. Trigger workflows programmatically through the self‑hosted Control API. https://github.com/oomol-lab/open-flow",
-      "evidence_quote": "Open-source visual workflow automation with real TypeScript, isolated execution, and a self-hosted Control API.",
+      "proposed_text": "Algeon exposes NVIDIA cuGraph, cuVS, and cuML as SQL table functions via DataFusion. Run cuGraph functions on a sample graph to confirm correct output. https://github.com/algeon-dev/algeon",
+      "evidence_quote": "Algeon is a query engine built on Apache DataFusion that exposes NVIDIA's cuGraph, cuVS, and cuML as SQL table functions",
+      "claim_evidence": [
+        {
+          "claim": "Algeon exposes NVIDIA cuGraph, cuVS, cuML as SQL table functions",
+          "quote": "Algeon is a query engine built on Apache DataFusion that exposes NVIDIA's cuGraph, cuVS, and cuML as SQL table functions"
+        }
+      ]
+    },
+    {
+      "candidate_id": "aaac4c73f6063b6f",
+      "title": "ldbumble/taskuary",
+      "reasons": [
+        "The factual opening bundles multiple features; narrow it to one capability."
+      ],
+      "proposed_text": "Taskuary turns mail into tasks using Claude, Codex, Gemini agents. Verify that outgoing messages pause for your approval before sending. https://github.com/ldbumble/taskuary",
+      "evidence_quote": "mail, chats and tickets become tasks, the agents you already use (Claude Code, Codex, Gemini) do the work",
       "automatic_repair_attempt": true,
       "original_rejection_reasons": [
-        "Takeaway about unit tests is not supported by the source and adds no new insight."
+        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.",
+        "The factual opening bundles multiple features; narrow it to one capability."
+      ]
+    },
+    {
+      "candidate_id": "1749caf6c35a8a0b",
+      "title": "tale-project/tale",
+      "reasons": [
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
+      ],
+      "proposed_text": "Tale assigns tasks to teams and coordinates agents in persistent sandboxes. Restart an agent to confirm that the sandbox state persists across sessions. https://github.com/tale-project/tale",
+      "evidence_quote": "Assign tasks, coordinate agents in persistent sandboxes, and review results together",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.",
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
+      ]
+    },
+    {
+      "candidate_id": "f22b2f89826fe9db",
+      "title": "Show HN: Algeon – Compose GPU graph, vector, and ML algorithms in SQL",
+      "reasons": [
+        "Primary-source evidence quote is missing or absent from the live page (after presentation normalisation)",
+        "No claim-by-claim supporting evidence was provided"
+      ],
+      "proposed_text": "Algeon exposes NVIDIA cuGraph as a SQL table function via DataFusion. Run cuGraph's triangle count on a sample graph to confirm correct output. https://github.com/algeon-dev/algeon",
+      "evidence_quote": "Algeon is a query engine built on Apache DataFusion that exposes NVIDIA's cuGraph, cuVS, and cuML as SQL table functions",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "The factual opening bundles multiple features; narrow it to one capability."
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "d799995273e0d7dd",
-      "title": "Show HN: Simple DeepSeek web search CLI written in TypeScript (fast/cheap)",
-      "url": "https://www.npmjs.com/package/deepseek-search-cli",
-      "source": "Hacker News",
-      "primary_category": "product_and_workflow_tools",
-      "priority_score": 77,
-      "hourly_adjusted_score": 79,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-29T00:20:19+00:00",
-      "days_old": 0.13,
-      "primary_source_verified": false,
-      "primary_source_http_status": null,
-      "primary_source_reason": "Primary source returned HTTP 403."
-    },
-    {
-      "id": "36be873f79a8140f",
-      "title": "oomol-lab/open-flow",
-      "url": "https://github.com/oomol-lab/open-flow",
+      "id": "aaac4c73f6063b6f",
+      "title": "ldbumble/taskuary",
+      "url": "https://github.com/ldbumble/taskuary",
       "source": "GitHub Search",
       "primary_category": "ai_and_automation",
-      "priority_score": 69,
-      "hourly_adjusted_score": 73,
-      "stars_current": 280,
+      "priority_score": 71,
+      "hourly_adjusted_score": 75,
+      "stars_current": 144,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "insufficient_history",
-      "published_at": "2026-10-29T03:05:54+00:00",
-      "days_old": 0.01,
+      "published_at": "2026-10-29T04:27:37+00:00",
+      "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "c70677727b6951d8",
-      "title": "OpenAdaptAI/OpenAdapt",
-      "url": "https://github.com/OpenAdaptAI/OpenAdapt",
+      "id": "1749caf6c35a8a0b",
+      "title": "tale-project/tale",
+      "url": "https://github.com/tale-project/tale",
       "source": "GitHub Search",
       "primary_category": "ai_and_automation",
-      "priority_score": 68,
-      "hourly_adjusted_score": 72,
-      "stars_current": 1845,
+      "priority_score": 69,
+      "hourly_adjusted_score": 73,
+      "stars_current": 36,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "insufficient_history",
-      "published_at": "2026-10-29T03:26:41+00:00",
+      "published_at": "2026-10-29T04:25:36+00:00",
       "days_old": 0.0,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "f22b2f89826fe9db",
+      "title": "Show HN: Algeon – Compose GPU graph, vector, and ML algorithms in SQL",
+      "url": "https://github.com/algeon-dev/algeon",
+      "source": "Hacker News",
+      "primary_category": "data_and_growth",
+      "priority_score": 69,
+      "hourly_adjusted_score": 71,
+      "stars_current": null,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-28T14:47:23+00:00",
+      "days_old": 0.57,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
@@ -432,19 +459,19 @@
   ],
   "automatic_repair": {
     "attempted": true,
-    "drafts_submitted": 1,
+    "drafts_submitted": 3,
     "repaired_local_passes": 0,
-    "repair_rejections": 1,
+    "repair_rejections": 3,
     "repair_error": null,
-    "editorial_repair_attempted": true,
-    "editorial_repair_drafts_submitted": 1,
+    "editorial_repair_attempted": false,
+    "editorial_repair_drafts_submitted": 0,
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 1,
-    "submitted_for_independent_review": 1,
+    "locally_valid_drafts": 0,
+    "submitted_for_independent_review": 0,
     "passed_independent_review": 0,
-    "rejected_by_independent_review": 1,
+    "rejected_by_independent_review": 0,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
