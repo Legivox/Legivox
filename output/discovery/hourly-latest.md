@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-29T13:13:57+05:30
+- Run time (IST): 2026-10-29T14:03:57+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 219
-- Independent editorial review: 0 draft(s) passed / 1 rejected
+- Candidate pool after freshness/diversity filters: 220
+- Independent editorial review: 0 draft(s) passed / 0 rejected
 - Drafts passing local checks: 0
 - Outcome: **skip**
-- Decision reason: Every draft submitted for independent editorial review was rejected; The hour was skipped.
+- Decision reason: All generated drafts failed the local evidence/editorial checks; the hour was skipped.
 
 ## Source health
 
@@ -35,10 +35,10 @@
 | Hacker News · hn-marketing-distribution | 0 | ok |
 | Hacker News · hn-security-selfhost | 0 | ok |
 | Hacker News · hn-seller-operations | 0 | ok |
-| Hacker News · hn-shopify | 10 | ok |
+| Hacker News · hn-shopify | 8 | ok |
 | Hacker News · hn-show-hn | 10 | ok |
 | Ahrefs Blog | 6 | ok |
-| Console.dev | 12 | ok |
+| Console.dev | 11 | ok |
 | Indie Hackers (unofficial third-party feed) | 5 | ok |
 | Product Hunt | 45 | ok |
 | Shopify Community | 30 | ok |
@@ -54,56 +54,63 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 113
-- Previously tracked repositories refreshed outside search results: 87
+- Repositories seen in this discovery run: 112
+- Previously tracked repositories refreshed outside search results: 88
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
-- Repositories with a 20–36 hour comparison baseline: 17
+- Repositories with a 20–36 hour comparison baseline: 19
 - First observations are baseline samples, not evidence of trending. Star velocity is reported only when a historical comparison exists.
 
 ## Primary-source verification
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| Show HN: Uji – Gentoo of Coding Agents | yes | 200 | https://github.com/uji-labs/uji |
-| Breaking changes in third-party APIs are turning into a full-time job | no | — | Primary source returned HTTP 429. |
-| IHUI-INF-AI/IHUI-AI | yes | 200 | https://github.com/IHUI-INF-AI/IHUI-AI |
+| PostHog/posthog | yes | 200 | https://github.com/PostHog/posthog |
+| Tool: Namespace Devbox | yes | 200 | https://namespace.so/?ref=console.dev |
+| paperclipai/paperclip | yes | 200 | https://github.com/paperclipai/paperclip |
 
 ## Selected draft candidates
 
-No draft cleared the complete local and independent-editor gate. See the decision reason and rejected-draft section for locally valid drafts that were rejected, not reviewed, or blocked by a review error.
+No candidate produced a draft that passed every local check. Skipping is intentional.
 
 ## Automatic repair attempt
 
 - Attempted: yes
-- Repaired drafts submitted: 2
-- Repaired drafts that passed local validation: 1
-- Repaired drafts rejected: 1
+- Repaired drafts submitted: 3
+- Repaired drafts that passed local validation: 0
+- Repaired drafts rejected: 3
 - Repair error: none
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
-- Breaking changes in third-party APIs are turning into a full-time job: Primary source returned HTTP 429.
-- Show HN: Uji – Gentoo of Coding Agents: A supporting quote does not share enough wording with its stated claim; Supporting quotes cover only 29% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: Uji is a coding harness built in Rust and Lua for composable agent workflows. Run a failing Neovim config through Uji to verify error isolation before deployment. https://github.com/uji-labs/uji
-  - Model evidence quote: “God's chosen Coding Harness”
-  - Claim support: Uji is a coding harness ← “God's chosen Coding Harness”
-- IHUI-INF-AI/IHUI-AI: The factual opening bundles multiple features; narrow it to one capability.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; Supporting quotes cover only 56% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: IHUI‑AI unifies 176 LLMs via LangGraph, MCP, and A2A in a multi‑tenant system. Query a protected table from two tenants to confirm row‑level isolation in IHUI‑AI. https://github.com/IHUI-INF-AI/IHUI-AI
-  - Model evidence quote: “unifies 176 LLMs via LangGraph + MCP + A2A”
-  - Claim support: IHUI‑AI unifies 176 LLMs via LangGraph, MCP, and A2A ← “unifies 176 LLMs via LangGraph + MCP + A2A”
-- IHUI-INF-AI/IHUI-AI: The factual opening bundles multiple features; narrow it to one capability.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
-  - Rejected text: IHUI‑AI unifies 176 LLMs via LangGraph, MCP, and A2A. Query a protected table from two tenants to confirm row‑level isolation. https://github.com/IHUI-INF-AI/IHUI-AI
-  - Model evidence quote: “unifies 176 LLMs via LangGraph + MCP + A2A”
-- Show HN: Uji – Gentoo of Coding Agents: The post claims Uji can run a failing Neovim config for error isolation, but the source excerpt does not mention Neovim or such a use case. The claim is unsupported and the technical logic is unclear.
-  - Rejected text: Uji is God's chosen coding harness for composable agent workflows. Run a failing Neovim config through Uji to verify error isolation before deployment. https://github.com/uji-labs/uji
+- PostHog/posthog: The factual opening bundles multiple features; narrow it to one capability.
+  - Rejected text: PostHog offers AI observability, analytics, session replay, flags, experiments, error tracking, and logs. Run session replay tests before deploying new UI changes to catch regressions. https://github.com/PostHog/posthog
+  - Model evidence quote: “PostHog is the leading platform for building self-driving products. Our developer tools – AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more – capture all the context agents need to diagnose problems, uncover opportunities, and ship fixes.”
+  - Claim support: PostHog offers AI observability, analytics, session replay, flags, experiments, error tracking, and logs. ← “PostHog is the leading platform for building self-driving products. Our developer tools – AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more – capture all the context agents need to diagnose problems, uncover opportunities, and ship fixes.”
+- Tool: Namespace Devbox: The factual opening bundles multiple features; narrow it to one capability.; Fact sentence is too long; narrow it to one source-backed capability.; Editorial takeaway is not specific enough to this candidate's technical/product details.; A supporting quote does not share enough wording with its stated claim; Supporting quotes cover only 31% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: Namespace Devbox provides cloud dev environments with SSH, RDP, and persistent services across macOS, Windows, and Linux. Validate SSH key rotation in Devbox before sharing workspaces to avoid credential leaks. https://namespace.so/?ref=console.dev
+  - Model evidence quote: “Cloud agents on Devboxes, fast GitHub Actions runners, and remote execution for Bazel on Linux, macOS, and Windows. The developer platform for agent scale.”
+  - Claim support: Namespace Devbox provides cloud dev environments with SSH, RDP, and persistent services across macOS, Windows, and Linux. ← “Cloud agents on Devboxes, fast GitHub Actions runners, and remote execution for Bazel on Linux, macOS, and Windows. The developer platform for agent scale.”
+- paperclipai/paperclip: The factual opening bundles multiple features; narrow it to one capability.; Fact sentence is too long; narrow it to one source-backed capability.; Editorial takeaway is too long; keep the analysis concrete and concise.; A supporting quote does not share enough wording with its stated claim; Supporting quotes cover only 43% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: Paperclip is an open‑source app for orchestrating AI agents, supporting skills, workflows, and multi‑agent projects. Test agent skill isolation by running conflicting skills in parallel to ensure no state bleed. https://github.com/paperclipai/paperclip
+  - Model evidence quote: “The open‑source app everyone uses to manage agents at work paperclip.ing”
+  - Claim support: Paperclip is an open‑source app for orchestrating AI agents, supporting skills, workflows, and multi‑agent projects. ← “The open‑source app everyone uses to manage agents at work paperclip.ing”
+- Tool: Namespace Devbox: Editorial takeaway is too long; keep the analysis concrete and concise.; No claim-by-claim supporting evidence was provided; Supporting quotes cover only 38% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: Namespace Devbox offers remote desktop via RDP on Windows instances. When provisioning a Windows Devbox, enable RDP to allow remote desktop access for debugging and GUI testing. https://namespace.so/?ref=console.dev
+  - Model evidence quote: “Access Remote desktop over RDP”
+- paperclipai/paperclip: Editorial takeaway is too long; keep the analysis concrete and concise.
+  - Rejected text: Paperclip’s CLI supports running agent skill tests. Use the `paperclip test` command to validate that a skill’s state does not leak between executions. https://github.com/paperclipai/paperclip
+  - Model evidence quote: “cli”
+- PostHog/posthog: Editorial takeaway is too long; keep the analysis concrete and concise.; No claim-by-claim supporting evidence was provided; Supporting quotes cover only 33% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: PostHog provides session replay for web applications. Enable session replay in the PostHog dashboard to capture user interactions before deploying UI changes. https://github.com/PostHog/posthog
+  - Model evidence quote: “session replay”
 
 ## Top discovery candidates considered
 
-- Show HN: Uji – Gentoo of Coding Agents | Hacker News | product_and_workflow_tools | raw 66, adjusted 68 | https://github.com/uji-labs/uji
-- Breaking changes in third-party APIs are turning into a full-time job | Hacker News | product_and_workflow_tools | raw 66, adjusted 66 | https://news.ycombinator.com/item?id=50273438
-- IHUI-INF-AI/IHUI-AI | GitHub Search | security_and_self_hosting | raw 69, adjusted 63 | current stars 31 | GitHub star trend: building baseline | https://github.com/IHUI-INF-AI/IHUI-AI
+- PostHog/posthog | GitHub Search | data_and_growth | raw 64, adjusted 73 | current stars 40503 | GitHub stars +16 over about 20.2h | https://github.com/PostHog/posthog
+- Tool: Namespace Devbox | Console.dev | developer_tools | raw 68, adjusted 68 | https://namespace.so/?ref=console.dev
+- paperclipai/paperclip | GitHub Search | ai_and_automation | raw 67, adjusted 68 | current stars 108399 | GitHub stars +232 over about 20.2h | https://github.com/paperclipai/paperclip
 
 ## Safety and interpretation
 

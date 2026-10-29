@@ -1,17 +1,17 @@
 {
-  "generated_at_ist": "2026-10-29T13:13:57+05:30",
-  "run_at_ist": "2026-10-29T13:13:57+05:30",
+  "generated_at_ist": "2026-10-29T14:03:57+05:30",
+  "run_at_ist": "2026-10-29T14:03:57+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 326,
-  "eligible_candidate_count": 219,
+  "candidate_count_raw": 322,
+  "eligible_candidate_count": 220,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4791
+      "total_count": 4797
     },
     {
       "source": "GitHub Search · github-analytics-seo",
@@ -25,7 +25,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 358
+      "total_count": 361
     },
     {
       "source": "GitHub Search · github-developer-tools",
@@ -60,14 +60,14 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2103
+      "total_count": 2105
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3341
+      "total_count": 3344
     },
     {
       "source": "GitHub Search · github-seller-operations",
@@ -88,7 +88,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 268
+      "total_count": 269
     },
     {
       "source": "Hacker News · hn-analytics-growth",
@@ -163,7 +163,7 @@
     {
       "source": "Hacker News · hn-shopify",
       "kind": "hacker_news",
-      "items_kept": 10,
+      "items_kept": 8,
       "status": "ok",
       "total_count": 10
     },
@@ -183,7 +183,7 @@
     {
       "source": "Console.dev",
       "kind": "rss",
-      "items_kept": 12,
+      "items_kept": 11,
       "status": "ok"
     },
     {
@@ -234,14 +234,14 @@
       "kind": "wordpress_plugin",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2981
+      "total_count": 2978
     },
     {
       "source": "WordPress Plugin Directory · wp-inventory-management",
       "kind": "wordpress_plugin",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 964
+      "total_count": 963
     },
     {
       "source": "WordPress Plugin Directory · wp-marketing-analytics",
@@ -255,194 +255,215 @@
       "kind": "wordpress_plugin",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2195
+      "total_count": 2197
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-29T07:43:57+00:00",
+    "observed_at_utc": "2026-10-29T08:33:57+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 113,
-    "previously_tracked_repositories_refreshed": 87,
+    "repositories_seen_in_discovery": 112,
+    "previously_tracked_repositories_refreshed": 88,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
-    "repositories_with_20_to_36_hour_baseline": 17,
+    "repositories_with_20_to_36_hour_baseline": 19,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "9d0113de2ef9db9c",
-      "title": "Show HN: Uji – Gentoo of Coding Agents",
-      "source_url": "https://github.com/uji-labs/uji",
+      "candidate_id": "fbfdec28cfffc04c",
+      "title": "PostHog/posthog",
+      "source_url": "https://github.com/PostHog/posthog",
       "verified": true,
-      "final_url": "https://github.com/uji-labs/uji",
+      "final_url": "https://github.com/PostHog/posthog",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "d44dc6a912a5de1f",
-      "title": "Breaking changes in third-party APIs are turning into a full-time job",
-      "source_url": "https://news.ycombinator.com/item?id=50273438",
-      "verified": false,
-      "final_url": null,
-      "http_status": null,
-      "reason": "Primary source returned HTTP 429."
+      "candidate_id": "a1dbde18ac15df21",
+      "title": "Tool: Namespace Devbox",
+      "source_url": "https://namespace.so/?ref=console.dev",
+      "verified": true,
+      "final_url": "https://namespace.so/?ref=console.dev",
+      "http_status": 200,
+      "reason": ""
     },
     {
-      "candidate_id": "769635c4c0589719",
-      "title": "IHUI-INF-AI/IHUI-AI",
-      "source_url": "https://github.com/IHUI-INF-AI/IHUI-AI",
+      "candidate_id": "a5e43b1572bfaf36",
+      "title": "paperclipai/paperclip",
+      "source_url": "https://github.com/paperclipai/paperclip",
       "verified": true,
-      "final_url": "https://github.com/IHUI-INF-AI/IHUI-AI",
+      "final_url": "https://github.com/paperclipai/paperclip",
       "http_status": 200,
       "reason": ""
     }
   ],
-  "rejected_primary_sources": [
-    {
-      "candidate_id": "d44dc6a912a5de1f",
-      "title": "Breaking changes in third-party APIs are turning into a full-time job",
-      "source": "Hacker News",
-      "url": "https://news.ycombinator.com/item?id=50273438",
-      "reasons": [
-        "Primary source returned HTTP 429."
-      ]
-    }
-  ],
+  "rejected_primary_sources": [],
   "daily_draft_cap": 16,
   "daily_drafts_already_passed": 2,
   "outcome": "skip",
-  "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
+  "decision_reason": "All generated drafts failed the local evidence/editorial checks; the hour was skipped.",
   "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "d44dc6a912a5de1f",
-      "title": "Breaking changes in third-party APIs are turning into a full-time job",
-      "source": "Hacker News",
-      "url": "https://news.ycombinator.com/item?id=50273438",
+      "candidate_id": "fbfdec28cfffc04c",
+      "title": "PostHog/posthog",
       "reasons": [
-        "Primary source returned HTTP 429."
+        "The factual opening bundles multiple features; narrow it to one capability."
+      ],
+      "proposed_text": "PostHog offers AI observability, analytics, session replay, flags, experiments, error tracking, and logs. Run session replay tests before deploying new UI changes to catch regressions. https://github.com/PostHog/posthog",
+      "evidence_quote": "PostHog is the leading platform for building self-driving products. Our developer tools – AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more – capture all the context agents need to diagnose problems, uncover opportunities, and ship fixes.",
+      "claim_evidence": [
+        {
+          "claim": "PostHog offers AI observability, analytics, session replay, flags, experiments, error tracking, and logs.",
+          "quote": "PostHog is the leading platform for building self-driving products. Our developer tools – AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more – capture all the context agents need to diagnose problems, uncover opportunities, and ship fixes."
+        }
       ]
     },
     {
-      "candidate_id": "9d0113de2ef9db9c",
-      "title": "Show HN: Uji – Gentoo of Coding Agents",
+      "candidate_id": "a1dbde18ac15df21",
+      "title": "Tool: Namespace Devbox",
       "reasons": [
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Fact sentence is too long; narrow it to one source-backed capability.",
+        "Editorial takeaway is not specific enough to this candidate's technical/product details.",
         "A supporting quote does not share enough wording with its stated claim",
-        "Supporting quotes cover only 29% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Supporting quotes cover only 31% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "Uji is a coding harness built in Rust and Lua for composable agent workflows. Run a failing Neovim config through Uji to verify error isolation before deployment. https://github.com/uji-labs/uji",
-      "evidence_quote": "God's chosen Coding Harness",
+      "proposed_text": "Namespace Devbox provides cloud dev environments with SSH, RDP, and persistent services across macOS, Windows, and Linux. Validate SSH key rotation in Devbox before sharing workspaces to avoid credential leaks. https://namespace.so/?ref=console.dev",
+      "evidence_quote": "Cloud agents on Devboxes, fast GitHub Actions runners, and remote execution for Bazel on Linux, macOS, and Windows. The developer platform for agent scale.",
       "claim_evidence": [
         {
-          "claim": "Uji is a coding harness",
-          "quote": "God's chosen Coding Harness"
+          "claim": "Namespace Devbox provides cloud dev environments with SSH, RDP, and persistent services across macOS, Windows, and Linux.",
+          "quote": "Cloud agents on Devboxes, fast GitHub Actions runners, and remote execution for Bazel on Linux, macOS, and Windows. The developer platform for agent scale."
         }
       ]
     },
     {
-      "candidate_id": "769635c4c0589719",
-      "title": "IHUI-INF-AI/IHUI-AI",
+      "candidate_id": "a5e43b1572bfaf36",
+      "title": "paperclipai/paperclip",
       "reasons": [
         "The factual opening bundles multiple features; narrow it to one capability.",
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
-        "Supporting quotes cover only 56% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Fact sentence is too long; narrow it to one source-backed capability.",
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "A supporting quote does not share enough wording with its stated claim",
+        "Supporting quotes cover only 43% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "IHUI‑AI unifies 176 LLMs via LangGraph, MCP, and A2A in a multi‑tenant system. Query a protected table from two tenants to confirm row‑level isolation in IHUI‑AI. https://github.com/IHUI-INF-AI/IHUI-AI",
-      "evidence_quote": "unifies 176 LLMs via LangGraph + MCP + A2A",
+      "proposed_text": "Paperclip is an open‑source app for orchestrating AI agents, supporting skills, workflows, and multi‑agent projects. Test agent skill isolation by running conflicting skills in parallel to ensure no state bleed. https://github.com/paperclipai/paperclip",
+      "evidence_quote": "The open‑source app everyone uses to manage agents at work paperclip.ing",
       "claim_evidence": [
         {
-          "claim": "IHUI‑AI unifies 176 LLMs via LangGraph, MCP, and A2A",
-          "quote": "unifies 176 LLMs via LangGraph + MCP + A2A"
+          "claim": "Paperclip is an open‑source app for orchestrating AI agents, supporting skills, workflows, and multi‑agent projects.",
+          "quote": "The open‑source app everyone uses to manage agents at work paperclip.ing"
         }
       ]
     },
     {
-      "candidate_id": "769635c4c0589719",
-      "title": "IHUI-INF-AI/IHUI-AI",
+      "candidate_id": "a1dbde18ac15df21",
+      "title": "Tool: Namespace Devbox",
       "reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability.",
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "No claim-by-claim supporting evidence was provided",
+        "Supporting quotes cover only 38% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "IHUI‑AI unifies 176 LLMs via LangGraph, MCP, and A2A. Query a protected table from two tenants to confirm row‑level isolation. https://github.com/IHUI-INF-AI/IHUI-AI",
-      "evidence_quote": "unifies 176 LLMs via LangGraph + MCP + A2A",
+      "proposed_text": "Namespace Devbox offers remote desktop via RDP on Windows instances. When provisioning a Windows Devbox, enable RDP to allow remote desktop access for debugging and GUI testing. https://namespace.so/?ref=console.dev",
+      "evidence_quote": "Access Remote desktop over RDP",
       "automatic_repair_attempt": true,
       "original_rejection_reasons": [
         "The factual opening bundles multiple features; narrow it to one capability.",
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
-        "Supporting quotes cover only 56% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Fact sentence is too long; narrow it to one source-backed capability.",
+        "Editorial takeaway is not specific enough to this candidate's technical/product details.",
+        "A supporting quote does not share enough wording with its stated claim",
+        "Supporting quotes cover only 31% of factual wording; narrow the claim or provide a closer primary-source quote"
       ]
     },
     {
-      "candidate_id": "9d0113de2ef9db9c",
-      "title": "Show HN: Uji – Gentoo of Coding Agents",
-      "proposed_text": "Uji is God's chosen coding harness for composable agent workflows. Run a failing Neovim config through Uji to verify error isolation before deployment. https://github.com/uji-labs/uji",
+      "candidate_id": "a5e43b1572bfaf36",
+      "title": "paperclipai/paperclip",
       "reasons": [
-        "The post claims Uji can run a failing Neovim config for error isolation, but the source excerpt does not mention Neovim or such a use case. The claim is unsupported and the technical logic is unclear."
+        "Editorial takeaway is too long; keep the analysis concrete and concise."
       ],
-      "editorial_review": {
-        "clarity_score": 5,
-        "technical_coherence_score": 4,
-        "takeaway_value_score": 4,
-        "source_faithfulness_score": 3,
-        "originality_score": 5
-      }
+      "proposed_text": "Paperclip’s CLI supports running agent skill tests. Use the `paperclip test` command to validate that a skill’s state does not leak between executions. https://github.com/paperclipai/paperclip",
+      "evidence_quote": "cli",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Fact sentence is too long; narrow it to one source-backed capability.",
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "A supporting quote does not share enough wording with its stated claim",
+        "Supporting quotes cover only 43% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ]
+    },
+    {
+      "candidate_id": "fbfdec28cfffc04c",
+      "title": "PostHog/posthog",
+      "reasons": [
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "No claim-by-claim supporting evidence was provided",
+        "Supporting quotes cover only 33% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ],
+      "proposed_text": "PostHog provides session replay for web applications. Enable session replay in the PostHog dashboard to capture user interactions before deploying UI changes. https://github.com/PostHog/posthog",
+      "evidence_quote": "session replay",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "The factual opening bundles multiple features; narrow it to one capability."
+      ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "9d0113de2ef9db9c",
-      "title": "Show HN: Uji – Gentoo of Coding Agents",
-      "url": "https://github.com/uji-labs/uji",
-      "source": "Hacker News",
-      "primary_category": "product_and_workflow_tools",
-      "priority_score": 66,
+      "id": "fbfdec28cfffc04c",
+      "title": "PostHog/posthog",
+      "url": "https://github.com/PostHog/posthog",
+      "source": "GitHub Search",
+      "primary_category": "data_and_growth",
+      "priority_score": 64,
+      "hourly_adjusted_score": 73,
+      "stars_current": 40503,
+      "stars_delta_24h": 16,
+      "stars_delta_baseline_hours": 20.2,
+      "stars_growth_percent_24h": 0.04,
+      "trend_signal": "measured_star_growth",
+      "published_at": "2026-10-29T08:34:22+00:00",
+      "days_old": 0.0,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "a1dbde18ac15df21",
+      "title": "Tool: Namespace Devbox",
+      "url": "https://namespace.so/?ref=console.dev",
+      "source": "Console.dev",
+      "primary_category": "developer_tools",
+      "priority_score": 68,
       "hourly_adjusted_score": 68,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-29T05:52:16+00:00",
-      "days_old": 0.08,
+      "published_at": "2026-10-29T08:00:00+00:00",
+      "days_old": 0.02,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "d44dc6a912a5de1f",
-      "title": "Breaking changes in third-party APIs are turning into a full-time job",
-      "url": "https://news.ycombinator.com/item?id=50273438",
-      "source": "Hacker News",
-      "primary_category": "product_and_workflow_tools",
-      "priority_score": 66,
-      "hourly_adjusted_score": 66,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-28T13:44:48+00:00",
-      "days_old": 0.75,
-      "primary_source_verified": false,
-      "primary_source_http_status": null,
-      "primary_source_reason": "Primary source returned HTTP 429."
-    },
-    {
-      "id": "769635c4c0589719",
-      "title": "IHUI-INF-AI/IHUI-AI",
-      "url": "https://github.com/IHUI-INF-AI/IHUI-AI",
+      "id": "a5e43b1572bfaf36",
+      "title": "paperclipai/paperclip",
+      "url": "https://github.com/paperclipai/paperclip",
       "source": "GitHub Search",
-      "primary_category": "security_and_self_hosting",
-      "priority_score": 69,
-      "hourly_adjusted_score": 63,
-      "stars_current": 31,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "insufficient_history",
-      "published_at": "2026-10-29T07:43:48+00:00",
+      "primary_category": "ai_and_automation",
+      "priority_score": 67,
+      "hourly_adjusted_score": 68,
+      "stars_current": 108399,
+      "stars_delta_24h": 232,
+      "stars_delta_baseline_hours": 20.2,
+      "stars_growth_percent_24h": 0.21,
+      "trend_signal": "measured_star_growth",
+      "published_at": "2026-10-29T08:29:26+00:00",
       "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
@@ -451,26 +472,26 @@
   ],
   "automatic_repair": {
     "attempted": true,
-    "drafts_submitted": 2,
-    "repaired_local_passes": 1,
-    "repair_rejections": 1,
+    "drafts_submitted": 3,
+    "repaired_local_passes": 0,
+    "repair_rejections": 3,
     "repair_error": null,
-    "editorial_repair_attempted": true,
+    "editorial_repair_attempted": false,
     "editorial_repair_drafts_submitted": 0,
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 1,
-    "submitted_for_independent_review": 1,
+    "locally_valid_drafts": 0,
+    "submitted_for_independent_review": 0,
     "passed_independent_review": 0,
-    "rejected_by_independent_review": 1,
+    "rejected_by_independent_review": 0,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
   "state_summary": {
     "used_candidates_in_cooldown": 24,
-    "recently_attempted_candidates": 15,
+    "recently_attempted_candidates": 18,
     "recent_draft_passes_today": 2
   }
 }
