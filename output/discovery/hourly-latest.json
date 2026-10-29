@@ -1,38 +1,38 @@
 {
-  "generated_at_ist": "2026-10-29T11:53:18+05:30",
-  "run_at_ist": "2026-10-29T11:53:18+05:30",
+  "generated_at_ist": "2026-10-29T13:13:57+05:30",
+  "run_at_ist": "2026-10-29T13:13:57+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 316,
-  "eligible_candidate_count": 208,
+  "candidate_count_raw": 326,
+  "eligible_candidate_count": 219,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4781
+      "total_count": 4791
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1040
+      "total_count": 1041
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 357
+      "total_count": 358
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2888
+      "total_count": 2897
     },
     {
       "source": "GitHub Search · github-digital-product-tools",
@@ -46,7 +46,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 414
+      "total_count": 415
     },
     {
       "source": "GitHub Search · github-marketing-distribution",
@@ -60,21 +60,21 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2100
+      "total_count": 2103
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3334
+      "total_count": 3341
     },
     {
       "source": "GitHub Search · github-seller-operations",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 356
+      "total_count": 357
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
@@ -88,7 +88,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 267
+      "total_count": 268
     },
     {
       "source": "Hacker News · hn-analytics-growth",
@@ -158,7 +158,7 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 8
+      "total_count": 10
     },
     {
       "source": "Hacker News · hn-shopify",
@@ -195,7 +195,7 @@
     {
       "source": "Product Hunt",
       "kind": "rss",
-      "items_kept": 38,
+      "items_kept": 45,
       "status": "ok"
     },
     {
@@ -259,10 +259,10 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-29T06:23:18+00:00",
+    "observed_at_utc": "2026-10-29T07:43:57+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 110,
-    "previously_tracked_repositories_refreshed": 90,
+    "repositories_seen_in_discovery": 113,
+    "previously_tracked_repositories_refreshed": 87,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
@@ -272,183 +272,178 @@
   },
   "primary_source_checks": [
     {
-      "candidate_id": "a45b7a97fa5a5283",
-      "title": "Show HN: Startica Open-source app for SEO, marketing, accessibility and security",
-      "source_url": "https://github.com/chriscasper/startica",
+      "candidate_id": "9d0113de2ef9db9c",
+      "title": "Show HN: Uji – Gentoo of Coding Agents",
+      "source_url": "https://github.com/uji-labs/uji",
       "verified": true,
-      "final_url": "https://github.com/chriscasper/startica",
+      "final_url": "https://github.com/uji-labs/uji",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "6e32783ea93e8dd5",
-      "title": "Show HN: Fabivo – Furniture design from a photo to a numbered cut list",
-      "source_url": "https://www.fabivo.app/en",
-      "verified": true,
-      "final_url": "https://www.fabivo.app/en",
-      "http_status": 200,
-      "reason": ""
+      "candidate_id": "d44dc6a912a5de1f",
+      "title": "Breaking changes in third-party APIs are turning into a full-time job",
+      "source_url": "https://news.ycombinator.com/item?id=50273438",
+      "verified": false,
+      "final_url": null,
+      "http_status": null,
+      "reason": "Primary source returned HTTP 429."
     },
     {
-      "candidate_id": "60d15f0ed37ffe7b",
-      "title": "rapiddweller/datamimic",
-      "source_url": "https://github.com/rapiddweller/datamimic",
+      "candidate_id": "769635c4c0589719",
+      "title": "IHUI-INF-AI/IHUI-AI",
+      "source_url": "https://github.com/IHUI-INF-AI/IHUI-AI",
       "verified": true,
-      "final_url": "https://github.com/rapiddweller/datamimic",
+      "final_url": "https://github.com/IHUI-INF-AI/IHUI-AI",
       "http_status": 200,
       "reason": ""
     }
   ],
-  "rejected_primary_sources": [],
+  "rejected_primary_sources": [
+    {
+      "candidate_id": "d44dc6a912a5de1f",
+      "title": "Breaking changes in third-party APIs are turning into a full-time job",
+      "source": "Hacker News",
+      "url": "https://news.ycombinator.com/item?id=50273438",
+      "reasons": [
+        "Primary source returned HTTP 429."
+      ]
+    }
+  ],
   "daily_draft_cap": 16,
   "daily_drafts_already_passed": 2,
   "outcome": "skip",
-  "decision_reason": "No draft cleared the complete automatic quality gate; independent editorial review failed closed. Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi",
+  "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
   "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "a45b7a97fa5a5283",
-      "title": "Show HN: Startica Open-source app for SEO, marketing, accessibility and security",
+      "candidate_id": "d44dc6a912a5de1f",
+      "title": "Breaking changes in third-party APIs are turning into a full-time job",
+      "source": "Hacker News",
+      "url": "https://news.ycombinator.com/item?id=50273438",
       "reasons": [
-        "Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote"
-      ],
-      "proposed_text": "Startica is a local‑first desktop app that acts as an AI co‑founder for post‑deployment tasks. Run its SEO and security scans before launch, then manually verify any false positives. https://github.com/chriscasper/startica",
-      "evidence_quote": "Your AI co‑founder for everything after you ship. Open‑source, local‑first desktop app.",
-      "claim_evidence": [
-        {
-          "claim": "Startica is a local‑first desktop app that acts as an AI co‑founder for post‑deployment tasks.",
-          "quote": "Your AI co‑founder for everything after you ship. Open‑source, local‑first desktop app."
-        }
+        "Primary source returned HTTP 429."
       ]
     },
     {
-      "candidate_id": "6e32783ea93e8dd5",
-      "title": "Show HN: Fabivo – Furniture design from a photo to a numbered cut list",
+      "candidate_id": "9d0113de2ef9db9c",
+      "title": "Show HN: Uji – Gentoo of Coding Agents",
       "reasons": [
         "A supporting quote does not share enough wording with its stated claim",
-        "Supporting quotes cover only 33% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Supporting quotes cover only 29% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "Fabivo is a browser‑based, offline furniture planner that generates a numbered cut list. Test the cut‑optimizer on a sample sheet to ensure kerf is correctly subtracted. https://www.fabivo.app/en",
-      "evidence_quote": "Fabivo runs in the browser, offline, with no account.",
+      "proposed_text": "Uji is a coding harness built in Rust and Lua for composable agent workflows. Run a failing Neovim config through Uji to verify error isolation before deployment. https://github.com/uji-labs/uji",
+      "evidence_quote": "God's chosen Coding Harness",
       "claim_evidence": [
         {
-          "claim": "Fabivo is a browser‑based, offline furniture planner that generates a numbered cut list.",
-          "quote": "Fabivo runs in the browser, offline, with no account."
+          "claim": "Uji is a coding harness",
+          "quote": "God's chosen Coding Harness"
         }
       ]
     },
     {
-      "candidate_id": "60d15f0ed37ffe7b",
-      "title": "rapiddweller/datamimic",
+      "candidate_id": "769635c4c0589719",
+      "title": "IHUI-INF-AI/IHUI-AI",
       "reasons": [
-        "Editorial takeaway is not specific enough to this candidate's technical/product details.",
-        "Primary-source evidence quote is missing or absent from the live page (after presentation normalisation)",
-        "A factual claim lacks a quote present in the live primary-source page"
-      ],
-      "proposed_text": "Datamimic provides deterministic, privacy‑preserving synthetic data via Python APIs and XML pipelines. Validate that generated data respects field constraints by comparing schema stats. https://github.com/rapiddweller/datamimic",
-      "evidence_quote": "Model‑driven synthetic test data for CI/CD and analytics - deterministic, privacy‑preserving, and domain‑aware. Includes Python APIs, XML pipelines.",
-      "claim_evidence": [
-        {
-          "claim": "Datamimic provides deterministic, privacy‑preserving synthetic data via Python APIs and XML pipelines.",
-          "quote": "Model‑driven synthetic test data for CI/CD and analytics - deterministic, privacy‑preserving, and domain‑aware. Includes Python APIs, XML pipelines."
-        }
-      ]
-    },
-    {
-      "candidate_id": "6e32783ea93e8dd5",
-      "title": "Show HN: Fabivo – Furniture design from a photo to a numbered cut list",
-      "reasons": [
+        "The factual opening bundles multiple features; narrow it to one capability.",
         "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
-        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation."
+        "Supporting quotes cover only 56% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "Fabivo runs in the browser offline with no account. Use Fabivo’s cut‑optimizer to account for saw kerf and grain direction. https://www.fabivo.app/en",
-      "evidence_quote": "Fabivo runs in the browser, offline, with no account.",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "A supporting quote does not share enough wording with its stated claim",
-        "Supporting quotes cover only 33% of factual wording; narrow the claim or provide a closer primary-source quote"
+      "proposed_text": "IHUI‑AI unifies 176 LLMs via LangGraph, MCP, and A2A in a multi‑tenant system. Query a protected table from two tenants to confirm row‑level isolation in IHUI‑AI. https://github.com/IHUI-INF-AI/IHUI-AI",
+      "evidence_quote": "unifies 176 LLMs via LangGraph + MCP + A2A",
+      "claim_evidence": [
+        {
+          "claim": "IHUI‑AI unifies 176 LLMs via LangGraph, MCP, and A2A",
+          "quote": "unifies 176 LLMs via LangGraph + MCP + A2A"
+        }
       ]
     },
     {
-      "candidate_id": "60d15f0ed37ffe7b",
-      "title": "rapiddweller/datamimic",
+      "candidate_id": "769635c4c0589719",
+      "title": "IHUI-INF-AI/IHUI-AI",
       "reasons": [
-        "Editorial takeaway is not specific enough to this candidate's technical/product details.",
-        "Primary-source evidence quote is missing or absent from the live page (after presentation normalisation)",
-        "No claim-by-claim supporting evidence was provided"
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
       ],
-      "proposed_text": "Datamimic provides deterministic, privacy‑preserving synthetic data via Python APIs and XML pipelines. Validate generated data against the original schema to ensure field constraints are met. https://github.com/rapiddweller/datamimic",
-      "evidence_quote": "Model‑driven synthetic test data for CI/CD and analytics - deterministic, privacy‑preserving, and domain‑aware. Includes Python APIs, XML pipelines.",
+      "proposed_text": "IHUI‑AI unifies 176 LLMs via LangGraph, MCP, and A2A. Query a protected table from two tenants to confirm row‑level isolation. https://github.com/IHUI-INF-AI/IHUI-AI",
+      "evidence_quote": "unifies 176 LLMs via LangGraph + MCP + A2A",
       "automatic_repair_attempt": true,
       "original_rejection_reasons": [
-        "Editorial takeaway is not specific enough to this candidate's technical/product details.",
-        "Primary-source evidence quote is missing or absent from the live page (after presentation normalisation)",
-        "A factual claim lacks a quote present in the live primary-source page"
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
+        "Supporting quotes cover only 56% of factual wording; narrow the claim or provide a closer primary-source quote"
       ]
     },
     {
-      "candidate_id": "a45b7a97fa5a5283",
-      "title": "Show HN: Startica Open-source app for SEO, marketing, accessibility and security",
-      "proposed_text": "Startica is an open‑source, local‑first desktop app that acts as an AI co‑founder. Run Startica offline; no account or internet required. https://github.com/chriscasper/startica",
+      "candidate_id": "9d0113de2ef9db9c",
+      "title": "Show HN: Uji – Gentoo of Coding Agents",
+      "proposed_text": "Uji is God's chosen coding harness for composable agent workflows. Run a failing Neovim config through Uji to verify error isolation before deployment. https://github.com/uji-labs/uji",
       "reasons": [
-        "Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi"
-      ]
+        "The post claims Uji can run a failing Neovim config for error isolation, but the source excerpt does not mention Neovim or such a use case. The claim is unsupported and the technical logic is unclear."
+      ],
+      "editorial_review": {
+        "clarity_score": 5,
+        "technical_coherence_score": 4,
+        "takeaway_value_score": 4,
+        "source_faithfulness_score": 3,
+        "originality_score": 5
+      }
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "a45b7a97fa5a5283",
-      "title": "Show HN: Startica Open-source app for SEO, marketing, accessibility and security",
-      "url": "https://github.com/chriscasper/startica",
+      "id": "9d0113de2ef9db9c",
+      "title": "Show HN: Uji – Gentoo of Coding Agents",
+      "url": "https://github.com/uji-labs/uji",
       "source": "Hacker News",
       "primary_category": "product_and_workflow_tools",
-      "priority_score": 67,
-      "hourly_adjusted_score": 69,
+      "priority_score": 66,
+      "hourly_adjusted_score": 68,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-29T03:40:06+00:00",
-      "days_old": 0.11,
+      "published_at": "2026-10-29T05:52:16+00:00",
+      "days_old": 0.08,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "6e32783ea93e8dd5",
-      "title": "Show HN: Fabivo – Furniture design from a photo to a numbered cut list",
-      "url": "https://www.fabivo.app/en",
+      "id": "d44dc6a912a5de1f",
+      "title": "Breaking changes in third-party APIs are turning into a full-time job",
+      "url": "https://news.ycombinator.com/item?id=50273438",
       "source": "Hacker News",
       "primary_category": "product_and_workflow_tools",
-      "priority_score": 65,
-      "hourly_adjusted_score": 67,
+      "priority_score": 66,
+      "hourly_adjusted_score": 66,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-29T05:21:10+00:00",
-      "days_old": 0.04,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
+      "published_at": "2026-10-28T13:44:48+00:00",
+      "days_old": 0.75,
+      "primary_source_verified": false,
+      "primary_source_http_status": null,
+      "primary_source_reason": "Primary source returned HTTP 429."
     },
     {
-      "id": "60d15f0ed37ffe7b",
-      "title": "rapiddweller/datamimic",
-      "url": "https://github.com/rapiddweller/datamimic",
+      "id": "769635c4c0589719",
+      "title": "IHUI-INF-AI/IHUI-AI",
+      "url": "https://github.com/IHUI-INF-AI/IHUI-AI",
       "source": "GitHub Search",
-      "primary_category": "data_and_growth",
-      "priority_score": 70,
-      "hourly_adjusted_score": 64,
-      "stars_current": 116,
+      "primary_category": "security_and_self_hosting",
+      "priority_score": 69,
+      "hourly_adjusted_score": 63,
+      "stars_current": 31,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "insufficient_history",
-      "published_at": "2026-10-29T06:14:42+00:00",
-      "days_old": 0.01,
+      "published_at": "2026-10-29T07:43:48+00:00",
+      "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
@@ -456,11 +451,11 @@
   ],
   "automatic_repair": {
     "attempted": true,
-    "drafts_submitted": 3,
+    "drafts_submitted": 2,
     "repaired_local_passes": 1,
-    "repair_rejections": 2,
+    "repair_rejections": 1,
     "repair_error": null,
-    "editorial_repair_attempted": false,
+    "editorial_repair_attempted": true,
     "editorial_repair_drafts_submitted": 0,
     "editorial_repair_error": null
   },
@@ -470,12 +465,12 @@
     "passed_independent_review": 0,
     "rejected_by_independent_review": 1,
     "lower_ranked_not_reviewed": 0,
-    "review_error": "Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi",
+    "review_error": null,
     "automatic_gate": "fail_closed"
   },
   "state_summary": {
     "used_candidates_in_cooldown": 24,
-    "recently_attempted_candidates": 13,
+    "recently_attempted_candidates": 15,
     "recent_draft_passes_today": 2
   }
 }

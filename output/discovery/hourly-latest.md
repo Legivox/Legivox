@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-29T11:53:18+05:30
+- Run time (IST): 2026-10-29T13:13:57+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 208
+- Candidate pool after freshness/diversity filters: 219
 - Independent editorial review: 0 draft(s) passed / 1 rejected
 - Drafts passing local checks: 0
 - Outcome: **skip**
-- Decision reason: No draft cleared the complete automatic quality gate; independent editorial review failed closed. Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi
+- Decision reason: Every draft submitted for independent editorial review was rejected; The hour was skipped.
 
 ## Source health
 
@@ -40,7 +40,7 @@
 | Ahrefs Blog | 6 | ok |
 | Console.dev | 12 | ok |
 | Indie Hackers (unofficial third-party feed) | 5 | ok |
-| Product Hunt | 38 | ok |
+| Product Hunt | 45 | ok |
 | Shopify Community | 30 | ok |
 | Shopify Developer Changelog | 31 | ok |
 | Stripe Blog | 2 | ok |
@@ -54,8 +54,8 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 110
-- Previously tracked repositories refreshed outside search results: 90
+- Repositories seen in this discovery run: 113
+- Previously tracked repositories refreshed outside search results: 87
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
 - Repositories with a 20–36 hour comparison baseline: 17
@@ -65,9 +65,9 @@
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| Show HN: Startica Open-source app for SEO, marketing, accessibility and security | yes | 200 | https://github.com/chriscasper/startica |
-| Show HN: Fabivo – Furniture design from a photo to a numbered cut list | yes | 200 | https://www.fabivo.app/en |
-| rapiddweller/datamimic | yes | 200 | https://github.com/rapiddweller/datamimic |
+| Show HN: Uji – Gentoo of Coding Agents | yes | 200 | https://github.com/uji-labs/uji |
+| Breaking changes in third-party APIs are turning into a full-time job | no | — | Primary source returned HTTP 429. |
+| IHUI-INF-AI/IHUI-AI | yes | 200 | https://github.com/IHUI-INF-AI/IHUI-AI |
 
 ## Selected draft candidates
 
@@ -76,40 +76,34 @@ No draft cleared the complete local and independent-editor gate. See the decisio
 ## Automatic repair attempt
 
 - Attempted: yes
-- Repaired drafts submitted: 3
+- Repaired drafts submitted: 2
 - Repaired drafts that passed local validation: 1
-- Repaired drafts rejected: 2
+- Repaired drafts rejected: 1
 - Repair error: none
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
-- Show HN: Startica Open-source app for SEO, marketing, accessibility and security: Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: Startica is a local‑first desktop app that acts as an AI co‑founder for post‑deployment tasks. Run its SEO and security scans before launch, then manually verify any false positives. https://github.com/chriscasper/startica
-  - Model evidence quote: “Your AI co‑founder for everything after you ship. Open‑source, local‑first desktop app.”
-  - Claim support: Startica is a local‑first desktop app that acts as an AI co‑founder for post‑deployment tasks. ← “Your AI co‑founder for everything after you ship. Open‑source, local‑first desktop app.”
-- Show HN: Fabivo – Furniture design from a photo to a numbered cut list: A supporting quote does not share enough wording with its stated claim; Supporting quotes cover only 33% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: Fabivo is a browser‑based, offline furniture planner that generates a numbered cut list. Test the cut‑optimizer on a sample sheet to ensure kerf is correctly subtracted. https://www.fabivo.app/en
-  - Model evidence quote: “Fabivo runs in the browser, offline, with no account.”
-  - Claim support: Fabivo is a browser‑based, offline furniture planner that generates a numbered cut list. ← “Fabivo runs in the browser, offline, with no account.”
-- rapiddweller/datamimic: Editorial takeaway is not specific enough to this candidate's technical/product details.; Primary-source evidence quote is missing or absent from the live page (after presentation normalisation); A factual claim lacks a quote present in the live primary-source page
-  - Rejected text: Datamimic provides deterministic, privacy‑preserving synthetic data via Python APIs and XML pipelines. Validate that generated data respects field constraints by comparing schema stats. https://github.com/rapiddweller/datamimic
-  - Model evidence quote: “Model‑driven synthetic test data for CI/CD and analytics - deterministic, privacy‑preserving, and domain‑aware. Includes Python APIs, XML pipelines.”
-  - Claim support: Datamimic provides deterministic, privacy‑preserving synthetic data via Python APIs and XML pipelines. ← “Model‑driven synthetic test data for CI/CD and analytics - deterministic, privacy‑preserving, and domain‑aware. Includes Python APIs, XML pipelines.”
-- Show HN: Fabivo – Furniture design from a photo to a numbered cut list: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.
-  - Rejected text: Fabivo runs in the browser offline with no account. Use Fabivo’s cut‑optimizer to account for saw kerf and grain direction. https://www.fabivo.app/en
-  - Model evidence quote: “Fabivo runs in the browser, offline, with no account.”
-- rapiddweller/datamimic: Editorial takeaway is not specific enough to this candidate's technical/product details.; Primary-source evidence quote is missing or absent from the live page (after presentation normalisation); No claim-by-claim supporting evidence was provided
-  - Rejected text: Datamimic provides deterministic, privacy‑preserving synthetic data via Python APIs and XML pipelines. Validate generated data against the original schema to ensure field constraints are met. https://github.com/rapiddweller/datamimic
-  - Model evidence quote: “Model‑driven synthetic test data for CI/CD and analytics - deterministic, privacy‑preserving, and domain‑aware. Includes Python APIs, XML pipelines.”
-- Show HN: Startica Open-source app for SEO, marketing, accessibility and security: Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi
-  - Rejected text: Startica is an open‑source, local‑first desktop app that acts as an AI co‑founder. Run Startica offline; no account or internet required. https://github.com/chriscasper/startica
+- Breaking changes in third-party APIs are turning into a full-time job: Primary source returned HTTP 429.
+- Show HN: Uji – Gentoo of Coding Agents: A supporting quote does not share enough wording with its stated claim; Supporting quotes cover only 29% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: Uji is a coding harness built in Rust and Lua for composable agent workflows. Run a failing Neovim config through Uji to verify error isolation before deployment. https://github.com/uji-labs/uji
+  - Model evidence quote: “God's chosen Coding Harness”
+  - Claim support: Uji is a coding harness ← “God's chosen Coding Harness”
+- IHUI-INF-AI/IHUI-AI: The factual opening bundles multiple features; narrow it to one capability.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; Supporting quotes cover only 56% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: IHUI‑AI unifies 176 LLMs via LangGraph, MCP, and A2A in a multi‑tenant system. Query a protected table from two tenants to confirm row‑level isolation in IHUI‑AI. https://github.com/IHUI-INF-AI/IHUI-AI
+  - Model evidence quote: “unifies 176 LLMs via LangGraph + MCP + A2A”
+  - Claim support: IHUI‑AI unifies 176 LLMs via LangGraph, MCP, and A2A ← “unifies 176 LLMs via LangGraph + MCP + A2A”
+- IHUI-INF-AI/IHUI-AI: The factual opening bundles multiple features; narrow it to one capability.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
+  - Rejected text: IHUI‑AI unifies 176 LLMs via LangGraph, MCP, and A2A. Query a protected table from two tenants to confirm row‑level isolation. https://github.com/IHUI-INF-AI/IHUI-AI
+  - Model evidence quote: “unifies 176 LLMs via LangGraph + MCP + A2A”
+- Show HN: Uji – Gentoo of Coding Agents: The post claims Uji can run a failing Neovim config for error isolation, but the source excerpt does not mention Neovim or such a use case. The claim is unsupported and the technical logic is unclear.
+  - Rejected text: Uji is God's chosen coding harness for composable agent workflows. Run a failing Neovim config through Uji to verify error isolation before deployment. https://github.com/uji-labs/uji
 
 ## Top discovery candidates considered
 
-- Show HN: Startica Open-source app for SEO, marketing, accessibility and security | Hacker News | product_and_workflow_tools | raw 67, adjusted 69 | https://github.com/chriscasper/startica
-- Show HN: Fabivo – Furniture design from a photo to a numbered cut list | Hacker News | product_and_workflow_tools | raw 65, adjusted 67 | https://www.fabivo.app/en
-- rapiddweller/datamimic | GitHub Search | data_and_growth | raw 70, adjusted 64 | current stars 116 | GitHub star trend: building baseline | https://github.com/rapiddweller/datamimic
+- Show HN: Uji – Gentoo of Coding Agents | Hacker News | product_and_workflow_tools | raw 66, adjusted 68 | https://github.com/uji-labs/uji
+- Breaking changes in third-party APIs are turning into a full-time job | Hacker News | product_and_workflow_tools | raw 66, adjusted 66 | https://news.ycombinator.com/item?id=50273438
+- IHUI-INF-AI/IHUI-AI | GitHub Search | security_and_self_hosting | raw 69, adjusted 63 | current stars 31 | GitHub star trend: building baseline | https://github.com/IHUI-INF-AI/IHUI-AI
 
 ## Safety and interpretation
 
