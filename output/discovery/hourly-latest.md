@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-29T15:59:25+05:30
+- Run time (IST): 2026-10-29T16:54:05+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 207
-- Independent editorial review: 0 draft(s) passed / 0 rejected
+- Candidate pool after freshness/diversity filters: 208
+- Independent editorial review: 0 draft(s) passed / 1 rejected
 - Drafts passing local checks: 0
 - Outcome: **skip**
-- Decision reason: All generated drafts failed the local evidence/editorial checks; the hour was skipped.
+- Decision reason: Every draft submitted for independent editorial review was rejected; The hour was skipped.
 
 ## Source health
 
@@ -35,12 +35,12 @@
 | Hacker News · hn-marketing-distribution | 0 | ok |
 | Hacker News · hn-security-selfhost | 0 | ok |
 | Hacker News · hn-seller-operations | 0 | ok |
-| Hacker News · hn-shopify | 8 | ok |
+| Hacker News · hn-shopify | 10 | ok |
 | Hacker News · hn-show-hn | 10 | ok |
 | Ahrefs Blog | 6 | ok |
 | Console.dev | 11 | ok |
 | Indie Hackers (unofficial third-party feed) | 5 | ok |
-| Product Hunt | 42 | ok |
+| Product Hunt | 41 | ok |
 | Shopify Community | 30 | ok |
 | Shopify Developer Changelog | 31 | ok |
 | Stripe Blog | 2 | ok |
@@ -54,60 +54,52 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 106
-- Previously tracked repositories refreshed outside search results: 94
+- Repositories seen in this discovery run: 111
+- Previously tracked repositories refreshed outside search results: 89
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
-- Repositories with a 20–36 hour comparison baseline: 19
+- Repositories with a 20–36 hour comparison baseline: 20
 - First observations are baseline samples, not evidence of trending. Star velocity is reported only when a historical comparison exists.
 
 ## Primary-source verification
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| Show HN: Pure Particles, an open source art particle toy built with Three.js | yes | 200 | https://pureart-xyz.vercel.app/ |
-| Show HN: MealWords – Show waiters what you can't eat, in their language | yes | 200 | https://mealwords.com/ |
-| yanstd888/yanstd888 | yes | 200 | https://github.com/yanstd888/yanstd888 |
+| Show HN: I got tired of travel spreadsheets so I made a travel planner app | no | — | Primary page title/content does not sufficiently match the candidate headline. |
+| Show HN: Control – Data Observability for Postgres, Pipelines and CDC | yes | 200 | https://control.turbolytics.io/ |
+| 3441293738/creatorhub | yes | 200 | https://github.com/3441293738/creatorhub |
 
 ## Selected draft candidates
 
-No candidate produced a draft that passed every local check. Skipping is intentional.
+No draft cleared the complete local and independent-editor gate. See the decision reason and rejected-draft section for locally valid drafts that were rejected, not reviewed, or blocked by a review error.
 
 ## Automatic repair attempt
 
 - Attempted: yes
-- Repaired drafts submitted: 2
+- Repaired drafts submitted: 1
 - Repaired drafts that passed local validation: 0
-- Repaired drafts rejected: 2
+- Repaired drafts rejected: 1
 - Repair error: none
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
-- Show HN: Pure Particles, an open source art particle toy built with Three.js: Editorial takeaway is not specific enough to this candidate's technical/product details.; A supporting quote does not share enough wording with its stated claim; Supporting quotes cover only 25% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: Pure Art renders particle smoke from an uploaded image using Three.js. Test WebGL2 support before deployment; older browsers will fail. https://pureart-xyz.vercel.app/
-  - Model evidence quote: “Drop an image to colour the smoke”
-  - Claim support: Pure Art renders particle smoke from an uploaded image using Three.js. ← “Drop an image to colour the smoke”
-- Show HN: MealWords – Show waiters what you can't eat, in their language: A supporting quote does not share enough wording with its stated claim; Supporting quotes cover only 43% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: MealWords lets waiters read allergy cards in their language via a tap. Verify language fallback works for non‑Latin scripts before launch. https://mealwords.com/
-  - Model evidence quote: “The waiter reads your requests in their language and taps any they cannot meet.”
-  - Claim support: MealWords lets waiters read allergy cards in their language via a tap. ← “The waiter reads your requests in their language and taps any they cannot meet”
-- yanstd888/yanstd888: The factual opening bundles multiple features; narrow it to one capability.; Supporting quotes cover only 60% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: yanstd888/yanstd888 lists AI, full‑stack, and automation projects. Check the repo's README for updated project links before citing. https://github.com/yanstd888/yanstd888
-  - Model evidence quote: “Personal profile and project index for Yanstd — AI products, full-stack web development, automation, developer tooling, and digital products.”
-  - Claim support: yanstd888/yanstd888 lists AI, full‑stack, and automation projects. ← “Personal profile and project index for Yanstd — AI products, full-stack web development, automation, developer tooling, and digital products”
-- Show HN: Pure Particles, an open source art particle toy built with Three.js: Editorial takeaway is too long; keep the analysis concrete and concise.
-  - Rejected text: Pure Art lets you drop an image to color the smoke. Verify WebGL 2 support before deployment; older browsers will fail to render the particle smoke. https://pureart-xyz.vercel.app/
-  - Model evidence quote: “Drop an image to colour the smoke”
-- yanstd888/yanstd888: Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.
-  - Rejected text: Yanstd’s profile lists AI products. Check the repo’s README for updated project links before citing. https://github.com/yanstd888/yanstd888
-  - Model evidence quote: “Personal profile and project index for Yanstd — AI products, full-stack web development, automation, developer tooling, and digital products.”
+- Show HN: I got tired of travel spreadsheets so I made a travel planner app: Primary page title/content does not sufficiently match the candidate headline.
+- 3441293738/creatorhub: The factual opening bundles multiple features; narrow it to one capability.; Fact sentence is too long; narrow it to one source-backed capability.; A supporting quote does not share enough wording with its stated claim; Factual sentence includes terms absent from the source title/summary: collect, monitor, panel, transfer
+  - Rejected text: creatorhub is a web panel that monitors, collects, and transfers content from Douyin, Xiaohongshu, and Kuaishou. Run a test scrape on a sample post to confirm data accuracy. https://github.com/3441293738/creatorhub
+  - Model evidence quote: “多平台内容监控·采集·搬运 一个 Web 面板管起抖音 / 小红书 / 快手”
+  - Claim support: creatorhub is a web panel that monitors, collects, and transfers content from Douyin, Xiaohongshu, and Kuaishou. ← “多平台内容监控·采集·搬运 一个 Web 面板管起抖音 / 小红书 / 快手”
+- Show HN: Control – Data Observability for Postgres, Pipelines and CDC: Post restates source facts without adding new insight; originality below threshold.
+  - Rejected text: Control runs a small container beside each Postgres to check every minute. Verify the container reports status before adding new tables. https://control.turbolytics.io/
+- Show HN: Control – Data Observability for Postgres, Pipelines and CDC: The factual opening bundles multiple features; narrow it to one capability.; Editorial takeaway is too long; keep the analysis concrete and concise.
+  - Rejected text: Control gives each database one status: serving, near limit, down or unreachable. When a Postgres instance reaches 90 % of its max_connections, Control flags it as near limit, prompting pre‑emptive scaling. https://control.turbolytics.io/
+  - Model evidence quote: “Control gives each database one status: serving, near limit, down or unreachable.”
 
 ## Top discovery candidates considered
 
-- Show HN: Pure Particles, an open source art particle toy built with Three.js | Hacker News | product_and_workflow_tools | raw 65, adjusted 67 | https://pureart-xyz.vercel.app/
-- Show HN: MealWords – Show waiters what you can't eat, in their language | Hacker News | product_and_workflow_tools | raw 63, adjusted 65 | https://mealwords.com/
-- yanstd888/yanstd888 | GitHub Search | digital_product_business | raw 58, adjusted 65 | current stars 21 | GitHub stars +15 over about 24.0h | https://github.com/yanstd888/yanstd888
+- Show HN: I got tired of travel spreadsheets so I made a travel planner app | Hacker News | product_and_workflow_tools | raw 65, adjusted 67 | https://www.wherewhen.cc
+- Show HN: Control – Data Observability for Postgres, Pipelines and CDC | Hacker News | product_and_workflow_tools | raw 62, adjusted 64 | https://control.turbolytics.io/
+- 3441293738/creatorhub | GitHub Search | creator_and_indie_business | raw 57, adjusted 64 | current stars 2736 | GitHub stars +54 over about 20.8h | https://github.com/3441293738/creatorhub
 
 ## Safety and interpretation
 
