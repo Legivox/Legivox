@@ -1,38 +1,38 @@
 {
-  "generated_at_ist": "2026-10-29T20:08:36+05:30",
-  "run_at_ist": "2026-10-29T20:08:36+05:30",
+  "generated_at_ist": "2026-10-29T21:05:53+05:30",
+  "run_at_ist": "2026-10-29T21:05:53+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 323,
-  "eligible_candidate_count": 212,
+  "candidate_count_raw": 318,
+  "eligible_candidate_count": 208,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4851
+      "total_count": 4861
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1066
+      "total_count": 1067
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 364
+      "total_count": 366
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2923
+      "total_count": 2928
     },
     {
       "source": "GitHub Search · github-digital-product-tools",
@@ -46,7 +46,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 427
+      "total_count": 430
     },
     {
       "source": "GitHub Search · github-marketing-distribution",
@@ -60,35 +60,35 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2118
+      "total_count": 2125
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3386
+      "total_count": 3396
     },
     {
       "source": "GitHub Search · github-seller-operations",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 358
+      "total_count": 360
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 135
+      "total_count": 136
     },
     {
       "source": "GitHub Search · github-workflow-automation",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 271
+      "total_count": 277
     },
     {
       "source": "Hacker News · hn-analytics-growth",
@@ -158,12 +158,12 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 8
+      "total_count": 10
     },
     {
       "source": "Hacker News · hn-shopify",
       "kind": "hacker_news",
-      "items_kept": 9,
+      "items_kept": 10,
       "status": "ok",
       "total_count": 10
     },
@@ -195,7 +195,7 @@
     {
       "source": "Product Hunt",
       "kind": "rss",
-      "items_kept": 44,
+      "items_kept": 41,
       "status": "ok"
     },
     {
@@ -248,7 +248,7 @@
       "kind": "wordpress_plugin",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1785
+      "total_count": 1787
     },
     {
       "source": "WordPress Plugin Directory · wp-membership-creators",
@@ -259,10 +259,10 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-29T14:38:36+00:00",
+    "observed_at_utc": "2026-10-29T15:35:53+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 111,
-    "previously_tracked_repositories_refreshed": 89,
+    "repositories_seen_in_discovery": 108,
+    "previously_tracked_repositories_refreshed": 92,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
@@ -272,29 +272,29 @@
   },
   "primary_source_checks": [
     {
-      "candidate_id": "c37165a31cd3fc39",
-      "title": "n8n-io/n8n",
-      "source_url": "https://github.com/n8n-io/n8n",
+      "candidate_id": "cf8745a690f88e61",
+      "title": "Show HN: StrictLLM – For when you need human-in-the-loop",
+      "source_url": "https://strictllm.com",
       "verified": true,
-      "final_url": "https://github.com/n8n-io/n8n",
+      "final_url": "https://strictllm.com",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "7006cf058def4bbb",
-      "title": "Show HN: LayerShop – a love child of ComfyUI and PhotoCraft",
-      "source_url": "https://github.com/SlavomirDurej/layershop",
+      "candidate_id": "d16eb7f8c20e6608",
+      "title": "Show HN: Backend for Agents and Builders who don't need one yet – Statebase",
+      "source_url": "https://statebase.dev",
       "verified": true,
-      "final_url": "https://github.com/SlavomirDurej/layershop",
+      "final_url": "https://statebase.dev",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "e574a31e6d9c050f",
-      "title": "Show HN: A browser app that controls my bike trainer over Bluetooth",
-      "source_url": "https://freebikeworkout.com/",
+      "candidate_id": "6aa85eb2cdb35630",
+      "title": "coddy-project/coddy-agent",
+      "source_url": "https://github.com/coddy-project/coddy-agent",
       "verified": true,
-      "final_url": "https://freebikeworkout.com/",
+      "final_url": "https://github.com/coddy-project/coddy-agent",
       "http_status": 200,
       "reason": ""
     }
@@ -307,90 +307,71 @@
   "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "7006cf058def4bbb",
-      "title": "Show HN: LayerShop – a love child of ComfyUI and PhotoCraft",
+      "candidate_id": "d16eb7f8c20e6608",
+      "title": "Show HN: Backend for Agents and Builders who don't need one yet – Statebase",
       "reasons": [
-        "Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.",
+        "Editorial takeaway is too long; keep the analysis concrete and concise."
       ],
-      "proposed_text": "LayerShop is an open‑source Photoshop‑style editor with free AI inside. Validate local GPU inference by running a ComfyUI model on a test image. https://github.com/SlavomirDurej/layershop",
-      "evidence_quote": "The editor you already know. With free AI inside.",
+      "proposed_text": "Statebase lets you save JSON data and run server‑side rules with scoped permissions. Test that rule execution respects the defined permission scopes by attempting a write from an unauthorized client. https://statebase.dev",
+      "evidence_quote": "Save JSON data and run server‑side rules with scoped permissions.",
       "claim_evidence": [
         {
-          "claim": "LayerShop is an open‑source Photoshop‑style editor with free AI inside.",
-          "quote": "The editor you already know. With free AI inside."
+          "claim": "Statebase lets you save JSON data and run server‑side rules with scoped permissions.",
+          "quote": "Save JSON data and run server‑side rules with scoped permissions."
         }
       ]
     },
     {
-      "candidate_id": "e574a31e6d9c050f",
-      "title": "Show HN: A browser app that controls my bike trainer over Bluetooth",
+      "candidate_id": "6aa85eb2cdb35630",
+      "title": "coddy-project/coddy-agent",
       "reasons": [
-        "Editorial takeaway is not specific enough to this candidate's technical/product details.",
-        "Unsupported numeric claim(s): 5minutes"
+        "Editorial takeaway is too long; keep the analysis concrete and concise."
       ],
-      "proposed_text": "Free Bike Workout offers structured smart‑trainer workouts in the browser without download. Check Bluetooth pairing stability by cycling for 5 minutes after page load. https://freebikeworkout.com/",
-      "evidence_quote": "Free structured smart‑trainer workouts in your browser. No download, no sign‑up.",
+      "proposed_text": "coddy-agent ships as a single static Go binary that includes an OpenAI‑compatible API and a Telegram gateway. Run a quick integration test to confirm the API responds to a simple prompt before deploying. https://github.com/coddy-project/coddy-agent",
+      "evidence_quote": "General-purpose agent in one static Go binary: console TUI, ACP server for editors, OpenAI‑compatible API with embedded web UI, Telegram gateway",
       "claim_evidence": [
         {
-          "claim": "Free Bike Workout offers structured smart‑trainer workouts in the browser without download.",
-          "quote": "Free structured smart‑trainer workouts in your browser. No download, no sign‑up."
+          "claim": "coddy-agent ships as a single static Go binary that includes an OpenAI‑compatible API and a Telegram gateway.",
+          "quote": "General-purpose agent in one static Go binary: console TUI, ACP server for editors, OpenAI‑compatible API with embedded web UI, Telegram gateway"
         }
       ]
     },
     {
-      "candidate_id": "c37165a31cd3fc39",
-      "title": "n8n-io/n8n",
-      "proposed_text": "n8n is a fair‑code workflow automation platform with native AI capabilities. Run a sample AI node flow to verify model inference before production. https://github.com/n8n-io/n8n",
+      "candidate_id": "cf8745a690f88e61",
+      "title": "Show HN: StrictLLM – For when you need human-in-the-loop",
+      "proposed_text": "StrictLLM is a desktop LLM client that enforces fine‑grained permission controls. Verify that each persona’s permissions match the intended scope before enabling chat. https://strictllm.com",
       "reasons": [
-        "The post claims running a sample AI node flow verifies model inference, but the source does not document such a workflow or verification step. The claim lacks evidence and the takeaway is not supported by the primary pag"
+        "Post restates headline facts without adding new insight; originality below threshold."
       ],
       "editorial_review": {
         "clarity_score": 8,
-        "technical_coherence_score": 4,
-        "takeaway_value_score": 5,
-        "source_faithfulness_score": 6,
-        "originality_score": 6
+        "technical_coherence_score": 8,
+        "takeaway_value_score": 8,
+        "source_faithfulness_score": 8,
+        "originality_score": 3
       }
     },
     {
-      "candidate_id": "c37165a31cd3fc39",
-      "title": "n8n-io/n8n",
+      "candidate_id": "cf8745a690f88e61",
+      "title": "Show HN: StrictLLM – For when you need human-in-the-loop",
       "reasons": [
-        "Primary source has conflicting counts for integrations (1500+, 400+); omit this number unless a single current value can be verified.",
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Editorial takeaway is too long; keep the analysis concrete and concise."
       ],
-      "proposed_text": "n8n is a fair‑code workflow automation platform with native AI capabilities. n8n supports over 400 integrations, enabling broad connectivity. https://github.com/n8n-io/n8n",
-      "evidence_quote": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+      "proposed_text": "StrictLLM lets you set persona tool permissions to Always Allow, Always Ask, or Always Deny. Verify each persona’s tool permission before enabling chat to ensure the intended scope is enforced. https://strictllm.com",
+      "evidence_quote": "Tool Level Permissions Define exactly how each persona uses tools with flexible permissions: set actions to Always Allow, Always Ask, or Always Deny, giving you complete control...",
       "automatic_repair_attempt": true,
       "original_rejection_reasons": [
-        "The post claims running a sample AI node flow verifies model inference, but the source does not document such a workflow or verification step. The claim lacks evidence and the takeaway is not supported by the primary pag"
+        "Post restates headline facts without adding new insight; originality below threshold."
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "c37165a31cd3fc39",
-      "title": "n8n-io/n8n",
-      "url": "https://github.com/n8n-io/n8n",
-      "source": "GitHub Search",
-      "primary_category": "ai_and_automation",
-      "priority_score": 69,
-      "hourly_adjusted_score": 70,
-      "stars_current": 208992,
-      "stars_delta_24h": 122,
-      "stars_delta_baseline_hours": 24.0,
-      "stars_growth_percent_24h": 0.06,
-      "trend_signal": "measured_star_growth",
-      "published_at": "2026-10-29T14:37:49+00:00",
-      "days_old": 0.0,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "7006cf058def4bbb",
-      "title": "Show HN: LayerShop – a love child of ComfyUI and PhotoCraft",
-      "url": "https://github.com/SlavomirDurej/layershop",
+      "id": "cf8745a690f88e61",
+      "title": "Show HN: StrictLLM – For when you need human-in-the-loop",
+      "url": "https://strictllm.com",
       "source": "Hacker News",
       "primary_category": "product_and_workflow_tools",
       "priority_score": 65,
@@ -400,16 +381,16 @@
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-29T14:22:09+00:00",
-      "days_old": 0.01,
+      "published_at": "2026-10-29T15:35:07+00:00",
+      "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "e574a31e6d9c050f",
-      "title": "Show HN: A browser app that controls my bike trainer over Bluetooth",
-      "url": "https://freebikeworkout.com/",
+      "id": "d16eb7f8c20e6608",
+      "title": "Show HN: Backend for Agents and Builders who don't need one yet – Statebase",
+      "url": "https://statebase.dev",
       "source": "Hacker News",
       "primary_category": "product_and_workflow_tools",
       "priority_score": 63,
@@ -419,8 +400,27 @@
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-29T14:27:04+00:00",
+      "published_at": "2026-10-29T15:19:01+00:00",
       "days_old": 0.01,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "6aa85eb2cdb35630",
+      "title": "coddy-project/coddy-agent",
+      "url": "https://github.com/coddy-project/coddy-agent",
+      "source": "GitHub Search",
+      "primary_category": "security_and_self_hosting",
+      "priority_score": 70,
+      "hourly_adjusted_score": 64,
+      "stars_current": 186,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "insufficient_history",
+      "published_at": "2026-10-29T15:36:34+00:00",
+      "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
@@ -447,7 +447,7 @@
   },
   "state_summary": {
     "used_candidates_in_cooldown": 25,
-    "recently_attempted_candidates": 33,
+    "recently_attempted_candidates": 34,
     "recent_draft_passes_today": 3
   }
 }
