@@ -1,6 +1,6 @@
 # Legivox engagement shortlist
 
-Generated: 2026-10-28 06:59:54 IST
+Generated: 2026-10-29 06:59:16 IST
 
 These are candidates to review manually. No likes, replies, reposts, or follows are automated by this workflow.
 
@@ -8,9 +8,9 @@ These are candidates to review manually. No likes, replies, reposts, or follows 
 
 Search: `feature requests`
 
-- [smtlaissezfaire](https://x.com/smtlaissezfaire/status/2115201458698404040): @mattyp Would love a way to have other pw managers plug in to grokbot. Also: Where's the best place for feature requests?
-- [alperortac](https://x.com/alperortac/status/2115090138611011997): @jauneclaude Cool cool. Whenever you have any issues or feature requests don't hesitate to spam me
-- [DeltaAIbnb](https://x.com/DeltaAIbnb/status/2115044254376767748): 🚀 You asked. We listened. We delivered. Many of our latest updates came directly from your feedback and feature requests. 💙 Over the past 2 weeks, we've shipped more updates across Delta Studio 🎬, Delta Code 💻, and Delta
+- [ClayOglesby](https://x.com/ClayOglesby/status/2115614312857215280): @yolodotad Please can you stream so you can actually respond to our questions, feature requests, and bug fixes?
+- [RLambertBiz](https://x.com/RLambertBiz/status/2115350330045059562): I stopped approving feature requests. Now I only approve pull requests. My team at Nomi Pass drops ideas and bugs in Telegram. Agents read our code, write the issue, then Claude and Codex build and review until both agre
+- [justin_butlion](https://x.com/justin_butlion/status/2114751499532435883): How exactly does @projectecho_io help you prioritize your feature requests and product feedback? https://t.co/QEHmJoXPO1
 
 ## freelance developers
 
@@ -24,6 +24,6 @@ Search: `freelancer scope creep`
 
 Search: `inventory margins`
 
-- [risewithshawn](https://x.com/risewithshawn/status/2115217088281276465): Connect that history to CRM outcomes: which leads qualified, which deals closed, and the recorded reasons deals were lost. Add today's constraints: inventory, margins and team capacity. Ask AI what evidence supports its 
-- [mikebeckhamsm](https://x.com/mikebeckhamsm/status/2115202025986105848): E-commerce is one of the best training grounds I know for becoming a strong operator. You have to learn across an unusually wide range of disciplines: Product. Marketing. Finance. Inventory. Supply chain. Customer acquis
-- [FigureNumbers](https://x.com/FigureNumbers/status/2115115379286807023): Swiggy Instamart's shift to inventory ownership is expected to lift contribution margins by 80 basis points, but add only ₹4-5 per order against the roughly ₹30 needed to break even.
+- [EarningsAnatomy](https://x.com/EarningsAnatomy/status/2115603013306142849): Logitech $LOGI reported Q2 FY2027 results! 🎧 📈 Sales rose 2.8% to $1.22B 💵 Net income grew 5.5% to $180M 📉 1H operating cash flow fell 6.7% Higher gross margins lifted profit, but rising OpEx and inventory absorbed cash.
+- [ExitEcom](https://x.com/ExitEcom/status/2115512303315759225): @itsjustandreib Q4 can make your revenue look incredible. But a busy warehouse doesn't automatically mean a healthy business. Watch your contribution margins, inventory commitments and cash conversion cycle. Scaling orde
+- [grok](https://x.com/grok/status/2115467852299784563): @thatismj @ericjackson Yes, $OPEN is still losing money. Q2 2026 net loss was $162M on $883M revenue; TTM losses exceed $1.5B. Gross margins hover near 9% but operating costs and inventory carry keep it in the red. Manag

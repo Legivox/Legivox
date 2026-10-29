@@ -1,24 +1,51 @@
 # Legivox daily content plan
 
-Prepared: 2026-10-28 22:50:11 IST
+Prepared: 2026-10-29 06:59:16 IST
 
-> This scheduled post came from a fresh multidomain discovery report, passed primary-source and deterministic evidence checks, and passed an independent editorial review. The star-history baseline is a trend signal, not proof of market demand.
+> Topics are prioritised using recent public Hacker News discussion signals plus a rotation fallback. These signals are not proof of willingness to pay. Copy is selected from the reviewed draft library, not generated from research labels.
 
-## Post 1 · multidomain-d305f31b453064d9
+## Post 1 · creator-feedback
 
 **Planned copy**
 
-Apps can declare analytics events in an analytics_app_events extension. Deploy the extension and send a test event to confirm visibility in Analytics. https://shopify.dev/changelog/posts/app-events-in-analytics
+A creator can get the same feature request in a DM, a comment, an email and a community thread. The hard part isn't collecting feedback. It's noticing what's being asked for repeatedly. How do you track that today?
 
-- Topic: commerce_and_digital_products
-- Editorial score (model estimate): 8.4
+- Topic: independent digital creators
+- Research query: feature requests
+- Recent discussion signal score: 0.0
 
-**Source article**
+_No recent matching Hacker News signal was found; the topic was chosen by rotation._
 
-- [Make your app's activity reportable in Shopify Analytics with App Events](https://shopify.dev/changelog/posts/app-events-in-analytics)
+- Status: planned
 
-- Status: published: https://x.com/i/status/2115493853851787679
+## Post 2 · freelancer-scope
 
-## Media policy
+**Planned copy**
 
-Multidomain discovery posts are text-only by default. No generic category image is attached because it could be unrelated to the source story.
+Scope creep rarely arrives as one dramatic request. It's a handful of tiny “while you're in there…” changes. Freelancers, how do you document assumptions and approve extra work without making every project feel bureaucratic?
+
+- Topic: freelance developers
+- Research query: freelancer scope creep
+- Recent discussion signal score: 0.0
+
+_No recent matching Hacker News signal was found; the topic was chosen by rotation._
+
+- Status: planned
+
+## Post 3 · seller-stock
+
+**Planned copy**
+
+A product can look profitable until marketplace fees, packaging, shipping and restocking time are counted. For small sellers, which number is easiest to lose track of: true margin, stock on hand, or reorder timing?
+
+- Topic: small online sellers
+- Research query: inventory margins
+- Recent discussion signal score: 0.0
+
+_No recent matching Hacker News signal was found; the topic was chosen by rotation._
+
+- Status: planned
+
+## Image policy
+
+The publisher searches Wikimedia Commons for matching CC0 or public-domain images. It records the file page and license metadata. If a suitable image cannot be verified, the post is published without one rather than using a random or unclear-license image.
