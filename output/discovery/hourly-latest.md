@@ -1,10 +1,10 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-29T22:05:27+05:30
+- Run time (IST): 2026-10-29T23:01:50+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
 - Candidate pool after freshness/diversity filters: 197
-- Independent editorial review: 0 draft(s) passed / 1 rejected
+- Independent editorial review: 0 draft(s) passed / 2 rejected
 - Drafts passing local checks: 0
 - Outcome: **skip**
 - Decision reason: Every draft submitted for independent editorial review was rejected; The hour was skipped.
@@ -54,20 +54,20 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 109
-- Previously tracked repositories refreshed outside search results: 91
+- Repositories seen in this discovery run: 106
+- Previously tracked repositories refreshed outside search results: 94
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
-- Repositories with a 20–36 hour comparison baseline: 19
+- Repositories with a 20–36 hour comparison baseline: 18
 - First observations are baseline samples, not evidence of trending. Star velocity is reported only when a historical comparison exists.
 
 ## Primary-source verification
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| Show HN: Fast agentic video editing in the browser (Tella) | yes | 200 | https://www.tella.com |
-| Show HN: Panta – Open Swiss job market data | yes | 200 | https://withpanta.com/ |
-| indranilbanerjee/digital-marketing-pro | yes | 200 | https://github.com/indranilbanerjee/digital-marketing-pro |
+| Show HN: Apgar – Catch agent regressions without an LLM judge | yes | 200 | https://github.com/oimo-ai/apgar |
+| Show HN: Wanim – Manim in the browser, but 1/20 smaller | yes | 200 | https://github.com/Acfboy/Wanim |
+| crbnos/carbon | yes | 200 | https://github.com/crbnos/carbon |
 
 ## Selected draft candidates
 
@@ -84,25 +84,23 @@ No draft cleared the complete local and independent-editor gate. See the decisio
 
 ## Rejected draft options
 
-- Show HN: Panta – Open Swiss job market data: Supporting quotes cover only 57% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: Panta provides an API for Swiss job index data. Check that returned job records include a Swiss‑eligible flag before use. https://withpanta.com/
-  - Model evidence quote: “Find your next role in Panta’s Swiss job index.”
-  - Claim support: Panta provides an API for Swiss job index data ← “Find your next role in Panta’s Swiss job index.”
-- indranilbanerjee/digital-marketing-pro: Opening sentence is too close to the source headline; add a distinct editorial framing.
-  - Rejected text: digital‑marketing‑pro is an open‑source AI digital marketing OS. Run a test to ensure outputs include a human approval flag. https://github.com/indranilbanerjee/digital-marketing-pro
-  - Model evidence quote: “An open‑source AI based digital marketing operating system for strategy, SEO, AEO/GEO, paid media, content, CRM, and analytics - grounded in brand context, human approval, and verifiable outputs.”
-  - Claim support: digital‑marketing‑pro is an open‑source AI digital marketing OS ← “An open‑source AI based digital marketing operating system for strategy, SEO, AEO/GEO, paid media, content, CRM, and analytics - grounded in brand context, human approval, and verifiable outputs.”
-- Show HN: Fast agentic video editing in the browser (Tella): Post repeats headline facts without adding new insight or actionable detail beyond a generic test; originality score below threshold.
-  - Rejected text: Tella offers native screen recording with AI editing and 4K export. Run a 4K export test to confirm quality and file size limits. https://www.tella.com
-- Show HN: Fast agentic video editing in the browser (Tella): The factual opening bundles multiple features; narrow it to one capability.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.; No claim-by-claim supporting evidence was provided; Unsupported numeric claim(s): 60; Supporting quotes cover only 11% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: Tella is AI video editing software that records screen, camera, and audio natively. Export videos in up to 4K at 60 FPS directly to platforms or download. https://www.tella.com
-  - Model evidence quote: “Export in 4K Publish directly to your favorite platforms or download your video in up to 4K 60FPS.”
+- crbnos/carbon: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; Supporting quotes cover only 56% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: Carbon is an open‑source ERP/MES/QMS that stores all data in a single Postgres schema. Use Carbon’s REST API to integrate inventory with your e‑commerce platform. https://github.com/crbnos/carbon
+  - Model evidence quote: “Open-source manufacturing ERP, MES and QMS. Quoting, MRP, inventory, shop floor, quality and lot/serial traceability on one Postgres schema”
+  - Claim support: Carbon is an open‑source ERP/MES/QMS that stores all data in a single Postgres schema ← “Open-source manufacturing ERP, MES and QMS. Quoting, MRP, inventory, shop floor, quality and lot/serial traceability on one Postgres schema”
+- Show HN: Apgar – Catch agent regressions without an LLM judge: Post restates headline facts without adding new insight; originality below threshold.
+  - Rejected text: Apgar compares a new AI agent release to a production baseline using trace data. Run Apgar after each deploy to catch regressions before users notice. https://github.com/oimo-ai/apgar
+- Show HN: Wanim – Manim in the browser, but 1/20 smaller: Post merely paraphrases source claims; lacks original perspective or actionable nuance.
+  - Rejected text: Wanim lets you run original Manim Python code in the browser 20× lighter than Pyodide. Embed Wanim scenes in slides to avoid heavy Pyodide bundles. https://github.com/Acfboy/Wanim
+- Show HN: Apgar – Catch agent regressions without an LLM judge: Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.; Editorial takeaway is too long; keep the analysis concrete and concise.
+  - Rejected text: Apagar compares a new AI agent release to a production baseline using trace data. Apagar relies on OpenTelemetry traces to benchmark new releases against production, enabling early detection of regressions. https://github.com/oimo-ai/apgar
+  - Model evidence quote: “Release health for AI agents: compares a new release to a baseline from production traces”
 
 ## Top discovery candidates considered
 
-- Show HN: Fast agentic video editing in the browser (Tella) | Hacker News | product_and_workflow_tools | raw 67, adjusted 69 | https://www.tella.com
-- Show HN: Panta – Open Swiss job market data | Hacker News | product_and_workflow_tools | raw 62, adjusted 64 | https://withpanta.com/
-- indranilbanerjee/digital-marketing-pro | GitHub Search | marketing_and_distribution | raw 68, adjusted 62 | current stars 914 | GitHub star trend: building baseline | https://github.com/indranilbanerjee/digital-marketing-pro
+- Show HN: Apgar – Catch agent regressions without an LLM judge | Hacker News | product_and_workflow_tools | raw 68, adjusted 70 | https://github.com/oimo-ai/apgar
+- Show HN: Wanim – Manim in the browser, but 1/20 smaller | Hacker News | product_and_workflow_tools | raw 63, adjusted 65 | https://github.com/Acfboy/Wanim
+- crbnos/carbon | GitHub Search | online_seller_operations | raw 67, adjusted 61 | current stars 2783 | GitHub star trend: building baseline | https://github.com/crbnos/carbon
 
 ## Safety and interpretation
 
