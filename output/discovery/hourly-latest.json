@@ -1,38 +1,38 @@
 {
-  "generated_at_ist": "2026-10-30T13:12:59+05:30",
-  "run_at_ist": "2026-10-30T13:12:59+05:30",
+  "generated_at_ist": "2026-10-30T14:04:43+05:30",
+  "run_at_ist": "2026-10-30T14:04:43+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 319,
-  "eligible_candidate_count": 200,
+  "candidate_count_raw": 315,
+  "eligible_candidate_count": 201,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4812
+      "total_count": 4817
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1049
+      "total_count": 1051
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 358
+      "total_count": 362
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2919
+      "total_count": 2927
     },
     {
       "source": "GitHub Search · github-digital-product-tools",
@@ -46,7 +46,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 425
+      "total_count": 426
     },
     {
       "source": "GitHub Search · github-marketing-distribution",
@@ -60,14 +60,14 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2122
+      "total_count": 2123
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3357
+      "total_count": 3359
     },
     {
       "source": "GitHub Search · github-seller-operations",
@@ -93,7 +93,7 @@
     {
       "source": "Hacker News · hn-analytics-growth",
       "kind": "hacker_news",
-      "items_kept": 9,
+      "items_kept": 10,
       "status": "ok",
       "total_count": 10
     },
@@ -158,12 +158,12 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 8
+      "total_count": 10
     },
     {
       "source": "Hacker News · hn-shopify",
       "kind": "hacker_news",
-      "items_kept": 10,
+      "items_kept": 8,
       "status": "ok",
       "total_count": 10
     },
@@ -195,7 +195,7 @@
     {
       "source": "Product Hunt",
       "kind": "rss",
-      "items_kept": 44,
+      "items_kept": 43,
       "status": "ok"
     },
     {
@@ -248,7 +248,7 @@
       "kind": "wordpress_plugin",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1789
+      "total_count": 1791
     },
     {
       "source": "WordPress Plugin Directory · wp-membership-creators",
@@ -259,42 +259,42 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-30T07:42:59+00:00",
+    "observed_at_utc": "2026-10-30T08:34:43+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 109,
-    "previously_tracked_repositories_refreshed": 91,
+    "repositories_seen_in_discovery": 108,
+    "previously_tracked_repositories_refreshed": 92,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
-    "repositories_with_20_to_36_hour_baseline": 20,
+    "repositories_with_20_to_36_hour_baseline": 22,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "a1dbde18ac15df21",
-      "title": "Tool: Namespace Devbox",
-      "source_url": "https://namespace.so/?ref=console.dev",
+      "candidate_id": "f9d0871849c1d61e",
+      "title": "Show HN: I don't understand why invoicing apps cost $10/month",
+      "source_url": "https://invoicingpro.org/",
       "verified": true,
-      "final_url": "https://namespace.so/?ref=console.dev",
+      "final_url": "https://invoicingpro.org/",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "f6b4870412a7c624",
-      "title": "Tool: Atuin Threads",
-      "source_url": "https://blog.atuin.sh/threads-agent-sessions/?ref=console.dev",
+      "candidate_id": "3c5084079f08d141",
+      "title": "Show HN: zpq 0.5.0 – A zero-dependency Parquet engine in Zig",
+      "source_url": "https://github.com/chicagobuss/zpq",
       "verified": true,
-      "final_url": "https://blog.atuin.sh/threads-agent-sessions/?ref=console.dev",
+      "final_url": "https://github.com/chicagobuss/zpq",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "5af368034faa90ca",
-      "title": "Show HN: Freewheel – Ride a bicycle through the streets of Guwahati",
-      "source_url": "https://noworklabs.com/freewheel",
+      "candidate_id": "3fb118cb06ab05e6",
+      "title": "nodemaven/google-browser-scraper",
+      "source_url": "https://github.com/nodemaven/google-browser-scraper",
       "verified": true,
-      "final_url": "https://noworklabs.com/freewheel",
+      "final_url": "https://github.com/nodemaven/google-browser-scraper",
       "http_status": 200,
       "reason": ""
     }
@@ -302,145 +302,255 @@
   "rejected_primary_sources": [],
   "daily_draft_cap": 16,
   "daily_drafts_already_passed": 2,
-  "outcome": "skip",
-  "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
-  "passing_drafts": [],
-  "rejected_drafts": [
+  "outcome": "dry_run_passed",
+  "decision_reason": "At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.",
+  "passing_drafts": [
     {
-      "candidate_id": "a1dbde18ac15df21",
-      "title": "Tool: Namespace Devbox",
-      "reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability.",
-        "Primary-source evidence quote is missing or absent from the live page (after presentation normalisation)",
-        "A factual claim lacks a quote present in the live primary-source page",
-        "Factual sentence includes terms absent from the source title/summary: dev, offer, persistent, ssh"
-      ],
-      "proposed_text": "Namespace Devbox offers cloud dev environments with SSH, RDP, and persistent services. Test SSH connectivity and port exposure before deploying CI pipelines. https://namespace.so/?ref=console.dev",
-      "evidence_quote": "Connect via SSH and through coding agents.",
+      "candidate_id": "f9d0871849c1d61e",
+      "title": "Show HN: I don't understand why invoicing apps cost $10/month",
+      "source": "Hacker News",
+      "source_kind": "hacker_news",
+      "url": "https://invoicingpro.org/",
+      "primary_source_verified": true,
+      "primary_source_title": "InvoicingPro | Offline Invoicing for Desktop and Mobile",
+      "primary_source_final_url": "https://invoicingpro.org/",
+      "primary_source_http_status": 200,
+      "category": "product_and_workflow_tools",
+      "priority_score": 64,
+      "hourly_adjusted_score": 66,
+      "post_text": "InvoicingPro offers offline desktop and mobile invoicing with one‑time payment. Test PDF export and offline sync before onboarding clients. https://invoicingpro.org/",
+      "fact_sentence": "InvoicingPro offers offline desktop and mobile invoicing with one‑time payment.",
+      "format": "tool_discovery",
+      "audience": "developers",
+      "angle": "practical_workflow",
+      "rationale": "Highlights key value proposition and a concrete validation step.",
+      "evidence_quote": "InvoicingPro offers desktop and mobile invoicing apps with offline operation, cross-device synchronization, and a one-time payment with no subscription.",
+      "editorial_takeaway": "Test PDF export and offline sync before onboarding clients.",
       "claim_evidence": [
         {
-          "claim": "Namespace Devbox offers cloud dev environments with SSH, RDP, and persistent services.",
-          "quote": "Connect via SSH and through coding agents."
-        },
-        {
-          "claim": "Namespace Devbox supports RDP for remote desktop access.",
-          "quote": "Access Remote desktop over RDP"
+          "claim": "InvoicingPro offers offline desktop and mobile invoicing with one‑time payment",
+          "quote": "InvoicingPro offers desktop and mobile invoicing apps with offline operation, cross-device synchronization, and a one-time payment with no subscription."
         }
-      ]
-    },
-    {
-      "candidate_id": "5af368034faa90ca",
-      "title": "Show HN: Freewheel – Ride a bicycle through the streets of Guwahati",
-      "reasons": [
-        "A supporting quote does not share enough wording with its stated claim",
-        "Factual sentence includes terms absent from the source title/summary: bicycle, control, game, minimalistic"
       ],
-      "proposed_text": "Freewheel is a minimalistic bicycle game with swipe controls and a leaderboard. Test swipe sensitivity on different screen sizes to ensure consistent gameplay. https://noworklabs.com/freewheel",
-      "evidence_quote": "swipe up to pedal · swipe down to brake",
-      "claim_evidence": [
-        {
-          "claim": "Freewheel is a minimalistic bicycle game with swipe controls and a leaderboard.",
-          "quote": "swipe up to pedal · swipe down to brake"
-        }
-      ]
-    },
-    {
-      "candidate_id": "f6b4870412a7c624",
-      "title": "Tool: Atuin Threads",
-      "proposed_text": "Atuin Threads syncs encrypted agent session history across machines. Verify session resumption works after a machine reboot to catch sync delays. https://blog.atuin.sh/threads-agent-sessions/?ref=console.dev",
-      "reasons": [
-        "Post claims encryption and resumption after reboot, but source only states searchable synced history; no evidence of encryption or reboot behavior."
-      ],
+      "scores": {
+        "timeliness": 8,
+        "usefulness": 8,
+        "novelty": 7,
+        "evidence": 9,
+        "insight": 8
+      },
+      "editorial_score": 8.1,
+      "character_count": 165,
+      "status": "dry_run_passed_not_published",
+      "published_to_x": false,
       "editorial_review": {
         "clarity_score": 8,
-        "technical_coherence_score": 6,
-        "takeaway_value_score": 5,
-        "source_faithfulness_score": 7,
-        "originality_score": 4
+        "technical_coherence_score": 8,
+        "takeaway_value_score": 7,
+        "source_faithfulness_score": 9,
+        "originality_score": 7,
+        "reason": "Clear, supported claim with actionable takeaway.",
+        "passed": true
       }
+    },
+    {
+      "candidate_id": "3fb118cb06ab05e6",
+      "title": "nodemaven/google-browser-scraper",
+      "source": "GitHub Search",
+      "source_kind": "github_repository",
+      "url": "https://github.com/nodemaven/google-browser-scraper",
+      "primary_source_verified": true,
+      "primary_source_title": "GitHub - nodemaven/google-browser-scraper: Self-hosted Google search scraper for Python. Scrape Google SERP results with a real Chrome browser and your own residential proxy. Self-hosted SERP API alternative with JSON output, an HTTP API and an MCP server for AI agents.",
+      "primary_source_final_url": "https://github.com/nodemaven/google-browser-scraper",
+      "primary_source_http_status": 200,
+      "category": "marketing_and_distribution",
+      "priority_score": 68,
+      "hourly_adjusted_score": 62,
+      "post_text": "google-browser-scraper provides a self‑hosted Google SERP API using Chrome and residential proxies. Verify proxy rotation and CAPTCHA handling before scaling. https://github.com/nodemaven/google-browser-scraper",
+      "fact_sentence": "google-browser-scraper provides a self‑hosted Google SERP API using Chrome and residential proxies.",
+      "format": "tool_discovery",
+      "audience": "developers",
+      "angle": "practical_workflow",
+      "rationale": "Emphasizes deployment considerations for scraping.",
+      "evidence_quote": "Self-hosted Google search scraper for Python. Scrape Google SERP results with a real Chrome browser and your own residential proxy.",
+      "editorial_takeaway": "Verify proxy rotation and CAPTCHA handling before scaling.",
+      "claim_evidence": [
+        {
+          "claim": "google-browser-scraper provides a self‑hosted Google SERP API using Chrome and residential proxies",
+          "quote": "Self-hosted Google search scraper for Python. Scrape Google SERP results with a real Chrome browser and your own residential proxy."
+        }
+      ],
+      "scores": {
+        "timeliness": 8,
+        "usefulness": 8,
+        "novelty": 7,
+        "evidence": 9,
+        "insight": 8
+      },
+      "editorial_score": 8.1,
+      "character_count": 210,
+      "status": "dry_run_passed_not_published",
+      "published_to_x": false,
+      "editorial_review": {
+        "clarity_score": 8,
+        "technical_coherence_score": 8,
+        "takeaway_value_score": 7,
+        "source_faithfulness_score": 9,
+        "originality_score": 7,
+        "reason": "Accurate description, practical advice, and source backing.",
+        "passed": true
+      }
+    }
+  ],
+  "rejected_drafts": [
+    {
+      "candidate_id": "3c5084079f08d141",
+      "title": "Show HN: zpq 0.5.0 – A zero-dependency Parquet engine in Zig",
+      "reasons": [
+        "Primary-source evidence quote is missing or absent from the live page (after presentation normalisation)",
+        "A factual claim lacks a quote present in the live primary-source page",
+        "Opening sentence is too close to the source headline; add a distinct editorial framing.",
+        "Factual sentence includes terms absent from the source title/summary: dependency, engine, write, zero"
+      ],
+      "proposed_text": "zpq is a zero‑dependency Parquet engine written in Zig. Benchmark read/write against pyarrow to validate speed claims. https://github.com/chicagobuss/zpq",
+      "evidence_quote": "zero-dependency Parquet engine in Zig",
+      "claim_evidence": [
+        {
+          "claim": "zpq is a zero‑dependency Parquet engine written in Zig",
+          "quote": "zero-dependency Parquet engine in Zig"
+        }
+      ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "a1dbde18ac15df21",
-      "title": "Tool: Namespace Devbox",
-      "url": "https://namespace.so/?ref=console.dev",
-      "source": "Console.dev",
-      "primary_category": "developer_tools",
-      "priority_score": 68,
-      "hourly_adjusted_score": 68,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-29T08:00:00+00:00",
-      "days_old": 0.99,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "f6b4870412a7c624",
-      "title": "Tool: Atuin Threads",
-      "url": "https://blog.atuin.sh/threads-agent-sessions/?ref=console.dev",
-      "source": "Console.dev",
-      "primary_category": "developer_tools",
-      "priority_score": 66,
+      "id": "f9d0871849c1d61e",
+      "title": "Show HN: I don't understand why invoicing apps cost $10/month",
+      "url": "https://invoicingpro.org/",
+      "source": "Hacker News",
+      "primary_category": "product_and_workflow_tools",
+      "priority_score": 64,
       "hourly_adjusted_score": 66,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-29T08:00:00+00:00",
-      "days_old": 0.99,
+      "published_at": "2026-10-30T08:02:33+00:00",
+      "days_old": 0.02,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "5af368034faa90ca",
-      "title": "Show HN: Freewheel – Ride a bicycle through the streets of Guwahati",
-      "url": "https://noworklabs.com/freewheel",
+      "id": "3c5084079f08d141",
+      "title": "Show HN: zpq 0.5.0 – A zero-dependency Parquet engine in Zig",
+      "url": "https://github.com/chicagobuss/zpq",
       "source": "Hacker News",
       "primary_category": "product_and_workflow_tools",
-      "priority_score": 61,
-      "hourly_adjusted_score": 63,
+      "priority_score": 63,
+      "hourly_adjusted_score": 65,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-30T05:23:33+00:00",
-      "days_old": 0.1,
+      "published_at": "2026-10-30T08:05:36+00:00",
+      "days_old": 0.02,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "3fb118cb06ab05e6",
+      "title": "nodemaven/google-browser-scraper",
+      "url": "https://github.com/nodemaven/google-browser-scraper",
+      "source": "GitHub Search",
+      "primary_category": "marketing_and_distribution",
+      "priority_score": 68,
+      "hourly_adjusted_score": 62,
+      "stars_current": 100,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "insufficient_history",
+      "published_at": "2026-10-30T08:17:23+00:00",
+      "days_old": 0.01,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     }
   ],
   "automatic_repair": {
-    "attempted": true,
+    "attempted": false,
     "drafts_submitted": 0,
     "repaired_local_passes": 0,
     "repair_rejections": 0,
-    "repair_error": "Automatic repair failed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi",
-    "editorial_repair_attempted": true,
+    "repair_error": null,
+    "editorial_repair_attempted": false,
     "editorial_repair_drafts_submitted": 0,
-    "editorial_repair_error": "Automatic repair failed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi"
+    "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 1,
-    "submitted_for_independent_review": 1,
-    "passed_independent_review": 0,
-    "rejected_by_independent_review": 1,
+    "locally_valid_drafts": 2,
+    "submitted_for_independent_review": 2,
+    "passed_independent_review": 2,
+    "rejected_by_independent_review": 0,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
+  "recommended_draft": {
+    "candidate_id": "f9d0871849c1d61e",
+    "title": "Show HN: I don't understand why invoicing apps cost $10/month",
+    "source": "Hacker News",
+    "source_kind": "hacker_news",
+    "url": "https://invoicingpro.org/",
+    "primary_source_verified": true,
+    "primary_source_title": "InvoicingPro | Offline Invoicing for Desktop and Mobile",
+    "primary_source_final_url": "https://invoicingpro.org/",
+    "primary_source_http_status": 200,
+    "category": "product_and_workflow_tools",
+    "priority_score": 64,
+    "hourly_adjusted_score": 66,
+    "post_text": "InvoicingPro offers offline desktop and mobile invoicing with one‑time payment. Test PDF export and offline sync before onboarding clients. https://invoicingpro.org/",
+    "fact_sentence": "InvoicingPro offers offline desktop and mobile invoicing with one‑time payment.",
+    "format": "tool_discovery",
+    "audience": "developers",
+    "angle": "practical_workflow",
+    "rationale": "Highlights key value proposition and a concrete validation step.",
+    "evidence_quote": "InvoicingPro offers desktop and mobile invoicing apps with offline operation, cross-device synchronization, and a one-time payment with no subscription.",
+    "editorial_takeaway": "Test PDF export and offline sync before onboarding clients.",
+    "claim_evidence": [
+      {
+        "claim": "InvoicingPro offers offline desktop and mobile invoicing with one‑time payment",
+        "quote": "InvoicingPro offers desktop and mobile invoicing apps with offline operation, cross-device synchronization, and a one-time payment with no subscription."
+      }
+    ],
+    "scores": {
+      "timeliness": 8,
+      "usefulness": 8,
+      "novelty": 7,
+      "evidence": 9,
+      "insight": 8
+    },
+    "editorial_score": 8.1,
+    "character_count": 165,
+    "status": "dry_run_passed_not_published",
+    "published_to_x": false,
+    "editorial_review": {
+      "clarity_score": 8,
+      "technical_coherence_score": 8,
+      "takeaway_value_score": 7,
+      "source_faithfulness_score": 9,
+      "originality_score": 7,
+      "reason": "Clear, supported claim with actionable takeaway.",
+      "passed": true
+    }
+  },
   "state_summary": {
-    "used_candidates_in_cooldown": 27,
-    "recently_attempted_candidates": 18,
-    "recent_draft_passes_today": 2
+    "used_candidates_in_cooldown": 28,
+    "recently_attempted_candidates": 21,
+    "recent_draft_passes_today": 3
   }
 }
