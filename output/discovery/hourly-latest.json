@@ -1,24 +1,24 @@
 {
-  "generated_at_ist": "2026-10-30T11:52:38+05:30",
-  "run_at_ist": "2026-10-30T11:52:38+05:30",
+  "generated_at_ist": "2026-10-30T13:12:59+05:30",
+  "run_at_ist": "2026-10-30T13:12:59+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 318,
-  "eligible_candidate_count": 207,
+  "candidate_count_raw": 319,
+  "eligible_candidate_count": 200,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4802
+      "total_count": 4812
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1048
+      "total_count": 1049
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
@@ -32,7 +32,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2915
+      "total_count": 2919
     },
     {
       "source": "GitHub Search · github-digital-product-tools",
@@ -53,28 +53,28 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 222
+      "total_count": 223
     },
     {
       "source": "GitHub Search · github-mcp-servers",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2117
+      "total_count": 2122
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3354
+      "total_count": 3357
     },
     {
       "source": "GitHub Search · github-seller-operations",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 352
+      "total_count": 353
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
@@ -88,12 +88,12 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 277
+      "total_count": 278
     },
     {
       "source": "Hacker News · hn-analytics-growth",
       "kind": "hacker_news",
-      "items_kept": 10,
+      "items_kept": 9,
       "status": "ok",
       "total_count": 10
     },
@@ -158,12 +158,12 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 10
+      "total_count": 8
     },
     {
       "source": "Hacker News · hn-shopify",
       "kind": "hacker_news",
-      "items_kept": 9,
+      "items_kept": 10,
       "status": "ok",
       "total_count": 10
     },
@@ -195,7 +195,7 @@
     {
       "source": "Product Hunt",
       "kind": "rss",
-      "items_kept": 40,
+      "items_kept": 44,
       "status": "ok"
     },
     {
@@ -259,174 +259,114 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-30T06:22:38+00:00",
+    "observed_at_utc": "2026-10-30T07:42:59+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 112,
-    "previously_tracked_repositories_refreshed": 88,
+    "repositories_seen_in_discovery": 109,
+    "previously_tracked_repositories_refreshed": 91,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
-    "repositories_with_20_to_36_hour_baseline": 18,
+    "repositories_with_20_to_36_hour_baseline": 20,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "46d056c15ce25e75",
-      "title": "Managed mode for Shopify Tax",
-      "source_url": "https://shopify.dev/changelog/managed-mode-for-shopify-tax-is-released",
+      "candidate_id": "a1dbde18ac15df21",
+      "title": "Tool: Namespace Devbox",
+      "source_url": "https://namespace.so/?ref=console.dev",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/managed-mode-for-shopify-tax-is-released",
+      "final_url": "https://namespace.so/?ref=console.dev",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "e16193c74cec9e6f",
-      "title": "Migrate to expiring offline access tokens before January 1, 2027",
-      "source_url": "https://shopify.dev/changelog/migrate-to-expiring-offline-access-tokens-before-january-2027",
+      "candidate_id": "f6b4870412a7c624",
+      "title": "Tool: Atuin Threads",
+      "source_url": "https://blog.atuin.sh/threads-agent-sessions/?ref=console.dev",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/migrate-to-expiring-offline-access-tokens-before-january-2027",
+      "final_url": "https://blog.atuin.sh/threads-agent-sessions/?ref=console.dev",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "887b6542dc8a050a",
-      "title": "Show HN: KernelCash – Privacy First Budgeting",
-      "source_url": "https://news.ycombinator.com/item?id=50296473",
+      "candidate_id": "5af368034faa90ca",
+      "title": "Show HN: Freewheel – Ride a bicycle through the streets of Guwahati",
+      "source_url": "https://noworklabs.com/freewheel",
       "verified": true,
-      "final_url": "https://news.ycombinator.com/item?id=50296473",
+      "final_url": "https://noworklabs.com/freewheel",
       "http_status": 200,
       "reason": ""
     }
   ],
   "rejected_primary_sources": [],
   "daily_draft_cap": 16,
-  "daily_drafts_already_passed": 1,
-  "outcome": "dry_run_passed",
-  "decision_reason": "At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.",
-  "passing_drafts": [
-    {
-      "candidate_id": "46d056c15ce25e75",
-      "title": "Managed mode for Shopify Tax",
-      "source": "Shopify Developer Changelog",
-      "source_kind": "official_changelog",
-      "url": "https://shopify.dev/changelog/posts/managed-mode-for-shopify-tax-is-released",
-      "primary_source_verified": true,
-      "primary_source_title": "",
-      "primary_source_final_url": "https://shopify.dev/changelog/posts/managed-mode-for-shopify-tax-is-released",
-      "primary_source_http_status": 200,
-      "category": "commerce_and_digital_products",
-      "priority_score": 68,
-      "hourly_adjusted_score": 68,
-      "post_text": "Shopify Tax managed mode validates Admin API writes against tax settings. Check API write responses for validation errors before enabling managed mode. https://shopify.dev/changelog/posts/managed-mode-for-shopify-tax-is-released",
-      "fact_sentence": "Shopify Tax managed mode validates Admin API writes against tax settings.",
-      "format": "release",
-      "audience": "developers",
-      "angle": "tool_discovery",
-      "rationale": "The changelog explicitly states Admin API writes are validated in managed mode, requiring developers to handle validation errors.",
-      "evidence_quote": "Some Admin API writes now validate against the requirements of managed mode.",
-      "editorial_takeaway": "Check API write responses for validation errors before enabling managed mode.",
-      "claim_evidence": [
-        {
-          "claim": "Shopify Tax managed mode validates Admin API writes against tax settings.",
-          "quote": "Some Admin API writes now validate against the requirements of managed mode."
-        }
-      ],
-      "scores": {
-        "timeliness": 9,
-        "usefulness": 8,
-        "novelty": 7,
-        "evidence": 9,
-        "insight": 8
-      },
-      "editorial_score": 8.25,
-      "character_count": 228,
-      "status": "dry_run_passed_not_published",
-      "published_to_x": false,
-      "editorial_review": {
-        "clarity_score": 8,
-        "technical_coherence_score": 8,
-        "takeaway_value_score": 8,
-        "source_faithfulness_score": 8,
-        "originality_score": 8,
-        "reason": "Clear, supported claim with actionable takeaway.",
-        "passed": true
-      }
-    },
-    {
-      "candidate_id": "e16193c74cec9e6f",
-      "title": "Migrate to expiring offline access tokens before January 1, 2027",
-      "source": "Shopify Developer Changelog",
-      "source_kind": "official_changelog",
-      "url": "https://shopify.dev/changelog/posts/migrate-to-expiring-offline-access-tokens-before-january-2027",
-      "primary_source_verified": true,
-      "primary_source_title": "",
-      "primary_source_final_url": "https://shopify.dev/changelog/posts/migrate-to-expiring-offline-access-tokens-before-january-2027",
-      "primary_source_http_status": 200,
-      "category": "commerce_and_digital_products",
-      "priority_score": 68,
-      "hourly_adjusted_score": 68,
-      "post_text": "Public apps must switch to expiring offline access tokens before Jan 1, 2027. Update your auth flow to request expiring tokens and test token refresh logic. https://shopify.dev/changelog/posts/migrate-to-expiring-offline-access-tokens-before-january-2027",
-      "fact_sentence": "Public apps must switch to expiring offline access tokens before Jan 1, 2027.",
-      "format": "release",
-      "audience": "developers",
-      "angle": "tool_discovery",
-      "rationale": "The changelog mandates migration to expiring tokens to stay listed in the App Store.",
-      "evidence_quote": "piring offline access tokens before January 1, 2027 DateOctober 27, 2026 FlagsUpdate[Action required](https://shopify.dev/changelog?action_required=true) SurfacesPlatform Public apps still using non-expiring offline access tokens must migra",
-      "editorial_takeaway": "Update your auth flow to request expiring tokens and test token refresh logic.",
-      "claim_evidence": [
-        {
-          "claim": "Public apps must switch to expiring offline access tokens before Jan 1, 2027.",
-          "quote": "piring offline access tokens before January 1, 2027 DateOctober 27, 2026 FlagsUpdate[Action required](https://shopify.dev/changelog?action_required=true) SurfacesPlatform Public apps still using non-expiring offline access tokens must migra"
-        }
-      ],
-      "scores": {
-        "timeliness": 9,
-        "usefulness": 8,
-        "novelty": 7,
-        "evidence": 9,
-        "insight": 8
-      },
-      "editorial_score": 8.25,
-      "character_count": 254,
-      "status": "dry_run_passed_not_published",
-      "published_to_x": false,
-      "editorial_review": {
-        "clarity_score": 8,
-        "technical_coherence_score": 8,
-        "takeaway_value_score": 8,
-        "source_faithfulness_score": 8,
-        "originality_score": 8,
-        "reason": "Clear, evidence-backed, actionable advice.",
-        "passed": true
-      }
-    }
-  ],
+  "daily_drafts_already_passed": 2,
+  "outcome": "skip",
+  "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
+  "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "887b6542dc8a050a",
-      "title": "Show HN: KernelCash – Privacy First Budgeting",
+      "candidate_id": "a1dbde18ac15df21",
+      "title": "Tool: Namespace Devbox",
       "reasons": [
-        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
-        "Supporting quotes cover only 57% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Primary-source evidence quote is missing or absent from the live page (after presentation normalisation)",
+        "A factual claim lacks a quote present in the live primary-source page",
+        "Factual sentence includes terms absent from the source title/summary: dev, offer, persistent, ssh"
       ],
-      "proposed_text": "KernelCash offers privacy‑first budgeting with envelope and zero‑based budgeting. Try importing OFX/QFX files to verify privacy‑first sync works. https://news.ycombinator.com/item?id=50296473",
-      "evidence_quote": "Some of KernelCash's core features include: - Envelope and zero style budgeting",
+      "proposed_text": "Namespace Devbox offers cloud dev environments with SSH, RDP, and persistent services. Test SSH connectivity and port exposure before deploying CI pipelines. https://namespace.so/?ref=console.dev",
+      "evidence_quote": "Connect via SSH and through coding agents.",
       "claim_evidence": [
         {
-          "claim": "KernelCash offers privacy‑first budgeting with envelope and zero‑based budgeting.",
-          "quote": "Some of KernelCash's core features include: - Envelope and zero style budgeting"
+          "claim": "Namespace Devbox offers cloud dev environments with SSH, RDP, and persistent services.",
+          "quote": "Connect via SSH and through coding agents."
+        },
+        {
+          "claim": "Namespace Devbox supports RDP for remote desktop access.",
+          "quote": "Access Remote desktop over RDP"
         }
       ]
+    },
+    {
+      "candidate_id": "5af368034faa90ca",
+      "title": "Show HN: Freewheel – Ride a bicycle through the streets of Guwahati",
+      "reasons": [
+        "A supporting quote does not share enough wording with its stated claim",
+        "Factual sentence includes terms absent from the source title/summary: bicycle, control, game, minimalistic"
+      ],
+      "proposed_text": "Freewheel is a minimalistic bicycle game with swipe controls and a leaderboard. Test swipe sensitivity on different screen sizes to ensure consistent gameplay. https://noworklabs.com/freewheel",
+      "evidence_quote": "swipe up to pedal · swipe down to brake",
+      "claim_evidence": [
+        {
+          "claim": "Freewheel is a minimalistic bicycle game with swipe controls and a leaderboard.",
+          "quote": "swipe up to pedal · swipe down to brake"
+        }
+      ]
+    },
+    {
+      "candidate_id": "f6b4870412a7c624",
+      "title": "Tool: Atuin Threads",
+      "proposed_text": "Atuin Threads syncs encrypted agent session history across machines. Verify session resumption works after a machine reboot to catch sync delays. https://blog.atuin.sh/threads-agent-sessions/?ref=console.dev",
+      "reasons": [
+        "Post claims encryption and resumption after reboot, but source only states searchable synced history; no evidence of encryption or reboot behavior."
+      ],
+      "editorial_review": {
+        "clarity_score": 8,
+        "technical_coherence_score": 6,
+        "takeaway_value_score": 5,
+        "source_faithfulness_score": 7,
+        "originality_score": 4
+      }
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "46d056c15ce25e75",
-      "title": "Managed mode for Shopify Tax",
-      "url": "https://shopify.dev/changelog/posts/managed-mode-for-shopify-tax-is-released",
-      "source": "Shopify Developer Changelog",
-      "primary_category": "commerce_and_digital_products",
+      "id": "a1dbde18ac15df21",
+      "title": "Tool: Namespace Devbox",
+      "url": "https://namespace.so/?ref=console.dev",
+      "source": "Console.dev",
+      "primary_category": "developer_tools",
       "priority_score": 68,
       "hourly_adjusted_score": 68,
       "stars_current": null,
@@ -434,121 +374,73 @@
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-28T15:50:00+00:00",
-      "days_old": 1.61,
+      "published_at": "2026-10-29T08:00:00+00:00",
+      "days_old": 0.99,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "e16193c74cec9e6f",
-      "title": "Migrate to expiring offline access tokens before January 1, 2027",
-      "url": "https://shopify.dev/changelog/posts/migrate-to-expiring-offline-access-tokens-before-january-2027",
-      "source": "Shopify Developer Changelog",
-      "primary_category": "commerce_and_digital_products",
-      "priority_score": 68,
-      "hourly_adjusted_score": 68,
+      "id": "f6b4870412a7c624",
+      "title": "Tool: Atuin Threads",
+      "url": "https://blog.atuin.sh/threads-agent-sessions/?ref=console.dev",
+      "source": "Console.dev",
+      "primary_category": "developer_tools",
+      "priority_score": 66,
+      "hourly_adjusted_score": 66,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-27T16:40:00+00:00",
-      "days_old": 2.57,
+      "published_at": "2026-10-29T08:00:00+00:00",
+      "days_old": 0.99,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "887b6542dc8a050a",
-      "title": "Show HN: KernelCash – Privacy First Budgeting",
-      "url": "https://news.ycombinator.com/item?id=50296473",
+      "id": "5af368034faa90ca",
+      "title": "Show HN: Freewheel – Ride a bicycle through the streets of Guwahati",
+      "url": "https://noworklabs.com/freewheel",
       "source": "Hacker News",
-      "primary_category": "data_and_growth",
-      "priority_score": 68,
-      "hourly_adjusted_score": 68,
+      "primary_category": "product_and_workflow_tools",
+      "priority_score": 61,
+      "hourly_adjusted_score": 63,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-29T21:39:14+00:00",
-      "days_old": 0.36,
+      "published_at": "2026-10-30T05:23:33+00:00",
+      "days_old": 0.1,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     }
   ],
   "automatic_repair": {
-    "attempted": false,
+    "attempted": true,
     "drafts_submitted": 0,
     "repaired_local_passes": 0,
     "repair_rejections": 0,
-    "repair_error": null,
-    "editorial_repair_attempted": false,
+    "repair_error": "Automatic repair failed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi",
+    "editorial_repair_attempted": true,
     "editorial_repair_drafts_submitted": 0,
-    "editorial_repair_error": null
+    "editorial_repair_error": "Automatic repair failed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi"
   },
   "editorial_review": {
-    "locally_valid_drafts": 2,
-    "submitted_for_independent_review": 2,
-    "passed_independent_review": 2,
-    "rejected_by_independent_review": 0,
+    "locally_valid_drafts": 1,
+    "submitted_for_independent_review": 1,
+    "passed_independent_review": 0,
+    "rejected_by_independent_review": 1,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
-  "recommended_draft": {
-    "candidate_id": "46d056c15ce25e75",
-    "title": "Managed mode for Shopify Tax",
-    "source": "Shopify Developer Changelog",
-    "source_kind": "official_changelog",
-    "url": "https://shopify.dev/changelog/posts/managed-mode-for-shopify-tax-is-released",
-    "primary_source_verified": true,
-    "primary_source_title": "",
-    "primary_source_final_url": "https://shopify.dev/changelog/posts/managed-mode-for-shopify-tax-is-released",
-    "primary_source_http_status": 200,
-    "category": "commerce_and_digital_products",
-    "priority_score": 68,
-    "hourly_adjusted_score": 68,
-    "post_text": "Shopify Tax managed mode validates Admin API writes against tax settings. Check API write responses for validation errors before enabling managed mode. https://shopify.dev/changelog/posts/managed-mode-for-shopify-tax-is-released",
-    "fact_sentence": "Shopify Tax managed mode validates Admin API writes against tax settings.",
-    "format": "release",
-    "audience": "developers",
-    "angle": "tool_discovery",
-    "rationale": "The changelog explicitly states Admin API writes are validated in managed mode, requiring developers to handle validation errors.",
-    "evidence_quote": "Some Admin API writes now validate against the requirements of managed mode.",
-    "editorial_takeaway": "Check API write responses for validation errors before enabling managed mode.",
-    "claim_evidence": [
-      {
-        "claim": "Shopify Tax managed mode validates Admin API writes against tax settings.",
-        "quote": "Some Admin API writes now validate against the requirements of managed mode."
-      }
-    ],
-    "scores": {
-      "timeliness": 9,
-      "usefulness": 8,
-      "novelty": 7,
-      "evidence": 9,
-      "insight": 8
-    },
-    "editorial_score": 8.25,
-    "character_count": 228,
-    "status": "dry_run_passed_not_published",
-    "published_to_x": false,
-    "editorial_review": {
-      "clarity_score": 8,
-      "technical_coherence_score": 8,
-      "takeaway_value_score": 8,
-      "source_faithfulness_score": 8,
-      "originality_score": 8,
-      "reason": "Clear, supported claim with actionable takeaway.",
-      "passed": true
-    }
-  },
   "state_summary": {
     "used_candidates_in_cooldown": 27,
-    "recently_attempted_candidates": 15,
+    "recently_attempted_candidates": 18,
     "recent_draft_passes_today": 2
   }
 }
