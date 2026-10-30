@@ -1,38 +1,38 @@
 {
-  "generated_at_ist": "2026-10-30T15:03:58+05:30",
-  "run_at_ist": "2026-10-30T15:03:58+05:30",
+  "generated_at_ist": "2026-10-30T15:59:47+05:30",
+  "run_at_ist": "2026-10-30T15:59:47+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 321,
-  "eligible_candidate_count": 206,
+  "candidate_count_raw": 312,
+  "eligible_candidate_count": 197,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4829
+      "total_count": 4838
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1052
+      "total_count": 1051
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 361
+      "total_count": 362
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2926
+      "total_count": 2909
     },
     {
       "source": "GitHub Search · github-digital-product-tools",
@@ -46,7 +46,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 429
+      "total_count": 431
     },
     {
       "source": "GitHub Search · github-marketing-distribution",
@@ -60,14 +60,14 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2126
+      "total_count": 2130
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3365
+      "total_count": 3370
     },
     {
       "source": "GitHub Search · github-seller-operations",
@@ -88,12 +88,12 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 279
+      "total_count": 280
     },
     {
       "source": "Hacker News · hn-analytics-growth",
       "kind": "hacker_news",
-      "items_kept": 10,
+      "items_kept": 6,
       "status": "ok",
       "total_count": 10
     },
@@ -259,10 +259,10 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-30T09:33:58+00:00",
+    "observed_at_utc": "2026-10-30T10:29:47+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 112,
-    "previously_tracked_repositories_refreshed": 88,
+    "repositories_seen_in_discovery": 106,
+    "previously_tracked_repositories_refreshed": 94,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
@@ -272,250 +272,190 @@
   },
   "primary_source_checks": [
     {
-      "candidate_id": "301687e3d4a1ad4d",
-      "title": "gotempsh/temps",
-      "source_url": "https://github.com/gotempsh/temps",
+      "candidate_id": "769635c4c0589719",
+      "title": "IHUI-INF-AI/IHUI-AI",
+      "source_url": "https://github.com/IHUI-INF-AI/IHUI-AI",
       "verified": true,
-      "final_url": "https://github.com/gotempsh/temps",
+      "final_url": "https://github.com/IHUI-INF-AI/IHUI-AI",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "dcd2e302e64fe5cb",
-      "title": "kagura-ai/memory-cloud",
-      "source_url": "https://github.com/kagura-ai/memory-cloud",
+      "candidate_id": "ffa11117b00b8006",
+      "title": "crbnos/carbon",
+      "source_url": "https://github.com/crbnos/carbon",
       "verified": true,
-      "final_url": "https://github.com/kagura-ai/memory-cloud",
+      "final_url": "https://github.com/crbnos/carbon",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "13fdacd2335eb2d8",
-      "title": "How Stable Are AI Citations? 10 Things We Learned Tracking 37,500 Citations",
-      "source_url": "https://ahrefs.com/blog/how-stable-are-ai-citations/",
+      "candidate_id": "fe106ba546c5c606",
+      "title": "Promoted Placements beta now includes Shop Campaigns",
+      "source_url": "https://shopify.dev/changelog/promoted-placements-beta-now-includes-shop-campaigns",
       "verified": true,
-      "final_url": "https://ahrefs.com/blog/how-stable-are-ai-citations/",
+      "final_url": "https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns",
       "http_status": 200,
       "reason": ""
     }
   ],
   "rejected_primary_sources": [],
   "daily_draft_cap": 16,
-  "daily_drafts_already_passed": 3,
-  "outcome": "dry_run_passed",
-  "decision_reason": "At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.",
-  "passing_drafts": [
-    {
-      "candidate_id": "13fdacd2335eb2d8",
-      "title": "How Stable Are AI Citations? 10 Things We Learned Tracking 37,500 Citations",
-      "source": "Ahrefs Blog",
-      "source_kind": "rss",
-      "url": "https://ahrefs.com/blog/how-stable-are-ai-citations/",
-      "primary_source_verified": true,
-      "primary_source_title": "How Stable Are AI Citations? 10 Things We Learned Tracking 37,500 Citations",
-      "primary_source_final_url": "https://ahrefs.com/blog/how-stable-are-ai-citations/",
-      "primary_source_http_status": 200,
-      "category": "data_and_growth",
-      "priority_score": 60,
-      "hourly_adjusted_score": 60,
-      "post_text": "Half of AI citations disappear the next day, and most return. Set a daily monitor; if a citation drops >50%, refresh the content. https://ahrefs.com/blog/how-stable-are-ai-citations/",
-      "fact_sentence": "Half of AI citations disappear the next day, and most return.",
-      "format": "practical_workflow",
-      "audience": "developers",
-      "angle": "content monitoring",
-      "rationale": "The article quantifies citation volatility, guiding a monitoring strategy.",
-      "evidence_quote": "Half of AI citations disappear the next day, and most come back.",
-      "editorial_takeaway": "Set a daily monitor; if a citation drops >50%, refresh the content.",
-      "claim_evidence": [
-        {
-          "claim": "Half of AI citations disappear the next day, and most return.",
-          "quote": "Half of AI citations disappear the next day, and most come back."
-        }
-      ],
-      "scores": {
-        "timeliness": 8,
-        "usefulness": 8,
-        "novelty": 7,
-        "evidence": 9,
-        "insight": 8
-      },
-      "editorial_score": 8.1,
-      "character_count": 182,
-      "status": "dry_run_passed_not_published",
-      "published_to_x": false,
-      "editorial_review": {
-        "clarity_score": 9,
-        "technical_coherence_score": 9,
-        "takeaway_value_score": 8,
-        "source_faithfulness_score": 9,
-        "originality_score": 8,
-        "reason": "Clear, coherent, faithful to source, and offers a concrete monitoring recommendation.",
-        "passed": true
-      }
-    }
-  ],
+  "daily_drafts_already_passed": 4,
+  "outcome": "skip",
+  "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
+  "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "301687e3d4a1ad4d",
-      "title": "gotempsh/temps",
+      "candidate_id": "ffa11117b00b8006",
+      "title": "crbnos/carbon",
       "reasons": [
         "The factual opening bundles multiple features; narrow it to one capability."
       ],
-      "proposed_text": "temps offers 440+ CLI operations covering deployments, analytics, and error tracking. Run a deployment test and verify error logs appear to confirm end‑to‑end coverage. https://github.com/gotempsh/temps",
-      "evidence_quote": "440+ CLI operations with drop-in skills for Claude Code, Codex & OpenCode — deployments, analytics, session replay, error tracking, OpenTelemetry, email, sandboxes & AI gateway in one self-hosted Rust binary.",
+      "proposed_text": "Carbon stores MRP, inventory, shop floor, quality, and lot/serial traceability in one Postgres schema. Run the provided migration to verify traceability tables exist before enabling production. https://github.com/crbnos/carbon",
+      "evidence_quote": "Quoting, MRP, inventory, shop floor, quality and lot/serial traceability on one Postgres schema",
       "claim_evidence": [
         {
-          "claim": "temps offers 440+ CLI operations covering deployments, analytics, and error tracking.",
-          "quote": "440+ CLI operations with drop-in skills for Claude Code, Codex & OpenCode — deployments, analytics, session replay, error tracking, OpenTelemetry, email, sandboxes & AI gateway in one self-hosted Rust binary."
+          "claim": "Carbon stores MRP, inventory, shop floor, quality, and lot/serial traceability in one Postgres schema",
+          "quote": "Quoting, MRP, inventory, shop floor, quality and lot/serial traceability on one Postgres schema"
         }
       ]
     },
     {
-      "candidate_id": "dcd2e302e64fe5cb",
-      "title": "kagura-ai/memory-cloud",
+      "candidate_id": "fe106ba546c5c606",
+      "title": "Promoted Placements beta now includes Shop Campaigns",
       "reasons": [
-        "Fact sentence is too long; narrow it to one source-backed capability.",
-        "Editorial takeaway is not specific enough to this candidate's technical/product details."
+        "Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.",
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "Fact plus takeaway exceeds the per-link character budget.",
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
+        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
+        "Draft is 312 raw characters; limit is 280",
+        "Primary-source evidence quote is missing or absent from the live page (after presentation normalisation)",
+        "A factual claim lacks a quote present in the live primary-source page",
+        "Supporting quotes cover only 64% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "memory‑cloud is a self‑hosted MCP server that learns from searches using hybrid search and a neural memory graph. Run the same query twice and compare result diversity to confirm learning. https://github.com/kagura-ai/memory-cloud",
-      "evidence_quote": "Self-hosted MCP server that gets smarter every time you search: hybrid search + a neural memory graph that learns.",
+      "proposed_text": "Promoted Placements beta now includes Shop Campaigns, adding merchant commission to the base rate. Include catalog_id in search_catalog calls and read placement.commission.percentage.value for accurate commission reporting. https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns",
+      "evidence_quote": "When a search_catalog result comes from a merchant running Shop Campaigns, you earn the commission that merchant funds, added to Shopify's base rate",
       "claim_evidence": [
         {
-          "claim": "memory‑cloud is a self‑hosted MCP server that learns from searches using hybrid search and a neural memory graph.",
-          "quote": "Self-hosted MCP server that gets smarter every time you search: hybrid search + a neural memory graph that learns."
+          "claim": "Promoted Placements beta now includes Shop Campaigns, adding merchant commission to the base rate",
+          "quote": "When a search_catalog result comes from a merchant running Shop Campaigns, you earn the commission that merchant funds, added to Shopify's base rate"
         }
+      ]
+    },
+    {
+      "candidate_id": "769635c4c0589719",
+      "title": "IHUI-INF-AI/IHUI-AI",
+      "proposed_text": "IHUI-AI unifies 176 LLMs via LangGraph + MCP + A2A. Run a sample LangGraph agent to confirm cross‑model routing works before production. https://github.com/IHUI-INF-AI/IHUI-AI",
+      "reasons": [
+        "Title is a repo path, not a clear product name; clarity below threshold. All other scores meet minimums, but pass requires all ≥7."
+      ],
+      "editorial_review": {
+        "clarity_score": 4,
+        "technical_coherence_score": 8,
+        "takeaway_value_score": 7,
+        "source_faithfulness_score": 8,
+        "originality_score": 7
+      }
+    },
+    {
+      "candidate_id": "769635c4c0589719",
+      "title": "IHUI-INF-AI/IHUI-AI",
+      "reasons": [
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation."
+      ],
+      "proposed_text": "IHUI‑AI is an eight‑platform full‑stack AI operating system that unifies 176 LLMs via LangGraph, MCP, and A2A. Deploy IHUI‑AI through its Web, API, CLI, Desktop, Extension, Mobile, or Miniapp interfaces. https://github.com/IHUI-INF-AI/IHUI-AI",
+      "evidence_quote": "Web/API/CLI/Desktop/Extension/Mobile/Miniapp",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "Title is a repo path, not a clear product name; clarity below threshold. All other scores meet minimums, but pass requires all ≥7."
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "301687e3d4a1ad4d",
-      "title": "gotempsh/temps",
-      "url": "https://github.com/gotempsh/temps",
-      "source": "GitHub Search",
-      "primary_category": "data_and_growth",
-      "priority_score": 72,
-      "hourly_adjusted_score": 66,
-      "stars_current": 880,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "insufficient_history",
-      "published_at": "2026-10-30T09:34:20+00:00",
-      "days_old": 0.0,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "dcd2e302e64fe5cb",
-      "title": "kagura-ai/memory-cloud",
-      "url": "https://github.com/kagura-ai/memory-cloud",
+      "id": "769635c4c0589719",
+      "title": "IHUI-INF-AI/IHUI-AI",
+      "url": "https://github.com/IHUI-INF-AI/IHUI-AI",
       "source": "GitHub Search",
       "primary_category": "security_and_self_hosting",
-      "priority_score": 66,
-      "hourly_adjusted_score": 60,
-      "stars_current": 13,
+      "priority_score": 69,
+      "hourly_adjusted_score": 63,
+      "stars_current": 31,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "insufficient_history",
-      "published_at": "2026-10-30T09:34:24+00:00",
+      "published_at": "2026-10-30T10:30:22+00:00",
       "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "13fdacd2335eb2d8",
-      "title": "How Stable Are AI Citations? 10 Things We Learned Tracking 37,500 Citations",
-      "url": "https://ahrefs.com/blog/how-stable-are-ai-citations/",
-      "source": "Ahrefs Blog",
-      "primary_category": "data_and_growth",
-      "priority_score": 60,
-      "hourly_adjusted_score": 60,
+      "id": "ffa11117b00b8006",
+      "title": "crbnos/carbon",
+      "url": "https://github.com/crbnos/carbon",
+      "source": "GitHub Search",
+      "primary_category": "online_seller_operations",
+      "priority_score": 67,
+      "hourly_adjusted_score": 61,
+      "stars_current": 2783,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "insufficient_history",
+      "published_at": "2026-10-30T10:19:48+00:00",
+      "days_old": 0.01,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "fe106ba546c5c606",
+      "title": "Promoted Placements beta now includes Shop Campaigns",
+      "url": "https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns",
+      "source": "Shopify Developer Changelog",
+      "primary_category": "commerce_and_digital_products",
+      "priority_score": 68,
+      "hourly_adjusted_score": 50,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-29T13:25:17+00:00",
-      "days_old": 0.84,
+      "published_at": "2026-10-27T13:00:00+00:00",
+      "days_old": 2.9,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     }
   ],
   "automatic_repair": {
-    "attempted": false,
-    "drafts_submitted": 0,
+    "attempted": true,
+    "drafts_submitted": 1,
     "repaired_local_passes": 0,
-    "repair_rejections": 0,
+    "repair_rejections": 1,
     "repair_error": null,
-    "editorial_repair_attempted": false,
-    "editorial_repair_drafts_submitted": 0,
+    "editorial_repair_attempted": true,
+    "editorial_repair_drafts_submitted": 1,
     "editorial_repair_error": null
   },
   "editorial_review": {
     "locally_valid_drafts": 1,
     "submitted_for_independent_review": 1,
-    "passed_independent_review": 1,
-    "rejected_by_independent_review": 0,
+    "passed_independent_review": 0,
+    "rejected_by_independent_review": 1,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
-  "recommended_draft": {
-    "candidate_id": "13fdacd2335eb2d8",
-    "title": "How Stable Are AI Citations? 10 Things We Learned Tracking 37,500 Citations",
-    "source": "Ahrefs Blog",
-    "source_kind": "rss",
-    "url": "https://ahrefs.com/blog/how-stable-are-ai-citations/",
-    "primary_source_verified": true,
-    "primary_source_title": "How Stable Are AI Citations? 10 Things We Learned Tracking 37,500 Citations",
-    "primary_source_final_url": "https://ahrefs.com/blog/how-stable-are-ai-citations/",
-    "primary_source_http_status": 200,
-    "category": "data_and_growth",
-    "priority_score": 60,
-    "hourly_adjusted_score": 60,
-    "post_text": "Half of AI citations disappear the next day, and most return. Set a daily monitor; if a citation drops >50%, refresh the content. https://ahrefs.com/blog/how-stable-are-ai-citations/",
-    "fact_sentence": "Half of AI citations disappear the next day, and most return.",
-    "format": "practical_workflow",
-    "audience": "developers",
-    "angle": "content monitoring",
-    "rationale": "The article quantifies citation volatility, guiding a monitoring strategy.",
-    "evidence_quote": "Half of AI citations disappear the next day, and most come back.",
-    "editorial_takeaway": "Set a daily monitor; if a citation drops >50%, refresh the content.",
-    "claim_evidence": [
-      {
-        "claim": "Half of AI citations disappear the next day, and most return.",
-        "quote": "Half of AI citations disappear the next day, and most come back."
-      }
-    ],
-    "scores": {
-      "timeliness": 8,
-      "usefulness": 8,
-      "novelty": 7,
-      "evidence": 9,
-      "insight": 8
-    },
-    "editorial_score": 8.1,
-    "character_count": 182,
-    "status": "dry_run_passed_not_published",
-    "published_to_x": false,
-    "editorial_review": {
-      "clarity_score": 9,
-      "technical_coherence_score": 9,
-      "takeaway_value_score": 8,
-      "source_faithfulness_score": 9,
-      "originality_score": 8,
-      "reason": "Clear, coherent, faithful to source, and offers a concrete monitoring recommendation.",
-      "passed": true
-    }
-  },
   "state_summary": {
     "used_candidates_in_cooldown": 29,
-    "recently_attempted_candidates": 24,
+    "recently_attempted_candidates": 27,
     "recent_draft_passes_today": 4
   }
 }

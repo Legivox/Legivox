@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-30T15:03:58+05:30
+- Run time (IST): 2026-10-30T15:59:47+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 206
-- Independent editorial review: 1 draft(s) passed / 0 rejected
-- Drafts passing local checks: 1
-- Outcome: **dry_run_passed**
-- Decision reason: At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.
+- Candidate pool after freshness/diversity filters: 197
+- Independent editorial review: 0 draft(s) passed / 1 rejected
+- Drafts passing local checks: 0
+- Outcome: **skip**
+- Decision reason: Every draft submitted for independent editorial review was rejected; The hour was skipped.
 
 ## Source health
 
@@ -25,7 +25,7 @@
 | GitHub Search · github-seller-operations | 10 | ok |
 | GitHub Search · github-shopify-commerce | 10 | ok |
 | GitHub Search · github-workflow-automation | 10 | ok |
-| Hacker News · hn-analytics-growth | 10 | ok |
+| Hacker News · hn-analytics-growth | 6 | ok |
 | Hacker News · hn-automation-api | 1 | ok |
 | Hacker News · hn-creator-business | 0 | ok |
 | Hacker News · hn-digital-downloads-templates | 0 | ok |
@@ -54,8 +54,8 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 112
-- Previously tracked repositories refreshed outside search results: 88
+- Repositories seen in this discovery run: 106
+- Previously tracked repositories refreshed outside search results: 94
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
 - Repositories with a 20–36 hour comparison baseline: 20
@@ -65,66 +65,48 @@
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| gotempsh/temps | yes | 200 | https://github.com/gotempsh/temps |
-| kagura-ai/memory-cloud | yes | 200 | https://github.com/kagura-ai/memory-cloud |
-| How Stable Are AI Citations? 10 Things We Learned Tracking 37,500 Citations | yes | 200 | https://ahrefs.com/blog/how-stable-are-ai-citations/ |
+| IHUI-INF-AI/IHUI-AI | yes | 200 | https://github.com/IHUI-INF-AI/IHUI-AI |
+| crbnos/carbon | yes | 200 | https://github.com/crbnos/carbon |
+| Promoted Placements beta now includes Shop Campaigns | yes | 200 | https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns |
 
 ## Selected draft candidates
 
-### Draft option 1: How Stable Are AI Citations? 10 Things We Learned Tracking 37,500 Citations
-
-- Category: data_and_growth
-- Source: Ahrefs Blog
-- Format: practical_workflow
-- Editorial score: 8.1/10
-- Model scores: timeliness 8/10, usefulness 8/10, novelty 7/10, evidence 9/10, insight 8/10
-- Independent editor scores: {"clarity_score": 9, "technical_coherence_score": 9, "takeaway_value_score": 8, "source_faithfulness_score": 9, "originality_score": 8, "reason": "Clear, coherent, faithful to source, and offers a concrete monitoring recommendation.", "passed": true}
-- Live primary page: https://ahrefs.com/blog/how-stable-are-ai-citations/ (HTTP 200)
-- Exact source evidence: “Half of AI citations disappear the next day, and most come back.”
-- Why this angle: The article quantifies citation volatility, guiding a monitoring strategy.
-- Editorial takeaway: Set a daily monitor; if a citation drops >50%, refresh the content.
-- Source: https://ahrefs.com/blog/how-stable-are-ai-citations/
-
-**Claim-by-claim source quotes:**
-
-- Half of AI citations disappear the next day, and most return. ← “Half of AI citations disappear the next day, and most come back.”
-
-Proposed post (not published):
-
-> Half of AI citations disappear the next day, and most return. Set a daily monitor; if a citation drops >50%, refresh the content. https://ahrefs.com/blog/how-stable-are-ai-citations/
-
-- Length: 182/280 raw characters
-- Automated gate: passed live source, evidence, originality, URL and length checks; live publishing is disabled in dry-run mode.
+No draft cleared the complete local and independent-editor gate. See the decision reason and rejected-draft section for locally valid drafts that were rejected, not reviewed, or blocked by a review error.
 
 ## Automatic repair attempt
 
-- Attempted: no
-- Repaired drafts submitted: 0
+- Attempted: yes
+- Repaired drafts submitted: 1
 - Repaired drafts that passed local validation: 0
-- Repaired drafts rejected: 0
+- Repaired drafts rejected: 1
 - Repair error: none
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
-- gotempsh/temps: The factual opening bundles multiple features; narrow it to one capability.
-  - Rejected text: temps offers 440+ CLI operations covering deployments, analytics, and error tracking. Run a deployment test and verify error logs appear to confirm end‑to‑end coverage. https://github.com/gotempsh/temps
-  - Model evidence quote: “440+ CLI operations with drop-in skills for Claude Code, Codex & OpenCode — deployments, analytics, session replay, error tracking, OpenTelemetry, email, sandboxes & AI gateway in one self-hosted Rust binary.”
-  - Claim support: temps offers 440+ CLI operations covering deployments, analytics, and error tracking. ← “440+ CLI operations with drop-in skills for Claude Code, Codex & OpenCode — deployments, analytics, session replay, error tracking, OpenTelemetry, email, sandboxes & AI gateway in one self-hosted Rust binary.”
-- kagura-ai/memory-cloud: Fact sentence is too long; narrow it to one source-backed capability.; Editorial takeaway is not specific enough to this candidate's technical/product details.
-  - Rejected text: memory‑cloud is a self‑hosted MCP server that learns from searches using hybrid search and a neural memory graph. Run the same query twice and compare result diversity to confirm learning. https://github.com/kagura-ai/memory-cloud
-  - Model evidence quote: “Self-hosted MCP server that gets smarter every time you search: hybrid search + a neural memory graph that learns.”
-  - Claim support: memory‑cloud is a self‑hosted MCP server that learns from searches using hybrid search and a neural memory graph. ← “Self-hosted MCP server that gets smarter every time you search: hybrid search + a neural memory graph that learns.”
+- crbnos/carbon: The factual opening bundles multiple features; narrow it to one capability.
+  - Rejected text: Carbon stores MRP, inventory, shop floor, quality, and lot/serial traceability in one Postgres schema. Run the provided migration to verify traceability tables exist before enabling production. https://github.com/crbnos/carbon
+  - Model evidence quote: “Quoting, MRP, inventory, shop floor, quality and lot/serial traceability on one Postgres schema”
+  - Claim support: Carbon stores MRP, inventory, shop floor, quality, and lot/serial traceability in one Postgres schema ← “Quoting, MRP, inventory, shop floor, quality and lot/serial traceability on one Postgres schema”
+- Promoted Placements beta now includes Shop Campaigns: Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.; Editorial takeaway is too long; keep the analysis concrete and concise.; Fact plus takeaway exceeds the per-link character budget.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.; Draft is 312 raw characters; limit is 280; Primary-source evidence quote is missing or absent from the live page (after presentation normalisation); A factual claim lacks a quote present in the live primary-source page; Supporting quotes cover only 64% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: Promoted Placements beta now includes Shop Campaigns, adding merchant commission to the base rate. Include catalog_id in search_catalog calls and read placement.commission.percentage.value for accurate commission reporting. https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns
+  - Model evidence quote: “When a search_catalog result comes from a merchant running Shop Campaigns, you earn the commission that merchant funds, added to Shopify's base rate”
+  - Claim support: Promoted Placements beta now includes Shop Campaigns, adding merchant commission to the base rate ← “When a search_catalog result comes from a merchant running Shop Campaigns, you earn the commission that merchant funds, added to Shopify's base rate”
+- IHUI-INF-AI/IHUI-AI: Title is a repo path, not a clear product name; clarity below threshold. All other scores meet minimums, but pass requires all ≥7.
+  - Rejected text: IHUI-AI unifies 176 LLMs via LangGraph + MCP + A2A. Run a sample LangGraph agent to confirm cross‑model routing works before production. https://github.com/IHUI-INF-AI/IHUI-AI
+- IHUI-INF-AI/IHUI-AI: The factual opening bundles multiple features; narrow it to one capability.; Editorial takeaway is too long; keep the analysis concrete and concise.; Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.
+  - Rejected text: IHUI‑AI is an eight‑platform full‑stack AI operating system that unifies 176 LLMs via LangGraph, MCP, and A2A. Deploy IHUI‑AI through its Web, API, CLI, Desktop, Extension, Mobile, or Miniapp interfaces. https://github.com/IHUI-INF-AI/IHUI-AI
+  - Model evidence quote: “Web/API/CLI/Desktop/Extension/Mobile/Miniapp”
 
 ## Top discovery candidates considered
 
-- gotempsh/temps | GitHub Search | data_and_growth | raw 72, adjusted 66 | current stars 880 | GitHub star trend: building baseline | https://github.com/gotempsh/temps
-- kagura-ai/memory-cloud | GitHub Search | security_and_self_hosting | raw 66, adjusted 60 | current stars 13 | GitHub star trend: building baseline | https://github.com/kagura-ai/memory-cloud
-- How Stable Are AI Citations? 10 Things We Learned Tracking 37,500 Citations | Ahrefs Blog | data_and_growth | raw 60, adjusted 60 | https://ahrefs.com/blog/how-stable-are-ai-citations/
+- IHUI-INF-AI/IHUI-AI | GitHub Search | security_and_self_hosting | raw 69, adjusted 63 | current stars 31 | GitHub star trend: building baseline | https://github.com/IHUI-INF-AI/IHUI-AI
+- crbnos/carbon | GitHub Search | online_seller_operations | raw 67, adjusted 61 | current stars 2783 | GitHub star trend: building baseline | https://github.com/crbnos/carbon
+- Promoted Placements beta now includes Shop Campaigns | Shopify Developer Changelog | commerce_and_digital_products | raw 68, adjusted 50 | https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns
 
 ## Safety and interpretation
 
-- At least one draft passed the automated quality gates; this dry-run workflow itself never publishes to X.
+- This run did not produce a publishable draft; no post was published to X.
 - Model scores are editorial estimates; they are not verified popularity or market demand.
 - Candidate content and metadata are untrusted input. Factual copy must be supported by the fetched primary page.
 - A skip can mean no fresh candidates, a daily diversity/cap limit, a model/API problem or weak drafts. Check the reason above.
