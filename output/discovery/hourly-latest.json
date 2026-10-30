@@ -1,17 +1,17 @@
 {
-  "generated_at_ist": "2026-10-30T08:56:15+05:30",
-  "run_at_ist": "2026-10-30T08:56:15+05:30",
+  "generated_at_ist": "2026-10-30T09:57:48+05:30",
+  "run_at_ist": "2026-10-30T09:57:48+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 316,
-  "eligible_candidate_count": 214,
+  "candidate_count_raw": 313,
+  "eligible_candidate_count": 204,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4790
+      "total_count": 4794
     },
     {
       "source": "GitHub Search · github-analytics-seo",
@@ -25,14 +25,14 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 357
+      "total_count": 358
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2885
+      "total_count": 2886
     },
     {
       "source": "GitHub Search · github-digital-product-tools",
@@ -46,7 +46,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 424
+      "total_count": 425
     },
     {
       "source": "GitHub Search · github-marketing-distribution",
@@ -60,14 +60,14 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2116
+      "total_count": 2117
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3349
+      "total_count": 3351
     },
     {
       "source": "GitHub Search · github-seller-operations",
@@ -116,7 +116,7 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 7
+      "total_count": 6
     },
     {
       "source": "Hacker News · hn-digital-products",
@@ -158,7 +158,7 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 10
+      "total_count": 8
     },
     {
       "source": "Hacker News · hn-shopify",
@@ -259,10 +259,10 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-30T03:26:15+00:00",
+    "observed_at_utc": "2026-10-30T04:27:48+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 111,
-    "previously_tracked_repositories_refreshed": 89,
+    "repositories_seen_in_discovery": 108,
+    "previously_tracked_repositories_refreshed": 92,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
@@ -272,29 +272,29 @@
   },
   "primary_source_checks": [
     {
-      "candidate_id": "fe11cc6566e35c2b",
-      "title": "Lifecycle-Innovations-Limited/claude-ops",
-      "source_url": "https://github.com/Lifecycle-Innovations-Limited/claude-ops",
+      "candidate_id": "2f83a1b91c2ce96e",
+      "title": "marcusquinn/aidevops",
+      "source_url": "https://github.com/marcusquinn/aidevops",
       "verified": true,
-      "final_url": "https://github.com/Lifecycle-Innovations-Limited/claude-ops",
+      "final_url": "https://github.com/marcusquinn/aidevops",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "b7a73b63f116b571",
-      "title": "ragleap/ragleap-core",
-      "source_url": "https://github.com/ragleap/ragleap-core",
+      "candidate_id": "78bbe5f98da4615e",
+      "title": "soma-intelligence/open-health-sync",
+      "source_url": "https://github.com/soma-intelligence/open-health-sync",
       "verified": true,
-      "final_url": "https://github.com/ragleap/ragleap-core",
+      "final_url": "https://github.com/soma-intelligence/open-health-sync",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "46b14009a350aa12",
-      "title": "Cart and checkout permalinks now support UCP at /buy",
-      "source_url": "https://shopify.dev/changelog/cart-and-checkout-permalinks-now-support-ucp-at-buy",
+      "candidate_id": "b140d6f185b58e72",
+      "title": "Shopify App Pricing: Plan Feature Targeting",
+      "source_url": "https://shopify.dev/changelog/plan-feature-targeting",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/cart-and-checkout-permalinks-now-support-ucp-at-buy",
+      "final_url": "https://shopify.dev/changelog/posts/plan-feature-targeting",
       "http_status": 200,
       "reason": ""
     }
@@ -302,164 +302,167 @@
   "rejected_primary_sources": [],
   "daily_draft_cap": 16,
   "daily_drafts_already_passed": 0,
-  "outcome": "skip",
-  "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
-  "passing_drafts": [],
+  "outcome": "dry_run_passed",
+  "decision_reason": "At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.",
+  "passing_drafts": [
+    {
+      "candidate_id": "78bbe5f98da4615e",
+      "title": "soma-intelligence/open-health-sync",
+      "source": "GitHub Search",
+      "source_kind": "github_repository",
+      "url": "https://github.com/soma-intelligence/open-health-sync",
+      "primary_source_verified": true,
+      "primary_source_title": "GitHub - soma-intelligence/open-health-sync: Open source health data aggregator and self-hosted Terra alternative. One API for wearable data from Apple Health, Health Connect, Oura, WHOOP, Withings, Fitbit, Dexcom and more: REST, FHIR R4, Open mHealth, webhooks, CSV/Parquet and a read-only MCP serve",
+      "primary_source_final_url": "https://github.com/soma-intelligence/open-health-sync",
+      "primary_source_http_status": 200,
+      "category": "ai_and_automation",
+      "priority_score": 72,
+      "hourly_adjusted_score": 76,
+      "post_text": "open-health-sync aggregates wearable data via a single REST/FHIR R4 API. Configure webhooks to receive real‑time updates when new data arrives. https://github.com/soma-intelligence/open-health-sync",
+      "fact_sentence": "open-health-sync aggregates wearable data via a single REST/FHIR R4 API.",
+      "format": "short",
+      "audience": "developers",
+      "angle": "integration",
+      "rationale": "The source explicitly lists webhooks as a supported feature, enabling real‑time data ingestion. This concrete action is a practical next step for developers building on the API.",
+      "evidence_quote": "One API for wearable data from Apple Health, Health Connect, Oura, WHOOP, Withings, Fitbit, Dexcom and more: REST, FHIR R4, Ope...",
+      "editorial_takeaway": "Configure webhooks to receive real‑time updates when new data arrives.",
+      "claim_evidence": [
+        {
+          "claim": "open-health-sync aggregates wearable data via a single REST/FHIR R4 API.",
+          "quote": "One API for wearable data from Apple Health, Health Connect, Oura, WHOOP, Withings, Fitbit, Dexcom and more: REST, FHIR R4, Ope..."
+        }
+      ],
+      "scores": {
+        "timeliness": 8,
+        "usefulness": 9,
+        "novelty": 7,
+        "evidence": 10,
+        "insight": 9
+      },
+      "editorial_score": 8.8,
+      "character_count": 197,
+      "status": "dry_run_passed_not_published",
+      "published_to_x": false,
+      "automatic_repair_attempt": true,
+      "repair_note": "Repaired from the independent editor's rejection reason; all quality gates run again.",
+      "editorial_review": {
+        "clarity_score": 9,
+        "technical_coherence_score": 9,
+        "takeaway_value_score": 8,
+        "source_faithfulness_score": 9,
+        "originality_score": 8,
+        "reason": "Clear, accurate, and adds a useful webhook tip.",
+        "passed": true
+      }
+    }
+  ],
   "rejected_drafts": [
     {
-      "candidate_id": "fe11cc6566e35c2b",
-      "title": "Lifecycle-Innovations-Limited/claude-ops",
+      "candidate_id": "2f83a1b91c2ce96e",
+      "title": "marcusquinn/aidevops",
       "reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability.",
-        "Editorial takeaway is not specific enough to this candidate's technical/product details."
+        "Supporting quotes cover only 60% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "claude-ops offers a unified inbox for WhatsApp, Email, Slack, Telegram. Before enabling, test each channel’s webhook delivery to ensure messages are received. https://github.com/Lifecycle-Innovations-Limited/claude-ops",
-      "evidence_quote": "Unified inbox (WhatsApp/Email/Slack/Telegram)",
+      "proposed_text": "aidevops offers a CLI and API stack for Git token‑efficient AI agent automation. Run a token‑budget test to confirm cost‑efficiency before scaling. https://github.com/marcusquinn/aidevops",
+      "evidence_quote": "GitHub - marcusquinn/aidevops: Vibe-Coding is easy. DevOps is hard. OpenCode & Git token-efficient AI agent automation for your app, business, and personal development.",
       "claim_evidence": [
         {
-          "claim": "claude-ops offers a unified inbox for WhatsApp, Email, Slack, Telegram.",
-          "quote": "Unified inbox (WhatsApp/Email/Slack/Telegram)"
+          "claim": "aidevops offers a CLI and API stack for Git token‑efficient AI agent automation",
+          "quote": "GitHub - marcusquinn/aidevops: Vibe-Coding is easy. DevOps is hard. OpenCode & Git token-efficient AI agent automation for your app, business, and personal development."
         }
       ]
     },
     {
-      "candidate_id": "b7a73b63f116b571",
-      "title": "ragleap/ragleap-core",
+      "candidate_id": null,
+      "title": "Unmapped model draft",
+      "proposed_text": "",
+      "reasons": [
+        "Model omitted a valid candidate ID and no exact verified source URL matched."
+      ]
+    },
+    {
+      "candidate_id": null,
+      "title": "Unmapped model draft",
+      "proposed_text": "",
+      "reasons": [
+        "Model omitted a valid candidate ID and no exact verified source URL matched."
+      ]
+    },
+    {
+      "candidate_id": "b140d6f185b58e72",
+      "title": "Shopify App Pricing: Plan Feature Targeting",
       "reasons": [
         "A supporting quote does not share enough wording with its stated claim",
-        "Supporting quotes cover only 43% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Supporting quotes cover only 38% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "ragleap-core provides approval‑gated autonomy for AI employees. Verify that an action is blocked when no approver is assigned in the approval workflow. https://github.com/ragleap/ragleap-core",
-      "evidence_quote": "approval-gated autonomy",
+      "proposed_text": "Shopify now lets app plans require checkout UI extensions or branding customizations. Add a pre‑checkout test to verify required extensions block plan selection. https://shopify.dev/changelog/posts/plan-feature-targeting",
+      "evidence_quote": "You can now add store requirements to public plans in Shopify App Pricing. A merchant whose store does not have a required feature cannot subscribe to that plan.",
       "claim_evidence": [
         {
-          "claim": "ragleap-core provides approval‑gated autonomy for AI employees.",
-          "quote": "approval-gated autonomy"
+          "claim": "Shopify now lets app plans require checkout UI extensions or branding customizations",
+          "quote": "You can now add store requirements to public plans in Shopify App Pricing. A merchant whose store does not have a required feature cannot subscribe to that plan."
         }
       ]
     },
     {
-      "candidate_id": "46b14009a350aa12",
-      "title": "Cart and checkout permalinks now support UCP at /buy",
+      "candidate_id": "78bbe5f98da4615e",
+      "title": "soma-intelligence/open-health-sync",
+      "proposed_text": "open-health-sync aggregates wearable data via a single REST/FHIR R4 API. Validate data consistency across Apple Health and Fitbit before deployment. https://github.com/soma-intelligence/open-health-sync",
       "reasons": [
-        "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation."
-      ],
-      "proposed_text": "Shopify’s /buy route now supports UCP dev.ucp.shopping.permalink to add items. Test that an invalid /buy link redirects to the continue_to URL instead of showing an error page. https://shopify.dev/changelog/posts/cart-and-checkout-permalinks-now-support-ucp-at-buy",
-      "evidence_quote": "support UCP dev.ucp.shopping.permalink",
-      "claim_evidence": [
-        {
-          "claim": "Shopify’s /buy route now supports UCP dev.ucp.shopping.permalink to add items.",
-          "quote": "support UCP dev.ucp.shopping.permalink"
-        }
-      ]
-    },
-    {
-      "candidate_id": "b7a73b63f116b571",
-      "title": "ragleap/ragleap-core",
-      "reasons": [
-        "No claim-by-claim supporting evidence was provided",
-        "Supporting quotes cover only 43% of factual wording; narrow the claim or provide a closer primary-source quote"
-      ],
-      "proposed_text": "ragleap-core offers approval‑gated autonomy for AI employees. Verify that an action is blocked when no approver is assigned. https://github.com/ragleap/ragleap-core",
-      "evidence_quote": "approval‑gated autonomy",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "A supporting quote does not share enough wording with its stated claim",
-        "Supporting quotes cover only 43% of factual wording; narrow the claim or provide a closer primary-source quote"
-      ]
-    },
-    {
-      "candidate_id": "fe11cc6566e35c2b",
-      "title": "Lifecycle-Innovations-Limited/claude-ops",
-      "reasons": [
-        "No claim-by-claim supporting evidence was provided",
-        "Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote"
-      ],
-      "proposed_text": "claude-ops provides a unified inbox for WhatsApp. Test that WhatsApp webhooks deliver messages to the inbox. https://github.com/Lifecycle-Innovations-Limited/claude-ops",
-      "evidence_quote": "Unified inbox (WhatsApp/Email/Slack/Telegram)",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability.",
-        "Editorial takeaway is not specific enough to this candidate's technical/product details."
-      ]
-    },
-    {
-      "candidate_id": "46b14009a350aa12",
-      "title": "Cart and checkout permalinks now support UCP at /buy",
-      "proposed_text": "Shopify’s /buy link supports UCP dev.ucp.shopping.permalink. Check that an invalid /buy link redirects to continue_to. https://shopify.dev/changelog/posts/cart-and-checkout-permalinks-now-support-ucp-at-buy",
-      "reasons": [
-        "Post merely restates the headline and a single test; lacks original insight or new perspective."
+        "Takeaway about validating consistency is not supported by the source and adds no new insight."
       ],
       "editorial_review": {
         "clarity_score": 8,
         "technical_coherence_score": 8,
-        "takeaway_value_score": 7,
+        "takeaway_value_score": 3,
         "source_faithfulness_score": 8,
-        "originality_score": 5
+        "originality_score": 2
       }
-    },
-    {
-      "candidate_id": "46b14009a350aa12",
-      "title": "Cart and checkout permalinks now support UCP at /buy",
-      "reasons": [
-        "Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.",
-        "Fact sentence is too long; narrow it to one source-backed capability.",
-        "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "Fact plus takeaway exceeds the per-link character budget.",
-        "Draft is 336 raw characters; limit is 280"
-      ],
-      "proposed_text": "A /buy link that cannot be applied redirects to the continue_to destination if present, or to the shop’s storefront. When testing a /buy link, verify that an invalid link triggers a redirect to the continue_to URL rather than showing an error page. https://shopify.dev/changelog/posts/cart-and-checkout-permalinks-now-support-ucp-at-buy",
-      "evidence_quote": "If a link can’t be applied, Shopify redirects the buyer to the continue _to destination when it’s present, or to the shop’s storefront instead of showing an error page.",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "Post merely restates the headline and a single test; lacks original insight or new perspective."
-      ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "fe11cc6566e35c2b",
-      "title": "Lifecycle-Innovations-Limited/claude-ops",
-      "url": "https://github.com/Lifecycle-Innovations-Limited/claude-ops",
-      "source": "GitHub Search",
-      "primary_category": "commerce_and_digital_products",
-      "priority_score": 70,
-      "hourly_adjusted_score": 74,
-      "stars_current": 547,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "insufficient_history",
-      "published_at": "2026-10-29T19:20:05+00:00",
-      "days_old": 0.34,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "b7a73b63f116b571",
-      "title": "ragleap/ragleap-core",
-      "url": "https://github.com/ragleap/ragleap-core",
+      "id": "2f83a1b91c2ce96e",
+      "title": "marcusquinn/aidevops",
+      "url": "https://github.com/marcusquinn/aidevops",
       "source": "GitHub Search",
       "primary_category": "ai_and_automation",
-      "priority_score": 70,
-      "hourly_adjusted_score": 74,
-      "stars_current": 19,
+      "priority_score": 72,
+      "hourly_adjusted_score": 76,
+      "stars_current": 423,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "insufficient_history",
-      "published_at": "2026-10-30T03:17:52+00:00",
-      "days_old": 0.01,
+      "published_at": "2026-10-30T04:27:50+00:00",
+      "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "46b14009a350aa12",
-      "title": "Cart and checkout permalinks now support UCP at /buy",
-      "url": "https://shopify.dev/changelog/posts/cart-and-checkout-permalinks-now-support-ucp-at-buy",
+      "id": "78bbe5f98da4615e",
+      "title": "soma-intelligence/open-health-sync",
+      "url": "https://github.com/soma-intelligence/open-health-sync",
+      "source": "GitHub Search",
+      "primary_category": "ai_and_automation",
+      "priority_score": 72,
+      "hourly_adjusted_score": 76,
+      "stars_current": 54,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "insufficient_history",
+      "published_at": "2026-10-30T04:26:33+00:00",
+      "days_old": 0.0,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "b140d6f185b58e72",
+      "title": "Shopify App Pricing: Plan Feature Targeting",
+      "url": "https://shopify.dev/changelog/posts/plan-feature-targeting",
       "source": "Shopify Developer Changelog",
       "primary_category": "commerce_and_digital_products",
       "priority_score": 71,
@@ -470,7 +473,7 @@
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
       "published_at": "2026-10-28T15:50:00+00:00",
-      "days_old": 1.48,
+      "days_old": 1.53,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
@@ -478,26 +481,76 @@
   ],
   "automatic_repair": {
     "attempted": true,
-    "drafts_submitted": 4,
+    "drafts_submitted": 1,
     "repaired_local_passes": 1,
-    "repair_rejections": 3,
+    "repair_rejections": 0,
     "repair_error": null,
     "editorial_repair_attempted": true,
     "editorial_repair_drafts_submitted": 1,
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 1,
-    "submitted_for_independent_review": 1,
-    "passed_independent_review": 0,
+    "locally_valid_drafts": 2,
+    "submitted_for_independent_review": 2,
+    "passed_independent_review": 1,
     "rejected_by_independent_review": 1,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
+  "recommended_draft": {
+    "candidate_id": "78bbe5f98da4615e",
+    "title": "soma-intelligence/open-health-sync",
+    "source": "GitHub Search",
+    "source_kind": "github_repository",
+    "url": "https://github.com/soma-intelligence/open-health-sync",
+    "primary_source_verified": true,
+    "primary_source_title": "GitHub - soma-intelligence/open-health-sync: Open source health data aggregator and self-hosted Terra alternative. One API for wearable data from Apple Health, Health Connect, Oura, WHOOP, Withings, Fitbit, Dexcom and more: REST, FHIR R4, Open mHealth, webhooks, CSV/Parquet and a read-only MCP serve",
+    "primary_source_final_url": "https://github.com/soma-intelligence/open-health-sync",
+    "primary_source_http_status": 200,
+    "category": "ai_and_automation",
+    "priority_score": 72,
+    "hourly_adjusted_score": 76,
+    "post_text": "open-health-sync aggregates wearable data via a single REST/FHIR R4 API. Configure webhooks to receive real‑time updates when new data arrives. https://github.com/soma-intelligence/open-health-sync",
+    "fact_sentence": "open-health-sync aggregates wearable data via a single REST/FHIR R4 API.",
+    "format": "short",
+    "audience": "developers",
+    "angle": "integration",
+    "rationale": "The source explicitly lists webhooks as a supported feature, enabling real‑time data ingestion. This concrete action is a practical next step for developers building on the API.",
+    "evidence_quote": "One API for wearable data from Apple Health, Health Connect, Oura, WHOOP, Withings, Fitbit, Dexcom and more: REST, FHIR R4, Ope...",
+    "editorial_takeaway": "Configure webhooks to receive real‑time updates when new data arrives.",
+    "claim_evidence": [
+      {
+        "claim": "open-health-sync aggregates wearable data via a single REST/FHIR R4 API.",
+        "quote": "One API for wearable data from Apple Health, Health Connect, Oura, WHOOP, Withings, Fitbit, Dexcom and more: REST, FHIR R4, Ope..."
+      }
+    ],
+    "scores": {
+      "timeliness": 8,
+      "usefulness": 9,
+      "novelty": 7,
+      "evidence": 10,
+      "insight": 9
+    },
+    "editorial_score": 8.8,
+    "character_count": 197,
+    "status": "dry_run_passed_not_published",
+    "published_to_x": false,
+    "automatic_repair_attempt": true,
+    "repair_note": "Repaired from the independent editor's rejection reason; all quality gates run again.",
+    "editorial_review": {
+      "clarity_score": 9,
+      "technical_coherence_score": 9,
+      "takeaway_value_score": 8,
+      "source_faithfulness_score": 9,
+      "originality_score": 8,
+      "reason": "Clear, accurate, and adds a useful webhook tip.",
+      "passed": true
+    }
+  },
   "state_summary": {
-    "used_candidates_in_cooldown": 25,
+    "used_candidates_in_cooldown": 26,
     "recently_attempted_candidates": 15,
-    "recent_draft_passes_today": 0
+    "recent_draft_passes_today": 1
   }
 }

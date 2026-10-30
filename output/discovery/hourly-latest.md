@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-30T08:56:15+05:30
+- Run time (IST): 2026-10-30T09:57:48+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 214
-- Independent editorial review: 0 draft(s) passed / 1 rejected
-- Drafts passing local checks: 0
-- Outcome: **skip**
-- Decision reason: Every draft submitted for independent editorial review was rejected; The hour was skipped.
+- Candidate pool after freshness/diversity filters: 204
+- Independent editorial review: 1 draft(s) passed / 1 rejected
+- Drafts passing local checks: 1
+- Outcome: **dry_run_passed**
+- Decision reason: At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.
 
 ## Source health
 
@@ -54,8 +54,8 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 111
-- Previously tracked repositories refreshed outside search results: 89
+- Repositories seen in this discovery run: 108
+- Previously tracked repositories refreshed outside search results: 92
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
 - Repositories with a 20–36 hour comparison baseline: 18
@@ -65,58 +65,70 @@
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| Lifecycle-Innovations-Limited/claude-ops | yes | 200 | https://github.com/Lifecycle-Innovations-Limited/claude-ops |
-| ragleap/ragleap-core | yes | 200 | https://github.com/ragleap/ragleap-core |
-| Cart and checkout permalinks now support UCP at /buy | yes | 200 | https://shopify.dev/changelog/posts/cart-and-checkout-permalinks-now-support-ucp-at-buy |
+| marcusquinn/aidevops | yes | 200 | https://github.com/marcusquinn/aidevops |
+| soma-intelligence/open-health-sync | yes | 200 | https://github.com/soma-intelligence/open-health-sync |
+| Shopify App Pricing: Plan Feature Targeting | yes | 200 | https://shopify.dev/changelog/posts/plan-feature-targeting |
 
 ## Selected draft candidates
 
-No draft cleared the complete local and independent-editor gate. See the decision reason and rejected-draft section for locally valid drafts that were rejected, not reviewed, or blocked by a review error.
+### Draft option 1: soma-intelligence/open-health-sync
+
+- Category: ai_and_automation
+- Source: GitHub Search
+- Format: short
+- Editorial score: 8.8/10
+- Model scores: timeliness 8/10, usefulness 9/10, novelty 7/10, evidence 10/10, insight 9/10
+- Independent editor scores: {"clarity_score": 9, "technical_coherence_score": 9, "takeaway_value_score": 8, "source_faithfulness_score": 9, "originality_score": 8, "reason": "Clear, accurate, and adds a useful webhook tip.", "passed": true}
+- Live primary page: https://github.com/soma-intelligence/open-health-sync (HTTP 200)
+- Exact source evidence: “One API for wearable data from Apple Health, Health Connect, Oura, WHOOP, Withings, Fitbit, Dexcom and more: REST, FHIR R4, Ope...”
+- Why this angle: The source explicitly lists webhooks as a supported feature, enabling real‑time data ingestion. This concrete action is a practical next step for developers building on the API.
+- Editorial takeaway: Configure webhooks to receive real‑time updates when new data arrives.
+- Source: https://github.com/soma-intelligence/open-health-sync
+
+**Claim-by-claim source quotes:**
+
+- open-health-sync aggregates wearable data via a single REST/FHIR R4 API. ← “One API for wearable data from Apple Health, Health Connect, Oura, WHOOP, Withings, Fitbit, Dexcom and more: REST, FHIR R4, Ope...”
+
+Proposed post (not published):
+
+> open-health-sync aggregates wearable data via a single REST/FHIR R4 API. Configure webhooks to receive real‑time updates when new data arrives. https://github.com/soma-intelligence/open-health-sync
+
+- Length: 197/280 raw characters
+- Automated gate: passed live source, evidence, originality, URL and length checks; live publishing is disabled in dry-run mode.
 
 ## Automatic repair attempt
 
 - Attempted: yes
-- Repaired drafts submitted: 4
+- Repaired drafts submitted: 1
 - Repaired drafts that passed local validation: 1
-- Repaired drafts rejected: 3
+- Repaired drafts rejected: 0
 - Repair error: none
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
-- Lifecycle-Innovations-Limited/claude-ops: The factual opening bundles multiple features; narrow it to one capability.; Editorial takeaway is not specific enough to this candidate's technical/product details.
-  - Rejected text: claude-ops offers a unified inbox for WhatsApp, Email, Slack, Telegram. Before enabling, test each channel’s webhook delivery to ensure messages are received. https://github.com/Lifecycle-Innovations-Limited/claude-ops
-  - Model evidence quote: “Unified inbox (WhatsApp/Email/Slack/Telegram)”
-  - Claim support: claude-ops offers a unified inbox for WhatsApp, Email, Slack, Telegram. ← “Unified inbox (WhatsApp/Email/Slack/Telegram)”
-- ragleap/ragleap-core: A supporting quote does not share enough wording with its stated claim; Supporting quotes cover only 43% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: ragleap-core provides approval‑gated autonomy for AI employees. Verify that an action is blocked when no approver is assigned in the approval workflow. https://github.com/ragleap/ragleap-core
-  - Model evidence quote: “approval-gated autonomy”
-  - Claim support: ragleap-core provides approval‑gated autonomy for AI employees. ← “approval-gated autonomy”
-- Cart and checkout permalinks now support UCP at /buy: Editorial takeaway is too long; keep the analysis concrete and concise.; Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.
-  - Rejected text: Shopify’s /buy route now supports UCP dev.ucp.shopping.permalink to add items. Test that an invalid /buy link redirects to the continue_to URL instead of showing an error page. https://shopify.dev/changelog/posts/cart-and-checkout-permalinks-now-support-ucp-at-buy
-  - Model evidence quote: “support UCP dev.ucp.shopping.permalink”
-  - Claim support: Shopify’s /buy route now supports UCP dev.ucp.shopping.permalink to add items. ← “support UCP dev.ucp.shopping.permalink”
-- ragleap/ragleap-core: No claim-by-claim supporting evidence was provided; Supporting quotes cover only 43% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: ragleap-core offers approval‑gated autonomy for AI employees. Verify that an action is blocked when no approver is assigned. https://github.com/ragleap/ragleap-core
-  - Model evidence quote: “approval‑gated autonomy”
-- Lifecycle-Innovations-Limited/claude-ops: No claim-by-claim supporting evidence was provided; Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: claude-ops provides a unified inbox for WhatsApp. Test that WhatsApp webhooks deliver messages to the inbox. https://github.com/Lifecycle-Innovations-Limited/claude-ops
-  - Model evidence quote: “Unified inbox (WhatsApp/Email/Slack/Telegram)”
-- Cart and checkout permalinks now support UCP at /buy: Post merely restates the headline and a single test; lacks original insight or new perspective.
-  - Rejected text: Shopify’s /buy link supports UCP dev.ucp.shopping.permalink. Check that an invalid /buy link redirects to continue_to. https://shopify.dev/changelog/posts/cart-and-checkout-permalinks-now-support-ucp-at-buy
-- Cart and checkout permalinks now support UCP at /buy: Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.; Fact sentence is too long; narrow it to one source-backed capability.; Editorial takeaway is too long; keep the analysis concrete and concise.; Fact plus takeaway exceeds the per-link character budget.; Draft is 336 raw characters; limit is 280
-  - Rejected text: A /buy link that cannot be applied redirects to the continue_to destination if present, or to the shop’s storefront. When testing a /buy link, verify that an invalid link triggers a redirect to the continue_to URL rather than showing an error page. https://shopify.dev/changelog/posts/cart-and-checkout-permalinks-now-support-ucp-at-buy
-  - Model evidence quote: “If a link can’t be applied, Shopify redirects the buyer to the continue _to destination when it’s present, or to the shop’s storefront instead of showing an error page.”
+- marcusquinn/aidevops: Supporting quotes cover only 60% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: aidevops offers a CLI and API stack for Git token‑efficient AI agent automation. Run a token‑budget test to confirm cost‑efficiency before scaling. https://github.com/marcusquinn/aidevops
+  - Model evidence quote: “GitHub - marcusquinn/aidevops: Vibe-Coding is easy. DevOps is hard. OpenCode & Git token-efficient AI agent automation for your app, business, and personal development.”
+  - Claim support: aidevops offers a CLI and API stack for Git token‑efficient AI agent automation ← “GitHub - marcusquinn/aidevops: Vibe-Coding is easy. DevOps is hard. OpenCode & Git token-efficient AI agent automation for your app, business, and personal development.”
+- Unmapped model draft: Model omitted a valid candidate ID and no exact verified source URL matched.
+- Unmapped model draft: Model omitted a valid candidate ID and no exact verified source URL matched.
+- Shopify App Pricing: Plan Feature Targeting: A supporting quote does not share enough wording with its stated claim; Supporting quotes cover only 38% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: Shopify now lets app plans require checkout UI extensions or branding customizations. Add a pre‑checkout test to verify required extensions block plan selection. https://shopify.dev/changelog/posts/plan-feature-targeting
+  - Model evidence quote: “You can now add store requirements to public plans in Shopify App Pricing. A merchant whose store does not have a required feature cannot subscribe to that plan.”
+  - Claim support: Shopify now lets app plans require checkout UI extensions or branding customizations ← “You can now add store requirements to public plans in Shopify App Pricing. A merchant whose store does not have a required feature cannot subscribe to that plan.”
+- soma-intelligence/open-health-sync: Takeaway about validating consistency is not supported by the source and adds no new insight.
+  - Rejected text: open-health-sync aggregates wearable data via a single REST/FHIR R4 API. Validate data consistency across Apple Health and Fitbit before deployment. https://github.com/soma-intelligence/open-health-sync
 
 ## Top discovery candidates considered
 
-- Lifecycle-Innovations-Limited/claude-ops | GitHub Search | commerce_and_digital_products | raw 70, adjusted 74 | current stars 547 | GitHub star trend: building baseline | https://github.com/Lifecycle-Innovations-Limited/claude-ops
-- ragleap/ragleap-core | GitHub Search | ai_and_automation | raw 70, adjusted 74 | current stars 19 | GitHub star trend: building baseline | https://github.com/ragleap/ragleap-core
-- Cart and checkout permalinks now support UCP at /buy | Shopify Developer Changelog | commerce_and_digital_products | raw 71, adjusted 71 | https://shopify.dev/changelog/posts/cart-and-checkout-permalinks-now-support-ucp-at-buy
+- marcusquinn/aidevops | GitHub Search | ai_and_automation | raw 72, adjusted 76 | current stars 423 | GitHub star trend: building baseline | https://github.com/marcusquinn/aidevops
+- soma-intelligence/open-health-sync | GitHub Search | ai_and_automation | raw 72, adjusted 76 | current stars 54 | GitHub star trend: building baseline | https://github.com/soma-intelligence/open-health-sync
+- Shopify App Pricing: Plan Feature Targeting | Shopify Developer Changelog | commerce_and_digital_products | raw 71, adjusted 71 | https://shopify.dev/changelog/posts/plan-feature-targeting
 
 ## Safety and interpretation
 
-- This run did not produce a publishable draft; no post was published to X.
+- At least one draft passed the automated quality gates; this dry-run workflow itself never publishes to X.
 - Model scores are editorial estimates; they are not verified popularity or market demand.
 - Candidate content and metadata are untrusted input. Factual copy must be supported by the fetched primary page.
 - A skip can mean no fresh candidates, a daily diversity/cap limit, a model/API problem or weak drafts. Check the reason above.
