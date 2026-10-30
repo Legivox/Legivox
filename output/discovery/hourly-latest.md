@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-30T10:55:18+05:30
+- Run time (IST): 2026-10-30T11:52:38+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 202
-- Independent editorial review: 0 draft(s) passed / 1 rejected
-- Drafts passing local checks: 0
-- Outcome: **skip**
-- Decision reason: Every draft submitted for independent editorial review was rejected; The hour was skipped.
+- Candidate pool after freshness/diversity filters: 207
+- Independent editorial review: 2 draft(s) passed / 0 rejected
+- Drafts passing local checks: 2
+- Outcome: **dry_run_passed**
+- Decision reason: At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.
 
 ## Source health
 
@@ -35,7 +35,7 @@
 | Hacker News · hn-marketing-distribution | 0 | ok |
 | Hacker News · hn-security-selfhost | 0 | ok |
 | Hacker News · hn-seller-operations | 0 | ok |
-| Hacker News · hn-shopify | 10 | ok |
+| Hacker News · hn-shopify | 9 | ok |
 | Hacker News · hn-show-hn | 10 | ok |
 | Ahrefs Blog | 7 | ok |
 | Console.dev | 11 | ok |
@@ -54,8 +54,8 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 113
-- Previously tracked repositories refreshed outside search results: 87
+- Repositories seen in this discovery run: 112
+- Previously tracked repositories refreshed outside search results: 88
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
 - Repositories with a 20–36 hour comparison baseline: 18
@@ -65,48 +65,87 @@
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| Show HN: Lasm – Write formally verified webapps in Lean for Node/serverless/edge | yes | 200 | https://github.com/Millillion/lasm |
-| First sign-ins to customer accounts now set Customer.state and send customers/enable webhooks | yes | 200 | https://shopify.dev/changelog/posts/first-sign-ins-to-new-customer-accounts-now-set-customer-state-and-send-customers-enable |
-| Introducing theme app add-ons: Build and bundle apps with your themes | yes | 200 | https://shopify.dev/changelog/posts/introducing-theme-app-add-ons-build-and-bundle-apps-with-your-themes |
+| Managed mode for Shopify Tax | yes | 200 | https://shopify.dev/changelog/posts/managed-mode-for-shopify-tax-is-released |
+| Migrate to expiring offline access tokens before January 1, 2027 | yes | 200 | https://shopify.dev/changelog/posts/migrate-to-expiring-offline-access-tokens-before-january-2027 |
+| Show HN: KernelCash – Privacy First Budgeting | yes | 200 | https://news.ycombinator.com/item?id=50296473 |
 
 ## Selected draft candidates
 
-No draft cleared the complete local and independent-editor gate. See the decision reason and rejected-draft section for locally valid drafts that were rejected, not reviewed, or blocked by a review error.
+### Draft option 1: Managed mode for Shopify Tax
+
+- Category: commerce_and_digital_products
+- Source: Shopify Developer Changelog
+- Format: release
+- Editorial score: 8.25/10
+- Model scores: timeliness 9/10, usefulness 8/10, novelty 7/10, evidence 9/10, insight 8/10
+- Independent editor scores: {"clarity_score": 8, "technical_coherence_score": 8, "takeaway_value_score": 8, "source_faithfulness_score": 8, "originality_score": 8, "reason": "Clear, supported claim with actionable takeaway.", "passed": true}
+- Live primary page: https://shopify.dev/changelog/posts/managed-mode-for-shopify-tax-is-released (HTTP 200)
+- Exact source evidence: “Some Admin API writes now validate against the requirements of managed mode.”
+- Why this angle: The changelog explicitly states Admin API writes are validated in managed mode, requiring developers to handle validation errors.
+- Editorial takeaway: Check API write responses for validation errors before enabling managed mode.
+- Source: https://shopify.dev/changelog/posts/managed-mode-for-shopify-tax-is-released
+
+**Claim-by-claim source quotes:**
+
+- Shopify Tax managed mode validates Admin API writes against tax settings. ← “Some Admin API writes now validate against the requirements of managed mode.”
+
+Proposed post (not published):
+
+> Shopify Tax managed mode validates Admin API writes against tax settings. Check API write responses for validation errors before enabling managed mode. https://shopify.dev/changelog/posts/managed-mode-for-shopify-tax-is-released
+
+- Length: 228/280 raw characters
+- Automated gate: passed live source, evidence, originality, URL and length checks; live publishing is disabled in dry-run mode.
+
+### Draft option 2: Migrate to expiring offline access tokens before January 1, 2027
+
+- Category: commerce_and_digital_products
+- Source: Shopify Developer Changelog
+- Format: release
+- Editorial score: 8.25/10
+- Model scores: timeliness 9/10, usefulness 8/10, novelty 7/10, evidence 9/10, insight 8/10
+- Independent editor scores: {"clarity_score": 8, "technical_coherence_score": 8, "takeaway_value_score": 8, "source_faithfulness_score": 8, "originality_score": 8, "reason": "Clear, evidence-backed, actionable advice.", "passed": true}
+- Live primary page: https://shopify.dev/changelog/posts/migrate-to-expiring-offline-access-tokens-before-january-2027 (HTTP 200)
+- Exact source evidence: “piring offline access tokens before January 1, 2027 DateOctober 27, 2026 FlagsUpdate[Action required](https://shopify.dev/changelog?action_required=true) SurfacesPlatform Public apps still using non-expiring offline access tokens must migra”
+- Why this angle: The changelog mandates migration to expiring tokens to stay listed in the App Store.
+- Editorial takeaway: Update your auth flow to request expiring tokens and test token refresh logic.
+- Source: https://shopify.dev/changelog/posts/migrate-to-expiring-offline-access-tokens-before-january-2027
+
+**Claim-by-claim source quotes:**
+
+- Public apps must switch to expiring offline access tokens before Jan 1, 2027. ← “piring offline access tokens before January 1, 2027 DateOctober 27, 2026 FlagsUpdate[Action required](https://shopify.dev/changelog?action_required=true) SurfacesPlatform Public apps still using non-expiring offline access tokens must migra”
+
+Proposed post (not published):
+
+> Public apps must switch to expiring offline access tokens before Jan 1, 2027. Update your auth flow to request expiring tokens and test token refresh logic. https://shopify.dev/changelog/posts/migrate-to-expiring-offline-access-tokens-before-january-2027
+
+- Length: 254/280 raw characters
+- Automated gate: passed live source, evidence, originality, URL and length checks; live publishing is disabled in dry-run mode.
 
 ## Automatic repair attempt
 
-- Attempted: yes
-- Repaired drafts submitted: 1
+- Attempted: no
+- Repaired drafts submitted: 0
 - Repaired drafts that passed local validation: 0
-- Repaired drafts rejected: 1
+- Repaired drafts rejected: 0
 - Repair error: none
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
-- Show HN: Lasm – Write formally verified webapps in Lean for Node/serverless/edge: Supporting quotes cover only 57% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: Lasm compiles Lean code to JavaScript and WebAssembly runtimes. Run the generated wasm in a browser to confirm runtime compatibility. https://github.com/Millillion/lasm
-  - Model evidence quote: “Lean for JavaScript and WebAssembly runtimes”
-  - Claim support: Lasm compiles Lean code to JavaScript and WebAssembly runtimes ← “Lean for JavaScript and WebAssembly runtimes”
-- First sign-ins to customer accounts now set Customer.state and send customers/enable webhooks: Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.; Opening sentence is too close to the source headline; add a distinct editorial framing.
-  - Rejected text: First customer sign‑ins set Customer.state to ENABLED and fire customers/enable webhook. Check webhook payload for state=ENABLED after a new sign‑in. https://shopify.dev/changelog/posts/first-sign-ins-to-new-customer-accounts-now-set-customer-state-and-send-customers-enable
-  - Model evidence quote: “sets Customer.state to ENABLED”
-  - Claim support: First customer sign‑ins set Customer.state to ENABLED and fire customers/enable webhook ← “sets Customer.state to ENABLED”
-- Introducing theme app add-ons: Build and bundle apps with your themes: The post repeats the headline and basic fact without adding new insight or actionable detail beyond what the source already states.
-  - Rejected text: Theme app add‑ons let you bundle storefront apps as theme extensions. Add the app block to a theme and verify it appears in the editor. https://shopify.dev/changelog/posts/introducing-theme-app-add-ons-build-and-bundle-apps-with-your-themes
-- Introducing theme app add-ons: Build and bundle apps with your themes: Editorial takeaway is too long; keep the analysis concrete and concise.; Unsupported strong claim: only
-  - Rejected text: Apps must be published before adding them as theme app add‑ons. Add a theme app only after its app listing is live; otherwise the theme will not pass review. https://shopify.dev/changelog/posts/introducing-theme-app-add-ons-build-and-bundle-apps-with-your-themes
-  - Model evidence quote: “Apps must be published before added to a theme listing”
+- Show HN: KernelCash – Privacy First Budgeting: Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.; Supporting quotes cover only 57% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: KernelCash offers privacy‑first budgeting with envelope and zero‑based budgeting. Try importing OFX/QFX files to verify privacy‑first sync works. https://news.ycombinator.com/item?id=50296473
+  - Model evidence quote: “Some of KernelCash's core features include: - Envelope and zero style budgeting”
+  - Claim support: KernelCash offers privacy‑first budgeting with envelope and zero‑based budgeting. ← “Some of KernelCash's core features include: - Envelope and zero style budgeting”
 
 ## Top discovery candidates considered
 
-- Show HN: Lasm – Write formally verified webapps in Lean for Node/serverless/edge | Hacker News | product_and_workflow_tools | raw 69, adjusted 71 | https://github.com/Millillion/lasm
-- First sign-ins to customer accounts now set Customer.state and send customers/enable webhooks | Shopify Developer Changelog | commerce_and_digital_products | raw 68, adjusted 68 | https://shopify.dev/changelog/posts/first-sign-ins-to-new-customer-accounts-now-set-customer-state-and-send-customers-enable
-- Introducing theme app add-ons: Build and bundle apps with your themes | Shopify Developer Changelog | commerce_and_digital_products | raw 68, adjusted 68 | https://shopify.dev/changelog/posts/introducing-theme-app-add-ons-build-and-bundle-apps-with-your-themes
+- Managed mode for Shopify Tax | Shopify Developer Changelog | commerce_and_digital_products | raw 68, adjusted 68 | https://shopify.dev/changelog/posts/managed-mode-for-shopify-tax-is-released
+- Migrate to expiring offline access tokens before January 1, 2027 | Shopify Developer Changelog | commerce_and_digital_products | raw 68, adjusted 68 | https://shopify.dev/changelog/posts/migrate-to-expiring-offline-access-tokens-before-january-2027
+- Show HN: KernelCash – Privacy First Budgeting | Hacker News | data_and_growth | raw 68, adjusted 68 | https://news.ycombinator.com/item?id=50296473
 
 ## Safety and interpretation
 
-- This run did not produce a publishable draft; no post was published to X.
+- At least one draft passed the automated quality gates; this dry-run workflow itself never publishes to X.
 - Model scores are editorial estimates; they are not verified popularity or market demand.
 - Candidate content and metadata are untrusted input. Factual copy must be supported by the fetched primary page.
 - A skip can mean no fresh candidates, a daily diversity/cap limit, a model/API problem or weak drafts. Check the reason above.
