@@ -1,38 +1,38 @@
 {
-  "generated_at_ist": "2026-10-30T22:00:33+05:30",
-  "run_at_ist": "2026-10-30T22:00:33+05:30",
+  "generated_at_ist": "2026-10-30T22:56:20+05:30",
+  "run_at_ist": "2026-10-30T22:56:20+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 321,
-  "eligible_candidate_count": 199,
+  "candidate_count_raw": 324,
+  "eligible_candidate_count": 202,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4884
+      "total_count": 4893
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1060
+      "total_count": 1064
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 374
+      "total_count": 375
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2950
+      "total_count": 2954
     },
     {
       "source": "GitHub Search · github-digital-product-tools",
@@ -53,28 +53,28 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 223
+      "total_count": 225
     },
     {
       "source": "GitHub Search · github-mcp-servers",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2151
+      "total_count": 2154
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3398
+      "total_count": 3400
     },
     {
       "source": "GitHub Search · github-seller-operations",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 361
+      "total_count": 362
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
@@ -234,14 +234,14 @@
       "kind": "wordpress_plugin",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2980
+      "total_count": 2986
     },
     {
       "source": "WordPress Plugin Directory · wp-inventory-management",
       "kind": "wordpress_plugin",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 965
+      "total_count": 968
     },
     {
       "source": "WordPress Plugin Directory · wp-marketing-analytics",
@@ -259,10 +259,10 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-30T16:30:33+00:00",
+    "observed_at_utc": "2026-10-30T17:26:20+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 110,
-    "previously_tracked_repositories_refreshed": 90,
+    "repositories_seen_in_discovery": 114,
+    "previously_tracked_repositories_refreshed": 86,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
@@ -272,29 +272,29 @@
   },
   "primary_source_checks": [
     {
-      "candidate_id": "b89675159c0fb375",
-      "title": "New trusted vault origin signal in Payments Apps API",
-      "source_url": "https://shopify.dev/changelog/new-trusted-vault-origin-signal-in-payments-apps-api",
+      "candidate_id": "9cb5edf563b5f0d9",
+      "title": "First sign-ins to customer accounts now set Customer.state and send customers/enable webhooks",
+      "source_url": "https://shopify.dev/changelog/first-sign-ins-to-new-customer-accounts-now-set-customer-state-and-send-customers-enable",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/new-trusted-vault-origin-signal-in-payments-apps-api",
+      "final_url": "https://shopify.dev/changelog/posts/first-sign-ins-to-new-customer-accounts-now-set-customer-state-and-send-customers-enable",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "b140d6f185b58e72",
-      "title": "Shopify App Pricing: Plan Feature Targeting",
-      "source_url": "https://shopify.dev/changelog/plan-feature-targeting",
+      "candidate_id": "154748cd9555e562",
+      "title": "Introducing theme app add-ons: Build and bundle apps with your themes",
+      "source_url": "https://shopify.dev/changelog/introducing-theme-app-add-ons-build-and-bundle-apps-with-your-themes",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/plan-feature-targeting",
+      "final_url": "https://shopify.dev/changelog/posts/introducing-theme-app-add-ons-build-and-bundle-apps-with-your-themes",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "1ad94bae8533a06a",
-      "title": "What Is BLUF? How to Write Bottom Line Up Front (+ Free Rewriter Tool)",
-      "source_url": "https://ahrefs.com/blog/bluf/",
+      "candidate_id": "6adfbf8f6ccf1e05",
+      "title": "AI Discoverability, Page types, and more (September 2026)",
+      "source_url": "https://ahrefs.com/blog/new-features-september-2026/",
       "verified": true,
-      "final_url": "https://ahrefs.com/blog/bluf/",
+      "final_url": "https://ahrefs.com/blog/new-features-september-2026/",
       "http_status": 200,
       "reason": ""
     }
@@ -307,162 +307,155 @@
   "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "b89675159c0fb375",
-      "title": "New trusted vault origin signal in Payments Apps API",
-      "reasons": [
-        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation."
-      ],
-      "proposed_text": "Payments Apps API 2027-01 adds payment_method.data.trusted_vault_origin Boolean to credit card requests. When CVV is missing, test trusted_vault_origin to allow vault cards. https://shopify.dev/changelog/posts/new-trusted-vault-origin-signal-in-payments-apps-api",
-      "evidence_quote": "The Payments Apps API `2027-01` release candidate adds `payment_method.data.trusted_vault_origin` to credit card payment and verification requests.",
-      "claim_evidence": [
-        {
-          "claim": "Payments Apps API 2027-01 adds payment_method.data.trusted_vault_origin Boolean to credit card requests.",
-          "quote": "The Payments Apps API `2027-01` release candidate adds `payment_method.data.trusted_vault_origin` to credit card payment and verification requests."
-        }
-      ]
-    },
-    {
-      "candidate_id": "b140d6f185b58e72",
-      "title": "Shopify App Pricing: Plan Feature Targeting",
-      "reasons": [
-        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
-        "Supporting quotes cover only 64% of factual wording; narrow the claim or provide a closer primary-source quote"
-      ],
-      "proposed_text": "Shopify App Pricing now lets public plans specify store requirements like Checkout UI extensions. Add a requirement and test that merchants without the feature are blocked at checkout. https://shopify.dev/changelog/posts/plan-feature-targeting",
-      "evidence_quote": "You can now add store requirements to public plans in Shopify App Pricing.",
-      "claim_evidence": [
-        {
-          "claim": "Shopify App Pricing now lets public plans specify store requirements like Checkout UI extensions.",
-          "quote": "You can now add store requirements to public plans in Shopify App Pricing."
-        }
-      ]
-    },
-    {
-      "candidate_id": "1ad94bae8533a06a",
-      "title": "What Is BLUF? How to Write Bottom Line Up Front (+ Free Rewriter Tool)",
-      "reasons": [
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
-      ],
-      "proposed_text": "BLUF means bottom line up front: put main point in first sentence. Use the BLUF rewriter to ensure your email subject contains the key benefit. https://ahrefs.com/blog/bluf/",
-      "evidence_quote": "BLUF means bottom line up front: put your main point in the first sentence.",
-      "claim_evidence": [
-        {
-          "claim": "BLUF means bottom line up front: put main point in first sentence.",
-          "quote": "BLUF means bottom line up front: put your main point in the first sentence."
-        }
-      ]
-    },
-    {
-      "candidate_id": "b140d6f185b58e72",
-      "title": "Shopify App Pricing: Plan Feature Targeting",
-      "reasons": [
-        "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "Fact plus takeaway exceeds the per-link character budget.",
-        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
-        "Editorial takeaway is too long to be a useful concise second sentence.",
-        "Draft is 349 raw characters; limit is 280",
-        "No claim-by-claim supporting evidence was provided",
-        "Supporting quotes cover only 12% of factual wording; narrow the claim or provide a closer primary-source quote"
-      ],
-      "proposed_text": "A plan that requires Checkout UI extensions cannot be subscribed to by a store lacking that feature. If a merchant’s store does not have Checkout UI extensions, the plan’s select button is disabled and a message names the missing feature, preventing subscription until the feature is added. https://shopify.dev/changelog/posts/plan-feature-targeting",
-      "evidence_quote": "The select button on that plan is unavailable, and the message names the missing feature.",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
-        "Supporting quotes cover only 64% of factual wording; narrow the claim or provide a closer primary-source quote"
-      ]
-    },
-    {
-      "candidate_id": "b89675159c0fb375",
-      "title": "New trusted vault origin signal in Payments Apps API",
+      "candidate_id": "9cb5edf563b5f0d9",
+      "title": "First sign-ins to customer accounts now set Customer.state and send customers/enable webhooks",
       "reasons": [
         "Fact sentence is too long; narrow it to one source-backed capability.",
-        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "Fact plus takeaway exceeds the per-link character budget.",
+        "Draft is 317 raw characters; limit is 280"
+      ],
+      "proposed_text": "Shopify sets Customer.state to ENABLED on first sign‑in and fires customers/enable and customers/update webhooks. Verify your webhook handlers run on first login, not just on account creation. https://shopify.dev/changelog/posts/first-sign-ins-to-new-customer-accounts-now-set-customer-state-and-send-customers-enable",
+      "evidence_quote": "A customer's first sign-in to customer accounts now sets Customer.state to ENABLED and sends the customers/enable and customers/update webhooks.",
+      "claim_evidence": [
+        {
+          "claim": "Shopify sets Customer.state to ENABLED on first sign‑in and fires customers/enable and customers/update webhooks.",
+          "quote": "A customer's first sign-in to customer accounts now sets Customer.state to ENABLED and sends the customers/enable and customers/update webhooks."
+        }
+      ]
+    },
+    {
+      "candidate_id": "154748cd9555e562",
+      "title": "Introducing theme app add-ons: Build and bundle apps with your themes",
+      "reasons": [
+        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation."
+      ],
+      "proposed_text": "Theme app add‑ons let you bundle storefront apps as theme extensions in the Theme Store. Add the app block to your theme via Partner Dashboard before publishing. https://shopify.dev/changelog/posts/introducing-theme-app-add-ons-build-and-bundle-apps-with-your-themes",
+      "evidence_quote": "Theme app add‑ons extend your theme with advanced functionality while creating new monetization opportunities through Shopify App Pricing.",
+      "claim_evidence": [
+        {
+          "claim": "Theme app add‑ons let you bundle storefront apps as theme extensions in the Theme Store.",
+          "quote": "Theme app add‑ons extend your theme with advanced functionality while creating new monetization opportunities through Shopify App Pricing."
+        }
+      ]
+    },
+    {
+      "candidate_id": "6adfbf8f6ccf1e05",
+      "title": "AI Discoverability, Page types, and more (September 2026)",
+      "reasons": [
+        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation."
+      ],
+      "proposed_text": "Ahrefs added an AI Discoverability issue category to Site Audit. Run a Site Audit after adding AI content to spot new issues. https://ahrefs.com/blog/new-features-september-2026/",
+      "evidence_quote": "AI Discoverability is a new issue category in Site Audit.",
+      "claim_evidence": [
+        {
+          "claim": "Ahrefs added an AI Discoverability issue category to Site Audit.",
+          "quote": "AI Discoverability is a new issue category in Site Audit."
+        }
+      ]
+    },
+    {
+      "candidate_id": "9cb5edf563b5f0d9",
+      "title": "First sign-ins to customer accounts now set Customer.state and send customers/enable webhooks",
+      "reasons": [
         "Fact plus takeaway exceeds the per-link character budget.",
         "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
-        "Editorial takeaway is too long to be a useful concise second sentence.",
-        "Draft is 400 raw characters; limit is 280",
-        "No claim-by-claim supporting evidence was provided",
-        "Unsupported strong claim: only",
-        "Supporting quotes cover only 27% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Draft is 314 raw characters; limit is 280"
       ],
-      "proposed_text": "The trusted_vault_origin Boolean is only present if Shopify has enabled it for the app and the API version is 2027‑01 or later. Before using payment_method.data.trusted_vault_origin, confirm that Shopify has enabled the field for your app; otherwise the field will be absent and your code should not rely on it. https://shopify.dev/changelog/posts/new-trusted-vault-origin-signal-in-payments-apps-api",
-      "evidence_quote": "Confirm Shopify has enabled the field for your app before expecting Shopify to send it.",
+      "proposed_text": "First sign‑in sets Customer.state to ENABLED and triggers customers/enable and customers/update webhooks. Ensure your webhook handlers process first‑login events, not just account creation. https://shopify.dev/changelog/posts/first-sign-ins-to-new-customer-accounts-now-set-customer-state-and-send-customers-enable",
+      "evidence_quote": "A customer's first sign-in to customer accounts now sets Customer.state to ENABLED and sends the customers/enable and customers/update webhooks.",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "Fact sentence is too long; narrow it to one source-backed capability.",
+        "Fact plus takeaway exceeds the per-link character budget.",
+        "Draft is 317 raw characters; limit is 280"
+      ]
+    },
+    {
+      "candidate_id": "154748cd9555e562",
+      "title": "Introducing theme app add-ons: Build and bundle apps with your themes",
+      "reasons": [
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "Fact plus takeaway exceeds the per-link character budget.",
+        "Draft is 304 raw characters; limit is 280",
+        "No claim-by-claim supporting evidence was provided",
+        "Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ],
+      "proposed_text": "Theme app add‑ons allow bundling a storefront app as a theme extension in the Theme Store. After publishing the app, add the app block to a theme via the Partner Dashboard before the theme goes live. https://shopify.dev/changelog/posts/introducing-theme-app-add-ons-build-and-bundle-apps-with-your-themes",
+      "evidence_quote": "Theme app add‑ons extend your theme with advanced functionality while creating new monetization opportunities through Shopify App Pricing.",
       "automatic_repair_attempt": true,
       "original_rejection_reasons": [
         "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation."
       ]
     },
     {
-      "candidate_id": "1ad94bae8533a06a",
-      "title": "What Is BLUF? How to Write Bottom Line Up Front (+ Free Rewriter Tool)",
+      "candidate_id": "6adfbf8f6ccf1e05",
+      "title": "AI Discoverability, Page types, and more (September 2026)",
       "reasons": [
         "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "No claim-by-claim supporting evidence was provided",
-        "Factual sentence includes terms absent from the source title/summary: appear, communication, require"
+        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation."
       ],
-      "proposed_text": "BLUF requires the main point to appear in the first sentence of a communication. To verify BLUF, read the first sentence; if it states the key benefit or decision, the message follows BLUF guidelines. https://ahrefs.com/blog/bluf/",
-      "evidence_quote": "BLUF means bottom line up front: put your main point in the first sentence.",
+      "proposed_text": "Ahrefs added an AI Discoverability issue category to Site Audit. Run a Site Audit after adding AI‑generated content to identify pages blocked by robots.txt or heavy for AI bots. https://ahrefs.com/blog/new-features-september-2026/",
+      "evidence_quote": "AI Discoverability is a new issue category in Site Audit.",
       "automatic_repair_attempt": true,
       "original_rejection_reasons": [
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
+        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation."
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "b89675159c0fb375",
-      "title": "New trusted vault origin signal in Payments Apps API",
-      "url": "https://shopify.dev/changelog/posts/new-trusted-vault-origin-signal-in-payments-apps-api",
+      "id": "9cb5edf563b5f0d9",
+      "title": "First sign-ins to customer accounts now set Customer.state and send customers/enable webhooks",
+      "url": "https://shopify.dev/changelog/posts/first-sign-ins-to-new-customer-accounts-now-set-customer-state-and-send-customers-enable",
       "source": "Shopify Developer Changelog",
       "primary_category": "commerce_and_digital_products",
-      "priority_score": 75,
-      "hourly_adjusted_score": 57,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-30T16:00:00+00:00",
-      "days_old": 0.02,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "b140d6f185b58e72",
-      "title": "Shopify App Pricing: Plan Feature Targeting",
-      "url": "https://shopify.dev/changelog/posts/plan-feature-targeting",
-      "source": "Shopify Developer Changelog",
-      "primary_category": "commerce_and_digital_products",
-      "priority_score": 71,
-      "hourly_adjusted_score": 53,
+      "priority_score": 68,
+      "hourly_adjusted_score": 50,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
       "published_at": "2026-10-28T15:50:00+00:00",
-      "days_old": 2.03,
+      "days_old": 2.07,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "1ad94bae8533a06a",
-      "title": "What Is BLUF? How to Write Bottom Line Up Front (+ Free Rewriter Tool)",
-      "url": "https://ahrefs.com/blog/bluf/",
-      "source": "Ahrefs Blog",
-      "primary_category": "marketing_and_distribution",
-      "priority_score": 58,
-      "hourly_adjusted_score": 48,
+      "id": "154748cd9555e562",
+      "title": "Introducing theme app add-ons: Build and bundle apps with your themes",
+      "url": "https://shopify.dev/changelog/posts/introducing-theme-app-add-ons-build-and-bundle-apps-with-your-themes",
+      "source": "Shopify Developer Changelog",
+      "primary_category": "commerce_and_digital_products",
+      "priority_score": 68,
+      "hourly_adjusted_score": 50,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-30T16:27:18+00:00",
-      "days_old": 0.0,
+      "published_at": "2026-10-28T15:50:00+00:00",
+      "days_old": 2.07,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "6adfbf8f6ccf1e05",
+      "title": "AI Discoverability, Page types, and more (September 2026)",
+      "url": "https://ahrefs.com/blog/new-features-september-2026/",
+      "source": "Ahrefs Blog",
+      "primary_category": "marketing_and_distribution",
+      "priority_score": 56,
+      "hourly_adjusted_score": 46,
+      "stars_current": null,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-28T08:34:28+00:00",
+      "days_old": 2.37,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""

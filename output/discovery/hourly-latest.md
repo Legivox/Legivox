@@ -1,9 +1,9 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-30T22:00:33+05:30
+- Run time (IST): 2026-10-30T22:56:20+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 199
+- Candidate pool after freshness/diversity filters: 202
 - Independent editorial review: 0 draft(s) passed / 0 rejected
 - Drafts passing local checks: 0
 - Outcome: **skip**
@@ -54,8 +54,8 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 110
-- Previously tracked repositories refreshed outside search results: 90
+- Repositories seen in this discovery run: 114
+- Previously tracked repositories refreshed outside search results: 86
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
 - Repositories with a 20–36 hour comparison baseline: 18
@@ -65,9 +65,9 @@
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| New trusted vault origin signal in Payments Apps API | yes | 200 | https://shopify.dev/changelog/posts/new-trusted-vault-origin-signal-in-payments-apps-api |
-| Shopify App Pricing: Plan Feature Targeting | yes | 200 | https://shopify.dev/changelog/posts/plan-feature-targeting |
-| What Is BLUF? How to Write Bottom Line Up Front (+ Free Rewriter Tool) | yes | 200 | https://ahrefs.com/blog/bluf/ |
+| First sign-ins to customer accounts now set Customer.state and send customers/enable webhooks | yes | 200 | https://shopify.dev/changelog/posts/first-sign-ins-to-new-customer-accounts-now-set-customer-state-and-send-customers-enable |
+| Introducing theme app add-ons: Build and bundle apps with your themes | yes | 200 | https://shopify.dev/changelog/posts/introducing-theme-app-add-ons-build-and-bundle-apps-with-your-themes |
+| AI Discoverability, Page types, and more (September 2026) | yes | 200 | https://ahrefs.com/blog/new-features-september-2026/ |
 
 ## Selected draft candidates
 
@@ -84,33 +84,33 @@ No candidate produced a draft that passed every local check. Skipping is intenti
 
 ## Rejected draft options
 
-- New trusted vault origin signal in Payments Apps API: Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.
-  - Rejected text: Payments Apps API 2027-01 adds payment_method.data.trusted_vault_origin Boolean to credit card requests. When CVV is missing, test trusted_vault_origin to allow vault cards. https://shopify.dev/changelog/posts/new-trusted-vault-origin-signal-in-payments-apps-api
-  - Model evidence quote: “The Payments Apps API `2027-01` release candidate adds `payment_method.data.trusted_vault_origin` to credit card payment and verification requests.”
-  - Claim support: Payments Apps API 2027-01 adds payment_method.data.trusted_vault_origin Boolean to credit card requests. ← “The Payments Apps API `2027-01` release candidate adds `payment_method.data.trusted_vault_origin` to credit card payment and verification requests.”
-- Shopify App Pricing: Plan Feature Targeting: Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.; Supporting quotes cover only 64% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: Shopify App Pricing now lets public plans specify store requirements like Checkout UI extensions. Add a requirement and test that merchants without the feature are blocked at checkout. https://shopify.dev/changelog/posts/plan-feature-targeting
-  - Model evidence quote: “You can now add store requirements to public plans in Shopify App Pricing.”
-  - Claim support: Shopify App Pricing now lets public plans specify store requirements like Checkout UI extensions. ← “You can now add store requirements to public plans in Shopify App Pricing.”
-- What Is BLUF? How to Write Bottom Line Up Front (+ Free Rewriter Tool): Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
-  - Rejected text: BLUF means bottom line up front: put main point in first sentence. Use the BLUF rewriter to ensure your email subject contains the key benefit. https://ahrefs.com/blog/bluf/
-  - Model evidence quote: “BLUF means bottom line up front: put your main point in the first sentence.”
-  - Claim support: BLUF means bottom line up front: put main point in first sentence. ← “BLUF means bottom line up front: put your main point in the first sentence.”
-- Shopify App Pricing: Plan Feature Targeting: Editorial takeaway is too long; keep the analysis concrete and concise.; Fact plus takeaway exceeds the per-link character budget.; Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.; Editorial takeaway is too long to be a useful concise second sentence.; Draft is 349 raw characters; limit is 280; No claim-by-claim supporting evidence was provided; Supporting quotes cover only 12% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: A plan that requires Checkout UI extensions cannot be subscribed to by a store lacking that feature. If a merchant’s store does not have Checkout UI extensions, the plan’s select button is disabled and a message names the missing feature, preventing subscription until the feature is added. https://shopify.dev/changelog/posts/plan-feature-targeting
-  - Model evidence quote: “The select button on that plan is unavailable, and the message names the missing feature.”
-- New trusted vault origin signal in Payments Apps API: Fact sentence is too long; narrow it to one source-backed capability.; Editorial takeaway is too long; keep the analysis concrete and concise.; Fact plus takeaway exceeds the per-link character budget.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; Editorial takeaway is too long to be a useful concise second sentence.; Draft is 400 raw characters; limit is 280; No claim-by-claim supporting evidence was provided; Unsupported strong claim: only; Supporting quotes cover only 27% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: The trusted_vault_origin Boolean is only present if Shopify has enabled it for the app and the API version is 2027‑01 or later. Before using payment_method.data.trusted_vault_origin, confirm that Shopify has enabled the field for your app; otherwise the field will be absent and your code should not rely on it. https://shopify.dev/changelog/posts/new-trusted-vault-origin-signal-in-payments-apps-api
-  - Model evidence quote: “Confirm Shopify has enabled the field for your app before expecting Shopify to send it.”
-- What Is BLUF? How to Write Bottom Line Up Front (+ Free Rewriter Tool): Editorial takeaway is too long; keep the analysis concrete and concise.; No claim-by-claim supporting evidence was provided; Factual sentence includes terms absent from the source title/summary: appear, communication, require
-  - Rejected text: BLUF requires the main point to appear in the first sentence of a communication. To verify BLUF, read the first sentence; if it states the key benefit or decision, the message follows BLUF guidelines. https://ahrefs.com/blog/bluf/
-  - Model evidence quote: “BLUF means bottom line up front: put your main point in the first sentence.”
+- First sign-ins to customer accounts now set Customer.state and send customers/enable webhooks: Fact sentence is too long; narrow it to one source-backed capability.; Fact plus takeaway exceeds the per-link character budget.; Draft is 317 raw characters; limit is 280
+  - Rejected text: Shopify sets Customer.state to ENABLED on first sign‑in and fires customers/enable and customers/update webhooks. Verify your webhook handlers run on first login, not just on account creation. https://shopify.dev/changelog/posts/first-sign-ins-to-new-customer-accounts-now-set-customer-state-and-send-customers-enable
+  - Model evidence quote: “A customer's first sign-in to customer accounts now sets Customer.state to ENABLED and sends the customers/enable and customers/update webhooks.”
+  - Claim support: Shopify sets Customer.state to ENABLED on first sign‑in and fires customers/enable and customers/update webhooks. ← “A customer's first sign-in to customer accounts now sets Customer.state to ENABLED and sends the customers/enable and customers/update webhooks.”
+- Introducing theme app add-ons: Build and bundle apps with your themes: Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.
+  - Rejected text: Theme app add‑ons let you bundle storefront apps as theme extensions in the Theme Store. Add the app block to your theme via Partner Dashboard before publishing. https://shopify.dev/changelog/posts/introducing-theme-app-add-ons-build-and-bundle-apps-with-your-themes
+  - Model evidence quote: “Theme app add‑ons extend your theme with advanced functionality while creating new monetization opportunities through Shopify App Pricing.”
+  - Claim support: Theme app add‑ons let you bundle storefront apps as theme extensions in the Theme Store. ← “Theme app add‑ons extend your theme with advanced functionality while creating new monetization opportunities through Shopify App Pricing.”
+- AI Discoverability, Page types, and more (September 2026): Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.
+  - Rejected text: Ahrefs added an AI Discoverability issue category to Site Audit. Run a Site Audit after adding AI content to spot new issues. https://ahrefs.com/blog/new-features-september-2026/
+  - Model evidence quote: “AI Discoverability is a new issue category in Site Audit.”
+  - Claim support: Ahrefs added an AI Discoverability issue category to Site Audit. ← “AI Discoverability is a new issue category in Site Audit.”
+- First sign-ins to customer accounts now set Customer.state and send customers/enable webhooks: Fact plus takeaway exceeds the per-link character budget.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; Draft is 314 raw characters; limit is 280
+  - Rejected text: First sign‑in sets Customer.state to ENABLED and triggers customers/enable and customers/update webhooks. Ensure your webhook handlers process first‑login events, not just account creation. https://shopify.dev/changelog/posts/first-sign-ins-to-new-customer-accounts-now-set-customer-state-and-send-customers-enable
+  - Model evidence quote: “A customer's first sign-in to customer accounts now sets Customer.state to ENABLED and sends the customers/enable and customers/update webhooks.”
+- Introducing theme app add-ons: Build and bundle apps with your themes: Editorial takeaway is too long; keep the analysis concrete and concise.; Fact plus takeaway exceeds the per-link character budget.; Draft is 304 raw characters; limit is 280; No claim-by-claim supporting evidence was provided; Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: Theme app add‑ons allow bundling a storefront app as a theme extension in the Theme Store. After publishing the app, add the app block to a theme via the Partner Dashboard before the theme goes live. https://shopify.dev/changelog/posts/introducing-theme-app-add-ons-build-and-bundle-apps-with-your-themes
+  - Model evidence quote: “Theme app add‑ons extend your theme with advanced functionality while creating new monetization opportunities through Shopify App Pricing.”
+- AI Discoverability, Page types, and more (September 2026): Editorial takeaway is too long; keep the analysis concrete and concise.; Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.
+  - Rejected text: Ahrefs added an AI Discoverability issue category to Site Audit. Run a Site Audit after adding AI‑generated content to identify pages blocked by robots.txt or heavy for AI bots. https://ahrefs.com/blog/new-features-september-2026/
+  - Model evidence quote: “AI Discoverability is a new issue category in Site Audit.”
 
 ## Top discovery candidates considered
 
-- New trusted vault origin signal in Payments Apps API | Shopify Developer Changelog | commerce_and_digital_products | raw 75, adjusted 57 | https://shopify.dev/changelog/posts/new-trusted-vault-origin-signal-in-payments-apps-api
-- Shopify App Pricing: Plan Feature Targeting | Shopify Developer Changelog | commerce_and_digital_products | raw 71, adjusted 53 | https://shopify.dev/changelog/posts/plan-feature-targeting
-- What Is BLUF? How to Write Bottom Line Up Front (+ Free Rewriter Tool) | Ahrefs Blog | marketing_and_distribution | raw 58, adjusted 48 | https://ahrefs.com/blog/bluf/
+- First sign-ins to customer accounts now set Customer.state and send customers/enable webhooks | Shopify Developer Changelog | commerce_and_digital_products | raw 68, adjusted 50 | https://shopify.dev/changelog/posts/first-sign-ins-to-new-customer-accounts-now-set-customer-state-and-send-customers-enable
+- Introducing theme app add-ons: Build and bundle apps with your themes | Shopify Developer Changelog | commerce_and_digital_products | raw 68, adjusted 50 | https://shopify.dev/changelog/posts/introducing-theme-app-add-ons-build-and-bundle-apps-with-your-themes
+- AI Discoverability, Page types, and more (September 2026) | Ahrefs Blog | marketing_and_distribution | raw 56, adjusted 46 | https://ahrefs.com/blog/new-features-september-2026/
 
 ## Safety and interpretation
 
