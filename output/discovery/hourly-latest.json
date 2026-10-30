@@ -1,24 +1,24 @@
 {
-  "generated_at_ist": "2026-10-30T17:52:19+05:30",
-  "run_at_ist": "2026-10-30T17:52:19+05:30",
+  "generated_at_ist": "2026-10-30T19:13:46+05:30",
+  "run_at_ist": "2026-10-30T19:13:46+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 319,
-  "eligible_candidate_count": 200,
+  "candidate_count_raw": 312,
+  "eligible_candidate_count": 195,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4850
+      "total_count": 4859
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1050
+      "total_count": 1053
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
@@ -32,7 +32,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2918
+      "total_count": 2958
     },
     {
       "source": "GitHub Search · github-digital-product-tools",
@@ -46,28 +46,28 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 433
+      "total_count": 437
     },
     {
       "source": "GitHub Search · github-marketing-distribution",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 224
+      "total_count": 223
     },
     {
       "source": "GitHub Search · github-mcp-servers",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2138
+      "total_count": 2140
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3374
+      "total_count": 3386
     },
     {
       "source": "GitHub Search · github-seller-operations",
@@ -81,7 +81,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 136
+      "total_count": 137
     },
     {
       "source": "GitHub Search · github-workflow-automation",
@@ -93,7 +93,7 @@
     {
       "source": "Hacker News · hn-analytics-growth",
       "kind": "hacker_news",
-      "items_kept": 10,
+      "items_kept": 6,
       "status": "ok",
       "total_count": 10
     },
@@ -163,7 +163,7 @@
     {
       "source": "Hacker News · hn-shopify",
       "kind": "hacker_news",
-      "items_kept": 10,
+      "items_kept": 8,
       "status": "ok",
       "total_count": 10
     },
@@ -259,353 +259,264 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-30T12:22:19+00:00",
+    "observed_at_utc": "2026-10-30T13:43:46+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 110,
-    "previously_tracked_repositories_refreshed": 90,
+    "repositories_seen_in_discovery": 108,
+    "previously_tracked_repositories_refreshed": 92,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
-    "repositories_with_20_to_36_hour_baseline": 20,
+    "repositories_with_20_to_36_hour_baseline": 19,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "a30ce92bac606283",
-      "title": "kenryu42/cc-safety-net",
-      "source_url": "https://github.com/kenryu42/cc-safety-net",
+      "candidate_id": "88d7f9fdb7ad2ae1",
+      "title": "Show HN: Ocel – Deploy apps to your AWS,GCP or VPS with infra from code",
+      "source_url": "https://github.com/ocelhq/ocel",
       "verified": true,
-      "final_url": "https://github.com/kenryu42/cc-safety-net",
+      "final_url": "https://github.com/ocelhq/ocel",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "88fc6f23fb29da22",
-      "title": "docmd-io/docmd",
-      "source_url": "https://github.com/docmd-io/docmd",
+      "candidate_id": "6e336fa3d9953872",
+      "title": "Show HN: SpecDeck – Bring coding agent decisions back into the spec",
+      "source_url": "https://specdeck.ai/",
       "verified": true,
-      "final_url": "https://github.com/docmd-io/docmd",
+      "final_url": "https://specdeck.ai/",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "a7ef65c69e7dd7cd",
-      "title": "Shop SDK lead capture now supports Rich Authorization Requests",
-      "source_url": "https://shopify.dev/changelog/shop-sdk-lead-capture-now-supports-rich-authorization-requests",
+      "candidate_id": "18db88bba45fb85e",
+      "title": "snapotter-hq/SnapOtter",
+      "source_url": "https://github.com/snapotter-hq/SnapOtter",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/shop-sdk-lead-capture-now-supports-rich-authorization-requests",
+      "final_url": "https://github.com/snapotter-hq/SnapOtter",
       "http_status": 200,
       "reason": ""
     }
   ],
   "rejected_primary_sources": [],
   "daily_draft_cap": 16,
-  "daily_drafts_already_passed": 4,
+  "daily_drafts_already_passed": 5,
   "outcome": "dry_run_passed",
   "decision_reason": "At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.",
   "passing_drafts": [
     {
-      "candidate_id": "a30ce92bac606283",
-      "title": "kenryu42/cc-safety-net",
-      "source": "GitHub Search",
-      "source_kind": "github_repository",
-      "url": "https://github.com/kenryu42/cc-safety-net",
+      "candidate_id": "88d7f9fdb7ad2ae1",
+      "title": "Show HN: Ocel – Deploy apps to your AWS,GCP or VPS with infra from code",
+      "source": "Hacker News",
+      "source_kind": "hacker_news",
+      "url": "https://github.com/ocelhq/ocel",
       "primary_source_verified": true,
-      "primary_source_title": "GitHub - kenryu42/cc-safety-net: A pre-execution guard for AI coding agents. It blocks destructive Git and file system commands, plus common attempts to access sensitive files, before a tool call runs. Supports Amp Code, Antigravity CLI, Claude Code, Codex, Cursor, DeepSeek Harness, Devin CLI, GitHu",
-      "primary_source_final_url": "https://github.com/kenryu42/cc-safety-net",
+      "primary_source_title": "GitHub - ocelhq/ocel: Deploy apps anywhere",
+      "primary_source_final_url": "https://github.com/ocelhq/ocel",
       "primary_source_http_status": 200,
-      "category": "developer_tools",
-      "priority_score": 67,
-      "hourly_adjusted_score": 61,
-      "post_text": "cc-safety-net blocks destructive Git and file system commands before tool calls. Test that a 'git push --force' is rejected by the guard. https://github.com/kenryu42/cc-safety-net",
-      "fact_sentence": "cc-safety-net blocks destructive Git and file system commands before tool calls.",
-      "format": "text",
+      "category": "product_and_workflow_tools",
+      "priority_score": 71,
+      "hourly_adjusted_score": 55,
+      "post_text": "Ocel’s CLI deploys apps to AWS, GCP or VPS without separate IaC files. Run a pre‑deploy test that compiles infra code to catch missing dependencies. https://github.com/ocelhq/ocel",
+      "fact_sentence": "Ocel’s CLI deploys apps to AWS, GCP or VPS without separate IaC files.",
+      "format": "tool_discovery",
       "audience": "developers",
-      "angle": "security",
-      "rationale": "Focuses on a single documented guard behavior and provides a concrete test scenario.",
-      "evidence_quote": "blocks destructive Git and file system commands",
-      "editorial_takeaway": "Test that a 'git push --force' is rejected by the guard.",
+      "angle": "deployment",
+      "rationale": "The GitHub description confirms Ocel’s core purpose of deploying apps anywhere, and the summary notes no separate IaC files are required. The takeaway advises a practical pre‑deploy compile check to surface infra issues early.",
+      "evidence_quote": "Ocel is a CLI for deploying apps to your AWS, GCP or VPS without writing infra code.",
+      "editorial_takeaway": "Run a pre‑deploy test that compiles infra code to catch missing dependencies.",
       "claim_evidence": [
         {
-          "claim": "cc-safety-net blocks destructive Git and file system commands before tool calls",
-          "quote": "blocks destructive Git and file system commands"
+          "claim": "Ocel’s CLI deploys apps to AWS, GCP or VPS without separate IaC files.",
+          "quote": "Ocel is a CLI for deploying apps to your AWS, GCP or VPS without writing infra code."
         }
       ],
       "scores": {
-        "timeliness": 8,
-        "usefulness": 9,
+        "timeliness": 10,
+        "usefulness": 8,
         "novelty": 7,
-        "evidence": 10,
-        "insight": 9
-      },
-      "editorial_score": 8.8,
-      "character_count": 179,
-      "status": "dry_run_passed_not_published",
-      "published_to_x": false,
-      "automatic_repair_attempt": true,
-      "repair_note": "A single automatic rewrite cleared the same local validator; the independent editorial review is still required.",
-      "editorial_review": {
-        "clarity_score": 9,
-        "technical_coherence_score": 9,
-        "takeaway_value_score": 9,
-        "source_faithfulness_score": 9,
-        "originality_score": 8,
-        "reason": "Clear, evidence-backed claim and a concrete test that demonstrates guard behavior.",
-        "passed": true
-      }
-    },
-    {
-      "candidate_id": "88fc6f23fb29da22",
-      "title": "docmd-io/docmd",
-      "source": "GitHub Search",
-      "source_kind": "github_repository",
-      "url": "https://github.com/docmd-io/docmd",
-      "primary_source_verified": true,
-      "primary_source_title": "GitHub - docmd-io/docmd: Documentation compiler for humans and machines. One Markdown source to website, search, AI context, and knowledge formats together.",
-      "primary_source_final_url": "https://github.com/docmd-io/docmd",
-      "primary_source_http_status": 200,
-      "category": "marketing_and_distribution",
-      "priority_score": 65,
-      "hourly_adjusted_score": 59,
-      "post_text": "docmd compiles a single Markdown source into a website. Run docmd to build and verify the site contains the top-level headings. https://github.com/docmd-io/docmd",
-      "fact_sentence": "docmd compiles a single Markdown source into a website.",
-      "format": "text",
-      "audience": "developers",
-      "angle": "documentation",
-      "rationale": "Narrowed to the core website compilation feature with a clear validation step.",
-      "evidence_quote": "Instead of treating your Markdown as input for a website alone, docmd compiles the same source into outputs for readers, search engines, LLMs, coding agents, and knowledge systems.",
-      "editorial_takeaway": "Run docmd to build and verify the site contains the top-level headings.",
-      "claim_evidence": [
-        {
-          "claim": "docmd compiles a single Markdown source into a website.",
-          "quote": "Instead of treating your Markdown as input for a website alone, docmd compiles the same source into outputs for readers, search engines, LLMs, coding agents, and knowledge systems."
-        }
-      ],
-      "scores": {
-        "timeliness": 9,
-        "usefulness": 9,
-        "novelty": 6,
         "evidence": 10,
         "insight": 8
       },
-      "editorial_score": 8.75,
-      "character_count": 161,
+      "editorial_score": 8.65,
+      "character_count": 179,
       "status": "dry_run_passed_not_published",
       "published_to_x": false,
-      "automatic_repair_attempt": true,
-      "repair_note": "A single automatic rewrite cleared the same local validator; the independent editorial review is still required.",
       "editorial_review": {
-        "clarity_score": 9,
-        "technical_coherence_score": 9,
-        "takeaway_value_score": 9,
-        "source_faithfulness_score": 9,
+        "clarity_score": 8,
+        "technical_coherence_score": 8,
+        "takeaway_value_score": 8,
+        "source_faithfulness_score": 8,
         "originality_score": 8,
-        "reason": "Directly cites source, provides actionable build and verification step.",
+        "reason": "Clear, technically coherent, source-backed, and adds a useful pre‑deploy test tip.",
         "passed": true
       }
     }
   ],
   "rejected_drafts": [
     {
-      "candidate_id": "a30ce92bac606283",
-      "title": "kenryu42/cc-safety-net",
-      "reasons": [
-        "Editorial takeaway is too long; keep the analysis concrete and concise."
-      ],
-      "proposed_text": "cc-safety-net blocks destructive Git and file system commands before tool calls. Verify that a destructive git command like 'git push --force' is rejected by the guard before execution. https://github.com/kenryu42/cc-safety-net",
-      "evidence_quote": "blocks destructive Git and file system commands",
-      "claim_evidence": [
-        {
-          "claim": "The source says cc-safety-net blocks destructive Git and file system commands before tool calls",
-          "quote": "blocks destructive Git and file system commands"
-        }
-      ]
-    },
-    {
-      "candidate_id": "88fc6f23fb29da22",
-      "title": "docmd-io/docmd",
+      "candidate_id": "6e336fa3d9953872",
+      "title": "Show HN: SpecDeck – Bring coding agent decisions back into the spec",
       "reasons": [
         "The factual opening bundles multiple features; narrow it to one capability."
       ],
-      "proposed_text": "docmd compiles a single Markdown source into a website, search, AI context, and knowledge formats. Run docmd to build the site and confirm the search index includes all top-level headings. https://github.com/docmd-io/docmd",
-      "evidence_quote": "One Markdown source to website, search, AI context, and knowledge formats together",
+      "proposed_text": "SpecDeck keeps context, requirements, acceptance criteria together for AI agents. Run a spec review cycle to verify AI outputs match spec before merging. https://specdeck.ai/",
+      "evidence_quote": "Keep project context, requirements, and acceptance criteria together.",
       "claim_evidence": [
         {
-          "claim": "The source says docmd compiles a single Markdown source into a website, search, AI context, and knowledge formats",
-          "quote": "One Markdown source to website, search, AI context, and knowledge formats together"
+          "claim": "SpecDeck keeps context, requirements, acceptance criteria together for AI agents.",
+          "quote": "Keep project context, requirements, and acceptance criteria together."
         }
       ]
     },
     {
-      "candidate_id": "a7ef65c69e7dd7cd",
-      "title": "Shop SDK lead capture now supports Rich Authorization Requests",
+      "candidate_id": "18db88bba45fb85e",
+      "title": "snapotter-hq/SnapOtter",
       "reasons": [
         "The factual opening bundles multiple features; narrow it to one capability.",
         "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "Fact plus takeaway exceeds the per-link character budget.",
-        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
-        "Draft is 314 raw characters; limit is 280"
+        "Supporting quotes cover only 62% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "Shop SDK lead capture now lets apps request specific profile data, including non‑profile fields. Add a Rich Authorization Request for phone_number required and test that birthdate is optional when the user skips it. https://shopify.dev/changelog/posts/shop-sdk-lead-capture-now-supports-rich-authorization-requests",
-      "evidence_quote": "You can now request the specific profile data your app needs during Shop SDK lead capture, including details that aren't saved on the user's Shop profile",
+      "proposed_text": "SnapOtter is a self‑hosted tool that runs OCR, transcribe, and local AI on‑premise. Add a pipeline test that uploads a sample PDF and verifies OCR output matches expected text. https://github.com/snapotter-hq/SnapOtter",
+      "evidence_quote": "Open‑source, self‑hosted file‑processing tool. Convert, compress, OCR, transcribe & run local AI across image, video, audio, PDF & documents, via UI, REST API & pipelines. Your files never leave your network.",
       "claim_evidence": [
         {
-          "claim": "The source says Shop SDK lead capture now lets apps request specific profile data, including non‑profile fields",
-          "quote": "You can now request the specific profile data your app needs during Shop SDK lead capture, including details that aren't saved on the user's Shop profile"
+          "claim": "SnapOtter is a self‑hosted tool that runs OCR, transcribe, and local AI on‑premise.",
+          "quote": "Open‑source, self‑hosted file‑processing tool. Convert, compress, OCR, transcribe & run local AI across image, video, audio, PDF & documents, via UI, REST API & pipelines. Your files never leave your network."
         }
-      ]
-    },
-    {
-      "candidate_id": "a7ef65c69e7dd7cd",
-      "title": "Shop SDK lead capture now supports Rich Authorization Requests",
-      "reasons": [
-        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
-        "Opening sentence is too close to the source headline; add a distinct editorial framing."
-      ],
-      "proposed_text": "Shop SDK lead capture now supports Rich Authorization Requests. Request phone_number as required and test that birthdate is optional. https://shopify.dev/changelog/posts/shop-sdk-lead-capture-now-supports-rich-authorization-requests",
-      "evidence_quote": "You can now request the specific profile data your app needs during Shop SDK lead capture, including details that aren't saved on the user's Shop profile",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability.",
-        "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "Fact plus takeaway exceeds the per-link character budget.",
-        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
-        "Draft is 314 raw characters; limit is 280"
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "a30ce92bac606283",
-      "title": "kenryu42/cc-safety-net",
-      "url": "https://github.com/kenryu42/cc-safety-net",
-      "source": "GitHub Search",
-      "primary_category": "developer_tools",
-      "priority_score": 67,
-      "hourly_adjusted_score": 61,
-      "stars_current": 1855,
+      "id": "88d7f9fdb7ad2ae1",
+      "title": "Show HN: Ocel – Deploy apps to your AWS,GCP or VPS with infra from code",
+      "url": "https://github.com/ocelhq/ocel",
+      "source": "Hacker News",
+      "primary_category": "product_and_workflow_tools",
+      "priority_score": 71,
+      "hourly_adjusted_score": 55,
+      "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
-      "trend_signal": "insufficient_history",
-      "published_at": "2026-10-30T12:20:33+00:00",
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-30T13:42:23+00:00",
       "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "88fc6f23fb29da22",
-      "title": "docmd-io/docmd",
-      "url": "https://github.com/docmd-io/docmd",
-      "source": "GitHub Search",
-      "primary_category": "marketing_and_distribution",
-      "priority_score": 65,
-      "hourly_adjusted_score": 59,
-      "stars_current": 2541,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "insufficient_history",
-      "published_at": "2026-10-30T09:25:57+00:00",
-      "days_old": 0.12,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "a7ef65c69e7dd7cd",
-      "title": "Shop SDK lead capture now supports Rich Authorization Requests",
-      "url": "https://shopify.dev/changelog/posts/shop-sdk-lead-capture-now-supports-rich-authorization-requests",
-      "source": "Shopify Developer Changelog",
-      "primary_category": "commerce_and_digital_products",
-      "priority_score": 68,
-      "hourly_adjusted_score": 50,
+      "id": "6e336fa3d9953872",
+      "title": "Show HN: SpecDeck – Bring coding agent decisions back into the spec",
+      "url": "https://specdeck.ai/",
+      "source": "Hacker News",
+      "primary_category": "product_and_workflow_tools",
+      "priority_score": 69,
+      "hourly_adjusted_score": 53,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-28T20:06:00+00:00",
-      "days_old": 1.68,
+      "published_at": "2026-10-30T12:47:48+00:00",
+      "days_old": 0.04,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "18db88bba45fb85e",
+      "title": "snapotter-hq/SnapOtter",
+      "url": "https://github.com/snapotter-hq/SnapOtter",
+      "source": "GitHub Search",
+      "primary_category": "security_and_self_hosting",
+      "priority_score": 67,
+      "hourly_adjusted_score": 51,
+      "stars_current": 2904,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "insufficient_history",
+      "published_at": "2026-10-30T13:44:19+00:00",
+      "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     }
   ],
   "automatic_repair": {
-    "attempted": true,
-    "drafts_submitted": 3,
-    "repaired_local_passes": 2,
-    "repair_rejections": 1,
+    "attempted": false,
+    "drafts_submitted": 0,
+    "repaired_local_passes": 0,
+    "repair_rejections": 0,
     "repair_error": null,
     "editorial_repair_attempted": false,
     "editorial_repair_drafts_submitted": 0,
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 2,
-    "submitted_for_independent_review": 2,
-    "passed_independent_review": 2,
+    "locally_valid_drafts": 1,
+    "submitted_for_independent_review": 1,
+    "passed_independent_review": 1,
     "rejected_by_independent_review": 0,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
   "recommended_draft": {
-    "candidate_id": "a30ce92bac606283",
-    "title": "kenryu42/cc-safety-net",
-    "source": "GitHub Search",
-    "source_kind": "github_repository",
-    "url": "https://github.com/kenryu42/cc-safety-net",
+    "candidate_id": "88d7f9fdb7ad2ae1",
+    "title": "Show HN: Ocel – Deploy apps to your AWS,GCP or VPS with infra from code",
+    "source": "Hacker News",
+    "source_kind": "hacker_news",
+    "url": "https://github.com/ocelhq/ocel",
     "primary_source_verified": true,
-    "primary_source_title": "GitHub - kenryu42/cc-safety-net: A pre-execution guard for AI coding agents. It blocks destructive Git and file system commands, plus common attempts to access sensitive files, before a tool call runs. Supports Amp Code, Antigravity CLI, Claude Code, Codex, Cursor, DeepSeek Harness, Devin CLI, GitHu",
-    "primary_source_final_url": "https://github.com/kenryu42/cc-safety-net",
+    "primary_source_title": "GitHub - ocelhq/ocel: Deploy apps anywhere",
+    "primary_source_final_url": "https://github.com/ocelhq/ocel",
     "primary_source_http_status": 200,
-    "category": "developer_tools",
-    "priority_score": 67,
-    "hourly_adjusted_score": 61,
-    "post_text": "cc-safety-net blocks destructive Git and file system commands before tool calls. Test that a 'git push --force' is rejected by the guard. https://github.com/kenryu42/cc-safety-net",
-    "fact_sentence": "cc-safety-net blocks destructive Git and file system commands before tool calls.",
-    "format": "text",
+    "category": "product_and_workflow_tools",
+    "priority_score": 71,
+    "hourly_adjusted_score": 55,
+    "post_text": "Ocel’s CLI deploys apps to AWS, GCP or VPS without separate IaC files. Run a pre‑deploy test that compiles infra code to catch missing dependencies. https://github.com/ocelhq/ocel",
+    "fact_sentence": "Ocel’s CLI deploys apps to AWS, GCP or VPS without separate IaC files.",
+    "format": "tool_discovery",
     "audience": "developers",
-    "angle": "security",
-    "rationale": "Focuses on a single documented guard behavior and provides a concrete test scenario.",
-    "evidence_quote": "blocks destructive Git and file system commands",
-    "editorial_takeaway": "Test that a 'git push --force' is rejected by the guard.",
+    "angle": "deployment",
+    "rationale": "The GitHub description confirms Ocel’s core purpose of deploying apps anywhere, and the summary notes no separate IaC files are required. The takeaway advises a practical pre‑deploy compile check to surface infra issues early.",
+    "evidence_quote": "Ocel is a CLI for deploying apps to your AWS, GCP or VPS without writing infra code.",
+    "editorial_takeaway": "Run a pre‑deploy test that compiles infra code to catch missing dependencies.",
     "claim_evidence": [
       {
-        "claim": "cc-safety-net blocks destructive Git and file system commands before tool calls",
-        "quote": "blocks destructive Git and file system commands"
+        "claim": "Ocel’s CLI deploys apps to AWS, GCP or VPS without separate IaC files.",
+        "quote": "Ocel is a CLI for deploying apps to your AWS, GCP or VPS without writing infra code."
       }
     ],
     "scores": {
-      "timeliness": 8,
-      "usefulness": 9,
+      "timeliness": 10,
+      "usefulness": 8,
       "novelty": 7,
       "evidence": 10,
-      "insight": 9
+      "insight": 8
     },
-    "editorial_score": 8.8,
+    "editorial_score": 8.65,
     "character_count": 179,
     "status": "dry_run_passed_not_published",
     "published_to_x": false,
-    "automatic_repair_attempt": true,
-    "repair_note": "A single automatic rewrite cleared the same local validator; the independent editorial review is still required.",
     "editorial_review": {
-      "clarity_score": 9,
-      "technical_coherence_score": 9,
-      "takeaway_value_score": 9,
-      "source_faithfulness_score": 9,
+      "clarity_score": 8,
+      "technical_coherence_score": 8,
+      "takeaway_value_score": 8,
+      "source_faithfulness_score": 8,
       "originality_score": 8,
-      "reason": "Clear, evidence-backed claim and a concrete test that demonstrates guard behavior.",
+      "reason": "Clear, technically coherent, source-backed, and adds a useful pre‑deploy test tip.",
       "passed": true
     }
   },
   "state_summary": {
-    "used_candidates_in_cooldown": 30,
-    "recently_attempted_candidates": 33,
-    "recent_draft_passes_today": 5
+    "used_candidates_in_cooldown": 31,
+    "recently_attempted_candidates": 36,
+    "recent_draft_passes_today": 6
   }
 }
