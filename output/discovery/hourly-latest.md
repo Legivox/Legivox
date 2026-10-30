@@ -1,11 +1,11 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-30T14:04:43+05:30
+- Run time (IST): 2026-10-30T15:03:58+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 201
-- Independent editorial review: 2 draft(s) passed / 0 rejected
-- Drafts passing local checks: 2
+- Candidate pool after freshness/diversity filters: 206
+- Independent editorial review: 1 draft(s) passed / 0 rejected
+- Drafts passing local checks: 1
 - Outcome: **dry_run_passed**
 - Decision reason: At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.
 
@@ -35,7 +35,7 @@
 | Hacker News · hn-marketing-distribution | 0 | ok |
 | Hacker News · hn-security-selfhost | 0 | ok |
 | Hacker News · hn-seller-operations | 0 | ok |
-| Hacker News · hn-shopify | 8 | ok |
+| Hacker News · hn-shopify | 10 | ok |
 | Hacker News · hn-show-hn | 10 | ok |
 | Ahrefs Blog | 7 | ok |
 | Console.dev | 11 | ok |
@@ -54,71 +54,46 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 108
-- Previously tracked repositories refreshed outside search results: 92
+- Repositories seen in this discovery run: 112
+- Previously tracked repositories refreshed outside search results: 88
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
-- Repositories with a 20–36 hour comparison baseline: 22
+- Repositories with a 20–36 hour comparison baseline: 20
 - First observations are baseline samples, not evidence of trending. Star velocity is reported only when a historical comparison exists.
 
 ## Primary-source verification
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| Show HN: I don't understand why invoicing apps cost $10/month | yes | 200 | https://invoicingpro.org/ |
-| Show HN: zpq 0.5.0 – A zero-dependency Parquet engine in Zig | yes | 200 | https://github.com/chicagobuss/zpq |
-| nodemaven/google-browser-scraper | yes | 200 | https://github.com/nodemaven/google-browser-scraper |
+| gotempsh/temps | yes | 200 | https://github.com/gotempsh/temps |
+| kagura-ai/memory-cloud | yes | 200 | https://github.com/kagura-ai/memory-cloud |
+| How Stable Are AI Citations? 10 Things We Learned Tracking 37,500 Citations | yes | 200 | https://ahrefs.com/blog/how-stable-are-ai-citations/ |
 
 ## Selected draft candidates
 
-### Draft option 1: Show HN: I don't understand why invoicing apps cost $10/month
+### Draft option 1: How Stable Are AI Citations? 10 Things We Learned Tracking 37,500 Citations
 
-- Category: product_and_workflow_tools
-- Source: Hacker News
-- Format: tool_discovery
+- Category: data_and_growth
+- Source: Ahrefs Blog
+- Format: practical_workflow
 - Editorial score: 8.1/10
 - Model scores: timeliness 8/10, usefulness 8/10, novelty 7/10, evidence 9/10, insight 8/10
-- Independent editor scores: {"clarity_score": 8, "technical_coherence_score": 8, "takeaway_value_score": 7, "source_faithfulness_score": 9, "originality_score": 7, "reason": "Clear, supported claim with actionable takeaway.", "passed": true}
-- Live primary page: https://invoicingpro.org/ (HTTP 200)
-- Exact source evidence: “InvoicingPro offers desktop and mobile invoicing apps with offline operation, cross-device synchronization, and a one-time payment with no subscription.”
-- Why this angle: Highlights key value proposition and a concrete validation step.
-- Editorial takeaway: Test PDF export and offline sync before onboarding clients.
-- Source: https://invoicingpro.org/
+- Independent editor scores: {"clarity_score": 9, "technical_coherence_score": 9, "takeaway_value_score": 8, "source_faithfulness_score": 9, "originality_score": 8, "reason": "Clear, coherent, faithful to source, and offers a concrete monitoring recommendation.", "passed": true}
+- Live primary page: https://ahrefs.com/blog/how-stable-are-ai-citations/ (HTTP 200)
+- Exact source evidence: “Half of AI citations disappear the next day, and most come back.”
+- Why this angle: The article quantifies citation volatility, guiding a monitoring strategy.
+- Editorial takeaway: Set a daily monitor; if a citation drops >50%, refresh the content.
+- Source: https://ahrefs.com/blog/how-stable-are-ai-citations/
 
 **Claim-by-claim source quotes:**
 
-- InvoicingPro offers offline desktop and mobile invoicing with one‑time payment ← “InvoicingPro offers desktop and mobile invoicing apps with offline operation, cross-device synchronization, and a one-time payment with no subscription.”
+- Half of AI citations disappear the next day, and most return. ← “Half of AI citations disappear the next day, and most come back.”
 
 Proposed post (not published):
 
-> InvoicingPro offers offline desktop and mobile invoicing with one‑time payment. Test PDF export and offline sync before onboarding clients. https://invoicingpro.org/
+> Half of AI citations disappear the next day, and most return. Set a daily monitor; if a citation drops >50%, refresh the content. https://ahrefs.com/blog/how-stable-are-ai-citations/
 
-- Length: 165/280 raw characters
-- Automated gate: passed live source, evidence, originality, URL and length checks; live publishing is disabled in dry-run mode.
-
-### Draft option 2: nodemaven/google-browser-scraper
-
-- Category: marketing_and_distribution
-- Source: GitHub Search
-- Format: tool_discovery
-- Editorial score: 8.1/10
-- Model scores: timeliness 8/10, usefulness 8/10, novelty 7/10, evidence 9/10, insight 8/10
-- Independent editor scores: {"clarity_score": 8, "technical_coherence_score": 8, "takeaway_value_score": 7, "source_faithfulness_score": 9, "originality_score": 7, "reason": "Accurate description, practical advice, and source backing.", "passed": true}
-- Live primary page: https://github.com/nodemaven/google-browser-scraper (HTTP 200)
-- Exact source evidence: “Self-hosted Google search scraper for Python. Scrape Google SERP results with a real Chrome browser and your own residential proxy.”
-- Why this angle: Emphasizes deployment considerations for scraping.
-- Editorial takeaway: Verify proxy rotation and CAPTCHA handling before scaling.
-- Source: https://github.com/nodemaven/google-browser-scraper
-
-**Claim-by-claim source quotes:**
-
-- google-browser-scraper provides a self‑hosted Google SERP API using Chrome and residential proxies ← “Self-hosted Google search scraper for Python. Scrape Google SERP results with a real Chrome browser and your own residential proxy.”
-
-Proposed post (not published):
-
-> google-browser-scraper provides a self‑hosted Google SERP API using Chrome and residential proxies. Verify proxy rotation and CAPTCHA handling before scaling. https://github.com/nodemaven/google-browser-scraper
-
-- Length: 210/280 raw characters
+- Length: 182/280 raw characters
 - Automated gate: passed live source, evidence, originality, URL and length checks; live publishing is disabled in dry-run mode.
 
 ## Automatic repair attempt
@@ -132,16 +107,20 @@ Proposed post (not published):
 
 ## Rejected draft options
 
-- Show HN: zpq 0.5.0 – A zero-dependency Parquet engine in Zig: Primary-source evidence quote is missing or absent from the live page (after presentation normalisation); A factual claim lacks a quote present in the live primary-source page; Opening sentence is too close to the source headline; add a distinct editorial framing.; Factual sentence includes terms absent from the source title/summary: dependency, engine, write, zero
-  - Rejected text: zpq is a zero‑dependency Parquet engine written in Zig. Benchmark read/write against pyarrow to validate speed claims. https://github.com/chicagobuss/zpq
-  - Model evidence quote: “zero-dependency Parquet engine in Zig”
-  - Claim support: zpq is a zero‑dependency Parquet engine written in Zig ← “zero-dependency Parquet engine in Zig”
+- gotempsh/temps: The factual opening bundles multiple features; narrow it to one capability.
+  - Rejected text: temps offers 440+ CLI operations covering deployments, analytics, and error tracking. Run a deployment test and verify error logs appear to confirm end‑to‑end coverage. https://github.com/gotempsh/temps
+  - Model evidence quote: “440+ CLI operations with drop-in skills for Claude Code, Codex & OpenCode — deployments, analytics, session replay, error tracking, OpenTelemetry, email, sandboxes & AI gateway in one self-hosted Rust binary.”
+  - Claim support: temps offers 440+ CLI operations covering deployments, analytics, and error tracking. ← “440+ CLI operations with drop-in skills for Claude Code, Codex & OpenCode — deployments, analytics, session replay, error tracking, OpenTelemetry, email, sandboxes & AI gateway in one self-hosted Rust binary.”
+- kagura-ai/memory-cloud: Fact sentence is too long; narrow it to one source-backed capability.; Editorial takeaway is not specific enough to this candidate's technical/product details.
+  - Rejected text: memory‑cloud is a self‑hosted MCP server that learns from searches using hybrid search and a neural memory graph. Run the same query twice and compare result diversity to confirm learning. https://github.com/kagura-ai/memory-cloud
+  - Model evidence quote: “Self-hosted MCP server that gets smarter every time you search: hybrid search + a neural memory graph that learns.”
+  - Claim support: memory‑cloud is a self‑hosted MCP server that learns from searches using hybrid search and a neural memory graph. ← “Self-hosted MCP server that gets smarter every time you search: hybrid search + a neural memory graph that learns.”
 
 ## Top discovery candidates considered
 
-- Show HN: I don't understand why invoicing apps cost $10/month | Hacker News | product_and_workflow_tools | raw 64, adjusted 66 | https://invoicingpro.org/
-- Show HN: zpq 0.5.0 – A zero-dependency Parquet engine in Zig | Hacker News | product_and_workflow_tools | raw 63, adjusted 65 | https://github.com/chicagobuss/zpq
-- nodemaven/google-browser-scraper | GitHub Search | marketing_and_distribution | raw 68, adjusted 62 | current stars 100 | GitHub star trend: building baseline | https://github.com/nodemaven/google-browser-scraper
+- gotempsh/temps | GitHub Search | data_and_growth | raw 72, adjusted 66 | current stars 880 | GitHub star trend: building baseline | https://github.com/gotempsh/temps
+- kagura-ai/memory-cloud | GitHub Search | security_and_self_hosting | raw 66, adjusted 60 | current stars 13 | GitHub star trend: building baseline | https://github.com/kagura-ai/memory-cloud
+- How Stable Are AI Citations? 10 Things We Learned Tracking 37,500 Citations | Ahrefs Blog | data_and_growth | raw 60, adjusted 60 | https://ahrefs.com/blog/how-stable-are-ai-citations/
 
 ## Safety and interpretation
 

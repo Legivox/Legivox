@@ -1,38 +1,38 @@
 {
-  "generated_at_ist": "2026-10-30T14:04:43+05:30",
-  "run_at_ist": "2026-10-30T14:04:43+05:30",
+  "generated_at_ist": "2026-10-30T15:03:58+05:30",
+  "run_at_ist": "2026-10-30T15:03:58+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 315,
-  "eligible_candidate_count": 201,
+  "candidate_count_raw": 321,
+  "eligible_candidate_count": 206,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4817
+      "total_count": 4829
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1051
+      "total_count": 1052
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 362
+      "total_count": 361
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2927
+      "total_count": 2926
     },
     {
       "source": "GitHub Search · github-digital-product-tools",
@@ -46,28 +46,28 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 426
+      "total_count": 429
     },
     {
       "source": "GitHub Search · github-marketing-distribution",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 223
+      "total_count": 224
     },
     {
       "source": "GitHub Search · github-mcp-servers",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2123
+      "total_count": 2126
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3359
+      "total_count": 3365
     },
     {
       "source": "GitHub Search · github-seller-operations",
@@ -81,14 +81,14 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 132
+      "total_count": 133
     },
     {
       "source": "GitHub Search · github-workflow-automation",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 278
+      "total_count": 279
     },
     {
       "source": "Hacker News · hn-analytics-growth",
@@ -163,7 +163,7 @@
     {
       "source": "Hacker News · hn-shopify",
       "kind": "hacker_news",
-      "items_kept": 8,
+      "items_kept": 10,
       "status": "ok",
       "total_count": 10
     },
@@ -234,7 +234,7 @@
       "kind": "wordpress_plugin",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2979
+      "total_count": 2980
     },
     {
       "source": "WordPress Plugin Directory · wp-inventory-management",
@@ -255,81 +255,81 @@
       "kind": "wordpress_plugin",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2202
+      "total_count": 2207
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-30T08:34:43+00:00",
+    "observed_at_utc": "2026-10-30T09:33:58+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 108,
-    "previously_tracked_repositories_refreshed": 92,
+    "repositories_seen_in_discovery": 112,
+    "previously_tracked_repositories_refreshed": 88,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
-    "repositories_with_20_to_36_hour_baseline": 22,
+    "repositories_with_20_to_36_hour_baseline": 20,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "f9d0871849c1d61e",
-      "title": "Show HN: I don't understand why invoicing apps cost $10/month",
-      "source_url": "https://invoicingpro.org/",
+      "candidate_id": "301687e3d4a1ad4d",
+      "title": "gotempsh/temps",
+      "source_url": "https://github.com/gotempsh/temps",
       "verified": true,
-      "final_url": "https://invoicingpro.org/",
+      "final_url": "https://github.com/gotempsh/temps",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "3c5084079f08d141",
-      "title": "Show HN: zpq 0.5.0 – A zero-dependency Parquet engine in Zig",
-      "source_url": "https://github.com/chicagobuss/zpq",
+      "candidate_id": "dcd2e302e64fe5cb",
+      "title": "kagura-ai/memory-cloud",
+      "source_url": "https://github.com/kagura-ai/memory-cloud",
       "verified": true,
-      "final_url": "https://github.com/chicagobuss/zpq",
+      "final_url": "https://github.com/kagura-ai/memory-cloud",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "3fb118cb06ab05e6",
-      "title": "nodemaven/google-browser-scraper",
-      "source_url": "https://github.com/nodemaven/google-browser-scraper",
+      "candidate_id": "13fdacd2335eb2d8",
+      "title": "How Stable Are AI Citations? 10 Things We Learned Tracking 37,500 Citations",
+      "source_url": "https://ahrefs.com/blog/how-stable-are-ai-citations/",
       "verified": true,
-      "final_url": "https://github.com/nodemaven/google-browser-scraper",
+      "final_url": "https://ahrefs.com/blog/how-stable-are-ai-citations/",
       "http_status": 200,
       "reason": ""
     }
   ],
   "rejected_primary_sources": [],
   "daily_draft_cap": 16,
-  "daily_drafts_already_passed": 2,
+  "daily_drafts_already_passed": 3,
   "outcome": "dry_run_passed",
   "decision_reason": "At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.",
   "passing_drafts": [
     {
-      "candidate_id": "f9d0871849c1d61e",
-      "title": "Show HN: I don't understand why invoicing apps cost $10/month",
-      "source": "Hacker News",
-      "source_kind": "hacker_news",
-      "url": "https://invoicingpro.org/",
+      "candidate_id": "13fdacd2335eb2d8",
+      "title": "How Stable Are AI Citations? 10 Things We Learned Tracking 37,500 Citations",
+      "source": "Ahrefs Blog",
+      "source_kind": "rss",
+      "url": "https://ahrefs.com/blog/how-stable-are-ai-citations/",
       "primary_source_verified": true,
-      "primary_source_title": "InvoicingPro | Offline Invoicing for Desktop and Mobile",
-      "primary_source_final_url": "https://invoicingpro.org/",
+      "primary_source_title": "How Stable Are AI Citations? 10 Things We Learned Tracking 37,500 Citations",
+      "primary_source_final_url": "https://ahrefs.com/blog/how-stable-are-ai-citations/",
       "primary_source_http_status": 200,
-      "category": "product_and_workflow_tools",
-      "priority_score": 64,
-      "hourly_adjusted_score": 66,
-      "post_text": "InvoicingPro offers offline desktop and mobile invoicing with one‑time payment. Test PDF export and offline sync before onboarding clients. https://invoicingpro.org/",
-      "fact_sentence": "InvoicingPro offers offline desktop and mobile invoicing with one‑time payment.",
-      "format": "tool_discovery",
+      "category": "data_and_growth",
+      "priority_score": 60,
+      "hourly_adjusted_score": 60,
+      "post_text": "Half of AI citations disappear the next day, and most return. Set a daily monitor; if a citation drops >50%, refresh the content. https://ahrefs.com/blog/how-stable-are-ai-citations/",
+      "fact_sentence": "Half of AI citations disappear the next day, and most return.",
+      "format": "practical_workflow",
       "audience": "developers",
-      "angle": "practical_workflow",
-      "rationale": "Highlights key value proposition and a concrete validation step.",
-      "evidence_quote": "InvoicingPro offers desktop and mobile invoicing apps with offline operation, cross-device synchronization, and a one-time payment with no subscription.",
-      "editorial_takeaway": "Test PDF export and offline sync before onboarding clients.",
+      "angle": "content monitoring",
+      "rationale": "The article quantifies citation volatility, guiding a monitoring strategy.",
+      "evidence_quote": "Half of AI citations disappear the next day, and most come back.",
+      "editorial_takeaway": "Set a daily monitor; if a citation drops >50%, refresh the content.",
       "claim_evidence": [
         {
-          "claim": "InvoicingPro offers offline desktop and mobile invoicing with one‑time payment",
-          "quote": "InvoicingPro offers desktop and mobile invoicing apps with offline operation, cross-device synchronization, and a one-time payment with no subscription."
+          "claim": "Half of AI citations disappear the next day, and most return.",
+          "quote": "Half of AI citations disappear the next day, and most come back."
         }
       ],
       "scores": {
@@ -340,142 +340,107 @@
         "insight": 8
       },
       "editorial_score": 8.1,
-      "character_count": 165,
+      "character_count": 182,
       "status": "dry_run_passed_not_published",
       "published_to_x": false,
       "editorial_review": {
-        "clarity_score": 8,
-        "technical_coherence_score": 8,
-        "takeaway_value_score": 7,
+        "clarity_score": 9,
+        "technical_coherence_score": 9,
+        "takeaway_value_score": 8,
         "source_faithfulness_score": 9,
-        "originality_score": 7,
-        "reason": "Clear, supported claim with actionable takeaway.",
-        "passed": true
-      }
-    },
-    {
-      "candidate_id": "3fb118cb06ab05e6",
-      "title": "nodemaven/google-browser-scraper",
-      "source": "GitHub Search",
-      "source_kind": "github_repository",
-      "url": "https://github.com/nodemaven/google-browser-scraper",
-      "primary_source_verified": true,
-      "primary_source_title": "GitHub - nodemaven/google-browser-scraper: Self-hosted Google search scraper for Python. Scrape Google SERP results with a real Chrome browser and your own residential proxy. Self-hosted SERP API alternative with JSON output, an HTTP API and an MCP server for AI agents.",
-      "primary_source_final_url": "https://github.com/nodemaven/google-browser-scraper",
-      "primary_source_http_status": 200,
-      "category": "marketing_and_distribution",
-      "priority_score": 68,
-      "hourly_adjusted_score": 62,
-      "post_text": "google-browser-scraper provides a self‑hosted Google SERP API using Chrome and residential proxies. Verify proxy rotation and CAPTCHA handling before scaling. https://github.com/nodemaven/google-browser-scraper",
-      "fact_sentence": "google-browser-scraper provides a self‑hosted Google SERP API using Chrome and residential proxies.",
-      "format": "tool_discovery",
-      "audience": "developers",
-      "angle": "practical_workflow",
-      "rationale": "Emphasizes deployment considerations for scraping.",
-      "evidence_quote": "Self-hosted Google search scraper for Python. Scrape Google SERP results with a real Chrome browser and your own residential proxy.",
-      "editorial_takeaway": "Verify proxy rotation and CAPTCHA handling before scaling.",
-      "claim_evidence": [
-        {
-          "claim": "google-browser-scraper provides a self‑hosted Google SERP API using Chrome and residential proxies",
-          "quote": "Self-hosted Google search scraper for Python. Scrape Google SERP results with a real Chrome browser and your own residential proxy."
-        }
-      ],
-      "scores": {
-        "timeliness": 8,
-        "usefulness": 8,
-        "novelty": 7,
-        "evidence": 9,
-        "insight": 8
-      },
-      "editorial_score": 8.1,
-      "character_count": 210,
-      "status": "dry_run_passed_not_published",
-      "published_to_x": false,
-      "editorial_review": {
-        "clarity_score": 8,
-        "technical_coherence_score": 8,
-        "takeaway_value_score": 7,
-        "source_faithfulness_score": 9,
-        "originality_score": 7,
-        "reason": "Accurate description, practical advice, and source backing.",
+        "originality_score": 8,
+        "reason": "Clear, coherent, faithful to source, and offers a concrete monitoring recommendation.",
         "passed": true
       }
     }
   ],
   "rejected_drafts": [
     {
-      "candidate_id": "3c5084079f08d141",
-      "title": "Show HN: zpq 0.5.0 – A zero-dependency Parquet engine in Zig",
+      "candidate_id": "301687e3d4a1ad4d",
+      "title": "gotempsh/temps",
       "reasons": [
-        "Primary-source evidence quote is missing or absent from the live page (after presentation normalisation)",
-        "A factual claim lacks a quote present in the live primary-source page",
-        "Opening sentence is too close to the source headline; add a distinct editorial framing.",
-        "Factual sentence includes terms absent from the source title/summary: dependency, engine, write, zero"
+        "The factual opening bundles multiple features; narrow it to one capability."
       ],
-      "proposed_text": "zpq is a zero‑dependency Parquet engine written in Zig. Benchmark read/write against pyarrow to validate speed claims. https://github.com/chicagobuss/zpq",
-      "evidence_quote": "zero-dependency Parquet engine in Zig",
+      "proposed_text": "temps offers 440+ CLI operations covering deployments, analytics, and error tracking. Run a deployment test and verify error logs appear to confirm end‑to‑end coverage. https://github.com/gotempsh/temps",
+      "evidence_quote": "440+ CLI operations with drop-in skills for Claude Code, Codex & OpenCode — deployments, analytics, session replay, error tracking, OpenTelemetry, email, sandboxes & AI gateway in one self-hosted Rust binary.",
       "claim_evidence": [
         {
-          "claim": "zpq is a zero‑dependency Parquet engine written in Zig",
-          "quote": "zero-dependency Parquet engine in Zig"
+          "claim": "temps offers 440+ CLI operations covering deployments, analytics, and error tracking.",
+          "quote": "440+ CLI operations with drop-in skills for Claude Code, Codex & OpenCode — deployments, analytics, session replay, error tracking, OpenTelemetry, email, sandboxes & AI gateway in one self-hosted Rust binary."
+        }
+      ]
+    },
+    {
+      "candidate_id": "dcd2e302e64fe5cb",
+      "title": "kagura-ai/memory-cloud",
+      "reasons": [
+        "Fact sentence is too long; narrow it to one source-backed capability.",
+        "Editorial takeaway is not specific enough to this candidate's technical/product details."
+      ],
+      "proposed_text": "memory‑cloud is a self‑hosted MCP server that learns from searches using hybrid search and a neural memory graph. Run the same query twice and compare result diversity to confirm learning. https://github.com/kagura-ai/memory-cloud",
+      "evidence_quote": "Self-hosted MCP server that gets smarter every time you search: hybrid search + a neural memory graph that learns.",
+      "claim_evidence": [
+        {
+          "claim": "memory‑cloud is a self‑hosted MCP server that learns from searches using hybrid search and a neural memory graph.",
+          "quote": "Self-hosted MCP server that gets smarter every time you search: hybrid search + a neural memory graph that learns."
         }
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "f9d0871849c1d61e",
-      "title": "Show HN: I don't understand why invoicing apps cost $10/month",
-      "url": "https://invoicingpro.org/",
-      "source": "Hacker News",
-      "primary_category": "product_and_workflow_tools",
-      "priority_score": 64,
-      "hourly_adjusted_score": 66,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-30T08:02:33+00:00",
-      "days_old": 0.02,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "3c5084079f08d141",
-      "title": "Show HN: zpq 0.5.0 – A zero-dependency Parquet engine in Zig",
-      "url": "https://github.com/chicagobuss/zpq",
-      "source": "Hacker News",
-      "primary_category": "product_and_workflow_tools",
-      "priority_score": 63,
-      "hourly_adjusted_score": 65,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-30T08:05:36+00:00",
-      "days_old": 0.02,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "3fb118cb06ab05e6",
-      "title": "nodemaven/google-browser-scraper",
-      "url": "https://github.com/nodemaven/google-browser-scraper",
+      "id": "301687e3d4a1ad4d",
+      "title": "gotempsh/temps",
+      "url": "https://github.com/gotempsh/temps",
       "source": "GitHub Search",
-      "primary_category": "marketing_and_distribution",
-      "priority_score": 68,
-      "hourly_adjusted_score": 62,
-      "stars_current": 100,
+      "primary_category": "data_and_growth",
+      "priority_score": 72,
+      "hourly_adjusted_score": 66,
+      "stars_current": 880,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "insufficient_history",
-      "published_at": "2026-10-30T08:17:23+00:00",
-      "days_old": 0.01,
+      "published_at": "2026-10-30T09:34:20+00:00",
+      "days_old": 0.0,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "dcd2e302e64fe5cb",
+      "title": "kagura-ai/memory-cloud",
+      "url": "https://github.com/kagura-ai/memory-cloud",
+      "source": "GitHub Search",
+      "primary_category": "security_and_self_hosting",
+      "priority_score": 66,
+      "hourly_adjusted_score": 60,
+      "stars_current": 13,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "insufficient_history",
+      "published_at": "2026-10-30T09:34:24+00:00",
+      "days_old": 0.0,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "13fdacd2335eb2d8",
+      "title": "How Stable Are AI Citations? 10 Things We Learned Tracking 37,500 Citations",
+      "url": "https://ahrefs.com/blog/how-stable-are-ai-citations/",
+      "source": "Ahrefs Blog",
+      "primary_category": "data_and_growth",
+      "priority_score": 60,
+      "hourly_adjusted_score": 60,
+      "stars_current": null,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-29T13:25:17+00:00",
+      "days_old": 0.84,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
@@ -492,39 +457,39 @@
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 2,
-    "submitted_for_independent_review": 2,
-    "passed_independent_review": 2,
+    "locally_valid_drafts": 1,
+    "submitted_for_independent_review": 1,
+    "passed_independent_review": 1,
     "rejected_by_independent_review": 0,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
   "recommended_draft": {
-    "candidate_id": "f9d0871849c1d61e",
-    "title": "Show HN: I don't understand why invoicing apps cost $10/month",
-    "source": "Hacker News",
-    "source_kind": "hacker_news",
-    "url": "https://invoicingpro.org/",
+    "candidate_id": "13fdacd2335eb2d8",
+    "title": "How Stable Are AI Citations? 10 Things We Learned Tracking 37,500 Citations",
+    "source": "Ahrefs Blog",
+    "source_kind": "rss",
+    "url": "https://ahrefs.com/blog/how-stable-are-ai-citations/",
     "primary_source_verified": true,
-    "primary_source_title": "InvoicingPro | Offline Invoicing for Desktop and Mobile",
-    "primary_source_final_url": "https://invoicingpro.org/",
+    "primary_source_title": "How Stable Are AI Citations? 10 Things We Learned Tracking 37,500 Citations",
+    "primary_source_final_url": "https://ahrefs.com/blog/how-stable-are-ai-citations/",
     "primary_source_http_status": 200,
-    "category": "product_and_workflow_tools",
-    "priority_score": 64,
-    "hourly_adjusted_score": 66,
-    "post_text": "InvoicingPro offers offline desktop and mobile invoicing with one‑time payment. Test PDF export and offline sync before onboarding clients. https://invoicingpro.org/",
-    "fact_sentence": "InvoicingPro offers offline desktop and mobile invoicing with one‑time payment.",
-    "format": "tool_discovery",
+    "category": "data_and_growth",
+    "priority_score": 60,
+    "hourly_adjusted_score": 60,
+    "post_text": "Half of AI citations disappear the next day, and most return. Set a daily monitor; if a citation drops >50%, refresh the content. https://ahrefs.com/blog/how-stable-are-ai-citations/",
+    "fact_sentence": "Half of AI citations disappear the next day, and most return.",
+    "format": "practical_workflow",
     "audience": "developers",
-    "angle": "practical_workflow",
-    "rationale": "Highlights key value proposition and a concrete validation step.",
-    "evidence_quote": "InvoicingPro offers desktop and mobile invoicing apps with offline operation, cross-device synchronization, and a one-time payment with no subscription.",
-    "editorial_takeaway": "Test PDF export and offline sync before onboarding clients.",
+    "angle": "content monitoring",
+    "rationale": "The article quantifies citation volatility, guiding a monitoring strategy.",
+    "evidence_quote": "Half of AI citations disappear the next day, and most come back.",
+    "editorial_takeaway": "Set a daily monitor; if a citation drops >50%, refresh the content.",
     "claim_evidence": [
       {
-        "claim": "InvoicingPro offers offline desktop and mobile invoicing with one‑time payment",
-        "quote": "InvoicingPro offers desktop and mobile invoicing apps with offline operation, cross-device synchronization, and a one-time payment with no subscription."
+        "claim": "Half of AI citations disappear the next day, and most return.",
+        "quote": "Half of AI citations disappear the next day, and most come back."
       }
     ],
     "scores": {
@@ -535,22 +500,22 @@
       "insight": 8
     },
     "editorial_score": 8.1,
-    "character_count": 165,
+    "character_count": 182,
     "status": "dry_run_passed_not_published",
     "published_to_x": false,
     "editorial_review": {
-      "clarity_score": 8,
-      "technical_coherence_score": 8,
-      "takeaway_value_score": 7,
+      "clarity_score": 9,
+      "technical_coherence_score": 9,
+      "takeaway_value_score": 8,
       "source_faithfulness_score": 9,
-      "originality_score": 7,
-      "reason": "Clear, supported claim with actionable takeaway.",
+      "originality_score": 8,
+      "reason": "Clear, coherent, faithful to source, and offers a concrete monitoring recommendation.",
       "passed": true
     }
   },
   "state_summary": {
-    "used_candidates_in_cooldown": 28,
-    "recently_attempted_candidates": 21,
-    "recent_draft_passes_today": 3
+    "used_candidates_in_cooldown": 29,
+    "recently_attempted_candidates": 24,
+    "recent_draft_passes_today": 4
   }
 }
