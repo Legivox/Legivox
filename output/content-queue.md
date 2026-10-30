@@ -1,23 +1,23 @@
 # Legivox daily content plan
 
-Prepared: 2026-10-30 15:47:09 IST
+Prepared: 2026-10-30 19:56:41 IST
 
 > This scheduled post came from a fresh multidomain discovery report, passed primary-source and deterministic evidence checks, and passed an independent editorial review. The star-history baseline is a trend signal, not proof of market demand.
 
-## Post 1 · multidomain-13fdacd2335eb2d8
+## Post 1 · multidomain-88d7f9fdb7ad2ae1
 
 **Planned copy**
 
-Half of AI citations disappear the next day, and most return. Set a daily monitor; if a citation drops >50%, refresh the content. https://ahrefs.com/blog/how-stable-are-ai-citations/
+Ocel’s CLI deploys apps to AWS, GCP or VPS without separate IaC files. Run a pre‑deploy test that compiles infra code to catch missing dependencies. https://github.com/ocelhq/ocel
 
-- Topic: data_and_growth
-- Editorial score (model estimate): 8.1
+- Topic: product_and_workflow_tools
+- Editorial score (model estimate): 8.65
 
 **Source article**
 
-- [How Stable Are AI Citations? 10 Things We Learned Tracking 37,500 Citations](https://ahrefs.com/blog/how-stable-are-ai-citations/)
+- [Show HN: Ocel – Deploy apps to your AWS,GCP or VPS with infra from code](https://github.com/ocelhq/ocel)
 
-- Status: published: https://x.com/i/status/2116112169901384082
+- Status: published: https://x.com/i/status/2116174967855579200
 
 ## Media policy
 
