@@ -1,39 +1,39 @@
 {
   "date_ist": "2026-10-30",
-  "prepared_at_ist": "2026-10-30 14:51:09 IST",
+  "prepared_at_ist": "2026-10-30 15:47:09 IST",
   "research_window_days": 1,
   "research_source": "Multidomain discovery + independent editorial review",
-  "source_report_generated_at_ist": "2026-10-30T14:04:43+05:30",
-  "source_report_age_minutes": 46,
-  "star_baseline_repositories": 22,
+  "source_report_generated_at_ist": "2026-10-30T15:03:58+05:30",
+  "source_report_age_minutes": 43,
+  "star_baseline_repositories": 20,
   "posts": [
     {
-      "idea_id": "multidomain-f9d0871849c1d61e",
-      "niche": "product_and_workflow_tools",
-      "problem": "Show HN: I don't understand why invoicing apps cost $10/month",
-      "evidence": "Primary source verified (HTTP 200): https://invoicingpro.org/. Exact evidence: InvoicingPro offers desktop and mobile invoicing apps with offline operation, cross-device synchronization, and a one-time payment with no subscription.",
-      "solution_hypothesis": "Test PDF export and offline sync before onboarding clients.",
-      "text": "InvoicingPro offers offline desktop and mobile invoicing with one‑time payment. Test PDF export and offline sync before onboarding clients. https://invoicingpro.org/",
-      "text_hash": "be17343dbd65ee9f31648c53a2afd2955285d23b0fc4d5c1184dc7a6456e5160",
+      "idea_id": "multidomain-13fdacd2335eb2d8",
+      "niche": "data_and_growth",
+      "problem": "How Stable Are AI Citations? 10 Things We Learned Tracking 37,500 Citations",
+      "evidence": "Primary source verified (HTTP 200): https://ahrefs.com/blog/how-stable-are-ai-citations/. Exact evidence: Half of AI citations disappear the next day, and most come back.",
+      "solution_hypothesis": "Set a daily monitor; if a citation drops >50%, refresh the content.",
+      "text": "Half of AI citations disappear the next day, and most return. Set a daily monitor; if a citation drops >50%, refresh the content. https://ahrefs.com/blog/how-stable-are-ai-citations/",
+      "text_hash": "b5cb44e3a80b7f21f2bbbc86d306c06f9338bef7a6efdabe0b80f583bb2cb1d6",
       "image_query": "",
       "research": {
         "query": "Multidomain primary-source discovery and independent editorial review",
         "score": 8.1,
         "hits": [
           {
-            "title": "Show HN: I don't understand why invoicing apps cost $10/month",
-            "url": "https://invoicingpro.org/",
-            "external_url": "https://invoicingpro.org/",
+            "title": "How Stable Are AI Citations? 10 Things We Learned Tracking 37,500 Citations",
+            "url": "https://ahrefs.com/blog/how-stable-are-ai-citations/",
+            "external_url": "https://ahrefs.com/blog/how-stable-are-ai-citations/",
             "points": 0,
             "comments": 0,
-            "created_at": "2026-10-30T14:04:43+05:30",
+            "created_at": "2026-10-30T15:03:58+05:30",
             "matched_terms": []
           }
         ],
         "error": null
       },
-      "status": "published: https://x.com/i/status/2116098076557672545",
-      "slot": 0,
+      "status": "published: https://x.com/i/status/2116112169901384082",
+      "slot": 1,
       "editorial_scores": {
         "model": {
           "timeliness": 8,
@@ -44,17 +44,17 @@
         },
         "overall": 8.1,
         "independent_review": {
-          "clarity_score": 8,
-          "technical_coherence_score": 8,
-          "takeaway_value_score": 7,
+          "clarity_score": 9,
+          "technical_coherence_score": 9,
+          "takeaway_value_score": 8,
           "source_faithfulness_score": 9,
-          "originality_score": 7,
-          "reason": "Clear, supported claim with actionable takeaway.",
+          "originality_score": 8,
+          "reason": "Clear, coherent, faithful to source, and offers a concrete monitoring recommendation.",
           "passed": true
         }
       },
-      "published_at_ist": "2026-10-30T14:51:11+05:30",
-      "published_url": "https://x.com/i/status/2116098076557672545",
+      "published_at_ist": "2026-10-30T15:47:11+05:30",
+      "published_url": "https://x.com/i/status/2116112169901384082",
       "image": null
     }
   ]

@@ -1,23 +1,23 @@
 # Legivox daily content plan
 
-Prepared: 2026-10-30 14:51:09 IST
+Prepared: 2026-10-30 15:47:09 IST
 
 > This scheduled post came from a fresh multidomain discovery report, passed primary-source and deterministic evidence checks, and passed an independent editorial review. The star-history baseline is a trend signal, not proof of market demand.
 
-## Post 1 · multidomain-f9d0871849c1d61e
+## Post 1 · multidomain-13fdacd2335eb2d8
 
 **Planned copy**
 
-InvoicingPro offers offline desktop and mobile invoicing with one‑time payment. Test PDF export and offline sync before onboarding clients. https://invoicingpro.org/
+Half of AI citations disappear the next day, and most return. Set a daily monitor; if a citation drops >50%, refresh the content. https://ahrefs.com/blog/how-stable-are-ai-citations/
 
-- Topic: product_and_workflow_tools
+- Topic: data_and_growth
 - Editorial score (model estimate): 8.1
 
 **Source article**
 
-- [Show HN: I don't understand why invoicing apps cost $10/month](https://invoicingpro.org/)
+- [How Stable Are AI Citations? 10 Things We Learned Tracking 37,500 Citations](https://ahrefs.com/blog/how-stable-are-ai-citations/)
 
-- Status: published: https://x.com/i/status/2116098076557672545
+- Status: published: https://x.com/i/status/2116112169901384082
 
 ## Media policy
 
