@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-30T09:57:48+05:30
+- Run time (IST): 2026-10-30T10:55:18+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 204
-- Independent editorial review: 1 draft(s) passed / 1 rejected
-- Drafts passing local checks: 1
-- Outcome: **dry_run_passed**
-- Decision reason: At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.
+- Candidate pool after freshness/diversity filters: 202
+- Independent editorial review: 0 draft(s) passed / 1 rejected
+- Drafts passing local checks: 0
+- Outcome: **skip**
+- Decision reason: Every draft submitted for independent editorial review was rejected; The hour was skipped.
 
 ## Source health
 
@@ -40,7 +40,7 @@
 | Ahrefs Blog | 7 | ok |
 | Console.dev | 11 | ok |
 | Indie Hackers (unofficial third-party feed) | 5 | ok |
-| Product Hunt | 38 | ok |
+| Product Hunt | 40 | ok |
 | Shopify Community | 30 | ok |
 | Shopify Developer Changelog | 31 | ok |
 | Stripe Blog | 2 | ok |
@@ -54,8 +54,8 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 108
-- Previously tracked repositories refreshed outside search results: 92
+- Repositories seen in this discovery run: 113
+- Previously tracked repositories refreshed outside search results: 87
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
 - Repositories with a 20–36 hour comparison baseline: 18
@@ -65,70 +65,48 @@
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| marcusquinn/aidevops | yes | 200 | https://github.com/marcusquinn/aidevops |
-| soma-intelligence/open-health-sync | yes | 200 | https://github.com/soma-intelligence/open-health-sync |
-| Shopify App Pricing: Plan Feature Targeting | yes | 200 | https://shopify.dev/changelog/posts/plan-feature-targeting |
+| Show HN: Lasm – Write formally verified webapps in Lean for Node/serverless/edge | yes | 200 | https://github.com/Millillion/lasm |
+| First sign-ins to customer accounts now set Customer.state and send customers/enable webhooks | yes | 200 | https://shopify.dev/changelog/posts/first-sign-ins-to-new-customer-accounts-now-set-customer-state-and-send-customers-enable |
+| Introducing theme app add-ons: Build and bundle apps with your themes | yes | 200 | https://shopify.dev/changelog/posts/introducing-theme-app-add-ons-build-and-bundle-apps-with-your-themes |
 
 ## Selected draft candidates
 
-### Draft option 1: soma-intelligence/open-health-sync
-
-- Category: ai_and_automation
-- Source: GitHub Search
-- Format: short
-- Editorial score: 8.8/10
-- Model scores: timeliness 8/10, usefulness 9/10, novelty 7/10, evidence 10/10, insight 9/10
-- Independent editor scores: {"clarity_score": 9, "technical_coherence_score": 9, "takeaway_value_score": 8, "source_faithfulness_score": 9, "originality_score": 8, "reason": "Clear, accurate, and adds a useful webhook tip.", "passed": true}
-- Live primary page: https://github.com/soma-intelligence/open-health-sync (HTTP 200)
-- Exact source evidence: “One API for wearable data from Apple Health, Health Connect, Oura, WHOOP, Withings, Fitbit, Dexcom and more: REST, FHIR R4, Ope...”
-- Why this angle: The source explicitly lists webhooks as a supported feature, enabling real‑time data ingestion. This concrete action is a practical next step for developers building on the API.
-- Editorial takeaway: Configure webhooks to receive real‑time updates when new data arrives.
-- Source: https://github.com/soma-intelligence/open-health-sync
-
-**Claim-by-claim source quotes:**
-
-- open-health-sync aggregates wearable data via a single REST/FHIR R4 API. ← “One API for wearable data from Apple Health, Health Connect, Oura, WHOOP, Withings, Fitbit, Dexcom and more: REST, FHIR R4, Ope...”
-
-Proposed post (not published):
-
-> open-health-sync aggregates wearable data via a single REST/FHIR R4 API. Configure webhooks to receive real‑time updates when new data arrives. https://github.com/soma-intelligence/open-health-sync
-
-- Length: 197/280 raw characters
-- Automated gate: passed live source, evidence, originality, URL and length checks; live publishing is disabled in dry-run mode.
+No draft cleared the complete local and independent-editor gate. See the decision reason and rejected-draft section for locally valid drafts that were rejected, not reviewed, or blocked by a review error.
 
 ## Automatic repair attempt
 
 - Attempted: yes
 - Repaired drafts submitted: 1
-- Repaired drafts that passed local validation: 1
-- Repaired drafts rejected: 0
+- Repaired drafts that passed local validation: 0
+- Repaired drafts rejected: 1
 - Repair error: none
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
-- marcusquinn/aidevops: Supporting quotes cover only 60% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: aidevops offers a CLI and API stack for Git token‑efficient AI agent automation. Run a token‑budget test to confirm cost‑efficiency before scaling. https://github.com/marcusquinn/aidevops
-  - Model evidence quote: “GitHub - marcusquinn/aidevops: Vibe-Coding is easy. DevOps is hard. OpenCode & Git token-efficient AI agent automation for your app, business, and personal development.”
-  - Claim support: aidevops offers a CLI and API stack for Git token‑efficient AI agent automation ← “GitHub - marcusquinn/aidevops: Vibe-Coding is easy. DevOps is hard. OpenCode & Git token-efficient AI agent automation for your app, business, and personal development.”
-- Unmapped model draft: Model omitted a valid candidate ID and no exact verified source URL matched.
-- Unmapped model draft: Model omitted a valid candidate ID and no exact verified source URL matched.
-- Shopify App Pricing: Plan Feature Targeting: A supporting quote does not share enough wording with its stated claim; Supporting quotes cover only 38% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: Shopify now lets app plans require checkout UI extensions or branding customizations. Add a pre‑checkout test to verify required extensions block plan selection. https://shopify.dev/changelog/posts/plan-feature-targeting
-  - Model evidence quote: “You can now add store requirements to public plans in Shopify App Pricing. A merchant whose store does not have a required feature cannot subscribe to that plan.”
-  - Claim support: Shopify now lets app plans require checkout UI extensions or branding customizations ← “You can now add store requirements to public plans in Shopify App Pricing. A merchant whose store does not have a required feature cannot subscribe to that plan.”
-- soma-intelligence/open-health-sync: Takeaway about validating consistency is not supported by the source and adds no new insight.
-  - Rejected text: open-health-sync aggregates wearable data via a single REST/FHIR R4 API. Validate data consistency across Apple Health and Fitbit before deployment. https://github.com/soma-intelligence/open-health-sync
+- Show HN: Lasm – Write formally verified webapps in Lean for Node/serverless/edge: Supporting quotes cover only 57% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: Lasm compiles Lean code to JavaScript and WebAssembly runtimes. Run the generated wasm in a browser to confirm runtime compatibility. https://github.com/Millillion/lasm
+  - Model evidence quote: “Lean for JavaScript and WebAssembly runtimes”
+  - Claim support: Lasm compiles Lean code to JavaScript and WebAssembly runtimes ← “Lean for JavaScript and WebAssembly runtimes”
+- First sign-ins to customer accounts now set Customer.state and send customers/enable webhooks: Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.; Opening sentence is too close to the source headline; add a distinct editorial framing.
+  - Rejected text: First customer sign‑ins set Customer.state to ENABLED and fire customers/enable webhook. Check webhook payload for state=ENABLED after a new sign‑in. https://shopify.dev/changelog/posts/first-sign-ins-to-new-customer-accounts-now-set-customer-state-and-send-customers-enable
+  - Model evidence quote: “sets Customer.state to ENABLED”
+  - Claim support: First customer sign‑ins set Customer.state to ENABLED and fire customers/enable webhook ← “sets Customer.state to ENABLED”
+- Introducing theme app add-ons: Build and bundle apps with your themes: The post repeats the headline and basic fact without adding new insight or actionable detail beyond what the source already states.
+  - Rejected text: Theme app add‑ons let you bundle storefront apps as theme extensions. Add the app block to a theme and verify it appears in the editor. https://shopify.dev/changelog/posts/introducing-theme-app-add-ons-build-and-bundle-apps-with-your-themes
+- Introducing theme app add-ons: Build and bundle apps with your themes: Editorial takeaway is too long; keep the analysis concrete and concise.; Unsupported strong claim: only
+  - Rejected text: Apps must be published before adding them as theme app add‑ons. Add a theme app only after its app listing is live; otherwise the theme will not pass review. https://shopify.dev/changelog/posts/introducing-theme-app-add-ons-build-and-bundle-apps-with-your-themes
+  - Model evidence quote: “Apps must be published before added to a theme listing”
 
 ## Top discovery candidates considered
 
-- marcusquinn/aidevops | GitHub Search | ai_and_automation | raw 72, adjusted 76 | current stars 423 | GitHub star trend: building baseline | https://github.com/marcusquinn/aidevops
-- soma-intelligence/open-health-sync | GitHub Search | ai_and_automation | raw 72, adjusted 76 | current stars 54 | GitHub star trend: building baseline | https://github.com/soma-intelligence/open-health-sync
-- Shopify App Pricing: Plan Feature Targeting | Shopify Developer Changelog | commerce_and_digital_products | raw 71, adjusted 71 | https://shopify.dev/changelog/posts/plan-feature-targeting
+- Show HN: Lasm – Write formally verified webapps in Lean for Node/serverless/edge | Hacker News | product_and_workflow_tools | raw 69, adjusted 71 | https://github.com/Millillion/lasm
+- First sign-ins to customer accounts now set Customer.state and send customers/enable webhooks | Shopify Developer Changelog | commerce_and_digital_products | raw 68, adjusted 68 | https://shopify.dev/changelog/posts/first-sign-ins-to-new-customer-accounts-now-set-customer-state-and-send-customers-enable
+- Introducing theme app add-ons: Build and bundle apps with your themes | Shopify Developer Changelog | commerce_and_digital_products | raw 68, adjusted 68 | https://shopify.dev/changelog/posts/introducing-theme-app-add-ons-build-and-bundle-apps-with-your-themes
 
 ## Safety and interpretation
 
-- At least one draft passed the automated quality gates; this dry-run workflow itself never publishes to X.
+- This run did not produce a publishable draft; no post was published to X.
 - Model scores are editorial estimates; they are not verified popularity or market demand.
 - Candidate content and metadata are untrusted input. Factual copy must be supported by the fetched primary page.
 - A skip can mean no fresh candidates, a daily diversity/cap limit, a model/API problem or weak drafts. Check the reason above.
