@@ -1,38 +1,38 @@
 {
-  "generated_at_ist": "2026-10-30T15:59:47+05:30",
-  "run_at_ist": "2026-10-30T15:59:47+05:30",
+  "generated_at_ist": "2026-10-30T16:50:07+05:30",
+  "run_at_ist": "2026-10-30T16:50:07+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 312,
-  "eligible_candidate_count": 197,
+  "candidate_count_raw": 313,
+  "eligible_candidate_count": 204,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4838
+      "total_count": 4843
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1051
+      "total_count": 1050
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 362
+      "total_count": 372
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2909
+      "total_count": 2913
     },
     {
       "source": "GitHub Search · github-digital-product-tools",
@@ -46,7 +46,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 431
+      "total_count": 432
     },
     {
       "source": "GitHub Search · github-marketing-distribution",
@@ -60,7 +60,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2130
+      "total_count": 2134
     },
     {
       "source": "GitHub Search · github-self-hosted",
@@ -74,21 +74,21 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 353
+      "total_count": 357
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 133
+      "total_count": 136
     },
     {
       "source": "GitHub Search · github-workflow-automation",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 280
+      "total_count": 278
     },
     {
       "source": "Hacker News · hn-analytics-growth",
@@ -163,7 +163,7 @@
     {
       "source": "Hacker News · hn-shopify",
       "kind": "hacker_news",
-      "items_kept": 10,
+      "items_kept": 8,
       "status": "ok",
       "total_count": 10
     },
@@ -259,10 +259,10 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-30T10:29:47+00:00",
+    "observed_at_utc": "2026-10-30T11:20:07+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 106,
-    "previously_tracked_repositories_refreshed": 94,
+    "repositories_seen_in_discovery": 109,
+    "previously_tracked_repositories_refreshed": 91,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
@@ -272,29 +272,29 @@
   },
   "primary_source_checks": [
     {
-      "candidate_id": "769635c4c0589719",
-      "title": "IHUI-INF-AI/IHUI-AI",
-      "source_url": "https://github.com/IHUI-INF-AI/IHUI-AI",
+      "candidate_id": "b0371d8195b41df4",
+      "title": "IamRamgarhia/All-In-One-Free-SEO-Tool",
+      "source_url": "https://github.com/IamRamgarhia/All-In-One-Free-SEO-Tool",
       "verified": true,
-      "final_url": "https://github.com/IHUI-INF-AI/IHUI-AI",
+      "final_url": "https://github.com/IamRamgarhia/All-In-One-Free-SEO-Tool",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "ffa11117b00b8006",
-      "title": "crbnos/carbon",
-      "source_url": "https://github.com/crbnos/carbon",
+      "candidate_id": "9c03e3a3ead4de1b",
+      "title": "Telemetry-Tracker/telemetry-tracker",
+      "source_url": "https://github.com/Telemetry-Tracker/telemetry-tracker",
       "verified": true,
-      "final_url": "https://github.com/crbnos/carbon",
+      "final_url": "https://github.com/Telemetry-Tracker/telemetry-tracker",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "fe106ba546c5c606",
-      "title": "Promoted Placements beta now includes Shop Campaigns",
-      "source_url": "https://shopify.dev/changelog/promoted-placements-beta-now-includes-shop-campaigns",
+      "candidate_id": "6c933a0a7009a87b",
+      "title": "Security update: Offline token dates, new security features",
+      "source_url": "https://shopify.dev/changelog/app-security-updates-october-2026",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns",
+      "final_url": "https://shopify.dev/changelog/blog/app-security-updates-october-2026",
       "http_status": 200,
       "reason": ""
     }
@@ -303,121 +303,134 @@
   "daily_draft_cap": 16,
   "daily_drafts_already_passed": 4,
   "outcome": "skip",
-  "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
+  "decision_reason": "No draft cleared the complete automatic quality gate; independent editorial review failed closed. Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi",
   "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "ffa11117b00b8006",
-      "title": "crbnos/carbon",
-      "reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability."
-      ],
-      "proposed_text": "Carbon stores MRP, inventory, shop floor, quality, and lot/serial traceability in one Postgres schema. Run the provided migration to verify traceability tables exist before enabling production. https://github.com/crbnos/carbon",
-      "evidence_quote": "Quoting, MRP, inventory, shop floor, quality and lot/serial traceability on one Postgres schema",
-      "claim_evidence": [
-        {
-          "claim": "Carbon stores MRP, inventory, shop floor, quality, and lot/serial traceability in one Postgres schema",
-          "quote": "Quoting, MRP, inventory, shop floor, quality and lot/serial traceability on one Postgres schema"
-        }
-      ]
-    },
-    {
-      "candidate_id": "fe106ba546c5c606",
-      "title": "Promoted Placements beta now includes Shop Campaigns",
-      "reasons": [
-        "Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.",
-        "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "Fact plus takeaway exceeds the per-link character budget.",
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
-        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
-        "Draft is 312 raw characters; limit is 280",
-        "Primary-source evidence quote is missing or absent from the live page (after presentation normalisation)",
-        "A factual claim lacks a quote present in the live primary-source page",
-        "Supporting quotes cover only 64% of factual wording; narrow the claim or provide a closer primary-source quote"
-      ],
-      "proposed_text": "Promoted Placements beta now includes Shop Campaigns, adding merchant commission to the base rate. Include catalog_id in search_catalog calls and read placement.commission.percentage.value for accurate commission reporting. https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns",
-      "evidence_quote": "When a search_catalog result comes from a merchant running Shop Campaigns, you earn the commission that merchant funds, added to Shopify's base rate",
-      "claim_evidence": [
-        {
-          "claim": "Promoted Placements beta now includes Shop Campaigns, adding merchant commission to the base rate",
-          "quote": "When a search_catalog result comes from a merchant running Shop Campaigns, you earn the commission that merchant funds, added to Shopify's base rate"
-        }
-      ]
-    },
-    {
-      "candidate_id": "769635c4c0589719",
-      "title": "IHUI-INF-AI/IHUI-AI",
-      "proposed_text": "IHUI-AI unifies 176 LLMs via LangGraph + MCP + A2A. Run a sample LangGraph agent to confirm cross‑model routing works before production. https://github.com/IHUI-INF-AI/IHUI-AI",
-      "reasons": [
-        "Title is a repo path, not a clear product name; clarity below threshold. All other scores meet minimums, but pass requires all ≥7."
-      ],
-      "editorial_review": {
-        "clarity_score": 4,
-        "technical_coherence_score": 8,
-        "takeaway_value_score": 7,
-        "source_faithfulness_score": 8,
-        "originality_score": 7
-      }
-    },
-    {
-      "candidate_id": "769635c4c0589719",
-      "title": "IHUI-INF-AI/IHUI-AI",
+      "candidate_id": "b0371d8195b41df4",
+      "title": "IamRamgarhia/All-In-One-Free-SEO-Tool",
       "reasons": [
         "The factual opening bundles multiple features; narrow it to one capability.",
-        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "Fact sentence is too long; narrow it to one source-backed capability.",
+        "Supporting quotes cover only 60% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ],
+      "proposed_text": "All‑In‑One‑Free‑SEO‑Tool provides 99 SEO tools, including site audits, rank tracking, and AI search visibility. Run a site audit and verify the agent auto‑applies fixes before publishing. https://github.com/IamRamgarhia/All-In-One-Free-SEO-Tool",
+      "evidence_quote": "99 tools: site audits, rank tracking, keyword research, AI search visibility",
+      "claim_evidence": [
+        {
+          "claim": "All‑In‑One‑Free‑SEO‑Tool provides 99 SEO tools, including site audits, rank tracking, and AI search visibility.",
+          "quote": "99 tools: site audits, rank tracking, keyword research, AI search visibility"
+        }
+      ]
+    },
+    {
+      "candidate_id": "9c03e3a3ead4de1b",
+      "title": "Telemetry-Tracker/telemetry-tracker",
+      "reasons": [
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Fact sentence is too long; narrow it to one source-backed capability.",
+        "Supporting quotes cover only 58% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ],
+      "proposed_text": "Telemetry‑Tracker offers a lightweight self‑hosted telemetry stack with Fastify API, Next.js UI, PostgreSQL, and @telemetry‑tracker SDKs. Send a test event through the SDK and query PostgreSQL to confirm persistence. https://github.com/Telemetry-Tracker/telemetry-tracker",
+      "evidence_quote": "Fastify API, Next.js UI, PostgreSQL, @telemetry-tracker/* SDKs",
+      "claim_evidence": [
+        {
+          "claim": "Telemetry‑Tracker offers a lightweight self‑hosted telemetry stack with Fastify API, Next.js UI, PostgreSQL, and @telemetry‑tracker SDKs.",
+          "quote": "Fastify API, Next.js UI, PostgreSQL, @telemetry-tracker/* SDKs"
+        }
+      ]
+    },
+    {
+      "candidate_id": "6c933a0a7009a87b",
+      "title": "Security update: Offline token dates, new security features",
+      "reasons": [
+        "Fact sentence is too long; narrow it to one source-backed capability."
+      ],
+      "proposed_text": "Shopify requires all public apps that call the Admin API to migrate to expiring offline access tokens by January 1, 2027. Verify the token’s expiry timestamp after migration to ensure it’s set to expire. https://shopify.dev/changelog/blog/app-security-updates-october-2026",
+      "evidence_quote": "All public apps that call the Admin API must migrate to expiring offline access tokens by January 1, 2027",
+      "claim_evidence": [
+        {
+          "claim": "Shopify requires all public apps that call the Admin API to migrate to expiring offline access tokens by January 1, 2027.",
+          "quote": "All public apps that call the Admin API must migrate to expiring offline access tokens by January 1, 2027"
+        }
+      ]
+    },
+    {
+      "candidate_id": "9c03e3a3ead4de1b",
+      "title": "Telemetry-Tracker/telemetry-tracker",
+      "reasons": [
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
         "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation."
       ],
-      "proposed_text": "IHUI‑AI is an eight‑platform full‑stack AI operating system that unifies 176 LLMs via LangGraph, MCP, and A2A. Deploy IHUI‑AI through its Web, API, CLI, Desktop, Extension, Mobile, or Miniapp interfaces. https://github.com/IHUI-INF-AI/IHUI-AI",
-      "evidence_quote": "Web/API/CLI/Desktop/Extension/Mobile/Miniapp",
+      "proposed_text": "Telemetry‑Tracker provides a Fastify API for telemetry. Use the Fastify API to send error events. https://github.com/Telemetry-Tracker/telemetry-tracker",
+      "evidence_quote": "Fastify API",
       "automatic_repair_attempt": true,
       "original_rejection_reasons": [
-        "Title is a repo path, not a clear product name; clarity below threshold. All other scores meet minimums, but pass requires all ≥7."
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Fact sentence is too long; narrow it to one source-backed capability.",
+        "Supporting quotes cover only 58% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ]
+    },
+    {
+      "candidate_id": "6c933a0a7009a87b",
+      "title": "Security update: Offline token dates, new security features",
+      "proposed_text": "All public apps that call the Admin API must migrate to expiring offline access tokens by January 1, 2027. Migrate before Jan 1 2027 to avoid token expiration. https://shopify.dev/changelog/blog/app-security-updates-october-2026",
+      "reasons": [
+        "Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi"
+      ]
+    },
+    {
+      "candidate_id": "b0371d8195b41df4",
+      "title": "IamRamgarhia/All-In-One-Free-SEO-Tool",
+      "proposed_text": "All‑In‑One‑Free‑SEO‑Tool is an open‑source, self‑hosted SEO tool. Deploy it locally to avoid paid API costs. https://github.com/IamRamgarhia/All-In-One-Free-SEO-Tool",
+      "reasons": [
+        "Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi"
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "769635c4c0589719",
-      "title": "IHUI-INF-AI/IHUI-AI",
-      "url": "https://github.com/IHUI-INF-AI/IHUI-AI",
+      "id": "b0371d8195b41df4",
+      "title": "IamRamgarhia/All-In-One-Free-SEO-Tool",
+      "url": "https://github.com/IamRamgarhia/All-In-One-Free-SEO-Tool",
       "source": "GitHub Search",
-      "primary_category": "security_and_self_hosting",
-      "priority_score": 69,
-      "hourly_adjusted_score": 63,
-      "stars_current": 31,
+      "primary_category": "marketing_and_distribution",
+      "priority_score": 73,
+      "hourly_adjusted_score": 67,
+      "stars_current": 100,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "insufficient_history",
-      "published_at": "2026-10-30T10:30:22+00:00",
+      "published_at": "2026-10-30T10:53:03+00:00",
+      "days_old": 0.02,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "9c03e3a3ead4de1b",
+      "title": "Telemetry-Tracker/telemetry-tracker",
+      "url": "https://github.com/Telemetry-Tracker/telemetry-tracker",
+      "source": "GitHub Search",
+      "primary_category": "developer_tools",
+      "priority_score": 68,
+      "hourly_adjusted_score": 62,
+      "stars_current": 34,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "insufficient_history",
+      "published_at": "2026-10-30T11:19:50+00:00",
       "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "ffa11117b00b8006",
-      "title": "crbnos/carbon",
-      "url": "https://github.com/crbnos/carbon",
-      "source": "GitHub Search",
-      "primary_category": "online_seller_operations",
-      "priority_score": 67,
-      "hourly_adjusted_score": 61,
-      "stars_current": 2783,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "insufficient_history",
-      "published_at": "2026-10-30T10:19:48+00:00",
-      "days_old": 0.01,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "fe106ba546c5c606",
-      "title": "Promoted Placements beta now includes Shop Campaigns",
-      "url": "https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns",
+      "id": "6c933a0a7009a87b",
+      "title": "Security update: Offline token dates, new security features",
+      "url": "https://shopify.dev/changelog/blog/app-security-updates-october-2026",
       "source": "Shopify Developer Changelog",
       "primary_category": "commerce_and_digital_products",
       "priority_score": 68,
@@ -427,8 +440,8 @@
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-27T13:00:00+00:00",
-      "days_old": 2.9,
+      "published_at": "2026-10-27T17:00:00+00:00",
+      "days_old": 2.76,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
@@ -436,26 +449,26 @@
   ],
   "automatic_repair": {
     "attempted": true,
-    "drafts_submitted": 1,
-    "repaired_local_passes": 0,
+    "drafts_submitted": 3,
+    "repaired_local_passes": 2,
     "repair_rejections": 1,
     "repair_error": null,
-    "editorial_repair_attempted": true,
-    "editorial_repair_drafts_submitted": 1,
+    "editorial_repair_attempted": false,
+    "editorial_repair_drafts_submitted": 0,
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 1,
-    "submitted_for_independent_review": 1,
+    "locally_valid_drafts": 2,
+    "submitted_for_independent_review": 2,
     "passed_independent_review": 0,
-    "rejected_by_independent_review": 1,
+    "rejected_by_independent_review": 2,
     "lower_ranked_not_reviewed": 0,
-    "review_error": null,
+    "review_error": "Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi",
     "automatic_gate": "fail_closed"
   },
   "state_summary": {
     "used_candidates_in_cooldown": 29,
-    "recently_attempted_candidates": 27,
+    "recently_attempted_candidates": 30,
     "recent_draft_passes_today": 4
   }
 }

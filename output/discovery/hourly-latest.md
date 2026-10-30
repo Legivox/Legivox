@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-30T15:59:47+05:30
+- Run time (IST): 2026-10-30T16:50:07+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 197
-- Independent editorial review: 0 draft(s) passed / 1 rejected
+- Candidate pool after freshness/diversity filters: 204
+- Independent editorial review: 0 draft(s) passed / 2 rejected
 - Drafts passing local checks: 0
 - Outcome: **skip**
-- Decision reason: Every draft submitted for independent editorial review was rejected; The hour was skipped.
+- Decision reason: No draft cleared the complete automatic quality gate; independent editorial review failed closed. Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi
 
 ## Source health
 
@@ -35,7 +35,7 @@
 | Hacker News · hn-marketing-distribution | 0 | ok |
 | Hacker News · hn-security-selfhost | 0 | ok |
 | Hacker News · hn-seller-operations | 0 | ok |
-| Hacker News · hn-shopify | 10 | ok |
+| Hacker News · hn-shopify | 8 | ok |
 | Hacker News · hn-show-hn | 10 | ok |
 | Ahrefs Blog | 7 | ok |
 | Console.dev | 11 | ok |
@@ -54,8 +54,8 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 106
-- Previously tracked repositories refreshed outside search results: 94
+- Repositories seen in this discovery run: 109
+- Previously tracked repositories refreshed outside search results: 91
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
 - Repositories with a 20–36 hour comparison baseline: 20
@@ -65,9 +65,9 @@
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| IHUI-INF-AI/IHUI-AI | yes | 200 | https://github.com/IHUI-INF-AI/IHUI-AI |
-| crbnos/carbon | yes | 200 | https://github.com/crbnos/carbon |
-| Promoted Placements beta now includes Shop Campaigns | yes | 200 | https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns |
+| IamRamgarhia/All-In-One-Free-SEO-Tool | yes | 200 | https://github.com/IamRamgarhia/All-In-One-Free-SEO-Tool |
+| Telemetry-Tracker/telemetry-tracker | yes | 200 | https://github.com/Telemetry-Tracker/telemetry-tracker |
+| Security update: Offline token dates, new security features | yes | 200 | https://shopify.dev/changelog/blog/app-security-updates-october-2026 |
 
 ## Selected draft candidates
 
@@ -76,33 +76,39 @@ No draft cleared the complete local and independent-editor gate. See the decisio
 ## Automatic repair attempt
 
 - Attempted: yes
-- Repaired drafts submitted: 1
-- Repaired drafts that passed local validation: 0
+- Repaired drafts submitted: 3
+- Repaired drafts that passed local validation: 2
 - Repaired drafts rejected: 1
 - Repair error: none
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
-- crbnos/carbon: The factual opening bundles multiple features; narrow it to one capability.
-  - Rejected text: Carbon stores MRP, inventory, shop floor, quality, and lot/serial traceability in one Postgres schema. Run the provided migration to verify traceability tables exist before enabling production. https://github.com/crbnos/carbon
-  - Model evidence quote: “Quoting, MRP, inventory, shop floor, quality and lot/serial traceability on one Postgres schema”
-  - Claim support: Carbon stores MRP, inventory, shop floor, quality, and lot/serial traceability in one Postgres schema ← “Quoting, MRP, inventory, shop floor, quality and lot/serial traceability on one Postgres schema”
-- Promoted Placements beta now includes Shop Campaigns: Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.; Editorial takeaway is too long; keep the analysis concrete and concise.; Fact plus takeaway exceeds the per-link character budget.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.; Draft is 312 raw characters; limit is 280; Primary-source evidence quote is missing or absent from the live page (after presentation normalisation); A factual claim lacks a quote present in the live primary-source page; Supporting quotes cover only 64% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: Promoted Placements beta now includes Shop Campaigns, adding merchant commission to the base rate. Include catalog_id in search_catalog calls and read placement.commission.percentage.value for accurate commission reporting. https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns
-  - Model evidence quote: “When a search_catalog result comes from a merchant running Shop Campaigns, you earn the commission that merchant funds, added to Shopify's base rate”
-  - Claim support: Promoted Placements beta now includes Shop Campaigns, adding merchant commission to the base rate ← “When a search_catalog result comes from a merchant running Shop Campaigns, you earn the commission that merchant funds, added to Shopify's base rate”
-- IHUI-INF-AI/IHUI-AI: Title is a repo path, not a clear product name; clarity below threshold. All other scores meet minimums, but pass requires all ≥7.
-  - Rejected text: IHUI-AI unifies 176 LLMs via LangGraph + MCP + A2A. Run a sample LangGraph agent to confirm cross‑model routing works before production. https://github.com/IHUI-INF-AI/IHUI-AI
-- IHUI-INF-AI/IHUI-AI: The factual opening bundles multiple features; narrow it to one capability.; Editorial takeaway is too long; keep the analysis concrete and concise.; Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.
-  - Rejected text: IHUI‑AI is an eight‑platform full‑stack AI operating system that unifies 176 LLMs via LangGraph, MCP, and A2A. Deploy IHUI‑AI through its Web, API, CLI, Desktop, Extension, Mobile, or Miniapp interfaces. https://github.com/IHUI-INF-AI/IHUI-AI
-  - Model evidence quote: “Web/API/CLI/Desktop/Extension/Mobile/Miniapp”
+- IamRamgarhia/All-In-One-Free-SEO-Tool: The factual opening bundles multiple features; narrow it to one capability.; Fact sentence is too long; narrow it to one source-backed capability.; Supporting quotes cover only 60% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: All‑In‑One‑Free‑SEO‑Tool provides 99 SEO tools, including site audits, rank tracking, and AI search visibility. Run a site audit and verify the agent auto‑applies fixes before publishing. https://github.com/IamRamgarhia/All-In-One-Free-SEO-Tool
+  - Model evidence quote: “99 tools: site audits, rank tracking, keyword research, AI search visibility”
+  - Claim support: All‑In‑One‑Free‑SEO‑Tool provides 99 SEO tools, including site audits, rank tracking, and AI search visibility. ← “99 tools: site audits, rank tracking, keyword research, AI search visibility”
+- Telemetry-Tracker/telemetry-tracker: The factual opening bundles multiple features; narrow it to one capability.; Fact sentence is too long; narrow it to one source-backed capability.; Supporting quotes cover only 58% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: Telemetry‑Tracker offers a lightweight self‑hosted telemetry stack with Fastify API, Next.js UI, PostgreSQL, and @telemetry‑tracker SDKs. Send a test event through the SDK and query PostgreSQL to confirm persistence. https://github.com/Telemetry-Tracker/telemetry-tracker
+  - Model evidence quote: “Fastify API, Next.js UI, PostgreSQL, @telemetry-tracker/* SDKs”
+  - Claim support: Telemetry‑Tracker offers a lightweight self‑hosted telemetry stack with Fastify API, Next.js UI, PostgreSQL, and @telemetry‑tracker SDKs. ← “Fastify API, Next.js UI, PostgreSQL, @telemetry-tracker/* SDKs”
+- Security update: Offline token dates, new security features: Fact sentence is too long; narrow it to one source-backed capability.
+  - Rejected text: Shopify requires all public apps that call the Admin API to migrate to expiring offline access tokens by January 1, 2027. Verify the token’s expiry timestamp after migration to ensure it’s set to expire. https://shopify.dev/changelog/blog/app-security-updates-october-2026
+  - Model evidence quote: “All public apps that call the Admin API must migrate to expiring offline access tokens by January 1, 2027”
+  - Claim support: Shopify requires all public apps that call the Admin API to migrate to expiring offline access tokens by January 1, 2027. ← “All public apps that call the Admin API must migrate to expiring offline access tokens by January 1, 2027”
+- Telemetry-Tracker/telemetry-tracker: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.
+  - Rejected text: Telemetry‑Tracker provides a Fastify API for telemetry. Use the Fastify API to send error events. https://github.com/Telemetry-Tracker/telemetry-tracker
+  - Model evidence quote: “Fastify API”
+- Security update: Offline token dates, new security features: Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi
+  - Rejected text: All public apps that call the Admin API must migrate to expiring offline access tokens by January 1, 2027. Migrate before Jan 1 2027 to avoid token expiration. https://shopify.dev/changelog/blog/app-security-updates-october-2026
+- IamRamgarhia/All-In-One-Free-SEO-Tool: Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi
+  - Rejected text: All‑In‑One‑Free‑SEO‑Tool is an open‑source, self‑hosted SEO tool. Deploy it locally to avoid paid API costs. https://github.com/IamRamgarhia/All-In-One-Free-SEO-Tool
 
 ## Top discovery candidates considered
 
-- IHUI-INF-AI/IHUI-AI | GitHub Search | security_and_self_hosting | raw 69, adjusted 63 | current stars 31 | GitHub star trend: building baseline | https://github.com/IHUI-INF-AI/IHUI-AI
-- crbnos/carbon | GitHub Search | online_seller_operations | raw 67, adjusted 61 | current stars 2783 | GitHub star trend: building baseline | https://github.com/crbnos/carbon
-- Promoted Placements beta now includes Shop Campaigns | Shopify Developer Changelog | commerce_and_digital_products | raw 68, adjusted 50 | https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns
+- IamRamgarhia/All-In-One-Free-SEO-Tool | GitHub Search | marketing_and_distribution | raw 73, adjusted 67 | current stars 100 | GitHub star trend: building baseline | https://github.com/IamRamgarhia/All-In-One-Free-SEO-Tool
+- Telemetry-Tracker/telemetry-tracker | GitHub Search | developer_tools | raw 68, adjusted 62 | current stars 34 | GitHub star trend: building baseline | https://github.com/Telemetry-Tracker/telemetry-tracker
+- Security update: Offline token dates, new security features | Shopify Developer Changelog | commerce_and_digital_products | raw 68, adjusted 50 | https://shopify.dev/changelog/blog/app-security-updates-october-2026
 
 ## Safety and interpretation
 
