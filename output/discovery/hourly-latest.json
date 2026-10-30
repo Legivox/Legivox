@@ -1,38 +1,38 @@
 {
-  "generated_at_ist": "2026-10-30T21:04:05+05:30",
-  "run_at_ist": "2026-10-30T21:04:05+05:30",
+  "generated_at_ist": "2026-10-30T22:00:33+05:30",
+  "run_at_ist": "2026-10-30T22:00:33+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 318,
-  "eligible_candidate_count": 198,
+  "candidate_count_raw": 321,
+  "eligible_candidate_count": 199,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4877
+      "total_count": 4884
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1056
+      "total_count": 1060
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 373
+      "total_count": 374
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2947
+      "total_count": 2950
     },
     {
       "source": "GitHub Search · github-digital-product-tools",
@@ -46,7 +46,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 440
+      "total_count": 446
     },
     {
       "source": "GitHub Search · github-marketing-distribution",
@@ -60,28 +60,28 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2149
+      "total_count": 2151
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3395
+      "total_count": 3398
     },
     {
       "source": "GitHub Search · github-seller-operations",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 359
+      "total_count": 361
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 142
+      "total_count": 145
     },
     {
       "source": "GitHub Search · github-workflow-automation",
@@ -116,7 +116,7 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 6
+      "total_count": 7
     },
     {
       "source": "Hacker News · hn-digital-products",
@@ -158,7 +158,7 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 8
+      "total_count": 10
     },
     {
       "source": "Hacker News · hn-shopify",
@@ -177,7 +177,7 @@
     {
       "source": "Ahrefs Blog",
       "kind": "rss",
-      "items_kept": 7,
+      "items_kept": 8,
       "status": "ok"
     },
     {
@@ -255,14 +255,14 @@
       "kind": "wordpress_plugin",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2207
+      "total_count": 2215
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-30T15:34:05+00:00",
+    "observed_at_utc": "2026-10-30T16:30:33+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 109,
-    "previously_tracked_repositories_refreshed": 91,
+    "repositories_seen_in_discovery": 110,
+    "previously_tracked_repositories_refreshed": 90,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
@@ -272,160 +272,167 @@
   },
   "primary_source_checks": [
     {
-      "candidate_id": "46b14009a350aa12",
-      "title": "Cart and checkout permalinks now support UCP at /buy",
-      "source_url": "https://shopify.dev/changelog/cart-and-checkout-permalinks-now-support-ucp-at-buy",
+      "candidate_id": "b89675159c0fb375",
+      "title": "New trusted vault origin signal in Payments Apps API",
+      "source_url": "https://shopify.dev/changelog/new-trusted-vault-origin-signal-in-payments-apps-api",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/cart-and-checkout-permalinks-now-support-ucp-at-buy",
+      "final_url": "https://shopify.dev/changelog/posts/new-trusted-vault-origin-signal-in-payments-apps-api",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "649f8812ef1d9d51",
-      "title": "prest/prest",
-      "source_url": "https://github.com/prest/prest",
+      "candidate_id": "b140d6f185b58e72",
+      "title": "Shopify App Pricing: Plan Feature Targeting",
+      "source_url": "https://shopify.dev/changelog/plan-feature-targeting",
       "verified": true,
-      "final_url": "https://github.com/prest/prest",
+      "final_url": "https://shopify.dev/changelog/posts/plan-feature-targeting",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "eb3213f15160d07f",
-      "title": "Canonry/canonry",
-      "source_url": "https://github.com/Canonry/canonry",
+      "candidate_id": "1ad94bae8533a06a",
+      "title": "What Is BLUF? How to Write Bottom Line Up Front (+ Free Rewriter Tool)",
+      "source_url": "https://ahrefs.com/blog/bluf/",
       "verified": true,
-      "final_url": "https://github.com/Canonry/canonry",
+      "final_url": "https://ahrefs.com/blog/bluf/",
       "http_status": 200,
       "reason": ""
     }
   ],
   "rejected_primary_sources": [],
   "daily_draft_cap": 16,
-  "daily_drafts_already_passed": 6,
-  "outcome": "dry_run_passed",
-  "decision_reason": "At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.",
-  "passing_drafts": [
-    {
-      "candidate_id": "649f8812ef1d9d51",
-      "title": "prest/prest",
-      "source": "GitHub Search",
-      "source_kind": "github_repository",
-      "url": "https://github.com/prest/prest",
-      "primary_source_verified": true,
-      "primary_source_title": "GitHub - prest/prest: Instant REST and MCP APIs for PostgreSQL and MySQL, on existing or new databases. CRUD, custom SQL routes, auth and ACL without writing a backend. Low-code, ⚡ realtime, high-performance. Native MySQL support since v2.5.",
-      "primary_source_final_url": "https://github.com/prest/prest",
-      "primary_source_http_status": 200,
-      "category": "security_and_self_hosting",
-      "priority_score": 67,
-      "hourly_adjusted_score": 51,
-      "post_text": "prest/prest offers instant REST and MCP APIs for PostgreSQL and MySQL. Run CRUD tests on autogenerated endpoints to confirm auth and ACL enforcement. https://github.com/prest/prest",
-      "fact_sentence": "prest/prest offers instant REST and MCP APIs for PostgreSQL and MySQL.",
-      "format": "tool_discovery",
-      "audience": "backend developers",
-      "angle": "low-code API",
-      "rationale": "The fact highlights the core feature; the takeaway suggests a practical validation step.",
-      "evidence_quote": "Instant REST and MCP APIs for PostgreSQL and MySQL, on existing or new databases.",
-      "editorial_takeaway": "Run CRUD tests on autogenerated endpoints to confirm auth and ACL enforcement.",
-      "claim_evidence": [
-        {
-          "claim": "prest/prest offers instant REST and MCP APIs for PostgreSQL and MySQL.",
-          "quote": "Instant REST and MCP APIs for PostgreSQL and MySQL, on existing or new databases."
-        }
-      ],
-      "scores": {
-        "timeliness": 8,
-        "usefulness": 8,
-        "novelty": 7,
-        "evidence": 9,
-        "insight": 8
-      },
-      "editorial_score": 8.1,
-      "character_count": 180,
-      "status": "dry_run_passed_not_published",
-      "published_to_x": false,
-      "editorial_review": {
-        "clarity_score": 9,
-        "technical_coherence_score": 9,
-        "takeaway_value_score": 8,
-        "source_faithfulness_score": 9,
-        "originality_score": 8,
-        "reason": "Clear, supported claim and actionable test; source backs auth/ACL and CRUD.",
-        "passed": true
-      }
-    },
-    {
-      "candidate_id": "eb3213f15160d07f",
-      "title": "Canonry/canonry",
-      "source": "GitHub Search",
-      "source_kind": "github_repository",
-      "url": "https://github.com/Canonry/canonry",
-      "primary_source_verified": true,
-      "primary_source_title": "GitHub - Canonry/canonry: Agent-first AI SEO (AEO/GEO) operating platform",
-      "primary_source_final_url": "https://github.com/Canonry/canonry",
-      "primary_source_http_status": 200,
-      "category": "marketing_and_distribution",
-      "priority_score": 64,
-      "hourly_adjusted_score": 48,
-      "post_text": "Canonry/canonry is an agent-first AI SEO platform. Check that the platform generates local-first SEO content before publishing. https://github.com/Canonry/canonry",
-      "fact_sentence": "Canonry/canonry is an agent-first AI SEO platform.",
-      "format": "tool_discovery",
-      "audience": "SEO engineers",
-      "angle": "AI-driven SEO",
-      "rationale": "The fact states the product type; the takeaway advises a specific content validation.",
-      "evidence_quote": "Agent-first AI SEO (AEO/GEO) operating platform",
-      "editorial_takeaway": "Check that the platform generates local-first SEO content before publishing.",
-      "claim_evidence": [
-        {
-          "claim": "Canonry/canonry is an agent-first AI SEO platform.",
-          "quote": "Agent-first AI SEO (AEO/GEO) operating platform"
-        }
-      ],
-      "scores": {
-        "timeliness": 8,
-        "usefulness": 8,
-        "novelty": 7,
-        "evidence": 9,
-        "insight": 8
-      },
-      "editorial_score": 8.1,
-      "character_count": 162,
-      "status": "dry_run_passed_not_published",
-      "published_to_x": false,
-      "editorial_review": {
-        "clarity_score": 9,
-        "technical_coherence_score": 9,
-        "takeaway_value_score": 8,
-        "source_faithfulness_score": 9,
-        "originality_score": 8,
-        "reason": "Clear claim, source confirms local-first; takeaway is a useful, source-backed check.",
-        "passed": true
-      }
-    }
-  ],
+  "daily_drafts_already_passed": 7,
+  "outcome": "skip",
+  "decision_reason": "All generated drafts failed the local evidence/editorial checks; the hour was skipped.",
+  "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "46b14009a350aa12",
-      "title": "Cart and checkout permalinks now support UCP at /buy",
+      "candidate_id": "b89675159c0fb375",
+      "title": "New trusted vault origin signal in Payments Apps API",
       "reasons": [
-        "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "A supporting quote does not share enough wording with its stated claim",
-        "Supporting quotes cover only 45% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation."
       ],
-      "proposed_text": "Shopify’s /buy link supports UCP dev.ucp.shopping.permalink to add items and prefill checkout. Verify that invalid /buy links redirect to the continue_to URL to avoid broken checkout flows. https://shopify.dev/changelog/posts/cart-and-checkout-permalinks-now-support-ucp-at-buy",
-      "evidence_quote": "With a `/buy` link, you can: * Add one or more items by variant ID * Prefill buyer details, such as email address",
+      "proposed_text": "Payments Apps API 2027-01 adds payment_method.data.trusted_vault_origin Boolean to credit card requests. When CVV is missing, test trusted_vault_origin to allow vault cards. https://shopify.dev/changelog/posts/new-trusted-vault-origin-signal-in-payments-apps-api",
+      "evidence_quote": "The Payments Apps API `2027-01` release candidate adds `payment_method.data.trusted_vault_origin` to credit card payment and verification requests.",
       "claim_evidence": [
         {
-          "claim": "Shopify’s /buy link supports UCP dev.ucp.shopping.permalink to add items and prefill checkout.",
-          "quote": "With a `/buy` link, you can: * Add one or more items by variant ID * Prefill buyer details, such as email address"
+          "claim": "Payments Apps API 2027-01 adds payment_method.data.trusted_vault_origin Boolean to credit card requests.",
+          "quote": "The Payments Apps API `2027-01` release candidate adds `payment_method.data.trusted_vault_origin` to credit card payment and verification requests."
         }
+      ]
+    },
+    {
+      "candidate_id": "b140d6f185b58e72",
+      "title": "Shopify App Pricing: Plan Feature Targeting",
+      "reasons": [
+        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
+        "Supporting quotes cover only 64% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ],
+      "proposed_text": "Shopify App Pricing now lets public plans specify store requirements like Checkout UI extensions. Add a requirement and test that merchants without the feature are blocked at checkout. https://shopify.dev/changelog/posts/plan-feature-targeting",
+      "evidence_quote": "You can now add store requirements to public plans in Shopify App Pricing.",
+      "claim_evidence": [
+        {
+          "claim": "Shopify App Pricing now lets public plans specify store requirements like Checkout UI extensions.",
+          "quote": "You can now add store requirements to public plans in Shopify App Pricing."
+        }
+      ]
+    },
+    {
+      "candidate_id": "1ad94bae8533a06a",
+      "title": "What Is BLUF? How to Write Bottom Line Up Front (+ Free Rewriter Tool)",
+      "reasons": [
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
+      ],
+      "proposed_text": "BLUF means bottom line up front: put main point in first sentence. Use the BLUF rewriter to ensure your email subject contains the key benefit. https://ahrefs.com/blog/bluf/",
+      "evidence_quote": "BLUF means bottom line up front: put your main point in the first sentence.",
+      "claim_evidence": [
+        {
+          "claim": "BLUF means bottom line up front: put main point in first sentence.",
+          "quote": "BLUF means bottom line up front: put your main point in the first sentence."
+        }
+      ]
+    },
+    {
+      "candidate_id": "b140d6f185b58e72",
+      "title": "Shopify App Pricing: Plan Feature Targeting",
+      "reasons": [
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "Fact plus takeaway exceeds the per-link character budget.",
+        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
+        "Editorial takeaway is too long to be a useful concise second sentence.",
+        "Draft is 349 raw characters; limit is 280",
+        "No claim-by-claim supporting evidence was provided",
+        "Supporting quotes cover only 12% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ],
+      "proposed_text": "A plan that requires Checkout UI extensions cannot be subscribed to by a store lacking that feature. If a merchant’s store does not have Checkout UI extensions, the plan’s select button is disabled and a message names the missing feature, preventing subscription until the feature is added. https://shopify.dev/changelog/posts/plan-feature-targeting",
+      "evidence_quote": "The select button on that plan is unavailable, and the message names the missing feature.",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
+        "Supporting quotes cover only 64% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ]
+    },
+    {
+      "candidate_id": "b89675159c0fb375",
+      "title": "New trusted vault origin signal in Payments Apps API",
+      "reasons": [
+        "Fact sentence is too long; narrow it to one source-backed capability.",
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "Fact plus takeaway exceeds the per-link character budget.",
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
+        "Editorial takeaway is too long to be a useful concise second sentence.",
+        "Draft is 400 raw characters; limit is 280",
+        "No claim-by-claim supporting evidence was provided",
+        "Unsupported strong claim: only",
+        "Supporting quotes cover only 27% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ],
+      "proposed_text": "The trusted_vault_origin Boolean is only present if Shopify has enabled it for the app and the API version is 2027‑01 or later. Before using payment_method.data.trusted_vault_origin, confirm that Shopify has enabled the field for your app; otherwise the field will be absent and your code should not rely on it. https://shopify.dev/changelog/posts/new-trusted-vault-origin-signal-in-payments-apps-api",
+      "evidence_quote": "Confirm Shopify has enabled the field for your app before expecting Shopify to send it.",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation."
+      ]
+    },
+    {
+      "candidate_id": "1ad94bae8533a06a",
+      "title": "What Is BLUF? How to Write Bottom Line Up Front (+ Free Rewriter Tool)",
+      "reasons": [
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "No claim-by-claim supporting evidence was provided",
+        "Factual sentence includes terms absent from the source title/summary: appear, communication, require"
+      ],
+      "proposed_text": "BLUF requires the main point to appear in the first sentence of a communication. To verify BLUF, read the first sentence; if it states the key benefit or decision, the message follows BLUF guidelines. https://ahrefs.com/blog/bluf/",
+      "evidence_quote": "BLUF means bottom line up front: put your main point in the first sentence.",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "46b14009a350aa12",
-      "title": "Cart and checkout permalinks now support UCP at /buy",
-      "url": "https://shopify.dev/changelog/posts/cart-and-checkout-permalinks-now-support-ucp-at-buy",
+      "id": "b89675159c0fb375",
+      "title": "New trusted vault origin signal in Payments Apps API",
+      "url": "https://shopify.dev/changelog/posts/new-trusted-vault-origin-signal-in-payments-apps-api",
+      "source": "Shopify Developer Changelog",
+      "primary_category": "commerce_and_digital_products",
+      "priority_score": 75,
+      "hourly_adjusted_score": 57,
+      "stars_current": null,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-30T16:00:00+00:00",
+      "days_old": 0.02,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "b140d6f185b58e72",
+      "title": "Shopify App Pricing: Plan Feature Targeting",
+      "url": "https://shopify.dev/changelog/posts/plan-feature-targeting",
       "source": "Shopify Developer Changelog",
       "primary_category": "commerce_and_digital_products",
       "priority_score": 71,
@@ -436,116 +443,49 @@
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
       "published_at": "2026-10-28T15:50:00+00:00",
-      "days_old": 1.99,
+      "days_old": 2.03,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "649f8812ef1d9d51",
-      "title": "prest/prest",
-      "url": "https://github.com/prest/prest",
-      "source": "GitHub Search",
-      "primary_category": "security_and_self_hosting",
-      "priority_score": 67,
-      "hourly_adjusted_score": 51,
-      "stars_current": 4631,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "insufficient_history",
-      "published_at": "2026-10-30T15:33:32+00:00",
-      "days_old": 0.0,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "eb3213f15160d07f",
-      "title": "Canonry/canonry",
-      "url": "https://github.com/Canonry/canonry",
-      "source": "GitHub Search",
+      "id": "1ad94bae8533a06a",
+      "title": "What Is BLUF? How to Write Bottom Line Up Front (+ Free Rewriter Tool)",
+      "url": "https://ahrefs.com/blog/bluf/",
+      "source": "Ahrefs Blog",
       "primary_category": "marketing_and_distribution",
-      "priority_score": 64,
+      "priority_score": 58,
       "hourly_adjusted_score": 48,
-      "stars_current": 196,
+      "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
-      "trend_signal": "insufficient_history",
-      "published_at": "2026-10-30T15:19:19+00:00",
-      "days_old": 0.01,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-30T16:27:18+00:00",
+      "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     }
   ],
   "automatic_repair": {
-    "attempted": false,
-    "drafts_submitted": 0,
+    "attempted": true,
+    "drafts_submitted": 3,
     "repaired_local_passes": 0,
-    "repair_rejections": 0,
+    "repair_rejections": 3,
     "repair_error": null,
     "editorial_repair_attempted": false,
     "editorial_repair_drafts_submitted": 0,
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 2,
-    "submitted_for_independent_review": 2,
-    "passed_independent_review": 2,
+    "locally_valid_drafts": 0,
+    "submitted_for_independent_review": 0,
+    "passed_independent_review": 0,
     "rejected_by_independent_review": 0,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
-  },
-  "recommended_draft": {
-    "candidate_id": "649f8812ef1d9d51",
-    "title": "prest/prest",
-    "source": "GitHub Search",
-    "source_kind": "github_repository",
-    "url": "https://github.com/prest/prest",
-    "primary_source_verified": true,
-    "primary_source_title": "GitHub - prest/prest: Instant REST and MCP APIs for PostgreSQL and MySQL, on existing or new databases. CRUD, custom SQL routes, auth and ACL without writing a backend. Low-code, ⚡ realtime, high-performance. Native MySQL support since v2.5.",
-    "primary_source_final_url": "https://github.com/prest/prest",
-    "primary_source_http_status": 200,
-    "category": "security_and_self_hosting",
-    "priority_score": 67,
-    "hourly_adjusted_score": 51,
-    "post_text": "prest/prest offers instant REST and MCP APIs for PostgreSQL and MySQL. Run CRUD tests on autogenerated endpoints to confirm auth and ACL enforcement. https://github.com/prest/prest",
-    "fact_sentence": "prest/prest offers instant REST and MCP APIs for PostgreSQL and MySQL.",
-    "format": "tool_discovery",
-    "audience": "backend developers",
-    "angle": "low-code API",
-    "rationale": "The fact highlights the core feature; the takeaway suggests a practical validation step.",
-    "evidence_quote": "Instant REST and MCP APIs for PostgreSQL and MySQL, on existing or new databases.",
-    "editorial_takeaway": "Run CRUD tests on autogenerated endpoints to confirm auth and ACL enforcement.",
-    "claim_evidence": [
-      {
-        "claim": "prest/prest offers instant REST and MCP APIs for PostgreSQL and MySQL.",
-        "quote": "Instant REST and MCP APIs for PostgreSQL and MySQL, on existing or new databases."
-      }
-    ],
-    "scores": {
-      "timeliness": 8,
-      "usefulness": 8,
-      "novelty": 7,
-      "evidence": 9,
-      "insight": 8
-    },
-    "editorial_score": 8.1,
-    "character_count": 180,
-    "status": "dry_run_passed_not_published",
-    "published_to_x": false,
-    "editorial_review": {
-      "clarity_score": 9,
-      "technical_coherence_score": 9,
-      "takeaway_value_score": 8,
-      "source_faithfulness_score": 9,
-      "originality_score": 8,
-      "reason": "Clear, supported claim and actionable test; source backs auth/ACL and CRUD.",
-      "passed": true
-    }
   },
   "state_summary": {
     "used_candidates_in_cooldown": 32,
