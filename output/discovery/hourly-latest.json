@@ -1,38 +1,38 @@
 {
-  "generated_at_ist": "2026-10-29T23:01:50+05:30",
-  "run_at_ist": "2026-10-29T23:01:50+05:30",
+  "generated_at_ist": "2026-10-30T07:58:16+05:30",
+  "run_at_ist": "2026-10-30T07:58:16+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 314,
-  "eligible_candidate_count": 197,
+  "candidate_count_raw": 318,
+  "eligible_candidate_count": 215,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4886
+      "total_count": 4784
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1071
+      "total_count": 1048
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 368
+      "total_count": 357
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2937
+      "total_count": 2881
     },
     {
       "source": "GitHub Search · github-digital-product-tools",
@@ -46,49 +46,49 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 435
+      "total_count": 422
     },
     {
       "source": "GitHub Search · github-marketing-distribution",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 232
+      "total_count": 220
     },
     {
       "source": "GitHub Search · github-mcp-servers",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2144
+      "total_count": 2114
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3402
+      "total_count": 3347
     },
     {
       "source": "GitHub Search · github-seller-operations",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 360
+      "total_count": 352
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 137
+      "total_count": 132
     },
     {
       "source": "GitHub Search · github-workflow-automation",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 279
+      "total_count": 276
     },
     {
       "source": "Hacker News · hn-analytics-growth",
@@ -116,12 +116,12 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 6
+      "total_count": 7
     },
     {
       "source": "Hacker News · hn-digital-products",
       "kind": "hacker_news",
-      "items_kept": 2,
+      "items_kept": 1,
       "status": "ok",
       "total_count": 10
     },
@@ -158,12 +158,12 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 10
+      "total_count": 9
     },
     {
       "source": "Hacker News · hn-shopify",
       "kind": "hacker_news",
-      "items_kept": 9,
+      "items_kept": 10,
       "status": "ok",
       "total_count": 10
     },
@@ -195,7 +195,7 @@
     {
       "source": "Product Hunt",
       "kind": "rss",
-      "items_kept": 41,
+      "items_kept": 38,
       "status": "ok"
     },
     {
@@ -227,200 +227,245 @@
       "kind": "wordpress_plugin",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2014
+      "total_count": 2015
     },
     {
       "source": "WordPress Plugin Directory · wp-ecommerce",
       "kind": "wordpress_plugin",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2978
+      "total_count": 2979
     },
     {
       "source": "WordPress Plugin Directory · wp-inventory-management",
       "kind": "wordpress_plugin",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 963
+      "total_count": 965
     },
     {
       "source": "WordPress Plugin Directory · wp-marketing-analytics",
       "kind": "wordpress_plugin",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1787
+      "total_count": 1789
     },
     {
       "source": "WordPress Plugin Directory · wp-membership-creators",
       "kind": "wordpress_plugin",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2196
+      "total_count": 2202
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-29T17:31:50+00:00",
+    "observed_at_utc": "2026-10-30T02:28:16+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 106,
-    "previously_tracked_repositories_refreshed": 94,
+    "repositories_seen_in_discovery": 113,
+    "previously_tracked_repositories_refreshed": 87,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
-    "repositories_with_20_to_36_hour_baseline": 18,
+    "repositories_with_20_to_36_hour_baseline": 20,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "56db8cf87604b99d",
-      "title": "Show HN: Apgar – Catch agent regressions without an LLM judge",
-      "source_url": "https://github.com/oimo-ai/apgar",
+      "candidate_id": "a5e43b1572bfaf36",
+      "title": "paperclipai/paperclip",
+      "source_url": "https://github.com/paperclipai/paperclip",
       "verified": true,
-      "final_url": "https://github.com/oimo-ai/apgar",
+      "final_url": "https://github.com/paperclipai/paperclip",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "0e637d644e0a4ca4",
-      "title": "Show HN: Wanim – Manim in the browser, but 1/20 smaller",
-      "source_url": "https://github.com/Acfboy/Wanim",
+      "candidate_id": "edd008c1f318211c",
+      "title": "yanstd888/yanstd888",
+      "source_url": "https://github.com/yanstd888/yanstd888",
       "verified": true,
-      "final_url": "https://github.com/Acfboy/Wanim",
+      "final_url": "https://github.com/yanstd888/yanstd888",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "ffa11117b00b8006",
-      "title": "crbnos/carbon",
-      "source_url": "https://github.com/crbnos/carbon",
+      "candidate_id": "25df9fa68f72f18a",
+      "title": "Secure your app with network access rules in `shopify.app.toml`",
+      "source_url": "https://shopify.dev/changelog/secure-your-app-with-network-access-hosts-in-shopify-app-toml",
       "verified": true,
-      "final_url": "https://github.com/crbnos/carbon",
+      "final_url": "https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml",
       "http_status": 200,
       "reason": ""
     }
   ],
   "rejected_primary_sources": [],
   "daily_draft_cap": 16,
-  "daily_drafts_already_passed": 3,
+  "daily_drafts_already_passed": 0,
   "outcome": "skip",
-  "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
+  "decision_reason": "All generated drafts failed the local evidence/editorial checks; the hour was skipped.",
   "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "ffa11117b00b8006",
-      "title": "crbnos/carbon",
+      "candidate_id": "a5e43b1572bfaf36",
+      "title": "paperclipai/paperclip",
       "reasons": [
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
-        "Supporting quotes cover only 56% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
+        "Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "Carbon is an open‑source ERP/MES/QMS that stores all data in a single Postgres schema. Use Carbon’s REST API to integrate inventory with your e‑commerce platform. https://github.com/crbnos/carbon",
-      "evidence_quote": "Open-source manufacturing ERP, MES and QMS. Quoting, MRP, inventory, shop floor, quality and lot/serial traceability on one Postgres schema",
+      "proposed_text": "paperclip is an open‑source app for managing agents at work. Add agent orchestration tests before merging new skills. https://github.com/paperclipai/paperclip",
+      "evidence_quote": "The open‑source app everyone uses to manage agents at work",
       "claim_evidence": [
         {
-          "claim": "Carbon is an open‑source ERP/MES/QMS that stores all data in a single Postgres schema",
-          "quote": "Open-source manufacturing ERP, MES and QMS. Quoting, MRP, inventory, shop floor, quality and lot/serial traceability on one Postgres schema"
+          "claim": "paperclip is an open‑source app for managing agents at work",
+          "quote": "The open‑source app everyone uses to manage agents at work"
         }
       ]
     },
     {
-      "candidate_id": "56db8cf87604b99d",
-      "title": "Show HN: Apgar – Catch agent regressions without an LLM judge",
-      "proposed_text": "Apgar compares a new AI agent release to a production baseline using trace data. Run Apgar after each deploy to catch regressions before users notice. https://github.com/oimo-ai/apgar",
+      "candidate_id": "edd008c1f318211c",
+      "title": "yanstd888/yanstd888",
       "reasons": [
-        "Post restates headline facts without adding new insight; originality below threshold."
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
+        "insight score is below the minimum 7/10"
       ],
-      "editorial_review": {
-        "clarity_score": 8,
-        "technical_coherence_score": 8,
-        "takeaway_value_score": 8,
-        "source_faithfulness_score": 8,
-        "originality_score": 4
-      }
+      "proposed_text": "yanstd888/yanstd888 is a personal profile and project index for Yanstd. Use the repo as a template for organizing AI product projects. https://github.com/yanstd888/yanstd888",
+      "evidence_quote": "Personal profile and project index for Yanstd — AI products, full‑stack web development, automation, developer tooling, and digital products",
+      "claim_evidence": [
+        {
+          "claim": "yanstd888/yanstd888 is a personal profile and project index for Yanstd",
+          "quote": "Personal profile and project index for Yanstd — AI products, full‑stack web development, automation, developer tooling, and digital products"
+        }
+      ]
     },
     {
-      "candidate_id": "0e637d644e0a4ca4",
-      "title": "Show HN: Wanim – Manim in the browser, but 1/20 smaller",
-      "proposed_text": "Wanim lets you run original Manim Python code in the browser 20× lighter than Pyodide. Embed Wanim scenes in slides to avoid heavy Pyodide bundles. https://github.com/Acfboy/Wanim",
+      "candidate_id": "25df9fa68f72f18a",
+      "title": "Secure your app with network access rules in `shopify.app.toml`",
       "reasons": [
-        "Post merely paraphrases source claims; lacks original perspective or actionable nuance."
+        "Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration."
       ],
-      "editorial_review": {
-        "clarity_score": 8,
-        "technical_coherence_score": 8,
-        "takeaway_value_score": 8,
-        "source_faithfulness_score": 8,
-        "originality_score": 4
-      }
+      "proposed_text": "Shopify added a network_access section to shopify.app.toml to declare allowed hosts. Declare all external hosts before launch to avoid storefront warnings. https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml",
+      "evidence_quote": "The new network_access section has two properties: allowed_navigation_hosts : The external sites your app links to from the storefront, such as your own domain",
+      "claim_evidence": [
+        {
+          "claim": "Shopify added a network_access section to shopify.app.toml to declare allowed hosts",
+          "quote": "The new network_access section has two properties: allowed_navigation_hosts : The external sites your app links to from the storefront, such as your own domain"
+        }
+      ]
     },
     {
-      "candidate_id": "56db8cf87604b99d",
-      "title": "Show HN: Apgar – Catch agent regressions without an LLM judge",
+      "candidate_id": "25df9fa68f72f18a",
+      "title": "Secure your app with network access rules in `shopify.app.toml`",
       "reasons": [
-        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.",
-        "Editorial takeaway is too long; keep the analysis concrete and concise."
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "Fact plus takeaway exceeds the per-link character budget.",
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
+        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
+        "Draft is 326 raw characters; limit is 280",
+        "Primary-source evidence quote is missing or absent from the live page (after presentation normalisation)",
+        "No claim-by-claim supporting evidence was provided",
+        "Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "Apagar compares a new AI agent release to a production baseline using trace data. Apagar relies on OpenTelemetry traces to benchmark new releases against production, enabling early detection of regressions. https://github.com/oimo-ai/apgar",
-      "evidence_quote": "Release health for AI agents: compares a new release to a baseline from production traces",
+      "proposed_text": "Shopify’s shopify.app.toml can declare allowed_navigation_hosts to suppress storefront warnings. If you list a host in allowed_navigation_hosts, Shopify will skip the warning when users navigate to that host from the storefront. https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml",
+      "evidence_quote": "The new network_access section has two properties: allowed_navigation_hosts : The external sites your app links to from the storefront, such as your own domain",
       "automatic_repair_attempt": true,
       "original_rejection_reasons": [
-        "Post restates headline facts without adding new insight; originality below threshold."
+        "Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration."
+      ]
+    },
+    {
+      "candidate_id": "a5e43b1572bfaf36",
+      "title": "paperclipai/paperclip",
+      "reasons": [
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
+        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
+        "No claim-by-claim supporting evidence was provided",
+        "Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ],
+      "proposed_text": "paperclip’s repository includes an agent-skills topic indicating multi‑agent support. When building agent orchestration with paperclip, include the agent-skills topic to enable multi‑agent workflows. https://github.com/paperclipai/paperclip",
+      "evidence_quote": "Topics acpx agent-orchestration agent-skills agentic-ai ai-agents ai-engineering ai-governance ai-tools autonomous-agents claude claude-code claude-skills codex hermes llm mcp multi-agent openclaw project-management workflow-automation",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
+        "Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ]
+    },
+    {
+      "candidate_id": "edd008c1f318211c",
+      "title": "yanstd888/yanstd888",
+      "reasons": [
+        "Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.",
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
+        "No claim-by-claim supporting evidence was provided",
+        "Unsupported strong claim: only",
+        "Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ],
+      "proposed_text": "Yanstd’s repository lists TypeScript, Next.js, and React as core systems. Use the repo template only if your project employs TypeScript and Next.js to match Yanstd’s stack. https://github.com/yanstd888/yanstd888",
+      "evidence_quote": "systems : - \" TypeScript, Next.js, React, Go, MQL5, PostgreSQL, Redis, Docker, Linux, and Cloudflare \"",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
+        "insight score is below the minimum 7/10"
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "56db8cf87604b99d",
-      "title": "Show HN: Apgar – Catch agent regressions without an LLM judge",
-      "url": "https://github.com/oimo-ai/apgar",
-      "source": "Hacker News",
-      "primary_category": "product_and_workflow_tools",
-      "priority_score": 68,
-      "hourly_adjusted_score": 70,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-29T17:04:06+00:00",
-      "days_old": 0.02,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "0e637d644e0a4ca4",
-      "title": "Show HN: Wanim – Manim in the browser, but 1/20 smaller",
-      "url": "https://github.com/Acfboy/Wanim",
-      "source": "Hacker News",
-      "primary_category": "product_and_workflow_tools",
-      "priority_score": 63,
-      "hourly_adjusted_score": 65,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-29T16:41:27+00:00",
-      "days_old": 0.03,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "ffa11117b00b8006",
-      "title": "crbnos/carbon",
-      "url": "https://github.com/crbnos/carbon",
+      "id": "a5e43b1572bfaf36",
+      "title": "paperclipai/paperclip",
+      "url": "https://github.com/paperclipai/paperclip",
       "source": "GitHub Search",
-      "primary_category": "online_seller_operations",
+      "primary_category": "ai_and_automation",
       "priority_score": 67,
-      "hourly_adjusted_score": 61,
-      "stars_current": 2783,
+      "hourly_adjusted_score": 86,
+      "stars_current": 108692,
+      "stars_delta_24h": 372,
+      "stars_delta_baseline_hours": 24.0,
+      "stars_growth_percent_24h": 0.34,
+      "trend_signal": "measured_star_growth",
+      "published_at": "2026-10-30T02:25:22+00:00",
+      "days_old": 0.0,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "edd008c1f318211c",
+      "title": "yanstd888/yanstd888",
+      "url": "https://github.com/yanstd888/yanstd888",
+      "source": "GitHub Search",
+      "primary_category": "digital_product_business",
+      "priority_score": 58,
+      "hourly_adjusted_score": 75,
+      "stars_current": 28,
+      "stars_delta_24h": 16,
+      "stars_delta_baseline_hours": 24.0,
+      "stars_growth_percent_24h": 133.33,
+      "trend_signal": "measured_star_growth",
+      "published_at": "2026-10-30T02:08:35+00:00",
+      "days_old": 0.01,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "25df9fa68f72f18a",
+      "title": "Secure your app with network access rules in `shopify.app.toml`",
+      "url": "https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml",
+      "source": "Shopify Developer Changelog",
+      "primary_category": "commerce_and_digital_products",
+      "priority_score": 74,
+      "hourly_adjusted_score": 74,
+      "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
-      "trend_signal": "insufficient_history",
-      "published_at": "2026-10-29T17:17:58+00:00",
-      "days_old": 0.01,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-27T16:00:00+00:00",
+      "days_old": 2.44,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
@@ -428,26 +473,26 @@
   ],
   "automatic_repair": {
     "attempted": true,
-    "drafts_submitted": 1,
+    "drafts_submitted": 3,
     "repaired_local_passes": 0,
-    "repair_rejections": 1,
+    "repair_rejections": 3,
     "repair_error": null,
-    "editorial_repair_attempted": true,
-    "editorial_repair_drafts_submitted": 1,
+    "editorial_repair_attempted": false,
+    "editorial_repair_drafts_submitted": 0,
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 2,
-    "submitted_for_independent_review": 2,
+    "locally_valid_drafts": 0,
+    "submitted_for_independent_review": 0,
     "passed_independent_review": 0,
-    "rejected_by_independent_review": 2,
+    "rejected_by_independent_review": 0,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
   "state_summary": {
     "used_candidates_in_cooldown": 25,
-    "recently_attempted_candidates": 34,
-    "recent_draft_passes_today": 3
+    "recently_attempted_candidates": 15,
+    "recent_draft_passes_today": 0
   }
 }
