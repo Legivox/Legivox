@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-30T07:58:16+05:30
+- Run time (IST): 2026-10-30T08:56:15+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 215
-- Independent editorial review: 0 draft(s) passed / 0 rejected
+- Candidate pool after freshness/diversity filters: 214
+- Independent editorial review: 0 draft(s) passed / 1 rejected
 - Drafts passing local checks: 0
 - Outcome: **skip**
-- Decision reason: All generated drafts failed the local evidence/editorial checks; the hour was skipped.
+- Decision reason: Every draft submitted for independent editorial review was rejected; The hour was skipped.
 
 ## Source health
 
@@ -54,63 +54,65 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 113
-- Previously tracked repositories refreshed outside search results: 87
+- Repositories seen in this discovery run: 111
+- Previously tracked repositories refreshed outside search results: 89
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
-- Repositories with a 20–36 hour comparison baseline: 20
+- Repositories with a 20–36 hour comparison baseline: 18
 - First observations are baseline samples, not evidence of trending. Star velocity is reported only when a historical comparison exists.
 
 ## Primary-source verification
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| paperclipai/paperclip | yes | 200 | https://github.com/paperclipai/paperclip |
-| yanstd888/yanstd888 | yes | 200 | https://github.com/yanstd888/yanstd888 |
-| Secure your app with network access rules in `shopify.app.toml` | yes | 200 | https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml |
+| Lifecycle-Innovations-Limited/claude-ops | yes | 200 | https://github.com/Lifecycle-Innovations-Limited/claude-ops |
+| ragleap/ragleap-core | yes | 200 | https://github.com/ragleap/ragleap-core |
+| Cart and checkout permalinks now support UCP at /buy | yes | 200 | https://shopify.dev/changelog/posts/cart-and-checkout-permalinks-now-support-ucp-at-buy |
 
 ## Selected draft candidates
 
-No candidate produced a draft that passed every local check. Skipping is intentional.
+No draft cleared the complete local and independent-editor gate. See the decision reason and rejected-draft section for locally valid drafts that were rejected, not reviewed, or blocked by a review error.
 
 ## Automatic repair attempt
 
 - Attempted: yes
-- Repaired drafts submitted: 3
-- Repaired drafts that passed local validation: 0
+- Repaired drafts submitted: 4
+- Repaired drafts that passed local validation: 1
 - Repaired drafts rejected: 3
 - Repair error: none
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
-- paperclipai/paperclip: Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.; Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: paperclip is an open‑source app for managing agents at work. Add agent orchestration tests before merging new skills. https://github.com/paperclipai/paperclip
-  - Model evidence quote: “The open‑source app everyone uses to manage agents at work”
-  - Claim support: paperclip is an open‑source app for managing agents at work ← “The open‑source app everyone uses to manage agents at work”
-- yanstd888/yanstd888: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; insight score is below the minimum 7/10
-  - Rejected text: yanstd888/yanstd888 is a personal profile and project index for Yanstd. Use the repo as a template for organizing AI product projects. https://github.com/yanstd888/yanstd888
-  - Model evidence quote: “Personal profile and project index for Yanstd — AI products, full‑stack web development, automation, developer tooling, and digital products”
-  - Claim support: yanstd888/yanstd888 is a personal profile and project index for Yanstd ← “Personal profile and project index for Yanstd — AI products, full‑stack web development, automation, developer tooling, and digital products”
-- Secure your app with network access rules in `shopify.app.toml`: Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.
-  - Rejected text: Shopify added a network_access section to shopify.app.toml to declare allowed hosts. Declare all external hosts before launch to avoid storefront warnings. https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml
-  - Model evidence quote: “The new network_access section has two properties: allowed_navigation_hosts : The external sites your app links to from the storefront, such as your own domain”
-  - Claim support: Shopify added a network_access section to shopify.app.toml to declare allowed hosts ← “The new network_access section has two properties: allowed_navigation_hosts : The external sites your app links to from the storefront, such as your own domain”
-- Secure your app with network access rules in `shopify.app.toml`: Editorial takeaway is too long; keep the analysis concrete and concise.; Fact plus takeaway exceeds the per-link character budget.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.; Draft is 326 raw characters; limit is 280; Primary-source evidence quote is missing or absent from the live page (after presentation normalisation); No claim-by-claim supporting evidence was provided; Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: Shopify’s shopify.app.toml can declare allowed_navigation_hosts to suppress storefront warnings. If you list a host in allowed_navigation_hosts, Shopify will skip the warning when users navigate to that host from the storefront. https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml
-  - Model evidence quote: “The new network_access section has two properties: allowed_navigation_hosts : The external sites your app links to from the storefront, such as your own domain”
-- paperclipai/paperclip: Editorial takeaway is too long; keep the analysis concrete and concise.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.; No claim-by-claim supporting evidence was provided; Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: paperclip’s repository includes an agent-skills topic indicating multi‑agent support. When building agent orchestration with paperclip, include the agent-skills topic to enable multi‑agent workflows. https://github.com/paperclipai/paperclip
-  - Model evidence quote: “Topics acpx agent-orchestration agent-skills agentic-ai ai-agents ai-engineering ai-governance ai-tools autonomous-agents claude claude-code claude-skills codex hermes llm mcp multi-agent openclaw project-management workflow-automation”
-- yanstd888/yanstd888: Opening sentence omits the named product/repository/feature subject; an unrelated integration word does not identify what the post is about.; The factual opening bundles multiple features; narrow it to one capability.; Editorial takeaway is too long; keep the analysis concrete and concise.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; No claim-by-claim supporting evidence was provided; Unsupported strong claim: only; Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: Yanstd’s repository lists TypeScript, Next.js, and React as core systems. Use the repo template only if your project employs TypeScript and Next.js to match Yanstd’s stack. https://github.com/yanstd888/yanstd888
-  - Model evidence quote: “systems : - " TypeScript, Next.js, React, Go, MQL5, PostgreSQL, Redis, Docker, Linux, and Cloudflare "”
+- Lifecycle-Innovations-Limited/claude-ops: The factual opening bundles multiple features; narrow it to one capability.; Editorial takeaway is not specific enough to this candidate's technical/product details.
+  - Rejected text: claude-ops offers a unified inbox for WhatsApp, Email, Slack, Telegram. Before enabling, test each channel’s webhook delivery to ensure messages are received. https://github.com/Lifecycle-Innovations-Limited/claude-ops
+  - Model evidence quote: “Unified inbox (WhatsApp/Email/Slack/Telegram)”
+  - Claim support: claude-ops offers a unified inbox for WhatsApp, Email, Slack, Telegram. ← “Unified inbox (WhatsApp/Email/Slack/Telegram)”
+- ragleap/ragleap-core: A supporting quote does not share enough wording with its stated claim; Supporting quotes cover only 43% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: ragleap-core provides approval‑gated autonomy for AI employees. Verify that an action is blocked when no approver is assigned in the approval workflow. https://github.com/ragleap/ragleap-core
+  - Model evidence quote: “approval-gated autonomy”
+  - Claim support: ragleap-core provides approval‑gated autonomy for AI employees. ← “approval-gated autonomy”
+- Cart and checkout permalinks now support UCP at /buy: Editorial takeaway is too long; keep the analysis concrete and concise.; Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.
+  - Rejected text: Shopify’s /buy route now supports UCP dev.ucp.shopping.permalink to add items. Test that an invalid /buy link redirects to the continue_to URL instead of showing an error page. https://shopify.dev/changelog/posts/cart-and-checkout-permalinks-now-support-ucp-at-buy
+  - Model evidence quote: “support UCP dev.ucp.shopping.permalink”
+  - Claim support: Shopify’s /buy route now supports UCP dev.ucp.shopping.permalink to add items. ← “support UCP dev.ucp.shopping.permalink”
+- ragleap/ragleap-core: No claim-by-claim supporting evidence was provided; Supporting quotes cover only 43% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: ragleap-core offers approval‑gated autonomy for AI employees. Verify that an action is blocked when no approver is assigned. https://github.com/ragleap/ragleap-core
+  - Model evidence quote: “approval‑gated autonomy”
+- Lifecycle-Innovations-Limited/claude-ops: No claim-by-claim supporting evidence was provided; Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: claude-ops provides a unified inbox for WhatsApp. Test that WhatsApp webhooks deliver messages to the inbox. https://github.com/Lifecycle-Innovations-Limited/claude-ops
+  - Model evidence quote: “Unified inbox (WhatsApp/Email/Slack/Telegram)”
+- Cart and checkout permalinks now support UCP at /buy: Post merely restates the headline and a single test; lacks original insight or new perspective.
+  - Rejected text: Shopify’s /buy link supports UCP dev.ucp.shopping.permalink. Check that an invalid /buy link redirects to continue_to. https://shopify.dev/changelog/posts/cart-and-checkout-permalinks-now-support-ucp-at-buy
+- Cart and checkout permalinks now support UCP at /buy: Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.; Fact sentence is too long; narrow it to one source-backed capability.; Editorial takeaway is too long; keep the analysis concrete and concise.; Fact plus takeaway exceeds the per-link character budget.; Draft is 336 raw characters; limit is 280
+  - Rejected text: A /buy link that cannot be applied redirects to the continue_to destination if present, or to the shop’s storefront. When testing a /buy link, verify that an invalid link triggers a redirect to the continue_to URL rather than showing an error page. https://shopify.dev/changelog/posts/cart-and-checkout-permalinks-now-support-ucp-at-buy
+  - Model evidence quote: “If a link can’t be applied, Shopify redirects the buyer to the continue _to destination when it’s present, or to the shop’s storefront instead of showing an error page.”
 
 ## Top discovery candidates considered
 
-- paperclipai/paperclip | GitHub Search | ai_and_automation | raw 67, adjusted 86 | current stars 108692 | GitHub stars +372 over about 24.0h | https://github.com/paperclipai/paperclip
-- yanstd888/yanstd888 | GitHub Search | digital_product_business | raw 58, adjusted 75 | current stars 28 | GitHub stars +16 over about 24.0h | https://github.com/yanstd888/yanstd888
-- Secure your app with network access rules in `shopify.app.toml` | Shopify Developer Changelog | commerce_and_digital_products | raw 74, adjusted 74 | https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml
+- Lifecycle-Innovations-Limited/claude-ops | GitHub Search | commerce_and_digital_products | raw 70, adjusted 74 | current stars 547 | GitHub star trend: building baseline | https://github.com/Lifecycle-Innovations-Limited/claude-ops
+- ragleap/ragleap-core | GitHub Search | ai_and_automation | raw 70, adjusted 74 | current stars 19 | GitHub star trend: building baseline | https://github.com/ragleap/ragleap-core
+- Cart and checkout permalinks now support UCP at /buy | Shopify Developer Changelog | commerce_and_digital_products | raw 71, adjusted 71 | https://shopify.dev/changelog/posts/cart-and-checkout-permalinks-now-support-ucp-at-buy
 
 ## Safety and interpretation
 
