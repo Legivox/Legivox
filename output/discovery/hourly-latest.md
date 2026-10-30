@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-30T16:50:07+05:30
+- Run time (IST): 2026-10-30T17:52:19+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 204
-- Independent editorial review: 0 draft(s) passed / 2 rejected
-- Drafts passing local checks: 0
-- Outcome: **skip**
-- Decision reason: No draft cleared the complete automatic quality gate; independent editorial review failed closed. Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi
+- Candidate pool after freshness/diversity filters: 200
+- Independent editorial review: 2 draft(s) passed / 0 rejected
+- Drafts passing local checks: 2
+- Outcome: **dry_run_passed**
+- Decision reason: At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.
 
 ## Source health
 
@@ -25,7 +25,7 @@
 | GitHub Search · github-seller-operations | 10 | ok |
 | GitHub Search · github-shopify-commerce | 10 | ok |
 | GitHub Search · github-workflow-automation | 10 | ok |
-| Hacker News · hn-analytics-growth | 6 | ok |
+| Hacker News · hn-analytics-growth | 10 | ok |
 | Hacker News · hn-automation-api | 1 | ok |
 | Hacker News · hn-creator-business | 0 | ok |
 | Hacker News · hn-digital-downloads-templates | 0 | ok |
@@ -35,7 +35,7 @@
 | Hacker News · hn-marketing-distribution | 0 | ok |
 | Hacker News · hn-security-selfhost | 0 | ok |
 | Hacker News · hn-seller-operations | 0 | ok |
-| Hacker News · hn-shopify | 8 | ok |
+| Hacker News · hn-shopify | 10 | ok |
 | Hacker News · hn-show-hn | 10 | ok |
 | Ahrefs Blog | 7 | ok |
 | Console.dev | 11 | ok |
@@ -54,8 +54,8 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 109
-- Previously tracked repositories refreshed outside search results: 91
+- Repositories seen in this discovery run: 110
+- Previously tracked repositories refreshed outside search results: 90
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
 - Repositories with a 20–36 hour comparison baseline: 20
@@ -65,13 +65,61 @@
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| IamRamgarhia/All-In-One-Free-SEO-Tool | yes | 200 | https://github.com/IamRamgarhia/All-In-One-Free-SEO-Tool |
-| Telemetry-Tracker/telemetry-tracker | yes | 200 | https://github.com/Telemetry-Tracker/telemetry-tracker |
-| Security update: Offline token dates, new security features | yes | 200 | https://shopify.dev/changelog/blog/app-security-updates-october-2026 |
+| kenryu42/cc-safety-net | yes | 200 | https://github.com/kenryu42/cc-safety-net |
+| docmd-io/docmd | yes | 200 | https://github.com/docmd-io/docmd |
+| Shop SDK lead capture now supports Rich Authorization Requests | yes | 200 | https://shopify.dev/changelog/posts/shop-sdk-lead-capture-now-supports-rich-authorization-requests |
 
 ## Selected draft candidates
 
-No draft cleared the complete local and independent-editor gate. See the decision reason and rejected-draft section for locally valid drafts that were rejected, not reviewed, or blocked by a review error.
+### Draft option 1: kenryu42/cc-safety-net
+
+- Category: developer_tools
+- Source: GitHub Search
+- Format: text
+- Editorial score: 8.8/10
+- Model scores: timeliness 8/10, usefulness 9/10, novelty 7/10, evidence 10/10, insight 9/10
+- Independent editor scores: {"clarity_score": 9, "technical_coherence_score": 9, "takeaway_value_score": 9, "source_faithfulness_score": 9, "originality_score": 8, "reason": "Clear, evidence-backed claim and a concrete test that demonstrates guard behavior.", "passed": true}
+- Live primary page: https://github.com/kenryu42/cc-safety-net (HTTP 200)
+- Exact source evidence: “blocks destructive Git and file system commands”
+- Why this angle: Focuses on a single documented guard behavior and provides a concrete test scenario.
+- Editorial takeaway: Test that a 'git push --force' is rejected by the guard.
+- Source: https://github.com/kenryu42/cc-safety-net
+
+**Claim-by-claim source quotes:**
+
+- cc-safety-net blocks destructive Git and file system commands before tool calls ← “blocks destructive Git and file system commands”
+
+Proposed post (not published):
+
+> cc-safety-net blocks destructive Git and file system commands before tool calls. Test that a 'git push --force' is rejected by the guard. https://github.com/kenryu42/cc-safety-net
+
+- Length: 179/280 raw characters
+- Automated gate: passed live source, evidence, originality, URL and length checks; live publishing is disabled in dry-run mode.
+
+### Draft option 2: docmd-io/docmd
+
+- Category: marketing_and_distribution
+- Source: GitHub Search
+- Format: text
+- Editorial score: 8.75/10
+- Model scores: timeliness 9/10, usefulness 9/10, novelty 6/10, evidence 10/10, insight 8/10
+- Independent editor scores: {"clarity_score": 9, "technical_coherence_score": 9, "takeaway_value_score": 9, "source_faithfulness_score": 9, "originality_score": 8, "reason": "Directly cites source, provides actionable build and verification step.", "passed": true}
+- Live primary page: https://github.com/docmd-io/docmd (HTTP 200)
+- Exact source evidence: “Instead of treating your Markdown as input for a website alone, docmd compiles the same source into outputs for readers, search engines, LLMs, coding agents, and knowledge systems.”
+- Why this angle: Narrowed to the core website compilation feature with a clear validation step.
+- Editorial takeaway: Run docmd to build and verify the site contains the top-level headings.
+- Source: https://github.com/docmd-io/docmd
+
+**Claim-by-claim source quotes:**
+
+- docmd compiles a single Markdown source into a website. ← “Instead of treating your Markdown as input for a website alone, docmd compiles the same source into outputs for readers, search engines, LLMs, coding agents, and knowledge systems.”
+
+Proposed post (not published):
+
+> docmd compiles a single Markdown source into a website. Run docmd to build and verify the site contains the top-level headings. https://github.com/docmd-io/docmd
+
+- Length: 161/280 raw characters
+- Automated gate: passed live source, evidence, originality, URL and length checks; live publishing is disabled in dry-run mode.
 
 ## Automatic repair attempt
 
@@ -84,35 +132,31 @@ No draft cleared the complete local and independent-editor gate. See the decisio
 
 ## Rejected draft options
 
-- IamRamgarhia/All-In-One-Free-SEO-Tool: The factual opening bundles multiple features; narrow it to one capability.; Fact sentence is too long; narrow it to one source-backed capability.; Supporting quotes cover only 60% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: All‑In‑One‑Free‑SEO‑Tool provides 99 SEO tools, including site audits, rank tracking, and AI search visibility. Run a site audit and verify the agent auto‑applies fixes before publishing. https://github.com/IamRamgarhia/All-In-One-Free-SEO-Tool
-  - Model evidence quote: “99 tools: site audits, rank tracking, keyword research, AI search visibility”
-  - Claim support: All‑In‑One‑Free‑SEO‑Tool provides 99 SEO tools, including site audits, rank tracking, and AI search visibility. ← “99 tools: site audits, rank tracking, keyword research, AI search visibility”
-- Telemetry-Tracker/telemetry-tracker: The factual opening bundles multiple features; narrow it to one capability.; Fact sentence is too long; narrow it to one source-backed capability.; Supporting quotes cover only 58% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: Telemetry‑Tracker offers a lightweight self‑hosted telemetry stack with Fastify API, Next.js UI, PostgreSQL, and @telemetry‑tracker SDKs. Send a test event through the SDK and query PostgreSQL to confirm persistence. https://github.com/Telemetry-Tracker/telemetry-tracker
-  - Model evidence quote: “Fastify API, Next.js UI, PostgreSQL, @telemetry-tracker/* SDKs”
-  - Claim support: Telemetry‑Tracker offers a lightweight self‑hosted telemetry stack with Fastify API, Next.js UI, PostgreSQL, and @telemetry‑tracker SDKs. ← “Fastify API, Next.js UI, PostgreSQL, @telemetry-tracker/* SDKs”
-- Security update: Offline token dates, new security features: Fact sentence is too long; narrow it to one source-backed capability.
-  - Rejected text: Shopify requires all public apps that call the Admin API to migrate to expiring offline access tokens by January 1, 2027. Verify the token’s expiry timestamp after migration to ensure it’s set to expire. https://shopify.dev/changelog/blog/app-security-updates-october-2026
-  - Model evidence quote: “All public apps that call the Admin API must migrate to expiring offline access tokens by January 1, 2027”
-  - Claim support: Shopify requires all public apps that call the Admin API to migrate to expiring offline access tokens by January 1, 2027. ← “All public apps that call the Admin API must migrate to expiring offline access tokens by January 1, 2027”
-- Telemetry-Tracker/telemetry-tracker: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.
-  - Rejected text: Telemetry‑Tracker provides a Fastify API for telemetry. Use the Fastify API to send error events. https://github.com/Telemetry-Tracker/telemetry-tracker
-  - Model evidence quote: “Fastify API”
-- Security update: Offline token dates, new security features: Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi
-  - Rejected text: All public apps that call the Admin API must migrate to expiring offline access tokens by January 1, 2027. Migrate before Jan 1 2027 to avoid token expiration. https://shopify.dev/changelog/blog/app-security-updates-october-2026
-- IamRamgarhia/All-In-One-Free-SEO-Tool: Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi
-  - Rejected text: All‑In‑One‑Free‑SEO‑Tool is an open‑source, self‑hosted SEO tool. Deploy it locally to avoid paid API costs. https://github.com/IamRamgarhia/All-In-One-Free-SEO-Tool
+- kenryu42/cc-safety-net: Editorial takeaway is too long; keep the analysis concrete and concise.
+  - Rejected text: cc-safety-net blocks destructive Git and file system commands before tool calls. Verify that a destructive git command like 'git push --force' is rejected by the guard before execution. https://github.com/kenryu42/cc-safety-net
+  - Model evidence quote: “blocks destructive Git and file system commands”
+  - Claim support: The source says cc-safety-net blocks destructive Git and file system commands before tool calls ← “blocks destructive Git and file system commands”
+- docmd-io/docmd: The factual opening bundles multiple features; narrow it to one capability.
+  - Rejected text: docmd compiles a single Markdown source into a website, search, AI context, and knowledge formats. Run docmd to build the site and confirm the search index includes all top-level headings. https://github.com/docmd-io/docmd
+  - Model evidence quote: “One Markdown source to website, search, AI context, and knowledge formats together”
+  - Claim support: The source says docmd compiles a single Markdown source into a website, search, AI context, and knowledge formats ← “One Markdown source to website, search, AI context, and knowledge formats together”
+- Shop SDK lead capture now supports Rich Authorization Requests: The factual opening bundles multiple features; narrow it to one capability.; Editorial takeaway is too long; keep the analysis concrete and concise.; Fact plus takeaway exceeds the per-link character budget.; Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.; Draft is 314 raw characters; limit is 280
+  - Rejected text: Shop SDK lead capture now lets apps request specific profile data, including non‑profile fields. Add a Rich Authorization Request for phone_number required and test that birthdate is optional when the user skips it. https://shopify.dev/changelog/posts/shop-sdk-lead-capture-now-supports-rich-authorization-requests
+  - Model evidence quote: “You can now request the specific profile data your app needs during Shop SDK lead capture, including details that aren't saved on the user's Shop profile”
+  - Claim support: The source says Shop SDK lead capture now lets apps request specific profile data, including non‑profile fields ← “You can now request the specific profile data your app needs during Shop SDK lead capture, including details that aren't saved on the user's Shop profile”
+- Shop SDK lead capture now supports Rich Authorization Requests: Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.; Opening sentence is too close to the source headline; add a distinct editorial framing.
+  - Rejected text: Shop SDK lead capture now supports Rich Authorization Requests. Request phone_number as required and test that birthdate is optional. https://shopify.dev/changelog/posts/shop-sdk-lead-capture-now-supports-rich-authorization-requests
+  - Model evidence quote: “You can now request the specific profile data your app needs during Shop SDK lead capture, including details that aren't saved on the user's Shop profile”
 
 ## Top discovery candidates considered
 
-- IamRamgarhia/All-In-One-Free-SEO-Tool | GitHub Search | marketing_and_distribution | raw 73, adjusted 67 | current stars 100 | GitHub star trend: building baseline | https://github.com/IamRamgarhia/All-In-One-Free-SEO-Tool
-- Telemetry-Tracker/telemetry-tracker | GitHub Search | developer_tools | raw 68, adjusted 62 | current stars 34 | GitHub star trend: building baseline | https://github.com/Telemetry-Tracker/telemetry-tracker
-- Security update: Offline token dates, new security features | Shopify Developer Changelog | commerce_and_digital_products | raw 68, adjusted 50 | https://shopify.dev/changelog/blog/app-security-updates-october-2026
+- kenryu42/cc-safety-net | GitHub Search | developer_tools | raw 67, adjusted 61 | current stars 1855 | GitHub star trend: building baseline | https://github.com/kenryu42/cc-safety-net
+- docmd-io/docmd | GitHub Search | marketing_and_distribution | raw 65, adjusted 59 | current stars 2541 | GitHub star trend: building baseline | https://github.com/docmd-io/docmd
+- Shop SDK lead capture now supports Rich Authorization Requests | Shopify Developer Changelog | commerce_and_digital_products | raw 68, adjusted 50 | https://shopify.dev/changelog/posts/shop-sdk-lead-capture-now-supports-rich-authorization-requests
 
 ## Safety and interpretation
 
-- This run did not produce a publishable draft; no post was published to X.
+- At least one draft passed the automated quality gates; this dry-run workflow itself never publishes to X.
 - Model scores are editorial estimates; they are not verified popularity or market demand.
 - Candidate content and metadata are untrusted input. Factual copy must be supported by the fetched primary page.
 - A skip can mean no fresh candidates, a daily diversity/cap limit, a model/API problem or weak drafts. Check the reason above.
