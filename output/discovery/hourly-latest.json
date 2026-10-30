@@ -1,24 +1,24 @@
 {
-  "generated_at_ist": "2026-10-30T19:13:46+05:30",
-  "run_at_ist": "2026-10-30T19:13:46+05:30",
+  "generated_at_ist": "2026-10-30T20:10:28+05:30",
+  "run_at_ist": "2026-10-30T20:10:28+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 312,
-  "eligible_candidate_count": 195,
+  "candidate_count_raw": 321,
+  "eligible_candidate_count": 198,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4859
+      "total_count": 4870
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1053
+      "total_count": 1054
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
@@ -32,7 +32,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2958
+      "total_count": 2961
     },
     {
       "source": "GitHub Search · github-digital-product-tools",
@@ -46,7 +46,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 437
+      "total_count": 439
     },
     {
       "source": "GitHub Search · github-marketing-distribution",
@@ -60,28 +60,28 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2140
+      "total_count": 2146
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3386
+      "total_count": 3391
     },
     {
       "source": "GitHub Search · github-seller-operations",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 357
+      "total_count": 358
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 137
+      "total_count": 139
     },
     {
       "source": "GitHub Search · github-workflow-automation",
@@ -93,7 +93,7 @@
     {
       "source": "Hacker News · hn-analytics-growth",
       "kind": "hacker_news",
-      "items_kept": 6,
+      "items_kept": 10,
       "status": "ok",
       "total_count": 10
     },
@@ -116,7 +116,7 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 7
+      "total_count": 6
     },
     {
       "source": "Hacker News · hn-digital-products",
@@ -163,7 +163,7 @@
     {
       "source": "Hacker News · hn-shopify",
       "kind": "hacker_news",
-      "items_kept": 8,
+      "items_kept": 9,
       "status": "ok",
       "total_count": 10
     },
@@ -248,7 +248,7 @@
       "kind": "wordpress_plugin",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1791
+      "total_count": 1794
     },
     {
       "source": "WordPress Plugin Directory · wp-membership-creators",
@@ -259,10 +259,10 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-30T13:43:46+00:00",
+    "observed_at_utc": "2026-10-30T14:40:28+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 108,
-    "previously_tracked_repositories_refreshed": 92,
+    "repositories_seen_in_discovery": 113,
+    "previously_tracked_repositories_refreshed": 87,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
@@ -272,175 +272,139 @@
   },
   "primary_source_checks": [
     {
-      "candidate_id": "88d7f9fdb7ad2ae1",
-      "title": "Show HN: Ocel – Deploy apps to your AWS,GCP or VPS with infra from code",
-      "source_url": "https://github.com/ocelhq/ocel",
+      "candidate_id": "25df9fa68f72f18a",
+      "title": "Secure your app with network access rules in `shopify.app.toml`",
+      "source_url": "https://shopify.dev/changelog/secure-your-app-with-network-access-hosts-in-shopify-app-toml",
       "verified": true,
-      "final_url": "https://github.com/ocelhq/ocel",
+      "final_url": "https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "6e336fa3d9953872",
-      "title": "Show HN: SpecDeck – Bring coding agent decisions back into the spec",
-      "source_url": "https://specdeck.ai/",
+      "candidate_id": "4a07de1a6b6420d6",
+      "title": "spatiumnorth/spatiumddi",
+      "source_url": "https://github.com/spatiumnorth/spatiumddi",
       "verified": true,
-      "final_url": "https://specdeck.ai/",
+      "final_url": "https://github.com/spatiumnorth/spatiumddi",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "18db88bba45fb85e",
-      "title": "snapotter-hq/SnapOtter",
-      "source_url": "https://github.com/snapotter-hq/SnapOtter",
+      "candidate_id": "557ac9f38c44c712",
+      "title": "protoLabsAI/protoAgent",
+      "source_url": "https://github.com/protoLabsAI/protoAgent",
       "verified": true,
-      "final_url": "https://github.com/snapotter-hq/SnapOtter",
+      "final_url": "https://github.com/protoLabsAI/protoAgent",
       "http_status": 200,
       "reason": ""
     }
   ],
   "rejected_primary_sources": [],
   "daily_draft_cap": 16,
-  "daily_drafts_already_passed": 5,
-  "outcome": "dry_run_passed",
-  "decision_reason": "At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.",
-  "passing_drafts": [
-    {
-      "candidate_id": "88d7f9fdb7ad2ae1",
-      "title": "Show HN: Ocel – Deploy apps to your AWS,GCP or VPS with infra from code",
-      "source": "Hacker News",
-      "source_kind": "hacker_news",
-      "url": "https://github.com/ocelhq/ocel",
-      "primary_source_verified": true,
-      "primary_source_title": "GitHub - ocelhq/ocel: Deploy apps anywhere",
-      "primary_source_final_url": "https://github.com/ocelhq/ocel",
-      "primary_source_http_status": 200,
-      "category": "product_and_workflow_tools",
-      "priority_score": 71,
-      "hourly_adjusted_score": 55,
-      "post_text": "Ocel’s CLI deploys apps to AWS, GCP or VPS without separate IaC files. Run a pre‑deploy test that compiles infra code to catch missing dependencies. https://github.com/ocelhq/ocel",
-      "fact_sentence": "Ocel’s CLI deploys apps to AWS, GCP or VPS without separate IaC files.",
-      "format": "tool_discovery",
-      "audience": "developers",
-      "angle": "deployment",
-      "rationale": "The GitHub description confirms Ocel’s core purpose of deploying apps anywhere, and the summary notes no separate IaC files are required. The takeaway advises a practical pre‑deploy compile check to surface infra issues early.",
-      "evidence_quote": "Ocel is a CLI for deploying apps to your AWS, GCP or VPS without writing infra code.",
-      "editorial_takeaway": "Run a pre‑deploy test that compiles infra code to catch missing dependencies.",
-      "claim_evidence": [
-        {
-          "claim": "Ocel’s CLI deploys apps to AWS, GCP or VPS without separate IaC files.",
-          "quote": "Ocel is a CLI for deploying apps to your AWS, GCP or VPS without writing infra code."
-        }
-      ],
-      "scores": {
-        "timeliness": 10,
-        "usefulness": 8,
-        "novelty": 7,
-        "evidence": 10,
-        "insight": 8
-      },
-      "editorial_score": 8.65,
-      "character_count": 179,
-      "status": "dry_run_passed_not_published",
-      "published_to_x": false,
-      "editorial_review": {
-        "clarity_score": 8,
-        "technical_coherence_score": 8,
-        "takeaway_value_score": 8,
-        "source_faithfulness_score": 8,
-        "originality_score": 8,
-        "reason": "Clear, technically coherent, source-backed, and adds a useful pre‑deploy test tip.",
-        "passed": true
-      }
-    }
-  ],
+  "daily_drafts_already_passed": 6,
+  "outcome": "skip",
+  "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
+  "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "6e336fa3d9953872",
-      "title": "Show HN: SpecDeck – Bring coding agent decisions back into the spec",
+      "candidate_id": "25df9fa68f72f18a",
+      "title": "Secure your app with network access rules in `shopify.app.toml`",
       "reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability."
+        "Fact sentence is too long; narrow it to one source-backed capability."
       ],
-      "proposed_text": "SpecDeck keeps context, requirements, acceptance criteria together for AI agents. Run a spec review cycle to verify AI outputs match spec before merging. https://specdeck.ai/",
-      "evidence_quote": "Keep project context, requirements, and acceptance criteria together.",
+      "proposed_text": "Shopify’s network_access section lets you declare allowed_navigation_hosts and allowed_sources in shopify.app.toml. Test navigation hosts against your domain list to avoid warnings. https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml",
+      "evidence_quote": "The new network _access section has two properties: allowed _navigation _hosts : The external sites your app links to from the storefront, such as your own domain.",
       "claim_evidence": [
         {
-          "claim": "SpecDeck keeps context, requirements, acceptance criteria together for AI agents.",
-          "quote": "Keep project context, requirements, and acceptance criteria together."
+          "claim": "The source says capability X",
+          "quote": "The new network _access section has two properties: allowed _navigation _hosts : The external sites your app links to from the storefront, such as your own domain."
         }
       ]
     },
     {
-      "candidate_id": "18db88bba45fb85e",
-      "title": "snapotter-hq/SnapOtter",
+      "candidate_id": "4a07de1a6b6420d6",
+      "title": "spatiumnorth/spatiumddi",
       "reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability.",
-        "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "Supporting quotes cover only 62% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "The factual opening bundles multiple features; narrow it to one capability."
       ],
-      "proposed_text": "SnapOtter is a self‑hosted tool that runs OCR, transcribe, and local AI on‑premise. Add a pipeline test that uploads a sample PDF and verifies OCR output matches expected text. https://github.com/snapotter-hq/SnapOtter",
-      "evidence_quote": "Open‑source, self‑hosted file‑processing tool. Convert, compress, OCR, transcribe & run local AI across image, video, audio, PDF & documents, via UI, REST API & pipelines. Your files never leave your network.",
+      "proposed_text": "spatiumddi runs its own BIND9, PowerDNS, and Kea containers with a FastAPI control plane. Deploy containers with Docker Compose and expose FastAPI for API access. https://github.com/spatiumnorth/spatiumddi",
+      "evidence_quote": "Runs its own BIND9 / PowerDNS / Kea service containers, with a FastAPI control plane and React UI.",
       "claim_evidence": [
         {
-          "claim": "SnapOtter is a self‑hosted tool that runs OCR, transcribe, and local AI on‑premise.",
-          "quote": "Open‑source, self‑hosted file‑processing tool. Convert, compress, OCR, transcribe & run local AI across image, video, audio, PDF & documents, via UI, REST API & pipelines. Your files never leave your network."
+          "claim": "The source says capability X",
+          "quote": "Runs its own BIND9 / PowerDNS / Kea service containers, with a FastAPI control plane and React UI."
         }
       ]
+    },
+    {
+      "candidate_id": "557ac9f38c44c712",
+      "title": "protoLabsAI/protoAgent",
+      "proposed_text": "protoAgent is a local-first agent that drives Claude Code and Codex over ACP via a desktop app. Run the desktop app and verify it can fetch a code snippet via ACP. https://github.com/protoLabsAI/protoAgent",
+      "reasons": [
+        "Post merely repeats the headline and a single quote; it adds no new insight or actionable detail beyond what the source already states."
+      ],
+      "editorial_review": {
+        "clarity_score": 8,
+        "technical_coherence_score": 8,
+        "takeaway_value_score": 7,
+        "source_faithfulness_score": 8,
+        "originality_score": 3
+      }
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "88d7f9fdb7ad2ae1",
-      "title": "Show HN: Ocel – Deploy apps to your AWS,GCP or VPS with infra from code",
-      "url": "https://github.com/ocelhq/ocel",
-      "source": "Hacker News",
-      "primary_category": "product_and_workflow_tools",
-      "priority_score": 71,
-      "hourly_adjusted_score": 55,
+      "id": "25df9fa68f72f18a",
+      "title": "Secure your app with network access rules in `shopify.app.toml`",
+      "url": "https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml",
+      "source": "Shopify Developer Changelog",
+      "primary_category": "commerce_and_digital_products",
+      "priority_score": 74,
+      "hourly_adjusted_score": 56,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-30T13:42:23+00:00",
+      "published_at": "2026-10-27T16:00:00+00:00",
+      "days_old": 2.94,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "4a07de1a6b6420d6",
+      "title": "spatiumnorth/spatiumddi",
+      "url": "https://github.com/spatiumnorth/spatiumddi",
+      "source": "GitHub Search",
+      "primary_category": "security_and_self_hosting",
+      "priority_score": 69,
+      "hourly_adjusted_score": 53,
+      "stars_current": 71,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "insufficient_history",
+      "published_at": "2026-10-30T14:40:27+00:00",
       "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "6e336fa3d9953872",
-      "title": "Show HN: SpecDeck – Bring coding agent decisions back into the spec",
-      "url": "https://specdeck.ai/",
-      "source": "Hacker News",
-      "primary_category": "product_and_workflow_tools",
-      "priority_score": 69,
-      "hourly_adjusted_score": 53,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-30T12:47:48+00:00",
-      "days_old": 0.04,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "18db88bba45fb85e",
-      "title": "snapotter-hq/SnapOtter",
-      "url": "https://github.com/snapotter-hq/SnapOtter",
+      "id": "557ac9f38c44c712",
+      "title": "protoLabsAI/protoAgent",
+      "url": "https://github.com/protoLabsAI/protoAgent",
       "source": "GitHub Search",
       "primary_category": "security_and_self_hosting",
-      "priority_score": 67,
-      "hourly_adjusted_score": 51,
-      "stars_current": 2904,
+      "priority_score": 64,
+      "hourly_adjusted_score": 48,
+      "stars_current": 16,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "insufficient_history",
-      "published_at": "2026-10-30T13:44:19+00:00",
+      "published_at": "2026-10-30T14:41:02+00:00",
       "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
@@ -448,71 +412,23 @@
     }
   ],
   "automatic_repair": {
-    "attempted": false,
+    "attempted": true,
     "drafts_submitted": 0,
     "repaired_local_passes": 0,
     "repair_rejections": 0,
-    "repair_error": null,
-    "editorial_repair_attempted": false,
+    "repair_error": "Automatic repair failed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi",
+    "editorial_repair_attempted": true,
     "editorial_repair_drafts_submitted": 0,
-    "editorial_repair_error": null
+    "editorial_repair_error": "Automatic repair failed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi"
   },
   "editorial_review": {
     "locally_valid_drafts": 1,
     "submitted_for_independent_review": 1,
-    "passed_independent_review": 1,
-    "rejected_by_independent_review": 0,
+    "passed_independent_review": 0,
+    "rejected_by_independent_review": 1,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
-  },
-  "recommended_draft": {
-    "candidate_id": "88d7f9fdb7ad2ae1",
-    "title": "Show HN: Ocel – Deploy apps to your AWS,GCP or VPS with infra from code",
-    "source": "Hacker News",
-    "source_kind": "hacker_news",
-    "url": "https://github.com/ocelhq/ocel",
-    "primary_source_verified": true,
-    "primary_source_title": "GitHub - ocelhq/ocel: Deploy apps anywhere",
-    "primary_source_final_url": "https://github.com/ocelhq/ocel",
-    "primary_source_http_status": 200,
-    "category": "product_and_workflow_tools",
-    "priority_score": 71,
-    "hourly_adjusted_score": 55,
-    "post_text": "Ocel’s CLI deploys apps to AWS, GCP or VPS without separate IaC files. Run a pre‑deploy test that compiles infra code to catch missing dependencies. https://github.com/ocelhq/ocel",
-    "fact_sentence": "Ocel’s CLI deploys apps to AWS, GCP or VPS without separate IaC files.",
-    "format": "tool_discovery",
-    "audience": "developers",
-    "angle": "deployment",
-    "rationale": "The GitHub description confirms Ocel’s core purpose of deploying apps anywhere, and the summary notes no separate IaC files are required. The takeaway advises a practical pre‑deploy compile check to surface infra issues early.",
-    "evidence_quote": "Ocel is a CLI for deploying apps to your AWS, GCP or VPS without writing infra code.",
-    "editorial_takeaway": "Run a pre‑deploy test that compiles infra code to catch missing dependencies.",
-    "claim_evidence": [
-      {
-        "claim": "Ocel’s CLI deploys apps to AWS, GCP or VPS without separate IaC files.",
-        "quote": "Ocel is a CLI for deploying apps to your AWS, GCP or VPS without writing infra code."
-      }
-    ],
-    "scores": {
-      "timeliness": 10,
-      "usefulness": 8,
-      "novelty": 7,
-      "evidence": 10,
-      "insight": 8
-    },
-    "editorial_score": 8.65,
-    "character_count": 179,
-    "status": "dry_run_passed_not_published",
-    "published_to_x": false,
-    "editorial_review": {
-      "clarity_score": 8,
-      "technical_coherence_score": 8,
-      "takeaway_value_score": 8,
-      "source_faithfulness_score": 8,
-      "originality_score": 8,
-      "reason": "Clear, technically coherent, source-backed, and adds a useful pre‑deploy test tip.",
-      "passed": true
-    }
   },
   "state_summary": {
     "used_candidates_in_cooldown": 31,
