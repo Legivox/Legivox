@@ -1,9 +1,9 @@
 {
-  "generated_at_ist": "2026-10-30T20:10:28+05:30",
-  "run_at_ist": "2026-10-30T20:10:28+05:30",
+  "generated_at_ist": "2026-10-30T21:04:05+05:30",
+  "run_at_ist": "2026-10-30T21:04:05+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 321,
+  "candidate_count_raw": 318,
   "eligible_candidate_count": 198,
   "source_diagnostics": [
     {
@@ -11,28 +11,28 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4870
+      "total_count": 4877
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1054
+      "total_count": 1056
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 372
+      "total_count": 373
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2961
+      "total_count": 2947
     },
     {
       "source": "GitHub Search · github-digital-product-tools",
@@ -46,7 +46,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 439
+      "total_count": 440
     },
     {
       "source": "GitHub Search · github-marketing-distribution",
@@ -60,35 +60,35 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2146
+      "total_count": 2149
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3391
+      "total_count": 3395
     },
     {
       "source": "GitHub Search · github-seller-operations",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 358
+      "total_count": 359
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 139
+      "total_count": 142
     },
     {
       "source": "GitHub Search · github-workflow-automation",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 278
+      "total_count": 279
     },
     {
       "source": "Hacker News · hn-analytics-growth",
@@ -158,12 +158,12 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 10
+      "total_count": 8
     },
     {
       "source": "Hacker News · hn-shopify",
       "kind": "hacker_news",
-      "items_kept": 9,
+      "items_kept": 10,
       "status": "ok",
       "total_count": 10
     },
@@ -227,7 +227,7 @@
       "kind": "wordpress_plugin",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2015
+      "total_count": 2019
     },
     {
       "source": "WordPress Plugin Directory · wp-ecommerce",
@@ -259,42 +259,42 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-30T14:40:28+00:00",
+    "observed_at_utc": "2026-10-30T15:34:05+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 113,
-    "previously_tracked_repositories_refreshed": 87,
+    "repositories_seen_in_discovery": 109,
+    "previously_tracked_repositories_refreshed": 91,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
-    "repositories_with_20_to_36_hour_baseline": 19,
+    "repositories_with_20_to_36_hour_baseline": 18,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "25df9fa68f72f18a",
-      "title": "Secure your app with network access rules in `shopify.app.toml`",
-      "source_url": "https://shopify.dev/changelog/secure-your-app-with-network-access-hosts-in-shopify-app-toml",
+      "candidate_id": "46b14009a350aa12",
+      "title": "Cart and checkout permalinks now support UCP at /buy",
+      "source_url": "https://shopify.dev/changelog/cart-and-checkout-permalinks-now-support-ucp-at-buy",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml",
+      "final_url": "https://shopify.dev/changelog/posts/cart-and-checkout-permalinks-now-support-ucp-at-buy",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "4a07de1a6b6420d6",
-      "title": "spatiumnorth/spatiumddi",
-      "source_url": "https://github.com/spatiumnorth/spatiumddi",
+      "candidate_id": "649f8812ef1d9d51",
+      "title": "prest/prest",
+      "source_url": "https://github.com/prest/prest",
       "verified": true,
-      "final_url": "https://github.com/spatiumnorth/spatiumddi",
+      "final_url": "https://github.com/prest/prest",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "557ac9f38c44c712",
-      "title": "protoLabsAI/protoAgent",
-      "source_url": "https://github.com/protoLabsAI/protoAgent",
+      "candidate_id": "eb3213f15160d07f",
+      "title": "Canonry/canonry",
+      "source_url": "https://github.com/Canonry/canonry",
       "verified": true,
-      "final_url": "https://github.com/protoLabsAI/protoAgent",
+      "final_url": "https://github.com/Canonry/canonry",
       "http_status": 200,
       "reason": ""
     }
@@ -302,137 +302,254 @@
   "rejected_primary_sources": [],
   "daily_draft_cap": 16,
   "daily_drafts_already_passed": 6,
-  "outcome": "skip",
-  "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
-  "passing_drafts": [],
+  "outcome": "dry_run_passed",
+  "decision_reason": "At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.",
+  "passing_drafts": [
+    {
+      "candidate_id": "649f8812ef1d9d51",
+      "title": "prest/prest",
+      "source": "GitHub Search",
+      "source_kind": "github_repository",
+      "url": "https://github.com/prest/prest",
+      "primary_source_verified": true,
+      "primary_source_title": "GitHub - prest/prest: Instant REST and MCP APIs for PostgreSQL and MySQL, on existing or new databases. CRUD, custom SQL routes, auth and ACL without writing a backend. Low-code, ⚡ realtime, high-performance. Native MySQL support since v2.5.",
+      "primary_source_final_url": "https://github.com/prest/prest",
+      "primary_source_http_status": 200,
+      "category": "security_and_self_hosting",
+      "priority_score": 67,
+      "hourly_adjusted_score": 51,
+      "post_text": "prest/prest offers instant REST and MCP APIs for PostgreSQL and MySQL. Run CRUD tests on autogenerated endpoints to confirm auth and ACL enforcement. https://github.com/prest/prest",
+      "fact_sentence": "prest/prest offers instant REST and MCP APIs for PostgreSQL and MySQL.",
+      "format": "tool_discovery",
+      "audience": "backend developers",
+      "angle": "low-code API",
+      "rationale": "The fact highlights the core feature; the takeaway suggests a practical validation step.",
+      "evidence_quote": "Instant REST and MCP APIs for PostgreSQL and MySQL, on existing or new databases.",
+      "editorial_takeaway": "Run CRUD tests on autogenerated endpoints to confirm auth and ACL enforcement.",
+      "claim_evidence": [
+        {
+          "claim": "prest/prest offers instant REST and MCP APIs for PostgreSQL and MySQL.",
+          "quote": "Instant REST and MCP APIs for PostgreSQL and MySQL, on existing or new databases."
+        }
+      ],
+      "scores": {
+        "timeliness": 8,
+        "usefulness": 8,
+        "novelty": 7,
+        "evidence": 9,
+        "insight": 8
+      },
+      "editorial_score": 8.1,
+      "character_count": 180,
+      "status": "dry_run_passed_not_published",
+      "published_to_x": false,
+      "editorial_review": {
+        "clarity_score": 9,
+        "technical_coherence_score": 9,
+        "takeaway_value_score": 8,
+        "source_faithfulness_score": 9,
+        "originality_score": 8,
+        "reason": "Clear, supported claim and actionable test; source backs auth/ACL and CRUD.",
+        "passed": true
+      }
+    },
+    {
+      "candidate_id": "eb3213f15160d07f",
+      "title": "Canonry/canonry",
+      "source": "GitHub Search",
+      "source_kind": "github_repository",
+      "url": "https://github.com/Canonry/canonry",
+      "primary_source_verified": true,
+      "primary_source_title": "GitHub - Canonry/canonry: Agent-first AI SEO (AEO/GEO) operating platform",
+      "primary_source_final_url": "https://github.com/Canonry/canonry",
+      "primary_source_http_status": 200,
+      "category": "marketing_and_distribution",
+      "priority_score": 64,
+      "hourly_adjusted_score": 48,
+      "post_text": "Canonry/canonry is an agent-first AI SEO platform. Check that the platform generates local-first SEO content before publishing. https://github.com/Canonry/canonry",
+      "fact_sentence": "Canonry/canonry is an agent-first AI SEO platform.",
+      "format": "tool_discovery",
+      "audience": "SEO engineers",
+      "angle": "AI-driven SEO",
+      "rationale": "The fact states the product type; the takeaway advises a specific content validation.",
+      "evidence_quote": "Agent-first AI SEO (AEO/GEO) operating platform",
+      "editorial_takeaway": "Check that the platform generates local-first SEO content before publishing.",
+      "claim_evidence": [
+        {
+          "claim": "Canonry/canonry is an agent-first AI SEO platform.",
+          "quote": "Agent-first AI SEO (AEO/GEO) operating platform"
+        }
+      ],
+      "scores": {
+        "timeliness": 8,
+        "usefulness": 8,
+        "novelty": 7,
+        "evidence": 9,
+        "insight": 8
+      },
+      "editorial_score": 8.1,
+      "character_count": 162,
+      "status": "dry_run_passed_not_published",
+      "published_to_x": false,
+      "editorial_review": {
+        "clarity_score": 9,
+        "technical_coherence_score": 9,
+        "takeaway_value_score": 8,
+        "source_faithfulness_score": 9,
+        "originality_score": 8,
+        "reason": "Clear claim, source confirms local-first; takeaway is a useful, source-backed check.",
+        "passed": true
+      }
+    }
+  ],
   "rejected_drafts": [
     {
-      "candidate_id": "25df9fa68f72f18a",
-      "title": "Secure your app with network access rules in `shopify.app.toml`",
+      "candidate_id": "46b14009a350aa12",
+      "title": "Cart and checkout permalinks now support UCP at /buy",
       "reasons": [
-        "Fact sentence is too long; narrow it to one source-backed capability."
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "A supporting quote does not share enough wording with its stated claim",
+        "Supporting quotes cover only 45% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "Shopify’s network_access section lets you declare allowed_navigation_hosts and allowed_sources in shopify.app.toml. Test navigation hosts against your domain list to avoid warnings. https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml",
-      "evidence_quote": "The new network _access section has two properties: allowed _navigation _hosts : The external sites your app links to from the storefront, such as your own domain.",
+      "proposed_text": "Shopify’s /buy link supports UCP dev.ucp.shopping.permalink to add items and prefill checkout. Verify that invalid /buy links redirect to the continue_to URL to avoid broken checkout flows. https://shopify.dev/changelog/posts/cart-and-checkout-permalinks-now-support-ucp-at-buy",
+      "evidence_quote": "With a `/buy` link, you can: * Add one or more items by variant ID * Prefill buyer details, such as email address",
       "claim_evidence": [
         {
-          "claim": "The source says capability X",
-          "quote": "The new network _access section has two properties: allowed _navigation _hosts : The external sites your app links to from the storefront, such as your own domain."
+          "claim": "Shopify’s /buy link supports UCP dev.ucp.shopping.permalink to add items and prefill checkout.",
+          "quote": "With a `/buy` link, you can: * Add one or more items by variant ID * Prefill buyer details, such as email address"
         }
       ]
-    },
-    {
-      "candidate_id": "4a07de1a6b6420d6",
-      "title": "spatiumnorth/spatiumddi",
-      "reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability."
-      ],
-      "proposed_text": "spatiumddi runs its own BIND9, PowerDNS, and Kea containers with a FastAPI control plane. Deploy containers with Docker Compose and expose FastAPI for API access. https://github.com/spatiumnorth/spatiumddi",
-      "evidence_quote": "Runs its own BIND9 / PowerDNS / Kea service containers, with a FastAPI control plane and React UI.",
-      "claim_evidence": [
-        {
-          "claim": "The source says capability X",
-          "quote": "Runs its own BIND9 / PowerDNS / Kea service containers, with a FastAPI control plane and React UI."
-        }
-      ]
-    },
-    {
-      "candidate_id": "557ac9f38c44c712",
-      "title": "protoLabsAI/protoAgent",
-      "proposed_text": "protoAgent is a local-first agent that drives Claude Code and Codex over ACP via a desktop app. Run the desktop app and verify it can fetch a code snippet via ACP. https://github.com/protoLabsAI/protoAgent",
-      "reasons": [
-        "Post merely repeats the headline and a single quote; it adds no new insight or actionable detail beyond what the source already states."
-      ],
-      "editorial_review": {
-        "clarity_score": 8,
-        "technical_coherence_score": 8,
-        "takeaway_value_score": 7,
-        "source_faithfulness_score": 8,
-        "originality_score": 3
-      }
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "25df9fa68f72f18a",
-      "title": "Secure your app with network access rules in `shopify.app.toml`",
-      "url": "https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml",
+      "id": "46b14009a350aa12",
+      "title": "Cart and checkout permalinks now support UCP at /buy",
+      "url": "https://shopify.dev/changelog/posts/cart-and-checkout-permalinks-now-support-ucp-at-buy",
       "source": "Shopify Developer Changelog",
       "primary_category": "commerce_and_digital_products",
-      "priority_score": 74,
-      "hourly_adjusted_score": 56,
+      "priority_score": 71,
+      "hourly_adjusted_score": 53,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-27T16:00:00+00:00",
-      "days_old": 2.94,
+      "published_at": "2026-10-28T15:50:00+00:00",
+      "days_old": 1.99,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "4a07de1a6b6420d6",
-      "title": "spatiumnorth/spatiumddi",
-      "url": "https://github.com/spatiumnorth/spatiumddi",
+      "id": "649f8812ef1d9d51",
+      "title": "prest/prest",
+      "url": "https://github.com/prest/prest",
       "source": "GitHub Search",
       "primary_category": "security_and_self_hosting",
-      "priority_score": 69,
-      "hourly_adjusted_score": 53,
-      "stars_current": 71,
+      "priority_score": 67,
+      "hourly_adjusted_score": 51,
+      "stars_current": 4631,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "insufficient_history",
-      "published_at": "2026-10-30T14:40:27+00:00",
+      "published_at": "2026-10-30T15:33:32+00:00",
       "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "557ac9f38c44c712",
-      "title": "protoLabsAI/protoAgent",
-      "url": "https://github.com/protoLabsAI/protoAgent",
+      "id": "eb3213f15160d07f",
+      "title": "Canonry/canonry",
+      "url": "https://github.com/Canonry/canonry",
       "source": "GitHub Search",
-      "primary_category": "security_and_self_hosting",
+      "primary_category": "marketing_and_distribution",
       "priority_score": 64,
       "hourly_adjusted_score": 48,
-      "stars_current": 16,
+      "stars_current": 196,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "insufficient_history",
-      "published_at": "2026-10-30T14:41:02+00:00",
-      "days_old": 0.0,
+      "published_at": "2026-10-30T15:19:19+00:00",
+      "days_old": 0.01,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     }
   ],
   "automatic_repair": {
-    "attempted": true,
+    "attempted": false,
     "drafts_submitted": 0,
     "repaired_local_passes": 0,
     "repair_rejections": 0,
-    "repair_error": "Automatic repair failed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi",
-    "editorial_repair_attempted": true,
+    "repair_error": null,
+    "editorial_repair_attempted": false,
     "editorial_repair_drafts_submitted": 0,
-    "editorial_repair_error": "Automatic repair failed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi"
+    "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 1,
-    "submitted_for_independent_review": 1,
-    "passed_independent_review": 0,
-    "rejected_by_independent_review": 1,
+    "locally_valid_drafts": 2,
+    "submitted_for_independent_review": 2,
+    "passed_independent_review": 2,
+    "rejected_by_independent_review": 0,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
+  "recommended_draft": {
+    "candidate_id": "649f8812ef1d9d51",
+    "title": "prest/prest",
+    "source": "GitHub Search",
+    "source_kind": "github_repository",
+    "url": "https://github.com/prest/prest",
+    "primary_source_verified": true,
+    "primary_source_title": "GitHub - prest/prest: Instant REST and MCP APIs for PostgreSQL and MySQL, on existing or new databases. CRUD, custom SQL routes, auth and ACL without writing a backend. Low-code, ⚡ realtime, high-performance. Native MySQL support since v2.5.",
+    "primary_source_final_url": "https://github.com/prest/prest",
+    "primary_source_http_status": 200,
+    "category": "security_and_self_hosting",
+    "priority_score": 67,
+    "hourly_adjusted_score": 51,
+    "post_text": "prest/prest offers instant REST and MCP APIs for PostgreSQL and MySQL. Run CRUD tests on autogenerated endpoints to confirm auth and ACL enforcement. https://github.com/prest/prest",
+    "fact_sentence": "prest/prest offers instant REST and MCP APIs for PostgreSQL and MySQL.",
+    "format": "tool_discovery",
+    "audience": "backend developers",
+    "angle": "low-code API",
+    "rationale": "The fact highlights the core feature; the takeaway suggests a practical validation step.",
+    "evidence_quote": "Instant REST and MCP APIs for PostgreSQL and MySQL, on existing or new databases.",
+    "editorial_takeaway": "Run CRUD tests on autogenerated endpoints to confirm auth and ACL enforcement.",
+    "claim_evidence": [
+      {
+        "claim": "prest/prest offers instant REST and MCP APIs for PostgreSQL and MySQL.",
+        "quote": "Instant REST and MCP APIs for PostgreSQL and MySQL, on existing or new databases."
+      }
+    ],
+    "scores": {
+      "timeliness": 8,
+      "usefulness": 8,
+      "novelty": 7,
+      "evidence": 9,
+      "insight": 8
+    },
+    "editorial_score": 8.1,
+    "character_count": 180,
+    "status": "dry_run_passed_not_published",
+    "published_to_x": false,
+    "editorial_review": {
+      "clarity_score": 9,
+      "technical_coherence_score": 9,
+      "takeaway_value_score": 8,
+      "source_faithfulness_score": 9,
+      "originality_score": 8,
+      "reason": "Clear, supported claim and actionable test; source backs auth/ACL and CRUD.",
+      "passed": true
+    }
+  },
   "state_summary": {
-    "used_candidates_in_cooldown": 31,
+    "used_candidates_in_cooldown": 32,
     "recently_attempted_candidates": 36,
-    "recent_draft_passes_today": 6
+    "recent_draft_passes_today": 7
   }
 }
