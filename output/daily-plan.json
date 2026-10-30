@@ -1,0 +1,59 @@
+{
+  "date_ist": "2026-10-30",
+  "prepared_at_ist": "2026-10-30 07:02:08 IST",
+  "research_window_days": 30,
+  "research_source": "Hacker News Algolia Search API",
+  "posts": [
+    {
+      "idea_id": "creator-feedback",
+      "niche": "independent digital creators",
+      "problem": "Feedback and feature requests are scattered across channels.",
+      "evidence": "Unverified hypothesis. Research complaints and willingness to pay before treating this as demand.",
+      "solution_hypothesis": "a lightweight inbox that groups repeated requests into a prioritized backlog",
+      "text": "A creator can get the same feature request in a DM, a comment, an email and a community thread. The hard part isn't collecting feedback. It's noticing what's being asked for repeatedly. How do you track that today?",
+      "text_hash": "4aa762dbbf29743b39688dda0d986d5f86c91512bc88a959bb3ee141545ffb08",
+      "image_query": "creative workspace",
+      "research": {
+        "query": "feature requests",
+        "score": 0.0,
+        "hits": [],
+        "error": null
+      },
+      "status": "planned"
+    },
+    {
+      "idea_id": "freelancer-scope",
+      "niche": "freelance developers",
+      "problem": "Scope changes and assumptions can quietly erode project margins.",
+      "evidence": "Unverified hypothesis. Validate with public discussions and paid competitor products.",
+      "solution_hypothesis": "a project scoping workbook with explicit assumptions and change approvals",
+      "text": "Scope creep rarely arrives as one dramatic request. It's a handful of tiny “while you're in there…” changes. Freelancers, how do you document assumptions and approve extra work without making every project feel bureaucratic?",
+      "text_hash": "2c016ad5c1e84443623ffa74649e68df4a88b33c42ace2973ff278e1a79d077c",
+      "image_query": "freelancer laptop",
+      "research": {
+        "query": "freelancer scope creep",
+        "score": 0.0,
+        "hits": [],
+        "error": null
+      },
+      "status": "planned"
+    },
+    {
+      "idea_id": "seller-stock",
+      "niche": "small online sellers",
+      "problem": "Stock, fees, reorder levels and margins often live in disconnected sheets.",
+      "evidence": "Unverified hypothesis. Check competing templates and seller complaints.",
+      "solution_hypothesis": "an inventory workbook that combines reorder signals with per-item margins",
+      "text": "A product can look profitable until marketplace fees, packaging, shipping and restocking time are counted. For small sellers, which number is easiest to lose track of: true margin, stock on hand, or reorder timing?",
+      "text_hash": "6d8b8d393e2389d0225a27c181f4602c42710ef7e499154d0ea677d920391c68",
+      "image_query": "inventory boxes",
+      "research": {
+        "query": "inventory margins",
+        "score": 0.0,
+        "hits": [],
+        "error": null
+      },
+      "status": "planned"
+    }
+  ]
+}
