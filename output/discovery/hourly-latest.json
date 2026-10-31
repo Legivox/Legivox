@@ -1,17 +1,17 @@
 {
-  "generated_at_ist": "2026-10-31T16:46:06+05:30",
-  "run_at_ist": "2026-10-31T16:46:06+05:30",
+  "generated_at_ist": "2026-10-31T17:48:29+05:30",
+  "run_at_ist": "2026-10-31T17:48:29+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 318,
-  "eligible_candidate_count": 193,
+  "candidate_count_raw": 288,
+  "eligible_candidate_count": 188,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4864
+      "total_count": 4869
     },
     {
       "source": "GitHub Search · github-analytics-seo",
@@ -25,14 +25,14 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 372
+      "total_count": 375
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3193
+      "total_count": 3197
     },
     {
       "source": "GitHub Search · github-digital-product-tools",
@@ -46,7 +46,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 440
+      "total_count": 441
     },
     {
       "source": "GitHub Search · github-marketing-distribution",
@@ -60,14 +60,14 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2110
+      "total_count": 2112
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3398
+      "total_count": 3403
     },
     {
       "source": "GitHub Search · github-seller-operations",
@@ -116,7 +116,7 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 7
+      "total_count": 6
     },
     {
       "source": "Hacker News · hn-digital-products",
@@ -195,14 +195,15 @@
     {
       "source": "Product Hunt",
       "kind": "rss",
-      "items_kept": 43,
+      "items_kept": 40,
       "status": "ok"
     },
     {
       "source": "Shopify Community",
       "kind": "rss",
-      "items_kept": 30,
-      "status": "ok"
+      "items_kept": 0,
+      "status": "error",
+      "error": "HTTPError"
     },
     {
       "source": "Shopify Developer Changelog",
@@ -259,42 +260,42 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-31T11:16:06+00:00",
+    "observed_at_utc": "2026-10-31T12:18:29+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 111,
-    "previously_tracked_repositories_refreshed": 89,
+    "repositories_seen_in_discovery": 114,
+    "previously_tracked_repositories_refreshed": 86,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
-    "repositories_with_20_to_36_hour_baseline": 17,
+    "repositories_with_20_to_36_hour_baseline": 19,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "2ac330bedf4a1cfe",
-      "title": "Show HN: Filepeek – View any file in your browser",
-      "source_url": "https://filepeek.io/",
+      "candidate_id": "6c933a0a7009a87b",
+      "title": "Security update: Offline token dates, new security features",
+      "source_url": "https://shopify.dev/changelog/app-security-updates-october-2026",
       "verified": true,
-      "final_url": "https://filepeek.io/",
+      "final_url": "https://shopify.dev/changelog/blog/app-security-updates-october-2026",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "fe106ba546c5c606",
-      "title": "Promoted Placements beta now includes Shop Campaigns",
-      "source_url": "https://shopify.dev/changelog/promoted-placements-beta-now-includes-shop-campaigns",
+      "candidate_id": "f6b4870412a7c624",
+      "title": "Tool: Atuin Threads",
+      "source_url": "https://blog.atuin.sh/threads-agent-sessions/?ref=console.dev",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns",
+      "final_url": "https://blog.atuin.sh/threads-agent-sessions/?ref=console.dev",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "5b7aef4519e9bf2e",
-      "title": "Search brands that don't sell on Shopify in the Catalog API (beta)",
-      "source_url": "https://shopify.dev/changelog/search-brands-that-don-t-sell-on-shopify-in-the-catalog-api-beta",
+      "candidate_id": "c966fb913f8d63e4",
+      "title": "Manage payouts, billing, and settings in Dev Dashboard",
+      "source_url": "https://shopify.dev/changelog/manage-partner-payouts-billing-and-settings-from-organization-settings",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/search-brands-that-don-t-sell-on-shopify-in-the-catalog-api-beta",
+      "final_url": "https://shopify.dev/changelog/posts/manage-partner-payouts-billing-and-settings-from-organization-settings",
       "http_status": 200,
       "reason": ""
     }
@@ -303,134 +304,77 @@
   "daily_draft_cap": 16,
   "daily_drafts_already_passed": 2,
   "outcome": "skip",
-  "decision_reason": "All generated drafts failed the local evidence/editorial checks; the hour was skipped.",
+  "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
   "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "2ac330bedf4a1cfe",
-      "title": "Show HN: Filepeek – View any file in your browser",
+      "candidate_id": "f6b4870412a7c624",
+      "title": "Tool: Atuin Threads",
       "reasons": [
-        "Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Primary-source evidence quote is missing or absent from the live page (after presentation normalisation)",
+        "A factual claim lacks a quote present in the live primary-source page"
       ],
-      "proposed_text": "Filepeek opens any file directly in the browser, no upload needed. Verify that uncommon formats (e.g., RAW, 3D) render correctly in the UI. https://filepeek.io/",
-      "evidence_quote": "Open any file in your browser. No download required. Runs entirely in your browser without uploading anywhere.",
+      "proposed_text": "Atuin Threads syncs agent sessions across machines and is end‑to‑end encrypted. Test session resume on a fresh machine to confirm context integrity. https://blog.atuin.sh/threads-agent-sessions/?ref=console.dev",
+      "evidence_quote": "Atuin Threads: one searchable, synced history for every agent session, on every machine ... End‑to‑end encrypted when synced",
       "claim_evidence": [
         {
-          "claim": "Filepeek opens any file directly in the browser, no upload needed.",
-          "quote": "Open any file in your browser. No download required. Runs entirely in your browser without uploading anywhere."
+          "claim": "Atuin Threads syncs agent sessions across machines and is end‑to‑end encrypted.",
+          "quote": "Atuin Threads: one searchable, synced history for every agent session, on every machine ... End‑to‑end encrypted when synced"
         }
       ]
     },
     {
-      "candidate_id": "fe106ba546c5c606",
-      "title": "Promoted Placements beta now includes Shop Campaigns",
+      "candidate_id": "c966fb913f8d63e4",
+      "title": "Manage payouts, billing, and settings in Dev Dashboard",
       "reasons": [
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
-        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
-        "Supporting quotes cover only 62% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "The factual opening bundles multiple features; narrow it to one capability."
       ],
-      "proposed_text": "Promoted Placements now pays commission on Shop Campaigns products via search_catalog. Pass catalog_id in search_catalog and read placement.commission.value. https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns",
-      "evidence_quote": "When a `search_catalog` result comes from a merchant running Shop Campaigns, you earn the commission that merchant funds, added to Shopify's base rate.",
+      "proposed_text": "Partner payouts, billing, and settings are now managed in Dev Dashboard Organization settings. Check that existing payout history appears unchanged after migration. https://shopify.dev/changelog/posts/manage-partner-payouts-billing-and-settings-from-organization-settings",
+      "evidence_quote": "From Organization settings , you can manage: ... Payouts : payout setup, history, transactions, and payout methods",
       "claim_evidence": [
         {
-          "claim": "Promoted Placements now pays commission on Shop Campaigns products via search_catalog.",
-          "quote": "When a `search_catalog` result comes from a merchant running Shop Campaigns, you earn the commission that merchant funds, added to Shopify's base rate."
+          "claim": "Partner payouts, billing, and settings are now managed in Dev Dashboard Organization settings.",
+          "quote": "From Organization settings , you can manage: ... Payouts : payout setup, history, transactions, and payout methods"
         }
       ]
     },
     {
-      "candidate_id": "5b7aef4519e9bf2e",
-      "title": "Search brands that don't sell on Shopify in the Catalog API (beta)",
+      "candidate_id": "6c933a0a7009a87b",
+      "title": "Security update: Offline token dates, new security features",
+      "proposed_text": "All public apps that call the Admin API must migrate to expiring offline access tokens by Jan 1 2027. Verify token expiration logic before Jan 1 2027 to avoid authentication failures. https://shopify.dev/changelog/blog/app-security-updates-october-2026",
       "reasons": [
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
-        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
-        "Supporting quotes cover only 62% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Post merely repeats headline facts without adding new insight or actionable nuance; originality below threshold."
       ],
-      "proposed_text": "Catalog API beta adds a sources parameter to search_catalog to include external products. Set sources to ['shopify','external'] to include external items. https://shopify.dev/changelog/posts/search-brands-that-don-t-sell-on-shopify-in-the-catalog-api-beta",
-      "evidence_quote": "The Catalog API beta now supports a `sources` parameter on `search_catalog` that controls which products you return:",
-      "claim_evidence": [
-        {
-          "claim": "Catalog API beta adds a sources parameter to search_catalog to include external products.",
-          "quote": "The Catalog API beta now supports a `sources` parameter on `search_catalog` that controls which products you return:"
-        }
-      ]
+      "editorial_review": {
+        "clarity_score": 9,
+        "technical_coherence_score": 9,
+        "takeaway_value_score": 8,
+        "source_faithfulness_score": 9,
+        "originality_score": 3
+      }
     },
     {
-      "candidate_id": "2ac330bedf4a1cfe",
-      "title": "Show HN: Filepeek – View any file in your browser",
-      "reasons": [
-        "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
-        "No claim-by-claim supporting evidence was provided",
-        "Supporting quotes cover only 60% of factual wording; narrow the claim or provide a closer primary-source quote"
-      ],
-      "proposed_text": "Filepeek opens any file directly in the browser without uploading. Open a .obj 3D file in Filepeek and confirm it renders in the viewer; the 3D Objects feature should display the model without download. https://filepeek.io/",
-      "evidence_quote": "Open any file in your browser. No download required. Runs entirely in your browser without uploading anywhere.",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote"
-      ]
-    },
-    {
-      "candidate_id": "fe106ba546c5c606",
-      "title": "Promoted Placements beta now includes Shop Campaigns",
-      "reasons": [
-        "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "Fact plus takeaway exceeds the per-link character budget.",
-        "Draft is 357 raw characters; limit is 280"
-      ],
-      "proposed_text": "Promoted Placements commission is added to Shopify's base rate in search_catalog results. When calling search_catalog, pass catalog_id and read placement.commission.percentage.value; verify the value equals the sum of the merchant's commission and Shopify's base rate. https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns",
-      "evidence_quote": "When a `search_catalog` result comes from a merchant running Shop Campaigns, you earn the commission that merchant funds, added to Shopify's base rate.",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
-        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
-        "Supporting quotes cover only 62% of factual wording; narrow the claim or provide a closer primary-source quote"
-      ]
-    },
-    {
-      "candidate_id": "5b7aef4519e9bf2e",
-      "title": "Search brands that don't sell on Shopify in the Catalog API (beta)",
+      "candidate_id": "6c933a0a7009a87b",
+      "title": "Security update: Offline token dates, new security features",
       "reasons": [
         "Editorial takeaway is too long; keep the analysis concrete and concise.",
         "Fact plus takeaway exceeds the per-link character budget.",
         "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
-        "Draft is 342 raw characters; limit is 280"
+        "Draft is 351 raw characters; limit is 280"
       ],
-      "proposed_text": "search_catalog supports a sources parameter to filter external products. Set sources to ['external'] in search_catalog and confirm each result has eligible.native_checkout: false, indicating the product cannot be bought via Shopify checkout. https://shopify.dev/changelog/posts/search-brands-that-don-t-sell-on-shopify-in-the-catalog-api-beta",
-      "evidence_quote": "The Catalog API beta now supports a `sources` parameter on `search_catalog` that controls which products you return:",
+      "proposed_text": "All public apps that call the Admin API must migrate to expiring offline access tokens by January 1 2027. If your app still uses non‑expiring offline tokens, merchants will see a warning in Shopify admin on January 15 2027, which can block app usage until the migration is complete. https://shopify.dev/changelog/blog/app-security-updates-october-2026",
+      "evidence_quote": "All public apps that call the Admin API must migrate to expiring offline access tokens by January 1, 2027. January 15, 2027: Merchants using the app see a warning in Shopify admin.",
       "automatic_repair_attempt": true,
       "original_rejection_reasons": [
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
-        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
-        "Supporting quotes cover only 62% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Post merely repeats headline facts without adding new insight or actionable nuance; originality below threshold."
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "2ac330bedf4a1cfe",
-      "title": "Show HN: Filepeek – View any file in your browser",
-      "url": "https://filepeek.io/",
-      "source": "Hacker News",
-      "primary_category": "product_and_workflow_tools",
-      "priority_score": 66,
-      "hourly_adjusted_score": 68,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-31T10:59:21+00:00",
-      "days_old": 0.01,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "fe106ba546c5c606",
-      "title": "Promoted Placements beta now includes Shop Campaigns",
-      "url": "https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns",
+      "id": "6c933a0a7009a87b",
+      "title": "Security update: Offline token dates, new security features",
+      "url": "https://shopify.dev/changelog/blog/app-security-updates-october-2026",
       "source": "Shopify Developer Changelog",
       "primary_category": "commerce_and_digital_products",
       "priority_score": 63,
@@ -440,27 +384,46 @@
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-27T13:00:00+00:00",
-      "days_old": 3.93,
+      "published_at": "2026-10-27T17:00:00+00:00",
+      "days_old": 3.8,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "5b7aef4519e9bf2e",
-      "title": "Search brands that don't sell on Shopify in the Catalog API (beta)",
-      "url": "https://shopify.dev/changelog/posts/search-brands-that-don-t-sell-on-shopify-in-the-catalog-api-beta",
-      "source": "Shopify Developer Changelog",
-      "primary_category": "commerce_and_digital_products",
-      "priority_score": 63,
-      "hourly_adjusted_score": 63,
+      "id": "f6b4870412a7c624",
+      "title": "Tool: Atuin Threads",
+      "url": "https://blog.atuin.sh/threads-agent-sessions/?ref=console.dev",
+      "source": "Console.dev",
+      "primary_category": "developer_tools",
+      "priority_score": 62,
+      "hourly_adjusted_score": 62,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-27T10:00:00+00:00",
-      "days_old": 4.05,
+      "published_at": "2026-10-29T08:00:00+00:00",
+      "days_old": 2.18,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "c966fb913f8d63e4",
+      "title": "Manage payouts, billing, and settings in Dev Dashboard",
+      "url": "https://shopify.dev/changelog/posts/manage-partner-payouts-billing-and-settings-from-organization-settings",
+      "source": "Shopify Developer Changelog",
+      "primary_category": "commerce_and_digital_products",
+      "priority_score": 60,
+      "hourly_adjusted_score": 60,
+      "stars_current": null,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-27T23:30:00+00:00",
+      "days_old": 3.53,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
@@ -468,26 +431,26 @@
   ],
   "automatic_repair": {
     "attempted": true,
-    "drafts_submitted": 3,
+    "drafts_submitted": 1,
     "repaired_local_passes": 0,
-    "repair_rejections": 3,
+    "repair_rejections": 1,
     "repair_error": null,
-    "editorial_repair_attempted": false,
-    "editorial_repair_drafts_submitted": 0,
+    "editorial_repair_attempted": true,
+    "editorial_repair_drafts_submitted": 1,
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 0,
-    "submitted_for_independent_review": 0,
+    "locally_valid_drafts": 1,
+    "submitted_for_independent_review": 1,
     "passed_independent_review": 0,
-    "rejected_by_independent_review": 0,
+    "rejected_by_independent_review": 1,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
   "state_summary": {
     "used_candidates_in_cooldown": 34,
-    "recently_attempted_candidates": 30,
+    "recently_attempted_candidates": 33,
     "recent_draft_passes_today": 2
   }
 }
