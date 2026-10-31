@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-31T09:54:55+05:30
+- Run time (IST): 2026-10-31T10:53:03+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 191
-- Independent editorial review: 0 draft(s) passed / 1 rejected
+- Candidate pool after freshness/diversity filters: 199
+- Independent editorial review: 0 draft(s) passed / 0 rejected
 - Drafts passing local checks: 0
 - Outcome: **skip**
-- Decision reason: Every draft submitted for independent editorial review was rejected; The hour was skipped.
+- Decision reason: All generated drafts failed the local evidence/editorial checks; the hour was skipped.
 
 ## Source health
 
@@ -25,7 +25,7 @@
 | GitHub Search · github-seller-operations | 10 | ok |
 | GitHub Search · github-shopify-commerce | 10 | ok |
 | GitHub Search · github-workflow-automation | 10 | ok |
-| Hacker News · hn-analytics-growth | 7 | ok |
+| Hacker News · hn-analytics-growth | 10 | ok |
 | Hacker News · hn-automation-api | 1 | ok |
 | Hacker News · hn-creator-business | 0 | ok |
 | Hacker News · hn-digital-downloads-templates | 0 | ok |
@@ -54,8 +54,8 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 107
-- Previously tracked repositories refreshed outside search results: 93
+- Repositories seen in this discovery run: 116
+- Previously tracked repositories refreshed outside search results: 84
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
 - Repositories with a 20–36 hour comparison baseline: 16
@@ -65,44 +65,52 @@
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| Cart and checkout permalinks now support UCP at /buy | yes | 200 | https://shopify.dev/changelog/posts/cart-and-checkout-permalinks-now-support-ucp-at-buy |
-| Shop SDK lead capture now supports Rich Authorization Requests | yes | 200 | https://shopify.dev/changelog/posts/shop-sdk-lead-capture-now-supports-rich-authorization-requests |
-| Show HN: Free Unlimited Virtual Monitors+Watch Claude Work on Them+Community | yes | 200 | https://multispace.dev/ |
+| New trusted vault origin signal in Payments Apps API | yes | 200 | https://shopify.dev/changelog/posts/new-trusted-vault-origin-signal-in-payments-apps-api |
+| Shopify App Pricing: Plan Feature Targeting | yes | 200 | https://shopify.dev/changelog/posts/plan-feature-targeting |
+| Show HN: AI agent needs process to build a commercial application | yes | 200 | https://nomorehappypath.com/ |
 
 ## Selected draft candidates
 
-No draft cleared the complete local and independent-editor gate. See the decision reason and rejected-draft section for locally valid drafts that were rejected, not reviewed, or blocked by a review error.
+No candidate produced a draft that passed every local check. Skipping is intentional.
 
 ## Automatic repair attempt
 
 - Attempted: yes
-- Repaired drafts submitted: 1
+- Repaired drafts submitted: 3
 - Repaired drafts that passed local validation: 0
-- Repaired drafts rejected: 1
+- Repaired drafts rejected: 3
 - Repair error: none
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
-- Shop SDK lead capture now supports Rich Authorization Requests: Opening sentence is too close to the source headline; add a distinct editorial framing.
-  - Rejected text: Shop SDK lead capture now supports Rich Authorization Requests. Add required fields to RAR and check optional ones are omitted on decline. https://shopify.dev/changelog/posts/shop-sdk-lead-capture-now-supports-rich-authorization-requests
-  - Model evidence quote: “You can now request the specific profile data your app needs during Shop SDK lead capture, including details that aren't saved on the user's Shop profile.”
-  - Claim support: Shop SDK lead capture now supports Rich Authorization Requests. ← “You can now request the specific profile data your app needs during Shop SDK lead capture, including details that aren't saved on the user's Shop profile.”
-- Show HN: Free Unlimited Virtual Monitors+Watch Claude Work on Them+Community: Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.; A supporting quote does not share enough wording with its stated claim; Factual sentence includes terms absent from the source title/summary: offer, signup, virtual
-  - Rejected text: Multispace offers free virtual monitors for AI work without signup. Install Multispace and verify AI can launch in a new monitor window. https://multispace.dev/
-  - Model evidence quote: “Your AI works on its own screen while you design, listen to music or play, right next to it. Real extra monitors for your apps, websites and games, all in one window. Free.”
-  - Claim support: Multispace offers free virtual monitors for AI work without signup. ← “Your AI works on its own screen while you design, listen to music or play, right next to it. Real extra monitors for your apps, websites and games, all in one window. Free.”
-- Cart and checkout permalinks now support UCP at /buy: Post merely restates headline and suggests a generic test; no new insight or actionable detail beyond source.
-  - Rejected text: Shopify’s /buy link now supports UCP dev.ucp.shopping.permalink. Verify /buy UCP prefill by sending a link with buyer/email. https://shopify.dev/changelog/posts/cart-and-checkout-permalinks-now-support-ucp-at-buy
-- Cart and checkout permalinks now support UCP at /buy: Editorial takeaway is too long; keep the analysis concrete and concise.; Fact plus takeaway exceeds the per-link character budget.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.; Editorial takeaway is too long to be a useful concise second sentence.; Draft is 337 raw characters; limit is 280
-  - Rejected text: Shopify’s /buy link supports UCP dev.ucp.shopping.permalink. When a /buy link’s UCP parameters cannot be applied, Shopify redirects the buyer to the continue_to destination if present, or to the shop’s storefront instead of displaying an error page. https://shopify.dev/changelog/posts/cart-and-checkout-permalinks-now-support-ucp-at-buy
-  - Model evidence quote: “If a link can’t be applied, Shopify redirects the buyer to the continue _to destination when it’s present, or to the shop’s storefront instead of showing an error page.”
+- New trusted vault origin signal in Payments Apps API: Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.
+  - Rejected text: Payments Apps API 2027-01 adds payment_method.data.trusted_vault_origin Boolean. Check this flag when handling missing CVV for vault cards. https://shopify.dev/changelog/posts/new-trusted-vault-origin-signal-in-payments-apps-api
+  - Model evidence quote: “The Payments Apps API 2027-01 release candidate adds payment _method.data.trusted _vault _origin to credit card payment and verification requests.”
+  - Claim support: Payments Apps API 2027-01 adds payment_method.data.trusted_vault_origin Boolean. ← “The Payments Apps API 2027-01 release candidate adds payment _method.data.trusted _vault _origin to credit card payment and verification requests.”
+- Shopify App Pricing: Plan Feature Targeting: Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.; Supporting quotes cover only 60% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: Shopify App Pricing now lets public plans require store features like checkout UI extensions. Add a requirement and test that merchants without the feature are blocked at checkout. https://shopify.dev/changelog/posts/plan-feature-targeting
+  - Model evidence quote: “You can now add store requirements to public plans in Shopify App Pricing.”
+  - Claim support: Shopify App Pricing now lets public plans require store features like checkout UI extensions. ← “You can now add store requirements to public plans in Shopify App Pricing.”
+- Show HN: AI agent needs process to build a commercial application: A supporting quote does not share enough wording with its stated claim; Supporting quotes cover only 33% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: NoMoreHappyPath found 33 real problems in a 374k‑line commercial app. Run NoMoreHappyPath on large codebases to catch hidden issues. https://nomorehappypath.com/
+  - Model evidence quote: “33 real problems found, against 10 by one AI alone.”
+  - Claim support: NoMoreHappyPath found 33 real problems in a 374k‑line commercial app. ← “33 real problems found, against 10 by one AI alone.”
+- Shopify App Pricing: Plan Feature Targeting: Editorial takeaway is too long; keep the analysis concrete and concise.
+  - Rejected text: Merchants lacking a required feature cannot subscribe to a plan that depends on it. When adding a store requirement, disable the plan’s select button for stores missing the feature to prevent subscription attempts. https://shopify.dev/changelog/posts/plan-feature-targeting
+  - Model evidence quote: “A merchant whose store does not have a required feature cannot subscribe to that plan.”
+- Show HN: AI agent needs process to build a commercial application: No claim-by-claim supporting evidence was provided; Supporting quotes cover only 0% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: NoMoreHappyPath uncovered 33 issues in a 374k‑line commercial codebase. Run NoMoreHappyPath on large projects to surface hidden defects before release. https://nomorehappypath.com/
+  - Model evidence quote: “33 real problems found, against 10 by one AI alone.”
+- New trusted vault origin signal in Payments Apps API: Editorial takeaway is too long; keep the analysis concrete and concise.; Fact plus takeaway exceeds the per-link character budget.; Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.; Draft is 294 raw characters; limit is 280; No claim-by-claim supporting evidence was provided; Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: Payments Apps API 2027-01 introduces an optional Boolean to indicate trusted vault origin for missing CVV. Check the trusted_vault_origin flag when processing vault card payments to avoid false rejections. https://shopify.dev/changelog/posts/new-trusted-vault-origin-signal-in-payments-apps-api
+  - Model evidence quote: “Payment app developers can use this optional Boolean to handle missing CVV for cards from a vault Shopify trusts.”
 
 ## Top discovery candidates considered
 
-- Cart and checkout permalinks now support UCP at /buy | Shopify Developer Changelog | commerce_and_digital_products | raw 71, adjusted 71 | https://shopify.dev/changelog/posts/cart-and-checkout-permalinks-now-support-ucp-at-buy
-- Shop SDK lead capture now supports Rich Authorization Requests | Shopify Developer Changelog | commerce_and_digital_products | raw 68, adjusted 68 | https://shopify.dev/changelog/posts/shop-sdk-lead-capture-now-supports-rich-authorization-requests
-- Show HN: Free Unlimited Virtual Monitors+Watch Claude Work on Them+Community | Hacker News | product_and_workflow_tools | raw 65, adjusted 67 | https://multispace.dev/
+- New trusted vault origin signal in Payments Apps API | Shopify Developer Changelog | commerce_and_digital_products | raw 75, adjusted 75 | https://shopify.dev/changelog/posts/new-trusted-vault-origin-signal-in-payments-apps-api
+- Shopify App Pricing: Plan Feature Targeting | Shopify Developer Changelog | commerce_and_digital_products | raw 71, adjusted 71 | https://shopify.dev/changelog/posts/plan-feature-targeting
+- Show HN: AI agent needs process to build a commercial application | Hacker News | product_and_workflow_tools | raw 63, adjusted 65 | https://nomorehappypath.com/
 
 ## Safety and interpretation
 

@@ -1,24 +1,24 @@
 {
-  "generated_at_ist": "2026-10-31T09:54:55+05:30",
-  "run_at_ist": "2026-10-31T09:54:55+05:30",
+  "generated_at_ist": "2026-10-31T10:53:03+05:30",
+  "run_at_ist": "2026-10-31T10:53:03+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 313,
-  "eligible_candidate_count": 191,
+  "candidate_count_raw": 324,
+  "eligible_candidate_count": 199,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4829
+      "total_count": 4833
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1031
+      "total_count": 1032
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
@@ -32,7 +32,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3027
+      "total_count": 3028
     },
     {
       "source": "GitHub Search · github-digital-product-tools",
@@ -60,21 +60,21 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2097
+      "total_count": 2098
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3361
+      "total_count": 3362
     },
     {
       "source": "GitHub Search · github-seller-operations",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 354
+      "total_count": 355
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
@@ -93,7 +93,7 @@
     {
       "source": "Hacker News · hn-analytics-growth",
       "kind": "hacker_news",
-      "items_kept": 7,
+      "items_kept": 10,
       "status": "ok",
       "total_count": 10
     },
@@ -116,7 +116,7 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 5
+      "total_count": 7
     },
     {
       "source": "Hacker News · hn-digital-products",
@@ -158,7 +158,7 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 8
+      "total_count": 10
     },
     {
       "source": "Hacker News · hn-shopify",
@@ -259,10 +259,10 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-31T04:24:55+00:00",
+    "observed_at_utc": "2026-10-31T05:23:03+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 107,
-    "previously_tracked_repositories_refreshed": 93,
+    "repositories_seen_in_discovery": 116,
+    "previously_tracked_repositories_refreshed": 84,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
@@ -272,29 +272,29 @@
   },
   "primary_source_checks": [
     {
-      "candidate_id": "46b14009a350aa12",
-      "title": "Cart and checkout permalinks now support UCP at /buy",
-      "source_url": "https://shopify.dev/changelog/cart-and-checkout-permalinks-now-support-ucp-at-buy",
+      "candidate_id": "b89675159c0fb375",
+      "title": "New trusted vault origin signal in Payments Apps API",
+      "source_url": "https://shopify.dev/changelog/new-trusted-vault-origin-signal-in-payments-apps-api",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/cart-and-checkout-permalinks-now-support-ucp-at-buy",
+      "final_url": "https://shopify.dev/changelog/posts/new-trusted-vault-origin-signal-in-payments-apps-api",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "a7ef65c69e7dd7cd",
-      "title": "Shop SDK lead capture now supports Rich Authorization Requests",
-      "source_url": "https://shopify.dev/changelog/shop-sdk-lead-capture-now-supports-rich-authorization-requests",
+      "candidate_id": "b140d6f185b58e72",
+      "title": "Shopify App Pricing: Plan Feature Targeting",
+      "source_url": "https://shopify.dev/changelog/plan-feature-targeting",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/shop-sdk-lead-capture-now-supports-rich-authorization-requests",
+      "final_url": "https://shopify.dev/changelog/posts/plan-feature-targeting",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "32b0253b0bd54923",
-      "title": "Show HN: Free Unlimited Virtual Monitors+Watch Claude Work on Them+Community",
-      "source_url": "https://multispace.dev/",
+      "candidate_id": "094df4043fa3fd91",
+      "title": "Show HN: AI agent needs process to build a commercial application",
+      "source_url": "https://nomorehappypath.com/",
       "verified": true,
-      "final_url": "https://multispace.dev/",
+      "final_url": "https://nomorehappypath.com/",
       "http_status": 200,
       "reason": ""
     }
@@ -303,80 +303,128 @@
   "daily_draft_cap": 16,
   "daily_drafts_already_passed": 1,
   "outcome": "skip",
-  "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
+  "decision_reason": "All generated drafts failed the local evidence/editorial checks; the hour was skipped.",
   "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "a7ef65c69e7dd7cd",
-      "title": "Shop SDK lead capture now supports Rich Authorization Requests",
+      "candidate_id": "b89675159c0fb375",
+      "title": "New trusted vault origin signal in Payments Apps API",
       "reasons": [
-        "Opening sentence is too close to the source headline; add a distinct editorial framing."
+        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation."
       ],
-      "proposed_text": "Shop SDK lead capture now supports Rich Authorization Requests. Add required fields to RAR and check optional ones are omitted on decline. https://shopify.dev/changelog/posts/shop-sdk-lead-capture-now-supports-rich-authorization-requests",
-      "evidence_quote": "You can now request the specific profile data your app needs during Shop SDK lead capture, including details that aren't saved on the user's Shop profile.",
+      "proposed_text": "Payments Apps API 2027-01 adds payment_method.data.trusted_vault_origin Boolean. Check this flag when handling missing CVV for vault cards. https://shopify.dev/changelog/posts/new-trusted-vault-origin-signal-in-payments-apps-api",
+      "evidence_quote": "The Payments Apps API 2027-01 release candidate adds payment _method.data.trusted _vault _origin to credit card payment and verification requests.",
       "claim_evidence": [
         {
-          "claim": "Shop SDK lead capture now supports Rich Authorization Requests.",
-          "quote": "You can now request the specific profile data your app needs during Shop SDK lead capture, including details that aren't saved on the user's Shop profile."
+          "claim": "Payments Apps API 2027-01 adds payment_method.data.trusted_vault_origin Boolean.",
+          "quote": "The Payments Apps API 2027-01 release candidate adds payment _method.data.trusted _vault _origin to credit card payment and verification requests."
         }
       ]
     },
     {
-      "candidate_id": "32b0253b0bd54923",
-      "title": "Show HN: Free Unlimited Virtual Monitors+Watch Claude Work on Them+Community",
+      "candidate_id": "b140d6f185b58e72",
+      "title": "Shopify App Pricing: Plan Feature Targeting",
       "reasons": [
-        "Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.",
+        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
+        "Supporting quotes cover only 60% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ],
+      "proposed_text": "Shopify App Pricing now lets public plans require store features like checkout UI extensions. Add a requirement and test that merchants without the feature are blocked at checkout. https://shopify.dev/changelog/posts/plan-feature-targeting",
+      "evidence_quote": "You can now add store requirements to public plans in Shopify App Pricing.",
+      "claim_evidence": [
+        {
+          "claim": "Shopify App Pricing now lets public plans require store features like checkout UI extensions.",
+          "quote": "You can now add store requirements to public plans in Shopify App Pricing."
+        }
+      ]
+    },
+    {
+      "candidate_id": "094df4043fa3fd91",
+      "title": "Show HN: AI agent needs process to build a commercial application",
+      "reasons": [
         "A supporting quote does not share enough wording with its stated claim",
-        "Factual sentence includes terms absent from the source title/summary: offer, signup, virtual"
+        "Supporting quotes cover only 33% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "Multispace offers free virtual monitors for AI work without signup. Install Multispace and verify AI can launch in a new monitor window. https://multispace.dev/",
-      "evidence_quote": "Your AI works on its own screen while you design, listen to music or play, right next to it. Real extra monitors for your apps, websites and games, all in one window. Free.",
+      "proposed_text": "NoMoreHappyPath found 33 real problems in a 374k‑line commercial app. Run NoMoreHappyPath on large codebases to catch hidden issues. https://nomorehappypath.com/",
+      "evidence_quote": "33 real problems found, against 10 by one AI alone.",
       "claim_evidence": [
         {
-          "claim": "Multispace offers free virtual monitors for AI work without signup.",
-          "quote": "Your AI works on its own screen while you design, listen to music or play, right next to it. Real extra monitors for your apps, websites and games, all in one window. Free."
+          "claim": "NoMoreHappyPath found 33 real problems in a 374k‑line commercial app.",
+          "quote": "33 real problems found, against 10 by one AI alone."
         }
       ]
     },
     {
-      "candidate_id": "46b14009a350aa12",
-      "title": "Cart and checkout permalinks now support UCP at /buy",
-      "proposed_text": "Shopify’s /buy link now supports UCP dev.ucp.shopping.permalink. Verify /buy UCP prefill by sending a link with buyer/email. https://shopify.dev/changelog/posts/cart-and-checkout-permalinks-now-support-ucp-at-buy",
+      "candidate_id": "b140d6f185b58e72",
+      "title": "Shopify App Pricing: Plan Feature Targeting",
       "reasons": [
-        "Post merely restates headline and suggests a generic test; no new insight or actionable detail beyond source."
+        "Editorial takeaway is too long; keep the analysis concrete and concise."
       ],
-      "editorial_review": {
-        "clarity_score": 9,
-        "technical_coherence_score": 9,
-        "takeaway_value_score": 8,
-        "source_faithfulness_score": 9,
-        "originality_score": 3
-      }
+      "proposed_text": "Merchants lacking a required feature cannot subscribe to a plan that depends on it. When adding a store requirement, disable the plan’s select button for stores missing the feature to prevent subscription attempts. https://shopify.dev/changelog/posts/plan-feature-targeting",
+      "evidence_quote": "A merchant whose store does not have a required feature cannot subscribe to that plan.",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
+        "Supporting quotes cover only 60% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ]
     },
     {
-      "candidate_id": "46b14009a350aa12",
-      "title": "Cart and checkout permalinks now support UCP at /buy",
+      "candidate_id": "094df4043fa3fd91",
+      "title": "Show HN: AI agent needs process to build a commercial application",
+      "reasons": [
+        "No claim-by-claim supporting evidence was provided",
+        "Supporting quotes cover only 0% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ],
+      "proposed_text": "NoMoreHappyPath uncovered 33 issues in a 374k‑line commercial codebase. Run NoMoreHappyPath on large projects to surface hidden defects before release. https://nomorehappypath.com/",
+      "evidence_quote": "33 real problems found, against 10 by one AI alone.",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "A supporting quote does not share enough wording with its stated claim",
+        "Supporting quotes cover only 33% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ]
+    },
+    {
+      "candidate_id": "b89675159c0fb375",
+      "title": "New trusted vault origin signal in Payments Apps API",
       "reasons": [
         "Editorial takeaway is too long; keep the analysis concrete and concise.",
         "Fact plus takeaway exceeds the per-link character budget.",
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
         "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
-        "Editorial takeaway is too long to be a useful concise second sentence.",
-        "Draft is 337 raw characters; limit is 280"
+        "Draft is 294 raw characters; limit is 280",
+        "No claim-by-claim supporting evidence was provided",
+        "Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "Shopify’s /buy link supports UCP dev.ucp.shopping.permalink. When a /buy link’s UCP parameters cannot be applied, Shopify redirects the buyer to the continue_to destination if present, or to the shop’s storefront instead of displaying an error page. https://shopify.dev/changelog/posts/cart-and-checkout-permalinks-now-support-ucp-at-buy",
-      "evidence_quote": "If a link can’t be applied, Shopify redirects the buyer to the continue _to destination when it’s present, or to the shop’s storefront instead of showing an error page.",
+      "proposed_text": "Payments Apps API 2027-01 introduces an optional Boolean to indicate trusted vault origin for missing CVV. Check the trusted_vault_origin flag when processing vault card payments to avoid false rejections. https://shopify.dev/changelog/posts/new-trusted-vault-origin-signal-in-payments-apps-api",
+      "evidence_quote": "Payment app developers can use this optional Boolean to handle missing CVV for cards from a vault Shopify trusts.",
       "automatic_repair_attempt": true,
       "original_rejection_reasons": [
-        "Post merely restates headline and suggests a generic test; no new insight or actionable detail beyond source."
+        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation."
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "46b14009a350aa12",
-      "title": "Cart and checkout permalinks now support UCP at /buy",
-      "url": "https://shopify.dev/changelog/posts/cart-and-checkout-permalinks-now-support-ucp-at-buy",
+      "id": "b89675159c0fb375",
+      "title": "New trusted vault origin signal in Payments Apps API",
+      "url": "https://shopify.dev/changelog/posts/new-trusted-vault-origin-signal-in-payments-apps-api",
+      "source": "Shopify Developer Changelog",
+      "primary_category": "commerce_and_digital_products",
+      "priority_score": 75,
+      "hourly_adjusted_score": 75,
+      "stars_current": null,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-30T16:00:00+00:00",
+      "days_old": 0.56,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "b140d6f185b58e72",
+      "title": "Shopify App Pricing: Plan Feature Targeting",
+      "url": "https://shopify.dev/changelog/posts/plan-feature-targeting",
       "source": "Shopify Developer Changelog",
       "primary_category": "commerce_and_digital_products",
       "priority_score": 71,
@@ -387,45 +435,26 @@
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
       "published_at": "2026-10-28T15:50:00+00:00",
-      "days_old": 2.52,
+      "days_old": 2.56,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "a7ef65c69e7dd7cd",
-      "title": "Shop SDK lead capture now supports Rich Authorization Requests",
-      "url": "https://shopify.dev/changelog/posts/shop-sdk-lead-capture-now-supports-rich-authorization-requests",
-      "source": "Shopify Developer Changelog",
-      "primary_category": "commerce_and_digital_products",
-      "priority_score": 68,
-      "hourly_adjusted_score": 68,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-28T20:06:00+00:00",
-      "days_old": 2.35,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "32b0253b0bd54923",
-      "title": "Show HN: Free Unlimited Virtual Monitors+Watch Claude Work on Them+Community",
-      "url": "https://multispace.dev/",
+      "id": "094df4043fa3fd91",
+      "title": "Show HN: AI agent needs process to build a commercial application",
+      "url": "https://nomorehappypath.com/",
       "source": "Hacker News",
       "primary_category": "product_and_workflow_tools",
-      "priority_score": 65,
-      "hourly_adjusted_score": 67,
+      "priority_score": 63,
+      "hourly_adjusted_score": 65,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-30T23:16:36+00:00",
-      "days_old": 0.21,
+      "published_at": "2026-10-30T14:49:17+00:00",
+      "days_old": 0.61,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
@@ -433,19 +462,19 @@
   ],
   "automatic_repair": {
     "attempted": true,
-    "drafts_submitted": 1,
+    "drafts_submitted": 3,
     "repaired_local_passes": 0,
-    "repair_rejections": 1,
+    "repair_rejections": 3,
     "repair_error": null,
-    "editorial_repair_attempted": true,
-    "editorial_repair_drafts_submitted": 1,
+    "editorial_repair_attempted": false,
+    "editorial_repair_drafts_submitted": 0,
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 1,
-    "submitted_for_independent_review": 1,
+    "locally_valid_drafts": 0,
+    "submitted_for_independent_review": 0,
     "passed_independent_review": 0,
-    "rejected_by_independent_review": 1,
+    "rejected_by_independent_review": 0,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
