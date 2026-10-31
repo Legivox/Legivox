@@ -1,17 +1,17 @@
 {
-  "generated_at_ist": "2026-10-31T11:52:35+05:30",
-  "run_at_ist": "2026-10-31T11:52:35+05:30",
+  "generated_at_ist": "2026-10-31T13:07:27+05:30",
+  "run_at_ist": "2026-10-31T13:07:27+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 322,
-  "eligible_candidate_count": 195,
+  "candidate_count_raw": 312,
+  "eligible_candidate_count": 191,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4835
+      "total_count": 4839
     },
     {
       "source": "GitHub Search · github-analytics-seo",
@@ -32,7 +32,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3031
+      "total_count": 3037
     },
     {
       "source": "GitHub Search · github-digital-product-tools",
@@ -46,7 +46,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 439
+      "total_count": 440
     },
     {
       "source": "GitHub Search · github-marketing-distribution",
@@ -60,14 +60,14 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2098
+      "total_count": 2100
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3365
+      "total_count": 3376
     },
     {
       "source": "GitHub Search · github-seller-operations",
@@ -88,12 +88,12 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 269
+      "total_count": 270
     },
     {
       "source": "Hacker News · hn-analytics-growth",
       "kind": "hacker_news",
-      "items_kept": 10,
+      "items_kept": 8,
       "status": "ok",
       "total_count": 10
     },
@@ -116,7 +116,7 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 6
+      "total_count": 7
     },
     {
       "source": "Hacker News · hn-digital-products",
@@ -195,7 +195,7 @@
     {
       "source": "Product Hunt",
       "kind": "rss",
-      "items_kept": 43,
+      "items_kept": 42,
       "status": "ok"
     },
     {
@@ -259,10 +259,10 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-31T06:22:35+00:00",
+    "observed_at_utc": "2026-10-31T07:37:27+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 112,
-    "previously_tracked_repositories_refreshed": 88,
+    "repositories_seen_in_discovery": 104,
+    "previously_tracked_repositories_refreshed": 96,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
@@ -272,29 +272,29 @@
   },
   "primary_source_checks": [
     {
-      "candidate_id": "9cb5edf563b5f0d9",
-      "title": "First sign-ins to customer accounts now set Customer.state and send customers/enable webhooks",
-      "source_url": "https://shopify.dev/changelog/first-sign-ins-to-new-customer-accounts-now-set-customer-state-and-send-customers-enable",
+      "candidate_id": "05cb1122ec2093b2",
+      "title": "Add selling plans to draft order line items with the Admin GraphQL API",
+      "source_url": "https://shopify.dev/changelog/add-selling-plans-to-draft-order-line-items-with-the-admin-graphql-api",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/first-sign-ins-to-new-customer-accounts-now-set-customer-state-and-send-customers-enable",
+      "final_url": "https://shopify.dev/changelog/posts/add-selling-plans-to-draft-order-line-items-with-the-admin-graphql-api",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "154748cd9555e562",
-      "title": "Introducing theme app add-ons: Build and bundle apps with your themes",
-      "source_url": "https://shopify.dev/changelog/introducing-theme-app-add-ons-build-and-bundle-apps-with-your-themes",
+      "candidate_id": "f18f3fce0d825671",
+      "title": "Shopify App Store: Estimated local-currency prices",
+      "source_url": "https://shopify.dev/changelog/estimated-local-currency-prices",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/introducing-theme-app-add-ons-build-and-bundle-apps-with-your-themes",
+      "final_url": "https://shopify.dev/changelog/posts/estimated-local-currency-prices",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "6ea9e0fbab097163",
-      "title": "dograh-hq/dograh",
-      "source_url": "https://github.com/dograh-hq/dograh",
+      "candidate_id": "a1dbde18ac15df21",
+      "title": "Tool: Namespace Devbox",
+      "source_url": "https://namespace.so/?ref=console.dev",
       "verified": true,
-      "final_url": "https://github.com/dograh-hq/dograh",
+      "final_url": "https://namespace.so/?ref=console.dev",
       "http_status": 200,
       "reason": ""
     }
@@ -303,115 +303,193 @@
   "daily_draft_cap": 16,
   "daily_drafts_already_passed": 1,
   "outcome": "skip",
-  "decision_reason": "No draft cleared the complete automatic quality gate; independent editorial review failed closed. Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi",
+  "decision_reason": "All generated drafts failed the local evidence/editorial checks; the hour was skipped.",
   "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "9cb5edf563b5f0d9",
-      "title": "First sign-ins to customer accounts now set Customer.state and send customers/enable webhooks",
-      "proposed_text": "Shopify sets Customer.state to ENABLED on first account sign‑in. Verify state change in your webhook handler before enabling marketing. https://shopify.dev/changelog/posts/first-sign-ins-to-new-customer-accounts-now-set-customer-state-and-send-customers-enable",
+      "candidate_id": "05cb1122ec2093b2",
+      "title": "Add selling plans to draft order line items with the Admin GraphQL API",
       "reasons": [
-        "Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi"
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "Fact plus takeaway exceeds the per-link character budget.",
+        "Draft is 307 raw characters; limit is 280"
+      ],
+      "proposed_text": "Shopify Admin GraphQL API v2027‑01 adds sellingPlanId to DraftOrderLineItemInput. When creating a draft order, include sellingPlanId and verify the returned sellingPlanApplication matches the plan ID. https://shopify.dev/changelog/posts/add-selling-plans-to-draft-order-line-items-with-the-admin-graphql-api",
+      "evidence_quote": "DraftOrderLineItemInput.sellingPlanId sets the selling plan to apply when you create or update a draft order line item.",
+      "claim_evidence": [
+        {
+          "claim": "Shopify Admin GraphQL API v2027‑01 adds sellingPlanId to DraftOrderLineItemInput.",
+          "quote": "DraftOrderLineItemInput.sellingPlanId sets the selling plan to apply when you create or update a draft order line item."
+        }
       ]
     },
     {
-      "candidate_id": "154748cd9555e562",
-      "title": "Introducing theme app add-ons: Build and bundle apps with your themes",
-      "proposed_text": "Theme app add‑ons let you bundle storefront apps with theme listings. Add the app block via Partner Dashboard and test theme‑store visibility. https://shopify.dev/changelog/posts/introducing-theme-app-add-ons-build-and-bundle-apps-with-your-themes",
+      "candidate_id": "f18f3fce0d825671",
+      "title": "Shopify App Store: Estimated local-currency prices",
       "reasons": [
-        "Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi"
+        "Editorial takeaway is too long; keep the analysis concrete and concise."
+      ],
+      "proposed_text": "Shopify App Store now shows estimated prices in merchants’ billing currency for 14 currencies. Test that your app’s price page displays the correct estimated amount for each supported currency. https://shopify.dev/changelog/posts/estimated-local-currency-prices",
+      "evidence_quote": "Merchants see estimates when their billing currency is one of these 14 currencies: AUD, CAD, CHF, CZK, DKK, EUR, GBP, INR, JPY, NOK, PLN, RON, SEK, and SGD.",
+      "claim_evidence": [
+        {
+          "claim": "Shopify App Store now shows estimated prices in merchants’ billing currency for 14 currencies.",
+          "quote": "Merchants see estimates when their billing currency is one of these 14 currencies: AUD, CAD, CHF, CZK, DKK, EUR, GBP, INR, JPY, NOK, PLN, RON, SEK, and SGD."
+        }
       ]
     },
     {
-      "candidate_id": "6ea9e0fbab097163",
-      "title": "dograh-hq/dograh",
-      "proposed_text": "dograh is a voice‑AI platform for speech‑to‑speech and LLM calls. Use the visual workflow builder to prototype call flows before deploying. https://github.com/dograh-hq/dograh",
+      "candidate_id": "a1dbde18ac15df21",
+      "title": "Tool: Namespace Devbox",
       "reasons": [
-        "Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi"
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "Primary-source evidence quote is missing or absent from the live page (after presentation normalisation)",
+        "A factual claim lacks a quote present in the live primary-source page",
+        "Supporting quotes cover only 10% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ],
+      "proposed_text": "Namespace offers cloud dev environments with up to 64 vCPU and 512 GB RAM on Linux, macOS, and Windows. Use the nsc CLI to spin up a Devbox and run your CI pipeline locally before pushing to GitHub Actions. https://namespace.so/?ref=console.dev",
+      "evidence_quote": "Up to 64 vCPU · 512 GB . Docs Technical reference, API docs, and configuration guides",
+      "claim_evidence": [
+        {
+          "claim": "Namespace offers cloud dev environments with up to 64 vCPU and 512 GB RAM on Linux, macOS, and Windows.",
+          "quote": "Up to 64 vCPU · 512 GB . Docs Technical reference, API docs, and configuration guides"
+        }
+      ]
+    },
+    {
+      "candidate_id": "a1dbde18ac15df21",
+      "title": "Tool: Namespace Devbox",
+      "reasons": [
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
+        "No claim-by-claim supporting evidence was provided",
+        "Factual sentence includes terms absent from the source title/summary: provide, ram"
+      ],
+      "proposed_text": "Namespace provides up to 64 vCPU and 512 GB RAM on Linux. Use nsc CLI to spin up a Devbox for local CI before pushing to GitHub Actions. https://namespace.so/?ref=console.dev",
+      "evidence_quote": "Up to 64 vCPU · 512 GB",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "Primary-source evidence quote is missing or absent from the live page (after presentation normalisation)",
+        "A factual claim lacks a quote present in the live primary-source page",
+        "Supporting quotes cover only 10% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ]
+    },
+    {
+      "candidate_id": "05cb1122ec2093b2",
+      "title": "Add selling plans to draft order line items with the Admin GraphQL API",
+      "reasons": [
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "Fact plus takeaway exceeds the per-link character budget.",
+        "Draft is 291 raw characters; limit is 280"
+      ],
+      "proposed_text": "DraftOrderLineItemInput.sellingPlanId sets the selling plan when creating a draft order. Verify the returned sellingPlanApplication matches the plan ID to confirm the plan was applied. https://shopify.dev/changelog/posts/add-selling-plans-to-draft-order-line-items-with-the-admin-graphql-api",
+      "evidence_quote": "DraftOrderLineItemInput.sellingPlanId sets the selling plan to apply when you create or update a draft order line item.",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "Fact plus takeaway exceeds the per-link character budget.",
+        "Draft is 307 raw characters; limit is 280"
+      ]
+    },
+    {
+      "candidate_id": "f18f3fce0d825671",
+      "title": "Shopify App Store: Estimated local-currency prices",
+      "reasons": [
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
+        "Opening sentence is too close to the source headline; add a distinct editorial framing."
+      ],
+      "proposed_text": "App Store shows estimated prices for 14 currencies. Check that the estimated price matches the merchant’s billing currency on the app price page. https://shopify.dev/changelog/posts/estimated-local-currency-prices",
+      "evidence_quote": "Merchants see estimates when their billing currency is one of these 14 currencies: AUD, CAD, CHF, CZK, DKK, EUR, GBP, INR, JPY, NOK, PLN, RON, SEK, and SGD.",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "Editorial takeaway is too long; keep the analysis concrete and concise."
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "9cb5edf563b5f0d9",
-      "title": "First sign-ins to customer accounts now set Customer.state and send customers/enable webhooks",
-      "url": "https://shopify.dev/changelog/posts/first-sign-ins-to-new-customer-accounts-now-set-customer-state-and-send-customers-enable",
+      "id": "05cb1122ec2093b2",
+      "title": "Add selling plans to draft order line items with the Admin GraphQL API",
+      "url": "https://shopify.dev/changelog/posts/add-selling-plans-to-draft-order-line-items-with-the-admin-graphql-api",
       "source": "Shopify Developer Changelog",
       "primary_category": "commerce_and_digital_products",
-      "priority_score": 68,
-      "hourly_adjusted_score": 68,
+      "priority_score": 65,
+      "hourly_adjusted_score": 65,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
       "published_at": "2026-10-28T15:50:00+00:00",
-      "days_old": 2.61,
+      "days_old": 2.66,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "154748cd9555e562",
-      "title": "Introducing theme app add-ons: Build and bundle apps with your themes",
-      "url": "https://shopify.dev/changelog/posts/introducing-theme-app-add-ons-build-and-bundle-apps-with-your-themes",
+      "id": "f18f3fce0d825671",
+      "title": "Shopify App Store: Estimated local-currency prices",
+      "url": "https://shopify.dev/changelog/posts/estimated-local-currency-prices",
       "source": "Shopify Developer Changelog",
       "primary_category": "commerce_and_digital_products",
-      "priority_score": 68,
-      "hourly_adjusted_score": 68,
+      "priority_score": 65,
+      "hourly_adjusted_score": 65,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
       "published_at": "2026-10-28T15:50:00+00:00",
-      "days_old": 2.61,
+      "days_old": 2.66,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "6ea9e0fbab097163",
-      "title": "dograh-hq/dograh",
-      "url": "https://github.com/dograh-hq/dograh",
-      "source": "GitHub Search",
-      "primary_category": "security_and_self_hosting",
-      "priority_score": 70,
+      "id": "a1dbde18ac15df21",
+      "title": "Tool: Namespace Devbox",
+      "url": "https://namespace.so/?ref=console.dev",
+      "source": "Console.dev",
+      "primary_category": "developer_tools",
+      "priority_score": 64,
       "hourly_adjusted_score": 64,
-      "stars_current": 5992,
+      "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
-      "trend_signal": "insufficient_history",
-      "published_at": "2026-10-31T06:21:13+00:00",
-      "days_old": 0.0,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-29T08:00:00+00:00",
+      "days_old": 1.98,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     }
   ],
   "automatic_repair": {
-    "attempted": false,
-    "drafts_submitted": 0,
+    "attempted": true,
+    "drafts_submitted": 3,
     "repaired_local_passes": 0,
-    "repair_rejections": 0,
+    "repair_rejections": 3,
     "repair_error": null,
     "editorial_repair_attempted": false,
     "editorial_repair_drafts_submitted": 0,
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 3,
-    "submitted_for_independent_review": 3,
+    "locally_valid_drafts": 0,
+    "submitted_for_independent_review": 0,
     "passed_independent_review": 0,
-    "rejected_by_independent_review": 3,
+    "rejected_by_independent_review": 0,
     "lower_ranked_not_reviewed": 0,
-    "review_error": "Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi",
+    "review_error": null,
     "automatic_gate": "fail_closed"
   },
   "state_summary": {
     "used_candidates_in_cooldown": 33,
-    "recently_attempted_candidates": 15,
+    "recently_attempted_candidates": 18,
     "recent_draft_passes_today": 1
   }
 }
