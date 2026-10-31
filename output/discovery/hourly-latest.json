@@ -1,38 +1,38 @@
 {
-  "generated_at_ist": "2026-10-31T19:01:34+05:30",
-  "run_at_ist": "2026-10-31T19:01:34+05:30",
+  "generated_at_ist": "2026-10-31T19:51:19+05:30",
+  "run_at_ist": "2026-10-31T19:51:19+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 312,
-  "eligible_candidate_count": 172,
+  "candidate_count_raw": 321,
+  "eligible_candidate_count": 181,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4879
+      "total_count": 4882
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1041
+      "total_count": 1042
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 376
+      "total_count": 377
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3206
+      "total_count": 3208
     },
     {
       "source": "GitHub Search · github-digital-product-tools",
@@ -60,21 +60,21 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2117
+      "total_count": 2123
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3408
+      "total_count": 3411
     },
     {
       "source": "GitHub Search · github-seller-operations",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 358
+      "total_count": 359
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
@@ -116,7 +116,7 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 7
+      "total_count": 6
     },
     {
       "source": "Hacker News · hn-digital-products",
@@ -158,7 +158,7 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 10
+      "total_count": 8
     },
     {
       "source": "Hacker News · hn-shopify",
@@ -195,7 +195,7 @@
     {
       "source": "Product Hunt",
       "kind": "rss",
-      "items_kept": 41,
+      "items_kept": 42,
       "status": "ok"
     },
     {
@@ -255,14 +255,14 @@
       "kind": "wordpress_plugin",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2217
+      "total_count": 2216
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-31T13:31:34+00:00",
+    "observed_at_utc": "2026-10-31T14:21:19+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 106,
-    "previously_tracked_repositories_refreshed": 94,
+    "repositories_seen_in_discovery": 113,
+    "previously_tracked_repositories_refreshed": 87,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
@@ -272,24 +272,6 @@
   },
   "primary_source_checks": [
     {
-      "candidate_id": "a677374664d346cc",
-      "title": "Restrict Admin API access with an IP allowlist",
-      "source_url": "https://shopify.dev/changelog/restrict-admin-api-access-to-your-app-with-an-ip-allowlist",
-      "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/restrict-admin-api-access-to-your-app-with-an-ip-allowlist",
-      "http_status": 200,
-      "reason": ""
-    },
-    {
-      "candidate_id": "e72d79c0a899ffe6",
-      "title": "Stripe on Stripe: What we learned moving $1B in vendor payments to Global Payouts",
-      "source_url": "https://stripe.com/blog/stripe-on-stripe-what-we-learned-moving-1b-in-vendor-payments-to-global-payouts",
-      "verified": true,
-      "final_url": "https://stripe.com/blog/stripe-on-stripe-what-we-learned-moving-1b-in-vendor-payments-to-global-payouts",
-      "http_status": 200,
-      "reason": ""
-    },
-    {
       "candidate_id": "1b9191dd943341ea",
       "title": "Godwit",
       "source_url": "https://www.producthunt.com/products/godwit",
@@ -297,6 +279,24 @@
       "final_url": null,
       "http_status": null,
       "reason": "Primary source returned HTTP 403."
+    },
+    {
+      "candidate_id": "1ad94bae8533a06a",
+      "title": "What Is BLUF? How to Write Bottom Line Up Front (+ Free Rewriter Tool)",
+      "source_url": "https://ahrefs.com/blog/bluf/",
+      "verified": true,
+      "final_url": "https://ahrefs.com/blog/bluf/",
+      "http_status": 200,
+      "reason": ""
+    },
+    {
+      "candidate_id": "2fbb4fdfa5698f4f",
+      "title": "Ask HN: Books about AI Revolution happening now",
+      "source_url": "https://news.ycombinator.com/item?id=50314339",
+      "verified": true,
+      "final_url": "https://news.ycombinator.com/item?id=50314339",
+      "http_status": 200,
+      "reason": ""
     }
   ],
   "rejected_primary_sources": [
@@ -313,7 +313,7 @@
   "daily_draft_cap": 16,
   "daily_drafts_already_passed": 2,
   "outcome": "skip",
-  "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
+  "decision_reason": "All generated drafts failed the local evidence/editorial checks; the hour was skipped.",
   "passing_drafts": [],
   "rejected_drafts": [
     {
@@ -324,94 +324,9 @@
       "reasons": [
         "Primary source returned HTTP 403."
       ]
-    },
-    {
-      "candidate_id": "e72d79c0a899ffe6",
-      "title": "Stripe on Stripe: What we learned moving $1B in vendor payments to Global Payouts",
-      "reasons": [
-        "Unsupported numeric claim(s): 99.5"
-      ],
-      "proposed_text": "Global Payouts reduced new‑market setup from six weeks to one with 99.9% success. Benchmark your onboarding against one week and monitor success below 99.5%. https://stripe.com/blog/stripe-on-stripe-what-we-learned-moving-1b-in-vendor-payments-to-global-payouts",
-      "evidence_quote": "New-market setup fell from six weeks to one, with a 99.9% payout success rate.",
-      "claim_evidence": [
-        {
-          "claim": "Global Payouts reduced new‑market setup from six weeks to one with 99.9% success.",
-          "quote": "New-market setup fell from six weeks to one, with a 99.9% payout success rate."
-        }
-      ]
-    },
-    {
-      "candidate_id": "a677374664d346cc",
-      "title": "Restrict Admin API access with an IP allowlist",
-      "proposed_text": "Shopify lets you restrict Admin API tokens to IP addresses via the Dev Dashboard. Test a non‑listed IP request and confirm a 403 before deployment. https://shopify.dev/changelog/posts/restrict-admin-api-access-to-your-app-with-an-ip-allowlist",
-      "reasons": [
-        "Post restates headline without adding new insight; originality below threshold."
-      ],
-      "editorial_review": {
-        "clarity_score": 8,
-        "technical_coherence_score": 8,
-        "takeaway_value_score": 8,
-        "source_faithfulness_score": 9,
-        "originality_score": 4
-      }
-    },
-    {
-      "candidate_id": "a677374664d346cc",
-      "title": "Restrict Admin API access with an IP allowlist",
-      "reasons": [
-        "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "Fact plus takeaway exceeds the per-link character budget.",
-        "Draft is 306 raw characters; limit is 280",
-        "Primary-source evidence quote is missing or absent from the live page (after presentation normalisation)",
-        "No claim-by-claim supporting evidence was provided"
-      ],
-      "proposed_text": "Shopify’s Dev Dashboard lets you restrict Admin API tokens to listed IP addresses. Requests from IPs not on the allowlist receive a 403 response, so test a non‑listed IP to confirm enforcement before deployment. https://shopify.dev/changelog/posts/restrict-admin-api-access-to-your-app-with-an-ip-allowlist",
-      "evidence_quote": "When you add your servers' IP addresses to an IP allowlist in the Dev Dashboard, Shopify rejects GraphQL Admin API and REST Admin API requests that use your app's tokens from anywhere else.",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "Post restates headline without adding new insight; originality below threshold."
-      ]
     }
   ],
   "candidate_shortlist": [
-    {
-      "id": "a677374664d346cc",
-      "title": "Restrict Admin API access with an IP allowlist",
-      "url": "https://shopify.dev/changelog/posts/restrict-admin-api-access-to-your-app-with-an-ip-allowlist",
-      "source": "Shopify Developer Changelog",
-      "primary_category": "commerce_and_digital_products",
-      "priority_score": 60,
-      "hourly_adjusted_score": 60,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-27T16:00:00+00:00",
-      "days_old": 3.9,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "e72d79c0a899ffe6",
-      "title": "Stripe on Stripe: What we learned moving $1B in vendor payments to Global Payouts",
-      "url": "https://stripe.com/blog/stripe-on-stripe-what-we-learned-moving-1b-in-vendor-payments-to-global-payouts",
-      "source": "Stripe Blog",
-      "primary_category": "commerce_and_digital_products",
-      "priority_score": 59,
-      "hourly_adjusted_score": 59,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-30T00:00:00+00:00",
-      "days_old": 1.56,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
     {
       "id": "1b9191dd943341ea",
       "title": "Godwit",
@@ -426,34 +341,72 @@
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
       "published_at": "2026-10-31T03:45:26+00:00",
-      "days_old": 0.41,
+      "days_old": 0.44,
       "primary_source_verified": false,
       "primary_source_http_status": null,
       "primary_source_reason": "Primary source returned HTTP 403."
+    },
+    {
+      "id": "1ad94bae8533a06a",
+      "title": "What Is BLUF? How to Write Bottom Line Up Front (+ Free Rewriter Tool)",
+      "url": "https://ahrefs.com/blog/bluf/",
+      "source": "Ahrefs Blog",
+      "primary_category": "marketing_and_distribution",
+      "priority_score": 58,
+      "hourly_adjusted_score": 58,
+      "stars_current": null,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-30T16:27:18+00:00",
+      "days_old": 0.91,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "2fbb4fdfa5698f4f",
+      "title": "Ask HN: Books about AI Revolution happening now",
+      "url": "https://news.ycombinator.com/item?id=50314339",
+      "source": "Hacker News",
+      "primary_category": "product_and_workflow_tools",
+      "priority_score": 57,
+      "hourly_adjusted_score": 57,
+      "stars_current": null,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-31T09:08:51+00:00",
+      "days_old": 0.22,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
     }
   ],
   "automatic_repair": {
-    "attempted": true,
-    "drafts_submitted": 1,
+    "attempted": false,
+    "drafts_submitted": 0,
     "repaired_local_passes": 0,
-    "repair_rejections": 1,
+    "repair_rejections": 0,
     "repair_error": null,
-    "editorial_repair_attempted": true,
-    "editorial_repair_drafts_submitted": 1,
+    "editorial_repair_attempted": false,
+    "editorial_repair_drafts_submitted": 0,
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 1,
-    "submitted_for_independent_review": 1,
+    "locally_valid_drafts": 0,
+    "submitted_for_independent_review": 0,
     "passed_independent_review": 0,
-    "rejected_by_independent_review": 1,
+    "rejected_by_independent_review": 0,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
   "state_summary": {
     "used_candidates_in_cooldown": 34,
-    "recently_attempted_candidates": 35,
+    "recently_attempted_candidates": 37,
     "recent_draft_passes_today": 2
   }
 }

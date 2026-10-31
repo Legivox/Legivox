@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-31T19:01:34+05:30
+- Run time (IST): 2026-10-31T19:51:19+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 172
-- Independent editorial review: 0 draft(s) passed / 1 rejected
+- Candidate pool after freshness/diversity filters: 181
+- Independent editorial review: 0 draft(s) passed / 0 rejected
 - Drafts passing local checks: 0
 - Outcome: **skip**
-- Decision reason: Every draft submitted for independent editorial review was rejected; The hour was skipped.
+- Decision reason: All generated drafts failed the local evidence/editorial checks; the hour was skipped.
 
 ## Source health
 
@@ -40,7 +40,7 @@
 | Ahrefs Blog | 8 | ok |
 | Console.dev | 11 | ok |
 | Indie Hackers (unofficial third-party feed) | 5 | ok |
-| Product Hunt | 41 | ok |
+| Product Hunt | 42 | ok |
 | Shopify Community | 30 | ok |
 | Shopify Developer Changelog | 30 | ok |
 | Stripe Blog | 3 | ok |
@@ -54,8 +54,8 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 106
-- Previously tracked repositories refreshed outside search results: 94
+- Repositories seen in this discovery run: 113
+- Previously tracked repositories refreshed outside search results: 87
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
 - Repositories with a 20–36 hour comparison baseline: 20
@@ -65,41 +65,32 @@
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| Restrict Admin API access with an IP allowlist | yes | 200 | https://shopify.dev/changelog/posts/restrict-admin-api-access-to-your-app-with-an-ip-allowlist |
-| Stripe on Stripe: What we learned moving $1B in vendor payments to Global Payouts | yes | 200 | https://stripe.com/blog/stripe-on-stripe-what-we-learned-moving-1b-in-vendor-payments-to-global-payouts |
 | Godwit | no | — | Primary source returned HTTP 403. |
+| What Is BLUF? How to Write Bottom Line Up Front (+ Free Rewriter Tool) | yes | 200 | https://ahrefs.com/blog/bluf/ |
+| Ask HN: Books about AI Revolution happening now | yes | 200 | https://news.ycombinator.com/item?id=50314339 |
 
 ## Selected draft candidates
 
-No draft cleared the complete local and independent-editor gate. See the decision reason and rejected-draft section for locally valid drafts that were rejected, not reviewed, or blocked by a review error.
+No candidate produced a draft that passed every local check. Skipping is intentional.
 
 ## Automatic repair attempt
 
-- Attempted: yes
-- Repaired drafts submitted: 1
+- Attempted: no
+- Repaired drafts submitted: 0
 - Repaired drafts that passed local validation: 0
-- Repaired drafts rejected: 1
+- Repaired drafts rejected: 0
 - Repair error: none
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
 - Godwit: Primary source returned HTTP 403.
-- Stripe on Stripe: What we learned moving $1B in vendor payments to Global Payouts: Unsupported numeric claim(s): 99.5
-  - Rejected text: Global Payouts reduced new‑market setup from six weeks to one with 99.9% success. Benchmark your onboarding against one week and monitor success below 99.5%. https://stripe.com/blog/stripe-on-stripe-what-we-learned-moving-1b-in-vendor-payments-to-global-payouts
-  - Model evidence quote: “New-market setup fell from six weeks to one, with a 99.9% payout success rate.”
-  - Claim support: Global Payouts reduced new‑market setup from six weeks to one with 99.9% success. ← “New-market setup fell from six weeks to one, with a 99.9% payout success rate.”
-- Restrict Admin API access with an IP allowlist: Post restates headline without adding new insight; originality below threshold.
-  - Rejected text: Shopify lets you restrict Admin API tokens to IP addresses via the Dev Dashboard. Test a non‑listed IP request and confirm a 403 before deployment. https://shopify.dev/changelog/posts/restrict-admin-api-access-to-your-app-with-an-ip-allowlist
-- Restrict Admin API access with an IP allowlist: Editorial takeaway is too long; keep the analysis concrete and concise.; Fact plus takeaway exceeds the per-link character budget.; Draft is 306 raw characters; limit is 280; Primary-source evidence quote is missing or absent from the live page (after presentation normalisation); No claim-by-claim supporting evidence was provided
-  - Rejected text: Shopify’s Dev Dashboard lets you restrict Admin API tokens to listed IP addresses. Requests from IPs not on the allowlist receive a 403 response, so test a non‑listed IP to confirm enforcement before deployment. https://shopify.dev/changelog/posts/restrict-admin-api-access-to-your-app-with-an-ip-allowlist
-  - Model evidence quote: “When you add your servers' IP addresses to an IP allowlist in the Dev Dashboard, Shopify rejects GraphQL Admin API and REST Admin API requests that use your app's tokens from anywhere else.”
 
 ## Top discovery candidates considered
 
-- Restrict Admin API access with an IP allowlist | Shopify Developer Changelog | commerce_and_digital_products | raw 60, adjusted 60 | https://shopify.dev/changelog/posts/restrict-admin-api-access-to-your-app-with-an-ip-allowlist
-- Stripe on Stripe: What we learned moving $1B in vendor payments to Global Payouts | Stripe Blog | commerce_and_digital_products | raw 59, adjusted 59 | https://stripe.com/blog/stripe-on-stripe-what-we-learned-moving-1b-in-vendor-payments-to-global-payouts
 - Godwit | Product Hunt | developer_tools | raw 58, adjusted 58 | https://www.producthunt.com/products/godwit
+- What Is BLUF? How to Write Bottom Line Up Front (+ Free Rewriter Tool) | Ahrefs Blog | marketing_and_distribution | raw 58, adjusted 58 | https://ahrefs.com/blog/bluf/
+- Ask HN: Books about AI Revolution happening now | Hacker News | product_and_workflow_tools | raw 57, adjusted 57 | https://news.ycombinator.com/item?id=50314339
 
 ## Safety and interpretation
 
