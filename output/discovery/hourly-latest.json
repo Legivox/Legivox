@@ -1,17 +1,17 @@
 {
-  "generated_at_ist": "2026-10-31T08:57:16+05:30",
-  "run_at_ist": "2026-10-31T08:57:16+05:30",
+  "generated_at_ist": "2026-10-31T09:54:55+05:30",
+  "run_at_ist": "2026-10-31T09:54:55+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 320,
-  "eligible_candidate_count": 202,
+  "candidate_count_raw": 313,
+  "eligible_candidate_count": 191,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4824
+      "total_count": 4829
     },
     {
       "source": "GitHub Search · github-analytics-seo",
@@ -25,14 +25,14 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 367
+      "total_count": 368
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3024
+      "total_count": 3027
     },
     {
       "source": "GitHub Search · github-digital-product-tools",
@@ -60,21 +60,21 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2096
+      "total_count": 2097
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3354
+      "total_count": 3361
     },
     {
       "source": "GitHub Search · github-seller-operations",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 352
+      "total_count": 354
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
@@ -88,12 +88,12 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 269
+      "total_count": 271
     },
     {
       "source": "Hacker News · hn-analytics-growth",
       "kind": "hacker_news",
-      "items_kept": 9,
+      "items_kept": 7,
       "status": "ok",
       "total_count": 10
     },
@@ -116,7 +116,7 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 7
+      "total_count": 5
     },
     {
       "source": "Hacker News · hn-digital-products",
@@ -158,7 +158,7 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 9
+      "total_count": 8
     },
     {
       "source": "Hacker News · hn-shopify",
@@ -259,10 +259,10 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-31T03:27:16+00:00",
+    "observed_at_utc": "2026-10-31T04:24:55+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 112,
-    "previously_tracked_repositories_refreshed": 88,
+    "repositories_seen_in_discovery": 107,
+    "previously_tracked_repositories_refreshed": 93,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
@@ -272,29 +272,29 @@
   },
   "primary_source_checks": [
     {
-      "candidate_id": "5de8d8f8569c3351",
-      "title": "Show HN: Fastbrowse, Browser agent that picks clicks with a System One model",
-      "source_url": "https://www.fastbrowse.ai/",
+      "candidate_id": "46b14009a350aa12",
+      "title": "Cart and checkout permalinks now support UCP at /buy",
+      "source_url": "https://shopify.dev/changelog/cart-and-checkout-permalinks-now-support-ucp-at-buy",
       "verified": true,
-      "final_url": "https://www.fastbrowse.ai/",
+      "final_url": "https://shopify.dev/changelog/posts/cart-and-checkout-permalinks-now-support-ucp-at-buy",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "c37165a31cd3fc39",
-      "title": "n8n-io/n8n",
-      "source_url": "https://github.com/n8n-io/n8n",
+      "candidate_id": "a7ef65c69e7dd7cd",
+      "title": "Shop SDK lead capture now supports Rich Authorization Requests",
+      "source_url": "https://shopify.dev/changelog/shop-sdk-lead-capture-now-supports-rich-authorization-requests",
       "verified": true,
-      "final_url": "https://github.com/n8n-io/n8n",
+      "final_url": "https://shopify.dev/changelog/posts/shop-sdk-lead-capture-now-supports-rich-authorization-requests",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "25df9fa68f72f18a",
-      "title": "Secure your app with network access rules in `shopify.app.toml`",
-      "source_url": "https://shopify.dev/changelog/secure-your-app-with-network-access-hosts-in-shopify-app-toml",
+      "candidate_id": "32b0253b0bd54923",
+      "title": "Show HN: Free Unlimited Virtual Monitors+Watch Claude Work on Them+Community",
+      "source_url": "https://multispace.dev/",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml",
+      "final_url": "https://multispace.dev/",
       "http_status": 200,
       "reason": ""
     }
@@ -307,118 +307,125 @@
   "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "c37165a31cd3fc39",
-      "title": "n8n-io/n8n",
+      "candidate_id": "a7ef65c69e7dd7cd",
+      "title": "Shop SDK lead capture now supports Rich Authorization Requests",
       "reasons": [
-        "Editorial takeaway is not specific enough to this candidate's technical/product details."
+        "Opening sentence is too close to the source headline; add a distinct editorial framing."
       ],
-      "proposed_text": "n8n is a fair‑code workflow automation platform with native AI capabilities. Test AI node outputs against known inputs to catch drift. https://github.com/n8n-io/n8n",
-      "evidence_quote": "Fair-code workflow automation platform with native AI capabilities.",
+      "proposed_text": "Shop SDK lead capture now supports Rich Authorization Requests. Add required fields to RAR and check optional ones are omitted on decline. https://shopify.dev/changelog/posts/shop-sdk-lead-capture-now-supports-rich-authorization-requests",
+      "evidence_quote": "You can now request the specific profile data your app needs during Shop SDK lead capture, including details that aren't saved on the user's Shop profile.",
       "claim_evidence": [
         {
-          "claim": "n8n is a fair‑code workflow automation platform with native AI capabilities.",
-          "quote": "Fair-code workflow automation platform with native AI capabilities."
+          "claim": "Shop SDK lead capture now supports Rich Authorization Requests.",
+          "quote": "You can now request the specific profile data your app needs during Shop SDK lead capture, including details that aren't saved on the user's Shop profile."
         }
       ]
     },
     {
-      "candidate_id": "5de8d8f8569c3351",
-      "title": "Show HN: Fastbrowse, Browser agent that picks clicks with a System One model",
-      "proposed_text": "Fastbrowse automates browsers, returning cited answers or schema‑validated data. Verify returned data matches expected schema before production use. https://www.fastbrowse.ai/",
+      "candidate_id": "32b0253b0bd54923",
+      "title": "Show HN: Free Unlimited Virtual Monitors+Watch Claude Work on Them+Community",
       "reasons": [
-        "Post restates headline and generic advice; lacks original insight."
+        "Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.",
+        "A supporting quote does not share enough wording with its stated claim",
+        "Factual sentence includes terms absent from the source title/summary: offer, signup, virtual"
+      ],
+      "proposed_text": "Multispace offers free virtual monitors for AI work without signup. Install Multispace and verify AI can launch in a new monitor window. https://multispace.dev/",
+      "evidence_quote": "Your AI works on its own screen while you design, listen to music or play, right next to it. Real extra monitors for your apps, websites and games, all in one window. Free.",
+      "claim_evidence": [
+        {
+          "claim": "Multispace offers free virtual monitors for AI work without signup.",
+          "quote": "Your AI works on its own screen while you design, listen to music or play, right next to it. Real extra monitors for your apps, websites and games, all in one window. Free."
+        }
+      ]
+    },
+    {
+      "candidate_id": "46b14009a350aa12",
+      "title": "Cart and checkout permalinks now support UCP at /buy",
+      "proposed_text": "Shopify’s /buy link now supports UCP dev.ucp.shopping.permalink. Verify /buy UCP prefill by sending a link with buyer/email. https://shopify.dev/changelog/posts/cart-and-checkout-permalinks-now-support-ucp-at-buy",
+      "reasons": [
+        "Post merely restates headline and suggests a generic test; no new insight or actionable detail beyond source."
       ],
       "editorial_review": {
-        "clarity_score": 8,
-        "technical_coherence_score": 8,
-        "takeaway_value_score": 7,
-        "source_faithfulness_score": 8,
-        "originality_score": 4
+        "clarity_score": 9,
+        "technical_coherence_score": 9,
+        "takeaway_value_score": 8,
+        "source_faithfulness_score": 9,
+        "originality_score": 3
       }
     },
     {
-      "candidate_id": "25df9fa68f72f18a",
-      "title": "Secure your app with network access rules in `shopify.app.toml`",
-      "proposed_text": "Shopify’s app.toml now supports a network_access section for hosts. Add trusted hosts early to avoid customer warnings during navigation. https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml",
+      "candidate_id": "46b14009a350aa12",
+      "title": "Cart and checkout permalinks now support UCP at /buy",
       "reasons": [
-        "Post merely paraphrases headline; no new perspective."
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "Fact plus takeaway exceeds the per-link character budget.",
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
+        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
+        "Editorial takeaway is too long to be a useful concise second sentence.",
+        "Draft is 337 raw characters; limit is 280"
       ],
-      "editorial_review": {
-        "clarity_score": 8,
-        "technical_coherence_score": 8,
-        "takeaway_value_score": 7,
-        "source_faithfulness_score": 8,
-        "originality_score": 4
-      }
-    },
-    {
-      "candidate_id": "5de8d8f8569c3351",
-      "title": "Show HN: Fastbrowse, Browser agent that picks clicks with a System One model",
-      "reasons": [
-        "Editorial takeaway is too long; keep the analysis concrete and concise."
-      ],
-      "proposed_text": "Fastbrowse automates browsers and returns schema‑validated data. Before executing irreversible actions, the caller must authorize the run; otherwise the tool pauses for approval. https://www.fastbrowse.ai/",
-      "evidence_quote": "Without authorization, actions classified as irreversible pause for approval.",
+      "proposed_text": "Shopify’s /buy link supports UCP dev.ucp.shopping.permalink. When a /buy link’s UCP parameters cannot be applied, Shopify redirects the buyer to the continue_to destination if present, or to the shop’s storefront instead of displaying an error page. https://shopify.dev/changelog/posts/cart-and-checkout-permalinks-now-support-ucp-at-buy",
+      "evidence_quote": "If a link can’t be applied, Shopify redirects the buyer to the continue _to destination when it’s present, or to the shop’s storefront instead of showing an error page.",
       "automatic_repair_attempt": true,
       "original_rejection_reasons": [
-        "Post restates headline and generic advice; lacks original insight."
+        "Post merely restates headline and suggests a generic test; no new insight or actionable detail beyond source."
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "5de8d8f8569c3351",
-      "title": "Show HN: Fastbrowse, Browser agent that picks clicks with a System One model",
-      "url": "https://www.fastbrowse.ai/",
-      "source": "Hacker News",
-      "primary_category": "product_and_workflow_tools",
-      "priority_score": 70,
-      "hourly_adjusted_score": 72,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-30T22:37:34+00:00",
-      "days_old": 0.2,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "c37165a31cd3fc39",
-      "title": "n8n-io/n8n",
-      "url": "https://github.com/n8n-io/n8n",
-      "source": "GitHub Search",
-      "primary_category": "ai_and_automation",
-      "priority_score": 69,
-      "hourly_adjusted_score": 70,
-      "stars_current": 209157,
-      "stars_delta_24h": 81,
-      "stars_delta_baseline_hours": 21.1,
-      "stars_growth_percent_24h": 0.04,
-      "trend_signal": "measured_star_growth",
-      "published_at": "2026-10-31T03:27:32+00:00",
-      "days_old": 0.0,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "25df9fa68f72f18a",
-      "title": "Secure your app with network access rules in `shopify.app.toml`",
-      "url": "https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml",
+      "id": "46b14009a350aa12",
+      "title": "Cart and checkout permalinks now support UCP at /buy",
+      "url": "https://shopify.dev/changelog/posts/cart-and-checkout-permalinks-now-support-ucp-at-buy",
       "source": "Shopify Developer Changelog",
       "primary_category": "commerce_and_digital_products",
-      "priority_score": 69,
-      "hourly_adjusted_score": 69,
+      "priority_score": 71,
+      "hourly_adjusted_score": 71,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-27T16:00:00+00:00",
-      "days_old": 3.48,
+      "published_at": "2026-10-28T15:50:00+00:00",
+      "days_old": 2.52,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "a7ef65c69e7dd7cd",
+      "title": "Shop SDK lead capture now supports Rich Authorization Requests",
+      "url": "https://shopify.dev/changelog/posts/shop-sdk-lead-capture-now-supports-rich-authorization-requests",
+      "source": "Shopify Developer Changelog",
+      "primary_category": "commerce_and_digital_products",
+      "priority_score": 68,
+      "hourly_adjusted_score": 68,
+      "stars_current": null,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-28T20:06:00+00:00",
+      "days_old": 2.35,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "32b0253b0bd54923",
+      "title": "Show HN: Free Unlimited Virtual Monitors+Watch Claude Work on Them+Community",
+      "url": "https://multispace.dev/",
+      "source": "Hacker News",
+      "primary_category": "product_and_workflow_tools",
+      "priority_score": 65,
+      "hourly_adjusted_score": 67,
+      "stars_current": null,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-30T23:16:36+00:00",
+      "days_old": 0.21,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
@@ -435,10 +442,10 @@
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 2,
-    "submitted_for_independent_review": 2,
+    "locally_valid_drafts": 1,
+    "submitted_for_independent_review": 1,
     "passed_independent_review": 0,
-    "rejected_by_independent_review": 2,
+    "rejected_by_independent_review": 1,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"

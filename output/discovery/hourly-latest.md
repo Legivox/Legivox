@@ -1,10 +1,10 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-31T08:57:16+05:30
+- Run time (IST): 2026-10-31T09:54:55+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 202
-- Independent editorial review: 0 draft(s) passed / 2 rejected
+- Candidate pool after freshness/diversity filters: 191
+- Independent editorial review: 0 draft(s) passed / 1 rejected
 - Drafts passing local checks: 0
 - Outcome: **skip**
 - Decision reason: Every draft submitted for independent editorial review was rejected; The hour was skipped.
@@ -25,7 +25,7 @@
 | GitHub Search · github-seller-operations | 10 | ok |
 | GitHub Search · github-shopify-commerce | 10 | ok |
 | GitHub Search · github-workflow-automation | 10 | ok |
-| Hacker News · hn-analytics-growth | 9 | ok |
+| Hacker News · hn-analytics-growth | 7 | ok |
 | Hacker News · hn-automation-api | 1 | ok |
 | Hacker News · hn-creator-business | 0 | ok |
 | Hacker News · hn-digital-downloads-templates | 0 | ok |
@@ -54,8 +54,8 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 112
-- Previously tracked repositories refreshed outside search results: 88
+- Repositories seen in this discovery run: 107
+- Previously tracked repositories refreshed outside search results: 93
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
 - Repositories with a 20–36 hour comparison baseline: 16
@@ -65,9 +65,9 @@
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| Show HN: Fastbrowse, Browser agent that picks clicks with a System One model | yes | 200 | https://www.fastbrowse.ai/ |
-| n8n-io/n8n | yes | 200 | https://github.com/n8n-io/n8n |
-| Secure your app with network access rules in `shopify.app.toml` | yes | 200 | https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml |
+| Cart and checkout permalinks now support UCP at /buy | yes | 200 | https://shopify.dev/changelog/posts/cart-and-checkout-permalinks-now-support-ucp-at-buy |
+| Shop SDK lead capture now supports Rich Authorization Requests | yes | 200 | https://shopify.dev/changelog/posts/shop-sdk-lead-capture-now-supports-rich-authorization-requests |
+| Show HN: Free Unlimited Virtual Monitors+Watch Claude Work on Them+Community | yes | 200 | https://multispace.dev/ |
 
 ## Selected draft candidates
 
@@ -84,23 +84,25 @@ No draft cleared the complete local and independent-editor gate. See the decisio
 
 ## Rejected draft options
 
-- n8n-io/n8n: Editorial takeaway is not specific enough to this candidate's technical/product details.
-  - Rejected text: n8n is a fair‑code workflow automation platform with native AI capabilities. Test AI node outputs against known inputs to catch drift. https://github.com/n8n-io/n8n
-  - Model evidence quote: “Fair-code workflow automation platform with native AI capabilities.”
-  - Claim support: n8n is a fair‑code workflow automation platform with native AI capabilities. ← “Fair-code workflow automation platform with native AI capabilities.”
-- Show HN: Fastbrowse, Browser agent that picks clicks with a System One model: Post restates headline and generic advice; lacks original insight.
-  - Rejected text: Fastbrowse automates browsers, returning cited answers or schema‑validated data. Verify returned data matches expected schema before production use. https://www.fastbrowse.ai/
-- Secure your app with network access rules in `shopify.app.toml`: Post merely paraphrases headline; no new perspective.
-  - Rejected text: Shopify’s app.toml now supports a network_access section for hosts. Add trusted hosts early to avoid customer warnings during navigation. https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml
-- Show HN: Fastbrowse, Browser agent that picks clicks with a System One model: Editorial takeaway is too long; keep the analysis concrete and concise.
-  - Rejected text: Fastbrowse automates browsers and returns schema‑validated data. Before executing irreversible actions, the caller must authorize the run; otherwise the tool pauses for approval. https://www.fastbrowse.ai/
-  - Model evidence quote: “Without authorization, actions classified as irreversible pause for approval.”
+- Shop SDK lead capture now supports Rich Authorization Requests: Opening sentence is too close to the source headline; add a distinct editorial framing.
+  - Rejected text: Shop SDK lead capture now supports Rich Authorization Requests. Add required fields to RAR and check optional ones are omitted on decline. https://shopify.dev/changelog/posts/shop-sdk-lead-capture-now-supports-rich-authorization-requests
+  - Model evidence quote: “You can now request the specific profile data your app needs during Shop SDK lead capture, including details that aren't saved on the user's Shop profile.”
+  - Claim support: Shop SDK lead capture now supports Rich Authorization Requests. ← “You can now request the specific profile data your app needs during Shop SDK lead capture, including details that aren't saved on the user's Shop profile.”
+- Show HN: Free Unlimited Virtual Monitors+Watch Claude Work on Them+Community: Takeaway implies an interaction/causal relationship between source-listed features that the primary page does not establish. Reframe it as an explicit conditional test of the reader's own integration.; A supporting quote does not share enough wording with its stated claim; Factual sentence includes terms absent from the source title/summary: offer, signup, virtual
+  - Rejected text: Multispace offers free virtual monitors for AI work without signup. Install Multispace and verify AI can launch in a new monitor window. https://multispace.dev/
+  - Model evidence quote: “Your AI works on its own screen while you design, listen to music or play, right next to it. Real extra monitors for your apps, websites and games, all in one window. Free.”
+  - Claim support: Multispace offers free virtual monitors for AI work without signup. ← “Your AI works on its own screen while you design, listen to music or play, right next to it. Real extra monitors for your apps, websites and games, all in one window. Free.”
+- Cart and checkout permalinks now support UCP at /buy: Post merely restates headline and suggests a generic test; no new insight or actionable detail beyond source.
+  - Rejected text: Shopify’s /buy link now supports UCP dev.ucp.shopping.permalink. Verify /buy UCP prefill by sending a link with buyer/email. https://shopify.dev/changelog/posts/cart-and-checkout-permalinks-now-support-ucp-at-buy
+- Cart and checkout permalinks now support UCP at /buy: Editorial takeaway is too long; keep the analysis concrete and concise.; Fact plus takeaway exceeds the per-link character budget.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.; Editorial takeaway is too long to be a useful concise second sentence.; Draft is 337 raw characters; limit is 280
+  - Rejected text: Shopify’s /buy link supports UCP dev.ucp.shopping.permalink. When a /buy link’s UCP parameters cannot be applied, Shopify redirects the buyer to the continue_to destination if present, or to the shop’s storefront instead of displaying an error page. https://shopify.dev/changelog/posts/cart-and-checkout-permalinks-now-support-ucp-at-buy
+  - Model evidence quote: “If a link can’t be applied, Shopify redirects the buyer to the continue _to destination when it’s present, or to the shop’s storefront instead of showing an error page.”
 
 ## Top discovery candidates considered
 
-- Show HN: Fastbrowse, Browser agent that picks clicks with a System One model | Hacker News | product_and_workflow_tools | raw 70, adjusted 72 | https://www.fastbrowse.ai/
-- n8n-io/n8n | GitHub Search | ai_and_automation | raw 69, adjusted 70 | current stars 209157 | GitHub stars +81 over about 21.1h | https://github.com/n8n-io/n8n
-- Secure your app with network access rules in `shopify.app.toml` | Shopify Developer Changelog | commerce_and_digital_products | raw 69, adjusted 69 | https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml
+- Cart and checkout permalinks now support UCP at /buy | Shopify Developer Changelog | commerce_and_digital_products | raw 71, adjusted 71 | https://shopify.dev/changelog/posts/cart-and-checkout-permalinks-now-support-ucp-at-buy
+- Shop SDK lead capture now supports Rich Authorization Requests | Shopify Developer Changelog | commerce_and_digital_products | raw 68, adjusted 68 | https://shopify.dev/changelog/posts/shop-sdk-lead-capture-now-supports-rich-authorization-requests
+- Show HN: Free Unlimited Virtual Monitors+Watch Claude Work on Them+Community | Hacker News | product_and_workflow_tools | raw 65, adjusted 67 | https://multispace.dev/
 
 ## Safety and interpretation
 
