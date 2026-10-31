@@ -1,0 +1,61 @@
+{
+  "date_ist": "2026-10-31",
+  "prepared_at_ist": "2026-10-31 21:34:20 IST",
+  "research_window_days": 1,
+  "research_source": "Multidomain discovery + independent editorial review",
+  "source_report_generated_at_ist": "2026-10-31T20:46:22+05:30",
+  "source_report_age_minutes": 47,
+  "star_baseline_repositories": 19,
+  "posts": [
+    {
+      "idea_id": "multidomain-3dee24efe611cd8e",
+      "niche": "product_and_workflow_tools",
+      "problem": "Show HN: Spotify FOSS Alternative with Google Drive, S3, Soulseek",
+      "evidence": "Primary source verified (HTTP 200): https://github.com/Suleman-Elahi/Listune. Exact evidence: Add S3 buckets as audio sources (AWS SigV4 pre‑signed URLs, multiple buckets, optional session tokens)",
+      "solution_hypothesis": "Verify bucket access and token rotation before adding production libraries.",
+      "text": "Listune lets you add S3 buckets as audio sources via AWS SigV4 pre‑signed URLs. Verify bucket access and token rotation before adding production libraries. https://github.com/Suleman-Elahi/Listune",
+      "text_hash": "b62ee2476717783a54502c2fd7966631456044120e208dbde6ddcdc636d0e0c5",
+      "image_query": "",
+      "research": {
+        "query": "Multidomain primary-source discovery and independent editorial review",
+        "score": 8.4,
+        "hits": [
+          {
+            "title": "Show HN: Spotify FOSS Alternative with Google Drive, S3, Soulseek",
+            "url": "https://github.com/Suleman-Elahi/Listune",
+            "external_url": "https://github.com/Suleman-Elahi/Listune",
+            "points": 0,
+            "comments": 0,
+            "created_at": "2026-10-31T20:46:22+05:30",
+            "matched_terms": []
+          }
+        ],
+        "error": null
+      },
+      "status": "published: https://x.com/i/status/2116563302373580909",
+      "slot": 1,
+      "editorial_scores": {
+        "model": {
+          "timeliness": 10,
+          "usefulness": 8,
+          "novelty": 7,
+          "evidence": 9,
+          "insight": 8
+        },
+        "overall": 8.4,
+        "independent_review": {
+          "clarity_score": 8,
+          "technical_coherence_score": 8,
+          "takeaway_value_score": 8,
+          "source_faithfulness_score": 9,
+          "originality_score": 8,
+          "reason": "Clear, technically coherent, source‑faithful, and offers a useful, original best‑practice takeaway.",
+          "passed": true
+        }
+      },
+      "published_at_ist": "2026-10-31T21:39:49+05:30",
+      "published_url": "https://x.com/i/status/2116563302373580909",
+      "image": null
+    }
+  ]
+}

@@ -1,23 +1,23 @@
 # Legivox daily content plan
 
-Prepared: 2026-10-31 15:34:23 IST
+Prepared: 2026-10-31 21:34:20 IST
 
 > This scheduled post came from a fresh multidomain discovery report, passed primary-source and deterministic evidence checks, and passed an independent editorial review. The star-history baseline is a trend signal, not proof of market demand.
 
-## Post 1 · multidomain-adfee1574336a2e8
+## Post 1 · multidomain-3dee24efe611cd8e
 
 **Planned copy**
 
-Codync is an open source Grok Bot alternative that supports 40+ AI agents. Run a quick agent switch test to confirm the CLI can route to each AI provider. https://github.com/leepokai/Codync
+Listune lets you add S3 buckets as audio sources via AWS SigV4 pre‑signed URLs. Verify bucket access and token rotation before adding production libraries. https://github.com/Suleman-Elahi/Listune
 
-- Topic: security_and_self_hosting
+- Topic: product_and_workflow_tools
 - Editorial score (model estimate): 8.4
 
 **Source article**
 
-- [leepokai/Codync](https://github.com/leepokai/Codync)
+- [Show HN: Spotify FOSS Alternative with Google Drive, S3, Soulseek](https://github.com/Suleman-Elahi/Listune)
 
-- Status: published: https://x.com/i/status/2116472825997574150
+- Status: published: https://x.com/i/status/2116563302373580909
 
 ## Media policy
 
