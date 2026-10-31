@@ -1,24 +1,24 @@
 {
-  "generated_at_ist": "2026-10-31T20:46:22+05:30",
-  "run_at_ist": "2026-10-31T20:46:22+05:30",
+  "generated_at_ist": "2026-10-31T21:47:41+05:30",
+  "run_at_ist": "2026-10-31T21:47:41+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 324,
-  "eligible_candidate_count": 183,
+  "candidate_count_raw": 317,
+  "eligible_candidate_count": 182,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4887
+      "total_count": 4891
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1042
+      "total_count": 1043
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
@@ -32,7 +32,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3212
+      "total_count": 3213
     },
     {
       "source": "GitHub Search · github-digital-product-tools",
@@ -60,21 +60,21 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2126
+      "total_count": 2129
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3414
+      "total_count": 3421
     },
     {
       "source": "GitHub Search · github-seller-operations",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 359
+      "total_count": 360
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
@@ -88,7 +88,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 270
+      "total_count": 271
     },
     {
       "source": "Hacker News · hn-analytics-growth",
@@ -116,7 +116,7 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 7
+      "total_count": 6
     },
     {
       "source": "Hacker News · hn-digital-products",
@@ -158,12 +158,12 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 10
+      "total_count": 8
     },
     {
       "source": "Hacker News · hn-shopify",
       "kind": "hacker_news",
-      "items_kept": 10,
+      "items_kept": 8,
       "status": "ok",
       "total_count": 10
     },
@@ -227,7 +227,7 @@
       "kind": "wordpress_plugin",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2021
+      "total_count": 2022
     },
     {
       "source": "WordPress Plugin Directory · wp-ecommerce",
@@ -241,7 +241,7 @@
       "kind": "wordpress_plugin",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 972
+      "total_count": 975
     },
     {
       "source": "WordPress Plugin Directory · wp-marketing-analytics",
@@ -259,265 +259,224 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-31T15:16:22+00:00",
+    "observed_at_utc": "2026-10-31T16:17:41+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 114,
-    "previously_tracked_repositories_refreshed": 86,
+    "repositories_seen_in_discovery": 109,
+    "previously_tracked_repositories_refreshed": 91,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
-    "repositories_with_20_to_36_hour_baseline": 19,
+    "repositories_with_20_to_36_hour_baseline": 18,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "21e52dcbeafcf988",
-      "title": "UI extensions now support a larger number of locales",
-      "source_url": "https://shopify.dev/changelog/ui-extensions-now-support-a-larger-number-of-locales",
+      "candidate_id": "25df9fa68f72f18a",
+      "title": "Secure your app with network access rules in `shopify.app.toml`",
+      "source_url": "https://shopify.dev/changelog/secure-your-app-with-network-access-hosts-in-shopify-app-toml",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/ui-extensions-now-support-a-larger-number-of-locales",
+      "final_url": "https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "3dee24efe611cd8e",
-      "title": "Show HN: Spotify FOSS Alternative with Google Drive, S3, Soulseek",
-      "source_url": "https://github.com/Suleman-Elahi/Listune",
-      "verified": true,
-      "final_url": "https://github.com/Suleman-Elahi/Listune",
-      "http_status": 200,
-      "reason": ""
+      "candidate_id": "1b9191dd943341ea",
+      "title": "Godwit",
+      "source_url": "https://www.producthunt.com/products/godwit",
+      "verified": false,
+      "final_url": null,
+      "http_status": null,
+      "reason": "Primary source returned HTTP 403."
     },
     {
-      "candidate_id": "664b4df78ac2e02f",
-      "title": "Show HN: CodeConnect: Coding Agents on Your iPhone",
-      "source_url": "https://codeconnect.sh",
+      "candidate_id": "2646a7c4795c0127",
+      "title": "Store and app install details in the Dev Dashboard",
+      "source_url": "https://shopify.dev/changelog/store-and-app-install-details-in-the-dev-dashboard",
       "verified": true,
-      "final_url": "https://codeconnect.sh",
+      "final_url": "https://shopify.dev/changelog/posts/store-and-app-install-details-in-the-dev-dashboard",
       "http_status": 200,
       "reason": ""
     }
   ],
-  "rejected_primary_sources": [],
+  "rejected_primary_sources": [
+    {
+      "candidate_id": "1b9191dd943341ea",
+      "title": "Godwit",
+      "source": "Product Hunt",
+      "url": "https://www.producthunt.com/products/godwit",
+      "reasons": [
+        "Primary source returned HTTP 403."
+      ]
+    }
+  ],
   "daily_draft_cap": 16,
-  "daily_drafts_already_passed": 2,
-  "outcome": "dry_run_passed",
-  "decision_reason": "At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.",
-  "passing_drafts": [
-    {
-      "candidate_id": "3dee24efe611cd8e",
-      "title": "Show HN: Spotify FOSS Alternative with Google Drive, S3, Soulseek",
-      "source": "Hacker News",
-      "source_kind": "hacker_news",
-      "url": "https://github.com/Suleman-Elahi/Listune",
-      "primary_source_verified": true,
-      "primary_source_title": "GitHub - Suleman-Elahi/Listune: A self hosted music streaming web app, run as PWA. Has XP's media player's bar visualization",
-      "primary_source_final_url": "https://github.com/Suleman-Elahi/Listune",
-      "primary_source_http_status": 200,
-      "category": "product_and_workflow_tools",
-      "priority_score": 66,
-      "hourly_adjusted_score": 68,
-      "post_text": "Listune lets you add S3 buckets as audio sources via AWS SigV4 pre‑signed URLs. Verify bucket access and token rotation before adding production libraries. https://github.com/Suleman-Elahi/Listune",
-      "fact_sentence": "Listune lets you add S3 buckets as audio sources via AWS SigV4 pre‑signed URLs.",
-      "format": "tool_discovery",
-      "audience": "developers",
-      "angle": "feature highlight",
-      "rationale": "The repository description confirms S3 support; testing ensures credentials and permissions work.",
-      "evidence_quote": "Add S3 buckets as audio sources (AWS SigV4 pre‑signed URLs, multiple buckets, optional session tokens)",
-      "editorial_takeaway": "Verify bucket access and token rotation before adding production libraries.",
-      "claim_evidence": [
-        {
-          "claim": "Listune lets you add S3 buckets as audio sources via AWS SigV4 pre‑signed URLs",
-          "quote": "Add S3 buckets as audio sources (AWS SigV4 pre‑signed URLs, multiple buckets, optional session tokens)"
-        }
-      ],
-      "scores": {
-        "timeliness": 10,
-        "usefulness": 8,
-        "novelty": 7,
-        "evidence": 9,
-        "insight": 8
-      },
-      "editorial_score": 8.4,
-      "character_count": 196,
-      "status": "dry_run_passed_not_published",
-      "published_to_x": false,
-      "editorial_review": {
-        "clarity_score": 8,
-        "technical_coherence_score": 8,
-        "takeaway_value_score": 8,
-        "source_faithfulness_score": 9,
-        "originality_score": 8,
-        "reason": "Clear, technically coherent, source‑faithful, and offers a useful, original best‑practice takeaway.",
-        "passed": true
-      }
-    }
-  ],
+  "daily_drafts_already_passed": 3,
+  "outcome": "skip",
+  "decision_reason": "All generated drafts failed the local evidence/editorial checks; the hour was skipped.",
+  "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "21e52dcbeafcf988",
-      "title": "UI extensions now support a larger number of locales",
+      "candidate_id": "1b9191dd943341ea",
+      "title": "Godwit",
+      "source": "Product Hunt",
+      "url": "https://www.producthunt.com/products/godwit",
       "reasons": [
-        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation."
+        "Primary source returned HTTP 403."
+      ]
+    },
+    {
+      "candidate_id": "25df9fa68f72f18a",
+      "title": "Secure your app with network access rules in `shopify.app.toml`",
+      "reasons": [
+        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
+        "Supporting quotes cover only 56% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "UI extensions no longer have a 256 KB limit on the combined size of their locale files. After adding many languages, run a deploy test to confirm no size‑related failures. https://shopify.dev/changelog/posts/ui-extensions-now-support-a-larger-number-of-locales",
-      "evidence_quote": "UI extensions no longer have a 256 KB limit on the combined size of their locale files",
+      "proposed_text": "Shopify’s app.toml now includes a network_access section to whitelist hosts. Add allowed_navigation_hosts to silence storefront warnings. https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml",
+      "evidence_quote": "The new network _access section has two properties: allowed _navigation _hosts : The external sites your app links to from the storefront, such as your own domain.",
       "claim_evidence": [
         {
-          "claim": "UI extensions no longer have a 256 KB limit on the combined size of their locale files",
-          "quote": "UI extensions no longer have a 256 KB limit on the combined size of their locale files"
+          "claim": "Shopify’s app.toml now includes a network_access section to whitelist hosts.",
+          "quote": "The new network _access section has two properties: allowed _navigation _hosts : The external sites your app links to from the storefront, such as your own domain."
         }
       ]
     },
     {
-      "candidate_id": "664b4df78ac2e02f",
-      "title": "Show HN: CodeConnect: Coding Agents on Your iPhone",
+      "candidate_id": null,
+      "title": "Unmapped model draft",
+      "proposed_text": "",
       "reasons": [
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
-        "Primary-source evidence quote is missing or absent from the live page (after presentation normalisation)",
-        "A factual claim lacks a quote present in the live primary-source page",
-        "Supporting quotes cover only 14% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Model omitted a valid candidate ID and no exact verified source URL matched."
+      ]
+    },
+    {
+      "candidate_id": "2646a7c4795c0127",
+      "title": "Store and app install details in the Dev Dashboard",
+      "reasons": [
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
       ],
-      "proposed_text": "CodeConnect streams coding agent sessions over Tailscale to your iPhone. Confirm tailnet connectivity and agent availability before launching the app. https://codeconnect.sh",
-      "evidence_quote": "Runs over Tailscale and fully open‑sourced",
+      "proposed_text": "Dev Dashboard now shows installed apps, collaborator access, earnings, and activity. Use the Installs card to drill into app earnings per store. https://shopify.dev/changelog/posts/store-and-app-install-details-in-the-dev-dashboard",
+      "evidence_quote": "You can now view your organization’s installed apps, collaborator access, earnings, and app activity in one place in the Dev Dashboard.",
       "claim_evidence": [
         {
-          "claim": "CodeConnect streams coding agent sessions over Tailscale to your iPhone",
-          "quote": "Runs over Tailscale and fully open‑sourced"
+          "claim": "Dev Dashboard now shows installed apps, collaborator access, earnings, and activity.",
+          "quote": "You can now view your organization’s installed apps, collaborator access, earnings, and app activity in one place in the Dev Dashboard."
         }
+      ]
+    },
+    {
+      "candidate_id": "25df9fa68f72f18a",
+      "title": "Secure your app with network access rules in `shopify.app.toml`",
+      "reasons": [
+        "Editorial takeaway is too long; keep the analysis concrete and concise."
+      ],
+      "proposed_text": "Shopify’s app.toml now supports a network_access section to whitelist hosts. Add a host to allowed_navigation_hosts and confirm the storefront warning disappears for that link. https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml",
+      "evidence_quote": "declaring your external hosts skips this warning, letting you remove friction for trusted journeys.",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
+        "Supporting quotes cover only 56% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ]
+    },
+    {
+      "candidate_id": "2646a7c4795c0127",
+      "title": "Store and app install details in the Dev Dashboard",
+      "reasons": [
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "Fact plus takeaway exceeds the per-link character budget.",
+        "Draft is 304 raw characters; limit is 280"
+      ],
+      "proposed_text": "Dev Dashboard now lets you view your organization’s installed apps in one place. Open the Installs card on an app’s Overview page, select a store, and verify the displayed earnings match the store’s total app revenue. https://shopify.dev/changelog/posts/store-and-app-install-details-in-the-dev-dashboard",
+      "evidence_quote": "For app install details, open your app’s Overview , select the install count in the Installs card, then select a store.",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "The factual opening bundles multiple features; narrow it to one capability.",
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "21e52dcbeafcf988",
-      "title": "UI extensions now support a larger number of locales",
-      "url": "https://shopify.dev/changelog/posts/ui-extensions-now-support-a-larger-number-of-locales",
+      "id": "25df9fa68f72f18a",
+      "title": "Secure your app with network access rules in `shopify.app.toml`",
+      "url": "https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml",
       "source": "Shopify Developer Changelog",
       "primary_category": "commerce_and_digital_products",
-      "priority_score": 72,
-      "hourly_adjusted_score": 72,
+      "priority_score": 69,
+      "hourly_adjusted_score": 69,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-30T18:00:00+00:00",
-      "days_old": 0.89,
+      "published_at": "2026-10-27T16:00:00+00:00",
+      "days_old": 4.01,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "3dee24efe611cd8e",
-      "title": "Show HN: Spotify FOSS Alternative with Google Drive, S3, Soulseek",
-      "url": "https://github.com/Suleman-Elahi/Listune",
-      "source": "Hacker News",
-      "primary_category": "product_and_workflow_tools",
-      "priority_score": 66,
-      "hourly_adjusted_score": 68,
+      "id": "1b9191dd943341ea",
+      "title": "Godwit",
+      "url": "https://www.producthunt.com/products/godwit",
+      "source": "Product Hunt",
+      "primary_category": "developer_tools",
+      "priority_score": 58,
+      "hourly_adjusted_score": 58,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-31T15:02:22+00:00",
-      "days_old": 0.01,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
+      "published_at": "2026-10-31T03:45:26+00:00",
+      "days_old": 0.52,
+      "primary_source_verified": false,
+      "primary_source_http_status": null,
+      "primary_source_reason": "Primary source returned HTTP 403."
     },
     {
-      "id": "664b4df78ac2e02f",
-      "title": "Show HN: CodeConnect: Coding Agents on Your iPhone",
-      "url": "https://codeconnect.sh",
-      "source": "Hacker News",
-      "primary_category": "product_and_workflow_tools",
-      "priority_score": 63,
-      "hourly_adjusted_score": 65,
+      "id": "2646a7c4795c0127",
+      "title": "Store and app install details in the Dev Dashboard",
+      "url": "https://shopify.dev/changelog/posts/store-and-app-install-details-in-the-dev-dashboard",
+      "source": "Shopify Developer Changelog",
+      "primary_category": "commerce_and_digital_products",
+      "priority_score": 54,
+      "hourly_adjusted_score": 54,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-31T15:03:31+00:00",
-      "days_old": 0.01,
+      "published_at": "2026-10-27T23:30:00+00:00",
+      "days_old": 3.7,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     }
   ],
   "automatic_repair": {
-    "attempted": false,
-    "drafts_submitted": 0,
+    "attempted": true,
+    "drafts_submitted": 2,
     "repaired_local_passes": 0,
-    "repair_rejections": 0,
+    "repair_rejections": 2,
     "repair_error": null,
     "editorial_repair_attempted": false,
     "editorial_repair_drafts_submitted": 0,
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 1,
-    "submitted_for_independent_review": 1,
-    "passed_independent_review": 1,
+    "locally_valid_drafts": 0,
+    "submitted_for_independent_review": 0,
+    "passed_independent_review": 0,
     "rejected_by_independent_review": 0,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
-  "recommended_draft": {
-    "candidate_id": "3dee24efe611cd8e",
-    "title": "Show HN: Spotify FOSS Alternative with Google Drive, S3, Soulseek",
-    "source": "Hacker News",
-    "source_kind": "hacker_news",
-    "url": "https://github.com/Suleman-Elahi/Listune",
-    "primary_source_verified": true,
-    "primary_source_title": "GitHub - Suleman-Elahi/Listune: A self hosted music streaming web app, run as PWA. Has XP's media player's bar visualization",
-    "primary_source_final_url": "https://github.com/Suleman-Elahi/Listune",
-    "primary_source_http_status": 200,
-    "category": "product_and_workflow_tools",
-    "priority_score": 66,
-    "hourly_adjusted_score": 68,
-    "post_text": "Listune lets you add S3 buckets as audio sources via AWS SigV4 pre‑signed URLs. Verify bucket access and token rotation before adding production libraries. https://github.com/Suleman-Elahi/Listune",
-    "fact_sentence": "Listune lets you add S3 buckets as audio sources via AWS SigV4 pre‑signed URLs.",
-    "format": "tool_discovery",
-    "audience": "developers",
-    "angle": "feature highlight",
-    "rationale": "The repository description confirms S3 support; testing ensures credentials and permissions work.",
-    "evidence_quote": "Add S3 buckets as audio sources (AWS SigV4 pre‑signed URLs, multiple buckets, optional session tokens)",
-    "editorial_takeaway": "Verify bucket access and token rotation before adding production libraries.",
-    "claim_evidence": [
-      {
-        "claim": "Listune lets you add S3 buckets as audio sources via AWS SigV4 pre‑signed URLs",
-        "quote": "Add S3 buckets as audio sources (AWS SigV4 pre‑signed URLs, multiple buckets, optional session tokens)"
-      }
-    ],
-    "scores": {
-      "timeliness": 10,
-      "usefulness": 8,
-      "novelty": 7,
-      "evidence": 9,
-      "insight": 8
-    },
-    "editorial_score": 8.4,
-    "character_count": 196,
-    "status": "dry_run_passed_not_published",
-    "published_to_x": false,
-    "editorial_review": {
-      "clarity_score": 8,
-      "technical_coherence_score": 8,
-      "takeaway_value_score": 8,
-      "source_faithfulness_score": 9,
-      "originality_score": 8,
-      "reason": "Clear, technically coherent, source‑faithful, and offers a useful, original best‑practice takeaway.",
-      "passed": true
-    }
-  },
   "state_summary": {
     "used_candidates_in_cooldown": 35,
-    "recently_attempted_candidates": 37,
+    "recently_attempted_candidates": 36,
     "recent_draft_passes_today": 3
   }
 }

@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-31T20:46:22+05:30
+- Run time (IST): 2026-10-31T21:47:41+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 183
-- Independent editorial review: 1 draft(s) passed / 0 rejected
-- Drafts passing local checks: 1
-- Outcome: **dry_run_passed**
-- Decision reason: At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.
+- Candidate pool after freshness/diversity filters: 182
+- Independent editorial review: 0 draft(s) passed / 0 rejected
+- Drafts passing local checks: 0
+- Outcome: **skip**
+- Decision reason: All generated drafts failed the local evidence/editorial checks; the hour was skipped.
 
 ## Source health
 
@@ -35,7 +35,7 @@
 | Hacker News · hn-marketing-distribution | 0 | ok |
 | Hacker News · hn-security-selfhost | 0 | ok |
 | Hacker News · hn-seller-operations | 0 | ok |
-| Hacker News · hn-shopify | 10 | ok |
+| Hacker News · hn-shopify | 8 | ok |
 | Hacker News · hn-show-hn | 10 | ok |
 | Ahrefs Blog | 8 | ok |
 | Console.dev | 11 | ok |
@@ -54,77 +54,62 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 114
-- Previously tracked repositories refreshed outside search results: 86
+- Repositories seen in this discovery run: 109
+- Previously tracked repositories refreshed outside search results: 91
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
-- Repositories with a 20–36 hour comparison baseline: 19
+- Repositories with a 20–36 hour comparison baseline: 18
 - First observations are baseline samples, not evidence of trending. Star velocity is reported only when a historical comparison exists.
 
 ## Primary-source verification
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| UI extensions now support a larger number of locales | yes | 200 | https://shopify.dev/changelog/posts/ui-extensions-now-support-a-larger-number-of-locales |
-| Show HN: Spotify FOSS Alternative with Google Drive, S3, Soulseek | yes | 200 | https://github.com/Suleman-Elahi/Listune |
-| Show HN: CodeConnect: Coding Agents on Your iPhone | yes | 200 | https://codeconnect.sh |
+| Secure your app with network access rules in `shopify.app.toml` | yes | 200 | https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml |
+| Godwit | no | — | Primary source returned HTTP 403. |
+| Store and app install details in the Dev Dashboard | yes | 200 | https://shopify.dev/changelog/posts/store-and-app-install-details-in-the-dev-dashboard |
 
 ## Selected draft candidates
 
-### Draft option 1: Show HN: Spotify FOSS Alternative with Google Drive, S3, Soulseek
-
-- Category: product_and_workflow_tools
-- Source: Hacker News
-- Format: tool_discovery
-- Editorial score: 8.4/10
-- Model scores: timeliness 10/10, usefulness 8/10, novelty 7/10, evidence 9/10, insight 8/10
-- Independent editor scores: {"clarity_score": 8, "technical_coherence_score": 8, "takeaway_value_score": 8, "source_faithfulness_score": 9, "originality_score": 8, "reason": "Clear, technically coherent, source‑faithful, and offers a useful, original best‑practice takeaway.", "passed": true}
-- Live primary page: https://github.com/Suleman-Elahi/Listune (HTTP 200)
-- Exact source evidence: “Add S3 buckets as audio sources (AWS SigV4 pre‑signed URLs, multiple buckets, optional session tokens)”
-- Why this angle: The repository description confirms S3 support; testing ensures credentials and permissions work.
-- Editorial takeaway: Verify bucket access and token rotation before adding production libraries.
-- Source: https://github.com/Suleman-Elahi/Listune
-
-**Claim-by-claim source quotes:**
-
-- Listune lets you add S3 buckets as audio sources via AWS SigV4 pre‑signed URLs ← “Add S3 buckets as audio sources (AWS SigV4 pre‑signed URLs, multiple buckets, optional session tokens)”
-
-Proposed post (not published):
-
-> Listune lets you add S3 buckets as audio sources via AWS SigV4 pre‑signed URLs. Verify bucket access and token rotation before adding production libraries. https://github.com/Suleman-Elahi/Listune
-
-- Length: 196/280 raw characters
-- Automated gate: passed live source, evidence, originality, URL and length checks; live publishing is disabled in dry-run mode.
+No candidate produced a draft that passed every local check. Skipping is intentional.
 
 ## Automatic repair attempt
 
-- Attempted: no
-- Repaired drafts submitted: 0
+- Attempted: yes
+- Repaired drafts submitted: 2
 - Repaired drafts that passed local validation: 0
-- Repaired drafts rejected: 0
+- Repaired drafts rejected: 2
 - Repair error: none
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
-- UI extensions now support a larger number of locales: Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.
-  - Rejected text: UI extensions no longer have a 256 KB limit on the combined size of their locale files. After adding many languages, run a deploy test to confirm no size‑related failures. https://shopify.dev/changelog/posts/ui-extensions-now-support-a-larger-number-of-locales
-  - Model evidence quote: “UI extensions no longer have a 256 KB limit on the combined size of their locale files”
-  - Claim support: UI extensions no longer have a 256 KB limit on the combined size of their locale files ← “UI extensions no longer have a 256 KB limit on the combined size of their locale files”
-- Show HN: CodeConnect: Coding Agents on Your iPhone: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; Primary-source evidence quote is missing or absent from the live page (after presentation normalisation); A factual claim lacks a quote present in the live primary-source page; Supporting quotes cover only 14% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: CodeConnect streams coding agent sessions over Tailscale to your iPhone. Confirm tailnet connectivity and agent availability before launching the app. https://codeconnect.sh
-  - Model evidence quote: “Runs over Tailscale and fully open‑sourced”
-  - Claim support: CodeConnect streams coding agent sessions over Tailscale to your iPhone ← “Runs over Tailscale and fully open‑sourced”
+- Godwit: Primary source returned HTTP 403.
+- Secure your app with network access rules in `shopify.app.toml`: Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.; Supporting quotes cover only 56% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: Shopify’s app.toml now includes a network_access section to whitelist hosts. Add allowed_navigation_hosts to silence storefront warnings. https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml
+  - Model evidence quote: “The new network _access section has two properties: allowed _navigation _hosts : The external sites your app links to from the storefront, such as your own domain.”
+  - Claim support: Shopify’s app.toml now includes a network_access section to whitelist hosts. ← “The new network _access section has two properties: allowed _navigation _hosts : The external sites your app links to from the storefront, such as your own domain.”
+- Unmapped model draft: Model omitted a valid candidate ID and no exact verified source URL matched.
+- Store and app install details in the Dev Dashboard: The factual opening bundles multiple features; narrow it to one capability.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
+  - Rejected text: Dev Dashboard now shows installed apps, collaborator access, earnings, and activity. Use the Installs card to drill into app earnings per store. https://shopify.dev/changelog/posts/store-and-app-install-details-in-the-dev-dashboard
+  - Model evidence quote: “You can now view your organization’s installed apps, collaborator access, earnings, and app activity in one place in the Dev Dashboard.”
+  - Claim support: Dev Dashboard now shows installed apps, collaborator access, earnings, and activity. ← “You can now view your organization’s installed apps, collaborator access, earnings, and app activity in one place in the Dev Dashboard.”
+- Secure your app with network access rules in `shopify.app.toml`: Editorial takeaway is too long; keep the analysis concrete and concise.
+  - Rejected text: Shopify’s app.toml now supports a network_access section to whitelist hosts. Add a host to allowed_navigation_hosts and confirm the storefront warning disappears for that link. https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml
+  - Model evidence quote: “declaring your external hosts skips this warning, letting you remove friction for trusted journeys.”
+- Store and app install details in the Dev Dashboard: Editorial takeaway is too long; keep the analysis concrete and concise.; Fact plus takeaway exceeds the per-link character budget.; Draft is 304 raw characters; limit is 280
+  - Rejected text: Dev Dashboard now lets you view your organization’s installed apps in one place. Open the Installs card on an app’s Overview page, select a store, and verify the displayed earnings match the store’s total app revenue. https://shopify.dev/changelog/posts/store-and-app-install-details-in-the-dev-dashboard
+  - Model evidence quote: “For app install details, open your app’s Overview , select the install count in the Installs card, then select a store.”
 
 ## Top discovery candidates considered
 
-- UI extensions now support a larger number of locales | Shopify Developer Changelog | commerce_and_digital_products | raw 72, adjusted 72 | https://shopify.dev/changelog/posts/ui-extensions-now-support-a-larger-number-of-locales
-- Show HN: Spotify FOSS Alternative with Google Drive, S3, Soulseek | Hacker News | product_and_workflow_tools | raw 66, adjusted 68 | https://github.com/Suleman-Elahi/Listune
-- Show HN: CodeConnect: Coding Agents on Your iPhone | Hacker News | product_and_workflow_tools | raw 63, adjusted 65 | https://codeconnect.sh
+- Secure your app with network access rules in `shopify.app.toml` | Shopify Developer Changelog | commerce_and_digital_products | raw 69, adjusted 69 | https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml
+- Godwit | Product Hunt | developer_tools | raw 58, adjusted 58 | https://www.producthunt.com/products/godwit
+- Store and app install details in the Dev Dashboard | Shopify Developer Changelog | commerce_and_digital_products | raw 54, adjusted 54 | https://shopify.dev/changelog/posts/store-and-app-install-details-in-the-dev-dashboard
 
 ## Safety and interpretation
 
-- At least one draft passed the automated quality gates; this dry-run workflow itself never publishes to X.
+- This run did not produce a publishable draft; no post was published to X.
 - Model scores are editorial estimates; they are not verified popularity or market demand.
 - Candidate content and metadata are untrusted input. Factual copy must be supported by the fetched primary page.
 - A skip can mean no fresh candidates, a daily diversity/cap limit, a model/API problem or weak drafts. Check the reason above.
