@@ -1,38 +1,38 @@
 {
-  "generated_at_ist": "2026-10-31T15:49:18+05:30",
-  "run_at_ist": "2026-10-31T15:49:18+05:30",
+  "generated_at_ist": "2026-10-31T16:46:06+05:30",
+  "run_at_ist": "2026-10-31T16:46:06+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 320,
-  "eligible_candidate_count": 198,
+  "candidate_count_raw": 318,
+  "eligible_candidate_count": 193,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4856
+      "total_count": 4864
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1038
+      "total_count": 1040
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 371
+      "total_count": 372
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3141
+      "total_count": 3193
     },
     {
       "source": "GitHub Search · github-digital-product-tools",
@@ -60,21 +60,21 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2109
+      "total_count": 2110
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3396
+      "total_count": 3398
     },
     {
       "source": "GitHub Search · github-seller-operations",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 356
+      "total_count": 357
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
@@ -259,42 +259,42 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-31T10:19:18+00:00",
+    "observed_at_utc": "2026-10-31T11:16:06+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 112,
-    "previously_tracked_repositories_refreshed": 88,
+    "repositories_seen_in_discovery": 111,
+    "previously_tracked_repositories_refreshed": 89,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
-    "repositories_with_20_to_36_hour_baseline": 18,
+    "repositories_with_20_to_36_hour_baseline": 17,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "1c7eec461e65677e",
-      "title": "Show HN: Imza – plan and review focused coding agent",
-      "source_url": "https://github.com/umutsevdi/imza",
+      "candidate_id": "2ac330bedf4a1cfe",
+      "title": "Show HN: Filepeek – View any file in your browser",
+      "source_url": "https://filepeek.io/",
       "verified": true,
-      "final_url": "https://github.com/umutsevdi/imza",
+      "final_url": "https://filepeek.io/",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "e10c6902869dcfb0",
-      "title": "Merchant email now available on the `ThemeSale` object in the Partners API",
-      "source_url": "https://shopify.dev/changelog/merchant-email-now-available-on-the-themesale-object-in-the-partners-api",
+      "candidate_id": "fe106ba546c5c606",
+      "title": "Promoted Placements beta now includes Shop Campaigns",
+      "source_url": "https://shopify.dev/changelog/promoted-placements-beta-now-includes-shop-campaigns",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/merchant-email-now-available-on-the-themesale-object-in-the-partners-api",
+      "final_url": "https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "e16193c74cec9e6f",
-      "title": "Migrate to expiring offline access tokens before January 1, 2027",
-      "source_url": "https://shopify.dev/changelog/migrate-to-expiring-offline-access-tokens-before-january-2027",
+      "candidate_id": "5b7aef4519e9bf2e",
+      "title": "Search brands that don't sell on Shopify in the Catalog API (beta)",
+      "source_url": "https://shopify.dev/changelog/search-brands-that-don-t-sell-on-shopify-in-the-catalog-api-beta",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/migrate-to-expiring-offline-access-tokens-before-january-2027",
+      "final_url": "https://shopify.dev/changelog/posts/search-brands-that-don-t-sell-on-shopify-in-the-catalog-api-beta",
       "http_status": 200,
       "reason": ""
     }
@@ -303,112 +303,134 @@
   "daily_draft_cap": 16,
   "daily_drafts_already_passed": 2,
   "outcome": "skip",
-  "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
+  "decision_reason": "All generated drafts failed the local evidence/editorial checks; the hour was skipped.",
   "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "1c7eec461e65677e",
-      "title": "Show HN: Imza – plan and review focused coding agent",
-      "reasons": [
-        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation."
-      ],
-      "proposed_text": "Imza is a model‑agnostic coding agent with native performance and a small runtime footprint. Run plan mode to draft a spec document before coding. https://github.com/umutsevdi/imza",
-      "evidence_quote": "Batteries‑included, model‑agnostic coding agent with native performance and a small runtime footprint",
-      "claim_evidence": [
-        {
-          "claim": "Imza is a model‑agnostic coding agent with native performance and a small runtime footprint",
-          "quote": "Batteries‑included, model‑agnostic coding agent with native performance and a small runtime footprint"
-        }
-      ]
-    },
-    {
-      "candidate_id": "e10c6902869dcfb0",
-      "title": "Merchant email now available on the `ThemeSale` object in the Partners API",
+      "candidate_id": "2ac330bedf4a1cfe",
+      "title": "Show HN: Filepeek – View any file in your browser",
       "reasons": [
         "Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "ThemeSale object now includes the merchant's email address. Check the email field before sending support messages. https://shopify.dev/changelog/posts/merchant-email-now-available-on-the-themesale-object-in-the-partners-api",
-      "evidence_quote": "You can now access the purchasing merchant's email on the Theme Sale object in the Partner API",
+      "proposed_text": "Filepeek opens any file directly in the browser, no upload needed. Verify that uncommon formats (e.g., RAW, 3D) render correctly in the UI. https://filepeek.io/",
+      "evidence_quote": "Open any file in your browser. No download required. Runs entirely in your browser without uploading anywhere.",
       "claim_evidence": [
         {
-          "claim": "ThemeSale object now includes the merchant's email address",
-          "quote": "You can now access the purchasing merchant's email on the Theme Sale object in the Partner API"
+          "claim": "Filepeek opens any file directly in the browser, no upload needed.",
+          "quote": "Open any file in your browser. No download required. Runs entirely in your browser without uploading anywhere."
         }
       ]
     },
     {
-      "candidate_id": "e16193c74cec9e6f",
-      "title": "Migrate to expiring offline access tokens before January 1, 2027",
-      "proposed_text": "Apps must migrate to expiring offline access tokens before Jan 1 2027. Schedule token renewal tests before the deadline. https://shopify.dev/changelog/posts/migrate-to-expiring-offline-access-tokens-before-january-2027",
-      "reasons": [
-        "Post repeats headline info without adding new insight or actionable detail; originality below threshold."
-      ],
-      "editorial_review": {
-        "clarity_score": 8,
-        "technical_coherence_score": 8,
-        "takeaway_value_score": 7,
-        "source_faithfulness_score": 9,
-        "originality_score": 5
-      }
-    },
-    {
-      "candidate_id": "e16193c74cec9e6f",
-      "title": "Migrate to expiring offline access tokens before January 1, 2027",
+      "candidate_id": "fe106ba546c5c606",
+      "title": "Promoted Placements beta now includes Shop Campaigns",
       "reasons": [
         "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
-        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation."
+        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
+        "Supporting quotes cover only 62% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "Apps must migrate to expiring offline access tokens before Jan 1 2027. Non‑compliant apps will be delisted on Jan 1 2027 and blocked from new installs. https://shopify.dev/changelog/posts/migrate-to-expiring-offline-access-tokens-before-january-2027",
-      "evidence_quote": "Public apps still using non‑expiring offline access tokens must migrate to use expiring offline access tokens before January 1, 2027 to remain listed in the Shopify App Store and continue accepting new installs.",
+      "proposed_text": "Promoted Placements now pays commission on Shop Campaigns products via search_catalog. Pass catalog_id in search_catalog and read placement.commission.value. https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns",
+      "evidence_quote": "When a `search_catalog` result comes from a merchant running Shop Campaigns, you earn the commission that merchant funds, added to Shopify's base rate.",
+      "claim_evidence": [
+        {
+          "claim": "Promoted Placements now pays commission on Shop Campaigns products via search_catalog.",
+          "quote": "When a `search_catalog` result comes from a merchant running Shop Campaigns, you earn the commission that merchant funds, added to Shopify's base rate."
+        }
+      ]
+    },
+    {
+      "candidate_id": "5b7aef4519e9bf2e",
+      "title": "Search brands that don't sell on Shopify in the Catalog API (beta)",
+      "reasons": [
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
+        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
+        "Supporting quotes cover only 62% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ],
+      "proposed_text": "Catalog API beta adds a sources parameter to search_catalog to include external products. Set sources to ['shopify','external'] to include external items. https://shopify.dev/changelog/posts/search-brands-that-don-t-sell-on-shopify-in-the-catalog-api-beta",
+      "evidence_quote": "The Catalog API beta now supports a `sources` parameter on `search_catalog` that controls which products you return:",
+      "claim_evidence": [
+        {
+          "claim": "Catalog API beta adds a sources parameter to search_catalog to include external products.",
+          "quote": "The Catalog API beta now supports a `sources` parameter on `search_catalog` that controls which products you return:"
+        }
+      ]
+    },
+    {
+      "candidate_id": "2ac330bedf4a1cfe",
+      "title": "Show HN: Filepeek – View any file in your browser",
+      "reasons": [
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
+        "No claim-by-claim supporting evidence was provided",
+        "Supporting quotes cover only 60% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ],
+      "proposed_text": "Filepeek opens any file directly in the browser without uploading. Open a .obj 3D file in Filepeek and confirm it renders in the viewer; the 3D Objects feature should display the model without download. https://filepeek.io/",
+      "evidence_quote": "Open any file in your browser. No download required. Runs entirely in your browser without uploading anywhere.",
       "automatic_repair_attempt": true,
       "original_rejection_reasons": [
-        "Post repeats headline info without adding new insight or actionable detail; originality below threshold."
+        "Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ]
+    },
+    {
+      "candidate_id": "fe106ba546c5c606",
+      "title": "Promoted Placements beta now includes Shop Campaigns",
+      "reasons": [
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "Fact plus takeaway exceeds the per-link character budget.",
+        "Draft is 357 raw characters; limit is 280"
+      ],
+      "proposed_text": "Promoted Placements commission is added to Shopify's base rate in search_catalog results. When calling search_catalog, pass catalog_id and read placement.commission.percentage.value; verify the value equals the sum of the merchant's commission and Shopify's base rate. https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns",
+      "evidence_quote": "When a `search_catalog` result comes from a merchant running Shop Campaigns, you earn the commission that merchant funds, added to Shopify's base rate.",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
+        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
+        "Supporting quotes cover only 62% of factual wording; narrow the claim or provide a closer primary-source quote"
+      ]
+    },
+    {
+      "candidate_id": "5b7aef4519e9bf2e",
+      "title": "Search brands that don't sell on Shopify in the Catalog API (beta)",
+      "reasons": [
+        "Editorial takeaway is too long; keep the analysis concrete and concise.",
+        "Fact plus takeaway exceeds the per-link character budget.",
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
+        "Draft is 342 raw characters; limit is 280"
+      ],
+      "proposed_text": "search_catalog supports a sources parameter to filter external products. Set sources to ['external'] in search_catalog and confirm each result has eligible.native_checkout: false, indicating the product cannot be bought via Shopify checkout. https://shopify.dev/changelog/posts/search-brands-that-don-t-sell-on-shopify-in-the-catalog-api-beta",
+      "evidence_quote": "The Catalog API beta now supports a `sources` parameter on `search_catalog` that controls which products you return:",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
+        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
+        "Supporting quotes cover only 62% of factual wording; narrow the claim or provide a closer primary-source quote"
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "1c7eec461e65677e",
-      "title": "Show HN: Imza – plan and review focused coding agent",
-      "url": "https://github.com/umutsevdi/imza",
+      "id": "2ac330bedf4a1cfe",
+      "title": "Show HN: Filepeek – View any file in your browser",
+      "url": "https://filepeek.io/",
       "source": "Hacker News",
       "primary_category": "product_and_workflow_tools",
-      "priority_score": 65,
-      "hourly_adjusted_score": 67,
+      "priority_score": 66,
+      "hourly_adjusted_score": 68,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-31T09:58:23+00:00",
+      "published_at": "2026-10-31T10:59:21+00:00",
       "days_old": 0.01,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "e10c6902869dcfb0",
-      "title": "Merchant email now available on the `ThemeSale` object in the Partners API",
-      "url": "https://shopify.dev/changelog/posts/merchant-email-now-available-on-the-themesale-object-in-the-partners-api",
-      "source": "Shopify Developer Changelog",
-      "primary_category": "commerce_and_digital_products",
-      "priority_score": 64,
-      "hourly_adjusted_score": 64,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-28T15:50:00+00:00",
-      "days_old": 2.77,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "e16193c74cec9e6f",
-      "title": "Migrate to expiring offline access tokens before January 1, 2027",
-      "url": "https://shopify.dev/changelog/posts/migrate-to-expiring-offline-access-tokens-before-january-2027",
+      "id": "fe106ba546c5c606",
+      "title": "Promoted Placements beta now includes Shop Campaigns",
+      "url": "https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns",
       "source": "Shopify Developer Changelog",
       "primary_category": "commerce_and_digital_products",
       "priority_score": 63,
@@ -418,8 +440,27 @@
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-27T16:40:00+00:00",
-      "days_old": 3.74,
+      "published_at": "2026-10-27T13:00:00+00:00",
+      "days_old": 3.93,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "5b7aef4519e9bf2e",
+      "title": "Search brands that don't sell on Shopify in the Catalog API (beta)",
+      "url": "https://shopify.dev/changelog/posts/search-brands-that-don-t-sell-on-shopify-in-the-catalog-api-beta",
+      "source": "Shopify Developer Changelog",
+      "primary_category": "commerce_and_digital_products",
+      "priority_score": 63,
+      "hourly_adjusted_score": 63,
+      "stars_current": null,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-27T10:00:00+00:00",
+      "days_old": 4.05,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
@@ -427,26 +468,26 @@
   ],
   "automatic_repair": {
     "attempted": true,
-    "drafts_submitted": 1,
+    "drafts_submitted": 3,
     "repaired_local_passes": 0,
-    "repair_rejections": 1,
+    "repair_rejections": 3,
     "repair_error": null,
-    "editorial_repair_attempted": true,
-    "editorial_repair_drafts_submitted": 1,
+    "editorial_repair_attempted": false,
+    "editorial_repair_drafts_submitted": 0,
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 1,
-    "submitted_for_independent_review": 1,
+    "locally_valid_drafts": 0,
+    "submitted_for_independent_review": 0,
     "passed_independent_review": 0,
-    "rejected_by_independent_review": 1,
+    "rejected_by_independent_review": 0,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
   "state_summary": {
     "used_candidates_in_cooldown": 34,
-    "recently_attempted_candidates": 27,
+    "recently_attempted_candidates": 30,
     "recent_draft_passes_today": 2
   }
 }

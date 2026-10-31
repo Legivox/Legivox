@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-31T15:49:18+05:30
+- Run time (IST): 2026-10-31T16:46:06+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 198
-- Independent editorial review: 0 draft(s) passed / 1 rejected
+- Candidate pool after freshness/diversity filters: 193
+- Independent editorial review: 0 draft(s) passed / 0 rejected
 - Drafts passing local checks: 0
 - Outcome: **skip**
-- Decision reason: Every draft submitted for independent editorial review was rejected; The hour was skipped.
+- Decision reason: All generated drafts failed the local evidence/editorial checks; the hour was skipped.
 
 ## Source health
 
@@ -54,55 +54,63 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 112
-- Previously tracked repositories refreshed outside search results: 88
+- Repositories seen in this discovery run: 111
+- Previously tracked repositories refreshed outside search results: 89
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
-- Repositories with a 20–36 hour comparison baseline: 18
+- Repositories with a 20–36 hour comparison baseline: 17
 - First observations are baseline samples, not evidence of trending. Star velocity is reported only when a historical comparison exists.
 
 ## Primary-source verification
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| Show HN: Imza – plan and review focused coding agent | yes | 200 | https://github.com/umutsevdi/imza |
-| Merchant email now available on the `ThemeSale` object in the Partners API | yes | 200 | https://shopify.dev/changelog/posts/merchant-email-now-available-on-the-themesale-object-in-the-partners-api |
-| Migrate to expiring offline access tokens before January 1, 2027 | yes | 200 | https://shopify.dev/changelog/posts/migrate-to-expiring-offline-access-tokens-before-january-2027 |
+| Show HN: Filepeek – View any file in your browser | yes | 200 | https://filepeek.io/ |
+| Promoted Placements beta now includes Shop Campaigns | yes | 200 | https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns |
+| Search brands that don't sell on Shopify in the Catalog API (beta) | yes | 200 | https://shopify.dev/changelog/posts/search-brands-that-don-t-sell-on-shopify-in-the-catalog-api-beta |
 
 ## Selected draft candidates
 
-No draft cleared the complete local and independent-editor gate. See the decision reason and rejected-draft section for locally valid drafts that were rejected, not reviewed, or blocked by a review error.
+No candidate produced a draft that passed every local check. Skipping is intentional.
 
 ## Automatic repair attempt
 
 - Attempted: yes
-- Repaired drafts submitted: 1
+- Repaired drafts submitted: 3
 - Repaired drafts that passed local validation: 0
-- Repaired drafts rejected: 1
+- Repaired drafts rejected: 3
 - Repair error: none
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
-- Show HN: Imza – plan and review focused coding agent: Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.
-  - Rejected text: Imza is a model‑agnostic coding agent with native performance and a small runtime footprint. Run plan mode to draft a spec document before coding. https://github.com/umutsevdi/imza
-  - Model evidence quote: “Batteries‑included, model‑agnostic coding agent with native performance and a small runtime footprint”
-  - Claim support: Imza is a model‑agnostic coding agent with native performance and a small runtime footprint ← “Batteries‑included, model‑agnostic coding agent with native performance and a small runtime footprint”
-- Merchant email now available on the `ThemeSale` object in the Partners API: Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: ThemeSale object now includes the merchant's email address. Check the email field before sending support messages. https://shopify.dev/changelog/posts/merchant-email-now-available-on-the-themesale-object-in-the-partners-api
-  - Model evidence quote: “You can now access the purchasing merchant's email on the Theme Sale object in the Partner API”
-  - Claim support: ThemeSale object now includes the merchant's email address ← “You can now access the purchasing merchant's email on the Theme Sale object in the Partner API”
-- Migrate to expiring offline access tokens before January 1, 2027: Post repeats headline info without adding new insight or actionable detail; originality below threshold.
-  - Rejected text: Apps must migrate to expiring offline access tokens before Jan 1 2027. Schedule token renewal tests before the deadline. https://shopify.dev/changelog/posts/migrate-to-expiring-offline-access-tokens-before-january-2027
-- Migrate to expiring offline access tokens before January 1, 2027: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.
-  - Rejected text: Apps must migrate to expiring offline access tokens before Jan 1 2027. Non‑compliant apps will be delisted on Jan 1 2027 and blocked from new installs. https://shopify.dev/changelog/posts/migrate-to-expiring-offline-access-tokens-before-january-2027
-  - Model evidence quote: “Public apps still using non‑expiring offline access tokens must migrate to use expiring offline access tokens before January 1, 2027 to remain listed in the Shopify App Store and continue accepting new installs.”
+- Show HN: Filepeek – View any file in your browser: Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: Filepeek opens any file directly in the browser, no upload needed. Verify that uncommon formats (e.g., RAW, 3D) render correctly in the UI. https://filepeek.io/
+  - Model evidence quote: “Open any file in your browser. No download required. Runs entirely in your browser without uploading anywhere.”
+  - Claim support: Filepeek opens any file directly in the browser, no upload needed. ← “Open any file in your browser. No download required. Runs entirely in your browser without uploading anywhere.”
+- Promoted Placements beta now includes Shop Campaigns: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.; Supporting quotes cover only 62% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: Promoted Placements now pays commission on Shop Campaigns products via search_catalog. Pass catalog_id in search_catalog and read placement.commission.value. https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns
+  - Model evidence quote: “When a `search_catalog` result comes from a merchant running Shop Campaigns, you earn the commission that merchant funds, added to Shopify's base rate.”
+  - Claim support: Promoted Placements now pays commission on Shop Campaigns products via search_catalog. ← “When a `search_catalog` result comes from a merchant running Shop Campaigns, you earn the commission that merchant funds, added to Shopify's base rate.”
+- Search brands that don't sell on Shopify in the Catalog API (beta): Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.; Supporting quotes cover only 62% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: Catalog API beta adds a sources parameter to search_catalog to include external products. Set sources to ['shopify','external'] to include external items. https://shopify.dev/changelog/posts/search-brands-that-don-t-sell-on-shopify-in-the-catalog-api-beta
+  - Model evidence quote: “The Catalog API beta now supports a `sources` parameter on `search_catalog` that controls which products you return:”
+  - Claim support: Catalog API beta adds a sources parameter to search_catalog to include external products. ← “The Catalog API beta now supports a `sources` parameter on `search_catalog` that controls which products you return:”
+- Show HN: Filepeek – View any file in your browser: Editorial takeaway is too long; keep the analysis concrete and concise.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; No claim-by-claim supporting evidence was provided; Supporting quotes cover only 60% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: Filepeek opens any file directly in the browser without uploading. Open a .obj 3D file in Filepeek and confirm it renders in the viewer; the 3D Objects feature should display the model without download. https://filepeek.io/
+  - Model evidence quote: “Open any file in your browser. No download required. Runs entirely in your browser without uploading anywhere.”
+- Promoted Placements beta now includes Shop Campaigns: Editorial takeaway is too long; keep the analysis concrete and concise.; Fact plus takeaway exceeds the per-link character budget.; Draft is 357 raw characters; limit is 280
+  - Rejected text: Promoted Placements commission is added to Shopify's base rate in search_catalog results. When calling search_catalog, pass catalog_id and read placement.commission.percentage.value; verify the value equals the sum of the merchant's commission and Shopify's base rate. https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns
+  - Model evidence quote: “When a `search_catalog` result comes from a merchant running Shop Campaigns, you earn the commission that merchant funds, added to Shopify's base rate.”
+- Search brands that don't sell on Shopify in the Catalog API (beta): Editorial takeaway is too long; keep the analysis concrete and concise.; Fact plus takeaway exceeds the per-link character budget.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; Draft is 342 raw characters; limit is 280
+  - Rejected text: search_catalog supports a sources parameter to filter external products. Set sources to ['external'] in search_catalog and confirm each result has eligible.native_checkout: false, indicating the product cannot be bought via Shopify checkout. https://shopify.dev/changelog/posts/search-brands-that-don-t-sell-on-shopify-in-the-catalog-api-beta
+  - Model evidence quote: “The Catalog API beta now supports a `sources` parameter on `search_catalog` that controls which products you return:”
 
 ## Top discovery candidates considered
 
-- Show HN: Imza – plan and review focused coding agent | Hacker News | product_and_workflow_tools | raw 65, adjusted 67 | https://github.com/umutsevdi/imza
-- Merchant email now available on the `ThemeSale` object in the Partners API | Shopify Developer Changelog | commerce_and_digital_products | raw 64, adjusted 64 | https://shopify.dev/changelog/posts/merchant-email-now-available-on-the-themesale-object-in-the-partners-api
-- Migrate to expiring offline access tokens before January 1, 2027 | Shopify Developer Changelog | commerce_and_digital_products | raw 63, adjusted 63 | https://shopify.dev/changelog/posts/migrate-to-expiring-offline-access-tokens-before-january-2027
+- Show HN: Filepeek – View any file in your browser | Hacker News | product_and_workflow_tools | raw 66, adjusted 68 | https://filepeek.io/
+- Promoted Placements beta now includes Shop Campaigns | Shopify Developer Changelog | commerce_and_digital_products | raw 63, adjusted 63 | https://shopify.dev/changelog/posts/promoted-placements-beta-now-includes-shop-campaigns
+- Search brands that don't sell on Shopify in the Catalog API (beta) | Shopify Developer Changelog | commerce_and_digital_products | raw 63, adjusted 63 | https://shopify.dev/changelog/posts/search-brands-that-don-t-sell-on-shopify-in-the-catalog-api-beta
 
 ## Safety and interpretation
 
