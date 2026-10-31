@@ -1,17 +1,17 @@
 {
-  "generated_at_ist": "2026-10-31T07:59:51+05:30",
-  "run_at_ist": "2026-10-31T07:59:51+05:30",
+  "generated_at_ist": "2026-10-31T08:57:16+05:30",
+  "run_at_ist": "2026-10-31T08:57:16+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 318,
-  "eligible_candidate_count": 199,
+  "candidate_count_raw": 320,
+  "eligible_candidate_count": 202,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4821
+      "total_count": 4824
     },
     {
       "source": "GitHub Search · github-analytics-seo",
@@ -32,7 +32,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3019
+      "total_count": 3024
     },
     {
       "source": "GitHub Search · github-digital-product-tools",
@@ -46,7 +46,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 437
+      "total_count": 438
     },
     {
       "source": "GitHub Search · github-marketing-distribution",
@@ -60,7 +60,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2094
+      "total_count": 2096
     },
     {
       "source": "GitHub Search · github-self-hosted",
@@ -88,12 +88,12 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 268
+      "total_count": 269
     },
     {
       "source": "Hacker News · hn-analytics-growth",
       "kind": "hacker_news",
-      "items_kept": 7,
+      "items_kept": 9,
       "status": "ok",
       "total_count": 10
     },
@@ -116,7 +116,7 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 6
+      "total_count": 7
     },
     {
       "source": "Hacker News · hn-digital-products",
@@ -130,7 +130,7 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 9
+      "total_count": 10
     },
     {
       "source": "Hacker News · hn-indie-business-revenue",
@@ -158,7 +158,7 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 10
+      "total_count": 9
     },
     {
       "source": "Hacker News · hn-shopify",
@@ -259,7 +259,7 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-31T02:29:51+00:00",
+    "observed_at_utc": "2026-10-31T03:27:16+00:00",
     "tracked_repositories": 200,
     "repositories_seen_in_discovery": 112,
     "previously_tracked_repositories_refreshed": 88,
@@ -272,246 +272,176 @@
   },
   "primary_source_checks": [
     {
-      "candidate_id": "b7a73b63f116b571",
-      "title": "ragleap/ragleap-core",
-      "source_url": "https://github.com/ragleap/ragleap-core",
+      "candidate_id": "5de8d8f8569c3351",
+      "title": "Show HN: Fastbrowse, Browser agent that picks clicks with a System One model",
+      "source_url": "https://www.fastbrowse.ai/",
       "verified": true,
-      "final_url": "https://github.com/ragleap/ragleap-core",
+      "final_url": "https://www.fastbrowse.ai/",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "2c99042206701642",
-      "title": "XAIHT/Tlamatini",
-      "source_url": "https://github.com/XAIHT/Tlamatini",
+      "candidate_id": "c37165a31cd3fc39",
+      "title": "n8n-io/n8n",
+      "source_url": "https://github.com/n8n-io/n8n",
       "verified": true,
-      "final_url": "https://github.com/XAIHT/Tlamatini",
+      "final_url": "https://github.com/n8n-io/n8n",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "21e52dcbeafcf988",
-      "title": "UI extensions now support a larger number of locales",
-      "source_url": "https://shopify.dev/changelog/ui-extensions-now-support-a-larger-number-of-locales",
+      "candidate_id": "25df9fa68f72f18a",
+      "title": "Secure your app with network access rules in `shopify.app.toml`",
+      "source_url": "https://shopify.dev/changelog/secure-your-app-with-network-access-hosts-in-shopify-app-toml",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/ui-extensions-now-support-a-larger-number-of-locales",
+      "final_url": "https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml",
       "http_status": 200,
       "reason": ""
     }
   ],
   "rejected_primary_sources": [],
   "daily_draft_cap": 16,
-  "daily_drafts_already_passed": 0,
-  "outcome": "dry_run_passed",
-  "decision_reason": "At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.",
-  "passing_drafts": [
-    {
-      "candidate_id": "2c99042206701642",
-      "title": "XAIHT/Tlamatini",
-      "source": "GitHub Search",
-      "source_kind": "github_repository",
-      "url": "https://github.com/XAIHT/Tlamatini",
-      "primary_source_verified": true,
-      "primary_source_title": "GitHub - XAIHT/Tlamatini: Speak an idea. Build the real thing. Tlamatini brings AI to code, 3D worlds and hardware: voice, live editor tutoring, 86 workflow agents, 110 tools, Unreal Engine, Blender, STM32, ESP32 and MCP. Open source on Windows, with local control and cloud reasoning. Full experienc",
-      "primary_source_final_url": "https://github.com/XAIHT/Tlamatini",
-      "primary_source_http_status": 200,
-      "category": "ai_and_automation",
-      "priority_score": 70,
-      "hourly_adjusted_score": 74,
-      "post_text": "Tlamatini brings AI to code, 3D worlds and hardware with voice and live editor tutoring. Validate local control by running a simple script without cloud reasoning enabled. https://github.com/XAIHT/Tlamatini",
-      "fact_sentence": "Tlamatini brings AI to code, 3D worlds and hardware with voice and live editor tutoring.",
-      "format": "tool_discovery",
-      "audience": "developers",
-      "angle": "AI integration",
-      "rationale": "Title confirms the claim; takeaway suggests a practical local‑vs‑cloud test.",
-      "evidence_quote": "Tlamatini brings AI to code, 3D worlds and hardware: voice, live editor tutoring, 86 workflow agents, 110 tools, Unreal Engine, Blender, STM32, ESP32 and MCP.",
-      "editorial_takeaway": "Validate local control by running a simple script without cloud reasoning enabled.",
-      "claim_evidence": [
-        {
-          "claim": "Tlamatini brings AI to code, 3D worlds and hardware with voice and live editor tutoring.",
-          "quote": "Tlamatini brings AI to code, 3D worlds and hardware: voice, live editor tutoring, 86 workflow agents, 110 tools, Unreal Engine, Blender, STM32, ESP32 and MCP."
-        }
-      ],
-      "scores": {
-        "timeliness": 9,
-        "usefulness": 8,
-        "novelty": 7,
-        "evidence": 9,
-        "insight": 8
-      },
-      "editorial_score": 8.25,
-      "character_count": 206,
-      "status": "dry_run_passed_not_published",
-      "published_to_x": false,
-      "editorial_review": {
-        "clarity_score": 9,
-        "technical_coherence_score": 9,
-        "takeaway_value_score": 8,
-        "source_faithfulness_score": 9,
-        "originality_score": 8,
-        "reason": "Clear, accurate claim; practical next step is supported by source; original suggestion to test local control.",
-        "passed": true
-      }
-    }
-  ],
+  "daily_drafts_already_passed": 1,
+  "outcome": "skip",
+  "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
+  "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "b7a73b63f116b571",
-      "title": "ragleap/ragleap-core",
+      "candidate_id": "c37165a31cd3fc39",
+      "title": "n8n-io/n8n",
       "reasons": [
-        "Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Editorial takeaway is not specific enough to this candidate's technical/product details."
       ],
-      "proposed_text": "ragleap/ragleap-core offers open‑source AI employees that ask before they act. Run approval‑gate tests to confirm no autonomous actions occur without explicit consent. https://github.com/ragleap/ragleap-core",
-      "evidence_quote": "Open‑source AI employees that ask before they act.",
+      "proposed_text": "n8n is a fair‑code workflow automation platform with native AI capabilities. Test AI node outputs against known inputs to catch drift. https://github.com/n8n-io/n8n",
+      "evidence_quote": "Fair-code workflow automation platform with native AI capabilities.",
       "claim_evidence": [
         {
-          "claim": "ragleap/ragleap-core offers open‑source AI employees that ask before they act.",
-          "quote": "Open‑source AI employees that ask before they act."
+          "claim": "n8n is a fair‑code workflow automation platform with native AI capabilities.",
+          "quote": "Fair-code workflow automation platform with native AI capabilities."
         }
       ]
     },
     {
-      "candidate_id": "21e52dcbeafcf988",
-      "title": "UI extensions now support a larger number of locales",
+      "candidate_id": "5de8d8f8569c3351",
+      "title": "Show HN: Fastbrowse, Browser agent that picks clicks with a System One model",
+      "proposed_text": "Fastbrowse automates browsers, returning cited answers or schema‑validated data. Verify returned data matches expected schema before production use. https://www.fastbrowse.ai/",
       "reasons": [
-        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
-        "Unsupported numeric claim(s): 20"
+        "Post restates headline and generic advice; lacks original insight."
       ],
-      "proposed_text": "UI extensions no longer have a 256 KB limit on combined locale files. Deploy an extension with 20 locales to confirm the new limit is respected. https://shopify.dev/changelog/posts/ui-extensions-now-support-a-larger-number-of-locales",
-      "evidence_quote": "UI extensions no longer have a 256 KB limit on the combined size of their locale files.",
-      "claim_evidence": [
-        {
-          "claim": "UI extensions no longer have a 256 KB limit on combined locale files.",
-          "quote": "UI extensions no longer have a 256 KB limit on the combined size of their locale files."
-        }
+      "editorial_review": {
+        "clarity_score": 8,
+        "technical_coherence_score": 8,
+        "takeaway_value_score": 7,
+        "source_faithfulness_score": 8,
+        "originality_score": 4
+      }
+    },
+    {
+      "candidate_id": "25df9fa68f72f18a",
+      "title": "Secure your app with network access rules in `shopify.app.toml`",
+      "proposed_text": "Shopify’s app.toml now supports a network_access section for hosts. Add trusted hosts early to avoid customer warnings during navigation. https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml",
+      "reasons": [
+        "Post merely paraphrases headline; no new perspective."
+      ],
+      "editorial_review": {
+        "clarity_score": 8,
+        "technical_coherence_score": 8,
+        "takeaway_value_score": 7,
+        "source_faithfulness_score": 8,
+        "originality_score": 4
+      }
+    },
+    {
+      "candidate_id": "5de8d8f8569c3351",
+      "title": "Show HN: Fastbrowse, Browser agent that picks clicks with a System One model",
+      "reasons": [
+        "Editorial takeaway is too long; keep the analysis concrete and concise."
+      ],
+      "proposed_text": "Fastbrowse automates browsers and returns schema‑validated data. Before executing irreversible actions, the caller must authorize the run; otherwise the tool pauses for approval. https://www.fastbrowse.ai/",
+      "evidence_quote": "Without authorization, actions classified as irreversible pause for approval.",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "Post restates headline and generic advice; lacks original insight."
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "b7a73b63f116b571",
-      "title": "ragleap/ragleap-core",
-      "url": "https://github.com/ragleap/ragleap-core",
-      "source": "GitHub Search",
-      "primary_category": "ai_and_automation",
+      "id": "5de8d8f8569c3351",
+      "title": "Show HN: Fastbrowse, Browser agent that picks clicks with a System One model",
+      "url": "https://www.fastbrowse.ai/",
+      "source": "Hacker News",
+      "primary_category": "product_and_workflow_tools",
       "priority_score": 70,
-      "hourly_adjusted_score": 74,
-      "stars_current": 19,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "insufficient_history",
-      "published_at": "2026-10-31T01:57:11+00:00",
-      "days_old": 0.02,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "2c99042206701642",
-      "title": "XAIHT/Tlamatini",
-      "url": "https://github.com/XAIHT/Tlamatini",
-      "source": "GitHub Search",
-      "primary_category": "ai_and_automation",
-      "priority_score": 70,
-      "hourly_adjusted_score": 74,
-      "stars_current": 15,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "insufficient_history",
-      "published_at": "2026-10-31T02:28:50+00:00",
-      "days_old": 0.0,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "21e52dcbeafcf988",
-      "title": "UI extensions now support a larger number of locales",
-      "url": "https://shopify.dev/changelog/posts/ui-extensions-now-support-a-larger-number-of-locales",
-      "source": "Shopify Developer Changelog",
-      "primary_category": "commerce_and_digital_products",
-      "priority_score": 72,
       "hourly_adjusted_score": 72,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-30T18:00:00+00:00",
-      "days_old": 0.35,
+      "published_at": "2026-10-30T22:37:34+00:00",
+      "days_old": 0.2,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "c37165a31cd3fc39",
+      "title": "n8n-io/n8n",
+      "url": "https://github.com/n8n-io/n8n",
+      "source": "GitHub Search",
+      "primary_category": "ai_and_automation",
+      "priority_score": 69,
+      "hourly_adjusted_score": 70,
+      "stars_current": 209157,
+      "stars_delta_24h": 81,
+      "stars_delta_baseline_hours": 21.1,
+      "stars_growth_percent_24h": 0.04,
+      "trend_signal": "measured_star_growth",
+      "published_at": "2026-10-31T03:27:32+00:00",
+      "days_old": 0.0,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "25df9fa68f72f18a",
+      "title": "Secure your app with network access rules in `shopify.app.toml`",
+      "url": "https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml",
+      "source": "Shopify Developer Changelog",
+      "primary_category": "commerce_and_digital_products",
+      "priority_score": 69,
+      "hourly_adjusted_score": 69,
+      "stars_current": null,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-27T16:00:00+00:00",
+      "days_old": 3.48,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     }
   ],
   "automatic_repair": {
-    "attempted": false,
-    "drafts_submitted": 0,
+    "attempted": true,
+    "drafts_submitted": 1,
     "repaired_local_passes": 0,
-    "repair_rejections": 0,
+    "repair_rejections": 1,
     "repair_error": null,
-    "editorial_repair_attempted": false,
-    "editorial_repair_drafts_submitted": 0,
+    "editorial_repair_attempted": true,
+    "editorial_repair_drafts_submitted": 1,
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 1,
-    "submitted_for_independent_review": 1,
-    "passed_independent_review": 1,
-    "rejected_by_independent_review": 0,
+    "locally_valid_drafts": 2,
+    "submitted_for_independent_review": 2,
+    "passed_independent_review": 0,
+    "rejected_by_independent_review": 2,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
-  },
-  "recommended_draft": {
-    "candidate_id": "2c99042206701642",
-    "title": "XAIHT/Tlamatini",
-    "source": "GitHub Search",
-    "source_kind": "github_repository",
-    "url": "https://github.com/XAIHT/Tlamatini",
-    "primary_source_verified": true,
-    "primary_source_title": "GitHub - XAIHT/Tlamatini: Speak an idea. Build the real thing. Tlamatini brings AI to code, 3D worlds and hardware: voice, live editor tutoring, 86 workflow agents, 110 tools, Unreal Engine, Blender, STM32, ESP32 and MCP. Open source on Windows, with local control and cloud reasoning. Full experienc",
-    "primary_source_final_url": "https://github.com/XAIHT/Tlamatini",
-    "primary_source_http_status": 200,
-    "category": "ai_and_automation",
-    "priority_score": 70,
-    "hourly_adjusted_score": 74,
-    "post_text": "Tlamatini brings AI to code, 3D worlds and hardware with voice and live editor tutoring. Validate local control by running a simple script without cloud reasoning enabled. https://github.com/XAIHT/Tlamatini",
-    "fact_sentence": "Tlamatini brings AI to code, 3D worlds and hardware with voice and live editor tutoring.",
-    "format": "tool_discovery",
-    "audience": "developers",
-    "angle": "AI integration",
-    "rationale": "Title confirms the claim; takeaway suggests a practical local‑vs‑cloud test.",
-    "evidence_quote": "Tlamatini brings AI to code, 3D worlds and hardware: voice, live editor tutoring, 86 workflow agents, 110 tools, Unreal Engine, Blender, STM32, ESP32 and MCP.",
-    "editorial_takeaway": "Validate local control by running a simple script without cloud reasoning enabled.",
-    "claim_evidence": [
-      {
-        "claim": "Tlamatini brings AI to code, 3D worlds and hardware with voice and live editor tutoring.",
-        "quote": "Tlamatini brings AI to code, 3D worlds and hardware: voice, live editor tutoring, 86 workflow agents, 110 tools, Unreal Engine, Blender, STM32, ESP32 and MCP."
-      }
-    ],
-    "scores": {
-      "timeliness": 9,
-      "usefulness": 8,
-      "novelty": 7,
-      "evidence": 9,
-      "insight": 8
-    },
-    "editorial_score": 8.25,
-    "character_count": 206,
-    "status": "dry_run_passed_not_published",
-    "published_to_x": false,
-    "editorial_review": {
-      "clarity_score": 9,
-      "technical_coherence_score": 9,
-      "takeaway_value_score": 8,
-      "source_faithfulness_score": 9,
-      "originality_score": 8,
-      "reason": "Clear, accurate claim; practical next step is supported by source; original suggestion to test local control.",
-      "passed": true
-    }
   },
   "state_summary": {
     "used_candidates_in_cooldown": 33,
