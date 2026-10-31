@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-31T21:47:41+05:30
+- Run time (IST): 2026-10-31T22:45:00+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 182
-- Independent editorial review: 0 draft(s) passed / 0 rejected
+- Candidate pool after freshness/diversity filters: 181
+- Independent editorial review: 0 draft(s) passed / 1 rejected
 - Drafts passing local checks: 0
 - Outcome: **skip**
-- Decision reason: All generated drafts failed the local evidence/editorial checks; the hour was skipped.
+- Decision reason: Every draft submitted for independent editorial review was rejected; The hour was skipped.
 
 ## Source health
 
@@ -40,7 +40,7 @@
 | Ahrefs Blog | 8 | ok |
 | Console.dev | 11 | ok |
 | Indie Hackers (unofficial third-party feed) | 5 | ok |
-| Product Hunt | 43 | ok |
+| Product Hunt | 41 | ok |
 | Shopify Community | 30 | ok |
 | Shopify Developer Changelog | 30 | ok |
 | Stripe Blog | 3 | ok |
@@ -54,8 +54,8 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 109
-- Previously tracked repositories refreshed outside search results: 91
+- Repositories seen in this discovery run: 114
+- Previously tracked repositories refreshed outside search results: 86
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
 - Repositories with a 20–36 hour comparison baseline: 18
@@ -65,47 +65,42 @@
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| Secure your app with network access rules in `shopify.app.toml` | yes | 200 | https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml |
+| Shop SDK lead capture now supports Rich Authorization Requests | yes | 200 | https://shopify.dev/changelog/posts/shop-sdk-lead-capture-now-supports-rich-authorization-requests |
+| Cart and checkout permalinks now support UCP at /buy | yes | 200 | https://shopify.dev/changelog/posts/cart-and-checkout-permalinks-now-support-ucp-at-buy |
 | Godwit | no | — | Primary source returned HTTP 403. |
-| Store and app install details in the Dev Dashboard | yes | 200 | https://shopify.dev/changelog/posts/store-and-app-install-details-in-the-dev-dashboard |
 
 ## Selected draft candidates
 
-No candidate produced a draft that passed every local check. Skipping is intentional.
+No draft cleared the complete local and independent-editor gate. See the decision reason and rejected-draft section for locally valid drafts that were rejected, not reviewed, or blocked by a review error.
 
 ## Automatic repair attempt
 
 - Attempted: yes
-- Repaired drafts submitted: 2
+- Repaired drafts submitted: 1
 - Repaired drafts that passed local validation: 0
-- Repaired drafts rejected: 2
+- Repaired drafts rejected: 1
 - Repair error: none
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
 - Godwit: Primary source returned HTTP 403.
-- Secure your app with network access rules in `shopify.app.toml`: Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.; Supporting quotes cover only 56% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: Shopify’s app.toml now includes a network_access section to whitelist hosts. Add allowed_navigation_hosts to silence storefront warnings. https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml
-  - Model evidence quote: “The new network _access section has two properties: allowed _navigation _hosts : The external sites your app links to from the storefront, such as your own domain.”
-  - Claim support: Shopify’s app.toml now includes a network_access section to whitelist hosts. ← “The new network _access section has two properties: allowed _navigation _hosts : The external sites your app links to from the storefront, such as your own domain.”
+- Shop SDK lead capture now supports Rich Authorization Requests: Opening sentence is too close to the source headline; add a distinct editorial framing.
+  - Rejected text: Shop SDK lead capture now supports Rich Authorization Requests to request specific profile data. Add a test to verify optional fields are correctly skipped by users. https://shopify.dev/changelog/posts/shop-sdk-lead-capture-now-supports-rich-authorization-requests
+  - Model evidence quote: “You can now request the specific profile data your app needs during Shop SDK lead capture, including details that aren't saved on the user's Shop profile.”
+  - Claim support: Shop SDK lead capture now supports Rich Authorization Requests to request specific profile data ← “You can now request the specific profile data your app needs during Shop SDK lead capture, including details that aren't saved on the user's Shop profile.”
 - Unmapped model draft: Model omitted a valid candidate ID and no exact verified source URL matched.
-- Store and app install details in the Dev Dashboard: The factual opening bundles multiple features; narrow it to one capability.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
-  - Rejected text: Dev Dashboard now shows installed apps, collaborator access, earnings, and activity. Use the Installs card to drill into app earnings per store. https://shopify.dev/changelog/posts/store-and-app-install-details-in-the-dev-dashboard
-  - Model evidence quote: “You can now view your organization’s installed apps, collaborator access, earnings, and app activity in one place in the Dev Dashboard.”
-  - Claim support: Dev Dashboard now shows installed apps, collaborator access, earnings, and activity. ← “You can now view your organization’s installed apps, collaborator access, earnings, and app activity in one place in the Dev Dashboard.”
-- Secure your app with network access rules in `shopify.app.toml`: Editorial takeaway is too long; keep the analysis concrete and concise.
-  - Rejected text: Shopify’s app.toml now supports a network_access section to whitelist hosts. Add a host to allowed_navigation_hosts and confirm the storefront warning disappears for that link. https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml
-  - Model evidence quote: “declaring your external hosts skips this warning, letting you remove friction for trusted journeys.”
-- Store and app install details in the Dev Dashboard: Editorial takeaway is too long; keep the analysis concrete and concise.; Fact plus takeaway exceeds the per-link character budget.; Draft is 304 raw characters; limit is 280
-  - Rejected text: Dev Dashboard now lets you view your organization’s installed apps in one place. Open the Installs card on an app’s Overview page, select a store, and verify the displayed earnings match the store’s total app revenue. https://shopify.dev/changelog/posts/store-and-app-install-details-in-the-dev-dashboard
-  - Model evidence quote: “For app install details, open your app’s Overview , select the install count in the Installs card, then select a store.”
+- Cart and checkout permalinks now support UCP at /buy: Takeaway is generic and does not add new insight beyond the source; originality below threshold.
+  - Rejected text: Cart and checkout permalinks now support UCP at /buy to add items and prefill checkout. Check that the /buy link redirects to the intended page when UCP is unavailable. https://shopify.dev/changelog/posts/cart-and-checkout-permalinks-now-support-ucp-at-buy
+- Cart and checkout permalinks now support UCP at /buy: Editorial takeaway is too long; keep the analysis concrete and concise.; Fact plus takeaway exceeds the per-link character budget.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.; Editorial takeaway is too long to be a useful concise second sentence.; Draft is 354 raw characters; limit is 280
+  - Rejected text: Shopify’s /buy link supports UCP fields such as buyer/email and discounts/codes/0. If a /buy link’s UCP parameters cannot be applied, Shopify redirects the buyer to the continue_to destination if present, otherwise to the storefront instead of showing an error page. https://shopify.dev/changelog/posts/cart-and-checkout-permalinks-now-support-ucp-at-buy
+  - Model evidence quote: “If a link can’t be applied, Shopify redirects the buyer to the continue _to destination when it’s present, or to the shop’s storefront instead of showing an error page.”
 
 ## Top discovery candidates considered
 
-- Secure your app with network access rules in `shopify.app.toml` | Shopify Developer Changelog | commerce_and_digital_products | raw 69, adjusted 69 | https://shopify.dev/changelog/posts/secure-your-app-with-network-access-hosts-in-shopify-app-toml
+- Shop SDK lead capture now supports Rich Authorization Requests | Shopify Developer Changelog | commerce_and_digital_products | raw 68, adjusted 68 | https://shopify.dev/changelog/posts/shop-sdk-lead-capture-now-supports-rich-authorization-requests
+- Cart and checkout permalinks now support UCP at /buy | Shopify Developer Changelog | commerce_and_digital_products | raw 66, adjusted 66 | https://shopify.dev/changelog/posts/cart-and-checkout-permalinks-now-support-ucp-at-buy
 - Godwit | Product Hunt | developer_tools | raw 58, adjusted 58 | https://www.producthunt.com/products/godwit
-- Store and app install details in the Dev Dashboard | Shopify Developer Changelog | commerce_and_digital_products | raw 54, adjusted 54 | https://shopify.dev/changelog/posts/store-and-app-install-details-in-the-dev-dashboard
 
 ## Safety and interpretation
 
