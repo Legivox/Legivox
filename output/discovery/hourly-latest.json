@@ -1,24 +1,24 @@
 {
-  "generated_at_ist": "2026-10-31T14:53:14+05:30",
-  "run_at_ist": "2026-10-31T14:53:14+05:30",
+  "generated_at_ist": "2026-10-31T15:49:18+05:30",
+  "run_at_ist": "2026-10-31T15:49:18+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 314,
-  "eligible_candidate_count": 194,
+  "candidate_count_raw": 320,
+  "eligible_candidate_count": 198,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4852
+      "total_count": 4856
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1036
+      "total_count": 1038
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
@@ -32,7 +32,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3100
+      "total_count": 3141
     },
     {
       "source": "GitHub Search · github-digital-product-tools",
@@ -46,7 +46,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 439
+      "total_count": 440
     },
     {
       "source": "GitHub Search · github-marketing-distribution",
@@ -60,14 +60,14 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2106
+      "total_count": 2109
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3388
+      "total_count": 3396
     },
     {
       "source": "GitHub Search · github-seller-operations",
@@ -93,7 +93,7 @@
     {
       "source": "Hacker News · hn-analytics-growth",
       "kind": "hacker_news",
-      "items_kept": 9,
+      "items_kept": 10,
       "status": "ok",
       "total_count": 10
     },
@@ -116,7 +116,7 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 6
+      "total_count": 7
     },
     {
       "source": "Hacker News · hn-digital-products",
@@ -158,7 +158,7 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 8
+      "total_count": 10
     },
     {
       "source": "Hacker News · hn-shopify",
@@ -195,7 +195,7 @@
     {
       "source": "Product Hunt",
       "kind": "rss",
-      "items_kept": 42,
+      "items_kept": 43,
       "status": "ok"
     },
     {
@@ -259,10 +259,10 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-31T09:23:14+00:00",
+    "observed_at_utc": "2026-10-31T10:19:18+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 107,
-    "previously_tracked_repositories_refreshed": 93,
+    "repositories_seen_in_discovery": 112,
+    "previously_tracked_repositories_refreshed": 88,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
@@ -272,252 +272,181 @@
   },
   "primary_source_checks": [
     {
-      "candidate_id": "adfee1574336a2e8",
-      "title": "leepokai/Codync",
-      "source_url": "https://github.com/leepokai/Codync",
+      "candidate_id": "1c7eec461e65677e",
+      "title": "Show HN: Imza – plan and review focused coding agent",
+      "source_url": "https://github.com/umutsevdi/imza",
       "verified": true,
-      "final_url": "https://github.com/leepokai/Codync",
+      "final_url": "https://github.com/umutsevdi/imza",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "d7f663d7eaf849a1",
-      "title": "Show HN: KuralHub 1.0, Speech emotion datasets for 70 languages in one place",
-      "source_url": "https://aaivu.github.io/KuralHub/datasets.html",
+      "candidate_id": "e10c6902869dcfb0",
+      "title": "Merchant email now available on the `ThemeSale` object in the Partners API",
+      "source_url": "https://shopify.dev/changelog/merchant-email-now-available-on-the-themesale-object-in-the-partners-api",
       "verified": true,
-      "final_url": "https://aaivu.github.io/KuralHub/datasets.html",
+      "final_url": "https://shopify.dev/changelog/posts/merchant-email-now-available-on-the-themesale-object-in-the-partners-api",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "125a1837d4609fd2",
-      "title": "Show HN: Readeck sync for Kobo's stock reader",
-      "source_url": "https://github.com/fkaduk/kobodeck",
+      "candidate_id": "e16193c74cec9e6f",
+      "title": "Migrate to expiring offline access tokens before January 1, 2027",
+      "source_url": "https://shopify.dev/changelog/migrate-to-expiring-offline-access-tokens-before-january-2027",
       "verified": true,
-      "final_url": "https://github.com/fkaduk/kobodeck",
+      "final_url": "https://shopify.dev/changelog/posts/migrate-to-expiring-offline-access-tokens-before-january-2027",
       "http_status": 200,
       "reason": ""
     }
   ],
   "rejected_primary_sources": [],
   "daily_draft_cap": 16,
-  "daily_drafts_already_passed": 1,
-  "outcome": "dry_run_passed",
-  "decision_reason": "At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.",
-  "passing_drafts": [
-    {
-      "candidate_id": "adfee1574336a2e8",
-      "title": "leepokai/Codync",
-      "source": "GitHub Search",
-      "source_kind": "github_repository",
-      "url": "https://github.com/leepokai/Codync",
-      "primary_source_verified": true,
-      "primary_source_title": "GitHub - leepokai/Codync: Open source Grok Bot alternative, Bring your own agent and subscription: message Claude Code, Codex, Gemini CLI, Cursor, Copilot and 40+ AI agents as bots on your own computer, from iPhone, Mac, Windows, Linux or terminal. Agent-agnostic and free. Also a Muse and Dots alter",
-      "primary_source_final_url": "https://github.com/leepokai/Codync",
-      "primary_source_http_status": 200,
-      "category": "security_and_self_hosting",
-      "priority_score": 72,
-      "hourly_adjusted_score": 66,
-      "post_text": "Codync is an open source Grok Bot alternative that supports 40+ AI agents. Run a quick agent switch test to confirm the CLI can route to each AI provider. https://github.com/leepokai/Codync",
-      "fact_sentence": "Codync is an open source Grok Bot alternative that supports 40+ AI agents.",
-      "format": "tool_discovery",
-      "audience": "developers",
-      "angle": "practical_workflow",
-      "rationale": "The primary source explicitly lists 40+ AI agents, confirming Codync’s broad agent support. A practical test ensures the CLI routing works for each provider.",
-      "evidence_quote": "Open source Grok Bot alternative, Bring your own agent and subscription: message Claude Code, Codex, Gemini CLI, Cursor, Copilot and 40+ AI agents as bots",
-      "editorial_takeaway": "Run a quick agent switch test to confirm the CLI can route to each AI provider.",
-      "claim_evidence": [
-        {
-          "claim": "Codync is an open source Grok Bot alternative that supports 40+ AI agents.",
-          "quote": "Open source Grok Bot alternative, Bring your own agent and subscription: message Claude Code, Codex, Gemini CLI, Cursor, Copilot and 40+ AI agents as bots"
-        }
-      ],
-      "scores": {
-        "timeliness": 10,
-        "usefulness": 8,
-        "novelty": 7,
-        "evidence": 9,
-        "insight": 8
-      },
-      "editorial_score": 8.4,
-      "character_count": 189,
-      "status": "dry_run_passed_not_published",
-      "published_to_x": false,
-      "editorial_review": {
-        "clarity_score": 9,
-        "technical_coherence_score": 9,
-        "takeaway_value_score": 8,
-        "source_faithfulness_score": 9,
-        "originality_score": 8,
-        "reason": "Clear, accurate claim with source support; actionable takeaway is relevant and not merely restating the headline.",
-        "passed": true
-      }
-    }
-  ],
+  "daily_drafts_already_passed": 2,
+  "outcome": "skip",
+  "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
+  "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "d7f663d7eaf849a1",
-      "title": "Show HN: KuralHub 1.0, Speech emotion datasets for 70 languages in one place",
+      "candidate_id": "1c7eec461e65677e",
+      "title": "Show HN: Imza – plan and review focused coding agent",
       "reasons": [
-        "Editorial takeaway is not specific enough to this candidate's technical/product details.",
-        "A supporting quote does not share enough wording with its stated claim",
-        "Unsupported numeric claim(s): 11",
-        "Supporting quotes cover only 33% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation."
       ],
-      "proposed_text": "KuralHub catalogs 90 speech emotion datasets across 70 languages with benchmark results for 11 models. Validate dataset license compliance before training to avoid downstream legal issues. https://aaivu.github.io/KuralHub/datasets.html",
-      "evidence_quote": "90 SER datasets with emotion labels, size, licence and access links, organised by language.",
+      "proposed_text": "Imza is a model‑agnostic coding agent with native performance and a small runtime footprint. Run plan mode to draft a spec document before coding. https://github.com/umutsevdi/imza",
+      "evidence_quote": "Batteries‑included, model‑agnostic coding agent with native performance and a small runtime footprint",
       "claim_evidence": [
         {
-          "claim": "KuralHub catalogs 90 speech emotion datasets across 70 languages with benchmark results for 11 models.",
-          "quote": "90 SER datasets with emotion labels, size, licence and access links, organised by language"
+          "claim": "Imza is a model‑agnostic coding agent with native performance and a small runtime footprint",
+          "quote": "Batteries‑included, model‑agnostic coding agent with native performance and a small runtime footprint"
         }
       ]
     },
     {
-      "candidate_id": "125a1837d4609fd2",
-      "title": "Show HN: Readeck sync for Kobo's stock reader",
+      "candidate_id": "e10c6902869dcfb0",
+      "title": "Merchant email now available on the `ThemeSale` object in the Partners API",
       "reasons": [
-        "Editorial takeaway is too long; keep the analysis concrete and concise."
+        "Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote"
       ],
-      "proposed_text": "Kobodeck is a minimalist Readeck article downloader for Kobo e-readers. Test download and sync on a test Kobo to ensure article formatting matches device expectations. https://github.com/fkaduk/kobodeck",
-      "evidence_quote": "A minimalist Readeck article downloader for Kobo e-readers.",
+      "proposed_text": "ThemeSale object now includes the merchant's email address. Check the email field before sending support messages. https://shopify.dev/changelog/posts/merchant-email-now-available-on-the-themesale-object-in-the-partners-api",
+      "evidence_quote": "You can now access the purchasing merchant's email on the Theme Sale object in the Partner API",
       "claim_evidence": [
         {
-          "claim": "Kobodeck is a minimalist Readeck article downloader for Kobo e-readers.",
-          "quote": "A minimalist Readeck article downloader for Kobo e-readers"
+          "claim": "ThemeSale object now includes the merchant's email address",
+          "quote": "You can now access the purchasing merchant's email on the Theme Sale object in the Partner API"
         }
+      ]
+    },
+    {
+      "candidate_id": "e16193c74cec9e6f",
+      "title": "Migrate to expiring offline access tokens before January 1, 2027",
+      "proposed_text": "Apps must migrate to expiring offline access tokens before Jan 1 2027. Schedule token renewal tests before the deadline. https://shopify.dev/changelog/posts/migrate-to-expiring-offline-access-tokens-before-january-2027",
+      "reasons": [
+        "Post repeats headline info without adding new insight or actionable detail; originality below threshold."
+      ],
+      "editorial_review": {
+        "clarity_score": 8,
+        "technical_coherence_score": 8,
+        "takeaway_value_score": 7,
+        "source_faithfulness_score": 9,
+        "originality_score": 5
+      }
+    },
+    {
+      "candidate_id": "e16193c74cec9e6f",
+      "title": "Migrate to expiring offline access tokens before January 1, 2027",
+      "reasons": [
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
+        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation."
+      ],
+      "proposed_text": "Apps must migrate to expiring offline access tokens before Jan 1 2027. Non‑compliant apps will be delisted on Jan 1 2027 and blocked from new installs. https://shopify.dev/changelog/posts/migrate-to-expiring-offline-access-tokens-before-january-2027",
+      "evidence_quote": "Public apps still using non‑expiring offline access tokens must migrate to use expiring offline access tokens before January 1, 2027 to remain listed in the Shopify App Store and continue accepting new installs.",
+      "automatic_repair_attempt": true,
+      "original_rejection_reasons": [
+        "Post repeats headline info without adding new insight or actionable detail; originality below threshold."
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "adfee1574336a2e8",
-      "title": "leepokai/Codync",
-      "url": "https://github.com/leepokai/Codync",
-      "source": "GitHub Search",
-      "primary_category": "security_and_self_hosting",
-      "priority_score": 72,
-      "hourly_adjusted_score": 66,
-      "stars_current": 1110,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "insufficient_history",
-      "published_at": "2026-10-31T09:24:02+00:00",
-      "days_old": 0.0,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "d7f663d7eaf849a1",
-      "title": "Show HN: KuralHub 1.0, Speech emotion datasets for 70 languages in one place",
-      "url": "https://aaivu.github.io/KuralHub/datasets.html",
+      "id": "1c7eec461e65677e",
+      "title": "Show HN: Imza – plan and review focused coding agent",
+      "url": "https://github.com/umutsevdi/imza",
       "source": "Hacker News",
       "primary_category": "product_and_workflow_tools",
-      "priority_score": 63,
-      "hourly_adjusted_score": 65,
+      "priority_score": 65,
+      "hourly_adjusted_score": 67,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-31T08:25:27+00:00",
-      "days_old": 0.04,
+      "published_at": "2026-10-31T09:58:23+00:00",
+      "days_old": 0.01,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "125a1837d4609fd2",
-      "title": "Show HN: Readeck sync for Kobo's stock reader",
-      "url": "https://github.com/fkaduk/kobodeck",
-      "source": "Hacker News",
-      "primary_category": "product_and_workflow_tools",
-      "priority_score": 63,
-      "hourly_adjusted_score": 65,
+      "id": "e10c6902869dcfb0",
+      "title": "Merchant email now available on the `ThemeSale` object in the Partners API",
+      "url": "https://shopify.dev/changelog/posts/merchant-email-now-available-on-the-themesale-object-in-the-partners-api",
+      "source": "Shopify Developer Changelog",
+      "primary_category": "commerce_and_digital_products",
+      "priority_score": 64,
+      "hourly_adjusted_score": 64,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-31T07:41:10+00:00",
-      "days_old": 0.07,
+      "published_at": "2026-10-28T15:50:00+00:00",
+      "days_old": 2.77,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "e16193c74cec9e6f",
+      "title": "Migrate to expiring offline access tokens before January 1, 2027",
+      "url": "https://shopify.dev/changelog/posts/migrate-to-expiring-offline-access-tokens-before-january-2027",
+      "source": "Shopify Developer Changelog",
+      "primary_category": "commerce_and_digital_products",
+      "priority_score": 63,
+      "hourly_adjusted_score": 63,
+      "stars_current": null,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-27T16:40:00+00:00",
+      "days_old": 3.74,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     }
   ],
   "automatic_repair": {
-    "attempted": false,
-    "drafts_submitted": 0,
+    "attempted": true,
+    "drafts_submitted": 1,
     "repaired_local_passes": 0,
-    "repair_rejections": 0,
+    "repair_rejections": 1,
     "repair_error": null,
-    "editorial_repair_attempted": false,
-    "editorial_repair_drafts_submitted": 0,
+    "editorial_repair_attempted": true,
+    "editorial_repair_drafts_submitted": 1,
     "editorial_repair_error": null
   },
   "editorial_review": {
     "locally_valid_drafts": 1,
     "submitted_for_independent_review": 1,
-    "passed_independent_review": 1,
-    "rejected_by_independent_review": 0,
+    "passed_independent_review": 0,
+    "rejected_by_independent_review": 1,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
-  "recommended_draft": {
-    "candidate_id": "adfee1574336a2e8",
-    "title": "leepokai/Codync",
-    "source": "GitHub Search",
-    "source_kind": "github_repository",
-    "url": "https://github.com/leepokai/Codync",
-    "primary_source_verified": true,
-    "primary_source_title": "GitHub - leepokai/Codync: Open source Grok Bot alternative, Bring your own agent and subscription: message Claude Code, Codex, Gemini CLI, Cursor, Copilot and 40+ AI agents as bots on your own computer, from iPhone, Mac, Windows, Linux or terminal. Agent-agnostic and free. Also a Muse and Dots alter",
-    "primary_source_final_url": "https://github.com/leepokai/Codync",
-    "primary_source_http_status": 200,
-    "category": "security_and_self_hosting",
-    "priority_score": 72,
-    "hourly_adjusted_score": 66,
-    "post_text": "Codync is an open source Grok Bot alternative that supports 40+ AI agents. Run a quick agent switch test to confirm the CLI can route to each AI provider. https://github.com/leepokai/Codync",
-    "fact_sentence": "Codync is an open source Grok Bot alternative that supports 40+ AI agents.",
-    "format": "tool_discovery",
-    "audience": "developers",
-    "angle": "practical_workflow",
-    "rationale": "The primary source explicitly lists 40+ AI agents, confirming Codync’s broad agent support. A practical test ensures the CLI routing works for each provider.",
-    "evidence_quote": "Open source Grok Bot alternative, Bring your own agent and subscription: message Claude Code, Codex, Gemini CLI, Cursor, Copilot and 40+ AI agents as bots",
-    "editorial_takeaway": "Run a quick agent switch test to confirm the CLI can route to each AI provider.",
-    "claim_evidence": [
-      {
-        "claim": "Codync is an open source Grok Bot alternative that supports 40+ AI agents.",
-        "quote": "Open source Grok Bot alternative, Bring your own agent and subscription: message Claude Code, Codex, Gemini CLI, Cursor, Copilot and 40+ AI agents as bots"
-      }
-    ],
-    "scores": {
-      "timeliness": 10,
-      "usefulness": 8,
-      "novelty": 7,
-      "evidence": 9,
-      "insight": 8
-    },
-    "editorial_score": 8.4,
-    "character_count": 189,
-    "status": "dry_run_passed_not_published",
-    "published_to_x": false,
-    "editorial_review": {
-      "clarity_score": 9,
-      "technical_coherence_score": 9,
-      "takeaway_value_score": 8,
-      "source_faithfulness_score": 9,
-      "originality_score": 8,
-      "reason": "Clear, accurate claim with source support; actionable takeaway is relevant and not merely restating the headline.",
-      "passed": true
-    }
-  },
   "state_summary": {
     "used_candidates_in_cooldown": 34,
-    "recently_attempted_candidates": 24,
+    "recently_attempted_candidates": 27,
     "recent_draft_passes_today": 2
   }
 }
