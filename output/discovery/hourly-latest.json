@@ -1,38 +1,38 @@
 {
-  "generated_at_ist": "2026-10-31T10:53:03+05:30",
-  "run_at_ist": "2026-10-31T10:53:03+05:30",
+  "generated_at_ist": "2026-10-31T11:52:35+05:30",
+  "run_at_ist": "2026-10-31T11:52:35+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 324,
-  "eligible_candidate_count": 199,
+  "candidate_count_raw": 322,
+  "eligible_candidate_count": 195,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4833
+      "total_count": 4835
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1032
+      "total_count": 1034
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 368
+      "total_count": 369
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3028
+      "total_count": 3031
     },
     {
       "source": "GitHub Search · github-digital-product-tools",
@@ -46,7 +46,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 438
+      "total_count": 439
     },
     {
       "source": "GitHub Search · github-marketing-distribution",
@@ -67,14 +67,14 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3362
+      "total_count": 3365
     },
     {
       "source": "GitHub Search · github-seller-operations",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 355
+      "total_count": 356
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
@@ -88,7 +88,7 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 271
+      "total_count": 269
     },
     {
       "source": "Hacker News · hn-analytics-growth",
@@ -116,7 +116,7 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 7
+      "total_count": 6
     },
     {
       "source": "Hacker News · hn-digital-products",
@@ -158,12 +158,12 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 10
+      "total_count": 8
     },
     {
       "source": "Hacker News · hn-shopify",
       "kind": "hacker_news",
-      "items_kept": 8,
+      "items_kept": 10,
       "status": "ok",
       "total_count": 10
     },
@@ -259,42 +259,42 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-31T05:23:03+00:00",
+    "observed_at_utc": "2026-10-31T06:22:35+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 116,
-    "previously_tracked_repositories_refreshed": 84,
+    "repositories_seen_in_discovery": 112,
+    "previously_tracked_repositories_refreshed": 88,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
-    "repositories_with_20_to_36_hour_baseline": 16,
+    "repositories_with_20_to_36_hour_baseline": 17,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "b89675159c0fb375",
-      "title": "New trusted vault origin signal in Payments Apps API",
-      "source_url": "https://shopify.dev/changelog/new-trusted-vault-origin-signal-in-payments-apps-api",
+      "candidate_id": "9cb5edf563b5f0d9",
+      "title": "First sign-ins to customer accounts now set Customer.state and send customers/enable webhooks",
+      "source_url": "https://shopify.dev/changelog/first-sign-ins-to-new-customer-accounts-now-set-customer-state-and-send-customers-enable",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/new-trusted-vault-origin-signal-in-payments-apps-api",
+      "final_url": "https://shopify.dev/changelog/posts/first-sign-ins-to-new-customer-accounts-now-set-customer-state-and-send-customers-enable",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "b140d6f185b58e72",
-      "title": "Shopify App Pricing: Plan Feature Targeting",
-      "source_url": "https://shopify.dev/changelog/plan-feature-targeting",
+      "candidate_id": "154748cd9555e562",
+      "title": "Introducing theme app add-ons: Build and bundle apps with your themes",
+      "source_url": "https://shopify.dev/changelog/introducing-theme-app-add-ons-build-and-bundle-apps-with-your-themes",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/plan-feature-targeting",
+      "final_url": "https://shopify.dev/changelog/posts/introducing-theme-app-add-ons-build-and-bundle-apps-with-your-themes",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "094df4043fa3fd91",
-      "title": "Show HN: AI agent needs process to build a commercial application",
-      "source_url": "https://nomorehappypath.com/",
+      "candidate_id": "6ea9e0fbab097163",
+      "title": "dograh-hq/dograh",
+      "source_url": "https://github.com/dograh-hq/dograh",
       "verified": true,
-      "final_url": "https://nomorehappypath.com/",
+      "final_url": "https://github.com/dograh-hq/dograh",
       "http_status": 200,
       "reason": ""
     }
@@ -303,180 +303,110 @@
   "daily_draft_cap": 16,
   "daily_drafts_already_passed": 1,
   "outcome": "skip",
-  "decision_reason": "All generated drafts failed the local evidence/editorial checks; the hour was skipped.",
+  "decision_reason": "No draft cleared the complete automatic quality gate; independent editorial review failed closed. Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi",
   "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "b89675159c0fb375",
-      "title": "New trusted vault origin signal in Payments Apps API",
+      "candidate_id": "9cb5edf563b5f0d9",
+      "title": "First sign-ins to customer accounts now set Customer.state and send customers/enable webhooks",
+      "proposed_text": "Shopify sets Customer.state to ENABLED on first account sign‑in. Verify state change in your webhook handler before enabling marketing. https://shopify.dev/changelog/posts/first-sign-ins-to-new-customer-accounts-now-set-customer-state-and-send-customers-enable",
       "reasons": [
-        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation."
-      ],
-      "proposed_text": "Payments Apps API 2027-01 adds payment_method.data.trusted_vault_origin Boolean. Check this flag when handling missing CVV for vault cards. https://shopify.dev/changelog/posts/new-trusted-vault-origin-signal-in-payments-apps-api",
-      "evidence_quote": "The Payments Apps API 2027-01 release candidate adds payment _method.data.trusted _vault _origin to credit card payment and verification requests.",
-      "claim_evidence": [
-        {
-          "claim": "Payments Apps API 2027-01 adds payment_method.data.trusted_vault_origin Boolean.",
-          "quote": "The Payments Apps API 2027-01 release candidate adds payment _method.data.trusted _vault _origin to credit card payment and verification requests."
-        }
+        "Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi"
       ]
     },
     {
-      "candidate_id": "b140d6f185b58e72",
-      "title": "Shopify App Pricing: Plan Feature Targeting",
+      "candidate_id": "154748cd9555e562",
+      "title": "Introducing theme app add-ons: Build and bundle apps with your themes",
+      "proposed_text": "Theme app add‑ons let you bundle storefront apps with theme listings. Add the app block via Partner Dashboard and test theme‑store visibility. https://shopify.dev/changelog/posts/introducing-theme-app-add-ons-build-and-bundle-apps-with-your-themes",
       "reasons": [
-        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
-        "Supporting quotes cover only 60% of factual wording; narrow the claim or provide a closer primary-source quote"
-      ],
-      "proposed_text": "Shopify App Pricing now lets public plans require store features like checkout UI extensions. Add a requirement and test that merchants without the feature are blocked at checkout. https://shopify.dev/changelog/posts/plan-feature-targeting",
-      "evidence_quote": "You can now add store requirements to public plans in Shopify App Pricing.",
-      "claim_evidence": [
-        {
-          "claim": "Shopify App Pricing now lets public plans require store features like checkout UI extensions.",
-          "quote": "You can now add store requirements to public plans in Shopify App Pricing."
-        }
+        "Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi"
       ]
     },
     {
-      "candidate_id": "094df4043fa3fd91",
-      "title": "Show HN: AI agent needs process to build a commercial application",
+      "candidate_id": "6ea9e0fbab097163",
+      "title": "dograh-hq/dograh",
+      "proposed_text": "dograh is a voice‑AI platform for speech‑to‑speech and LLM calls. Use the visual workflow builder to prototype call flows before deploying. https://github.com/dograh-hq/dograh",
       "reasons": [
-        "A supporting quote does not share enough wording with its stated claim",
-        "Supporting quotes cover only 33% of factual wording; narrow the claim or provide a closer primary-source quote"
-      ],
-      "proposed_text": "NoMoreHappyPath found 33 real problems in a 374k‑line commercial app. Run NoMoreHappyPath on large codebases to catch hidden issues. https://nomorehappypath.com/",
-      "evidence_quote": "33 real problems found, against 10 by one AI alone.",
-      "claim_evidence": [
-        {
-          "claim": "NoMoreHappyPath found 33 real problems in a 374k‑line commercial app.",
-          "quote": "33 real problems found, against 10 by one AI alone."
-        }
-      ]
-    },
-    {
-      "candidate_id": "b140d6f185b58e72",
-      "title": "Shopify App Pricing: Plan Feature Targeting",
-      "reasons": [
-        "Editorial takeaway is too long; keep the analysis concrete and concise."
-      ],
-      "proposed_text": "Merchants lacking a required feature cannot subscribe to a plan that depends on it. When adding a store requirement, disable the plan’s select button for stores missing the feature to prevent subscription attempts. https://shopify.dev/changelog/posts/plan-feature-targeting",
-      "evidence_quote": "A merchant whose store does not have a required feature cannot subscribe to that plan.",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
-        "Supporting quotes cover only 60% of factual wording; narrow the claim or provide a closer primary-source quote"
-      ]
-    },
-    {
-      "candidate_id": "094df4043fa3fd91",
-      "title": "Show HN: AI agent needs process to build a commercial application",
-      "reasons": [
-        "No claim-by-claim supporting evidence was provided",
-        "Supporting quotes cover only 0% of factual wording; narrow the claim or provide a closer primary-source quote"
-      ],
-      "proposed_text": "NoMoreHappyPath uncovered 33 issues in a 374k‑line commercial codebase. Run NoMoreHappyPath on large projects to surface hidden defects before release. https://nomorehappypath.com/",
-      "evidence_quote": "33 real problems found, against 10 by one AI alone.",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "A supporting quote does not share enough wording with its stated claim",
-        "Supporting quotes cover only 33% of factual wording; narrow the claim or provide a closer primary-source quote"
-      ]
-    },
-    {
-      "candidate_id": "b89675159c0fb375",
-      "title": "New trusted vault origin signal in Payments Apps API",
-      "reasons": [
-        "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "Fact plus takeaway exceeds the per-link character budget.",
-        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
-        "Draft is 294 raw characters; limit is 280",
-        "No claim-by-claim supporting evidence was provided",
-        "Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote"
-      ],
-      "proposed_text": "Payments Apps API 2027-01 introduces an optional Boolean to indicate trusted vault origin for missing CVV. Check the trusted_vault_origin flag when processing vault card payments to avoid false rejections. https://shopify.dev/changelog/posts/new-trusted-vault-origin-signal-in-payments-apps-api",
-      "evidence_quote": "Payment app developers can use this optional Boolean to handle missing CVV for cards from a vault Shopify trusts.",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation."
+        "Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi"
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "b89675159c0fb375",
-      "title": "New trusted vault origin signal in Payments Apps API",
-      "url": "https://shopify.dev/changelog/posts/new-trusted-vault-origin-signal-in-payments-apps-api",
+      "id": "9cb5edf563b5f0d9",
+      "title": "First sign-ins to customer accounts now set Customer.state and send customers/enable webhooks",
+      "url": "https://shopify.dev/changelog/posts/first-sign-ins-to-new-customer-accounts-now-set-customer-state-and-send-customers-enable",
       "source": "Shopify Developer Changelog",
       "primary_category": "commerce_and_digital_products",
-      "priority_score": 75,
-      "hourly_adjusted_score": 75,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-30T16:00:00+00:00",
-      "days_old": 0.56,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "b140d6f185b58e72",
-      "title": "Shopify App Pricing: Plan Feature Targeting",
-      "url": "https://shopify.dev/changelog/posts/plan-feature-targeting",
-      "source": "Shopify Developer Changelog",
-      "primary_category": "commerce_and_digital_products",
-      "priority_score": 71,
-      "hourly_adjusted_score": 71,
+      "priority_score": 68,
+      "hourly_adjusted_score": 68,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
       "published_at": "2026-10-28T15:50:00+00:00",
-      "days_old": 2.56,
+      "days_old": 2.61,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "094df4043fa3fd91",
-      "title": "Show HN: AI agent needs process to build a commercial application",
-      "url": "https://nomorehappypath.com/",
-      "source": "Hacker News",
-      "primary_category": "product_and_workflow_tools",
-      "priority_score": 63,
-      "hourly_adjusted_score": 65,
+      "id": "154748cd9555e562",
+      "title": "Introducing theme app add-ons: Build and bundle apps with your themes",
+      "url": "https://shopify.dev/changelog/posts/introducing-theme-app-add-ons-build-and-bundle-apps-with-your-themes",
+      "source": "Shopify Developer Changelog",
+      "primary_category": "commerce_and_digital_products",
+      "priority_score": 68,
+      "hourly_adjusted_score": 68,
       "stars_current": null,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-30T14:49:17+00:00",
-      "days_old": 0.61,
+      "published_at": "2026-10-28T15:50:00+00:00",
+      "days_old": 2.61,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "6ea9e0fbab097163",
+      "title": "dograh-hq/dograh",
+      "url": "https://github.com/dograh-hq/dograh",
+      "source": "GitHub Search",
+      "primary_category": "security_and_self_hosting",
+      "priority_score": 70,
+      "hourly_adjusted_score": 64,
+      "stars_current": 5992,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "insufficient_history",
+      "published_at": "2026-10-31T06:21:13+00:00",
+      "days_old": 0.0,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     }
   ],
   "automatic_repair": {
-    "attempted": true,
-    "drafts_submitted": 3,
+    "attempted": false,
+    "drafts_submitted": 0,
     "repaired_local_passes": 0,
-    "repair_rejections": 3,
+    "repair_rejections": 0,
     "repair_error": null,
     "editorial_repair_attempted": false,
     "editorial_repair_drafts_submitted": 0,
     "editorial_repair_error": null
   },
   "editorial_review": {
-    "locally_valid_drafts": 0,
-    "submitted_for_independent_review": 0,
+    "locally_valid_drafts": 3,
+    "submitted_for_independent_review": 3,
     "passed_independent_review": 0,
-    "rejected_by_independent_review": 0,
+    "rejected_by_independent_review": 3,
     "lower_ranked_not_reviewed": 0,
-    "review_error": null,
+    "review_error": "Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi",
     "automatic_gate": "fail_closed"
   },
   "state_summary": {

@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-31T10:53:03+05:30
+- Run time (IST): 2026-10-31T11:52:35+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 199
-- Independent editorial review: 0 draft(s) passed / 0 rejected
+- Candidate pool after freshness/diversity filters: 195
+- Independent editorial review: 0 draft(s) passed / 3 rejected
 - Drafts passing local checks: 0
 - Outcome: **skip**
-- Decision reason: All generated drafts failed the local evidence/editorial checks; the hour was skipped.
+- Decision reason: No draft cleared the complete automatic quality gate; independent editorial review failed closed. Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi
 
 ## Source health
 
@@ -35,7 +35,7 @@
 | Hacker News · hn-marketing-distribution | 0 | ok |
 | Hacker News · hn-security-selfhost | 0 | ok |
 | Hacker News · hn-seller-operations | 0 | ok |
-| Hacker News · hn-shopify | 8 | ok |
+| Hacker News · hn-shopify | 10 | ok |
 | Hacker News · hn-show-hn | 10 | ok |
 | Ahrefs Blog | 8 | ok |
 | Console.dev | 11 | ok |
@@ -54,63 +54,48 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 116
-- Previously tracked repositories refreshed outside search results: 84
+- Repositories seen in this discovery run: 112
+- Previously tracked repositories refreshed outside search results: 88
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
-- Repositories with a 20–36 hour comparison baseline: 16
+- Repositories with a 20–36 hour comparison baseline: 17
 - First observations are baseline samples, not evidence of trending. Star velocity is reported only when a historical comparison exists.
 
 ## Primary-source verification
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| New trusted vault origin signal in Payments Apps API | yes | 200 | https://shopify.dev/changelog/posts/new-trusted-vault-origin-signal-in-payments-apps-api |
-| Shopify App Pricing: Plan Feature Targeting | yes | 200 | https://shopify.dev/changelog/posts/plan-feature-targeting |
-| Show HN: AI agent needs process to build a commercial application | yes | 200 | https://nomorehappypath.com/ |
+| First sign-ins to customer accounts now set Customer.state and send customers/enable webhooks | yes | 200 | https://shopify.dev/changelog/posts/first-sign-ins-to-new-customer-accounts-now-set-customer-state-and-send-customers-enable |
+| Introducing theme app add-ons: Build and bundle apps with your themes | yes | 200 | https://shopify.dev/changelog/posts/introducing-theme-app-add-ons-build-and-bundle-apps-with-your-themes |
+| dograh-hq/dograh | yes | 200 | https://github.com/dograh-hq/dograh |
 
 ## Selected draft candidates
 
-No candidate produced a draft that passed every local check. Skipping is intentional.
+No draft cleared the complete local and independent-editor gate. See the decision reason and rejected-draft section for locally valid drafts that were rejected, not reviewed, or blocked by a review error.
 
 ## Automatic repair attempt
 
-- Attempted: yes
-- Repaired drafts submitted: 3
+- Attempted: no
+- Repaired drafts submitted: 0
 - Repaired drafts that passed local validation: 0
-- Repaired drafts rejected: 3
+- Repaired drafts rejected: 0
 - Repair error: none
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
-- New trusted vault origin signal in Payments Apps API: Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.
-  - Rejected text: Payments Apps API 2027-01 adds payment_method.data.trusted_vault_origin Boolean. Check this flag when handling missing CVV for vault cards. https://shopify.dev/changelog/posts/new-trusted-vault-origin-signal-in-payments-apps-api
-  - Model evidence quote: “The Payments Apps API 2027-01 release candidate adds payment _method.data.trusted _vault _origin to credit card payment and verification requests.”
-  - Claim support: Payments Apps API 2027-01 adds payment_method.data.trusted_vault_origin Boolean. ← “The Payments Apps API 2027-01 release candidate adds payment _method.data.trusted _vault _origin to credit card payment and verification requests.”
-- Shopify App Pricing: Plan Feature Targeting: Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.; Supporting quotes cover only 60% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: Shopify App Pricing now lets public plans require store features like checkout UI extensions. Add a requirement and test that merchants without the feature are blocked at checkout. https://shopify.dev/changelog/posts/plan-feature-targeting
-  - Model evidence quote: “You can now add store requirements to public plans in Shopify App Pricing.”
-  - Claim support: Shopify App Pricing now lets public plans require store features like checkout UI extensions. ← “You can now add store requirements to public plans in Shopify App Pricing.”
-- Show HN: AI agent needs process to build a commercial application: A supporting quote does not share enough wording with its stated claim; Supporting quotes cover only 33% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: NoMoreHappyPath found 33 real problems in a 374k‑line commercial app. Run NoMoreHappyPath on large codebases to catch hidden issues. https://nomorehappypath.com/
-  - Model evidence quote: “33 real problems found, against 10 by one AI alone.”
-  - Claim support: NoMoreHappyPath found 33 real problems in a 374k‑line commercial app. ← “33 real problems found, against 10 by one AI alone.”
-- Shopify App Pricing: Plan Feature Targeting: Editorial takeaway is too long; keep the analysis concrete and concise.
-  - Rejected text: Merchants lacking a required feature cannot subscribe to a plan that depends on it. When adding a store requirement, disable the plan’s select button for stores missing the feature to prevent subscription attempts. https://shopify.dev/changelog/posts/plan-feature-targeting
-  - Model evidence quote: “A merchant whose store does not have a required feature cannot subscribe to that plan.”
-- Show HN: AI agent needs process to build a commercial application: No claim-by-claim supporting evidence was provided; Supporting quotes cover only 0% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: NoMoreHappyPath uncovered 33 issues in a 374k‑line commercial codebase. Run NoMoreHappyPath on large projects to surface hidden defects before release. https://nomorehappypath.com/
-  - Model evidence quote: “33 real problems found, against 10 by one AI alone.”
-- New trusted vault origin signal in Payments Apps API: Editorial takeaway is too long; keep the analysis concrete and concise.; Fact plus takeaway exceeds the per-link character budget.; Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.; Draft is 294 raw characters; limit is 280; No claim-by-claim supporting evidence was provided; Supporting quotes cover only 50% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: Payments Apps API 2027-01 introduces an optional Boolean to indicate trusted vault origin for missing CVV. Check the trusted_vault_origin flag when processing vault card payments to avoid false rejections. https://shopify.dev/changelog/posts/new-trusted-vault-origin-signal-in-payments-apps-api
-  - Model evidence quote: “Payment app developers can use this optional Boolean to handle missing CVV for cards from a vault Shopify trusts.”
+- First sign-ins to customer accounts now set Customer.state and send customers/enable webhooks: Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi
+  - Rejected text: Shopify sets Customer.state to ENABLED on first account sign‑in. Verify state change in your webhook handler before enabling marketing. https://shopify.dev/changelog/posts/first-sign-ins-to-new-customer-accounts-now-set-customer-state-and-send-customers-enable
+- Introducing theme app add-ons: Build and bundle apps with your themes: Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi
+  - Rejected text: Theme app add‑ons let you bundle storefront apps with theme listings. Add the app block via Partner Dashboard and test theme‑store visibility. https://shopify.dev/changelog/posts/introducing-theme-app-add-ons-build-and-bundle-apps-with-your-themes
+- dograh-hq/dograh: Independent editorial review failed closed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi
+  - Rejected text: dograh is a voice‑AI platform for speech‑to‑speech and LLM calls. Use the visual workflow builder to prototype call flows before deploying. https://github.com/dograh-hq/dograh
 
 ## Top discovery candidates considered
 
-- New trusted vault origin signal in Payments Apps API | Shopify Developer Changelog | commerce_and_digital_products | raw 75, adjusted 75 | https://shopify.dev/changelog/posts/new-trusted-vault-origin-signal-in-payments-apps-api
-- Shopify App Pricing: Plan Feature Targeting | Shopify Developer Changelog | commerce_and_digital_products | raw 71, adjusted 71 | https://shopify.dev/changelog/posts/plan-feature-targeting
-- Show HN: AI agent needs process to build a commercial application | Hacker News | product_and_workflow_tools | raw 63, adjusted 65 | https://nomorehappypath.com/
+- First sign-ins to customer accounts now set Customer.state and send customers/enable webhooks | Shopify Developer Changelog | commerce_and_digital_products | raw 68, adjusted 68 | https://shopify.dev/changelog/posts/first-sign-ins-to-new-customer-accounts-now-set-customer-state-and-send-customers-enable
+- Introducing theme app add-ons: Build and bundle apps with your themes | Shopify Developer Changelog | commerce_and_digital_products | raw 68, adjusted 68 | https://shopify.dev/changelog/posts/introducing-theme-app-add-ons-build-and-bundle-apps-with-your-themes
+- dograh-hq/dograh | GitHub Search | security_and_self_hosting | raw 70, adjusted 64 | current stars 5992 | GitHub star trend: building baseline | https://github.com/dograh-hq/dograh
 
 ## Safety and interpretation
 
