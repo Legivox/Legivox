@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-31T13:57:48+05:30
+- Run time (IST): 2026-10-31T14:53:14+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 193
-- Independent editorial review: 0 draft(s) passed / 2 rejected
-- Drafts passing local checks: 0
-- Outcome: **skip**
-- Decision reason: Every draft submitted for independent editorial review was rejected; The hour was skipped.
+- Candidate pool after freshness/diversity filters: 194
+- Independent editorial review: 1 draft(s) passed / 0 rejected
+- Drafts passing local checks: 1
+- Outcome: **dry_run_passed**
+- Decision reason: At least one draft passed live primary-source, evidence, originality, novelty, URL and length checks. The top-ranked draft would be eligible for the future automated post flow; dry-run mode did not publish it.
 
 ## Source health
 
@@ -25,7 +25,7 @@
 | GitHub Search · github-seller-operations | 10 | ok |
 | GitHub Search · github-shopify-commerce | 10 | ok |
 | GitHub Search · github-workflow-automation | 10 | ok |
-| Hacker News · hn-analytics-growth | 8 | ok |
+| Hacker News · hn-analytics-growth | 9 | ok |
 | Hacker News · hn-automation-api | 1 | ok |
 | Hacker News · hn-creator-business | 0 | ok |
 | Hacker News · hn-digital-downloads-templates | 0 | ok |
@@ -54,8 +54,8 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 109
-- Previously tracked repositories refreshed outside search results: 91
+- Repositories seen in this discovery run: 107
+- Previously tracked repositories refreshed outside search results: 93
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
 - Repositories with a 20–36 hour comparison baseline: 18
@@ -65,43 +65,66 @@
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| paperclipai/paperclip | yes | 200 | https://github.com/paperclipai/paperclip |
-| Start Sidekick conversations from your app | yes | 200 | https://shopify.dev/changelog/posts/start-sidekick-conversations-from-your-app |
-| Lifecycle-Innovations-Limited/claude-ops | yes | 200 | https://github.com/Lifecycle-Innovations-Limited/claude-ops |
+| leepokai/Codync | yes | 200 | https://github.com/leepokai/Codync |
+| Show HN: KuralHub 1.0, Speech emotion datasets for 70 languages in one place | yes | 200 | https://aaivu.github.io/KuralHub/datasets.html |
+| Show HN: Readeck sync for Kobo's stock reader | yes | 200 | https://github.com/fkaduk/kobodeck |
 
 ## Selected draft candidates
 
-No draft cleared the complete local and independent-editor gate. See the decision reason and rejected-draft section for locally valid drafts that were rejected, not reviewed, or blocked by a review error.
+### Draft option 1: leepokai/Codync
+
+- Category: security_and_self_hosting
+- Source: GitHub Search
+- Format: tool_discovery
+- Editorial score: 8.4/10
+- Model scores: timeliness 10/10, usefulness 8/10, novelty 7/10, evidence 9/10, insight 8/10
+- Independent editor scores: {"clarity_score": 9, "technical_coherence_score": 9, "takeaway_value_score": 8, "source_faithfulness_score": 9, "originality_score": 8, "reason": "Clear, accurate claim with source support; actionable takeaway is relevant and not merely restating the headline.", "passed": true}
+- Live primary page: https://github.com/leepokai/Codync (HTTP 200)
+- Exact source evidence: “Open source Grok Bot alternative, Bring your own agent and subscription: message Claude Code, Codex, Gemini CLI, Cursor, Copilot and 40+ AI agents as bots”
+- Why this angle: The primary source explicitly lists 40+ AI agents, confirming Codync’s broad agent support. A practical test ensures the CLI routing works for each provider.
+- Editorial takeaway: Run a quick agent switch test to confirm the CLI can route to each AI provider.
+- Source: https://github.com/leepokai/Codync
+
+**Claim-by-claim source quotes:**
+
+- Codync is an open source Grok Bot alternative that supports 40+ AI agents. ← “Open source Grok Bot alternative, Bring your own agent and subscription: message Claude Code, Codex, Gemini CLI, Cursor, Copilot and 40+ AI agents as bots”
+
+Proposed post (not published):
+
+> Codync is an open source Grok Bot alternative that supports 40+ AI agents. Run a quick agent switch test to confirm the CLI can route to each AI provider. https://github.com/leepokai/Codync
+
+- Length: 189/280 raw characters
+- Automated gate: passed live source, evidence, originality, URL and length checks; live publishing is disabled in dry-run mode.
 
 ## Automatic repair attempt
 
-- Attempted: yes
+- Attempted: no
 - Repaired drafts submitted: 0
 - Repaired drafts that passed local validation: 0
 - Repaired drafts rejected: 0
-- Repair error: Automatic repair failed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi
+- Repair error: none
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
-- Lifecycle-Innovations-Limited/claude-ops: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
-  - Rejected text: claude-ops is a business OS for Claude Code with 57 skills and 21 agents. Send a Slack message to the unified inbox and confirm it appears in the CLI. https://github.com/Lifecycle-Innovations-Limited/claude-ops
-  - Model evidence quote: “GitHub - Lifecycle-Innovations-Limited/claude-ops: Business operating system for Claude Code — 57 skills, 21 agents”
-  - Claim support: claude-ops is a business OS for Claude Code with 57 skills and 21 agents ← “GitHub - Lifecycle-Innovations-Limited/claude-ops: Business operating system for Claude Code — 57 skills, 21 agents”
-- paperclipai/paperclip: Post merely restates headline and offers generic test; lacks novel insight.
-  - Rejected text: paperclip is an open‑source app for managing agents at work. Create a dummy agent and verify its status via the UI to confirm orchestration works. https://github.com/paperclipai/paperclip
-- Start Sidekick conversations from your app: Post repeats feature description without adding new perspective or actionable nuance.
-  - Rejected text: Shopify apps can launch Sidekick with a pre‑filled prompt via shopify.sidekick.launch. Add an Ask Sidekick button and verify the prompt appears in the Sidekick chat. https://shopify.dev/changelog/posts/start-sidekick-conversations-from-your-app
+- Show HN: KuralHub 1.0, Speech emotion datasets for 70 languages in one place: Editorial takeaway is not specific enough to this candidate's technical/product details.; A supporting quote does not share enough wording with its stated claim; Unsupported numeric claim(s): 11; Supporting quotes cover only 33% of factual wording; narrow the claim or provide a closer primary-source quote
+  - Rejected text: KuralHub catalogs 90 speech emotion datasets across 70 languages with benchmark results for 11 models. Validate dataset license compliance before training to avoid downstream legal issues. https://aaivu.github.io/KuralHub/datasets.html
+  - Model evidence quote: “90 SER datasets with emotion labels, size, licence and access links, organised by language.”
+  - Claim support: KuralHub catalogs 90 speech emotion datasets across 70 languages with benchmark results for 11 models. ← “90 SER datasets with emotion labels, size, licence and access links, organised by language”
+- Show HN: Readeck sync for Kobo's stock reader: Editorial takeaway is too long; keep the analysis concrete and concise.
+  - Rejected text: Kobodeck is a minimalist Readeck article downloader for Kobo e-readers. Test download and sync on a test Kobo to ensure article formatting matches device expectations. https://github.com/fkaduk/kobodeck
+  - Model evidence quote: “A minimalist Readeck article downloader for Kobo e-readers.”
+  - Claim support: Kobodeck is a minimalist Readeck article downloader for Kobo e-readers. ← “A minimalist Readeck article downloader for Kobo e-readers”
 
 ## Top discovery candidates considered
 
-- paperclipai/paperclip | GitHub Search | ai_and_automation | raw 67, adjusted 68 | current stars 109068 | GitHub stars +245 over about 22.0h | https://github.com/paperclipai/paperclip
-- Start Sidekick conversations from your app | Shopify Developer Changelog | commerce_and_digital_products | raw 65, adjusted 65 | https://shopify.dev/changelog/posts/start-sidekick-conversations-from-your-app
-- Lifecycle-Innovations-Limited/claude-ops | GitHub Search | commerce_and_digital_products | raw 70, adjusted 64 | current stars 547 | GitHub star trend: building baseline | https://github.com/Lifecycle-Innovations-Limited/claude-ops
+- leepokai/Codync | GitHub Search | security_and_self_hosting | raw 72, adjusted 66 | current stars 1110 | GitHub star trend: building baseline | https://github.com/leepokai/Codync
+- Show HN: KuralHub 1.0, Speech emotion datasets for 70 languages in one place | Hacker News | product_and_workflow_tools | raw 63, adjusted 65 | https://aaivu.github.io/KuralHub/datasets.html
+- Show HN: Readeck sync for Kobo's stock reader | Hacker News | product_and_workflow_tools | raw 63, adjusted 65 | https://github.com/fkaduk/kobodeck
 
 ## Safety and interpretation
 
-- This run did not produce a publishable draft; no post was published to X.
+- At least one draft passed the automated quality gates; this dry-run workflow itself never publishes to X.
 - Model scores are editorial estimates; they are not verified popularity or market demand.
 - Candidate content and metadata are untrusted input. Factual copy must be supported by the fetched primary page.
 - A skip can mean no fresh candidates, a daily diversity/cap limit, a model/API problem or weak drafts. Check the reason above.
