@@ -1,17 +1,17 @@
 {
-  "generated_at_ist": "2026-10-31T13:07:27+05:30",
-  "run_at_ist": "2026-10-31T13:07:27+05:30",
+  "generated_at_ist": "2026-10-31T13:57:48+05:30",
+  "run_at_ist": "2026-10-31T13:57:48+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 312,
-  "eligible_candidate_count": 191,
+  "candidate_count_raw": 315,
+  "eligible_candidate_count": 193,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4839
+      "total_count": 4847
     },
     {
       "source": "GitHub Search · github-analytics-seo",
@@ -25,14 +25,14 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 369
+      "total_count": 370
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3037
+      "total_count": 3067
     },
     {
       "source": "GitHub Search · github-digital-product-tools",
@@ -60,14 +60,14 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2100
+      "total_count": 2104
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3376
+      "total_count": 3381
     },
     {
       "source": "GitHub Search · github-seller-operations",
@@ -158,12 +158,12 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 8
+      "total_count": 10
     },
     {
       "source": "Hacker News · hn-shopify",
       "kind": "hacker_news",
-      "items_kept": 10,
+      "items_kept": 8,
       "status": "ok",
       "total_count": 10
     },
@@ -248,53 +248,53 @@
       "kind": "wordpress_plugin",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1797
+      "total_count": 1796
     },
     {
       "source": "WordPress Plugin Directory · wp-membership-creators",
       "kind": "wordpress_plugin",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2218
+      "total_count": 2217
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-31T07:37:27+00:00",
+    "observed_at_utc": "2026-10-31T08:27:48+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 104,
-    "previously_tracked_repositories_refreshed": 96,
+    "repositories_seen_in_discovery": 109,
+    "previously_tracked_repositories_refreshed": 91,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
-    "repositories_with_20_to_36_hour_baseline": 17,
+    "repositories_with_20_to_36_hour_baseline": 18,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "05cb1122ec2093b2",
-      "title": "Add selling plans to draft order line items with the Admin GraphQL API",
-      "source_url": "https://shopify.dev/changelog/add-selling-plans-to-draft-order-line-items-with-the-admin-graphql-api",
+      "candidate_id": "a5e43b1572bfaf36",
+      "title": "paperclipai/paperclip",
+      "source_url": "https://github.com/paperclipai/paperclip",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/add-selling-plans-to-draft-order-line-items-with-the-admin-graphql-api",
+      "final_url": "https://github.com/paperclipai/paperclip",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "f18f3fce0d825671",
-      "title": "Shopify App Store: Estimated local-currency prices",
-      "source_url": "https://shopify.dev/changelog/estimated-local-currency-prices",
+      "candidate_id": "4d71c2a1690878cc",
+      "title": "Start Sidekick conversations from your app",
+      "source_url": "https://shopify.dev/changelog/start-sidekick-conversations-from-your-app",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/estimated-local-currency-prices",
+      "final_url": "https://shopify.dev/changelog/posts/start-sidekick-conversations-from-your-app",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "a1dbde18ac15df21",
-      "title": "Tool: Namespace Devbox",
-      "source_url": "https://namespace.so/?ref=console.dev",
+      "candidate_id": "fe11cc6566e35c2b",
+      "title": "Lifecycle-Innovations-Limited/claude-ops",
+      "source_url": "https://github.com/Lifecycle-Innovations-Limited/claude-ops",
       "verified": true,
-      "final_url": "https://namespace.so/?ref=console.dev",
+      "final_url": "https://github.com/Lifecycle-Innovations-Limited/claude-ops",
       "http_status": 200,
       "reason": ""
     }
@@ -303,117 +303,79 @@
   "daily_draft_cap": 16,
   "daily_drafts_already_passed": 1,
   "outcome": "skip",
-  "decision_reason": "All generated drafts failed the local evidence/editorial checks; the hour was skipped.",
+  "decision_reason": "Every draft submitted for independent editorial review was rejected; The hour was skipped.",
   "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "05cb1122ec2093b2",
-      "title": "Add selling plans to draft order line items with the Admin GraphQL API",
+      "candidate_id": "fe11cc6566e35c2b",
+      "title": "Lifecycle-Innovations-Limited/claude-ops",
       "reasons": [
-        "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "Fact plus takeaway exceeds the per-link character budget.",
-        "Draft is 307 raw characters; limit is 280"
+        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step."
       ],
-      "proposed_text": "Shopify Admin GraphQL API v2027‑01 adds sellingPlanId to DraftOrderLineItemInput. When creating a draft order, include sellingPlanId and verify the returned sellingPlanApplication matches the plan ID. https://shopify.dev/changelog/posts/add-selling-plans-to-draft-order-line-items-with-the-admin-graphql-api",
-      "evidence_quote": "DraftOrderLineItemInput.sellingPlanId sets the selling plan to apply when you create or update a draft order line item.",
+      "proposed_text": "claude-ops is a business OS for Claude Code with 57 skills and 21 agents. Send a Slack message to the unified inbox and confirm it appears in the CLI. https://github.com/Lifecycle-Innovations-Limited/claude-ops",
+      "evidence_quote": "GitHub - Lifecycle-Innovations-Limited/claude-ops: Business operating system for Claude Code — 57 skills, 21 agents",
       "claim_evidence": [
         {
-          "claim": "Shopify Admin GraphQL API v2027‑01 adds sellingPlanId to DraftOrderLineItemInput.",
-          "quote": "DraftOrderLineItemInput.sellingPlanId sets the selling plan to apply when you create or update a draft order line item."
+          "claim": "claude-ops is a business OS for Claude Code with 57 skills and 21 agents",
+          "quote": "GitHub - Lifecycle-Innovations-Limited/claude-ops: Business operating system for Claude Code — 57 skills, 21 agents"
         }
       ]
     },
     {
-      "candidate_id": "f18f3fce0d825671",
-      "title": "Shopify App Store: Estimated local-currency prices",
+      "candidate_id": "a5e43b1572bfaf36",
+      "title": "paperclipai/paperclip",
+      "proposed_text": "paperclip is an open‑source app for managing agents at work. Create a dummy agent and verify its status via the UI to confirm orchestration works. https://github.com/paperclipai/paperclip",
       "reasons": [
-        "Editorial takeaway is too long; keep the analysis concrete and concise."
+        "Post merely restates headline and offers generic test; lacks novel insight."
       ],
-      "proposed_text": "Shopify App Store now shows estimated prices in merchants’ billing currency for 14 currencies. Test that your app’s price page displays the correct estimated amount for each supported currency. https://shopify.dev/changelog/posts/estimated-local-currency-prices",
-      "evidence_quote": "Merchants see estimates when their billing currency is one of these 14 currencies: AUD, CAD, CHF, CZK, DKK, EUR, GBP, INR, JPY, NOK, PLN, RON, SEK, and SGD.",
-      "claim_evidence": [
-        {
-          "claim": "Shopify App Store now shows estimated prices in merchants’ billing currency for 14 currencies.",
-          "quote": "Merchants see estimates when their billing currency is one of these 14 currencies: AUD, CAD, CHF, CZK, DKK, EUR, GBP, INR, JPY, NOK, PLN, RON, SEK, and SGD."
-        }
-      ]
+      "editorial_review": {
+        "clarity_score": 8,
+        "technical_coherence_score": 8,
+        "takeaway_value_score": 8,
+        "source_faithfulness_score": 8,
+        "originality_score": 5
+      }
     },
     {
-      "candidate_id": "a1dbde18ac15df21",
-      "title": "Tool: Namespace Devbox",
+      "candidate_id": "4d71c2a1690878cc",
+      "title": "Start Sidekick conversations from your app",
+      "proposed_text": "Shopify apps can launch Sidekick with a pre‑filled prompt via shopify.sidekick.launch. Add an Ask Sidekick button and verify the prompt appears in the Sidekick chat. https://shopify.dev/changelog/posts/start-sidekick-conversations-from-your-app",
       "reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability.",
-        "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "Primary-source evidence quote is missing or absent from the live page (after presentation normalisation)",
-        "A factual claim lacks a quote present in the live primary-source page",
-        "Supporting quotes cover only 10% of factual wording; narrow the claim or provide a closer primary-source quote"
+        "Post repeats feature description without adding new perspective or actionable nuance."
       ],
-      "proposed_text": "Namespace offers cloud dev environments with up to 64 vCPU and 512 GB RAM on Linux, macOS, and Windows. Use the nsc CLI to spin up a Devbox and run your CI pipeline locally before pushing to GitHub Actions. https://namespace.so/?ref=console.dev",
-      "evidence_quote": "Up to 64 vCPU · 512 GB . Docs Technical reference, API docs, and configuration guides",
-      "claim_evidence": [
-        {
-          "claim": "Namespace offers cloud dev environments with up to 64 vCPU and 512 GB RAM on Linux, macOS, and Windows.",
-          "quote": "Up to 64 vCPU · 512 GB . Docs Technical reference, API docs, and configuration guides"
-        }
-      ]
-    },
-    {
-      "candidate_id": "a1dbde18ac15df21",
-      "title": "Tool: Namespace Devbox",
-      "reasons": [
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
-        "No claim-by-claim supporting evidence was provided",
-        "Factual sentence includes terms absent from the source title/summary: provide, ram"
-      ],
-      "proposed_text": "Namespace provides up to 64 vCPU and 512 GB RAM on Linux. Use nsc CLI to spin up a Devbox for local CI before pushing to GitHub Actions. https://namespace.so/?ref=console.dev",
-      "evidence_quote": "Up to 64 vCPU · 512 GB",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability.",
-        "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "Primary-source evidence quote is missing or absent from the live page (after presentation normalisation)",
-        "A factual claim lacks a quote present in the live primary-source page",
-        "Supporting quotes cover only 10% of factual wording; narrow the claim or provide a closer primary-source quote"
-      ]
-    },
-    {
-      "candidate_id": "05cb1122ec2093b2",
-      "title": "Add selling plans to draft order line items with the Admin GraphQL API",
-      "reasons": [
-        "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "Fact plus takeaway exceeds the per-link character budget.",
-        "Draft is 291 raw characters; limit is 280"
-      ],
-      "proposed_text": "DraftOrderLineItemInput.sellingPlanId sets the selling plan when creating a draft order. Verify the returned sellingPlanApplication matches the plan ID to confirm the plan was applied. https://shopify.dev/changelog/posts/add-selling-plans-to-draft-order-line-items-with-the-admin-graphql-api",
-      "evidence_quote": "DraftOrderLineItemInput.sellingPlanId sets the selling plan to apply when you create or update a draft order line item.",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "Fact plus takeaway exceeds the per-link character budget.",
-        "Draft is 307 raw characters; limit is 280"
-      ]
-    },
-    {
-      "candidate_id": "f18f3fce0d825671",
-      "title": "Shopify App Store: Estimated local-currency prices",
-      "reasons": [
-        "Editorial takeaway is too long; keep the analysis concrete and concise.",
-        "Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.",
-        "Opening sentence is too close to the source headline; add a distinct editorial framing."
-      ],
-      "proposed_text": "App Store shows estimated prices for 14 currencies. Check that the estimated price matches the merchant’s billing currency on the app price page. https://shopify.dev/changelog/posts/estimated-local-currency-prices",
-      "evidence_quote": "Merchants see estimates when their billing currency is one of these 14 currencies: AUD, CAD, CHF, CZK, DKK, EUR, GBP, INR, JPY, NOK, PLN, RON, SEK, and SGD.",
-      "automatic_repair_attempt": true,
-      "original_rejection_reasons": [
-        "Editorial takeaway is too long; keep the analysis concrete and concise."
-      ]
+      "editorial_review": {
+        "clarity_score": 8,
+        "technical_coherence_score": 8,
+        "takeaway_value_score": 8,
+        "source_faithfulness_score": 8,
+        "originality_score": 5
+      }
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "05cb1122ec2093b2",
-      "title": "Add selling plans to draft order line items with the Admin GraphQL API",
-      "url": "https://shopify.dev/changelog/posts/add-selling-plans-to-draft-order-line-items-with-the-admin-graphql-api",
+      "id": "a5e43b1572bfaf36",
+      "title": "paperclipai/paperclip",
+      "url": "https://github.com/paperclipai/paperclip",
+      "source": "GitHub Search",
+      "primary_category": "ai_and_automation",
+      "priority_score": 67,
+      "hourly_adjusted_score": 68,
+      "stars_current": 109068,
+      "stars_delta_24h": 245,
+      "stars_delta_baseline_hours": 22.0,
+      "stars_growth_percent_24h": 0.23,
+      "trend_signal": "measured_star_growth",
+      "published_at": "2026-10-31T08:17:49+00:00",
+      "days_old": 0.01,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "4d71c2a1690878cc",
+      "title": "Start Sidekick conversations from your app",
+      "url": "https://shopify.dev/changelog/posts/start-sidekick-conversations-from-your-app",
       "source": "Shopify Developer Changelog",
       "primary_category": "commerce_and_digital_products",
       "priority_score": 65,
@@ -423,46 +385,27 @@
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-28T15:50:00+00:00",
-      "days_old": 2.66,
+      "published_at": "2026-10-28T17:00:00+00:00",
+      "days_old": 2.64,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
     },
     {
-      "id": "f18f3fce0d825671",
-      "title": "Shopify App Store: Estimated local-currency prices",
-      "url": "https://shopify.dev/changelog/posts/estimated-local-currency-prices",
-      "source": "Shopify Developer Changelog",
+      "id": "fe11cc6566e35c2b",
+      "title": "Lifecycle-Innovations-Limited/claude-ops",
+      "url": "https://github.com/Lifecycle-Innovations-Limited/claude-ops",
+      "source": "GitHub Search",
       "primary_category": "commerce_and_digital_products",
-      "priority_score": 65,
-      "hourly_adjusted_score": 65,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-28T15:50:00+00:00",
-      "days_old": 2.66,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "a1dbde18ac15df21",
-      "title": "Tool: Namespace Devbox",
-      "url": "https://namespace.so/?ref=console.dev",
-      "source": "Console.dev",
-      "primary_category": "developer_tools",
-      "priority_score": 64,
+      "priority_score": 70,
       "hourly_adjusted_score": 64,
-      "stars_current": null,
+      "stars_current": 547,
       "stars_delta_24h": null,
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-29T08:00:00+00:00",
-      "days_old": 1.98,
+      "trend_signal": "insufficient_history",
+      "published_at": "2026-10-31T07:56:07+00:00",
+      "days_old": 0.02,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
@@ -470,26 +413,26 @@
   ],
   "automatic_repair": {
     "attempted": true,
-    "drafts_submitted": 3,
+    "drafts_submitted": 0,
     "repaired_local_passes": 0,
-    "repair_rejections": 3,
-    "repair_error": null,
-    "editorial_repair_attempted": false,
+    "repair_rejections": 0,
+    "repair_error": "Automatic repair failed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi",
+    "editorial_repair_attempted": true,
     "editorial_repair_drafts_submitted": 0,
-    "editorial_repair_error": null
+    "editorial_repair_error": "Automatic repair failed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi"
   },
   "editorial_review": {
-    "locally_valid_drafts": 0,
-    "submitted_for_independent_review": 0,
+    "locally_valid_drafts": 2,
+    "submitted_for_independent_review": 2,
     "passed_independent_review": 0,
-    "rejected_by_independent_review": 0,
+    "rejected_by_independent_review": 2,
     "lower_ranked_not_reviewed": 0,
     "review_error": null,
     "automatic_gate": "fail_closed"
   },
   "state_summary": {
     "used_candidates_in_cooldown": 33,
-    "recently_attempted_candidates": 18,
+    "recently_attempted_candidates": 21,
     "recent_draft_passes_today": 1
   }
 }

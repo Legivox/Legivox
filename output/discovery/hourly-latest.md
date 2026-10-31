@@ -1,13 +1,13 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-31T13:07:27+05:30
+- Run time (IST): 2026-10-31T13:57:48+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 191
-- Independent editorial review: 0 draft(s) passed / 0 rejected
+- Candidate pool after freshness/diversity filters: 193
+- Independent editorial review: 0 draft(s) passed / 2 rejected
 - Drafts passing local checks: 0
 - Outcome: **skip**
-- Decision reason: All generated drafts failed the local evidence/editorial checks; the hour was skipped.
+- Decision reason: Every draft submitted for independent editorial review was rejected; The hour was skipped.
 
 ## Source health
 
@@ -35,7 +35,7 @@
 | Hacker News · hn-marketing-distribution | 0 | ok |
 | Hacker News · hn-security-selfhost | 0 | ok |
 | Hacker News · hn-seller-operations | 0 | ok |
-| Hacker News · hn-shopify | 10 | ok |
+| Hacker News · hn-shopify | 8 | ok |
 | Hacker News · hn-show-hn | 10 | ok |
 | Ahrefs Blog | 8 | ok |
 | Console.dev | 11 | ok |
@@ -54,63 +54,50 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 104
-- Previously tracked repositories refreshed outside search results: 96
+- Repositories seen in this discovery run: 109
+- Previously tracked repositories refreshed outside search results: 91
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
-- Repositories with a 20–36 hour comparison baseline: 17
+- Repositories with a 20–36 hour comparison baseline: 18
 - First observations are baseline samples, not evidence of trending. Star velocity is reported only when a historical comparison exists.
 
 ## Primary-source verification
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| Add selling plans to draft order line items with the Admin GraphQL API | yes | 200 | https://shopify.dev/changelog/posts/add-selling-plans-to-draft-order-line-items-with-the-admin-graphql-api |
-| Shopify App Store: Estimated local-currency prices | yes | 200 | https://shopify.dev/changelog/posts/estimated-local-currency-prices |
-| Tool: Namespace Devbox | yes | 200 | https://namespace.so/?ref=console.dev |
+| paperclipai/paperclip | yes | 200 | https://github.com/paperclipai/paperclip |
+| Start Sidekick conversations from your app | yes | 200 | https://shopify.dev/changelog/posts/start-sidekick-conversations-from-your-app |
+| Lifecycle-Innovations-Limited/claude-ops | yes | 200 | https://github.com/Lifecycle-Innovations-Limited/claude-ops |
 
 ## Selected draft candidates
 
-No candidate produced a draft that passed every local check. Skipping is intentional.
+No draft cleared the complete local and independent-editor gate. See the decision reason and rejected-draft section for locally valid drafts that were rejected, not reviewed, or blocked by a review error.
 
 ## Automatic repair attempt
 
 - Attempted: yes
-- Repaired drafts submitted: 3
+- Repaired drafts submitted: 0
 - Repaired drafts that passed local validation: 0
-- Repaired drafts rejected: 3
-- Repair error: none
+- Repaired drafts rejected: 0
+- Repair error: Automatic repair failed: Groq returned HTTP 429: Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m57z755zetrv5mytrbsx754p` service tier `on_demand` on tokens per minute (TPM): Limi
 - Repair never relaxes the quality threshold. Any repaired draft must still pass the independent editorial review.
 
 ## Rejected draft options
 
-- Add selling plans to draft order line items with the Admin GraphQL API: Editorial takeaway is too long; keep the analysis concrete and concise.; Fact plus takeaway exceeds the per-link character budget.; Draft is 307 raw characters; limit is 280
-  - Rejected text: Shopify Admin GraphQL API v2027‑01 adds sellingPlanId to DraftOrderLineItemInput. When creating a draft order, include sellingPlanId and verify the returned sellingPlanApplication matches the plan ID. https://shopify.dev/changelog/posts/add-selling-plans-to-draft-order-line-items-with-the-admin-graphql-api
-  - Model evidence quote: “DraftOrderLineItemInput.sellingPlanId sets the selling plan to apply when you create or update a draft order line item.”
-  - Claim support: Shopify Admin GraphQL API v2027‑01 adds sellingPlanId to DraftOrderLineItemInput. ← “DraftOrderLineItemInput.sellingPlanId sets the selling plan to apply when you create or update a draft order line item.”
-- Shopify App Store: Estimated local-currency prices: Editorial takeaway is too long; keep the analysis concrete and concise.
-  - Rejected text: Shopify App Store now shows estimated prices in merchants’ billing currency for 14 currencies. Test that your app’s price page displays the correct estimated amount for each supported currency. https://shopify.dev/changelog/posts/estimated-local-currency-prices
-  - Model evidence quote: “Merchants see estimates when their billing currency is one of these 14 currencies: AUD, CAD, CHF, CZK, DKK, EUR, GBP, INR, JPY, NOK, PLN, RON, SEK, and SGD.”
-  - Claim support: Shopify App Store now shows estimated prices in merchants’ billing currency for 14 currencies. ← “Merchants see estimates when their billing currency is one of these 14 currencies: AUD, CAD, CHF, CZK, DKK, EUR, GBP, INR, JPY, NOK, PLN, RON, SEK, and SGD.”
-- Tool: Namespace Devbox: The factual opening bundles multiple features; narrow it to one capability.; Editorial takeaway is too long; keep the analysis concrete and concise.; Primary-source evidence quote is missing or absent from the live page (after presentation normalisation); A factual claim lacks a quote present in the live primary-source page; Supporting quotes cover only 10% of factual wording; narrow the claim or provide a closer primary-source quote
-  - Rejected text: Namespace offers cloud dev environments with up to 64 vCPU and 512 GB RAM on Linux, macOS, and Windows. Use the nsc CLI to spin up a Devbox and run your CI pipeline locally before pushing to GitHub Actions. https://namespace.so/?ref=console.dev
-  - Model evidence quote: “Up to 64 vCPU · 512 GB . Docs Technical reference, API docs, and configuration guides”
-  - Claim support: Namespace offers cloud dev environments with up to 64 vCPU and 512 GB RAM on Linux, macOS, and Windows. ← “Up to 64 vCPU · 512 GB . Docs Technical reference, API docs, and configuration guides”
-- Tool: Namespace Devbox: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; No claim-by-claim supporting evidence was provided; Factual sentence includes terms absent from the source title/summary: provide, ram
-  - Rejected text: Namespace provides up to 64 vCPU and 512 GB RAM on Linux. Use nsc CLI to spin up a Devbox for local CI before pushing to GitHub Actions. https://namespace.so/?ref=console.dev
-  - Model evidence quote: “Up to 64 vCPU · 512 GB”
-- Add selling plans to draft order line items with the Admin GraphQL API: Editorial takeaway is too long; keep the analysis concrete and concise.; Fact plus takeaway exceeds the per-link character budget.; Draft is 291 raw characters; limit is 280
-  - Rejected text: DraftOrderLineItemInput.sellingPlanId sets the selling plan when creating a draft order. Verify the returned sellingPlanApplication matches the plan ID to confirm the plan was applied. https://shopify.dev/changelog/posts/add-selling-plans-to-draft-order-line-items-with-the-admin-graphql-api
-  - Model evidence quote: “DraftOrderLineItemInput.sellingPlanId sets the selling plan to apply when you create or update a draft order line item.”
-- Shopify App Store: Estimated local-currency prices: Editorial takeaway is too long; keep the analysis concrete and concise.; Editorial takeaway mostly repeats source wording; add an independent test, trade-off or interpretation.; Opening sentence is too close to the source headline; add a distinct editorial framing.
-  - Rejected text: App Store shows estimated prices for 14 currencies. Check that the estimated price matches the merchant’s billing currency on the app price page. https://shopify.dev/changelog/posts/estimated-local-currency-prices
-  - Model evidence quote: “Merchants see estimates when their billing currency is one of these 14 currencies: AUD, CAD, CHF, CZK, DKK, EUR, GBP, INR, JPY, NOK, PLN, RON, SEK, and SGD.”
+- Lifecycle-Innovations-Limited/claude-ops: Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.
+  - Rejected text: claude-ops is a business OS for Claude Code with 57 skills and 21 agents. Send a Slack message to the unified inbox and confirm it appears in the CLI. https://github.com/Lifecycle-Innovations-Limited/claude-ops
+  - Model evidence quote: “GitHub - Lifecycle-Innovations-Limited/claude-ops: Business operating system for Claude Code — 57 skills, 21 agents”
+  - Claim support: claude-ops is a business OS for Claude Code with 57 skills and 21 agents ← “GitHub - Lifecycle-Innovations-Limited/claude-ops: Business operating system for Claude Code — 57 skills, 21 agents”
+- paperclipai/paperclip: Post merely restates headline and offers generic test; lacks novel insight.
+  - Rejected text: paperclip is an open‑source app for managing agents at work. Create a dummy agent and verify its status via the UI to confirm orchestration works. https://github.com/paperclipai/paperclip
+- Start Sidekick conversations from your app: Post repeats feature description without adding new perspective or actionable nuance.
+  - Rejected text: Shopify apps can launch Sidekick with a pre‑filled prompt via shopify.sidekick.launch. Add an Ask Sidekick button and verify the prompt appears in the Sidekick chat. https://shopify.dev/changelog/posts/start-sidekick-conversations-from-your-app
 
 ## Top discovery candidates considered
 
-- Add selling plans to draft order line items with the Admin GraphQL API | Shopify Developer Changelog | commerce_and_digital_products | raw 65, adjusted 65 | https://shopify.dev/changelog/posts/add-selling-plans-to-draft-order-line-items-with-the-admin-graphql-api
-- Shopify App Store: Estimated local-currency prices | Shopify Developer Changelog | commerce_and_digital_products | raw 65, adjusted 65 | https://shopify.dev/changelog/posts/estimated-local-currency-prices
-- Tool: Namespace Devbox | Console.dev | developer_tools | raw 64, adjusted 64 | https://namespace.so/?ref=console.dev
+- paperclipai/paperclip | GitHub Search | ai_and_automation | raw 67, adjusted 68 | current stars 109068 | GitHub stars +245 over about 22.0h | https://github.com/paperclipai/paperclip
+- Start Sidekick conversations from your app | Shopify Developer Changelog | commerce_and_digital_products | raw 65, adjusted 65 | https://shopify.dev/changelog/posts/start-sidekick-conversations-from-your-app
+- Lifecycle-Innovations-Limited/claude-ops | GitHub Search | commerce_and_digital_products | raw 70, adjusted 64 | current stars 547 | GitHub star trend: building baseline | https://github.com/Lifecycle-Innovations-Limited/claude-ops
 
 ## Safety and interpretation
 
