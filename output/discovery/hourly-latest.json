@@ -1,38 +1,38 @@
 {
-  "generated_at_ist": "2026-10-31T17:48:29+05:30",
-  "run_at_ist": "2026-10-31T17:48:29+05:30",
+  "generated_at_ist": "2026-10-31T19:01:34+05:30",
+  "run_at_ist": "2026-10-31T19:01:34+05:30",
   "mode": "hourly_dry_run_only",
   "posted_to_x": false,
-  "candidate_count_raw": 288,
-  "eligible_candidate_count": 188,
+  "candidate_count_raw": 312,
+  "eligible_candidate_count": 172,
   "source_diagnostics": [
     {
       "source": "GitHub Search · github-ai-agent-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 4869
+      "total_count": 4879
     },
     {
       "source": "GitHub Search · github-analytics-seo",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 1040
+      "total_count": 1041
     },
     {
       "source": "GitHub Search · github-creator-infrastructure",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 375
+      "total_count": 376
     },
     {
       "source": "GitHub Search · github-developer-tools",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3197
+      "total_count": 3206
     },
     {
       "source": "GitHub Search · github-digital-product-tools",
@@ -60,21 +60,21 @@
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 2112
+      "total_count": 2117
     },
     {
       "source": "GitHub Search · github-self-hosted",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 3403
+      "total_count": 3408
     },
     {
       "source": "GitHub Search · github-seller-operations",
       "kind": "github_repository",
       "items_kept": 10,
       "status": "ok",
-      "total_count": 357
+      "total_count": 358
     },
     {
       "source": "GitHub Search · github-shopify-commerce",
@@ -116,7 +116,7 @@
       "kind": "hacker_news",
       "items_kept": 0,
       "status": "ok",
-      "total_count": 6
+      "total_count": 7
     },
     {
       "source": "Hacker News · hn-digital-products",
@@ -195,15 +195,14 @@
     {
       "source": "Product Hunt",
       "kind": "rss",
-      "items_kept": 40,
+      "items_kept": 41,
       "status": "ok"
     },
     {
       "source": "Shopify Community",
       "kind": "rss",
-      "items_kept": 0,
-      "status": "error",
-      "error": "HTTPError"
+      "items_kept": 30,
+      "status": "ok"
     },
     {
       "source": "Shopify Developer Changelog",
@@ -260,47 +259,57 @@
     }
   ],
   "star_tracking": {
-    "observed_at_utc": "2026-10-31T12:18:29+00:00",
+    "observed_at_utc": "2026-10-31T13:31:34+00:00",
     "tracked_repositories": 200,
-    "repositories_seen_in_discovery": 114,
-    "previously_tracked_repositories_refreshed": 86,
+    "repositories_seen_in_discovery": 106,
+    "previously_tracked_repositories_refreshed": 94,
     "refresh_failures": 0,
     "missing_github_token_for_watchlist_refresh": false,
     "snapshots_added_this_run": 200,
-    "repositories_with_20_to_36_hour_baseline": 19,
+    "repositories_with_20_to_36_hour_baseline": 20,
     "history_window_days": 8,
     "watchlist_limit": 200
   },
   "primary_source_checks": [
     {
-      "candidate_id": "6c933a0a7009a87b",
-      "title": "Security update: Offline token dates, new security features",
-      "source_url": "https://shopify.dev/changelog/app-security-updates-october-2026",
+      "candidate_id": "a677374664d346cc",
+      "title": "Restrict Admin API access with an IP allowlist",
+      "source_url": "https://shopify.dev/changelog/restrict-admin-api-access-to-your-app-with-an-ip-allowlist",
       "verified": true,
-      "final_url": "https://shopify.dev/changelog/blog/app-security-updates-october-2026",
+      "final_url": "https://shopify.dev/changelog/posts/restrict-admin-api-access-to-your-app-with-an-ip-allowlist",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "f6b4870412a7c624",
-      "title": "Tool: Atuin Threads",
-      "source_url": "https://blog.atuin.sh/threads-agent-sessions/?ref=console.dev",
+      "candidate_id": "e72d79c0a899ffe6",
+      "title": "Stripe on Stripe: What we learned moving $1B in vendor payments to Global Payouts",
+      "source_url": "https://stripe.com/blog/stripe-on-stripe-what-we-learned-moving-1b-in-vendor-payments-to-global-payouts",
       "verified": true,
-      "final_url": "https://blog.atuin.sh/threads-agent-sessions/?ref=console.dev",
+      "final_url": "https://stripe.com/blog/stripe-on-stripe-what-we-learned-moving-1b-in-vendor-payments-to-global-payouts",
       "http_status": 200,
       "reason": ""
     },
     {
-      "candidate_id": "c966fb913f8d63e4",
-      "title": "Manage payouts, billing, and settings in Dev Dashboard",
-      "source_url": "https://shopify.dev/changelog/manage-partner-payouts-billing-and-settings-from-organization-settings",
-      "verified": true,
-      "final_url": "https://shopify.dev/changelog/posts/manage-partner-payouts-billing-and-settings-from-organization-settings",
-      "http_status": 200,
-      "reason": ""
+      "candidate_id": "1b9191dd943341ea",
+      "title": "Godwit",
+      "source_url": "https://www.producthunt.com/products/godwit",
+      "verified": false,
+      "final_url": null,
+      "http_status": null,
+      "reason": "Primary source returned HTTP 403."
     }
   ],
-  "rejected_primary_sources": [],
+  "rejected_primary_sources": [
+    {
+      "candidate_id": "1b9191dd943341ea",
+      "title": "Godwit",
+      "source": "Product Hunt",
+      "url": "https://www.producthunt.com/products/godwit",
+      "reasons": [
+        "Primary source returned HTTP 403."
+      ]
+    }
+  ],
   "daily_draft_cap": 16,
   "daily_drafts_already_passed": 2,
   "outcome": "skip",
@@ -308,111 +317,67 @@
   "passing_drafts": [],
   "rejected_drafts": [
     {
-      "candidate_id": "f6b4870412a7c624",
-      "title": "Tool: Atuin Threads",
+      "candidate_id": "1b9191dd943341ea",
+      "title": "Godwit",
+      "source": "Product Hunt",
+      "url": "https://www.producthunt.com/products/godwit",
       "reasons": [
-        "Primary-source evidence quote is missing or absent from the live page (after presentation normalisation)",
-        "A factual claim lacks a quote present in the live primary-source page"
+        "Primary source returned HTTP 403."
+      ]
+    },
+    {
+      "candidate_id": "e72d79c0a899ffe6",
+      "title": "Stripe on Stripe: What we learned moving $1B in vendor payments to Global Payouts",
+      "reasons": [
+        "Unsupported numeric claim(s): 99.5"
       ],
-      "proposed_text": "Atuin Threads syncs agent sessions across machines and is end‑to‑end encrypted. Test session resume on a fresh machine to confirm context integrity. https://blog.atuin.sh/threads-agent-sessions/?ref=console.dev",
-      "evidence_quote": "Atuin Threads: one searchable, synced history for every agent session, on every machine ... End‑to‑end encrypted when synced",
+      "proposed_text": "Global Payouts reduced new‑market setup from six weeks to one with 99.9% success. Benchmark your onboarding against one week and monitor success below 99.5%. https://stripe.com/blog/stripe-on-stripe-what-we-learned-moving-1b-in-vendor-payments-to-global-payouts",
+      "evidence_quote": "New-market setup fell from six weeks to one, with a 99.9% payout success rate.",
       "claim_evidence": [
         {
-          "claim": "Atuin Threads syncs agent sessions across machines and is end‑to‑end encrypted.",
-          "quote": "Atuin Threads: one searchable, synced history for every agent session, on every machine ... End‑to‑end encrypted when synced"
+          "claim": "Global Payouts reduced new‑market setup from six weeks to one with 99.9% success.",
+          "quote": "New-market setup fell from six weeks to one, with a 99.9% payout success rate."
         }
       ]
     },
     {
-      "candidate_id": "c966fb913f8d63e4",
-      "title": "Manage payouts, billing, and settings in Dev Dashboard",
+      "candidate_id": "a677374664d346cc",
+      "title": "Restrict Admin API access with an IP allowlist",
+      "proposed_text": "Shopify lets you restrict Admin API tokens to IP addresses via the Dev Dashboard. Test a non‑listed IP request and confirm a 403 before deployment. https://shopify.dev/changelog/posts/restrict-admin-api-access-to-your-app-with-an-ip-allowlist",
       "reasons": [
-        "The factual opening bundles multiple features; narrow it to one capability."
-      ],
-      "proposed_text": "Partner payouts, billing, and settings are now managed in Dev Dashboard Organization settings. Check that existing payout history appears unchanged after migration. https://shopify.dev/changelog/posts/manage-partner-payouts-billing-and-settings-from-organization-settings",
-      "evidence_quote": "From Organization settings , you can manage: ... Payouts : payout setup, history, transactions, and payout methods",
-      "claim_evidence": [
-        {
-          "claim": "Partner payouts, billing, and settings are now managed in Dev Dashboard Organization settings.",
-          "quote": "From Organization settings , you can manage: ... Payouts : payout setup, history, transactions, and payout methods"
-        }
-      ]
-    },
-    {
-      "candidate_id": "6c933a0a7009a87b",
-      "title": "Security update: Offline token dates, new security features",
-      "proposed_text": "All public apps that call the Admin API must migrate to expiring offline access tokens by Jan 1 2027. Verify token expiration logic before Jan 1 2027 to avoid authentication failures. https://shopify.dev/changelog/blog/app-security-updates-october-2026",
-      "reasons": [
-        "Post merely repeats headline facts without adding new insight or actionable nuance; originality below threshold."
+        "Post restates headline without adding new insight; originality below threshold."
       ],
       "editorial_review": {
-        "clarity_score": 9,
-        "technical_coherence_score": 9,
+        "clarity_score": 8,
+        "technical_coherence_score": 8,
         "takeaway_value_score": 8,
         "source_faithfulness_score": 9,
-        "originality_score": 3
+        "originality_score": 4
       }
     },
     {
-      "candidate_id": "6c933a0a7009a87b",
-      "title": "Security update: Offline token dates, new security features",
+      "candidate_id": "a677374664d346cc",
+      "title": "Restrict Admin API access with an IP allowlist",
       "reasons": [
         "Editorial takeaway is too long; keep the analysis concrete and concise.",
         "Fact plus takeaway exceeds the per-link character budget.",
-        "Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.",
-        "Draft is 351 raw characters; limit is 280"
+        "Draft is 306 raw characters; limit is 280",
+        "Primary-source evidence quote is missing or absent from the live page (after presentation normalisation)",
+        "No claim-by-claim supporting evidence was provided"
       ],
-      "proposed_text": "All public apps that call the Admin API must migrate to expiring offline access tokens by January 1 2027. If your app still uses non‑expiring offline tokens, merchants will see a warning in Shopify admin on January 15 2027, which can block app usage until the migration is complete. https://shopify.dev/changelog/blog/app-security-updates-october-2026",
-      "evidence_quote": "All public apps that call the Admin API must migrate to expiring offline access tokens by January 1, 2027. January 15, 2027: Merchants using the app see a warning in Shopify admin.",
+      "proposed_text": "Shopify’s Dev Dashboard lets you restrict Admin API tokens to listed IP addresses. Requests from IPs not on the allowlist receive a 403 response, so test a non‑listed IP to confirm enforcement before deployment. https://shopify.dev/changelog/posts/restrict-admin-api-access-to-your-app-with-an-ip-allowlist",
+      "evidence_quote": "When you add your servers' IP addresses to an IP allowlist in the Dev Dashboard, Shopify rejects GraphQL Admin API and REST Admin API requests that use your app's tokens from anywhere else.",
       "automatic_repair_attempt": true,
       "original_rejection_reasons": [
-        "Post merely repeats headline facts without adding new insight or actionable nuance; originality below threshold."
+        "Post restates headline without adding new insight; originality below threshold."
       ]
     }
   ],
   "candidate_shortlist": [
     {
-      "id": "6c933a0a7009a87b",
-      "title": "Security update: Offline token dates, new security features",
-      "url": "https://shopify.dev/changelog/blog/app-security-updates-october-2026",
-      "source": "Shopify Developer Changelog",
-      "primary_category": "commerce_and_digital_products",
-      "priority_score": 63,
-      "hourly_adjusted_score": 63,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-27T17:00:00+00:00",
-      "days_old": 3.8,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "f6b4870412a7c624",
-      "title": "Tool: Atuin Threads",
-      "url": "https://blog.atuin.sh/threads-agent-sessions/?ref=console.dev",
-      "source": "Console.dev",
-      "primary_category": "developer_tools",
-      "priority_score": 62,
-      "hourly_adjusted_score": 62,
-      "stars_current": null,
-      "stars_delta_24h": null,
-      "stars_delta_baseline_hours": null,
-      "stars_growth_percent_24h": null,
-      "trend_signal": "not_applicable",
-      "published_at": "2026-10-29T08:00:00+00:00",
-      "days_old": 2.18,
-      "primary_source_verified": true,
-      "primary_source_http_status": 200,
-      "primary_source_reason": ""
-    },
-    {
-      "id": "c966fb913f8d63e4",
-      "title": "Manage payouts, billing, and settings in Dev Dashboard",
-      "url": "https://shopify.dev/changelog/posts/manage-partner-payouts-billing-and-settings-from-organization-settings",
+      "id": "a677374664d346cc",
+      "title": "Restrict Admin API access with an IP allowlist",
+      "url": "https://shopify.dev/changelog/posts/restrict-admin-api-access-to-your-app-with-an-ip-allowlist",
       "source": "Shopify Developer Changelog",
       "primary_category": "commerce_and_digital_products",
       "priority_score": 60,
@@ -422,11 +387,49 @@
       "stars_delta_baseline_hours": null,
       "stars_growth_percent_24h": null,
       "trend_signal": "not_applicable",
-      "published_at": "2026-10-27T23:30:00+00:00",
-      "days_old": 3.53,
+      "published_at": "2026-10-27T16:00:00+00:00",
+      "days_old": 3.9,
       "primary_source_verified": true,
       "primary_source_http_status": 200,
       "primary_source_reason": ""
+    },
+    {
+      "id": "e72d79c0a899ffe6",
+      "title": "Stripe on Stripe: What we learned moving $1B in vendor payments to Global Payouts",
+      "url": "https://stripe.com/blog/stripe-on-stripe-what-we-learned-moving-1b-in-vendor-payments-to-global-payouts",
+      "source": "Stripe Blog",
+      "primary_category": "commerce_and_digital_products",
+      "priority_score": 59,
+      "hourly_adjusted_score": 59,
+      "stars_current": null,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-30T00:00:00+00:00",
+      "days_old": 1.56,
+      "primary_source_verified": true,
+      "primary_source_http_status": 200,
+      "primary_source_reason": ""
+    },
+    {
+      "id": "1b9191dd943341ea",
+      "title": "Godwit",
+      "url": "https://www.producthunt.com/products/godwit",
+      "source": "Product Hunt",
+      "primary_category": "developer_tools",
+      "priority_score": 58,
+      "hourly_adjusted_score": 58,
+      "stars_current": null,
+      "stars_delta_24h": null,
+      "stars_delta_baseline_hours": null,
+      "stars_growth_percent_24h": null,
+      "trend_signal": "not_applicable",
+      "published_at": "2026-10-31T03:45:26+00:00",
+      "days_old": 0.41,
+      "primary_source_verified": false,
+      "primary_source_http_status": null,
+      "primary_source_reason": "Primary source returned HTTP 403."
     }
   ],
   "automatic_repair": {
@@ -450,7 +453,7 @@
   },
   "state_summary": {
     "used_candidates_in_cooldown": 34,
-    "recently_attempted_candidates": 33,
+    "recently_attempted_candidates": 35,
     "recent_draft_passes_today": 2
   }
 }

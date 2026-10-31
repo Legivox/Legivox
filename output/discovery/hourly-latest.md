@@ -1,9 +1,9 @@
 # Legivox hourly discovery and draft preview
 
-- Run time (IST): 2026-10-31T17:48:29+05:30
+- Run time (IST): 2026-10-31T19:01:34+05:30
 - Mode: hourly_dry_run_only
 - X publishing: **not performed**
-- Candidate pool after freshness/diversity filters: 188
+- Candidate pool after freshness/diversity filters: 172
 - Independent editorial review: 0 draft(s) passed / 1 rejected
 - Drafts passing local checks: 0
 - Outcome: **skip**
@@ -40,8 +40,8 @@
 | Ahrefs Blog | 8 | ok |
 | Console.dev | 11 | ok |
 | Indie Hackers (unofficial third-party feed) | 5 | ok |
-| Product Hunt | 40 | ok |
-| Shopify Community | 0 | error (HTTPError) |
+| Product Hunt | 41 | ok |
+| Shopify Community | 30 | ok |
 | Shopify Developer Changelog | 30 | ok |
 | Stripe Blog | 3 | ok |
 | WooCommerce Blog | 3 | ok |
@@ -54,20 +54,20 @@
 ## GitHub star tracking
 
 - Tracked repositories in watchlist: 200
-- Repositories seen in this discovery run: 114
-- Previously tracked repositories refreshed outside search results: 86
+- Repositories seen in this discovery run: 106
+- Previously tracked repositories refreshed outside search results: 94
 - Refresh failures: 0
 - Star snapshots recorded this run: 200
-- Repositories with a 20–36 hour comparison baseline: 19
+- Repositories with a 20–36 hour comparison baseline: 20
 - First observations are baseline samples, not evidence of trending. Star velocity is reported only when a historical comparison exists.
 
 ## Primary-source verification
 
 | Candidate | Verified | HTTP | Result |
 |---|---|---:|---|
-| Security update: Offline token dates, new security features | yes | 200 | https://shopify.dev/changelog/blog/app-security-updates-october-2026 |
-| Tool: Atuin Threads | yes | 200 | https://blog.atuin.sh/threads-agent-sessions/?ref=console.dev |
-| Manage payouts, billing, and settings in Dev Dashboard | yes | 200 | https://shopify.dev/changelog/posts/manage-partner-payouts-billing-and-settings-from-organization-settings |
+| Restrict Admin API access with an IP allowlist | yes | 200 | https://shopify.dev/changelog/posts/restrict-admin-api-access-to-your-app-with-an-ip-allowlist |
+| Stripe on Stripe: What we learned moving $1B in vendor payments to Global Payouts | yes | 200 | https://stripe.com/blog/stripe-on-stripe-what-we-learned-moving-1b-in-vendor-payments-to-global-payouts |
+| Godwit | no | — | Primary source returned HTTP 403. |
 
 ## Selected draft candidates
 
@@ -84,25 +84,22 @@ No draft cleared the complete local and independent-editor gate. See the decisio
 
 ## Rejected draft options
 
-- Tool: Atuin Threads: Primary-source evidence quote is missing or absent from the live page (after presentation normalisation); A factual claim lacks a quote present in the live primary-source page
-  - Rejected text: Atuin Threads syncs agent sessions across machines and is end‑to‑end encrypted. Test session resume on a fresh machine to confirm context integrity. https://blog.atuin.sh/threads-agent-sessions/?ref=console.dev
-  - Model evidence quote: “Atuin Threads: one searchable, synced history for every agent session, on every machine ... End‑to‑end encrypted when synced”
-  - Claim support: Atuin Threads syncs agent sessions across machines and is end‑to‑end encrypted. ← “Atuin Threads: one searchable, synced history for every agent session, on every machine ... End‑to‑end encrypted when synced”
-- Manage payouts, billing, and settings in Dev Dashboard: The factual opening bundles multiple features; narrow it to one capability.
-  - Rejected text: Partner payouts, billing, and settings are now managed in Dev Dashboard Organization settings. Check that existing payout history appears unchanged after migration. https://shopify.dev/changelog/posts/manage-partner-payouts-billing-and-settings-from-organization-settings
-  - Model evidence quote: “From Organization settings , you can manage: ... Payouts : payout setup, history, transactions, and payout methods”
-  - Claim support: Partner payouts, billing, and settings are now managed in Dev Dashboard Organization settings. ← “From Organization settings , you can manage: ... Payouts : payout setup, history, transactions, and payout methods”
-- Security update: Offline token dates, new security features: Post merely repeats headline facts without adding new insight or actionable nuance; originality below threshold.
-  - Rejected text: All public apps that call the Admin API must migrate to expiring offline access tokens by Jan 1 2027. Verify token expiration logic before Jan 1 2027 to avoid authentication failures. https://shopify.dev/changelog/blog/app-security-updates-october-2026
-- Security update: Offline token dates, new security features: Editorial takeaway is too long; keep the analysis concrete and concise.; Fact plus takeaway exceeds the per-link character budget.; Editorial takeaway needs a concrete test, trade-off, risk, comparison, or next step.; Draft is 351 raw characters; limit is 280
-  - Rejected text: All public apps that call the Admin API must migrate to expiring offline access tokens by January 1 2027. If your app still uses non‑expiring offline tokens, merchants will see a warning in Shopify admin on January 15 2027, which can block app usage until the migration is complete. https://shopify.dev/changelog/blog/app-security-updates-october-2026
-  - Model evidence quote: “All public apps that call the Admin API must migrate to expiring offline access tokens by January 1, 2027. January 15, 2027: Merchants using the app see a warning in Shopify admin.”
+- Godwit: Primary source returned HTTP 403.
+- Stripe on Stripe: What we learned moving $1B in vendor payments to Global Payouts: Unsupported numeric claim(s): 99.5
+  - Rejected text: Global Payouts reduced new‑market setup from six weeks to one with 99.9% success. Benchmark your onboarding against one week and monitor success below 99.5%. https://stripe.com/blog/stripe-on-stripe-what-we-learned-moving-1b-in-vendor-payments-to-global-payouts
+  - Model evidence quote: “New-market setup fell from six weeks to one, with a 99.9% payout success rate.”
+  - Claim support: Global Payouts reduced new‑market setup from six weeks to one with 99.9% success. ← “New-market setup fell from six weeks to one, with a 99.9% payout success rate.”
+- Restrict Admin API access with an IP allowlist: Post restates headline without adding new insight; originality below threshold.
+  - Rejected text: Shopify lets you restrict Admin API tokens to IP addresses via the Dev Dashboard. Test a non‑listed IP request and confirm a 403 before deployment. https://shopify.dev/changelog/posts/restrict-admin-api-access-to-your-app-with-an-ip-allowlist
+- Restrict Admin API access with an IP allowlist: Editorial takeaway is too long; keep the analysis concrete and concise.; Fact plus takeaway exceeds the per-link character budget.; Draft is 306 raw characters; limit is 280; Primary-source evidence quote is missing or absent from the live page (after presentation normalisation); No claim-by-claim supporting evidence was provided
+  - Rejected text: Shopify’s Dev Dashboard lets you restrict Admin API tokens to listed IP addresses. Requests from IPs not on the allowlist receive a 403 response, so test a non‑listed IP to confirm enforcement before deployment. https://shopify.dev/changelog/posts/restrict-admin-api-access-to-your-app-with-an-ip-allowlist
+  - Model evidence quote: “When you add your servers' IP addresses to an IP allowlist in the Dev Dashboard, Shopify rejects GraphQL Admin API and REST Admin API requests that use your app's tokens from anywhere else.”
 
 ## Top discovery candidates considered
 
-- Security update: Offline token dates, new security features | Shopify Developer Changelog | commerce_and_digital_products | raw 63, adjusted 63 | https://shopify.dev/changelog/blog/app-security-updates-october-2026
-- Tool: Atuin Threads | Console.dev | developer_tools | raw 62, adjusted 62 | https://blog.atuin.sh/threads-agent-sessions/?ref=console.dev
-- Manage payouts, billing, and settings in Dev Dashboard | Shopify Developer Changelog | commerce_and_digital_products | raw 60, adjusted 60 | https://shopify.dev/changelog/posts/manage-partner-payouts-billing-and-settings-from-organization-settings
+- Restrict Admin API access with an IP allowlist | Shopify Developer Changelog | commerce_and_digital_products | raw 60, adjusted 60 | https://shopify.dev/changelog/posts/restrict-admin-api-access-to-your-app-with-an-ip-allowlist
+- Stripe on Stripe: What we learned moving $1B in vendor payments to Global Payouts | Stripe Blog | commerce_and_digital_products | raw 59, adjusted 59 | https://stripe.com/blog/stripe-on-stripe-what-we-learned-moving-1b-in-vendor-payments-to-global-payouts
+- Godwit | Product Hunt | developer_tools | raw 58, adjusted 58 | https://www.producthunt.com/products/godwit
 
 ## Safety and interpretation
 
