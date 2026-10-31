@@ -1,23 +1,23 @@
 # Legivox daily content plan
 
-Prepared: 2026-10-31 08:39:34 IST
+Prepared: 2026-10-31 15:34:23 IST
 
 > This scheduled post came from a fresh multidomain discovery report, passed primary-source and deterministic evidence checks, and passed an independent editorial review. The star-history baseline is a trend signal, not proof of market demand.
 
-## Post 1 · multidomain-2c99042206701642
+## Post 1 · multidomain-adfee1574336a2e8
 
 **Planned copy**
 
-Tlamatini brings AI to code, 3D worlds and hardware with voice and live editor tutoring. Validate local control by running a simple script without cloud reasoning enabled. https://github.com/XAIHT/Tlamatini
+Codync is an open source Grok Bot alternative that supports 40+ AI agents. Run a quick agent switch test to confirm the CLI can route to each AI provider. https://github.com/leepokai/Codync
 
-- Topic: ai_and_automation
-- Editorial score (model estimate): 8.25
+- Topic: security_and_self_hosting
+- Editorial score (model estimate): 8.4
 
 **Source article**
 
-- [XAIHT/Tlamatini](https://github.com/XAIHT/Tlamatini)
+- [leepokai/Codync](https://github.com/leepokai/Codync)
 
-- Status: published: https://x.com/i/status/2116366960825188545
+- Status: published: https://x.com/i/status/2116472825997574150
 
 ## Media policy
 
